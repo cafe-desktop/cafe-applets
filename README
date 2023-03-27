@@ -1,0 +1,36 @@
+MATE-Applets
+=============
+
+https://github.com/mate-desktop/mate-applets
+
+This package contains applets for use with the MATE panel.  Therefore, it
+requires mate-panel to be installed.  To build all applets additional
+libraries may be needed.
+
+This list is by no means definitive.
+
+MATE-Applets is a fork of GNOME-Applets.
+
+
+Requirements
+------------
+
+You need at least:
+
+    mate-panel
+    gtk+-3.14.0
+    glib-2.36.0
+    libgtop-2.12.0
+    libwnck
+
+Some extras that improve functionality:
+
+    libnotify
+    dbus-0.34
+
+
+Reporting Bugs
+--------------
+
+Bugs should be reported via GitHub
+https://github.com/mate-desktop/mate-applets/issues/

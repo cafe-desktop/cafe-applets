@@ -1,0 +1,1003 @@
+# 
+# Translators:
+# Stefano Karapetsas <stefano@karapetsas.com>, 2020
+# talorno <giovanni.talorno@gmail.com>, 2020
+# Giuseppe Pignataro <rogepix@gmail.com>, 2020
+# Wolfgang Ulbrich <mate@raveit.de>, 2020
+# Enrico B. <enricobe@hotmail.com>, 2020
+# Marco Z. <minaz666@gmail.com>, 2020
+# l3nn4rt, 2020
+# andrea pittaro <transifex@andreapittaro.it>, 2020
+# Alessandro Volturno <alelvb@inwind.it>, 2020
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-01-10 17:58+0100\n"
+"PO-Revision-Date: 2020-02-15 12:18+0000\n"
+"Last-Translator: Alessandro Volturno <alelvb@inwind.it>, 2020\n"
+"Language-Team: Italian (https://www.transifex.com/mate/teams/13566/it/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: it\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr " "
+
+#. (itstool) path: articleinfo/title
+#: C/index.docbook:22
+msgid "System Monitor Manual"
+msgstr "Manuale di Monitor di sistema"
+
+#. (itstool) path: abstract/para
+#: C/index.docbook:24
+msgid ""
+"System Monitor displays system load information in graphical format in a "
+"panel."
+msgstr ""
+"Monitor di sistema mostra in un pannello le informazioni sul carico del "
+"sistema in formato grafico."
+
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:27
+msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
+msgstr ""
+"<year>2015-2020</year> <holder>Progetto Documentazione di MATE</holder>"
+
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:31
+msgid "<year>2005</year> <holder>Davyd Madeley</holder>"
+msgstr "<year>2005</year> <holder>Davyd Madeley</holder>"
+
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:35
+msgid "<year>2004</year> <holder>Sun Microsystems</holder>"
+msgstr "<year>2004</year> <holder>Sun Microsystems</holder>"
+
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:39
+msgid "<year>2003</year> <year>2004</year> <holder>Chee Bin HOH</holder>"
+msgstr "<year>2003</year> <year>2004</year> <holder>Chee Bin HOH</holder>"
+
+#. (itstool) path: publisher/publishername
+#. (itstool) path: revdescription/para
+#: C/index.docbook:53 C/index.docbook:118
+msgid "MATE Documentation Project"
+msgstr "progetto Documentazione di  MATE"
+
+#. (itstool) path: publisher/publishername
+#. (itstool) path: revdescription/para
+#: C/index.docbook:56 C/index.docbook:135 C/index.docbook:144
+#: C/index.docbook:155
+msgid "GNOME Documentation Project"
+msgstr "Progetto della Documentazione di GNOME "
+
+#. (itstool) path: authorgroup/author
+#: C/index.docbook:63
+msgid ""
+"<firstname>MATE Documentation Team</firstname> <surname/> <affiliation> "
+"<orgname>MATE Desktop</orgname> </affiliation>"
+msgstr ""
+"<firstname>Team di Documentazione di MATE</firstname> <surname/> "
+"<affiliation> <orgname>Desktop MATE</orgname> </affiliation>"
+
+#. (itstool) path: authorgroup/author
+#: C/index.docbook:71
+msgid ""
+"<firstname>Angela</firstname> <surname>Boyle</surname> "
+"<affiliation><address> <email>aboyle@aboyle.com</email> "
+"</address></affiliation>"
+msgstr ""
+"<firstname>Angela</firstname> <surname>Boyle</surname> "
+"<affiliation><address> <email>aboyle@aboyle.com</email> "
+"</address></affiliation>"
+
+#. (itstool) path: authorgroup/author
+#: C/index.docbook:79
+msgid ""
+"<firstname>Chee Bin</firstname> <surname>HOH</surname> <affiliation> "
+"<orgname>GNOME Documentation Project</orgname> "
+"<address><email>cbhoh@mimos.my</email></address> </affiliation>"
+msgstr ""
+"<firstname>Chee Bin</firstname> <surname>HOH</surname> <affiliation> "
+"<orgname>GNOME Documentation Project</orgname> "
+"<address><email>cbhoh@mimos.my</email></address> </affiliation>"
+
+#. (itstool) path: authorgroup/author
+#: C/index.docbook:88
+msgid ""
+"<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
+"<orgname>GNOME Project</orgname> "
+"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+msgstr ""
+"<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
+"<orgname>GNOME Project</orgname> "
+"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+
+#. (itstool) path: revdescription/para
+#: C/index.docbook:117
+msgid "MATE Documentation Team"
+msgstr "Team Documentazione di MATE"
+
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:113
+msgid ""
+"<revnumber>System Monitor V2.12</revnumber> <date>July 2015</date> "
+"<_:revdescription-1/>"
+msgstr ""
+"<revnumber>Monitor di sistema V2.12</revnumber> <date>Luglio 2015</date> "
+"<_:revdescription-1/>"
+
+#. (itstool) path: revdescription/para
+#: C/index.docbook:126
+msgid "Davyd Madeley"
+msgstr "Davyd Madeley"
+
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:122
+msgid ""
+"<revnumber>Version 2.10</revnumber> <date>March 2005</date> "
+"<_:revdescription-1/>"
+msgstr ""
+"<revnumber>Version 2.10</revnumber> <date>March 2005</date> "
+"<_:revdescription-1/>"
+
+#. (itstool) path: revdescription/para
+#: C/index.docbook:134
+msgid "Angela Boyle"
+msgstr "Angela Boyle"
+
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:130
+msgid ""
+"<revnumber>Version 2.8</revnumber> <date>August 2004</date> "
+"<_:revdescription-1/>"
+msgstr ""
+"<revnumber>Version 2.8</revnumber> <date>August 2004</date> "
+"<_:revdescription-1/>"
+
+#. (itstool) path: revdescription/para
+#: C/index.docbook:143
+msgid "Sun GNOME Documentation Team"
+msgstr "Team Documentazione GNOME Sun"
+
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:139
+msgid ""
+"<revnumber>System Monitor Applet Manual V2.1</revnumber> <date>February "
+"2004</date> <_:revdescription-1/>"
+msgstr ""
+"<revnumber>Manuale applet Monitor di sistema V2.1</revnumber> <date>Febbraio"
+" 2004</date> <_:revdescription-1/>"
+
+#. (itstool) path: revdescription/para
+#: C/index.docbook:152
+msgid "Chee Bin HOH <email>cbhoh@mimos.my</email>"
+msgstr "Chee Bin HOH <email>cbhoh@mimos.my</email>"
+
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:148
+msgid ""
+"<revnumber>System Monitor Applet Manual V2.0</revnumber> <date>July "
+"2003</date> <_:revdescription-1/>"
+msgstr ""
+"<revnumber>Manuale applet Monitor di sistema V2.0</revnumber> <date>Luglio "
+"2003</date> <_:revdescription-1/>"
+
+#. (itstool) path: articleinfo/releaseinfo
+#: C/index.docbook:161
+msgid "This manual describes version 1.10.2 of System Monitor."
+msgstr "Questo manuale è relativo alla versione 1.10.2 di Monitor di sistema."
+
+#. (itstool) path: legalnotice/title
+#: C/index.docbook:164
+msgid "Feedback"
+msgstr "Commenti"
+
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:165
+msgid ""
+"To report a bug or make a suggestion regarding the System Monitor applet or "
+"this manual, follow the directions in the <ulink url=\"help:mate-user-"
+"guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+msgstr ""
+"Per segnalare un malfunzionamento o un suggerimento sulla applet Monitor di "
+"Sistema o su questo manuale, segui le istruzioni nella <ulink url=\"help"
+":mate-user-guide/feedback\" type=\"help\">pagina di feedback di MATE</ulink>"
+
+#. (itstool) path: article/indexterm
+#: C/index.docbook:172
+msgid "<primary>System Monitor Applet</primary>"
+msgstr "<primary>Applet Monitor di sistema</primary>"
+
+#. (itstool) path: article/indexterm
+#: C/index.docbook:175
+msgid "<primary>System Monitor</primary>"
+msgstr "<primary>System Monitor</primary>"
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:182
+msgid "Introduction"
+msgstr "Introduzione"
+
+#. (itstool) path: figure/title
+#: C/index.docbook:186
+msgid "System Monitor"
+msgstr "Monitor di sistema"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:190
+msgctxt "_"
+msgid ""
+"external ref='figures/system-monitor-applet_window.png' "
+"md5='a43dcac840e66164cf7e0e649b61b5da'"
+msgstr ""
+"external ref='figures/system-monitor-applet_window.png' "
+"md5='a43dcac840e66164cf7e0e649b61b5da'"
+
+#. (itstool) path: screenshot/mediaobject
+#: C/index.docbook:188
+msgid ""
+"<imageobject><imagedata fileref=\"figures/system-monitor-applet_window.png\""
+" format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows System Monitor. "
+"Displays a graph for system CPU load. </phrase> </textobject>"
+msgstr ""
+"<imageobject><imagedata fileref=\"figures/system-monitor-applet_window.png\""
+" format=\"PNG\"/> </imageobject> <textobject> <phrase>Monitor di sistema. "
+"Mostra un grafico sul carico della CPU del sistema. </phrase> </textobject>"
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:201
+msgid ""
+"The <application>System Monitor</application> displays system load "
+"information in graphical format in a panel. You can configure "
+"<application>System Monitor</application> to display the following "
+"information for your system:"
+msgstr ""
+"Il <application>Monitor di sistema</application> mostra in un pannello le "
+"informazioni sul carico del sistema in formato grafico. Puoi configurare "
+"<application>Monitor di sistema</application> per mostrare le seguenti "
+"informazioni sul sistema:"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:209
+msgid "Usage of CPU (central processing unit) time"
+msgstr "Utilizzo del tempo della CPU (central processing unit)"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:214
+msgid "Memory usage"
+msgstr "Utilizzo della memoria"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:219
+msgid "Network traffic"
+msgstr "Traffico di rete"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:224
+msgid "Usage of swap space"
+msgstr "Utilizzo area di swap"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:229
+msgid "Average system load"
+msgstr "Carico medio del sistema"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:233
+msgid "Disk load"
+msgstr "Carico del disco"
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:237
+msgid "To Add System Monitor to a Panel"
+msgstr "Aggiungere Monitor di sistema ad un pannello"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:238
+msgid ""
+"To add <application>System Monitor</application> to a panel, perform the "
+"following steps:"
+msgstr ""
+"Per aggiungere <application>Monitor di sistema</application> al pannello "
+"segui questi passaggi:"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:244
+msgid "Right-click on the panel."
+msgstr "Clic destro sul pannello."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:249
+msgid "Choose <guimenuitem>Add to Panel</guimenuitem>."
+msgstr "Scegli <guimenuitem>Aggiungi al pannello</guimenuitem>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:254
+msgid ""
+"Scroll down the list of items in the <guilabel>Add to Panel</guilabel> "
+"dialog, then select <guilabel>System Monitor</guilabel>."
+msgstr ""
+"Scorri in basso la lista della finestra <guilabel>Aggiungi al "
+"pannello</guilabel>, e seleziona <guilabel>Monitor di sistema</guilabel>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:260
+msgid "Click <guibutton>Add</guibutton>."
+msgstr "Clicca su <guibutton>Aggiungi</guibutton>"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:265
+msgid ""
+"The layout of the <application>System Monitor</application> varies depending"
+" on the size and type of panel in which the applet resides."
+msgstr ""
+"La visualizzazione del <application>Monitor di sistema</application> varia a"
+" seconda della dimensione e del tipo del pannello in cui la applet risiede."
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:277
+msgid "Viewing Graphs"
+msgstr "Visualizzare grafici"
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:280
+msgid "Displaying Additional Graphs"
+msgstr "Mostrare grafici addizionali"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:281
+msgid ""
+"To configure the <application>System Monitor</application> applet, right-"
+"click on the applet, then choose <guimenuitem>Preferences</guimenuitem>. "
+"Under <guilabel>Monitored Resources</guilabel> you can choose which graphics"
+" you want to display:"
+msgstr ""
+"Per configurare la applet <application>Monitor di sistema</application>, fai"
+" clic destro sulla applet e seleziona <guimenuitem>Preferenze</guimenuitem>."
+" Sotto <guilabel>Risorse monitorate</guilabel> puoi selezionare quali "
+"grafici vuoi visualizzare:"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:284 C/index.docbook:426
+msgid "<guilabel>Processor</guilabel>"
+msgstr "<guilabel>Processore</guilabel>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:287
+msgid "Select this option to display the graph for CPU usage."
+msgstr ""
+"Seleziona questa opzione per visualizzare il grafico di utilizzo della CPU."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:292 C/index.docbook:472
+msgid "<guilabel>Memory</guilabel>"
+msgstr "<guilabel>Memoria</guilabel>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:295
+msgid "Select this option to display the graph for memory usage."
+msgstr ""
+"Seleziona questa opzione per visualizzare il grafico di utilizzo della "
+"memoria."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:300 C/index.docbook:516
+msgid "<guilabel>Network</guilabel>"
+msgstr "<guilabel>Rete</guilabel>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:303
+msgid "Select this option to display the graph for network traffic."
+msgstr ""
+"Seleziona questa opzione per visualizzare il grafico di utilizzo del "
+"traffico di rete."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:308 C/index.docbook:565
+msgid "<guilabel>Swap Space</guilabel>"
+msgstr "<guilabel>Spazio di swap</guilabel>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:311
+msgid "Select this option to display the graph for swap-space usage."
+msgstr ""
+"Seleziona questa opzione per visualizzare il grafico di utilizzo dello "
+"spazio di swap."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:316 C/index.docbook:601
+msgid "<guilabel>Load</guilabel>"
+msgstr "<guilabel>Carico</guilabel>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:319
+msgid "Select this option to display the graph for average system load."
+msgstr ""
+"Seleziona questa opzione per visualizzare il grafico del carico medio di "
+"sistema."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:324 C/index.docbook:637
+msgid "<guilabel>Harddisk</guilabel>"
+msgstr "<guilabel>Harddisk</guilabel>"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:325
+msgid "Select this option to display the graph for disk usage."
+msgstr ""
+"Seleziona questa opzione per visualizzare il grafico di utilizzo del disco."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:333
+msgid "To Display the Current Usage of a System Resource"
+msgstr "Mostrare l'utilizzo attuale di una risorsa di sistema"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:334
+msgid ""
+"To display the current usage of a system resource, position the mouse "
+"pointer over the corresponding graph in the applet. A tooltip displays the "
+"current usage as a percentage."
+msgstr ""
+"Per visualizzare l'uso attuale di una risorsa di sistema, posiziona il "
+"puntatore del mouse sul grafico corrispondente nell'applet. Un tooltip "
+"visualizza l'utilizzo corrente in percentuale."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:342
+msgid "To Display Additional System Monitor Information"
+msgstr "Mostrare informazioni aggiuntive nel Monitor di sistema"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:343
+msgid ""
+"To display additional system monitor information, right-click on the applet,"
+" then choose <guimenuitem>Open System Monitor</guimenuitem> to start the "
+"<application>System Monitor</application> application."
+msgstr ""
+"Per visualizzare ulteriori informazioni sul monitor di sistema, clicca col "
+"tasto destro del mouse sull'applet e seleziona <guimenuitem>Apri Monitor di "
+"Sistema</guimenuitem> per avviare l'applicazione <application>Monitor di "
+"sistema</application>."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:348
+msgid ""
+"The <application>System Monitor</application> application enables you to "
+"monitor system processes and usage of system resources. You can use the "
+"<application>System Monitor</application> application to modify the behavior"
+" of your system."
+msgstr ""
+"Il <application>Monitor di sistema</application> consente di monitorare i "
+"processi di sistema e l'utilizzo delle risorse. Puoi utilizzare il "
+"<application>Monitor di sistema</application> per modificare i comportamenti"
+" del sistema."
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:360
+msgid "Customizing Appearance"
+msgstr "Personalizzare l'aspetto"
+
+#. (itstool) path: figure/title
+#: C/index.docbook:362
+msgid "Preferences Dialog"
+msgstr "Finestra delle preferenze"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:366
+msgctxt "_"
+msgid ""
+"external ref='figures/multiload-preferences.png' "
+"md5='4bfa5bdee407b7b439ec8a63e5c8e2b7'"
+msgstr ""
+"external ref='figures/multiload-preferences.png' "
+"md5='4bfa5bdee407b7b439ec8a63e5c8e2b7'"
+
+#. (itstool) path: screenshot/mediaobject
+#: C/index.docbook:364
+msgid ""
+"<imageobject><imagedata fileref=\"figures/multiload-preferences.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Preferences Dialog "
+"</phrase> </textobject>"
+msgstr ""
+"<imageobject><imagedata fileref=\"figures/multiload-preferences.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Finestra "
+"Preferenze</phrase> </textobject>"
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:376
+msgid "To Change the Width"
+msgstr "Modificare la larghezza"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:377
+msgid ""
+"In the right-click menu, go to <guimenuitem>Preferences</guimenuitem>. Under"
+" <guilabel>Options</guilabel>, use the <guilabel>System monitor "
+"width</guilabel> spin box to specify the width of each <application>System "
+"Monitor</application> graph in pixels."
+msgstr ""
+"Fai clic destro e seleziona <guimenuitem>Preferenze</guimenuitem>. Sotto "
+"<guilabel>Opzioni</guilabel>, usa <guilabel>Larghezza monitor di "
+"sistema</guilabel> per selezionare la larghezza in pixel di ogni grafico di "
+"<application>Monitor di sistema</application>."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:380
+msgid "To Update at Regular Intervals"
+msgstr "Aggiornare a intervalli regolari"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:381
+msgid ""
+"In the right-click menu, go to <guimenuitem>Preferences</guimenuitem>. Under"
+" <guilabel>Options</guilabel>, use the <guilabel>System monitor update "
+"interval</guilabel> spin box to specify the interval at which you want to "
+"update the graphs in milliseconds."
+msgstr ""
+"Fai clic destro e seleziona <guimenuitem>Preferenze</guimenuitem>. Sotto "
+"<guilabel>Opzioni</guilabel>, usa la casella <guilabel>Intervallo di "
+"aggiornamento di monitor di sistema</guilabel> per selezione l'intervallo di"
+" aggiornamento del grafico in millisecondi."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:386
+msgid "Changing the Colors in a Graph"
+msgstr "Cambiare i colori in un grafico"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:387
+msgid "To change the colors in a graph, perform the following steps:"
+msgstr "Per cambiare i colori in un grafico, segui questi passaggi:"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:392
+msgid ""
+"Right-click on the applet, then choose "
+"<guimenuitem>Preferences</guimenuitem>."
+msgstr ""
+"Fare clic con il tasto destro e seleziona "
+"<guimenuitem>Preferenze</guimenuitem>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:397
+msgid ""
+"Select the relevant tab in the <guilabel>Colors</guilabel> area of the "
+"<guilabel>System Monitor Preferences</guilabel> dialog."
+msgstr ""
+"Seleziona la scheda di interesse nella sezione <guilabel>Colori</guilabel> "
+"della finestra <guilabel>Preferenze di monitor di sistema</guilabel>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:403
+msgid ""
+"Click on the relevant color selector button in the selected tabbed section."
+msgstr "Clicca sul selettore colore di interesse nell'area a schede. "
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:408
+msgid ""
+"On the <guilabel>Pick a Color</guilabel> dialog, use the color wheel or spin"
+" boxes to choose the line color for the selected parameter."
+msgstr ""
+"Nella finestra <guilabel>Seleziona colore</guilabel> usa la palette colori o"
+" le caselle per selezionare il colore della linea del parametro scelto."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:415
+msgid "Click <guibutton>OK</guibutton>."
+msgstr "Clicca su <guibutton>OK</guibutton>."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:420
+msgid ""
+"The tabbed section for each resource provides color selection buttons that "
+"you can use to change the color of the parameters for each resource."
+msgstr ""
+"La sezione a schede mostra i pulsanti di selezione del colore per ogni "
+"risorsa, permettendo di cambiare il colore dei parametri per ogni risorsa."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:429 C/index.docbook:475 C/index.docbook:519
+#: C/index.docbook:568 C/index.docbook:604 C/index.docbook:640
+msgid ""
+"Select this tab to display the color buttons for the following parameters:"
+msgstr ""
+"Selezionare questa scheda per mostrare i pulsanti colore dei seguenti "
+"parametri:"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:439 C/index.docbook:485 C/index.docbook:529
+#: C/index.docbook:578 C/index.docbook:614 C/index.docbook:650
+msgid "Parameter"
+msgstr "Parametro"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:441 C/index.docbook:487 C/index.docbook:531
+#: C/index.docbook:580 C/index.docbook:616 C/index.docbook:652
+msgid "Description"
+msgstr "Descrizione"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:446 C/index.docbook:492
+msgid "<guilabel>User</guilabel>"
+msgstr "<guilabel>Utente</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:447
+msgid "Processor time used by non-kernel activities"
+msgstr "Tempo utilizzo processore per attività estranee al kernel"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:450
+msgid "<guilabel>System</guilabel>"
+msgstr "<guilabel>Sistema</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:451
+msgid "Processor time used by kernel activities"
+msgstr "Tempo utilizzo processore per attività del kernel"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:454
+msgid "<guilabel>Nice</guilabel>"
+msgstr "<guilabel>Nice</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:455
+msgid "Processor time used by low-priority processes"
+msgstr "Tempo utilizzo processore per attività a bassa priorità"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:458
+msgid "<guilabel>IOWait</guilabel>"
+msgstr "<guilabel>IOWait</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:460
+msgid "Processor time used waiting for I/O"
+msgstr "Tempo utilizzo processore in attesa di I/O"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:464
+msgid "<guilabel>Idle</guilabel>"
+msgstr "<guilabel>Idle</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:465
+msgid "Unused processor capacity"
+msgstr "Capacità del processore inutilizzata"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:493
+msgid "Memory used by non-kernel activities"
+msgstr "Memoria usata da attività estranee al kernel"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:496
+msgid "<guilabel>Shared</guilabel>"
+msgstr "<guilabel>Condivisa</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:497
+msgid "Memory used by more than one application"
+msgstr "Memoria usata da più di una applicazione"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:500
+msgid "<guilabel>Buffers</guilabel>"
+msgstr "<guilabel>Buffer</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:501
+msgid "Memory used to temporarily store sent or received data"
+msgstr "Memoria usata per memorizzare temporaneamente dati inviati o ricevuti"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:504
+msgid "<guilabel>Cached</guilabel>"
+msgstr "<guilabel>In cache</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:505
+msgid "Memory used to store data for fast access"
+msgstr "Memoria usata per memorizzare dati ad accesso rapido"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:508 C/index.docbook:591
+msgid "<guilabel>Free</guilabel>"
+msgstr "<guilabel>Libero</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:509
+msgid "Memory not currently in use"
+msgstr "Memoria attualmente non usata"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:536
+msgid "<guilabel>In</guilabel>"
+msgstr "<guilabel>Ingresso</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:537
+msgid "Incoming traffic"
+msgstr "Traffico in ingresso"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:540
+msgid "<guilabel>Out</guilabel>"
+msgstr "<guilabel>Uscita</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:541
+msgid "Outgoing traffic"
+msgstr "Traffico in uscita"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:544
+msgid "<guilabel>Local</guilabel>"
+msgstr "<guilabel>Locale</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:545
+msgid "Traffic over loopback"
+msgstr "Traffico su loopback"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:548 C/index.docbook:625 C/index.docbook:665
+msgid "<guilabel>Background</guilabel>"
+msgstr "<guilabel>Sfondo</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:549
+msgid "Graph background color"
+msgstr "Colore sfondo del grafico"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:552
+msgid "<guilabel>Gridline</guilabel>"
+msgstr "<guilabel>Linea griglia</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:553
+msgid "Color of horizontal gridline when scaling graph"
+msgstr "Colore della griglia orizzontale nei grafici scalati"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:556
+msgid "<guilabel>Indicator</guilabel>"
+msgstr "<guilabel>Indicatore</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:557
+msgid "Color of indicator showing which threshold was reached"
+msgstr "Colore indicatore quando viene raggiunta la soglia"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:585
+msgid "<guilabel>Used</guilabel>"
+msgstr "<guilabel>Utilizzato</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:587
+msgid "Swap space being used by the system"
+msgstr "Spazio di swap usata dal sistema"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:593
+msgid "Swap space that is free to be used"
+msgstr "Spazio di swap libero"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:621
+msgid "<guilabel>Average</guilabel>"
+msgstr "<guilabel>Media</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:622
+msgid "System Load"
+msgstr "Carico di sistema"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:626
+msgid "that is, no load"
+msgstr "Nessun carico"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:629
+msgid "<guilabel>Grid line</guilabel>"
+msgstr "<guilabel>Linea griglia</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:630
+msgid "Color of grid lines"
+msgstr "Colore linee di griglia"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:657
+msgid "<guilabel>Read</guilabel>"
+msgstr "<guilabel>Lettura</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:658
+msgid "Disk read rate"
+msgstr "Velocità lettura disco"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:661
+msgid "<guilabel>Write</guilabel>"
+msgstr "<guilabel>Scrittura</guilabel>"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:662
+msgid "Disk write rate"
+msgstr "Velocità scrittura disco"
+
+#. (itstool) path: entry/para
+#: C/index.docbook:666
+msgid "Idle disk time"
+msgstr "Tempo di inattività del disco"
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:676
+msgid "Network speed thresholds"
+msgstr "Soglia velocità di rete"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:677
+msgid ""
+"Thresholds together with indicator allow network graph to scale and better "
+"represent actual workload. If combined network traffic (in + out + loopback)"
+" is below threshold1, no indicator is shown, y-axis on network graph go from"
+" 0 to threshold1. When traffic is more than threshold1, one indicator will "
+"be shown and y-axis now go from 0 to threshold2. When threshold2 is reached,"
+" two indicators will be shown and y-axis go from 0 to threshold3. When "
+"threshold3 is reached, three indicators are shown and y-axis go form 0 to "
+"whatever is current maximum in graph."
+msgstr ""
+"Le soglie e l'indicatore permettono di scalare il grafico di rete e di "
+"rappresentare meglio il carico di lavoro effettivo. Se il traffico di rete "
+"combinato (in + out + loopback) è sotto alla soglia1, non viene mostrato "
+"alcun indicatore e l'asse y sul grafico di rete va da 0 a soglia1. Quando il"
+" traffico è superiore alla soglia1, viene mostrato un indicatore e l'asse y "
+"passa ora da 0 alla soglia2. Quando la soglia2 viene raggiunta, vengono "
+"mostrati due indicatori e l'asse y va da 0 a soglia3. Quando si raggiunge la"
+" soglia3, vengono mostrati tre indicatori e l'asse y va da 0 al valore "
+"massimo attuale nel grafico."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:685
+msgid "Gridlines are hard to explain, just observe, and they are obvious."
+msgstr ""
+"Le linee di griglia sono difficili da spiegare, osservale e risulteranno "
+"ovvie."
+
+#. (itstool) path: para/ulink
+#: C/legal.xml:9
+msgid "link"
+msgstr "collegamento"
+
+#. (itstool) path: legalnotice/para
+#: C/legal.xml:2
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
+" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"with this manual."
+msgstr ""
+"È concesso il permesso di copiare, distribuire e/o modificare questo "
+"documento in base ai termini della GNU Free Documentation License (GFDL), "
+"Versione 1.1 o qualsiasi versione successiva pubblicata dalla Free Software "
+"Foundation senza sezioni invarianti, senza testi di copertina e nessun testo"
+" di retro copertina. Potete trovare una copia del GFDL qui <_:ulink-1/> o "
+"nel file COPYING-DOCS distribuito con questo manuale."
+
+#. (itstool) path: legalnotice/para
+#: C/legal.xml:12
+msgid ""
+"This manual is part of a collection of MATE manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in"
+" section 6 of the license."
+msgstr ""
+"Questo manuale fa parte di una raccolta di manuali MATE distribuita in "
+"conformità con la GFDL. Per poter distribuire questo manuale separatamente, "
+"è necessario inserirvi una copia della licenza, come descritto nella sezione"
+" 6 della licenza."
+
+#. (itstool) path: legalnotice/para
+#: C/legal.xml:19
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any MATE "
+"documentation, and the members of the MATE Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"Molti dei nomi usati dalle aziende per distinguere i propri prodotti e "
+"servizi sono rivendicati come marchi registrati. Quando questi nomi "
+"compaiono nella documentazione di MATE, e i partecipanti al MATE "
+"Documentation Project sono consapevoli del loro utilizzo, essi vengono "
+"scritti in lettere maiuscole o con l'iniziale maiuscola."
+
+#. (itstool) path: listitem/para
+#: C/legal.xml:35
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"IL DOCUMENTO VIENE FORNITO SENZA GARANZIE DI ALCUN TIPO, ESPLICITE O "
+"IMPLICITE, INCLUSE, MA SENZA LIMITAZIONE, LE GARANZIE ATTESTANTI CHE IL "
+"DOCUMENTO O LE SUE VERSIONI MODIFICATE SIANO PRIVI DI DIFETTI, "
+"COMMERCIALIZZABILI, IDONEI A UN DETERMINATO SCOPO O CHE NON VIOLINO DIRITTI "
+"DI TERZI. SI DECLINA QUALUNQUE RESPONSABILITÀ RIGUARDO AI RISCHI INERENTI LA"
+" QUALITÀ, L'ACCURATEZZA E LE PRESTAZIONI DEL DOCUMENTO O DI UNA SUA VERSIONE"
+" MODIFICATA. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA DOVESSERO "
+"PRESENTARE QUALUNQUE TIPO DI DIFETTO, IL COSTO DI EVENTUALI INTERVENTI DI "
+"ASSISTENZA, RIPARAZIONE O CORREZIONE SARÀ A CARICO DELL'UTENTE (NON DEL "
+"REDATTORE INIZIALE, DELL'AUTORE O DI ALTRI COLLABORATORI). QUESTA "
+"LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO"
+" DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I "
+"TERMINI DI QUESTA LIMITAZIONE DELLA GARANZIA; E"
+
+#. (itstool) path: listitem/para
+#: C/legal.xml:55
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
+" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
+" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
+" POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"IN NESSUNA CIRCOSTANZA E PER NESSUNA RAGIONE LEGALE, INCLUSI I PRINCIPI DI "
+"COLPA (INCLUSA LA NEGLIGENZA), ACCORDO CONTRATTUALE O ALTRO, SARÀ POSSIBILE "
+"CONSIDERARE L'AUTORE, IL REDATTORE INIZIALE, GLI ALTRI COLLABORATORI, "
+"QUALUNQUE DISTRIBUTORE DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA O "
+"QUALUNQUE FORNITORE DELLE PERSONE CITATE, RESPONSABILE NEI CONFRONTI DI "
+"QUALUNQUE PERSONA PER DANNI DIRETTI, INDIRETTI, SPECIALI, INCIDENTALI O "
+"CONSEGUENTI DI QUALUNQUE NATURA, INCLUSI, MA SENZA LIMITAZIONE, I DANNI PER "
+"PERDITA DI AVVIAMENTO, INTERRUZIONE DEL LAVORO, GUASTO O MALFUNZIONAMENTO "
+"DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO"
+" DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE "
+"CITATE FOSSERO STATE INFORMATE DELLA POSSIBILITÀ DI TALI DANNI."
+
+#. (itstool) path: legalnotice/para
+#: C/legal.xml:28
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<_:orderedlist-1/>"
+msgstr ""
+"IL DOCUMENTO E LE VERSIONI MODIFICATE DEL DOCUMENTO VENGONO RILASCIATE "
+"SECONDO I TERMINI DELLA GNU FREE DOCUMENTATION LICENSE TENENDO PRESENTE CHE:"
+" <_:orderedlist-1/>"

@@ -1,0 +1,809 @@
+# 
+# Translators:
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2020
+# Stefano Karapetsas <stefano@karapetsas.com>, 2020
+# Tubuntu <tubuntu@testimonium.be>, 2020
+# clefebvre <clement.lefebvre@linuxmint.com>, 2020
+# Étienne Deparis <etienne@depar.is>, 2020
+# Wolfgang Ulbrich <mate@raveit.de>, 2020
+# Xorg, 2020
+# Guillaume Fayard <guillaume2.fayard@wanadoo.fr>, 2020
+# Laurent Napias <tamplan+transifex@free.fr>, 2020
+# Laurent Napias, 2020
+# Jerom Turible <jeromet9208@gmail.com>, 2020
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2020-01-10 17:58+0100\n"
+"PO-Revision-Date: 2020-02-15 11:29+0000\n"
+"Last-Translator: Jerom Turible <jeromet9208@gmail.com>, 2020\n"
+"Language-Team: French (https://www.transifex.com/mate/teams/13566/fr/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
+msgctxt "_"
+msgid "translator-credits"
+msgstr ""
+"Contributeurs au projet MATE :\n"
+"Voir https://www.transifex.com/mate/teams/13566/fr/\n"
+"\n"
+"Contributeurs au projet GNOME :\n"
+"Vincent Renardias <vincent@ldsol.com>, 1998-2000.\n"
+"Joaquim Fellmann <joaquim@hrnet.fr>, 2000.\n"
+"Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.\n"
+"Christophe Fergeau <teuf@users.sourceforge.net>, 2002-2003.\n"
+"Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.\n"
+"Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.\n"
+"Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.\n"
+"Yannick Tailliez <ytdispatch-libre@yahoo.com>, 2008.\n"
+"Claude Paroz <claude@2xlibre.net>, 2008-2010.\n"
+"Gérard Baylard <gerard dot b at bbox dot fr>, 2010"
+
+#. (itstool) path: articleinfo/title
+#: C/index.docbook:21
+msgid "Character Palette Manual"
+msgstr "Manuel de l'applet palette de caractères"
+
+#. (itstool) path: abstract/para
+#: C/index.docbook:23
+msgid ""
+"Character Palette provides a convenient way to access characters that are "
+"not on your keyboard, such as accented characters, mathematical symbols, "
+"special symbols, and punctuation marks."
+msgstr ""
+"Palette de caractères permet d'accéder aisément aux caractères absents de "
+"votre clavier, tels que les caractères accentués, les symboles "
+"mathématiques, les caractères spéciaux et les signes de ponctuation."
+
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:27
+msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
+msgstr "<year>2015-2020</year> <holder>Projet de documentation MATE</holder>"
+
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:31
+msgid "<year>2005</year> <holder>Davyd Madeley</holder>"
+msgstr "<year>2005</year> <holder>Davyd Madeley</holder>"
+
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:35
+msgid "<year>2004</year> <holder>Angela Boyle</holder>"
+msgstr "<year>2004</year> <holder>Angela Boyle</holder>"
+
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:39
+msgid ""
+"<year>2002</year> <year>2003</year> <year>2004</year> <holder>Sun "
+"Microsystems</holder>"
+msgstr ""
+"<year>2002</year> <year>2003</year> <year>2004</year> <holder>Sun "
+"Microsystems</holder>"
+
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:44
+msgid "<year>2000</year> <holder>Dan Mueth</holder>"
+msgstr "<year>2000</year> <holder>Dan Mueth</holder>"
+
+#. (itstool) path: publisher/publishername
+#. (itstool) path: revdescription/para
+#: C/index.docbook:49 C/index.docbook:110
+msgid "MATE Documentation Project"
+msgstr "Projet de documentation MATE"
+
+#. (itstool) path: publisher/publishername
+#. (itstool) path: revdescription/para
+#: C/index.docbook:52 C/index.docbook:125 C/index.docbook:133
+#: C/index.docbook:141 C/index.docbook:149 C/index.docbook:157
+#: C/index.docbook:165 C/index.docbook:173 C/index.docbook:182
+msgid "GNOME Documentation Project"
+msgstr "Projet de documentation GNOME"
+
+#. (itstool) path: authorgroup/author
+#: C/index.docbook:58
+msgid "<firstname>MATE Documentation Team</firstname> <surname/>"
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: C/index.docbook:62
+msgid ""
+"<firstname>Sun</firstname> <surname>GNOME Documentation Team</surname> "
+"<affiliation> <orgname>Sun Microsystems</orgname> </affiliation>"
+msgstr ""
+"<firstname>Sun</firstname> <surname>GNOME Documentation Team</surname> "
+"<affiliation> <orgname>Sun Microsystems</orgname> </affiliation>"
+
+#. (itstool) path: authorgroup/author
+#: C/index.docbook:69
+msgid ""
+"<firstname>Dan</firstname> <surname>Mueth</surname> <affiliation> "
+"<orgname>GNOME Documentation Project</orgname> </affiliation> "
+"<email>d-mueth@uchicago.edu</email>"
+msgstr ""
+
+#. (itstool) path: authorgroup/author
+#: C/index.docbook:77
+msgid ""
+"<firstname>Angela</firstname> <surname>Boyle</surname> <affiliation> "
+"<orgname>GNOME Documentation Project</orgname> </affiliation>"
+msgstr ""
+
+#. (itstool) path: authorgroup/editor
+#: C/index.docbook:84
+msgid ""
+"<firstname>Shaun</firstname> <surname>McCance</surname> <affiliation> "
+"<orgname>GNOME Documentation Project</orgname> </affiliation> "
+"<email>shaunm@gnome.org</email>"
+msgstr ""
+"<firstname>Shaun</firstname> <surname>McCance</surname> <affiliation> "
+"<orgname>GNOME Documentation Project</orgname> </affiliation> "
+"<email>shaunm@gnome.org</email>"
+
+#. (itstool) path: authorgroup/editor
+#: C/index.docbook:92
+msgid ""
+"<firstname>Davyd</firstname> <surname>Madeley</surname> <affiliation> "
+"<orgname>GNOME Project</orgname> </affiliation> "
+"<email>davyd@madeley.id.au</email>"
+msgstr ""
+
+#. (itstool) path: revdescription/para
+#: C/index.docbook:109
+msgid "MATE Documentation Team"
+msgstr "Équipe de documentation MATE"
+
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:105
+msgid ""
+"<revnumber>Version 2.11</revnumber> <date>July 2015</date> "
+"<_:revdescription-1/>"
+msgstr ""
+
+#. (itstool) path: revdescription/para
+#: C/index.docbook:117
+msgid "Davyd Madeley"
+msgstr "Davyd Madeley"
+
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:113
+msgid ""
+"<revnumber>Version 2.10</revnumber> <date>March 2005</date> "
+"<_:revdescription-1/>"
+msgstr ""
+
+#. (itstool) path: revdescription/para
+#: C/index.docbook:124
+msgid "Angela Boyle"
+msgstr "Angela Boyle"
+
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:120
+msgid ""
+"<revnumber>Version 2.8</revnumber> <date>Unknown</date> "
+"<_:revdescription-1/>"
+msgstr ""
+
+#. (itstool) path: revdescription/para
+#: C/index.docbook:132 C/index.docbook:140 C/index.docbook:148
+#: C/index.docbook:156 C/index.docbook:164 C/index.docbook:172
+msgid "Sun Microsystems"
+msgstr "Sun Microsystems"
+
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:128
+msgid ""
+"<revnumber>Character Palette Applet Manual V2.6</revnumber> <date>August "
+"2004</date> <_:revdescription-1/>"
+msgstr ""
+
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:136
+msgid ""
+"<revnumber>Character Palette Applet Manual V2.4</revnumber> <date>August "
+"2003</date> <_:revdescription-1/>"
+msgstr ""
+
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:144
+msgid ""
+"<revnumber>Character Palette Applet Manual V2.3</revnumber> <date>October "
+"2002</date> <_:revdescription-1/>"
+msgstr ""
+
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:152
+msgid ""
+"<revnumber>Character Palette Applet Manual V2.2</revnumber> <date>August "
+"2002</date> <_:revdescription-1/>"
+msgstr ""
+
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:160
+msgid ""
+"<revnumber>Character Palette Applet Manual V2.1</revnumber> <date>July "
+"2002</date> <_:revdescription-1/>"
+msgstr ""
+
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:168
+msgid ""
+"<revnumber>Character Palette Applet Manual V2.0</revnumber> <date>March "
+"2002</date> <_:revdescription-1/>"
+msgstr ""
+
+#. (itstool) path: revdescription/para
+#: C/index.docbook:180
+msgid "Dan Mueth <email>d-mueth@uchicago.edu</email>"
+msgstr "Dan Mueth <email>d-mueth@uchicago.edu</email>"
+
+#. (itstool) path: revhistory/revision
+#: C/index.docbook:176
+msgid ""
+"<revnumber>Character Picker Applet</revnumber> <date>2000</date> "
+"<_:revdescription-1/>"
+msgstr ""
+
+#. (itstool) path: articleinfo/releaseinfo
+#: C/index.docbook:186
+msgid "This manual describes version 1.10.2 of Character Palette."
+msgstr ""
+
+#. (itstool) path: legalnotice/title
+#: C/index.docbook:189
+msgid "Feedback"
+msgstr "Votre avis"
+
+#. (itstool) path: legalnotice/para
+#: C/index.docbook:190
+msgid ""
+"To report a bug or make a suggestion regarding the Character Palette "
+"application or this manual, follow the directions in the <ulink url=\"help"
+":mate-user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+msgstr ""
+
+#. (itstool) path: article/indexterm
+#: C/index.docbook:197
+msgid "<primary>Character Palette</primary>"
+msgstr ""
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:202
+msgid "Introduction"
+msgstr "Introduction"
+
+#. (itstool) path: figure/title
+#: C/index.docbook:205
+msgid "Character Palette"
+msgstr "Applet palette de caractères"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:209
+msgctxt "_"
+msgid ""
+"external ref='figures/charpalette_applet.png' "
+"md5='be3ebce4695652b9bc56b604ad7fdb6e'"
+msgstr ""
+
+#. (itstool) path: screenshot/mediaobject
+#: C/index.docbook:207
+msgid ""
+"<imageobject><imagedata fileref=\"figures/charpalette_applet.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Character "
+"Palette</phrase> </textobject>"
+msgstr ""
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:214
+msgid ""
+"The <application>Character Palette</application> provides a convenient way "
+"to access characters that are not on your keyboard, such as accented "
+"characters, mathematical symbols, special symbols, and punctuation marks. "
+"You can insert characters from the applet into text strings, for example in "
+"text documents or at the command line. You can customize the contents of the"
+" applet to suit your requirements."
+msgstr ""
+"L'applet <application>Palette de caractères</application> permet d'accéder "
+"aisément aux caractères absents de votre clavier, tels que les caractères "
+"accentués, les symboles mathématiques, les caractères spéciaux et les signes"
+" de ponctuation. Vous pouvez insérer des caractères dans des chaînes de "
+"texte depuis l'applet, par exemple dans des documents textes ou dans une "
+"ligne de commande. Vous pouvez personnaliser le contenu de l'applet en "
+"fonction de vos besoins."
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:221
+msgid ""
+"<application>Character Palette</application> supports the UTF-8 character "
+"encoding so you can use the palette to display or copy any Unicode "
+"character."
+msgstr ""
+"<application>Palette de caractères</application> prend en charge le codage "
+"UTF-8 ainsi vous pouvez utiliser la palette pour afficher ou copier tous les"
+" caractères Unicode."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:226
+msgid "To Add Character Palette to a Panel"
+msgstr "Ajout de Palette de caractères à un tableau de bord"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:227
+msgid ""
+"To add <application>Character Palette</application> to a panel, perform the "
+"following steps:"
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:233
+msgid "Right-click on the panel."
+msgstr "Cliquez sur le tableau de bord avec le bouton droit de la souris."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:238
+msgid "Choose <guimenuitem>Add to Panel</guimenuitem>."
+msgstr "Choisissez <guimenuitem>Ajouter au tableau de bord</guimenuitem>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:243
+msgid ""
+"Scroll down the list of items in the <guilabel>Add to Panel</guilabel> "
+"dialog, then select <guilabel>Character Palette</guilabel>."
+msgstr ""
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:249
+msgid "Click <guibutton>Add</guibutton>."
+msgstr "Cliquez sur <guibutton>Ajouter</guibutton>."
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:258
+msgid "Getting Characters"
+msgstr "Obtention des caractères"
+
+#. (itstool) path: sect1/para
+#: C/index.docbook:259
+msgid ""
+"When you add <application>Character Palette</application> to a panel for the"
+" first time, the application displays a default palette of characters. You "
+"can select a character from the default palette, or you can select a "
+"character from predefined palettes of characters. Each predefined palette of"
+" characters is associated with a standard character on your keyboard."
+msgstr ""
+"Lorsque vous ajoutez <application>Palette de caractères</application> à un "
+"tableau de bord pour la première fois, l'application affiche une palette de "
+"caractères par défaut. Vous pouvez sélectionner un caractère depuis cette "
+"palette, ou depuis d'autres palettes de caractères prédéfinies. Chaque "
+"palette prédéfinie est associée à un caractère standard de votre clavier."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:262
+msgid "To Select a Character"
+msgstr "Sélection d'un caractère"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:263
+msgid ""
+"To select a character from the palette and insert the character into a text "
+"string, perform the following steps:"
+msgstr ""
+"Pour sélectionner un caractère de la palette et l'insérer dans une chaîne de"
+" texte, procédez comme suit :"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:265
+msgid ""
+"In the palette, click on the character that you require. The character "
+"button is pressed in to indicate that the character is selected."
+msgstr ""
+"Dan la palette, cliquez sur le caractère que vous souhaitez. Le bouton du "
+"caractère est enfoncé pour indiquer qu'il est sélectionné."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:269
+msgid ""
+"Point to the location in an application where you want to put the character "
+"and middle-click to insert the character. You can also paste the character "
+"into the application if the application allows you to paste from the "
+"clipboard."
+msgstr ""
+"Placez le curseur là où vous souhaitez insérer le caractère et appuyez sur "
+"le bouton central de la souris. Vous pouvez également coller le caractère "
+"dans l'application si celle-ci vous permet de coller à partir du presse-"
+"papier."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:274
+msgid ""
+"You can repeat the insertion using middle-click as many times as you want "
+"until you either deselect the character or select text in another "
+"application. You can continue pasting the character from the clipboard until"
+" you either deselect the character or copy to the clipboard from another "
+"application."
+msgstr ""
+"Vous pouvez répéter l'insertion à l'aide du bouton central de la souris "
+"autant de fois que que vous le voulez jusqu'à ce que vous désélectionniez le"
+" caractère ou que vous sélectionnez du texte dans un autre application. Vous"
+" pouvez continuer à coller le caractère depuis le presse-papier jusqu'à ce "
+"que vous désélectionniez le caractère ou que vous copiez dans le presse-"
+"papier à partir d'une autre application."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:282
+msgid "To deselect the character, click it again or click another character."
+msgstr ""
+"Pour désélectionner le caractère, cliquez à nouveau dessus ou cliquez sur un"
+" autre caractère."
+
+#. (itstool) path: note/para
+#: C/index.docbook:284
+msgid "Some applications may not allow you to paste certain characters."
+msgstr ""
+"Certaines applications ne vous permettent pas de coller certains caractères."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:288
+msgid "To Display a Predefined Palette of Characters"
+msgstr "Affichage d'une palette de caractères prédéfinie"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:289
+msgid ""
+"You can change the characters that are displayed in the application from the"
+" default palette to a predefined palette of characters. To display a palette"
+" of predefined characters, perform the following steps:"
+msgstr ""
+"Vous pouvez changer les caractères affichés dans l'application depuis la "
+"palette de caractères par défaut à une palette prédéfinie. Pour afficher une"
+" palette de caractères prédéfinie, procédez comme suit :"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:292
+msgid ""
+"Click on the <guibutton>Available palettes</guibutton> button on the "
+"application, the down arrow on the left."
+msgstr ""
+"Cliquez sur le bouton <guibutton>Palettes disponibles</guibutton> de "
+"l'applet, la flèche vers le bas sur la gauche."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:295
+msgid "Click on the palette that you want to display."
+msgstr "Cliquez sur la palette à afficher."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:298
+msgid ""
+"You can select the character that you require from the palette of characters"
+" that is displayed in the application, then insert the character into your "
+"text string."
+msgstr ""
+"Vous pouvez sélectionner le caractère que vous souhaitez depuis la palette "
+"de caractères puis l'insérer dans votre chaîne de texte."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:302
+msgid "Characters' Keys"
+msgstr "Touches de caractères"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:303
+msgid ""
+"The following chart lists keyboard characters and their associated groups of"
+" characters. The keyboard characters are listed in the first column of each "
+"section in the chart. The character groups that are associated with each "
+"keyboard character are shown in the other columns."
+msgstr ""
+"Le tableau suivant liste les caractères du clavier associés à des groupes de"
+" caractères. Les caractères du clavier sont répertoriés dans la première "
+"colonne de chaque partie du tableau. Les groupes de caractères associés sont"
+" affichés dans les autres colonnes."
+
+#. (itstool) path: figure/title
+#: C/index.docbook:305
+msgid "Character Groups Associated With Keyboard Keys"
+msgstr "Groupes de caractères associés aux touches du clavier"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:310
+msgctxt "_"
+msgid ""
+"external ref='figures/charpick_characters.png' "
+"md5='27cda1064725bd9127561255f0590b83'"
+msgstr ""
+
+#. (itstool) path: screenshot/mediaobject
+#: C/index.docbook:307
+msgid ""
+"<imageobject> <imagedata fileref=\"figures/charpick_characters.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows character groups "
+"associated with various keyboard keys. </phrase> </textobject>"
+msgstr ""
+
+#. (itstool) path: sect1/title
+#: C/index.docbook:323
+msgid "Customizing Character Palette"
+msgstr "Personnalisation de Palette de caractères"
+
+#. (itstool) path: figure/title
+#: C/index.docbook:325
+msgid "Character Palette Preferences"
+msgstr "Préférences de la palette de caractères"
+
+#. (itstool) path: imageobject/imagedata
+#. This is a reference to an external file such as an image or video. When
+#. the file changes, the md5 hash will change to let you know you need to
+#. update your localized copy. The msgstr is not used at all. Set it to
+#. whatever you like once you have updated your copy of the file.
+#: C/index.docbook:329
+msgctxt "_"
+msgid ""
+"external ref='figures/charpick-preferences.png' "
+"md5='ba55588e1ebe38cfc3d2b7bc7c2b023f'"
+msgstr ""
+
+#. (itstool) path: screenshot/mediaobject
+#: C/index.docbook:327
+msgid ""
+"<imageobject><imagedata fileref=\"figures/charpick-preferences.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Character Palette "
+"Preferences</phrase> </textobject>"
+msgstr ""
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:334
+msgid "Configuring Palettes"
+msgstr "Configuration des palettes"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:335
+msgid ""
+"To configure <application>Character Palette</application>, right-click on "
+"the applet, then choose <guimenuitem>Preferences</guimenuitem>. The "
+"<guilabel>Character Palette Preferences</guilabel> dialog contains the "
+"<guilabel>Palettes</guilabel> list box, which lists the palettes that are "
+"available from the applet. To close the <guilabel>Character Palette "
+"Preferences</guilabel> dialog, click <guibutton>Close</guibutton>."
+msgstr ""
+"Pour configurer <application>Palette de caractères</application>, cliquez "
+"dessus avec le bouton droit de la souris, puis sélectionnez "
+"<guimenuitem>Préférences</guimenuitem>. La boîte de dialogue "
+"<guilabel>Préférences de la palette de caractères</guilabel> contient la "
+"liste <guilabel>Palettes</guilabel> qui répertorie les palettes disponibles "
+"de l'applet. Pour fermer la boîte de dialogue <guilabel>Préférences de la "
+"palette de caractères</guilabel>, cliquez sur le bouton "
+"<guibutton>Fermer</guibutton>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:337
+msgid ""
+"To add a new palette to the applet, click on the <guibutton>Add</guibutton> "
+"button. See <xref linkend=\"charpick-default-new\"/> for more information."
+msgstr ""
+"Pour ajouter une nouvelle palette à l'applet, cliquez sur le bouton "
+"<guibutton>Ajouter</guibutton>. Reportez-vous à la section <xref linkend"
+"=\"charpick-default-new\"/> pour plus d'informations."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:338
+msgid ""
+"To delete a palette from the applet, select the palette, then click on the "
+"<guibutton>Delete</guibutton> button."
+msgstr ""
+"Pour supprimer une palette de l'applet, sélectionnez la plaette, puis "
+"cliquez sur le bouton <guibutton>Supprimer</guibutton>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:339
+msgid ""
+"To modify a palette, select the palette, then click on the "
+"<guibutton>Edit</guibutton> button. Modify the palette in the <guilabel>Edit"
+" Palette</guilabel> dialog, then click <guibutton>OK</guibutton>."
+msgstr ""
+"Pour modifier une palette de l'applet, sélectionnez la palette, puis cliquez"
+" sur le bouton <guibutton>Modifier</guibutton>. Modifiez la palette dans la "
+"boîte de dialogue <guilabel>Modifie la palette</guilabel>, puis cliquez sur "
+"<guibutton>Valider</guibutton>."
+
+#. (itstool) path: sect2/title
+#: C/index.docbook:343
+msgid "Setting Up a New Palette of Characters"
+msgstr "Définition d'une nouvelle palette de caractères"
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:344
+msgid ""
+"You can use a character selection application such as <application>Character"
+" Map</application> to set up a new palette of characters. For example, to "
+"create a new palette with <application>Character Map</application>, perform "
+"the following steps:"
+msgstr ""
+"Vous pouvez utiliser une application de sélection de caractères, telle que "
+"<application>Table de caractères</application> pour constituer une nouvelle "
+"palette. Par exemple, pour créer une nouvelle palette à l'aide de "
+"<application>Table de caractères</application>, procédez comme suit :"
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:347
+msgid ""
+"Right-click on the applet, then choose "
+"<guimenuitem>Preferences</guimenuitem>. The <guilabel>Character Palette "
+"Preferences</guilabel> dialog is displayed."
+msgstr ""
+"Cliquez avec le bouton-droit de la souris sur l'applet, puis choisissez "
+"<guimenuitem>Préférences</guimenuitem>. La boîte de dialogue "
+"<guilabel>Préférences de la palette de caractères</guilabel> s'affiche."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:350
+msgid ""
+"Click on the <guibutton>Add</guibutton> button and the <guilabel>Add "
+"Palette</guilabel> dialog is displayed."
+msgstr ""
+"Cliquez sur le bouton <guibutton>Ajouter</guibutton> et la boîte de dialogue"
+" <guilabel>Ajoute une palette</guilabel> s'affiche."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:353
+msgid ""
+"Open <application>Character Map</application>, then select the characters "
+"that you want to display in the new palette. You can select up to 25 "
+"characters."
+msgstr ""
+"Ouvrez <application>Table de caractères</application>, puis sélectionnez les"
+" caractères à afficher dans la nouvelle palette. Vous pouvez en sélectionner"
+" jusqu'à 25."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:356
+msgid ""
+"Copy the contents of the <guilabel>Text to copy</guilabel> text box from "
+"<application>Character Map</application> to the <guilabel>Palette</guilabel>"
+" text box in the <guilabel>Add Palette</guilabel> window."
+msgstr ""
+"Copiez le contenu de la zone de texte <guilabel>Texte à copier</guilabel> de"
+" <application>Table de caractères</application> vers la zone de texte "
+"<guilabel>Palette</guilabel> de la fenêtre <guilabel>Ajoute une "
+"palette</guilabel>."
+
+#. (itstool) path: listitem/para
+#: C/index.docbook:359
+msgid "Click <guibutton>OK</guibutton>."
+msgstr "Cliquez sur <guibutton>Valider</guibutton>."
+
+#. (itstool) path: sect2/para
+#: C/index.docbook:362
+msgid ""
+"<application>Character Palette</application> adds the new palette of "
+"characters to the list of available palettes."
+msgstr ""
+"<application>Palette de caractères</application> ajoute la nouvelle palette "
+"de caractères à la liste des palettes disponibles."
+
+#. (itstool) path: para/ulink
+#: C/legal.xml:9
+msgid "link"
+msgstr "lien"
+
+#. (itstool) path: legalnotice/para
+#: C/legal.xml:2
+msgid ""
+"Permission is granted to copy, distribute and/or modify this document under "
+"the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
+"later version published by the Free Software Foundation with no Invariant "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
+" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"with this manual."
+msgstr ""
+"Permission vous est donnée de copier, distribuer et/ou modifier ce document "
+"selon les termes de la Licence GNU Free Documentation License, Version 1.1 "
+"ou ultérieure publiée par la Free Software Foundation sans section "
+"inaltérable, sans texte de première page de couverture ni texte de dernière "
+"page de couverture. Vous trouverez un exemplaire de cette licence en suivant"
+" ce <_:ulink-1/> ou dans le fichier COPYING-DOCS fourni avec le présent "
+"manuel."
+
+#. (itstool) path: legalnotice/para
+#: C/legal.xml:12
+msgid ""
+"This manual is part of a collection of MATE manuals distributed under the "
+"GFDL. If you want to distribute this manual separately from the collection, "
+"you can do so by adding a copy of the license to the manual, as described in"
+" section 6 of the license."
+msgstr ""
+"Ce manuel fait partie de la collection de manuels MATE distribués selon les "
+"termes de la licence de documentation libre GNU. Si vous souhaitez "
+"distribuer ce manuel indépendamment de la collection, vous devez joindre un "
+"exemplaire de la licence au document, comme indiqué dans la section 6 de "
+"celle-ci."
+
+#. (itstool) path: legalnotice/para
+#: C/legal.xml:19
+msgid ""
+"Many of the names used by companies to distinguish their products and "
+"services are claimed as trademarks. Where those names appear in any MATE "
+"documentation, and the members of the MATE Documentation Project are made "
+"aware of those trademarks, then the names are in capital letters or initial "
+"capital letters."
+msgstr ""
+"La plupart des noms utilisés par les entreprises pour distinguer leurs "
+"produits et services sont des marques déposées. Lorsque ces noms "
+"apparaissent dans la documentation MATE et que les membres du projet de "
+"Documentation MATE sont informés de l'existence de ces marques déposées, "
+"soit ces noms entiers, soit leur première lettre est en majuscule."
+
+#. (itstool) path: listitem/para
+#: C/legal.xml:35
+msgid ""
+"DOCUMENT IS PROVIDED ON AN \"AS IS\" BASIS, WITHOUT WARRANTY OF ANY KIND, "
+"EITHER EXPRESSED OR IMPLIED, INCLUDING, WITHOUT LIMITATION, WARRANTIES THAT "
+"THE DOCUMENT OR MODIFIED VERSION OF THE DOCUMENT IS FREE OF DEFECTS "
+"MERCHANTABLE, FIT FOR A PARTICULAR PURPOSE OR NON-INFRINGING. THE ENTIRE "
+"RISK AS TO THE QUALITY, ACCURACY, AND PERFORMANCE OF THE DOCUMENT OR "
+"MODIFIED VERSION OF THE DOCUMENT IS WITH YOU. SHOULD ANY DOCUMENT OR "
+"MODIFIED VERSION PROVE DEFECTIVE IN ANY RESPECT, YOU (NOT THE INITIAL "
+"WRITER, AUTHOR OR ANY CONTRIBUTOR) ASSUME THE COST OF ANY NECESSARY "
+"SERVICING, REPAIR OR CORRECTION. THIS DISCLAIMER OF WARRANTY CONSTITUTES AN "
+"ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
+"OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
+msgstr ""
+"LE PRÉSENT DOCUMENT EST FOURNI « TEL QUEL », SANS AUCUNE GARANTIE, EXPRESSE "
+"OU IMPLICITE, Y COMPRIS, ET SANS LIMITATION, LES GARANTIES DE BONNE QUALITÉ "
+"MARCHANDE OU D'APTITUDE À UN EMPLOI PARTICULIER OU AUTORISÉ DU DOCUMENT OU "
+"DE SA VERSION MODIFIÉE. L'UTILISATEUR ASSUME TOUT RISQUE RELATIF À LA "
+"QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE SA VERSION DE"
+" MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT DÉFECTUEUSE, "
+"L'UTILISATEUR (ET NON LE RÉDACTEUR INITIAL, L'AUTEUR, NI TOUT AUTRE "
+"PARTICIPANT) ENDOSSERA LES COÛTS DE TOUTE INTERVENTION, RÉPARATION OU "
+"CORRECTION NÉCESSAIRE. CETTE DÉNÉGATION DE RESPONSABILITÉ CONSTITUE UNE "
+"PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE"
+" SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ "
+"SOUS CETTE DÉNÉGATION DE RESPONSABILITÉ ; "
+
+#. (itstool) path: listitem/para
+#: C/legal.xml:55
+msgid ""
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
+" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
+"DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
+"FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
+"ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
+" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
+" POSSIBILITY OF SUCH DAMAGES."
+msgstr ""
+"EN AUCUNE CIRCONSTANCE ET SOUS AUCUNE INTERPRÉTATION DE LA LOI, QU'IL "
+"S'AGISSE DE RESPONSABILITÉ CIVILE (Y COMPRIS LA NÉGLIGENCE), CONTRACTUELLE "
+"OU AUTRE, L'AUTEUR, LE RÉDACTEUR INITIAL, TOUT PARTICIPANT ET TOUT "
+"DISTRIBUTEUR DE CE DOCUMENT OU DE SA VERSION DE MISE À JOUR AINSI QUE TOUT "
+"FOURNISSEUR DE QUELQUE PARTIE QUE CE SOIT NE POURRONT ÊTRE TENUS "
+"RESPONSABLES À L'ÉGARD DE QUICONQUE POUR TOUT DOMMAGE DIRECT, INDIRECT, "
+"PARTICULIER OU ACCIDENTEL DE TOUT TYPE Y COMPRIS, SANS LIMITATION, LES "
+"DOMMAGES LIÉS À LA PERTE DE CLIENTÈLE, AUX ARRÊTS DE TRAVAIL, AUX "
+"DÉFAILLANCES ET AUX DYSFONCTIONNEMENTS INFORMATIQUES OU TOUT AUTRE DOMMAGE "
+"OU PERTE LIÉE À L'UTILISATION DU PRÉSENT DOCUMENT ET DE SES VERSIONS DE MISE"
+" À JOUR, ET CE MÊME SI CES PARTIES ONT ÉTÉ INFORMÉES DE LA POSSIBILITÉ DE "
+"TELS DOMMAGES."
+
+#. (itstool) path: legalnotice/para
+#: C/legal.xml:28
+msgid ""
+"DOCUMENT AND MODIFIED VERSIONS OF THE DOCUMENT ARE PROVIDED UNDER THE TERMS "
+"OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
+"<_:orderedlist-1/>"
+msgstr ""
+"CE DOCUMENT ET SES VERSIONS MODIFIEES SONT FOURNIS SELON LES TERMES DE LA "
+"LICENCE GNU FREE DOCUMENTATION EN COMPRENANT QUE : <_:orderedlist-1/>"

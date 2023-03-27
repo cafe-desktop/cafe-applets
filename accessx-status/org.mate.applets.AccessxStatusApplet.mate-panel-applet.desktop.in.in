@@ -1,0 +1,17 @@
+[Applet Factory]
+Id=AccessxStatusAppletFactory
+Location=@LIBEXECDIR@/accessx-status-applet
+Name=AccessX Status Applet Factory
+Description=Keyboard Accessibility Status Applet Factory
+
+[AccessxStatusApplet]
+Name=Keyboard Accessibility Status
+Description=Shows the status of keyboard accessibility features
+# Translators: Do NOT translate or transliterate this text (this is an icon file name)!
+Icon=preferences-desktop-accessibility
+MateComponentId=OAFIID:MATE_AccessxStatusApplet
+X-MATE-Bugzilla-Bugzilla=MATE
+X-MATE-Bugzilla-Product=mate-applets
+X-MATE-Bugzilla-Component=keyboard-accessibility (accessx-status)
+X-MATE-Bugzilla-Version=@VERSION@
+X-MATE-Bugzilla-OtherBinaries=accessx-status-applet
