@@ -29,7 +29,7 @@ msgstr ""
 "Yoo Duk Nam https://launchpad.net/~yoo2001818\n"
 "onlyeriko https://launchpad.net/~onlyeriko\n"
 "Seong-ho Cho <darkcircle.0426@gmail.com>\n"
-"MATE Desktop Environment Team <https://www.transifex.com/cafe/teams/13566/ko/>"
+"CAFE Desktop Environment Team <https://www.transifex.com/cafe/teams/13566/ko/>"
 
 #. (itstool) path: articleinfo/title
 #: C/index.docbook:23
@@ -44,7 +44,7 @@ msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:27
-msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
+msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
 msgstr ""
 
 #. (itstool) path: articleinfo/copyright
@@ -54,7 +54,7 @@ msgstr ""
 
 #. (itstool) path: publisher/publishername
 #: C/index.docbook:44
-msgid "MATE Documentation Project"
+msgid "CAFE Documentation Project"
 msgstr "마테 문서 프로젝트"
 
 #. (itstool) path: publisher/publishername
@@ -65,8 +65,8 @@ msgstr "그놈 문서 프로젝트"
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:53
 msgid ""
-"<firstname>MATE Documentation Project</firstname> <surname/> <affiliation> "
-"<orgname>MATE Desktop</orgname> </affiliation>"
+"<firstname>CAFE Documentation Project</firstname> <surname/> <affiliation> "
+"<orgname>CAFE Desktop</orgname> </affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
@@ -87,7 +87,7 @@ msgstr ""
 
 #. (itstool) path: revision/author
 #: C/index.docbook:96
-msgid "<firstname>MATE Documentation Project</firstname> <surname/>"
+msgid "<firstname>CAFE Documentation Project</firstname> <surname/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
@@ -139,7 +139,7 @@ msgstr "피드백"
 msgid ""
 "To report a bug or make a suggestion regarding the Netspeed Applet "
 "application or this manual, follow the directions in the <ulink url=\"help"
-":cafe-user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+":cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -561,7 +561,7 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
 msgid ""
-"This manual is part of a collection of MATE manuals distributed under the "
+"This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in"
 " section 6 of the license."
@@ -573,8 +573,8 @@ msgstr ""
 #: C/legal.xml:19
 msgid ""
 "Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any MATE "
-"documentation, and the members of the MATE Documentation Project are made "
+"services are claimed as trademarks. Where those names appear in any CAFE "
+"documentation, and the members of the CAFE Documentation Project are made "
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""

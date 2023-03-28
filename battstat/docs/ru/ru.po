@@ -76,8 +76,8 @@ msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:27
-msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
-msgstr "<year>2015—2020</year> <holder>Проект документирования MATE</holder>"
+msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
+msgstr "<year>2015—2020</year> <holder>Проект документирования CAFE</holder>"
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:31
@@ -107,8 +107,8 @@ msgstr ""
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
 #: C/index.docbook:62 C/index.docbook:133
-msgid "MATE Documentation Project"
-msgstr "Проект документирования MATE"
+msgid "CAFE Documentation Project"
+msgstr "Проект документирования CAFE"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
@@ -119,8 +119,8 @@ msgstr "Проект документирования GNOME"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:71
-msgid "<firstname>MATE Documentation Team</firstname> <surname/>"
-msgstr "<firstname>Команда документирования MATE</firstname> <surname/>"
+msgid "<firstname>CAFE Documentation Team</firstname> <surname/>"
+msgstr "<firstname>Команда документирования CAFE</firstname> <surname/>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:75
@@ -163,8 +163,8 @@ msgstr ""
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:132
-msgid "MATE Documentation Team"
-msgstr "Команда документирования MATE"
+msgid "CAFE Documentation Team"
+msgstr "Команда документирования CAFE"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:128
@@ -260,12 +260,12 @@ msgstr "Обратная связь"
 msgid ""
 "To report a bug or make a suggestion regarding the Battery Charge Monitor "
 "applet or this manual, follow the directions in the <ulink url=\"help:cafe-"
-"user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+"user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 "Чтобы сообщить об ошибке или внести предложение относительно апплета "
 "индикатора состояния батареи или этого руководства, следуйте указаниям на "
 "<ulink url=\"help:cafe-user-guide/feedback\" type=\"help\">странице обратной"
-" связи MATE</ulink>."
+" связи CAFE</ulink>."
 
 #. (itstool) path: article/indexterm
 #: C/index.docbook:194
@@ -421,11 +421,11 @@ msgstr "<xref linkend=\"battstat-troubleshooting\"/>;"
 #. (itstool) path: listitem/para
 #: C/index.docbook:294
 msgid ""
-"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">MATE mailing "
+"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">CAFE mailing "
 "lists</ulink>"
 msgstr ""
 "<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">Списки почтовой рассылки"
-" MATE</ulink>"
+" CAFE</ulink>"
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:306
@@ -542,8 +542,8 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:361
-msgid "The compact view is the default view for the monitor as of MATE 2.12."
-msgstr "Компактный вид используется по умолчанию, начиная с  MATE 2.12."
+msgid "The compact view is the default view for the monitor as of CAFE 2.12."
+msgstr "Компактный вид используется по умолчанию, начиная с  CAFE 2.12."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:367
@@ -583,11 +583,11 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:368
 msgid ""
-"The expanded view is old look from previous versions of MATE. It has the "
+"The expanded view is old look from previous versions of CAFE. It has the "
 "larger graphic for the battery as well as a separate graphic to indicate "
 "what state the battery is in. <_:figure-1/>"
 msgstr ""
-"Расширенный вид использовался в предыдущих версиях MATE. Здесь отображается "
+"Расширенный вид использовался в предыдущих версиях CAFE. Здесь отображается "
 "более крупная диаграмма заряда, так и отдельный значок, показывающий "
 "состояние батареи. <_:figure-1/>"
 
@@ -857,7 +857,7 @@ msgid ""
 "Select <guimenuitem>Configuration Editor</guimenuitem> from the "
 "<guimenu>Applications</guimenu> menu, under <guisubmenu>System "
 "Tools</guisubmenu>. Search for the key value "
-"<prompt>OAFIID:MATE_BattstatApplet</prompt> which should be located in the "
+"<prompt>OAFIID:CAFE_BattstatApplet</prompt> which should be located in the "
 "path <filename>/apps/panel/applets</filename>."
 msgstr ""
 
@@ -898,12 +898,12 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
 msgid ""
-"This manual is part of a collection of MATE manuals distributed under the "
+"This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in"
 " section 6 of the license."
 msgstr ""
-"Этот документ является частью документации MATE, распространяемой на "
+"Этот документ является частью документации CAFE, распространяемой на "
 "условиях лицензии GFDL. Если вы хотите распространять этот документ отдельно"
 " от общей документации, вы должны приложить копию лицензии к документу, как "
 "написано в части 6 лицензии."
@@ -912,14 +912,14 @@ msgstr ""
 #: C/legal.xml:19
 msgid ""
 "Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any MATE "
-"documentation, and the members of the MATE Documentation Project are made "
+"services are claimed as trademarks. Where those names appear in any CAFE "
+"documentation, and the members of the CAFE Documentation Project are made "
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
 "Некоторые имена и марки используются компаниями для обозначения их продуктов"
 " и услуг и являются торговыми марками. Там, где эти имена присутствуют в "
-"документации и где участники проекта документирования MATE знают об этом, "
+"документации и где участники проекта документирования CAFE знают об этом, "
 "имена выделяются заглавными буквами или начальной заглавной буквой."
 
 #. (itstool) path: listitem/para

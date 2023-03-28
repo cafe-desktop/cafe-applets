@@ -41,8 +41,8 @@ msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:27
-msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
-msgstr "<year>2015-2020</year> <holder>MATE-dokumentationsprojektet</holder>"
+msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
+msgstr "<year>2015-2020</year> <holder>CAFE-dokumentationsprojektet</holder>"
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:31
@@ -72,8 +72,8 @@ msgstr "<year>1999</year> <year>2000</year> <holder>Jorgen Pehrson</holder>"
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
 #: C/index.docbook:62 C/index.docbook:133
-msgid "MATE Documentation Project"
-msgstr "MATE-dokumentationsprojekt"
+msgid "CAFE Documentation Project"
+msgstr "CAFE-dokumentationsprojekt"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
@@ -84,8 +84,8 @@ msgstr "GNOME-dokumentationsprojekt"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:71
-msgid "<firstname>MATE Documentation Team</firstname> <surname/>"
-msgstr "<firstname>MATE-dokumentationsholdet</firstname> <surname/>"
+msgid "<firstname>CAFE Documentation Team</firstname> <surname/>"
+msgstr "<firstname>CAFE-dokumentationsholdet</firstname> <surname/>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:75
@@ -138,8 +138,8 @@ msgstr ""
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:132
-msgid "MATE Documentation Team"
-msgstr "MATE-dokumentationsholdet"
+msgid "CAFE Documentation Team"
+msgstr "CAFE-dokumentationsholdet"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:128
@@ -235,11 +235,11 @@ msgstr "Tilbagemelding"
 msgid ""
 "To report a bug or make a suggestion regarding the Battery Charge Monitor "
 "applet or this manual, follow the directions in the <ulink url=\"help:cafe-"
-"user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+"user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 "For at rapportere en fejl eller komme med et forslag jævnfør panelprogrammet"
 " Batteriovervåger eller denne manual, så følg retningslinjerne i <ulink "
-"url=\"help:cafe-user-guide/feedback\" type=\"help\">MATE's side for "
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE's side for "
 "tilbagemeldinger</ulink>."
 
 #. (itstool) path: article/indexterm
@@ -407,10 +407,10 @@ msgstr "<xref linkend=\"battstat-troubleshooting\"/>;"
 #. (itstool) path: listitem/para
 #: C/index.docbook:294
 msgid ""
-"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">MATE mailing "
+"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">CAFE mailing "
 "lists</ulink>"
 msgstr ""
-"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">MATE-postlister</ulink>"
+"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">CAFE-postlister</ulink>"
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:306
@@ -525,9 +525,9 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:361
-msgid "The compact view is the default view for the monitor as of MATE 2.12."
+msgid "The compact view is the default view for the monitor as of CAFE 2.12."
 msgstr ""
-"Den kompakte visning er standardvisningen for overvågeren fra og med MATE "
+"Den kompakte visning er standardvisningen for overvågeren fra og med CAFE "
 "2.12."
 
 #. (itstool) path: varlistentry/term
@@ -568,11 +568,11 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:368
 msgid ""
-"The expanded view is old look from previous versions of MATE. It has the "
+"The expanded view is old look from previous versions of CAFE. It has the "
 "larger graphic for the battery as well as a separate graphic to indicate "
 "what state the battery is in. <_:figure-1/>"
 msgstr ""
-"Den udvidede visning er et gammelt udseende fra tidligere versioner af MATE."
+"Den udvidede visning er et gammelt udseende fra tidligere versioner af CAFE."
 " Den har større grafik for batteriet samt en separat grafik til at indikere "
 "hvilken tilstand batteriet er i. <_:figure-1/>"
 
@@ -847,13 +847,13 @@ msgid ""
 "Select <guimenuitem>Configuration Editor</guimenuitem> from the "
 "<guimenu>Applications</guimenu> menu, under <guisubmenu>System "
 "Tools</guisubmenu>. Search for the key value "
-"<prompt>OAFIID:MATE_BattstatApplet</prompt> which should be located in the "
+"<prompt>OAFIID:CAFE_BattstatApplet</prompt> which should be located in the "
 "path <filename>/apps/panel/applets</filename>."
 msgstr ""
 "Vælg <guimenuitem>Konfigurationsredigeringsprogram</guimenuitem> fra menuen "
 "<guimenu>Programmer</guimenu>, under "
 "<guisubmenu>Systemværktøjer</guisubmenu>. Søg efter nøgleværdien "
-"<prompt>OAFIID:MATE_BattstatApplet</prompt> som bør befinde sig i stien "
+"<prompt>OAFIID:CAFE_BattstatApplet</prompt> som bør befinde sig i stien "
 "<filename>/apps/panel/applets</filename>."
 
 #. (itstool) path: sect2/para
@@ -898,12 +898,12 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
 msgid ""
-"This manual is part of a collection of MATE manuals distributed under the "
+"This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in"
 " section 6 of the license."
 msgstr ""
-"Denne manual er en del af MATE-manualsamlingen distribueret under GFDL. Hvis"
+"Denne manual er en del af CAFE-manualsamlingen distribueret under GFDL. Hvis"
 " du vil distribuere denne manual separat fra denne samling, kan du gøre det "
 "ved at tilføje en kopi af licensen til manualen, som beskrevet i sektion 6 "
 "af licensen."
@@ -912,14 +912,14 @@ msgstr ""
 #: C/legal.xml:19
 msgid ""
 "Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any MATE "
-"documentation, and the members of the MATE Documentation Project are made "
+"services are claimed as trademarks. Where those names appear in any CAFE "
+"documentation, and the members of the CAFE Documentation Project are made "
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
 "Mange af navnene brugt af firmaer til at skelne deres produkter og tjenester"
-" er registrerede varemærker. Der hvor disse navne optræder i MATE-"
-"dokumentationen, og medlemmerne af MATE-dokumentationsprojektet er blevet "
+" er registrerede varemærker. Der hvor disse navne optræder i CAFE-"
+"dokumentationen, og medlemmerne af CAFE-dokumentationsprojektet er blevet "
 "gjort opmærksomme på disse varemærker, er navnene skrevet med store "
 "bogstaver eller store forbogstaver."
 

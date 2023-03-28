@@ -33,7 +33,7 @@ msgstr "Панелна корпа вам омогућава управљање �
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:18
-msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
+msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
 msgstr ""
 "<year>2015-2020</year> <holder>Пројекат Мејтове документације</holder>"
 
@@ -55,7 +55,7 @@ msgstr "<year>2004</year> <holder>Мајкл Сикес</holder>"
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
 #: C/index.docbook:46 C/index.docbook:99
-msgid "MATE Documentation Project"
+msgid "CAFE Documentation Project"
 msgstr "Пројекат Мејтове документације"
 
 #. (itstool) path: publisher/publishername
@@ -67,8 +67,8 @@ msgstr "Пројекат Гномове документације"
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:55
 msgid ""
-"<firstname>MATE Documentation Team</firstname> <surname/> <affiliation> "
-"<orgname>MATE Desktop</orgname> </affiliation>"
+"<firstname>CAFE Documentation Team</firstname> <surname/> <affiliation> "
+"<orgname>CAFE Desktop</orgname> </affiliation>"
 msgstr ""
 "<firstname>Тим Мејтове документације</firstname> <surname/> <affiliation> "
 "<orgname>Мејтова радна површ</orgname> </affiliation>"
@@ -97,7 +97,7 @@ msgstr ""
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:98
-msgid "MATE Documentation Team"
+msgid "CAFE Documentation Team"
 msgstr "Тим документације Гнома"
 
 #. (itstool) path: revhistory/revision
@@ -152,7 +152,7 @@ msgstr "Примедбе"
 msgid ""
 "To report a bug or make a suggestion regarding the Panel Trash applet or "
 "this manual, follow the directions in the <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+"guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -307,7 +307,7 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
 msgid ""
-"This manual is part of a collection of MATE manuals distributed under the "
+"This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in"
 " section 6 of the license."
@@ -317,8 +317,8 @@ msgstr ""
 #: C/legal.xml:19
 msgid ""
 "Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any MATE "
-"documentation, and the members of the MATE Documentation Project are made "
+"services are claimed as trademarks. Where those names appear in any CAFE "
+"documentation, and the members of the CAFE Documentation Project are made "
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""

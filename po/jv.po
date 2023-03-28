@@ -5,12 +5,12 @@
 # Translators:
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
+"Project-Id-Version: CAFE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-01-15 12:30+0300\n"
 "PO-Revision-Date: 2018-01-15 10:14+0000\n"
 "Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
-"Language-Team: Javanese (http://www.transifex.com/cafe/MATE/language/jv/)\n"
+"Language-Team: Javanese (http://www.transifex.com/cafe/CAFE/language/jv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -828,7 +828,7 @@ msgid "Mount local disks and devices"
 msgstr ""
 
 #: ../geyes/geyes.c:189
-msgid "A goofy set of eyes for the MATE panel. They follow your mouse."
+msgid "A goofy set of eyes for the CAFE panel. They follow your mouse."
 msgstr ""
 
 #: ../geyes/geyes.c:404 ../geyes/geyes.c:434 ../geyes/geyes.c:436
@@ -892,7 +892,7 @@ msgstr ""
 
 #: ../cafeweather/cafeweather-applet.c:364
 #: ../cafeweather/cafeweather-applet.c:368
-msgid "MATE Weather"
+msgid "CAFE Weather"
 msgstr ""
 
 #: ../cafeweather/cafeweather-applet.c:468
@@ -2314,7 +2314,7 @@ msgid "Show sticky notes"
 msgstr ""
 
 #: ../stickynotes/stickynotes_applet_callbacks.c:385
-msgid "Sticky Notes for the MATE Desktop Environment"
+msgid "Sticky Notes for the CAFE Desktop Environment"
 msgstr ""
 
 #: ../timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.in.in.h:1
@@ -2434,7 +2434,7 @@ msgstr ""
 
 #: ../trashapplet/src/trashapplet.c:446
 msgid ""
-"A MATE trash bin that lives in your panel. You can use it to view the trash "
+"A CAFE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
 msgstr ""
 

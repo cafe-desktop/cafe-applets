@@ -7,7 +7,7 @@
 AM_CPPFLAGS =					\
 	-I$(top_srcdir)				\
 	-I$(top_srcdir)/apmlib			\
-	$(MATE_APPLETS_CFLAGS)			\
+	$(CAFE_APPLETS_CFLAGS)			\
 	-DG_LOG_DOMAIN=\"battstat_applet\"
 
 noinst_LIBRARIES = libapm.a

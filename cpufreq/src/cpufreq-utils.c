@@ -1,5 +1,5 @@
 /*
- * MATE CPUFreq Applet
+ * CAFE CPUFreq Applet
  * Copyright (C) 2006 Carlos Garcia Campos <carlosgc@gnome.org>
  *
  *  This library is free software; you can redistribute it and/or
@@ -192,7 +192,7 @@ cpufreq_utils_selector_is_available (void)
 
 	return FALSE;
 }
-#endif /* HAVE_POLKIT_MATE */
+#endif /* HAVE_POLKIT_CAFE */
 
 gchar *
 cpufreq_utils_get_frequency_label (guint freq)

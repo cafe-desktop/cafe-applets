@@ -1,5 +1,5 @@
 dnl ***************************************************************************
-dnl *** configure.in for MATE-APPLETS                                      ***
+dnl *** configure.in for CAFE-APPLETS                                      ***
 dnl ***************************************************************************
 AC_INIT(cafe-applets, 1.24.1)
 AC_PREREQ(2.59)
@@ -10,7 +10,7 @@ m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 AC_CONFIG_MACRO_DIR(m4)
 
 dnl ***************************************************************************
-dnl *** Minimum library versions for MATE-APPLETS                          ***
+dnl *** Minimum library versions for CAFE-APPLETS                          ***
 dnl ***************************************************************************
 GLIB_REQUIRED=2.50.0
 GIO_REQUIRED=2.50.0
@@ -39,7 +39,7 @@ AC_PATH_XTRA
 X_LIBS="$X_LIBS $X_PRE_LIBS -lX11 $X_EXTRA_LIBS"
 AC_SUBST(X_LIBS)
 
-MATE_COMPILE_WARNINGS
+CAFE_COMPILE_WARNINGS
 
 dnl Check for non-portable headers
 AC_CHECK_HEADERS([pty.h values.h])
@@ -99,9 +99,9 @@ AC_SUBST(GTK_FLAGS)
 AC_SUBST(GTK_LIBS)
 
 dnl -- check for libcafepanelapplet4 (required) ------------------------------------
-PKG_CHECK_MODULES(MATE_APPLETS4, libcafepanelapplet-4.0 >= $LIBPANEL4_REQUIRED)
-AC_SUBST(MATE_APPLETS4_CFLAGS)
-AC_SUBST(MATE_APPLETS4_LIBS)
+PKG_CHECK_MODULES(CAFE_APPLETS4, libcafepanelapplet-4.0 >= $LIBPANEL4_REQUIRED)
+AC_SUBST(CAFE_APPLETS4_CFLAGS)
+AC_SUBST(CAFE_APPLETS4_LIBS)
 
 dnl -- check for libgtop (optional) -------------------------------------------
 build_gtop_applets=false
@@ -220,12 +220,12 @@ AC_SUBST(XML2_LIBS)
 
  dnl -- check for libcafeweather (required for cafeweather applet) ------------------
 build_libcafeweather_applets=false
-PKG_CHECK_MODULES(LIBMATEWEATHER, cafeweather >= 1.17.0,
+PKG_CHECK_MODULES(LIBCAFEWEATHER, cafeweather >= 1.17.0,
 	          build_libcafeweather_applets=true,
 		  AC_MSG_WARN([libcafeweather not found. Not building the weather applet.]))
-AC_SUBST(LIBMATEWEATHER_CFLAGS)
-AC_SUBST(LIBMATEWEATHER_LIBS)
-AM_CONDITIONAL(BUILD_LIBMATEWEATHER_APPLETS, $build_libcafeweather_applets)
+AC_SUBST(LIBCAFEWEATHER_CFLAGS)
+AC_SUBST(LIBCAFEWEATHER_LIBS)
+AM_CONDITIONAL(BUILD_LIBCAFEWEATHER_APPLETS, $build_libcafeweather_applets)
 
 dnl ***************************************************************************
 dnl *** GSettings                                                               ***
@@ -242,7 +242,7 @@ AM_GNU_GETTEXT([external])
 GETTEXT_PACKAGE=cafe-applets
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Gettext Package])
-AC_DEFINE_DIR(MATELOCALEDIR, "${datadir}/locale", [locale directory])
+AC_DEFINE_DIR(CAFELOCALEDIR, "${datadir}/locale", [locale directory])
 
 dnl ***************************************************************************
 dnl *** yelp-tools                                                          ***
@@ -523,8 +523,8 @@ AC_SUBST(pkgdatadir)
 builderdir="${pkgdatadir}/builder"
 AC_SUBST(builderdir)
 
-AC_DEFINE_DIR(MATE_ICONDIR, "${iconsdir}", [Cafe Icon Directory])
-AC_DEFINE_DIR(MATE_PIXMAPSDIR, "${pixmapsdir}", [Cafe Pixmaps Directory])
+AC_DEFINE_DIR(CAFE_ICONDIR, "${iconsdir}", [Cafe Icon Directory])
+AC_DEFINE_DIR(CAFE_PIXMAPSDIR, "${pixmapsdir}", [Cafe Pixmaps Directory])
 AC_DEFINE_DIR(PKGDATADIR, "${pkgdatadir}", [Cafe Applets Directory])
 AC_DEFINE_DIR(GTK_BUILDERDIR, "${builderdir}", [GtkBuilder Resources Directory])
 AC_DEFINE_DIR(DATADIR, "${datadir}", [datadir])

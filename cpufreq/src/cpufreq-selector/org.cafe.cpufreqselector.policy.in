@@ -6,7 +6,7 @@
 
 <policyconfig>
 
-  <vendor>The MATE Project</vendor>
+  <vendor>The CAFE Project</vendor>
   <vendor_url>http://www.cafe-desktop.org</vendor_url>
   <icon_name>cafe-cpu-frequency-applet</icon_name>
 

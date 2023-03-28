@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR MATE Desktop Environment team
+# Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -21,7 +21,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cafe-applets 1.23.0\n"
-"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/MATE/\n"
+"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: 玉堂白鹤 <yjwork@qq.com>, 2020\n"
@@ -44,8 +44,8 @@ msgstr "Sun GNOME 文档团队 <gdocteam@sun.com>"
 #: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
 #: trashapplet/src/trashapplet.c:421
-msgid "MATE Documentation Team"
-msgstr "MATE 文档团队"
+msgid "CAFE Documentation Team"
+msgstr "CAFE 文档团队"
 
 #: accessx-status/applet.c:98
 msgid "About AccessX Status"
@@ -58,10 +58,10 @@ msgstr "显示 AccessX 特性的状态，如插销修饰"
 #: accessx-status/applet.c:101
 msgid ""
 "Copyright © 2003 Sun Microsystems\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "版权所有 © 2003 Sun Microsystems\n"
-"版权所有 © 2012–2020 MATE 开发者"
+"版权所有 © 2012–2020 CAFE 开发者"
 
 #: accessx-status/applet.c:105 battstat/battstat_applet.c:844
 #: charpick/charpick.c:592 command/command.c:128
@@ -338,11 +338,11 @@ msgstr "关于电池电量监视器"
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "版权所有 © 2000 The Gnulix Society\n"
 "版权所有 © 2002-2005 自由软件基金会及其他\n"
-"版权所有 © 2012-2020   MATE 开发者"
+"版权所有 © 2012-2020   CAFE 开发者"
 
 #: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
@@ -488,16 +488,16 @@ msgstr "关于字符板"
 #: charpick/charpick.c:585
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "版权所有 © 1998, 2004-2005 GNOME 小程序维护者及其他\n"
-"版权所有 © 2012–2020 MATE 开发者"
+"版权所有 © 2012–2020 CAFE 开发者"
 
 #: charpick/charpick.c:587
 msgid ""
 "Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
-msgstr "MATE 面板小程序，用于选择那些在你的键盘上找不到的字符。以 GNU GPL 发布。"
+msgstr "CAFE 面板小程序，用于选择那些在你的键盘上找不到的字符。以 GNU GPL 发布。"
 
 #: charpick/charpick.c:699 charpick/charpick.c:713
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:9
@@ -607,10 +607,10 @@ msgstr "关于命令小程序"
 #: command/command.c:124
 msgid ""
 "Copyright © 2013-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 "版权所有 © 2013-2014 Stefano Karapetsas\n"
-"版权所有 © 2015-2020 MATE 开发团队"
+"版权所有 © 2015-2020 CAFE 开发团队"
 
 #: command/command.c:127
 #: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:10
@@ -777,10 +777,10 @@ msgstr "关于 CPU 频率范围监视器"
 #: cpufreq/src/cpufreq-applet.c:483
 msgid ""
 "Copyright © 2004 Carlos Garcia Campos\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "版权所有 © 2004 Carlos Garcia Campos\n"
-"版权所有 © 2012-2020 MATE 开发者"
+"版权所有 © 2012-2020 CAFE 开发者"
 
 #: cpufreq/src/cpufreq-applet.c:485
 msgid "This utility shows the current CPU Frequency Scaling."
@@ -871,10 +871,10 @@ msgstr "关于磁盘挂载器"
 #: drivemount/drivemount.c:122
 msgid ""
 "Copyright © 2004 Canonical Ltd\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "版权所有 © 2004 Canonical Ltd\n"
-"版权所有 © 2012-2020 MATE 开发者"
+"版权所有 © 2012-2020 CAFE 开发者"
 
 #: drivemount/drivemount.c:124
 msgid "Applet for mounting and unmounting block volumes."
@@ -908,16 +908,16 @@ msgid "About Eyes"
 msgstr "关于 Eyes"
 
 #: geyes/geyes.c:180
-msgid "A goofy set of eyes for the MATE panel. They follow your mouse."
-msgstr "用于 MATE 面板的一组愚蠢的眼球。它们会盯着您的鼠标。"
+msgid "A goofy set of eyes for the CAFE panel. They follow your mouse."
+msgstr "用于 CAFE 面板的一组愚蠢的眼球。它们会盯着您的鼠标。"
 
 #: geyes/geyes.c:182
 msgid ""
 "Copyright © 1999 Dave Camp\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "版权所有 © 1999 Dave Camp\n"
-"版权所有 © 2012-2020 MATE 开发者"
+"版权所有 © 2012-2020 CAFE 开发者"
 
 #: geyes/geyes.c:389 geyes/geyes.c:419 geyes/geyes.c:421
 #: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:9
@@ -975,10 +975,10 @@ msgstr "关于气象报告"
 #: cafeweather/cafeweather-about.c:56
 msgid ""
 "Copyright © 1999-2005 by S. Papadimitriou and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "版权所有 © 1999-2005  S. Papadimitriou 和其他人\n"
-"版权所有 © 2012-2019 MATE 开发者"
+"版权所有 © 2012-2019 CAFE 开发者"
 
 #: cafeweather/cafeweather-about.c:58
 msgid "A panel application for monitoring local weather conditions."
@@ -998,8 +998,8 @@ msgid "Weather Report"
 msgstr "气象报告"
 
 #: cafeweather/cafeweather-applet.c:360 cafeweather/cafeweather-applet.c:364
-msgid "MATE Weather"
-msgstr "MATE 天气"
+msgid "CAFE Weather"
+msgstr "CAFE 天气"
 
 #: cafeweather/cafeweather-applet.c:463
 msgid "Weather Forecast"
@@ -1306,10 +1306,10 @@ msgstr "关于系统监视器"
 #: multiload/main.c:62
 msgid ""
 "Copyright © 1999-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "版权所有 © 1999-2005 自由软件基金会和其他人\n"
-"Copyright © 2012-2020 MATE 开发者"
+"Copyright © 2012-2020 CAFE 开发者"
 
 #: multiload/main.c:64
 msgid ""
@@ -1955,18 +1955,18 @@ msgstr ""
 "%s"
 
 #: netspeed/src/netspeed.c:821
-msgid "About MATE Netspeed"
-msgstr "关于 MATE 网速"
+msgid "About CAFE Netspeed"
+msgstr "关于 CAFE 网速"
 
 #: netspeed/src/netspeed.c:823
 msgid ""
 "Copyright © 2002-2003 Jörgen Scheibengruber\n"
 "Copyright © 2011-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 "版权所有 © 2002-2003 Jörgen Scheibengruber\n"
 "版权所有 © 2011-2014 Stefano Karapetsas\n"
-"版权所有 © 2015-2020 MATE 开发者"
+"版权所有 © 2015-2020 CAFE 开发者"
 
 #: netspeed/src/netspeed.c:826
 msgid ""
@@ -1975,8 +1975,8 @@ msgid ""
 msgstr "Netspeed显示指定网络设备上的流量信息."
 
 #: netspeed/src/netspeed.c:987
-msgid "MATE Netspeed Preferences"
-msgstr "MATE 网速首选项"
+msgid "CAFE Netspeed Preferences"
+msgstr "CAFE 网速首选项"
 
 #: netspeed/src/netspeed.c:1009
 msgid "General Settings"
@@ -2146,8 +2146,8 @@ msgid "unknown"
 msgstr "未知"
 
 #: netspeed/src/netspeed.c:1584
-msgid "MATE Netspeed"
-msgstr "MATE 网速"
+msgid "CAFE Netspeed"
+msgstr "CAFE 网速"
 
 #: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:5
 #: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:6
@@ -2514,15 +2514,15 @@ msgstr "关于记事贴"
 msgid ""
 "Copyright © 2002-2003 Loban A Rahman\n"
 "Copyright © 2005 Davyd Madeley\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "版权所有 © 2002-2003  Loban A Rahman\n"
 "版权所有 © 2005            Davyd Madeley\n"
-"版权所有 © 2012-2020   MATE 项目开发团队"
+"版权所有 © 2012-2020   CAFE 项目开发团队"
 
 #: stickynotes/stickynotes_applet_callbacks.c:384
-msgid "Sticky Notes for the MATE Desktop Environment"
-msgstr "用于 MATE 桌面环境的置顶便笺"
+msgid "Sticky Notes for the CAFE Desktop Environment"
+msgstr "用于 CAFE 桌面环境的置顶便笺"
 
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:5
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:6
@@ -2587,10 +2587,10 @@ msgstr "关于定时器小程序"
 #: timerapplet/timerapplet.c:274
 msgid ""
 "Copyright © 2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 "版权所有 © 2014 Stefano Karapetsas\n"
-"版权所有 © 2015-2020 MATE 开发者"
+"版权所有 © 2015-2020 CAFE 开发者"
 
 #: timerapplet/timerapplet.c:310
 msgid "Timer Applet Preferences"
@@ -2678,17 +2678,17 @@ msgstr "关于回收站小程序"
 msgid ""
 "Copyright © 2004 Michiel Sikkes\n"
 "Copyright © 2008 Ryan Lortie\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "版权所有 © 2004 Michiel Sikkes\n"
 "版权所有 © 2008 Ryan Lortie\n"
-"版权所有 © 2012-2020 MATE 开发者"
+"版权所有 © 2012-2020 CAFE 开发者"
 
 #: trashapplet/src/trashapplet.c:437
 msgid ""
-"A MATE trash bin that lives in your panel. You can use it to view the trash "
+"A CAFE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
-msgstr "位于您面板上的 MATE 回收站。您可以使用它查看回收站，或者将项目拖曳至回收站中。"
+msgstr "位于您面板上的 CAFE 回收站。您可以使用它查看回收站，或者将项目拖曳至回收站中。"
 
 #: trashapplet/src/trashapplet.c:462
 msgid "Delete Immediately?"

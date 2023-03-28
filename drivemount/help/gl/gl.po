@@ -41,9 +41,9 @@ msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:28
-msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
+msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
 msgstr ""
-"<year>2015-2020</year> <holder>Proxecto de documentación do MATE</holder>"
+"<year>2015-2020</year> <holder>Proxecto de documentación do CAFE</holder>"
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:32
@@ -68,8 +68,8 @@ msgstr "<year>2000</year> <holder>Dan Mueth</holder>"
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
 #: C/index.docbook:57 C/index.docbook:125
-msgid "MATE Documentation Project"
-msgstr "Proxecto de documentación do MATE"
+msgid "CAFE Documentation Project"
+msgstr "Proxecto de documentación do CAFE"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
@@ -81,11 +81,11 @@ msgstr "Proxecto de documentación do GNOME"
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:66
 msgid ""
-"<firstname>MATE Documentation Team</firstname> <surname/> <affiliation> "
-"<orgname>MATE Desktop</orgname> </affiliation>"
+"<firstname>CAFE Documentation Team</firstname> <surname/> <affiliation> "
+"<orgname>CAFE Desktop</orgname> </affiliation>"
 msgstr ""
-"<firstname>Equipo de documentación do MATE</firstname> <surname/> "
-"<affiliation> <orgname>Escritorio MATE</orgname> </affiliation>"
+"<firstname>Equipo de documentación do CAFE</firstname> <surname/> "
+"<affiliation> <orgname>Escritorio CAFE</orgname> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:73
@@ -132,8 +132,8 @@ msgstr ""
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:124
-msgid "MATE Documentation Team"
-msgstr " Equipo de documentación do MATE "
+msgid "CAFE Documentation Team"
+msgstr " Equipo de documentación do CAFE "
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:120
@@ -215,13 +215,13 @@ msgstr "Comentarios"
 msgid ""
 "To report a bug or make a suggestion regarding the <application>Disk "
 "Mounter</application> or this manual, follow the directions in the <ulink "
-"url=\"help:cafe-user-guide/feedback\" type=\"help\">MATE Feedback "
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback "
 "Page</ulink>."
 msgstr ""
 "Para informar dun fallo ou facer unha suxestión sobre o "
 "<application>Montador de discos</application> ou este manual, siga as "
 "instrucións na <ulink url=\"help:cafe-user-guide/feedback\" "
-"type=\"help\">páxina de comentarios do MATE</ulink>."
+"type=\"help\">páxina de comentarios do CAFE</ulink>."
 
 #. (itstool) path: article/indexterm
 #: C/index.docbook:178
@@ -542,12 +542,12 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
 msgid ""
-"This manual is part of a collection of MATE manuals distributed under the "
+"This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in"
 " section 6 of the license."
 msgstr ""
-"Este manual forma parte da colección de manuais MATE distribuídos baixo a "
+"Este manual forma parte da colección de manuais CAFE distribuídos baixo a "
 "licenza GFDL. Se quere distribuír este manual separadamente da colección, "
 "pode facelo engadindo unha copia da licenza ao manual, tal e como está "
 "descrito na sección 6 da licenza."
@@ -556,15 +556,15 @@ msgstr ""
 #: C/legal.xml:19
 msgid ""
 "Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any MATE "
-"documentation, and the members of the MATE Documentation Project are made "
+"services are claimed as trademarks. Where those names appear in any CAFE "
+"documentation, and the members of the CAFE Documentation Project are made "
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
 "Moitos dos nomes utilizados polas empresas para distinguir os seus produtos "
 "e servizos son reivindicados como marcas comerciais. Cando estes nomes "
-"aparecen en calquera documentación de MATE e os membros do Proxecto de "
-"documentación de MATE son conscientes das marcas rexistradas, os nomes están"
+"aparecen en calquera documentación de CAFE e os membros do Proxecto de "
+"documentación de CAFE son conscientes das marcas rexistradas, os nomes están"
 " en letras maiúsculas ou maiúsculas iniciais."
 
 #. (itstool) path: listitem/para

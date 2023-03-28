@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR MATE Desktop Environment team
+# Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -21,7 +21,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cafe-applets 1.23.0\n"
-"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/MATE/\n"
+"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: semicolon <mail@semicln.com>, 2020\n"
@@ -44,8 +44,8 @@ msgstr ""
 #: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
 #: trashapplet/src/trashapplet.c:421
-msgid "MATE Documentation Team"
-msgstr "MATE ドキュメンテーション・チーム"
+msgid "CAFE Documentation Team"
+msgstr "CAFE ドキュメンテーション・チーム"
 
 #: accessx-status/applet.c:98
 msgid "About AccessX Status"
@@ -58,7 +58,7 @@ msgstr "修飾キーなどの AccessX 機能のステータスを表示します
 #: accessx-status/applet.c:101
 msgid ""
 "Copyright © 2003 Sun Microsystems\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: accessx-status/applet.c:105 battstat/battstat_applet.c:844
@@ -336,7 +336,7 @@ msgstr ""
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
@@ -483,7 +483,7 @@ msgstr ""
 #: charpick/charpick.c:585
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: charpick/charpick.c:587
@@ -600,7 +600,7 @@ msgstr ""
 #: command/command.c:124
 msgid ""
 "Copyright © 2013-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 
 #: command/command.c:127
@@ -770,7 +770,7 @@ msgstr ""
 #: cpufreq/src/cpufreq-applet.c:483
 msgid ""
 "Copyright © 2004 Carlos Garcia Campos\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: cpufreq/src/cpufreq-applet.c:485
@@ -864,7 +864,7 @@ msgstr ""
 #: drivemount/drivemount.c:122
 msgid ""
 "Copyright © 2004 Canonical Ltd\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: drivemount/drivemount.c:124
@@ -899,19 +899,19 @@ msgid "About Eyes"
 msgstr ""
 
 #: geyes/geyes.c:180
-msgid "A goofy set of eyes for the MATE panel. They follow your mouse."
-msgstr "MATE パネル向けのキュートなお目々です (マウスの動きに追従します)。"
+msgid "A goofy set of eyes for the CAFE panel. They follow your mouse."
+msgstr "CAFE パネル向けのキュートなお目々です (マウスの動きに追従します)。"
 
 #: geyes/geyes.c:182
 msgid ""
 "Copyright © 1999 Dave Camp\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: geyes/geyes.c:389 geyes/geyes.c:419 geyes/geyes.c:421
 #: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Eyes"
-msgstr "MATE 目玉"
+msgstr "CAFE 目玉"
 
 #: geyes/geyes.c:422
 msgid "The eyes look in the direction of the mouse pointer"
@@ -939,7 +939,7 @@ msgstr "テーマを格納するフォルダです"
 
 #: geyes/themes.c:129
 msgid "Can not launch the eyes applet."
-msgstr "MATE 目玉アプレットを起動できません。"
+msgstr "CAFE 目玉アプレットを起動できません。"
 
 #: geyes/themes.c:130
 msgid "There was a fatal error while trying to load the theme."
@@ -964,7 +964,7 @@ msgstr ""
 #: cafeweather/cafeweather-about.c:56
 msgid ""
 "Copyright © 1999-2005 by S. Papadimitriou and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: cafeweather/cafeweather-about.c:58
@@ -982,11 +982,11 @@ msgstr "更新する(_U)"
 #: cafeweather/cafeweather-applet.c:345
 #: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Weather Report"
-msgstr "お天気 MATE"
+msgstr "お天気 CAFE"
 
 #: cafeweather/cafeweather-applet.c:360 cafeweather/cafeweather-applet.c:364
-msgid "MATE Weather"
-msgstr "お天気 MATE"
+msgid "CAFE Weather"
+msgstr "お天気 CAFE"
 
 #: cafeweather/cafeweather-applet.c:463
 msgid "Weather Forecast"
@@ -1130,7 +1130,7 @@ msgstr "場所を定義した XML データベースの読み込みに失敗し�
 
 #: cafeweather/cafeweather-pref.c:807
 msgid "Weather Preferences"
-msgstr "お天気 MATE のプロパティ"
+msgstr "お天気 CAFE のプロパティ"
 
 #: cafeweather/cafeweather-pref.c:831 cafeweather/cafeweather-pref.c:1034
 msgid "_Automatically update every:"
@@ -1293,7 +1293,7 @@ msgstr ""
 #: multiload/main.c:62
 msgid ""
 "Copyright © 1999-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: multiload/main.c:64
@@ -1940,14 +1940,14 @@ msgstr ""
 "%s"
 
 #: netspeed/src/netspeed.c:821
-msgid "About MATE Netspeed"
+msgid "About CAFE Netspeed"
 msgstr ""
 
 #: netspeed/src/netspeed.c:823
 msgid ""
 "Copyright © 2002-2003 Jörgen Scheibengruber\n"
 "Copyright © 2011-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 
 #: netspeed/src/netspeed.c:826
@@ -1957,7 +1957,7 @@ msgid ""
 msgstr "指定されたネットワークデバイスの通信量の情報を表示する小さなアプレット"
 
 #: netspeed/src/netspeed.c:987
-msgid "MATE Netspeed Preferences"
+msgid "CAFE Netspeed Preferences"
 msgstr ""
 
 #: netspeed/src/netspeed.c:1009
@@ -2128,7 +2128,7 @@ msgid "unknown"
 msgstr "不明"
 
 #: netspeed/src/netspeed.c:1584
-msgid "MATE Netspeed"
+msgid "CAFE Netspeed"
 msgstr ""
 
 #: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:5
@@ -2497,12 +2497,12 @@ msgstr ""
 msgid ""
 "Copyright © 2002-2003 Loban A Rahman\n"
 "Copyright © 2005 Davyd Madeley\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: stickynotes/stickynotes_applet_callbacks.c:384
-msgid "Sticky Notes for the MATE Desktop Environment"
-msgstr "MATE デスクトップ環境向けの付箋紙です。"
+msgid "Sticky Notes for the CAFE Desktop Environment"
+msgstr "CAFE デスクトップ環境向けの付箋紙です。"
 
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:5
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:6
@@ -2567,7 +2567,7 @@ msgstr ""
 #: timerapplet/timerapplet.c:274
 msgid ""
 "Copyright © 2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 
 #: timerapplet/timerapplet.c:310
@@ -2656,15 +2656,15 @@ msgstr ""
 msgid ""
 "Copyright © 2004 Michiel Sikkes\n"
 "Copyright © 2008 Ryan Lortie\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: trashapplet/src/trashapplet.c:437
 msgid ""
-"A MATE trash bin that lives in your panel. You can use it to view the trash "
+"A CAFE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
 msgstr ""
-"MATE ゴミ箱アプレットはパネルの中に住み着きます。ゴミ箱の中をのぞいたり、不要なものをドラッグ・アンド・ドロップしてゴミ箱に捨てることができます。"
+"CAFE ゴミ箱アプレットはパネルの中に住み着きます。ゴミ箱の中をのぞいたり、不要なものをドラッグ・アンド・ドロップしてゴミ箱に捨てることができます。"
 
 #: trashapplet/src/trashapplet.c:462
 msgid "Delete Immediately?"

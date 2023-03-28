@@ -9,9 +9,9 @@ Name=Battery Charge Monitor
 Description=Monitor a laptop's remaining power
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=battery
-CafeComponentId=OAFIID:MATE_BattstatApplet
-X-MATE-Bugzilla-Bugzilla=MATE
-X-MATE-Bugzilla-Product=cafe-applets
-X-MATE-Bugzilla-Component=battery
-X-MATE-Bugzilla-Version=@VERSION@
-X-MATE-Bugzilla-OtherBinaries=battstat-applet-2
+CafeComponentId=OAFIID:CAFE_BattstatApplet
+X-CAFE-Bugzilla-Bugzilla=CAFE
+X-CAFE-Bugzilla-Product=cafe-applets
+X-CAFE-Bugzilla-Component=battery
+X-CAFE-Bugzilla-Version=@VERSION@
+X-CAFE-Bugzilla-OtherBinaries=battstat-applet-2

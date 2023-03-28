@@ -7,7 +7,7 @@
   * build: silent build warnings for distcheck
   * cpufreq: generate missing 256x256 and 64x64 icons from svg file
   * eyes: generate missing 256x256 and 64x64 icons from svg file
-  * netspeed: don't define MATELOCALEDIR
+  * netspeed: don't define CAFELOCALEDIR
   * build: drop unused cafelocaledir variable
   * drivemount: Remove global variable
 
@@ -25,7 +25,7 @@
   * use ${datadir}/dbus-1/system.d as the default D-Bus config dir
   * Update copyright to 2020
   * make the dbus directory configurable
-  * fix redefined MATELOCALEDIR
+  * fix redefined CAFELOCALEDIR
   * migrate from intltools to gettext
   * Initialize "surface" before testing its value to avoid a crash.
   * avoid redundant redeclarations

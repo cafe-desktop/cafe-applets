@@ -1,6 +1,6 @@
 AM_CPPFLAGS = \
-	$(MATE_APPLETS4_CFLAGS) \
-	$(MATEDESKTOP_CFLAGS) \
+	$(CAFE_APPLETS4_CFLAGS) \
+	$(CAFEDESKTOP_CFLAGS) \
 	$(LIBNOTIFY_CFLAGS) \
 	-I$(srcdir) \
 	$(DISABLE_DEPRECATED_CFLAGS)
@@ -9,7 +9,7 @@ APPLET_LOCATION = $(libexecdir)/timer-applet
 
 libexec_PROGRAMS = timer-applet
 timer_applet_SOURCES = timerapplet.c
-timer_applet_LDADD = $(MATE_APPLETS4_LIBS) $(MATEDESKTOP_LIBS) $(LIBNOTIFY_LIBS)
+timer_applet_LDADD = $(CAFE_APPLETS4_LIBS) $(CAFEDESKTOP_LIBS) $(LIBNOTIFY_LIBS)
 timer_applet_CFLAGS = $(WARN_CFLAGS)
 
 appletsdir       = $(datadir)/cafe-panel/applets

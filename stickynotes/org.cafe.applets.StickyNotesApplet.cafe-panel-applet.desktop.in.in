@@ -9,9 +9,9 @@ Name=Sticky Notes
 Description=Create, view, and manage sticky notes on the desktop
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=cafe-sticky-notes-applet
-CafeComponentId=OAFIID:MATE_StickyNotesApplet
-X-MATE-Bugzilla-Bugzilla=MATE
-X-MATE-Bugzilla-Product=cafe-applets
-X-MATE-Bugzilla-Component=stickynotes
-X-MATE-Bugzilla-Version=@VERSION@
-X-MATE-Bugzilla-OtherBinaries=stickynotes-applet
+CafeComponentId=OAFIID:CAFE_StickyNotesApplet
+X-CAFE-Bugzilla-Bugzilla=CAFE
+X-CAFE-Bugzilla-Product=cafe-applets
+X-CAFE-Bugzilla-Component=stickynotes
+X-CAFE-Bugzilla-Version=@VERSION@
+X-CAFE-Bugzilla-OtherBinaries=stickynotes-applet

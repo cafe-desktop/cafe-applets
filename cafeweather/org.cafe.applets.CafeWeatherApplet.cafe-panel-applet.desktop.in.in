@@ -9,9 +9,9 @@ Name=Weather Report
 Description=Monitor the current weather conditions, and forecasts
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=weather-storm
-CafeComponentId=OAFIID:MATE_CafeWeatherApplet
-X-MATE-Bugzilla-Bugzilla=MATE
-X-MATE-Bugzilla-Product=cafe-applets
-X-MATE-Bugzilla-Component=cafeweather
-X-MATE-Bugzilla-Version=@VERSION@
-X-MATE-Bugzilla-OtherBinaries=cafeweather-applet-2
+CafeComponentId=OAFIID:CAFE_CafeWeatherApplet
+X-CAFE-Bugzilla-Bugzilla=CAFE
+X-CAFE-Bugzilla-Product=cafe-applets
+X-CAFE-Bugzilla-Component=cafeweather
+X-CAFE-Bugzilla-Version=@VERSION@
+X-CAFE-Bugzilla-OtherBinaries=cafeweather-applet-2

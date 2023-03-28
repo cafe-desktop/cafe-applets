@@ -1,6 +1,6 @@
 AM_CPPFLAGS = \
-	$(MATE_APPLETS4_CFLAGS) \
-	$(MATEDESKTOP_CFLAGS) \
+	$(CAFE_APPLETS4_CFLAGS) \
+	$(CAFEDESKTOP_CFLAGS) \
 	-I$(srcdir) \
 	$(DISABLE_DEPRECATED_CFLAGS)
 
@@ -8,7 +8,7 @@ APPLET_LOCATION = $(libexecdir)/command-applet
 
 libexec_PROGRAMS = command-applet
 command_applet_SOURCES = command.c ma-command.c ma-command.h
-command_applet_LDADD = $(MATE_APPLETS4_LIBS) $(MATEDESKTOP_LIBS)
+command_applet_LDADD = $(CAFE_APPLETS4_LIBS) $(CAFEDESKTOP_LIBS)
 command_applet_CFLAGS = $(WARN_CFLAGS)
 
 appletsdir       = $(datadir)/cafe-panel/applets

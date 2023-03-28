@@ -65,7 +65,7 @@ static gboolean stickynotes_applet_factory(CafePanelApplet *cafe_panel_applet, c
 		if (!stickynotes)
 			stickynotes_applet_init (cafe_panel_applet);
 
-		cafe_panel_applet_set_flags (cafe_panel_applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+		cafe_panel_applet_set_flags (cafe_panel_applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
 
 		/* Add applet to linked list of all applets */
 		stickynotes->applets = g_list_append (stickynotes->applets, stickynotes_applet_new(cafe_panel_applet));
@@ -80,7 +80,7 @@ static gboolean stickynotes_applet_factory(CafePanelApplet *cafe_panel_applet, c
 }
 
 /* Sticky Notes applet factory */
-MATE_PANEL_APPLET_OUT_PROCESS_FACTORY("StickyNotesAppletFactory", PANEL_TYPE_APPLET, "stickynotes_applet",
+CAFE_PANEL_APPLET_OUT_PROCESS_FACTORY("StickyNotesAppletFactory", PANEL_TYPE_APPLET, "stickynotes_applet",
 				 stickynotes_applet_factory, NULL)
 
 /* colorshift a surface */
@@ -354,7 +354,7 @@ stickynotes_applet_new(CafePanelApplet *cafe_panel_applet)
 	applet->menu_tip = NULL;
 
 	/* Expand the applet for Fitts' law complience. */
-	cafe_panel_applet_set_flags(cafe_panel_applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+	cafe_panel_applet_set_flags(cafe_panel_applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
 
 	/* Add the applet icon */
 	gtk_container_add(GTK_CONTAINER(cafe_panel_applet), applet->w_image);

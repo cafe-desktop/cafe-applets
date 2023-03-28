@@ -41,12 +41,12 @@ change_orient (CafePanelApplet *applet, CafePanelAppletOrient o, DriveList *driv
     GtkOrientation orientation;
 
     switch (o) {
-    case MATE_PANEL_APPLET_ORIENT_LEFT:
-    case MATE_PANEL_APPLET_ORIENT_RIGHT:
+    case CAFE_PANEL_APPLET_ORIENT_LEFT:
+    case CAFE_PANEL_APPLET_ORIENT_RIGHT:
 	orientation = GTK_ORIENTATION_VERTICAL;
 	break;
-    case MATE_PANEL_APPLET_ORIENT_UP:
-    case MATE_PANEL_APPLET_ORIENT_DOWN:
+    case CAFE_PANEL_APPLET_ORIENT_UP:
+    case CAFE_PANEL_APPLET_ORIENT_DOWN:
     default:
 	orientation = GTK_ORIENTATION_HORIZONTAL;
 	break;
@@ -62,12 +62,12 @@ size_allocate (CafePanelApplet  *applet,
     int size;
 
     switch (cafe_panel_applet_get_orient (applet)) {
-    case MATE_PANEL_APPLET_ORIENT_LEFT:
-    case MATE_PANEL_APPLET_ORIENT_RIGHT:
+    case CAFE_PANEL_APPLET_ORIENT_LEFT:
+    case CAFE_PANEL_APPLET_ORIENT_RIGHT:
 	size = allocation->width;
 	break;
-    case MATE_PANEL_APPLET_ORIENT_UP:
-    case MATE_PANEL_APPLET_ORIENT_DOWN:
+    case CAFE_PANEL_APPLET_ORIENT_UP:
+    case CAFE_PANEL_APPLET_ORIENT_DOWN:
     default:
 	size = allocation->height;
 	break;
@@ -106,7 +106,7 @@ display_about_dialog (GtkAction *action,
     const gchar *documenters[] = {
 	"Dan Mueth <muet@alumni.uchicago.edu>",
 	"John Fleck <jfleck@inkstain.net>",
-	N_("MATE Documentation Team"),
+	N_("CAFE Documentation Team"),
 	NULL
     };
 
@@ -120,7 +120,7 @@ display_about_dialog (GtkAction *action,
 	"title",       _("About Disk Mounter"),
 	"version",     VERSION,
 	"copyright",   _("Copyright \xC2\xA9 2004 Canonical Ltd\n"
-	                 "Copyright \xc2\xa9 2012-2020 MATE developers"),
+	                 "Copyright \xc2\xa9 2012-2020 CAFE developers"),
 	"comments",    _("Applet for mounting and unmounting block volumes."),
 	"authors",     authors,
 	"documenters", documenters,
@@ -186,7 +186,7 @@ applet_factory (CafePanelApplet *applet,
 
 	gtk_window_set_default_icon_name ("media-floppy");
 
-	cafe_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+	cafe_panel_applet_set_flags (applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
 	cafe_panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
 
 	drive_list = drive_list_new ();
@@ -227,7 +227,7 @@ applet_factory (CafePanelApplet *applet,
     return ret;
 }
 
-MATE_PANEL_APPLET_OUT_PROCESS_FACTORY (factory_iid,
+CAFE_PANEL_APPLET_OUT_PROCESS_FACTORY (factory_iid,
 				  PANEL_TYPE_APPLET,
 				  "Drive-Mount-Applet",
 				  applet_factory, NULL)

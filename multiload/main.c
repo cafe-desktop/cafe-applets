@@ -1,4 +1,4 @@
-/* MATE multiload panel applet
+/* CAFE multiload panel applet
  * (C) 1997 The Free Software Foundation
  *
  * Authors: Tim P. Gerla
@@ -46,7 +46,7 @@ about_cb (GtkAction       *action,
     {
 		"Chee Bin HOH <cbhoh@gnome.org>",
 		N_("Sun GNOME Documentation Team <gdocteam@sun.com>"),
-		N_("MATE Documentation Team"),
+		N_("CAFE Documentation Team"),
 		NULL
     };
 
@@ -60,7 +60,7 @@ about_cb (GtkAction       *action,
 	"title",        _("About System Monitor"),
 	"version",	VERSION,
 	"copyright",	_("Copyright \xc2\xa9 1999-2005 Free Software Foundation and others\n"
-	                  "Copyright \xc2\xa9 2012-2020 MATE developers"),
+	                  "Copyright \xc2\xa9 2012-2020 CAFE developers"),
 	"comments",	_("A system load monitor capable of displaying graphs "
 			"for CPU, ram, and swap space use, plus network "
 			"traffic."),
@@ -450,8 +450,8 @@ multiload_applet_refresh(MultiloadApplet *ma)
 
 	orientation = cafe_panel_applet_get_orient(ma->applet);
 
-	if ( (orientation == MATE_PANEL_APPLET_ORIENT_UP) ||
-	     (orientation == MATE_PANEL_APPLET_ORIENT_DOWN) ) {
+	if ( (orientation == CAFE_PANEL_APPLET_ORIENT_UP) ||
+	     (orientation == CAFE_PANEL_APPLET_ORIENT_DOWN) ) {
 		ma->box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 	}
 	else
@@ -520,7 +520,7 @@ multiload_applet_new(CafePanelApplet *applet, const gchar *iid, gpointer data)
 	cafe_panel_applet_set_background_widget (applet, GTK_WIDGET(applet));
 
 	ma->settings = cafe_panel_applet_settings_new (applet, "org.cafe.panel.applet.multiload");
-	cafe_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+	cafe_panel_applet_set_flags (applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
 
 	action_group = gtk_action_group_new ("Multiload Applet Actions");
 	gtk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
@@ -586,7 +586,7 @@ multiload_factory (CafePanelApplet *applet,
 	return retval;
 }
 
-MATE_PANEL_APPLET_OUT_PROCESS_FACTORY ("MultiLoadAppletFactory",
+CAFE_PANEL_APPLET_OUT_PROCESS_FACTORY ("MultiLoadAppletFactory",
 				  PANEL_TYPE_APPLET,
 				  "multiload",
 				  multiload_factory,

@@ -1,7 +1,7 @@
 SUMMARY
 -------
 
-MATE CPUFreq Applet is a CPU Frequency Scaling Monitor for MATE Panel. 
+CAFE CPUFreq Applet is a CPU Frequency Scaling Monitor for CAFE Panel. 
 
 FEATURES
 --------
@@ -13,7 +13,7 @@ FEATURES
 PREREQUISITES
 -------------
 
- - MATE Panel libraries
+ - CAFE Panel libraries
 
    
 FREQUENCY SELECTOR

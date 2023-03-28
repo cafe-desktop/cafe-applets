@@ -426,14 +426,14 @@ load_graph_new (MultiloadApplet *ma, guint n, const gchar *label,
     orient = cafe_panel_applet_get_orient (g->multiload->applet);
     switch (orient)
     {
-    case MATE_PANEL_APPLET_ORIENT_UP:
-    case MATE_PANEL_APPLET_ORIENT_DOWN:
+    case CAFE_PANEL_APPLET_ORIENT_UP:
+    case CAFE_PANEL_APPLET_ORIENT_DOWN:
     {
         g->orient = FALSE;
         break;
     }
-    case MATE_PANEL_APPLET_ORIENT_LEFT:
-    case MATE_PANEL_APPLET_ORIENT_RIGHT:
+    case CAFE_PANEL_APPLET_ORIENT_LEFT:
+    case CAFE_PANEL_APPLET_ORIENT_RIGHT:
     {
         g->orient = TRUE;
         break;

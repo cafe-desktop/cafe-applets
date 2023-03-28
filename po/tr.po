@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR MATE Desktop Environment team
+# Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -18,7 +18,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cafe-applets 1.23.0\n"
-"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/MATE/\n"
+"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Butterfly <gokhanlnx@gmail.com>, 2020\n"
@@ -41,8 +41,8 @@ msgstr "Sun GNOME Dokümantasyon Ekibi <gdocteam@sun.com>"
 #: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
 #: trashapplet/src/trashapplet.c:421
-msgid "MATE Documentation Team"
-msgstr "MATE Belgelendirme Projesi"
+msgid "CAFE Documentation Team"
+msgstr "CAFE Belgelendirme Projesi"
 
 #: accessx-status/applet.c:98
 msgid "About AccessX Status"
@@ -57,7 +57,7 @@ msgstr ""
 #: accessx-status/applet.c:101
 msgid ""
 "Copyright © 2003 Sun Microsystems\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: accessx-status/applet.c:105 battstat/battstat_applet.c:844
@@ -73,7 +73,7 @@ msgstr ""
 "Görkem Çetin <gorkem@gelecek.com.tr>, 2002/2003.\n"
 "Barış Çicek <baris@teamforce.name.tr>, 2004, 2008, 2009.\n"
 "Muhammet Kara <muhammet.k@gmail.com>, 2011.\n"
-"MATE projesine katkıda bulunanlar:\n"
+"CAFE projesine katkıda bulunanlar:\n"
 "hsngrms <dead-bodies-everywhere@hotmail.com>, 2012\n"
 "mauron, 2012, 2013, 2014, 2015, 2016, 2017, 2018\n"
 "Atilla Öntaş <tarakbumba@gmail.com>, 2014\n"
@@ -341,7 +341,7 @@ msgstr "Pil Şarj İzleyicisi Hakkında"
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
@@ -492,7 +492,7 @@ msgstr "Karakter Paleti Hakkında"
 #: charpick/charpick.c:585
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: charpick/charpick.c:587
@@ -613,7 +613,7 @@ msgstr "Komut Uygulamacığı Hakkında"
 #: command/command.c:124
 msgid ""
 "Copyright © 2013-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 
 #: command/command.c:127
@@ -789,7 +789,7 @@ msgstr "CPU Frekans Ölçekleme İzleyicisi Hakkında"
 #: cpufreq/src/cpufreq-applet.c:483
 msgid ""
 "Copyright © 2004 Carlos Garcia Campos\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: cpufreq/src/cpufreq-applet.c:485
@@ -883,7 +883,7 @@ msgstr "Disk Bağlayıcı Hakkında"
 #: drivemount/drivemount.c:122
 msgid ""
 "Copyright © 2004 Canonical Ltd\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: drivemount/drivemount.c:124
@@ -918,13 +918,13 @@ msgid "About Eyes"
 msgstr "Gözler Hakkında"
 
 #: geyes/geyes.c:180
-msgid "A goofy set of eyes for the MATE panel. They follow your mouse."
-msgstr "MATE paneli için bir takım pörtlek göz. Farenizi takip ederler."
+msgid "A goofy set of eyes for the CAFE panel. They follow your mouse."
+msgstr "CAFE paneli için bir takım pörtlek göz. Farenizi takip ederler."
 
 #: geyes/geyes.c:182
 msgid ""
 "Copyright © 1999 Dave Camp\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: geyes/geyes.c:389 geyes/geyes.c:419 geyes/geyes.c:421
@@ -983,7 +983,7 @@ msgstr "Hava Durumu Raporu Hakkında"
 #: cafeweather/cafeweather-about.c:56
 msgid ""
 "Copyright © 1999-2005 by S. Papadimitriou and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: cafeweather/cafeweather-about.c:58
@@ -1004,8 +1004,8 @@ msgid "Weather Report"
 msgstr "Hava Raporu"
 
 #: cafeweather/cafeweather-applet.c:360 cafeweather/cafeweather-applet.c:364
-msgid "MATE Weather"
-msgstr "MATE Hava Durumu"
+msgid "CAFE Weather"
+msgstr "CAFE Hava Durumu"
 
 #: cafeweather/cafeweather-applet.c:463
 msgid "Weather Forecast"
@@ -1314,7 +1314,7 @@ msgstr "Sistem Gözlemcisi Hakkında"
 #: multiload/main.c:62
 msgid ""
 "Copyright © 1999-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: multiload/main.c:64
@@ -1970,14 +1970,14 @@ msgstr ""
 "%s"
 
 #: netspeed/src/netspeed.c:821
-msgid "About MATE Netspeed"
-msgstr "MATE Netspeed Hakkında"
+msgid "About CAFE Netspeed"
+msgstr "CAFE Netspeed Hakkında"
 
 #: netspeed/src/netspeed.c:823
 msgid ""
 "Copyright © 2002-2003 Jörgen Scheibengruber\n"
 "Copyright © 2011-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 
 #: netspeed/src/netspeed.c:826
@@ -1989,8 +1989,8 @@ msgstr ""
 "uygulamacık"
 
 #: netspeed/src/netspeed.c:987
-msgid "MATE Netspeed Preferences"
-msgstr "MATE Netspeed Tercihleri"
+msgid "CAFE Netspeed Preferences"
+msgstr "CAFE Netspeed Tercihleri"
 
 #: netspeed/src/netspeed.c:1009
 msgid "General Settings"
@@ -2160,8 +2160,8 @@ msgid "unknown"
 msgstr "bilinmiyor"
 
 #: netspeed/src/netspeed.c:1584
-msgid "MATE Netspeed"
-msgstr "MATE Netspeed"
+msgid "CAFE Netspeed"
+msgstr "CAFE Netspeed"
 
 #: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:5
 #: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:6
@@ -2551,12 +2551,12 @@ msgstr "Yapışkan Notlar Hakkında"
 msgid ""
 "Copyright © 2002-2003 Loban A Rahman\n"
 "Copyright © 2005 Davyd Madeley\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: stickynotes/stickynotes_applet_callbacks.c:384
-msgid "Sticky Notes for the MATE Desktop Environment"
-msgstr "MATE Masaüstü Ortamı için Yapışkan Notlar"
+msgid "Sticky Notes for the CAFE Desktop Environment"
+msgstr "CAFE Masaüstü Ortamı için Yapışkan Notlar"
 
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:5
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:6
@@ -2621,7 +2621,7 @@ msgstr "Zamanlayıcı Uygulaması Hakkında"
 #: timerapplet/timerapplet.c:274
 msgid ""
 "Copyright © 2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 
 #: timerapplet/timerapplet.c:310
@@ -2711,15 +2711,15 @@ msgstr "Çöp Kutusu Uygulaması Hakkında"
 msgid ""
 "Copyright © 2004 Michiel Sikkes\n"
 "Copyright © 2008 Ryan Lortie\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: trashapplet/src/trashapplet.c:437
 msgid ""
-"A MATE trash bin that lives in your panel. You can use it to view the trash "
+"A CAFE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
 msgstr ""
-"MATE Çöp Kutusu, panelinizde durur. Burdan Çöp kutunuzun durumunu görebilir "
+"CAFE Çöp Kutusu, panelinizde durur. Burdan Çöp kutunuzun durumunu görebilir "
 "ya da sürükle bırak yöntemi ile öğeleri çöpe atabilirsiniz."
 
 #: trashapplet/src/trashapplet.c:462

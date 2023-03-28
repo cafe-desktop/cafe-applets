@@ -1,5 +1,5 @@
-#ifndef MATE_APPLETS_MULTILOAD_AUTOSCALER_H
-#define MATE_APPLETS_MULTILOAD_AUTOSCALER_H
+#ifndef CAFE_APPLETS_MULTILOAD_AUTOSCALER_H
+#define CAFE_APPLETS_MULTILOAD_AUTOSCALER_H
 
 #include <glib.h>
 #include <time.h>
@@ -23,4 +23,4 @@ G_GNUC_INTERNAL void autoscaler_init(AutoScaler *that, unsigned interval, unsign
 G_GNUC_INTERNAL unsigned autoscaler_get_max(AutoScaler *that, unsigned current);
 
 
-#endif /* MATE_APPLETS_MULTILOAD_AUTOSCALER_H */
+#endif /* CAFE_APPLETS_MULTILOAD_AUTOSCALER_H */

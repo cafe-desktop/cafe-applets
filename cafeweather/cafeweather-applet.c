@@ -31,7 +31,7 @@
 #include <libnotify/notify.h>
 #endif
 
-#define MATEWEATHER_I_KNOW_THIS_IS_UNSTABLE
+#define CAFEWEATHER_I_KNOW_THIS_IS_UNSTABLE
 
 #include "cafeweather.h"
 #include "cafeweather-about.h"
@@ -92,7 +92,7 @@ static void details_cb (GtkAction      *action,
 	gw_applet->details_dialog = cafeweather_dialog_new(gw_applet);
 	g_object_add_weak_pointer(G_OBJECT(gw_applet->details_dialog),
 				  (gpointer *)&(gw_applet->details_dialog));
-	cafeweather_dialog_update (MATEWEATHER_DIALOG (gw_applet->details_dialog));
+	cafeweather_dialog_update (CAFEWEATHER_DIALOG (gw_applet->details_dialog));
 	gtk_widget_show (gw_applet->details_dialog);
    }
 }
@@ -132,12 +132,12 @@ static void place_widgets (CafeWeatherApplet *gw_applet)
     const gchar *icon_name;
 	
     switch (gw_applet->orient) {
-	case MATE_PANEL_APPLET_ORIENT_LEFT:
-	case MATE_PANEL_APPLET_ORIENT_RIGHT:
+	case CAFE_PANEL_APPLET_ORIENT_LEFT:
+	case CAFE_PANEL_APPLET_ORIENT_RIGHT:
 	    horizontal = FALSE;
 	    break;
-	case MATE_PANEL_APPLET_ORIENT_UP:
-	case MATE_PANEL_APPLET_ORIENT_DOWN:
+	case CAFE_PANEL_APPLET_ORIENT_UP:
+	case CAFE_PANEL_APPLET_ORIENT_DOWN:
 	    horizontal = TRUE;
 	    break;
     }
@@ -211,7 +211,7 @@ static void size_allocate_cb(CafePanelApplet *w, GtkAllocation *allocation, gpoi
 {
     CafeWeatherApplet *gw_applet = (CafeWeatherApplet *)data;
 	
-    if ((gw_applet->orient == MATE_PANEL_APPLET_ORIENT_LEFT) || (gw_applet->orient == MATE_PANEL_APPLET_ORIENT_RIGHT)) {
+    if ((gw_applet->orient == CAFE_PANEL_APPLET_ORIENT_LEFT) || (gw_applet->orient == CAFE_PANEL_APPLET_ORIENT_RIGHT)) {
       if (gw_applet->size == allocation->width)
 	return;
       gw_applet->size = allocation->width;
@@ -337,7 +337,7 @@ void cafeweather_applet_create (CafeWeatherApplet *gw_applet)
     gw_applet->cafeweather_pref.pressure_unit = PRESSURE_UNIT_INVALID;
     gw_applet->cafeweather_pref.distance_unit = DISTANCE_UNIT_INVALID;
     
-    cafe_panel_applet_set_flags (gw_applet->applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+    cafe_panel_applet_set_flags (gw_applet->applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
 
     cafe_panel_applet_set_background_widget(gw_applet->applet,
                                        GTK_WIDGET(gw_applet->applet));
@@ -357,11 +357,11 @@ void cafeweather_applet_create (CafeWeatherApplet *gw_applet)
     g_signal_connect (G_OBJECT(gw_applet->applet), "key_press_event",           
 			G_CALLBACK(key_press_cb), gw_applet);
                      
-    gtk_widget_set_tooltip_text (GTK_WIDGET(gw_applet->applet), _("MATE Weather"));
+    gtk_widget_set_tooltip_text (GTK_WIDGET(gw_applet->applet), _("CAFE Weather"));
 
     atk_obj = gtk_widget_get_accessible (GTK_WIDGET (gw_applet->applet));
     if (GTK_IS_ACCESSIBLE (atk_obj))
-	   atk_object_set_name (atk_obj, _("MATE Weather"));
+	   atk_object_set_name (atk_obj, _("CAFE Weather"));
 
     gw_applet->size = cafe_panel_applet_get_size (gw_applet->applet);
 
@@ -373,7 +373,7 @@ void cafeweather_applet_create (CafeWeatherApplet *gw_applet)
 				  weather_applet_menu_actions,
 				  G_N_ELEMENTS (weather_applet_menu_actions),
 				  gw_applet);
-    ui_path = g_build_filename (MATEWEATHER_MENU_UI_DIR, "cafeweather-applet-menu.xml", NULL);
+    ui_path = g_build_filename (CAFEWEATHER_MENU_UI_DIR, "cafeweather-applet-menu.xml", NULL);
     cafe_panel_applet_setup_menu_from_file (gw_applet->applet,
 				       ui_path, action_group);
     g_free (ui_path);
@@ -447,7 +447,7 @@ update_finish (WeatherInfo *info, gpointer data)
 
 	    /* Update dialog -- if one is present */
 	    if (gw_applet->details_dialog) {
-	    	cafeweather_dialog_update (MATEWEATHER_DIALOG (gw_applet->details_dialog));
+	    	cafeweather_dialog_update (CAFEWEATHER_DIALOG (gw_applet->details_dialog));
 	    }
 
 	    /* update applet */

@@ -8,7 +8,7 @@ endif
 libcafeweather_applets = \
 	cafeweather
 
-if BUILD_LIBMATEWEATHER_APPLETS
+if BUILD_LIBCAFEWEATHER_APPLETS
 libcafeweather_SUBDIRS = $(libcafeweather_applets)
 endif
 

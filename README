@@ -1,15 +1,15 @@
-MATE-Applets
+CAFE-Applets
 =============
 
 https://github.com/cafe-desktop/cafe-applets
 
-This package contains applets for use with the MATE panel.  Therefore, it
+This package contains applets for use with the CAFE panel.  Therefore, it
 requires cafe-panel to be installed.  To build all applets additional
 libraries may be needed.
 
 This list is by no means definitive.
 
-MATE-Applets is a fork of GNOME-Applets.
+CAFE-Applets is a fork of GNOME-Applets.
 
 
 Requirements

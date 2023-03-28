@@ -3,9 +3,9 @@ SUBDIRS = docs
 AM_CPPFLAGS =			\
 	-I$(srcdir)		\
 	-DMULTILOAD_MENU_UI_DIR=\""$(uidir)"\" \
-	$(MATE_APPLETS4_CFLAGS)	\
+	$(CAFE_APPLETS4_CFLAGS)	\
 	$(GTOP_APPLETS_CFLAGS)	\
-	$(MATEDESKTOP_CFLAGS)	\
+	$(CAFEDESKTOP_CFLAGS)	\
 	$(GIO_CFLAGS)
 
 libexec_PROGRAMS = cafe-multiload-applet
@@ -23,9 +23,9 @@ cafe_multiload_applet_SOURCES = \
 			autoscaler.h
 
 cafe_multiload_applet_LDADD = \
-				$(MATE_APPLETS4_LIBS) 	\
+				$(CAFE_APPLETS4_LIBS) 	\
 				$(GTOP_APPLETS_LIBS)	\
-				$(MATEDESKTOP_LIBS)		\
+				$(CAFEDESKTOP_LIBS)		\
 				$(GIO_LIBS)				\
 				-lm
 

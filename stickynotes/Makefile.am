@@ -13,8 +13,8 @@ AM_CPPFLAGS =					\
 	-I.					\
 	-I$(srcdir)				\
 	$(STICKYNOTES_CFLAGS)		\
-	$(MATE_APPLETS4_CFLAGS)		\
-	$(MATEDESKTOP_CFLAGS)		\
+	$(CAFE_APPLETS4_CFLAGS)		\
+	$(CAFEDESKTOP_CFLAGS)		\
 	$(LIBWNCK_CFLAGS)			\
 	$(XML2_CFLAGS)				\
 	-DSTICKYNOTES_MENU_UI_DIR=\""$(uidir)"\"
@@ -35,8 +35,8 @@ stickynotes_applet_SOURCES = \
 
 stickynotes_applet_LDADD =	\
 	$(STICKYNOTES_LIBS)	\
-	$(MATE_APPLETS4_LIBS)	\
-	$(MATEDESKTOP_LIBS)	\
+	$(CAFE_APPLETS4_LIBS)	\
+	$(CAFEDESKTOP_LIBS)	\
 	$(LIBWNCK_LIBS)		\
 	$(XML2_LIBS) \
 	-lX11

@@ -63,8 +63,8 @@ msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:29
-msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
-msgstr "<year>2015-2020</year> <holder>MATE dokumentacijski projekt</holder>"
+msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
+msgstr "<year>2015-2020</year> <holder>CAFE dokumentacijski projekt</holder>"
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:33
@@ -99,8 +99,8 @@ msgstr ""
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
 #: C/index.docbook:70 C/index.docbook:144
-msgid "MATE Documentation Project"
-msgstr "MATE dokumentacijski projekt"
+msgid "CAFE Documentation Project"
+msgstr "CAFE dokumentacijski projekt"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
@@ -113,11 +113,11 @@ msgstr "GNOME dokumentacijski projekt"
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:79
 msgid ""
-"<firstname>MATE Documentation Team</firstname> <surname/> <affiliation> "
-"<orgname>MATE Desktop</orgname> </affiliation>"
+"<firstname>CAFE Documentation Team</firstname> <surname/> <affiliation> "
+"<orgname>CAFE Desktop</orgname> </affiliation>"
 msgstr ""
-"<firstname>MATE dokumentacijski tim</firstname> <surname/> <affiliation> "
-"<orgname>MATE radno okruženje</orgname> </affiliation>"
+"<firstname>CAFE dokumentacijski tim</firstname> <surname/> <affiliation> "
+"<orgname>CAFE radno okruženje</orgname> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:86
@@ -160,8 +160,8 @@ msgstr ""
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:143
-msgid "MATE Documentation Team"
-msgstr "MATE dokumentacijski tim"
+msgid "CAFE Documentation Team"
+msgstr "CAFE dokumentacijski tim"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:139
@@ -274,7 +274,7 @@ msgstr "Povratne informacije"
 msgid ""
 "To report a bug or make a suggestion regarding the Weather Report applet or "
 "this manual, follow the directions in the <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+"guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -326,7 +326,7 @@ msgstr ""
 #: C/index.docbook:269
 msgid ""
 "If your computer is located behind a firewall, you must use a proxy server "
-"to access the weather servers. To configure the MATE Desktop to use a proxy "
+"to access the weather servers. To configure the CAFE Desktop to use a proxy "
 "server, use your preference tools to specify the network proxy server for "
 "Internet connections."
 msgstr ""
@@ -1117,7 +1117,7 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
 msgid ""
-"This manual is part of a collection of MATE manuals distributed under the "
+"This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in"
 " section 6 of the license."
@@ -1127,8 +1127,8 @@ msgstr ""
 #: C/legal.xml:19
 msgid ""
 "Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any MATE "
-"documentation, and the members of the MATE Documentation Project are made "
+"services are claimed as trademarks. Where those names appear in any CAFE "
+"documentation, and the members of the CAFE Documentation Project are made "
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""

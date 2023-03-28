@@ -1,5 +1,5 @@
 /*
- * MATE CPUFreq Applet
+ * CAFE CPUFreq Applet
  * Copyright (C) 2004 Carlos Garcia Campos <carlosgc@gnome.org>
  *
  *  This library is free software; you can redistribute it and/or
@@ -104,11 +104,11 @@ static gboolean cpufreq_applet_factory           (CPUFreqApplet      *applet,
                                                   gpointer            gdata);
 
 static const gchar* const cpufreq_icons[] = {
-	MATE_PIXMAPSDIR "/cafe-cpufreq-applet/cpufreq-25.png",
-	MATE_PIXMAPSDIR "/cafe-cpufreq-applet/cpufreq-50.png",
-	MATE_PIXMAPSDIR "/cafe-cpufreq-applet/cpufreq-75.png",
-	MATE_PIXMAPSDIR "/cafe-cpufreq-applet/cpufreq-100.png",
-	MATE_PIXMAPSDIR "/cafe-cpufreq-applet/cpufreq-na.png",
+	CAFE_PIXMAPSDIR "/cafe-cpufreq-applet/cpufreq-25.png",
+	CAFE_PIXMAPSDIR "/cafe-cpufreq-applet/cpufreq-50.png",
+	CAFE_PIXMAPSDIR "/cafe-cpufreq-applet/cpufreq-75.png",
+	CAFE_PIXMAPSDIR "/cafe-cpufreq-applet/cpufreq-100.png",
+	CAFE_PIXMAPSDIR "/cafe-cpufreq-applet/cpufreq-na.png",
 	NULL
 };
 
@@ -182,19 +182,19 @@ cpufreq_applet_init (CPUFreqApplet *applet)
 
 	applet->need_refresh = TRUE;
 
-        cafe_panel_applet_set_flags (MATE_PANEL_APPLET (applet), MATE_PANEL_APPLET_EXPAND_MINOR);
-	cafe_panel_applet_set_background_widget (MATE_PANEL_APPLET (applet), GTK_WIDGET (applet));
+        cafe_panel_applet_set_flags (CAFE_PANEL_APPLET (applet), CAFE_PANEL_APPLET_EXPAND_MINOR);
+	cafe_panel_applet_set_background_widget (CAFE_PANEL_APPLET (applet), GTK_WIDGET (applet));
 
-        applet->size = cafe_panel_applet_get_size (MATE_PANEL_APPLET (applet));
-        applet->orient = cafe_panel_applet_get_orient (MATE_PANEL_APPLET (applet));
+        applet->size = cafe_panel_applet_get_size (CAFE_PANEL_APPLET (applet));
+        applet->orient = cafe_panel_applet_get_orient (CAFE_PANEL_APPLET (applet));
 
 	switch (applet->orient) {
-	case MATE_PANEL_APPLET_ORIENT_LEFT:
-	case MATE_PANEL_APPLET_ORIENT_RIGHT:
+	case CAFE_PANEL_APPLET_ORIENT_LEFT:
+	case CAFE_PANEL_APPLET_ORIENT_RIGHT:
 		applet->container = gtk_alignment_new (0.5, 0.5, 0, 0);
 		break;
-	case MATE_PANEL_APPLET_ORIENT_UP:
-	case MATE_PANEL_APPLET_ORIENT_DOWN:
+	case CAFE_PANEL_APPLET_ORIENT_UP:
+	case CAFE_PANEL_APPLET_ORIENT_DOWN:
 		applet->container = gtk_alignment_new (0, 0.5, 0, 0);
 		break;
 	}
@@ -206,7 +206,7 @@ cpufreq_applet_init (CPUFreqApplet *applet)
 static void
 cpufreq_applet_class_init (CPUFreqAppletClass *klass)
 {
-        CafePanelAppletClass *applet_class = MATE_PANEL_APPLET_CLASS (klass);
+        CafePanelAppletClass *applet_class = CAFE_PANEL_APPLET_CLASS (klass);
         GObjectClass     *gobject_class = G_OBJECT_CLASS (klass);
         GtkWidgetClass   *widget_class = GTK_WIDGET_CLASS (klass);
 
@@ -262,12 +262,12 @@ cpufreq_applet_size_allocate (GtkWidget *widget, GtkAllocation *allocation)
         applet = CPUFREQ_APPLET (widget);
 
         switch (applet->orient) {
-        case MATE_PANEL_APPLET_ORIENT_LEFT:
-        case MATE_PANEL_APPLET_ORIENT_RIGHT:
+        case CAFE_PANEL_APPLET_ORIENT_LEFT:
+        case CAFE_PANEL_APPLET_ORIENT_RIGHT:
                 size = allocation->width;
                 break;
-        case MATE_PANEL_APPLET_ORIENT_UP:
-        case MATE_PANEL_APPLET_ORIENT_DOWN:
+        case CAFE_PANEL_APPLET_ORIENT_UP:
+        case CAFE_PANEL_APPLET_ORIENT_DOWN:
                 size = allocation->height;
                 break;
         }
@@ -395,8 +395,8 @@ cpufreq_applet_change_orient (CafePanelApplet *pa, CafePanelAppletOrient orient)
 
         gtk_widget_get_allocation (GTK_WIDGET (applet), &allocation);
 
-        if ((orient == MATE_PANEL_APPLET_ORIENT_LEFT) ||
-            (orient == MATE_PANEL_APPLET_ORIENT_RIGHT)) {
+        if ((orient == CAFE_PANEL_APPLET_ORIENT_LEFT) ||
+            (orient == CAFE_PANEL_APPLET_ORIENT_RIGHT)) {
                 size = allocation.width;
 		gtk_alignment_set (GTK_ALIGNMENT (applet->container),
 				   0.5, 0.5, 0, 0);
@@ -463,7 +463,7 @@ cpufreq_applet_about_cb (GtkAction     *action,
         static const gchar* documenters[] = {
                 "Carlos Garcia Campos <carlosgc@gnome.org>",
                 "Davyd Madeley <davyd@madeley.id.au>",
-                N_("MATE Documentation Team"),
+                N_("CAFE Documentation Team"),
                 NULL
         };
         static const gchar *const artists[] = {
@@ -481,7 +481,7 @@ cpufreq_applet_about_cb (GtkAction     *action,
                                "title",         _("About CPU Frequency Scaling Monitor"),
                                "version",       VERSION,
                                "copyright",     _("Copyright \xC2\xA9 2004 Carlos Garcia Campos\n"
-                                                  "Copyright \xc2\xa9 2012-2020 MATE developers"),
+                                                  "Copyright \xc2\xa9 2012-2020 CAFE developers"),
                                "comments",      _("This utility shows the current CPU "
                                                   "Frequency Scaling."),
                                "authors",       authors,
@@ -719,8 +719,8 @@ cpufreq_applet_refresh (CPUFreqApplet *applet)
 
     panel_size = applet->size - 1; /* 1 pixel margin */
 
-    horizontal = (applet->orient == MATE_PANEL_APPLET_ORIENT_UP ||
-             applet->orient == MATE_PANEL_APPLET_ORIENT_DOWN);
+    horizontal = (applet->orient == CAFE_PANEL_APPLET_ORIENT_UP ||
+             applet->orient == CAFE_PANEL_APPLET_ORIENT_DOWN);
 
 
        /* We want a fixed label size, the biggest */
@@ -818,7 +818,7 @@ cpufreq_applet_setup (CPUFreqApplet *applet)
         if (applet->prefs)
                 g_object_unref (applet->prefs);
 
-        settings = cafe_panel_applet_settings_new (MATE_PANEL_APPLET (applet), "org.cafe.panel.applet.cpufreq");
+        settings = cafe_panel_applet_settings_new (CAFE_PANEL_APPLET (applet), "org.cafe.panel.applet.cpufreq");
         applet->prefs = cpufreq_prefs_new (settings);
 
 	g_signal_connect (G_OBJECT (applet->prefs),
@@ -850,11 +850,11 @@ cpufreq_applet_setup (CPUFreqApplet *applet)
 				      G_N_ELEMENTS (cpufreq_applet_menu_actions),
 				      applet);
 	ui_path = g_build_filename (CPUFREQ_MENU_UI_DIR, "cpufreq-applet-menu.xml", NULL);
-        cafe_panel_applet_setup_menu_from_file (MATE_PANEL_APPLET (applet),
+        cafe_panel_applet_setup_menu_from_file (CAFE_PANEL_APPLET (applet),
 					   ui_path, action_group);
 	g_free (ui_path);
 
-        if (cafe_panel_applet_get_locked_down (MATE_PANEL_APPLET (applet))) {
+        if (cafe_panel_applet_get_locked_down (CAFE_PANEL_APPLET (applet))) {
 		GtkAction *action;
 
 		action = gtk_action_group_get_action (action_group, "CPUFreqPreferences");
@@ -888,7 +888,7 @@ cpufreq_applet_factory (CPUFreqApplet *applet, const gchar *iid, gpointer gdata)
         return retval;
 }
 
-MATE_PANEL_APPLET_OUT_PROCESS_FACTORY ("CPUFreqAppletFactory",
+CAFE_PANEL_APPLET_OUT_PROCESS_FACTORY ("CPUFreqAppletFactory",
 				  CPUFREQ_TYPE_APPLET,
 				  "cpufreq-applet",
 				  (CafePanelAppletFactoryCallback) cpufreq_applet_factory,

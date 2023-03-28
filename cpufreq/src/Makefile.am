@@ -6,8 +6,8 @@ SUBDIRS = $(selector_SUBDIR)
 
 AM_CPPFLAGS = \
 	-DCPUFREQ_MENU_UI_DIR=\""$(datadir)/cafe/ui"\" 	\
-	$(MATE_APPLETS4_CFLAGS) 				\
-	$(MATEDESKTOP_CFLAGS) 				\
+	$(CAFE_APPLETS4_CFLAGS) 				\
+	$(CAFEDESKTOP_CFLAGS) 				\
 	$(DBUS_CFLAGS)
 
 libexec_PROGRAMS = cafe-cpufreq-applet
@@ -30,8 +30,8 @@ cafe_cpufreq_applet_SOURCES =  \
 	cpufreq-monitor-cpuinfo.c       cpufreq-monitor-cpuinfo.h
 
 cafe_cpufreq_applet_LDADD =  \
-	$(MATE_APPLETS4_LIBS)   	\
-	$(MATEDESKTOP_LIBS)   	\
+	$(CAFE_APPLETS4_LIBS)   	\
+	$(CAFEDESKTOP_LIBS)   	\
 	$(LIBCPUFREQ_LIBS)		\
 	$(DBUS_LIBS)
 

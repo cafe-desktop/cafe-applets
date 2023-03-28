@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR MATE Desktop Environment team
+# Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cafe-applets 1.23.0\n"
-"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/MATE/\n"
+"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>, 2020\n"
@@ -35,8 +35,8 @@ msgstr "Sun GNOME 문서 팀 <gdocteam@sun.com>"
 #: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
 #: trashapplet/src/trashapplet.c:421
-msgid "MATE Documentation Team"
-msgstr "MATE 문서 팀"
+msgid "CAFE Documentation Team"
+msgstr "CAFE 문서 팀"
 
 #: accessx-status/applet.c:98
 msgid "About AccessX Status"
@@ -49,7 +49,7 @@ msgstr "AccessX 기능의 상태를 보여줍니다(예를 들어 변경 키 고
 #: accessx-status/applet.c:101
 msgid ""
 "Copyright © 2003 Sun Microsystems\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: accessx-status/applet.c:105 battstat/battstat_applet.c:844
@@ -65,7 +65,7 @@ msgstr ""
 "Yoo Duk Nam https://launchpad.net/~yoo2001818\n"
 "onlyeriko https://launchpad.net/~onlyeriko\n"
 "Seong-ho Cho <darkcircle.0426@gmail.com>\n"
-"MATE Desktop Environment Team <https://www.transifex.com/cafe/teams/13566/ko/>"
+"CAFE Desktop Environment Team <https://www.transifex.com/cafe/teams/13566/ko/>"
 
 #: accessx-status/applet.c:124
 #, c-format
@@ -322,7 +322,7 @@ msgstr "배터리 충전 정보 소개"
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
@@ -469,7 +469,7 @@ msgstr "문자 팔레트 소개"
 #: charpick/charpick.c:585
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: charpick/charpick.c:587
@@ -586,7 +586,7 @@ msgstr "명령 애플릿 소개"
 #: command/command.c:124
 msgid ""
 "Copyright © 2013-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 
 #: command/command.c:127
@@ -756,7 +756,7 @@ msgstr "CPU 주파수 스케일링 정보 소개"
 #: cpufreq/src/cpufreq-applet.c:483
 msgid ""
 "Copyright © 2004 Carlos Garcia Campos\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: cpufreq/src/cpufreq-applet.c:485
@@ -848,7 +848,7 @@ msgstr "디스크 마운터 소개"
 #: drivemount/drivemount.c:122
 msgid ""
 "Copyright © 2004 Canonical Ltd\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: drivemount/drivemount.c:124
@@ -883,13 +883,13 @@ msgid "About Eyes"
 msgstr "눈동자 소개"
 
 #: geyes/geyes.c:180
-msgid "A goofy set of eyes for the MATE panel. They follow your mouse."
+msgid "A goofy set of eyes for the CAFE panel. They follow your mouse."
 msgstr "마테 패널용 단순한 눈동자 두 개. 마우스를 따라 다닙니다."
 
 #: geyes/geyes.c:182
 msgid ""
 "Copyright © 1999 Dave Camp\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: geyes/geyes.c:389 geyes/geyes.c:419 geyes/geyes.c:421
@@ -948,7 +948,7 @@ msgstr "날씨 알림 소개"
 #: cafeweather/cafeweather-about.c:56
 msgid ""
 "Copyright © 1999-2005 by S. Papadimitriou and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: cafeweather/cafeweather-about.c:58
@@ -969,7 +969,7 @@ msgid "Weather Report"
 msgstr "날씨 알림"
 
 #: cafeweather/cafeweather-applet.c:360 cafeweather/cafeweather-applet.c:364
-msgid "MATE Weather"
+msgid "CAFE Weather"
 msgstr "마테 날씨"
 
 #: cafeweather/cafeweather-applet.c:463
@@ -1277,7 +1277,7 @@ msgstr "시스템 정보 소개"
 #: multiload/main.c:62
 msgid ""
 "Copyright © 1999-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: multiload/main.c:64
@@ -1924,14 +1924,14 @@ msgstr ""
 "%s"
 
 #: netspeed/src/netspeed.c:821
-msgid "About MATE Netspeed"
+msgid "About CAFE Netspeed"
 msgstr "마테 넷스피드 소개"
 
 #: netspeed/src/netspeed.c:823
 msgid ""
 "Copyright © 2002-2003 Jörgen Scheibengruber\n"
 "Copyright © 2011-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 
 #: netspeed/src/netspeed.c:826
@@ -1941,7 +1941,7 @@ msgid ""
 msgstr "지정 네트워크 장치의 트래픽 정보를 보여주는 작은 애플릿입니다"
 
 #: netspeed/src/netspeed.c:987
-msgid "MATE Netspeed Preferences"
+msgid "CAFE Netspeed Preferences"
 msgstr "마테 넷스피드 기본 설정"
 
 #: netspeed/src/netspeed.c:1009
@@ -2112,7 +2112,7 @@ msgid "unknown"
 msgstr "알 수 없음"
 
 #: netspeed/src/netspeed.c:1584
-msgid "MATE Netspeed"
+msgid "CAFE Netspeed"
 msgstr "마테 넷스피드"
 
 #: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:5
@@ -2482,11 +2482,11 @@ msgstr "스티키 노트 소개"
 msgid ""
 "Copyright © 2002-2003 Loban A Rahman\n"
 "Copyright © 2005 Davyd Madeley\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: stickynotes/stickynotes_applet_callbacks.c:384
-msgid "Sticky Notes for the MATE Desktop Environment"
+msgid "Sticky Notes for the CAFE Desktop Environment"
 msgstr "마테 데스크톱 환경을 위한 메모지"
 
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:5
@@ -2552,7 +2552,7 @@ msgstr "타이머 애플릿 소개"
 #: timerapplet/timerapplet.c:274
 msgid ""
 "Copyright © 2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 
 #: timerapplet/timerapplet.c:310
@@ -2641,12 +2641,12 @@ msgstr "휴지통 애플릿 소개"
 msgid ""
 "Copyright © 2004 Michiel Sikkes\n"
 "Copyright © 2008 Ryan Lortie\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: trashapplet/src/trashapplet.c:437
 msgid ""
-"A MATE trash bin that lives in your panel. You can use it to view the trash "
+"A CAFE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
 msgstr "패널에 붙어 있는 마테 휴지통. 휴지통을 볼 때 쓸 수도 있고, 휴지통에 끌어 놓는 데도 쓸 수 있습니다."
 
