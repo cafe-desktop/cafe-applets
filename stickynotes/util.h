@@ -21,7 +21,7 @@
 #define __UTIL_H__
 
 #include <glib.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 gchar * get_current_date(const gchar *format);
 void	xstuff_change_workspace (GtkWindow *window,

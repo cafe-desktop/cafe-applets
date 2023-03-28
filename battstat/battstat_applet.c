@@ -35,7 +35,7 @@
 #include <time.h>
 #include <unistd.h>
 
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 #include <cafe-panel-applet.h>
 #include <cafe-panel-applet-gsettings.h>
@@ -147,17 +147,17 @@ battstat_error_dialog( GtkWidget *applet, const char *msg )
 {
   GtkWidget *dialog;
 
-  dialog = gtk_message_dialog_new( NULL, 0, GTK_MESSAGE_ERROR,
+  dialog = ctk_message_dialog_new( NULL, 0, GTK_MESSAGE_ERROR,
                                    GTK_BUTTONS_OK, "%s", msg);
 
-  gtk_window_set_screen( GTK_WINDOW (dialog),
-                         gtk_widget_get_screen (GTK_WIDGET (applet)) );
+  ctk_window_set_screen( GTK_WINDOW (dialog),
+                         ctk_widget_get_screen (GTK_WIDGET (applet)) );
 
   g_signal_connect_swapped( G_OBJECT (dialog), "response",
-                            G_CALLBACK (gtk_widget_destroy),
+                            G_CALLBACK (ctk_widget_destroy),
                             G_OBJECT (dialog) );
 
-  gtk_widget_show_all( dialog );
+  ctk_widget_show_all( dialog );
 }
 
 /* Format a string describing how much time is left to fully (dis)charge
@@ -229,11 +229,11 @@ battery_full_notify (GtkWidget *applet)
 	if (!notify_is_initted () && !notify_init (_("Battery Monitor")))
 		return FALSE;
 
-	icon = gtk_icon_theme_load_icon_for_scale (
-			gtk_icon_theme_get_default (),
+	icon = ctk_icon_theme_load_icon_for_scale (
+			ctk_icon_theme_get_default (),
 			"battery",
 			48,
-			gtk_widget_get_scale_factor (applet),
+			ctk_widget_get_scale_factor (applet),
 			GTK_ICON_LOOKUP_USE_BUILTIN,
 			NULL);
 
@@ -271,44 +271,44 @@ battery_full_dialog (GtkWidget *applet)
   cairo_surface_t *surface;
 
   gchar *new_label;
-  dialog = gtk_dialog_new_with_buttons (
+  dialog = ctk_dialog_new_with_buttons (
 		_("Battery Notice"),
 		NULL,
 		GTK_DIALOG_DESTROY_WITH_PARENT,
-		"gtk-ok",
+		"ctk-ok",
 		GTK_RESPONSE_ACCEPT,
 		NULL);
   g_signal_connect_swapped (G_OBJECT (dialog), "response",
-			    G_CALLBACK (gtk_widget_destroy),
+			    G_CALLBACK (ctk_widget_destroy),
 			    G_OBJECT (dialog));
 
-  gtk_container_set_border_width (GTK_CONTAINER (dialog), 6);
-  hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
-  surface = gtk_icon_theme_load_surface (
-		gtk_icon_theme_get_default (),
+  ctk_container_set_border_width (GTK_CONTAINER (dialog), 6);
+  hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
+  surface = ctk_icon_theme_load_surface (
+		ctk_icon_theme_get_default (),
 		"battery",
 		48,
-		gtk_widget_get_scale_factor (applet),
+		ctk_widget_get_scale_factor (applet),
 		NULL,
 		GTK_ICON_LOOKUP_USE_BUILTIN,
 		NULL);
-  image = gtk_image_new_from_surface (surface);
+  image = ctk_image_new_from_surface (surface);
   cairo_surface_destroy (surface);
-  gtk_box_pack_start (GTK_BOX (hbox), image, TRUE, TRUE, 6);
+  ctk_box_pack_start (GTK_BOX (hbox), image, TRUE, TRUE, 6);
   new_label = g_strdup_printf (
 		"<span weight=\"bold\" size=\"larger\">%s</span>",
  		_("Your battery is now fully recharged"));
-  label = gtk_label_new (new_label);
+  label = ctk_label_new (new_label);
   g_free (new_label);
-  gtk_label_set_line_wrap (GTK_LABEL (label), TRUE);
-  gtk_label_set_use_markup (GTK_LABEL (label), TRUE);
-  gtk_box_pack_start (GTK_BOX (hbox), label, TRUE, TRUE, 6);
-  gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), hbox);
-  gtk_window_set_keep_above (GTK_WINDOW (dialog), TRUE);
-  gtk_window_stick (GTK_WINDOW (dialog));
-  gtk_window_set_skip_pager_hint (GTK_WINDOW (dialog), TRUE);
-  gtk_window_set_focus_on_map (GTK_WINDOW (dialog), FALSE);
-  gtk_widget_show_all (dialog);
+  ctk_label_set_line_wrap (GTK_LABEL (label), TRUE);
+  ctk_label_set_use_markup (GTK_LABEL (label), TRUE);
+  ctk_box_pack_start (GTK_BOX (hbox), label, TRUE, TRUE, 6);
+  ctk_container_add (GTK_CONTAINER (ctk_dialog_get_content_area (GTK_DIALOG (dialog))), hbox);
+  ctk_window_set_keep_above (GTK_WINDOW (dialog), TRUE);
+  ctk_window_stick (GTK_WINDOW (dialog));
+  ctk_window_set_skip_pager_hint (GTK_WINDOW (dialog), TRUE);
+  ctk_window_set_focus_on_map (GTK_WINDOW (dialog), FALSE);
+  ctk_widget_show_all (dialog);
 }
 
 /* Destroy the low battery notification dialog and mark it as such.
@@ -316,7 +316,7 @@ battery_full_dialog (GtkWidget *applet)
 static void
 battery_low_dialog_destroy( ProgressData *battstat )
 {
-  gtk_widget_destroy( battstat->battery_low_dialog );
+  ctk_widget_destroy( battstat->battery_low_dialog );
   battstat->battery_low_dialog = NULL;
   battstat->battery_low_label = NULL;
 }
@@ -360,7 +360,7 @@ battery_low_update_text( ProgressData *battstat, BatteryStatus *info )
       battstat->battery_low_dialog == NULL )
     return;
 
-  gtk_widget_get_preferred_size (GTK_WIDGET (battstat->battery_low_label), NULL, &size);
+  ctk_widget_get_preferred_size (GTK_WIDGET (battstat->battery_low_label), NULL, &size);
 
   /* If the label has never been set before, the width will be 0.  If it
      has been set before (width > 0) then we want to keep the size of
@@ -368,7 +368,7 @@ battery_low_update_text( ProgressData *battstat, BatteryStatus *info )
      explicitly here.
    */
   if( size.width > 0 )
-    gtk_widget_set_size_request( GTK_WIDGET( battstat->battery_low_label ),
+    ctk_widget_set_size_request( GTK_WIDGET( battstat->battery_low_label ),
                                  size.width, size.height );
 
   if (info->minutes < 0 && !info->on_ac_power)
@@ -410,7 +410,7 @@ battery_low_update_text( ProgressData *battstat, BatteryStatus *info )
 		"<span weight=\"bold\" size=\"larger\">%s</span>\n\n%s\n\n%s",
 		_("Your battery is running low"), remaining, suggest );
 
-  gtk_label_set_markup( battstat->battery_low_label, new_label );
+  ctk_label_set_markup( battstat->battery_low_label, new_label );
   g_free( remaining );
   g_free( new_label );
 }
@@ -428,14 +428,14 @@ battery_low_dialog( ProgressData *battery, BatteryStatus *info )
   if( battery->battery_low_dialog != NULL )
     return;
 
-  battery->battery_low_dialog = gtk_dialog_new_with_buttons (
+  battery->battery_low_dialog = ctk_dialog_new_with_buttons (
 		 _("Battery Notice"),
 		 NULL,
 		 GTK_DIALOG_DESTROY_WITH_PARENT,
-		 "gtk-ok",
+		 "ctk-ok",
 		 GTK_RESPONSE_ACCEPT,
 		 NULL);
-  gtk_dialog_set_default_response( GTK_DIALOG (battery->battery_low_dialog),
+  ctk_dialog_set_default_response( GTK_DIALOG (battery->battery_low_dialog),
                                    GTK_RESPONSE_ACCEPT );
 
   g_signal_connect_swapped( G_OBJECT (battery->battery_low_dialog),
@@ -443,41 +443,41 @@ battery_low_dialog( ProgressData *battery, BatteryStatus *info )
                             G_CALLBACK (battery_low_dialog_destroy),
                             battery );
 
-  gtk_container_set_border_width (GTK_CONTAINER (battery->battery_low_dialog),
+  ctk_container_set_border_width (GTK_CONTAINER (battery->battery_low_dialog),
 		  6);
-  hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
-  gtk_container_set_border_width (GTK_CONTAINER (hbox), 6);
-  surface = gtk_icon_theme_load_surface (gtk_icon_theme_get_default (),
+  hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
+  ctk_container_set_border_width (GTK_CONTAINER (hbox), 6);
+  surface = ctk_icon_theme_load_surface (ctk_icon_theme_get_default (),
 		 "battery",
 		 48,
-		 gtk_widget_get_scale_factor (GTK_WIDGET (hbox)),
+		 ctk_widget_get_scale_factor (GTK_WIDGET (hbox)),
 		 NULL,
 		 GTK_ICON_LOOKUP_USE_BUILTIN,
 		 NULL);
-  image = gtk_image_new_from_surface (surface);
+  image = ctk_image_new_from_surface (surface);
   cairo_surface_destroy (surface);
-  vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-  gtk_box_pack_start (GTK_BOX (hbox), vbox, FALSE, FALSE, 6);
-  gtk_box_pack_start (GTK_BOX (vbox), image, FALSE, FALSE, 0);
-  label = gtk_label_new ("");
+  vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+  ctk_box_pack_start (GTK_BOX (hbox), vbox, FALSE, FALSE, 6);
+  ctk_box_pack_start (GTK_BOX (vbox), image, FALSE, FALSE, 0);
+  label = ctk_label_new ("");
   battery->battery_low_label = GTK_LABEL( label );
-  gtk_label_set_line_wrap( battery->battery_low_label, TRUE );
-  gtk_label_set_selectable( battery->battery_low_label, TRUE );
-  gtk_box_pack_start (GTK_BOX (hbox), label, FALSE, FALSE, 6);
-  gtk_container_add (GTK_CONTAINER (gtk_dialog_get_content_area (GTK_DIALOG (battery->battery_low_dialog))), hbox);
+  ctk_label_set_line_wrap( battery->battery_low_label, TRUE );
+  ctk_label_set_selectable( battery->battery_low_label, TRUE );
+  ctk_box_pack_start (GTK_BOX (hbox), label, FALSE, FALSE, 6);
+  ctk_container_add (GTK_CONTAINER (ctk_dialog_get_content_area (GTK_DIALOG (battery->battery_low_dialog))), hbox);
 
-  gtk_window_set_keep_above (GTK_WINDOW (battery->battery_low_dialog), TRUE);
-  gtk_window_stick (GTK_WINDOW (battery->battery_low_dialog));
-  gtk_window_set_focus_on_map (GTK_WINDOW (battery->battery_low_dialog),
+  ctk_window_set_keep_above (GTK_WINDOW (battery->battery_low_dialog), TRUE);
+  ctk_window_stick (GTK_WINDOW (battery->battery_low_dialog));
+  ctk_window_set_focus_on_map (GTK_WINDOW (battery->battery_low_dialog),
 		  FALSE);
-  gtk_window_set_skip_pager_hint (GTK_WINDOW (battery->battery_low_dialog),
+  ctk_window_set_skip_pager_hint (GTK_WINDOW (battery->battery_low_dialog),
 		  TRUE);
 
   battery_low_update_text( battery, info );
 
-  gtk_window_set_position (GTK_WINDOW (battery->battery_low_dialog),
+  ctk_window_set_position (GTK_WINDOW (battery->battery_low_dialog),
 		  GTK_WIN_POS_CENTER);
-  gtk_widget_show_all (battery->battery_low_dialog);
+  ctk_widget_show_all (battery->battery_low_dialog);
 }
 
 /* Update the text of the tooltip from the provided info.
@@ -511,7 +511,7 @@ update_tooltip( ProgressData *battstat, BatteryStatus *info )
                                  _("Battery status unknown"));
   }
 
-  gtk_widget_set_tooltip_text (battstat->applet, tiptext);
+  ctk_widget_set_tooltip_text (battstat->applet, tiptext);
   g_free (tiptext);
 }
 
@@ -539,7 +539,7 @@ update_percent_label( ProgressData *battstat, BatteryStatus *info )
   else
     new_label = g_strdup (_("N/A"));
 
-  gtk_label_set_text (GTK_LABEL (battstat->percent), new_label);
+  ctk_label_set_text (GTK_LABEL (battstat->percent), new_label);
   g_free (new_label);
 }
 
@@ -591,19 +591,19 @@ possibly_update_status_icon( ProgressData *battstat, BatteryStatus *info )
     icon_name = g_strdup("battery-full");
   }
 
-  theme = gtk_icon_theme_get_for_screen (gtk_widget_get_screen (GTK_WIDGET (battstat->applet)));
+  theme = ctk_icon_theme_get_for_screen (ctk_widget_get_screen (GTK_WIDGET (battstat->applet)));
 
   icon_size = cafe_panel_applet_get_size (CAFE_PANEL_APPLET (battstat->applet));
-  icon_scale = gtk_widget_get_scale_factor (GTK_WIDGET (battstat->applet));
+  icon_scale = ctk_widget_get_scale_factor (GTK_WIDGET (battstat->applet));
 
-  surface = gtk_icon_theme_load_surface (theme, icon_name, icon_size, icon_scale, NULL, 0, NULL);
+  surface = ctk_icon_theme_load_surface (theme, icon_name, icon_size, icon_scale, NULL, 0, NULL);
   g_free (icon_name);
 
-  gtk_image_set_from_surface (GTK_IMAGE(battstat->status), surface);
+  ctk_image_set_from_surface (GTK_IMAGE(battstat->status), surface);
   cairo_surface_destroy (surface);
 }
 
-/* Gets called as a gtk_timeout once per second.  Checks for updates and
+/* Gets called as a ctk_timeout once per second.  Checks for updates and
    makes any changes as appropriate.
  */
 static gboolean
@@ -739,7 +739,7 @@ destroy_applet( GtkWidget *widget, ProgressData *battstat )
   if (DEBUG) g_print("destroy_applet()\n");
 
   if (battstat->prop_win)
-    gtk_widget_destroy (GTK_WIDGET (battstat->prop_win));
+    ctk_widget_destroy (GTK_WIDGET (battstat->prop_win));
 
   if( battstat->battery_low_dialog )
     battery_low_dialog_destroy( battstat );
@@ -770,9 +770,9 @@ battstat_show_help( ProgressData *battstat, const char *section )
   else
     uri = g_strdup ("help:cafe-battstat");
 
-  gtk_show_uri_on_window (NULL,
+  ctk_show_uri_on_window (NULL,
                 uri,
-                gtk_get_current_event_time (),
+                ctk_get_current_event_time (),
                 &error);
 
   g_free (uri);
@@ -833,7 +833,7 @@ about_cb( GtkAction *action, ProgressData *battstat )
     *p = _(*p);
 #endif
 
-  gtk_show_about_dialog( NULL,
+  ctk_show_about_dialog( NULL,
     "title",               _("About Battery Charge Monitor"),
     "version",             VERSION,
     "copyright",           _("Copyright \xc2\xa9 2000 The Gnulix Society\n"
@@ -857,11 +857,11 @@ static void
 setup_text_orientation( ProgressData *battstat )
 {
   if( battstat->orienttype == CAFE_PANEL_APPLET_ORIENT_RIGHT )
-    gtk_label_set_angle( GTK_LABEL( battstat->percent ), 90 );
+    ctk_label_set_angle( GTK_LABEL( battstat->percent ), 90 );
   else if( battstat->orienttype == CAFE_PANEL_APPLET_ORIENT_LEFT )
-    gtk_label_set_angle( GTK_LABEL( battstat->percent ), 270 );
+    ctk_label_set_angle( GTK_LABEL( battstat->percent ), 270 );
   else
-    gtk_label_set_angle( GTK_LABEL( battstat->percent ), 0 );
+    ctk_label_set_angle( GTK_LABEL( battstat->percent ), 0 );
 }
 
 
@@ -947,31 +947,31 @@ grid_layout_attach (GtkGrid *grid, LayoutLocation loc, GtkWidget *child)
   switch( loc )
   {
     case LAYOUT_LONG:
-      gtk_grid_attach (grid, child, 1, 0, 1, 2);
+      ctk_grid_attach (grid, child, 1, 0, 1, 2);
       break;
 
     case LAYOUT_TOPLEFT:
-      gtk_grid_attach (grid, child, 0, 0, 1, 1);
+      ctk_grid_attach (grid, child, 0, 0, 1, 1);
       break;
 
     case LAYOUT_TOP:
-      gtk_grid_attach (grid, child, 1, 0, 1, 1);
+      ctk_grid_attach (grid, child, 1, 0, 1, 1);
       break;
 
     case LAYOUT_LEFT:
-      gtk_grid_attach (grid, child, 0, 1, 1, 1);
+      ctk_grid_attach (grid, child, 0, 1, 1, 1);
       break;
 
     case LAYOUT_CENTRE:
-      gtk_grid_attach (grid, child, 1, 1, 1, 1);
+      ctk_grid_attach (grid, child, 1, 1, 1, 1);
       break;
 
     case LAYOUT_RIGHT:
-      gtk_grid_attach (grid, child, 2, 1, 1, 1);
+      ctk_grid_attach (grid, child, 2, 1, 1, 1);
       break;
 
     case LAYOUT_BOTTOM:
-      gtk_grid_attach (grid, child, 1, 2, 1, 1);
+      ctk_grid_attach (grid, child, 1, 2, 1, 1);
       break;
 
     default:
@@ -1017,10 +1017,10 @@ reconfigure_layout( ProgressData *battstat )
 
     /* Start by removing any elements in the grid from the grid. */
     if( battstat->layout.text )
-      gtk_container_remove( GTK_CONTAINER( battstat->grid ),
+      ctk_container_remove( GTK_CONTAINER( battstat->grid ),
                             battstat->percent );
     if( battstat->layout.status )
-      gtk_container_remove( GTK_CONTAINER( battstat->grid ),
+      ctk_container_remove( GTK_CONTAINER( battstat->grid ),
                             battstat->status );
 
     /* Attach the elements to their new locations. */
@@ -1029,7 +1029,7 @@ reconfigure_layout( ProgressData *battstat )
     grid_layout_attach( GTK_GRID(battstat->grid),
                          c.text, battstat->percent );
 
-    gtk_widget_show_all( battstat->applet );
+    ctk_widget_show_all( battstat->applet );
   }
 
   battstat->layout = c;
@@ -1053,9 +1053,9 @@ create_layout(ProgressData *battstat)
                                       GTK_WIDGET( battstat->applet ) );
 
   /* Allocate the four widgets that we need. */
-  battstat->grid = gtk_grid_new ();
-  battstat->percent = gtk_label_new( "" );
-  battstat->status = gtk_image_new();
+  battstat->grid = ctk_grid_new ();
+  battstat->percent = ctk_label_new( "" );
+  battstat->status = ctk_image_new();
 
   /* When you first get a pointer to a newly created GtkWidget it has one
      'floating' reference.  When you first add this widget to a container
@@ -1075,10 +1075,10 @@ create_layout(ProgressData *battstat)
   battstat->layout.text = LAYOUT_NONE;
 
   /* Put the grid directly inside the applet and show everything. */
-  gtk_widget_set_halign (battstat->grid, GTK_ALIGN_CENTER);
-  gtk_widget_set_valign (battstat->grid, GTK_ALIGN_CENTER);
-  gtk_container_add (GTK_CONTAINER (battstat->applet), battstat->grid);
-  gtk_widget_show_all (battstat->applet);
+  ctk_widget_set_halign (battstat->grid, GTK_ALIGN_CENTER);
+  ctk_widget_set_valign (battstat->grid, GTK_ALIGN_CENTER);
+  ctk_container_add (GTK_CONTAINER (battstat->applet), battstat->grid);
+  ctk_widget_show_all (battstat->applet);
 
   /* Attach all sorts of signals to the applet. */
   g_signal_connect(G_OBJECT(battstat->applet),
@@ -1114,7 +1114,7 @@ battstat_applet_fill (CafePanelApplet *applet)
 
   g_set_application_name (_("Battery Charge Monitor"));
 
-  gtk_window_set_default_icon_name ("battery");
+  ctk_window_set_default_icon_name ("battery");
 
   cafe_panel_applet_set_flags (applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
 
@@ -1141,9 +1141,9 @@ battstat_applet_fill (CafePanelApplet *applet)
   create_layout (battstat);
   setup_text_orientation( battstat );
 
-  action_group = gtk_action_group_new ("Battstat Applet Actions");
-  gtk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
-  gtk_action_group_add_actions (action_group,
+  action_group = ctk_action_group_new ("Battstat Applet Actions");
+  ctk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
+  ctk_action_group_add_actions (action_group,
 				battstat_menu_actions,
 				G_N_ELEMENTS (battstat_menu_actions),
 				battstat);
@@ -1155,12 +1155,12 @@ battstat_applet_fill (CafePanelApplet *applet)
   if (cafe_panel_applet_get_locked_down (CAFE_PANEL_APPLET (battstat->applet))) {
 	  GtkAction *action;
 
-	  action = gtk_action_group_get_action (action_group, "BattstatProperties");
-	  gtk_action_set_visible (action, FALSE);
+	  action = ctk_action_group_get_action (action_group, "BattstatProperties");
+	  ctk_action_set_visible (action, FALSE);
   }
   g_object_unref (action_group);
 
-  atk_widget = gtk_widget_get_accessible (battstat->applet);
+  atk_widget = ctk_widget_get_accessible (battstat->applet);
   if (GTK_IS_ACCESSIBLE (atk_widget)) {
 	  atk_object_set_name (atk_widget, _("Battery Charge Monitor"));
 	  atk_object_set_description(atk_widget, _("Monitor a laptop's remaining power"));

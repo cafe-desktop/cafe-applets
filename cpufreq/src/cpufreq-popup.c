@@ -21,7 +21,7 @@
 
 #include <glib/gi18n.h>
 
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <gdk/gdkx.h>
 #include <stdlib.h>
 #include <string.h>
@@ -71,7 +71,7 @@ cpufreq_popup_init (CPUFreqPopup *popup)
 {
 	popup->priv = cpufreq_popup_get_instance_private (popup);
 
-	popup->priv->ui_manager = gtk_ui_manager_new ();
+	popup->priv->ui_manager = ctk_ui_manager_new ();
 	popup->priv->radio_group = NULL;
 
 	popup->priv->freqs_group = NULL;
@@ -84,7 +84,7 @@ cpufreq_popup_init (CPUFreqPopup *popup)
 	popup->priv->need_build = TRUE;
 	popup->priv->show_freqs = FALSE;
 
-	gtk_ui_manager_add_ui_from_string (popup->priv->ui_manager,
+	ctk_ui_manager_add_ui_from_string (popup->priv->ui_manager,
 					   ui_popup, -1, NULL);
 
 	popup->priv->monitor = NULL;
@@ -182,13 +182,13 @@ cpufreq_popup_frequencies_menu_activate (GtkAction    *action,
 	guint            cpu;
 	guint            freq;
 
-	if (!gtk_toggle_action_get_active (GTK_TOGGLE_ACTION (action)))
+	if (!ctk_toggle_action_get_active (GTK_TOGGLE_ACTION (action)))
 		return;
 
 	selector = cpufreq_selector_get_default ();
 
 	cpu = cpufreq_monitor_get_cpu (popup->priv->monitor);
-	name = gtk_action_get_name (action);
+	name = ctk_action_get_name (action);
 	freq = (guint) atoi (name + strlen ("Frequency"));
 
 	cpufreq_selector_set_frequency_async (selector, cpu, freq);
@@ -203,13 +203,13 @@ cpufreq_popup_governors_menu_activate (GtkAction    *action,
 	guint            cpu;
 	const gchar     *governor;
 
-	if (!gtk_toggle_action_get_active (GTK_TOGGLE_ACTION (action)))
+	if (!ctk_toggle_action_get_active (GTK_TOGGLE_ACTION (action)))
 		return;
 
 	selector = cpufreq_selector_get_default ();
 	
 	cpu = cpufreq_monitor_get_cpu (popup->priv->monitor);
-	name = gtk_action_get_name (action);
+	name = ctk_action_get_name (action);
 	governor = name + strlen ("Governor");
 
 	cpufreq_selector_set_governor_async (selector, cpu, governor);
@@ -233,10 +233,10 @@ cpufreq_popup_menu_add_action (CPUFreqPopup   *popup,
 			       "label", label,
 			       NULL);
 
-	gtk_action_set_sensitive (GTK_ACTION (action), sensitive);
+	ctk_action_set_sensitive (GTK_ACTION (action), sensitive);
 	
-	gtk_radio_action_set_group (GTK_RADIO_ACTION (action), popup->priv->radio_group);
-	popup->priv->radio_group = gtk_radio_action_get_group (GTK_RADIO_ACTION (action));
+	ctk_radio_action_set_group (GTK_RADIO_ACTION (action), popup->priv->radio_group);
+	popup->priv->radio_group = ctk_radio_action_get_group (GTK_RADIO_ACTION (action));
 	
 	if (g_ascii_strcasecmp (menu, "Frequency") == 0) {
 		popup->priv->freqs_actions = g_slist_prepend (popup->priv->freqs_actions,
@@ -254,7 +254,7 @@ cpufreq_popup_menu_add_action (CPUFreqPopup   *popup,
 				  (gpointer) popup);
 	}
 
-	gtk_action_group_add_action (action_group, GTK_ACTION (action));
+	ctk_action_group_add_action (action_group, GTK_ACTION (action));
 	g_object_unref (action);
 	
 	g_free (name);
@@ -345,7 +345,7 @@ cpufreq_popup_build_ui (CPUFreqPopup *popup,
 			      "label", &label,
 			      NULL);
 
-		gtk_ui_manager_add_ui (popup->priv->ui_manager,
+		ctk_ui_manager_add_ui (popup->priv->ui_manager,
 				       popup->priv->merge_id,
 				       menu_path,
 				       label, name,
@@ -364,13 +364,13 @@ cpufreq_popup_build_frequencies_menu (CPUFreqPopup *popup,
 	if (!popup->priv->freqs_group) {
 		GtkActionGroup *action_group;
 
-		action_group = gtk_action_group_new ("FreqsActions");
+		action_group = ctk_action_group_new ("FreqsActions");
 		popup->priv->freqs_group = action_group;
-		gtk_action_group_set_translation_domain (action_group, NULL);
+		ctk_action_group_set_translation_domain (action_group, NULL);
 
 		frequencies_menu_create_actions (popup);
 		popup->priv->freqs_actions = g_slist_reverse (popup->priv->freqs_actions);
-		gtk_ui_manager_insert_action_group (popup->priv->ui_manager,
+		ctk_ui_manager_insert_action_group (popup->priv->ui_manager,
 						    action_group, 0);
 	}
 
@@ -386,13 +386,13 @@ cpufreq_popup_build_governors_menu (CPUFreqPopup *popup,
 	if (!popup->priv->govs_group) {
 		GtkActionGroup *action_group;
 
-		action_group = gtk_action_group_new ("GovsActions");
+		action_group = ctk_action_group_new ("GovsActions");
 		popup->priv->govs_group = action_group;
-		gtk_action_group_set_translation_domain (action_group, NULL);
+		ctk_action_group_set_translation_domain (action_group, NULL);
 
 		governors_menu_create_actions (popup);
 		popup->priv->govs_actions = g_slist_reverse (popup->priv->govs_actions);
-		gtk_ui_manager_insert_action_group (popup->priv->ui_manager,
+		ctk_ui_manager_insert_action_group (popup->priv->ui_manager,
 						    action_group, 1);
 	}
 
@@ -405,17 +405,17 @@ static void
 cpufreq_popup_build_menu (CPUFreqPopup *popup)
 {
 	if (popup->priv->merge_id > 0) {
-		gtk_ui_manager_remove_ui (popup->priv->ui_manager,
+		ctk_ui_manager_remove_ui (popup->priv->ui_manager,
 					  popup->priv->merge_id);
-		gtk_ui_manager_ensure_update (popup->priv->ui_manager);
+		ctk_ui_manager_ensure_update (popup->priv->ui_manager);
 	}
 	
-	popup->priv->merge_id = gtk_ui_manager_new_merge_id (popup->priv->ui_manager);
+	popup->priv->merge_id = ctk_ui_manager_new_merge_id (popup->priv->ui_manager);
 		
 	cpufreq_popup_build_frequencies_menu (popup, FREQS_PLACEHOLDER_PATH);
 	cpufreq_popup_build_governors_menu (popup, GOVS_PLACEHOLDER_PATH);
 
-	gtk_action_group_set_visible (popup->priv->freqs_group,
+	ctk_action_group_set_visible (popup->priv->freqs_group,
 				      popup->priv->show_freqs);
 }
 
@@ -429,9 +429,9 @@ cpufreq_popup_menu_set_active_action (CPUFreqPopup   *popup,
 	GtkAction *action;
 
 	g_snprintf (name, sizeof (name), "%s%s", prefix, item);
-	action = gtk_action_group_get_action (action_group, name);
+	action = ctk_action_group_get_action (action_group, name);
 
-	/* gtk_action_group_get_action can return NULL with frequencies (userspace governor)
+	/* ctk_action_group_get_action can return NULL with frequencies (userspace governor)
 	 * when the CPU does not actually stay locked to that exact frequency but rather to a
 	 * frequency range. Since cpufreq_monitor_get_frequency gets the realtime frequency, this
 	 * may not match any named frequency and then returns NULL. Return when this happens to
@@ -447,7 +447,7 @@ cpufreq_popup_menu_set_active_action (CPUFreqPopup   *popup,
 					 cpufreq_popup_governors_menu_activate,
 					 popup);
 	
-	gtk_toggle_action_set_active (GTK_TOGGLE_ACTION (action), TRUE);
+	ctk_toggle_action_set_active (GTK_TOGGLE_ACTION (action), TRUE);
 
 	g_signal_handlers_unblock_by_func (action,
 					   cpufreq_popup_frequencies_menu_activate,
@@ -499,7 +499,7 @@ cpufreq_popup_get_menu (CPUFreqPopup *popup)
 
 	cpufreq_popup_menu_set_active (popup);
 	
-	menu = gtk_ui_manager_get_widget (popup->priv->ui_manager,
+	menu = ctk_ui_manager_get_widget (popup->priv->ui_manager,
 					  "/CPUFreqSelectorPopup");
 	
 	return menu;

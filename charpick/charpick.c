@@ -128,7 +128,7 @@ charpick_selection_handler(GtkWidget *widget,
   num = g_unichar_to_utf8 (p_curr_data->selected_unichar, tmp);
   tmp[num] = '\0';
   
-  gtk_selection_data_set_text (selection_data, tmp, -1);
+  ctk_selection_data_set_text (selection_data, tmp, -1);
 
   return;
 }
@@ -141,7 +141,7 @@ selection_clear_cb (GtkWidget *widget, GdkEventSelection *event,
   charpick_data *curr_data = data;
   
   if (curr_data->last_toggle_button)
-    gtk_toggle_button_set_active (curr_data->last_toggle_button, FALSE);
+    ctk_toggle_button_set_active (curr_data->last_toggle_button, FALSE);
 
   curr_data->last_toggle_button = NULL;
   return TRUE;
@@ -156,24 +156,24 @@ toggle_button_toggled_cb(GtkToggleButton *button, gpointer data)
   gboolean toggled;
    
   button_index = GPOINTER_TO_INT (g_object_get_data (G_OBJECT (button), "index")); 
-  toggled = gtk_toggle_button_get_active (button); 
+  toggled = ctk_toggle_button_get_active (button); 
 
   if (toggled)
   { 
     gunichar unichar;
     if (curr_data->last_toggle_button && (button != curr_data->last_toggle_button))
-    	gtk_toggle_button_set_active (curr_data->last_toggle_button,
+    	ctk_toggle_button_set_active (curr_data->last_toggle_button,
     				      FALSE);
     				      
     curr_data->last_toggle_button = button; 
-    gtk_widget_grab_focus(curr_data->applet);
+    ctk_widget_grab_focus(curr_data->applet);
     unichar = GPOINTER_TO_INT (g_object_get_data (G_OBJECT (button), "unichar"));
     curr_data->selected_unichar = unichar;
     /* set this? widget as the selection owner */
-    gtk_selection_owner_set (curr_data->applet,
+    ctk_selection_owner_set (curr_data->applet,
 	  		     GDK_SELECTION_PRIMARY,
                              GDK_CURRENT_TIME); 
-    gtk_selection_owner_set (curr_data->applet,
+    ctk_selection_owner_set (curr_data->applet,
 	  		     GDK_SELECTION_CLIPBOARD,
                              GDK_CURRENT_TIME); 
     curr_data->last_index = button_index;
@@ -182,7 +182,7 @@ toggle_button_toggled_cb(GtkToggleButton *button, gpointer data)
   return TRUE;
 }
 
-/* This is a hack around the fact that gtk+ doesn't
+/* This is a hack around the fact that ctk+ doesn't
  * propogate button presses on button2/3.
  */
 static gboolean
@@ -191,7 +191,7 @@ button_press_hack (GtkWidget      *widget,
 		   GtkWidget      *applet)
 {
     if (event->button == 3 || event->button == 2) {
-	gtk_propagate_event (applet, (GdkEvent *) event);
+	ctk_propagate_event (applet, (GdkEvent *) event);
 
 	return TRUE;
     }
@@ -295,49 +295,49 @@ populate_menu (charpick_data *curr_data)
 	GtkWidget *menuitem;
 
 	if (curr_data->menu)
-		gtk_widget_destroy (curr_data->menu);
+		ctk_widget_destroy (curr_data->menu);
 
-	curr_data->menu = gtk_menu_new ();
+	curr_data->menu = ctk_menu_new ();
 	menu  = GTK_MENU (curr_data->menu);
 	
 	while (list) {
 		gchar *string = list->data;
-		menuitem = gtk_radio_menu_item_new_with_label (group, string);
-		group = gtk_radio_menu_item_get_group (GTK_RADIO_MENU_ITEM (menuitem));
-		gtk_widget_show (menuitem);
+		menuitem = ctk_radio_menu_item_new_with_label (group, string);
+		group = ctk_radio_menu_item_get_group (GTK_RADIO_MENU_ITEM (menuitem));
+		ctk_widget_show (menuitem);
 		g_object_set_data (G_OBJECT (menuitem), "string", string);
 		g_signal_connect (G_OBJECT (menuitem), "activate",
 				   G_CALLBACK (menuitem_activated), curr_data);
-		gtk_menu_shell_append (GTK_MENU_SHELL (menu), menuitem);
+		ctk_menu_shell_append (GTK_MENU_SHELL (menu), menuitem);
 		if (g_ascii_strcasecmp (curr_data->charlist, string) == 0)
-			gtk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (menuitem), TRUE);
+			ctk_check_menu_item_set_active (GTK_CHECK_MENU_ITEM (menuitem), TRUE);
 		list = g_list_next (list);
 	}
 	build_table(curr_data);
 	
 	/*Set up custom theme and transparency support*/
-	GtkWidget *toplevel = gtk_widget_get_toplevel (GTK_WIDGET (menu));
-	/* Fix any failures of compiz/other wm's to communicate with gtk for transparency */
-	GdkScreen *screen = gtk_widget_get_screen(GTK_WIDGET(toplevel));
+	GtkWidget *toplevel = ctk_widget_get_toplevel (GTK_WIDGET (menu));
+	/* Fix any failures of compiz/other wm's to communicate with ctk for transparency */
+	GdkScreen *screen = ctk_widget_get_screen(GTK_WIDGET(toplevel));
 	GdkVisual *visual = gdk_screen_get_rgba_visual(screen);
-	gtk_widget_set_visual(GTK_WIDGET(toplevel), visual);
+	ctk_widget_set_visual(GTK_WIDGET(toplevel), visual);
 	/* Set menu and it's toplevel window to follow panel theme */
 	GtkStyleContext *context;
-	context = gtk_widget_get_style_context (GTK_WIDGET(toplevel));
-	gtk_style_context_add_class(context,"gnome-panel-menu-bar");
-	gtk_style_context_add_class(context,"cafe-panel-menu-bar");
+	context = ctk_widget_get_style_context (GTK_WIDGET(toplevel));
+	ctk_style_context_add_class(context,"gnome-panel-menu-bar");
+	ctk_style_context_add_class(context,"cafe-panel-menu-bar");
 }
 
 static void
 chooser_button_clicked (GtkButton *button, charpick_data *curr_data)
 {
-	if (gtk_widget_get_visible (curr_data->menu))
-		gtk_menu_popdown (GTK_MENU (curr_data->menu));
+	if (ctk_widget_get_visible (curr_data->menu))
+		ctk_menu_popdown (GTK_MENU (curr_data->menu));
 	else {
-		gtk_menu_set_screen (GTK_MENU (curr_data->menu),
-				gtk_widget_get_screen (GTK_WIDGET (curr_data->applet)));
+		ctk_menu_set_screen (GTK_MENU (curr_data->menu),
+				ctk_widget_get_screen (GTK_WIDGET (curr_data->applet)));
 		
-		gtk_menu_popup_at_widget (GTK_MENU (curr_data->menu),
+		ctk_menu_popup_at_widget (GTK_MENU (curr_data->menu),
 		                          GTK_WIDGET (button),
 		                          GDK_GRAVITY_SOUTH_WEST,
 		                          GDK_GRAVITY_NORTH_WEST,
@@ -347,15 +347,15 @@ chooser_button_clicked (GtkButton *button, charpick_data *curr_data)
 
 /* Force the button not to have any focus padding and let the focus
    indication be drawn on the label itself when space is tight. Taken from the clock applet.
-   FIXME : This is an Evil Hack and should be fixed when the focus padding can be overridden at the gtk+ level */
+   FIXME : This is an Evil Hack and should be fixed when the focus padding can be overridden at the ctk+ level */
 
 static inline void force_no_button_padding (GtkWidget *widget)
 {
 	GtkCssProvider *provider;
 
-	provider = gtk_css_provider_new ();
+	provider = ctk_css_provider_new ();
 
-	gtk_css_provider_load_from_data (provider,
+	ctk_css_provider_load_from_data (provider,
 	                                 "#charpick-applet-button {\n"
 	                                 "border-width: 0px;\n"
 	                                 "padding: 0px;\n"
@@ -363,13 +363,13 @@ static inline void force_no_button_padding (GtkWidget *widget)
 	                                 "}",
 	                                 -1,
 	                                 NULL);
-	gtk_style_context_add_provider (gtk_widget_get_style_context (widget),
+	ctk_style_context_add_provider (ctk_widget_get_style_context (widget),
 	                                GTK_STYLE_PROVIDER (provider),
 	                                GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
 
 	g_object_unref (provider);
 
-	gtk_widget_set_name (widget, "charpick-applet-button");
+	ctk_widget_set_name (widget, "charpick-applet-button");
 }
 
 /* creates table of buttons, sets up their callbacks, and packs the table in
@@ -389,43 +389,43 @@ build_table(charpick_data *p_curr_data)
   toggle_button = g_new (GtkWidget *, len);
   
   if (p_curr_data->box)
-    gtk_widget_destroy(p_curr_data->box);
+    ctk_widget_destroy(p_curr_data->box);
     
   if (p_curr_data->panel_vertical)
-    box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+    box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
   else 
-    box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-  gtk_widget_show (box);
+    box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+  ctk_widget_show (box);
   p_curr_data->box = box;
   
-  button = gtk_button_new ();
+  button = ctk_button_new ();
   if (g_list_length (p_curr_data->chartable) != 1)
   {
-    gtk_widget_set_tooltip_text (button, _("Available palettes"));
+    ctk_widget_set_tooltip_text (button, _("Available palettes"));
   
     switch (cafe_panel_applet_get_orient (CAFE_PANEL_APPLET (p_curr_data->applet))) {
        	case CAFE_PANEL_APPLET_ORIENT_DOWN:
-          	arrow = gtk_image_new_from_icon_name ("pan-down-symbolic", GTK_ICON_SIZE_MENU);
+          	arrow = ctk_image_new_from_icon_name ("pan-down-symbolic", GTK_ICON_SIZE_MENU);
        		break;
        	case CAFE_PANEL_APPLET_ORIENT_UP:
-          	arrow = gtk_image_new_from_icon_name ("pan-up-symbolic", GTK_ICON_SIZE_MENU);
+          	arrow = ctk_image_new_from_icon_name ("pan-up-symbolic", GTK_ICON_SIZE_MENU);
        		break;
        	case CAFE_PANEL_APPLET_ORIENT_LEFT:
-       		arrow = gtk_image_new_from_icon_name ("pan-start-symbolic", GTK_ICON_SIZE_MENU);
+       		arrow = ctk_image_new_from_icon_name ("pan-start-symbolic", GTK_ICON_SIZE_MENU);
   		break;
        	case CAFE_PANEL_APPLET_ORIENT_RIGHT:
-       		arrow = gtk_image_new_from_icon_name ("pan-end-symbolic", GTK_ICON_SIZE_MENU);
+       		arrow = ctk_image_new_from_icon_name ("pan-end-symbolic", GTK_ICON_SIZE_MENU);
   		break;
     default:
   	  g_assert_not_reached ();
     }
-    gtk_container_add (GTK_CONTAINER (button), arrow);
-    gtk_button_set_relief(GTK_BUTTON(button), GTK_RELIEF_NONE);
+    ctk_container_add (GTK_CONTAINER (button), arrow);
+    ctk_button_set_relief(GTK_BUTTON(button), GTK_RELIEF_NONE);
 
     /* FIXME : evil hack (see force_no_button_padding) */
     force_no_button_padding (button);
 
-    gtk_box_pack_start (GTK_BOX (box), button, TRUE, TRUE, 0);
+    ctk_box_pack_start (GTK_BOX (box), button, TRUE, TRUE, 0);
     g_signal_connect (G_OBJECT (button), "clicked",
                               G_CALLBACK (chooser_button_clicked),
 			      p_curr_data);
@@ -456,20 +456,20 @@ build_table(charpick_data *p_curr_data)
     name = g_strdup (_("Insert special character"));
 #endif
    
-    toggle_button[i] = gtk_toggle_button_new_with_label (label);
+    toggle_button[i] = ctk_toggle_button_new_with_label (label);
     atk_desc =  g_strdup_printf (_("insert special character %s"), label);
     set_atk_name_description (toggle_button[i], NULL, atk_desc);
     g_free (atk_desc);
-    gtk_widget_show (toggle_button[i]);
-    gtk_button_set_relief(GTK_BUTTON(toggle_button[i]), GTK_RELIEF_NONE);
+    ctk_widget_show (toggle_button[i]);
+    ctk_button_set_relief(GTK_BUTTON(toggle_button[i]), GTK_RELIEF_NONE);
 
     /* FIXME : evil hack (see force_no_button_padding) */
     force_no_button_padding (toggle_button[i]);
 
-    gtk_widget_set_tooltip_text (toggle_button[i], name);
+    ctk_widget_set_tooltip_text (toggle_button[i], name);
     g_free (name);
 
-    gtk_widget_get_preferred_size (toggle_button[i], NULL, &req);
+    ctk_widget_get_preferred_size (toggle_button[i], NULL, &req);
     
     max_width = MAX (max_width, req.width);
     max_height = MAX (max_height, req.height-2);
@@ -485,22 +485,22 @@ build_table(charpick_data *p_curr_data)
   
   if (p_curr_data->panel_vertical) {
     size_ratio = p_curr_data->panel_size / max_width;
-    button_box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+    button_box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
   } else {
     size_ratio = p_curr_data->panel_size / max_height;
-    button_box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+    button_box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
   }
 
-  gtk_box_set_homogeneous (GTK_BOX (button_box), TRUE);
-  gtk_box_pack_start (GTK_BOX (box), button_box, TRUE, TRUE, 0);
+  ctk_box_set_homogeneous (GTK_BOX (button_box), TRUE);
+  ctk_box_pack_start (GTK_BOX (box), button_box, TRUE, TRUE, 0);
   
   size_ratio = MAX (size_ratio, 1);
   row_box = g_new0 (GtkWidget *, size_ratio);
   for (i=0; i < size_ratio; i++) {
-	if (!p_curr_data->panel_vertical) row_box[i] = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-	else row_box[i] = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	gtk_box_set_homogeneous (GTK_BOX (row_box[i]), TRUE);
-  	gtk_box_pack_start (GTK_BOX (button_box), row_box[i], TRUE, TRUE, 0);
+	if (!p_curr_data->panel_vertical) row_box[i] = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+	else row_box[i] = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+	ctk_box_set_homogeneous (GTK_BOX (row_box[i]), TRUE);
+  	ctk_box_pack_start (GTK_BOX (button_box), row_box[i], TRUE, TRUE, 0);
   }
   
   for (i = 0; i <len; i++) {  	
@@ -513,14 +513,14 @@ build_table(charpick_data *p_curr_data)
 		index = i;
 
 	index = CLAMP (index, 0, size_ratio-1);	
-  	gtk_box_pack_start (GTK_BOX (row_box[index]), toggle_button[i], TRUE, TRUE, 0);
+  	ctk_box_pack_start (GTK_BOX (row_box[index]), toggle_button[i], TRUE, TRUE, 0);
   }
 
   g_free (toggle_button);
   g_free (row_box);
 
-  gtk_container_add (GTK_CONTAINER(p_curr_data->applet), box);
-  gtk_widget_show_all (p_curr_data->box);
+  ctk_container_add (GTK_CONTAINER(p_curr_data->applet), box);
+  ctk_widget_show_all (p_curr_data->box);
 
   p_curr_data->last_index = NO_LAST_INDEX;
   p_curr_data->last_toggle_button = NULL;
@@ -580,7 +580,7 @@ about (GtkAction     *action,
 	*p = _(*p);
 #endif
 
-  gtk_show_about_dialog (NULL,
+  ctk_show_about_dialog (NULL,
 	"title",        _("About Character Palette"),
 	"version",	VERSION,
 	"copyright",	_("Copyright \xc2\xa9 1998, 2004-2005 GNOME Applets Maintainers and others\n"
@@ -602,9 +602,9 @@ help_cb (GtkAction     *action,
 {
   GError *error = NULL;
 
-  gtk_show_uri_on_window (NULL,
+  ctk_show_uri_on_window (NULL,
                           "help:cafe-char-palette",
-                          gtk_get_current_event_time (),
+                          ctk_get_current_event_time (),
                           &error);
 
   if (error) { /* FIXME: the user needs to see this */
@@ -622,13 +622,13 @@ applet_destroy (GtkWidget *widget, gpointer data)
   g_return_if_fail (curr_data);
    
   if (curr_data->about_dialog)
-    gtk_widget_destroy (curr_data->about_dialog);   
+    ctk_widget_destroy (curr_data->about_dialog);   
   if (curr_data->propwindow)
-    gtk_widget_destroy (curr_data->propwindow);
+    ctk_widget_destroy (curr_data->propwindow);
   if (curr_data->box)
-    gtk_widget_destroy (curr_data->box);
+    ctk_widget_destroy (curr_data->box);
   if (curr_data->menu)
-    gtk_widget_destroy (curr_data->menu);
+    ctk_widget_destroy (curr_data->menu);
   g_free (curr_data);
   
 }
@@ -684,7 +684,7 @@ set_atk_name_description (GtkWidget *widget, const gchar *name,
                           const gchar *description)
 {
   AtkObject *aobj;
-  aobj = gtk_widget_get_accessible (widget);
+  aobj = ctk_widget_get_accessible (widget);
   /* return if gail is not loaded */
   if (GTK_IS_ACCESSIBLE (aobj) == FALSE)
      return;
@@ -713,7 +713,7 @@ charpicker_applet_fill (CafePanelApplet *applet)
 
   g_set_application_name (_("Character Palette"));
   
-  gtk_window_set_default_icon_name ("accessories-character-map");
+  ctk_window_set_default_icon_name ("accessories-character-map");
 
   cafe_panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
 
@@ -758,11 +758,11 @@ charpicker_applet_fill (CafePanelApplet *applet)
 		             G_CALLBACK (key_press_event), curr_data);
 
   utf8_atom = gdk_atom_intern ("UTF8_STRING", FALSE);
-  gtk_selection_add_target (curr_data->applet, 
+  ctk_selection_add_target (curr_data->applet, 
 			    GDK_SELECTION_PRIMARY,
                             utf8_atom,
 			    0);
-  gtk_selection_add_target (curr_data->applet, 
+  ctk_selection_add_target (curr_data->applet, 
 			    GDK_SELECTION_CLIPBOARD,
                             utf8_atom,
 			    0);
@@ -785,11 +785,11 @@ charpicker_applet_fill (CafePanelApplet *applet)
   g_signal_connect (G_OBJECT (applet), "destroy",
   		    G_CALLBACK (applet_destroy), curr_data);
   
-  gtk_widget_show_all (GTK_WIDGET (applet));
+  ctk_widget_show_all (GTK_WIDGET (applet));
 
-  action_group = gtk_action_group_new ("Charpicker Applet Actions");
-  gtk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
-  gtk_action_group_add_actions (action_group,
+  action_group = ctk_action_group_new ("Charpicker Applet Actions");
+  ctk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
+  ctk_action_group_add_actions (action_group,
 				charpick_applet_menu_actions,
 				G_N_ELEMENTS (charpick_applet_menu_actions),
 				curr_data);
@@ -801,8 +801,8 @@ charpicker_applet_fill (CafePanelApplet *applet)
   if (cafe_panel_applet_get_locked_down (CAFE_PANEL_APPLET (applet))) {
 	  GtkAction *action;
 
-	  action = gtk_action_group_get_action (action_group, "Preferences");
-	  gtk_action_set_visible (action, FALSE);
+	  action = ctk_action_group_get_action (action_group, "Preferences");
+	  ctk_action_set_visible (action, FALSE);
   }
   g_object_unref (action_group);
 

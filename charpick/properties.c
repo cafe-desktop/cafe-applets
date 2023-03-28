@@ -11,7 +11,7 @@
 #include <string.h>
 
 #include <atk/atkrelation.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 #define CHARPICK_STOCK_EDIT "charpick-stock-edit"
 
@@ -27,11 +27,11 @@ register_stock_for_edit (void)
     static const GtkStockItem edit_item [] = {
            { CHARPICK_STOCK_EDIT, N_("_Edit"), 0, 0, GETTEXT_PACKAGE },
     };
-    icons = gtk_icon_factory_lookup_default ("gtk-preferences");
-    factory = gtk_icon_factory_new ();
-    gtk_icon_factory_add (factory, CHARPICK_STOCK_EDIT, icons);
-    gtk_icon_factory_add_default (factory);
-    gtk_stock_add_static (edit_item, 1);
+    icons = ctk_icon_factory_lookup_default ("ctk-preferences");
+    factory = ctk_icon_factory_new ();
+    ctk_icon_factory_add (factory, CHARPICK_STOCK_EDIT, icons);
+    ctk_icon_factory_add_default (factory);
+    ctk_stock_add_static (edit_item, 1);
     registered = TRUE;
   }
 }
@@ -46,11 +46,11 @@ set_atk_relation (GtkWidget *label, GtkWidget *widget)
   AtkRelation *relation;
   AtkObject *targets[1];
 
-  atk_widget = gtk_widget_get_accessible (widget);
-  atk_label = gtk_widget_get_accessible (label);
+  atk_widget = ctk_widget_get_accessible (widget);
+  atk_label = ctk_widget_get_accessible (label);
   
   /* set label-for relation */
-  gtk_label_set_mnemonic_widget (GTK_LABEL (label), widget);	
+  ctk_label_set_mnemonic_widget (GTK_LABEL (label), widget);	
 
   /* return if gail is not loaded */
   if (GTK_IS_ACCESSIBLE (atk_widget) == FALSE)
@@ -72,7 +72,7 @@ set_access_namedesc (GtkWidget *widget, const gchar *name, const gchar *desc)
 {
     AtkObject *obj;
 
-    obj = gtk_widget_get_accessible (widget);
+    obj = ctk_widget_get_accessible (widget);
     if (! GTK_IS_ACCESSIBLE (obj))
        return;
 
@@ -91,40 +91,40 @@ add_edit_dialog_create (charpick_data *curr_data, gchar *string, gchar *title)
 	GtkWidget *vbox, *hbox;
 	GtkWidget *label;
 
-	dialog = gtk_dialog_new_with_buttons (_(title), GTK_WINDOW (curr_data->propwindow),
+	dialog = ctk_dialog_new_with_buttons (_(title), GTK_WINDOW (curr_data->propwindow),
 							    GTK_DIALOG_DESTROY_WITH_PARENT,
-							    "gtk-cancel", GTK_RESPONSE_CANCEL,
-							    "gtk-ok", GTK_RESPONSE_OK,
+							    "ctk-cancel", GTK_RESPONSE_CANCEL,
+							    "ctk-ok", GTK_RESPONSE_OK,
 							    NULL);
 
-	gtk_window_set_transient_for (GTK_WINDOW (dialog), GTK_WINDOW (curr_data->propwindow));
-	gtk_widget_set_sensitive (curr_data->propwindow, FALSE);
+	ctk_window_set_transient_for (GTK_WINDOW (dialog), GTK_WINDOW (curr_data->propwindow));
+	ctk_widget_set_sensitive (curr_data->propwindow, FALSE);
 
-	gtk_dialog_set_default_response (GTK_DIALOG (dialog), GTK_RESPONSE_OK);
-	gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
-	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area(GTK_DIALOG (dialog))), 2);
+	ctk_dialog_set_default_response (GTK_DIALOG (dialog), GTK_RESPONSE_OK);
+	ctk_container_set_border_width (GTK_CONTAINER (dialog), 5);
+	ctk_box_set_spacing (GTK_BOX (ctk_dialog_get_content_area(GTK_DIALOG (dialog))), 2);
 
-	dbox = gtk_dialog_get_content_area(GTK_DIALOG (dialog));
+	dbox = ctk_dialog_get_content_area(GTK_DIALOG (dialog));
 	
-	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 12);
-	gtk_box_pack_start (GTK_BOX (dbox), vbox, TRUE, TRUE, 0);
-	gtk_container_set_border_width (GTK_CONTAINER (vbox), 5);
+	vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 12);
+	ctk_box_pack_start (GTK_BOX (dbox), vbox, TRUE, TRUE, 0);
+	ctk_container_set_border_width (GTK_CONTAINER (vbox), 5);
 	
-	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
-	gtk_box_pack_start (GTK_BOX (vbox), hbox, TRUE, TRUE, 0);
+	hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
+	ctk_box_pack_start (GTK_BOX (vbox), hbox, TRUE, TRUE, 0);
 	
-	label = gtk_label_new_with_mnemonic (_("_Palette:"));
-	gtk_box_pack_start (GTK_BOX (hbox), label, FALSE, FALSE, 0);
+	label = ctk_label_new_with_mnemonic (_("_Palette:"));
+	ctk_box_pack_start (GTK_BOX (hbox), label, FALSE, FALSE, 0);
 		
-	entry = gtk_entry_new ();
-	gtk_label_set_mnemonic_widget (GTK_LABEL (label), entry);
-	 gtk_entry_set_activates_default (GTK_ENTRY (entry), TRUE);
-	gtk_box_pack_start (GTK_BOX (hbox), entry, TRUE, TRUE, 0);
+	entry = ctk_entry_new ();
+	ctk_label_set_mnemonic_widget (GTK_LABEL (label), entry);
+	 ctk_entry_set_activates_default (GTK_ENTRY (entry), TRUE);
+	ctk_box_pack_start (GTK_BOX (hbox), entry, TRUE, TRUE, 0);
 
 	set_access_namedesc (entry, _("Palette entry"),
 				         _("Modify a palette by adding or removing characters"));
 	if (string)
-		gtk_entry_set_text (GTK_ENTRY (entry), string);
+		ctk_entry_set_text (GTK_ENTRY (entry), string);
 
 	curr_data->add_edit_dialog = dialog;
 	curr_data->add_edit_entry = entry;
@@ -140,16 +140,16 @@ add_palette_cb (GtkDialog *dialog, int response_id, charpick_data *curr_data)
 	GtkTreePath *path;
 	char *new;
 
-	gtk_widget_set_sensitive (curr_data->propwindow, TRUE);
+	ctk_widget_set_sensitive (curr_data->propwindow, TRUE);
 
 	if (response_id != GTK_RESPONSE_OK) {
-		gtk_widget_destroy (curr_data->add_edit_dialog);
+		ctk_widget_destroy (curr_data->add_edit_dialog);
 		return;
 	}
 	
-	new = gtk_editable_get_chars (GTK_EDITABLE (curr_data->add_edit_entry), 0, -1);
+	new = ctk_editable_get_chars (GTK_EDITABLE (curr_data->add_edit_entry), 0, -1);
 
-	gtk_widget_destroy (curr_data->add_edit_dialog);
+	ctk_widget_destroy (curr_data->add_edit_dialog);
 
 	if (!new || strlen (new) == 0)
 		return;
@@ -170,19 +170,19 @@ add_palette_cb (GtkDialog *dialog, int response_id, charpick_data *curr_data)
 	save_chartable (curr_data);
   	populate_menu (curr_data);
   	
-  	model = gtk_tree_view_get_model (GTK_TREE_VIEW (curr_data->pref_tree));
+  	model = ctk_tree_view_get_model (GTK_TREE_VIEW (curr_data->pref_tree));
 
-	gtk_list_store_append (GTK_LIST_STORE (model), &iter);
-	gtk_list_store_set (GTK_LIST_STORE (model), &iter, 0, new, 1, new, -1);
+	ctk_list_store_append (GTK_LIST_STORE (model), &iter);
+	ctk_list_store_set (GTK_LIST_STORE (model), &iter, 0, new, 1, new, -1);
 
-	selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (curr_data->pref_tree));
-	gtk_tree_selection_select_iter (selection, &iter);
+	selection = ctk_tree_view_get_selection (GTK_TREE_VIEW (curr_data->pref_tree));
+	ctk_tree_selection_select_iter (selection, &iter);
 
-	path = gtk_tree_model_get_path (model, &iter);
-	gtk_tree_view_scroll_to_cell (GTK_TREE_VIEW (curr_data->pref_tree), path,
+	path = ctk_tree_model_get_path (model, &iter);
+	ctk_tree_view_scroll_to_cell (GTK_TREE_VIEW (curr_data->pref_tree), path,
 						  NULL, FALSE, 0.0, 0.0);
 
-	gtk_tree_path_free (path);
+	ctk_tree_path_free (path);
 }
 
 static void
@@ -194,23 +194,23 @@ edit_palette_cb (GtkDialog *dialog, int response_id, charpick_data *curr_data)
 	GList *list;
 	char *new, *charlist;
 
-	gtk_widget_set_sensitive (curr_data->propwindow, TRUE);
+	ctk_widget_set_sensitive (curr_data->propwindow, TRUE);
 
         if (response_id != GTK_RESPONSE_OK) {
-		gtk_widget_destroy (curr_data->add_edit_dialog);
+		ctk_widget_destroy (curr_data->add_edit_dialog);
 		return;
 	}
 
-	selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (curr_data->pref_tree));
+	selection = ctk_tree_view_get_selection (GTK_TREE_VIEW (curr_data->pref_tree));
 
-	if (!gtk_tree_selection_get_selected (selection, &model, &iter))
+	if (!ctk_tree_selection_get_selected (selection, &model, &iter))
 		return;
 
-	gtk_tree_model_get (model, &iter, 1, &charlist, -1);
+	ctk_tree_model_get (model, &iter, 1, &charlist, -1);
 
-	new = gtk_editable_get_chars (GTK_EDITABLE (curr_data->add_edit_entry), 0, -1);
+	new = ctk_editable_get_chars (GTK_EDITABLE (curr_data->add_edit_entry), 0, -1);
 
-	gtk_widget_destroy (curr_data->add_edit_dialog);
+	ctk_widget_destroy (curr_data->add_edit_dialog);
 	
 	if (!new || (g_ascii_strcasecmp (new, charlist) == 0))
 		return;
@@ -219,7 +219,7 @@ edit_palette_cb (GtkDialog *dialog, int response_id, charpick_data *curr_data)
 	list->data = new;
 	save_chartable (curr_data);
   	populate_menu (curr_data);
-	gtk_list_store_set (GTK_LIST_STORE (model), &iter, 0, new, 1, new, -1);
+	ctk_list_store_set (GTK_LIST_STORE (model), &iter, 0, new, 1, new, -1);
 	
 	if (g_ascii_strcasecmp (curr_data->charlist, charlist) == 0) {
 		curr_data->charlist = new;
@@ -245,15 +245,15 @@ add_palette (GtkButton *buttonk, charpick_data *curr_data)
 
 		g_signal_connect (curr_data->add_edit_dialog,
 				  "destroy",
-				  G_CALLBACK (gtk_widget_destroyed),
+				  G_CALLBACK (ctk_widget_destroyed),
 				  &curr_data->add_edit_dialog);
 
-		gtk_widget_show_all (curr_data->add_edit_dialog);
+		ctk_widget_show_all (curr_data->add_edit_dialog);
 	} else {
-		gtk_window_set_screen (GTK_WINDOW (curr_data->add_edit_dialog),
-				       gtk_widget_get_screen (GTK_WIDGET (curr_data->applet)));
+		ctk_window_set_screen (GTK_WINDOW (curr_data->add_edit_dialog),
+				       ctk_widget_get_screen (GTK_WIDGET (curr_data->applet)));
 
-		gtk_window_present (GTK_WINDOW (curr_data->add_edit_dialog));
+		ctk_window_present (GTK_WINDOW (curr_data->add_edit_dialog));
 	}
 }
 
@@ -266,12 +266,12 @@ edit_palette (GtkButton *button, charpick_data *curr_data)
 	char *charlist;
 
 	if (curr_data->add_edit_dialog == NULL) {
-		selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (curr_data->pref_tree));
+		selection = ctk_tree_view_get_selection (GTK_TREE_VIEW (curr_data->pref_tree));
 
-		if (!gtk_tree_selection_get_selected (selection, &model, &iter))
+		if (!ctk_tree_selection_get_selected (selection, &model, &iter))
 			return;
 
-		gtk_tree_model_get (model, &iter, 1, &charlist, -1);
+		ctk_tree_model_get (model, &iter, 1, &charlist, -1);
 		
 		add_edit_dialog_create (curr_data, charlist, _("Edit Palette"));
 
@@ -282,15 +282,15 @@ edit_palette (GtkButton *button, charpick_data *curr_data)
 
 		g_signal_connect (curr_data->add_edit_dialog,
 				  "destroy",
-				  G_CALLBACK (gtk_widget_destroyed),
+				  G_CALLBACK (ctk_widget_destroyed),
 				  &curr_data->add_edit_dialog);
 
-		gtk_widget_show_all (curr_data->add_edit_dialog);
+		ctk_widget_show_all (curr_data->add_edit_dialog);
 	} else {
-		gtk_window_set_screen (GTK_WINDOW (curr_data->add_edit_dialog),
-				       gtk_widget_get_screen (GTK_WIDGET (curr_data->applet)));
+		ctk_window_set_screen (GTK_WINDOW (curr_data->add_edit_dialog),
+				       ctk_widget_get_screen (GTK_WIDGET (curr_data->applet)));
 
-		gtk_window_present (GTK_WINDOW (curr_data->add_edit_dialog));
+		ctk_window_present (GTK_WINDOW (curr_data->add_edit_dialog));
 	}
 }
 
@@ -302,12 +302,12 @@ delete_palette (GtkButton *button, charpick_data *curr_data)
 	GtkTreeModel *model;
 	gchar *charlist;
 	
-	selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (curr_data->pref_tree));
+	selection = ctk_tree_view_get_selection (GTK_TREE_VIEW (curr_data->pref_tree));
 	
-	if (!gtk_tree_selection_get_selected (selection, &model, &iter))
+	if (!ctk_tree_selection_get_selected (selection, &model, &iter))
 		return;
 		
-	gtk_tree_model_get (model, &iter, 1, &charlist, -1);
+	ctk_tree_model_get (model, &iter, 1, &charlist, -1);
 	
 	curr_data->chartable = g_list_remove (curr_data->chartable, charlist);
 	
@@ -322,18 +322,18 @@ delete_palette (GtkButton *button, charpick_data *curr_data)
 	save_chartable (curr_data);
   	populate_menu (curr_data);
   	
-  	gtk_widget_grab_focus (curr_data->pref_tree);
+  	ctk_widget_grab_focus (curr_data->pref_tree);
   	next = iter;
-	if (gtk_tree_model_iter_next (model, &next) )
-		gtk_tree_selection_select_iter (selection, &next);
+	if (ctk_tree_model_iter_next (model, &next) )
+		ctk_tree_selection_select_iter (selection, &next);
 	else {
 		GtkTreePath *path;
-		path = gtk_tree_model_get_path (model, &iter);
-		if (gtk_tree_path_prev (path))
-			gtk_tree_selection_select_path (selection, path);
-		gtk_tree_path_free (path);
+		path = ctk_tree_model_get_path (model, &iter);
+		if (ctk_tree_path_prev (path))
+			ctk_tree_selection_select_path (selection, path);
+		ctk_tree_path_free (path);
 	}
-	gtk_list_store_remove (GTK_LIST_STORE (model), &iter);
+	ctk_list_store_remove (GTK_LIST_STORE (model), &iter);
 
 }
 
@@ -344,11 +344,11 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
 	GtkWidget *edit_button, *delete_button;
 	gboolean selected;
 	
-	selected = gtk_tree_selection_get_selected (selection, NULL, NULL);
+	selected = ctk_tree_selection_get_selected (selection, NULL, NULL);
 	edit_button = g_object_get_data (G_OBJECT (scrolled), "edit_button");
-	gtk_widget_set_sensitive (edit_button, selected);
+	ctk_widget_set_sensitive (edit_button, selected);
 	delete_button = g_object_get_data (G_OBJECT (scrolled), "delete_button");
-	gtk_widget_set_sensitive (delete_button, selected);
+	ctk_widget_set_sensitive (delete_button, selected);
 }
 
 static GtkWidget *
@@ -362,40 +362,40 @@ create_palettes_tree (charpick_data *curr_data, GtkWidget *label)
 	GList *list = curr_data->chartable;
 	GtkTreeSelection *selection;
 	
-	scrolled = gtk_scrolled_window_new (NULL,NULL);
-	gtk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (scrolled), GTK_SHADOW_IN);
-	gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (scrolled),
+	scrolled = ctk_scrolled_window_new (NULL,NULL);
+	ctk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (scrolled), GTK_SHADOW_IN);
+	ctk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (scrolled),
 						GTK_POLICY_AUTOMATIC,
 						GTK_POLICY_AUTOMATIC);
 	
-	model = gtk_list_store_new (2, G_TYPE_STRING, G_TYPE_POINTER);
-	tree = gtk_tree_view_new_with_model (GTK_TREE_MODEL (model));
+	model = ctk_list_store_new (2, G_TYPE_STRING, G_TYPE_POINTER);
+	tree = ctk_tree_view_new_with_model (GTK_TREE_MODEL (model));
 	curr_data->pref_tree = tree;
-	gtk_label_set_mnemonic_widget (GTK_LABEL (label), tree);
-	gtk_container_add (GTK_CONTAINER (scrolled), tree);
+	ctk_label_set_mnemonic_widget (GTK_LABEL (label), tree);
+	ctk_container_add (GTK_CONTAINER (scrolled), tree);
 	set_access_namedesc (tree, 
 				         _("Palettes list"),
 				         _("List of available palettes"));
 	g_object_unref (G_OBJECT (model));
-	cell = gtk_cell_renderer_text_new ();
-  	column = gtk_tree_view_column_new_with_attributes ("hello",
+	cell = ctk_cell_renderer_text_new ();
+  	column = ctk_tree_view_column_new_with_attributes ("hello",
 						    	   cell,
 						     	   "text", 0,
 						     	   NULL);
-	gtk_tree_view_append_column (GTK_TREE_VIEW (tree), column);
-        gtk_tree_view_set_headers_visible (GTK_TREE_VIEW (tree), FALSE);
+	ctk_tree_view_append_column (GTK_TREE_VIEW (tree), column);
+        ctk_tree_view_set_headers_visible (GTK_TREE_VIEW (tree), FALSE);
         
         while (list) {
         	GtkTreeIter iter;
         	gchar *charlist = list->data;
         	
-        	gtk_list_store_append (GTK_LIST_STORE (model), &iter);
-		gtk_list_store_set (GTK_LIST_STORE (model), &iter, 0, charlist, 1, charlist, -1);
+        	ctk_list_store_append (GTK_LIST_STORE (model), &iter);
+		ctk_list_store_set (GTK_LIST_STORE (model), &iter, 0, charlist, 1, charlist, -1);
         
         	list = g_list_next (list);
         }
         
-        selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (tree));
+        selection = ctk_tree_view_get_selection (GTK_TREE_VIEW (tree));
         g_signal_connect (G_OBJECT (selection), "changed",
         			   G_CALLBACK (selection_changed), scrolled);
 
@@ -410,24 +410,24 @@ create_hig_catagory (GtkWidget *main_box, gchar *title)
 	GtkWidget *label;
 	gchar *tmp;
 		
-	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-	gtk_box_pack_start (GTK_BOX (main_box), vbox, TRUE, TRUE, 0);
+	vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
+	ctk_box_pack_start (GTK_BOX (main_box), vbox, TRUE, TRUE, 0);
 
 	tmp = g_strdup_printf ("<b>%s</b>", title);
-	label = gtk_label_new (NULL);
-	gtk_label_set_xalign (GTK_LABEL (label), 0.0);
-	gtk_label_set_markup (GTK_LABEL (label), tmp);
+	label = ctk_label_new (NULL);
+	ctk_label_set_xalign (GTK_LABEL (label), 0.0);
+	ctk_label_set_markup (GTK_LABEL (label), tmp);
 	g_free (tmp);
-	gtk_box_pack_start (GTK_BOX (vbox), label, FALSE, FALSE, 0);
+	ctk_box_pack_start (GTK_BOX (vbox), label, FALSE, FALSE, 0);
 
-	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-	gtk_box_pack_start (GTK_BOX (vbox), hbox, TRUE, TRUE, 0);
+	hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+	ctk_box_pack_start (GTK_BOX (vbox), hbox, TRUE, TRUE, 0);
 	
-	label = gtk_label_new ("    ");
-	gtk_box_pack_start (GTK_BOX (hbox), label, FALSE, FALSE, 0);
+	label = ctk_label_new ("    ");
+	ctk_box_pack_start (GTK_BOX (hbox), label, FALSE, FALSE, 0);
 	
-	vbox2 = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-	gtk_box_pack_start (GTK_BOX (hbox), vbox2, TRUE, TRUE, 0);
+	vbox2 = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
+	ctk_box_pack_start (GTK_BOX (hbox), vbox2, TRUE, TRUE, 0);
 
 	return vbox2;
 		
@@ -442,37 +442,37 @@ static void default_chars_frame_create(charpick_data *curr_data)
   GtkWidget *scrolled;
   GtkWidget *button;
 
-  dbox = gtk_dialog_get_content_area(GTK_DIALOG (dialog));
+  dbox = ctk_dialog_get_content_area(GTK_DIALOG (dialog));
 
-  vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 18);
-  gtk_container_set_border_width (GTK_CONTAINER (vbox), 5);
-  gtk_box_pack_start (GTK_BOX (dbox), vbox, TRUE, TRUE, 0);
+  vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 18);
+  ctk_container_set_border_width (GTK_CONTAINER (vbox), 5);
+  ctk_box_pack_start (GTK_BOX (dbox), vbox, TRUE, TRUE, 0);
 
   vbox1 = create_hig_catagory (vbox, _("Character Palette")); 
   
-  vbox3 = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-  gtk_box_pack_start (GTK_BOX (vbox1), vbox3, TRUE, TRUE, 0);
+  vbox3 = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
+  ctk_box_pack_start (GTK_BOX (vbox1), vbox3, TRUE, TRUE, 0);
   
-  label = gtk_label_new_with_mnemonic(_("_Palettes:"));
-  gtk_box_pack_start(GTK_BOX(vbox3), label, FALSE, FALSE, 0);
-  gtk_label_set_xalign (GTK_LABEL (label), 0.0);
-  gtk_widget_show(label);
+  label = ctk_label_new_with_mnemonic(_("_Palettes:"));
+  ctk_box_pack_start(GTK_BOX(vbox3), label, FALSE, FALSE, 0);
+  ctk_label_set_xalign (GTK_LABEL (label), 0.0);
+  ctk_widget_show(label);
 	  
-  hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
-  gtk_box_pack_start (GTK_BOX (vbox3), hbox, TRUE, TRUE, 0); 
+  hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
+  ctk_box_pack_start (GTK_BOX (vbox3), hbox, TRUE, TRUE, 0); 
   scrolled = create_palettes_tree (curr_data, label);
-  gtk_box_pack_start (GTK_BOX (hbox), scrolled, TRUE, TRUE, 0);
+  ctk_box_pack_start (GTK_BOX (hbox), scrolled, TRUE, TRUE, 0);
   
-  vbox2 = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-  gtk_box_pack_start (GTK_BOX (hbox), vbox2, FALSE, FALSE, 0);
+  vbox2 = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
+  ctk_box_pack_start (GTK_BOX (hbox), vbox2, FALSE, FALSE, 0);
 
   button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
-  				     "label", "gtk-add",
+  				     "label", "ctk-add",
   				     "use-stock", TRUE,
   				     "use-underline", TRUE,
   				     NULL));
 
-  gtk_box_pack_start (GTK_BOX (vbox2), button, FALSE, FALSE, 0);
+  ctk_box_pack_start (GTK_BOX (vbox2), button, FALSE, FALSE, 0);
   g_signal_connect (G_OBJECT (button), "clicked",
   			     G_CALLBACK (add_palette), curr_data);
   set_access_namedesc (button, _("Add button"),
@@ -484,7 +484,7 @@ static void default_chars_frame_create(charpick_data *curr_data)
   				     "use-underline", TRUE,
   				     NULL));
 
-  gtk_box_pack_start (GTK_BOX (vbox2), button, FALSE, FALSE, 0);
+  ctk_box_pack_start (GTK_BOX (vbox2), button, FALSE, FALSE, 0);
   g_signal_connect (G_OBJECT (button), "clicked",
   			     G_CALLBACK (edit_palette), curr_data);
   g_object_set_data (G_OBJECT (scrolled), "edit_button", button);
@@ -492,12 +492,12 @@ static void default_chars_frame_create(charpick_data *curr_data)
 				         _("Click to edit the selected palette"));
   
   button = GTK_WIDGET (g_object_new (GTK_TYPE_BUTTON,
-  				     "label", "gtk-delete",
+  				     "label", "ctk-delete",
   				     "use-stock", TRUE,
   				     "use-underline", TRUE,
   				     NULL));
 
-  gtk_box_pack_start (GTK_BOX (vbox2), button, FALSE, FALSE, 0);
+  ctk_box_pack_start (GTK_BOX (vbox2), button, FALSE, FALSE, 0);
   g_signal_connect (G_OBJECT (button), "clicked",
   			     G_CALLBACK (delete_palette), curr_data);
   g_object_set_data (G_OBJECT (scrolled), "delete_button", button);
@@ -505,7 +505,7 @@ static void default_chars_frame_create(charpick_data *curr_data)
 				         _("Click to delete the selected palette"));
 
   if ( ! g_settings_is_writable (curr_data->settings, "chartable"))
-	  gtk_widget_set_sensitive (vbox3, FALSE);
+	  ctk_widget_set_sensitive (vbox3, FALSE);
    
   return;
 }
@@ -515,9 +515,9 @@ phelp_cb (GtkDialog *dialog, gint tab, gpointer data)
 {
   GError *error = NULL;
 
-  gtk_show_uri_on_window (GTK_WINDOW (dialog),
+  ctk_show_uri_on_window (GTK_WINDOW (dialog),
                           "help:cafe-char-palette/charpick-prefs",
-                          gtk_get_current_event_time (),
+                          ctk_get_current_event_time (),
                           &error);
 
   if (error) { /* FIXME: the user needs to see this */
@@ -537,7 +537,7 @@ response_cb (GtkDialog *dialog, gint id, gpointer data)
     return;
   }
   
-  gtk_widget_destroy (curr_data->propwindow);
+  ctk_widget_destroy (curr_data->propwindow);
   curr_data->propwindow = NULL;
   
 }
@@ -547,28 +547,28 @@ show_preferences_dialog (GtkAction     *action,
 			 charpick_data *curr_data)
 {
   if (curr_data->propwindow) {
-    gtk_window_set_screen (GTK_WINDOW (curr_data->propwindow),
-			   gtk_widget_get_screen (curr_data->applet));
-    gtk_window_present (GTK_WINDOW (curr_data->propwindow));
+    ctk_window_set_screen (GTK_WINDOW (curr_data->propwindow),
+			   ctk_widget_get_screen (curr_data->applet));
+    ctk_window_present (GTK_WINDOW (curr_data->propwindow));
     return;
   }
 
-  curr_data->propwindow = gtk_dialog_new_with_buttons (_("Character Palette Preferences"), 
+  curr_data->propwindow = ctk_dialog_new_with_buttons (_("Character Palette Preferences"), 
   					    NULL,
 					    GTK_DIALOG_DESTROY_WITH_PARENT,
-					    "gtk-close", GTK_RESPONSE_CLOSE,
-					    "gtk-help", GTK_RESPONSE_HELP,
+					    "ctk-close", GTK_RESPONSE_CLOSE,
+					    "ctk-help", GTK_RESPONSE_HELP,
 					    NULL);
-  gtk_window_set_screen (GTK_WINDOW (curr_data->propwindow),
-			 gtk_widget_get_screen (curr_data->applet));
-  gtk_window_set_default_size (GTK_WINDOW (curr_data->propwindow), 350, 350);
-  gtk_container_set_border_width (GTK_CONTAINER (curr_data->propwindow), 5);
-  gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area(GTK_DIALOG (curr_data->propwindow))), 2);
-  gtk_dialog_set_default_response (GTK_DIALOG (curr_data->propwindow), GTK_RESPONSE_CLOSE);
+  ctk_window_set_screen (GTK_WINDOW (curr_data->propwindow),
+			 ctk_widget_get_screen (curr_data->applet));
+  ctk_window_set_default_size (GTK_WINDOW (curr_data->propwindow), 350, 350);
+  ctk_container_set_border_width (GTK_CONTAINER (curr_data->propwindow), 5);
+  ctk_box_set_spacing (GTK_BOX (ctk_dialog_get_content_area(GTK_DIALOG (curr_data->propwindow))), 2);
+  ctk_dialog_set_default_response (GTK_DIALOG (curr_data->propwindow), GTK_RESPONSE_CLOSE);
 
   default_chars_frame_create(curr_data);
   g_signal_connect (G_OBJECT (curr_data->propwindow), "response",
   		    G_CALLBACK (response_cb), curr_data);
   		    
-  gtk_widget_show_all (curr_data->propwindow);
+  ctk_widget_show_all (curr_data->propwindow);
 }

@@ -2,7 +2,7 @@
 
 #include <glib.h>
 #include <glib/gi18n.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <gio/gio.h>
 #include <cafe-panel-applet.h>
 #include <cafe-panel-applet-gsettings.h>

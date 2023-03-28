@@ -22,7 +22,7 @@
 #include <config.h>
 
 #include <glib.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
@@ -87,22 +87,22 @@ cpufreq_utils_display_error (const gchar *message,
 
 	g_return_if_fail (message != NULL);
 
-	dialog = gtk_message_dialog_new (NULL,
+	dialog = ctk_message_dialog_new (NULL,
 					 GTK_DIALOG_DESTROY_WITH_PARENT,
 					 GTK_MESSAGE_ERROR,
 					 GTK_BUTTONS_OK,
 					 "%s", message);
 	if (secondary) {
-		gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
+		ctk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
 							  "%s", secondary);
 	}
 	
-	gtk_window_set_title (GTK_WINDOW (dialog), ""); /* as per HIG */
-	gtk_window_set_skip_taskbar_hint (GTK_WINDOW (dialog), TRUE);
+	ctk_window_set_title (GTK_WINDOW (dialog), ""); /* as per HIG */
+	ctk_window_set_skip_taskbar_hint (GTK_WINDOW (dialog), TRUE);
 	g_signal_connect (G_OBJECT (dialog),
 			  "response",
-			  G_CALLBACK (gtk_widget_destroy), NULL);
-	gtk_widget_show (dialog);
+			  G_CALLBACK (ctk_widget_destroy), NULL);
+	ctk_widget_show (dialog);
 }
 
 #ifdef HAVE_POLKIT

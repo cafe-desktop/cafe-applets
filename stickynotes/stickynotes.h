@@ -24,7 +24,7 @@
 #include <libwnck/libwnck.h>
 #include <stickynotes_applet.h>
 
-#include <gtksourceview/gtksource.h>
+#include <ctksourceview/ctksource.h>
 
 typedef struct
 {

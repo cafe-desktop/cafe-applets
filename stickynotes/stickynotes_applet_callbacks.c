@@ -57,7 +57,7 @@ static gboolean get_desktop_window (Window *window)
 static void
 popup_add_note (StickyNotesApplet *applet, GtkWidget *item)
 {
-	stickynotes_add (gtk_widget_get_screen (applet->w_applet));
+	stickynotes_add (ctk_widget_get_screen (applet->w_applet));
 }
 
 static void
@@ -123,7 +123,7 @@ applet_key_cb (GtkWidget         *widget,
 /* Applet Callback : Cross (enter or leave) the applet. */
 gboolean applet_cross_cb(GtkWidget *widget, GdkEventCrossing *event, StickyNotesApplet *applet)
 {
-	applet->prelighted = event->type == GDK_ENTER_NOTIFY || gtk_widget_has_focus(widget);
+	applet->prelighted = event->type == GDK_ENTER_NOTIFY || ctk_widget_has_focus(widget);
 
 	stickynotes_applet_update_icon(applet);
 
@@ -235,7 +235,7 @@ void applet_destroy_cb (CafePanelApplet *cafe_panel_applet, StickyNotesApplet *a
 	stickynotes_save_now ();
 
 	if (applet->destroy_all_dialog != NULL)
-		gtk_widget_destroy (applet->destroy_all_dialog);
+		ctk_widget_destroy (applet->destroy_all_dialog);
 
 	if (applet->action_group)
 		g_object_unref (applet->action_group);
@@ -268,7 +268,7 @@ destroy_all_response_cb (GtkDialog *dialog, gint id, StickyNotesApplet *applet)
 	stickynotes_applet_update_tooltips();
 	stickynotes_save();
 
-	gtk_widget_destroy (GTK_WIDGET (dialog));
+	ctk_widget_destroy (GTK_WIDGET (dialog));
 	applet->destroy_all_dialog = NULL;
 }
 
@@ -289,18 +289,18 @@ void menu_destroy_all_cb(GtkAction *action, StickyNotesApplet *applet)
 {
 	GtkBuilder *builder;
 
-	builder = gtk_builder_new ();
-  	gtk_builder_add_from_file (builder, BUILDER_PATH, NULL);
+	builder = ctk_builder_new ();
+  	ctk_builder_add_from_file (builder, BUILDER_PATH, NULL);
 
 	if (applet->destroy_all_dialog != NULL) {
-		gtk_window_set_screen (GTK_WINDOW (applet->destroy_all_dialog),
-		                       gtk_widget_get_screen (GTK_WIDGET (applet->w_applet)));
+		ctk_window_set_screen (GTK_WINDOW (applet->destroy_all_dialog),
+		                       ctk_widget_get_screen (GTK_WIDGET (applet->w_applet)));
 
-		gtk_window_present (GTK_WINDOW (applet->destroy_all_dialog));
+		ctk_window_present (GTK_WINDOW (applet->destroy_all_dialog));
 		return;
 	}
 
-	applet->destroy_all_dialog = GTK_WIDGET (gtk_builder_get_object (builder, "delete_all_dialog"));
+	applet->destroy_all_dialog = GTK_WIDGET (ctk_builder_get_object (builder, "delete_all_dialog"));
 
 	g_object_unref (builder);
 
@@ -308,16 +308,16 @@ void menu_destroy_all_cb(GtkAction *action, StickyNotesApplet *applet)
 	                  G_CALLBACK (destroy_all_response_cb),
 	                  applet);
 
-	gtk_window_set_screen (GTK_WINDOW (applet->destroy_all_dialog),
-	                       gtk_widget_get_screen (applet->w_applet));
+	ctk_window_set_screen (GTK_WINDOW (applet->destroy_all_dialog),
+	                       ctk_widget_get_screen (applet->w_applet));
 
-	gtk_widget_show_all (applet->destroy_all_dialog);
+	ctk_widget_show_all (applet->destroy_all_dialog);
 }
 
 /* Menu Callback: Lock/Unlock sticky notes */
 void menu_toggle_lock_cb(GtkAction *action, StickyNotesApplet *applet)
 {
-	gboolean locked = gtk_toggle_action_get_active (GTK_TOGGLE_ACTION (action));
+	gboolean locked = ctk_toggle_action_get_active (GTK_TOGGLE_ACTION (action));
 
 	if (g_settings_is_writable (stickynotes->settings, "locked"))
 		g_settings_set_boolean (stickynotes->settings, "locked", locked);
@@ -327,8 +327,8 @@ void menu_toggle_lock_cb(GtkAction *action, StickyNotesApplet *applet)
 void menu_preferences_cb(GtkAction *action, StickyNotesApplet *applet)
 {
 	stickynotes_applet_update_prefs();
-	gtk_window_set_screen(GTK_WINDOW(stickynotes->w_prefs), gtk_widget_get_screen(applet->w_applet));
-	gtk_window_present(GTK_WINDOW(stickynotes->w_prefs));
+	ctk_window_set_screen(GTK_WINDOW(stickynotes->w_prefs), ctk_widget_get_screen(applet->w_applet));
+	ctk_window_present(GTK_WINDOW(stickynotes->w_prefs));
 }
 
 /* Menu Callback : Show help */
@@ -336,17 +336,17 @@ void menu_help_cb(GtkAction *action, StickyNotesApplet *applet)
 {
 	GError *error = NULL;
 
-	gtk_show_uri_on_window (NULL,
+	ctk_show_uri_on_window (NULL,
 	                        "help:cafe-stickynotes-applet",
-	                        gtk_get_current_event_time (),
+	                        ctk_get_current_event_time (),
 	                        &error);
 	if (error) {
-		GtkWidget *dialog = gtk_message_dialog_new(NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE,
+		GtkWidget *dialog = ctk_message_dialog_new(NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE,
 							   _("There was an error displaying help: %s"), error->message);
-		g_signal_connect(G_OBJECT(dialog), "response", G_CALLBACK(gtk_widget_destroy), NULL);
-		gtk_window_set_resizable(GTK_WINDOW(dialog), FALSE);
-		gtk_window_set_screen (GTK_WINDOW(dialog), gtk_widget_get_screen(applet->w_applet));
-		gtk_widget_show(dialog);
+		g_signal_connect(G_OBJECT(dialog), "response", G_CALLBACK(ctk_widget_destroy), NULL);
+		ctk_window_set_resizable(GTK_WINDOW(dialog), FALSE);
+		ctk_window_set_screen (GTK_WINDOW(dialog), ctk_widget_get_screen(applet->w_applet));
+		ctk_widget_show(dialog);
 		g_error_free(error);
 	}
 }
@@ -375,7 +375,7 @@ menu_about_cb (GtkAction *action,
 		*p = _(*p);
 #endif
 
-	gtk_show_about_dialog (NULL,
+	ctk_show_about_dialog (NULL,
 		"title",        _("About Sticky Notes"),
 		"version",	VERSION,
 		"copyright",	_("Copyright \xc2\xa9 2002-2003 Loban A Rahman\n"
@@ -394,17 +394,17 @@ menu_about_cb (GtkAction *action,
 void
 preferences_save_cb (gpointer data)
 {
-	gint width = gtk_adjustment_get_value (stickynotes->w_prefs_width);
-	gint height = gtk_adjustment_get_value (stickynotes->w_prefs_height);
-	gboolean sys_color = gtk_toggle_button_get_active (
+	gint width = ctk_adjustment_get_value (stickynotes->w_prefs_width);
+	gint height = ctk_adjustment_get_value (stickynotes->w_prefs_height);
+	gboolean sys_color = ctk_toggle_button_get_active (
 			GTK_TOGGLE_BUTTON (stickynotes->w_prefs_sys_color));
-	gboolean sys_font = gtk_toggle_button_get_active (
+	gboolean sys_font = ctk_toggle_button_get_active (
 			GTK_TOGGLE_BUTTON (stickynotes->w_prefs_sys_font));
-	gboolean sticky = gtk_toggle_button_get_active (
+	gboolean sticky = ctk_toggle_button_get_active (
 			GTK_TOGGLE_BUTTON (stickynotes->w_prefs_sticky));
-	gboolean force_default = gtk_toggle_button_get_active (
+	gboolean force_default = ctk_toggle_button_get_active (
 			GTK_TOGGLE_BUTTON (stickynotes->w_prefs_force));
-	gboolean desktop_hide = gtk_toggle_button_get_active (
+	gboolean desktop_hide = ctk_toggle_button_get_active (
 			GTK_TOGGLE_BUTTON (stickynotes->w_prefs_desktop));
 
 	if (g_settings_is_writable (stickynotes->settings,"default-width"))
@@ -431,8 +431,8 @@ preferences_color_cb (GtkWidget *button, gpointer data)
 
 	GdkRGBA color, font_color;
 
-	gtk_color_chooser_get_rgba (GTK_COLOR_CHOOSER (stickynotes->w_prefs_color), &color);
-	gtk_color_chooser_get_rgba (GTK_COLOR_CHOOSER (stickynotes->w_prefs_font_color), &font_color);
+	ctk_color_chooser_get_rgba (GTK_COLOR_CHOOSER (stickynotes->w_prefs_color), &color);
+	ctk_color_chooser_get_rgba (GTK_COLOR_CHOOSER (stickynotes->w_prefs_font_color), &font_color);
 
 	color_str = gdk_rgba_to_string (&color);
 	font_color_str = gdk_rgba_to_string (&font_color);
@@ -449,7 +449,7 @@ void preferences_font_cb (GtkWidget *button, gpointer data)
 {
 	const char *font_str;
 
-	font_str = gtk_font_button_get_font_name (GTK_FONT_BUTTON (button));
+	font_str = ctk_font_button_get_font_name (GTK_FONT_BUTTON (button));
 	g_settings_set_string (stickynotes->settings, "default-font", font_str);
 }
 
@@ -465,13 +465,13 @@ void preferences_apply_cb(GSettings *settings, gchar *key, gpointer data)
 			for (l = stickynotes->notes; l; l = l->next)
 			{
 				note = l->data;
-				gtk_window_stick (GTK_WINDOW (note->w_window));
+				ctk_window_stick (GTK_WINDOW (note->w_window));
 			}
 		else
 			for (l = stickynotes->notes; l; l = l->next)
 			{
 				note = l->data;
-				gtk_window_unstick (GTK_WINDOW (
+				ctk_window_unstick (GTK_WINDOW (
 							note->w_window));
 			}
 	}
@@ -531,29 +531,29 @@ void preferences_response_cb(GtkWidget *dialog, gint response, gpointer data)
 	if (response == GTK_RESPONSE_HELP) {
 		GError *error = NULL;
 
-		gtk_show_uri_on_window (GTK_WINDOW (dialog),
+		ctk_show_uri_on_window (GTK_WINDOW (dialog),
 		                        "help:cafe-stickynotes-applet/stickynotes-advanced-settings",
-		                        gtk_get_current_event_time (),
+		                        ctk_get_current_event_time (),
 		                        &error);
 		if (error) {
-			dialog = gtk_message_dialog_new(NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE,
+			dialog = ctk_message_dialog_new(NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE,
 								   _("There was an error displaying help: %s"), error->message);
-			g_signal_connect(G_OBJECT(dialog), "response", G_CALLBACK(gtk_widget_destroy), NULL);
-			gtk_window_set_resizable(GTK_WINDOW(dialog), FALSE);
-			gtk_window_set_screen (GTK_WINDOW(dialog), gtk_widget_get_screen(GTK_WIDGET(dialog)));
-			gtk_widget_show(dialog);
+			g_signal_connect(G_OBJECT(dialog), "response", G_CALLBACK(ctk_widget_destroy), NULL);
+			ctk_window_set_resizable(GTK_WINDOW(dialog), FALSE);
+			ctk_window_set_screen (GTK_WINDOW(dialog), ctk_widget_get_screen(GTK_WIDGET(dialog)));
+			ctk_widget_show(dialog);
 			g_error_free(error);
 		}
 	}
 
 	else if (response == GTK_RESPONSE_CLOSE)
-	        gtk_widget_hide(GTK_WIDGET(dialog));
+	        ctk_widget_hide(GTK_WIDGET(dialog));
 }
 
 /* Preferences Callback : Delete */
 gboolean preferences_delete_cb(GtkWidget *widget, GdkEvent *event, gpointer data)
 {
-	gtk_widget_hide(widget);
+	ctk_widget_hide(widget);
 
 	return TRUE;
 }

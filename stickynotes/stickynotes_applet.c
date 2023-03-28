@@ -23,7 +23,7 @@
 #include "stickynotes_applet_callbacks.h"
 #include "stickynotes.h"
 
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <gdk/gdkx.h>
 
 StickyNotes *stickynotes = NULL;
@@ -127,7 +127,7 @@ static void
 icon_theme_changed (GtkIconTheme *icon_theme,
                     gpointer      user_data)
 {
-	gtk_icon_theme_append_search_path (icon_theme,
+	ctk_icon_theme_append_search_path (icon_theme,
 	                                   PKG_DATA_DIR G_DIR_SEPARATOR_S "icons");
 }
 
@@ -136,10 +136,10 @@ stickynotes_applet_init_icons (void)
 {
 	GtkIconTheme *icon_theme;
 
-	icon_theme = gtk_icon_theme_get_default ();
+	icon_theme = ctk_icon_theme_get_default ();
 	icon_theme_changed (icon_theme, NULL);
 
-	g_signal_connect (gtk_icon_theme_get_default (), "changed",
+	g_signal_connect (ctk_icon_theme_get_default (), "changed",
 	                  G_CALLBACK (icon_theme_changed), NULL);
 }
 
@@ -147,7 +147,7 @@ static void
 stickynotes_destroy (GtkWidget *widget,
                      gpointer   user_dta)
 {
-	g_signal_handlers_disconnect_by_func (gtk_icon_theme_get_default (),
+	g_signal_handlers_disconnect_by_func (ctk_icon_theme_get_default (),
 	                                      icon_theme_changed, NULL);
 }
 
@@ -165,13 +165,13 @@ stickynotes_applet_init (CafePanelApplet *cafe_panel_applet)
 	stickynotes->last_timeout_data = 0;
 
 	size = cafe_panel_applet_get_size (cafe_panel_applet);
-	scale = gtk_widget_get_scale_factor (GTK_WIDGET (cafe_panel_applet));
+	scale = ctk_widget_get_scale_factor (GTK_WIDGET (cafe_panel_applet));
 
 	g_set_application_name (_("Sticky Notes"));
-	gtk_window_set_default_icon_name ("cafe-sticky-notes-applet");
+	ctk_window_set_default_icon_name ("cafe-sticky-notes-applet");
 
-	stickynotes->icon_normal = gtk_icon_theme_load_surface (
-			gtk_icon_theme_get_default (),
+	stickynotes->icon_normal = ctk_icon_theme_load_surface (
+			ctk_icon_theme_get_default (),
 			"cafe-sticky-notes-applet",
 			size, scale, NULL, 0, NULL);
 
@@ -200,7 +200,7 @@ stickynotes_applet_init (CafePanelApplet *cafe_panel_applet)
 	stickynotes->max_height = 0.8 * HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ()));
 
 	/* Load sticky notes */
-	stickynotes_load (gtk_widget_get_screen (GTK_WIDGET (cafe_panel_applet)));
+	stickynotes_load (ctk_widget_get_screen (GTK_WIDGET (cafe_panel_applet)));
 
 	install_check_click_on_desktop ();
 }
@@ -208,39 +208,39 @@ stickynotes_applet_init (CafePanelApplet *cafe_panel_applet)
 void stickynotes_applet_init_prefs(void)
 {
 
-	stickynotes->builder = gtk_builder_new ();
+	stickynotes->builder = ctk_builder_new ();
 
-        gtk_builder_add_from_file (stickynotes->builder, BUILDER_PATH, NULL);
+        ctk_builder_add_from_file (stickynotes->builder, BUILDER_PATH, NULL);
 
-	stickynotes->w_prefs = GTK_WIDGET (gtk_builder_get_object (stickynotes->builder,
+	stickynotes->w_prefs = GTK_WIDGET (ctk_builder_get_object (stickynotes->builder,
 			"preferences_dialog"));
 
-	stickynotes->w_prefs_width = gtk_spin_button_get_adjustment (
-			GTK_SPIN_BUTTON (gtk_builder_get_object (
+	stickynotes->w_prefs_width = ctk_spin_button_get_adjustment (
+			GTK_SPIN_BUTTON (ctk_builder_get_object (
                                          stickynotes->builder, "width_spin")));
-	stickynotes->w_prefs_height = gtk_spin_button_get_adjustment (
-			GTK_SPIN_BUTTON (gtk_builder_get_object (
+	stickynotes->w_prefs_height = ctk_spin_button_get_adjustment (
+			GTK_SPIN_BUTTON (ctk_builder_get_object (
                                          stickynotes->builder, "height_spin")));
-	stickynotes->w_prefs_color = GTK_WIDGET (gtk_builder_get_object (stickynotes->builder,
+	stickynotes->w_prefs_color = GTK_WIDGET (ctk_builder_get_object (stickynotes->builder,
 			"default_color"));
-	stickynotes->w_prefs_font_color = GTK_WIDGET (gtk_builder_get_object (stickynotes->builder,
+	stickynotes->w_prefs_font_color = GTK_WIDGET (ctk_builder_get_object (stickynotes->builder,
 			"prefs_font_color"));
 	stickynotes->w_prefs_sys_color = GTK_WIDGET (&GTK_CHECK_BUTTON (
-				        gtk_builder_get_object (stickynotes->builder,
+				        ctk_builder_get_object (stickynotes->builder,
 					"sys_color_check"))->toggle_button);
-	stickynotes->w_prefs_font = GTK_WIDGET (gtk_builder_get_object (stickynotes->builder,
+	stickynotes->w_prefs_font = GTK_WIDGET (ctk_builder_get_object (stickynotes->builder,
 			"default_font"));
 	stickynotes->w_prefs_sys_font = GTK_WIDGET (&GTK_CHECK_BUTTON (
-				        gtk_builder_get_object (stickynotes->builder,
+				        ctk_builder_get_object (stickynotes->builder,
 					"sys_font_check"))->toggle_button);
 	stickynotes->w_prefs_sticky = GTK_WIDGET (&GTK_CHECK_BUTTON (
-				        gtk_builder_get_object (stickynotes->builder,
+				        ctk_builder_get_object (stickynotes->builder,
 					"sticky_check"))->toggle_button);
 	stickynotes->w_prefs_force = GTK_WIDGET (&GTK_CHECK_BUTTON (
-				        gtk_builder_get_object (stickynotes->builder,
+				        ctk_builder_get_object (stickynotes->builder,
 					"force_default_check"))->toggle_button);
 	stickynotes->w_prefs_desktop = GTK_WIDGET (&GTK_CHECK_BUTTON (
-				        gtk_builder_get_object (stickynotes->builder,
+				        ctk_builder_get_object (stickynotes->builder,
 					"desktop_hide_check"))->toggle_button);
 
 	g_signal_connect (G_OBJECT (stickynotes->w_prefs), "response",
@@ -272,65 +272,65 @@ void stickynotes_applet_init_prefs(void)
 			"toggled", G_CALLBACK (preferences_save_cb), NULL);
 
 	{
-		GtkSizeGroup *group = gtk_size_group_new(GTK_SIZE_GROUP_HORIZONTAL);
+		GtkSizeGroup *group = ctk_size_group_new(GTK_SIZE_GROUP_HORIZONTAL);
 
-		gtk_size_group_add_widget(group, GTK_WIDGET (gtk_builder_get_object (stickynotes->builder, "width_label")));
-		gtk_size_group_add_widget(group, GTK_WIDGET (gtk_builder_get_object (stickynotes->builder, "height_label")));
-		gtk_size_group_add_widget(group, GTK_WIDGET (gtk_builder_get_object (stickynotes->builder, "prefs_color_label")));
+		ctk_size_group_add_widget(group, GTK_WIDGET (ctk_builder_get_object (stickynotes->builder, "width_label")));
+		ctk_size_group_add_widget(group, GTK_WIDGET (ctk_builder_get_object (stickynotes->builder, "height_label")));
+		ctk_size_group_add_widget(group, GTK_WIDGET (ctk_builder_get_object (stickynotes->builder, "prefs_color_label")));
 
 		g_object_unref(group);
 	}
 
 	if (!g_settings_is_writable (stickynotes->settings, "default-width"))
 	{
-		gtk_widget_set_sensitive (GTK_WIDGET (gtk_builder_get_object (
+		ctk_widget_set_sensitive (GTK_WIDGET (ctk_builder_get_object (
 					stickynotes->builder, "width_label")),
 				FALSE);
-		gtk_widget_set_sensitive (GTK_WIDGET (gtk_builder_get_object (
+		ctk_widget_set_sensitive (GTK_WIDGET (ctk_builder_get_object (
 					stickynotes->builder, "width_spin")),
 				FALSE);
 	}
 	if (!g_settings_is_writable (stickynotes->settings, "default-height"))
 	{
-		gtk_widget_set_sensitive (GTK_WIDGET (gtk_builder_get_object (
+		ctk_widget_set_sensitive (GTK_WIDGET (ctk_builder_get_object (
 					stickynotes->builder, "height_label")),
 				FALSE);
-		gtk_widget_set_sensitive (GTK_WIDGET (gtk_builder_get_object (
+		ctk_widget_set_sensitive (GTK_WIDGET (ctk_builder_get_object (
 					stickynotes->builder, "height_spin")),
 				FALSE);
 	}
 	if (!g_settings_is_writable (stickynotes->settings, "default-color"))
 	{
-		gtk_widget_set_sensitive (GTK_WIDGET (gtk_builder_get_object (
+		ctk_widget_set_sensitive (GTK_WIDGET (ctk_builder_get_object (
 					stickynotes->builder, "prefs_color_label")),
 				FALSE);
-		gtk_widget_set_sensitive (stickynotes->w_prefs_color, FALSE);
+		ctk_widget_set_sensitive (stickynotes->w_prefs_color, FALSE);
 	}
 	if (!g_settings_is_writable (stickynotes->settings, "default-font-color"))
 	{
-		gtk_widget_set_sensitive (GTK_WIDGET (gtk_builder_get_object (
+		ctk_widget_set_sensitive (GTK_WIDGET (ctk_builder_get_object (
 					stickynotes->builder, "prefs_font_color_label")),
 				FALSE);
-		gtk_widget_set_sensitive (stickynotes->w_prefs_font_color,
+		ctk_widget_set_sensitive (stickynotes->w_prefs_font_color,
 				FALSE);
 	}
 	if (!g_settings_is_writable (stickynotes->settings, "use-system-color"))
-		gtk_widget_set_sensitive (stickynotes->w_prefs_sys_color,
+		ctk_widget_set_sensitive (stickynotes->w_prefs_sys_color,
 				FALSE);
 	if (!g_settings_is_writable (stickynotes->settings, "default-font"))
 	{
-		gtk_widget_set_sensitive (GTK_WIDGET (gtk_builder_get_object (
+		ctk_widget_set_sensitive (GTK_WIDGET (ctk_builder_get_object (
 					stickynotes->builder, "prefs_font_label")),
 				FALSE);
-		gtk_widget_set_sensitive (stickynotes->w_prefs_font, FALSE);
+		ctk_widget_set_sensitive (stickynotes->w_prefs_font, FALSE);
 	}
 	if (!g_settings_is_writable (stickynotes->settings, "use-system-font"))
-		gtk_widget_set_sensitive (stickynotes->w_prefs_sys_font,
+		ctk_widget_set_sensitive (stickynotes->w_prefs_sys_font,
 				FALSE);
 	if (!g_settings_is_writable (stickynotes->settings, "sticky"))
-		gtk_widget_set_sensitive (stickynotes->w_prefs_sticky, FALSE);
+		ctk_widget_set_sensitive (stickynotes->w_prefs_sticky, FALSE);
 	if (!g_settings_is_writable (stickynotes->settings, "force-default"))
-		gtk_widget_set_sensitive (stickynotes->w_prefs_force, FALSE);
+		ctk_widget_set_sensitive (stickynotes->w_prefs_force, FALSE);
 
 	stickynotes_applet_update_prefs();
 }
@@ -347,7 +347,7 @@ stickynotes_applet_new(CafePanelApplet *cafe_panel_applet)
 
 	/* Initialize Sticky Notes Applet */
 	applet->w_applet = GTK_WIDGET(cafe_panel_applet);
-	applet->w_image = gtk_image_new();
+	applet->w_image = ctk_image_new();
 	applet->destroy_all_dialog = NULL;
 	applet->prelighted = FALSE;
 
@@ -357,19 +357,19 @@ stickynotes_applet_new(CafePanelApplet *cafe_panel_applet)
 	cafe_panel_applet_set_flags(cafe_panel_applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
 
 	/* Add the applet icon */
-	gtk_container_add(GTK_CONTAINER(cafe_panel_applet), applet->w_image);
+	ctk_container_add(GTK_CONTAINER(cafe_panel_applet), applet->w_image);
 	applet->panel_size = cafe_panel_applet_get_size (cafe_panel_applet);
 	applet->panel_orient = cafe_panel_applet_get_orient (cafe_panel_applet);
 	stickynotes_applet_update_icon(applet);
 
 	/* Add the popup menu */
-	applet->action_group = gtk_action_group_new ("StickyNotes Applet Actions");
-	gtk_action_group_set_translation_domain (applet->action_group, GETTEXT_PACKAGE);
-	gtk_action_group_add_actions (applet->action_group,
+	applet->action_group = ctk_action_group_new ("StickyNotes Applet Actions");
+	ctk_action_group_set_translation_domain (applet->action_group, GETTEXT_PACKAGE);
+	ctk_action_group_add_actions (applet->action_group,
 				      stickynotes_applet_menu_actions,
 				      G_N_ELEMENTS (stickynotes_applet_menu_actions),
 				      applet);
-	gtk_action_group_add_toggle_actions (applet->action_group,
+	ctk_action_group_add_toggle_actions (applet->action_group,
 					     stickynotes_applet_menu_toggle_actions,
 					     G_N_ELEMENTS (stickynotes_applet_menu_toggle_actions),
 					     applet);
@@ -380,8 +380,8 @@ stickynotes_applet_new(CafePanelApplet *cafe_panel_applet)
 	if (cafe_panel_applet_get_locked_down (cafe_panel_applet)) {
 		GtkAction *action;
 
-		action = gtk_action_group_get_action (applet->action_group, "preferences");
-		gtk_action_set_visible (action, FALSE);
+		action = ctk_action_group_get_action (applet->action_group, "preferences");
+		ctk_action_set_visible (action, FALSE);
 	}
 
 	/* Connect all signals for applet management */
@@ -408,11 +408,11 @@ stickynotes_applet_new(CafePanelApplet *cafe_panel_applet)
 
 	cafe_panel_applet_set_background_widget (cafe_panel_applet, applet->w_applet);
 
-	atk_obj = gtk_widget_get_accessible (applet->w_applet);
+	atk_obj = ctk_widget_get_accessible (applet->w_applet);
 	atk_object_set_name (atk_obj, _("Sticky Notes"));
 
 	/* Show the applet */
-	gtk_widget_show_all(GTK_WIDGET(applet->w_applet));
+	ctk_widget_show_all(GTK_WIDGET(applet->w_applet));
 
 	return applet;
 }
@@ -442,7 +442,7 @@ void stickynotes_applet_update_icon(StickyNotesApplet *applet)
 	cairo_paint (cr);
 
 	/* Apply the finished surface to the applet image */
-	gtk_image_set_from_surface(GTK_IMAGE(applet->w_image), surface);
+	ctk_image_set_from_surface(GTK_IMAGE(applet->w_image), surface);
 
 	cairo_surface_destroy(surface);
 }
@@ -490,52 +490,52 @@ stickynotes_applet_update_prefs (void)
 	g_free (color_str);
 	g_free (font_color_str);
 
-	gtk_adjustment_set_value (stickynotes->w_prefs_width, width);
-	gtk_adjustment_set_value (stickynotes->w_prefs_height, height);
-	gtk_toggle_button_set_active (
+	ctk_adjustment_set_value (stickynotes->w_prefs_width, width);
+	ctk_adjustment_set_value (stickynotes->w_prefs_height, height);
+	ctk_toggle_button_set_active (
 			GTK_TOGGLE_BUTTON (stickynotes->w_prefs_sys_color),
 			sys_color);
-	gtk_toggle_button_set_active (
+	ctk_toggle_button_set_active (
 			GTK_TOGGLE_BUTTON(stickynotes->w_prefs_sys_font),
 			sys_font);
-	gtk_toggle_button_set_active (
+	ctk_toggle_button_set_active (
 			GTK_TOGGLE_BUTTON (stickynotes->w_prefs_sticky),
 			sticky);
-	gtk_toggle_button_set_active (
+	ctk_toggle_button_set_active (
 			GTK_TOGGLE_BUTTON (stickynotes->w_prefs_force),
 			force_default);
-	gtk_toggle_button_set_active (
+	ctk_toggle_button_set_active (
 			GTK_TOGGLE_BUTTON (stickynotes->w_prefs_desktop),
 			desktop_hide);
 
-	gtk_color_chooser_set_rgba (GTK_COLOR_CHOOSER (stickynotes->w_prefs_color), &color);
-	gtk_color_chooser_set_rgba (GTK_COLOR_CHOOSER (stickynotes->w_prefs_font_color), &font_color);
+	ctk_color_chooser_set_rgba (GTK_COLOR_CHOOSER (stickynotes->w_prefs_color), &color);
+	ctk_color_chooser_set_rgba (GTK_COLOR_CHOOSER (stickynotes->w_prefs_font_color), &font_color);
 
-	gtk_font_button_set_font_name (GTK_FONT_BUTTON (stickynotes->w_prefs_font), font_str);
+	ctk_font_button_set_font_name (GTK_FONT_BUTTON (stickynotes->w_prefs_font), font_str);
 	g_free (font_str);
 
 	if (g_settings_is_writable (stickynotes->settings, "default-color"))
 	{
-		gtk_widget_set_sensitive (GTK_WIDGET (gtk_builder_get_object (
+		ctk_widget_set_sensitive (GTK_WIDGET (ctk_builder_get_object (
 				stickynotes->builder, "prefs_color_label")),
 				!sys_color);
-		gtk_widget_set_sensitive (stickynotes->w_prefs_color,
+		ctk_widget_set_sensitive (stickynotes->w_prefs_color,
 				!sys_color);
 	}
 	if (g_settings_is_writable (stickynotes->settings, "default-font-color"))
 	{
-		gtk_widget_set_sensitive (GTK_WIDGET (gtk_builder_get_object (
+		ctk_widget_set_sensitive (GTK_WIDGET (ctk_builder_get_object (
 				stickynotes->builder, "prefs_font_color_label")),
 				!sys_color);
-		gtk_widget_set_sensitive (stickynotes->w_prefs_font_color,
+		ctk_widget_set_sensitive (stickynotes->w_prefs_font_color,
 				!sys_color);
 	}
 	if (g_settings_is_writable (stickynotes->settings, "default-font"))
 	{
-		gtk_widget_set_sensitive (GTK_WIDGET (gtk_builder_get_object (
+		ctk_widget_set_sensitive (GTK_WIDGET (ctk_builder_get_object (
 				stickynotes->builder, "prefs_font_label")),
 				!sys_font);
-		gtk_widget_set_sensitive (stickynotes->w_prefs_font,
+		ctk_widget_set_sensitive (stickynotes->w_prefs_font,
 				!sys_font);
 	}
 }
@@ -561,17 +561,17 @@ void stickynotes_applet_update_menus(void)
 		StickyNotesApplet *applet = l->data;
 		GSList *proxies, *p;
 
-		GtkAction *action = gtk_action_group_get_action (applet->action_group, "lock");
+		GtkAction *action = ctk_action_group_get_action (applet->action_group, "lock");
 
 		g_object_set (action,
 			      "active", locked,
 			      "sensitive", locked_writable,
 			      NULL);
 
-		proxies = gtk_action_get_proxies (action);
+		proxies = ctk_action_get_proxies (action);
 		for (p = proxies; p; p = g_slist_next (p)) {
 			if (GTK_IS_CHECK_MENU_ITEM (p->data)) {
-				gtk_check_menu_item_set_inconsistent (GTK_CHECK_MENU_ITEM (p->data),
+				ctk_check_menu_item_set_inconsistent (GTK_CHECK_MENU_ITEM (p->data),
 								      inconsistent);
 			}
 		}
@@ -594,10 +594,10 @@ stickynotes_applet_update_tooltips (void)
 	for (l = stickynotes->applets; l; l = l->next)
 	{
 		applet = l->data;
-		gtk_widget_set_tooltip_text (applet->w_applet, tooltip);
+		ctk_widget_set_tooltip_text (applet->w_applet, tooltip);
 
 		if (applet->menu_tip)
-			gtk_label_set_text (GTK_LABEL (gtk_bin_get_child (
+			ctk_label_set_text (GTK_LABEL (ctk_bin_get_child (
 						GTK_BIN (applet->menu_tip))),
 				no_notes);
 	}
@@ -618,11 +618,11 @@ stickynotes_applet_panel_icon_get_geometry (int *x, int *y, int *width, int *hei
 
 	widget = GTK_WIDGET (applet->w_image);
 
-	gtk_widget_get_preferred_size (widget, NULL, &requisition);
+	ctk_widget_get_preferred_size (widget, NULL, &requisition);
 
-	gdk_window_get_origin (gtk_widget_get_window (widget), x, y);
+	gdk_window_get_origin (ctk_widget_get_window (widget), x, y);
 
-	gtk_widget_get_allocation (widget, &allocation);
+	ctk_widget_get_allocation (widget, &allocation);
 	*width = allocation.x;
 	*height = allocation.y;
 }

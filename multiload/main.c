@@ -19,7 +19,7 @@
 #include <time.h>
 
 #include <glibtop.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <gdk/gdkkeysyms.h>
 #include <gdk-pixbuf/gdk-pixbuf.h>
 #include <gio/gio.h>
@@ -56,7 +56,7 @@ about_cb (GtkAction       *action,
         *p = _(*p);
 #endif
 
-    gtk_show_about_dialog (NULL,
+    ctk_show_about_dialog (NULL,
 	"title",        _("About System Monitor"),
 	"version",	VERSION,
 	"copyright",	_("Copyright \xc2\xa9 1999-2005 Free Software Foundation and others\n"
@@ -78,9 +78,9 @@ help_cb (GtkAction       *action,
 
  	GError *error = NULL;
 
-	gtk_show_uri_on_window (NULL,
+	ctk_show_uri_on_window (NULL,
 	                        "help:cafe-multiload",
-	                        gtk_get_current_event_time (),
+	                        ctk_get_current_event_time (),
 	                        &error);
 
     	if (error) { /* FIXME: the user needs to see this */
@@ -111,12 +111,12 @@ start_procman (MultiloadApplet *ma)
 	if (monitor == NULL)
 	        monitor = g_strdup ("cafe-system-monitor.desktop");
 
-	screen = gtk_widget_get_screen (GTK_WIDGET (ma->applet));
+	screen = ctk_widget_get_screen (GTK_WIDGET (ma->applet));
 	appinfo = g_desktop_app_info_new (monitor);
 	if (appinfo) {
 		GdkScreen *screen;
 		GdkAppLaunchContext *context;
-		screen = gtk_widget_get_screen (GTK_WIDGET (ma->applet));
+		screen = ctk_widget_get_screen (GTK_WIDGET (ma->applet));
 		display = gdk_screen_get_display (screen);
 		context = gdk_display_get_app_launch_context (display);
 		gdk_app_launch_context_set_screen (context, screen);
@@ -144,7 +144,7 @@ start_procman (MultiloadApplet *ma)
 	if (error) {
 		GtkWidget *dialog;
 
-		dialog = gtk_message_dialog_new (NULL,
+		dialog = ctk_message_dialog_new (NULL,
 						 GTK_DIALOG_DESTROY_WITH_PARENT,
 						 GTK_MESSAGE_ERROR,
 						 GTK_BUTTONS_OK,
@@ -153,14 +153,14 @@ start_procman (MultiloadApplet *ma)
 						 error->message);
 
 		g_signal_connect (dialog, "response",
-				  G_CALLBACK (gtk_widget_destroy),
+				  G_CALLBACK (ctk_widget_destroy),
 				  NULL);
 
-		gtk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
-		gtk_window_set_screen (GTK_WINDOW (dialog),
-				       gtk_widget_get_screen (GTK_WIDGET (ma->applet)));
+		ctk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
+		ctk_window_set_screen (GTK_WINDOW (dialog),
+				       ctk_widget_get_screen (GTK_WIDGET (ma->applet)));
 
-		gtk_widget_show (dialog);
+		ctk_widget_show (dialog);
 
 		g_error_free (error);
 	}
@@ -188,7 +188,7 @@ multiload_change_orient_cb(CafePanelApplet *applet, gint arg1, gpointer data)
 {
 	MultiloadApplet *ma = data;
 	multiload_applet_refresh((MultiloadApplet *)data);
-	gtk_widget_show (GTK_WIDGET (ma->applet));
+	ctk_widget_show (GTK_WIDGET (ma->applet));
 	return;
 }
 
@@ -206,19 +206,19 @@ multiload_destroy_cb(GtkWidget *widget, gpointer data)
 			g_free (ma->graphs[i]->colors);
 			ma->graphs[i]->colors = NULL;
 		}
-		gtk_widget_destroy(ma->graphs[i]->main_widget);
+		ctk_widget_destroy(ma->graphs[i]->main_widget);
 
 		load_graph_unalloc(ma->graphs[i]);
 		g_free(ma->graphs[i]);
 	}
 
 	if (ma->about_dialog)
-		gtk_widget_destroy (ma->about_dialog);
+		ctk_widget_destroy (ma->about_dialog);
 
 	if (ma->prop_dialog)
-		gtk_widget_destroy (ma->prop_dialog);
+		ctk_widget_destroy (ma->prop_dialog);
 
-	gtk_widget_destroy(GTK_WIDGET(ma->applet));
+	ctk_widget_destroy(GTK_WIDGET(ma->applet));
 
 	g_free (ma);
 
@@ -345,7 +345,7 @@ multiload_applet_tooltip_update(LoadGraph *g)
 					       percent);
 	}
 
-	gtk_widget_set_tooltip_text(g->disp, tooltip_text);
+	ctk_widget_set_tooltip_text(g->disp, tooltip_text);
 
 	g_free(tooltip_text);
 	g_free(name);
@@ -439,25 +439,25 @@ multiload_applet_refresh(MultiloadApplet *ma)
 			continue;
 
 		load_graph_stop(ma->graphs[i]);
-		gtk_widget_destroy(ma->graphs[i]->main_widget);
+		ctk_widget_destroy(ma->graphs[i]->main_widget);
 
 		load_graph_unalloc(ma->graphs[i]);
 		g_free(ma->graphs[i]);
 	}
 
 	if (ma->box)
-		gtk_widget_destroy(ma->box);
+		ctk_widget_destroy(ma->box);
 
 	orientation = cafe_panel_applet_get_orient(ma->applet);
 
 	if ( (orientation == CAFE_PANEL_APPLET_ORIENT_UP) ||
 	     (orientation == CAFE_PANEL_APPLET_ORIENT_DOWN) ) {
-		ma->box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+		ma->box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 	}
 	else
-		ma->box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+		ma->box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 
-	gtk_container_add(GTK_CONTAINER(ma->applet), ma->box);
+	ctk_container_add(GTK_CONTAINER(ma->applet), ma->box);
 
 	/* create the NGRAPHS graphs, passing in their user-configurable properties with gsettings. */
 	multiload_create_graphs (ma);
@@ -465,15 +465,15 @@ multiload_applet_refresh(MultiloadApplet *ma)
 	/* only start and display the graphs the user has turned on */
 
 	for (i = 0; i < NGRAPHS; i++) {
-	    gtk_box_pack_start(GTK_BOX(ma->box),
+	    ctk_box_pack_start(GTK_BOX(ma->box),
 			       ma->graphs[i]->main_widget,
 			       TRUE, TRUE, 1);
 	    if (ma->graphs[i]->visible) {
-	    	gtk_widget_show_all (ma->graphs[i]->main_widget);
+	    	ctk_widget_show_all (ma->graphs[i]->main_widget);
 		load_graph_start(ma->graphs[i]);
 	    }
 	}
-	gtk_widget_show (ma->box);
+	ctk_widget_show (ma->box);
 
 	return;
 }
@@ -503,8 +503,8 @@ multiload_applet_new(CafePanelApplet *applet, const gchar *iid, gpointer data)
 	GtkActionGroup *action_group;
 	gchar *ui_path;
 
-	context = gtk_widget_get_style_context (GTK_WIDGET (applet));
-	gtk_style_context_add_class (context, "multiload-applet");
+	context = ctk_widget_get_style_context (GTK_WIDGET (applet));
+	ctk_style_context_add_class (context, "multiload-applet");
 
 	ma = g_new0(MultiloadApplet, 1);
 
@@ -516,15 +516,15 @@ multiload_applet_new(CafePanelApplet *applet, const gchar *iid, gpointer data)
 
 	g_set_application_name (_("System Monitor"));
 
-	gtk_window_set_default_icon_name ("utilities-system-monitor");
+	ctk_window_set_default_icon_name ("utilities-system-monitor");
 	cafe_panel_applet_set_background_widget (applet, GTK_WIDGET(applet));
 
 	ma->settings = cafe_panel_applet_settings_new (applet, "org.cafe.panel.applet.multiload");
 	cafe_panel_applet_set_flags (applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
 
-	action_group = gtk_action_group_new ("Multiload Applet Actions");
-	gtk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
-	gtk_action_group_add_actions (action_group,
+	action_group = ctk_action_group_new ("Multiload Applet Actions");
+	ctk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
+	ctk_action_group_add_actions (action_group,
 				      multiload_menu_actions,
 				      G_N_ELEMENTS (multiload_menu_actions),
 				      ma);
@@ -536,8 +536,8 @@ multiload_applet_new(CafePanelApplet *applet, const gchar *iid, gpointer data)
 	if (cafe_panel_applet_get_locked_down (applet)) {
 		GtkAction *action;
 
-		action = gtk_action_group_get_action (action_group, "MultiLoadProperties");
-		gtk_action_set_visible (action, FALSE);
+		action = ctk_action_group_get_action (action_group, "MultiLoadProperties");
+		ctk_action_set_visible (action, FALSE);
 	}
 
 	lockdown_settings = g_settings_new ("org.cafe.lockdown");
@@ -547,8 +547,8 @@ multiload_applet_new(CafePanelApplet *applet, const gchar *iid, gpointer data)
 
 		/* When the panel is locked down or when the command line is inhibited,
 		   it seems very likely that running the procman would be at least harmful */
-		action = gtk_action_group_get_action (action_group, "MultiLoadRunProcman");
-		gtk_action_set_visible (action, FALSE);
+		action = ctk_action_group_get_action (action_group, "MultiLoadRunProcman");
+		ctk_action_set_visible (action, FALSE);
 	}
 	g_object_unref (lockdown_settings);
 
@@ -567,7 +567,7 @@ multiload_applet_new(CafePanelApplet *applet, const gchar *iid, gpointer data)
 
 	multiload_applet_refresh (ma);
 
-	gtk_widget_show(GTK_WIDGET(applet));
+	ctk_widget_show(GTK_WIDGET(applet));
 
 	return TRUE;
 }

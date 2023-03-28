@@ -53,18 +53,18 @@ static void help_cb (GtkAction      *action,
 {
     GError *error = NULL;
 
-    gtk_show_uri_on_window (NULL,
+    ctk_show_uri_on_window (NULL,
                             "help:cafeweather",
-                            gtk_get_current_event_time (),
+                            ctk_get_current_event_time (),
                             &error);
 
     if (error) { 
-	GtkWidget *dialog = gtk_message_dialog_new (NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE,
+	GtkWidget *dialog = ctk_message_dialog_new (NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE,
 						    _("There was an error displaying help: %s"), error->message);
-	g_signal_connect (G_OBJECT (dialog), "response", G_CALLBACK (gtk_widget_destroy), NULL);
-	gtk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
-	gtk_window_set_screen (GTK_WINDOW (dialog), gtk_widget_get_screen (GTK_WIDGET (gw_applet->applet)));
-	gtk_widget_show (dialog);
+	g_signal_connect (G_OBJECT (dialog), "response", G_CALLBACK (ctk_widget_destroy), NULL);
+	ctk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
+	ctk_window_set_screen (GTK_WINDOW (dialog), ctk_widget_get_screen (GTK_WIDGET (gw_applet->applet)));
+	ctk_widget_show (dialog);
         g_error_free (error);
         error = NULL;
     }
@@ -74,12 +74,12 @@ static void pref_cb (GtkAction      *action,
 		     CafeWeatherApplet *gw_applet)
 {
    if (gw_applet->pref_dialog) {
-	gtk_window_present (GTK_WINDOW (gw_applet->pref_dialog));
+	ctk_window_present (GTK_WINDOW (gw_applet->pref_dialog));
    } else {
 	gw_applet->pref_dialog = cafeweather_pref_new(gw_applet);
 	g_object_add_weak_pointer(G_OBJECT(gw_applet->pref_dialog),
 				  (gpointer *)&(gw_applet->pref_dialog));
-	gtk_widget_show_all (gw_applet->pref_dialog);
+	ctk_widget_show_all (gw_applet->pref_dialog);
    }
 }
 
@@ -87,13 +87,13 @@ static void details_cb (GtkAction      *action,
 			CafeWeatherApplet *gw_applet)
 {
    if (gw_applet->details_dialog) {
-	gtk_window_present (GTK_WINDOW (gw_applet->details_dialog));
+	ctk_window_present (GTK_WINDOW (gw_applet->details_dialog));
    } else {
 	gw_applet->details_dialog = cafeweather_dialog_new(gw_applet);
 	g_object_add_weak_pointer(G_OBJECT(gw_applet->details_dialog),
 				  (gpointer *)&(gw_applet->details_dialog));
 	cafeweather_dialog_update (CAFEWEATHER_DIALOG (gw_applet->details_dialog));
-	gtk_widget_show (gw_applet->details_dialog);
+	ctk_widget_show (gw_applet->details_dialog);
    }
 }
 
@@ -144,11 +144,11 @@ static void place_widgets (CafeWeatherApplet *gw_applet)
 
     /* Create the weather icon */
     icon_name = weather_info_get_icon_name (gw_applet->cafeweather_info);
-    gw_applet->image = gtk_image_new_from_icon_name(icon_name, GTK_ICON_SIZE_BUTTON); 
+    gw_applet->image = ctk_image_new_from_icon_name(icon_name, GTK_ICON_SIZE_BUTTON); 
 
     if (icon_name != NULL) {
-        gtk_widget_show (gw_applet->image);
-        gtk_widget_get_preferred_size (gw_applet->image, &req, NULL);
+        ctk_widget_show (gw_applet->image);
+        ctk_widget_get_preferred_size (gw_applet->image, &req, NULL);
         if (horizontal)
             total_size += req.height;
         else
@@ -156,16 +156,16 @@ static void place_widgets (CafeWeatherApplet *gw_applet)
     }
 
     /* Create the temperature label */
-    gw_applet->label = gtk_label_new("0\302\260F");
+    gw_applet->label = ctk_label_new("0\302\260F");
     
     /* Update temperature text */
     temp = weather_info_get_temp_summary(gw_applet->cafeweather_info);
     if (temp) 
-        gtk_label_set_text(GTK_LABEL(gw_applet->label), temp);
+        ctk_label_set_text(GTK_LABEL(gw_applet->label), temp);
 
     /* Check the label size to determine box layout */
-    gtk_widget_show (gw_applet->label);
-    gtk_widget_get_preferred_size (gw_applet->label, &req, NULL);
+    ctk_widget_show (gw_applet->label);
+    ctk_widget_get_preferred_size (gw_applet->label, &req, NULL);
     if (horizontal)
         total_size += req.height;
     else
@@ -173,29 +173,29 @@ static void place_widgets (CafeWeatherApplet *gw_applet)
 
     /* Pack the box */
     if (gw_applet->box)
-        gtk_widget_destroy (gw_applet->box);
+        ctk_widget_destroy (gw_applet->box);
     
     if (horizontal && (total_size <= panel_size))
-        gw_applet->box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+        gw_applet->box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
     else if (horizontal && (total_size > panel_size))
-        gw_applet->box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
+        gw_applet->box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
     else if (!horizontal && (total_size <= panel_size))
-        gw_applet->box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
+        gw_applet->box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
     else 
-        gw_applet->box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+        gw_applet->box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 
     /* better for vertical panels */
     if (horizontal)
-        gtk_widget_set_valign (gw_applet->box, GTK_ALIGN_CENTER);
+        ctk_widget_set_valign (gw_applet->box, GTK_ALIGN_CENTER);
     else
-        gtk_widget_set_halign (gw_applet->box, GTK_ALIGN_CENTER);
+        ctk_widget_set_halign (gw_applet->box, GTK_ALIGN_CENTER);
 
     /* Rebuild the applet it's visual area */
-    gtk_container_add (GTK_CONTAINER (gw_applet->applet), gw_applet->box);
-    gtk_box_pack_start (GTK_BOX (gw_applet->box), gw_applet->image, TRUE, TRUE, 0);
-    gtk_box_pack_start (GTK_BOX (gw_applet->box), gw_applet->label, TRUE, TRUE, 0);
+    ctk_container_add (GTK_CONTAINER (gw_applet->applet), gw_applet->box);
+    ctk_box_pack_start (GTK_BOX (gw_applet->box), gw_applet->image, TRUE, TRUE, 0);
+    ctk_box_pack_start (GTK_BOX (gw_applet->box), gw_applet->label, TRUE, TRUE, 0);
 
-    gtk_widget_show_all (GTK_WIDGET (gw_applet->applet));
+    ctk_widget_show_all (GTK_WIDGET (gw_applet->applet));
 }
 
 static void change_orient_cb (CafePanelApplet *w, CafePanelAppletOrient o, gpointer data)
@@ -236,7 +236,7 @@ static gboolean clicked_cb (GtkWidget *widget, GdkEventButton *ev, gpointer data
 	if (!gw_applet->details_dialog)
 		details_cb (NULL, gw_applet);
 	else
-		gtk_widget_destroy (GTK_WIDGET (gw_applet->details_dialog));
+		ctk_widget_destroy (GTK_WIDGET (gw_applet->details_dialog));
 	
 	return TRUE;
     }
@@ -291,10 +291,10 @@ applet_destroy (GtkWidget *widget, CafeWeatherApplet *gw_applet)
     GNetworkMonitor *monitor;
 
     if (gw_applet->pref_dialog)
-       gtk_widget_destroy (gw_applet->pref_dialog);
+       ctk_widget_destroy (gw_applet->pref_dialog);
 
     if (gw_applet->details_dialog)
-       gtk_widget_destroy (gw_applet->details_dialog);
+       ctk_widget_destroy (gw_applet->details_dialog);
 
     if (gw_applet->timeout_tag > 0) {
        g_source_remove(gw_applet->timeout_tag);
@@ -344,7 +344,7 @@ void cafeweather_applet_create (CafeWeatherApplet *gw_applet)
 
     g_set_application_name (_("Weather Report"));
 
-    gtk_window_set_default_icon_name ("weather-storm");
+    ctk_window_set_default_icon_name ("weather-storm");
 
     g_signal_connect (G_OBJECT(gw_applet->applet), "change_orient",
                        G_CALLBACK(change_orient_cb), gw_applet);
@@ -357,9 +357,9 @@ void cafeweather_applet_create (CafeWeatherApplet *gw_applet)
     g_signal_connect (G_OBJECT(gw_applet->applet), "key_press_event",           
 			G_CALLBACK(key_press_cb), gw_applet);
                      
-    gtk_widget_set_tooltip_text (GTK_WIDGET(gw_applet->applet), _("CAFE Weather"));
+    ctk_widget_set_tooltip_text (GTK_WIDGET(gw_applet->applet), _("CAFE Weather"));
 
-    atk_obj = gtk_widget_get_accessible (GTK_WIDGET (gw_applet->applet));
+    atk_obj = ctk_widget_get_accessible (GTK_WIDGET (gw_applet->applet));
     if (GTK_IS_ACCESSIBLE (atk_obj))
 	   atk_object_set_name (atk_obj, _("CAFE Weather"));
 
@@ -367,9 +367,9 @@ void cafeweather_applet_create (CafeWeatherApplet *gw_applet)
 
     gw_applet->orient = cafe_panel_applet_get_orient (gw_applet->applet);
 
-    action_group = gtk_action_group_new ("CafeWeather Applet Actions");
-    gtk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
-    gtk_action_group_add_actions (action_group,
+    action_group = ctk_action_group_new ("CafeWeather Applet Actions");
+    ctk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
+    ctk_action_group_add_actions (action_group,
 				  weather_applet_menu_actions,
 				  G_N_ELEMENTS (weather_applet_menu_actions),
 				  gw_applet);
@@ -381,8 +381,8 @@ void cafeweather_applet_create (CafeWeatherApplet *gw_applet)
     if (cafe_panel_applet_get_locked_down (gw_applet->applet)) {
 	    GtkAction *action;
 
-	    action = gtk_action_group_get_action (action_group, "Props");
-	    gtk_action_set_visible (action, FALSE);
+	    action = ctk_action_group_get_action (action_group, "Props");
+	    ctk_action_set_visible (action, FALSE);
     }
     g_object_unref (action_group);
 	
@@ -434,15 +434,15 @@ update_finish (WeatherInfo *info, gpointer data)
     {
 	    gw_fault_counter = 0;
             icon_name = weather_info_get_icon_name (gw_applet->cafeweather_info);
-            gtk_image_set_from_icon_name (GTK_IMAGE(gw_applet->image), 
+            ctk_image_set_from_icon_name (GTK_IMAGE(gw_applet->image), 
                                           icon_name, GTK_ICON_SIZE_BUTTON);
 	      
-	    gtk_label_set_text (GTK_LABEL (gw_applet->label), 
+	    ctk_label_set_text (GTK_LABEL (gw_applet->label), 
 	        		weather_info_get_temp_summary(
 					gw_applet->cafeweather_info));
 	    
 	    s = weather_info_get_weather_summary (gw_applet->cafeweather_info);
-	    gtk_widget_set_tooltip_text (GTK_WIDGET (gw_applet->applet), s);
+	    ctk_widget_set_tooltip_text (GTK_WIDGET (gw_applet->applet), s);
 	    g_free (s);
 
 	    /* Update dialog -- if one is present */
@@ -519,9 +519,9 @@ void cafeweather_update (CafeWeatherApplet *gw_applet)
     const gchar *icon_name;
 
     icon_name = weather_info_get_icon_name(gw_applet->cafeweather_info);
-    gtk_image_set_from_icon_name (GTK_IMAGE (gw_applet->image), 
+    ctk_image_set_from_icon_name (GTK_IMAGE (gw_applet->image), 
     			          icon_name, GTK_ICON_SIZE_BUTTON); 
-    gtk_widget_set_tooltip_text (GTK_WIDGET(gw_applet->applet),  _("Updating..."));
+    ctk_widget_set_tooltip_text (GTK_WIDGET(gw_applet->applet),  _("Updating..."));
 
     /* Set preferred forecast type */
     prefs.type = gw_applet->cafeweather_pref.detailed ? FORECAST_ZONE : FORECAST_STATE;

@@ -70,9 +70,9 @@ drive_button_class_init (DriveButtonClass *class)
 
     GtkCssProvider *provider;
 
-    provider = gtk_css_provider_new ();
+    provider = ctk_css_provider_new ();
 
-    gtk_css_provider_load_from_data (provider,
+    ctk_css_provider_load_from_data (provider,
                                      "#drive-button {\n"
                                      " border-width: 0px;\n"
                                      " padding: 0px;\n"
@@ -80,7 +80,7 @@ drive_button_class_init (DriveButtonClass *class)
                                      "}",
                                      -1, NULL);
 
-    gtk_style_context_add_provider_for_screen (gdk_screen_get_default(),
+    ctk_style_context_add_provider_for_screen (gdk_screen_get_default(),
                                     GTK_STYLE_PROVIDER (provider),
                                     GTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
     g_object_unref (provider);
@@ -91,9 +91,9 @@ drive_button_init (DriveButton *self)
 {
     GtkWidget *image;
 
-    image = gtk_image_new ();
-    gtk_container_add (GTK_CONTAINER (self), image);
-    gtk_widget_show(image);
+    image = ctk_image_new ();
+    ctk_container_add (GTK_CONTAINER (self), image);
+    ctk_widget_show(image);
 
     self->volume = NULL;
     self->mount = NULL;
@@ -102,7 +102,7 @@ drive_button_init (DriveButton *self)
 
     self->popup_menu = NULL;
 
-    gtk_widget_set_name (GTK_WIDGET (self), "drive-button");
+    ctk_widget_set_name (GTK_WIDGET (self), "drive-button");
 }
 
 GtkWidget *
@@ -113,7 +113,7 @@ drive_button_new (GVolume *volume)
     self = g_object_new (DRIVE_TYPE_BUTTON, NULL);
     if (volume != NULL) {
       drive_button_set_volume (self, volume);
-      g_signal_connect (gtk_icon_theme_get_default (),
+      g_signal_connect (ctk_icon_theme_get_default (),
           "changed", G_CALLBACK (drive_button_theme_change),
           self);
     }
@@ -129,7 +129,7 @@ drive_button_new_from_mount (GMount *mount)
     self = g_object_new (DRIVE_TYPE_BUTTON, NULL);
     drive_button_set_mount (self, mount);
 
-    g_signal_connect (gtk_icon_theme_get_default (),
+    g_signal_connect (ctk_icon_theme_get_default (),
         "changed", G_CALLBACK (drive_button_theme_change),
         self);
 
@@ -167,7 +167,7 @@ drive_button_unrealize (GtkWidget *widget)
 #endif /* 0 */
 
 static int
-_gtk_get_monitor_num (GdkMonitor *monitor)
+_ctk_get_monitor_num (GdkMonitor *monitor)
 {
     GdkDisplay *display;
     int n_monitors, i;
@@ -193,7 +193,7 @@ drive_button_button_press (GtkWidget      *widget,
     if (event->button == 1) {
 	drive_button_ensure_popup (self);
 	if (self->popup_menu) {
-		gtk_menu_popup_at_widget (GTK_MENU (self->popup_menu),
+		ctk_menu_popup_at_widget (GTK_MENU (self->popup_menu),
 		                          widget,
 		                          GDK_GRAVITY_SOUTH_WEST,
 		                          GDK_GRAVITY_NORTH_WEST,
@@ -217,7 +217,7 @@ drive_button_key_press (GtkWidget      *widget,
     case GDK_KEY_Return:
 	drive_button_ensure_popup (self);
 	if (self->popup_menu) {
-		gtk_menu_popup_at_widget (GTK_MENU (self->popup_menu),
+		ctk_menu_popup_at_widget (GTK_MENU (self->popup_menu),
 		                          widget,
 		                          GDK_GRAVITY_SOUTH_WEST,
 		                          GDK_GRAVITY_NORTH_WEST,
@@ -295,32 +295,32 @@ drive_button_update (gpointer user_data)
 
     /* base the icon size on the desired button size */
     drive_button_reset_popup (self);
-    scale = gtk_widget_get_scale_factor (GTK_WIDGET (self));
-    gtk_widget_get_preferred_size (GTK_WIDGET (self), NULL, &button_req);
-    gtk_widget_get_preferred_size (gtk_bin_get_child (GTK_BIN (self)), NULL, &image_req);
+    scale = ctk_widget_get_scale_factor (GTK_WIDGET (self));
+    ctk_widget_get_preferred_size (GTK_WIDGET (self), NULL, &button_req);
+    ctk_widget_get_preferred_size (ctk_bin_get_child (GTK_BIN (self)), NULL, &image_req);
     width = (self->icon_size - (button_req.width - image_req.width)) / scale;
     height = (self->icon_size - (button_req.height - image_req.height)) / scale;
 
     /* if no volume or mount, display general image */
     if (!self->volume && !self->mount)
     {
-        gtk_widget_set_tooltip_text (GTK_WIDGET (self), _("nothing to mount"));
-        screen = gtk_widget_get_screen (GTK_WIDGET (self));
-        icon_theme = gtk_icon_theme_get_for_screen (screen); //m
+        ctk_widget_set_tooltip_text (GTK_WIDGET (self), _("nothing to mount"));
+        screen = ctk_widget_get_screen (GTK_WIDGET (self));
+        icon_theme = ctk_icon_theme_get_for_screen (screen); //m
         // note - other good icon would be emblem-unreadable
-        icon_info = gtk_icon_theme_lookup_icon_for_scale (icon_theme, "media-floppy",
+        icon_info = ctk_icon_theme_lookup_icon_for_scale (icon_theme, "media-floppy",
                                                           MIN (width, height), scale,
                                                           GTK_ICON_LOOKUP_USE_BUILTIN);
         if (icon_info) {
-            surface = gtk_icon_info_load_surface (icon_info, NULL, NULL);
+            surface = ctk_icon_info_load_surface (icon_info, NULL, NULL);
             g_object_unref (icon_info);
         }
 
         if (!surface)
             return FALSE;
 
-        if (gtk_bin_get_child (GTK_BIN (self)) != NULL)
-            gtk_image_set_from_surface (GTK_IMAGE (gtk_bin_get_child (GTK_BIN (self))), surface);
+        if (ctk_bin_get_child (GTK_BIN (self)) != NULL)
+            ctk_image_set_from_surface (GTK_IMAGE (ctk_bin_get_child (GTK_BIN (self))), surface);
 
         return FALSE;
     }
@@ -355,18 +355,18 @@ drive_button_update (gpointer user_data)
         icon = g_mount_get_icon (self->mount);
     }
 
-    gtk_widget_set_tooltip_text (GTK_WIDGET (self), tip);
+    ctk_widget_set_tooltip_text (GTK_WIDGET (self), tip);
     g_free (tip);
     g_free (display_name);
 
-    screen = gtk_widget_get_screen (GTK_WIDGET (self));
-    icon_theme = gtk_icon_theme_get_for_screen (screen);
-    icon_info = gtk_icon_theme_lookup_by_gicon_for_scale (icon_theme, icon,
+    screen = ctk_widget_get_screen (GTK_WIDGET (self));
+    icon_theme = ctk_icon_theme_get_for_screen (screen);
+    icon_info = ctk_icon_theme_lookup_by_gicon_for_scale (icon_theme, icon,
                                                           MIN (width, height), scale,
                                                           GTK_ICON_LOOKUP_USE_BUILTIN);
     if (icon_info)
     {
-        surface = gtk_icon_info_load_surface (icon_info, NULL, NULL);
+        surface = ctk_icon_info_load_surface (icon_info, NULL, NULL);
         g_object_unref (icon_info);
     }
 
@@ -434,12 +434,12 @@ drive_button_update (gpointer user_data)
     cairo_set_source_surface (cr, surface, 0, 0);
     cairo_paint (cr);
 
-    gtk_image_set_from_surface (GTK_IMAGE (gtk_bin_get_child (GTK_BIN (self))), tmp_surface);
+    ctk_image_set_from_surface (GTK_IMAGE (ctk_bin_get_child (GTK_BIN (self))), tmp_surface);
 
     cairo_surface_destroy (surface);
     cairo_surface_destroy (tmp_surface);
 
-    gtk_widget_get_preferred_size (GTK_WIDGET (self), NULL, &button_req);
+    ctk_widget_get_preferred_size (GTK_WIDGET (self), NULL, &button_req);
 
     return FALSE;
 }
@@ -513,7 +513,7 @@ static void
 drive_button_reset_popup (DriveButton *self)
 {
     if (self->popup_menu)
-	gtk_widget_destroy (GTK_WIDGET (self->popup_menu));
+	ctk_widget_destroy (GTK_WIDGET (self->popup_menu));
     self->popup_menu = NULL;
 }
 
@@ -554,17 +554,17 @@ create_menu_item (DriveButton *self, const gchar *icon_name,
 {
     GtkWidget *item, *image;
 
-    item = gtk_image_menu_item_new_with_mnemonic (label);
+    item = ctk_image_menu_item_new_with_mnemonic (label);
     if (icon_name) {
-	image = gtk_image_new_from_icon_name (icon_name, GTK_ICON_SIZE_MENU);
-	gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (item), image);
-	gtk_widget_show (image);
+	image = ctk_image_new_from_icon_name (icon_name, GTK_ICON_SIZE_MENU);
+	ctk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (item), image);
+	ctk_widget_show (image);
     }
     if (callback)
 	g_signal_connect_object (item, "activate", callback, self,
 				 G_CONNECT_SWAPPED);
-    gtk_widget_set_sensitive (item, sensitive);
-    gtk_widget_show (item);
+    ctk_widget_set_sensitive (item, sensitive);
+    ctk_widget_show (item);
     return item;
 }
 
@@ -597,9 +597,9 @@ open_drive (DriveButton *self, GtkWidget *item)
       app_info = G_APP_INFO (g_desktop_app_info_new ("caja.desktop"));
 
     if (app_info) {
-	GdkDisplay *display = gtk_widget_get_display (item);
+	GdkDisplay *display = ctk_widget_get_display (item);
 	launch_context = gdk_display_get_app_launch_context (display);
-	screen = gtk_widget_get_screen (GTK_WIDGET (self));
+	screen = ctk_widget_get_screen (GTK_WIDGET (self));
 	gdk_app_launch_context_set_screen (launch_context, screen);
 	files = g_list_prepend (files, file);
 	g_app_info_launch (app_info,
@@ -612,18 +612,18 @@ open_drive (DriveButton *self, GtkWidget *item)
     }
 
     if (!app_info || error) {
-	dialog = gtk_message_dialog_new (GTK_WINDOW (gtk_widget_get_toplevel (GTK_WIDGET (self))),
+	dialog = ctk_message_dialog_new (GTK_WINDOW (ctk_widget_get_toplevel (GTK_WIDGET (self))),
 						     GTK_DIALOG_DESTROY_WITH_PARENT,
 						     GTK_MESSAGE_ERROR,
 						     GTK_BUTTONS_OK,
 						     _("Cannot execute Caja"));
 	if (error)
-	    gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), "%s", error->message);
+	    ctk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), "%s", error->message);
 	else
-	    gtk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), "Could not find Caja");
+	    ctk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog), "Could not find Caja");
 	g_signal_connect (dialog, "response",
-			  G_CALLBACK (gtk_widget_destroy), NULL);
-	gtk_widget_show (dialog);
+			  G_CALLBACK (ctk_widget_destroy), NULL);
+	ctk_widget_show (dialog);
 	g_error_free (error);
     }
 
@@ -825,7 +825,7 @@ static void
 mount_drive (DriveButton *self, GtkWidget *item)
 {
     if (self->volume) {
-        GMountOperation *mount_op = gtk_mount_operation_new (NULL);
+        GMountOperation *mount_op = ctk_mount_operation_new (NULL);
 	g_volume_mount (self->volume, G_MOUNT_MOUNT_NONE,
 			mount_op, NULL, dummy_async_ready_callback, NULL);
         g_object_unref (mount_op);
@@ -931,7 +931,7 @@ drive_button_ensure_popup (DriveButton *self)
 		}
     }
 
-    self->popup_menu = gtk_menu_new ();
+    self->popup_menu = ctk_menu_new ();
 
     /* make sure the display name doesn't look like a mnemonic */
     tmp = escape_underscores (display_name ? display_name : "(none)");
@@ -952,20 +952,20 @@ drive_button_ensure_popup (DriveButton *self)
 			     G_CALLBACK (open_drive), mounted);
 	g_free (label);
     }
-    gtk_container_add (GTK_CONTAINER (self->popup_menu), item);
+    ctk_container_add (GTK_CONTAINER (self->popup_menu), item);
 
     if (mounted) {
         label = g_strdup_printf (_("Un_mount %s"), display_name);
         item = create_menu_item (self, NULL, label,
 				 G_CALLBACK (unmount_drive), TRUE);
         g_free (label);
-        gtk_container_add (GTK_CONTAINER (self->popup_menu), item);
+        ctk_container_add (GTK_CONTAINER (self->popup_menu), item);
     } else {
 	label = g_strdup_printf (_("_Mount %s"), display_name);
 	item = create_menu_item (self, NULL, label,
 				 G_CALLBACK (mount_drive), TRUE);
 	g_free (label);
-	gtk_container_add (GTK_CONTAINER (self->popup_menu), item);
+	ctk_container_add (GTK_CONTAINER (self->popup_menu), item);
     }
 
     if (ejectable) {
@@ -973,18 +973,18 @@ drive_button_ensure_popup (DriveButton *self)
 	item = create_menu_item (self, "media-eject", label,
 				 G_CALLBACK (eject_drive), TRUE);
 	g_free (label);
-	gtk_container_add (GTK_CONTAINER (self->popup_menu), item);
+	ctk_container_add (GTK_CONTAINER (self->popup_menu), item);
     }
 
 	/*Set up custom theme and transparency support */
-	GtkWidget *toplevel = gtk_widget_get_toplevel (self->popup_menu);
-	/* Fix any failures of compiz/other wm's to communicate with gtk for transparency */
-	GdkScreen *screen2 = gtk_widget_get_screen(GTK_WIDGET(toplevel));
+	GtkWidget *toplevel = ctk_widget_get_toplevel (self->popup_menu);
+	/* Fix any failures of compiz/other wm's to communicate with ctk for transparency */
+	GdkScreen *screen2 = ctk_widget_get_screen(GTK_WIDGET(toplevel));
 	GdkVisual *visual = gdk_screen_get_rgba_visual(screen2);
-	gtk_widget_set_visual(GTK_WIDGET(toplevel), visual);
+	ctk_widget_set_visual(GTK_WIDGET(toplevel), visual);
 	/*set menu and it's toplevel window to follow panel theme */
 	GtkStyleContext *context;
-	context = gtk_widget_get_style_context (GTK_WIDGET(toplevel));
-	gtk_style_context_add_class(context,"gnome-panel-menu-bar");
-	gtk_style_context_add_class(context,"cafe-panel-menu-bar");
+	context = ctk_widget_get_style_context (GTK_WIDGET(toplevel));
+	ctk_style_context_add_class(context,"gnome-panel-menu-bar");
+	ctk_style_context_add_class(context,"cafe-panel-menu-bar");
 }

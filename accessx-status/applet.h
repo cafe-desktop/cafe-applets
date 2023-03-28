@@ -20,7 +20,7 @@
 #ifndef __ACCESSX_APPLET_H__
 #define __ACCESSX_APPLET_H__
 
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 #include <cafe-panel-applet.h>
 

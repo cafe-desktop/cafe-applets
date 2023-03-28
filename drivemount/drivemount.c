@@ -27,7 +27,7 @@
 #include <string.h>
 
 #include <glib/gi18n.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <cafe-panel-applet.h>
 
 #include "drive-list.h"
@@ -116,7 +116,7 @@ display_about_dialog (GtkAction *action,
         *p = _(*p);
 #endif
 
-    gtk_show_about_dialog (NULL,
+    ctk_show_about_dialog (NULL,
 	"title",       _("About Disk Mounter"),
 	"version",     VERSION,
 	"copyright",   _("Copyright \xC2\xA9 2004 Canonical Ltd\n"
@@ -136,27 +136,27 @@ display_help (GtkAction *action,
     GdkScreen *screen;
     GError *error = NULL;
 
-    screen = gtk_widget_get_screen (GTK_WIDGET (drive_list));
+    screen = ctk_widget_get_screen (GTK_WIDGET (drive_list));
 
-    gtk_show_uri_on_window (NULL,
+    ctk_show_uri_on_window (NULL,
                            "help:cafe-drivemount",
-                            gtk_get_current_event_time (),
+                            ctk_get_current_event_time (),
                             &error);
 
     if (error) {
 	GtkWidget *dialog;
 
-	dialog = gtk_message_dialog_new (NULL,
+	dialog = ctk_message_dialog_new (NULL,
 					 GTK_DIALOG_MODAL,
 					 GTK_MESSAGE_ERROR,
 					 GTK_BUTTONS_OK,
 					 _("There was an error displaying help: %s"),
 					 error->message);
 	g_signal_connect (dialog, "response",
-			  G_CALLBACK (gtk_widget_destroy), NULL);
-	gtk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
-	gtk_window_set_screen (GTK_WINDOW (dialog), screen);
-	gtk_widget_show (dialog);
+			  G_CALLBACK (ctk_widget_destroy), NULL);
+	ctk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
+	ctk_window_set_screen (GTK_WINDOW (dialog), screen);
+	ctk_widget_show (dialog);
 	g_error_free (error);
     }
 }
@@ -184,14 +184,14 @@ applet_factory (CafePanelApplet *applet,
     if (!strcmp (iid, drivemount_iid)) {
 	g_set_application_name (_("Disk Mounter"));
 
-	gtk_window_set_default_icon_name ("media-floppy");
+	ctk_window_set_default_icon_name ("media-floppy");
 
 	cafe_panel_applet_set_flags (applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
 	cafe_panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
 
 	drive_list = drive_list_new ();
 
-	gtk_container_add (GTK_CONTAINER (applet), drive_list);
+	ctk_container_add (GTK_CONTAINER (applet), drive_list);
 
 	g_signal_connect_object (applet, "change_orient",
 				 G_CALLBACK (change_orient), drive_list, 0);
@@ -205,9 +205,9 @@ applet_factory (CafePanelApplet *applet,
 		       cafe_panel_applet_get_orient (applet),
 		       DRIVE_LIST (drive_list));
 
-	action_group = gtk_action_group_new ("DriveMount Applet Actions");
-	gtk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
-	gtk_action_group_add_actions (action_group,
+	action_group = ctk_action_group_new ("DriveMount Applet Actions");
+	ctk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
+	ctk_action_group_add_actions (action_group,
 				      applet_menu_actions,
 				      G_N_ELEMENTS (applet_menu_actions),
 				      drive_list);
@@ -216,10 +216,10 @@ applet_factory (CafePanelApplet *applet,
 	g_free (ui_path);
 	g_object_unref (action_group);
 
-	ao = gtk_widget_get_accessible (GTK_WIDGET (applet));
+	ao = ctk_widget_get_accessible (GTK_WIDGET (applet));
 	atk_object_set_name (ao, _("Disk Mounter"));
 
-	gtk_widget_show_all (GTK_WIDGET (applet));
+	ctk_widget_show_all (GTK_WIDGET (applet));
 
 	ret = TRUE;
     }

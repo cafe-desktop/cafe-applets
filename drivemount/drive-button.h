@@ -23,7 +23,7 @@
 #ifndef DRIVE_BUTTON_H
 #define DRIVE_BUTTON_H
 
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 G_BEGIN_DECLS
 

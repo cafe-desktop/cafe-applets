@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE gtk-builder SYSTEM "gtk-builder.dtd">
+<!DOCTYPE ctk-builder SYSTEM "ctk-builder.dtd">
 <interface>
-  <requires lib="gtk+" version="2.16"/>
+  <requires lib="ctk+" version="2.16"/>
   <!-- interface-naming-policy toplevel-contextual -->
   <object class="GtkAdjustment" id="adjustment1">
     <property name="value">1</property>
@@ -459,7 +459,7 @@
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="helpbutton1">
-                <property name="label">gtk-help</property>
+                <property name="label">ctk-help</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="can_default">True</property>
@@ -474,7 +474,7 @@
             </child>
             <child>
               <object class="GtkButton" id="closebutton1">
-                <property name="label">gtk-close</property>
+                <property name="label">ctk-close</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="can_default">True</property>
@@ -519,7 +519,7 @@
               <object class="GtkImage" id="image3">
                 <property name="visible">True</property>
                 <property name="yalign">0</property>
-                <property name="stock">gtk-dialog-warning</property>
+                <property name="stock">ctk-dialog-warning</property>
                 <property name="icon-size">6</property>
               </object>
               <packing>
@@ -578,7 +578,7 @@
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="button1">
-                <property name="label">gtk-cancel</property>
+                <property name="label">ctk-cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="can_default">True</property>
@@ -593,7 +593,7 @@
             </child>
             <child>
               <object class="GtkButton" id="button2">
-                <property name="label">gtk-delete</property>
+                <property name="label">ctk-delete</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="can_default">True</property>
@@ -637,7 +637,7 @@
               <object class="GtkImage" id="image2">
                 <property name="visible">True</property>
                 <property name="yalign">0</property>
-                <property name="stock">gtk-dialog-warning</property>
+                <property name="stock">ctk-dialog-warning</property>
                 <property name="icon-size">6</property>
               </object>
               <packing>
@@ -696,7 +696,7 @@
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="button3">
-                <property name="label">gtk-cancel</property>
+                <property name="label">ctk-cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="can_default">True</property>
@@ -727,7 +727,7 @@
                         <child>
                           <object class="GtkImage" id="image1">
                             <property name="visible">True</property>
-                            <property name="stock">gtk-delete</property>
+                            <property name="stock">ctk-delete</property>
                           </object>
                           <packing>
                             <property name="expand">False</property>
@@ -792,7 +792,7 @@
                 <child>
                   <object class="GtkImage" id="lock_img">
                     <property name="visible">True</property>
-                    <property name="stock">gtk-missing-image</property>
+                    <property name="stock">ctk-missing-image</property>
                   </object>
                 </child>
               </object>
@@ -822,7 +822,7 @@
                 <child>
                   <object class="GtkImage" id="close_img">
                     <property name="visible">True</property>
-                    <property name="stock">gtk-missing-image</property>
+                    <property name="stock">ctk-missing-image</property>
                   </object>
                 </child>
               </object>
@@ -871,7 +871,7 @@
                     <property name="visible">True</property>
                     <property name="xalign">0</property>
                     <property name="yalign">1</property>
-                    <property name="stock">gtk-missing-image</property>
+                    <property name="stock">ctk-missing-image</property>
                   </object>
                 </child>
               </object>
@@ -890,7 +890,7 @@
                     <property name="visible">True</property>
                     <property name="xalign">1</property>
                     <property name="yalign">1</property>
-                    <property name="stock">gtk-missing-image</property>
+                    <property name="stock">ctk-missing-image</property>
                   </object>
                 </child>
               </object>
@@ -1163,7 +1163,7 @@
             <property name="layout_style">end</property>
             <child>
               <object class="GtkButton" id="helpbutton2">
-                <property name="label">gtk-help</property>
+                <property name="label">ctk-help</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="can_default">True</property>
@@ -1178,7 +1178,7 @@
             </child>
             <child>
               <object class="GtkButton" id="closebutton2">
-                <property name="label">gtk-close</property>
+                <property name="label">ctk-close</property>
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <property name="can_default">True</property>

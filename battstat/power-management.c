@@ -89,20 +89,20 @@ static int using_upower;
 /* #define BATTSTAT_TESTING_BACKEND */
 #ifdef BATTSTAT_TESTING_BACKEND
 
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 BatteryStatus test_status;
 
 static void
 test_update_boolean( GtkToggleButton *button, gboolean *value )
 {
-  *value = gtk_toggle_button_get_active( button );
+  *value = ctk_toggle_button_get_active( button );
 }
 
 static void
 test_update_integer( GtkSpinButton *spin, gint *value )
 {
-  *value = gtk_spin_button_get_value_as_int( spin );
+  *value = ctk_spin_button_get_value_as_int( spin );
 }
 
 static void
@@ -117,43 +117,43 @@ initialise_test( void )
   test_status.on_ac_power = FALSE;
   test_status.charging = FALSE;
 
-  box = GTK_BOX( gtk_box_new (GTK_ORIENTATION_VERTICAL, 5 ) );
+  box = GTK_BOX( ctk_box_new (GTK_ORIENTATION_VERTICAL, 5 ) );
 
-  gtk_box_pack_start( box, gtk_label_new( "percent" ), TRUE, TRUE, 0);
-  w = gtk_spin_button_new_with_range( -1.0, 100.0, 1 );
-  gtk_spin_button_set_value( GTK_SPIN_BUTTON( w ), 50.0 );
+  ctk_box_pack_start( box, ctk_label_new( "percent" ), TRUE, TRUE, 0);
+  w = ctk_spin_button_new_with_range( -1.0, 100.0, 1 );
+  ctk_spin_button_set_value( GTK_SPIN_BUTTON( w ), 50.0 );
   g_signal_connect( G_OBJECT( w ), "value-changed",
                     G_CALLBACK( test_update_integer ), &test_status.percent );
-  gtk_box_pack_start( box, w, TRUE, TRUE, 0 );
+  ctk_box_pack_start( box, w, TRUE, TRUE, 0 );
 
-  gtk_box_pack_start( box, gtk_label_new( "minutes" ), TRUE, TRUE, 0);
-  w = gtk_spin_button_new_with_range( -1.0, 1000.0, 1 );
-  gtk_spin_button_set_value( GTK_SPIN_BUTTON( w ), 180.0 );
+  ctk_box_pack_start( box, ctk_label_new( "minutes" ), TRUE, TRUE, 0);
+  w = ctk_spin_button_new_with_range( -1.0, 1000.0, 1 );
+  ctk_spin_button_set_value( GTK_SPIN_BUTTON( w ), 180.0 );
   g_signal_connect( G_OBJECT( w ), "value-changed",
                     G_CALLBACK( test_update_integer ), &test_status.minutes );
-  gtk_box_pack_start( box, w, TRUE, TRUE, 0);
+  ctk_box_pack_start( box, w, TRUE, TRUE, 0);
 
 
-  w = gtk_toggle_button_new_with_label( "on_ac_power" );
+  w = ctk_toggle_button_new_with_label( "on_ac_power" );
   g_signal_connect( G_OBJECT( w ), "toggled",
                     G_CALLBACK( test_update_boolean ),
                     &test_status.on_ac_power );
-  gtk_box_pack_start( box, w, TRUE, TRUE, 0);
+  ctk_box_pack_start( box, w, TRUE, TRUE, 0);
 
-  w = gtk_toggle_button_new_with_label( "charging" );
+  w = ctk_toggle_button_new_with_label( "charging" );
   g_signal_connect( G_OBJECT( w ), "toggled",
                     G_CALLBACK( test_update_boolean ), &test_status.charging );
-  gtk_box_pack_start( box, w, TRUE, TRUE, 0);
+  ctk_box_pack_start( box, w, TRUE, TRUE, 0);
 
-  w = gtk_toggle_button_new_with_label( "present" );
-  gtk_toggle_button_set_active( GTK_TOGGLE_BUTTON( w ), TRUE );
+  w = ctk_toggle_button_new_with_label( "present" );
+  ctk_toggle_button_set_active( GTK_TOGGLE_BUTTON( w ), TRUE );
   g_signal_connect( G_OBJECT( w ), "toggled",
                     G_CALLBACK( test_update_boolean ), &test_status.present );
-  gtk_box_pack_start( box, w, TRUE, TRUE, 0);
+  ctk_box_pack_start( box, w, TRUE, TRUE, 0);
 
-  w = gtk_window_new( GTK_WINDOW_TOPLEVEL );
-  gtk_container_add( GTK_CONTAINER( w ), GTK_WIDGET( box ) );
-  gtk_widget_show_all( w );
+  w = ctk_window_new( GTK_WINDOW_TOPLEVEL );
+  ctk_container_add( GTK_CONTAINER( w ), GTK_WIDGET( box ) );
+  ctk_widget_show_all( w );
 }
 
 static const char *
