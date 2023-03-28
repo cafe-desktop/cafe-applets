@@ -30,7 +30,7 @@
 #include "drive-button.h"
 #include <glib/gi18n.h>
 
-G_DEFINE_TYPE (DriveList, drive_list, GTK_TYPE_GRID);
+G_DEFINE_TYPE (DriveList, drive_list, CTK_TYPE_GRID);
 
 static GVolumeMonitor *volume_monitor = NULL;
 
@@ -71,8 +71,8 @@ drive_list_class_init (DriveListClass *class)
 {
     G_OBJECT_CLASS (class)->finalize = drive_list_finalize;
     G_OBJECT_CLASS (class)->dispose = drive_list_dispose;
-    GTK_CONTAINER_CLASS (class)->add = drive_list_add;
-    GTK_CONTAINER_CLASS (class)->remove = drive_list_remove;
+    CTK_CONTAINER_CLASS (class)->add = drive_list_add;
+    CTK_CONTAINER_CLASS (class)->remove = drive_list_remove;
 }
 
 static void
@@ -80,16 +80,16 @@ drive_list_init (DriveList *self)
 {
     GList *volumes, *mounts, *tmp;
 
-    ctk_grid_set_column_homogeneous (GTK_GRID (self), TRUE);
-    ctk_grid_set_row_homogeneous (GTK_GRID (self), TRUE);
+    ctk_grid_set_column_homogeneous (CTK_GRID (self), TRUE);
+    ctk_grid_set_row_homogeneous (CTK_GRID (self), TRUE);
 
     self->volumes = g_hash_table_new (NULL, NULL);
     self->mounts = g_hash_table_new (NULL, NULL);
-    self->orientation = GTK_ORIENTATION_HORIZONTAL;
+    self->orientation = CTK_ORIENTATION_HORIZONTAL;
     self->layout_tag = 0;
     self->settings = g_settings_new ("org.cafe.drivemount");
     self->icon_size = 24;
-    self->relief = GTK_RELIEF_NORMAL;
+    self->relief = CTK_RELIEF_NORMAL;
 
     g_signal_connect(self->settings,
                      "changed::drivemount-checkmark-color",
@@ -133,12 +133,12 @@ drive_list_init (DriveList *self)
 			self->count++;
 	}
 	self->dummy = drive_button_new (NULL);
-	ctk_button_set_relief (GTK_BUTTON (self->dummy), self->relief);
+	ctk_button_set_relief (CTK_BUTTON (self->dummy), self->relief);
 	drive_button_set_size (DRIVE_BUTTON (self->dummy), self->icon_size);
 
 	if (self->count == 0)
 	{
-		ctk_container_add (GTK_CONTAINER (self), self->dummy);
+		ctk_container_add (CTK_CONTAINER (self), self->dummy);
 		queue_relayout (self);
 		drive_button_queue_update (DRIVE_BUTTON (self->dummy));
 	}
@@ -199,8 +199,8 @@ drive_list_add (CtkContainer *container, CtkWidget *child)
     g_return_if_fail (DRIVE_IS_LIST (container));
     g_return_if_fail (DRIVE_IS_BUTTON (child));
 
-    if (GTK_CONTAINER_CLASS (drive_list_parent_class)->add)
-	(* GTK_CONTAINER_CLASS (drive_list_parent_class)->add) (container,
+    if (CTK_CONTAINER_CLASS (drive_list_parent_class)->add)
+	(* CTK_CONTAINER_CLASS (drive_list_parent_class)->add) (container,
 								child);
 
     self = DRIVE_LIST (container);
@@ -227,8 +227,8 @@ drive_list_remove (CtkContainer *container, CtkWidget *child)
     else
 	g_hash_table_remove (self->mounts, button->mount);
 
-    if (GTK_CONTAINER_CLASS (drive_list_parent_class)->remove)
-	(* GTK_CONTAINER_CLASS (drive_list_parent_class)->remove) (container,
+    if (CTK_CONTAINER_CLASS (drive_list_parent_class)->remove)
+	(* CTK_CONTAINER_CLASS (drive_list_parent_class)->remove) (container,
 								   child);
 }
 
@@ -261,15 +261,15 @@ relayout_buttons (gpointer data)
 		{
 			CtkWidget *button = tmp->data;
 
-			if (self->orientation == GTK_ORIENTATION_HORIZONTAL) {
-				ctk_container_child_set (GTK_CONTAINER (self), button,
+			if (self->orientation == CTK_ORIENTATION_HORIZONTAL) {
+				ctk_container_child_set (CTK_CONTAINER (self), button,
 										"left-attach", i + 1, "top-attach", 0,
 										"width", 1, "height", 1,
 										NULL);
 			}
 			else
 			{
-				ctk_container_child_set (GTK_CONTAINER (self), button,
+				ctk_container_child_set (CTK_CONTAINER (self), button,
 										"left-attach", 0, "top-attach", i + 1,
 										"width", 1, "height", 1,
 										NULL);
@@ -279,16 +279,16 @@ relayout_buttons (gpointer data)
 	else
 	{
 		ctk_widget_show (self->dummy);
-		if (self->orientation == GTK_ORIENTATION_HORIZONTAL)
+		if (self->orientation == CTK_ORIENTATION_HORIZONTAL)
 		{
-			ctk_container_child_set (GTK_CONTAINER (self), self->dummy,
+			ctk_container_child_set (CTK_CONTAINER (self), self->dummy,
 									"left-attach", i + 1, "top-attach", 0,
 									"width", 1, "height", 1,
 									NULL);
 		}
 		else
 		{
-			ctk_container_child_set (GTK_CONTAINER (self), self->dummy,
+			ctk_container_child_set (CTK_CONTAINER (self), self->dummy,
 									"left-attach", 0, "top-attach", i + 1,
 									"width", 1, "height", 1,
 									NULL);
@@ -313,7 +313,7 @@ mount_added (GVolumeMonitor *monitor,
     add_mount (self, mount);
 		self->count++;
 		if (self->count == 1)
-			ctk_container_remove (GTK_CONTAINER (self), g_object_ref(self->dummy));
+			ctk_container_remove (CTK_CONTAINER (self), g_object_ref(self->dummy));
     mount_changed (monitor, mount, self);
 }
 
@@ -345,7 +345,7 @@ mount_removed (GVolumeMonitor *monitor,
     mount_changed (monitor, mount, self);
 		self->count--;
 		if (self->count == 0) {
-			ctk_container_add (GTK_CONTAINER (self), self->dummy);
+			ctk_container_add (CTK_CONTAINER (self), self->dummy);
 			queue_relayout(self);
 		}
 }
@@ -358,7 +358,7 @@ volume_added (GVolumeMonitor *monitor,
     add_volume (self, volume);
 		self->count++;
 		if (self->count == 1)
-			ctk_container_remove (GTK_CONTAINER (self), g_object_ref(self->dummy));
+			ctk_container_remove (CTK_CONTAINER (self), g_object_ref(self->dummy));
 }
 
 static void
@@ -381,7 +381,7 @@ volume_removed (GVolumeMonitor *monitor,
     remove_volume (self, volume);
 		self->count--;
 		if (self->count == 0) {
-			ctk_container_add (GTK_CONTAINER (self), self->dummy);
+			ctk_container_add (CTK_CONTAINER (self), self->dummy);
 			queue_relayout(self);
 		}
 }
@@ -396,9 +396,9 @@ add_volume (DriveList *self, GVolume *volume)
 	return;
 
     button = drive_button_new (volume);
-    ctk_button_set_relief (GTK_BUTTON (button), self->relief);
+    ctk_button_set_relief (CTK_BUTTON (button), self->relief);
     drive_button_set_size (DRIVE_BUTTON (button), self->icon_size);
-    ctk_container_add (GTK_CONTAINER (self), button);
+    ctk_container_add (CTK_CONTAINER (self), button);
     ctk_widget_show (button);
     queue_relayout (self);
 }
@@ -411,7 +411,7 @@ remove_volume (DriveList *self, GVolume *volume)
     /* if the volume has already been added, return */
     button = g_hash_table_lookup (self->volumes, volume);
     if (button) {
-	ctk_container_remove (GTK_CONTAINER (self), button);
+	ctk_container_remove (CTK_CONTAINER (self), button);
 	queue_relayout (self);
     }
 }
@@ -439,9 +439,9 @@ add_mount (DriveList *self, GMount *mount)
 	return;
 
     button = drive_button_new_from_mount (mount);
-    ctk_button_set_relief (GTK_BUTTON (button), self->relief);
+    ctk_button_set_relief (CTK_BUTTON (button), self->relief);
     drive_button_set_size (DRIVE_BUTTON (button), self->icon_size);
-    ctk_container_add (GTK_CONTAINER (self), button);
+    ctk_container_add (CTK_CONTAINER (self), button);
     ctk_widget_show (button);
     queue_relayout (self);
 }
@@ -454,7 +454,7 @@ remove_mount (DriveList *self, GMount *mount)
     /* if the mount has already been added, return */
     button = g_hash_table_lookup (self->mounts, mount);
     if (button) {
-	ctk_container_remove (GTK_CONTAINER (self), button);
+	ctk_container_remove (CTK_CONTAINER (self), button);
 	queue_relayout (self);
     }
 }
@@ -521,7 +521,7 @@ drive_list_set_transparent (DriveList *self, gboolean transparent)
 {
     CtkReliefStyle relief;
 
-    relief  = transparent ? GTK_RELIEF_NONE : GTK_RELIEF_NORMAL;
+    relief  = transparent ? CTK_RELIEF_NONE : CTK_RELIEF_NORMAL;
 
     if (relief == self->relief)
         return;

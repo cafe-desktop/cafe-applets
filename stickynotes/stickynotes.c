@@ -83,8 +83,8 @@ static void
 buffer_changed (CtkTextBuffer *buffer, StickyNote *note)
 {
 	if ( (note->h + note->y) > stickynotes->max_height )
-		ctk_scrolled_window_set_policy ( GTK_SCROLLED_WINDOW(note->w_scroller),
-													GTK_POLICY_NEVER, GTK_POLICY_AUTOMATIC);
+		ctk_scrolled_window_set_policy ( CTK_SCROLLED_WINDOW(note->w_scroller),
+													CTK_POLICY_NEVER, CTK_POLICY_AUTOMATIC);
 
 	/* When a buffer is changed, we set a 10 second timer.  When
 	   the timer triggers, we will save the buffer if there have
@@ -107,61 +107,61 @@ stickynote_new_aux (GdkScreen *screen, gint x, gint y, gint w, gint h)
 	builder = ctk_builder_new ();
 	ctk_builder_add_from_file (builder, BUILDER_PATH, NULL);
 
-	note->w_window = GTK_WIDGET (ctk_builder_get_object (builder, "stickynote_window"));
-	ctk_window_set_screen(GTK_WINDOW(note->w_window),screen);
-	ctk_window_set_decorated (GTK_WINDOW (note->w_window), FALSE);
-	ctk_window_set_skip_taskbar_hint (GTK_WINDOW (note->w_window), TRUE);
-	ctk_window_set_skip_pager_hint (GTK_WINDOW (note->w_window), TRUE);
+	note->w_window = CTK_WIDGET (ctk_builder_get_object (builder, "stickynote_window"));
+	ctk_window_set_screen(CTK_WINDOW(note->w_window),screen);
+	ctk_window_set_decorated (CTK_WINDOW (note->w_window), FALSE);
+	ctk_window_set_skip_taskbar_hint (CTK_WINDOW (note->w_window), TRUE);
+	ctk_window_set_skip_pager_hint (CTK_WINDOW (note->w_window), TRUE);
 	ctk_widget_add_events (note->w_window, GDK_BUTTON_PRESS_MASK);
 
-	note->w_title = GTK_WIDGET (ctk_builder_get_object (builder, "title_label"));
-	note->w_body = GTK_WIDGET (ctk_builder_get_object (builder, "body_text"));
-	note->w_scroller = GTK_WIDGET (ctk_builder_get_object (builder, "body_scroller"));
-	note->w_lock = GTK_WIDGET (ctk_builder_get_object (builder, "lock_button"));
+	note->w_title = CTK_WIDGET (ctk_builder_get_object (builder, "title_label"));
+	note->w_body = CTK_WIDGET (ctk_builder_get_object (builder, "body_text"));
+	note->w_scroller = CTK_WIDGET (ctk_builder_get_object (builder, "body_scroller"));
+	note->w_lock = CTK_WIDGET (ctk_builder_get_object (builder, "lock_button"));
 	ctk_widget_add_events (note->w_lock, GDK_BUTTON_PRESS_MASK);
 
-	note->buffer = GTK_SOURCE_BUFFER(ctk_text_view_get_buffer(GTK_TEXT_VIEW(note->w_body)));
+	note->buffer = CTK_SOURCE_BUFFER(ctk_text_view_get_buffer(CTK_TEXT_VIEW(note->w_body)));
 
-	note->w_close = GTK_WIDGET (ctk_builder_get_object (builder, "close_button"));
+	note->w_close = CTK_WIDGET (ctk_builder_get_object (builder, "close_button"));
 	ctk_widget_add_events (note->w_close, GDK_BUTTON_PRESS_MASK);
-	note->w_resize_se = GTK_WIDGET (ctk_builder_get_object (builder, "resize_se_box"));
+	note->w_resize_se = CTK_WIDGET (ctk_builder_get_object (builder, "resize_se_box"));
 	ctk_widget_add_events (note->w_resize_se, GDK_BUTTON_PRESS_MASK);
-	note->w_resize_sw = GTK_WIDGET (ctk_builder_get_object (builder, "resize_sw_box"));
+	note->w_resize_sw = CTK_WIDGET (ctk_builder_get_object (builder, "resize_sw_box"));
 	ctk_widget_add_events (note->w_resize_sw, GDK_BUTTON_PRESS_MASK);
 
-	note->img_lock = GTK_IMAGE (ctk_builder_get_object (builder,
+	note->img_lock = CTK_IMAGE (ctk_builder_get_object (builder,
 	                "lock_img"));
-	note->img_close = GTK_IMAGE (ctk_builder_get_object (builder,
+	note->img_close = CTK_IMAGE (ctk_builder_get_object (builder,
 	                "close_img"));
-	note->img_resize_se = GTK_IMAGE (ctk_builder_get_object (builder,
+	note->img_resize_se = CTK_IMAGE (ctk_builder_get_object (builder,
 	                "resize_se_img"));
-	note->img_resize_sw = GTK_IMAGE (ctk_builder_get_object (builder,
+	note->img_resize_sw = CTK_IMAGE (ctk_builder_get_object (builder,
 	                "resize_sw_img"));
 
 	/* deal with RTL environments */
-	ctk_widget_set_direction (GTK_WIDGET (ctk_builder_get_object (builder, "resize_bar")),
-			GTK_TEXT_DIR_LTR);
+	ctk_widget_set_direction (CTK_WIDGET (ctk_builder_get_object (builder, "resize_bar")),
+			CTK_TEXT_DIR_LTR);
 
-	note->w_menu = GTK_WIDGET (ctk_builder_get_object (builder, "stickynote_menu"));
-	note->ta_lock_toggle_item = GTK_TOGGLE_ACTION (ctk_builder_get_object (builder,
+	note->w_menu = CTK_WIDGET (ctk_builder_get_object (builder, "stickynote_menu"));
+	note->ta_lock_toggle_item = CTK_TOGGLE_ACTION (ctk_builder_get_object (builder,
 	        "popup_toggle_lock"));
 
-	note->w_properties = GTK_WIDGET (ctk_builder_get_object (builder,
+	note->w_properties = CTK_WIDGET (ctk_builder_get_object (builder,
 			"stickynote_properties"));
-	ctk_window_set_screen (GTK_WINDOW (note->w_properties), screen);
+	ctk_window_set_screen (CTK_WINDOW (note->w_properties), screen);
 
-	note->w_entry = GTK_WIDGET (ctk_builder_get_object (builder, "title_entry"));
-	note->w_color = GTK_WIDGET (ctk_builder_get_object (builder, "note_color"));
-	note->w_color_label = GTK_WIDGET (ctk_builder_get_object (builder, "color_label"));
-	note->w_font_color = GTK_WIDGET (ctk_builder_get_object (builder, "font_color"));
-	note->w_font_color_label = GTK_WIDGET (ctk_builder_get_object (builder,
+	note->w_entry = CTK_WIDGET (ctk_builder_get_object (builder, "title_entry"));
+	note->w_color = CTK_WIDGET (ctk_builder_get_object (builder, "note_color"));
+	note->w_color_label = CTK_WIDGET (ctk_builder_get_object (builder, "color_label"));
+	note->w_font_color = CTK_WIDGET (ctk_builder_get_object (builder, "font_color"));
+	note->w_font_color_label = CTK_WIDGET (ctk_builder_get_object (builder,
 			"font_color_label"));
-	note->w_font = GTK_WIDGET (ctk_builder_get_object (builder, "note_font"));
-	note->w_font_label = GTK_WIDGET (ctk_builder_get_object (builder, "font_label"));
-	note->w_def_color = GTK_WIDGET (&GTK_CHECK_BUTTON (
+	note->w_font = CTK_WIDGET (ctk_builder_get_object (builder, "note_font"));
+	note->w_font_label = CTK_WIDGET (ctk_builder_get_object (builder, "font_label"));
+	note->w_def_color = CTK_WIDGET (&CTK_CHECK_BUTTON (
 				ctk_builder_get_object (builder,
 					"def_color_check"))->toggle_button);
-	note->w_def_font = GTK_WIDGET (&GTK_CHECK_BUTTON (
+	note->w_def_font = CTK_WIDGET (&CTK_CHECK_BUTTON (
 				ctk_builder_get_object (builder,
 					"def_font_check"))->toggle_button);
 
@@ -176,35 +176,35 @@ stickynote_new_aux (GdkScreen *screen, gint x, gint y, gint w, gint h)
 
 	/* Customize the window */
 	if (g_settings_get_boolean (stickynotes->settings, "sticky"))
-		ctk_window_stick(GTK_WINDOW(note->w_window));
+		ctk_window_stick(CTK_WINDOW(note->w_window));
 
 	if (w == 0 || h == 0)
-		ctk_window_resize (GTK_WINDOW(note->w_window),
+		ctk_window_resize (CTK_WINDOW(note->w_window),
 				g_settings_get_int (stickynotes->settings, "default-width"),
 				g_settings_get_int (stickynotes->settings, "default-height"));
 	else
-		ctk_window_resize (GTK_WINDOW(note->w_window),
+		ctk_window_resize (CTK_WINDOW(note->w_window),
 				note->w,
 				note->h);
 
 	if (x != -1 && y != -1)
-		ctk_window_move (GTK_WINDOW(note->w_window),
+		ctk_window_move (CTK_WINDOW(note->w_window),
 				note->x,
 				note->y);
 
 	/* Set the button images */
-	ctk_image_set_from_icon_name (note->img_close, STICKYNOTES_STOCK_CLOSE, GTK_ICON_SIZE_MENU);
+	ctk_image_set_from_icon_name (note->img_close, STICKYNOTES_STOCK_CLOSE, CTK_ICON_SIZE_MENU);
 	ctk_image_set_pixel_size (note->img_close, STICKYNOTES_ICON_SIZE);
 
-	ctk_image_set_from_icon_name (note->img_resize_se, STICKYNOTES_STOCK_RESIZE_SE, GTK_ICON_SIZE_MENU);
+	ctk_image_set_from_icon_name (note->img_resize_se, STICKYNOTES_STOCK_RESIZE_SE, CTK_ICON_SIZE_MENU);
 	ctk_image_set_pixel_size (note->img_resize_se, STICKYNOTES_ICON_SIZE);
 
-	ctk_image_set_from_icon_name (note->img_resize_sw, STICKYNOTES_STOCK_RESIZE_SW, GTK_ICON_SIZE_MENU);
+	ctk_image_set_from_icon_name (note->img_resize_sw, STICKYNOTES_STOCK_RESIZE_SW, CTK_ICON_SIZE_MENU);
 	ctk_image_set_pixel_size (note->img_resize_sw, STICKYNOTES_ICON_SIZE);
 
 	ctk_widget_show(note->w_lock);
 	ctk_widget_show(note->w_close);
-	ctk_widget_show(GTK_WIDGET (ctk_builder_get_object (builder, "resize_bar")));
+	ctk_widget_show(CTK_WIDGET (ctk_builder_get_object (builder, "resize_bar")));
 
 	/* Customize the title and colors, hide and unlock */
 	stickynote_set_title(note, NULL);
@@ -236,10 +236,10 @@ stickynote_new_aux (GdkScreen *screen, gint x, gint y, gint w, gint h)
 			G_CALLBACK (stickynote_show_popup_menu), note->w_menu);
 
 	/* Connect a properties dialog to the note */
-	ctk_window_set_transient_for (GTK_WINDOW(note->w_properties),
-			GTK_WINDOW(note->w_window));
-	ctk_dialog_set_default_response (GTK_DIALOG(note->w_properties),
-			GTK_RESPONSE_CLOSE);
+	ctk_window_set_transient_for (CTK_WINDOW(note->w_properties),
+			CTK_WINDOW(note->w_window));
+	ctk_dialog_set_default_response (CTK_DIALOG(note->w_properties),
+			CTK_RESPONSE_CLOSE);
 	g_signal_connect (G_OBJECT (note->w_properties), "response",
 			G_CALLBACK (response_cb), note);
 
@@ -295,7 +295,7 @@ stickynote_new_aux (GdkScreen *screen, gint x, gint y, gint w, gint h)
 	g_signal_connect_after (note->w_body, "button-press-event",
 	                        G_CALLBACK (ctk_true), note);
 
-	g_signal_connect (ctk_text_view_get_buffer(GTK_TEXT_VIEW(note->w_body)),
+	g_signal_connect (ctk_text_view_get_buffer(CTK_TEXT_VIEW(note->w_body)),
 			  "changed",
 			  G_CALLBACK (buffer_changed), note);
 
@@ -328,10 +328,10 @@ void stickynote_change_properties (StickyNote *note)
 {
 	char *color_str = NULL;
 
-	ctk_entry_set_text(GTK_ENTRY(note->w_entry),
-			ctk_label_get_text (GTK_LABEL (note->w_title)));
+	ctk_entry_set_text(CTK_ENTRY(note->w_entry),
+			ctk_label_get_text (CTK_LABEL (note->w_title)));
 
-	ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(note->w_def_color),
+	ctk_toggle_button_set_active(CTK_TOGGLE_BUTTON(note->w_def_color),
 			note->color == NULL);
 
 	if (note->color)
@@ -345,7 +345,7 @@ void stickynote_change_properties (StickyNote *note)
 	{
 		GdkRGBA color;
 		gdk_rgba_parse (&color, color_str);
-		ctk_color_chooser_set_rgba (GTK_COLOR_CHOOSER (note->w_color), &color);
+		ctk_color_chooser_set_rgba (CTK_COLOR_CHOOSER (note->w_color), &color);
 		g_free (color_str);
 	}
 
@@ -360,14 +360,14 @@ void stickynote_change_properties (StickyNote *note)
 	{
 		GdkRGBA font_color;
 		gdk_rgba_parse (&font_color, color_str);
-		ctk_color_chooser_set_rgba (GTK_COLOR_CHOOSER (note->w_font_color), &font_color);
+		ctk_color_chooser_set_rgba (CTK_COLOR_CHOOSER (note->w_font_color), &font_color);
 		g_free (color_str);
 	}
 
-	ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(note->w_def_font),
+	ctk_toggle_button_set_active(CTK_TOGGLE_BUTTON(note->w_def_font),
 			note->font == NULL);
 	if (note->font)
-		ctk_font_button_set_font_name (GTK_FONT_BUTTON (note->w_font),
+		ctk_font_button_set_font_name (CTK_FONT_BUTTON (note->w_font),
 				note->font);
 
 	ctk_widget_show (note->w_properties);
@@ -378,19 +378,19 @@ void stickynote_change_properties (StickyNote *note)
 static void
 response_cb (CtkWidget *dialog, gint id, gpointer data)
 {
-        if (id == GTK_RESPONSE_HELP)
-		ctk_show_uri_on_window (GTK_WINDOW (dialog),
+        if (id == CTK_RESPONSE_HELP)
+		ctk_show_uri_on_window (CTK_WINDOW (dialog),
 		                        "help:cafe-stickynotes-applet/stickynotes-settings-individual",
 		                        ctk_get_current_event_time (),
 		                        NULL);
-        else if (id == GTK_RESPONSE_CLOSE)
+        else if (id == CTK_RESPONSE_CLOSE)
                 ctk_widget_hide (dialog);
 }
 
 /* Check if a sticky note is empty */
 gboolean stickynote_get_empty(const StickyNote *note)
 {
-	return ctk_text_buffer_get_char_count(ctk_text_view_get_buffer(GTK_TEXT_VIEW(note->w_body))) == 0;
+	return ctk_text_buffer_get_char_count(ctk_text_view_get_buffer(CTK_TEXT_VIEW(note->w_body))) == 0;
 }
 
 /* Set the sticky note title */
@@ -405,16 +405,16 @@ void stickynote_set_title(StickyNote *note, const gchar *title)
 		tmp = get_current_date (date_format);
 		date_title = g_locale_to_utf8 (tmp, -1, NULL, NULL, NULL);
 
-		ctk_window_set_title(GTK_WINDOW(note->w_window), date_title);
-		ctk_label_set_text(GTK_LABEL (note->w_title), date_title);
+		ctk_window_set_title(CTK_WINDOW(note->w_window), date_title);
+		ctk_label_set_text(CTK_LABEL (note->w_title), date_title);
 
 		g_free (tmp);
 		g_free(date_title);
 		g_free(date_format);
 	}
 	else {
-		ctk_window_set_title(GTK_WINDOW(note->w_window), title);
-		ctk_label_set_text(GTK_LABEL (note->w_title), title);
+		ctk_window_set_title(CTK_WINDOW(note->w_window), title);
+		ctk_label_set_text(CTK_LABEL (note->w_title), title);
 	}
 }
 
@@ -487,19 +487,19 @@ stickynote_set_color (StickyNote  *note,
 			colors[i].blue = (colors[i].blue * (10 - i)) / 10;
 		}
 
-		ctk_widget_override_background_color (note->w_window, GTK_STATE_NORMAL, &colors[0]);
-		ctk_widget_override_background_color (note->w_body, GTK_STATE_NORMAL, &colors[0]);
-		ctk_widget_override_background_color (note->w_lock, GTK_STATE_NORMAL, &colors[0]);
-		ctk_widget_override_background_color (note->w_close, GTK_STATE_NORMAL, &colors[0]);
-		ctk_widget_override_background_color (note->w_resize_se, GTK_STATE_NORMAL, &colors[0]);
-		ctk_widget_override_background_color (note->w_resize_sw, GTK_STATE_NORMAL, &colors[0]);
+		ctk_widget_override_background_color (note->w_window, CTK_STATE_NORMAL, &colors[0]);
+		ctk_widget_override_background_color (note->w_body, CTK_STATE_NORMAL, &colors[0]);
+		ctk_widget_override_background_color (note->w_lock, CTK_STATE_NORMAL, &colors[0]);
+		ctk_widget_override_background_color (note->w_close, CTK_STATE_NORMAL, &colors[0]);
+		ctk_widget_override_background_color (note->w_resize_se, CTK_STATE_NORMAL, &colors[0]);
+		ctk_widget_override_background_color (note->w_resize_sw, CTK_STATE_NORMAL, &colors[0]);
 	} else {
-		ctk_widget_override_background_color (note->w_window, GTK_STATE_NORMAL, NULL);
-		ctk_widget_override_background_color (note->w_body, GTK_STATE_NORMAL, NULL);
-		ctk_widget_override_background_color (note->w_lock, GTK_STATE_NORMAL, NULL);
-		ctk_widget_override_background_color (note->w_close, GTK_STATE_NORMAL, NULL);
-		ctk_widget_override_background_color (note->w_resize_se, GTK_STATE_NORMAL, NULL);
-		ctk_widget_override_background_color (note->w_resize_sw, GTK_STATE_NORMAL, NULL);
+		ctk_widget_override_background_color (note->w_window, CTK_STATE_NORMAL, NULL);
+		ctk_widget_override_background_color (note->w_body, CTK_STATE_NORMAL, NULL);
+		ctk_widget_override_background_color (note->w_lock, CTK_STATE_NORMAL, NULL);
+		ctk_widget_override_background_color (note->w_close, CTK_STATE_NORMAL, NULL);
+		ctk_widget_override_background_color (note->w_resize_se, CTK_STATE_NORMAL, NULL);
+		ctk_widget_override_background_color (note->w_resize_sw, CTK_STATE_NORMAL, NULL);
 	}
 
 	if (font_color_str_actual)
@@ -508,13 +508,13 @@ stickynote_set_color (StickyNote  *note,
 
 		gdk_rgba_parse (&color, font_color_str_actual);
 
-		ctk_widget_override_color (note->w_window, GTK_STATE_NORMAL, &color);
-		ctk_widget_override_color (note->w_body, GTK_STATE_NORMAL, &color);
+		ctk_widget_override_color (note->w_window, CTK_STATE_NORMAL, &color);
+		ctk_widget_override_color (note->w_body, CTK_STATE_NORMAL, &color);
 	}
 	else
 	{
-		ctk_widget_override_color (note->w_window, GTK_STATE_NORMAL, NULL);
-		ctk_widget_override_color (note->w_body, GTK_STATE_NORMAL, NULL);
+		ctk_widget_override_color (note->w_window, CTK_STATE_NORMAL, NULL);
+		ctk_widget_override_color (note->w_body, CTK_STATE_NORMAL, NULL);
 	}
 
 	if (color_str_actual)
@@ -568,16 +568,16 @@ void stickynote_set_locked(StickyNote *note, gboolean locked)
 	note->locked = locked;
 
 	/* Set cursor visibility and editability */
-	ctk_text_view_set_editable(GTK_TEXT_VIEW(note->w_body), !locked);
-	ctk_text_view_set_cursor_visible(GTK_TEXT_VIEW(note->w_body), !locked);
+	ctk_text_view_set_editable(CTK_TEXT_VIEW(note->w_body), !locked);
+	ctk_text_view_set_cursor_visible(CTK_TEXT_VIEW(note->w_body), !locked);
 
 	/* Show appropriate icon and tooltip */
 	if (locked) {
-		ctk_image_set_from_icon_name (note->img_lock, STICKYNOTES_STOCK_LOCKED, GTK_ICON_SIZE_MENU);
+		ctk_image_set_from_icon_name (note->img_lock, STICKYNOTES_STOCK_LOCKED, CTK_ICON_SIZE_MENU);
 		ctk_widget_set_tooltip_text(note->w_lock, _("This note is locked."));
 	}
 	else {
-		ctk_image_set_from_icon_name (note->img_lock, STICKYNOTES_STOCK_UNLOCKED, GTK_ICON_SIZE_MENU);
+		ctk_image_set_from_icon_name (note->img_lock, STICKYNOTES_STOCK_UNLOCKED, CTK_ICON_SIZE_MENU);
 		ctk_widget_set_tooltip_text(note->w_lock, _("This note is unlocked."));
 	}
 
@@ -594,14 +594,14 @@ stickynote_set_visible (StickyNote *note, gboolean visible)
 {
 	if (visible)
 	{
-		ctk_window_present (GTK_WINDOW (note->w_window));
+		ctk_window_present (CTK_WINDOW (note->w_window));
 
 		if (note->x != -1 || note->y != -1)
-			ctk_window_move (GTK_WINDOW (note->w_window),
+			ctk_window_move (CTK_WINDOW (note->w_window),
 					note->x, note->y);
 		/* Put the note on all workspaces if necessary. */
 		if (g_settings_get_boolean (stickynotes->settings, "sticky"))
-			ctk_window_stick(GTK_WINDOW(note->w_window));
+			ctk_window_stick(CTK_WINDOW(note->w_window));
 		else if (note->workspace > 0)
 		{
 #if 0
@@ -625,7 +625,7 @@ stickynote_set_visible (StickyNote *note, gboolean visible)
 			else
 				g_print ("set_visible(): errr\n");
 #endif
-			xstuff_change_workspace (GTK_WINDOW (note->w_window),
+			xstuff_change_workspace (CTK_WINDOW (note->w_window),
 					note->workspace - 1);
 		}
 	}
@@ -633,9 +633,9 @@ stickynote_set_visible (StickyNote *note, gboolean visible)
 		/* Hide sticky note */
 		int x, y, width, height;
 		stickynotes_applet_panel_icon_get_geometry (&x, &y, &width, &height);
-		set_icon_geometry (ctk_widget_get_window (GTK_WIDGET (note->w_window)),
+		set_icon_geometry (ctk_widget_get_window (CTK_WIDGET (note->w_window)),
 				   x, y, width, height);
-		ctk_window_iconify(GTK_WINDOW (note->w_window));
+		ctk_window_iconify(CTK_WINDOW (note->w_window));
 	}
 }
 
@@ -661,13 +661,13 @@ void stickynotes_remove(StickyNote *note)
 	builder = ctk_builder_new ();
 	ctk_builder_add_from_file (builder, BUILDER_PATH, NULL);
 
-	dialog = GTK_WIDGET (ctk_builder_get_object (builder, "delete_dialog"));
+	dialog = CTK_WIDGET (ctk_builder_get_object (builder, "delete_dialog"));
 
-	ctk_window_set_transient_for(GTK_WINDOW(dialog), GTK_WINDOW(note->w_window));
+	ctk_window_set_transient_for(CTK_WINDOW(dialog), CTK_WINDOW(note->w_window));
 
 	if (stickynote_get_empty(note)
 	    || !g_settings_get_boolean (stickynotes->settings, "confirm-deletion")
-	    || ctk_dialog_run(GTK_DIALOG(dialog)) == GTK_RESPONSE_OK) {
+	    || ctk_dialog_run(CTK_DIALOG(dialog)) == CTK_RESPONSE_OK) {
 
 		/* Remove the note from the linked-list of all notes */
 		stickynotes->notes = g_list_remove_all (stickynotes->notes, note);
@@ -736,10 +736,10 @@ stickynotes_save_now (void)
 			note->workspace = 0;
 
 		/* Retrieve the title of the note */
-		title = ctk_label_get_text(GTK_LABEL(note->w_title));
+		title = ctk_label_get_text(CTK_LABEL(note->w_title));
 
 		/* Retrieve body contents of the note */
-		buffer = ctk_text_view_get_buffer(GTK_TEXT_VIEW(note->w_body));
+		buffer = ctk_text_view_get_buffer(CTK_TEXT_VIEW(note->w_body));
 
 		ctk_text_buffer_get_bounds(buffer, &start, &end);
 		body = ctk_text_iter_get_text(&start, &end);
@@ -978,7 +978,7 @@ stickynotes_load (GdkScreen *screen)
 					CtkTextIter start, end;
 
 					buffer = ctk_text_view_get_buffer(
-						GTK_TEXT_VIEW(note->w_body));
+						CTK_TEXT_VIEW(note->w_body));
 					ctk_text_buffer_get_bounds(
 							buffer, &start, &end);
 					ctk_text_buffer_insert(buffer,

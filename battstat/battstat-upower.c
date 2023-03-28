@@ -340,8 +340,8 @@ error_dialog( const char *fmt , ...)
   va_end(ap);
   CtkWidget *dialog;
 
-  dialog = ctk_message_dialog_new( NULL, 0, GTK_MESSAGE_ERROR,
-                                   GTK_BUTTONS_OK, "%s", str);
+  dialog = ctk_message_dialog_new( NULL, 0, CTK_MESSAGE_ERROR,
+                                   CTK_BUTTONS_OK, "%s", str);
 
   g_signal_connect_swapped( G_OBJECT (dialog), "response",
                             G_CALLBACK (ctk_widget_destroy),

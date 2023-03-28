@@ -111,12 +111,12 @@ start_procman (MultiloadApplet *ma)
 	if (monitor == NULL)
 	        monitor = g_strdup ("cafe-system-monitor.desktop");
 
-	screen = ctk_widget_get_screen (GTK_WIDGET (ma->applet));
+	screen = ctk_widget_get_screen (CTK_WIDGET (ma->applet));
 	appinfo = g_desktop_app_info_new (monitor);
 	if (appinfo) {
 		GdkScreen *screen;
 		GdkAppLaunchContext *context;
-		screen = ctk_widget_get_screen (GTK_WIDGET (ma->applet));
+		screen = ctk_widget_get_screen (CTK_WIDGET (ma->applet));
 		display = gdk_screen_get_display (screen);
 		context = gdk_display_get_app_launch_context (display);
 		gdk_app_launch_context_set_screen (context, screen);
@@ -145,9 +145,9 @@ start_procman (MultiloadApplet *ma)
 		CtkWidget *dialog;
 
 		dialog = ctk_message_dialog_new (NULL,
-						 GTK_DIALOG_DESTROY_WITH_PARENT,
-						 GTK_MESSAGE_ERROR,
-						 GTK_BUTTONS_OK,
+						 CTK_DIALOG_DESTROY_WITH_PARENT,
+						 CTK_MESSAGE_ERROR,
+						 CTK_BUTTONS_OK,
 						 _("There was an error executing '%s': %s"),
 						 "cafe-system-monitor",
 						 error->message);
@@ -156,9 +156,9 @@ start_procman (MultiloadApplet *ma)
 				  G_CALLBACK (ctk_widget_destroy),
 				  NULL);
 
-		ctk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
-		ctk_window_set_screen (GTK_WINDOW (dialog),
-				       ctk_widget_get_screen (GTK_WIDGET (ma->applet)));
+		ctk_window_set_resizable (CTK_WINDOW (dialog), FALSE);
+		ctk_window_set_screen (CTK_WINDOW (dialog),
+				       ctk_widget_get_screen (CTK_WIDGET (ma->applet)));
 
 		ctk_widget_show (dialog);
 
@@ -188,7 +188,7 @@ multiload_change_orient_cb(CafePanelApplet *applet, gint arg1, gpointer data)
 {
 	MultiloadApplet *ma = data;
 	multiload_applet_refresh((MultiloadApplet *)data);
-	ctk_widget_show (GTK_WIDGET (ma->applet));
+	ctk_widget_show (CTK_WIDGET (ma->applet));
 	return;
 }
 
@@ -218,7 +218,7 @@ multiload_destroy_cb(CtkWidget *widget, gpointer data)
 	if (ma->prop_dialog)
 		ctk_widget_destroy (ma->prop_dialog);
 
-	ctk_widget_destroy(GTK_WIDGET(ma->applet));
+	ctk_widget_destroy(CTK_WIDGET(ma->applet));
 
 	g_free (ma);
 
@@ -452,12 +452,12 @@ multiload_applet_refresh(MultiloadApplet *ma)
 
 	if ( (orientation == CAFE_PANEL_APPLET_ORIENT_UP) ||
 	     (orientation == CAFE_PANEL_APPLET_ORIENT_DOWN) ) {
-		ma->box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+		ma->box = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 0);
 	}
 	else
-		ma->box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+		ma->box = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
 
-	ctk_container_add(GTK_CONTAINER(ma->applet), ma->box);
+	ctk_container_add(CTK_CONTAINER(ma->applet), ma->box);
 
 	/* create the NGRAPHS graphs, passing in their user-configurable properties with gsettings. */
 	multiload_create_graphs (ma);
@@ -465,7 +465,7 @@ multiload_applet_refresh(MultiloadApplet *ma)
 	/* only start and display the graphs the user has turned on */
 
 	for (i = 0; i < NGRAPHS; i++) {
-	    ctk_box_pack_start(GTK_BOX(ma->box),
+	    ctk_box_pack_start(CTK_BOX(ma->box),
 			       ma->graphs[i]->main_widget,
 			       TRUE, TRUE, 1);
 	    if (ma->graphs[i]->visible) {
@@ -503,7 +503,7 @@ multiload_applet_new(CafePanelApplet *applet, const gchar *iid, gpointer data)
 	CtkActionGroup *action_group;
 	gchar *ui_path;
 
-	context = ctk_widget_get_style_context (GTK_WIDGET (applet));
+	context = ctk_widget_get_style_context (CTK_WIDGET (applet));
 	ctk_style_context_add_class (context, "multiload-applet");
 
 	ma = g_new0(MultiloadApplet, 1);
@@ -517,7 +517,7 @@ multiload_applet_new(CafePanelApplet *applet, const gchar *iid, gpointer data)
 	g_set_application_name (_("System Monitor"));
 
 	ctk_window_set_default_icon_name ("utilities-system-monitor");
-	cafe_panel_applet_set_background_widget (applet, GTK_WIDGET(applet));
+	cafe_panel_applet_set_background_widget (applet, CTK_WIDGET(applet));
 
 	ma->settings = cafe_panel_applet_settings_new (applet, "org.cafe.panel.applet.multiload");
 	cafe_panel_applet_set_flags (applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
@@ -567,7 +567,7 @@ multiload_applet_new(CafePanelApplet *applet, const gchar *iid, gpointer data)
 
 	multiload_applet_refresh (ma);
 
-	ctk_widget_show(GTK_WIDGET(applet));
+	ctk_widget_show(CTK_WIDGET(applet));
 
 	return TRUE;
 }

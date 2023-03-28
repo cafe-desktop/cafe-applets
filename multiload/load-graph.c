@@ -419,9 +419,9 @@ load_graph_new (MultiloadApplet *ma, guint n, const gchar *label,
     g->show_frame = TRUE;
     g->multiload = ma;
 
-    g->main_widget = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+    g->main_widget = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
 
-    g->box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+    g->box = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
 
     orient = cafe_panel_applet_get_orient (g->multiload->applet);
     switch (orient)
@@ -445,14 +445,14 @@ load_graph_new (MultiloadApplet *ma, guint n, const gchar *label,
     if (g->show_frame)
     {
         g->frame = ctk_frame_new (NULL);
-        ctk_frame_set_shadow_type (GTK_FRAME (g->frame), GTK_SHADOW_IN);
-        ctk_container_add (GTK_CONTAINER (g->frame), g->box);
-        ctk_box_pack_start (GTK_BOX (g->main_widget), g->frame, TRUE, TRUE, 0);
+        ctk_frame_set_shadow_type (CTK_FRAME (g->frame), CTK_SHADOW_IN);
+        ctk_container_add (CTK_CONTAINER (g->frame), g->box);
+        ctk_box_pack_start (CTK_BOX (g->main_widget), g->frame, TRUE, TRUE, 0);
     }
     else
     {
         g->frame = NULL;
-        ctk_box_pack_start (GTK_BOX (g->main_widget), g->box, TRUE, TRUE, 0);
+        ctk_box_pack_start (CTK_BOX (g->main_widget), g->box, TRUE, TRUE, 0);
     }
 
     load_graph_load_config (g);
@@ -485,7 +485,7 @@ load_graph_new (MultiloadApplet *ma, guint n, const gchar *label,
     g_signal_connect (G_OBJECT(g->disp), "leave-notify-event",
                       G_CALLBACK(load_graph_leave_cb), g);
 
-    ctk_box_pack_start (GTK_BOX (g->box), g->disp, TRUE, TRUE, 0);
+    ctk_box_pack_start (CTK_BOX (g->box), g->disp, TRUE, TRUE, 0);
     ctk_widget_show_all(g->box);
 
     return g;

@@ -168,7 +168,7 @@ cpufreq_popup_set_parent (CPUFreqPopup *popup,
 			  CtkWidget    *parent)
 {
 	g_return_if_fail (CPUFREQ_IS_POPUP (popup));
-	g_return_if_fail (GTK_IS_WIDGET (parent));
+	g_return_if_fail (CTK_IS_WIDGET (parent));
 
 	popup->priv->parent = parent;
 }
@@ -182,7 +182,7 @@ cpufreq_popup_frequencies_menu_activate (CtkAction    *action,
 	guint            cpu;
 	guint            freq;
 
-	if (!ctk_toggle_action_get_active (GTK_TOGGLE_ACTION (action)))
+	if (!ctk_toggle_action_get_active (CTK_TOGGLE_ACTION (action)))
 		return;
 
 	selector = cpufreq_selector_get_default ();
@@ -203,7 +203,7 @@ cpufreq_popup_governors_menu_activate (CtkAction    *action,
 	guint            cpu;
 	const gchar     *governor;
 
-	if (!ctk_toggle_action_get_active (GTK_TOGGLE_ACTION (action)))
+	if (!ctk_toggle_action_get_active (CTK_TOGGLE_ACTION (action)))
 		return;
 
 	selector = cpufreq_selector_get_default ();
@@ -228,15 +228,15 @@ cpufreq_popup_menu_add_action (CPUFreqPopup   *popup,
 
 	name = g_strdup_printf ("%s%s", menu, action_name);
 	
-	action = g_object_new (GTK_TYPE_RADIO_ACTION,
+	action = g_object_new (CTK_TYPE_RADIO_ACTION,
 			       "name", name,
 			       "label", label,
 			       NULL);
 
-	ctk_action_set_sensitive (GTK_ACTION (action), sensitive);
+	ctk_action_set_sensitive (CTK_ACTION (action), sensitive);
 	
-	ctk_radio_action_set_group (GTK_RADIO_ACTION (action), popup->priv->radio_group);
-	popup->priv->radio_group = ctk_radio_action_get_group (GTK_RADIO_ACTION (action));
+	ctk_radio_action_set_group (CTK_RADIO_ACTION (action), popup->priv->radio_group);
+	popup->priv->radio_group = ctk_radio_action_get_group (CTK_RADIO_ACTION (action));
 	
 	if (g_ascii_strcasecmp (menu, "Frequency") == 0) {
 		popup->priv->freqs_actions = g_slist_prepend (popup->priv->freqs_actions,
@@ -254,7 +254,7 @@ cpufreq_popup_menu_add_action (CPUFreqPopup   *popup,
 				  (gpointer) popup);
 	}
 
-	ctk_action_group_add_action (action_group, GTK_ACTION (action));
+	ctk_action_group_add_action (action_group, CTK_ACTION (action));
 	g_object_unref (action);
 	
 	g_free (name);
@@ -349,7 +349,7 @@ cpufreq_popup_build_ui (CPUFreqPopup *popup,
 				       popup->priv->merge_id,
 				       menu_path,
 				       label, name,
-				       GTK_UI_MANAGER_MENUITEM,
+				       CTK_UI_MANAGER_MENUITEM,
 				       FALSE);
 		
 		g_free (name);
@@ -447,7 +447,7 @@ cpufreq_popup_menu_set_active_action (CPUFreqPopup   *popup,
 					 cpufreq_popup_governors_menu_activate,
 					 popup);
 	
-	ctk_toggle_action_set_active (GTK_TOGGLE_ACTION (action), TRUE);
+	ctk_toggle_action_set_active (CTK_TOGGLE_ACTION (action), TRUE);
 
 	g_signal_handlers_unblock_by_func (action,
 					   cpufreq_popup_frequencies_menu_activate,

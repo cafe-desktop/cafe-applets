@@ -122,7 +122,7 @@
 
   * Translations update
   * Cpufreq: Force the frequency label to render if frequencies are not found right away
-  * Cpufreq: Refactor to remove more GTK2 leftovers
+  * Cpufreq: Refactor to remove more CTK2 leftovers
   * Cpufreq: ensure frequency label always shows up if freq selected
   * accessx: Convert icons from pixbuf to cairo surfaces
   * netspeed: Use theme icons instead of embedded
@@ -137,7 +137,7 @@
 ### cafe-applets 1.20.0
 
   * Translations update
-  * require GTK+ 3.22 and GLib 2.50
+  * require CTK+ 3.22 and GLib 2.50
   * multiload: Scaling network graph using thresholds defined by user
   * multiload: fix tabs/spaces mix in more places
   * multiload: fix spacing in some places
@@ -215,11 +215,11 @@
   * NEWS: use consistent, project wide, markdown-like formatting
     to make generating release announcements easier
   * Build: require libcafeweather and cafe-panel >= 1.17
-  * Move to GTK+3 (require GTK+ >= 3.14), drop GTK+2 code and
+  * Move to CTK+3 (require CTK+ >= 3.14), drop CTK+2 code and
     --with-ctk build option
   * Weather: fix temperature label placement
   * Weather: show proper help section for each tab of prefs dialog
-  * Fix some GTK+ deprecations and runtime warnings
+  * Fix some CTK+ deprecations and runtime warnings
   * Some code cleanups
   * Translations update
 
@@ -229,7 +229,7 @@
   * Use CtkAboutDialog instead of CafeAboutDialog
   * Netspeed: use CtkColorButton/CtkColorChooser
   * Drop dependency on libcafe-desktop
-  * GTK+3: fix various deprecations
+  * CTK+3: fix various deprecations
   * Some code cleanups
   * Translations update
 
@@ -242,7 +242,7 @@
   * Netspeed: fix default route
   * Some more fixes and cleanups
   * Translations update
-  * Make distcheck use currently selected GTK+ version
+  * Make distcheck use currently selected CTK+ version
 
 ### cafe-applets 1.14.0
 
@@ -251,16 +251,16 @@
   * Re-license command and timer applets under GPL-2+
   * Merge netspeed applet from cafe-netspeed project (and discontinue
     that project)
-  * GTK+3: fix cpufreq applet rendering
-  * GTK+3: fix setting fg/bg colors and font type in stickynotes applet
-  * GTK+3: fix several deprecations
+  * CTK+3: fix cpufreq applet rendering
+  * CTK+3: fix setting fg/bg colors and font type in stickynotes applet
+  * CTK+3: fix several deprecations
   * Some more fixes and cleanups
   * Translations update
   * Fix Changelog generation
 
 ### cafe-applets 1.12.1
 
-  * Drivemount: fix invisible text with some GTK+3 themes
+  * Drivemount: fix invisible text with some CTK+3 themes
   * Translations update
 
 ### cafe-applets 1.12.0
@@ -269,9 +269,9 @@
   * Cpufreq: make cpupower the default library
   * Retrieve strings directly from gschema (requires intltool 0.50.1)
   * Drop useless dependency on cafe-icon-theme
-  * GTK+3: fix missing icons with custom icon theme
-  * GTK+3: make cpufreq, charpick and drivemount support custom panel themes
-  * Some more GTK+3 fixes
+  * CTK+3: fix missing icons with custom icon theme
+  * CTK+3: make cpufreq, charpick and drivemount support custom panel themes
+  * Some more CTK+3 fixes
   * Several small fixes and cleanups
 
 ### cafe-applets 1.10.3
@@ -290,7 +290,7 @@
   * Battstat applet: fix NetBSD APM support
   * Invest applet: display proper icon in About dialog
   * Multiple help fixes in several applets
-  * GTK+3 fixes
+  * CTK+3 fixes
 
 ### cafe-applets 1.10.0
 

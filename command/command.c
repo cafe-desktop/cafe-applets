@@ -137,7 +137,7 @@ command_text_changed (CtkWidget *widget, GdkEvent  *event, gpointer user_data)
     CommandApplet *command_applet;
 
     command_applet = (CommandApplet*) user_data;
-    text = ctk_entry_get_text (GTK_ENTRY(widget));
+    text = ctk_entry_get_text (CTK_ENTRY(widget));
     if (g_strcmp0(command_applet->cmdline, text) == 0) {
         return TRUE;
     }
@@ -191,38 +191,38 @@ command_settings_callback (CtkAction *action, CommandApplet *command_applet)
     CtkWidget *width;
     CtkWidget *showicon;
 
-    dialog = GTK_DIALOG (ctk_dialog_new_with_buttons(_("Command Applet Preferences"),
+    dialog = CTK_DIALOG (ctk_dialog_new_with_buttons(_("Command Applet Preferences"),
                                                      NULL,
-                                                     GTK_DIALOG_MODAL,
+                                                     CTK_DIALOG_MODAL,
                                                      "ctk-close",
-                                                     GTK_RESPONSE_CLOSE,
+                                                     CTK_RESPONSE_CLOSE,
                                                      NULL));
-    grid = GTK_GRID (ctk_grid_new ());
+    grid = CTK_GRID (ctk_grid_new ());
     ctk_grid_set_row_spacing (grid, 12);
     ctk_grid_set_column_spacing (grid, 12);
 
-    ctk_window_set_default_size (GTK_WINDOW (dialog), 350, 150);
-    ctk_container_set_border_width (GTK_CONTAINER (dialog), 10);
+    ctk_window_set_default_size (CTK_WINDOW (dialog), 350, 150);
+    ctk_container_set_border_width (CTK_CONTAINER (dialog), 10);
 
     widget = ctk_label_new (_("Command:"));
-    ctk_label_set_xalign (GTK_LABEL (widget), 1.0);
-    ctk_label_set_yalign (GTK_LABEL (widget), 0.5);
+    ctk_label_set_xalign (CTK_LABEL (widget), 1.0);
+    ctk_label_set_yalign (CTK_LABEL (widget), 0.5);
     ctk_grid_attach (grid, widget, 1, 0, 1, 1);
 
     command = ctk_entry_new ();
     ctk_grid_attach (grid, command, 2, 0, 1, 1);
 
     widget = ctk_label_new (_("Interval (seconds):"));
-    ctk_label_set_xalign (GTK_LABEL (widget), 1.0);
-    ctk_label_set_yalign (GTK_LABEL (widget), 0.5);
+    ctk_label_set_xalign (CTK_LABEL (widget), 1.0);
+    ctk_label_set_yalign (CTK_LABEL (widget), 0.5);
     ctk_grid_attach (grid, widget, 1, 1, 1, 1);
 
     interval = ctk_spin_button_new_with_range (1.0, 86400.0, 1.0);
     ctk_grid_attach (grid, interval, 2, 1, 1, 1);
 
     widget = ctk_label_new (_("Maximum width (chars):"));
-    ctk_label_set_xalign (GTK_LABEL (widget), 1.0);
-    ctk_label_set_yalign (GTK_LABEL (widget), 0.5);
+    ctk_label_set_xalign (CTK_LABEL (widget), 1.0);
+    ctk_label_set_yalign (CTK_LABEL (widget), 0.5);
     ctk_grid_attach (grid, widget, 1, 2, 1, 1);
 
     width = ctk_spin_button_new_with_range(1.0, 100.0, 1.0);
@@ -231,7 +231,7 @@ command_settings_callback (CtkAction *action, CommandApplet *command_applet)
     showicon = ctk_check_button_new_with_label (_("Show icon"));
     ctk_grid_attach (grid, showicon, 2, 3, 1, 1);
 
-    ctk_box_pack_start (GTK_BOX (ctk_dialog_get_content_area (dialog)), GTK_WIDGET (grid), TRUE, TRUE, 0);
+    ctk_box_pack_start (CTK_BOX (ctk_dialog_get_content_area (dialog)), CTK_WIDGET (grid), TRUE, TRUE, 0);
 
     g_signal_connect (dialog, "response", G_CALLBACK (ctk_widget_destroy), dialog);
 
@@ -244,7 +244,7 @@ command_settings_callback (CtkAction *action, CommandApplet *command_applet)
     g_settings_bind (command_applet->settings, WIDTH_KEY, width, "value", G_SETTINGS_BIND_GET_NO_CHANGES);
     g_settings_bind (command_applet->settings, SHOW_ICON_KEY, showicon, "active", G_SETTINGS_BIND_DEFAULT);
 
-    ctk_widget_show_all (GTK_WIDGET (dialog));
+    ctk_widget_show_all (CTK_WIDGET (dialog));
 }
 
 /* GSettings signal callbacks */
@@ -308,7 +308,7 @@ settings_interval_changed (GSettings *settings, gchar *key, CommandApplet *comma
 static void
 process_command_output (CommandApplet *command_applet, gchar *output)
 {
-    ctk_widget_set_tooltip_text (GTK_WIDGET (command_applet->label), command_applet->cmdline);
+    ctk_widget_set_tooltip_text (CTK_WIDGET (command_applet->label), command_applet->cmdline);
 
     if ((output == NULL) || (output[0] == '\0'))
     {
@@ -444,7 +444,7 @@ command_applet_fill (CafePanelApplet* applet)
     ctk_window_set_default_icon_name (APPLET_ICON);
 
     cafe_panel_applet_set_flags (applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
-    cafe_panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
+    cafe_panel_applet_set_background_widget (applet, CTK_WIDGET (applet));
 
     command_applet = g_malloc0(sizeof(CommandApplet));
     command_applet->applet = applet;
@@ -456,23 +456,23 @@ command_applet_fill (CafePanelApplet* applet)
     command_applet->command = ma_command_new(command_applet->cmdline, NULL);
     command_applet->cancellable = g_cancellable_new ();
 
-    command_applet->box = GTK_BOX (ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0));
-    command_applet->image = GTK_IMAGE (ctk_image_new_from_icon_name (APPLET_ICON, 24));
-    command_applet->label = GTK_LABEL (ctk_label_new (ERROR_OUTPUT));
+    command_applet->box = CTK_BOX (ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 0));
+    command_applet->image = CTK_IMAGE (ctk_image_new_from_icon_name (APPLET_ICON, 24));
+    command_applet->label = CTK_LABEL (ctk_label_new (ERROR_OUTPUT));
     command_applet->timeout_id = 0;
 
     /* we add the Ctk label into the applet */
     ctk_box_pack_start (command_applet->box,
-                        GTK_WIDGET (command_applet->image),
+                        CTK_WIDGET (command_applet->image),
                         TRUE, TRUE, 0);
     ctk_box_pack_start (command_applet->box,
-                        GTK_WIDGET (command_applet->label),
+                        CTK_WIDGET (command_applet->label),
                         TRUE, TRUE, 0);
 
-    ctk_container_add (GTK_CONTAINER (applet),
-                       GTK_WIDGET (command_applet->box));
+    ctk_container_add (CTK_CONTAINER (applet),
+                       CTK_WIDGET (command_applet->box));
 
-    ctk_widget_show_all (GTK_WIDGET (command_applet->applet));
+    ctk_widget_show_all (CTK_WIDGET (command_applet->applet));
 
     g_signal_connect(G_OBJECT (command_applet->applet), "destroy",
                      G_CALLBACK (command_applet_destroy),

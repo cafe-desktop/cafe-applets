@@ -122,17 +122,17 @@ load_theme (EyesApplet *eyes_applet, const gchar *theme_dir)
 	/* if it's still NULL we've got a major problem */
 	if (theme_file == NULL) {
 		dialog = ctk_message_dialog_new_with_markup (NULL,
-				GTK_DIALOG_DESTROY_WITH_PARENT,
-				GTK_MESSAGE_ERROR,
-				GTK_BUTTONS_OK,
+				CTK_DIALOG_DESTROY_WITH_PARENT,
+				CTK_MESSAGE_ERROR,
+				CTK_BUTTONS_OK,
 				"<b>%s</b>\n\n%s",
 				_("Can not launch the eyes applet."),
 				_("There was a fatal error while trying to load the theme."));
 
-		ctk_dialog_run (GTK_DIALOG (dialog));
+		ctk_dialog_run (CTK_DIALOG (dialog));
 		ctk_widget_destroy (dialog);
 
-		ctk_widget_destroy (GTK_WIDGET (eyes_applet->applet));
+		ctk_widget_destroy (CTK_WIDGET (eyes_applet->applet));
 
 		return FALSE;
 	}
@@ -213,17 +213,17 @@ phelp_cb (CtkDialog *dialog)
 {
 	GError *error = NULL;
 
-	ctk_show_uri_on_window (GTK_WINDOW (dialog),
+	ctk_show_uri_on_window (CTK_WINDOW (dialog),
 	                        "help:cafe-geyes/geyes-settings",
 	                        ctk_get_current_event_time (),
 	                        &error);
 
 	if (error) {
-		CtkWidget *error_dialog = ctk_message_dialog_new (NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE,
+		CtkWidget *error_dialog = ctk_message_dialog_new (NULL, CTK_DIALOG_MODAL, CTK_MESSAGE_ERROR, CTK_BUTTONS_CLOSE,
 								  _("There was an error displaying help: %s"), error->message);
 		g_signal_connect (G_OBJECT (error_dialog), "response", G_CALLBACK (ctk_widget_destroy) , NULL);
-		ctk_window_set_resizable (GTK_WINDOW (error_dialog), FALSE);
-		ctk_window_set_screen (GTK_WINDOW (error_dialog), ctk_widget_get_screen (GTK_WIDGET (dialog)));
+		ctk_window_set_resizable (CTK_WINDOW (error_dialog), FALSE);
+		ctk_window_set_screen (CTK_WINDOW (error_dialog), ctk_widget_get_screen (CTK_WIDGET (dialog)));
 		ctk_widget_show (error_dialog);
 		g_error_free (error);
 		error = NULL;
@@ -234,13 +234,13 @@ static void
 presponse_cb (CtkDialog *dialog, gint id, gpointer data)
 {
 	EyesApplet *eyes_applet = data;
-	if(id == GTK_RESPONSE_HELP){
+	if(id == CTK_RESPONSE_HELP){
 		phelp_cb (dialog);
 		return;
 	}
 
 
-	ctk_widget_destroy (GTK_WIDGET (dialog));
+	ctk_widget_destroy (CTK_WIDGET (dialog));
 
 	eyes_applet->prop_box.pbox = NULL;
 }
@@ -273,90 +273,90 @@ properties_cb (CtkAction  *action,
 
 	if (eyes_applet->prop_box.pbox) {
 		ctk_window_set_screen (
-			GTK_WINDOW (eyes_applet->prop_box.pbox),
-			ctk_widget_get_screen (GTK_WIDGET (eyes_applet->applet)));
-		ctk_window_present (GTK_WINDOW (eyes_applet->prop_box.pbox));
+			CTK_WINDOW (eyes_applet->prop_box.pbox),
+			ctk_widget_get_screen (CTK_WIDGET (eyes_applet->applet)));
+		ctk_window_present (CTK_WINDOW (eyes_applet->prop_box.pbox));
 		return;
 	}
 
         pbox = ctk_dialog_new_with_buttons (_("Eyes Preferences"), NULL,
-        				     GTK_DIALOG_DESTROY_WITH_PARENT,
-					     "ctk-close", GTK_RESPONSE_CLOSE,
-					     "ctk-help", GTK_RESPONSE_HELP,
+        				     CTK_DIALOG_DESTROY_WITH_PARENT,
+					     "ctk-close", CTK_RESPONSE_CLOSE,
+					     "ctk-help", CTK_RESPONSE_HELP,
 					     NULL);
 
-	ctk_window_set_screen (GTK_WINDOW (pbox),
-			       ctk_widget_get_screen (GTK_WIDGET (eyes_applet->applet)));
+	ctk_window_set_screen (CTK_WINDOW (pbox),
+			       ctk_widget_get_screen (CTK_WIDGET (eyes_applet->applet)));
 
-	ctk_widget_set_size_request (GTK_WIDGET (pbox), 300, 200);
-        ctk_dialog_set_default_response(GTK_DIALOG (pbox), GTK_RESPONSE_CLOSE);
-        ctk_container_set_border_width (GTK_CONTAINER (pbox), 5);
-	ctk_box_set_spacing (GTK_BOX (ctk_dialog_get_content_area (GTK_DIALOG (pbox))), 2);
+	ctk_widget_set_size_request (CTK_WIDGET (pbox), 300, 200);
+        ctk_dialog_set_default_response(CTK_DIALOG (pbox), CTK_RESPONSE_CLOSE);
+        ctk_container_set_border_width (CTK_CONTAINER (pbox), 5);
+	ctk_box_set_spacing (CTK_BOX (ctk_dialog_get_content_area (CTK_DIALOG (pbox))), 2);
 
         g_signal_connect (pbox, "response",
 			  G_CALLBACK (presponse_cb),
 			  eyes_applet);
 
-	vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	ctk_container_set_border_width (GTK_CONTAINER (vbox), 5);
+	vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
+	ctk_container_set_border_width (CTK_CONTAINER (vbox), 5);
 	ctk_widget_show (vbox);
 
-	ctk_box_pack_start (GTK_BOX (ctk_dialog_get_content_area (GTK_DIALOG (pbox))), vbox,
+	ctk_box_pack_start (CTK_BOX (ctk_dialog_get_content_area (CTK_DIALOG (pbox))), vbox,
 			    TRUE, TRUE, 0);
 
-	categories_vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 18);
-	ctk_box_pack_start (GTK_BOX (vbox), categories_vbox, TRUE, TRUE, 0);
+	categories_vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 18);
+	ctk_box_pack_start (CTK_BOX (vbox), categories_vbox, TRUE, TRUE, 0);
 	ctk_widget_show (categories_vbox);
 
-	category_vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-	ctk_box_pack_start (GTK_BOX (categories_vbox), category_vbox, TRUE, TRUE, 0);
+	category_vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 6);
+	ctk_box_pack_start (CTK_BOX (categories_vbox), category_vbox, TRUE, TRUE, 0);
 	ctk_widget_show (category_vbox);
 
 	title = g_strconcat ("<span weight=\"bold\">", _("Themes"), "</span>", NULL);
 	label = ctk_label_new (_(title));
-	ctk_label_set_use_markup (GTK_LABEL (label), TRUE);
-	ctk_label_set_justify (GTK_LABEL (label), GTK_JUSTIFY_LEFT);
-	ctk_label_set_xalign (GTK_LABEL (label), 0.0);
-	ctk_box_pack_start (GTK_BOX (category_vbox), label, FALSE, FALSE, 0);
+	ctk_label_set_use_markup (CTK_LABEL (label), TRUE);
+	ctk_label_set_justify (CTK_LABEL (label), CTK_JUSTIFY_LEFT);
+	ctk_label_set_xalign (CTK_LABEL (label), 0.0);
+	ctk_box_pack_start (CTK_BOX (category_vbox), label, FALSE, FALSE, 0);
 	g_free (title);
 
-	hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-	ctk_box_pack_start (GTK_BOX (category_vbox), hbox, TRUE, TRUE, 0);
+	hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 0);
+	ctk_box_pack_start (CTK_BOX (category_vbox), hbox, TRUE, TRUE, 0);
 	ctk_widget_show (hbox);
 
 	indent = ctk_label_new (HIG_IDENTATION);
-	ctk_label_set_justify (GTK_LABEL (indent), GTK_JUSTIFY_LEFT);
-	ctk_box_pack_start (GTK_BOX (hbox), indent, FALSE, FALSE, 0);
+	ctk_label_set_justify (CTK_LABEL (indent), CTK_JUSTIFY_LEFT);
+	ctk_box_pack_start (CTK_BOX (hbox), indent, FALSE, FALSE, 0);
 	ctk_widget_show (indent);
 
-	control_vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-	ctk_box_pack_start (GTK_BOX (hbox), control_vbox, TRUE, TRUE, 0);
+	control_vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 6);
+	ctk_box_pack_start (CTK_BOX (hbox), control_vbox, TRUE, TRUE, 0);
 	ctk_widget_show (control_vbox);
 
 	label = ctk_label_new_with_mnemonic (_("_Select a theme:"));
-	ctk_label_set_xalign (GTK_LABEL (label), 0.0);
-	ctk_box_pack_start (GTK_BOX (control_vbox), label, FALSE, FALSE, 0);
+	ctk_label_set_xalign (CTK_LABEL (label), 0.0);
+	ctk_box_pack_start (CTK_BOX (control_vbox), label, FALSE, FALSE, 0);
 
 	scrolled = ctk_scrolled_window_new (NULL, NULL);
-	ctk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (scrolled), GTK_SHADOW_IN);
-	ctk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (scrolled),
-					GTK_POLICY_AUTOMATIC,
-					GTK_POLICY_AUTOMATIC);
+	ctk_scrolled_window_set_shadow_type (CTK_SCROLLED_WINDOW (scrolled), CTK_SHADOW_IN);
+	ctk_scrolled_window_set_policy (CTK_SCROLLED_WINDOW (scrolled),
+					CTK_POLICY_AUTOMATIC,
+					CTK_POLICY_AUTOMATIC);
 
 	model = ctk_list_store_new (TOTAL_COLS, G_TYPE_STRING, G_TYPE_STRING);
-	tree = ctk_tree_view_new_with_model (GTK_TREE_MODEL (model));
-	ctk_tree_view_set_headers_visible (GTK_TREE_VIEW (tree), FALSE);
-	ctk_label_set_mnemonic_widget (GTK_LABEL (label), tree);
+	tree = ctk_tree_view_new_with_model (CTK_TREE_MODEL (model));
+	ctk_tree_view_set_headers_visible (CTK_TREE_VIEW (tree), FALSE);
+	ctk_label_set_mnemonic_widget (CTK_LABEL (label), tree);
 	g_object_unref (model);
 
-	ctk_container_add (GTK_CONTAINER (scrolled), tree);
+	ctk_container_add (CTK_CONTAINER (scrolled), tree);
 
 	cell = ctk_cell_renderer_text_new ();
 	column = ctk_tree_view_column_new_with_attributes ("not used", cell,
                                                            "text", COL_THEME_NAME, NULL);
-        ctk_tree_view_append_column (GTK_TREE_VIEW (tree), column);
+        ctk_tree_view_append_column (CTK_TREE_VIEW (tree), column);
 
-        selection = ctk_tree_view_get_selection (GTK_TREE_VIEW (tree));
+        selection = ctk_tree_view_get_selection (CTK_TREE_VIEW (tree));
 	g_signal_connect (selection, "changed",
 			  G_CALLBACK (theme_selected_cb),
 			  eyes_applet);
@@ -390,9 +390,9 @@ properties_cb (CtkAction  *action,
 
 					if (!g_ascii_strncasecmp (eyes_applet->theme_dir, theme_dir, strlen (theme_dir))) {
                                         	CtkTreePath *path;
-                                        	path = ctk_tree_model_get_path (GTK_TREE_MODEL (model),
+                                        	path = ctk_tree_model_get_path (CTK_TREE_MODEL (model),
                                                         			&iter);
-                                                ctk_tree_view_set_cursor (GTK_TREE_VIEW (tree),
+                                                ctk_tree_view_set_cursor (CTK_TREE_VIEW (tree),
                                                 			  path,
                                                 			  NULL,
                                                 			  FALSE);
@@ -409,7 +409,7 @@ properties_cb (CtkAction  *action,
 	g_free (filename);
 #endif
 
-        ctk_box_pack_start (GTK_BOX (control_vbox), scrolled, TRUE, TRUE, 0);
+        ctk_box_pack_start (CTK_BOX (control_vbox), scrolled, TRUE, TRUE, 0);
 
         ctk_widget_show_all (pbox);
 

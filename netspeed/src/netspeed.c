@@ -155,7 +155,7 @@ change_icons(CafeNetspeedApplet *applet)
 	icon_size = CLAMP (icon_size, 16, 48);
 
 	icon_theme = ctk_icon_theme_get_default();
-	icon_scale = ctk_widget_get_scale_factor (GTK_WIDGET (applet->applet));
+	icon_scale = ctk_widget_get_scale_factor (CTK_WIDGET (applet->applet));
 
 	/* If the user wants a different icon than current, we load it */
 	if (applet->show_icon && applet->change_icon) {
@@ -180,8 +180,8 @@ change_icons(CafeNetspeedApplet *applet)
 	/* Set the windowmanager icon for the applet */
 	ctk_window_set_default_icon_name(LOGO_ICON);
 
-	ctk_image_set_from_surface(GTK_IMAGE(applet->out_pix), out_arrow);
-	ctk_image_set_from_surface(GTK_IMAGE(applet->in_pix), in_arrow);
+	ctk_image_set_from_surface(CTK_IMAGE(applet->out_pix), out_arrow);
+	ctk_image_set_from_surface(CTK_IMAGE(applet->in_pix), in_arrow);
 	cairo_surface_destroy(in_arrow);
 	cairo_surface_destroy(out_arrow);
 
@@ -219,7 +219,7 @@ change_icons(CafeNetspeedApplet *applet)
 
 	if (applet->show_icon) {
 		ctk_widget_show(applet->dev_pix);
-		ctk_image_set_from_surface(GTK_IMAGE(applet->dev_pix), dev);
+		ctk_image_set_from_surface(CTK_IMAGE(applet->dev_pix), dev);
 	} else {
 		ctk_widget_hide(applet->dev_pix);
 	}
@@ -249,57 +249,57 @@ applet_change_size_or_orient(CafePanelApplet *applet_widget, int arg1, CafeNetsp
 	g_object_ref(applet->sum_label);
 
 	if (applet->in_box) {
-		ctk_container_remove(GTK_CONTAINER(applet->in_box), applet->in_label);
-		ctk_container_remove(GTK_CONTAINER(applet->in_box), applet->in_pix);
+		ctk_container_remove(CTK_CONTAINER(applet->in_box), applet->in_label);
+		ctk_container_remove(CTK_CONTAINER(applet->in_box), applet->in_pix);
 		ctk_widget_destroy(applet->in_box);
 	}
 	if (applet->out_box) {
-		ctk_container_remove(GTK_CONTAINER(applet->out_box), applet->out_label);
-		ctk_container_remove(GTK_CONTAINER(applet->out_box), applet->out_pix);
+		ctk_container_remove(CTK_CONTAINER(applet->out_box), applet->out_label);
+		ctk_container_remove(CTK_CONTAINER(applet->out_box), applet->out_pix);
 		ctk_widget_destroy(applet->out_box);
 	}
 	if (applet->sum_box) {
-		ctk_container_remove(GTK_CONTAINER(applet->sum_box), applet->sum_label);
+		ctk_container_remove(CTK_CONTAINER(applet->sum_box), applet->sum_label);
 		ctk_widget_destroy(applet->sum_box);
 	}
 	if (applet->box) {
-		ctk_container_remove(GTK_CONTAINER(applet->box), applet->pix_box);
+		ctk_container_remove(CTK_CONTAINER(applet->box), applet->pix_box);
 		ctk_widget_destroy(applet->box);
 	}
 
 	if (orient == CAFE_PANEL_APPLET_ORIENT_LEFT || orient == CAFE_PANEL_APPLET_ORIENT_RIGHT) {
-		applet->box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-		applet->speed_box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+		applet->box = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
+		applet->speed_box = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
 		if (size > 64) {
-			applet->sum_box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
-			applet->in_box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 1);
-			applet->out_box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 1);
+			applet->sum_box = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 2);
+			applet->in_box = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 1);
+			applet->out_box = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 1);
 		} else {
-			applet->sum_box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-			applet->in_box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-			applet->out_box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+			applet->sum_box = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
+			applet->in_box = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
+			applet->out_box = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
 		}
 		applet->labels_dont_shrink = FALSE;
 	} else {
-		applet->in_box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 1);
-		applet->out_box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 1);
-		applet->box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 1);
-		applet->sum_box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
+		applet->in_box = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 1);
+		applet->out_box = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 1);
+		applet->box = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 1);
+		applet->sum_box = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 2);
 		if (size < 48) {
-			applet->speed_box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 1);
+			applet->speed_box = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 1);
 			applet->labels_dont_shrink = TRUE;
 		} else {
-			applet->speed_box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+			applet->speed_box = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
 			applet->labels_dont_shrink = !applet->show_sum;
 		}
 	}
 
-	ctk_box_pack_start(GTK_BOX(applet->in_box), applet->in_pix, FALSE, FALSE, 0);
-	ctk_box_pack_start(GTK_BOX(applet->in_box), applet->in_label, TRUE, TRUE, 0);
-	ctk_box_pack_start(GTK_BOX(applet->out_box), applet->out_pix, FALSE, FALSE, 0);
-	ctk_box_pack_start(GTK_BOX(applet->out_box), applet->out_label, TRUE, TRUE, 0);
-	ctk_box_pack_start(GTK_BOX(applet->sum_box), applet->sum_label, TRUE, TRUE, 0);
-	ctk_box_pack_start(GTK_BOX(applet->box), applet->pix_box, FALSE, FALSE, 0);
+	ctk_box_pack_start(CTK_BOX(applet->in_box), applet->in_pix, FALSE, FALSE, 0);
+	ctk_box_pack_start(CTK_BOX(applet->in_box), applet->in_label, TRUE, TRUE, 0);
+	ctk_box_pack_start(CTK_BOX(applet->out_box), applet->out_pix, FALSE, FALSE, 0);
+	ctk_box_pack_start(CTK_BOX(applet->out_box), applet->out_label, TRUE, TRUE, 0);
+	ctk_box_pack_start(CTK_BOX(applet->sum_box), applet->sum_label, TRUE, TRUE, 0);
+	ctk_box_pack_start(CTK_BOX(applet->box), applet->pix_box, FALSE, FALSE, 0);
 
 	g_object_unref(applet->pix_box);
 	g_object_unref(applet->in_pix);
@@ -309,18 +309,18 @@ applet_change_size_or_orient(CafePanelApplet *applet_widget, int arg1, CafeNetsp
 	g_object_unref(applet->sum_label);
 
 	if (applet->show_sum) {
-		ctk_box_pack_start(GTK_BOX(applet->speed_box), applet->sum_box, TRUE, TRUE, 0);
+		ctk_box_pack_start(CTK_BOX(applet->speed_box), applet->sum_box, TRUE, TRUE, 0);
 	} else {
-		ctk_box_pack_start(GTK_BOX(applet->speed_box), applet->in_box, TRUE, TRUE, 0);
-		ctk_box_pack_start(GTK_BOX(applet->speed_box), applet->out_box, TRUE, TRUE, 0);
+		ctk_box_pack_start(CTK_BOX(applet->speed_box), applet->in_box, TRUE, TRUE, 0);
+		ctk_box_pack_start(CTK_BOX(applet->speed_box), applet->out_box, TRUE, TRUE, 0);
 	}
-	ctk_box_pack_start(GTK_BOX(applet->box), applet->speed_box, TRUE, TRUE, 0);
+	ctk_box_pack_start(CTK_BOX(applet->box), applet->speed_box, TRUE, TRUE, 0);
 
 	ctk_widget_show_all(applet->box);
 	if (!applet->show_icon) {
 		ctk_widget_hide(applet->dev_pix);
 	}
-	ctk_container_add(GTK_CONTAINER(applet->applet), applet->box);
+	ctk_container_add(CTK_CONTAINER(applet->applet), applet->box);
 
 	change_icons (applet);
 }
@@ -350,7 +350,7 @@ update_quality_icon(CafeNetspeedApplet *applet)
 	q = (applet->devinfo.qual);
 	q /= 25;
 	q = CLAMP(q, 0, 3); /* q out of range would crash when accessing qual_surfaces[q] */
-	ctk_image_set_from_surface (GTK_IMAGE(applet->qual_pix), applet->qual_surfaces[q]);
+	ctk_image_set_from_surface (CTK_IMAGE(applet->qual_pix), applet->qual_surfaces[q]);
 }
 
 static void
@@ -365,7 +365,7 @@ init_quality_surfaces(CafeNetspeedApplet *applet)
 	gint icon_size = 24;
 
 	icon_theme = ctk_icon_theme_get_default();
-	icon_scale = ctk_widget_get_scale_factor (GTK_WIDGET (applet->applet));
+	icon_scale = ctk_widget_get_scale_factor (CTK_WIDGET (applet->applet));
 
 	for (i = 0; i < 4; i++) {
 		if (applet->qual_surfaces[i])
@@ -470,7 +470,7 @@ bytes_to_string(double bytes, gboolean per_sec, gboolean bits, gboolean shortene
 static void
 redraw_graph(CafeNetspeedApplet *applet, cairo_t *cr)
 {
-	CtkWidget *da = GTK_WIDGET(applet->drawingarea);
+	CtkWidget *da = CTK_WIDGET(applet->drawingarea);
 	CtkStyleContext *stylecontext = ctk_widget_get_style_context (da);
 	GdkWindow *real_window = ctk_widget_get_window (da);
 	GdkPoint in_points[GRAPH_VALUES], out_points[GRAPH_VALUES];
@@ -679,8 +679,8 @@ update_applet(CafeNetspeedApplet *applet)
 				quality = 1.0;
 
 			text = g_strdup_printf ("%d %%", applet->devinfo.qual);
-			ctk_progress_bar_set_fraction (GTK_PROGRESS_BAR (applet->signalbar), quality);
-			ctk_progress_bar_set_text (GTK_PROGRESS_BAR (applet->signalbar), text);
+			ctk_progress_bar_set_fraction (CTK_PROGRESS_BAR (applet->signalbar), quality);
+			ctk_progress_bar_set_text (CTK_PROGRESS_BAR (applet->signalbar), text);
 			g_free(text);
 		}
 	}
@@ -689,26 +689,26 @@ update_applet(CafeNetspeedApplet *applet)
 
 	/* Refresh the text of the labels and tooltip */
 	if (applet->show_sum) {
-		ctk_label_set_markup(GTK_LABEL(applet->sum_label), applet->devinfo.sum_rate);
+		ctk_label_set_markup(CTK_LABEL(applet->sum_label), applet->devinfo.sum_rate);
 	} else {
-		ctk_label_set_markup(GTK_LABEL(applet->in_label), applet->devinfo.rx_rate);
-		ctk_label_set_markup(GTK_LABEL(applet->out_label), applet->devinfo.tx_rate);
+		ctk_label_set_markup(CTK_LABEL(applet->in_label), applet->devinfo.rx_rate);
+		ctk_label_set_markup(CTK_LABEL(applet->out_label), applet->devinfo.tx_rate);
 	}
 
 	/* Refresh the values of the Infodialog */
 	if (applet->inbytes_text) {
 		inbytes = bytes_to_string((double)applet->devinfo.rx, FALSE, FALSE, FALSE);
-		ctk_label_set_text(GTK_LABEL(applet->inbytes_text), inbytes);
+		ctk_label_set_text(CTK_LABEL(applet->inbytes_text), inbytes);
 		g_free(inbytes);
 	}
 	if (applet->outbytes_text) {
 		outbytes = bytes_to_string((double)applet->devinfo.tx, FALSE, FALSE, FALSE);
-		ctk_label_set_text(GTK_LABEL(applet->outbytes_text), outbytes);
+		ctk_label_set_text(CTK_LABEL(applet->outbytes_text), outbytes);
 		g_free(outbytes);
 	}
 	/* Redraw the graph of the Infodialog */
 	if (applet->drawingarea)
-		ctk_widget_queue_draw (GTK_WIDGET (applet->drawingarea));
+		ctk_widget_queue_draw (CTK_WIDGET (applet->drawingarea));
 
 	/* Save old values... */
 	applet->in_old[applet->index_old] = applet->devinfo.rx;
@@ -778,16 +778,16 @@ display_help (CtkWidget *dialog, const gchar *section)
 
 	if (ret == FALSE) {
 		CtkWidget *error_dialog = ctk_message_dialog_new (NULL,
-								  GTK_DIALOG_MODAL,
-								  GTK_MESSAGE_ERROR,
-								  GTK_BUTTONS_OK,
+								  CTK_DIALOG_MODAL,
+								  CTK_MESSAGE_ERROR,
+								  CTK_BUTTONS_OK,
 								  _("There was an error displaying help:\n%s"),
 								  error->message);
 		g_signal_connect (error_dialog, "response",
 				  G_CALLBACK (ctk_widget_destroy), NULL);
 
-		ctk_window_set_resizable (GTK_WINDOW (error_dialog), FALSE);
-		ctk_window_set_screen  (GTK_WINDOW (error_dialog), ctk_widget_get_screen (dialog));
+		ctk_window_set_resizable (CTK_WINDOW (error_dialog), FALSE);
+		ctk_window_set_screen  (CTK_WINDOW (error_dialog), ctk_widget_get_screen (dialog));
 		ctk_widget_show (error_dialog);
 		g_error_free (error);
 	}
@@ -798,7 +798,7 @@ display_help (CtkWidget *dialog, const gchar *section)
 static void
 help_cb (CtkAction *action, CafeNetspeedApplet *ap)
 {
-	display_help (GTK_WIDGET (ap->applet), NULL);
+	display_help (CTK_WIDGET (ap->applet), NULL);
 }
 
 /* Just the about window... If it's already open, just fokus it
@@ -874,8 +874,8 @@ pref_response_cb (CtkDialog *dialog, gint id, gpointer data)
 {
     CafeNetspeedApplet *applet = data;
 
-    if(id == GTK_RESPONSE_HELP){
-        display_help (GTK_WIDGET (dialog), "netspeed_applet-settings");
+    if(id == CTK_RESPONSE_HELP){
+        display_help (CTK_WIDGET (dialog), "netspeed_applet-settings");
 	return;
     }
     g_settings_delay (applet->gsettings);
@@ -889,7 +889,7 @@ pref_response_cb (CtkDialog *dialog, gint id, gpointer data)
     g_settings_set_boolean (applet->gsettings, "auto-change-device", applet->auto_change_device);
     g_settings_apply (applet->gsettings);
 
-    ctk_widget_destroy(GTK_WIDGET(applet->settings));
+    ctk_widget_destroy(CTK_WIDGET(applet->settings));
     applet->settings = NULL;
 }
 
@@ -978,104 +978,104 @@ settings_cb(CtkAction *action, gpointer data)
 
 	if (applet->settings)
 	{
-		ctk_window_present(GTK_WINDOW(applet->settings));
+		ctk_window_present(CTK_WINDOW(applet->settings));
 		return;
 	}
 
-	category_label_size_group = ctk_size_group_new(GTK_SIZE_GROUP_HORIZONTAL);
+	category_label_size_group = ctk_size_group_new(CTK_SIZE_GROUP_HORIZONTAL);
 
-	applet->settings = GTK_DIALOG(ctk_dialog_new_with_buttons(_("CAFE Netspeed Preferences"),
+	applet->settings = CTK_DIALOG(ctk_dialog_new_with_buttons(_("CAFE Netspeed Preferences"),
 								  NULL,
-								  GTK_DIALOG_DESTROY_WITH_PARENT,
-								  "ctk-help", GTK_RESPONSE_HELP,
-								  "ctk-close", GTK_RESPONSE_ACCEPT,
+								  CTK_DIALOG_DESTROY_WITH_PARENT,
+								  "ctk-help", CTK_RESPONSE_HELP,
+								  "ctk-close", CTK_RESPONSE_ACCEPT,
 								  NULL));
 
-	ctk_window_set_resizable(GTK_WINDOW(applet->settings), FALSE);
-	ctk_window_set_screen(GTK_WINDOW(applet->settings),
-			      ctk_widget_get_screen(GTK_WIDGET(applet->settings)));
+	ctk_window_set_resizable(CTK_WINDOW(applet->settings), FALSE);
+	ctk_window_set_screen(CTK_WINDOW(applet->settings),
+			      ctk_widget_get_screen(CTK_WIDGET(applet->settings)));
 
-	ctk_dialog_set_default_response(GTK_DIALOG(applet->settings), GTK_RESPONSE_CLOSE);
+	ctk_dialog_set_default_response(CTK_DIALOG(applet->settings), CTK_RESPONSE_CLOSE);
 
-	vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	ctk_container_set_border_width(GTK_CONTAINER(vbox), 12);
+	vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
+	ctk_container_set_border_width(CTK_CONTAINER(vbox), 12);
 
-	categories_vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 18);
-	ctk_box_pack_start(GTK_BOX (vbox), categories_vbox, TRUE, TRUE, 0);
+	categories_vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 18);
+	ctk_box_pack_start(CTK_BOX (vbox), categories_vbox, TRUE, TRUE, 0);
 
-	category_vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-	ctk_box_pack_start(GTK_BOX (categories_vbox), category_vbox, TRUE, TRUE, 0);
+	category_vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 6);
+	ctk_box_pack_start(CTK_BOX (categories_vbox), category_vbox, TRUE, TRUE, 0);
 
 	header_str = g_strconcat("<span weight=\"bold\">", _("General Settings"), "</span>", NULL);
 	category_header_label = ctk_label_new(header_str);
-	ctk_label_set_use_markup(GTK_LABEL(category_header_label), TRUE);
-	ctk_label_set_justify(GTK_LABEL(category_header_label), GTK_JUSTIFY_LEFT);
-	ctk_label_set_xalign (GTK_LABEL (category_header_label), 0.0);
-	ctk_label_set_yalign (GTK_LABEL (category_header_label), 0.5);
-	ctk_box_pack_start(GTK_BOX (category_vbox), category_header_label, FALSE, FALSE, 0);
+	ctk_label_set_use_markup(CTK_LABEL(category_header_label), TRUE);
+	ctk_label_set_justify(CTK_LABEL(category_header_label), CTK_JUSTIFY_LEFT);
+	ctk_label_set_xalign (CTK_LABEL (category_header_label), 0.0);
+	ctk_label_set_yalign (CTK_LABEL (category_header_label), 0.5);
+	ctk_box_pack_start(CTK_BOX (category_vbox), category_header_label, FALSE, FALSE, 0);
 	g_free(header_str);
 
-	hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-	ctk_box_pack_start(GTK_BOX (category_vbox), hbox, TRUE, TRUE, 0);
+	hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 0);
+	ctk_box_pack_start(CTK_BOX (category_vbox), hbox, TRUE, TRUE, 0);
 
 	indent_label = ctk_label_new("    ");
-	ctk_label_set_justify(GTK_LABEL (indent_label), GTK_JUSTIFY_LEFT);
-	ctk_box_pack_start(GTK_BOX (hbox), indent_label, FALSE, FALSE, 0);
+	ctk_label_set_justify(CTK_LABEL (indent_label), CTK_JUSTIFY_LEFT);
+	ctk_box_pack_start(CTK_BOX (hbox), indent_label, FALSE, FALSE, 0);
 
-	controls_vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 10);
-	ctk_box_pack_start(GTK_BOX(hbox), controls_vbox, TRUE, TRUE, 0);
+	controls_vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 10);
+	ctk_box_pack_start(CTK_BOX(hbox), controls_vbox, TRUE, TRUE, 0);
 
-	network_device_hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
-	ctk_box_pack_start(GTK_BOX(controls_vbox), network_device_hbox, TRUE, TRUE, 0);
+	network_device_hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 6);
+	ctk_box_pack_start(CTK_BOX(controls_vbox), network_device_hbox, TRUE, TRUE, 0);
 
 	network_device_label = ctk_label_new_with_mnemonic(_("Network _device:"));
-	ctk_label_set_justify(GTK_LABEL(network_device_label), GTK_JUSTIFY_LEFT);
-	ctk_label_set_xalign (GTK_LABEL (network_device_label), 0.0f);
-	ctk_label_set_yalign (GTK_LABEL (network_device_label), 0.5f);
+	ctk_label_set_justify(CTK_LABEL(network_device_label), CTK_JUSTIFY_LEFT);
+	ctk_label_set_xalign (CTK_LABEL (network_device_label), 0.0f);
+	ctk_label_set_yalign (CTK_LABEL (network_device_label), 0.5f);
 	ctk_size_group_add_widget(category_label_size_group, network_device_label);
-	ctk_box_pack_start(GTK_BOX (network_device_hbox), network_device_label, FALSE, FALSE, 0);
+	ctk_box_pack_start(CTK_BOX (network_device_hbox), network_device_label, FALSE, FALSE, 0);
 
 	applet->network_device_combo = ctk_combo_box_text_new();
-	ctk_label_set_mnemonic_widget(GTK_LABEL(network_device_label), applet->network_device_combo);
-	ctk_box_pack_start (GTK_BOX (network_device_hbox), applet->network_device_combo, TRUE, TRUE, 0);
+	ctk_label_set_mnemonic_widget(CTK_LABEL(network_device_label), applet->network_device_combo);
+	ctk_box_pack_start (CTK_BOX (network_device_hbox), applet->network_device_combo, TRUE, TRUE, 0);
 
 	/* Default means device with default route set */
-	ctk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(applet->network_device_combo), _("Default"));
+	ctk_combo_box_text_append_text(CTK_COMBO_BOX_TEXT(applet->network_device_combo), _("Default"));
 	ptr = devices = get_available_devices();
 	for (i = 0; ptr; ptr = g_list_next(ptr)) {
-		ctk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(applet->network_device_combo), ptr->data);
+		ctk_combo_box_text_append_text(CTK_COMBO_BOX_TEXT(applet->network_device_combo), ptr->data);
 		if (g_str_equal(ptr->data, applet->devinfo.name)) active = (i + 1);
 		++i;
 	}
 	if (active < 0 || applet->auto_change_device) {
 		active = 0;
 	}
-	ctk_combo_box_set_active(GTK_COMBO_BOX(applet->network_device_combo), active);
+	ctk_combo_box_set_active(CTK_COMBO_BOX(applet->network_device_combo), active);
 	g_object_set_data_full(G_OBJECT(applet->network_device_combo), "devices", devices, (GDestroyNotify)free_devices_list);
 
 	show_sum_checkbutton = ctk_check_button_new_with_mnemonic(_("Show _sum instead of in & out"));
-	ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(show_sum_checkbutton), applet->show_sum);
-	ctk_box_pack_start(GTK_BOX(controls_vbox), show_sum_checkbutton, FALSE, FALSE, 0);
+	ctk_toggle_button_set_active(CTK_TOGGLE_BUTTON(show_sum_checkbutton), applet->show_sum);
+	ctk_box_pack_start(CTK_BOX(controls_vbox), show_sum_checkbutton, FALSE, FALSE, 0);
 
 	show_bits_checkbutton = ctk_check_button_new_with_mnemonic(_("Show _bits instead of bytes"));
-	ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(show_bits_checkbutton), applet->show_bits);
-	ctk_box_pack_start(GTK_BOX(controls_vbox), show_bits_checkbutton, FALSE, FALSE, 0);
+	ctk_toggle_button_set_active(CTK_TOGGLE_BUTTON(show_bits_checkbutton), applet->show_bits);
+	ctk_box_pack_start(CTK_BOX(controls_vbox), show_bits_checkbutton, FALSE, FALSE, 0);
 
 	short_unit_checkbutton = ctk_check_button_new_with_mnemonic(_("Shorten _unit legend"));
-	ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(short_unit_checkbutton), applet->short_unit);
-	ctk_box_pack_start(GTK_BOX(controls_vbox), short_unit_checkbutton, FALSE, FALSE, 0);
+	ctk_toggle_button_set_active(CTK_TOGGLE_BUTTON(short_unit_checkbutton), applet->short_unit);
+	ctk_box_pack_start(CTK_BOX(controls_vbox), short_unit_checkbutton, FALSE, FALSE, 0);
 
 	change_icon_checkbutton = ctk_check_button_new_with_mnemonic(_("_Change icon according to the selected device"));
-	ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(change_icon_checkbutton), applet->change_icon);
-	ctk_box_pack_start(GTK_BOX(controls_vbox), change_icon_checkbutton, FALSE, FALSE, 0);
+	ctk_toggle_button_set_active(CTK_TOGGLE_BUTTON(change_icon_checkbutton), applet->change_icon);
+	ctk_box_pack_start(CTK_BOX(controls_vbox), change_icon_checkbutton, FALSE, FALSE, 0);
 
 	show_icon_checkbutton = ctk_check_button_new_with_mnemonic(_("Show _icon"));
-	ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(show_icon_checkbutton), applet->show_icon);
-	ctk_box_pack_start(GTK_BOX(controls_vbox), show_icon_checkbutton, FALSE, FALSE, 0);
+	ctk_toggle_button_set_active(CTK_TOGGLE_BUTTON(show_icon_checkbutton), applet->show_icon);
+	ctk_box_pack_start(CTK_BOX(controls_vbox), show_icon_checkbutton, FALSE, FALSE, 0);
 
 	show_quality_icon_checkbutton = ctk_check_button_new_with_mnemonic(_("Show signal _quality icon for wireless devices"));
-	ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(show_quality_icon_checkbutton), applet->show_quality_icon);
-	ctk_box_pack_start(GTK_BOX(controls_vbox), show_quality_icon_checkbutton, FALSE, FALSE, 0);
+	ctk_toggle_button_set_active(CTK_TOGGLE_BUTTON(show_quality_icon_checkbutton), applet->show_quality_icon);
+	ctk_box_pack_start(CTK_BOX(controls_vbox), show_quality_icon_checkbutton, FALSE, FALSE, 0);
 
 	g_signal_connect(G_OBJECT (applet->network_device_combo), "changed",
 			 G_CALLBACK(device_change_cb), (gpointer)applet);
@@ -1101,9 +1101,9 @@ settings_cb(CtkAction *action, gpointer data)
 	g_signal_connect(G_OBJECT (applet->settings), "response",
 			 G_CALLBACK(pref_response_cb), (gpointer)applet);
 
-	ctk_container_add(GTK_CONTAINER(ctk_dialog_get_content_area (applet->settings)), vbox);
+	ctk_container_add(CTK_CONTAINER(ctk_dialog_get_content_area (applet->settings)), vbox);
 
-	ctk_widget_show_all(GTK_WIDGET(applet->settings));
+	ctk_widget_show_all(CTK_WIDGET(applet->settings));
 }
 
 static gboolean
@@ -1123,7 +1123,7 @@ incolor_changed_cb (CtkColorChooser *button, gpointer data)
 	GdkRGBA color;
 	gchar *string;
 
-	ctk_color_chooser_get_rgba (GTK_COLOR_CHOOSER (button), &color);
+	ctk_color_chooser_get_rgba (CTK_COLOR_CHOOSER (button), &color);
 	applet->in_color = color;
 
 	string = gdk_rgba_to_string (&color);
@@ -1138,7 +1138,7 @@ outcolor_changed_cb (CtkColorChooser *button, gpointer data)
 	GdkRGBA color;
 	gchar *string;
 
-	ctk_color_chooser_get_rgba (GTK_COLOR_CHOOSER (button), &color);
+	ctk_color_chooser_get_rgba (CTK_COLOR_CHOOSER (button), &color);
 	applet->out_color = color;
 
 	string = gdk_rgba_to_string (&color);
@@ -1152,12 +1152,12 @@ static void
 info_response_cb (CtkDialog *dialog, gint id, CafeNetspeedApplet *applet)
 {
 
-	if(id == GTK_RESPONSE_HELP){
-		display_help (GTK_WIDGET (dialog), "netspeed_applet-details");
+	if(id == CTK_RESPONSE_HELP){
+		display_help (CTK_WIDGET (dialog), "netspeed_applet-details");
 		return;
 	}
 
-	ctk_widget_destroy(GTK_WIDGET(applet->details));
+	ctk_widget_destroy(CTK_WIDGET(applet->details));
 
 	applet->details = NULL;
 	applet->inbytes_text = NULL;
@@ -1187,51 +1187,51 @@ showinfo_cb(CtkAction *action, gpointer data)
 
 	if (applet->details)
 	{
-		ctk_window_present(GTK_WINDOW(applet->details));
+		ctk_window_present(CTK_WINDOW(applet->details));
 		return;
 	}
 
 	title = g_strdup_printf(_("Device Details for %s"), applet->devinfo.name);
-	applet->details = GTK_DIALOG(ctk_dialog_new_with_buttons(title,
+	applet->details = CTK_DIALOG(ctk_dialog_new_with_buttons(title,
 		NULL,
-		GTK_DIALOG_DESTROY_WITH_PARENT,
-		"ctk-close", GTK_RESPONSE_ACCEPT,
-		"ctk-help", GTK_RESPONSE_HELP,
+		CTK_DIALOG_DESTROY_WITH_PARENT,
+		"ctk-close", CTK_RESPONSE_ACCEPT,
+		"ctk-help", CTK_RESPONSE_HELP,
 		NULL));
 	g_free(title);
 
-	ctk_dialog_set_default_response(GTK_DIALOG(applet->details), GTK_RESPONSE_CLOSE);
+	ctk_dialog_set_default_response(CTK_DIALOG(applet->details), CTK_RESPONSE_CLOSE);
 
-	box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 10);
-	ctk_container_set_border_width(GTK_CONTAINER(box), 12);
+	box = ctk_box_new (CTK_ORIENTATION_VERTICAL, 10);
+	ctk_container_set_border_width(CTK_CONTAINER(box), 12);
 
 	grid = ctk_grid_new ();
-	ctk_grid_set_row_spacing (GTK_GRID(grid), 10);
-	ctk_grid_set_column_spacing (GTK_GRID(grid), 15);
+	ctk_grid_set_row_spacing (CTK_GRID(grid), 10);
+	ctk_grid_set_column_spacing (CTK_GRID(grid), 15);
 
 	da_frame = ctk_frame_new(NULL);
-	ctk_frame_set_shadow_type(GTK_FRAME(da_frame), GTK_SHADOW_NONE);
-	applet->drawingarea = GTK_DRAWING_AREA(ctk_drawing_area_new());
-	ctk_widget_set_size_request(GTK_WIDGET(applet->drawingarea), -1, 180);
-	ctk_container_add(GTK_CONTAINER(da_frame), GTK_WIDGET(applet->drawingarea));
+	ctk_frame_set_shadow_type(CTK_FRAME(da_frame), CTK_SHADOW_NONE);
+	applet->drawingarea = CTK_DRAWING_AREA(ctk_drawing_area_new());
+	ctk_widget_set_size_request(CTK_WIDGET(applet->drawingarea), -1, 180);
+	ctk_container_add(CTK_CONTAINER(da_frame), CTK_WIDGET(applet->drawingarea));
 
-	hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 5);
+	hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 5);
 	incolor_label = ctk_label_new_with_mnemonic(_("_In graph color"));
 	outcolor_label = ctk_label_new_with_mnemonic(_("_Out graph color"));
 
 	incolor_sel = ctk_color_button_new ();
 	outcolor_sel = ctk_color_button_new ();
 
-	ctk_color_chooser_set_rgba (GTK_COLOR_CHOOSER (incolor_sel),  &applet->in_color);
-	ctk_color_chooser_set_rgba (GTK_COLOR_CHOOSER (outcolor_sel),  &applet->out_color);
+	ctk_color_chooser_set_rgba (CTK_COLOR_CHOOSER (incolor_sel),  &applet->in_color);
+	ctk_color_chooser_set_rgba (CTK_COLOR_CHOOSER (outcolor_sel),  &applet->out_color);
 
-	ctk_label_set_mnemonic_widget(GTK_LABEL(incolor_label), incolor_sel);
-	ctk_label_set_mnemonic_widget(GTK_LABEL(outcolor_label), outcolor_sel);
+	ctk_label_set_mnemonic_widget(CTK_LABEL(incolor_label), incolor_sel);
+	ctk_label_set_mnemonic_widget(CTK_LABEL(outcolor_label), outcolor_sel);
 
-	ctk_box_pack_start(GTK_BOX(hbox), incolor_sel, FALSE, FALSE, 0);
-	ctk_box_pack_start(GTK_BOX(hbox), incolor_label, FALSE, FALSE, 0);
-	ctk_box_pack_start(GTK_BOX(hbox), outcolor_sel, FALSE, FALSE, 0);
-	ctk_box_pack_start(GTK_BOX(hbox), outcolor_label, FALSE, FALSE, 0);
+	ctk_box_pack_start(CTK_BOX(hbox), incolor_sel, FALSE, FALSE, 0);
+	ctk_box_pack_start(CTK_BOX(hbox), incolor_label, FALSE, FALSE, 0);
+	ctk_box_pack_start(CTK_BOX(hbox), outcolor_sel, FALSE, FALSE, 0);
+	ctk_box_pack_start(CTK_BOX(hbox), outcolor_label, FALSE, FALSE, 0);
 
 	ip_label = ctk_label_new(_("Internet Address:"));
 	netmask_label = ctk_label_new(_("Netmask:"));
@@ -1247,48 +1247,48 @@ showinfo_cb(CtkAction *action, gpointer data)
 	applet->inbytes_text = ctk_label_new("0 byte");
 	applet->outbytes_text = ctk_label_new("0 byte");
 
-	ctk_label_set_selectable(GTK_LABEL(ip_text), TRUE);
-	ctk_label_set_selectable(GTK_LABEL(netmask_text), TRUE);
-	ctk_label_set_selectable(GTK_LABEL(hwaddr_text), TRUE);
-	ctk_label_set_selectable(GTK_LABEL(ptpip_text), TRUE);
+	ctk_label_set_selectable(CTK_LABEL(ip_text), TRUE);
+	ctk_label_set_selectable(CTK_LABEL(netmask_text), TRUE);
+	ctk_label_set_selectable(CTK_LABEL(hwaddr_text), TRUE);
+	ctk_label_set_selectable(CTK_LABEL(ptpip_text), TRUE);
 
-	ctk_label_set_xalign (GTK_LABEL (ip_label), 0.0f);
-	ctk_label_set_yalign (GTK_LABEL (ip_label), 0.5f);
-	ctk_label_set_xalign (GTK_LABEL (ip_text), 0.0f);
-	ctk_label_set_yalign (GTK_LABEL (ip_text), 0.5f);
-	ctk_label_set_xalign (GTK_LABEL (netmask_label), 0.0f);
-	ctk_label_set_yalign (GTK_LABEL (netmask_label), 0.5f);
-	ctk_label_set_xalign (GTK_LABEL (netmask_text), 0.0f);
-	ctk_label_set_yalign (GTK_LABEL (netmask_text), 0.5f);
-	ctk_label_set_xalign (GTK_LABEL (hwaddr_label), 0.0f);
-	ctk_label_set_yalign (GTK_LABEL (hwaddr_label), 0.5f);
-	ctk_label_set_xalign (GTK_LABEL (hwaddr_text), 0.0f);
-	ctk_label_set_yalign (GTK_LABEL (hwaddr_text), 0.5f);
-	ctk_label_set_xalign (GTK_LABEL (ptpip_label), 0.0f);
-	ctk_label_set_yalign (GTK_LABEL (ptpip_label), 0.5f);
-	ctk_label_set_xalign (GTK_LABEL (ptpip_text), 0.0f);
-	ctk_label_set_yalign (GTK_LABEL (ptpip_text), 0.5f);
-	ctk_label_set_xalign (GTK_LABEL (inbytes_label), 0.0f);
-	ctk_label_set_yalign (GTK_LABEL (inbytes_label), 0.5f);
-	ctk_label_set_xalign (GTK_LABEL (applet->inbytes_text), 0.0f);
-	ctk_label_set_yalign (GTK_LABEL (applet->inbytes_text), 0.5f);
-	ctk_label_set_xalign (GTK_LABEL (outbytes_label), 0.0f);
-	ctk_label_set_yalign (GTK_LABEL (outbytes_label), 0.5f);
-	ctk_label_set_xalign (GTK_LABEL (applet->outbytes_text), 0.0f);
-	ctk_label_set_yalign (GTK_LABEL (applet->outbytes_text), 0.5f);
+	ctk_label_set_xalign (CTK_LABEL (ip_label), 0.0f);
+	ctk_label_set_yalign (CTK_LABEL (ip_label), 0.5f);
+	ctk_label_set_xalign (CTK_LABEL (ip_text), 0.0f);
+	ctk_label_set_yalign (CTK_LABEL (ip_text), 0.5f);
+	ctk_label_set_xalign (CTK_LABEL (netmask_label), 0.0f);
+	ctk_label_set_yalign (CTK_LABEL (netmask_label), 0.5f);
+	ctk_label_set_xalign (CTK_LABEL (netmask_text), 0.0f);
+	ctk_label_set_yalign (CTK_LABEL (netmask_text), 0.5f);
+	ctk_label_set_xalign (CTK_LABEL (hwaddr_label), 0.0f);
+	ctk_label_set_yalign (CTK_LABEL (hwaddr_label), 0.5f);
+	ctk_label_set_xalign (CTK_LABEL (hwaddr_text), 0.0f);
+	ctk_label_set_yalign (CTK_LABEL (hwaddr_text), 0.5f);
+	ctk_label_set_xalign (CTK_LABEL (ptpip_label), 0.0f);
+	ctk_label_set_yalign (CTK_LABEL (ptpip_label), 0.5f);
+	ctk_label_set_xalign (CTK_LABEL (ptpip_text), 0.0f);
+	ctk_label_set_yalign (CTK_LABEL (ptpip_text), 0.5f);
+	ctk_label_set_xalign (CTK_LABEL (inbytes_label), 0.0f);
+	ctk_label_set_yalign (CTK_LABEL (inbytes_label), 0.5f);
+	ctk_label_set_xalign (CTK_LABEL (applet->inbytes_text), 0.0f);
+	ctk_label_set_yalign (CTK_LABEL (applet->inbytes_text), 0.5f);
+	ctk_label_set_xalign (CTK_LABEL (outbytes_label), 0.0f);
+	ctk_label_set_yalign (CTK_LABEL (outbytes_label), 0.5f);
+	ctk_label_set_xalign (CTK_LABEL (applet->outbytes_text), 0.0f);
+	ctk_label_set_yalign (CTK_LABEL (applet->outbytes_text), 0.5f);
 
-	ctk_grid_attach(GTK_GRID(grid), ip_label, 0, 0, 1, 1);
-	ctk_grid_attach(GTK_GRID(grid), ip_text, 1, 0, 1, 1);
-	ctk_grid_attach(GTK_GRID(grid), netmask_label, 2, 0, 1, 1);
-	ctk_grid_attach(GTK_GRID(grid), netmask_text, 3, 0, 1, 1);
-	ctk_grid_attach(GTK_GRID(grid), hwaddr_label, 0, 1, 1, 1);
-	ctk_grid_attach(GTK_GRID(grid), hwaddr_text, 1, 1, 1, 1);
-	ctk_grid_attach(GTK_GRID(grid), ptpip_label, 2, 1, 1, 1);
-	ctk_grid_attach(GTK_GRID(grid), ptpip_text, 3, 1, 1, 1);
-	ctk_grid_attach(GTK_GRID(grid), inbytes_label, 0, 2, 1, 1);
-	ctk_grid_attach(GTK_GRID(grid), applet->inbytes_text, 1, 2, 1, 1);
-	ctk_grid_attach(GTK_GRID(grid), outbytes_label, 2, 2, 1, 1);
-	ctk_grid_attach(GTK_GRID(grid), applet->outbytes_text, 3, 2, 1, 1);
+	ctk_grid_attach(CTK_GRID(grid), ip_label, 0, 0, 1, 1);
+	ctk_grid_attach(CTK_GRID(grid), ip_text, 1, 0, 1, 1);
+	ctk_grid_attach(CTK_GRID(grid), netmask_label, 2, 0, 1, 1);
+	ctk_grid_attach(CTK_GRID(grid), netmask_text, 3, 0, 1, 1);
+	ctk_grid_attach(CTK_GRID(grid), hwaddr_label, 0, 1, 1, 1);
+	ctk_grid_attach(CTK_GRID(grid), hwaddr_text, 1, 1, 1, 1);
+	ctk_grid_attach(CTK_GRID(grid), ptpip_label, 2, 1, 1, 1);
+	ctk_grid_attach(CTK_GRID(grid), ptpip_text, 3, 1, 1, 1);
+	ctk_grid_attach(CTK_GRID(grid), inbytes_label, 0, 2, 1, 1);
+	ctk_grid_attach(CTK_GRID(grid), applet->inbytes_text, 1, 2, 1, 1);
+	ctk_grid_attach(CTK_GRID(grid), outbytes_label, 2, 2, 1, 1);
+	ctk_grid_attach(CTK_GRID(grid), applet->outbytes_text, 3, 2, 1, 1);
 
 	/* check if we got an ipv6 address */
 	if (applet->devinfo.ipv6 && (strlen (applet->devinfo.ipv6) > 2)) {
@@ -1297,14 +1297,14 @@ showinfo_cb(CtkAction *action, gpointer data)
 		ipv6_label = ctk_label_new (_("IPV6 Address:"));
 		ipv6_text = ctk_label_new (applet->devinfo.ipv6);
 
-		ctk_label_set_selectable (GTK_LABEL (ipv6_text), TRUE);
+		ctk_label_set_selectable (CTK_LABEL (ipv6_text), TRUE);
 
-		ctk_label_set_xalign (GTK_LABEL (ipv6_label), 0.0f);
-		ctk_label_set_yalign (GTK_LABEL (ipv6_label), 0.5f);
-		ctk_label_set_xalign (GTK_LABEL (ipv6_text), 0.0f);
-		ctk_label_set_yalign (GTK_LABEL (ipv6_text), 0.5f);
-		ctk_grid_attach (GTK_GRID (grid), ipv6_label, 0, 3, 1, 1);
-		ctk_grid_attach (GTK_GRID (grid), ipv6_text, 1, 3, 1, 1);
+		ctk_label_set_xalign (CTK_LABEL (ipv6_label), 0.0f);
+		ctk_label_set_yalign (CTK_LABEL (ipv6_label), 0.5f);
+		ctk_label_set_xalign (CTK_LABEL (ipv6_text), 0.0f);
+		ctk_label_set_yalign (CTK_LABEL (ipv6_text), 0.5f);
+		ctk_grid_attach (CTK_GRID (grid), ipv6_label, 0, 3, 1, 1);
+		ctk_grid_attach (CTK_GRID (grid), ipv6_text, 1, 3, 1, 1);
 	}
 
 	if (applet->devinfo.type == DEV_WIRELESS) {
@@ -1323,26 +1323,26 @@ showinfo_cb(CtkAction *action, gpointer data)
 		quality = 1.0;
 
 		text = g_strdup_printf ("%d %%", applet->devinfo.qual);
-		ctk_progress_bar_set_fraction (GTK_PROGRESS_BAR (applet->signalbar), quality);
-		ctk_progress_bar_set_text (GTK_PROGRESS_BAR (applet->signalbar), text);
+		ctk_progress_bar_set_fraction (CTK_PROGRESS_BAR (applet->signalbar), quality);
+		ctk_progress_bar_set_text (CTK_PROGRESS_BAR (applet->signalbar), text);
 		g_free(text);
 
 		signal_label = ctk_label_new (_("Signal Strength:"));
 		essid_label = ctk_label_new (_("ESSID:"));
 		essid_text = ctk_label_new (applet->devinfo.essid);
 
-		ctk_label_set_xalign (GTK_LABEL (signal_label), 0.0f);
-		ctk_label_set_yalign (GTK_LABEL (signal_label), 0.5f);
-		ctk_label_set_xalign (GTK_LABEL (essid_label), 0.0f);
-		ctk_label_set_yalign (GTK_LABEL (essid_label), 0.5f);;
-		ctk_label_set_xalign (GTK_LABEL (essid_text), 0.0f);
-		ctk_label_set_yalign (GTK_LABEL (essid_text), 0.5f);
-		ctk_label_set_selectable (GTK_LABEL (essid_text), TRUE);
+		ctk_label_set_xalign (CTK_LABEL (signal_label), 0.0f);
+		ctk_label_set_yalign (CTK_LABEL (signal_label), 0.5f);
+		ctk_label_set_xalign (CTK_LABEL (essid_label), 0.0f);
+		ctk_label_set_yalign (CTK_LABEL (essid_label), 0.5f);;
+		ctk_label_set_xalign (CTK_LABEL (essid_text), 0.0f);
+		ctk_label_set_yalign (CTK_LABEL (essid_text), 0.5f);
+		ctk_label_set_selectable (CTK_LABEL (essid_text), TRUE);
 
-		ctk_grid_attach (GTK_GRID (grid), signal_label, 2, 4, 1, 1);
-		ctk_grid_attach (GTK_GRID (grid), GTK_WIDGET (applet->signalbar), 3, 4, 1, 1);
-		ctk_grid_attach (GTK_GRID (grid), essid_label, 0, 4, 3, 1);
-		ctk_grid_attach (GTK_GRID (grid), essid_text, 1, 4, 3, 1);
+		ctk_grid_attach (CTK_GRID (grid), signal_label, 2, 4, 1, 1);
+		ctk_grid_attach (CTK_GRID (grid), CTK_WIDGET (applet->signalbar), 3, 4, 1, 1);
+		ctk_grid_attach (CTK_GRID (grid), essid_label, 0, 4, 3, 1);
+		ctk_grid_attach (CTK_GRID (grid), essid_text, 1, 4, 3, 1);
 	}
 
 	g_signal_connect(G_OBJECT(applet->drawingarea), "draw",
@@ -1360,12 +1360,12 @@ showinfo_cb(CtkAction *action, gpointer data)
 	g_signal_connect(G_OBJECT(applet->details), "response",
 			 G_CALLBACK(info_response_cb), (gpointer)applet);
 
-	ctk_box_pack_start(GTK_BOX(box), da_frame, TRUE, TRUE, 0);
-	ctk_box_pack_start(GTK_BOX(box), hbox, FALSE, FALSE, 0);
-	ctk_box_pack_start(GTK_BOX(box), grid, FALSE, FALSE, 0);
+	ctk_box_pack_start(CTK_BOX(box), da_frame, TRUE, TRUE, 0);
+	ctk_box_pack_start(CTK_BOX(box), hbox, FALSE, FALSE, 0);
+	ctk_box_pack_start(CTK_BOX(box), grid, FALSE, FALSE, 0);
 
-	ctk_container_add(GTK_CONTAINER(ctk_dialog_get_content_area (applet->details)), box);
-	ctk_widget_show_all(GTK_WIDGET(applet->details));
+	ctk_container_add(CTK_CONTAINER(ctk_dialog_get_content_area (applet->details)), box);
+	ctk_widget_show_all(CTK_WIDGET(applet->details));
 }
 
 static const CtkActionEntry cafe_netspeed_applet_menu_actions [] = {
@@ -1405,7 +1405,7 @@ applet_button_press(CtkWidget *widget, GdkEventButton *event, CafeNetspeedApplet
 
 		if (applet->connect_dialog)
 		{
-			ctk_window_present(GTK_WINDOW(applet->connect_dialog));
+			ctk_window_present(CTK_WINDOW(applet->connect_dialog));
 			return FALSE;
 		}
 
@@ -1424,15 +1424,15 @@ applet_button_press(CtkWidget *widget, GdkEventButton *event, CafeNetspeedApplet
 			}
 
 			applet->connect_dialog = ctk_message_dialog_new(NULL,
-					GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,
-					GTK_MESSAGE_QUESTION, GTK_BUTTONS_YES_NO,
+					CTK_DIALOG_MODAL | CTK_DIALOG_DESTROY_WITH_PARENT,
+					CTK_MESSAGE_QUESTION, CTK_BUTTONS_YES_NO,
 					question,
 					applet->devinfo.name);
-			response = ctk_dialog_run(GTK_DIALOG(applet->connect_dialog));
+			response = ctk_dialog_run(CTK_DIALOG(applet->connect_dialog));
 			ctk_widget_destroy (applet->connect_dialog);
 			applet->connect_dialog = NULL;
 
-			if (response == GTK_RESPONSE_YES)
+			if (response == CTK_RESPONSE_YES)
 			{
 				CtkWidget *dialog;
 				char *command;
@@ -1445,12 +1445,12 @@ applet_button_press(CtkWidget *widget, GdkEventButton *event, CafeNetspeedApplet
 				{
 
 					dialog = ctk_message_dialog_new_with_markup(NULL,
-							GTK_DIALOG_MODAL | GTK_DIALOG_DESTROY_WITH_PARENT,
-							GTK_MESSAGE_ERROR, GTK_BUTTONS_OK,
+							CTK_DIALOG_MODAL | CTK_DIALOG_DESTROY_WITH_PARENT,
+							CTK_MESSAGE_ERROR, CTK_BUTTONS_OK,
 							_("<b>Running command %s failed</b>\n%s"),
 							command,
 							error->message);
-					ctk_dialog_run (GTK_DIALOG (dialog));
+					ctk_dialog_run (CTK_DIALOG (dialog));
 					ctk_widget_destroy (dialog);
 					g_error_free (error);
 				}
@@ -1536,8 +1536,8 @@ update_tooltip(CafeNetspeedApplet* applet)
 
   }
 
-  ctk_widget_set_tooltip_text(GTK_WIDGET(applet->applet), tooltip->str);
-  ctk_widget_trigger_tooltip_query(GTK_WIDGET(applet->applet));
+  ctk_widget_set_tooltip_text(CTK_WIDGET(applet->applet), tooltip->str);
+  ctk_widget_trigger_tooltip_query(CTK_WIDGET(applet->applet));
   g_string_free(tooltip, TRUE);
 }
 
@@ -1575,7 +1575,7 @@ cafe_netspeed_applet_factory(CafePanelApplet *applet_widget, const gchar *iid, g
 
 	/* Have our background automatically painted. */
 	cafe_panel_applet_set_background_widget(CAFE_PANEL_APPLET(applet_widget),
-		GTK_WIDGET(applet_widget));
+		CTK_WIDGET(applet_widget));
 
 	if (strcmp (iid, "NetspeedApplet"))
 		return FALSE;
@@ -1686,21 +1686,21 @@ cafe_netspeed_applet_factory(CafePanelApplet *applet_widget, const gchar *iid, g
 	applet->dev_pix = ctk_image_new();
 	applet->qual_pix = ctk_image_new();
 
-	applet->pix_box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+	applet->pix_box = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 0);
 	spacer = ctk_label_new("");
-	ctk_box_pack_start(GTK_BOX(applet->pix_box), spacer, TRUE, TRUE, 0);
+	ctk_box_pack_start(CTK_BOX(applet->pix_box), spacer, TRUE, TRUE, 0);
 	spacer = ctk_label_new("");
-	ctk_box_pack_end(GTK_BOX(applet->pix_box), spacer, TRUE, TRUE, 0);
+	ctk_box_pack_end(CTK_BOX(applet->pix_box), spacer, TRUE, TRUE, 0);
 
-	spacer_box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
-	ctk_box_pack_start(GTK_BOX(applet->pix_box), spacer_box, FALSE, FALSE, 0);
-	ctk_box_pack_start(GTK_BOX(spacer_box), applet->qual_pix, FALSE, FALSE, 0);
-	ctk_box_pack_start(GTK_BOX(spacer_box), applet->dev_pix, FALSE, FALSE, 0);
+	spacer_box = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 2);
+	ctk_box_pack_start(CTK_BOX(applet->pix_box), spacer_box, FALSE, FALSE, 0);
+	ctk_box_pack_start(CTK_BOX(spacer_box), applet->qual_pix, FALSE, FALSE, 0);
+	ctk_box_pack_start(CTK_BOX(spacer_box), applet->dev_pix, FALSE, FALSE, 0);
 
 	init_quality_surfaces(applet);
 
 	applet_change_size_or_orient(applet_widget, -1, (gpointer)applet);
-	ctk_widget_show_all(GTK_WIDGET(applet_widget));
+	ctk_widget_show_all(CTK_WIDGET(applet_widget));
 	update_applet(applet);
 
 	cafe_panel_applet_set_flags(applet_widget, CAFE_PANEL_APPLET_EXPAND_MINOR);

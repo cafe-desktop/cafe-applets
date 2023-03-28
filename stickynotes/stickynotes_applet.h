@@ -28,7 +28,7 @@
 
 
 #define STICKYNOTES_SCHEMA	"org.cafe.stickynotes"
-#define BUILDER_PATH	GTK_BUILDERDIR "/stickynotes.ui"
+#define BUILDER_PATH	CTK_BUILDERDIR "/stickynotes.ui"
 
 #define STICKYNOTES_STOCK_LOCKED	"stickynotes-stock-locked"
 #define STICKYNOTES_STOCK_UNLOCKED	"stickynotes-stock-unlocked"
