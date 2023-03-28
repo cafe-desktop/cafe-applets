@@ -17,8 +17,6 @@ requires:
     - libdbus-1-dev
     - libdbus-glib-1-dev
     - libglib2.0-dev
-    - libctk-3-dev
-    - libctksourceview-3.0-dev
     - libgtop2-dev
     - libgucharmap-2-90-dev
     - libiw-dev
