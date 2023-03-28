@@ -95,7 +95,7 @@ draw_eye (EyesApplet *eyes_applet,
 	GdkPixbuf *pixbuf;
 	CdkRectangle rect, r1, r2;
 
-	pixbuf = cdk_pixbuf_copy (eyes_applet->eye_image);
+	pixbuf = gdk_pixbuf_copy (eyes_applet->eye_image);
 	r1.x = pupil_x - eyes_applet->pupil_width / 2;
 	r1.y = pupil_y - eyes_applet->pupil_height / 2;
 	r1.width = eyes_applet->pupil_width;
@@ -105,7 +105,7 @@ draw_eye (EyesApplet *eyes_applet,
 	r2.width = eyes_applet->eye_width;
 	r2.height = eyes_applet->eye_height;
 	cdk_rectangle_intersect (&r1, &r2, &rect);
-	cdk_pixbuf_composite (eyes_applet->pupil_image, pixbuf, 
+	gdk_pixbuf_composite (eyes_applet->pupil_image, pixbuf, 
 					   rect.x,
 					   rect.y,
 					   rect.width,
