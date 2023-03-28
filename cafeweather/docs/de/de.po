@@ -51,8 +51,8 @@ msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:29
-msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
-msgstr "<year>2015-2020</year> <holder>MATE Dokumentations Projekt</holder>"
+msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
+msgstr "<year>2015-2020</year> <holder>CAFE Dokumentations Projekt</holder>"
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:33
@@ -87,8 +87,8 @@ msgstr ""
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
 #: C/index.docbook:70 C/index.docbook:144
-msgid "MATE Documentation Project"
-msgstr "MATE-Dokumentationsprojekt"
+msgid "CAFE Documentation Project"
+msgstr "CAFE-Dokumentationsprojekt"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
@@ -101,11 +101,11 @@ msgstr "GNOME-Dokumentationsprojekt"
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:79
 msgid ""
-"<firstname>MATE Documentation Team</firstname> <surname/> <affiliation> "
-"<orgname>MATE Desktop</orgname> </affiliation>"
+"<firstname>CAFE Documentation Team</firstname> <surname/> <affiliation> "
+"<orgname>CAFE Desktop</orgname> </affiliation>"
 msgstr ""
-"<firstname>MATE-Dokumentationsteam</firstname> <surname/> <affiliation> "
-"<orgname>MATE-Arbeitsumgebung</orgname> </affiliation>"
+"<firstname>CAFE-Dokumentationsteam</firstname> <surname/> <affiliation> "
+"<orgname>CAFE-Arbeitsumgebung</orgname> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:86
@@ -150,8 +150,8 @@ msgstr ""
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:143
-msgid "MATE Documentation Team"
-msgstr "MATE-Dokumentationsteam"
+msgid "CAFE Documentation Team"
+msgstr "CAFE-Dokumentationsteam"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:139
@@ -264,7 +264,7 @@ msgstr "Rückmeldungen"
 msgid ""
 "To report a bug or make a suggestion regarding the Weather Report applet or "
 "this manual, follow the directions in the <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+"guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -316,7 +316,7 @@ msgstr ""
 #: C/index.docbook:269
 msgid ""
 "If your computer is located behind a firewall, you must use a proxy server "
-"to access the weather servers. To configure the MATE Desktop to use a proxy "
+"to access the weather servers. To configure the CAFE Desktop to use a proxy "
 "server, use your preference tools to specify the network proxy server for "
 "Internet connections."
 msgstr ""
@@ -1114,12 +1114,12 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
 msgid ""
-"This manual is part of a collection of MATE manuals distributed under the "
+"This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in"
 " section 6 of the license."
 msgstr ""
-"Das vorliegende Handbuch ist Teil einer Reihe von MATE-Handbüchern, die "
+"Das vorliegende Handbuch ist Teil einer Reihe von CAFE-Handbüchern, die "
 "unter der GFDL verteilt werden. Wenn Sie dieses Handbuch separat verteilen "
 "möchten, können Sie dies tun, indem Sie dem Handbuch eine Kopie der Lizenz, "
 "wie in Abschnitt 6 der Lizenz beschrieben, hinzufügen."
@@ -1128,15 +1128,15 @@ msgstr ""
 #: C/legal.xml:19
 msgid ""
 "Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any MATE "
-"documentation, and the members of the MATE Documentation Project are made "
+"services are claimed as trademarks. Where those names appear in any CAFE "
+"documentation, and the members of the CAFE Documentation Project are made "
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
 "Bei vielen der von Firmen zur Unterscheidung ihrer Produkte und "
 "Dienstleistungen verwendeten Namen handelt es sich um Marken. An den "
-"Stellen, an denen derartige Namen in einer MATE-Dokumentation vorkommen und "
-"wenn die Mitglieder des MATE Documentation Project über diese Marken "
+"Stellen, an denen derartige Namen in einer CAFE-Dokumentation vorkommen und "
+"wenn die Mitglieder des CAFE Documentation Project über diese Marken "
 "informiert wurden, sind die Namen in Grossbuchstaben oder mit großen "
 "Anfangsbuchstaben geschrieben."
 

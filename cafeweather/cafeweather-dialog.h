@@ -1,5 +1,5 @@
-#ifndef __MATEWEATHER_DIALOG_H_
-#define __MATEWEATHER_DIALOG_H_
+#ifndef __CAFEWEATHER_DIALOG_H_
+#define __CAFEWEATHER_DIALOG_H_
 
 /* $Id$ */
 
@@ -15,18 +15,18 @@
 
 #include <gtk/gtk.h>
 
-#define MATEWEATHER_I_KNOW_THIS_IS_UNSTABLE
+#define CAFEWEATHER_I_KNOW_THIS_IS_UNSTABLE
 
 #include "cafeweather.h"
 
 G_BEGIN_DECLS
 
-#define MATEWEATHER_TYPE_DIALOG		(cafeweather_dialog_get_type ())
-#define MATEWEATHER_DIALOG(obj)		(G_TYPE_CHECK_INSTANCE_CAST ((obj), MATEWEATHER_TYPE_DIALOG, CafeWeatherDialog))
-#define MATEWEATHER_DIALOG_CLASS(klass)	(G_TYPE_CHECK_CLASS_CAST ((klass), MATEWEATHER_TYPE_DIALOG, CafeWeatherDialogClass))
-#define MATEWEATHER_IS_DIALOG(obj)		(G_TYPE_CHECK_INSTANCE_TYPE ((obj), MATEWEATHER_TYPE_DIALOG))
-#define MATEWEATHER_IS_DIALOG_CLASS(klass)	(G_TYPE_CHECK_CLASS_TYPE ((klass), MATEWEATHER_TYPE_DIALOG))
-#define MATEWEATHER_DIALOG_GET_CLASS(obj)	(G_TYPE_INSTANCE_GET_CLASS ((obj), MATEWEATHER_TYPE_DIALOG, CafeWeatherDialogClass))
+#define CAFEWEATHER_TYPE_DIALOG		(cafeweather_dialog_get_type ())
+#define CAFEWEATHER_DIALOG(obj)		(G_TYPE_CHECK_INSTANCE_CAST ((obj), CAFEWEATHER_TYPE_DIALOG, CafeWeatherDialog))
+#define CAFEWEATHER_DIALOG_CLASS(klass)	(G_TYPE_CHECK_CLASS_CAST ((klass), CAFEWEATHER_TYPE_DIALOG, CafeWeatherDialogClass))
+#define CAFEWEATHER_IS_DIALOG(obj)		(G_TYPE_CHECK_INSTANCE_TYPE ((obj), CAFEWEATHER_TYPE_DIALOG))
+#define CAFEWEATHER_IS_DIALOG_CLASS(klass)	(G_TYPE_CHECK_CLASS_TYPE ((klass), CAFEWEATHER_TYPE_DIALOG))
+#define CAFEWEATHER_DIALOG_GET_CLASS(obj)	(G_TYPE_INSTANCE_GET_CLASS ((obj), CAFEWEATHER_TYPE_DIALOG, CafeWeatherDialogClass))
 
 typedef struct _CafeWeatherDialog CafeWeatherDialog;
 typedef struct _CafeWeatherDialogPrivate CafeWeatherDialogPrivate;
@@ -52,5 +52,5 @@ void		 cafeweather_dialog_update		(CafeWeatherDialog *dialog);
 
 G_END_DECLS
 
-#endif /* __MATEWEATHER_DIALOG_H_ */
+#endif /* __CAFEWEATHER_DIALOG_H_ */
 

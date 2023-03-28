@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR MATE Desktop Environment team
+# Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -27,7 +27,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cafe-applets 1.23.0\n"
-"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/MATE/\n"
+"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Marcelo Ghelman <marcelo.ghelman@gmail.com>, 2020\n"
@@ -50,8 +50,8 @@ msgstr "Sun GNOME Equipe de documentação <gdocteam@sun.com>"
 #: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
 #: trashapplet/src/trashapplet.c:421
-msgid "MATE Documentation Team"
-msgstr "Equipe de Documentação do MATE"
+msgid "CAFE Documentation Team"
+msgstr "Equipe de Documentação do CAFE"
 
 #: accessx-status/applet.c:98
 msgid "About AccessX Status"
@@ -64,7 +64,7 @@ msgstr "Mostra o estado das funções AccessX tais como modificadores de acesso"
 #: accessx-status/applet.c:101
 msgid ""
 "Copyright © 2003 Sun Microsystems\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: accessx-status/applet.c:105 battstat/battstat_applet.c:844
@@ -362,11 +362,11 @@ msgstr "Sobre o Monitor de Carga da Bateria"
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation e outros\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 
 #: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
@@ -516,17 +516,17 @@ msgstr "Sobre o Seletor de caracteres"
 #: charpick/charpick.c:585
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers e outros\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 
 #: charpick/charpick.c:587
 msgid ""
 "Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
-"Miniaplicativo do painel do MATE para seleção de caracteres especiais que "
+"Miniaplicativo do painel do CAFE para seleção de caracteres especiais que "
 "não estão presentes no teclado. Publicado sob a Licença Pública Geral GNU "
 "(GNU Public License)."
 
@@ -640,10 +640,10 @@ msgstr "Sobre o Applet de comandos"
 #: command/command.c:124
 msgid ""
 "Copyright © 2013-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 "Copyright © 2013-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 
 #: command/command.c:127
 #: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:10
@@ -817,7 +817,7 @@ msgstr ""
 #: cpufreq/src/cpufreq-applet.c:483
 msgid ""
 "Copyright © 2004 Carlos Garcia Campos\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: cpufreq/src/cpufreq-applet.c:485
@@ -913,7 +913,7 @@ msgstr "Sobre o Montador de discos"
 #: drivemount/drivemount.c:122
 msgid ""
 "Copyright © 2004 Canonical Ltd\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: drivemount/drivemount.c:124
@@ -948,13 +948,13 @@ msgid "About Eyes"
 msgstr ""
 
 #: geyes/geyes.c:180
-msgid "A goofy set of eyes for the MATE panel. They follow your mouse."
-msgstr "Um par de olhos tolos para o painel do MATE. Eles seguem o seu mouse."
+msgid "A goofy set of eyes for the CAFE panel. They follow your mouse."
+msgstr "Um par de olhos tolos para o painel do CAFE. Eles seguem o seu mouse."
 
 #: geyes/geyes.c:182
 msgid ""
 "Copyright © 1999 Dave Camp\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: geyes/geyes.c:389 geyes/geyes.c:419 geyes/geyes.c:421
@@ -1013,10 +1013,10 @@ msgstr ""
 #: cafeweather/cafeweather-about.c:56
 msgid ""
 "Copyright © 1999-2005 by S. Papadimitriou and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Copyright © 1999-2005 by S. Papadimitriou e outros\n"
-"Copyright © 2012-2020 Desenvolvedores do MATE"
+"Copyright © 2012-2020 Desenvolvedores do CAFE"
 
 #: cafeweather/cafeweather-about.c:58
 msgid "A panel application for monitoring local weather conditions."
@@ -1037,8 +1037,8 @@ msgid "Weather Report"
 msgstr "Relatório meteorológico"
 
 #: cafeweather/cafeweather-applet.c:360 cafeweather/cafeweather-applet.c:364
-msgid "MATE Weather"
-msgstr "MATE Meteorologia"
+msgid "CAFE Weather"
+msgstr "CAFE Meteorologia"
 
 #: cafeweather/cafeweather-applet.c:463
 msgid "Weather Forecast"
@@ -1347,7 +1347,7 @@ msgstr "Sobre o System Monitor"
 #: multiload/main.c:62
 msgid ""
 "Copyright © 1999-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: multiload/main.c:64
@@ -2007,14 +2007,14 @@ msgstr ""
 "%s"
 
 #: netspeed/src/netspeed.c:821
-msgid "About MATE Netspeed"
+msgid "About CAFE Netspeed"
 msgstr ""
 
 #: netspeed/src/netspeed.c:823
 msgid ""
 "Copyright © 2002-2003 Jörgen Scheibengruber\n"
 "Copyright © 2011-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 
 #: netspeed/src/netspeed.c:826
@@ -2026,7 +2026,7 @@ msgstr ""
 "dispositivo de rede especificado"
 
 #: netspeed/src/netspeed.c:987
-msgid "MATE Netspeed Preferences"
+msgid "CAFE Netspeed Preferences"
 msgstr ""
 
 #: netspeed/src/netspeed.c:1009
@@ -2197,7 +2197,7 @@ msgid "unknown"
 msgstr "desconhecido"
 
 #: netspeed/src/netspeed.c:1584
-msgid "MATE Netspeed"
+msgid "CAFE Netspeed"
 msgstr ""
 
 #: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:5
@@ -2586,12 +2586,12 @@ msgstr ""
 msgid ""
 "Copyright © 2002-2003 Loban A Rahman\n"
 "Copyright © 2005 Davyd Madeley\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: stickynotes/stickynotes_applet_callbacks.c:384
-msgid "Sticky Notes for the MATE Desktop Environment"
-msgstr "Notas para o Ambiente de Trabalho MATE"
+msgid "Sticky Notes for the CAFE Desktop Environment"
+msgstr "Notas para o Ambiente de Trabalho CAFE"
 
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:5
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:6
@@ -2657,7 +2657,7 @@ msgstr ""
 #: timerapplet/timerapplet.c:274
 msgid ""
 "Copyright © 2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 
 #: timerapplet/timerapplet.c:310
@@ -2747,15 +2747,15 @@ msgstr ""
 msgid ""
 "Copyright © 2004 Michiel Sikkes\n"
 "Copyright © 2008 Ryan Lortie\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: trashapplet/src/trashapplet.c:437
 msgid ""
-"A MATE trash bin that lives in your panel. You can use it to view the trash "
+"A CAFE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
 msgstr ""
-"Uma lixeira do MATE que fica no seu painel. Você pode usá-la para ver o lixo"
+"Uma lixeira do CAFE que fica no seu painel. Você pode usá-la para ver o lixo"
 " ou para arrastar e soltar itens na lixeira."
 
 #: trashapplet/src/trashapplet.c:462

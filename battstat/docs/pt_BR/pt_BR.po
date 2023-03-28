@@ -70,8 +70,8 @@ msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:27
-msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
-msgstr "<year>2015-2020</year> <holder>MATE Projeto de documentação</holder>"
+msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
+msgstr "<year>2015-2020</year> <holder>CAFE Projeto de documentação</holder>"
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:31
@@ -101,8 +101,8 @@ msgstr "<year>1999</year> <year>2000</year> <holder>Jorgen Pehrson</holder>"
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
 #: C/index.docbook:62 C/index.docbook:133
-msgid "MATE Documentation Project"
-msgstr "Projeto de Documentação do MATE"
+msgid "CAFE Documentation Project"
+msgstr "Projeto de Documentação do CAFE"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
@@ -113,8 +113,8 @@ msgstr "Projeto de Documentação do GNOME"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:71
-msgid "<firstname>MATE Documentation Team</firstname> <surname/>"
-msgstr "<firstname>MATE Equipe de documentação</firstname> <surname/>"
+msgid "<firstname>CAFE Documentation Team</firstname> <surname/>"
+msgstr "<firstname>CAFE Equipe de documentação</firstname> <surname/>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:75
@@ -167,8 +167,8 @@ msgstr ""
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:132
-msgid "MATE Documentation Team"
-msgstr "Equipe de Documentação do MATE"
+msgid "CAFE Documentation Team"
+msgstr "Equipe de Documentação do CAFE"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:128
@@ -264,11 +264,11 @@ msgstr "Retorno"
 msgid ""
 "To report a bug or make a suggestion regarding the Battery Charge Monitor "
 "applet or this manual, follow the directions in the <ulink url=\"help:cafe-"
-"user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+"user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 "Para reportar um bug ou enviar uma sugestão referente ao applet do Monitor "
 "de Carga da Bateria, siga as instruções na <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">Pagina de Feedbacks do MATE</ulink>"
+"guide/feedback\" type=\"help\">Pagina de Feedbacks do CAFE</ulink>"
 
 #. (itstool) path: article/indexterm
 #: C/index.docbook:194
@@ -430,11 +430,11 @@ msgstr "<xref linkend=\"battstat-troubleshooting\"/>"
 #. (itstool) path: listitem/para
 #: C/index.docbook:294
 msgid ""
-"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">MATE mailing "
+"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">CAFE mailing "
 "lists</ulink>"
 msgstr ""
 "<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">Lista de mailing do "
-"MATE</ulink>"
+"CAFE</ulink>"
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:306
@@ -543,9 +543,9 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:361
-msgid "The compact view is the default view for the monitor as of MATE 2.12."
+msgid "The compact view is the default view for the monitor as of CAFE 2.12."
 msgstr ""
-"A visualização compacta é a forma padrão para o monitor desde o MATE 2.12"
+"A visualização compacta é a forma padrão para o monitor desde o CAFE 2.12"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:367
@@ -585,12 +585,12 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:368
 msgid ""
-"The expanded view is old look from previous versions of MATE. It has the "
+"The expanded view is old look from previous versions of CAFE. It has the "
 "larger graphic for the battery as well as a separate graphic to indicate "
 "what state the battery is in. <_:figure-1/>"
 msgstr ""
 "A visualização expandida é um look antigo advindo de versões anteriores do "
-"MATE. Contém o maior gráfico para o monitor assim como um gráfico separado "
+"CAFE. Contém o maior gráfico para o monitor assim como um gráfico separado "
 "para indicar em qual estado a bateria se encontra."
 
 #. (itstool) path: varlistentry/term
@@ -857,13 +857,13 @@ msgid ""
 "Select <guimenuitem>Configuration Editor</guimenuitem> from the "
 "<guimenu>Applications</guimenu> menu, under <guisubmenu>System "
 "Tools</guisubmenu>. Search for the key value "
-"<prompt>OAFIID:MATE_BattstatApplet</prompt> which should be located in the "
+"<prompt>OAFIID:CAFE_BattstatApplet</prompt> which should be located in the "
 "path <filename>/apps/panel/applets</filename>."
 msgstr ""
 "Selecione<guimenuitem>Editor de Configuração</guimenuitem>do menu de "
 "<guimenu>Aplicativos</guimenu>, abaixo de <guisubmenu>Ferramentas do "
 "Sistema</guisubmenu>. Procure pelo valor "
-"chave<prompt>OAFIID:MATE_BattstatApplet</prompt> o qual deve estar "
+"chave<prompt>OAFIID:CAFE_BattstatApplet</prompt> o qual deve estar "
 "localizado no caminho <filename>/apps/panel/applets</filename>."
 
 #. (itstool) path: sect2/para
@@ -908,12 +908,12 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
 msgid ""
-"This manual is part of a collection of MATE manuals distributed under the "
+"This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in"
 " section 6 of the license."
 msgstr ""
-"Esse manual é parte de uma coleção de manuais do MATE distribuída sob a "
+"Esse manual é parte de uma coleção de manuais do CAFE distribuída sob a "
 "GFDL. Se você quiser distribuir essa manual separado da coleção, pode fazê-"
 "lo adicionando uma cópia da licença ao manual, como descrito na seção 6 da "
 "licença."
@@ -922,14 +922,14 @@ msgstr ""
 #: C/legal.xml:19
 msgid ""
 "Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any MATE "
-"documentation, and the members of the MATE Documentation Project are made "
+"services are claimed as trademarks. Where those names appear in any CAFE "
+"documentation, and the members of the CAFE Documentation Project are made "
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
 "Muitos dos nomes usados por companhias para distinguir seus produtos e "
 "serviços são marcas registradas. Quando esses nomes ocorrem em alguma parte "
-"da documentação do MATE, e os membros do Projeto de documentação do MATE "
+"da documentação do CAFE, e os membros do Projeto de documentação do CAFE "
 "estiverem cientes de serem marcas registradas, esses nomes estarão "
 "maiúsculas ou com as iniciais em maiúsculas."
 

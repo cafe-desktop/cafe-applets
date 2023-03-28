@@ -17,7 +17,7 @@
 #include <cafe-panel-applet.h>
 #include <cafe-panel-applet-gsettings.h>
 
-#define MATEWEATHER_I_KNOW_THIS_IS_UNSTABLE
+#define CAFEWEATHER_I_KNOW_THIS_IS_UNSTABLE
 
 #include <libcafeweather/cafeweather-prefs.h>
 
@@ -55,4 +55,4 @@ static gboolean cafeweather_applet_factory(CafePanelApplet* applet, const gchar*
 	return retval;
 }
 
-MATE_PANEL_APPLET_OUT_PROCESS_FACTORY("CafeWeatherAppletFactory", PANEL_TYPE_APPLET, "cafeweather", cafeweather_applet_factory, NULL)
+CAFE_PANEL_APPLET_OUT_PROCESS_FACTORY("CafeWeatherAppletFactory", PANEL_TYPE_APPLET, "cafeweather", cafeweather_applet_factory, NULL)

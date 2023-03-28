@@ -4,8 +4,8 @@ AM_CPPFLAGS =					\
 	-I.					\
 	-I$(srcdir)				\
 	-DCHARPICK_MENU_UI_DIR=\""$(uidir)"\"	\
-	$(MATE_APPLETS4_CFLAGS)		\
-	$(MATEDESKTOP_CFLAGS)		\
+	$(CAFE_APPLETS4_CFLAGS)		\
+	$(CAFEDESKTOP_CFLAGS)		\
 	$(GUCHARMAP_CFLAGS)
 
 libexec_PROGRAMS = cafe-charpick-applet
@@ -15,8 +15,8 @@ cafe_charpick_applet_SOURCES = charpick.c \
                           properties.c
 
 cafe_charpick_applet_LDADD = \
-		       $(MATE_APPLETS4_LIBS)	\
-		       $(MATEDESKTOP_LIBS)	\
+		       $(CAFE_APPLETS4_LIBS)	\
+		       $(CAFEDESKTOP_LIBS)	\
 		       $(GUCHARMAP_LIBS)
 
 appletdir       = $(datadir)/cafe-panel/applets

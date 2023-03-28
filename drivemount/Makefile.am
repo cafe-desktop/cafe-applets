@@ -4,8 +4,8 @@ AM_CPPFLAGS =					\
 	-I.					\
 	-I$(srcdir)				\
 	-DDRIVEMOUNT_MENU_UI_DIR=\""$(uidir)"\"	\
-	$(MATE_APPLETS4_CFLAGS)			\
-	$(MATEDESKTOP_CFLAGS)
+	$(CAFE_APPLETS4_CFLAGS)			\
+	$(CAFEDESKTOP_CFLAGS)
 
 libexec_PROGRAMS = cafe-drivemount-applet
 
@@ -17,8 +17,8 @@ cafe_drivemount_applet_SOURCES =	\
 	drive-button.h
 
 cafe_drivemount_applet_LDADD =	\
-	$(MATE_APPLETS4_LIBS)	\
-	$(MATEDESKTOP_LIBS)
+	$(CAFE_APPLETS4_LIBS)	\
+	$(CAFEDESKTOP_LIBS)
 
 uidir           = $(datadir)/cafe/ui
 ui_DATA         = drivemount-applet-menu.xml

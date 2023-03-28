@@ -84,7 +84,7 @@ static void about_cb(GtkAction* action, AccessxStatusApplet* sapplet)
 	const gchar* documenters[] = {
 		"Bill Haneman <bill.haneman@sun.com>",
 		N_("Sun GNOME Documentation Team <gdocteam@sun.com>"),
-		N_("MATE Documentation Team"),
+		N_("CAFE Documentation Team"),
 		NULL
 	};
 
@@ -99,7 +99,7 @@ static void about_cb(GtkAction* action, AccessxStatusApplet* sapplet)
 		"version", VERSION,
 		"comments", _("Shows the state of AccessX features such as latched modifiers"),
 		"copyright", _("Copyright \xc2\xa9 2003 Sun Microsystems\n"
-		               "Copyright \xc2\xa9 2012-2020 MATE developers"),
+		               "Copyright \xc2\xa9 2012-2020 CAFE developers"),
 		"authors", authors,
 		"documenters", documenters,
 		"translator-credits", _("translator-credits"),
@@ -1114,10 +1114,10 @@ static AccessxStatusApplet* create_applet(CafePanelApplet* applet)
 	sapplet->initialized = False; /* there must be a better way */
 	sapplet->error_type = ACCESSX_STATUS_ERROR_NONE;
 	sapplet->applet = applet;
-	cafe_panel_applet_set_flags(applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+	cafe_panel_applet_set_flags(applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
 	sapplet->orient = cafe_panel_applet_get_orient(applet);
 
-	if (sapplet->orient == MATE_PANEL_APPLET_ORIENT_LEFT || sapplet->orient == MATE_PANEL_APPLET_ORIENT_RIGHT)
+	if (sapplet->orient == CAFE_PANEL_APPLET_ORIENT_LEFT || sapplet->orient == CAFE_PANEL_APPLET_ORIENT_RIGHT)
 	{
 		box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 		stickyfoo = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
@@ -1222,7 +1222,7 @@ static void accessx_status_applet_reorient(GtkWidget* widget, CafePanelAppletOri
 
 	sapplet->orient = o;
 
-	if (o == MATE_PANEL_APPLET_ORIENT_LEFT || o == MATE_PANEL_APPLET_ORIENT_RIGHT)
+	if (o == CAFE_PANEL_APPLET_ORIENT_LEFT || o == CAFE_PANEL_APPLET_ORIENT_RIGHT)
 	{
 		box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 		stickyfoo = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
@@ -1411,5 +1411,5 @@ static gboolean accessx_status_applet_factory(CafePanelApplet* applet, const gch
 	return retval;
 }
 
-MATE_PANEL_APPLET_OUT_PROCESS_FACTORY("AccessxStatusAppletFactory", PANEL_TYPE_APPLET, "accessx-status", accessx_status_applet_factory, NULL)
+CAFE_PANEL_APPLET_OUT_PROCESS_FACTORY("AccessxStatusAppletFactory", PANEL_TYPE_APPLET, "accessx-status", accessx_status_applet_factory, NULL)
 

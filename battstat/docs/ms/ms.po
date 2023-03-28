@@ -37,8 +37,8 @@ msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:27
-msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
-msgstr "<year>2015-2020</year> <holder>Pojek Dokumentasi MATE</holder>"
+msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
+msgstr "<year>2015-2020</year> <holder>Pojek Dokumentasi CAFE</holder>"
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:31
@@ -68,8 +68,8 @@ msgstr "<year>1999</year> <year>2000</year> <holder>Jorgen Pehrson</holder>"
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
 #: C/index.docbook:62 C/index.docbook:133
-msgid "MATE Documentation Project"
-msgstr "Projek Dokumentasi MATE"
+msgid "CAFE Documentation Project"
+msgstr "Projek Dokumentasi CAFE"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
@@ -80,8 +80,8 @@ msgstr "Projek Dokumentasi GNOME"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:71
-msgid "<firstname>MATE Documentation Team</firstname> <surname/>"
-msgstr "<firstname>Pasukan Dokumentasi MATE</firstname> <surname/>"
+msgid "<firstname>CAFE Documentation Team</firstname> <surname/>"
+msgstr "<firstname>Pasukan Dokumentasi CAFE</firstname> <surname/>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:75
@@ -134,8 +134,8 @@ msgstr ""
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:132
-msgid "MATE Documentation Team"
-msgstr "Pasukan Dokumentasi MATE"
+msgid "CAFE Documentation Team"
+msgstr "Pasukan Dokumentasi CAFE"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:128
@@ -231,11 +231,11 @@ msgstr "Maklumbalas"
 msgid ""
 "To report a bug or make a suggestion regarding the Battery Charge Monitor "
 "applet or this manual, follow the directions in the <ulink url=\"help:cafe-"
-"user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+"user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 "Untuk melaporkan pepijat atau membuat saranan berkenaan aplet Pemantau Cas "
 "Bateri atau panduan ini, ikuti arahan di dalam <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">Halaman Maklumbalas MATE</ulink>."
+"guide/feedback\" type=\"help\">Halaman Maklumbalas CAFE</ulink>."
 
 #. (itstool) path: article/indexterm
 #: C/index.docbook:194
@@ -401,10 +401,10 @@ msgstr "<xref linkend=\"battstat-troubleshooting\"/>;"
 #. (itstool) path: listitem/para
 #: C/index.docbook:294
 msgid ""
-"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">MATE mailing "
+"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">CAFE mailing "
 "lists</ulink>"
 msgstr ""
-"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">Senarai mel MATE</ulink>"
+"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">Senarai mel CAFE</ulink>"
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:306
@@ -519,9 +519,9 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:361
-msgid "The compact view is the default view for the monitor as of MATE 2.12."
+msgid "The compact view is the default view for the monitor as of CAFE 2.12."
 msgstr ""
-"Paparan padat ialah paparan lalai untuk pemantau seperti dalam MATE 2.12."
+"Paparan padat ialah paparan lalai untuk pemantau seperti dalam CAFE 2.12."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:367
@@ -561,11 +561,11 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:368
 msgid ""
-"The expanded view is old look from previous versions of MATE. It has the "
+"The expanded view is old look from previous versions of CAFE. It has the "
 "larger graphic for the battery as well as a separate graphic to indicate "
 "what state the battery is in. <_:figure-1/>"
 msgstr ""
-"Paparan terluas ialah penampilan lama dari versi terdahulu MATE. Ia "
+"Paparan terluas ialah penampilan lama dari versi terdahulu CAFE. Ia "
 "mempunyai grafik lebih besar untuk bateri dan grafik berasingan untuk "
 "menunjukkan apakah keadaan bateri di dalamnya. <_:figure-1/>"
 
@@ -841,13 +841,13 @@ msgid ""
 "Select <guimenuitem>Configuration Editor</guimenuitem> from the "
 "<guimenu>Applications</guimenu> menu, under <guisubmenu>System "
 "Tools</guisubmenu>. Search for the key value "
-"<prompt>OAFIID:MATE_BattstatApplet</prompt> which should be located in the "
+"<prompt>OAFIID:CAFE_BattstatApplet</prompt> which should be located in the "
 "path <filename>/apps/panel/applets</filename>."
 msgstr ""
 "Pilih <guimenuitem>Penyunting Konfigurasi</guimenuitem> menerusi menu "
 "<guimenu>Aplikatsi</guimenu>, di bawah <guisubmenu>Alatan "
 "Sistem</guisubmenu>. Gelintar nilai kunci "
-"<prompt>OAFIID:MATE_BattstatApplet</prompt> yang sepatutnya berada dalam "
+"<prompt>OAFIID:CAFE_BattstatApplet</prompt> yang sepatutnya berada dalam "
 "laluan <filename>/apps/panel/applets</filename>."
 
 #. (itstool) path: sect2/para
@@ -894,12 +894,12 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
 msgid ""
-"This manual is part of a collection of MATE manuals distributed under the "
+"This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in"
 " section 6 of the license."
 msgstr ""
-"Panduan ini adalah sebahagian dari koleksi panduan MATE yang diedar bawah "
+"Panduan ini adalah sebahagian dari koleksi panduan CAFE yang diedar bawah "
 "GFDL. Jika anda mahu edar panduan ini secara berasingan dari koleksi "
 "asalnya, anda boleh membuat sedemikian dengan menambah satu salinan lesen ke"
 " dalam panduan sepertimana yang dijelaskan dalam seksyen 6 lesen tersebut."
@@ -908,14 +908,14 @@ msgstr ""
 #: C/legal.xml:19
 msgid ""
 "Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any MATE "
-"documentation, and the members of the MATE Documentation Project are made "
+"services are claimed as trademarks. Where those names appear in any CAFE "
+"documentation, and the members of the CAFE Documentation Project are made "
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
 "Kebanyakan nama digunakan oleh syarikat untuk membezakan produk dan "
 "perkhidmatan mereka dituntut sebagai tanda dagangan. Jika nama tersebut ada "
-"di dalam dokumentasi MATE, dan ahli-ahli Projek Dokumentasi MATE sedar akan "
+"di dalam dokumentasi CAFE, dan ahli-ahli Projek Dokumentasi CAFE sedar akan "
 "tanda dagangan tersebut, kerana nama-nama tersebut telah di huruf besarkan "
 "atau huruf awalnya telah dihuruf besarkan."
 

@@ -51,7 +51,7 @@ msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:27
-msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
+msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
 msgstr ""
 
 #. (itstool) path: articleinfo/copyright
@@ -74,8 +74,8 @@ msgstr ""
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
 #: C/index.docbook:55 C/index.docbook:118
-msgid "MATE Documentation Project"
-msgstr "MATE 文档项目"
+msgid "CAFE Documentation Project"
+msgstr "CAFE 文档项目"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
@@ -89,8 +89,8 @@ msgstr "GNOME 文档项目"
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:64
 msgid ""
-"<firstname>MATE Documentation Team</firstname> <surname/> <affiliation> "
-"<orgname>MATE Desktop</orgname> <_:address-1/> </affiliation>"
+"<firstname>CAFE Documentation Team</firstname> <surname/> <affiliation> "
+"<orgname>CAFE Desktop</orgname> <_:address-1/> </affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
@@ -119,8 +119,8 @@ msgstr ""
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:117
-msgid "MATE Documentation Team"
-msgstr "MATE 文档团队"
+msgid "CAFE Documentation Team"
+msgstr "CAFE 文档团队"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:113
@@ -228,7 +228,7 @@ msgstr "反馈"
 msgid ""
 "To report a bug or make a suggestion regarding the Eyes applet or this "
 "manual, follow the directions in the <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+"guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -351,24 +351,24 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
 msgid ""
-"This manual is part of a collection of MATE manuals distributed under the "
+"This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in"
 " section 6 of the license."
 msgstr ""
-"本手册是在 GFDL 许可之下分发的 MATE 手册集合的一部分。如果想要单独分发此手册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6"
+"本手册是在 GFDL 许可之下分发的 CAFE 手册集合的一部分。如果想要单独分发此手册，可以在手册中添加该许可证的一份副本然后分发，如该许可证的第 6"
 " 部分所述。"
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:19
 msgid ""
 "Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any MATE "
-"documentation, and the members of the MATE Documentation Project are made "
+"services are claimed as trademarks. Where those names appear in any CAFE "
+"documentation, and the members of the CAFE Documentation Project are made "
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
-"各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 MATE 文档以及 MATE "
+"各个公司使用的许多用于区别它们产品和服务的名称都声明为商标。在所有的 CAFE 文档以及 CAFE "
 "文档项目的成员中，这些名称都是以全大写字母或首字母大写显示，从而表明它们是商标。"
 
 #. (itstool) path: listitem/para

@@ -28,7 +28,7 @@ msgstr ""
 "Александър Шопов <ash@contact.bg>\n"
 "Любомир Василев <lyubomirv@abv.bg>\n"
 "\n"
-"Проектът за превод на MATE има нужда от подкрепа.\n"
+"Проектът за превод на CAFE има нужда от подкрепа.\n"
 "Научете повече за нас на http://cafe.cult.bg\n"
 "Докладвайте за грешки на http://cafe.cult.bg/bugs"
 
@@ -46,7 +46,7 @@ msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:25
-msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
+msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
 msgstr ""
 
 #. (itstool) path: articleinfo/copyright
@@ -77,8 +77,8 @@ msgstr ""
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
 #: C/index.docbook:59 C/index.docbook:126
-msgid "MATE Documentation Project"
-msgstr "Проектът за документация на MATE"
+msgid "CAFE Documentation Project"
+msgstr "Проектът за документация на CAFE"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
@@ -90,8 +90,8 @@ msgstr ""
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:68
 msgid ""
-"<firstname>MATE Documentation Team</firstname> <surname/> <affiliation> "
-"<orgname>MATE Desktop</orgname> </affiliation>"
+"<firstname>CAFE Documentation Team</firstname> <surname/> <affiliation> "
+"<orgname>CAFE Desktop</orgname> </affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
@@ -126,8 +126,8 @@ msgstr ""
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:125
-msgid "MATE Documentation Team"
-msgstr "Екип за документация на MATE"
+msgid "CAFE Documentation Team"
+msgstr "Екип за документация на CAFE"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:121
@@ -220,7 +220,7 @@ msgstr "Обратна връзка"
 msgid ""
 "To report a bug or make a suggestion regarding the <application>Sticky "
 "Notes</application> application or this manual, follow the directions in the"
-" <ulink url=\"help:cafe-user-guide/feedback\" type=\"help\">MATE Feedback "
+" <ulink url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback "
 "Page</ulink>."
 msgstr ""
 
@@ -791,7 +791,7 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
 msgid ""
-"This manual is part of a collection of MATE manuals distributed under the "
+"This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in"
 " section 6 of the license."
@@ -801,8 +801,8 @@ msgstr ""
 #: C/legal.xml:19
 msgid ""
 "Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any MATE "
-"documentation, and the members of the MATE Documentation Project are made "
+"services are claimed as trademarks. Where those names appear in any CAFE "
+"documentation, and the members of the CAFE Documentation Project are made "
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""

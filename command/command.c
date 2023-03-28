@@ -2,7 +2,7 @@
  *
  * Copyright (C) 2013-2014 Stefano Karapetsas
  *
- * This file is part of MATE Applets.
+ * This file is part of CAFE Applets.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
@@ -122,7 +122,7 @@ command_about_callback (GtkAction *action, CommandApplet *command_applet)
                           "title", _("About Command Applet"),
                           "version", VERSION,
                           "copyright", _("Copyright \xc2\xa9 2013-2014 Stefano Karapetsas\n"
-                                         "Copyright \xc2\xa9 2015-2020 MATE developers"),
+                                         "Copyright \xc2\xa9 2015-2020 CAFE developers"),
                           "authors", authors,
                           "comments", _("Shows the output of a command"),
                           "translator-credits", _("translator-credits"),
@@ -443,7 +443,7 @@ command_applet_fill (CafePanelApplet* applet)
     g_set_application_name (_("Command Applet"));
     gtk_window_set_default_icon_name (APPLET_ICON);
 
-    cafe_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+    cafe_panel_applet_set_flags (applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
     cafe_panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
 
     command_applet = g_malloc0(sizeof(CommandApplet));
@@ -522,7 +522,7 @@ command_factory (CafePanelApplet* applet, const char* iid, gpointer data)
 }
 
 /* needed by cafe-panel applet library */
-MATE_PANEL_APPLET_OUT_PROCESS_FACTORY("CommandAppletFactory",
+CAFE_PANEL_APPLET_OUT_PROCESS_FACTORY("CommandAppletFactory",
                                       PANEL_TYPE_APPLET,
                                       "Command applet",
                                       command_factory,

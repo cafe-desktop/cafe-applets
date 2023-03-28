@@ -1,4 +1,4 @@
-/* battstat        A MATE battery meter for laptops. 
+/* battstat        A CAFE battery meter for laptops. 
  * Copyright (C) 2000 by Jörgen Pehrson <jp@spektr.eu.org>
  * Copyright (C) 2002-2005 Free Software Foundation
  *

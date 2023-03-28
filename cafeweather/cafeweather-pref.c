@@ -27,7 +27,7 @@
 #include <cafe-panel-applet.h>
 #include <gio/gio.h>
 
-#define MATEWEATHER_I_KNOW_THIS_IS_UNSTABLE
+#define CAFEWEATHER_I_KNOW_THIS_IS_UNSTABLE
 
 #include <libcafeweather/cafeweather-xml.h>
 #include "cafeweather.h"
@@ -69,7 +69,7 @@ struct _CafeWeatherPrefPrivate {
 
 enum {
 	PROP_0,
-	PROP_MATEWEATHER_APPLET,
+	PROP_CAFEWEATHER_APPLET,
 };
 
 G_DEFINE_TYPE_WITH_PRIVATE (CafeWeatherPref, cafeweather_pref, GTK_TYPE_DIALOG);
@@ -210,7 +210,7 @@ static void row_selected_cb(GtkTreeSelection* selection, CafeWeatherPref* pref)
 	if (!gtk_tree_selection_get_selected(selection, &model, &iter))
 		return;
 
-	gtk_tree_model_get(model, &iter, MATEWEATHER_XML_COL_POINTER, &loc, -1);
+	gtk_tree_model_get(model, &iter, CAFEWEATHER_XML_COL_POINTER, &loc, -1);
 
 	if (!loc)
 	{
@@ -241,7 +241,7 @@ static gboolean compare_location(GtkTreeModel* model, GtkTreePath* path, GtkTree
     WeatherLocation* loc;
     GtkTreeView* view;
 
-    gtk_tree_model_get(model, iter, MATEWEATHER_XML_COL_POINTER, &loc, -1);
+    gtk_tree_model_get(model, iter, CAFEWEATHER_XML_COL_POINTER, &loc, -1);
 
     if (!loc)
     {
@@ -271,7 +271,7 @@ static void load_locations(CafeWeatherPref* pref)
 
 	/* Add a column for the locations */
 	cell_renderer = gtk_cell_renderer_text_new();
-	column = gtk_tree_view_column_new_with_attributes("not used", cell_renderer, "text", MATEWEATHER_XML_COL_LOC, NULL);
+	column = gtk_tree_view_column_new_with_attributes("not used", cell_renderer, "text", CAFEWEATHER_XML_COL_LOC, NULL);
 	gtk_tree_view_append_column(tree, column);
 	gtk_tree_view_set_expander_column(GTK_TREE_VIEW(tree), column);
 
@@ -367,7 +367,7 @@ static void temp_combo_changed_cb(GtkComboBox* combo, CafeWeatherPref* pref)
 
 	if (gw_applet->details_dialog)
 	{
-		cafeweather_dialog_update(MATEWEATHER_DIALOG(gw_applet->details_dialog));
+		cafeweather_dialog_update(CAFEWEATHER_DIALOG(gw_applet->details_dialog));
 	}
 }
 
@@ -393,7 +393,7 @@ static void speed_combo_changed_cb(GtkComboBox* combo, CafeWeatherPref* pref)
 
 	if (gw_applet->details_dialog)
 	{
-		cafeweather_dialog_update(MATEWEATHER_DIALOG(gw_applet->details_dialog));
+		cafeweather_dialog_update(CAFEWEATHER_DIALOG(gw_applet->details_dialog));
 	}
 }
 
@@ -419,7 +419,7 @@ static void pres_combo_changed_cb(GtkComboBox* combo, CafeWeatherPref* pref)
 
 	if (gw_applet->details_dialog)
 	{
-		cafeweather_dialog_update(MATEWEATHER_DIALOG(gw_applet->details_dialog));
+		cafeweather_dialog_update(CAFEWEATHER_DIALOG(gw_applet->details_dialog));
 	}
 }
 
@@ -445,7 +445,7 @@ static void dist_combo_changed_cb(GtkComboBox* combo, CafeWeatherPref* pref)
 
 	if (gw_applet->details_dialog)
 	{
-		cafeweather_dialog_update(MATEWEATHER_DIALOG(gw_applet->details_dialog));
+		cafeweather_dialog_update(CAFEWEATHER_DIALOG(gw_applet->details_dialog));
 	}
 }
 
@@ -525,7 +525,7 @@ static gboolean free_data(GtkTreeModel* model, GtkTreePath* path, GtkTreeIter* i
 {
 	WeatherLocation* location;
 
-	gtk_tree_model_get(model, iter, MATEWEATHER_XML_COL_POINTER, &location, -1);
+	gtk_tree_model_get(model, iter, CAFEWEATHER_XML_COL_POINTER, &location, -1);
 
 	if (!location)
 	{
@@ -585,7 +585,7 @@ static gboolean find_location(GtkTreeModel* model, GtkTreeIter* iter, const gcha
 
 	do {
 
-		gtk_tree_model_get (model, iter, MATEWEATHER_XML_COL_LOC, &aux_loc, -1);
+		gtk_tree_model_get (model, iter, CAFEWEATHER_XML_COL_LOC, &aux_loc, -1);
 
 		if (g_ascii_strncasecmp (aux_loc, location, len) == 0)
 		{
@@ -1156,11 +1156,11 @@ static void cafeweather_pref_create(CafeWeatherPref* pref)
 
 static void cafeweather_pref_set_property(GObject* object, guint prop_id, const GValue* value, GParamSpec *pspec)
 {
-    CafeWeatherPref* pref = MATEWEATHER_PREF(object);
+    CafeWeatherPref* pref = CAFEWEATHER_PREF(object);
 
     switch (prop_id)
     {
-		case PROP_MATEWEATHER_APPLET:
+		case PROP_CAFEWEATHER_APPLET:
 			pref->priv->applet = g_value_get_pointer(value);
 			break;
     }
@@ -1169,11 +1169,11 @@ static void cafeweather_pref_set_property(GObject* object, guint prop_id, const 
 
 static void cafeweather_pref_get_property(GObject* object, guint prop_id, GValue* value, GParamSpec* pspec)
 {
-    CafeWeatherPref* pref = MATEWEATHER_PREF(object);
+    CafeWeatherPref* pref = CAFEWEATHER_PREF(object);
 
     switch (prop_id)
     {
-		case PROP_MATEWEATHER_APPLET:
+		case PROP_CAFEWEATHER_APPLET:
 			g_value_set_pointer(value, pref->priv->applet);
 			break;
     }
@@ -1192,7 +1192,7 @@ static GObject* cafeweather_pref_constructor(GType type, guint n_construct_param
     CafeWeatherPref* self;
 
     object = G_OBJECT_CLASS(cafeweather_pref_parent_class)->constructor(type, n_construct_params, construct_params);
-    self = MATEWEATHER_PREF(object);
+    self = CAFEWEATHER_PREF(object);
 
     cafeweather_pref_create(self);
     update_dialog(self);
@@ -1203,13 +1203,13 @@ static GObject* cafeweather_pref_constructor(GType type, guint n_construct_param
 
 GtkWidget* cafeweather_pref_new(CafeWeatherApplet* applet)
 {
-    return g_object_new(MATEWEATHER_TYPE_PREF, "cafeweather-applet", applet, NULL);
+    return g_object_new(CAFEWEATHER_TYPE_PREF, "cafeweather-applet", applet, NULL);
 }
 
 
 static void cafeweather_pref_finalize(GObject* object)
 {
-	CafeWeatherPref* self = MATEWEATHER_PREF(object);
+	CafeWeatherPref* self = CAFEWEATHER_PREF(object);
 
 	gtk_tree_model_foreach(self->priv->model, free_data, NULL);
 	g_object_unref(G_OBJECT(self->priv->model));
@@ -1230,7 +1230,7 @@ static void cafeweather_pref_class_init(CafeWeatherPrefClass* klass)
     object_class->finalize = cafeweather_pref_finalize;
 
     /* This becomes an OBJECT property when CafeWeatherApplet is redone */
-    g_object_class_install_property(object_class, PROP_MATEWEATHER_APPLET, g_param_spec_pointer("cafeweather-applet", "CafeWeather Applet", "The CafeWeather Applet", G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY));
+    g_object_class_install_property(object_class, PROP_CAFEWEATHER_APPLET, g_param_spec_pointer("cafeweather-applet", "CafeWeather Applet", "The CafeWeather Applet", G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY));
 }
 
 

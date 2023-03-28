@@ -1,4 +1,4 @@
-/* battstat        A MATE battery meter for laptops.
+/* battstat        A CAFE battery meter for laptops.
  * Copyright (C) 2000 by Jörgen Pehrson <jp@spektr.eu.org>
  * Copyright (C) 2002 Free Software Foundation
  *
@@ -593,7 +593,7 @@ possibly_update_status_icon( ProgressData *battstat, BatteryStatus *info )
 
   theme = gtk_icon_theme_get_for_screen (gtk_widget_get_screen (GTK_WIDGET (battstat->applet)));
 
-  icon_size = cafe_panel_applet_get_size (MATE_PANEL_APPLET (battstat->applet));
+  icon_size = cafe_panel_applet_get_size (CAFE_PANEL_APPLET (battstat->applet));
   icon_scale = gtk_widget_get_scale_factor (GTK_WIDGET (battstat->applet));
 
   surface = gtk_icon_theme_load_surface (theme, icon_name, icon_size, icon_scale, NULL, 0, NULL);
@@ -817,7 +817,7 @@ about_cb( GtkAction *action, ProgressData *battstat )
     "J\xC3\xB6rgen Pehrson <jp@spektr.eu.org>",
     "Trevor Curtis <tcurtis@somaradio.ca>",
     "Davyd Madeley <davyd@madeley.id.au>",
-    N_("MATE Documentation Team"),
+    N_("CAFE Documentation Team"),
     NULL
   };
 
@@ -838,7 +838,7 @@ about_cb( GtkAction *action, ProgressData *battstat )
     "version",             VERSION,
     "copyright",           _("Copyright \xc2\xa9 2000 The Gnulix Society\n"
                              "Copyright \xc2\xa9 2002-2005 Free Software Foundation and others\n"
-                             "Copyright \xc2\xa9 2012-2020 MATE developers"),
+                             "Copyright \xc2\xa9 2012-2020 CAFE developers"),
     "comments",            comments,
     "authors",             authors,
     "documenters",         documenters,
@@ -856,9 +856,9 @@ about_cb( GtkAction *action, ProgressData *battstat )
 static void
 setup_text_orientation( ProgressData *battstat )
 {
-  if( battstat->orienttype == MATE_PANEL_APPLET_ORIENT_RIGHT )
+  if( battstat->orienttype == CAFE_PANEL_APPLET_ORIENT_RIGHT )
     gtk_label_set_angle( GTK_LABEL( battstat->percent ), 90 );
-  else if( battstat->orienttype == MATE_PANEL_APPLET_ORIENT_LEFT )
+  else if( battstat->orienttype == CAFE_PANEL_APPLET_ORIENT_LEFT )
     gtk_label_set_angle( GTK_LABEL( battstat->percent ), 270 );
   else
     gtk_label_set_angle( GTK_LABEL( battstat->percent ), 0 );
@@ -994,16 +994,16 @@ reconfigure_layout( ProgressData *battstat )
 
   switch( battstat->orienttype )
   {
-    case MATE_PANEL_APPLET_ORIENT_UP:
-    case MATE_PANEL_APPLET_ORIENT_DOWN:
+    case CAFE_PANEL_APPLET_ORIENT_UP:
+    case CAFE_PANEL_APPLET_ORIENT_DOWN:
       /* Stack horizontally for top and bottom panels. */
       c.status = LAYOUT_LEFT;
       if( battstat->showtext )
 	c.text = LAYOUT_RIGHT;
       break;
 
-    case MATE_PANEL_APPLET_ORIENT_LEFT:
-    case MATE_PANEL_APPLET_ORIENT_RIGHT:
+    case CAFE_PANEL_APPLET_ORIENT_LEFT:
+    case CAFE_PANEL_APPLET_ORIENT_RIGHT:
       /* Stack vertically for left and right panels. */
       c.status = LAYOUT_TOP;
       if( battstat->showtext )
@@ -1049,7 +1049,7 @@ create_layout(ProgressData *battstat)
   if (DEBUG) g_print("create_layout()\n");
 
   /* Have our background automatically painted. */
-  cafe_panel_applet_set_background_widget( MATE_PANEL_APPLET( battstat->applet ),
+  cafe_panel_applet_set_background_widget( CAFE_PANEL_APPLET( battstat->applet ),
                                       GTK_WIDGET( battstat->applet ) );
 
   /* Allocate the four widgets that we need. */
@@ -1116,7 +1116,7 @@ battstat_applet_fill (CafePanelApplet *applet)
 
   gtk_window_set_default_icon_name ("battery");
 
-  cafe_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+  cafe_panel_applet_set_flags (applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
 
   battstat = g_new0 (ProgressData, 1);
   battstat->settings = cafe_panel_applet_settings_new (applet, BATTSTAT_SCHEMA);
@@ -1148,11 +1148,11 @@ battstat_applet_fill (CafePanelApplet *applet)
 				G_N_ELEMENTS (battstat_menu_actions),
 				battstat);
   ui_path = g_build_filename (BATTSTAT_MENU_UI_DIR, "battstat-applet-menu.xml", NULL);
-  cafe_panel_applet_setup_menu_from_file (MATE_PANEL_APPLET (battstat->applet),
+  cafe_panel_applet_setup_menu_from_file (CAFE_PANEL_APPLET (battstat->applet),
 				     ui_path, action_group);
   g_free (ui_path);
 
-  if (cafe_panel_applet_get_locked_down (MATE_PANEL_APPLET (battstat->applet))) {
+  if (cafe_panel_applet_get_locked_down (CAFE_PANEL_APPLET (battstat->applet))) {
 	  GtkAction *action;
 
 	  action = gtk_action_group_get_action (action_group, "BattstatProperties");
@@ -1187,7 +1187,7 @@ battstat_applet_factory (CafePanelApplet *applet,
 }
 
 
-MATE_PANEL_APPLET_OUT_PROCESS_FACTORY ("BattstatAppletFactory",
+CAFE_PANEL_APPLET_OUT_PROCESS_FACTORY ("BattstatAppletFactory",
 				  PANEL_TYPE_APPLET,
 				  "battstat",
 				  battstat_applet_factory,

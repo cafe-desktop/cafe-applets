@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR MATE Desktop Environment team
+# Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -19,7 +19,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cafe-applets 1.23.0\n"
-"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/MATE/\n"
+"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Oleksii Khalikov <oleksii.khalikov@gmail.com>, 2020\n"
@@ -42,8 +42,8 @@ msgstr "Sun GNOME Команда документування <gdocteam@sun.com>
 #: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
 #: trashapplet/src/trashapplet.c:421
-msgid "MATE Documentation Team"
-msgstr "Команда документування MATE"
+msgid "CAFE Documentation Team"
+msgstr "Команда документування CAFE"
 
 #: accessx-status/applet.c:98
 msgid "About AccessX Status"
@@ -57,7 +57,7 @@ msgstr ""
 #: accessx-status/applet.c:101
 msgid ""
 "Copyright © 2003 Sun Microsystems\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: accessx-status/applet.c:105 battstat/battstat_applet.c:844
@@ -348,11 +348,11 @@ msgstr "Про індикатор зарядження акумулятора"
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Авторське право © 2000 Товариство Gnulix\n"
 "Авторське право © 2002-2005 Фундація вільного програмного забезпечення та інші\n"
-"Авторське право © 2012-2020 Розробники MATE"
+"Авторське право © 2012-2020 Розробники CAFE"
 
 #: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
@@ -502,7 +502,7 @@ msgstr "Про Касу символів"
 #: charpick/charpick.c:585
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: charpick/charpick.c:587
@@ -623,10 +623,10 @@ msgstr "Про Командний аплет"
 #: command/command.c:124
 msgid ""
 "Copyright © 2013-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 "Авторське право © 2013-2014 Стефано Карапецас\n"
-"Авторське право © 2015-2020 Розробники MATE"
+"Авторське право © 2015-2020 Розробники CAFE"
 
 #: command/command.c:127
 #: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:10
@@ -800,10 +800,10 @@ msgstr "Про Індикатор зміни частоти процесора"
 #: cpufreq/src/cpufreq-applet.c:483
 msgid ""
 "Copyright © 2004 Carlos Garcia Campos\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Авторське право© 2004 Карлос Ґарсія Кампос\n"
-"Авторське право © 2012-2020 Розробники MATE"
+"Авторське право © 2012-2020 Розробники CAFE"
 
 #: cpufreq/src/cpufreq-applet.c:485
 msgid "This utility shows the current CPU Frequency Scaling."
@@ -897,10 +897,10 @@ msgstr "Про Монтування дисків"
 #: drivemount/drivemount.c:122
 msgid ""
 "Copyright © 2004 Canonical Ltd\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Авторське право © 2004 Canonical Ltd\n"
-"Авторське право © 2012-2020 Розробники MATE"
+"Авторське право © 2012-2020 Розробники CAFE"
 
 #: drivemount/drivemount.c:124
 msgid "Applet for mounting and unmounting block volumes."
@@ -934,13 +934,13 @@ msgid "About Eyes"
 msgstr "Про програму Очі"
 
 #: geyes/geyes.c:180
-msgid "A goofy set of eyes for the MATE panel. They follow your mouse."
-msgstr "Безґлузді очі для панелі MATE, що стежать за вказівником миші."
+msgid "A goofy set of eyes for the CAFE panel. They follow your mouse."
+msgstr "Безґлузді очі для панелі CAFE, що стежать за вказівником миші."
 
 #: geyes/geyes.c:182
 msgid ""
 "Copyright © 1999 Dave Camp\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: geyes/geyes.c:389 geyes/geyes.c:419 geyes/geyes.c:421
@@ -999,7 +999,7 @@ msgstr "Про Прогноз погоди"
 #: cafeweather/cafeweather-about.c:56
 msgid ""
 "Copyright © 1999-2005 by S. Papadimitriou and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
 #: cafeweather/cafeweather-about.c:58
@@ -1020,7 +1020,7 @@ msgid "Weather Report"
 msgstr "Зведення погоди"
 
 #: cafeweather/cafeweather-applet.c:360 cafeweather/cafeweather-applet.c:364
-msgid "MATE Weather"
+msgid "CAFE Weather"
 msgstr "Аплет \"Зведення погоди\""
 
 #: cafeweather/cafeweather-applet.c:463
@@ -1328,10 +1328,10 @@ msgstr "Про системний монітор"
 #: multiload/main.c:62
 msgid ""
 "Copyright © 1999-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Авторське право © 1999-2005 Фундація вільного програмного забезпечення та інші\n"
-"Авторське право © 2012-2020 Розробники MATE"
+"Авторське право © 2012-2020 Розробники CAFE"
 
 #: multiload/main.c:64
 msgid ""
@@ -1995,18 +1995,18 @@ msgstr ""
 "%s"
 
 #: netspeed/src/netspeed.c:821
-msgid "About MATE Netspeed"
-msgstr "Про MATE Мережевий потік"
+msgid "About CAFE Netspeed"
+msgstr "Про CAFE Мережевий потік"
 
 #: netspeed/src/netspeed.c:823
 msgid ""
 "Copyright © 2002-2003 Jörgen Scheibengruber\n"
 "Copyright © 2011-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 "Авторське право © 2002-2003 Йорґен Шейбенґрубер\n"
 "Авторське право © 2011-2014 Стефано Карапецас\n"
-"Авторське право © 2015-2020 Розробники MATE"
+"Авторське право © 2015-2020 Розробники CAFE"
 
 #: netspeed/src/netspeed.c:826
 msgid ""
@@ -2017,8 +2017,8 @@ msgstr ""
 "проходить через вибраний мережевий пристрій."
 
 #: netspeed/src/netspeed.c:987
-msgid "MATE Netspeed Preferences"
-msgstr "Налаштування MATE Мережевий монітор"
+msgid "CAFE Netspeed Preferences"
+msgstr "Налаштування CAFE Мережевий монітор"
 
 #: netspeed/src/netspeed.c:1009
 msgid "General Settings"
@@ -2188,8 +2188,8 @@ msgid "unknown"
 msgstr "Невідомо"
 
 #: netspeed/src/netspeed.c:1584
-msgid "MATE Netspeed"
-msgstr "MATE Мережевий монітор"
+msgid "CAFE Netspeed"
+msgstr "CAFE Мережевий монітор"
 
 #: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:5
 #: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:6
@@ -2575,15 +2575,15 @@ msgstr "Про Липкі нотатки"
 msgid ""
 "Copyright © 2002-2003 Loban A Rahman\n"
 "Copyright © 2005 Davyd Madeley\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Авторське право © 2002-2003 Лобан А Рахман\n"
 "Авторське право © 2005 Давид Мадлі\n"
-"Авторське право © 2012-2020 Розробники MATE"
+"Авторське право © 2012-2020 Розробники CAFE"
 
 #: stickynotes/stickynotes_applet_callbacks.c:384
-msgid "Sticky Notes for the MATE Desktop Environment"
-msgstr "\"Липкі\" нотатки для середовища MATE"
+msgid "Sticky Notes for the CAFE Desktop Environment"
+msgstr "\"Липкі\" нотатки для середовища CAFE"
 
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:5
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:6
@@ -2648,10 +2648,10 @@ msgstr "Про аплет Таймер"
 #: timerapplet/timerapplet.c:274
 msgid ""
 "Copyright © 2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 "Авторське право © 2014 Стефано Карапецас\n"
-"Авторське право © 2015-2020 Розробники MATE"
+"Авторське право © 2015-2020 Розробники CAFE"
 
 #: timerapplet/timerapplet.c:310
 msgid "Timer Applet Preferences"
@@ -2742,18 +2742,18 @@ msgstr "Про аплет Смітник"
 msgid ""
 "Copyright © 2004 Michiel Sikkes\n"
 "Copyright © 2008 Ryan Lortie\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Авторське право © 2004 Міхель Сіккес\n"
 "Авторське право © 2008 Райан Лорті\n"
-"Авторське право © 2012-2020 Розробники MATE"
+"Авторське право © 2012-2020 Розробники CAFE"
 
 #: trashapplet/src/trashapplet.c:437
 msgid ""
-"A MATE trash bin that lives in your panel. You can use it to view the trash "
+"A CAFE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
 msgstr ""
-"Смітник середовища MATE, який живе у Вашій панелі. Ви можете використовувати"
+"Смітник середовища CAFE, який живе у Вашій панелі. Ви можете використовувати"
 " його для перегляду смітника або перетягування у нього елементів."
 
 #: trashapplet/src/trashapplet.c:462

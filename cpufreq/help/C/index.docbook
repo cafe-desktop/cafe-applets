@@ -6,7 +6,7 @@
 ]>
 <!-- 
       (Do not remove this comment block.)
-  Maintained by the MATE Documentation Project
+  Maintained by the CAFE Documentation Project
   http://wiki.cafe-desktop.org/dev-doc:doc-team-guide
   Template version: 2.0 beta
   Template last modified Feb 06, 2003
@@ -23,7 +23,7 @@
 	</abstract>
 	<copyright>
 	  <year>2015-2020</year>
-	  <holder>MATE Documentation Project</holder>
+	  <holder>CAFE Documentation Project</holder>
 	</copyright>
 	<copyright>
 	  <year>2005</year>
@@ -42,7 +42,7 @@
    -->
 
 	 <publisher role="maintainer"> 
-		<publishername>MATE Documentation Project</publishername> 
+		<publishername>CAFE Documentation Project</publishername> 
 	 </publisher>
 	 <publisher>
 		<publishername>GNOME Documentation Project</publishername>
@@ -52,10 +52,10 @@
 
 	 <authorgroup> 
             <author>
-	       <firstname>MATE Documentation Team</firstname>
+	       <firstname>CAFE Documentation Team</firstname>
 	       <surname></surname>
 	       <affiliation>
-                  <orgname>MATE Desktop</orgname>
+                  <orgname>CAFE Desktop</orgname>
 	       </affiliation>
             </author>
             <author>
@@ -95,8 +95,8 @@
 	     <revnumber>&applet; Applet Manual V0.6</revnumber>
 	     <date>July 2015</date>
 	     <revdescription>
-	      <para role="author">MATE Documentation Team</para>
-	      <para role="publisher">MATE Documentation Project</para>
+	      <para role="author">CAFE Documentation Team</para>
+	      <para role="publisher">CAFE Documentation Project</para>
 	     </revdescription>
 	   </revision>
 	   <revision>
@@ -131,7 +131,7 @@
 		<para>
 		   To report a bug or make a suggestion regarding the &applet; applet or
 		   this manual, follow the directions in the <ulink url="help:cafe-user-guide/feedback"
-		   type="help">MATE Feedback Page</ulink>.
+		   type="help">CAFE Feedback Page</ulink>.
 	        </para>
 	     </legalnotice>
 
@@ -273,7 +273,7 @@
    <sect2 id="cafe-cpufreq-selector">
       <title>Frequency and Governor Selector</title>
       <warning><para>The Frequency Selector functionality may not be available
-      on your MATE Desktop by default. Please consult your system
+      on your CAFE Desktop by default. Please consult your system
       administrator, vendor documentation, or the documentation that came with
       this software.</para></warning>
       <para>

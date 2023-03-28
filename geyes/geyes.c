@@ -164,7 +164,7 @@ about_cb (GtkAction   *action,
                 "Arjan Scherpenisse <acscherp@wins.uva.nl>",
                 "Telsa Gwynne <hobbit@aloss.ukuu.org.uk>",
                 N_("Sun GNOME Documentation Team <gdocteam@sun.com>"),
-                N_("MATE Documentation Team"),
+                N_("CAFE Documentation Team"),
 		NULL
 	};
 
@@ -177,10 +177,10 @@ about_cb (GtkAction   *action,
 	gtk_show_about_dialog (NULL,
 		"title",              _("About Eyes"),
 		"version",            VERSION,
-		"comments",           _("A goofy set of eyes for the MATE "
+		"comments",           _("A goofy set of eyes for the CAFE "
 		                      "panel. They follow your mouse."),
 		"copyright",          _("Copyright \xC2\xA9 1999 Dave Camp\n"
-		                        "Copyright \xc2\xa9 2012-2020 MATE developers"),
+		                        "Copyright \xc2\xa9 2012-2020 CAFE developers"),
 		"authors",            authors,
 		"documenters",        documenters,
 		"translator-credits", _("translator-credits"),
@@ -389,7 +389,7 @@ geyes_applet_fill (CafePanelApplet *applet)
 	g_set_application_name (_("Eyes"));
 	
 	gtk_window_set_default_icon_name ("cafe-eyes-applet");
-	cafe_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+	cafe_panel_applet_set_flags (applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
 	cafe_panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
 	
         eyes_applet = create_eyes (applet);
@@ -458,7 +458,7 @@ geyes_applet_factory (CafePanelApplet *applet,
 	return retval;
 }
 
-MATE_PANEL_APPLET_OUT_PROCESS_FACTORY ("GeyesAppletFactory",
+CAFE_PANEL_APPLET_OUT_PROCESS_FACTORY ("GeyesAppletFactory",
 				  PANEL_TYPE_APPLET,
 				  "geyes",
 				  geyes_applet_factory,

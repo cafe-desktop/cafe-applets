@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR MATE Desktop Environment team
+# Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -20,7 +20,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cafe-applets 1.23.0\n"
-"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/MATE/\n"
+"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: ToMáš Marný, 2020\n"
@@ -43,8 +43,8 @@ msgstr "Dokumentační tým GNOME společnosti Sun <gdocteam@sun.com>"
 #: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
 #: trashapplet/src/trashapplet.c:421
-msgid "MATE Documentation Team"
-msgstr "Dokumentační tým MATE"
+msgid "CAFE Documentation Team"
+msgstr "Dokumentační tým CAFE"
 
 #: accessx-status/applet.c:98
 msgid "About AccessX Status"
@@ -57,10 +57,10 @@ msgstr "Zobrazí stav vlastností AccessX, například zablokovaných modifikát
 #: accessx-status/applet.c:101
 msgid ""
 "Copyright © 2003 Sun Microsystems\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Copyright © 2003 Sun Microsystems\n"
-"Copyright © 2012-2020 Vývojáři MATE"
+"Copyright © 2012-2020 Vývojáři CAFE"
 
 #: accessx-status/applet.c:105 battstat/battstat_applet.c:844
 #: charpick/charpick.c:592 command/command.c:128
@@ -359,11 +359,11 @@ msgstr "O appletu Sledování stavu baterie"
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Copyright © 2000 Společnost Gnulix\n"
 "Copyright © 2002-2005 Free Software Foundation a další\n"
-"Copyright © 2012-2020 Vývojáři MATE"
+"Copyright © 2012-2020 Vývojáři CAFE"
 
 #: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
@@ -515,17 +515,17 @@ msgstr "O appletu Paleta znaků"
 #: charpick/charpick.c:585
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Copyright © 1998, 2004-2005 Správci appletů GNOME a další\n"
-"Copyright © 2012-2020 Vývojáři MATE"
+"Copyright © 2012-2020 Vývojáři CAFE"
 
 #: charpick/charpick.c:587
 msgid ""
 "Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
-"Applet pro panel MATE sloužící k výběru znaků, které není možno zadat z "
+"Applet pro panel CAFE sloužící k výběru znaků, které není možno zadat z "
 "klávesnice. Distribuováno pod podmínkami GNU General Public License."
 
 #: charpick/charpick.c:699 charpick/charpick.c:713
@@ -638,10 +638,10 @@ msgstr "O appletu Příkazový Applet"
 #: command/command.c:124
 msgid ""
 "Copyright © 2013-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 "Copyright © 2013-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 Vývojáři MATE"
+"Copyright © 2015-2020 Vývojáři CAFE"
 
 #: command/command.c:127
 #: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:10
@@ -814,10 +814,10 @@ msgstr "O appletu Sledování změny frekvence CPU"
 #: cpufreq/src/cpufreq-applet.c:483
 msgid ""
 "Copyright © 2004 Carlos Garcia Campos\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Copyright © 2004 Carlos Garcia Campos\n"
-"Copyright © 2012-2020 Vývojáři MATE"
+"Copyright © 2012-2020 Vývojáři CAFE"
 
 #: cpufreq/src/cpufreq-applet.c:485
 msgid "This utility shows the current CPU Frequency Scaling."
@@ -910,10 +910,10 @@ msgstr "O appletu Připojování disků"
 #: drivemount/drivemount.c:122
 msgid ""
 "Copyright © 2004 Canonical Ltd\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Copyright © 2004 Canonical Ltd\n"
-"Copyright © 2012-2020 Vývojáři MATE"
+"Copyright © 2012-2020 Vývojáři CAFE"
 
 #: drivemount/drivemount.c:124
 msgid "Applet for mounting and unmounting block volumes."
@@ -947,16 +947,16 @@ msgid "About Eyes"
 msgstr "O appletu Oči"
 
 #: geyes/geyes.c:180
-msgid "A goofy set of eyes for the MATE panel. They follow your mouse."
-msgstr "Legrační pár očí pro panel MATE. Oči sledují vaši myš."
+msgid "A goofy set of eyes for the CAFE panel. They follow your mouse."
+msgstr "Legrační pár očí pro panel CAFE. Oči sledují vaši myš."
 
 #: geyes/geyes.c:182
 msgid ""
 "Copyright © 1999 Dave Camp\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Copyright © 1999 Dave Camp\n"
-"Copyright © 2012-2020 Vývojáři MATE"
+"Copyright © 2012-2020 Vývojáři CAFE"
 
 #: geyes/geyes.c:389 geyes/geyes.c:419 geyes/geyes.c:421
 #: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:9
@@ -1014,10 +1014,10 @@ msgstr "O appletu Zprávy o počasí"
 #: cafeweather/cafeweather-about.c:56
 msgid ""
 "Copyright © 1999-2005 by S. Papadimitriou and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Copyright © 1999-2005 S. Papadimitriou a další\n"
-"Copyright © 2012-2020 Vývojáři MATE"
+"Copyright © 2012-2020 Vývojáři CAFE"
 
 #: cafeweather/cafeweather-about.c:58
 msgid "A panel application for monitoring local weather conditions."
@@ -1037,8 +1037,8 @@ msgid "Weather Report"
 msgstr "Zprávy o počasí"
 
 #: cafeweather/cafeweather-applet.c:360 cafeweather/cafeweather-applet.c:364
-msgid "MATE Weather"
-msgstr "Počasí MATE"
+msgid "CAFE Weather"
+msgstr "Počasí CAFE"
 
 #: cafeweather/cafeweather-applet.c:463
 msgid "Weather Forecast"
@@ -1345,10 +1345,10 @@ msgstr "O aplikaci Sledování systému"
 #: multiload/main.c:62
 msgid ""
 "Copyright © 1999-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Copyright © 1999-2005 Free Software Foundation a další\n"
-"Copyright © 2012-2020 Vývojáři MATE"
+"Copyright © 2012-2020 Vývojáři CAFE"
 
 #: multiload/main.c:64
 msgid ""
@@ -2013,18 +2013,18 @@ msgid ""
 msgstr "Stala se chyba při zobrazování nápovědy: %s"
 
 #: netspeed/src/netspeed.c:821
-msgid "About MATE Netspeed"
-msgstr "O appletu Rychlost sítě pro MATE"
+msgid "About CAFE Netspeed"
+msgstr "O appletu Rychlost sítě pro CAFE"
 
 #: netspeed/src/netspeed.c:823
 msgid ""
 "Copyright © 2002-2003 Jörgen Scheibengruber\n"
 "Copyright © 2011-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 "Copyright © 2002-2003 Jörgen Scheibengruber\n"
 "Copyright © 2011-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 Vývojáři MATE"
+"Copyright © 2015-2020 Vývojáři CAFE"
 
 #: netspeed/src/netspeed.c:826
 msgid ""
@@ -2035,8 +2035,8 @@ msgstr ""
 "zařízení"
 
 #: netspeed/src/netspeed.c:987
-msgid "MATE Netspeed Preferences"
-msgstr "Předvolby appletu Rychlost sítě pro MATE"
+msgid "CAFE Netspeed Preferences"
+msgstr "Předvolby appletu Rychlost sítě pro CAFE"
 
 #: netspeed/src/netspeed.c:1009
 msgid "General Settings"
@@ -2200,8 +2200,8 @@ msgid "unknown"
 msgstr "neznámý"
 
 #: netspeed/src/netspeed.c:1584
-msgid "MATE Netspeed"
-msgstr "Rychlost sítě pro MATE"
+msgid "CAFE Netspeed"
+msgstr "Rychlost sítě pro CAFE"
 
 #: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:5
 #: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:6
@@ -2592,15 +2592,15 @@ msgstr "O appletu Lepicí poznámky"
 msgid ""
 "Copyright © 2002-2003 Loban A Rahman\n"
 "Copyright © 2005 Davyd Madeley\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Copyright © 2002-2003 Loban A Rahman\n"
 "Copyright © 2005 Davyd Madeley\n"
-"Copyright © 2012-2020 Vývojáři MATE"
+"Copyright © 2012-2020 Vývojáři CAFE"
 
 #: stickynotes/stickynotes_applet_callbacks.c:384
-msgid "Sticky Notes for the MATE Desktop Environment"
-msgstr "Lepicí poznámky pro prostředí MATE"
+msgid "Sticky Notes for the CAFE Desktop Environment"
+msgstr "Lepicí poznámky pro prostředí CAFE"
 
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:5
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:6
@@ -2665,10 +2665,10 @@ msgstr "O appletu Časovač"
 #: timerapplet/timerapplet.c:274
 msgid ""
 "Copyright © 2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 "Copyright © 2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 Vývojáři MATE"
+"Copyright © 2015-2020 Vývojáři CAFE"
 
 #: timerapplet/timerapplet.c:310
 msgid "Timer Applet Preferences"
@@ -2759,18 +2759,18 @@ msgstr "O appletu Koš"
 msgid ""
 "Copyright © 2004 Michiel Sikkes\n"
 "Copyright © 2008 Ryan Lortie\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Copyright © 2004 Michiel Sikkes\n"
 "Copyright © 2008 Ryan Lortie\n"
-"Copyright © 2012-2020 Vývojáři MATE"
+"Copyright © 2012-2020 Vývojáři CAFE"
 
 #: trashapplet/src/trashapplet.c:437
 msgid ""
-"A MATE trash bin that lives in your panel. You can use it to view the trash "
+"A CAFE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
 msgstr ""
-"Koš MATE nacházející se na vašem panelu. Lze jej používat k zobrazení koše "
+"Koš CAFE nacházející se na vašem panelu. Lze jej používat k zobrazení koše "
 "nebo do něj přetahovat položky."
 
 #: trashapplet/src/trashapplet.c:462

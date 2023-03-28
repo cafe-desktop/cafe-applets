@@ -5,11 +5,11 @@ SUBDIRS = docs
 AM_CPPFLAGS =					\
 	-I$(srcdir)				\
 	-I$(top_srcdir)				\
-	-DMATEWEATHER_MENU_UI_DIR=\""$(uidir)"\"	\
-	$(MATE_APPLETS4_CFLAGS)		\
-	$(MATEDESKTOP_CFLAGS)		\
+	-DCAFEWEATHER_MENU_UI_DIR=\""$(uidir)"\"	\
+	$(CAFE_APPLETS4_CFLAGS)		\
+	$(CAFEDESKTOP_CFLAGS)		\
 	$(LIBNOTIFY_CFLAGS)			\
-	$(LIBMATEWEATHER_CFLAGS)			\
+	$(LIBCAFEWEATHER_CFLAGS)			\
 	$(DBUS_CFLAGS)
 
 libexec_PROGRAMS = cafeweather-applet
@@ -24,10 +24,10 @@ cafeweather_applet_SOURCES = \
 
 cafeweather_applet_LDADD = 	\
 	$(LIBNOTIFY_LIBS) 	\
-	$(MATE_APPLETS4_LIBS)	\
-	$(MATEDESKTOP_LIBS)	\
-	$(MATE_LIBS2_LIBS)	\
-	$(LIBMATEWEATHER_LIBS)	\
+	$(CAFE_APPLETS4_LIBS)	\
+	$(CAFEDESKTOP_LIBS)	\
+	$(CAFE_LIBS2_LIBS)	\
+	$(LIBCAFEWEATHER_LIBS)	\
 	$(DBUS_LIBS)
 
 uidir = $(datadir)/cafe/ui

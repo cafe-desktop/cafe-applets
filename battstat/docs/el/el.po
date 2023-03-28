@@ -26,7 +26,7 @@ msgstr ""
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Ελληνική μεταφραστική ομάδα MATE\n"
+"Ελληνική μεταφραστική ομάδα CAFE\n"
 " Αλέξανδρος Μουχτσής <alexandros@gnugr.org>\n"
 "\n"
 "Για περισσότερες πληροφορίες, επισκεφθείτε την σελίδα http://www.cafe.gr/"
@@ -48,7 +48,7 @@ msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:27
-msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
+msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
 msgstr ""
 
 #. (itstool) path: articleinfo/copyright
@@ -79,8 +79,8 @@ msgstr "<year>1999</year> <year>2000</year> <holder>Jorgen Pehrson</holder>"
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
 #: C/index.docbook:62 C/index.docbook:133
-msgid "MATE Documentation Project"
-msgstr "Έργο Τεκμηρίωσης MATE"
+msgid "CAFE Documentation Project"
+msgstr "Έργο Τεκμηρίωσης CAFE"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
@@ -91,8 +91,8 @@ msgstr "Έργο τεκμηρίωσης GNOME"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:71
-msgid "<firstname>MATE Documentation Team</firstname> <surname/>"
-msgstr "<firstname>Ομάδα τεκμηρίωσης του MATE</firstname> <surname/>"
+msgid "<firstname>CAFE Documentation Team</firstname> <surname/>"
+msgstr "<firstname>Ομάδα τεκμηρίωσης του CAFE</firstname> <surname/>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:75
@@ -145,8 +145,8 @@ msgstr ""
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:132
-msgid "MATE Documentation Team"
-msgstr "Ομάδα τεκμηρίωσης MATE"
+msgid "CAFE Documentation Team"
+msgstr "Ομάδα τεκμηρίωσης CAFE"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:128
@@ -244,7 +244,7 @@ msgstr "Ανάδραση"
 msgid ""
 "To report a bug or make a suggestion regarding the Battery Charge Monitor "
 "applet or this manual, follow the directions in the <ulink url=\"help:cafe-"
-"user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+"user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 "Για να αναφέρετε σφάλματα ή να υποβάλλετε προτάσεις για την μικροεφαρμογή "
 "Παρακολούθησης φορτίου μπαταρίας ακολουθήστε τις οδηγίες που βρίσκονται "
@@ -421,11 +421,11 @@ msgstr "<xref linkend=\"battstat-troubleshooting\"/>;"
 #. (itstool) path: listitem/para
 #: C/index.docbook:294
 msgid ""
-"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">MATE mailing "
+"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">CAFE mailing "
 "lists</ulink>"
 msgstr ""
 "<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">Λίστα ταχυδρομείου του "
-"MATE</ulink>"
+"CAFE</ulink>"
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:306
@@ -542,10 +542,10 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:361
-msgid "The compact view is the default view for the monitor as of MATE 2.12."
+msgid "The compact view is the default view for the monitor as of CAFE 2.12."
 msgstr ""
 "Η συμπαγής προβολή είναι η εξ ορισμού αρχική προβολή για την παρακολούθηση "
-"για MATE 2.12."
+"για CAFE 2.12."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:367
@@ -585,11 +585,11 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:368
 msgid ""
-"The expanded view is old look from previous versions of MATE. It has the "
+"The expanded view is old look from previous versions of CAFE. It has the "
 "larger graphic for the battery as well as a separate graphic to indicate "
 "what state the battery is in. <_:figure-1/>"
 msgstr ""
-"Η επεκταμένη προβολή προέρχεται από παλαιότερες εκδόσεις του MATE. Διαθέτει "
+"Η επεκταμένη προβολή προέρχεται από παλαιότερες εκδόσεις του CAFE. Διαθέτει "
 "ένα μεγαλύτερο γραφικό στοιχείο για την μπαταρία καθώς και ένα ξεχωριστό "
 "γραφικό στοιχείο που δείχνει την κατάσταση της μπαταρίας.<_:figure-1/>"
 
@@ -873,13 +873,13 @@ msgid ""
 "Select <guimenuitem>Configuration Editor</guimenuitem> from the "
 "<guimenu>Applications</guimenu> menu, under <guisubmenu>System "
 "Tools</guisubmenu>. Search for the key value "
-"<prompt>OAFIID:MATE_BattstatApplet</prompt> which should be located in the "
+"<prompt>OAFIID:CAFE_BattstatApplet</prompt> which should be located in the "
 "path <filename>/apps/panel/applets</filename>."
 msgstr ""
 "<guimenuitem>Επεξεργαστής ρυθμίσεων</guimenuitem> από το μενού "
 "<guimenu>Εφαρμογές</guimenu> της ενότητας <guisubmenu>Εργαλεία "
 "συστήματος</guisubmenu>. Αναζητήστε την τιμή κλειδιού "
-"<prompt>OAFIID:MATE_BattstatAppletΕπιλέξτε</prompt> η οποία θα πρέπει να "
+"<prompt>OAFIID:CAFE_BattstatAppletΕπιλέξτε</prompt> η οποία θα πρέπει να "
 "βρίσκεται στην διαδρομή <filename>/apps/panel/applets</filename>."
 
 #. (itstool) path: sect2/para
@@ -926,12 +926,12 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
 msgid ""
-"This manual is part of a collection of MATE manuals distributed under the "
+"This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in"
 " section 6 of the license."
 msgstr ""
-"Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του MATE όπως "
+"Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του CAFE όπως "
 "διανέμεται υπό τους όρους του GFDL. Εάν επιθυμείτε να διανείμετε αυτή την "
 "τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση"
 " συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 "
@@ -941,14 +941,14 @@ msgstr ""
 #: C/legal.xml:19
 msgid ""
 "Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any MATE "
-"documentation, and the members of the MATE Documentation Project are made "
+"services are claimed as trademarks. Where those names appear in any CAFE "
+"documentation, and the members of the CAFE Documentation Project are made "
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
 "Πολλά από τα ονόματα που χρησιμοποιούνται από εταιρίες για να ξεχωρίσουν τα "
 "προϊόντα και τις υπηρεσίες είναι σήματα κατατεθέν. Όπου αυτά τα ονόματα "
-"εμφανίζονται στην τεκμηρίωση MATE, και τα μέλη της ομάδας τεκμηρίωσης MATE "
+"εμφανίζονται στην τεκμηρίωση CAFE, και τα μέλη της ομάδας τεκμηρίωσης CAFE "
 "έχουν γνώση αυτών, τότε αυτά αναγράφονται με κεφαλαίους χαρακτήρες ή με "
 "αρχικούς κεφαλαίους χαρακτήρες."
 

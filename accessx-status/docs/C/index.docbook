@@ -6,7 +6,7 @@
 
 <!-- 
       (Do not remove this comment block.)
-  Maintained by the MATE Documentation Project
+  Maintained by the CAFE Documentation Project
   http://wiki.cafe-desktop.org/dev-doc:doc-team-guide
   Template version: 2.0 beta
   Template last modified Mar 12, 2002
@@ -23,7 +23,7 @@
 	 </abstract>
     <copyright>
       <year>2015-2020</year>
-      <holder>MATE Documentation Project</holder>
+      <holder>CAFE Documentation Project</holder>
     </copyright>
 	 <copyright>
 	 	<year>2005</year>
@@ -43,7 +43,7 @@
    -->
 
 	 <publisher role="maintainer"> 
-		<publishername>MATE Documentation Project</publishername> 
+		<publishername>CAFE Documentation Project</publishername> 
 	 </publisher> 
 	 <publisher>
 		<publishername>GNOME Documentation Project</publishername>
@@ -53,7 +53,7 @@
 
 	 <authorgroup>
 	 	<author>
-		  <firstname>MATE Documentation Project</firstname>
+		  <firstname>CAFE Documentation Project</firstname>
 		  <surname></surname>
 		</author>
 		<author>
@@ -93,9 +93,9 @@
 		  <revnumber>Keyboard Accessibility Status Applet Manual V0.4</revnumber>
 		  <date>July 2015</date>
 		  <revdescription> 
-			 <para role="author">MATE Documentation Team
+			 <para role="author">CAFE Documentation Team
 				</para> 
-			 <para role="publisher">MATE Documentation Project</para> 
+			 <para role="publisher">CAFE Documentation Project</para> 
 		  </revdescription>
 	    </revision>
 	    <revision>
@@ -132,7 +132,7 @@
 		<title>Feedback</title>
 		<para> To report a bug or make a suggestion regarding the &applet; applet or this
 		  manual, follow the directions in the
-		  <ulink url="help:cafe-user-guide/feedback" type="help">MATE Feedback Page</ulink>. </para>
+		  <ulink url="help:cafe-user-guide/feedback" type="help">CAFE Feedback Page</ulink>. </para>
 
 	 </legalnotice>
   </articleinfo>

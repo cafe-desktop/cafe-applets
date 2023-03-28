@@ -37,20 +37,20 @@ msgstr ""
 #. (itstool) path: articleinfo/title
 #: C/index.docbook:23
 msgid "Netspeed Applet Manual V1.3"
-msgstr "MATE tinklo greičio žinynas V.13"
+msgstr "CAFE tinklo greičio žinynas V.13"
 
 #. (itstool) path: abstract/para
 #: C/index.docbook:25
 msgid ""
 "Netspeed Applet shows how much traffic occurs on a specified network device."
 msgstr ""
-"MATE tinklo greičio įtaisas rodo, koks duomenų srautas perduodamas tinklo "
+"CAFE tinklo greičio įtaisas rodo, koks duomenų srautas perduodamas tinklo "
 "įrenginyje."
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:27
-msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
-msgstr "<year>2015-2020</year> <holder>MATE dokumentacijos projektas</holder>"
+msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
+msgstr "<year>2015-2020</year> <holder>CAFE dokumentacijos projektas</holder>"
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:31
@@ -59,8 +59,8 @@ msgstr "<year>2002</year> <holder>Jörgen Scheibengruber</holder>"
 
 #. (itstool) path: publisher/publishername
 #: C/index.docbook:44
-msgid "MATE Documentation Project"
-msgstr "MATE dokumentacijos projektas"
+msgid "CAFE Documentation Project"
+msgstr "CAFE dokumentacijos projektas"
 
 #. (itstool) path: publisher/publishername
 #: C/index.docbook:47
@@ -70,11 +70,11 @@ msgstr "GNOME dokumentacijos projektas"
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:53
 msgid ""
-"<firstname>MATE Documentation Project</firstname> <surname/> <affiliation> "
-"<orgname>MATE Desktop</orgname> </affiliation>"
+"<firstname>CAFE Documentation Project</firstname> <surname/> <affiliation> "
+"<orgname>CAFE Desktop</orgname> </affiliation>"
 msgstr ""
-"<firstname>MATE dokumentacijos projektas</firstname> <surname/> "
-"<affiliation> <orgname>MATE darbalaukis</orgname> </affiliation>"
+"<firstname>CAFE dokumentacijos projektas</firstname> <surname/> "
+"<affiliation> <orgname>CAFE darbalaukis</orgname> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:60
@@ -100,8 +100,8 @@ msgstr ""
 
 #. (itstool) path: revision/author
 #: C/index.docbook:96
-msgid "<firstname>MATE Documentation Project</firstname> <surname/>"
-msgstr "<firstname>MATE dokumentacijos projektas</firstname> <surname/>"
+msgid "<firstname>CAFE Documentation Project</firstname> <surname/>"
+msgstr "<firstname>CAFE dokumentacijos projektas</firstname> <surname/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:93
@@ -144,7 +144,7 @@ msgstr "<revnumber>1.0</revnumber> <date>2002</date> <_:author-1/>"
 #. (itstool) path: articleinfo/releaseinfo
 #: C/index.docbook:134
 msgid "This manual describes version 1.10.1 of Netspeed Applet."
-msgstr "Šiame žinyne aprašoma MATE tinklo greičio versija 1.10.1."
+msgstr "Šiame žinyne aprašoma CAFE tinklo greičio versija 1.10.1."
 
 #. (itstool) path: legalnotice/title
 #: C/index.docbook:137
@@ -156,21 +156,21 @@ msgstr "Atsiliepimai"
 msgid ""
 "To report a bug or make a suggestion regarding the Netspeed Applet "
 "application or this manual, follow the directions in the <ulink url=\"help"
-":cafe-user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+":cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
-"Pranešimui apie programos klaidą arba pasiūlymams dėl MATE tinklo greičio "
+"Pranešimui apie programos klaidą arba pasiūlymams dėl CAFE tinklo greičio "
 "programos ar šio žinyno, sekite nuorodas <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">MATE atsako puslapyje</ulink>."
+"guide/feedback\" type=\"help\">CAFE atsako puslapyje</ulink>."
 
 #. (itstool) path: article/indexterm
 #: C/index.docbook:146
 msgid "<primary>Netspeed Applet</primary>"
-msgstr "<primary>MATE tinklo greitis</primary>"
+msgstr "<primary>CAFE tinklo greitis</primary>"
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:152
 msgid "About Netspeed Applet"
-msgstr "Apie MATE tinklo greitį"
+msgstr "Apie CAFE tinklo greitį"
 
 #. (itstool) path: figure/title
 #: C/index.docbook:154
@@ -237,7 +237,7 @@ msgid ""
 " specified device like eth0, ppp0, plip0, etc. More over it provides "
 "information about the configuration of the network device."
 msgstr ""
-"<application>MATE tinklo greičio</application> įtaisas rodo duomenų srautą "
+"<application>CAFE tinklo greičio</application> įtaisas rodo duomenų srautą "
 "įrenginyje, pvz. eth0, ppp0, plip0 ir t. t. Jis taip pat suteikia "
 "informaciją apie tinklo įrenginio konfigūraciją."
 
@@ -664,12 +664,12 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
 msgid ""
-"This manual is part of a collection of MATE manuals distributed under the "
+"This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in"
 " section 6 of the license."
 msgstr ""
-"Šis žinynas yra MATE žinynų rinkinio, platinamo GFDL sąlygomis, dalis. Jeigu"
+"Šis žinynas yra CAFE žinynų rinkinio, platinamo GFDL sąlygomis, dalis. Jeigu"
 " norite dalintis šiuo žinynu atskirai nuo šio rinkinio, galite tą daryti "
 "pridėdami šios licencijos kopiją, kaip nurodyta 6 šios licencijos dalyje."
 
@@ -677,13 +677,13 @@ msgstr ""
 #: C/legal.xml:19
 msgid ""
 "Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any MATE "
-"documentation, and the members of the MATE Documentation Project are made "
+"services are claimed as trademarks. Where those names appear in any CAFE "
+"documentation, and the members of the CAFE Documentation Project are made "
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
 "Nemažai įmonių, jų produktų ir paslaugų pavadinimai laikomi prekės ženklais."
-" Kuomet šie pavadinimai pasirodo bet kur MATE dokumentacijoje, ir MATE "
+" Kuomet šie pavadinimai pasirodo bet kur CAFE dokumentacijoje, ir CAFE "
 "dokumentacijos projekto nariai atkreipia į juos dėmesį, šie pavadinimai "
 "radomi didžiosiomis raidėmis arba pradedami didžiąja raide."
 
@@ -708,7 +708,7 @@ msgstr ""
 " TIKRŲ TEISIŲ. VISA ŠIO DOKUMENTO  AR JO MODIFIKUOTOS VERSIJOS KOKYBĖS, "
 "TIKSLUMO IR VEIKIMO PRIKLAUSO JUMS. ESANT BET KOKIAM ŠIO DOKUMENTO AR JO "
 "MODIFIKUOTOS VERSIJOS TRŪKUMUI, JŪS (NE PIRMINIS RAŠYTOJAS, AUTORIUS AR "
-"KITAS PAGALBININKAS) PRISIIMATE REIKIAMO APTARNAVIMO, REMONTO AR TAISYMO "
+"KITAS PAGALBININKAS) PRISIICAFE REIKIAMO APTARNAVIMO, REMONTO AR TAISYMO "
 "IŠLAIDAS. ŠIS ATSAKOMYBĖS ATSISAKYMAS YRA ESMINĖ ŠIOS LICENCIJOS DALIS. "
 "TOLIAU NELEIDŽIAMAS JOKS ŠIO DOKUMENTO AR MODIFIKUOTOS VERSIJOS NAUDOJIMAS, "
 "IŠSKYRUS PAGAL ŠĮ ATSAKOMYBĖS ATSISAKYMĄ; IR"

@@ -2,7 +2,7 @@
  *
  * Copyright (C) 2014 Stefano Karapetsas
  *
- * This file is part of MATE Applets.
+ * This file is part of CAFE Applets.
  *
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License as
@@ -272,7 +272,7 @@ timer_about_callback (GtkAction *action, TimerApplet *applet)
                           "title", _("About Timer Applet"),
                           "version", VERSION,
                           "copyright", _("Copyright \xc2\xa9 2014 Stefano Karapetsas\n"
-                                         "Copyright \xc2\xa9 2015-2020 MATE developers"),
+                                         "Copyright \xc2\xa9 2015-2020 CAFE developers"),
                           "authors", authors,
                           "comments", _("Start a timer and receive a notification when it is finished"),
                           "translator-credits", _("translator-credits"),
@@ -406,8 +406,8 @@ timer_applet_fill (CafePanelApplet* applet_widget)
     if (!notify_is_initted ())
         notify_init ("timer-applet");
 
-    cafe_panel_applet_set_flags (applet_widget, MATE_PANEL_APPLET_EXPAND_MINOR);
-    cafe_panel_applet_set_background_widget (MATE_PANEL_APPLET (applet_widget), GTK_WIDGET (applet_widget));
+    cafe_panel_applet_set_flags (applet_widget, CAFE_PANEL_APPLET_EXPAND_MINOR);
+    cafe_panel_applet_set_background_widget (CAFE_PANEL_APPLET (applet_widget), GTK_WIDGET (applet_widget));
 
     applet = g_malloc0(sizeof(TimerApplet));
     applet->applet = applet_widget;
@@ -475,7 +475,7 @@ timer_factory (CafePanelApplet* applet, const char* iid, gpointer data)
 }
 
 /* needed by cafe-panel applet library */
-MATE_PANEL_APPLET_OUT_PROCESS_FACTORY("TimerAppletFactory",
+CAFE_PANEL_APPLET_OUT_PROCESS_FACTORY("TimerAppletFactory",
                                       PANEL_TYPE_APPLET,
                                       "Timer applet",
                                       timer_factory,

@@ -212,7 +212,7 @@ void applet_change_orient_cb(CafePanelApplet *cafe_panel_applet, CafePanelApplet
 /* Applet Callback : Resize the applet. */
 void applet_size_allocate_cb(GtkWidget *widget, GtkAllocation *allocation, StickyNotesApplet *applet)
 {
-	if ((applet->panel_orient == MATE_PANEL_APPLET_ORIENT_UP) || (applet->panel_orient == MATE_PANEL_APPLET_ORIENT_DOWN)) {
+	if ((applet->panel_orient == CAFE_PANEL_APPLET_ORIENT_UP) || (applet->panel_orient == CAFE_PANEL_APPLET_ORIENT_DOWN)) {
 	  if (applet->panel_size == allocation->height)
 	    return;
 	  applet->panel_size = allocation->height;
@@ -365,7 +365,7 @@ menu_about_cb (GtkAction *action,
 	static const gchar *documenters[] = {
 		"Loban A Rahman <loban@earthling.net>",
 		N_("Sun GNOME Documentation Team <gdocteam@sun.com>"),
-		N_("MATE Documentation Team"),
+		N_("CAFE Documentation Team"),
 		NULL
 	};
 
@@ -380,9 +380,9 @@ menu_about_cb (GtkAction *action,
 		"version",	VERSION,
 		"copyright",	_("Copyright \xc2\xa9 2002-2003 Loban A Rahman\n"
 				  "Copyright \xc2\xa9 2005 Davyd Madeley\n"
-				  "Copyright \xc2\xa9 2012-2020 MATE developers"),
+				  "Copyright \xc2\xa9 2012-2020 CAFE developers"),
 		"comments",	_("Sticky Notes for the "
-				  "MATE Desktop Environment"),
+				  "CAFE Desktop Environment"),
 		"authors",	authors,
 		"documenters",	documenters,
 		"translator-credits",	_("translator-credits"),

@@ -9,7 +9,7 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
+"Project-Id-Version: CAFE Desktop Environment\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-03 12:26+0200\n"
 "PO-Revision-Date: 2018-03-11 16:20+0000\n"
@@ -790,7 +790,7 @@ msgid "Mount local disks and devices"
 msgstr ""
 
 #: ../geyes/geyes.c:176
-msgid "A goofy set of eyes for the MATE panel. They follow your mouse."
+msgid "A goofy set of eyes for the CAFE panel. They follow your mouse."
 msgstr ""
 
 #: ../geyes/geyes.c:384 ../geyes/geyes.c:414 ../geyes/geyes.c:416
@@ -854,7 +854,7 @@ msgstr ""
 
 #: ../cafeweather/cafeweather-applet.c:354
 #: ../cafeweather/cafeweather-applet.c:358
-msgid "MATE Weather"
+msgid "CAFE Weather"
 msgstr ""
 
 #: ../cafeweather/cafeweather-applet.c:457
@@ -2313,7 +2313,7 @@ msgid "Show sticky notes"
 msgstr ""
 
 #: ../stickynotes/stickynotes_applet_callbacks.c:379
-msgid "Sticky Notes for the MATE Desktop Environment"
+msgid "Sticky Notes for the CAFE Desktop Environment"
 msgstr ""
 
 #: ../timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.in.in.h:1
@@ -2433,7 +2433,7 @@ msgstr ""
 
 #: ../trashapplet/src/trashapplet.c:432
 msgid ""
-"A MATE trash bin that lives in your panel. You can use it to view the trash "
+"A CAFE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
 msgstr ""
 

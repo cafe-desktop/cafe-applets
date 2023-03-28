@@ -1,5 +1,5 @@
 /* -*- Mode: C; tab-width: 2; indent-tabs-mode: t; c-basic-offset: 2 -*- */
-/* battstat        A MATE battery meter for laptops. 
+/* battstat        A CAFE battery meter for laptops. 
  * Copyright (C) 2000 by Jörgen Pehrson <jp@spektr.eu.org>
  *
  *  This program is free software; you can redistribute it and/or modify

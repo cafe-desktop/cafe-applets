@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR MATE Desktop Environment team
+# Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
@@ -17,7 +17,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cafe-applets 1.23.0\n"
-"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/MATE/\n"
+"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Pjotr <pjotrvertaalt@gmail.com>, 2020\n"
@@ -40,8 +40,8 @@ msgstr "Sun GNOME Documentation Team <gdocteam@sun.com>"
 #: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
 #: trashapplet/src/trashapplet.c:421
-msgid "MATE Documentation Team"
-msgstr "Documentatieploeg van MATE"
+msgid "CAFE Documentation Team"
+msgstr "Documentatieploeg van CAFE"
 
 #: accessx-status/applet.c:98
 msgid "About AccessX Status"
@@ -54,10 +54,10 @@ msgstr "Toont de status van de AccessX-mogelijkheden"
 #: accessx-status/applet.c:101
 msgid ""
 "Copyright © 2003 Sun Microsystems\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Auteursrecht © 2003 Sun Microsystems\n"
-"Auteursrecht © 2012-2020 MATE-ontwikkelaars"
+"Auteursrecht © 2012-2020 CAFE-ontwikkelaars"
 
 #: accessx-status/applet.c:105 battstat/battstat_applet.c:844
 #: charpick/charpick.c:592 command/command.c:128
@@ -349,11 +349,11 @@ msgstr "Over Battery Charge Monitor"
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Auteursrecht © 2000 The Gnulix Society\n"
 "Auteursrecht © 2002-2005 Free Software Foundation en anderen\n"
-"Auteursrecht © 2012-2020 MATE-ontwikkelaars"
+"Auteursrecht © 2012-2020 CAFE-ontwikkelaars"
 
 #: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
@@ -505,10 +505,10 @@ msgstr "Over Character Palette"
 #: charpick/charpick.c:585
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Auteursrecht © 1998, 2004-2005 GNOME Applets Maintainers en anderen\n"
-"Auteursrecht © 2012-2020 MATE-ontwikkelaars"
+"Auteursrecht © 2012-2020 CAFE-ontwikkelaars"
 
 #: charpick/charpick.c:587
 msgid ""
@@ -628,10 +628,10 @@ msgstr "Over Command Applet"
 #: command/command.c:124
 msgid ""
 "Copyright © 2013-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 "Auteursrecht © 2013-2014 Stefano Karapetsas\n"
-"Auteursrecht © 2015-2020 MATE-ontwikkelaars"
+"Auteursrecht © 2015-2020 CAFE-ontwikkelaars"
 
 #: command/command.c:127
 #: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:10
@@ -804,10 +804,10 @@ msgstr "Over CPU Frequency Scaling Monitor"
 #: cpufreq/src/cpufreq-applet.c:483
 msgid ""
 "Copyright © 2004 Carlos Garcia Campos\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Auteursrecht © 2004 Carlos Garcia Campos\n"
-"Auteursrecht © 2012-2020 MATE-ontwikkelaars"
+"Auteursrecht © 2012-2020 CAFE-ontwikkelaars"
 
 #: cpufreq/src/cpufreq-applet.c:485
 msgid "This utility shows the current CPU Frequency Scaling."
@@ -901,10 +901,10 @@ msgstr "Over Disk Mounter"
 #: drivemount/drivemount.c:122
 msgid ""
 "Copyright © 2004 Canonical Ltd\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Auteursrecht © 2004 Canonical Ltd\n"
-"Auteursrecht © 2012-2020 MATE-ontwikkelaars"
+"Auteursrecht © 2012-2020 CAFE-ontwikkelaars"
 
 #: drivemount/drivemount.c:124
 msgid "Applet for mounting and unmounting block volumes."
@@ -938,16 +938,16 @@ msgid "About Eyes"
 msgstr "Over Eyes"
 
 #: geyes/geyes.c:180
-msgid "A goofy set of eyes for the MATE panel. They follow your mouse."
+msgid "A goofy set of eyes for the CAFE panel. They follow your mouse."
 msgstr "Een alziend paar ogen voor het Cafe-paneel. Ze volgen de muis!"
 
 #: geyes/geyes.c:182
 msgid ""
 "Copyright © 1999 Dave Camp\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Auteursrecht © 1999 Dave Camp\n"
-"Auteursrecht © 2012-2020 MATE-ontwikkelaars"
+"Auteursrecht © 2012-2020 CAFE-ontwikkelaars"
 
 #: geyes/geyes.c:389 geyes/geyes.c:419 geyes/geyes.c:421
 #: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:9
@@ -1005,10 +1005,10 @@ msgstr "Over Weather Report"
 #: cafeweather/cafeweather-about.c:56
 msgid ""
 "Copyright © 1999-2005 by S. Papadimitriou and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Auteursrecht © 1999-2005 van S. Papadimitriou en anderen\n"
-"Auteursrecht © 2012-2020 MATE-ontwikkelaars"
+"Auteursrecht © 2012-2020 CAFE-ontwikkelaars"
 
 #: cafeweather/cafeweather-about.c:58
 msgid "A panel application for monitoring local weather conditions."
@@ -1028,8 +1028,8 @@ msgid "Weather Report"
 msgstr "Weerbericht"
 
 #: cafeweather/cafeweather-applet.c:360 cafeweather/cafeweather-applet.c:364
-msgid "MATE Weather"
-msgstr "MATE-Weerbericht"
+msgid "CAFE Weather"
+msgstr "CAFE-Weerbericht"
 
 #: cafeweather/cafeweather-applet.c:463
 msgid "Weather Forecast"
@@ -1338,10 +1338,10 @@ msgstr "Over Systeembewaker"
 #: multiload/main.c:62
 msgid ""
 "Copyright © 1999-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Auteursrecht © 1999-2005 Free Software Foundation en anderen\n"
-"Auteursrecht © 2012-2020 MATE-ontwikkelaars"
+"Auteursrecht © 2012-2020 CAFE-ontwikkelaars"
 
 #: multiload/main.c:64
 msgid ""
@@ -2003,18 +2003,18 @@ msgstr ""
 "%s"
 
 #: netspeed/src/netspeed.c:821
-msgid "About MATE Netspeed"
-msgstr "Over MATE Netspeed"
+msgid "About CAFE Netspeed"
+msgstr "Over CAFE Netspeed"
 
 #: netspeed/src/netspeed.c:823
 msgid ""
 "Copyright © 2002-2003 Jörgen Scheibengruber\n"
 "Copyright © 2011-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 "Auteursrecht © 2002-2003 Jörgen Scheibengruber\n"
 "Auteursrecht © 2011-2014 Stefano Karapetsas\n"
-"Auteursrecht © 2015-2020 MATE-ontwikkelaars"
+"Auteursrecht © 2015-2020 CAFE-ontwikkelaars"
 
 #: netspeed/src/netspeed.c:826
 msgid ""
@@ -2025,8 +2025,8 @@ msgstr ""
 "bepaald netwerkapparaat."
 
 #: netspeed/src/netspeed.c:987
-msgid "MATE Netspeed Preferences"
-msgstr "Voorkeuren van MATE Netsnelheid"
+msgid "CAFE Netspeed Preferences"
+msgstr "Voorkeuren van CAFE Netsnelheid"
 
 #: netspeed/src/netspeed.c:1009
 msgid "General Settings"
@@ -2196,8 +2196,8 @@ msgid "unknown"
 msgstr "onbekend"
 
 #: netspeed/src/netspeed.c:1584
-msgid "MATE Netspeed"
-msgstr "MATE Netsnelheid"
+msgid "CAFE Netspeed"
+msgstr "CAFE Netsnelheid"
 
 #: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:5
 #: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:6
@@ -2588,14 +2588,14 @@ msgstr "Over Sticky Notes"
 msgid ""
 "Copyright © 2002-2003 Loban A Rahman\n"
 "Copyright © 2005 Davyd Madeley\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Auteursrecht © 2002-2003 Loban A Rahman\n"
 "Auteursrecht © 2005 Davyd Madeley\n"
-"Auteursrecht © 2012-2020 MATE-ontwikkelaars"
+"Auteursrecht © 2012-2020 CAFE-ontwikkelaars"
 
 #: stickynotes/stickynotes_applet_callbacks.c:384
-msgid "Sticky Notes for the MATE Desktop Environment"
+msgid "Sticky Notes for the CAFE Desktop Environment"
 msgstr "Memo's voor de Cafe-werkomgeving"
 
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:5
@@ -2662,10 +2662,10 @@ msgstr "Over Timer Applet"
 #: timerapplet/timerapplet.c:274
 msgid ""
 "Copyright © 2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 MATE developers"
+"Copyright © 2015-2020 CAFE developers"
 msgstr ""
 "Auteursrecht © 2014 Stefano Karapetsas\n"
-"Auteursrecht © 2015-2020 MATE-ontwikkelaars"
+"Auteursrecht © 2015-2020 CAFE-ontwikkelaars"
 
 #: timerapplet/timerapplet.c:310
 msgid "Timer Applet Preferences"
@@ -2754,15 +2754,15 @@ msgstr "Over Trash Applet"
 msgid ""
 "Copyright © 2004 Michiel Sikkes\n"
 "Copyright © 2008 Ryan Lortie\n"
-"Copyright © 2012-2020 MATE developers"
+"Copyright © 2012-2020 CAFE developers"
 msgstr ""
 "Auteursrecht © 2004 Michiel Sikkes\n"
 "Auteursrecht © 2008 Ryan Lortie\n"
-"Auteursrecht © 2012-2020 MATE-ontwikkelaars"
+"Auteursrecht © 2012-2020 CAFE-ontwikkelaars"
 
 #: trashapplet/src/trashapplet.c:437
 msgid ""
-"A MATE trash bin that lives in your panel. You can use it to view the trash "
+"A CAFE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
 msgstr ""
 "Een Cafe-prullenbak voor op uw paneel. Hiermee kunt u in de prullenbak "

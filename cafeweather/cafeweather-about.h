@@ -1,5 +1,5 @@
-#ifndef __MATEWEATHER_ABOUT_H_
-#define __MATEWEATHER_ABOUT_H_
+#ifndef __CAFEWEATHER_ABOUT_H_
+#define __CAFEWEATHER_ABOUT_H_
 
 /* $Id$ */
 
@@ -13,7 +13,7 @@
  *
  */
 
-#define MATEWEATHER_I_KNOW_THIS_IS_UNSTABLE
+#define CAFEWEATHER_I_KNOW_THIS_IS_UNSTABLE
 
 #include "cafeweather.h"
 
@@ -23,5 +23,5 @@ extern void cafeweather_about_run (CafeWeatherApplet *gw_applet);
 
 G_END_DECLS
 
-#endif /* __MATEWEATHER_ABOUT_H_ */
+#endif /* __CAFEWEATHER_ABOUT_H_ */
 

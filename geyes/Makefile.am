@@ -3,8 +3,8 @@ SUBDIRS = themes docs
 AM_CPPFLAGS =						\
 	-I.						\
 	-I$(srcdir) 					\
-	$(MATE_APPLETS4_CFLAGS)			\
-	$(MATEDESKTOP_CFLAGS)			\
+	$(CAFE_APPLETS4_CFLAGS)			\
+	$(CAFEDESKTOP_CFLAGS)			\
 	-I$(includedir) 				\
 	-DGEYES_THEMES_DIR=\""$(pkgdatadir)/geyes/"\"	\
 	-DGEYES_MENU_UI_DIR=\""$(uidir)"\"
@@ -17,8 +17,8 @@ cafe_geyes_applet_SOURCES =	\
 	geyes.h
 
 cafe_geyes_applet_LDADD = 		\
-	$(MATE_APPLETS4_LIBS) \
-	$(MATEDESKTOP_LIBS) \
+	$(CAFE_APPLETS4_LIBS) \
+	$(CAFEDESKTOP_LIBS) \
 	-lm
 
 appletdir       = $(datadir)/cafe-panel/applets

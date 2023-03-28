@@ -274,7 +274,7 @@ static void
 menuitem_activated (GtkMenuItem *menuitem, charpick_data *curr_data)
 {
 	gchar *string;
-	CafePanelApplet *applet = MATE_PANEL_APPLET (curr_data->applet);
+	CafePanelApplet *applet = CAFE_PANEL_APPLET (curr_data->applet);
 	
 	string = g_object_get_data (G_OBJECT (menuitem), "string");
 	if (g_ascii_strcasecmp (curr_data->charlist, string) == 0)
@@ -403,17 +403,17 @@ build_table(charpick_data *p_curr_data)
   {
     gtk_widget_set_tooltip_text (button, _("Available palettes"));
   
-    switch (cafe_panel_applet_get_orient (MATE_PANEL_APPLET (p_curr_data->applet))) {
-       	case MATE_PANEL_APPLET_ORIENT_DOWN:
+    switch (cafe_panel_applet_get_orient (CAFE_PANEL_APPLET (p_curr_data->applet))) {
+       	case CAFE_PANEL_APPLET_ORIENT_DOWN:
           	arrow = gtk_image_new_from_icon_name ("pan-down-symbolic", GTK_ICON_SIZE_MENU);
        		break;
-       	case MATE_PANEL_APPLET_ORIENT_UP:
+       	case CAFE_PANEL_APPLET_ORIENT_UP:
           	arrow = gtk_image_new_from_icon_name ("pan-up-symbolic", GTK_ICON_SIZE_MENU);
        		break;
-       	case MATE_PANEL_APPLET_ORIENT_LEFT:
+       	case CAFE_PANEL_APPLET_ORIENT_LEFT:
        		arrow = gtk_image_new_from_icon_name ("pan-start-symbolic", GTK_ICON_SIZE_MENU);
   		break;
-       	case MATE_PANEL_APPLET_ORIENT_RIGHT:
+       	case CAFE_PANEL_APPLET_ORIENT_RIGHT:
        		arrow = gtk_image_new_from_icon_name ("pan-end-symbolic", GTK_ICON_SIZE_MENU);
   		break;
     default:
@@ -547,8 +547,8 @@ static void applet_size_allocate(CafePanelApplet *applet, GtkAllocation *allocat
 static void applet_change_orient(CafePanelApplet *applet, CafePanelAppletOrient o, gpointer data)
 {
   charpick_data *curr_data = data;
-  if (o == MATE_PANEL_APPLET_ORIENT_UP ||
-      o == MATE_PANEL_APPLET_ORIENT_DOWN)
+  if (o == CAFE_PANEL_APPLET_ORIENT_UP ||
+      o == CAFE_PANEL_APPLET_ORIENT_DOWN)
     curr_data->panel_vertical = FALSE;
   else
     curr_data->panel_vertical = TRUE;
@@ -570,7 +570,7 @@ about (GtkAction     *action,
   static const gchar* documenters[] = {
           "Dan Mueth <d-mueth@uchicago.edu>",
           N_("Sun GNOME Documentation Team <gdocteam@sun.com>"),
-          N_("MATE Documentation Team"),
+          N_("CAFE Documentation Team"),
 	  NULL
   };
 
@@ -584,7 +584,7 @@ about (GtkAction     *action,
 	"title",        _("About Character Palette"),
 	"version",	VERSION,
 	"copyright",	_("Copyright \xc2\xa9 1998, 2004-2005 GNOME Applets Maintainers and others\n"
-	                  "Copyright \xc2\xa9 2012-2020 MATE developers"),
+	                  "Copyright \xc2\xa9 2012-2020 CAFE developers"),
 	"comments",	_("Cafe Panel applet for selecting strange "
 			  "characters that are not on my keyboard. "
 			  "Released under GNU General Public Licence."),
@@ -643,7 +643,7 @@ save_chartable (charpick_data *curr_data)
 static void
 get_chartable (charpick_data *curr_data)
 {
-	CafePanelApplet *applet = MATE_PANEL_APPLET (curr_data->applet);
+	CafePanelApplet *applet = CAFE_PANEL_APPLET (curr_data->applet);
 	gint i, n;
 	GList *value = NULL;
 	
@@ -717,7 +717,7 @@ charpicker_applet_fill (CafePanelApplet *applet)
 
   cafe_panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
 
-  cafe_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+  cafe_panel_applet_set_flags (applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
    
   curr_data = g_new0 (charpick_data, 1);
   curr_data->last_index = NO_LAST_INDEX;
@@ -750,8 +750,8 @@ charpicker_applet_fill (CafePanelApplet *applet)
   curr_data->panel_size = cafe_panel_applet_get_size (applet);
   
   orientation = cafe_panel_applet_get_orient (applet);
-  curr_data->panel_vertical = (orientation == MATE_PANEL_APPLET_ORIENT_LEFT) 
-                              || (orientation == MATE_PANEL_APPLET_ORIENT_RIGHT);
+  curr_data->panel_vertical = (orientation == CAFE_PANEL_APPLET_ORIENT_LEFT) 
+                              || (orientation == CAFE_PANEL_APPLET_ORIENT_RIGHT);
   build_table (curr_data);
     
   g_signal_connect (G_OBJECT (curr_data->applet), "key_press_event",
@@ -794,11 +794,11 @@ charpicker_applet_fill (CafePanelApplet *applet)
 				G_N_ELEMENTS (charpick_applet_menu_actions),
 				curr_data);
   ui_path = g_build_filename (CHARPICK_MENU_UI_DIR, "charpick-applet-menu.xml", NULL);
-  cafe_panel_applet_setup_menu_from_file (MATE_PANEL_APPLET (applet),
+  cafe_panel_applet_setup_menu_from_file (CAFE_PANEL_APPLET (applet),
                                      ui_path, action_group);
   g_free (ui_path);
 
-  if (cafe_panel_applet_get_locked_down (MATE_PANEL_APPLET (applet))) {
+  if (cafe_panel_applet_get_locked_down (CAFE_PANEL_APPLET (applet))) {
 	  GtkAction *action;
 
 	  action = gtk_action_group_get_action (action_group, "Preferences");
@@ -825,7 +825,7 @@ charpicker_applet_factory (CafePanelApplet *applet,
 	return retval;
 }
 
-MATE_PANEL_APPLET_OUT_PROCESS_FACTORY ("CharpickerAppletFactory",
+CAFE_PANEL_APPLET_OUT_PROCESS_FACTORY ("CharpickerAppletFactory",
 				  PANEL_TYPE_APPLET,
 				  "char-palette",
 				  charpicker_applet_factory,

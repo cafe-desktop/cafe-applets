@@ -16,7 +16,7 @@
  *
  *  Netspeed Applet was writen by Jörgen Scheibengruber <mfcn@gmx.de>
  *
- *  MATE Netspeed Applet migrated by Stefano Karapetsas <stefano@karapetsas.com>
+ *  CAFE Netspeed Applet migrated by Stefano Karapetsas <stefano@karapetsas.com>
  */
 
 #ifdef HAVE_CONFIG_H
@@ -149,7 +149,7 @@ change_icons(CafeNetspeedApplet *applet)
 	GtkIconTheme *icon_theme;
 	gint icon_scale;
 
-	gint icon_size = cafe_panel_applet_get_size (MATE_PANEL_APPLET (applet->applet)) - 8;
+	gint icon_size = cafe_panel_applet_get_size (CAFE_PANEL_APPLET (applet->applet)) - 8;
 	/* FIXME: Not all network icons include a high enough resolution, so to make them all
 	 * consistent, we cap them at 48px.*/
 	icon_size = CLAMP (icon_size, 16, 48);
@@ -267,7 +267,7 @@ applet_change_size_or_orient(CafePanelApplet *applet_widget, int arg1, CafeNetsp
 		gtk_widget_destroy(applet->box);
 	}
 
-	if (orient == MATE_PANEL_APPLET_ORIENT_LEFT || orient == MATE_PANEL_APPLET_ORIENT_RIGHT) {
+	if (orient == CAFE_PANEL_APPLET_ORIENT_LEFT || orient == CAFE_PANEL_APPLET_ORIENT_RIGHT) {
 		applet->box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 		applet->speed_box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 		if (size > 64) {
@@ -818,11 +818,11 @@ about_cb(GtkAction *action, gpointer data)
 	};
 
 	gtk_show_about_dialog (NULL,
-			       "title", _("About MATE Netspeed"),
+			       "title", _("About CAFE Netspeed"),
 			       "version", VERSION,
 			       "copyright", _("Copyright \xc2\xa9 2002-2003 Jörgen Scheibengruber\n"
 			                      "Copyright \xc2\xa9 2011-2014 Stefano Karapetsas\n"
-			                      "Copyright \xc2\xa9 2015-2020 MATE developers"),
+			                      "Copyright \xc2\xa9 2015-2020 CAFE developers"),
 			       "comments", _("A little applet that displays some information on the traffic on the specified network device"),
 			       "authors", authors,
 			       "documenters", NULL,
@@ -984,7 +984,7 @@ settings_cb(GtkAction *action, gpointer data)
 
 	category_label_size_group = gtk_size_group_new(GTK_SIZE_GROUP_HORIZONTAL);
 
-	applet->settings = GTK_DIALOG(gtk_dialog_new_with_buttons(_("MATE Netspeed Preferences"),
+	applet->settings = GTK_DIALOG(gtk_dialog_new_with_buttons(_("CAFE Netspeed Preferences"),
 								  NULL,
 								  GTK_DIALOG_DESTROY_WITH_PARENT,
 								  "gtk-help", GTK_RESPONSE_HELP,
@@ -1574,14 +1574,14 @@ cafe_netspeed_applet_factory(CafePanelApplet *applet_widget, const gchar *iid, g
 	GtkWidget *spacer, *spacer_box;
 
 	/* Have our background automatically painted. */
-	cafe_panel_applet_set_background_widget(MATE_PANEL_APPLET(applet_widget),
+	cafe_panel_applet_set_background_widget(CAFE_PANEL_APPLET(applet_widget),
 		GTK_WIDGET(applet_widget));
 
 	if (strcmp (iid, "NetspeedApplet"))
 		return FALSE;
 
 	glibtop_init();
-	g_set_application_name (_("MATE Netspeed"));
+	g_set_application_name (_("CAFE Netspeed"));
 
 	icon_theme = gtk_icon_theme_get_default();
 
@@ -1703,7 +1703,7 @@ cafe_netspeed_applet_factory(CafePanelApplet *applet_widget, const gchar *iid, g
 	gtk_widget_show_all(GTK_WIDGET(applet_widget));
 	update_applet(applet);
 
-	cafe_panel_applet_set_flags(applet_widget, MATE_PANEL_APPLET_EXPAND_MINOR);
+	cafe_panel_applet_set_flags(applet_widget, CAFE_PANEL_APPLET_EXPAND_MINOR);
 
 	applet->timeout_id = g_timeout_add(applet->refresh_time,
                            (GSourceFunc)timeout_function,
@@ -1758,14 +1758,14 @@ cafe_netspeed_applet_factory(CafePanelApplet *applet_widget, const gchar *iid, g
                                   G_N_ELEMENTS (cafe_netspeed_applet_menu_actions),
                                   applet);
 	ui_path = g_build_filename (NETSPEED_MENU_UI_DIR, "netspeed-menu.xml", NULL);
-	cafe_panel_applet_setup_menu_from_file (MATE_PANEL_APPLET (applet->applet), ui_path, action_group);
+	cafe_panel_applet_setup_menu_from_file (CAFE_PANEL_APPLET (applet->applet), ui_path, action_group);
 	g_free (ui_path);
 	g_object_unref (action_group);
 
 	return TRUE;
 }
 
-MATE_PANEL_APPLET_OUT_PROCESS_FACTORY("NetspeedAppletFactory",
+CAFE_PANEL_APPLET_OUT_PROCESS_FACTORY("NetspeedAppletFactory",
 									  PANEL_TYPE_APPLET,
 									  "NetspeedApplet",
 									  cafe_netspeed_applet_factory,

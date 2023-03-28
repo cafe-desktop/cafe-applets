@@ -3,7 +3,7 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: MATE Desktop Environment\n"
+"Project-Id-Version: CAFE Desktop Environment\n"
 "POT-Creation-Date: 2018-10-03 12:26+0200\n"
 "PO-Revision-Date: 2018-09-27 15:09+0000\n"
 "Last-Translator: Rasti K5 <rasti.khdhr@gmail.com>, 2018\n"
@@ -33,7 +33,7 @@ msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:28
-msgid "<year>2015</year> <holder>MATE Documentation Project</holder>"
+msgid "<year>2015</year> <holder>CAFE Documentation Project</holder>"
 msgstr ""
 
 #. (itstool) path: articleinfo/copyright
@@ -64,7 +64,7 @@ msgstr ""
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
 #: C/index.docbook:63 C/index.docbook:137
-msgid "MATE Documentation Project"
+msgid "CAFE Documentation Project"
 msgstr ""
 
 #. (itstool) path: publisher/publishername
@@ -88,7 +88,7 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: C/index.docbook:12 C/legal.xml:12
 msgid ""
-"This manual is part of a collection of MATE manuals distributed under the "
+"This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in"
 " section 6 of the license."
@@ -98,8 +98,8 @@ msgstr ""
 #: C/index.docbook:19 C/legal.xml:19
 msgid ""
 "Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any MATE "
-"documentation, and the members of the MATE Documentation Project are made "
+"services are claimed as trademarks. Where those names appear in any CAFE "
+"documentation, and the members of the CAFE Documentation Project are made "
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
@@ -145,7 +145,7 @@ msgstr ""
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:75
-msgid "<firstname>MATE Documentation Team</firstname> <surname/>"
+msgid "<firstname>CAFE Documentation Team</firstname> <surname/>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
@@ -187,7 +187,7 @@ msgstr ""
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:136
-msgid "MATE Documentation Team"
+msgid "CAFE Documentation Team"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
@@ -272,7 +272,7 @@ msgstr ""
 msgid ""
 "To report a bug or make a suggestion regarding the Battery Charge Monitor "
 "applet or this manual, follow the directions in the <ulink url=\"help:cafe-"
-"user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+"user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -410,7 +410,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:298
 msgid ""
-"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">MATE mailing "
+"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">CAFE mailing "
 "lists</ulink>"
 msgstr ""
 
@@ -509,7 +509,7 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:365
-msgid "The compact view is the default view for the monitor as of MATE 2.12."
+msgid "The compact view is the default view for the monitor as of CAFE 2.12."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
@@ -545,7 +545,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:372
 msgid ""
-"The expanded view is old look from previous versions of MATE. It has the "
+"The expanded view is old look from previous versions of CAFE. It has the "
 "larger graphic for the battery as well as a separate graphic to indicate "
 "what state the battery is in. <_:figure-1/>"
 msgstr ""
@@ -749,7 +749,7 @@ msgid ""
 "Select <guimenuitem>Configuration Editor</guimenuitem> from the "
 "<guimenu>Applications</guimenu> menu, under <guisubmenu>System "
 "Tools</guisubmenu>. Search for the key value "
-"<prompt>OAFIID:MATE_BattstatApplet</prompt> which should be located in the "
+"<prompt>OAFIID:CAFE_BattstatApplet</prompt> which should be located in the "
 "path <filename>/apps/panel/applets</filename>."
 msgstr ""
 

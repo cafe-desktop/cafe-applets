@@ -169,15 +169,15 @@ trash_applet_size_allocate (GtkWidget    *widget,
   GTK_WIDGET_CLASS (trash_applet_parent_class)
     ->size_allocate (widget, allocation);
 
-  switch (cafe_panel_applet_get_orient (MATE_PANEL_APPLET (applet)))
+  switch (cafe_panel_applet_get_orient (CAFE_PANEL_APPLET (applet)))
   {
-    case MATE_PANEL_APPLET_ORIENT_LEFT:
-    case MATE_PANEL_APPLET_ORIENT_RIGHT:
+    case CAFE_PANEL_APPLET_ORIENT_LEFT:
+    case CAFE_PANEL_APPLET_ORIENT_RIGHT:
       trash_applet_set_icon_size (applet, allocation->width);
       break;
 
-    case MATE_PANEL_APPLET_ORIENT_UP:
-    case MATE_PANEL_APPLET_ORIENT_DOWN:
+    case CAFE_PANEL_APPLET_ORIENT_UP:
+    case CAFE_PANEL_APPLET_ORIENT_DOWN:
       trash_applet_set_icon_size (applet, allocation->height);
       break;
   }
@@ -214,10 +214,10 @@ trash_applet_init (TrashApplet *applet)
   const GtkTargetEntry drop_types[] = { { "text/uri-list" } };
 
   /* needed to clamp ourselves to the panel size */
-  cafe_panel_applet_set_flags (MATE_PANEL_APPLET (applet), MATE_PANEL_APPLET_EXPAND_MINOR);
+  cafe_panel_applet_set_flags (CAFE_PANEL_APPLET (applet), CAFE_PANEL_APPLET_EXPAND_MINOR);
 
   /* enable transparency hack */
-  cafe_panel_applet_set_background_widget (MATE_PANEL_APPLET (applet),
+  cafe_panel_applet_set_background_widget (CAFE_PANEL_APPLET (applet),
                                       GTK_WIDGET (applet));
 
   /* setup the image */
@@ -418,7 +418,7 @@ trash_applet_show_about (GtkAction   *action,
 
   static const char *documenters[] = {
     "Michiel Sikkes <michiel@eyesopened.nl>",
-    N_("MATE Documentation Team"),
+    N_("CAFE Documentation Team"),
     NULL
   };
 
@@ -433,8 +433,8 @@ trash_applet_show_about (GtkAction   *action,
                          "version", VERSION,
                          "copyright", _("Copyright \xc2\xa9 2004 Michiel Sikkes\n"
                                         "Copyright \xc2\xa9 2008 Ryan Lortie\n"
-                                        "Copyright \xc2\xa9 2012-2020 MATE developers"),
-                         "comments", _("A MATE trash bin that lives in your panel. "
+                                        "Copyright \xc2\xa9 2012-2020 CAFE developers"),
+                         "comments", _("A CAFE trash bin that lives in your panel. "
                                        "You can use it to view the trash or drag "
                                        "and drop items into the trash."),
                          "authors", authors,
@@ -646,7 +646,7 @@ trash_applet_factory (CafePanelApplet *applet,
   return retval;
 }
 
-MATE_PANEL_APPLET_OUT_PROCESS_FACTORY ("TrashAppletFactory",
+CAFE_PANEL_APPLET_OUT_PROCESS_FACTORY ("TrashAppletFactory",
 				  TRASH_TYPE_APPLET,
 				  "TrashApplet",
 				  trash_applet_factory,

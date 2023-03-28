@@ -1,4 +1,4 @@
-/* MATE cpuload/memload panel applet
+/* CAFE cpuload/memload panel applet
  * (C) 2002 The Free Software Foundation
  *
  * Authors:
@@ -536,7 +536,7 @@ fill_properties(GtkWidget *dialog, MultiloadApplet *ma)
 	label_size = gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
 
 	orient = cafe_panel_applet_get_orient(ma->applet);
-	if ( (orient == MATE_PANEL_APPLET_ORIENT_UP) || (orient == MATE_PANEL_APPLET_ORIENT_DOWN) )
+	if ( (orient == CAFE_PANEL_APPLET_ORIENT_UP) || (orient == CAFE_PANEL_APPLET_ORIENT_DOWN) )
 		label_text = g_strdup(_("System m_onitor width: "));
 	else
 		label_text = g_strdup(_("System m_onitor height: "));

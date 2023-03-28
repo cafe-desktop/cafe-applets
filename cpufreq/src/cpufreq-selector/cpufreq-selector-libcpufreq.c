@@ -1,5 +1,5 @@
 /*
- * MATE CPUFreq Applet
+ * CAFE CPUFreq Applet
  * Copyright (C) 2004 Carlos Garcia Campos <carlosgc@gnome.org>
  *
  *  This library is free software; you can redistribute it and/or

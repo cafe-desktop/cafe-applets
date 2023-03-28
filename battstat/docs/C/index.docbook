@@ -7,7 +7,7 @@
 
 <!-- 
       (Do not remove this comment block.)
-  Maintained by the MATE Documentation Project
+  Maintained by the CAFE Documentation Project
   http://wiki.cafe-desktop.org/dev-doc:doc-team-guide
   Template version: 2.0 beta
   Template last modified Feb 12, 2002
@@ -26,7 +26,7 @@
     </abstract>
     <copyright>
       <year>2015-2020</year>
-      <holder>MATE Documentation Project</holder>
+      <holder>CAFE Documentation Project</holder>
     </copyright>
     <copyright>
       <year>2005</year>
@@ -59,7 +59,7 @@
    -->
 
     <publisher role="maintainer"> 
-      <publishername> MATE Documentation Project </publishername> 
+      <publishername> CAFE Documentation Project </publishername> 
     </publisher> 
     <publisher>
       <publishername> GNOME Documentation Project </publishername>
@@ -69,7 +69,7 @@
 
     <authorgroup>
       <author>
-        <firstname>MATE Documentation Team</firstname>
+        <firstname>CAFE Documentation Team</firstname>
         <surname></surname>
       </author>
       <author>
@@ -129,8 +129,8 @@
         <revnumber>Version 2.13</revnumber>
 	<date>July 2015</date>
 	<revdescription>
-	  <para role="author">MATE Documentation Team</para>
-	  <para role="publisher">MATE Documentation Project</para>
+	  <para role="author">CAFE Documentation Team</para>
+	  <para role="publisher">CAFE Documentation Project</para>
 	</revdescription>
       </revision>
       <revision>
@@ -186,7 +186,7 @@
       <para>
         To report a bug or make a suggestion regarding the &applet; applet or
         this manual, follow the directions in the <ulink url="help:cafe-user-guide/feedback"
-        type="help">MATE Feedback Page</ulink>.
+        type="help">CAFE Feedback Page</ulink>.
       </para>
     </legalnotice>
   </articleinfo> 
@@ -292,7 +292,7 @@
         <xref linkend="battstat-troubleshooting"/>;
        </para></listitem>
        <listitem><para>
-        <ulink url="http://ml.cafe-desktop.org/listinfo/">MATE mailing
+        <ulink url="http://ml.cafe-desktop.org/listinfo/">CAFE mailing
 	lists</ulink>
        </para></listitem>
       </itemizedlist>
@@ -359,14 +359,14 @@
     </figure>
               </para>
 	      <para>
-	       The compact view is the default view for the monitor as of MATE
+	       The compact view is the default view for the monitor as of CAFE
 	       2.12.
 	      </para></listitem>
 	    </varlistentry>
 	    <varlistentry>
 	      <term><guilabel>Expanded view</guilabel></term>
 	      <listitem><para>
-	       The expanded view is old look from previous versions of MATE. It
+	       The expanded view is old look from previous versions of CAFE. It
 	       has the larger graphic for the battery as well as a separate
 	       graphic to indicate what state the battery is in.
     <figure id="battstat-applet-expanded"> 
@@ -531,7 +531,7 @@ present voltage:         11400 mV
        Select <guimenuitem>Configuration Editor</guimenuitem> from the
        <guimenu>Applications</guimenu> menu, under
        <guisubmenu>System Tools</guisubmenu>. Search for the key value
-       <prompt>OAFIID:MATE_BattstatApplet</prompt> which should be located in
+       <prompt>OAFIID:CAFE_BattstatApplet</prompt> which should be located in
        the path <filename>/apps/panel/applets</filename>.
       </para>
       <para>

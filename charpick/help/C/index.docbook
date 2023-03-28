@@ -8,7 +8,7 @@
 ]>
 <!-- 
       (Do not remove this comment block.)
-  Maintained by the MATE Documentation Project
+  Maintained by the CAFE Documentation Project
   http://wiki.cafe-desktop.org/dev-doc:doc-team-guide
   Template version: 2.0 beta
   Template last modified Feb 12, 2002 
@@ -26,7 +26,7 @@
   </abstract>
   <copyright>
     <year>2015-2020</year>
-    <holder>MATE Documentation Project</holder>
+    <holder>CAFE Documentation Project</holder>
   </copyright>
   <copyright>
     <year>2005</year>
@@ -46,7 +46,7 @@
     <holder>Dan Mueth</holder>
   </copyright>
   <publisher role="maintainer">
-    <publishername>MATE Documentation Project</publishername>
+    <publishername>CAFE Documentation Project</publishername>
   </publisher>
   <publisher>
     <publishername>GNOME Documentation Project</publishername>
@@ -56,7 +56,7 @@
 
    <authorgroup>
      <author>
-       <firstname>MATE Documentation Team</firstname>
+       <firstname>CAFE Documentation Team</firstname>
        <surname></surname>
      </author>
      <author>
@@ -106,8 +106,8 @@
        <revnumber>Version 2.11</revnumber>
        <date>July 2015</date>
        <revdescription>
-         <para role="author">MATE Documentation Team</para>
-         <para role="publisher">MATE Documentation Project</para>
+         <para role="author">CAFE Documentation Team</para>
+         <para role="publisher">CAFE Documentation Project</para>
        </revdescription>
      </revision>
      <revision>
@@ -189,7 +189,7 @@
 		<title>Feedback</title>
 		<para>To report a bug or make a suggestion regarding the &applet;
 		  application or this manual, follow the directions in the
-		  <ulink url="help:cafe-user-guide/feedback" type="help">MATE Feedback Page</ulink>.
+		  <ulink url="help:cafe-user-guide/feedback" type="help">CAFE Feedback Page</ulink>.
 		  </para>
 <!-- Translators may also add here feedback address for translations -->
 	 </legalnotice>

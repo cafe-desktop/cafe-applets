@@ -1,5 +1,5 @@
-#ifndef __MATEWEATHER_H__
-#define __MATEWEATHER_H__
+#ifndef __CAFEWEATHER_H__
+#define __CAFEWEATHER_H__
 
 /*
  *  todd kulesza <fflewddur@dropline.net>

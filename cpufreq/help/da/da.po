@@ -42,8 +42,8 @@ msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:24
-msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
-msgstr "<year>2015-2020</year> <holder>MATE-dokumentationsprojektet</holder>"
+msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
+msgstr "<year>2015-2020</year> <holder>CAFE-dokumentationsprojektet</holder>"
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:28
@@ -58,8 +58,8 @@ msgstr "<year>2004</year> <holder>GNOME-fonden</holder>"
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
 #: C/index.docbook:45 C/index.docbook:99
-msgid "MATE Documentation Project"
-msgstr "MATE-dokumentationsprojekt"
+msgid "CAFE Documentation Project"
+msgstr "CAFE-dokumentationsprojekt"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
@@ -70,11 +70,11 @@ msgstr "GNOME-dokumentationsprojekt"
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:54
 msgid ""
-"<firstname>MATE Documentation Team</firstname> <surname/> <affiliation> "
-"<orgname>MATE Desktop</orgname> </affiliation>"
+"<firstname>CAFE Documentation Team</firstname> <surname/> <affiliation> "
+"<orgname>CAFE Desktop</orgname> </affiliation>"
 msgstr ""
-"<firstname>MATE-dokumentationsprojektet</firstname> <surname/> <affiliation>"
-" <orgname>MATE-skrivebordet</orgname> </affiliation>"
+"<firstname>CAFE-dokumentationsprojektet</firstname> <surname/> <affiliation>"
+" <orgname>CAFE-skrivebordet</orgname> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:61
@@ -100,8 +100,8 @@ msgstr ""
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:98
-msgid "MATE Documentation Team"
-msgstr "MATE-dokumentationsholdet"
+msgid "CAFE Documentation Team"
+msgstr "CAFE-dokumentationsholdet"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:94
@@ -164,12 +164,12 @@ msgstr "Tilbagemelding"
 msgid ""
 "To report a bug or make a suggestion regarding the CPU Frequency Scaling "
 "Monitor applet or this manual, follow the directions in the <ulink "
-"url=\"help:cafe-user-guide/feedback\" type=\"help\">MATE Feedback "
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback "
 "Page</ulink>."
 msgstr ""
 "For at rapportere en fejl eller komme med et forslag jævnfør panelprogrammet"
 " CPU-frekvensskalering eller denne manual, så følg retningslinjerne i <ulink"
-" url=\"help:cafe-user-guide/feedback\" type=\"help\">MATE's side for "
+" url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE's side for "
 "tilbagemeldinger</ulink>."
 
 #. (itstool) path: article/indexterm
@@ -457,11 +457,11 @@ msgstr "Frekvens- og guvernørvælger"
 #. (itstool) path: warning/para
 #: C/index.docbook:275
 msgid ""
-"The Frequency Selector functionality may not be available on your MATE "
+"The Frequency Selector functionality may not be available on your CAFE "
 "Desktop by default. Please consult your system administrator, vendor "
 "documentation, or the documentation that came with this software."
 msgstr ""
-"Frekvensvælgerens funktionalitet er måske ikke tilgængelig på dit MATE-"
+"Frekvensvælgerens funktionalitet er måske ikke tilgængelig på dit CAFE-"
 "skrivebord som standard. Hør venligst din systemadministrator, "
 "leverandørdokumentationen eller dokumentationen der fulgt med dette program."
 
@@ -743,12 +743,12 @@ msgstr ""
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
 msgid ""
-"This manual is part of a collection of MATE manuals distributed under the "
+"This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
 "you can do so by adding a copy of the license to the manual, as described in"
 " section 6 of the license."
 msgstr ""
-"Denne manual er en del af MATE-manualsamlingen distribueret under GFDL. Hvis"
+"Denne manual er en del af CAFE-manualsamlingen distribueret under GFDL. Hvis"
 " du vil distribuere denne manual separat fra denne samling, kan du gøre det "
 "ved at tilføje en kopi af licensen til manualen, som beskrevet i sektion 6 "
 "af licensen."
@@ -757,14 +757,14 @@ msgstr ""
 #: C/legal.xml:19
 msgid ""
 "Many of the names used by companies to distinguish their products and "
-"services are claimed as trademarks. Where those names appear in any MATE "
-"documentation, and the members of the MATE Documentation Project are made "
+"services are claimed as trademarks. Where those names appear in any CAFE "
+"documentation, and the members of the CAFE Documentation Project are made "
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
 "Mange af navnene brugt af firmaer til at skelne deres produkter og tjenester"
-" er registrerede varemærker. Der hvor disse navne optræder i MATE-"
-"dokumentationen, og medlemmerne af MATE-dokumentationsprojektet er blevet "
+" er registrerede varemærker. Der hvor disse navne optræder i CAFE-"
+"dokumentationen, og medlemmerne af CAFE-dokumentationsprojektet er blevet "
 "gjort opmærksomme på disse varemærker, er navnene skrevet med store "
 "bogstaver eller store forbogstaver."
 

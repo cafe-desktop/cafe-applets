@@ -17,7 +17,7 @@
 	 </abstract>
 	 <copyright>
 	   <year>2015-2020</year>
-	   <holder>MATE Documentation Project</holder>
+	   <holder>CAFE Documentation Project</holder>
 	 </copyright>
 	 <copyright>
 	   <year>2006</year>
@@ -43,7 +43,7 @@
      not specified, the publisher/author is the same for all versions of the 
      document.  -->
 	 <publisher role="maintainer"> 
-		<publishername> MATE Documentation Project </publishername> 
+		<publishername> CAFE Documentation Project </publishername> 
 	 </publisher> 
 	 <publisher>
 		<publishername> GNOME Documentation Project </publishername>
@@ -53,10 +53,10 @@
 
 	 <authorgroup> 
 		<author> 
-		  <firstname>MATE Documentation Team</firstname>
+		  <firstname>CAFE Documentation Team</firstname>
 		  <surname></surname>
 		  <affiliation>
-			 <orgname>MATE Desktop</orgname>
+			 <orgname>CAFE Desktop</orgname>
 		  </affiliation>
 		</author>
 		<author>
@@ -95,8 +95,8 @@
 	     <revnumber>&applet; V&manrevision;</revnumber>
 	     <date>&date;</date>
 	     <revdescription>
-	       <para role="author">MATE Documentation Team</para>
-	       <para role="publisher">MATE Documentation Project</para>
+	       <para role="author">CAFE Documentation Team</para>
+	       <para role="publisher">CAFE Documentation Project</para>
 	     </revdescription>
 	   </revision>
 	   <revision>
@@ -120,7 +120,7 @@
 		</releaseinfo>
 	 <legalnotice>
 		<title>Feedback</title>
-		<para> To report a bug or make a suggestion regarding the &applet; applet or this manual, follow the directions in the <ulink url="help:cafe-user-guide/feedback" type="help">MATE Feedback Page</ulink>. </para>
+		<para> To report a bug or make a suggestion regarding the &applet; applet or this manual, follow the directions in the <ulink url="help:cafe-user-guide/feedback" type="help">CAFE Feedback Page</ulink>. </para>
 
 	 </legalnotice>
   </articleinfo>
