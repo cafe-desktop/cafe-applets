@@ -29,7 +29,7 @@
 
 #include <glib/gi18n.h>
 #include <ctk/ctk.h>
-#include <gdk/gdkkeysyms.h>
+#include <cdk/cdkkeysyms.h>
 #include <gio/gio.h>
 #include <cafe-panel-applet.h>
 
@@ -309,18 +309,18 @@ trash_applet_drag_motion (CtkWidget      *widget,
   GList *target;
 
   /* refuse drops of panel applets */
-  for (target = gdk_drag_context_list_targets (context); target; target = target->next)
+  for (target = cdk_drag_context_list_targets (context); target; target = target->next)
     {
-      const char *name = gdk_atom_name (target->data);
+      const char *name = cdk_atom_name (target->data);
 
       if (!strcmp (name, "application/x-panel-icon-internal"))
         break;
     }
 
   if (target)
-    gdk_drag_status (context, 0, time);
+    cdk_drag_status (context, 0, time);
   else
-    gdk_drag_status (context, GDK_ACTION_MOVE, time);
+    cdk_drag_status (context, GDK_ACTION_MOVE, time);
 
   return TRUE;
 }
@@ -464,8 +464,8 @@ confirm_delete_immediately (CtkWidget *parent_view,
   ctk_window_set_resizable (CTK_WINDOW (dialog), FALSE);
 
   ctk_widget_realize (dialog);
-  gdk_window_set_transient_for (ctk_widget_get_window (CTK_WIDGET (dialog)),
-                                gdk_screen_get_root_window (screen));
+  cdk_window_set_transient_for (ctk_widget_get_window (CTK_WIDGET (dialog)),
+                                cdk_screen_get_root_window (screen));
   ctk_window_set_modal (CTK_WINDOW (dialog), TRUE);
 
   ctk_box_set_spacing (CTK_BOX (ctk_dialog_get_content_area (CTK_DIALOG (dialog))), 14);

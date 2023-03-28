@@ -22,7 +22,7 @@
 #include <glib/gi18n.h>
 
 #include <ctk/ctk.h>
-#include <gdk/gdkx.h>
+#include <cdk/cdkx.h>
 #include <stdlib.h>
 #include <string.h>
 

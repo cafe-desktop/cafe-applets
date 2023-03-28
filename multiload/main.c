@@ -20,8 +20,8 @@
 
 #include <glibtop.h>
 #include <ctk/ctk.h>
-#include <gdk/gdkkeysyms.h>
-#include <gdk-pixbuf/gdk-pixbuf.h>
+#include <cdk/cdkkeysyms.h>
+#include <cdk-pixbuf/cdk-pixbuf.h>
 #include <gio/gio.h>
 #include <gio/gdesktopappinfo.h>
 #include <cafe-panel-applet.h>
@@ -117,9 +117,9 @@ start_procman (MultiloadApplet *ma)
 		GdkScreen *screen;
 		GdkAppLaunchContext *context;
 		screen = ctk_widget_get_screen (CTK_WIDGET (ma->applet));
-		display = gdk_screen_get_display (screen);
-		context = gdk_display_get_app_launch_context (display);
-		gdk_app_launch_context_set_screen (context, screen);
+		display = cdk_screen_get_display (screen);
+		context = cdk_display_get_app_launch_context (display);
+		cdk_app_launch_context_set_screen (context, screen);
 		g_app_info_launch (G_APP_INFO (appinfo), NULL, G_APP_LAUNCH_CONTEXT (context), &error);
 		g_object_unref (context);
 		g_object_unref (appinfo);
@@ -131,9 +131,9 @@ start_procman (MultiloadApplet *ma)
 							      &error);
 
 		if (!error) {
-			display = gdk_screen_get_display (screen);
-			launch_context = gdk_display_get_app_launch_context (display);
-			gdk_app_launch_context_set_screen (launch_context, screen);
+			display = cdk_screen_get_display (screen);
+			launch_context = cdk_display_get_app_launch_context (display);
+			cdk_app_launch_context_set_screen (launch_context, screen);
 			g_app_info_launch (app_info, NULL, G_APP_LAUNCH_CONTEXT (launch_context), &error);
 
 			g_object_unref (launch_context);

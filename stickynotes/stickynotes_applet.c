@@ -24,7 +24,7 @@
 #include "stickynotes.h"
 
 #include <ctk/ctk.h>
-#include <gdk/gdkx.h>
+#include <cdk/cdkx.h>
 
 StickyNotes *stickynotes = NULL;
 
@@ -197,7 +197,7 @@ stickynotes_applet_init (CafePanelApplet *cafe_panel_applet)
 	                  G_CALLBACK (preferences_apply_cb), NULL);
 
 	/* Max height for large notes*/
-	stickynotes->max_height = 0.8 * HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ()));
+	stickynotes->max_height = 0.8 * HeightOfScreen (cdk_x11_screen_get_xscreen (cdk_screen_get_default ()));
 
 	/* Load sticky notes */
 	stickynotes_load (ctk_widget_get_screen (CTK_WIDGET (cafe_panel_applet)));
@@ -484,8 +484,8 @@ stickynotes_applet_update_prefs (void)
 		font_color_str = g_strdup ("#000000");
 	}
 
-	gdk_rgba_parse (&color, color_str);
-	gdk_rgba_parse (&font_color, font_color_str);
+	cdk_rgba_parse (&color, color_str);
+	cdk_rgba_parse (&font_color, font_color_str);
 
 	g_free (color_str);
 	g_free (font_color_str);
@@ -620,7 +620,7 @@ stickynotes_applet_panel_icon_get_geometry (int *x, int *y, int *width, int *hei
 
 	ctk_widget_get_preferred_size (widget, NULL, &requisition);
 
-	gdk_window_get_origin (ctk_widget_get_window (widget), x, y);
+	cdk_window_get_origin (ctk_widget_get_window (widget), x, y);
 
 	ctk_widget_get_allocation (widget, &allocation);
 	*width = allocation.x;

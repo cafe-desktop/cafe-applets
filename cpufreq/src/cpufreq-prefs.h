@@ -22,7 +22,7 @@
 #ifndef CPUFREQ_PREFS_H
 #define CPUFREQ_PREFS_H
 
-#include <gdk/gdk.h>
+#include <cdk/cdk.h>
 #include <glib-object.h>
 #include <gio/gio.h>
 #include "cpufreq-applet.h"

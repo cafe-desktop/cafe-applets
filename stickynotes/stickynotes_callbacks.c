@@ -146,8 +146,8 @@ void properties_apply_color_cb(StickyNote *note)
 		ctk_color_chooser_get_rgba (CTK_COLOR_CHOOSER (note->w_color), &color);
 		ctk_color_chooser_get_rgba (CTK_COLOR_CHOOSER (note->w_font_color), &font_color);
 
-		color_str = gdk_rgba_to_string (&color);
-		font_color_str = gdk_rgba_to_string (&font_color);
+		color_str = cdk_rgba_to_string (&color);
+		font_color_str = cdk_rgba_to_string (&font_color);
 	}
 	
 	stickynote_set_color (note, color_str, font_color_str, TRUE);
