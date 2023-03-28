@@ -232,7 +232,7 @@ multiload_button_press_event_cb (CtkWidget *widget, CdkEventButton *event, Multi
 	g_return_val_if_fail (event != NULL, FALSE);
 	g_return_val_if_fail (ma != NULL, FALSE);
 
-	if (event->button == 1 && event->type == GDK_BUTTON_PRESS) {
+	if (event->button == 1 && event->type == CDK_BUTTON_PRESS) {
 		start_procman (ma);
 		return TRUE;
 	}
@@ -248,12 +248,12 @@ multiload_key_press_event_cb (CtkWidget *widget, CdkEventKey *event, MultiloadAp
 	switch (event->keyval) {
 	/* this list of keyvals taken from mixer applet, which seemed to have
 		a good list of keys to use */
-	case GDK_KEY_KP_Enter:
-	case GDK_KEY_ISO_Enter:
-	case GDK_KEY_3270_Enter:
-	case GDK_KEY_Return:
-	case GDK_KEY_space:
-	case GDK_KEY_KP_Space:
+	case CDK_KEY_KP_Enter:
+	case CDK_KEY_ISO_Enter:
+	case CDK_KEY_3270_Enter:
+	case CDK_KEY_Return:
+	case CDK_KEY_space:
+	case CDK_KEY_KP_Space:
 		/* activate */
 		start_procman (ma);
 		return TRUE;

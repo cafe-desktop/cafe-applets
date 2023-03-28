@@ -224,7 +224,7 @@ static gboolean accessx_status_applet_xkb_select(AccessxStatusApplet* sapplet)
 
 	g_assert(sapplet && sapplet->applet && window);
 
-	Display* display = GDK_WINDOW_XDISPLAY(window);
+	Display* display = CDK_WINDOW_XDISPLAY(window);
 
 	g_assert(display);
 
@@ -450,7 +450,7 @@ static cairo_surface_t* accessx_status_applet_altgraph_image(AccessxStatusApplet
 	 * in your locale.
 	 */
 	glyph_pixbuf = accessx_status_applet_get_glyph_pixbuf(CTK_WIDGET(sapplet->applet), pixbuf, &fg, ("æ"));
-	cdk_pixbuf_composite(glyph_pixbuf, pixbuf, 0, 0, cdk_pixbuf_get_width(glyph_pixbuf), cdk_pixbuf_get_height(glyph_pixbuf), 0., 0., 1.0, 1.0, GDK_INTERP_NEAREST, alpha);
+	cdk_pixbuf_composite(glyph_pixbuf, pixbuf, 0, 0, cdk_pixbuf_get_width(glyph_pixbuf), cdk_pixbuf_get_height(glyph_pixbuf), 0., 0., 1.0, 1.0, CDK_INTERP_NEAREST, alpha);
 	g_object_unref(glyph_pixbuf);
 
 	surface = cdk_cairo_surface_create_from_pixbuf (pixbuf, icon_scale, NULL);
@@ -511,7 +511,7 @@ static cairo_surface_t* accessx_status_applet_slowkeys_image(AccessxStatusApplet
 
 		if (event && window)
 		{
-			KeySym keysym = XkbKeycodeToKeysym(GDK_WINDOW_XDISPLAY(window), event->keycode, 0, 0);
+			KeySym keysym = XkbKeycodeToKeysym(CDK_WINDOW_XDISPLAY(window), event->keycode, 0, 0);
 			glyphstring = XKeysymToString(keysym);
 
 			if ((!g_utf8_validate(glyphstring, -1, NULL)) || (g_utf8_strlen(glyphstring, -1) > 1))
@@ -538,7 +538,7 @@ static cairo_surface_t* accessx_status_applet_slowkeys_image(AccessxStatusApplet
 		}
 
 		glyph_pixbuf = accessx_status_applet_get_glyph_pixbuf(CTK_WIDGET(sapplet->applet), ret_pixbuf, &fg, glyphstring);
-		cdk_pixbuf_composite(glyph_pixbuf, ret_pixbuf, 0, 0, cdk_pixbuf_get_width(glyph_pixbuf), cdk_pixbuf_get_height(glyph_pixbuf), 0., 0., 1.0, 1.0, GDK_INTERP_NEAREST, alpha);
+		cdk_pixbuf_composite(glyph_pixbuf, ret_pixbuf, 0, 0, cdk_pixbuf_get_width(glyph_pixbuf), cdk_pixbuf_get_height(glyph_pixbuf), 0., 0., 1.0, 1.0, CDK_INTERP_NEAREST, alpha);
 		g_object_unref(glyph_pixbuf);
 	}
 
@@ -605,8 +605,8 @@ static cairo_surface_t* accessx_status_applet_bouncekeys_image(AccessxStatusAppl
 		icon_base = cdk_pixbuf_copy(tmp_pixbuf);
 		g_object_unref(tmp_pixbuf);
 		glyph_pixbuf = accessx_status_applet_get_glyph_pixbuf(CTK_WIDGET(sapplet->applet), icon_base, &fg, glyphstring);
-		cdk_pixbuf_composite(glyph_pixbuf, icon_base, 2, 2, cdk_pixbuf_get_width(glyph_pixbuf) - 2, cdk_pixbuf_get_height(glyph_pixbuf) - 2, -2., -2., 1.0, 1.0, GDK_INTERP_NEAREST, 96);
-		cdk_pixbuf_composite(glyph_pixbuf, icon_base, 1, 1, cdk_pixbuf_get_width(glyph_pixbuf) - 1, cdk_pixbuf_get_height(glyph_pixbuf) - 1, 1., 1., 1.0, 1.0, GDK_INTERP_NEAREST, alpha);
+		cdk_pixbuf_composite(glyph_pixbuf, icon_base, 2, 2, cdk_pixbuf_get_width(glyph_pixbuf) - 2, cdk_pixbuf_get_height(glyph_pixbuf) - 2, -2., -2., 1.0, 1.0, CDK_INTERP_NEAREST, 96);
+		cdk_pixbuf_composite(glyph_pixbuf, icon_base, 1, 1, cdk_pixbuf_get_width(glyph_pixbuf) - 1, cdk_pixbuf_get_height(glyph_pixbuf) - 1, 1., 1., 1.0, 1.0, CDK_INTERP_NEAREST, alpha);
 
 		g_object_unref(glyph_pixbuf);
 	}
@@ -638,7 +638,7 @@ static cairo_surface_t* accessx_status_applet_mousekeys_image(AccessxStatusApple
 			if (event->ptr_buttons & button_icons[i].mask)
 			{
 				button_pixbuf = ctk_icon_theme_load_icon_for_scale (icon_theme, button_icons[i].icon_name, icon_size, icon_scale, 0, NULL);
-				cdk_pixbuf_composite(button_pixbuf, mouse_pixbuf, 0, 0, cdk_pixbuf_get_width(button_pixbuf), cdk_pixbuf_get_height(button_pixbuf), 0.0, 0.0, 1.0, 1.0, GDK_INTERP_NEAREST, 255);
+				cdk_pixbuf_composite(button_pixbuf, mouse_pixbuf, 0, 0, cdk_pixbuf_get_width(button_pixbuf), cdk_pixbuf_get_height(button_pixbuf), 0.0, 0.0, 1.0, 1.0, CDK_INTERP_NEAREST, 255);
 				g_object_unref(button_pixbuf);
 			}
 		}
@@ -662,7 +662,7 @@ static cairo_surface_t* accessx_status_applet_mousekeys_image(AccessxStatusApple
 	}
 	dot_pixbuf = ctk_icon_theme_load_icon_for_scale (icon_theme, which_dot, icon_size, icon_scale, 0, NULL);
 
-	cdk_pixbuf_composite(dot_pixbuf, mouse_pixbuf, 0, 0, cdk_pixbuf_get_width(dot_pixbuf), cdk_pixbuf_get_height(dot_pixbuf), 0.0, 0.0, 1.0, 1.0, GDK_INTERP_NEAREST, 255);
+	cdk_pixbuf_composite(dot_pixbuf, mouse_pixbuf, 0, 0, cdk_pixbuf_get_width(dot_pixbuf), cdk_pixbuf_get_height(dot_pixbuf), 0.0, 0.0, 1.0, 1.0, CDK_INTERP_NEAREST, 255);
 
 	surface = cdk_cairo_surface_create_from_pixbuf (mouse_pixbuf, icon_scale, NULL);
 	g_object_unref(mouse_pixbuf);
@@ -773,7 +773,7 @@ static void accessx_status_applet_update(AccessxStatusApplet* sapplet, AccessxSt
 		else if (sapplet->applet && window)
 		{
 			XkbStateRec state;
-			XkbGetState(GDK_WINDOW_XDISPLAY(window), XkbUseCoreKbd, &state);
+			XkbGetState(CDK_WINDOW_XDISPLAY(window), XkbUseCoreKbd, &state);
 			locked_mods = state.locked_mods;
 			latched_mods = state.latched_mods;
 		}
@@ -826,7 +826,7 @@ static void accessx_status_applet_update(AccessxStatusApplet* sapplet, AccessxSt
 	{
 		/* Update the visibility of widgets in the box */
 		/* XkbMouseKeysMask | XkbStickyKeysMask | XkbSlowKeysMask | XkbBounceKeysMask */
-		XkbGetControls(GDK_WINDOW_XDISPLAY(window), XkbAllControlsMask, sapplet->xkb);
+		XkbGetControls(CDK_WINDOW_XDISPLAY(window), XkbAllControlsMask, sapplet->xkb);
 
 		if (!(sapplet->xkb->ctrls->enabled_ctrls & (XkbMouseKeysMask | XkbStickyKeysMask | XkbSlowKeysMask | XkbBounceKeysMask)))
 		{
@@ -991,7 +991,7 @@ static CdkFilterReturn accessx_status_xkb_filter(CdkXEvent* cdk_xevent, CdkEvent
 		accessx_status_applet_notify_xkb_event(sapplet, xevent);
 	}
 
-	return GDK_FILTER_CONTINUE;
+	return CDK_FILTER_CONTINUE;
 }
 
 static void accessx_status_applet_reparent_widget(CtkWidget* widget, CtkContainer* container)
@@ -1265,7 +1265,7 @@ static void accessx_status_applet_resize(CtkWidget* widget, int size, gpointer u
 
 static gboolean button_press_cb(CtkWidget* widget, CdkEventButton* event, AccessxStatusApplet* sapplet)
 {
-	if (event->button == 1 && event->type == GDK_BUTTON_PRESS)
+	if (event->button == 1 && event->type == CDK_BUTTON_PRESS)
 	{
 		dialog_cb(NULL, sapplet);
 	}
@@ -1277,12 +1277,12 @@ static gboolean key_press_cb(CtkWidget* widget, CdkEventKey* event, AccessxStatu
 {
 	switch (event->keyval)
 	{
-		case GDK_KEY_KP_Enter:
-		case GDK_KEY_ISO_Enter:
-		case GDK_KEY_3270_Enter:
-		case GDK_KEY_Return:
-		case GDK_KEY_space:
-		case GDK_KEY_KP_Space:
+		case CDK_KEY_KP_Enter:
+		case CDK_KEY_ISO_Enter:
+		case CDK_KEY_3270_Enter:
+		case CDK_KEY_Return:
+		case CDK_KEY_space:
+		case CDK_KEY_KP_Space:
 			dialog_cb(NULL, sapplet);
 			return TRUE;
 

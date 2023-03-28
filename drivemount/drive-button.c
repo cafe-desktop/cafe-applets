@@ -195,8 +195,8 @@ drive_button_button_press (CtkWidget      *widget,
 	if (self->popup_menu) {
 		ctk_menu_popup_at_widget (CTK_MENU (self->popup_menu),
 		                          widget,
-		                          GDK_GRAVITY_SOUTH_WEST,
-		                          GDK_GRAVITY_NORTH_WEST,
+		                          CDK_GRAVITY_SOUTH_WEST,
+		                          CDK_GRAVITY_NORTH_WEST,
 		                          (const CdkEvent*) event);
 	}
 	return TRUE;
@@ -211,16 +211,16 @@ drive_button_key_press (CtkWidget      *widget,
     DriveButton *self = DRIVE_BUTTON (widget);
 
     switch (event->keyval) {
-    case GDK_KEY_KP_Space:
-    case GDK_KEY_space:
-    case GDK_KEY_KP_Enter:
-    case GDK_KEY_Return:
+    case CDK_KEY_KP_Space:
+    case CDK_KEY_space:
+    case CDK_KEY_KP_Enter:
+    case CDK_KEY_Return:
 	drive_button_ensure_popup (self);
 	if (self->popup_menu) {
 		ctk_menu_popup_at_widget (CTK_MENU (self->popup_menu),
 		                          widget,
-		                          GDK_GRAVITY_SOUTH_WEST,
-		                          GDK_GRAVITY_NORTH_WEST,
+		                          CDK_GRAVITY_SOUTH_WEST,
+		                          CDK_GRAVITY_NORTH_WEST,
 		                          (const CdkEvent*) event);
 	}
 	return TRUE;

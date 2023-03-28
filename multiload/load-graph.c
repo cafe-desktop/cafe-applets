@@ -467,10 +467,10 @@ load_graph_new (MultiloadApplet *ma, guint n, const gchar *label,
         ctk_widget_set_size_request (g->main_widget, g->size, -1);
 
     g->disp = ctk_drawing_area_new ();
-    ctk_widget_set_events (g->disp, GDK_EXPOSURE_MASK |
-                                    GDK_ENTER_NOTIFY_MASK |
-                                    GDK_LEAVE_NOTIFY_MASK |
-                                    GDK_BUTTON_PRESS_MASK);
+    ctk_widget_set_events (g->disp, CDK_EXPOSURE_MASK |
+                                    CDK_ENTER_NOTIFY_MASK |
+                                    CDK_LEAVE_NOTIFY_MASK |
+                                    CDK_BUTTON_PRESS_MASK);
 
     g_signal_connect (G_OBJECT (g->disp), "draw",
                       G_CALLBACK (load_graph_expose), g);

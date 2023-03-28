@@ -112,7 +112,7 @@ draw_eye (EyesApplet *eyes_applet,
 				      	   rect.height,
 				      	   pupil_x - eyes_applet->pupil_width / 2,
 					   pupil_y - eyes_applet->pupil_height / 2, 1.0, 1.0,
-				      	   GDK_INTERP_BILINEAR,
+				      	   CDK_INTERP_BILINEAR,
 				           255);
 	ctk_image_set_from_pixbuf (CTK_IMAGE (eyes_applet->eyes[eye_num]),
 						  pixbuf);

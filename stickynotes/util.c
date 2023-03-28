@@ -57,7 +57,7 @@ xstuff_atom_get (const char *atom_name)
 
 	g_return_val_if_fail (atom_name != NULL, None);
 
-	xdisplay = GDK_DISPLAY_XDISPLAY (cdk_display_get_default ());
+	xdisplay = CDK_DISPLAY_XDISPLAY (cdk_display_get_default ());
 
 	if (!atom_hash)
 		atom_hash = g_hash_table_new_full (
@@ -89,9 +89,9 @@ xstuff_get_current_workspace (CtkWindow *window)
 	CdkDisplay *cdk_display;
 	Display *xdisplay;
 
-	root_window = GDK_WINDOW_XID (ctk_widget_get_window (CTK_WIDGET (window)));
+	root_window = CDK_WINDOW_XID (ctk_widget_get_window (CTK_WIDGET (window)));
     cdk_display = cdk_display_get_default ();
-	xdisplay = GDK_DISPLAY_XDISPLAY (cdk_display);
+	xdisplay = CDK_DISPLAY_XDISPLAY (cdk_display);
 
 	cdk_x11_display_error_trap_push (cdk_display);
 	result = XGetWindowProperty (xdisplay,
@@ -124,9 +124,9 @@ xstuff_change_workspace (CtkWindow *window,
   Display *cdk_display;
   Screen *screen;
 
-  cdk_display = GDK_DISPLAY_XDISPLAY (cdk_display_get_default ());
-  xwindow = GDK_WINDOW_XID (GDK_WINDOW (ctk_widget_get_window (CTK_WIDGET (window))));
-  screen = GDK_SCREEN_XSCREEN (ctk_widget_get_screen (CTK_WIDGET (window)));
+  cdk_display = CDK_DISPLAY_XDISPLAY (cdk_display_get_default ());
+  xwindow = CDK_WINDOW_XID (CDK_WINDOW (ctk_widget_get_window (CTK_WIDGET (window))));
+  screen = CDK_SCREEN_XSCREEN (ctk_widget_get_screen (CTK_WIDGET (window)));
   
   xev.xclient.type = ClientMessage;
   xev.xclient.serial = 0;

@@ -49,7 +49,7 @@ draw_zoom_animation (CdkScreen *gscreen,
 	int depth;
 
 	dpy = cdk_x11_display_get_xdisplay (cdk_screen_get_display (gscreen));
-	root_win = GDK_WINDOW_XID (cdk_screen_get_root_window (gscreen));
+	root_win = CDK_WINDOW_XID (cdk_screen_get_root_window (gscreen));
 	screen = cdk_x11_screen_get_screen_number (gscreen);
 	depth = DefaultDepth(dpy,screen);
 
