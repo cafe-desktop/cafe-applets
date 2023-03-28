@@ -116,7 +116,7 @@ msgstr ""
 
 #. (itstool) path: legalnotice/para
 #: C/index.docbook:123
-msgid "To report a bug or make a suggestion regarding the Panel Trash applet or this manual, follow the directions in the <ulink url=\"help:mate-user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+msgid "To report a bug or make a suggestion regarding the Panel Trash applet or this manual, follow the directions in the <ulink url=\"help:cafe-user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -171,7 +171,7 @@ msgstr ""
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:165
-msgid "For more information on working with the panel, see the <ulink type=\"help\" url=\"help:mate-user-guide/panels\">Desktop User Guide</ulink>."
+msgid "For more information on working with the panel, see the <ulink type=\"help\" url=\"help:cafe-user-guide/panels\">Desktop User Guide</ulink>."
 msgstr ""
 
 #. (itstool) path: sect1/title

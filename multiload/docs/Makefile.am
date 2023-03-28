@@ -1,6 +1,6 @@
 @YELP_HELP_RULES@
 
-HELP_ID = mate-multiload
+HELP_ID = cafe-multiload
 HELP_FILES = index.docbook legal.xml
 
 HELP_MEDIA = figures/multiload-preferences.png \

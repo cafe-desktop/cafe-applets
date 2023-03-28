@@ -4,7 +4,7 @@
 #include <gdk/gdk.h>
 #include <gtk/gtk.h>
 
-void xstuff_zoom_animate                (GtkWidget    *widget,
+void xstuff_zoom_anicafe                (GtkWidget    *widget,
 					 GdkRectangle *opt_src_rect);
 
 #endif /* __XSTUFF_H__ */

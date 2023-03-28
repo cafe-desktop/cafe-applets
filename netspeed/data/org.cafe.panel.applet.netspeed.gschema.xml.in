@@ -1,5 +1,5 @@
 <schemalist gettext-domain="@GETTEXT_PACKAGE@">
-  <schema id="org.mate.panel.applet.netspeed">
+  <schema id="org.cafe.panel.applet.netspeed">
     <key name="device" type="s">
       <default>''</default>
       <summary>Device to monitor</summary>

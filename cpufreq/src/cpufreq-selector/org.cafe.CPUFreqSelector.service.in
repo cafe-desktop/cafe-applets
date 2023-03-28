@@ -1,4 +1,4 @@
 [D-BUS Service]
-Name=org.mate.CPUFreqSelector
-Exec=@BINDIR@/mate-cpufreq-selector
+Name=org.cafe.CPUFreqSelector
+Exec=@BINDIR@/cafe-cpufreq-selector
 User=root

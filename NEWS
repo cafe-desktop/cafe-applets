@@ -1,4 +1,4 @@
-### mate-applets 1.24.1
+### cafe-applets 1.24.1
 
   * update translations
   * battstat: Fix memory leak
@@ -8,18 +8,18 @@
   * cpufreq: generate missing 256x256 and 64x64 icons from svg file
   * eyes: generate missing 256x256 and 64x64 icons from svg file
   * netspeed: don't define MATELOCALEDIR
-  * build: drop unused matelocaledir variable
+  * build: drop unused cafelocaledir variable
   * drivemount: Remove global variable
 
-### mate-applets 1.24.0
+### cafe-applets 1.24.0
 
   * update translations
   * build: show compiler flags on configuration summary
   * drivemount: i18n of 'nothing to mount' tooltip text
-  * autoconf: fix matelocaledir
+  * autoconf: fix cafelocaledir
   * Fix build using gcc 10 -fno-common flag
 
-### mate-applets 1.23.1
+### cafe-applets 1.23.1
 
   * update translations
   * use ${datadir}/dbus-1/system.d as the default D-Bus config dir
@@ -45,13 +45,13 @@
   * Make command applet run commands asynchronously
   * Update FSF address
 
-### mate-applets 1.23.0
+### cafe-applets 1.23.0
 
   * update translations
   * Create FUNDING.yml
   * [ci] Add cppcheck html report
   * cpufreq: deprecated g_type_class_add_private
-  * mateweather: deprecated g_type_class_add_private
+  * cafeweather: deprecated g_type_class_add_private
   * cpufreq: support kernel 5.1.0
   * weather: align Gtk_Box to center
   * multiload: filter-out non-local disks and user mounts
@@ -65,7 +65,7 @@
   * Make translatable copyright info in about dialog
   * Ensure proper translation of the about dialog title
 
-### mate-applets 1.22.0
+### cafe-applets 1.22.0
 
   * update translations
   * Issues reported by translators
@@ -74,7 +74,7 @@
   * Silent output when building.
   * Support git.mk to generate .gitignore
 
-### mate-applets 1.21.1
+### cafe-applets 1.21.1
 
   * update translations
   * tx: update drivemount source for transifex
@@ -92,7 +92,7 @@
   * Fix name of Eyes applet
   * Refer to the fstab(5) man page for more information...
   * Remove unused png files
-  * Fix url of ulink to point to mate-user-guide
+  * Fix url of ulink to point to cafe-user-guide
   * tx: update translation sources
   * Fix spelling and grammar mistakes
   * update legal.xml
@@ -104,7 +104,7 @@
   * Avoid newly deprecated gtk_css_provider_get_default
   * Weather: apply a widget name to the textview
   * weather: add cssprovider for widget not for screen
-  * mateweather-dialog.c: avoid deprecated 'gtk_widget_override_font'
+  * cafeweather-dialog.c: avoid deprecated 'gtk_widget_override_font'
   * cpufreq: stop segfault with gtk3.23
   * trash applet: avoid deprecated 'gtk_window_set_wmclass'
   * cpufreq: fix a -Wimplicit-function-declaration
@@ -118,7 +118,7 @@
   * drivemount: replace deprecated gtk_menu_popup
   * charpick: replace deprecated gtk_menu_popup
 
-### mate-applets 1.21.0
+### cafe-applets 1.21.0
 
   * Translations update
   * Cpufreq: Force the frequency label to render if frequencies are not found right away
@@ -134,7 +134,7 @@
   * multiload: add style class multiload-applet
   * avoid deprecated GtkStock
 
-### mate-applets 1.20.0
+### cafe-applets 1.20.0
 
   * Translations update
   * require GTK+ 3.22 and GLib 2.50
@@ -146,14 +146,14 @@
   * Revert "If location changes, abort any outstanding weather updates"
   * weather: fix possible crash when opening prefs dialog
 
-### mate-applets 1.19.4
+### cafe-applets 1.19.4
 
   * Translations update
   * drop broken invest-applet and all Python dependencies
   * update copyright year to 2018
   * Fix build warnings: ignoring return value of ‘fgets’,
 
-### mate-applets 1.19.3
+### cafe-applets 1.19.3
 
   * Translations update
   * command: bump range of interval
@@ -162,11 +162,11 @@
   * Cpufreq: Update tooltips with latest values
   * Cpufreq: fix a build warning
   * Cpufreq: stop jumping numbers moving units label
-  * mateweather: update copyright year
+  * cafeweather: update copyright year
   * update copyright year in other applets
   * netspeed: update copyright year
 
-### mate-applets 1.19.2
+### cafe-applets 1.19.2
 
   * Translations update
   * Rounding error in draw corrected.
@@ -175,7 +175,7 @@
   * cpufreq: refresh applet size on style change (e.g. font size)
   * GSettings change recognized dynamically
 
-### mate-applets 1.19.1
+### cafe-applets 1.19.1
 
   * Translations update
   * GSettings for checkmark color shown for mounted volumes.
@@ -190,12 +190,12 @@
   * all applets: don't use deprecated gtk_show_uri
   * add new digital theme
 
-### mate-applets 1.19.0
+### cafe-applets 1.19.0
 
   * drivemount: fix a build warning
   * Translations update
   * cpufreq-prefs: don't use deprecated gtk_show_uri
-  * bump libmateweather requirement to 1.19.1
+  * bump libcafeweather requirement to 1.19.1
   * weather: If location changes, abort any outstanding weather updates
   * weather: Added logic to not send notification if weather update is equal
     (as decided by weather_info_equal ()) to the previous update
@@ -210,11 +210,11 @@
   * Fix GError memory leak
   * Fix for crasher in Command applet.
 
-### mate-applets 1.18.0
+### cafe-applets 1.18.0
 
   * NEWS: use consistent, project wide, markdown-like formatting
     to make generating release announcements easier
-  * Build: require libmateweather and mate-panel >= 1.17
+  * Build: require libcafeweather and cafe-panel >= 1.17
   * Move to GTK+3 (require GTK+ >= 3.14), drop GTK+2 code and
     --with-gtk build option
   * Weather: fix temperature label placement
@@ -223,17 +223,17 @@
   * Some code cleanups
   * Translations update
 
-### mate-applets 1.16.0
+### cafe-applets 1.16.0
 
   * Build: require polkit 0.97
   * Use GtkAboutDialog instead of MateAboutDialog
   * Netspeed: use GtkColorButton/GtkColorChooser
-  * Drop dependency on libmate-desktop
+  * Drop dependency on libcafe-desktop
   * GTK+3: fix various deprecations
   * Some code cleanups
   * Translations update
 
-### mate-applets 1.14.1
+### cafe-applets 1.14.1
 
   * Accessx-status: fix possible crash when updating layout
   * Cpufreq: fix build with kernel 4.7
@@ -244,12 +244,12 @@
   * Translations update
   * Make distcheck use currently selected GTK+ version
 
-### mate-applets 1.14.0
+### cafe-applets 1.14.0
 
   * Drop MateConf migration scripts
   * Drop null_applet which isn't even buildable these days
   * Re-license command and timer applets under GPL-2+
-  * Merge netspeed applet from mate-netspeed project (and discontinue
+  * Merge netspeed applet from cafe-netspeed project (and discontinue
     that project)
   * GTK+3: fix cpufreq applet rendering
   * GTK+3: fix setting fg/bg colors and font type in stickynotes applet
@@ -258,48 +258,48 @@
   * Translations update
   * Fix Changelog generation
 
-### mate-applets 1.12.1
+### cafe-applets 1.12.1
 
   * Drivemount: fix invisible text with some GTK+3 themes
   * Translations update
 
-### mate-applets 1.12.0
+### cafe-applets 1.12.0
 
   * Accessx-status, geyes: have applet background automatically painted
   * Cpufreq: make cpupower the default library
   * Retrieve strings directly from gschema (requires intltool 0.50.1)
-  * Drop useless dependency on mate-icon-theme
+  * Drop useless dependency on cafe-icon-theme
   * GTK+3: fix missing icons with custom icon theme
   * GTK+3: make cpufreq, charpick and drivemount support custom panel themes
   * Some more GTK+3 fixes
   * Several small fixes and cleanups
 
-### mate-applets 1.10.3
+### cafe-applets 1.10.3
 
   * Several small help fixes
   * Rename sticky-notes help directory
 
-### mate-applets 1.10.2
+### cafe-applets 1.10.2
 
   * Charpick, geyes: restore missing button icons in dialogs
   * Actually install manpages on make install
   * Multiple help fixes in several applets
 
-### mate-applets 1.10.1
+### cafe-applets 1.10.1
 
   * Battstat applet: fix NetBSD APM support
   * Invest applet: display proper icon in About dialog
   * Multiple help fixes in several applets
   * GTK+3 fixes
 
-### mate-applets 1.10.0
+### cafe-applets 1.10.0
 
-  * Use MateAboutDialog from libmate-desktop.
+  * Use MateAboutDialog from libcafe-desktop.
 
-### mate-applets 1.8.0
+### cafe-applets 1.8.0
 
-  * Move from mate-doc-utils to yelp-tools.
-  * Replace libmatewnck with gnome's libwnck.
+  * Move from cafe-doc-utils to yelp-tools.
+  * Replace libcafewnck with gnome's libwnck.
   * Replace mucharmap in with gucharmap.
   * Add Gtk+3 support.
   * New command applet that displays output from a command.
@@ -307,9 +307,9 @@
   * Serveal enhancement to invest-applet.
   * Remove broken modem-light applet.
 
-### mate-applets 1.5.0
+### cafe-applets 1.5.0
 
   * Migration to GSettings
-  * Update to latest libmatepanelapplet-4.0
-  * Mixer applet moved to mate-media
+  * Update to latest libcafepanelapplet-4.0
+  * Mixer applet moved to cafe-media
   * Timer applet is not migrated yet

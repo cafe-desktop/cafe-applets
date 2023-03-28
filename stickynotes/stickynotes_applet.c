@@ -59,16 +59,16 @@ static const GtkToggleActionEntry stickynotes_applet_menu_toggle_actions[] =
 };
 
 /* Sticky Notes applet factory */
-static gboolean stickynotes_applet_factory(MatePanelApplet *mate_panel_applet, const gchar *iid, gpointer data)
+static gboolean stickynotes_applet_factory(MatePanelApplet *cafe_panel_applet, const gchar *iid, gpointer data)
 {
 	if (!strcmp(iid, "StickyNotesApplet")) {
 		if (!stickynotes)
-			stickynotes_applet_init (mate_panel_applet);
+			stickynotes_applet_init (cafe_panel_applet);
 
-		mate_panel_applet_set_flags (mate_panel_applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+		cafe_panel_applet_set_flags (cafe_panel_applet, MATE_PANEL_APPLET_EXPAND_MINOR);
 
 		/* Add applet to linked list of all applets */
-		stickynotes->applets = g_list_append (stickynotes->applets, stickynotes_applet_new(mate_panel_applet));
+		stickynotes->applets = g_list_append (stickynotes->applets, stickynotes_applet_new(cafe_panel_applet));
 
 		stickynotes_applet_update_menus ();
 		stickynotes_applet_update_tooltips ();
@@ -153,7 +153,7 @@ stickynotes_destroy (GtkWidget *widget,
 
 /* Create and initalize global sticky notes instance */
 void
-stickynotes_applet_init (MatePanelApplet *mate_panel_applet)
+stickynotes_applet_init (MatePanelApplet *cafe_panel_applet)
 {
 	cairo_t *cr;
 	gint size, scale;
@@ -164,15 +164,15 @@ stickynotes_applet_init (MatePanelApplet *mate_panel_applet)
 	stickynotes->applets = NULL;
 	stickynotes->last_timeout_data = 0;
 
-	size = mate_panel_applet_get_size (mate_panel_applet);
-	scale = gtk_widget_get_scale_factor (GTK_WIDGET (mate_panel_applet));
+	size = cafe_panel_applet_get_size (cafe_panel_applet);
+	scale = gtk_widget_get_scale_factor (GTK_WIDGET (cafe_panel_applet));
 
 	g_set_application_name (_("Sticky Notes"));
-	gtk_window_set_default_icon_name ("mate-sticky-notes-applet");
+	gtk_window_set_default_icon_name ("cafe-sticky-notes-applet");
 
 	stickynotes->icon_normal = gtk_icon_theme_load_surface (
 			gtk_icon_theme_get_default (),
-			"mate-sticky-notes-applet",
+			"cafe-sticky-notes-applet",
 			size, scale, NULL, 0, NULL);
 
 	stickynotes->icon_prelight = cairo_surface_create_similar (stickynotes->icon_normal,
@@ -200,7 +200,7 @@ stickynotes_applet_init (MatePanelApplet *mate_panel_applet)
 	stickynotes->max_height = 0.8 * HeightOfScreen (gdk_x11_screen_get_xscreen (gdk_screen_get_default ()));
 
 	/* Load sticky notes */
-	stickynotes_load (gtk_widget_get_screen (GTK_WIDGET (mate_panel_applet)));
+	stickynotes_load (gtk_widget_get_screen (GTK_WIDGET (cafe_panel_applet)));
 
 	install_check_click_on_desktop ();
 }
@@ -337,7 +337,7 @@ void stickynotes_applet_init_prefs(void)
 
 /* Create a Sticky Notes applet */
 StickyNotesApplet *
-stickynotes_applet_new(MatePanelApplet *mate_panel_applet)
+stickynotes_applet_new(MatePanelApplet *cafe_panel_applet)
 {
 	AtkObject *atk_obj;
 	gchar *ui_path;
@@ -346,7 +346,7 @@ stickynotes_applet_new(MatePanelApplet *mate_panel_applet)
 	StickyNotesApplet *applet = g_new(StickyNotesApplet, 1);
 
 	/* Initialize Sticky Notes Applet */
-	applet->w_applet = GTK_WIDGET(mate_panel_applet);
+	applet->w_applet = GTK_WIDGET(cafe_panel_applet);
 	applet->w_image = gtk_image_new();
 	applet->destroy_all_dialog = NULL;
 	applet->prelighted = FALSE;
@@ -354,12 +354,12 @@ stickynotes_applet_new(MatePanelApplet *mate_panel_applet)
 	applet->menu_tip = NULL;
 
 	/* Expand the applet for Fitts' law complience. */
-	mate_panel_applet_set_flags(mate_panel_applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+	cafe_panel_applet_set_flags(cafe_panel_applet, MATE_PANEL_APPLET_EXPAND_MINOR);
 
 	/* Add the applet icon */
-	gtk_container_add(GTK_CONTAINER(mate_panel_applet), applet->w_image);
-	applet->panel_size = mate_panel_applet_get_size (mate_panel_applet);
-	applet->panel_orient = mate_panel_applet_get_orient (mate_panel_applet);
+	gtk_container_add(GTK_CONTAINER(cafe_panel_applet), applet->w_image);
+	applet->panel_size = cafe_panel_applet_get_size (cafe_panel_applet);
+	applet->panel_orient = cafe_panel_applet_get_orient (cafe_panel_applet);
 	stickynotes_applet_update_icon(applet);
 
 	/* Add the popup menu */
@@ -374,10 +374,10 @@ stickynotes_applet_new(MatePanelApplet *mate_panel_applet)
 					     G_N_ELEMENTS (stickynotes_applet_menu_toggle_actions),
 					     applet);
 	ui_path = g_build_filename (STICKYNOTES_MENU_UI_DIR, "stickynotes-applet-menu.xml", NULL);
-	mate_panel_applet_setup_menu_from_file(mate_panel_applet, ui_path, applet->action_group);
+	cafe_panel_applet_setup_menu_from_file(cafe_panel_applet, ui_path, applet->action_group);
 	g_free (ui_path);
 
-	if (mate_panel_applet_get_locked_down (mate_panel_applet)) {
+	if (cafe_panel_applet_get_locked_down (cafe_panel_applet)) {
 		GtkAction *action;
 
 		action = gtk_action_group_get_action (applet->action_group, "preferences");
@@ -406,7 +406,7 @@ stickynotes_applet_new(MatePanelApplet *mate_panel_applet)
 	g_signal_connect(G_OBJECT(applet->w_applet), "destroy",
 			G_CALLBACK(stickynotes_destroy), NULL);
 
-	mate_panel_applet_set_background_widget (mate_panel_applet, applet->w_applet);
+	cafe_panel_applet_set_background_widget (cafe_panel_applet, applet->w_applet);
 
 	atk_obj = gtk_widget_get_accessible (applet->w_applet);
 	atk_object_set_name (atk_obj, _("Sticky Notes"));

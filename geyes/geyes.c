@@ -20,8 +20,8 @@
 #include <config.h>
 #include <math.h>
 #include <stdlib.h>
-#include <mate-panel-applet.h>
-#include <mate-panel-applet-gsettings.h>
+#include <cafe-panel-applet.h>
+#include <cafe-panel-applet-gsettings.h>
 #include "geyes.h"
 
 #define UPDATE_TIMEOUT 100
@@ -184,7 +184,7 @@ about_cb (GtkAction   *action,
 		"authors",            authors,
 		"documenters",        documenters,
 		"translator-credits", _("translator-credits"),
-		"logo-icon-name",     "mate-eyes-applet",
+		"logo-icon-name",     "cafe-eyes-applet",
 		NULL);
 }
 
@@ -283,7 +283,7 @@ create_eyes (MatePanelApplet *applet)
         eyes_applet->applet = applet;
         eyes_applet->vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 	eyes_applet->settings = 
-		mate_panel_applet_settings_new (applet, "org.mate.panel.applet.geyes");
+		cafe_panel_applet_settings_new (applet, "org.cafe.panel.applet.geyes");
 
 	gtk_container_add (GTK_CONTAINER (applet), eyes_applet->vbox);
 
@@ -335,7 +335,7 @@ help_cb (GtkAction  *action,
 	GError *error = NULL;
 
 	gtk_show_uri_on_window (NULL,
-	                        "help:mate-geyes",
+	                        "help:cafe-geyes",
 	                        gtk_get_current_event_time (),
 	                        &error);
 
@@ -388,9 +388,9 @@ geyes_applet_fill (MatePanelApplet *applet)
 
 	g_set_application_name (_("Eyes"));
 	
-	gtk_window_set_default_icon_name ("mate-eyes-applet");
-	mate_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
-	mate_panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
+	gtk_window_set_default_icon_name ("cafe-eyes-applet");
+	cafe_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+	cafe_panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
 	
         eyes_applet = create_eyes (applet);
 
@@ -404,11 +404,11 @@ geyes_applet_fill (MatePanelApplet *applet)
 				      G_N_ELEMENTS (geyes_applet_menu_actions),
 				      eyes_applet);
 	ui_path = g_build_filename (GEYES_MENU_UI_DIR, "geyes-applet-menu.xml", NULL);
-	mate_panel_applet_setup_menu_from_file (eyes_applet->applet,
+	cafe_panel_applet_setup_menu_from_file (eyes_applet->applet,
 					   ui_path, action_group);
 	g_free (ui_path);
 
-	if (mate_panel_applet_get_locked_down (eyes_applet->applet)) {
+	if (cafe_panel_applet_get_locked_down (eyes_applet->applet)) {
 		GtkAction *action;
 
 		action = gtk_action_group_get_action (action_group, "Props");

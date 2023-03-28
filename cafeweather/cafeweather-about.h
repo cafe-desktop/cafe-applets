@@ -15,11 +15,11 @@
 
 #define MATEWEATHER_I_KNOW_THIS_IS_UNSTABLE
 
-#include "mateweather.h"
+#include "cafeweather.h"
 
 G_BEGIN_DECLS
 
-extern void mateweather_about_run (MateWeatherApplet *gw_applet);
+extern void cafeweather_about_run (MateWeatherApplet *gw_applet);
 
 G_END_DECLS
 

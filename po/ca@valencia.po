@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR MATE Desktop Environment team
-# This file is distributed under the same license as the mate-applets package.
+# This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
@@ -11,12 +11,12 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-applets 1.23.0\n"
-"Report-Msgid-Bugs-To: https://www.transifex.com/mate/MATE/\n"
+"Project-Id-Version: cafe-applets 1.23.0\n"
+"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/MATE/\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Pilar Embid <embid.mar@gmail.com>, 2020\n"
-"Language-Team: Catalan (Valencian) (https://www.transifex.com/mate/teams/13566/ca@valencia/)\n"
+"Language-Team: Catalan (Valencian) (https://www.transifex.com/cafe/teams/13566/ca@valencia/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,7 +24,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: accessx-status/applet.c:86 charpick/charpick.c:571 geyes/geyes.c:166
-#: mateweather/mateweather-about.c:41 multiload/main.c:48
+#: cafeweather/cafeweather-about.c:41 multiload/main.c:48
 #: stickynotes/stickynotes_applet_callbacks.c:367
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
@@ -32,7 +32,7 @@ msgstr ""
 #: accessx-status/applet.c:87 battstat/battstat_applet.c:819
 #: charpick/charpick.c:572 cpufreq/src/cpufreq-applet.c:466
 #: drivemount/drivemount.c:109 geyes/geyes.c:167
-#: mateweather/mateweather-about.c:43 multiload/main.c:49
+#: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
 #: trashapplet/src/trashapplet.c:421
 msgid "MATE Documentation Team"
@@ -57,7 +57,7 @@ msgstr ""
 #: accessx-status/applet.c:105 battstat/battstat_applet.c:844
 #: charpick/charpick.c:592 command/command.c:128
 #: cpufreq/src/cpufreq-applet.c:490 drivemount/drivemount.c:127
-#: geyes/geyes.c:186 mateweather/mateweather-about.c:61 multiload/main.c:69
+#: geyes/geyes.c:186 cafeweather/cafeweather-about.c:61 multiload/main.c:69
 #: netspeed/src/netspeed.c:829 stickynotes/stickynotes_applet_callbacks.c:388
 #: timerapplet/timerapplet.c:278 trashapplet/src/trashapplet.c:442
 msgid "translator-credits"
@@ -91,7 +91,7 @@ msgstr "Preferències d'accessibilitat del _teclat"
 #: accessx-status/applet.c:183 battstat/battstat_applet.c:63
 #: charpick/charpick.c:673 cpufreq/src/cpufreq-applet.c:119
 #: drivemount/drivemount.c:165 geyes/geyes.c:359
-#: mateweather/mateweather-applet.c:117 multiload/main.c:488
+#: cafeweather/cafeweather-applet.c:117 multiload/main.c:488
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
 msgid "_Help"
 msgstr "_Ajuda"
@@ -99,7 +99,7 @@ msgstr "_Ajuda"
 #: accessx-status/applet.c:184 battstat/battstat_applet.c:66
 #: charpick/charpick.c:676 command/command.c:84
 #: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:168
-#: geyes/geyes.c:362 mateweather/mateweather-applet.c:120 multiload/main.c:491
+#: geyes/geyes.c:362 cafeweather/cafeweather-applet.c:120 multiload/main.c:491
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
 #: trashapplet/src/trashapplet.c:77
 msgid "_About"
@@ -133,7 +133,7 @@ msgid "Error: %s"
 msgstr "Error: %s"
 
 #: accessx-status/applet.c:1385
-#: accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.desktop.in.in:9
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Keyboard Accessibility Status"
 msgstr "Estat de l'accessibilitat del teclat"
 
@@ -142,27 +142,27 @@ msgid "Displays current state of keyboard accessibility features"
 msgstr ""
 "Mostra l'estat actual de les funcionalitats d'accessibilitat del teclat"
 
-#: accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.desktop.in.in:5
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:5
 msgid "AccessX Status Applet Factory"
 msgstr "Fàbrica de la miniaplicació de l'estat d'AccessX"
 
-#: accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.desktop.in.in:6
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Keyboard Accessibility Status Applet Factory"
 msgstr "Fàbrica de la miniaplicació de l'estat d'accessibilitat del teclat"
 
-#: accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.desktop.in.in:10
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Shows the status of keyboard accessibility features"
 msgstr "Mostra l'estat de les funcionalitats d'accessibilitat del teclat"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.desktop.in.in:12
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:12
 msgid "preferences-desktop-accessibility"
 msgstr ""
 
 #: battstat/battstat_applet.c:60 charpick/charpick.c:670 command/command.c:83
 #: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:356
-#: mateweather/mateweather-applet.c:114 multiload/main.c:482
+#: cafeweather/cafeweather-applet.c:114 multiload/main.c:482
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
 msgid "_Preferences"
 msgstr "_Preferències"
@@ -305,8 +305,8 @@ msgid "N/A"
 msgstr "N/D"
 
 #: battstat/battstat_applet.c:783 drivemount/drivemount.c:153
-#: geyes/geyes.c:344 geyes/themes.c:223 mateweather/mateweather-applet.c:63
-#: mateweather/mateweather-pref.c:747
+#: geyes/geyes.c:344 geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
+#: cafeweather/cafeweather-pref.c:747
 #: stickynotes/stickynotes_applet_callbacks.c:345
 #: stickynotes/stickynotes_applet_callbacks.c:540
 #: trashapplet/src/trashapplet.c:399
@@ -338,12 +338,12 @@ msgid ""
 msgstr ""
 
 #: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
-#: battstat/org.mate.applets.BattstatApplet.mate-panel-applet.desktop.in.in:9
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Battery Charge Monitor"
 msgstr "Monitor de càrrega de bateria"
 
 #: battstat/battstat_applet.c:1165
-#: battstat/org.mate.applets.BattstatApplet.mate-panel-applet.desktop.in.in:10
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor a laptop's remaining power"
 msgstr "Fes un seguiment de la càrrega que queda en un portàtil"
 
@@ -381,22 +381,22 @@ msgstr "A_visa quan la càrrega de la bateria baixe a:"
 msgid "_Notify when battery is fully recharged"
 msgstr "_Notifica quan la bateria estiga completament recarregada"
 
-#: battstat/org.mate.applets.BattstatApplet.mate-panel-applet.desktop.in.in:5
-#: battstat/org.mate.applets.BattstatApplet.mate-panel-applet.desktop.in.in:6
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:5
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Battstat Factory"
 msgstr "Fàbrica de la càrrega de bateria"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: battstat/org.mate.applets.BattstatApplet.mate-panel-applet.desktop.in.in:12
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:12
 msgid "battery"
 msgstr ""
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:5
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:5
 msgid "Red value level"
 msgstr "Nivell del valor roig"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:6
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:6
 msgid ""
 "The battery level below which the battery is displayed as red. Also the "
 "value at which the low battery warning is displayed."
@@ -404,11 +404,11 @@ msgstr ""
 "El nivell de bateria per davall del qual la bateria es mostra de color roig."
 " També el valor al qual es mostra l'avís de bateria baixa."
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:10
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:10
 msgid "Warn on low time rather than low percentage"
 msgstr "Avisa quan quede poc temps en comptes de quan quede poca bateria"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:11
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:11
 msgid ""
 "Use the value defined in red_value as a time remaining to show the warning "
 "dialog rather than a percentage."
@@ -416,35 +416,35 @@ msgstr ""
 "Usa el valor definit a «red_value» com a temps restant per a mostrar el "
 "diàleg d'avís en comptes del percentatge."
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:15
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:15
 msgid "Low Battery Notification"
 msgstr "Notificació de bateria baixa"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:16
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:16
 msgid "Notify user when the battery is low."
 msgstr "Notifica a l'usuari quan la bateria està baixa."
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:20
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:20
 msgid "Full Battery Notification"
 msgstr "Notificació de càrrega completa"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:21
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:21
 msgid "Notify user when the battery is full."
 msgstr "Notifica a l'usuari quan la bateria està plena."
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:25
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:25
 msgid "Beep for warnings"
 msgstr "Avisa amb un so"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:26
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:26
 msgid "Beep when displaying a warning."
 msgstr "Fes un «so» quan es mostre un avís."
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:30
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:30
 msgid "Show the time/percent label"
 msgstr "Mostra l'etiqueta del percentatge de càrrega"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:31
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:31
 msgid "0 for no label, 1 for percentage and 2 for time remaining."
 msgstr ""
 "0 perquè no tinga etiqueta, 1 per al percentatge i 2 per al temps restant."
@@ -457,7 +457,7 @@ msgstr "Percentatge"
 msgid "Minutes Remaining"
 msgstr "minuts restants"
 
-#: battstat/sounds/mate-battstat_applet.soundlist.desktop.in:3
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:3
 msgid "Battery Status Utility"
 msgstr "Utilitat de l'estat de la bateria"
 
@@ -498,32 +498,32 @@ msgstr ""
 "al teclat. Publicat sota la Llicència Pública General GNU."
 
 #: charpick/charpick.c:699 charpick/charpick.c:713
-#: charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.desktop.in.in:9
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:9
 #: charpick/properties.c:451
 msgid "Character Palette"
 msgstr "Paleta de caràcters"
 
 #: charpick/charpick.c:699
-#: charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.desktop.in.in:10
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Insert characters"
 msgstr "Insereix caràcters"
 
-#: charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.desktop.in.in:5
-#: charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.desktop.in.in:6
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:5
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Charpicker Applet Factory"
 msgstr "Fàbrica de la miniaplicació de la paleta de caràcters"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.desktop.in.in:12
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:12
 msgid "accessories-character-map"
 msgstr ""
 
-#: charpick/org.mate.panel.applet.charpick.gschema.xml.in:5
+#: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:5
 msgid "Characters shown on applet startup"
 msgstr "Caràcters mostrats en iniciar la miniaplicació"
 
-#: charpick/org.mate.panel.applet.charpick.gschema.xml.in:6
+#: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:6
 msgid ""
 "The string that the user had selected when the applet was last used. This "
 "string will be displayed when the user starts the applet."
@@ -532,12 +532,12 @@ msgstr ""
 "miniaplicació per última vegada. Aquesta cadena es mostrarà quan l'usuari "
 "inicie la miniaplicació."
 
-#: charpick/org.mate.panel.applet.charpick.gschema.xml.in:10
+#: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:10
 #: charpick/properties.c:378
 msgid "List of available palettes"
 msgstr "Llista de paletes disponibles"
 
-#: charpick/org.mate.panel.applet.charpick.gschema.xml.in:11
+#: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:11
 msgid "List of strings containing the available palettes."
 msgstr "Llista de cadenes que contenen les paletes disponibles."
 
@@ -612,7 +612,7 @@ msgid ""
 msgstr ""
 
 #: command/command.c:127
-#: command/org.mate.applets.CommandApplet.mate-panel-applet.desktop.in.in:10
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Shows the output of a command"
 msgstr "Mostra l'eixida d'una ordre"
 
@@ -633,8 +633,8 @@ msgid "Maximum width (chars):"
 msgstr "Amplària màxima (caràcters):"
 
 #: command/command.c:231
-#: command/org.mate.panel.applet.command.gschema.xml.in:20
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:20
+#: command/org.cafe.panel.applet.command.gschema.xml.in:20
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:20
 msgid "Show icon"
 msgstr "Mostra la icona"
 
@@ -642,46 +642,46 @@ msgstr "Mostra la icona"
 msgid "Command Applet"
 msgstr "Miniaplicació d'ordres"
 
-#: command/org.mate.applets.CommandApplet.mate-panel-applet.desktop.in.in:5
-#: command/org.mate.applets.CommandApplet.mate-panel-applet.desktop.in.in:6
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:5
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Command Factory"
 msgstr "Fàbrica d'ordres"
 
-#: command/org.mate.applets.CommandApplet.mate-panel-applet.desktop.in.in:9
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Command"
 msgstr "Ordre"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: command/org.mate.applets.CommandApplet.mate-panel-applet.desktop.in.in:12
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:12
 msgid "utilities-terminal"
 msgstr ""
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:5
+#: command/org.cafe.panel.applet.command.gschema.xml.in:5
 msgid "Command to execute"
 msgstr "Ordre per executar"
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:6
+#: command/org.cafe.panel.applet.command.gschema.xml.in:6
 msgid "Command/script to execute to get the output"
 msgstr "Ordre o script que s'ha d'executar per a obtindre'n l'eixida"
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:10
+#: command/org.cafe.panel.applet.command.gschema.xml.in:10
 msgid "Interval for the command"
 msgstr "Interval per a l'ordre"
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:11
+#: command/org.cafe.panel.applet.command.gschema.xml.in:11
 msgid "Interval to execute the command (in seconds)"
 msgstr "Interval per a executar l'ordre (en mil·lisegons)"
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:15
+#: command/org.cafe.panel.applet.command.gschema.xml.in:15
 msgid "Width of output"
 msgstr "Amplària de l'eixida"
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:16
+#: command/org.cafe.panel.applet.command.gschema.xml.in:16
 msgid "Number of characters to display"
 msgstr "Nombre de caràcters per mostrar"
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:21
+#: command/org.cafe.panel.applet.command.gschema.xml.in:21
 msgid "If applet icon is shown or not"
 msgstr "Si es mostra o no la icona de la miniaplicació"
 
@@ -717,28 +717,28 @@ msgstr "Mostra les _unitats de la freqüència"
 msgid "Show CPU frequency as _percentage"
 msgstr "Mostra la freqüència de la CPU com a _percentatge"
 
-#: cpufreq/org.mate.applets.CPUFreqApplet.mate-panel-applet.desktop.in.in:5
-#: cpufreq/org.mate.applets.CPUFreqApplet.mate-panel-applet.desktop.in.in:9
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:5
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:9
 #: cpufreq/src/cpufreq-applet.c:813 cpufreq/src/cpufreq-applet.c:868
 msgid "CPU Frequency Scaling Monitor"
 msgstr "Monitor de l'escalat de la freqüència de la CPU"
 
-#: cpufreq/org.mate.applets.CPUFreqApplet.mate-panel-applet.desktop.in.in:6
-#: cpufreq/org.mate.applets.CPUFreqApplet.mate-panel-applet.desktop.in.in:10
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:6
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor the CPU Frequency Scaling"
 msgstr "Fes un seguiment de l'escalat de la freqüència de la CPU"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: cpufreq/org.mate.applets.CPUFreqApplet.mate-panel-applet.desktop.in.in:12
-msgid "mate-cpu-frequency-applet"
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:12
+msgid "cafe-cpu-frequency-applet"
 msgstr ""
 
-#: cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in:6
+#: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:6
 msgid "CPU to Monitor"
 msgstr "CPU que se seguiex"
 
-#: cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in:7
+#: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:7
 msgid ""
 "Set the CPU to monitor. In a single processor system you don't have to "
 "change it."
@@ -746,11 +746,11 @@ msgstr ""
 "Estableix la CPU de la qual s'ha de fer un seguiment. En un sistema amb un "
 "sol processador no heu de canviar-ho."
 
-#: cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in:11
+#: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:11
 msgid "Mode to show CPU usage"
 msgstr "Mode per a mostrar l'ús de la CPU"
 
-#: cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in:12
+#: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:12
 msgid ""
 "A 0 value means to show the applet in graphic mode (pixmap only), 1 to show "
 "the applet in text mode (not to show the pixmap) and 2 to show the applet in"
@@ -761,11 +761,11 @@ msgstr ""
 "mostrar el mapa de píxels), i el valor 2 mostra la miniaplicació en mode "
 "text i gràfic."
 
-#: cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in:16
+#: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:16
 msgid "The type of text to display (if the text is enabled)."
 msgstr "El tipus de text per visualitzar (si el text està habilitat)."
 
-#: cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in:17
+#: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:17
 msgid ""
 "A 0 value means to show CPU frequency, 1 to show frequency and units, and 2 "
 "to show percentage instead of frequency."
@@ -827,11 +827,11 @@ msgstr ""
 "estiga mal configurat, o que el maquinari que teniu no implemente l'escalat "
 "de freqüència de la CPU."
 
-#: cpufreq/src/cpufreq-selector/org.mate.cpufreqselector.policy.in:14
+#: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:14
 msgid "Change CPU Frequency scaling"
 msgstr "Canvia l'escalat de la freqüència de la CPU"
 
-#: cpufreq/src/cpufreq-selector/org.mate.cpufreqselector.policy.in:15
+#: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:15
 msgid "Privileges are required to change the CPU Frequency scaling."
 msgstr "Calen privilegis per a canviar l'escalat de la freqüència de la CPU."
 
@@ -890,25 +890,25 @@ msgid "Applet for mounting and unmounting block volumes."
 msgstr "Miniaplicació per a muntar i desmuntar volums d'unitats."
 
 #: drivemount/drivemount.c:185 drivemount/drivemount.c:225
-#: drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.desktop.in.in:9
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Disk Mounter"
 msgstr "Muntador de discos"
 
-#: drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.desktop.in.in:5
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:5
 msgid "Drive Mount Applet Factory"
 msgstr "Fàbrica per a la miniaplicació del muntador d'unitats"
 
-#: drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.desktop.in.in:6
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for drive mount applet"
 msgstr "Fàbrica per a la miniaplicació del muntador d'unitats"
 
-#: drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.desktop.in.in:10
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Mount local disks and devices"
 msgstr "Munta discos i dispositius locals"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.desktop.in.in:12
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:12
 msgid "media-floppy"
 msgstr ""
 
@@ -927,7 +927,7 @@ msgid ""
 msgstr ""
 
 #: geyes/geyes.c:389 geyes/geyes.c:419 geyes/geyes.c:421
-#: geyes/org.mate.applets.GeyesApplet.mate-panel-applet.desktop.in.in:9
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Eyes"
 msgstr "Ulls"
 
@@ -935,23 +935,23 @@ msgstr "Ulls"
 msgid "The eyes look in the direction of the mouse pointer"
 msgstr "Els ulls miren en la direcció del punter del ratolí"
 
-#: geyes/org.mate.applets.GeyesApplet.mate-panel-applet.desktop.in.in:5
-#: geyes/org.mate.applets.GeyesApplet.mate-panel-applet.desktop.in.in:6
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:5
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Eyes Applet Factory"
 msgstr ""
 
-#: geyes/org.mate.applets.GeyesApplet.mate-panel-applet.desktop.in.in:10
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A set of eyeballs for your panel"
 msgstr "Un parell d'ulls per al quadre"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: geyes/org.mate.applets.GeyesApplet.mate-panel-applet.desktop.in.in:12
-msgid "mate-eyes-applet"
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:12
+msgid "cafe-eyes-applet"
 msgstr ""
 
-#: geyes/org.mate.panel.applet.geyes.gschema.xml.in:5
-#: geyes/org.mate.panel.applet.geyes.gschema.xml.in:6
+#: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:5
+#: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:6
 msgid "Directory in which the theme is located"
 msgstr "Directori on es troba el tema"
 
@@ -975,44 +975,44 @@ msgstr "Temes"
 msgid "_Select a theme:"
 msgstr "_Seleccioneu un tema:"
 
-#: mateweather/mateweather-about.c:54
+#: cafeweather/cafeweather-about.c:54
 msgid "About Weather Report"
 msgstr ""
 
-#: mateweather/mateweather-about.c:56
+#: cafeweather/cafeweather-about.c:56
 msgid ""
 "Copyright © 1999-2005 by S. Papadimitriou and others\n"
 "Copyright © 2012-2020 MATE developers"
 msgstr ""
 
-#: mateweather/mateweather-about.c:58
+#: cafeweather/cafeweather-about.c:58
 msgid "A panel application for monitoring local weather conditions."
 msgstr ""
 "Una aplicació per al quadre per a fer un seguiment de les condicions "
 "meteorològiques."
 
-#: mateweather/mateweather-applet.c:108
+#: cafeweather/cafeweather-applet.c:108
 msgid "_Details"
 msgstr "_Detalls"
 
-#: mateweather/mateweather-applet.c:111 mateweather/mateweather-dialog.c:183
+#: cafeweather/cafeweather-applet.c:111 cafeweather/cafeweather-dialog.c:183
 msgid "_Update"
 msgstr "_Actualitza"
 
-#: mateweather/mateweather-applet.c:345
-#: mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.desktop.in.in:9
+#: cafeweather/cafeweather-applet.c:345
+#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Weather Report"
 msgstr "Butlletí meteorològic"
 
-#: mateweather/mateweather-applet.c:360 mateweather/mateweather-applet.c:364
+#: cafeweather/cafeweather-applet.c:360 cafeweather/cafeweather-applet.c:364
 msgid "MATE Weather"
 msgstr "El butlletí meteorològic per al MATE"
 
-#: mateweather/mateweather-applet.c:463
+#: cafeweather/cafeweather-applet.c:463
 msgid "Weather Forecast"
 msgstr "Previsió meteorològica"
 
-#: mateweather/mateweather-applet.c:475
+#: cafeweather/cafeweather-applet.c:475
 #, c-format
 msgid ""
 "City: %s\n"
@@ -1023,283 +1023,283 @@ msgstr ""
 "Cel: %s\n"
 "Temperatura: %s"
 
-#: mateweather/mateweather-applet.c:524
+#: cafeweather/cafeweather-applet.c:524
 msgid "Updating..."
 msgstr "S'està actualitzant..."
 
-#: mateweather/mateweather-dialog.c:181
+#: cafeweather/cafeweather-dialog.c:181
 msgid "Details"
 msgstr "Detalls"
 
-#: mateweather/mateweather-dialog.c:223
+#: cafeweather/cafeweather-dialog.c:223
 msgid "City:"
 msgstr "Ciutat:"
 
-#: mateweather/mateweather-dialog.c:229
+#: cafeweather/cafeweather-dialog.c:229
 msgid "Last update:"
 msgstr "Última actualització:"
 
-#: mateweather/mateweather-dialog.c:235
+#: cafeweather/cafeweather-dialog.c:235
 msgid "Conditions:"
 msgstr "Condicions:"
 
-#: mateweather/mateweather-dialog.c:241
+#: cafeweather/cafeweather-dialog.c:241
 msgid "Sky:"
 msgstr "Cel:"
 
-#: mateweather/mateweather-dialog.c:247
+#: cafeweather/cafeweather-dialog.c:247
 msgid "Temperature:"
 msgstr "Temperatura:"
 
-#: mateweather/mateweather-dialog.c:253
+#: cafeweather/cafeweather-dialog.c:253
 msgid "Feels like:"
 msgstr "Sensació tèrmica:"
 
-#: mateweather/mateweather-dialog.c:259
+#: cafeweather/cafeweather-dialog.c:259
 msgid "Dew point:"
 msgstr "Punt de rosada:"
 
-#: mateweather/mateweather-dialog.c:265
+#: cafeweather/cafeweather-dialog.c:265
 msgid "Relative humidity:"
 msgstr "Humitat relativa:"
 
-#: mateweather/mateweather-dialog.c:271
+#: cafeweather/cafeweather-dialog.c:271
 msgid "Wind:"
 msgstr "Vent:"
 
-#: mateweather/mateweather-dialog.c:277
+#: cafeweather/cafeweather-dialog.c:277
 msgid "Pressure:"
 msgstr "Pressió:"
 
-#: mateweather/mateweather-dialog.c:283
+#: cafeweather/cafeweather-dialog.c:283
 msgid "Visibility:"
 msgstr "Visibilitat:"
 
-#: mateweather/mateweather-dialog.c:289
+#: cafeweather/cafeweather-dialog.c:289
 msgid "Sunrise:"
 msgstr "Eixida del Sol:"
 
-#: mateweather/mateweather-dialog.c:295
+#: cafeweather/cafeweather-dialog.c:295
 msgid "Sunset:"
 msgstr "Posta de Sol:"
 
-#: mateweather/mateweather-dialog.c:403
+#: cafeweather/cafeweather-dialog.c:403
 msgid "Current Conditions"
 msgstr "Condicions actuals"
 
-#: mateweather/mateweather-dialog.c:420
+#: cafeweather/cafeweather-dialog.c:420
 msgid "Forecast Report"
 msgstr "Informe del pronòstic"
 
-#: mateweather/mateweather-dialog.c:420
+#: cafeweather/cafeweather-dialog.c:420
 msgid "See the ForeCast Details"
 msgstr "Visualitza els detalls del pronòstic"
 
-#: mateweather/mateweather-dialog.c:430
+#: cafeweather/cafeweather-dialog.c:430
 msgid "Forecast"
 msgstr "Pronòstic"
 
-#: mateweather/mateweather-dialog.c:438
+#: cafeweather/cafeweather-dialog.c:438
 msgid "Radar Map"
 msgstr "Mapa de radar"
 
-#: mateweather/mateweather-dialog.c:471
+#: cafeweather/cafeweather-dialog.c:471
 msgid "_Visit Weather.com"
 msgstr "_Visita Weather.com"
 
-#: mateweather/mateweather-dialog.c:472
+#: cafeweather/cafeweather-dialog.c:472
 msgid "Visit Weather.com"
 msgstr "Visita Weather.com"
 
-#: mateweather/mateweather-dialog.c:472
+#: cafeweather/cafeweather-dialog.c:472
 msgid "Click to Enter Weather.com"
 msgstr "Feu clic per a entrar al Weather.com"
 
-#: mateweather/mateweather-dialog.c:603
+#: cafeweather/cafeweather-dialog.c:603
 msgid "Forecast not currently available for this location."
 msgstr ""
 "En aquests moments el pronòstic per a aquesta ubicació no està disponible."
 
-#: mateweather/mateweather-pref.c:158
+#: cafeweather/cafeweather-pref.c:158
 msgid "Location view"
 msgstr "Visualització de la ubicació"
 
-#: mateweather/mateweather-pref.c:158
+#: cafeweather/cafeweather-pref.c:158
 msgid "Select Location from the list"
 msgstr "Seleccioneu la ubicació de la llista"
 
-#: mateweather/mateweather-pref.c:159
+#: cafeweather/cafeweather-pref.c:159
 msgid "Update spin button"
 msgstr "Actualitza el botó giratori"
 
-#: mateweather/mateweather-pref.c:159
+#: cafeweather/cafeweather-pref.c:159
 msgid "Spinbutton for updating"
 msgstr "Botó giratori per a actualitzar"
 
-#: mateweather/mateweather-pref.c:160
+#: cafeweather/cafeweather-pref.c:160
 msgid "Address Entry"
 msgstr "Entrada de l'adreça"
 
-#: mateweather/mateweather-pref.c:160
+#: cafeweather/cafeweather-pref.c:160
 msgid "Enter the URL"
 msgstr "Introduïu l'URL"
 
-#: mateweather/mateweather-pref.c:283
+#: cafeweather/cafeweather-pref.c:283
 msgid ""
 "Failed to load the Locations XML database.  Please report this as a bug."
 msgstr ""
 "No s'ha pogut carregar la base de dades XML de les ubicacions. Informeu-ne "
 "com a error."
 
-#: mateweather/mateweather-pref.c:807
+#: cafeweather/cafeweather-pref.c:807
 msgid "Weather Preferences"
 msgstr "Preferències del butlletí meteorològic"
 
-#: mateweather/mateweather-pref.c:831 mateweather/mateweather-pref.c:1034
+#: cafeweather/cafeweather-pref.c:831 cafeweather/cafeweather-pref.c:1034
 msgid "_Automatically update every:"
 msgstr "Actualitza _automàticament cada:"
 
-#: mateweather/mateweather-pref.c:847
+#: cafeweather/cafeweather-pref.c:847
 msgid "_Temperature unit:"
 msgstr "Unitat de _temperatura:"
 
-#: mateweather/mateweather-pref.c:857
+#: cafeweather/cafeweather-pref.c:857
 msgid "Kelvin"
 msgstr "Kelvin"
 
-#: mateweather/mateweather-pref.c:859
+#: cafeweather/cafeweather-pref.c:859
 msgid "Celsius"
 msgstr "Celsius"
 
-#: mateweather/mateweather-pref.c:860
+#: cafeweather/cafeweather-pref.c:860
 msgid "Fahrenheit"
 msgstr "Fahrenheit"
 
-#: mateweather/mateweather-pref.c:869
+#: cafeweather/cafeweather-pref.c:869
 msgid "_Wind speed unit:"
 msgstr "Unitat de velocitat del _vent:"
 
-#: mateweather/mateweather-pref.c:880
+#: cafeweather/cafeweather-pref.c:880
 msgid "m/s"
 msgstr "m/s"
 
-#: mateweather/mateweather-pref.c:882
+#: cafeweather/cafeweather-pref.c:882
 msgid "km/h"
 msgstr "km/h"
 
-#: mateweather/mateweather-pref.c:884
+#: cafeweather/cafeweather-pref.c:884
 msgid "mph"
 msgstr "mph"
 
-#: mateweather/mateweather-pref.c:886
+#: cafeweather/cafeweather-pref.c:886
 msgid "knots"
 msgstr "nusos"
 
-#: mateweather/mateweather-pref.c:887
+#: cafeweather/cafeweather-pref.c:887
 msgid "Beaufort scale"
 msgstr "Escala de Beaufort"
 
-#: mateweather/mateweather-pref.c:896
+#: cafeweather/cafeweather-pref.c:896
 msgid "_Pressure unit:"
 msgstr "Unitat de _pressió:"
 
-#: mateweather/mateweather-pref.c:907
+#: cafeweather/cafeweather-pref.c:907
 msgid "kPa"
 msgstr "kPa"
 
-#: mateweather/mateweather-pref.c:909
+#: cafeweather/cafeweather-pref.c:909
 msgid "hPa"
 msgstr "hPa"
 
-#: mateweather/mateweather-pref.c:911
+#: cafeweather/cafeweather-pref.c:911
 msgid "mb"
 msgstr "mb"
 
-#: mateweather/mateweather-pref.c:913
+#: cafeweather/cafeweather-pref.c:913
 msgid "mmHg"
 msgstr "mmHg"
 
-#: mateweather/mateweather-pref.c:915
+#: cafeweather/cafeweather-pref.c:915
 msgid "inHg"
 msgstr "poHg"
 
-#: mateweather/mateweather-pref.c:917
+#: cafeweather/cafeweather-pref.c:917
 msgid "atm"
 msgstr "atm"
 
-#: mateweather/mateweather-pref.c:926
+#: cafeweather/cafeweather-pref.c:926
 msgid "_Visibility unit:"
 msgstr "Unitat de _visibilitat:"
 
-#: mateweather/mateweather-pref.c:937
+#: cafeweather/cafeweather-pref.c:937
 msgid "meters"
 msgstr "metres"
 
-#: mateweather/mateweather-pref.c:939
+#: cafeweather/cafeweather-pref.c:939
 msgid "km"
 msgstr "km"
 
-#: mateweather/mateweather-pref.c:941
+#: cafeweather/cafeweather-pref.c:941
 msgid "miles"
 msgstr "milles"
 
-#: mateweather/mateweather-pref.c:971
+#: cafeweather/cafeweather-pref.c:971
 msgid "Enable _radar map"
 msgstr "Habilita el mapa del _radar"
 
-#: mateweather/mateweather-pref.c:987
+#: cafeweather/cafeweather-pref.c:987
 msgid "Use _custom address for radar map"
 msgstr "Utilitza una adreça _personalitzada per al mapa del radar"
 
-#: mateweather/mateweather-pref.c:1005
+#: cafeweather/cafeweather-pref.c:1005
 msgid "A_ddress:"
 msgstr "A_dreça:"
 
-#: mateweather/mateweather-pref.c:1020
+#: cafeweather/cafeweather-pref.c:1020
 msgid "Show _notifications"
 msgstr "Mostra les _notificacions"
 
-#: mateweather/mateweather-pref.c:1030
+#: cafeweather/cafeweather-pref.c:1030
 msgid "Update"
 msgstr "Actualitza"
 
-#: mateweather/mateweather-pref.c:1047
+#: cafeweather/cafeweather-pref.c:1047
 msgid "minutes"
 msgstr "minuts"
 
-#: mateweather/mateweather-pref.c:1065
+#: cafeweather/cafeweather-pref.c:1065
 msgid "Display"
 msgstr "Pantalla"
 
-#: mateweather/mateweather-pref.c:1084
+#: cafeweather/cafeweather-pref.c:1084
 msgid "General"
 msgstr "General"
 
-#: mateweather/mateweather-pref.c:1095
+#: cafeweather/cafeweather-pref.c:1095
 msgid "_Select a location:"
 msgstr "_Seleccioneu una ubicació:"
 
-#: mateweather/mateweather-pref.c:1117
+#: cafeweather/cafeweather-pref.c:1117
 msgid "_Find:"
 msgstr "Cer_ca:"
 
-#: mateweather/mateweather-pref.c:1123
+#: cafeweather/cafeweather-pref.c:1123
 msgid "Find _Next"
 msgstr "Busca el següe_nt"
 
-#: mateweather/mateweather-pref.c:1144
+#: cafeweather/cafeweather-pref.c:1144
 msgid "Location"
 msgstr "Ubicació"
 
-#: mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.desktop.in.in:5
+#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:5
 msgid "Mateweather Applet Factory"
 msgstr "Fàbrica de la miniaplicació del butlletí meteorològic del MATE"
 
-#: mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.desktop.in.in:6
+#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for creating the weather applet."
 msgstr "Fàbrica per a crear la miniaplicació del butlletí meteorològic."
 
-#: mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.desktop.in.in:10
+#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr ""
 "Fes un seguiment de les condicions actuals i de les previsions "
@@ -1307,7 +1307,7 @@ msgstr ""
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.desktop.in.in:12
+#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:12
 msgid "weather-storm"
 msgstr ""
 
@@ -1426,7 +1426,7 @@ msgid "_Open System Monitor"
 msgstr "_Obri el monitor del sistema"
 
 #: multiload/main.c:517
-#: multiload/org.mate.applets.MultiLoadApplet.mate-panel-applet.desktop.in.in:9
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:9
 msgid "System Monitor"
 msgstr "Monitor del sistema"
 
@@ -1435,57 +1435,57 @@ msgstr "Monitor del sistema"
 msgid "%s/s"
 msgstr "%s/s"
 
-#: multiload/org.mate.applets.MultiLoadApplet.mate-panel-applet.desktop.in.in:5
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:5
 msgid "MultiLoad Applet Factory"
 msgstr ""
 
-#: multiload/org.mate.applets.MultiLoadApplet.mate-panel-applet.desktop.in.in:6
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for creating the load applet."
 msgstr ""
 
-#: multiload/org.mate.applets.MultiLoadApplet.mate-panel-applet.desktop.in.in:10
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A system load indicator"
 msgstr "Un indicador de la càrrega del sistema"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: multiload/org.mate.applets.MultiLoadApplet.mate-panel-applet.desktop.in.in:12
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:12
 msgid "utilities-system-monitor"
 msgstr ""
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:5
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:5
 msgid "Enable CPU load graph"
 msgstr "Habilita la gràfica de càrrega de la CPU"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:9
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:9
 msgid "Enable memory load graph"
 msgstr "Habilita la gràfica de càrrega de la memòria"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:13
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:13
 msgid "Enable network load graph"
 msgstr "Habilita la gràfica de càrrega de la xarxa"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:17
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:17
 msgid "Enable swap load graph"
 msgstr "Habilita la gràfica de càrrega de l'espai d'intercanvi"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:21
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:21
 msgid "Enable load average graph"
 msgstr "Habilita la gràfica de mitjana de càrrega"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:25
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:25
 msgid "Enable disk load graph"
 msgstr "Habilita la gràfica de càrrega del disc"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:29
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:29
 msgid "Applet refresh rate in milliseconds"
 msgstr "Interval de refresc de la miniaplicació en mil·lisegons"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:33
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:33
 msgid "Graph size"
 msgstr "Mida de la gràfica"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:34
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:34
 msgid ""
 "For horizontal panels, the width of the graphs in pixels. For vertical "
 "panels, this is the height of the graphs."
@@ -1493,124 +1493,124 @@ msgstr ""
 "Per als taulers horitzontals, l'amplària dels gràfics en píxels. Per als "
 "taulers verticals, aquest és l'alçària dels gràfics."
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:38
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:38
 msgid "Graph color for user-related CPU activity"
 msgstr ""
 "El color de la gràfica per a l'activitat de la CPU relacionada amb l'usuari"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:42
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:42
 msgid "Graph color for system-related CPU activity"
 msgstr ""
 "El color de la gràfica per a l'activitat de la CPU relacionada amb el "
 "sistema"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:46
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:46
 msgid "Graph color for nice-related CPU activity"
 msgstr ""
 "El color de la gràfica per a l'activitat de la CPU relacionada amb la "
 "prioritat"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:50
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:50
 msgid "Graph color for iowait related CPU activity"
 msgstr ""
 "El color de la gràfica per a l'activitat de la CPU relacionada amb iowait"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:54
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:54
 msgid "CPU graph background color"
 msgstr "Color de fons de la gràfica de la CPU"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:58
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:58
 msgid "Graph color for user-related memory usage"
 msgstr "El color de la gràfica per a l'ús de memòria relacionada amb l'usuari"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:62
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:62
 msgid "Graph color for shared memory"
 msgstr "El color de la gràfica per a la memòria compartida"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:66
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:66
 msgid "Graph color for buffer memory"
 msgstr "El color de la gràfica per a la memòria intermèdia"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:70
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:70
 msgid "Graph color for cached memory"
 msgstr "El color de la gràfica per a la memòria cau"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:74
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:74
 msgid "Memory graph background color"
 msgstr "Color de fons de la gràfica de la memòria"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:78
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:78
 msgid "Graph color for input network activity"
 msgstr "El color de la gràfica per a l'activitat d'entrada de la xarxa"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:82
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:82
 msgid "Graph color for output network activity"
 msgstr "El color de la gràfica per a l'activitat d'eixida de la xarxa"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:86
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:86
 msgid "Graph color for loopback network usage"
 msgstr "El color de la gràfica per a l'ús local de la xarxa"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:90
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:90
 msgid "Network graph background color"
 msgstr "Color de fons de la gràfica de la xarxa"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:94
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:130
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:94
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:130
 msgid "Grid line color"
 msgstr "Color de línia de la graella"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:98
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:98
 msgid "Indicator color"
 msgstr "Color de l'indicador"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:102
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:102
 msgid "Network threshold 1 in bytes"
 msgstr "Llindar de la xarxa en 1 byte"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:106
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:106
 msgid "Network threshold 2 in bytes"
 msgstr "Llindar de la xarxa en 2 bytes"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:110
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:110
 msgid "Network threshold 3 in bytes"
 msgstr "Llindar de la xarxa en 3 bytes"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:114
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:114
 msgid "Graph color for user-related swap usage"
 msgstr ""
 "El color de la gràfica per a l'ús de l'espai d'intercanvi relacionat amb "
 "l'usuari"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:118
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:118
 msgid "Swap graph background color"
 msgstr "Color de fons de la gràfica de l'espai d'intercanvi"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:122
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:122
 msgid "Graph color for load average"
 msgstr "El color de la gràfica per a la càrrega mitjana"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:126
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:126
 msgid "Load graph background color"
 msgstr "Color de fons de la gràfica de la càrrega"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:134
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:134
 msgid "Graph color for disk read"
 msgstr "El color de la gràfica per a la lectura del disc"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:138
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:138
 msgid "Graph color for disk write"
 msgstr "El color de la gràfica per a l'escriptura al disc"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:142
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:142
 msgid "Background color for disk load graph"
 msgstr "Color de fons de la gràfica de la càrrega del disc"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:146
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:146
 msgid "Uses /proc/diskstats to determine NVMe disk load"
 msgstr ""
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:150
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:150
 msgid "The desktop description file to execute as the system monitor"
 msgstr ""
 "El fitxer de descripció de l'escriptori que s'ha d'executar com a monitor "
@@ -1790,42 +1790,42 @@ msgstr "Llindar 3:"
 msgid "System Monitor Preferences"
 msgstr "Preferències del monitor del sistema"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:5
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:5
 msgid "Device to monitor"
 msgstr "Dispositiu del qual es fa el seguiment"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:6
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:6
 msgid "The name of the device to monitor"
 msgstr "El nom del dispositiu del qual es fa el seguiment"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:10
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:10
 msgid "Show sum speed"
 msgstr "Mostra el sumatori de les velocitats"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:11
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:11
 msgid "If true, show sum of inbound/outbound speed instead of separated ones."
 msgstr ""
 "Si s'estableix a cert, es mostra la velocitat del trànsit d'entrada i "
 "d'eixida en lloc de les velocitats per separat."
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:15
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:15
 msgid "Show bits"
 msgstr "Mostra els bits"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:16
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:16
 msgid "If true, show speed in bits instead of bytes."
 msgstr ""
 "Si s'estableix a cert, es mostra la velocitat en bits en lloc de bytes."
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:21
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:21
 msgid "If true, show main icon."
 msgstr "Si s'estableix a cert, es mostra la icona principal."
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:25
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:25
 msgid "Short unit legend"
 msgstr "Llegenda curta de la unitat"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:26
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:26
 msgid ""
 "If true, shorten unit legend to one letter: lowercase for bits / uppercase "
 "for Bytes."
@@ -1833,84 +1833,84 @@ msgstr ""
 "Si s'estableix a cert, s'acurta la llegenda de la unitat a una lletra: "
 "minúscula per als bits / majúscula per als bytes."
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:30
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:30
 msgid "Change icon"
 msgstr "Canvia la icona"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:31
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:31
 msgid "If true, change the icon due to selected device."
 msgstr ""
 "Si s'estableix a cert, es canvia la icona a causa del dispositiu "
 "seleccionat."
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:35
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:35
 msgid "Auto change device"
 msgstr "Canvi automàtic de dispositiu"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:36
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:36
 msgid "If true, change automatically the selected device."
 msgstr ""
 "Si s'estableix a cert, es canvia automàticament el dispositiu seleccionat."
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:40
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:40
 msgid "In color"
 msgstr "Color de l'entrada"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:41
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:41
 msgid "The color of the graph of the inbound traffic"
 msgstr "El color de la gràfica del trànsit d'entrada"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:45
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:45
 msgid "Out color"
 msgstr "Color de l'eixida"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:46
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:46
 msgid "The color of the graph of the outbound traffic"
 msgstr "El color de la gràfica del trànsit d'eixida"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:50
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:50
 msgid "Up command"
 msgstr "Ordre d'alçada"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:51
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:51
 msgid "Command to execute to activate the device"
 msgstr "L'ordre que s'ha d'executar per a activar el dispositiu"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:55
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:55
 msgid "Down command"
 msgstr "Ordre d'apagada"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:56
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:56
 msgid "Command to execute to shut down the device"
 msgstr "L'ordre que s'ha d'executar per a apagar el dispositiu"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:60
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:60
 msgid "Show signal quality icon"
 msgstr "Mostra la icona de la qualitat del senyal"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:61
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:61
 msgid "If true, show signal quality icon for wireless devices."
 msgstr ""
 "Si s'estableix a cert, es canvia la icona de la qualitat del senyal per als "
 "dispositius sense fil."
 
-#: netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.desktop.in.in:5
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:5
 msgid "Netspeed Applet Factory"
 msgstr "Fàbrica de la miniaplicació Netspeed"
 
-#: netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.desktop.in.in:6
-#: netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.desktop.in.in:10
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:6
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Netspeed Applet"
 msgstr "Miniaplicació Netspeed"
 
-#: netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.desktop.in.in:9
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Network Monitor"
 msgstr "Monitor de xarxa"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.desktop.in.in:12
-msgid "mate-netspeed-applet"
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:12
+msgid "cafe-netspeed-applet"
 msgstr ""
 
 #: netspeed/src/netspeed.c:427
@@ -2185,24 +2185,24 @@ msgstr "desconeguda"
 msgid "MATE Netspeed"
 msgstr ""
 
-#: stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.desktop.in.in:5
-#: stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.desktop.in.in:6
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:5
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Sticky Notes Applet Factory"
 msgstr "Fàbrica de la miniaplicació de notes adhesives"
 
-#: stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.desktop.in.in:9
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:9
 #: stickynotes/stickynotes_applet.c:170 stickynotes/stickynotes_applet.c:412
 msgid "Sticky Notes"
 msgstr "Notes adhesives"
 
-#: stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.desktop.in.in:10
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Create, view, and manage sticky notes on the desktop"
 msgstr "Crea, visualitza i gestiona notes adhesives a l'escriptori"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.desktop.in.in:12
-msgid "mate-sticky-notes-applet"
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:12
+msgid "cafe-sticky-notes-applet"
 msgstr ""
 
 #: stickynotes/stickynotes.c:577
@@ -2399,27 +2399,27 @@ msgstr "Especifica un títol per a la nota"
 msgid "_Title:"
 msgstr "_Títol:"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:5
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:5
 msgid "Default width for new notes"
 msgstr "Amplària predeterminada per a notes noves"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:6
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:6
 msgid "Default width for new sticky notes in pixels."
 msgstr "Amplària predeterminada en píxels per a notes adhesives noves."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:10
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:10
 msgid "Default height for new notes"
 msgstr "Alçària predeterminada per a notes noves"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:11
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:11
 msgid "Default height for new sticky notes in pixels."
 msgstr "Alçària predeterminada en píxels per a notes adhesives noves."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:15
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:15
 msgid "Default color for new notes"
 msgstr "Color predeterminat per a notes noves"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:16
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:16
 msgid ""
 "Default color for new sticky notes. This should be in html hex "
 "specification, for example \"#30FF50\"."
@@ -2427,11 +2427,11 @@ msgstr ""
 "Color predeterminat per a les notes adhesives noves. Això ha d'estar en "
 "especificació hexadecimal d'HTML, com per exemple «#30FF50»."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:20
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:20
 msgid "Default color for font"
 msgstr "Color predeterminat per al tipus de lletra"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:21
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:21
 msgid ""
 "Default font color for new sticky notes. This should be in html hex "
 "specification, for example \"#000000\"."
@@ -2439,11 +2439,11 @@ msgstr ""
 "Color predeterminat per a notes adhesives noves. Això ha d'estar en "
 "especificació hexadecimal d'HTML, com per exemple «#000000»."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:25
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:25
 msgid "Default font for new notes"
 msgstr "Tipus de lletra predeterminat per a les notes noves"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:26
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:26
 msgid ""
 "Default font for new sticky notes. This should be a Pango Font Name, for "
 "example \"Sans Italic 10\"."
@@ -2451,11 +2451,11 @@ msgstr ""
 "Tipus de lletra predeterminat per a les notes adhesives noves. Cal que siga "
 "un nom de tipus de lletra Pango, com per exemple «Sans Italic 10»."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:30
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:30
 msgid "Sticky notes' workspace stickyness"
 msgstr "Adhesivitat als espais de treball de les notes adhesives"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:31
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:31
 msgid ""
 "Specifies whether the sticky notes are visible on ALL workspaces on the "
 "desktop, or not."
@@ -2463,20 +2463,20 @@ msgstr ""
 "Especifica si les notes adhesives són visibles a tots els espais de treball "
 "de l'escriptori."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:35
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:35
 msgid "Sticky notes' locked state"
 msgstr "Estat de bloquejat de les notes adhesives"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:36
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:36
 msgid "Specifies whether the sticky notes are locked (non-editable) or not."
 msgstr ""
 "Especifica si les notes adhesives estan bloquejades (no es poden editar)."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:40
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:40
 msgid "Date format of note's title"
 msgstr "Format de la data del títol de la nota"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:41
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:41
 msgid ""
 "By default, sticky notes are given the current date as the title when they "
 "are created. This format is used; anything that can be parsed by strftime() "
@@ -2486,11 +2486,11 @@ msgstr ""
 "S'utilitza aquest format; qualsevol cosa que strftime() puga analitzar és "
 "vàlida."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:45
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:45
 msgid "Whether to use the default system color"
 msgstr "Si s'ha d'utilitzar el color predeterminat del sistema"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:46
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:46
 msgid ""
 "If this option is disabled, a custom color can be used as the default color "
 "for all sticky notes."
@@ -2498,11 +2498,11 @@ msgstr ""
 "Si aquesta opció està inhabilitada, es pot utilitzar un color personalitzat "
 "com el color predeterminat per a totes les notes adhesives."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:50
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:50
 msgid "Whether to use the default system font"
 msgstr "Si s'ha d'utilitzar el tipus de lletra predeterminat del sistema"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:51
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:51
 msgid ""
 "If this option is disabled, a custom font can be used as the default font "
 "for all sticky notes."
@@ -2511,12 +2511,12 @@ msgstr ""
 "personalitzat com el tipus de lletra predeterminat per a totes les notes "
 "adhesives."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:55
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:55
 msgid "Whether to force the default color and font on all notes"
 msgstr ""
 "Si s'ha d'imposar el color i tipus de lletra predeterminat a totes les notes"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:56
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:56
 msgid ""
 "If this option is enabled, the custom colors and fonts that have been "
 "assigned to individual notes will be ignored."
@@ -2524,11 +2524,11 @@ msgstr ""
 "Si aquesta opció està habilitada, s'ignoraran els colors i tipus de lletra "
 "predeterminats que s'han assignat a notes individuals."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:60
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:60
 msgid "Whether to hide all notes when the desktop is selected"
 msgstr "Si s'oculten totes les notes quan se selecciona l'escriptori"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:61
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:61
 msgid ""
 "If this option is enabled, selecting the desktop in any way will "
 "automatically hide all the open notes."
@@ -2536,11 +2536,11 @@ msgstr ""
 "Si s'habilita aquesta opció, en seleccionar l'escriptori s'ocultaran "
 "automàticament totes les notes obertes."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:65
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:65
 msgid "Whether to ask for confirmation when deleting a note"
 msgstr "Si s'ha de demanar confirmació quan se suprimeix una nota"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:66
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:66
 msgid "Empty notes are always deleted without confirmation."
 msgstr "Les notes buides s'eliminen sempre sense confirmació."
 
@@ -2582,39 +2582,39 @@ msgstr ""
 msgid "Sticky Notes for the MATE Desktop Environment"
 msgstr "Notes adhesives per a l'entorn d'escriptori MATE"
 
-#: timerapplet/org.mate.applets.TimerApplet.mate-panel-applet.desktop.in.in:5
-#: timerapplet/org.mate.applets.TimerApplet.mate-panel-applet.desktop.in.in:6
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:5
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Timer Factory"
 msgstr "Fàbrica del temporitzador"
 
-#: timerapplet/org.mate.applets.TimerApplet.mate-panel-applet.desktop.in.in:9
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Timer"
 msgstr "Temporitzador"
 
-#: timerapplet/org.mate.applets.TimerApplet.mate-panel-applet.desktop.in.in:10
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:10
 #: timerapplet/timerapplet.c:277
 msgid "Start a timer and receive a notification when it is finished"
 msgstr "Inicieu un temporitzador i rebeu una notificació quan finalitze"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: timerapplet/org.mate.applets.TimerApplet.mate-panel-applet.desktop.in.in:12
-msgid "mate-panel-clock"
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:12
+msgid "cafe-panel-clock"
 msgstr ""
 
-#: timerapplet/org.mate.panel.applet.timer.gschema.xml.in:5
+#: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:5
 msgid "Name of timer"
 msgstr "Nom del temporitzador"
 
-#: timerapplet/org.mate.panel.applet.timer.gschema.xml.in:9
+#: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:9
 msgid "Duration of timer in seconds"
 msgstr "Duració del temporitzador en segons"
 
-#: timerapplet/org.mate.panel.applet.timer.gschema.xml.in:13
+#: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:13
 msgid "Show notification popup when timer finish"
 msgstr "Mostra la notificació emergent quan finalitze el temporitzador"
 
-#: timerapplet/org.mate.panel.applet.timer.gschema.xml.in:17
+#: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:17
 msgid "Show dialog window when timer finish"
 msgstr "Mostra la finestra de diàleg quan finalitze el temporitzador"
 
@@ -2680,22 +2680,22 @@ msgstr "Mostra el diàleg"
 msgid "Timer Applet"
 msgstr "Miniaplicació del temporitzador"
 
-#: trashapplet/org.mate.applets.TrashApplet.mate-panel-applet.desktop.in.in:5
-#: trashapplet/org.mate.applets.TrashApplet.mate-panel-applet.desktop.in.in:6
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:5
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Trash Applet Factory"
 msgstr ""
 
-#: trashapplet/org.mate.applets.TrashApplet.mate-panel-applet.desktop.in.in:9
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Trash"
 msgstr "Paperera"
 
-#: trashapplet/org.mate.applets.TrashApplet.mate-panel-applet.desktop.in.in:10
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Go to Trash"
 msgstr "Vés a la paperera"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: trashapplet/org.mate.applets.TrashApplet.mate-panel-applet.desktop.in.in:12
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:12
 msgid "user-trash-full"
 msgstr ""
 

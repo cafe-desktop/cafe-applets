@@ -17,11 +17,11 @@
 
 #define MATEWEATHER_I_KNOW_THIS_IS_UNSTABLE
 
-#include "mateweather.h"
+#include "cafeweather.h"
 
 G_BEGIN_DECLS
 
-#define MATEWEATHER_TYPE_DIALOG		(mateweather_dialog_get_type ())
+#define MATEWEATHER_TYPE_DIALOG		(cafeweather_dialog_get_type ())
 #define MATEWEATHER_DIALOG(obj)		(G_TYPE_CHECK_INSTANCE_CAST ((obj), MATEWEATHER_TYPE_DIALOG, MateWeatherDialog))
 #define MATEWEATHER_DIALOG_CLASS(klass)	(G_TYPE_CHECK_CLASS_CAST ((klass), MATEWEATHER_TYPE_DIALOG, MateWeatherDialogClass))
 #define MATEWEATHER_IS_DIALOG(obj)		(G_TYPE_CHECK_INSTANCE_TYPE ((obj), MATEWEATHER_TYPE_DIALOG))
@@ -46,9 +46,9 @@ struct _MateWeatherDialogClass
 	GtkDialogClass parent_class;
 };
 
-GType		 mateweather_dialog_get_type	(void);
-GtkWidget	*mateweather_dialog_new		(MateWeatherApplet *applet);
-void		 mateweather_dialog_update		(MateWeatherDialog *dialog);
+GType		 cafeweather_dialog_get_type	(void);
+GtkWidget	*cafeweather_dialog_new		(MateWeatherApplet *applet);
+void		 cafeweather_dialog_update		(MateWeatherDialog *dialog);
 
 G_END_DECLS
 

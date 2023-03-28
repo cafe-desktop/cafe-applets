@@ -7,10 +7,10 @@
 <policyconfig>
 
   <vendor>The MATE Project</vendor>
-  <vendor_url>http://www.mate-desktop.org</vendor_url>
-  <icon_name>mate-cpu-frequency-applet</icon_name>
+  <vendor_url>http://www.cafe-desktop.org</vendor_url>
+  <icon_name>cafe-cpu-frequency-applet</icon_name>
 
-  <action id="org.mate.cpufreqselector">
+  <action id="org.cafe.cpufreqselector">
     <description>Change CPU Frequency scaling</description>
     <message>Privileges are required to change the CPU Frequency scaling.</message>
     <defaults>

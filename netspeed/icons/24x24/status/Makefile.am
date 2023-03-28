@@ -5,10 +5,10 @@ context = status
 iconsdir = $(themedir)/$(size)/$(context)
 
 icons_DATA = \
-	mate-netspeed-wireless-25.png \
-	mate-netspeed-wireless-50.png \
-	mate-netspeed-wireless-75.png \
-	mate-netspeed-wireless-100.png
+	cafe-netspeed-wireless-25.png \
+	cafe-netspeed-wireless-50.png \
+	cafe-netspeed-wireless-75.png \
+	cafe-netspeed-wireless-100.png
 
 EXTRA_DIST =		\
 	$(icons_DATA)

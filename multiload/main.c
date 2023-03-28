@@ -24,8 +24,8 @@
 #include <gdk-pixbuf/gdk-pixbuf.h>
 #include <gio/gio.h>
 #include <gio/gdesktopappinfo.h>
-#include <mate-panel-applet.h>
-#include <mate-panel-applet-gsettings.h>
+#include <cafe-panel-applet.h>
+#include <cafe-panel-applet-gsettings.h>
 
 #include "global.h"
 
@@ -79,7 +79,7 @@ help_cb (GtkAction       *action,
  	GError *error = NULL;
 
 	gtk_show_uri_on_window (NULL,
-	                        "help:mate-multiload",
+	                        "help:cafe-multiload",
 	                        gtk_get_current_event_time (),
 	                        &error);
 
@@ -109,7 +109,7 @@ start_procman (MultiloadApplet *ma)
 
 	monitor = g_settings_get_string (ma->settings, "system-monitor");
 	if (monitor == NULL)
-	        monitor = g_strdup ("mate-system-monitor.desktop");
+	        monitor = g_strdup ("cafe-system-monitor.desktop");
 
 	screen = gtk_widget_get_screen (GTK_WIDGET (ma->applet));
 	appinfo = g_desktop_app_info_new (monitor);
@@ -125,7 +125,7 @@ start_procman (MultiloadApplet *ma)
 		g_object_unref (appinfo);
 	}
 	else {
-		app_info = g_app_info_create_from_commandline ("mate-system-monitor",
+		app_info = g_app_info_create_from_commandline ("cafe-system-monitor",
 							      _("Start system-monitor"),
 							      G_APP_INFO_CREATE_NONE,
 							      &error);
@@ -149,7 +149,7 @@ start_procman (MultiloadApplet *ma)
 						 GTK_MESSAGE_ERROR,
 						 GTK_BUTTONS_OK,
 						 _("There was an error executing '%s': %s"),
-						 "mate-system-monitor",
+						 "cafe-system-monitor",
 						 error->message);
 
 		g_signal_connect (dialog, "response",
@@ -448,7 +448,7 @@ multiload_applet_refresh(MultiloadApplet *ma)
 	if (ma->box)
 		gtk_widget_destroy(ma->box);
 
-	orientation = mate_panel_applet_get_orient(ma->applet);
+	orientation = cafe_panel_applet_get_orient(ma->applet);
 
 	if ( (orientation == MATE_PANEL_APPLET_ORIENT_UP) ||
 	     (orientation == MATE_PANEL_APPLET_ORIENT_DOWN) ) {
@@ -517,10 +517,10 @@ multiload_applet_new(MatePanelApplet *applet, const gchar *iid, gpointer data)
 	g_set_application_name (_("System Monitor"));
 
 	gtk_window_set_default_icon_name ("utilities-system-monitor");
-	mate_panel_applet_set_background_widget (applet, GTK_WIDGET(applet));
+	cafe_panel_applet_set_background_widget (applet, GTK_WIDGET(applet));
 
-	ma->settings = mate_panel_applet_settings_new (applet, "org.mate.panel.applet.multiload");
-	mate_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+	ma->settings = cafe_panel_applet_settings_new (applet, "org.cafe.panel.applet.multiload");
+	cafe_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
 
 	action_group = gtk_action_group_new ("Multiload Applet Actions");
 	gtk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
@@ -529,20 +529,20 @@ multiload_applet_new(MatePanelApplet *applet, const gchar *iid, gpointer data)
 				      G_N_ELEMENTS (multiload_menu_actions),
 				      ma);
 	ui_path = g_build_filename (MULTILOAD_MENU_UI_DIR, "multiload-applet-menu.xml", NULL);
-	mate_panel_applet_setup_menu_from_file (applet, ui_path, action_group);
+	cafe_panel_applet_setup_menu_from_file (applet, ui_path, action_group);
 	g_free (ui_path);
 
 
-	if (mate_panel_applet_get_locked_down (applet)) {
+	if (cafe_panel_applet_get_locked_down (applet)) {
 		GtkAction *action;
 
 		action = gtk_action_group_get_action (action_group, "MultiLoadProperties");
 		gtk_action_set_visible (action, FALSE);
 	}
 
-	lockdown_settings = g_settings_new ("org.mate.lockdown");
+	lockdown_settings = g_settings_new ("org.cafe.lockdown");
 	if (g_settings_get_boolean (lockdown_settings, "disable-command-line") ||
-	    mate_panel_applet_get_locked_down (applet)) {
+	    cafe_panel_applet_get_locked_down (applet)) {
 		GtkAction *action;
 
 		/* When the panel is locked down or when the command line is inhibited,

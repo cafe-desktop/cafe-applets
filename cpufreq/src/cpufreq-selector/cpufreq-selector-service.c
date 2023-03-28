@@ -46,7 +46,7 @@ struct _CPUFreqSelectorServiceClass {
 
 G_DEFINE_TYPE (CPUFreqSelectorService, cpufreq_selector_service, G_TYPE_OBJECT)
 
-#define BUS_NAME "org.mate.CPUFreqSelector"
+#define BUS_NAME "org.cafe.CPUFreqSelector"
 
 GType
 cpufreq_selector_service_error_get_type (void)
@@ -238,7 +238,7 @@ cpufreq_selector_service_register (CPUFreqSelectorService *service,
 	dbus_g_object_type_install_info (CPUFREQ_TYPE_SELECTOR_SERVICE,
 					 &dbus_glib_cpufreq_selector_service_object_info);
 	dbus_g_connection_register_g_object (connection,
-					     "/org/mate/cpufreq_selector/selector",
+					     "/org/cafe/cpufreq_selector/selector",
 					     G_OBJECT (service));
 	dbus_g_error_domain_register (CPUFREQ_SELECTOR_SERVICE_ERROR, NULL,
 				      CPUFREQ_TYPE_SELECTOR_SERVICE_ERROR);
@@ -281,7 +281,7 @@ cpufreq_selector_service_check_policy (CPUFreqSelectorService *service,
 
 	result = polkit_authority_check_authorization_sync (service->authority,
                                                             subject,
-                                                            "org.mate.cpufreqselector",
+                                                            "org.cafe.cpufreqselector",
                                                             NULL,
                                                             POLKIT_CHECK_AUTHORIZATION_FLAGS_ALLOW_USER_INTERACTION,
                                                             NULL, error);
@@ -457,7 +457,7 @@ cpufreq_selector_service_can_set (CPUFreqSelectorService *service,
 
 	result = polkit_authority_check_authorization_sync (service->authority,
                                                             subject,
-                                                            "org.mate.cpufreqselector",
+                                                            "org.cafe.cpufreqselector",
                                                             NULL,
                                                             0,
                                                             NULL,

@@ -28,9 +28,9 @@ gboolean applet_key_cb(GtkWidget *widget, GdkEventKey *event, StickyNotesApplet 
 gboolean applet_cross_cb(GtkWidget *widget, GdkEventCrossing *event, StickyNotesApplet *applet);
 gboolean applet_focus_cb(GtkWidget *widget, GdkEventFocus *event, StickyNotesApplet *applet);
 void install_check_click_on_desktop (void);
-void applet_change_orient_cb(MatePanelApplet *mate_panel_applet, MatePanelAppletOrient orient, StickyNotesApplet *applet);
+void applet_change_orient_cb(MatePanelApplet *cafe_panel_applet, MatePanelAppletOrient orient, StickyNotesApplet *applet);
 void applet_size_allocate_cb(GtkWidget *widget, GtkAllocation *allocation, StickyNotesApplet *applet);
-void applet_destroy_cb (MatePanelApplet *mate_panel_applet, StickyNotesApplet *applet);
+void applet_destroy_cb (MatePanelApplet *cafe_panel_applet, StickyNotesApplet *applet);
 /* Callbacks for sticky notes applet menu */
 void menu_create_cb(GtkAction *action, StickyNotesApplet *applet);
 void menu_new_note_cb(GtkAction *action, StickyNotesApplet *applet);

@@ -14,9 +14,9 @@
 
 #include <gio/gio.h>
 
-#include <mate-panel-applet.h>
+#include <cafe-panel-applet.h>
 
-#include <libmateweather/mateweather-prefs.h>
+#include <libcafeweather/cafeweather-prefs.h>
 
 
 /* Radar map on by default. */
@@ -26,7 +26,7 @@ G_BEGIN_DECLS
 
 typedef struct _MateWeatherApplet {
 	MatePanelApplet* applet;
-	WeatherInfo* mateweather_info;
+	WeatherInfo* cafeweather_info;
 
 	GSettings* settings;
 
@@ -41,7 +41,7 @@ typedef struct _MateWeatherApplet {
 	gint suncalc_timeout_tag;
 
 	/* preferences  */
-	MateWeatherPrefs mateweather_pref;
+	MateWeatherPrefs cafeweather_pref;
 
 	GtkWidget* pref_dialog;
 

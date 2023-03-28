@@ -1,10 +1,10 @@
 man_MANS = \
-    mate-charpick-applet.1    \
-    mate-cpufreq-selector.1   \
-    mate-drivemount-applet.1  \
-    mate-geyes-applet.1       \
-    mateweather.1             \
-    mate-multiload-applet.1
+    cafe-charpick-applet.1    \
+    cafe-cpufreq-selector.1   \
+    cafe-drivemount-applet.1  \
+    cafe-geyes-applet.1       \
+    cafeweather.1             \
+    cafe-multiload-applet.1
 
 EXTRA_DIST = $(man_MANS)
 

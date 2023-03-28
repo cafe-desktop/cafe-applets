@@ -12,17 +12,17 @@ AM_CPPFLAGS =					\
 	$(LIBMATEWEATHER_CFLAGS)			\
 	$(DBUS_CFLAGS)
 
-libexec_PROGRAMS = mateweather-applet
+libexec_PROGRAMS = cafeweather-applet
 
-mateweather_applet_SOURCES = \
-	mateweather.h \
+cafeweather_applet_SOURCES = \
+	cafeweather.h \
 	main.c \
-	mateweather-about.c mateweather-about.h \
-	mateweather-pref.c mateweather-pref.h \
-	mateweather-dialog.c mateweather-dialog.h \
-	mateweather-applet.c mateweather-applet.h
+	cafeweather-about.c cafeweather-about.h \
+	cafeweather-pref.c cafeweather-pref.h \
+	cafeweather-dialog.c cafeweather-dialog.h \
+	cafeweather-applet.c cafeweather-applet.h
 
-mateweather_applet_LDADD = 	\
+cafeweather_applet_LDADD = 	\
 	$(LIBNOTIFY_LIBS) 	\
 	$(MATE_APPLETS4_LIBS)	\
 	$(MATEDESKTOP_LIBS)	\
@@ -30,12 +30,12 @@ mateweather_applet_LDADD = 	\
 	$(LIBMATEWEATHER_LIBS)	\
 	$(DBUS_LIBS)
 
-uidir = $(datadir)/mate/ui
-ui_DATA = mateweather-applet-menu.xml
+uidir = $(datadir)/cafe/ui
+ui_DATA = cafeweather-applet-menu.xml
 
-appletdir       = $(datadir)/mate-panel/applets
-applet_in_files = org.mate.applets.MateWeatherApplet.mate-panel-applet.desktop.in
-applet_DATA     = $(applet_in_files:.mate-panel-applet.desktop.in=.mate-panel-applet)
+appletdir       = $(datadir)/cafe-panel/applets
+applet_in_files = org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in
+applet_DATA     = $(applet_in_files:.cafe-panel-applet.desktop.in=.cafe-panel-applet)
 
 $(applet_in_files): $(applet_in_files).in Makefile
 	$(AM_V_GEN)sed \
@@ -47,10 +47,10 @@ $(applet_DATA): $(applet_in_files) Makefile
 	$(AM_V_GEN) $(MSGFMT) --desktop --keyword=Name --keyword=Description --template $< -d $(top_srcdir)/po -o $@
 
 servicedir       = $(datadir)/dbus-1/services
-service_in_files = org.mate.panel.applet.MateWeatherAppletFactory.service.in
+service_in_files = org.cafe.panel.applet.MateWeatherAppletFactory.service.in
 service_DATA     = $(service_in_files:.service.in=.service)
 
-org.mate.panel.applet.MateWeatherAppletFactory.service: $(service_in_files)
+org.cafe.panel.applet.MateWeatherAppletFactory.service: $(service_in_files)
 	$(AM_V_GEN)sed \
             -e "s|\@LIBEXECDIR\@|$(libexecdir)|" \
             $< > $@

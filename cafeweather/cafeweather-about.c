@@ -20,10 +20,10 @@
 
 #define MATEWEATHER_I_KNOW_THIS_IS_UNSTABLE
 
-#include "mateweather.h"
-#include "mateweather-about.h"
+#include "cafeweather.h"
+#include "cafeweather-about.h"
 
-void mateweather_about_run(MateWeatherApplet* gw_applet)
+void cafeweather_about_run(MateWeatherApplet* gw_applet)
 {
 	static const gchar* authors[] = {
 		"Todd Kulesza <fflewddur@dropline.net>",

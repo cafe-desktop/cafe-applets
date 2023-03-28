@@ -46,7 +46,7 @@ void theme_dirs_create (void)
 
 	theme_directories[0] = g_build_filename(GEYES_THEMES_DIR, NULL);
 
-		theme_directories[1] = g_build_filename(g_get_user_config_dir(), "mate", "geyes-themes", NULL);
+		theme_directories[1] = g_build_filename(g_get_user_config_dir(), "cafe", "geyes-themes", NULL);
 
 	themes_created = TRUE;
 }
@@ -214,7 +214,7 @@ phelp_cb (GtkDialog *dialog)
 	GError *error = NULL;
 
 	gtk_show_uri_on_window (GTK_WINDOW (dialog),
-	                        "help:mate-geyes/geyes-settings",
+	                        "help:cafe-geyes/geyes-settings",
 	                        gtk_get_current_event_time (),
 	                        &error);
 

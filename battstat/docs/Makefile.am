@@ -1,6 +1,6 @@
 @YELP_HELP_RULES@
 
-HELP_ID = mate-battstat
+HELP_ID = cafe-battstat
 HELP_FILES = index.docbook legal.xml
 
 HELP_MEDIA = figures/battstat-applet-expanded.png \

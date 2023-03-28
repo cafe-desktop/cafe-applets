@@ -1,6 +1,6 @@
 [Applet Factory]
 Id=MateWeatherAppletFactory
-Location=@LIBEXECDIR@/mateweather-applet
+Location=@LIBEXECDIR@/cafeweather-applet
 Name=Mateweather Applet Factory
 Description=Factory for creating the weather applet.
 
@@ -11,7 +11,7 @@ Description=Monitor the current weather conditions, and forecasts
 Icon=weather-storm
 MateComponentId=OAFIID:MATE_MateWeatherApplet
 X-MATE-Bugzilla-Bugzilla=MATE
-X-MATE-Bugzilla-Product=mate-applets
-X-MATE-Bugzilla-Component=mateweather
+X-MATE-Bugzilla-Product=cafe-applets
+X-MATE-Bugzilla-Component=cafeweather
 X-MATE-Bugzilla-Version=@VERSION@
-X-MATE-Bugzilla-OtherBinaries=mateweather-applet-2
+X-MATE-Bugzilla-OtherBinaries=cafeweather-applet-2

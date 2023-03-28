@@ -5,11 +5,11 @@ if BUILD_GTOP_APPLETS
 gtop_SUBDIRS = $(gtop_applets)
 endif
 
-libmateweather_applets = \
-	mateweather
+libcafeweather_applets = \
+	cafeweather
 
 if BUILD_LIBMATEWEATHER_APPLETS
-libmateweather_SUBDIRS = $(libmateweather_applets)
+libcafeweather_SUBDIRS = $(libcafeweather_applets)
 endif
 
 if BUILD_BATTSTAT_APPLET
@@ -40,7 +40,7 @@ SUBDIRS = \
 	po \
 	$(always_built_SUBDIRS) \
 	$(gtop_SUBDIRS) \
-	$(libmateweather_SUBDIRS) \
+	$(libcafeweather_SUBDIRS) \
 	man	\
 	$(battstat_SUBDIR) \
 	$(accessx_status_SUBDIR) \
@@ -54,7 +54,7 @@ DIST_SUBDIRS = \
 	geyes \
 	battstat \
 	multiload \
-	mateweather \
+	cafeweather \
 	man \
 	accessx-status \
 	stickynotes \

@@ -1,6 +1,6 @@
 @YELP_HELP_RULES@
 
-HELP_ID = mate-char-palette
+HELP_ID = cafe-char-palette
 HELP_FILES = index.docbook legal.xml
 
 HELP_MEDIA = figures/charpalette_applet.png \

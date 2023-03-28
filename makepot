@@ -1,17 +1,17 @@
 #! /bin/sh
 
-PACKAGE=mate-applets;
-ACCESSX=mate-accessx-status;
-BATT=mate-battstat;
-CHAR=mate-char-palette;
-FREQ=mate-cpufreq-applet;
-DRIVE=mate-drivemount;
-GEYES=mate-geyes;
-WEATHER=mateweather;
-MULTI=mate-multiload;
-NET=mate-netspeed-applet;
-STICKY=mate-stickynotes-applet;
-TRASH=mate-trashapplet;
+PACKAGE=cafe-applets;
+ACCESSX=cafe-accessx-status;
+BATT=cafe-battstat;
+CHAR=cafe-char-palette;
+FREQ=cafe-cpufreq-applet;
+DRIVE=cafe-drivemount;
+GEYES=cafe-geyes;
+WEATHER=cafeweather;
+MULTI=cafe-multiload;
+NET=cafe-netspeed-applet;
+STICKY=cafe-stickynotes-applet;
+TRASH=cafe-trashapplet;
 
 # main translation
 make -C po $PACKAGE.pot && mv po/$PACKAGE.pot .
@@ -42,8 +42,8 @@ make -C geyes/docs $GEYES.pot \
 && mv geyes/docs/$GEYES.pot .
 
 # weather
-make -C mateweather/docs $WEATHER.pot \
-&& mv mateweather/docs/$WEATHER.pot .
+make -C cafeweather/docs $WEATHER.pot \
+&& mv cafeweather/docs/$WEATHER.pot .
 
 # multiload
 make -C multiload/docs $MULTI.pot \

@@ -58,13 +58,13 @@ battstat_applet_LDADD = \
 			 $(UPOWER_LIBS) \
 			 -lm
 
-batstat_gschema_in_files = org.mate.panel.applet.battstat.gschema.xml.in
+batstat_gschema_in_files = org.cafe.panel.applet.battstat.gschema.xml.in
 gsettings_SCHEMAS = $(batstat_gschema_in_files:.xml.in=.xml)
 @GSETTINGS_RULES@
 
-appletdir       = $(datadir)/mate-panel/applets
-applet_in_files = org.mate.applets.BattstatApplet.mate-panel-applet.desktop.in
-applet_DATA     = $(applet_in_files:.mate-panel-applet.desktop.in=.mate-panel-applet)
+appletdir       = $(datadir)/cafe-panel/applets
+applet_in_files = org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in
+applet_DATA     = $(applet_in_files:.cafe-panel-applet.desktop.in=.cafe-panel-applet)
 
 $(applet_in_files): $(applet_in_files).in Makefile
 	$(AM_V_GEN)sed \
@@ -76,17 +76,17 @@ $(applet_DATA): $(applet_in_files) Makefile
 	$(AM_V_GEN) $(MSGFMT) --desktop --keyword=Name --keyword=Description --template $< -d $(top_srcdir)/po -o $@
 
 servicedir       = $(datadir)/dbus-1/services
-service_in_files = org.mate.panel.applet.BattstatAppletFactory.service.in
+service_in_files = org.cafe.panel.applet.BattstatAppletFactory.service.in
 service_DATA     = $(service_in_files:.service.in=.service)
 
-org.mate.panel.applet.BattstatAppletFactory.service: $(service_in_files)
+org.cafe.panel.applet.BattstatAppletFactory.service: $(service_in_files)
 	$(AM_V_GEN)sed \
             -e "s|\@LIBEXECDIR\@|$(libexecdir)|" \
             $< > $@
 
 CLEANFILES = $(applet_DATA) $(applet_in_files) $(service_DATA) $(gsettings_SCHEMAS) *.gschema.valid
 
-uidir = $(datadir)/mate/ui
+uidir = $(datadir)/cafe/ui
 ui_DATA = battstat-applet-menu.xml
 
 EXTRA_DIST = 							\

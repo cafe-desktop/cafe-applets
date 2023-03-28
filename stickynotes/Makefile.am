@@ -4,8 +4,8 @@ SUBDIRS = pixmaps docs
 
 ui_files = stickynotes-applet-menu.xml
 builder_files = stickynotes.ui
-applet_in_files = org.mate.applets.StickyNotesApplet.mate-panel-applet.desktop.in
-service_in_files = org.mate.panel.applet.StickyNotesAppletFactory.service.in
+applet_in_files = org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in
+service_in_files = org.cafe.panel.applet.StickyNotesAppletFactory.service.in
 schemas_in_files = stickynotes.schemas.in
 
 if BUILD_STICKYNOTES_APPLET
@@ -43,15 +43,15 @@ stickynotes_applet_LDADD =	\
 
 builder_DATA = $(builder_files)
 
-uidir = $(datadir)/mate/ui
+uidir = $(datadir)/cafe/ui
 ui_DATA = $(ui_files)
 
-stickynotes_gschema_in_files = org.mate.stickynotes.gschema.xml.in
+stickynotes_gschema_in_files = org.cafe.stickynotes.gschema.xml.in
 gsettings_SCHEMAS = $(stickynotes_gschema_in_files:.xml.in=.xml)
 @GSETTINGS_RULES@
 
-appletdir   = $(datadir)/mate-panel/applets
-applet_DATA = $(applet_in_files:.mate-panel-applet.desktop.in=.mate-panel-applet)
+appletdir   = $(datadir)/cafe-panel/applets
+applet_DATA = $(applet_in_files:.cafe-panel-applet.desktop.in=.cafe-panel-applet)
 
 $(applet_in_files): $(applet_in_files).in Makefile
 	$(AM_V_GEN)sed \
@@ -65,7 +65,7 @@ $(applet_DATA): $(applet_in_files) Makefile
 servicedir   = $(datadir)/dbus-1/services
 service_DATA = $(service_in_files:.service.in=.service)
 
-org.mate.panel.applet.StickyNotesAppletFactory.service: $(service_in_files)
+org.cafe.panel.applet.StickyNotesAppletFactory.service: $(service_in_files)
 	$(AM_V_GEN)sed \
             -e "s|\@LIBEXECDIR\@|$(libexecdir)|" \
             $< > $@

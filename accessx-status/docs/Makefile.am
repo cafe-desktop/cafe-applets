@@ -1,6 +1,6 @@
 @YELP_HELP_RULES@
 
-HELP_ID = mate-accessx-status
+HELP_ID = cafe-accessx-status
 HELP_FILES = index.docbook legal.xml
 
 HELP_MEDIA = figures/accessx_bounce-keys.png \

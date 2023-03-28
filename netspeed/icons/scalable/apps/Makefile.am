@@ -5,7 +5,7 @@ context = apps
 iconsdir = $(themedir)/$(size)/$(context)
 
 icons_DATA = \
-	mate-netspeed-applet.svg
+	cafe-netspeed-applet.svg
 
 noinst_DATA =
 

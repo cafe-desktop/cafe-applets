@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR MATE Desktop Environment team
-# This file is distributed under the same license as the mate-applets package.
+# This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
@@ -10,12 +10,12 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-applets 1.23.0\n"
-"Report-Msgid-Bugs-To: https://www.transifex.com/mate/MATE/\n"
+"Project-Id-Version: cafe-applets 1.23.0\n"
+"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/MATE/\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Vaibhav S Dalvi <vaibhav.dlv@gmail.com>, 2020\n"
-"Language-Team: Marathi (https://www.transifex.com/mate/teams/13566/mr/)\n"
+"Language-Team: Marathi (https://www.transifex.com/cafe/teams/13566/mr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: accessx-status/applet.c:86 charpick/charpick.c:571 geyes/geyes.c:166
-#: mateweather/mateweather-about.c:41 multiload/main.c:48
+#: cafeweather/cafeweather-about.c:41 multiload/main.c:48
 #: stickynotes/stickynotes_applet_callbacks.c:367
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
@@ -31,7 +31,7 @@ msgstr ""
 #: accessx-status/applet.c:87 battstat/battstat_applet.c:819
 #: charpick/charpick.c:572 cpufreq/src/cpufreq-applet.c:466
 #: drivemount/drivemount.c:109 geyes/geyes.c:167
-#: mateweather/mateweather-about.c:43 multiload/main.c:49
+#: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
 #: trashapplet/src/trashapplet.c:421
 msgid "MATE Documentation Team"
@@ -54,7 +54,7 @@ msgstr ""
 #: accessx-status/applet.c:105 battstat/battstat_applet.c:844
 #: charpick/charpick.c:592 command/command.c:128
 #: cpufreq/src/cpufreq-applet.c:490 drivemount/drivemount.c:127
-#: geyes/geyes.c:186 mateweather/mateweather-about.c:61 multiload/main.c:69
+#: geyes/geyes.c:186 cafeweather/cafeweather-about.c:61 multiload/main.c:69
 #: netspeed/src/netspeed.c:829 stickynotes/stickynotes_applet_callbacks.c:388
 #: timerapplet/timerapplet.c:278 trashapplet/src/trashapplet.c:442
 msgid "translator-credits"
@@ -81,7 +81,7 @@ msgstr "कळफलक सुलभता आवड निवड(_K)"
 #: accessx-status/applet.c:183 battstat/battstat_applet.c:63
 #: charpick/charpick.c:673 cpufreq/src/cpufreq-applet.c:119
 #: drivemount/drivemount.c:165 geyes/geyes.c:359
-#: mateweather/mateweather-applet.c:117 multiload/main.c:488
+#: cafeweather/cafeweather-applet.c:117 multiload/main.c:488
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
 msgid "_Help"
 msgstr "मदत(_H)"
@@ -89,7 +89,7 @@ msgstr "मदत(_H)"
 #: accessx-status/applet.c:184 battstat/battstat_applet.c:66
 #: charpick/charpick.c:676 command/command.c:84
 #: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:168
-#: geyes/geyes.c:362 mateweather/mateweather-applet.c:120 multiload/main.c:491
+#: geyes/geyes.c:362 cafeweather/cafeweather-applet.c:120 multiload/main.c:491
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
 #: trashapplet/src/trashapplet.c:77
 msgid "_About"
@@ -122,7 +122,7 @@ msgid "Error: %s"
 msgstr "चूक: %s"
 
 #: accessx-status/applet.c:1385
-#: accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.desktop.in.in:9
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Keyboard Accessibility Status"
 msgstr "कळफलक सुलभता स्थिती"
 
@@ -130,27 +130,27 @@ msgstr "कळफलक सुलभता स्थिती"
 msgid "Displays current state of keyboard accessibility features"
 msgstr "कळफलक सुलभता वैशिष्ट्यांची सद्य स्थिती दाखवा"
 
-#: accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.desktop.in.in:5
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:5
 msgid "AccessX Status Applet Factory"
 msgstr "AccessX स्थिती एप्लेट फॅक्टरी"
 
-#: accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.desktop.in.in:6
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Keyboard Accessibility Status Applet Factory"
 msgstr "कळफलक सुलभता स्थिती एप्लेट फॅक्टरी"
 
-#: accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.desktop.in.in:10
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Shows the status of keyboard accessibility features"
 msgstr "कळफलक सुलभता वैशिष्ट्यांची स्थिती दाखवा"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.desktop.in.in:12
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:12
 msgid "preferences-desktop-accessibility"
 msgstr ""
 
 #: battstat/battstat_applet.c:60 charpick/charpick.c:670 command/command.c:83
 #: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:356
-#: mateweather/mateweather-applet.c:114 multiload/main.c:482
+#: cafeweather/cafeweather-applet.c:114 multiload/main.c:482
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
 msgid "_Preferences"
 msgstr "प्राधान्यता (_P)"
@@ -293,8 +293,8 @@ msgid "N/A"
 msgstr "N/A"
 
 #: battstat/battstat_applet.c:783 drivemount/drivemount.c:153
-#: geyes/geyes.c:344 geyes/themes.c:223 mateweather/mateweather-applet.c:63
-#: mateweather/mateweather-pref.c:747
+#: geyes/geyes.c:344 geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
+#: cafeweather/cafeweather-pref.c:747
 #: stickynotes/stickynotes_applet_callbacks.c:345
 #: stickynotes/stickynotes_applet_callbacks.c:540
 #: trashapplet/src/trashapplet.c:399
@@ -326,12 +326,12 @@ msgid ""
 msgstr ""
 
 #: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
-#: battstat/org.mate.applets.BattstatApplet.mate-panel-applet.desktop.in.in:9
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Battery Charge Monitor"
 msgstr "बॅटरी चार्ज मॉनिटर"
 
 #: battstat/battstat_applet.c:1165
-#: battstat/org.mate.applets.BattstatApplet.mate-panel-applet.desktop.in.in:10
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor a laptop's remaining power"
 msgstr "लॅपटॉपची उर्वरीत पॉवर(उर्जा) मॉनिटर करा"
 
@@ -369,22 +369,22 @@ msgstr "बॅटरी चार्ज ठराविक स्तर खा�
 msgid "_Notify when battery is fully recharged"
 msgstr "बॅटरी पूर्ण पुन्ह चार्ज केल्यावर सूचीत करा (_N)"
 
-#: battstat/org.mate.applets.BattstatApplet.mate-panel-applet.desktop.in.in:5
-#: battstat/org.mate.applets.BattstatApplet.mate-panel-applet.desktop.in.in:6
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:5
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Battstat Factory"
 msgstr "बॅटस्टॅट फॅक्टरी"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: battstat/org.mate.applets.BattstatApplet.mate-panel-applet.desktop.in.in:12
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:12
 msgid "battery"
 msgstr ""
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:5
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:5
 msgid "Red value level"
 msgstr "लाल मूल्य स्तर"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:6
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:6
 msgid ""
 "The battery level below which the battery is displayed as red. Also the "
 "value at which the low battery warning is displayed."
@@ -392,11 +392,11 @@ msgstr ""
 "बॅटरी स्तर ज्याखाली बॅटरी आहे ती लाल दर्शवली आहे. तसेच मूल्य ज्यावर बॅटरी "
 "कमी असल्याची सुचना दर्शवली जाते."
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:10
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:10
 msgid "Warn on low time rather than low percentage"
 msgstr "कमी टक्केवारीऐवजी कमी मूल्यावर सुचित करा"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:11
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:11
 msgid ""
 "Use the value defined in red_value as a time remaining to show the warning "
 "dialog rather than a percentage."
@@ -404,35 +404,35 @@ msgstr ""
 "सुचना संवादामध्ये दर्शवण्यासाठी टक्केवारीऐवजी red_value मध्ये व्याख्यीत "
 "उर्वरित वेळेचे मूल्य वापरा."
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:15
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:15
 msgid "Low Battery Notification"
 msgstr "कमी बॅटरी सुचना"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:16
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:16
 msgid "Notify user when the battery is low."
 msgstr "बॅटरी कमी असल्यास उपयोक्त्यास सूचित करा."
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:20
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:20
 msgid "Full Battery Notification"
 msgstr "पूर्ण बॅटरी सूचना"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:21
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:21
 msgid "Notify user when the battery is full."
 msgstr "बॅटरी पुर्ण झाल्यावर सुचना द्या."
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:25
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:25
 msgid "Beep for warnings"
 msgstr "सुचनांसाठी बीप वाजवा"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:26
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:26
 msgid "Beep when displaying a warning."
 msgstr "सुचना दाखवताना बीप करा."
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:30
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:30
 msgid "Show the time/percent label"
 msgstr "वेळ/टक्के लेबल दाखवा"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:31
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:31
 msgid "0 for no label, 1 for percentage and 2 for time remaining."
 msgstr "लेबल नको साठी 0, टक्केवारीसाठी 1 आणि उर्वरित वेळेसाठी 2."
 
@@ -444,7 +444,7 @@ msgstr "टक्के"
 msgid "Minutes Remaining"
 msgstr "मिनिटे शिल्लक"
 
-#: battstat/sounds/mate-battstat_applet.soundlist.desktop.in:3
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:3
 msgid "Battery Status Utility"
 msgstr "बॅटरी स्थिती उपयुक्तता"
 
@@ -485,32 +485,32 @@ msgstr ""
 "  GNU जनरल पब्लिक लायसंस अंतर्गत प्रकाशित."
 
 #: charpick/charpick.c:699 charpick/charpick.c:713
-#: charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.desktop.in.in:9
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:9
 #: charpick/properties.c:451
 msgid "Character Palette"
 msgstr "अक्षर पटल"
 
 #: charpick/charpick.c:699
-#: charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.desktop.in.in:10
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Insert characters"
 msgstr "अक्षरे प्रविष्ट करा"
 
-#: charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.desktop.in.in:5
-#: charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.desktop.in.in:6
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:5
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Charpicker Applet Factory"
 msgstr "Charpicker एप्लेट फॅक्टरी"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.desktop.in.in:12
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:12
 msgid "accessories-character-map"
 msgstr ""
 
-#: charpick/org.mate.panel.applet.charpick.gschema.xml.in:5
+#: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:5
 msgid "Characters shown on applet startup"
 msgstr "एप्लेट आरंभावेळी दाखवली जाणारी अक्षरे"
 
-#: charpick/org.mate.panel.applet.charpick.gschema.xml.in:6
+#: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:6
 msgid ""
 "The string that the user had selected when the applet was last used. This "
 "string will be displayed when the user starts the applet."
@@ -518,12 +518,12 @@ msgstr ""
 "मागील वेळी एप्लेट वापरले असताना उपयोक्त्याने निवडलेली ओळ. ही ओळ उपयोक्त्याने"
 " एप्लेट सुरू केल्यावर दर्शवली जाईल."
 
-#: charpick/org.mate.panel.applet.charpick.gschema.xml.in:10
+#: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:10
 #: charpick/properties.c:378
 msgid "List of available palettes"
 msgstr "उपलब्ध पटलांची यादी"
 
-#: charpick/org.mate.panel.applet.charpick.gschema.xml.in:11
+#: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:11
 msgid "List of strings containing the available palettes."
 msgstr "उपलब्ध पटलांचा समावेश असलेल्या स्ट्रींग्स ची यादी."
 
@@ -598,7 +598,7 @@ msgid ""
 msgstr ""
 
 #: command/command.c:127
-#: command/org.mate.applets.CommandApplet.mate-panel-applet.desktop.in.in:10
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Shows the output of a command"
 msgstr "आज्ञेचा प्रतिसाद दाखवते"
 
@@ -619,8 +619,8 @@ msgid "Maximum width (chars):"
 msgstr ""
 
 #: command/command.c:231
-#: command/org.mate.panel.applet.command.gschema.xml.in:20
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:20
+#: command/org.cafe.panel.applet.command.gschema.xml.in:20
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:20
 msgid "Show icon"
 msgstr "चिन्ह दर्शवा"
 
@@ -628,46 +628,46 @@ msgstr "चिन्ह दर्शवा"
 msgid "Command Applet"
 msgstr "आदेश एप्लेट"
 
-#: command/org.mate.applets.CommandApplet.mate-panel-applet.desktop.in.in:5
-#: command/org.mate.applets.CommandApplet.mate-panel-applet.desktop.in.in:6
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:5
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Command Factory"
 msgstr ""
 
-#: command/org.mate.applets.CommandApplet.mate-panel-applet.desktop.in.in:9
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Command"
 msgstr "आदेश"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: command/org.mate.applets.CommandApplet.mate-panel-applet.desktop.in.in:12
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:12
 msgid "utilities-terminal"
 msgstr ""
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:5
+#: command/org.cafe.panel.applet.command.gschema.xml.in:5
 msgid "Command to execute"
 msgstr "चालवण्याजोगा आदेश"
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:6
+#: command/org.cafe.panel.applet.command.gschema.xml.in:6
 msgid "Command/script to execute to get the output"
 msgstr "आउटपुट मिळण्यासाठी चालवण्याजोगी आदेश/स्क्रिप्ट "
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:10
+#: command/org.cafe.panel.applet.command.gschema.xml.in:10
 msgid "Interval for the command"
 msgstr "आदेशासाठी अंतराळ"
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:11
+#: command/org.cafe.panel.applet.command.gschema.xml.in:11
 msgid "Interval to execute the command (in seconds)"
 msgstr "आदेश चालवण्यास अंतराळ (सेकंदात)"
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:15
+#: command/org.cafe.panel.applet.command.gschema.xml.in:15
 msgid "Width of output"
 msgstr ""
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:16
+#: command/org.cafe.panel.applet.command.gschema.xml.in:16
 msgid "Number of characters to display"
 msgstr ""
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:21
+#: command/org.cafe.panel.applet.command.gschema.xml.in:21
 msgid "If applet icon is shown or not"
 msgstr "अॅप्लेट चिन्ह दाखवलेले आहे का नाही"
 
@@ -703,28 +703,28 @@ msgstr "फ्रिक्वेन्सी यूनीट दाखवा (_u
 msgid "Show CPU frequency as _percentage"
 msgstr "CPU फ्रिक्वेन्सी टक्केवारी नुरूप दाखवा (_p)"
 
-#: cpufreq/org.mate.applets.CPUFreqApplet.mate-panel-applet.desktop.in.in:5
-#: cpufreq/org.mate.applets.CPUFreqApplet.mate-panel-applet.desktop.in.in:9
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:5
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:9
 #: cpufreq/src/cpufreq-applet.c:813 cpufreq/src/cpufreq-applet.c:868
 msgid "CPU Frequency Scaling Monitor"
 msgstr "CPU वारंवारता मापन मॉनिटर"
 
-#: cpufreq/org.mate.applets.CPUFreqApplet.mate-panel-applet.desktop.in.in:6
-#: cpufreq/org.mate.applets.CPUFreqApplet.mate-panel-applet.desktop.in.in:10
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:6
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor the CPU Frequency Scaling"
 msgstr "CPU वारंवारता मापनास मॉनिटर करा"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: cpufreq/org.mate.applets.CPUFreqApplet.mate-panel-applet.desktop.in.in:12
-msgid "mate-cpu-frequency-applet"
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:12
+msgid "cafe-cpu-frequency-applet"
 msgstr ""
 
-#: cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in:6
+#: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:6
 msgid "CPU to Monitor"
 msgstr "मॉनिटर करावयाचा CPU"
 
-#: cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in:7
+#: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:7
 msgid ""
 "Set the CPU to monitor. In a single processor system you don't have to "
 "change it."
@@ -732,11 +732,11 @@ msgstr ""
 "CPU ला मॉनिटरशी निर्धारित करा. एकमेव प्रोसेसर प्रणालीमध्ये तुम्हांस हे "
 "बदलावे लागत नाही."
 
-#: cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in:11
+#: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:11
 msgid "Mode to show CPU usage"
 msgstr ""
 
-#: cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in:12
+#: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:12
 msgid ""
 "A 0 value means to show the applet in graphic mode (pixmap only), 1 to show "
 "the applet in text mode (not to show the pixmap) and 2 to show the applet in"
@@ -746,11 +746,11 @@ msgstr ""
 "रितीमध्ये दाखवणे (pixmap न दाखवणे) आणि 2 एप्लेट आलेखीय व पाठ्य रितीमध्ये "
 "दाखवणे."
 
-#: cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in:16
+#: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:16
 msgid "The type of text to display (if the text is enabled)."
 msgstr "दर्शवल्या जाणाऱ्या पाठाचा प्रकार (जर पाठ कार्यान्वीत असेल)."
 
-#: cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in:17
+#: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:17
 msgid ""
 "A 0 value means to show CPU frequency, 1 to show frequency and units, and 2 "
 "to show percentage instead of frequency."
@@ -807,11 +807,11 @@ msgstr ""
 "अयोग्यरित्या व्यूहरचित असेल किंवा तीस CPU वारंवारता मापनासाठी हार्डवेअर आधार"
 " नसेल."
 
-#: cpufreq/src/cpufreq-selector/org.mate.cpufreqselector.policy.in:14
+#: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:14
 msgid "Change CPU Frequency scaling"
 msgstr "CPU वारंवारता प्रमाण बदलवा"
 
-#: cpufreq/src/cpufreq-selector/org.mate.cpufreqselector.policy.in:15
+#: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:15
 msgid "Privileges are required to change the CPU Frequency scaling."
 msgstr "CPU वारंवारता बदलविण्याकरीता परवानगी आवश्यक आहे."
 
@@ -870,25 +870,25 @@ msgid "Applet for mounting and unmounting block volumes."
 msgstr "ब्लॉक खंड आरोहित किंवा अनारोहित करण्यासाठी एप्लेट."
 
 #: drivemount/drivemount.c:185 drivemount/drivemount.c:225
-#: drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.desktop.in.in:9
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Disk Mounter"
 msgstr "डिस्क आरोहक"
 
-#: drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.desktop.in.in:5
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:5
 msgid "Drive Mount Applet Factory"
 msgstr " फॅक्टरी"
 
-#: drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.desktop.in.in:6
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for drive mount applet"
 msgstr "ड्राइव आरोहण एप्लेटसाठी फॅक्टरी"
 
-#: drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.desktop.in.in:10
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Mount local disks and devices"
 msgstr "स्थानिक डिस्क आणि यंत्रे आरोहित करा"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.desktop.in.in:12
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:12
 msgid "media-floppy"
 msgstr ""
 
@@ -907,7 +907,7 @@ msgid ""
 msgstr ""
 
 #: geyes/geyes.c:389 geyes/geyes.c:419 geyes/geyes.c:421
-#: geyes/org.mate.applets.GeyesApplet.mate-panel-applet.desktop.in.in:9
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Eyes"
 msgstr "डोळे"
 
@@ -915,23 +915,23 @@ msgstr "डोळे"
 msgid "The eyes look in the direction of the mouse pointer"
 msgstr "डोळे माउस निर्देशकाच्या दिशेने पाहतात"
 
-#: geyes/org.mate.applets.GeyesApplet.mate-panel-applet.desktop.in.in:5
-#: geyes/org.mate.applets.GeyesApplet.mate-panel-applet.desktop.in.in:6
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:5
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Eyes Applet Factory"
 msgstr ""
 
-#: geyes/org.mate.applets.GeyesApplet.mate-panel-applet.desktop.in.in:10
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A set of eyeballs for your panel"
 msgstr "तुमच्या पॅनेलसाठी आयबॉल्सचा संच"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: geyes/org.mate.applets.GeyesApplet.mate-panel-applet.desktop.in.in:12
-msgid "mate-eyes-applet"
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:12
+msgid "cafe-eyes-applet"
 msgstr ""
 
-#: geyes/org.mate.panel.applet.geyes.gschema.xml.in:5
-#: geyes/org.mate.panel.applet.geyes.gschema.xml.in:6
+#: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:5
+#: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:6
 msgid "Directory in which the theme is located"
 msgstr "निर्देशिका जिच्यामध्ये थीम आहे"
 
@@ -955,42 +955,42 @@ msgstr "थीम्स"
 msgid "_Select a theme:"
 msgstr "थीम निवडा(_S):"
 
-#: mateweather/mateweather-about.c:54
+#: cafeweather/cafeweather-about.c:54
 msgid "About Weather Report"
 msgstr ""
 
-#: mateweather/mateweather-about.c:56
+#: cafeweather/cafeweather-about.c:56
 msgid ""
 "Copyright © 1999-2005 by S. Papadimitriou and others\n"
 "Copyright © 2012-2020 MATE developers"
 msgstr ""
 
-#: mateweather/mateweather-about.c:58
+#: cafeweather/cafeweather-about.c:58
 msgid "A panel application for monitoring local weather conditions."
 msgstr "स्थानिक हवामान स्थितीच्या निरीक्षणासाठी पॅनेल अनुप्रयोग."
 
-#: mateweather/mateweather-applet.c:108
+#: cafeweather/cafeweather-applet.c:108
 msgid "_Details"
 msgstr "तपशील(_D)"
 
-#: mateweather/mateweather-applet.c:111 mateweather/mateweather-dialog.c:183
+#: cafeweather/cafeweather-applet.c:111 cafeweather/cafeweather-dialog.c:183
 msgid "_Update"
 msgstr "अद्ययावत (_U)"
 
-#: mateweather/mateweather-applet.c:345
-#: mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.desktop.in.in:9
+#: cafeweather/cafeweather-applet.c:345
+#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Weather Report"
 msgstr "हवामान अहवाल"
 
-#: mateweather/mateweather-applet.c:360 mateweather/mateweather-applet.c:364
+#: cafeweather/cafeweather-applet.c:360 cafeweather/cafeweather-applet.c:364
 msgid "MATE Weather"
 msgstr "MATE हवामान"
 
-#: mateweather/mateweather-applet.c:463
+#: cafeweather/cafeweather-applet.c:463
 msgid "Weather Forecast"
 msgstr "हवामान अंदाज"
 
-#: mateweather/mateweather-applet.c:475
+#: cafeweather/cafeweather-applet.c:475
 #, c-format
 msgid ""
 "City: %s\n"
@@ -1001,288 +1001,288 @@ msgstr ""
 "आकाश: %s\n"
 "तापमान: %s"
 
-#: mateweather/mateweather-applet.c:524
+#: cafeweather/cafeweather-applet.c:524
 msgid "Updating..."
 msgstr "अद्ययावत करीत आहे..."
 
-#: mateweather/mateweather-dialog.c:181
+#: cafeweather/cafeweather-dialog.c:181
 msgid "Details"
 msgstr "तपशील"
 
-#: mateweather/mateweather-dialog.c:223
+#: cafeweather/cafeweather-dialog.c:223
 msgid "City:"
 msgstr "शहर:"
 
-#: mateweather/mateweather-dialog.c:229
+#: cafeweather/cafeweather-dialog.c:229
 msgid "Last update:"
 msgstr "शेवटचे अद्ययावत:"
 
-#: mateweather/mateweather-dialog.c:235
+#: cafeweather/cafeweather-dialog.c:235
 msgid "Conditions:"
 msgstr "स्थिती:"
 
-#: mateweather/mateweather-dialog.c:241
+#: cafeweather/cafeweather-dialog.c:241
 msgid "Sky:"
 msgstr "आकाश:"
 
-#: mateweather/mateweather-dialog.c:247
+#: cafeweather/cafeweather-dialog.c:247
 msgid "Temperature:"
 msgstr "तापमान:"
 
-#: mateweather/mateweather-dialog.c:253
+#: cafeweather/cafeweather-dialog.c:253
 msgid "Feels like:"
 msgstr "असे वाटते:"
 
-#: mateweather/mateweather-dialog.c:259
+#: cafeweather/cafeweather-dialog.c:259
 msgid "Dew point:"
 msgstr "दव बिंदू:"
 
-#: mateweather/mateweather-dialog.c:265
+#: cafeweather/cafeweather-dialog.c:265
 msgid "Relative humidity:"
 msgstr "सापेक्ष आद्रता:"
 
-#: mateweather/mateweather-dialog.c:271
+#: cafeweather/cafeweather-dialog.c:271
 msgid "Wind:"
 msgstr "वारा:"
 
-#: mateweather/mateweather-dialog.c:277
+#: cafeweather/cafeweather-dialog.c:277
 msgid "Pressure:"
 msgstr "दाब:"
 
-#: mateweather/mateweather-dialog.c:283
+#: cafeweather/cafeweather-dialog.c:283
 msgid "Visibility:"
 msgstr "दृश्यता:"
 
-#: mateweather/mateweather-dialog.c:289
+#: cafeweather/cafeweather-dialog.c:289
 msgid "Sunrise:"
 msgstr "सूर्योदय:"
 
-#: mateweather/mateweather-dialog.c:295
+#: cafeweather/cafeweather-dialog.c:295
 msgid "Sunset:"
 msgstr "सूर्यास्त:"
 
-#: mateweather/mateweather-dialog.c:403
+#: cafeweather/cafeweather-dialog.c:403
 msgid "Current Conditions"
 msgstr "सद्य स्थिती"
 
-#: mateweather/mateweather-dialog.c:420
+#: cafeweather/cafeweather-dialog.c:420
 msgid "Forecast Report"
 msgstr "अंदाज अहवाल"
 
-#: mateweather/mateweather-dialog.c:420
+#: cafeweather/cafeweather-dialog.c:420
 msgid "See the ForeCast Details"
 msgstr "अंदाज तपशील पहा"
 
-#: mateweather/mateweather-dialog.c:430
+#: cafeweather/cafeweather-dialog.c:430
 msgid "Forecast"
 msgstr "अंदाज"
 
-#: mateweather/mateweather-dialog.c:438
+#: cafeweather/cafeweather-dialog.c:438
 msgid "Radar Map"
 msgstr "रडार नकाशा"
 
-#: mateweather/mateweather-dialog.c:471
+#: cafeweather/cafeweather-dialog.c:471
 msgid "_Visit Weather.com"
 msgstr "Weather.com ला भेटा(_V)"
 
-#: mateweather/mateweather-dialog.c:472
+#: cafeweather/cafeweather-dialog.c:472
 msgid "Visit Weather.com"
 msgstr "Weather.com ला भेटा"
 
-#: mateweather/mateweather-dialog.c:472
+#: cafeweather/cafeweather-dialog.c:472
 msgid "Click to Enter Weather.com"
 msgstr "Weather.com मध्ये दाखल होण्यासाठी क्लिक करा"
 
-#: mateweather/mateweather-dialog.c:603
+#: cafeweather/cafeweather-dialog.c:603
 msgid "Forecast not currently available for this location."
 msgstr "या स्थानासाठी सध्या अंदाज उपलब्ध नाही."
 
-#: mateweather/mateweather-pref.c:158
+#: cafeweather/cafeweather-pref.c:158
 msgid "Location view"
 msgstr "स्थान दृश्य"
 
-#: mateweather/mateweather-pref.c:158
+#: cafeweather/cafeweather-pref.c:158
 msgid "Select Location from the list"
 msgstr "यादीमधून स्थान निवडा"
 
-#: mateweather/mateweather-pref.c:159
+#: cafeweather/cafeweather-pref.c:159
 msgid "Update spin button"
 msgstr "स्पिन बटन अद्ययावत करा"
 
-#: mateweather/mateweather-pref.c:159
+#: cafeweather/cafeweather-pref.c:159
 msgid "Spinbutton for updating"
 msgstr "अद्ययावतनासाठी स्पिनबटन"
 
-#: mateweather/mateweather-pref.c:160
+#: cafeweather/cafeweather-pref.c:160
 msgid "Address Entry"
 msgstr "पत्ता नोंद"
 
-#: mateweather/mateweather-pref.c:160
+#: cafeweather/cafeweather-pref.c:160
 msgid "Enter the URL"
 msgstr "URL दाखल करा"
 
-#: mateweather/mateweather-pref.c:283
+#: cafeweather/cafeweather-pref.c:283
 msgid ""
 "Failed to load the Locations XML database.  Please report this as a bug."
 msgstr ""
 "स्थानांचा XML डेटाबेस भारित करण्यास अपयशी. कृपया यास त्रुटी म्हणून अहवाल "
 "करा."
 
-#: mateweather/mateweather-pref.c:807
+#: cafeweather/cafeweather-pref.c:807
 msgid "Weather Preferences"
 msgstr "हवामान आवड निवड"
 
-#: mateweather/mateweather-pref.c:831 mateweather/mateweather-pref.c:1034
+#: cafeweather/cafeweather-pref.c:831 cafeweather/cafeweather-pref.c:1034
 msgid "_Automatically update every:"
 msgstr "सर्व आपोआप बदला(_A):"
 
-#: mateweather/mateweather-pref.c:847
+#: cafeweather/cafeweather-pref.c:847
 msgid "_Temperature unit:"
 msgstr "तापमान एकक(_T):"
 
-#: mateweather/mateweather-pref.c:857
+#: cafeweather/cafeweather-pref.c:857
 msgid "Kelvin"
 msgstr "केल्विन"
 
-#: mateweather/mateweather-pref.c:859
+#: cafeweather/cafeweather-pref.c:859
 msgid "Celsius"
 msgstr "सेल्सिअस"
 
-#: mateweather/mateweather-pref.c:860
+#: cafeweather/cafeweather-pref.c:860
 msgid "Fahrenheit"
 msgstr "फॅरेनहाइट"
 
-#: mateweather/mateweather-pref.c:869
+#: cafeweather/cafeweather-pref.c:869
 msgid "_Wind speed unit:"
 msgstr "वाऱ्याच्या वेगाचे एकक(_W):"
 
-#: mateweather/mateweather-pref.c:880
+#: cafeweather/cafeweather-pref.c:880
 msgid "m/s"
 msgstr "मी/से"
 
-#: mateweather/mateweather-pref.c:882
+#: cafeweather/cafeweather-pref.c:882
 msgid "km/h"
 msgstr "किमी/तास"
 
-#: mateweather/mateweather-pref.c:884
+#: cafeweather/cafeweather-pref.c:884
 msgid "mph"
 msgstr "mph"
 
-#: mateweather/mateweather-pref.c:886
+#: cafeweather/cafeweather-pref.c:886
 msgid "knots"
 msgstr "नॉट्स"
 
-#: mateweather/mateweather-pref.c:887
+#: cafeweather/cafeweather-pref.c:887
 msgid "Beaufort scale"
 msgstr "ब्योफोर्ट पट्टी"
 
-#: mateweather/mateweather-pref.c:896
+#: cafeweather/cafeweather-pref.c:896
 msgid "_Pressure unit:"
 msgstr "दाब एकक (_P):"
 
-#: mateweather/mateweather-pref.c:907
+#: cafeweather/cafeweather-pref.c:907
 msgid "kPa"
 msgstr "kPa"
 
-#: mateweather/mateweather-pref.c:909
+#: cafeweather/cafeweather-pref.c:909
 msgid "hPa"
 msgstr "hPa"
 
-#: mateweather/mateweather-pref.c:911
+#: cafeweather/cafeweather-pref.c:911
 msgid "mb"
 msgstr "mb"
 
-#: mateweather/mateweather-pref.c:913
+#: cafeweather/cafeweather-pref.c:913
 msgid "mmHg"
 msgstr "mmHg"
 
-#: mateweather/mateweather-pref.c:915
+#: cafeweather/cafeweather-pref.c:915
 msgid "inHg"
 msgstr "inHg"
 
-#: mateweather/mateweather-pref.c:917
+#: cafeweather/cafeweather-pref.c:917
 msgid "atm"
 msgstr "atm"
 
-#: mateweather/mateweather-pref.c:926
+#: cafeweather/cafeweather-pref.c:926
 msgid "_Visibility unit:"
 msgstr "दृश्यता एकक (_V):"
 
-#: mateweather/mateweather-pref.c:937
+#: cafeweather/cafeweather-pref.c:937
 msgid "meters"
 msgstr "मीटर"
 
-#: mateweather/mateweather-pref.c:939
+#: cafeweather/cafeweather-pref.c:939
 msgid "km"
 msgstr "किमी"
 
-#: mateweather/mateweather-pref.c:941
+#: cafeweather/cafeweather-pref.c:941
 msgid "miles"
 msgstr "मैल"
 
-#: mateweather/mateweather-pref.c:971
+#: cafeweather/cafeweather-pref.c:971
 msgid "Enable _radar map"
 msgstr "रडार नकाशा कार्यान्वीत करा (_r)"
 
-#: mateweather/mateweather-pref.c:987
+#: cafeweather/cafeweather-pref.c:987
 msgid "Use _custom address for radar map"
 msgstr "रडार नकाशासाठी स्वेच्छेचा पत्ता वापरा(_c)"
 
-#: mateweather/mateweather-pref.c:1005
+#: cafeweather/cafeweather-pref.c:1005
 msgid "A_ddress:"
 msgstr "पत्ता(_d):"
 
-#: mateweather/mateweather-pref.c:1020
+#: cafeweather/cafeweather-pref.c:1020
 msgid "Show _notifications"
 msgstr "सूचना दर्शवा(_N)"
 
-#: mateweather/mateweather-pref.c:1030
+#: cafeweather/cafeweather-pref.c:1030
 msgid "Update"
 msgstr "अद्ययावत करा"
 
-#: mateweather/mateweather-pref.c:1047
+#: cafeweather/cafeweather-pref.c:1047
 msgid "minutes"
 msgstr "मिनिटे"
 
-#: mateweather/mateweather-pref.c:1065
+#: cafeweather/cafeweather-pref.c:1065
 msgid "Display"
 msgstr "दृश्य"
 
-#: mateweather/mateweather-pref.c:1084
+#: cafeweather/cafeweather-pref.c:1084
 msgid "General"
 msgstr "सर्वसाधारण"
 
-#: mateweather/mateweather-pref.c:1095
+#: cafeweather/cafeweather-pref.c:1095
 msgid "_Select a location:"
 msgstr "स्थान निवडा (_S):"
 
-#: mateweather/mateweather-pref.c:1117
+#: cafeweather/cafeweather-pref.c:1117
 msgid "_Find:"
 msgstr "शोधा (_F):"
 
-#: mateweather/mateweather-pref.c:1123
+#: cafeweather/cafeweather-pref.c:1123
 msgid "Find _Next"
 msgstr "पुढील शोधा(_N)"
 
-#: mateweather/mateweather-pref.c:1144
+#: cafeweather/cafeweather-pref.c:1144
 msgid "Location"
 msgstr "स्थान"
 
-#: mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.desktop.in.in:5
+#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:5
 msgid "Mateweather Applet Factory"
 msgstr "मेट हवामान एप्लेट फॅक्टरी"
 
-#: mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.desktop.in.in:6
+#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for creating the weather applet."
 msgstr "हवामान एप्लेट तयार करणयासाठी फॅक्टरी."
 
-#: mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.desktop.in.in:10
+#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "सद्य हवामान स्थिती आणि अंदाजांचे निरिक्षण करा"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.desktop.in.in:12
+#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:12
 msgid "weather-storm"
 msgstr ""
 
@@ -1400,7 +1400,7 @@ msgid "_Open System Monitor"
 msgstr "प्रणाली मॉनिटर उघडा(_O)"
 
 #: multiload/main.c:517
-#: multiload/org.mate.applets.MultiLoadApplet.mate-panel-applet.desktop.in.in:9
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:9
 msgid "System Monitor"
 msgstr "प्रणाली मॉनिटर"
 
@@ -1409,57 +1409,57 @@ msgstr "प्रणाली मॉनिटर"
 msgid "%s/s"
 msgstr "%s/s"
 
-#: multiload/org.mate.applets.MultiLoadApplet.mate-panel-applet.desktop.in.in:5
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:5
 msgid "MultiLoad Applet Factory"
 msgstr ""
 
-#: multiload/org.mate.applets.MultiLoadApplet.mate-panel-applet.desktop.in.in:6
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for creating the load applet."
 msgstr ""
 
-#: multiload/org.mate.applets.MultiLoadApplet.mate-panel-applet.desktop.in.in:10
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A system load indicator"
 msgstr "प्रणाली भार दर्शक"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: multiload/org.mate.applets.MultiLoadApplet.mate-panel-applet.desktop.in.in:12
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:12
 msgid "utilities-system-monitor"
 msgstr ""
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:5
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:5
 msgid "Enable CPU load graph"
 msgstr "CPU भार आलेख कार्यान्वीत करा"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:9
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:9
 msgid "Enable memory load graph"
 msgstr "स्मृती भार आलेख कार्यान्वीत करा"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:13
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:13
 msgid "Enable network load graph"
 msgstr "संजाळ भार आलेख कार्यान्वीत करा"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:17
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:17
 msgid "Enable swap load graph"
 msgstr "स्वॅप भार आलेख कार्यान्वीत करा"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:21
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:21
 msgid "Enable load average graph"
 msgstr "भार सरासरी आलेख कार्यान्वीत करा"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:25
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:25
 msgid "Enable disk load graph"
 msgstr "डिस्क भार आलेख कार्यान्वीत करा"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:29
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:29
 msgid "Applet refresh rate in milliseconds"
 msgstr "एप्लेट रिफ्रेश(पुनःताजे) दर मिलीसेकंदात"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:33
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:33
 msgid "Graph size"
 msgstr "आलेख आकार"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:34
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:34
 msgid ""
 "For horizontal panels, the width of the graphs in pixels. For vertical "
 "panels, this is the height of the graphs."
@@ -1467,116 +1467,116 @@ msgstr ""
 "आडव्या पॅनेलसाठी, आलेखाची रुंदी बिंदूंमध्ये. उभ्या पॅनेलसाठी, ही आलेखाची "
 "उंची आहे."
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:38
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:38
 msgid "Graph color for user-related CPU activity"
 msgstr "वापरकर्ता-संबंधीत CPU उलाढालींसाठी आलेख रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:42
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:42
 msgid "Graph color for system-related CPU activity"
 msgstr "प्रणाली-संबधीत CPU उलाढालींसाठी आलेख रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:46
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:46
 msgid "Graph color for nice-related CPU activity"
 msgstr "nice-संबंधीत CPU उलाढालींसाठी आलेख रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:50
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:50
 msgid "Graph color for iowait related CPU activity"
 msgstr "iowait संबंधीत CPU उलाढालींसाठी आलेख रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:54
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:54
 msgid "CPU graph background color"
 msgstr "CPU आलेख पार्श्वभूमी रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:58
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:58
 msgid "Graph color for user-related memory usage"
 msgstr "वापरकर्ता-संबंधीत स्मृती वापरासाठी आलेख रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:62
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:62
 msgid "Graph color for shared memory"
 msgstr "भागलेल्या स्मृतीसाठी आलेख रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:66
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:66
 msgid "Graph color for buffer memory"
 msgstr "बफर स्मृतीसाठी आलेख रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:70
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:70
 msgid "Graph color for cached memory"
 msgstr "कॅश्ड स्मृतीसाठी आलेख रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:74
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:74
 msgid "Memory graph background color"
 msgstr "स्मृती आलेख पार्श्वभूमी रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:78
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:78
 msgid "Graph color for input network activity"
 msgstr "इनपुट जाळं क्रिया करीता आलेख रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:82
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:82
 msgid "Graph color for output network activity"
 msgstr "आउटपुट जाळं क्रिया करीता आलेख रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:86
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:86
 msgid "Graph color for loopback network usage"
 msgstr "लुपबॅक जाळं वापरणी करीता आलेख रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:90
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:90
 msgid "Network graph background color"
 msgstr "संजाळ आलेख पार्श्वभूमी रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:94
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:130
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:94
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:130
 msgid "Grid line color"
 msgstr ""
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:98
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:98
 msgid "Indicator color"
 msgstr ""
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:102
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:102
 msgid "Network threshold 1 in bytes"
 msgstr ""
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:106
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:106
 msgid "Network threshold 2 in bytes"
 msgstr ""
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:110
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:110
 msgid "Network threshold 3 in bytes"
 msgstr ""
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:114
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:114
 msgid "Graph color for user-related swap usage"
 msgstr "वापरकर्ता-संबंधीत स्वॅप वापरासाठी आलेख रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:118
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:118
 msgid "Swap graph background color"
 msgstr "स्वॅप आलेख पार्श्वभूमी रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:122
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:122
 msgid "Graph color for load average"
 msgstr "भार सरासरीसाठी आलेख रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:126
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:126
 msgid "Load graph background color"
 msgstr "आलेख पार्श्वभूमी रंग भारीत करा"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:134
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:134
 msgid "Graph color for disk read"
 msgstr "डीस्क वाचनासाठी आलेख रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:138
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:138
 msgid "Graph color for disk write"
 msgstr "डीस्क लेखनासाठी आलेख रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:142
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:142
 msgid "Background color for disk load graph"
 msgstr "डिस्क भार आलेखासाठी पार्श्वभूमी रंग"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:146
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:146
 msgid "Uses /proc/diskstats to determine NVMe disk load"
 msgstr ""
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:150
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:150
 msgid "The desktop description file to execute as the system monitor"
 msgstr "प्रणाली मॉनीटर नुरूप कार्यान्वीत करण्याजोगी डेस्कटॉप व्याख्या फाइल"
 
@@ -1754,117 +1754,117 @@ msgstr ""
 msgid "System Monitor Preferences"
 msgstr "प्रणाली मॉनिटर प्राधान्यता"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:5
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:5
 msgid "Device to monitor"
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:6
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:6
 msgid "The name of the device to monitor"
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:10
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:10
 msgid "Show sum speed"
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:11
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:11
 msgid "If true, show sum of inbound/outbound speed instead of separated ones."
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:15
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:15
 msgid "Show bits"
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:16
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:16
 msgid "If true, show speed in bits instead of bytes."
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:21
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:21
 msgid "If true, show main icon."
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:25
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:25
 msgid "Short unit legend"
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:26
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:26
 msgid ""
 "If true, shorten unit legend to one letter: lowercase for bits / uppercase "
 "for Bytes."
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:30
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:30
 msgid "Change icon"
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:31
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:31
 msgid "If true, change the icon due to selected device."
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:35
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:35
 msgid "Auto change device"
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:36
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:36
 msgid "If true, change automatically the selected device."
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:40
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:40
 msgid "In color"
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:41
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:41
 msgid "The color of the graph of the inbound traffic"
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:45
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:45
 msgid "Out color"
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:46
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:46
 msgid "The color of the graph of the outbound traffic"
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:50
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:50
 msgid "Up command"
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:51
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:51
 msgid "Command to execute to activate the device"
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:55
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:55
 msgid "Down command"
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:56
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:56
 msgid "Command to execute to shut down the device"
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:60
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:60
 msgid "Show signal quality icon"
 msgstr ""
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:61
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:61
 msgid "If true, show signal quality icon for wireless devices."
 msgstr ""
 
-#: netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.desktop.in.in:5
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:5
 msgid "Netspeed Applet Factory"
 msgstr ""
 
-#: netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.desktop.in.in:6
-#: netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.desktop.in.in:10
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:6
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Netspeed Applet"
 msgstr ""
 
-#: netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.desktop.in.in:9
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Network Monitor"
 msgstr ""
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.desktop.in.in:12
-msgid "mate-netspeed-applet"
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:12
+msgid "cafe-netspeed-applet"
 msgstr ""
 
 #: netspeed/src/netspeed.c:427
@@ -2134,24 +2134,24 @@ msgstr "अपरिचीत"
 msgid "MATE Netspeed"
 msgstr ""
 
-#: stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.desktop.in.in:5
-#: stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.desktop.in.in:6
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:5
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Sticky Notes Applet Factory"
 msgstr "स्टिकी टिपा एप्लेट फॅक्टरी"
 
-#: stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.desktop.in.in:9
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:9
 #: stickynotes/stickynotes_applet.c:170 stickynotes/stickynotes_applet.c:412
 msgid "Sticky Notes"
 msgstr "स्टिकी टिप"
 
-#: stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.desktop.in.in:10
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Create, view, and manage sticky notes on the desktop"
 msgstr "स्टिकी टिपा डेस्कटॉपवर निर्माण करा, पहा, आणि सांभाळा"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.desktop.in.in:12
-msgid "mate-sticky-notes-applet"
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:12
+msgid "cafe-sticky-notes-applet"
 msgstr ""
 
 #: stickynotes/stickynotes.c:577
@@ -2346,27 +2346,27 @@ msgstr "टिप करीता शिर्षक निश्चित क�
 msgid "_Title:"
 msgstr "शिर्षक (_T):"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:5
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:5
 msgid "Default width for new notes"
 msgstr "नविन टिपांसाठी पूर्वनिर्धारीत रुंदी"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:6
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:6
 msgid "Default width for new sticky notes in pixels."
 msgstr "नविन स्टिकी टिपांसाठी पूर्वनिर्धारीत रुंदी बिंदूंमध्ये."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:10
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:10
 msgid "Default height for new notes"
 msgstr "नविन टिपांसाठी पूर्वनिर्धारीत उंची"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:11
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:11
 msgid "Default height for new sticky notes in pixels."
 msgstr "नविन स्टिकी टिपांसाठी पूर्वनिर्धारीत उंची बिंदूंमध्ये."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:15
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:15
 msgid "Default color for new notes"
 msgstr "नविन टिपांसाठी पूर्वनिर्धारीत रंग"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:16
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:16
 msgid ""
 "Default color for new sticky notes. This should be in html hex "
 "specification, for example \"#30FF50\"."
@@ -2374,11 +2374,11 @@ msgstr ""
 "नविन स्टिकी टिपांसाठी पूर्वनिर्धारीत रंग. हा html हेक्झ रंग निर्देशाप्रमाणे "
 "असावा, उदाहरणार्थ \"#30FF50\"."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:20
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:20
 msgid "Default color for font"
 msgstr "फॉन्टसाठी पूर्वनिर्धारीत रंग"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:21
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:21
 msgid ""
 "Default font color for new sticky notes. This should be in html hex "
 "specification, for example \"#000000\"."
@@ -2386,11 +2386,11 @@ msgstr ""
 "नविन स्टिकी टिपांसाठी पूर्वनिर्धारीत फॉन्ट रंग. हा html हेक्झ "
 "निर्देशाप्रमाणे असावा, उदाहरणार्थ \"#000000\"."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:25
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:25
 msgid "Default font for new notes"
 msgstr "नविन टिपांसाठी पूर्वनिर्धारीत फॉन्ट"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:26
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:26
 msgid ""
 "Default font for new sticky notes. This should be a Pango Font Name, for "
 "example \"Sans Italic 10\"."
@@ -2398,30 +2398,30 @@ msgstr ""
 "नविन स्टिकी टिपांसाठी पूर्वनिर्धारीत फॉन्ट. हे पँगो फॉन्ट नाव असायला हवे, "
 "उदाहरणार्थ \"Sans Italic 10\"."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:30
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:30
 msgid "Sticky notes' workspace stickyness"
 msgstr "स्टिकी टिपांचा कार्यस्थळ स्टिकीपणा"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:31
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:31
 msgid ""
 "Specifies whether the sticky notes are visible on ALL workspaces on the "
 "desktop, or not."
 msgstr ""
 "स्टिकी टिपा डेस्कटॉपवरील सर्व कार्यस्थळावर दर्शनीय आहेत कि नाही हे दर्शविते."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:35
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:35
 msgid "Sticky notes' locked state"
 msgstr "स्टिकी टिपा ताळाबंद स्थिती"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:36
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:36
 msgid "Specifies whether the sticky notes are locked (non-editable) or not."
 msgstr "स्टिकी टिपा ताळाबंद(अ-संपादनीय) केल्या आहेत कि नाही हे दर्शवते."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:40
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:40
 msgid "Date format of note's title"
 msgstr "टिपेच्या शिर्षकाचे दिनांक स्वरूप"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:41
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:41
 msgid ""
 "By default, sticky notes are given the current date as the title when they "
 "are created. This format is used; anything that can be parsed by strftime() "
@@ -2431,11 +2431,11 @@ msgstr ""
 "जेव्हा त्यानिर्माण होतात. हे स्वरूप वापरले जाते; जेही काही strftime() तर्फे "
 "पार्स केले जाऊशकते ते वैध आहे."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:45
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:45
 msgid "Whether to use the default system color"
 msgstr "पूर्वनिर्धारीत प्रणाली रंग वापरावा कि नाही"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:46
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:46
 msgid ""
 "If this option is disabled, a custom color can be used as the default color "
 "for all sticky notes."
@@ -2443,11 +2443,11 @@ msgstr ""
 "जर हा पर्याय अकार्यान्वीत केला असेल, तर स्वेच्छेचा रंग पूर्वनिर्धारीत रंग "
 "म्हणून सर्व स्टिकी टिपांसाठी वापरता येऊ शकतो."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:50
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:50
 msgid "Whether to use the default system font"
 msgstr "पूर्वनिर्धारीत प्रणाली फॉन्ट वापरावा कि नाही"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:51
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:51
 msgid ""
 "If this option is disabled, a custom font can be used as the default font "
 "for all sticky notes."
@@ -2455,11 +2455,11 @@ msgstr ""
 "जर हा पर्याय अकार्यान्वीत केला असेल, तर स्वेच्छेचा फॉन्ट पूर्वनिर्धारीत "
 "फॉन्ट म्हणून सर्व स्टिकी टिपांसाठी वापरता येऊ शकतो."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:55
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:55
 msgid "Whether to force the default color and font on all notes"
 msgstr "पूर्वनिर्धारीत रंग आणि फॉन्ट सर्व टिपांना लागू करावेत कि नाही"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:56
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:56
 msgid ""
 "If this option is enabled, the custom colors and fonts that have been "
 "assigned to individual notes will be ignored."
@@ -2467,11 +2467,11 @@ msgstr ""
 "जर हा पर्याय कार्यान्वीत केला असेल, तर एकेकट्या टिपांसाठी लावलेले स्वेच्छेचे"
 " रंग आणि फॉन्ट दुर्लक्षत केले जातील."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:60
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:60
 msgid "Whether to hide all notes when the desktop is selected"
 msgstr "डेस्कटाॅपवर निवडल्यावर सगळ्या टीपा लपवायच्या का दाखवायच्या"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:61
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:61
 msgid ""
 "If this option is enabled, selecting the desktop in any way will "
 "automatically hide all the open notes."
@@ -2479,11 +2479,11 @@ msgstr ""
 "जर हा पर्याय कार्यान्वित असेल तर डेस्कटाॅपवर क्लिक केल्यावर सर्व उघड्या टीपा"
 " लपविल्या जातील"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:65
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:65
 msgid "Whether to ask for confirmation when deleting a note"
 msgstr "टीप नष्ट करताना खात्रीसाठी विचारावे कि काय"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:66
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:66
 msgid "Empty notes are always deleted without confirmation."
 msgstr "रिकाम्या टिपा नेहमी खात्री न करताच नष्ट केल्या जातात."
 
@@ -2525,39 +2525,39 @@ msgstr ""
 msgid "Sticky Notes for the MATE Desktop Environment"
 msgstr "MATE डेस्कटॉप पर्यावरणासाठी स्टिकी टिपा"
 
-#: timerapplet/org.mate.applets.TimerApplet.mate-panel-applet.desktop.in.in:5
-#: timerapplet/org.mate.applets.TimerApplet.mate-panel-applet.desktop.in.in:6
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:5
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Timer Factory"
 msgstr ""
 
-#: timerapplet/org.mate.applets.TimerApplet.mate-panel-applet.desktop.in.in:9
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Timer"
 msgstr ""
 
-#: timerapplet/org.mate.applets.TimerApplet.mate-panel-applet.desktop.in.in:10
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:10
 #: timerapplet/timerapplet.c:277
 msgid "Start a timer and receive a notification when it is finished"
 msgstr "एक टायमर सुरु करा आणि तो संपल्यावर खबर मिळू द्या"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: timerapplet/org.mate.applets.TimerApplet.mate-panel-applet.desktop.in.in:12
-msgid "mate-panel-clock"
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:12
+msgid "cafe-panel-clock"
 msgstr ""
 
-#: timerapplet/org.mate.panel.applet.timer.gschema.xml.in:5
+#: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:5
 msgid "Name of timer"
 msgstr "गजराचे नाव"
 
-#: timerapplet/org.mate.panel.applet.timer.gschema.xml.in:9
+#: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:9
 msgid "Duration of timer in seconds"
 msgstr "गजराची वेळ (सेकंदात)"
 
-#: timerapplet/org.mate.panel.applet.timer.gschema.xml.in:13
+#: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:13
 msgid "Show notification popup when timer finish"
 msgstr "गजर संपल्यावर संदेश पॉप-अप दाखवा "
 
-#: timerapplet/org.mate.panel.applet.timer.gschema.xml.in:17
+#: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:17
 msgid "Show dialog window when timer finish"
 msgstr "गजर संपल्यावर संवाद चौकट दाखवा "
 
@@ -2623,22 +2623,22 @@ msgstr "संवाद दाखवा"
 msgid "Timer Applet"
 msgstr "टायमर एप्लेट"
 
-#: trashapplet/org.mate.applets.TrashApplet.mate-panel-applet.desktop.in.in:5
-#: trashapplet/org.mate.applets.TrashApplet.mate-panel-applet.desktop.in.in:6
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:5
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Trash Applet Factory"
 msgstr ""
 
-#: trashapplet/org.mate.applets.TrashApplet.mate-panel-applet.desktop.in.in:9
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Trash"
 msgstr "कचरापेटी"
 
-#: trashapplet/org.mate.applets.TrashApplet.mate-panel-applet.desktop.in.in:10
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Go to Trash"
 msgstr "कचऱ्यात जा"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: trashapplet/org.mate.applets.TrashApplet.mate-panel-applet.desktop.in.in:12
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:12
 msgid "user-trash-full"
 msgstr ""
 

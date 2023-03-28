@@ -10,7 +10,7 @@ msgstr ""
 "POT-Creation-Date: 2018-01-15 12:30+0300\n"
 "PO-Revision-Date: 2018-01-15 10:14+0000\n"
 "Last-Translator: Vlad Orlov <monsta@inbox.ru>\n"
-"Language-Team: Javanese (http://www.transifex.com/mate/MATE/language/jv/)\n"
+"Language-Team: Javanese (http://www.transifex.com/cafe/MATE/language/jv/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,7 +24,7 @@ msgstr ""
 #: ../accessx-status/applet.c:146 ../battstat/battstat_applet.c:1210
 #: ../charpick/charpick.c:651 ../command/command.c:116
 #: ../cpufreq/src/cpufreq-applet.c:645 ../drivemount/drivemount.c:121
-#: ../geyes/geyes.c:194 ../mateweather/mateweather-about.c:56
+#: ../geyes/geyes.c:194 ../cafeweather/cafeweather-about.c:56
 #: ../multiload/main.c:64 ../netspeed/src/netspeed.c:808
 #: ../stickynotes/stickynotes_applet_callbacks.c:389
 #: ../timerapplet/timerapplet.c:260 ../trashapplet/src/trashapplet.c:451
@@ -52,7 +52,7 @@ msgstr ""
 #: ../accessx-status/applet.c:228 ../battstat/battstat_applet.c:64
 #: ../charpick/charpick.c:739 ../cpufreq/src/cpufreq-applet.c:129
 #: ../drivemount/drivemount.c:166 ../geyes/geyes.c:374
-#: ../mateweather/mateweather-applet.c:124 ../multiload/main.c:470
+#: ../cafeweather/cafeweather-applet.c:124 ../multiload/main.c:470
 #: ../stickynotes/stickynotes_applet.c:46 ../trashapplet/src/trashapplet.c:74
 msgid "_Help"
 msgstr ""
@@ -60,7 +60,7 @@ msgstr ""
 #: ../accessx-status/applet.c:229 ../battstat/battstat_applet.c:67
 #: ../charpick/charpick.c:742 ../command/command.c:75
 #: ../cpufreq/src/cpufreq-applet.c:132 ../drivemount/drivemount.c:169
-#: ../geyes/geyes.c:377 ../mateweather/mateweather-applet.c:127
+#: ../geyes/geyes.c:377 ../cafeweather/cafeweather-applet.c:127
 #: ../multiload/main.c:473 ../stickynotes/stickynotes_applet.c:49
 #: ../timerapplet/timerapplet.c:82 ../trashapplet/src/trashapplet.c:77
 msgid "_About"
@@ -95,7 +95,7 @@ msgid "Error: %s"
 msgstr ""
 
 #: ../accessx-status/applet.c:1306
-#: ../accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.in.in.h:3
+#: ../accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.in.in.h:3
 msgid "Keyboard Accessibility Status"
 msgstr ""
 
@@ -103,21 +103,21 @@ msgstr ""
 msgid "Displays current state of keyboard accessibility features"
 msgstr ""
 
-#: ../accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.in.in.h:1
+#: ../accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.in.in.h:1
 msgid "AccessX Status Applet Factory"
 msgstr ""
 
-#: ../accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.in.in.h:2
+#: ../accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.in.in.h:2
 msgid "Keyboard Accessibility Status Applet Factory"
 msgstr ""
 
-#: ../accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.in.in.h:4
+#: ../accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.in.in.h:4
 msgid "Shows the status of keyboard accessibility features"
 msgstr ""
 
 #: ../battstat/battstat_applet.c:61 ../charpick/charpick.c:736
 #: ../command/command.c:74 ../cpufreq/src/cpufreq-applet.c:126
-#: ../geyes/geyes.c:371 ../mateweather/mateweather-applet.c:121
+#: ../geyes/geyes.c:371 ../cafeweather/cafeweather-applet.c:121
 #: ../multiload/main.c:464 ../stickynotes/stickynotes_applet.c:43
 #: ../timerapplet/timerapplet.c:81
 msgid "_Preferences"
@@ -266,8 +266,8 @@ msgstr ""
 
 #: ../battstat/battstat_applet.c:1154 ../drivemount/drivemount.c:154
 #: ../geyes/geyes.c:359 ../geyes/themes.c:233
-#: ../mateweather/mateweather-applet.c:70
-#: ../mateweather/mateweather-pref.c:759
+#: ../cafeweather/cafeweather-applet.c:70
+#: ../cafeweather/cafeweather-pref.c:759
 #: ../stickynotes/stickynotes_applet_callbacks.c:351
 #: ../stickynotes/stickynotes_applet_callbacks.c:547
 #: ../trashapplet/src/trashapplet.c:413
@@ -290,12 +290,12 @@ msgid "Legacy backend enabled."
 msgstr ""
 
 #: ../battstat/battstat_applet.c:1572 ../battstat/battstat_applet.c:1624
-#: ../battstat/org.mate.applets.BattstatApplet.mate-panel-applet.in.in.h:2
+#: ../battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.in.in.h:2
 msgid "Battery Charge Monitor"
 msgstr ""
 
 #: ../battstat/battstat_applet.c:1625
-#: ../battstat/org.mate.applets.BattstatApplet.mate-panel-applet.in.in.h:3
+#: ../battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.in.in.h:3
 msgid "Monitor a laptop's remaining power"
 msgstr ""
 
@@ -348,85 +348,85 @@ msgstr ""
 msgid "_Notify when battery is fully recharged"
 msgstr ""
 
-#: ../battstat/org.mate.applets.BattstatApplet.mate-panel-applet.in.in.h:1
+#: ../battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.in.in.h:1
 msgid "Battstat Factory"
 msgstr ""
 
-#: ../battstat/org.mate.panel.applet.battstat.gschema.xml.in.h:1
+#: ../battstat/org.cafe.panel.applet.battstat.gschema.xml.in.h:1
 msgid "Red value level"
 msgstr ""
 
-#: ../battstat/org.mate.panel.applet.battstat.gschema.xml.in.h:2
+#: ../battstat/org.cafe.panel.applet.battstat.gschema.xml.in.h:2
 msgid ""
 "The battery level below which the battery is displayed as red. Also the "
 "value at which the low battery warning is displayed."
 msgstr ""
 
-#: ../battstat/org.mate.panel.applet.battstat.gschema.xml.in.h:3
+#: ../battstat/org.cafe.panel.applet.battstat.gschema.xml.in.h:3
 msgid "Warn on low time rather than low percentage"
 msgstr ""
 
-#: ../battstat/org.mate.panel.applet.battstat.gschema.xml.in.h:4
+#: ../battstat/org.cafe.panel.applet.battstat.gschema.xml.in.h:4
 msgid ""
 "Use the value defined in red_value as a time remaining to show the warning "
 "dialog rather than a percentage."
 msgstr ""
 
-#: ../battstat/org.mate.panel.applet.battstat.gschema.xml.in.h:5
+#: ../battstat/org.cafe.panel.applet.battstat.gschema.xml.in.h:5
 msgid "Low Battery Notification"
 msgstr ""
 
-#: ../battstat/org.mate.panel.applet.battstat.gschema.xml.in.h:6
+#: ../battstat/org.cafe.panel.applet.battstat.gschema.xml.in.h:6
 msgid "Notify user when the battery is low."
 msgstr ""
 
-#: ../battstat/org.mate.panel.applet.battstat.gschema.xml.in.h:7
+#: ../battstat/org.cafe.panel.applet.battstat.gschema.xml.in.h:7
 msgid "Full Battery Notification"
 msgstr ""
 
-#: ../battstat/org.mate.panel.applet.battstat.gschema.xml.in.h:8
+#: ../battstat/org.cafe.panel.applet.battstat.gschema.xml.in.h:8
 msgid "Notify user when the battery is full."
 msgstr ""
 
-#: ../battstat/org.mate.panel.applet.battstat.gschema.xml.in.h:9
+#: ../battstat/org.cafe.panel.applet.battstat.gschema.xml.in.h:9
 msgid "Beep for warnings"
 msgstr ""
 
-#: ../battstat/org.mate.panel.applet.battstat.gschema.xml.in.h:10
+#: ../battstat/org.cafe.panel.applet.battstat.gschema.xml.in.h:10
 msgid "Beep when displaying a warning."
 msgstr ""
 
-#: ../battstat/org.mate.panel.applet.battstat.gschema.xml.in.h:11
+#: ../battstat/org.cafe.panel.applet.battstat.gschema.xml.in.h:11
 msgid "Drain from top"
 msgstr ""
 
-#: ../battstat/org.mate.panel.applet.battstat.gschema.xml.in.h:12
+#: ../battstat/org.cafe.panel.applet.battstat.gschema.xml.in.h:12
 msgid ""
 "Show the battery meter draining from the top of the battery. Only "
 "implemented for traditional battery view."
 msgstr ""
 
-#: ../battstat/org.mate.panel.applet.battstat.gschema.xml.in.h:13
+#: ../battstat/org.cafe.panel.applet.battstat.gschema.xml.in.h:13
 msgid "Upright (small) battery"
 msgstr ""
 
-#: ../battstat/org.mate.panel.applet.battstat.gschema.xml.in.h:14
+#: ../battstat/org.cafe.panel.applet.battstat.gschema.xml.in.h:14
 msgid "Show the upright, smaller battery on the panel."
 msgstr ""
 
-#: ../battstat/org.mate.panel.applet.battstat.gschema.xml.in.h:15
+#: ../battstat/org.cafe.panel.applet.battstat.gschema.xml.in.h:15
 msgid "Show the horizontal battery"
 msgstr ""
 
-#: ../battstat/org.mate.panel.applet.battstat.gschema.xml.in.h:16
+#: ../battstat/org.cafe.panel.applet.battstat.gschema.xml.in.h:16
 msgid "Show the traditional, horizontal battery on the panel."
 msgstr ""
 
-#: ../battstat/org.mate.panel.applet.battstat.gschema.xml.in.h:17
+#: ../battstat/org.cafe.panel.applet.battstat.gschema.xml.in.h:17
 msgid "Show the time/percent label"
 msgstr ""
 
-#: ../battstat/org.mate.panel.applet.battstat.gschema.xml.in.h:18
+#: ../battstat/org.cafe.panel.applet.battstat.gschema.xml.in.h:18
 msgid "0 for no label, 1 for percentage and 2 for time remaining."
 msgstr ""
 
@@ -444,15 +444,15 @@ msgstr ""
 msgid "Minutes Remaining"
 msgstr ""
 
-#: ../battstat/sounds/mate-battstat_applet.soundlist.in.h:1
+#: ../battstat/sounds/cafe-battstat_applet.soundlist.in.h:1
 msgid "Battery Status Utility"
 msgstr ""
 
-#: ../battstat/sounds/mate-battstat_applet.soundlist.in.h:2
+#: ../battstat/sounds/cafe-battstat_applet.soundlist.in.h:2
 msgid "Battery power low"
 msgstr ""
 
-#: ../battstat/sounds/mate-battstat_applet.soundlist.in.h:3
+#: ../battstat/sounds/cafe-battstat_applet.soundlist.in.h:3
 msgid "Battery fully re-charged"
 msgstr ""
 
@@ -484,36 +484,36 @@ msgid ""
 msgstr ""
 
 #: ../charpick/charpick.c:765 ../charpick/charpick.c:779
-#: ../charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.in.in.h:2
+#: ../charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.in.in.h:2
 #: ../charpick/properties.c:455
 msgid "Character Palette"
 msgstr ""
 
 #: ../charpick/charpick.c:765
-#: ../charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.in.in.h:3
+#: ../charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.in.in.h:3
 msgid "Insert characters"
 msgstr ""
 
-#: ../charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.in.in.h:1
+#: ../charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.in.in.h:1
 msgid "Charpicker Applet Factory"
 msgstr ""
 
-#: ../charpick/org.mate.panel.applet.charpick.gschema.xml.in.h:1
+#: ../charpick/org.cafe.panel.applet.charpick.gschema.xml.in.h:1
 msgid "Characters shown on applet startup"
 msgstr ""
 
-#: ../charpick/org.mate.panel.applet.charpick.gschema.xml.in.h:2
+#: ../charpick/org.cafe.panel.applet.charpick.gschema.xml.in.h:2
 msgid ""
 "The string that the user had selected when the applet was last used. This "
 "string will be displayed when the user starts the applet."
 msgstr ""
 
-#: ../charpick/org.mate.panel.applet.charpick.gschema.xml.in.h:3
+#: ../charpick/org.cafe.panel.applet.charpick.gschema.xml.in.h:3
 #: ../charpick/properties.c:378
 msgid "List of available palettes"
 msgstr ""
 
-#: ../charpick/org.mate.panel.applet.charpick.gschema.xml.in.h:4
+#: ../charpick/org.cafe.panel.applet.charpick.gschema.xml.in.h:4
 msgid "List of strings containing the available palettes."
 msgstr ""
 
@@ -578,7 +578,7 @@ msgid "Character Palette Preferences"
 msgstr ""
 
 #: ../command/command.c:115
-#: ../command/org.mate.applets.CommandApplet.mate-panel-applet.in.in.h:3
+#: ../command/org.cafe.applets.CommandApplet.cafe-panel-applet.in.in.h:3
 msgid "Shows the output of a command"
 msgstr ""
 
@@ -599,8 +599,8 @@ msgid "Maximum width (chars):"
 msgstr ""
 
 #: ../command/command.c:182
-#: ../command/org.mate.panel.applet.command.gschema.xml.in.h:7
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:7
+#: ../command/org.cafe.panel.applet.command.gschema.xml.in.h:7
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:7
 msgid "Show icon"
 msgstr ""
 
@@ -608,39 +608,39 @@ msgstr ""
 msgid "Command Applet"
 msgstr ""
 
-#: ../command/org.mate.applets.CommandApplet.mate-panel-applet.in.in.h:1
+#: ../command/org.cafe.applets.CommandApplet.cafe-panel-applet.in.in.h:1
 msgid "Command Factory"
 msgstr ""
 
-#: ../command/org.mate.applets.CommandApplet.mate-panel-applet.in.in.h:2
+#: ../command/org.cafe.applets.CommandApplet.cafe-panel-applet.in.in.h:2
 msgid "Command"
 msgstr ""
 
-#: ../command/org.mate.panel.applet.command.gschema.xml.in.h:1
+#: ../command/org.cafe.panel.applet.command.gschema.xml.in.h:1
 msgid "Command to execute"
 msgstr ""
 
-#: ../command/org.mate.panel.applet.command.gschema.xml.in.h:2
+#: ../command/org.cafe.panel.applet.command.gschema.xml.in.h:2
 msgid "Command/script to execute to get the output"
 msgstr ""
 
-#: ../command/org.mate.panel.applet.command.gschema.xml.in.h:3
+#: ../command/org.cafe.panel.applet.command.gschema.xml.in.h:3
 msgid "Interval for the command"
 msgstr ""
 
-#: ../command/org.mate.panel.applet.command.gschema.xml.in.h:4
+#: ../command/org.cafe.panel.applet.command.gschema.xml.in.h:4
 msgid "Interval to execute the command (in seconds)"
 msgstr ""
 
-#: ../command/org.mate.panel.applet.command.gschema.xml.in.h:5
+#: ../command/org.cafe.panel.applet.command.gschema.xml.in.h:5
 msgid "Width of output"
 msgstr ""
 
-#: ../command/org.mate.panel.applet.command.gschema.xml.in.h:6
+#: ../command/org.cafe.panel.applet.command.gschema.xml.in.h:6
 msgid "Number of characters to display"
 msgstr ""
 
-#: ../command/org.mate.panel.applet.command.gschema.xml.in.h:8
+#: ../command/org.cafe.panel.applet.command.gschema.xml.in.h:8
 msgid "If applet icon is shown or not"
 msgstr ""
 
@@ -676,41 +676,41 @@ msgstr ""
 msgid "Show CPU frequency as _percentage"
 msgstr ""
 
-#: ../cpufreq/org.mate.applets.CPUFreqApplet.mate-panel-applet.in.in.h:1
+#: ../cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.in.in.h:1
 #: ../cpufreq/src/cpufreq-applet.c:988 ../cpufreq/src/cpufreq-applet.c:1043
 msgid "CPU Frequency Scaling Monitor"
 msgstr ""
 
-#: ../cpufreq/org.mate.applets.CPUFreqApplet.mate-panel-applet.in.in.h:2
+#: ../cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.in.in.h:2
 msgid "Monitor the CPU Frequency Scaling"
 msgstr ""
 
-#: ../cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in.h:1
+#: ../cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in.h:1
 msgid "CPU to Monitor"
 msgstr ""
 
-#: ../cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in.h:2
+#: ../cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in.h:2
 msgid ""
 "Set the CPU to monitor. In a single processor system you don't have to "
 "change it."
 msgstr ""
 
-#: ../cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in.h:3
+#: ../cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in.h:3
 msgid "Mode to show CPU usage"
 msgstr ""
 
-#: ../cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in.h:4
+#: ../cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in.h:4
 msgid ""
 "A 0 value means to show the applet in graphic mode (pixmap only), 1 to show "
 "the applet in text mode (not to show the pixmap) and 2 to show the applet in"
 " graphic and text mode."
 msgstr ""
 
-#: ../cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in.h:5
+#: ../cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in.h:5
 msgid "The type of text to display (if the text is enabled)."
 msgstr ""
 
-#: ../cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in.h:6
+#: ../cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in.h:6
 msgid ""
 "A 0 value means to show CPU frequency, 1 to show frequency and units, and 2 "
 "to show percentage instead of frequency."
@@ -758,11 +758,11 @@ msgid ""
 "may be misconfigured or not have hardware support for CPU frequency scaling."
 msgstr ""
 
-#: ../cpufreq/src/cpufreq-selector/org.mate.cpufreqselector.policy.in.h:1
+#: ../cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in.h:1
 msgid "Change CPU Frequency scaling"
 msgstr ""
 
-#: ../cpufreq/src/cpufreq-selector/org.mate.cpufreqselector.policy.in.h:2
+#: ../cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in.h:2
 msgid "Privileges are required to change the CPU Frequency scaling."
 msgstr ""
 
@@ -811,19 +811,19 @@ msgid "Applet for mounting and unmounting block volumes."
 msgstr ""
 
 #: ../drivemount/drivemount.c:186 ../drivemount/drivemount.c:226
-#: ../drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.in.in.h:3
+#: ../drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.in.in.h:3
 msgid "Disk Mounter"
 msgstr ""
 
-#: ../drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.in.in.h:1
+#: ../drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.in.in.h:1
 msgid "Drive Mount Applet Factory"
 msgstr ""
 
-#: ../drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.in.in.h:2
+#: ../drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.in.in.h:2
 msgid "Factory for drive mount applet"
 msgstr ""
 
-#: ../drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.in.in.h:4
+#: ../drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.in.in.h:4
 msgid "Mount local disks and devices"
 msgstr ""
 
@@ -832,7 +832,7 @@ msgid "A goofy set of eyes for the MATE panel. They follow your mouse."
 msgstr ""
 
 #: ../geyes/geyes.c:404 ../geyes/geyes.c:434 ../geyes/geyes.c:436
-#: ../geyes/org.mate.applets.GeyesApplet.mate-panel-applet.in.in.h:2
+#: ../geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.in.in.h:2
 msgid "Eyes"
 msgstr ""
 
@@ -840,15 +840,15 @@ msgstr ""
 msgid "The eyes look in the direction of the mouse pointer"
 msgstr ""
 
-#: ../geyes/org.mate.applets.GeyesApplet.mate-panel-applet.in.in.h:1
+#: ../geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.in.in.h:1
 msgid "Geyes Applet Factory"
 msgstr ""
 
-#: ../geyes/org.mate.applets.GeyesApplet.mate-panel-applet.in.in.h:3
+#: ../geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.in.in.h:3
 msgid "A set of eyeballs for your panel"
 msgstr ""
 
-#: ../geyes/org.mate.panel.applet.geyes.gschema.xml.in.h:1
+#: ../geyes/org.cafe.panel.applet.geyes.gschema.xml.in.h:1
 msgid "Directory in which the theme is located"
 msgstr ""
 
@@ -872,34 +872,34 @@ msgstr ""
 msgid "_Select a theme:"
 msgstr ""
 
-#: ../mateweather/mateweather-about.c:53
+#: ../cafeweather/cafeweather-about.c:53
 msgid "A panel application for monitoring local weather conditions."
 msgstr ""
 
-#: ../mateweather/mateweather-applet.c:115
+#: ../cafeweather/cafeweather-applet.c:115
 msgid "_Details"
 msgstr ""
 
-#: ../mateweather/mateweather-applet.c:118
-#: ../mateweather/mateweather-dialog.c:193
+#: ../cafeweather/cafeweather-applet.c:118
+#: ../cafeweather/cafeweather-dialog.c:193
 msgid "_Update"
 msgstr ""
 
-#: ../mateweather/mateweather-applet.c:346
-#: ../mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.in.in.h:3
+#: ../cafeweather/cafeweather-applet.c:346
+#: ../cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.in.in.h:3
 msgid "Weather Report"
 msgstr ""
 
-#: ../mateweather/mateweather-applet.c:364
-#: ../mateweather/mateweather-applet.c:368
+#: ../cafeweather/cafeweather-applet.c:364
+#: ../cafeweather/cafeweather-applet.c:368
 msgid "MATE Weather"
 msgstr ""
 
-#: ../mateweather/mateweather-applet.c:468
+#: ../cafeweather/cafeweather-applet.c:468
 msgid "Weather Forecast"
 msgstr ""
 
-#: ../mateweather/mateweather-applet.c:480
+#: ../cafeweather/cafeweather-applet.c:480
 #, c-format
 msgid ""
 "City: %s\n"
@@ -907,306 +907,306 @@ msgid ""
 "Temperature: %s"
 msgstr ""
 
-#: ../mateweather/mateweather-applet.c:532
+#: ../cafeweather/cafeweather-applet.c:532
 msgid "Updating..."
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:191
+#: ../cafeweather/cafeweather-dialog.c:191
 msgid "Details"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:233
+#: ../cafeweather/cafeweather-dialog.c:233
 msgid "City:"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:243
+#: ../cafeweather/cafeweather-dialog.c:243
 msgid "Last update:"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:253
+#: ../cafeweather/cafeweather-dialog.c:253
 msgid "Conditions:"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:263
+#: ../cafeweather/cafeweather-dialog.c:263
 msgid "Sky:"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:273
+#: ../cafeweather/cafeweather-dialog.c:273
 msgid "Temperature:"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:283
+#: ../cafeweather/cafeweather-dialog.c:283
 msgid "Feels like:"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:293
+#: ../cafeweather/cafeweather-dialog.c:293
 msgid "Dew point:"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:303
+#: ../cafeweather/cafeweather-dialog.c:303
 msgid "Relative humidity:"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:313
+#: ../cafeweather/cafeweather-dialog.c:313
 msgid "Wind:"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:323
+#: ../cafeweather/cafeweather-dialog.c:323
 msgid "Pressure:"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:333
+#: ../cafeweather/cafeweather-dialog.c:333
 msgid "Visibility:"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:343
+#: ../cafeweather/cafeweather-dialog.c:343
 msgid "Sunrise:"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:353
+#: ../cafeweather/cafeweather-dialog.c:353
 msgid "Sunset:"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:515
+#: ../cafeweather/cafeweather-dialog.c:515
 msgid "Current Conditions"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:532
+#: ../cafeweather/cafeweather-dialog.c:532
 msgid "Forecast Report"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:532
+#: ../cafeweather/cafeweather-dialog.c:532
 msgid "See the ForeCast Details"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:542
+#: ../cafeweather/cafeweather-dialog.c:542
 msgid "Forecast"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:550
+#: ../cafeweather/cafeweather-dialog.c:550
 msgid "Radar Map"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:581
+#: ../cafeweather/cafeweather-dialog.c:581
 msgid "_Visit Weather.com"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:582
+#: ../cafeweather/cafeweather-dialog.c:582
 msgid "Visit Weather.com"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:582
+#: ../cafeweather/cafeweather-dialog.c:582
 msgid "Click to Enter Weather.com"
 msgstr ""
 
-#: ../mateweather/mateweather-dialog.c:667
+#: ../cafeweather/cafeweather-dialog.c:667
 msgid "Forecast not currently available for this location."
 msgstr ""
 
 #. Accessible Name and Description for the components in Preference Dialog
-#: ../mateweather/mateweather-pref.c:162
+#: ../cafeweather/cafeweather-pref.c:162
 msgid "Location view"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:162
+#: ../cafeweather/cafeweather-pref.c:162
 msgid "Select Location from the list"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:163
+#: ../cafeweather/cafeweather-pref.c:163
 msgid "Update spin button"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:163
+#: ../cafeweather/cafeweather-pref.c:163
 msgid "Spinbutton for updating"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:164
+#: ../cafeweather/cafeweather-pref.c:164
 msgid "Address Entry"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:164
+#: ../cafeweather/cafeweather-pref.c:164
 msgid "Enter the URL"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:287
+#: ../cafeweather/cafeweather-pref.c:287
 msgid ""
 "Failed to load the Locations XML database.  Please report this as a bug."
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:820
+#: ../cafeweather/cafeweather-pref.c:820
 msgid "Weather Preferences"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:847
-#: ../mateweather/mateweather-pref.c:1065
+#: ../cafeweather/cafeweather-pref.c:847
+#: ../cafeweather/cafeweather-pref.c:1065
 msgid "_Automatically update every:"
 msgstr ""
 
 #. * Units settings page.
 #. Temperature Unit
-#: ../mateweather/mateweather-pref.c:862
+#: ../cafeweather/cafeweather-pref.c:862
 msgid "_Temperature unit:"
 msgstr ""
 
 #. gtk_combo_box_append_text (GTK_COMBO_BOX (temp_combo), _("Default"));
-#: ../mateweather/mateweather-pref.c:876
+#: ../cafeweather/cafeweather-pref.c:876
 msgid "Kelvin"
 msgstr ""
 
 #. TRANSLATORS: Celsius is sometimes referred Centigrade
-#: ../mateweather/mateweather-pref.c:878
+#: ../cafeweather/cafeweather-pref.c:878
 msgid "Celsius"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:879
+#: ../cafeweather/cafeweather-pref.c:879
 msgid "Fahrenheit"
 msgstr ""
 
 #. Speed Unit
-#: ../mateweather/mateweather-pref.c:888
+#: ../cafeweather/cafeweather-pref.c:888
 msgid "_Wind speed unit:"
 msgstr ""
 
 #. gtk_combo_box_append_text (GTK_COMBO_BOX (speed_combo), _("Default"));
 #. TRANSLATOR: The wind speed unit "meters per second"
-#: ../mateweather/mateweather-pref.c:903
+#: ../cafeweather/cafeweather-pref.c:903
 msgid "m/s"
 msgstr ""
 
 #. TRANSLATOR: The wind speed unit "kilometers per hour"
-#: ../mateweather/mateweather-pref.c:905
+#: ../cafeweather/cafeweather-pref.c:905
 msgid "km/h"
 msgstr ""
 
 #. TRANSLATOR: The wind speed unit "miles per hour"
-#: ../mateweather/mateweather-pref.c:907
+#: ../cafeweather/cafeweather-pref.c:907
 msgid "mph"
 msgstr ""
 
 #. TRANSLATOR: The wind speed unit "knots"
-#: ../mateweather/mateweather-pref.c:909
+#: ../cafeweather/cafeweather-pref.c:909
 msgid "knots"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:910
+#: ../cafeweather/cafeweather-pref.c:910
 msgid "Beaufort scale"
 msgstr ""
 
 #. Pressure Unit
-#: ../mateweather/mateweather-pref.c:919
+#: ../cafeweather/cafeweather-pref.c:919
 msgid "_Pressure unit:"
 msgstr ""
 
 #. gtk_combo_box_append_text (GTK_COMBO_BOX (pres_combo), _("Default"));
 #. TRANSLATOR: The pressure unit "kiloPascals"
-#: ../mateweather/mateweather-pref.c:934
+#: ../cafeweather/cafeweather-pref.c:934
 msgid "kPa"
 msgstr ""
 
 #. TRANSLATOR: The pressure unit "hectoPascals"
-#: ../mateweather/mateweather-pref.c:936
+#: ../cafeweather/cafeweather-pref.c:936
 msgid "hPa"
 msgstr ""
 
 #. TRANSLATOR: The pressure unit "millibars"
-#: ../mateweather/mateweather-pref.c:938
+#: ../cafeweather/cafeweather-pref.c:938
 msgid "mb"
 msgstr ""
 
 #. TRANSLATOR: The pressure unit "millibars of mercury"
-#: ../mateweather/mateweather-pref.c:940
+#: ../cafeweather/cafeweather-pref.c:940
 msgid "mmHg"
 msgstr ""
 
 #. TRANSLATOR: The pressure unit "inches of mercury"
-#: ../mateweather/mateweather-pref.c:942
+#: ../cafeweather/cafeweather-pref.c:942
 msgid "inHg"
 msgstr ""
 
 #. TRANSLATOR: The pressure unit "atmospheres"
-#: ../mateweather/mateweather-pref.c:944
+#: ../cafeweather/cafeweather-pref.c:944
 msgid "atm"
 msgstr ""
 
 #. Distance Unit
-#: ../mateweather/mateweather-pref.c:953
+#: ../cafeweather/cafeweather-pref.c:953
 msgid "_Visibility unit:"
 msgstr ""
 
 #. gtk_combo_box_append_text (GTK_COMBO_BOX (dist_combo), _("Default"));
 #. TRANSLATOR: The distance unit "meters"
-#: ../mateweather/mateweather-pref.c:968
+#: ../cafeweather/cafeweather-pref.c:968
 msgid "meters"
 msgstr ""
 
 #. TRANSLATOR: The distance unit "kilometers"
-#: ../mateweather/mateweather-pref.c:970
+#: ../cafeweather/cafeweather-pref.c:970
 msgid "km"
 msgstr ""
 
 #. TRANSLATOR: The distance unit "miles"
-#: ../mateweather/mateweather-pref.c:972
+#: ../cafeweather/cafeweather-pref.c:972
 msgid "miles"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:1002
+#: ../cafeweather/cafeweather-pref.c:1002
 msgid "Enable _radar map"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:1018
+#: ../cafeweather/cafeweather-pref.c:1018
 msgid "Use _custom address for radar map"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:1036
+#: ../cafeweather/cafeweather-pref.c:1036
 msgid "A_ddress:"
 msgstr ""
 
 #. setup show-notifications button
-#: ../mateweather/mateweather-pref.c:1051
+#: ../cafeweather/cafeweather-pref.c:1051
 msgid "Show _notifications"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:1061
+#: ../cafeweather/cafeweather-pref.c:1061
 msgid "Update"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:1078
+#: ../cafeweather/cafeweather-pref.c:1078
 msgid "minutes"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:1096
+#: ../cafeweather/cafeweather-pref.c:1096
 msgid "Display"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:1115
+#: ../cafeweather/cafeweather-pref.c:1115
 msgid "General"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:1126
+#: ../cafeweather/cafeweather-pref.c:1126
 msgid "_Select a location:"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:1152
+#: ../cafeweather/cafeweather-pref.c:1152
 msgid "_Find:"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:1158
+#: ../cafeweather/cafeweather-pref.c:1158
 msgid "Find _Next"
 msgstr ""
 
-#: ../mateweather/mateweather-pref.c:1179
+#: ../cafeweather/cafeweather-pref.c:1179
 msgid "Location"
 msgstr ""
 
-#: ../mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.in.in.h:1
+#: ../cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.in.in.h:1
 msgid "Mateweather Applet Factory"
 msgstr ""
 
-#: ../mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.in.in.h:2
+#: ../cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.in.in.h:2
 msgid "Factory for creating the weather applet."
 msgstr ""
 
-#: ../mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.in.in.h:4
+#: ../cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.in.in.h:4
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr ""
 
@@ -1309,7 +1309,7 @@ msgid "_Open System Monitor"
 msgstr ""
 
 #: ../multiload/main.c:495
-#: ../multiload/org.mate.applets.MultiLoadApplet.mate-panel-applet.in.in.h:1
+#: ../multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.in.in.h:1
 msgid "System Monitor"
 msgstr ""
 
@@ -1318,137 +1318,137 @@ msgstr ""
 msgid "%s/s"
 msgstr ""
 
-#: ../multiload/org.mate.applets.MultiLoadApplet.mate-panel-applet.in.in.h:2
+#: ../multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.in.in.h:2
 msgid "A system load indicator"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:1
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:1
 msgid "Enable CPU load graph"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:2
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:2
 msgid "Enable memory load graph"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:3
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:3
 msgid "Enable network load graph"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:4
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:4
 msgid "Enable swap load graph"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:5
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:5
 msgid "Enable load average graph"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:6
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:6
 msgid "Enable disk load graph"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:7
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:7
 msgid "Applet refresh rate in milliseconds"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:8
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:8
 msgid "Graph size"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:9
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:9
 msgid ""
 "For horizontal panels, the width of the graphs in pixels. For vertical "
 "panels, this is the height of the graphs."
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:10
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:10
 msgid "Graph color for user-related CPU activity"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:11
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:11
 msgid "Graph color for system-related CPU activity"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:12
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:12
 msgid "Graph color for nice-related CPU activity"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:13
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:13
 msgid "Graph color for iowait related CPU activity"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:14
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:14
 msgid "CPU graph background color"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:15
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:15
 msgid "Graph color for user-related memory usage"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:16
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:16
 msgid "Graph color for shared memory"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:17
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:17
 msgid "Graph color for buffer memory"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:18
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:18
 msgid "Graph color for cached memory"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:19
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:19
 msgid "Memory graph background color"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:20
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:20
 msgid "Graph color for input network activity"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:21
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:21
 msgid "Graph color for output network activity"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:22
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:22
 msgid "Graph color for loopback network usage"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:23
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:23
 msgid "Network graph background color"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:24
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:24
 msgid "Graph color for user-related swap usage"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:25
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:25
 msgid "Swap graph background color"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:26
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:26
 msgid "Graph color for load average"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:27
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:27
 msgid "Load graph background color"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:28
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:28
 msgid "Grid line color"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:29
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:29
 msgid "Graph color for disk read"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:30
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:30
 msgid "Graph color for disk write"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:31
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:31
 msgid "Background color for disk load graph"
 msgstr ""
 
-#: ../multiload/org.mate.panel.applet.multiload.gschema.xml.in.h:32
+#: ../multiload/org.cafe.panel.applet.multiload.gschema.xml.in.h:32
 msgid "The desktop description file to execute as the system monitor"
 msgstr ""
 
@@ -1597,109 +1597,109 @@ msgstr ""
 msgid "System Monitor Preferences"
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:1
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:1
 msgid "Device to monitor"
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:2
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:2
 msgid "The name of the device to monitor"
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:3
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:3
 msgid "Show sum speed"
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:4
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:4
 msgid "If true, show sum of inbound/outbound speed instead of separated ones."
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:5
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:5
 msgid "Show bits"
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:6
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:6
 msgid "If true, show speed in bits instead of bytes."
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:8
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:8
 msgid "If true, show main icon."
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:9
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:9
 msgid "Short unit legend"
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:10
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:10
 msgid ""
 "If true, shorten unit legend to one letter: lowercase for bits / uppercase "
 "for Bytes."
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:11
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:11
 msgid "Change icon"
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:12
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:12
 msgid "If true, change the icon due to selected device."
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:13
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:13
 msgid "Auto change device"
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:14
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:14
 msgid "If true, change automatically the selected device."
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:15
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:15
 msgid "In color"
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:16
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:16
 msgid "The color of the graph of the inbound traffic"
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:17
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:17
 msgid "Out color"
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:18
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:18
 msgid "The color of the graph of the outbound traffic"
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:19
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:19
 msgid "Up command"
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:20
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:20
 msgid "Command to execute to activate the device"
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:21
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:21
 msgid "Down command"
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:22
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:22
 msgid "Command to execute to shut down the device"
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:23
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:23
 msgid "Show signal quality icon"
 msgstr ""
 
-#: ../netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in.h:24
+#: ../netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in.h:24
 msgid "If true, show signal quality icon for wireless devices."
 msgstr ""
 
-#: ../netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.in.in.h:1
+#: ../netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.in.in.h:1
 msgid "Netspeed Applet Factory"
 msgstr ""
 
-#: ../netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.in.in.h:2
+#: ../netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.in.in.h:2
 msgid "Netspeed Applet"
 msgstr ""
 
-#: ../netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.in.in.h:3
+#: ../netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.in.in.h:3
 msgid "Network Monitor"
 msgstr ""
 
@@ -1961,17 +1961,17 @@ msgstr ""
 msgid "Mate Netspeed"
 msgstr ""
 
-#: ../stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.in.in.h:1
+#: ../stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.in.in.h:1
 msgid "Sticky Notes Applet Factory"
 msgstr ""
 
-#: ../stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.in.in.h:2
+#: ../stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.in.in.h:2
 #: ../stickynotes/stickynotes_applet.c:164
 #: ../stickynotes/stickynotes_applet.c:406
 msgid "Sticky Notes"
 msgstr ""
 
-#: ../stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.in.in.h:3
+#: ../stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.in.in.h:3
 msgid "Create, view, and manage sticky notes on the desktop"
 msgstr ""
 
@@ -2167,126 +2167,126 @@ msgstr ""
 msgid "_Title:"
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:1
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:1
 msgid "Default width for new notes"
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:2
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:2
 msgid "Default width for new sticky notes in pixels."
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:3
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:3
 msgid "Default height for new notes"
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:4
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:4
 msgid "Default height for new sticky notes in pixels."
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:5
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:5
 msgid "Default color for new notes"
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:6
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:6
 msgid ""
 "Default color for new sticky notes. This should be in html hex "
 "specification, for example \"#30FF50\"."
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:7
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:7
 msgid "Default color for font"
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:8
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:8
 msgid ""
 "Default font color for new sticky notes. This should be in html hex "
 "specification, for example \"#000000\"."
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:9
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:9
 msgid "Default font for new notes"
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:10
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:10
 msgid ""
 "Default font for new sticky notes. This should be a Pango Font Name, for "
 "example \"Sans Italic 10\"."
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:11
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:11
 msgid "Sticky notes' workspace stickyness"
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:12
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:12
 msgid ""
 "Specifies whether the sticky notes are visible on ALL workspaces on the "
 "desktop, or not."
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:13
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:13
 msgid "Sticky notes' locked state"
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:14
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:14
 msgid "Specifies whether the sticky notes are locked (non-editable) or not."
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:15
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:15
 msgid "Date format of note's title"
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:16
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:16
 msgid ""
 "By default, sticky notes are given the current date as the title when they "
 "are created. This format is used; anything that can be parsed by strftime() "
 "is valid."
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:17
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:17
 msgid "Whether to use the default system color"
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:18
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:18
 msgid ""
 "If this option is disabled, a custom color can be used as the default color "
 "for all sticky notes."
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:19
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:19
 msgid "Whether to use the default system font"
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:20
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:20
 msgid ""
 "If this option is disabled, a custom font can be used as the default font "
 "for all sticky notes."
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:21
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:21
 msgid "Whether to force the default color and font on all notes"
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:22
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:22
 msgid ""
 "If this option is enabled, the custom colors and fonts that have been "
 "assigned to individual notes will be ignored."
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:23
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:23
 msgid "Whether to hide all notes when the desktop is selected"
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:24
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:24
 msgid ""
 "If this option is enabled, selecting the desktop in any way will "
 "automatically hide all the open notes."
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:25
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:25
 msgid "Whether to ask for confirmation when deleting a note"
 msgstr ""
 
-#: ../stickynotes/org.mate.stickynotes.gschema.xml.in.h:26
+#: ../stickynotes/org.cafe.stickynotes.gschema.xml.in.h:26
 msgid "Empty notes are always deleted without confirmation."
 msgstr ""
 
@@ -2317,32 +2317,32 @@ msgstr ""
 msgid "Sticky Notes for the MATE Desktop Environment"
 msgstr ""
 
-#: ../timerapplet/org.mate.applets.TimerApplet.mate-panel-applet.in.in.h:1
+#: ../timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.in.in.h:1
 msgid "Timer Factory"
 msgstr ""
 
-#: ../timerapplet/org.mate.applets.TimerApplet.mate-panel-applet.in.in.h:2
+#: ../timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.in.in.h:2
 msgid "Timer"
 msgstr ""
 
-#: ../timerapplet/org.mate.applets.TimerApplet.mate-panel-applet.in.in.h:3
+#: ../timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.in.in.h:3
 #: ../timerapplet/timerapplet.c:259
 msgid "Start a timer and receive a notification when it is finished"
 msgstr ""
 
-#: ../timerapplet/org.mate.panel.applet.timer.gschema.xml.in.h:1
+#: ../timerapplet/org.cafe.panel.applet.timer.gschema.xml.in.h:1
 msgid "Name of timer"
 msgstr ""
 
-#: ../timerapplet/org.mate.panel.applet.timer.gschema.xml.in.h:2
+#: ../timerapplet/org.cafe.panel.applet.timer.gschema.xml.in.h:2
 msgid "Duration of timer in seconds"
 msgstr ""
 
-#: ../timerapplet/org.mate.panel.applet.timer.gschema.xml.in.h:3
+#: ../timerapplet/org.cafe.panel.applet.timer.gschema.xml.in.h:3
 msgid "Show notification popup when timer finish"
 msgstr ""
 
-#: ../timerapplet/org.mate.panel.applet.timer.gschema.xml.in.h:4
+#: ../timerapplet/org.cafe.panel.applet.timer.gschema.xml.in.h:4
 msgid "Show dialog window when timer finish"
 msgstr ""
 
@@ -2398,11 +2398,11 @@ msgstr ""
 msgid "Timer Applet"
 msgstr ""
 
-#: ../trashapplet/org.mate.applets.TrashApplet.mate-panel-applet.in.in.h:1
+#: ../trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.in.in.h:1
 msgid "Trash"
 msgstr ""
 
-#: ../trashapplet/org.mate.applets.TrashApplet.mate-panel-applet.in.in.h:2
+#: ../trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.in.in.h:2
 msgid "Go to Trash"
 msgstr ""
 

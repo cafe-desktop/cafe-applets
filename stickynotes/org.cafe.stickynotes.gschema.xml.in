@@ -1,5 +1,5 @@
 <schemalist gettext-domain="@GETTEXT_PACKAGE@">
-  <schema id="org.mate.stickynotes" path="/org/mate/stickynotes/">
+  <schema id="org.cafe.stickynotes" path="/org/cafe/stickynotes/">
     <key name="default-width" type="i">
       <default>100</default>
       <summary>Default width for new notes</summary>

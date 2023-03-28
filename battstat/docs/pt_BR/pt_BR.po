@@ -5,7 +5,7 @@
 # Marcelo Ghelman <marcelo.ghelman@gmail.com>, 2020
 # Victor Maximiliano <VicBrd09@mail2tor.com>, 2020
 # Victor Gonçalves <hotcyv@gmail.com>, 2020
-# Wolfgang Ulbrich <mate@raveit.de>, 2020
+# Wolfgang Ulbrich <cafe@raveit.de>, 2020
 # Jota Freitas Jr <jotafreitasjr@icloud.com>, 2020
 # Italo Penaforte <italo.penaforte@gmail.com>, 2020
 # b36c7cf4cf669a51ae00d04c19629819, 2020
@@ -19,7 +19,7 @@ msgstr ""
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:24+0000\n"
 "Last-Translator: Brayan Soares <brayansm1999@gmail.com>, 2020\n"
-"Language-Team: Portuguese (Brazil) (https://www.transifex.com/mate/teams/13566/pt_BR/)\n"
+"Language-Team: Portuguese (Brazil) (https://www.transifex.com/cafe/teams/13566/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -263,11 +263,11 @@ msgstr "Retorno"
 #: C/index.docbook:186
 msgid ""
 "To report a bug or make a suggestion regarding the Battery Charge Monitor "
-"applet or this manual, follow the directions in the <ulink url=\"help:mate-"
+"applet or this manual, follow the directions in the <ulink url=\"help:cafe-"
 "user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
 msgstr ""
 "Para reportar um bug ou enviar uma sugestão referente ao applet do Monitor "
-"de Carga da Bateria, siga as instruções na <ulink url=\"help:mate-user-"
+"de Carga da Bateria, siga as instruções na <ulink url=\"help:cafe-user-"
 "guide/feedback\" type=\"help\">Pagina de Feedbacks do MATE</ulink>"
 
 #. (itstool) path: article/indexterm
@@ -321,7 +321,7 @@ msgid ""
 "The <application>Battery Charge Monitor</application> shows the status of "
 "any batteries in your laptop computer. The monitor can tell you the capacity"
 " remaining both visually and as a percentage, as well as offer you an "
-"estimate of the time remaining based off the current usage rate."
+"esticafe of the time remaining based off the current usage rate."
 msgstr ""
 "O <application>Monitor de Carga da Bateria</application> mostra o estado de "
 "qualquer bateria ligada ao seu computador portátil. O monitor pode lhe "
@@ -430,10 +430,10 @@ msgstr "<xref linkend=\"battstat-troubleshooting\"/>"
 #. (itstool) path: listitem/para
 #: C/index.docbook:294
 msgid ""
-"<ulink url=\"http://ml.mate-desktop.org/listinfo/\">MATE mailing "
+"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">MATE mailing "
 "lists</ulink>"
 msgstr ""
-"<ulink url=\"http://ml.mate-desktop.org/listinfo/\">Lista de mailing do "
+"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">Lista de mailing do "
 "MATE</ulink>"
 
 #. (itstool) path: sect1/title
@@ -685,14 +685,14 @@ msgid ""
 "The following information may be useful for troubleshooting what is wrong "
 "with your battery monitor. It is by no means exhaustive. If you find a bug "
 "with the Battery Charge Monitor (that is not caused by bad information being"
-" reported by ACPI), please <ulink url=\"http://bugzilla.mate.org/\">report "
+" reported by ACPI), please <ulink url=\"http://bugzilla.cafe.org/\">report "
 "it</ulink>."
 msgstr ""
 "A seguinte informação pode ser útil para resolver problemas quanto ao que "
 "esteja de errado no seu monitor da bateria. Não é de forma alguma exaustiva."
 " Se você achar um erro no Monitor de Carga da Bateria (que não é causado por"
 " uma desinformação reportada pelo ACPI), por favor <ulink "
-"url=\"http://bugzilla.mate.org/\">reporte este erro</ulink>. "
+"url=\"http://bugzilla.cafe.org/\">reporte este erro</ulink>. "
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:452

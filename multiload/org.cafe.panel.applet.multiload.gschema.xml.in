@@ -1,5 +1,5 @@
 <schemalist gettext-domain="@GETTEXT_PACKAGE@">
-  <schema id="org.mate.panel.applet.multiload">
+  <schema id="org.cafe.panel.applet.multiload">
     <key name="view-cpuload" type="b">
       <default>true</default>
       <summary>Enable CPU load graph</summary>
@@ -146,7 +146,7 @@
       <summary>Uses /proc/diskstats to determine NVMe disk load</summary>
     </key>
     <key name="system-monitor" type="s">
-      <default>'mate-system-monitor.desktop'</default>
+      <default>'cafe-system-monitor.desktop'</default>
       <summary>The desktop description file to execute as the system monitor</summary>
     </key>
   </schema>

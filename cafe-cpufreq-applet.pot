@@ -116,7 +116,7 @@ msgstr ""
 
 #. (itstool) path: legalnotice/para
 #: C/index.docbook:131
-msgid "To report a bug or make a suggestion regarding the CPU Frequency Scaling Monitor applet or this manual, follow the directions in the <ulink url=\"help:mate-user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+msgid "To report a bug or make a suggestion regarding the CPU Frequency Scaling Monitor applet or this manual, follow the directions in the <ulink url=\"help:cafe-user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -477,7 +477,7 @@ msgstr ""
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:388
-msgid "This option allows you to choose how much information is shown in the frequency selector dropdown (see <xref linkend=\"mate-cpufreq-selector\"/>). You can select to display <guilabel>Frequencies</guilabel>, <guilabel>Governors</guilabel> or both <guilabel>Frequencies and Governors</guilabel>. <_:figure-1/>"
+msgid "This option allows you to choose how much information is shown in the frequency selector dropdown (see <xref linkend=\"cafe-cpufreq-selector\"/>). You can select to display <guilabel>Frequencies</guilabel>, <guilabel>Governors</guilabel> or both <guilabel>Frequencies and Governors</guilabel>. <_:figure-1/>"
 msgstr ""
 
 #. (itstool) path: para/ulink

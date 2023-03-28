@@ -1,5 +1,5 @@
 <schemalist gettext-domain="@GETTEXT_PACKAGE@">
-  <schema id="org.mate.panel.applet.charpick">
+  <schema id="org.cafe.panel.applet.charpick">
     <key name="current-list" type="s">
       <default>''</default>
       <summary>Characters shown on applet startup</summary>

@@ -516,7 +516,7 @@ phelp_cb (GtkDialog *dialog, gint tab, gpointer data)
   GError *error = NULL;
 
   gtk_show_uri_on_window (GTK_WINDOW (dialog),
-                          "help:mate-char-palette/charpick-prefs",
+                          "help:cafe-char-palette/charpick-prefs",
                           gtk_get_current_event_time (),
                           &error);
 

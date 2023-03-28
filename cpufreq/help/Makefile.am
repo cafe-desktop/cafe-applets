@@ -1,6 +1,6 @@
 @YELP_HELP_RULES@
 
-HELP_ID = mate-cpufreq-applet
+HELP_ID = cafe-cpufreq-applet
 HELP_FILES = index.docbook legal.xml
 
 HELP_MEDIA = figures/cpufreq-100.png \

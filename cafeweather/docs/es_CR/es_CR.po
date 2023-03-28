@@ -8,7 +8,7 @@ msgstr ""
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 12:16+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2020\n"
-"Language-Team: Spanish (Costa Rica) (https://www.transifex.com/mate/teams/13566/es_CR/)\n"
+"Language-Team: Spanish (Costa Rica) (https://www.transifex.com/cafe/teams/13566/es_CR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,7 +19,7 @@ msgstr ""
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Francisco Javier F. Serrador <serrador@cvs.mate.org>\n"
+"Francisco Javier F. Serrador <serrador@cvs.cafe.org>\n"
 "Jorge González González <jorge.gonzalez.gonzalez@hispalinux.es>"
 
 #. (itstool) path: articleinfo/title
@@ -242,7 +242,7 @@ msgstr ""
 #: C/index.docbook:234
 msgid ""
 "To report a bug or make a suggestion regarding the Weather Report applet or "
-"this manual, follow the directions in the <ulink url=\"help:mate-user-"
+"this manual, follow the directions in the <ulink url=\"help:cafe-user-"
 "guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
 msgstr ""
 
@@ -269,14 +269,14 @@ msgstr "Informe meteorológico"
 #: C/index.docbook:255
 msgctxt "_"
 msgid ""
-"external ref='figures/mateweather_applet.png' "
+"external ref='figures/cafeweather_applet.png' "
 "md5='59fae2cc46bf316cee2c1193bd99f7ac'"
 msgstr ""
 
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:253
 msgid ""
-"<imageobject> <imagedata fileref=\"figures/mateweather_applet.png\" "
+"<imageobject> <imagedata fileref=\"figures/cafeweather_applet.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows Weather Report. "
 "Contains a weather icon and current temperature</phrase> </textobject>"
 msgstr ""
@@ -311,7 +311,7 @@ msgstr ""
 #: C/index.docbook:278
 msgid ""
 "A weather icon that represents the general weather conditions. See <xref "
-"linkend=\"mateweather-introduction-icons\"/>."
+"linkend=\"cafeweather-introduction-icons\"/>."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -591,14 +591,14 @@ msgstr ""
 #: C/index.docbook:441
 msgctxt "_"
 msgid ""
-"external ref='figures/mateweather-menu-prefs.png' "
+"external ref='figures/cafeweather-menu-prefs.png' "
 "md5='75ac1c1d5be37639cc01ce97b6a0bed2'"
 msgstr ""
 
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:439
 msgid ""
-"<imageobject> <imagedata fileref=\"figures/mateweather-menu-prefs.png\" "
+"<imageobject> <imagedata fileref=\"figures/cafeweather-menu-prefs.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Context menu</phrase> "
 "</textobject>"
 msgstr ""
@@ -628,14 +628,14 @@ msgstr ""
 #: C/index.docbook:457
 msgctxt "_"
 msgid ""
-"external ref='figures/mateweather-prefs-locations.png' "
+"external ref='figures/cafeweather-prefs-locations.png' "
 "md5='a6695f9173de4527284517280a15ad81'"
 msgstr ""
 
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:455
 msgid ""
-"<imageobject> <imagedata fileref=\"figures/mateweather-prefs-locations.png\""
+"<imageobject> <imagedata fileref=\"figures/cafeweather-prefs-locations.png\""
 " format=\"PNG\"/> </imageobject> <textobject> <phrase>Location "
 "Preferences</phrase> </textobject>"
 msgstr ""
@@ -768,14 +768,14 @@ msgstr ""
 #: C/index.docbook:538
 msgctxt "_"
 msgid ""
-"external ref='figures/mateweather-prefs-general.png' "
+"external ref='figures/cafeweather-prefs-general.png' "
 "md5='3e876a5578f9c5d856b8f5dcc039ef99'"
 msgstr ""
 
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:536
 msgid ""
-"<imageobject> <imagedata fileref=\"figures/mateweather-prefs-general.png\" "
+"<imageobject> <imagedata fileref=\"figures/cafeweather-prefs-general.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>General "
 "Preferences</phrase> </textobject>"
 msgstr ""
@@ -844,14 +844,14 @@ msgstr ""
 #: C/index.docbook:595
 msgctxt "_"
 msgid ""
-"external ref='figures/mateweather-details.png' "
+"external ref='figures/cafeweather-details.png' "
 "md5='3bd06dad1c17c8b46d358c784495afb7'"
 msgstr ""
 
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:593
 msgid ""
-"<imageobject> <imagedata fileref=\"figures/mateweather-details.png\" "
+"<imageobject> <imagedata fileref=\"figures/cafeweather-details.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Weather Report "
 "details</phrase> </textobject>"
 msgstr ""

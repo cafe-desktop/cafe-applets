@@ -2,7 +2,7 @@ AM_CPPFLAGS = -I$(top_srcdir)		\
 	   $(MATE_APPLETS4_CFLAGS)	\
 	   $(MATEDESKTOP_CFLAGS)	\
 	   $(GIO_CFLAGS)		\
-           -DTRASH_MENU_UI_DIR=\""$(datadir)/mate/ui"\"
+           -DTRASH_MENU_UI_DIR=\""$(datadir)/cafe/ui"\"
 
 libexec_PROGRAMS = trashapplet
 

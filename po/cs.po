@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR MATE Desktop Environment team
-# This file is distributed under the same license as the mate-applets package.
+# This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
@@ -19,12 +19,12 @@
 # 
 msgid ""
 msgstr ""
-"Project-Id-Version: mate-applets 1.23.0\n"
-"Report-Msgid-Bugs-To: https://www.transifex.com/mate/MATE/\n"
+"Project-Id-Version: cafe-applets 1.23.0\n"
+"Report-Msgid-Bugs-To: https://www.transifex.com/cafe/MATE/\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: ToMáš Marný, 2020\n"
-"Language-Team: Czech (https://www.transifex.com/mate/teams/13566/cs/)\n"
+"Language-Team: Czech (https://www.transifex.com/cafe/teams/13566/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -32,7 +32,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n == 1 && n % 1 == 0) ? 0 : (n >= 2 && n <= 4 && n % 1 == 0) ? 1: (n % 1 != 0 ) ? 2 : 3;\n"
 
 #: accessx-status/applet.c:86 charpick/charpick.c:571 geyes/geyes.c:166
-#: mateweather/mateweather-about.c:41 multiload/main.c:48
+#: cafeweather/cafeweather-about.c:41 multiload/main.c:48
 #: stickynotes/stickynotes_applet_callbacks.c:367
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr "Dokumentační tým GNOME společnosti Sun <gdocteam@sun.com>"
@@ -40,7 +40,7 @@ msgstr "Dokumentační tým GNOME společnosti Sun <gdocteam@sun.com>"
 #: accessx-status/applet.c:87 battstat/battstat_applet.c:819
 #: charpick/charpick.c:572 cpufreq/src/cpufreq-applet.c:466
 #: drivemount/drivemount.c:109 geyes/geyes.c:167
-#: mateweather/mateweather-about.c:43 multiload/main.c:49
+#: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
 #: trashapplet/src/trashapplet.c:421
 msgid "MATE Documentation Team"
@@ -65,7 +65,7 @@ msgstr ""
 #: accessx-status/applet.c:105 battstat/battstat_applet.c:844
 #: charpick/charpick.c:592 command/command.c:128
 #: cpufreq/src/cpufreq-applet.c:490 drivemount/drivemount.c:127
-#: geyes/geyes.c:186 mateweather/mateweather-about.c:61 multiload/main.c:69
+#: geyes/geyes.c:186 cafeweather/cafeweather-about.c:61 multiload/main.c:69
 #: netspeed/src/netspeed.c:829 stickynotes/stickynotes_applet_callbacks.c:388
 #: timerapplet/timerapplet.c:278 trashapplet/src/trashapplet.c:442
 msgid "translator-credits"
@@ -104,7 +104,7 @@ msgstr "Předvolby zpřístupnění _klávesnice"
 #: accessx-status/applet.c:183 battstat/battstat_applet.c:63
 #: charpick/charpick.c:673 cpufreq/src/cpufreq-applet.c:119
 #: drivemount/drivemount.c:165 geyes/geyes.c:359
-#: mateweather/mateweather-applet.c:117 multiload/main.c:488
+#: cafeweather/cafeweather-applet.c:117 multiload/main.c:488
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
 msgid "_Help"
 msgstr "_Nápověda"
@@ -112,7 +112,7 @@ msgstr "_Nápověda"
 #: accessx-status/applet.c:184 battstat/battstat_applet.c:66
 #: charpick/charpick.c:676 command/command.c:84
 #: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:168
-#: geyes/geyes.c:362 mateweather/mateweather-applet.c:120 multiload/main.c:491
+#: geyes/geyes.c:362 cafeweather/cafeweather-applet.c:120 multiload/main.c:491
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
 #: trashapplet/src/trashapplet.c:77
 msgid "_About"
@@ -145,7 +145,7 @@ msgid "Error: %s"
 msgstr "Chyba: %s"
 
 #: accessx-status/applet.c:1385
-#: accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.desktop.in.in:9
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Keyboard Accessibility Status"
 msgstr "Stav zpřístupnění klávesnice"
 
@@ -153,27 +153,27 @@ msgstr "Stav zpřístupnění klávesnice"
 msgid "Displays current state of keyboard accessibility features"
 msgstr "Zobrazí aktuální stav funkcí zpřístupnění klávesnice"
 
-#: accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.desktop.in.in:5
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:5
 msgid "AccessX Status Applet Factory"
 msgstr "Generátor stavového appletu AccessX"
 
-#: accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.desktop.in.in:6
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Keyboard Accessibility Status Applet Factory"
 msgstr "Generátor appletu stavu zpřístupnění klávesnice"
 
-#: accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.desktop.in.in:10
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Shows the status of keyboard accessibility features"
 msgstr "Zobrazí stav vlastností zpřístupnění klávesnice"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: accessx-status/org.mate.applets.AccessxStatusApplet.mate-panel-applet.desktop.in.in:12
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:12
 msgid "preferences-desktop-accessibility"
 msgstr "preferences-desktop-accessibility"
 
 #: battstat/battstat_applet.c:60 charpick/charpick.c:670 command/command.c:83
 #: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:356
-#: mateweather/mateweather-applet.c:114 multiload/main.c:482
+#: cafeweather/cafeweather-applet.c:114 multiload/main.c:482
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
 msgid "_Preferences"
 msgstr "_Předvolby"
@@ -330,8 +330,8 @@ msgid "N/A"
 msgstr "Nic"
 
 #: battstat/battstat_applet.c:783 drivemount/drivemount.c:153
-#: geyes/geyes.c:344 geyes/themes.c:223 mateweather/mateweather-applet.c:63
-#: mateweather/mateweather-pref.c:747
+#: geyes/geyes.c:344 geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
+#: cafeweather/cafeweather-pref.c:747
 #: stickynotes/stickynotes_applet_callbacks.c:345
 #: stickynotes/stickynotes_applet_callbacks.c:540
 #: trashapplet/src/trashapplet.c:399
@@ -366,12 +366,12 @@ msgstr ""
 "Copyright © 2012-2020 Vývojáři MATE"
 
 #: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
-#: battstat/org.mate.applets.BattstatApplet.mate-panel-applet.desktop.in.in:9
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Battery Charge Monitor"
 msgstr "Sledování stavu baterie"
 
 #: battstat/battstat_applet.c:1165
-#: battstat/org.mate.applets.BattstatApplet.mate-panel-applet.desktop.in.in:10
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor a laptop's remaining power"
 msgstr "Sleduje zbývající energii notebooku"
 
@@ -409,22 +409,22 @@ msgstr "_Varovat, když nabití baterie klesne na:"
 msgid "_Notify when battery is fully recharged"
 msgstr "Upozor_nit, když je baterie zcela dobita"
 
-#: battstat/org.mate.applets.BattstatApplet.mate-panel-applet.desktop.in.in:5
-#: battstat/org.mate.applets.BattstatApplet.mate-panel-applet.desktop.in.in:6
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:5
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Battstat Factory"
 msgstr "Generátor stavu baterie"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: battstat/org.mate.applets.BattstatApplet.mate-panel-applet.desktop.in.in:12
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:12
 msgid "battery"
 msgstr "battery"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:5
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:5
 msgid "Red value level"
 msgstr "Úroveň červené"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:6
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:6
 msgid ""
 "The battery level below which the battery is displayed as red. Also the "
 "value at which the low battery warning is displayed."
@@ -432,13 +432,13 @@ msgstr ""
 "Úroveň nabití baterie, pod kterou je baterie zobrazována červeně. Také "
 "hodnota, při které se zobrazuje varování o vybité baterii."
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:10
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:10
 msgid "Warn on low time rather than low percentage"
 msgstr ""
 "Varovat při malém množství času, nikoliv při nízkých procentuálních "
 "hodnotách"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:11
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:11
 msgid ""
 "Use the value defined in red_value as a time remaining to show the warning "
 "dialog rather than a percentage."
@@ -446,35 +446,35 @@ msgstr ""
 "Používat hodnotu definovanou v \"red_value\" jako zbývající čas do zobrazení"
 " varovného dialogu - namísto procent."
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:15
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:15
 msgid "Low Battery Notification"
 msgstr "Upozornění na málo nabitou baterii"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:16
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:16
 msgid "Notify user when the battery is low."
 msgstr "Upozornit uživatele, když je nabití baterie nízké."
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:20
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:20
 msgid "Full Battery Notification"
 msgstr "Upozornění na nabitou baterii"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:21
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:21
 msgid "Notify user when the battery is full."
 msgstr "Upozornit uživatele, když je baterie nabitá."
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:25
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:25
 msgid "Beep for warnings"
 msgstr "Pípnout při varování"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:26
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:26
 msgid "Beep when displaying a warning."
 msgstr "Pípnout při zobrazování varování."
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:30
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:30
 msgid "Show the time/percent label"
 msgstr "Zobrazovat popisek s časem/procenty"
 
-#: battstat/org.mate.panel.applet.battstat.gschema.xml.in:31
+#: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:31
 msgid "0 for no label, 1 for percentage and 2 for time remaining."
 msgstr "0 značí bez popisku, 1 značí procenta a 2 značí zbývající čas."
 
@@ -486,7 +486,7 @@ msgstr "procent"
 msgid "Minutes Remaining"
 msgstr "zbývajících minut"
 
-#: battstat/sounds/mate-battstat_applet.soundlist.desktop.in:3
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:3
 msgid "Battery Status Utility"
 msgstr "Nástroj stavu baterie"
 
@@ -529,32 +529,32 @@ msgstr ""
 "klávesnice. Distribuováno pod podmínkami GNU General Public License."
 
 #: charpick/charpick.c:699 charpick/charpick.c:713
-#: charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.desktop.in.in:9
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:9
 #: charpick/properties.c:451
 msgid "Character Palette"
 msgstr "Paleta znaků"
 
 #: charpick/charpick.c:699
-#: charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.desktop.in.in:10
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Insert characters"
 msgstr "Vkládání znaků"
 
-#: charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.desktop.in.in:5
-#: charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.desktop.in.in:6
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:5
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Charpicker Applet Factory"
 msgstr "Generátor palety znaků"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: charpick/org.mate.applets.CharpickerApplet.mate-panel-applet.desktop.in.in:12
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:12
 msgid "accessories-character-map"
 msgstr "accessories-character-map"
 
-#: charpick/org.mate.panel.applet.charpick.gschema.xml.in:5
+#: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:5
 msgid "Characters shown on applet startup"
 msgstr "Znaky zobrazované při spuštění appletu"
 
-#: charpick/org.mate.panel.applet.charpick.gschema.xml.in:6
+#: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:6
 msgid ""
 "The string that the user had selected when the applet was last used. This "
 "string will be displayed when the user starts the applet."
@@ -562,12 +562,12 @@ msgstr ""
 "Řetězec, který uživatel vybral při posledním použití appletu. Tento řetězec "
 "bude zobrazen, když uživatel spustí applet."
 
-#: charpick/org.mate.panel.applet.charpick.gschema.xml.in:10
+#: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:10
 #: charpick/properties.c:378
 msgid "List of available palettes"
 msgstr "Seznam dostupných palet"
 
-#: charpick/org.mate.panel.applet.charpick.gschema.xml.in:11
+#: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:11
 msgid "List of strings containing the available palettes."
 msgstr "Seznam řetězců obsahujících dostupné palety."
 
@@ -644,7 +644,7 @@ msgstr ""
 "Copyright © 2015-2020 Vývojáři MATE"
 
 #: command/command.c:127
-#: command/org.mate.applets.CommandApplet.mate-panel-applet.desktop.in.in:10
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Shows the output of a command"
 msgstr "Zobrazí výstup příkazu"
 
@@ -665,8 +665,8 @@ msgid "Maximum width (chars):"
 msgstr "Maximální šířka (znaků):"
 
 #: command/command.c:231
-#: command/org.mate.panel.applet.command.gschema.xml.in:20
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:20
+#: command/org.cafe.panel.applet.command.gschema.xml.in:20
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:20
 msgid "Show icon"
 msgstr "Zobrazit ikonu"
 
@@ -674,46 +674,46 @@ msgstr "Zobrazit ikonu"
 msgid "Command Applet"
 msgstr "Příkazový Applet"
 
-#: command/org.mate.applets.CommandApplet.mate-panel-applet.desktop.in.in:5
-#: command/org.mate.applets.CommandApplet.mate-panel-applet.desktop.in.in:6
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:5
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Command Factory"
 msgstr "Příkaz Generátoru"
 
-#: command/org.mate.applets.CommandApplet.mate-panel-applet.desktop.in.in:9
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Command"
 msgstr "Příkaz"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: command/org.mate.applets.CommandApplet.mate-panel-applet.desktop.in.in:12
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:12
 msgid "utilities-terminal"
 msgstr "utilities-terminal"
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:5
+#: command/org.cafe.panel.applet.command.gschema.xml.in:5
 msgid "Command to execute"
 msgstr "Příkaz ke spuštění"
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:6
+#: command/org.cafe.panel.applet.command.gschema.xml.in:6
 msgid "Command/script to execute to get the output"
 msgstr "Příkaz/skript ke spuštění předat na výstup"
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:10
+#: command/org.cafe.panel.applet.command.gschema.xml.in:10
 msgid "Interval for the command"
 msgstr "Interval pro příkaz"
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:11
+#: command/org.cafe.panel.applet.command.gschema.xml.in:11
 msgid "Interval to execute the command (in seconds)"
 msgstr "Interval pro spuštění příkazu (v sekundách)"
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:15
+#: command/org.cafe.panel.applet.command.gschema.xml.in:15
 msgid "Width of output"
 msgstr "Šířka výstupu"
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:16
+#: command/org.cafe.panel.applet.command.gschema.xml.in:16
 msgid "Number of characters to display"
 msgstr "Počet znaků pro zobrazení"
 
-#: command/org.mate.panel.applet.command.gschema.xml.in:21
+#: command/org.cafe.panel.applet.command.gschema.xml.in:21
 msgid "If applet icon is shown or not"
 msgstr "Ukáže-li se ikona appletu, nebo ne"
 
@@ -749,39 +749,39 @@ msgstr "Zobrazovat _jednotky frekvence"
 msgid "Show CPU frequency as _percentage"
 msgstr "Zob_razovat frekvenci CPU jako procenta"
 
-#: cpufreq/org.mate.applets.CPUFreqApplet.mate-panel-applet.desktop.in.in:5
-#: cpufreq/org.mate.applets.CPUFreqApplet.mate-panel-applet.desktop.in.in:9
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:5
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:9
 #: cpufreq/src/cpufreq-applet.c:813 cpufreq/src/cpufreq-applet.c:868
 msgid "CPU Frequency Scaling Monitor"
 msgstr "Sledování změny frekvence CPU"
 
-#: cpufreq/org.mate.applets.CPUFreqApplet.mate-panel-applet.desktop.in.in:6
-#: cpufreq/org.mate.applets.CPUFreqApplet.mate-panel-applet.desktop.in.in:10
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:6
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor the CPU Frequency Scaling"
 msgstr "Sleduje změny frekvence CPU"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: cpufreq/org.mate.applets.CPUFreqApplet.mate-panel-applet.desktop.in.in:12
-msgid "mate-cpu-frequency-applet"
-msgstr "mate-cpu-frequency-applet"
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:12
+msgid "cafe-cpu-frequency-applet"
+msgstr "cafe-cpu-frequency-applet"
 
-#: cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in:6
+#: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:6
 msgid "CPU to Monitor"
 msgstr "CPU určené ke sledování"
 
-#: cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in:7
+#: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:7
 msgid ""
 "Set the CPU to monitor. In a single processor system you don't have to "
 "change it."
 msgstr ""
 "Nastavit CPU, kterou sledovat. V jednoprocesorovém systému není nutné měnit."
 
-#: cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in:11
+#: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:11
 msgid "Mode to show CPU usage"
 msgstr "Režim zobrazování využití CPU"
 
-#: cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in:12
+#: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:12
 msgid ""
 "A 0 value means to show the applet in graphic mode (pixmap only), 1 to show "
 "the applet in text mode (not to show the pixmap) and 2 to show the applet in"
@@ -791,11 +791,11 @@ msgstr ""
 "hodnota \"1\" zobrazovat applet v textovém režimu (nezobrazovat obrázek) a "
 "hodnota \"2\" zobrazovat applet v grafickém a textovém režimu."
 
-#: cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in:16
+#: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:16
 msgid "The type of text to display (if the text is enabled)."
 msgstr "Typ textu určený k zobrazení (pokud je text povolen)."
 
-#: cpufreq/org.mate.panel.applet.cpufreq.gschema.xml.in:17
+#: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:17
 msgid ""
 "A 0 value means to show CPU frequency, 1 to show frequency and units, and 2 "
 "to show percentage instead of frequency."
@@ -855,11 +855,11 @@ msgstr ""
 "Nebudete moci změnit frekvenci svého počítače. Váš počítač je možná špatně "
 "nastaven nebo nemá hardwarovou podporu změny frekvence CPU."
 
-#: cpufreq/src/cpufreq-selector/org.mate.cpufreqselector.policy.in:14
+#: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:14
 msgid "Change CPU Frequency scaling"
 msgstr "Změnit frekvenci CPU"
 
-#: cpufreq/src/cpufreq-selector/org.mate.cpufreqselector.policy.in:15
+#: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:15
 msgid "Privileges are required to change the CPU Frequency scaling."
 msgstr "Ke změně frekvence CPU jsou vyžadována oprávnění."
 
@@ -920,25 +920,25 @@ msgid "Applet for mounting and unmounting block volumes."
 msgstr "Applet připojování a odpojování blokových zařízení."
 
 #: drivemount/drivemount.c:185 drivemount/drivemount.c:225
-#: drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.desktop.in.in:9
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Disk Mounter"
 msgstr "Připojování disků"
 
-#: drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.desktop.in.in:5
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:5
 msgid "Drive Mount Applet Factory"
 msgstr "Generátor appletu připojování disků"
 
-#: drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.desktop.in.in:6
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for drive mount applet"
 msgstr "Generátor appletu připojování disků"
 
-#: drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.desktop.in.in:10
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Mount local disks and devices"
 msgstr "Připojování lokálních disků a zařízení"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: drivemount/org.mate.applets.DriveMountApplet.mate-panel-applet.desktop.in.in:12
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:12
 msgid "media-floppy"
 msgstr "media-floppy"
 
@@ -959,7 +959,7 @@ msgstr ""
 "Copyright © 2012-2020 Vývojáři MATE"
 
 #: geyes/geyes.c:389 geyes/geyes.c:419 geyes/geyes.c:421
-#: geyes/org.mate.applets.GeyesApplet.mate-panel-applet.desktop.in.in:9
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Eyes"
 msgstr "Oči"
 
@@ -967,23 +967,23 @@ msgstr "Oči"
 msgid "The eyes look in the direction of the mouse pointer"
 msgstr "Oči pokukují po kurzoru myši"
 
-#: geyes/org.mate.applets.GeyesApplet.mate-panel-applet.desktop.in.in:5
-#: geyes/org.mate.applets.GeyesApplet.mate-panel-applet.desktop.in.in:6
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:5
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Eyes Applet Factory"
 msgstr "Generátor appletu Oči"
 
-#: geyes/org.mate.applets.GeyesApplet.mate-panel-applet.desktop.in.in:10
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A set of eyeballs for your panel"
 msgstr "Pár očí pro váš panel"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: geyes/org.mate.applets.GeyesApplet.mate-panel-applet.desktop.in.in:12
-msgid "mate-eyes-applet"
-msgstr "mate-eyes-applet"
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:12
+msgid "cafe-eyes-applet"
+msgstr "cafe-eyes-applet"
 
-#: geyes/org.mate.panel.applet.geyes.gschema.xml.in:5
-#: geyes/org.mate.panel.applet.geyes.gschema.xml.in:6
+#: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:5
+#: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:6
 msgid "Directory in which the theme is located"
 msgstr "Adresář, ve kterém je motiv umístěn"
 
@@ -1007,11 +1007,11 @@ msgstr "Motivy"
 msgid "_Select a theme:"
 msgstr "_Vybrat motiv:"
 
-#: mateweather/mateweather-about.c:54
+#: cafeweather/cafeweather-about.c:54
 msgid "About Weather Report"
 msgstr "O appletu Zprávy o počasí"
 
-#: mateweather/mateweather-about.c:56
+#: cafeweather/cafeweather-about.c:56
 msgid ""
 "Copyright © 1999-2005 by S. Papadimitriou and others\n"
 "Copyright © 2012-2020 MATE developers"
@@ -1019,32 +1019,32 @@ msgstr ""
 "Copyright © 1999-2005 S. Papadimitriou a další\n"
 "Copyright © 2012-2020 Vývojáři MATE"
 
-#: mateweather/mateweather-about.c:58
+#: cafeweather/cafeweather-about.c:58
 msgid "A panel application for monitoring local weather conditions."
 msgstr "Aplikace na panelu ke sledování místního počasí."
 
-#: mateweather/mateweather-applet.c:108
+#: cafeweather/cafeweather-applet.c:108
 msgid "_Details"
 msgstr "Po_drobnosti"
 
-#: mateweather/mateweather-applet.c:111 mateweather/mateweather-dialog.c:183
+#: cafeweather/cafeweather-applet.c:111 cafeweather/cafeweather-dialog.c:183
 msgid "_Update"
 msgstr "_Aktualizovat"
 
-#: mateweather/mateweather-applet.c:345
-#: mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.desktop.in.in:9
+#: cafeweather/cafeweather-applet.c:345
+#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Weather Report"
 msgstr "Zprávy o počasí"
 
-#: mateweather/mateweather-applet.c:360 mateweather/mateweather-applet.c:364
+#: cafeweather/cafeweather-applet.c:360 cafeweather/cafeweather-applet.c:364
 msgid "MATE Weather"
 msgstr "Počasí MATE"
 
-#: mateweather/mateweather-applet.c:463
+#: cafeweather/cafeweather-applet.c:463
 msgid "Weather Forecast"
 msgstr "Předpověď počasí"
 
-#: mateweather/mateweather-applet.c:475
+#: cafeweather/cafeweather-applet.c:475
 #, c-format
 msgid ""
 "City: %s\n"
@@ -1055,286 +1055,286 @@ msgstr ""
 "Obloha: %s\n"
 "Teplota: %s"
 
-#: mateweather/mateweather-applet.c:524
+#: cafeweather/cafeweather-applet.c:524
 msgid "Updating..."
 msgstr "Aktualizace..."
 
-#: mateweather/mateweather-dialog.c:181
+#: cafeweather/cafeweather-dialog.c:181
 msgid "Details"
 msgstr "Podrobnosti"
 
-#: mateweather/mateweather-dialog.c:223
+#: cafeweather/cafeweather-dialog.c:223
 msgid "City:"
 msgstr "Město:"
 
-#: mateweather/mateweather-dialog.c:229
+#: cafeweather/cafeweather-dialog.c:229
 msgid "Last update:"
 msgstr "Poslední aktualizace:"
 
-#: mateweather/mateweather-dialog.c:235
+#: cafeweather/cafeweather-dialog.c:235
 msgid "Conditions:"
 msgstr "Podmínky:"
 
-#: mateweather/mateweather-dialog.c:241
+#: cafeweather/cafeweather-dialog.c:241
 msgid "Sky:"
 msgstr "Obloha:"
 
-#: mateweather/mateweather-dialog.c:247
+#: cafeweather/cafeweather-dialog.c:247
 msgid "Temperature:"
 msgstr "Teplota:"
 
-#: mateweather/mateweather-dialog.c:253
+#: cafeweather/cafeweather-dialog.c:253
 msgid "Feels like:"
 msgstr "Připadá jako:"
 
-#: mateweather/mateweather-dialog.c:259
+#: cafeweather/cafeweather-dialog.c:259
 msgid "Dew point:"
 msgstr "Rosný bod:"
 
-#: mateweather/mateweather-dialog.c:265
+#: cafeweather/cafeweather-dialog.c:265
 msgid "Relative humidity:"
 msgstr "Relativní vlhkost:"
 
-#: mateweather/mateweather-dialog.c:271
+#: cafeweather/cafeweather-dialog.c:271
 msgid "Wind:"
 msgstr "Vítr:"
 
-#: mateweather/mateweather-dialog.c:277
+#: cafeweather/cafeweather-dialog.c:277
 msgid "Pressure:"
 msgstr "Tlak:"
 
-#: mateweather/mateweather-dialog.c:283
+#: cafeweather/cafeweather-dialog.c:283
 msgid "Visibility:"
 msgstr "Viditelnost:"
 
-#: mateweather/mateweather-dialog.c:289
+#: cafeweather/cafeweather-dialog.c:289
 msgid "Sunrise:"
 msgstr "Východ Slunce:"
 
-#: mateweather/mateweather-dialog.c:295
+#: cafeweather/cafeweather-dialog.c:295
 msgid "Sunset:"
 msgstr "Západ Slunce:"
 
-#: mateweather/mateweather-dialog.c:403
+#: cafeweather/cafeweather-dialog.c:403
 msgid "Current Conditions"
 msgstr "Aktuální podmínky"
 
-#: mateweather/mateweather-dialog.c:420
+#: cafeweather/cafeweather-dialog.c:420
 msgid "Forecast Report"
 msgstr "Předpověď počasí"
 
-#: mateweather/mateweather-dialog.c:420
+#: cafeweather/cafeweather-dialog.c:420
 msgid "See the ForeCast Details"
 msgstr "Zobrazit detaily předpovědi"
 
-#: mateweather/mateweather-dialog.c:430
+#: cafeweather/cafeweather-dialog.c:430
 msgid "Forecast"
 msgstr "Předpověď"
 
-#: mateweather/mateweather-dialog.c:438
+#: cafeweather/cafeweather-dialog.c:438
 msgid "Radar Map"
 msgstr "Radarová mapa"
 
-#: mateweather/mateweather-dialog.c:471
+#: cafeweather/cafeweather-dialog.c:471
 msgid "_Visit Weather.com"
 msgstr "_Navštívit weather.com"
 
-#: mateweather/mateweather-dialog.c:472
+#: cafeweather/cafeweather-dialog.c:472
 msgid "Visit Weather.com"
 msgstr "Navštívit weather.com"
 
-#: mateweather/mateweather-dialog.c:472
+#: cafeweather/cafeweather-dialog.c:472
 msgid "Click to Enter Weather.com"
 msgstr "Kliknutím vstoupíte na weather.com"
 
-#: mateweather/mateweather-dialog.c:603
+#: cafeweather/cafeweather-dialog.c:603
 msgid "Forecast not currently available for this location."
 msgstr "K této poloze předpověď momentálně není k dispozici."
 
-#: mateweather/mateweather-pref.c:158
+#: cafeweather/cafeweather-pref.c:158
 msgid "Location view"
 msgstr "Zobrazení polohy"
 
-#: mateweather/mateweather-pref.c:158
+#: cafeweather/cafeweather-pref.c:158
 msgid "Select Location from the list"
 msgstr "Vyberte polohu ze seznamu"
 
-#: mateweather/mateweather-pref.c:159
+#: cafeweather/cafeweather-pref.c:159
 msgid "Update spin button"
 msgstr "Aktualizovat tlačítko se šipkami"
 
-#: mateweather/mateweather-pref.c:159
+#: cafeweather/cafeweather-pref.c:159
 msgid "Spinbutton for updating"
 msgstr "Tlačítko se šipkami k aktualizaci"
 
-#: mateweather/mateweather-pref.c:160
+#: cafeweather/cafeweather-pref.c:160
 msgid "Address Entry"
 msgstr "Zadání adresy"
 
-#: mateweather/mateweather-pref.c:160
+#: cafeweather/cafeweather-pref.c:160
 msgid "Enter the URL"
 msgstr "Zadejte prosím URL"
 
-#: mateweather/mateweather-pref.c:283
+#: cafeweather/cafeweather-pref.c:283
 msgid ""
 "Failed to load the Locations XML database.  Please report this as a bug."
 msgstr "Nelze načíst databázi XML s polohami. Ohlaste to prosím jako chybu."
 
-#: mateweather/mateweather-pref.c:807
+#: cafeweather/cafeweather-pref.c:807
 msgid "Weather Preferences"
 msgstr "Předvolby informací o počasí"
 
-#: mateweather/mateweather-pref.c:831 mateweather/mateweather-pref.c:1034
+#: cafeweather/cafeweather-pref.c:831 cafeweather/cafeweather-pref.c:1034
 msgid "_Automatically update every:"
 msgstr "Automaticky aktualizovat _každých:"
 
-#: mateweather/mateweather-pref.c:847
+#: cafeweather/cafeweather-pref.c:847
 msgid "_Temperature unit:"
 msgstr "Jednotka _teploty:"
 
-#: mateweather/mateweather-pref.c:857
+#: cafeweather/cafeweather-pref.c:857
 msgid "Kelvin"
 msgstr "stupně Kelvina"
 
-#: mateweather/mateweather-pref.c:859
+#: cafeweather/cafeweather-pref.c:859
 msgid "Celsius"
 msgstr "stupně Celsia"
 
-#: mateweather/mateweather-pref.c:860
+#: cafeweather/cafeweather-pref.c:860
 msgid "Fahrenheit"
 msgstr "stupně Fahrenheita"
 
-#: mateweather/mateweather-pref.c:869
+#: cafeweather/cafeweather-pref.c:869
 msgid "_Wind speed unit:"
 msgstr "Jednotka _rychlosti větru:"
 
-#: mateweather/mateweather-pref.c:880
+#: cafeweather/cafeweather-pref.c:880
 msgid "m/s"
 msgstr "m/s"
 
-#: mateweather/mateweather-pref.c:882
+#: cafeweather/cafeweather-pref.c:882
 msgid "km/h"
 msgstr "km/h"
 
-#: mateweather/mateweather-pref.c:884
+#: cafeweather/cafeweather-pref.c:884
 msgid "mph"
 msgstr "míle za hodinu"
 
-#: mateweather/mateweather-pref.c:886
+#: cafeweather/cafeweather-pref.c:886
 msgid "knots"
 msgstr "uzly"
 
-#: mateweather/mateweather-pref.c:887
+#: cafeweather/cafeweather-pref.c:887
 msgid "Beaufort scale"
 msgstr "Beaufortova stupnice"
 
-#: mateweather/mateweather-pref.c:896
+#: cafeweather/cafeweather-pref.c:896
 msgid "_Pressure unit:"
 msgstr "Jednotka t_laku:"
 
-#: mateweather/mateweather-pref.c:907
+#: cafeweather/cafeweather-pref.c:907
 msgid "kPa"
 msgstr "kPa"
 
-#: mateweather/mateweather-pref.c:909
+#: cafeweather/cafeweather-pref.c:909
 msgid "hPa"
 msgstr "hPa"
 
-#: mateweather/mateweather-pref.c:911
+#: cafeweather/cafeweather-pref.c:911
 msgid "mb"
 msgstr "mb"
 
-#: mateweather/mateweather-pref.c:913
+#: cafeweather/cafeweather-pref.c:913
 msgid "mmHg"
 msgstr "mmHg"
 
-#: mateweather/mateweather-pref.c:915
+#: cafeweather/cafeweather-pref.c:915
 msgid "inHg"
 msgstr "inHg"
 
-#: mateweather/mateweather-pref.c:917
+#: cafeweather/cafeweather-pref.c:917
 msgid "atm"
 msgstr "atm"
 
-#: mateweather/mateweather-pref.c:926
+#: cafeweather/cafeweather-pref.c:926
 msgid "_Visibility unit:"
 msgstr "Jednotka _viditelnosti:"
 
-#: mateweather/mateweather-pref.c:937
+#: cafeweather/cafeweather-pref.c:937
 msgid "meters"
 msgstr "metry"
 
-#: mateweather/mateweather-pref.c:939
+#: cafeweather/cafeweather-pref.c:939
 msgid "km"
 msgstr "km"
 
-#: mateweather/mateweather-pref.c:941
+#: cafeweather/cafeweather-pref.c:941
 msgid "miles"
 msgstr "míle"
 
-#: mateweather/mateweather-pref.c:971
+#: cafeweather/cafeweather-pref.c:971
 msgid "Enable _radar map"
 msgstr "Povolit _radarovou mapu"
 
-#: mateweather/mateweather-pref.c:987
+#: cafeweather/cafeweather-pref.c:987
 msgid "Use _custom address for radar map"
 msgstr "Používat _vlastní adresu pro radarovou mapu"
 
-#: mateweather/mateweather-pref.c:1005
+#: cafeweather/cafeweather-pref.c:1005
 msgid "A_ddress:"
 msgstr "_Adresa:"
 
-#: mateweather/mateweather-pref.c:1020
+#: cafeweather/cafeweather-pref.c:1020
 msgid "Show _notifications"
 msgstr "Ukázat oz_námení"
 
-#: mateweather/mateweather-pref.c:1030
+#: cafeweather/cafeweather-pref.c:1030
 msgid "Update"
 msgstr "Aktualizace"
 
-#: mateweather/mateweather-pref.c:1047
+#: cafeweather/cafeweather-pref.c:1047
 msgid "minutes"
 msgstr "minut"
 
-#: mateweather/mateweather-pref.c:1065
+#: cafeweather/cafeweather-pref.c:1065
 msgid "Display"
 msgstr "Zobrazit"
 
-#: mateweather/mateweather-pref.c:1084
+#: cafeweather/cafeweather-pref.c:1084
 msgid "General"
 msgstr "Všeobecné"
 
-#: mateweather/mateweather-pref.c:1095
+#: cafeweather/cafeweather-pref.c:1095
 msgid "_Select a location:"
 msgstr "Vyberte poloh_u:"
 
-#: mateweather/mateweather-pref.c:1117
+#: cafeweather/cafeweather-pref.c:1117
 msgid "_Find:"
 msgstr "_Hledat:"
 
-#: mateweather/mateweather-pref.c:1123
+#: cafeweather/cafeweather-pref.c:1123
 msgid "Find _Next"
 msgstr "Hledat _následující"
 
-#: mateweather/mateweather-pref.c:1144
+#: cafeweather/cafeweather-pref.c:1144
 msgid "Location"
 msgstr "Poloha"
 
-#: mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.desktop.in.in:5
+#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:5
 msgid "Mateweather Applet Factory"
 msgstr "Generátor appletu Mateweather"
 
-#: mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.desktop.in.in:6
+#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for creating the weather applet."
 msgstr "Generátor appletu počasí."
 
-#: mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.desktop.in.in:10
+#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "Sleduje aktuální počasí a předpovědi"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: mateweather/org.mate.applets.MateWeatherApplet.mate-panel-applet.desktop.in.in:12
+#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:12
 msgid "weather-storm"
 msgstr "weather-storm"
 
@@ -1464,7 +1464,7 @@ msgid "_Open System Monitor"
 msgstr "Otevřít _sledování systému"
 
 #: multiload/main.c:517
-#: multiload/org.mate.applets.MultiLoadApplet.mate-panel-applet.desktop.in.in:9
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:9
 msgid "System Monitor"
 msgstr "Sledování systému"
 
@@ -1473,57 +1473,57 @@ msgstr "Sledování systému"
 msgid "%s/s"
 msgstr "%s/s"
 
-#: multiload/org.mate.applets.MultiLoadApplet.mate-panel-applet.desktop.in.in:5
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:5
 msgid "MultiLoad Applet Factory"
 msgstr "Generátor appletu Multiload"
 
-#: multiload/org.mate.applets.MultiLoadApplet.mate-panel-applet.desktop.in.in:6
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for creating the load applet."
 msgstr "Generátor pro vytváření appletů sledování zátěže"
 
-#: multiload/org.mate.applets.MultiLoadApplet.mate-panel-applet.desktop.in.in:10
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A system load indicator"
 msgstr "Indikátor zatížení systému"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: multiload/org.mate.applets.MultiLoadApplet.mate-panel-applet.desktop.in.in:12
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:12
 msgid "utilities-system-monitor"
 msgstr "utilities-system-monitor"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:5
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:5
 msgid "Enable CPU load graph"
 msgstr "Povolit graf zátěže CPU"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:9
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:9
 msgid "Enable memory load graph"
 msgstr "Povolit graf využití paměti"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:13
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:13
 msgid "Enable network load graph"
 msgstr "Povolit graf zatížení sítě"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:17
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:17
 msgid "Enable swap load graph"
 msgstr "Povolit graf zatížení odkládacího prostoru"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:21
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:21
 msgid "Enable load average graph"
 msgstr "Povolit graf průměrné zátěže"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:25
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:25
 msgid "Enable disk load graph"
 msgstr "Povolit graf zatížení disku"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:29
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:29
 msgid "Applet refresh rate in milliseconds"
 msgstr "Čas mezi obnovou appletů v milisekundách"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:33
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:33
 msgid "Graph size"
 msgstr "Velikost grafu"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:34
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:34
 msgid ""
 "For horizontal panels, the width of the graphs in pixels. For vertical "
 "panels, this is the height of the graphs."
@@ -1531,116 +1531,116 @@ msgstr ""
 "Šířka grafů v pixelech u horizontálních panelů, výška grafů u vertikálních "
 "panelů."
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:38
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:38
 msgid "Graph color for user-related CPU activity"
 msgstr "Barva grafu aktivity CPU související s uživatelem"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:42
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:42
 msgid "Graph color for system-related CPU activity"
 msgstr "Barva grafu aktivity CPU související se systémem"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:46
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:46
 msgid "Graph color for nice-related CPU activity"
 msgstr "Barva grafu aktivity CPU související s nice"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:50
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:50
 msgid "Graph color for iowait related CPU activity"
 msgstr "Barva grafu aktivity CPU související s iowait"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:54
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:54
 msgid "CPU graph background color"
 msgstr "Barva pozadí grafu CPU"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:58
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:58
 msgid "Graph color for user-related memory usage"
 msgstr "Barva grafu použití paměti související s uživatelem"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:62
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:62
 msgid "Graph color for shared memory"
 msgstr "Barva grafu sdílené paměti"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:66
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:66
 msgid "Graph color for buffer memory"
 msgstr "Barva grafu vyrovnávací paměti"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:70
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:70
 msgid "Graph color for cached memory"
 msgstr "Barva grafu vyrovnávací paměti"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:74
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:74
 msgid "Memory graph background color"
 msgstr "Barva pozadí grafu paměti"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:78
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:78
 msgid "Graph color for input network activity"
 msgstr "Barva grafu vstupní aktivity sítě"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:82
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:82
 msgid "Graph color for output network activity"
 msgstr "Barva grafu výstupní aktivity sítě"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:86
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:86
 msgid "Graph color for loopback network usage"
 msgstr "Barva grafu využití síťové zpětné smyčky (loopback)"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:90
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:90
 msgid "Network graph background color"
 msgstr "Barva pozadí grafu sítě"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:94
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:130
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:94
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:130
 msgid "Grid line color"
 msgstr "Barva čar mřížky"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:98
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:98
 msgid "Indicator color"
 msgstr "Barva ukazatele"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:102
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:102
 msgid "Network threshold 1 in bytes"
 msgstr "Síťový práh 1 v bajtech"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:106
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:106
 msgid "Network threshold 2 in bytes"
 msgstr "Síťový práh 2 v bajtech"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:110
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:110
 msgid "Network threshold 3 in bytes"
 msgstr "Síťový práh 3 v bajtech"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:114
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:114
 msgid "Graph color for user-related swap usage"
 msgstr "Barva grafu použití odkládacího prostoru související s uživatelem"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:118
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:118
 msgid "Swap graph background color"
 msgstr "Barva pozadí grafu odkládacího prostoru"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:122
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:122
 msgid "Graph color for load average"
 msgstr "Barva grafu průměrné zátěže"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:126
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:126
 msgid "Load graph background color"
 msgstr "Barva pozadí grafu zátěže CPU"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:134
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:134
 msgid "Graph color for disk read"
 msgstr "Barva grafu čtení z disku"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:138
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:138
 msgid "Graph color for disk write"
 msgstr "Barva grafu zápisu na disk"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:142
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:142
 msgid "Background color for disk load graph"
 msgstr "Barva pozadí grafu zatížení disku"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:146
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:146
 msgid "Uses /proc/diskstats to determine NVMe disk load"
 msgstr "Použít /proc/diskstats ke zjištění zátěže disku NVMe"
 
-#: multiload/org.mate.panel.applet.multiload.gschema.xml.in:150
+#: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:150
 msgid "The desktop description file to execute as the system monitor"
 msgstr ""
 "Soubor popisu pracovní plochy určený ke spuštění jako sledování systému"
@@ -1819,41 +1819,41 @@ msgstr "Práh 3 "
 msgid "System Monitor Preferences"
 msgstr "Předvolby sledování systému"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:5
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:5
 msgid "Device to monitor"
 msgstr "Zařízení ke sledování"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:6
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:6
 msgid "The name of the device to monitor"
 msgstr "Název zařízení určeného ke sledování"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:10
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:10
 msgid "Show sum speed"
 msgstr "Zobrazit součet rychlosti"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:11
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:11
 msgid "If true, show sum of inbound/outbound speed instead of separated ones."
 msgstr ""
 "Pokud je to pravda, zobrazit součet rychlostí příchozí/odchozí místo každého"
 " zvlášť."
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:15
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:15
 msgid "Show bits"
 msgstr "Zobrazit bity"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:16
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:16
 msgid "If true, show speed in bits instead of bytes."
 msgstr "Pokud je to pravda, zobrazí rychlost v bitech namísto v bajtech."
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:21
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:21
 msgid "If true, show main icon."
 msgstr "Pokud je to správně, zobraz hlavní ikonu."
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:25
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:25
 msgid "Short unit legend"
 msgstr "Krátká legenda pro jednotku"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:26
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:26
 msgid ""
 "If true, shorten unit legend to one letter: lowercase for bits / uppercase "
 "for Bytes."
@@ -1861,81 +1861,81 @@ msgstr ""
 "Pokud je to pravda, zkraťte legendu jednotky na jedno písmeno: malá písmena "
 "pro bity / velká písmena pro bajty."
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:30
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:30
 msgid "Change icon"
 msgstr "Změnit ikonu"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:31
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:31
 msgid "If true, change the icon due to selected device."
 msgstr "Pokud je to pravda, změňte ikonu podle vybraného zařízení."
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:35
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:35
 msgid "Auto change device"
 msgstr "Automatická změna zařízení"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:36
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:36
 msgid "If true, change automatically the selected device."
 msgstr "Pokud je to pravda, změňte automaticky vybrané zařízení."
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:40
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:40
 msgid "In color"
 msgstr "V barvě"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:41
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:41
 msgid "The color of the graph of the inbound traffic"
 msgstr "Barva grafu příchozího datového toku"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:45
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:45
 msgid "Out color"
 msgstr "Mimo barvu"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:46
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:46
 msgid "The color of the graph of the outbound traffic"
 msgstr "Barva grafu odchozího datového toku"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:50
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:50
 msgid "Up command"
 msgstr "Příkaz nahoru"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:51
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:51
 msgid "Command to execute to activate the device"
 msgstr "Příkaz k provedení spuštění zařízení"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:55
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:55
 msgid "Down command"
 msgstr "Příkaz dolů"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:56
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:56
 msgid "Command to execute to shut down the device"
 msgstr "Příkaz k provedení vypnutí zařízení"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:60
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:60
 msgid "Show signal quality icon"
 msgstr "Zobrazit ikonu kvality signálu"
 
-#: netspeed/data/org.mate.panel.applet.netspeed.gschema.xml.in:61
+#: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:61
 msgid "If true, show signal quality icon for wireless devices."
 msgstr ""
 "Pokud je to pravda, ukáže ikonu kvality signálu pro bezdrátová zařízení."
 
-#: netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.desktop.in.in:5
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:5
 msgid "Netspeed Applet Factory"
 msgstr "Generátor pro aplet Netspeed"
 
-#: netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.desktop.in.in:6
-#: netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.desktop.in.in:10
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:6
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Netspeed Applet"
 msgstr "Aplet Netspeed"
 
-#: netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.desktop.in.in:9
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Network Monitor"
 msgstr "Monitor sítě"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: netspeed/data/org.mate.applets.NetspeedApplet.mate-panel-applet.desktop.in.in:12
-msgid "mate-netspeed-applet"
-msgstr "mate-netspeed-applet"
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:12
+msgid "cafe-netspeed-applet"
+msgstr "cafe-netspeed-applet"
 
 #: netspeed/src/netspeed.c:427
 msgid "b"
@@ -2203,25 +2203,25 @@ msgstr "neznámý"
 msgid "MATE Netspeed"
 msgstr "Rychlost sítě pro MATE"
 
-#: stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.desktop.in.in:5
-#: stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.desktop.in.in:6
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:5
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Sticky Notes Applet Factory"
 msgstr "Generátor appletu Lepicí poznámky"
 
-#: stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.desktop.in.in:9
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:9
 #: stickynotes/stickynotes_applet.c:170 stickynotes/stickynotes_applet.c:412
 msgid "Sticky Notes"
 msgstr "Lepicí poznámky"
 
-#: stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.desktop.in.in:10
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Create, view, and manage sticky notes on the desktop"
 msgstr "Vytváří, zobrazuje a spravuje lepicí poznámky na pracovní ploše"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: stickynotes/org.mate.applets.StickyNotesApplet.mate-panel-applet.desktop.in.in:12
-msgid "mate-sticky-notes-applet"
-msgstr "mate-sticky-notes-applet"
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:12
+msgid "cafe-sticky-notes-applet"
+msgstr "cafe-sticky-notes-applet"
 
 #: stickynotes/stickynotes.c:577
 msgid "This note is locked."
@@ -2417,27 +2417,27 @@ msgstr "Zadejte titulek poznámky"
 msgid "_Title:"
 msgstr "_Titulek:"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:5
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:5
 msgid "Default width for new notes"
 msgstr "Výchozí šířka nových poznámek"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:6
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:6
 msgid "Default width for new sticky notes in pixels."
 msgstr "Výchozí šířka nových poznámek v pixelech."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:10
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:10
 msgid "Default height for new notes"
 msgstr "Výchozí výška nových poznámek"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:11
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:11
 msgid "Default height for new sticky notes in pixels."
 msgstr "Výchozí výška nových poznámek v pixelech."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:15
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:15
 msgid "Default color for new notes"
 msgstr "Výchozí barva nových poznámek"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:16
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:16
 msgid ""
 "Default color for new sticky notes. This should be in html hex "
 "specification, for example \"#30FF50\"."
@@ -2445,11 +2445,11 @@ msgstr ""
 "Výchozí barva nové lepicí poznámky. Mělo by se jednat o šestnáctkovou "
 "specifikaci HTML, například \"#30FF50\"."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:20
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:20
 msgid "Default color for font"
 msgstr "Výchozí barva písma"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:21
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:21
 msgid ""
 "Default font color for new sticky notes. This should be in html hex "
 "specification, for example \"#000000\"."
@@ -2457,11 +2457,11 @@ msgstr ""
 "Výchozí barva písma nové lepicí poznámky. Mělo by se jednat o šestnáctkovou "
 "specifikaci HTML, například \"#000000\"."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:25
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:25
 msgid "Default font for new notes"
 msgstr "Výchozí písmo nových poznámek"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:26
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:26
 msgid ""
 "Default font for new sticky notes. This should be a Pango Font Name, for "
 "example \"Sans Italic 10\"."
@@ -2469,11 +2469,11 @@ msgstr ""
 "Výchozí písmo nových lepicích poznámek. Mělo by se jednat o název písma "
 "systému Pango, například \"Sans Italic 10\"."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:30
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:30
 msgid "Sticky notes' workspace stickyness"
 msgstr "Přilepení poznámek na pracovní plochu"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:31
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:31
 msgid ""
 "Specifies whether the sticky notes are visible on ALL workspaces on the "
 "desktop, or not."
@@ -2481,19 +2481,19 @@ msgstr ""
 "Určuje, jestli jsou lepicí poznámky viditelné na VŠECH pracovních plochách "
 "nebo ne."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:35
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:35
 msgid "Sticky notes' locked state"
 msgstr "Stav zamčení lepicích poznámek"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:36
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:36
 msgid "Specifies whether the sticky notes are locked (non-editable) or not."
 msgstr "Určuje, jestli jsou lepicí poznámky zamčené (needitovatelné) nebo ne."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:40
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:40
 msgid "Date format of note's title"
 msgstr "Datum formátu titulku poznámky"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:41
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:41
 msgid ""
 "By default, sticky notes are given the current date as the title when they "
 "are created. This format is used; anything that can be parsed by strftime() "
@@ -2503,11 +2503,11 @@ msgstr ""
 "aktuální datum. Používá se tento formát; platné je cokoli, co může být "
 "zpracováno pomocí strftime()."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:45
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:45
 msgid "Whether to use the default system color"
 msgstr "Jestli se má použít výchozí barva motivu"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:46
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:46
 msgid ""
 "If this option is disabled, a custom color can be used as the default color "
 "for all sticky notes."
@@ -2515,11 +2515,11 @@ msgstr ""
 "Pokud je tato volba vypnuta, lze použít vlastní barvu jako výchozí barvu "
 "všech lepicích poznámek."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:50
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:50
 msgid "Whether to use the default system font"
 msgstr "Jestli se má použít výchozí písmo motivu"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:51
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:51
 msgid ""
 "If this option is disabled, a custom font can be used as the default font "
 "for all sticky notes."
@@ -2527,11 +2527,11 @@ msgstr ""
 "Pokud je tato volba vypnuta, lze použít vlastní písmo jako výchozí písmo "
 "všech lepicích poznámek."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:55
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:55
 msgid "Whether to force the default color and font on all notes"
 msgstr "Jestli se má vždy použít výchozí barva a písmo na všechny poznámky"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:56
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:56
 msgid ""
 "If this option is enabled, the custom colors and fonts that have been "
 "assigned to individual notes will be ignored."
@@ -2539,11 +2539,11 @@ msgstr ""
 "Pokud je tato volba zapnuta, vlastní barvy a písma, které byly přiřazeny "
 "jednotlivým poznámkám, budou ignorovány."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:60
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:60
 msgid "Whether to hide all notes when the desktop is selected"
 msgstr "Jestli se při výběru pracovní plochy mají skrývat všechny poznámky"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:61
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:61
 msgid ""
 "If this option is enabled, selecting the desktop in any way will "
 "automatically hide all the open notes."
@@ -2551,11 +2551,11 @@ msgstr ""
 "Pokud je tato volba zapnuta, vybrání pracovní plochy libovolným způsobem "
 "skryje automaticky všechny otevřené poznámky."
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:65
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:65
 msgid "Whether to ask for confirmation when deleting a note"
 msgstr "Jestli se má potvrzovat smazání poznámky"
 
-#: stickynotes/org.mate.stickynotes.gschema.xml.in:66
+#: stickynotes/org.cafe.stickynotes.gschema.xml.in:66
 msgid "Empty notes are always deleted without confirmation."
 msgstr "Prázdné poznámky lze smazat bez potvrzení."
 
@@ -2602,39 +2602,39 @@ msgstr ""
 msgid "Sticky Notes for the MATE Desktop Environment"
 msgstr "Lepicí poznámky pro prostředí MATE"
 
-#: timerapplet/org.mate.applets.TimerApplet.mate-panel-applet.desktop.in.in:5
-#: timerapplet/org.mate.applets.TimerApplet.mate-panel-applet.desktop.in.in:6
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:5
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Timer Factory"
 msgstr "Časovač Generátoru"
 
-#: timerapplet/org.mate.applets.TimerApplet.mate-panel-applet.desktop.in.in:9
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Timer"
 msgstr "Časovač"
 
-#: timerapplet/org.mate.applets.TimerApplet.mate-panel-applet.desktop.in.in:10
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:10
 #: timerapplet/timerapplet.c:277
 msgid "Start a timer and receive a notification when it is finished"
 msgstr "Zahájit časovač a zobrazit upozornění, až skončí"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: timerapplet/org.mate.applets.TimerApplet.mate-panel-applet.desktop.in.in:12
-msgid "mate-panel-clock"
-msgstr "mate-panel-clock"
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:12
+msgid "cafe-panel-clock"
+msgstr "cafe-panel-clock"
 
-#: timerapplet/org.mate.panel.applet.timer.gschema.xml.in:5
+#: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:5
 msgid "Name of timer"
 msgstr "Název časovače"
 
-#: timerapplet/org.mate.panel.applet.timer.gschema.xml.in:9
+#: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:9
 msgid "Duration of timer in seconds"
 msgstr "Doba trvání časovače v sekundách"
 
-#: timerapplet/org.mate.panel.applet.timer.gschema.xml.in:13
+#: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:13
 msgid "Show notification popup when timer finish"
 msgstr "Po doběhu časovače ukázat oznámení ve vyskakovacím okně"
 
-#: timerapplet/org.mate.panel.applet.timer.gschema.xml.in:17
+#: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:17
 msgid "Show dialog window when timer finish"
 msgstr "Po doběhu časovače ukázat dialogové okno"
 
@@ -2702,22 +2702,22 @@ msgstr "Zobrazit dialog"
 msgid "Timer Applet"
 msgstr "Applet časovače"
 
-#: trashapplet/org.mate.applets.TrashApplet.mate-panel-applet.desktop.in.in:5
-#: trashapplet/org.mate.applets.TrashApplet.mate-panel-applet.desktop.in.in:6
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:5
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Trash Applet Factory"
 msgstr "Generátor appletu koše"
 
-#: trashapplet/org.mate.applets.TrashApplet.mate-panel-applet.desktop.in.in:9
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Trash"
 msgstr "Koš"
 
-#: trashapplet/org.mate.applets.TrashApplet.mate-panel-applet.desktop.in.in:10
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Go to Trash"
 msgstr "Přejít do koše"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: trashapplet/org.mate.applets.TrashApplet.mate-panel-applet.desktop.in.in:12
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:12
 msgid "user-trash-full"
 msgstr "user-trash-full"
 

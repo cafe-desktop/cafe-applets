@@ -30,8 +30,8 @@
 #include <gio/gio.h>
 #include <gtk/gtk.h>
 
-#include <mate-panel-applet.h>
-#include <mate-panel-applet-gsettings.h>
+#include <cafe-panel-applet.h>
+#include <cafe-panel-applet-gsettings.h>
 #include "ma-command.h"
 
 /* Applet constants */
@@ -39,7 +39,7 @@
 #define ERROR_OUTPUT   "#"
 
 /* GSettings constants */
-#define COMMAND_SCHEMA "org.mate.panel.applet.command"
+#define COMMAND_SCHEMA "org.cafe.panel.applet.command"
 #define COMMAND_KEY    "command"
 #define INTERVAL_KEY   "interval"
 #define SHOW_ICON_KEY  "show-icon"
@@ -443,12 +443,12 @@ command_applet_fill (MatePanelApplet* applet)
     g_set_application_name (_("Command Applet"));
     gtk_window_set_default_icon_name (APPLET_ICON);
 
-    mate_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
-    mate_panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
+    cafe_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+    cafe_panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
 
     command_applet = g_malloc0(sizeof(CommandApplet));
     command_applet->applet = applet;
-    command_applet->settings = mate_panel_applet_settings_new (applet, COMMAND_SCHEMA);
+    command_applet->settings = cafe_panel_applet_settings_new (applet, COMMAND_SCHEMA);
 
     command_applet->interval = g_settings_get_int (command_applet->settings, INTERVAL_KEY);
     command_applet->cmdline = g_settings_get_string (command_applet->settings, COMMAND_KEY);
@@ -502,14 +502,14 @@ command_applet_fill (MatePanelApplet* applet)
     gtk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
     gtk_action_group_add_actions (action_group, applet_menu_actions,
                                   G_N_ELEMENTS (applet_menu_actions), command_applet);
-    mate_panel_applet_setup_menu (command_applet->applet, ui, action_group);
+    cafe_panel_applet_setup_menu (command_applet->applet, ui, action_group);
 
     /* first command execution */
     command_execute (command_applet);
     return TRUE;
 }
 
-/* this function, called by mate-panel, will create the applet */
+/* this function, called by cafe-panel, will create the applet */
 static gboolean
 command_factory (MatePanelApplet* applet, const char* iid, gpointer data)
 {
@@ -521,7 +521,7 @@ command_factory (MatePanelApplet* applet, const char* iid, gpointer data)
     return retval;
 }
 
-/* needed by mate-panel applet library */
+/* needed by cafe-panel applet library */
 MATE_PANEL_APPLET_OUT_PROCESS_FACTORY("CommandAppletFactory",
                                       PANEL_TYPE_APPLET,
                                       "Command applet",

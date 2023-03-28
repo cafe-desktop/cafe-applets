@@ -27,8 +27,8 @@
 #include <gdk/gdkx.h>
 #include <gdk/gdkkeysyms.h>
 #include <gio/gio.h>
-#include <mate-panel-applet.h>
-#include <mate-panel-applet-gsettings.h>
+#include <cafe-panel-applet.h>
+#include <cafe-panel-applet-gsettings.h>
 #include <glib/gi18n.h>
 #include <stdlib.h>
 #include <string.h>
@@ -104,11 +104,11 @@ static gboolean cpufreq_applet_factory           (CPUFreqApplet      *applet,
                                                   gpointer            gdata);
 
 static const gchar* const cpufreq_icons[] = {
-	MATE_PIXMAPSDIR "/mate-cpufreq-applet/cpufreq-25.png",
-	MATE_PIXMAPSDIR "/mate-cpufreq-applet/cpufreq-50.png",
-	MATE_PIXMAPSDIR "/mate-cpufreq-applet/cpufreq-75.png",
-	MATE_PIXMAPSDIR "/mate-cpufreq-applet/cpufreq-100.png",
-	MATE_PIXMAPSDIR "/mate-cpufreq-applet/cpufreq-na.png",
+	MATE_PIXMAPSDIR "/cafe-cpufreq-applet/cpufreq-25.png",
+	MATE_PIXMAPSDIR "/cafe-cpufreq-applet/cpufreq-50.png",
+	MATE_PIXMAPSDIR "/cafe-cpufreq-applet/cpufreq-75.png",
+	MATE_PIXMAPSDIR "/cafe-cpufreq-applet/cpufreq-100.png",
+	MATE_PIXMAPSDIR "/cafe-cpufreq-applet/cpufreq-na.png",
 	NULL
 };
 
@@ -182,11 +182,11 @@ cpufreq_applet_init (CPUFreqApplet *applet)
 
 	applet->need_refresh = TRUE;
 
-        mate_panel_applet_set_flags (MATE_PANEL_APPLET (applet), MATE_PANEL_APPLET_EXPAND_MINOR);
-	mate_panel_applet_set_background_widget (MATE_PANEL_APPLET (applet), GTK_WIDGET (applet));
+        cafe_panel_applet_set_flags (MATE_PANEL_APPLET (applet), MATE_PANEL_APPLET_EXPAND_MINOR);
+	cafe_panel_applet_set_background_widget (MATE_PANEL_APPLET (applet), GTK_WIDGET (applet));
 
-        applet->size = mate_panel_applet_get_size (MATE_PANEL_APPLET (applet));
-        applet->orient = mate_panel_applet_get_orient (MATE_PANEL_APPLET (applet));
+        applet->size = cafe_panel_applet_get_size (MATE_PANEL_APPLET (applet));
+        applet->orient = cafe_panel_applet_get_orient (MATE_PANEL_APPLET (applet));
 
 	switch (applet->orient) {
 	case MATE_PANEL_APPLET_ORIENT_LEFT:
@@ -328,7 +328,7 @@ cpufreq_applet_menu_popup (CPUFreqApplet *applet,
         GtkStyleContext *context;
         context = gtk_widget_get_style_context (GTK_WIDGET(toplevel));
         gtk_style_context_add_class(context,"gnome-panel-menu-bar");
-        gtk_style_context_add_class(context,"mate-panel-menu-bar");
+        gtk_style_context_add_class(context,"cafe-panel-menu-bar");
 
         gtk_menu_popup_at_widget (GTK_MENU (menu),
                                   GTK_WIDGET (applet),
@@ -441,7 +441,7 @@ cpufreq_applet_help_cb (GtkAction     *action,
         GError *error = NULL;
 
 	gtk_show_uri_on_window (NULL,
-	                        "help:mate-cpufreq-applet",
+	                        "help:cafe-cpufreq-applet",
 	                        gtk_get_current_event_time (),
 	                        &error);
 
@@ -488,7 +488,7 @@ cpufreq_applet_about_cb (GtkAction     *action,
                                "documenters",   documenters,
                                "artists",       artists,
                                "translator-credits",    _("translator-credits"),
-			       "logo-icon-name",        "mate-cpu-frequency-applet",
+			       "logo-icon-name",        "cafe-cpu-frequency-applet",
                                NULL);
 }
 
@@ -812,13 +812,13 @@ cpufreq_applet_setup (CPUFreqApplet *applet)
 
 	g_set_application_name  (_("CPU Frequency Scaling Monitor"));
 
-	gtk_window_set_default_icon_name ("mate-cpu-frequency-applet");
+	gtk_window_set_default_icon_name ("cafe-cpu-frequency-applet");
 
         /* Preferences */
         if (applet->prefs)
                 g_object_unref (applet->prefs);
 
-        settings = mate_panel_applet_settings_new (MATE_PANEL_APPLET (applet), "org.mate.panel.applet.cpufreq");
+        settings = cafe_panel_applet_settings_new (MATE_PANEL_APPLET (applet), "org.cafe.panel.applet.cpufreq");
         applet->prefs = cpufreq_prefs_new (settings);
 
 	g_signal_connect (G_OBJECT (applet->prefs),
@@ -850,11 +850,11 @@ cpufreq_applet_setup (CPUFreqApplet *applet)
 				      G_N_ELEMENTS (cpufreq_applet_menu_actions),
 				      applet);
 	ui_path = g_build_filename (CPUFREQ_MENU_UI_DIR, "cpufreq-applet-menu.xml", NULL);
-        mate_panel_applet_setup_menu_from_file (MATE_PANEL_APPLET (applet),
+        cafe_panel_applet_setup_menu_from_file (MATE_PANEL_APPLET (applet),
 					   ui_path, action_group);
 	g_free (ui_path);
 
-        if (mate_panel_applet_get_locked_down (MATE_PANEL_APPLET (applet))) {
+        if (cafe_panel_applet_get_locked_down (MATE_PANEL_APPLET (applet))) {
 		GtkAction *action;
 
 		action = gtk_action_group_get_action (action_group, "CPUFreqPreferences");

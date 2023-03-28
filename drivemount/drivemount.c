@@ -28,7 +28,7 @@
 
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
-#include <mate-panel-applet.h>
+#include <cafe-panel-applet.h>
 
 #include "drive-list.h"
 
@@ -61,7 +61,7 @@ size_allocate (MatePanelApplet  *applet,
 {
     int size;
 
-    switch (mate_panel_applet_get_orient (applet)) {
+    switch (cafe_panel_applet_get_orient (applet)) {
     case MATE_PANEL_APPLET_ORIENT_LEFT:
     case MATE_PANEL_APPLET_ORIENT_RIGHT:
 	size = allocation->width;
@@ -139,7 +139,7 @@ display_help (GtkAction *action,
     screen = gtk_widget_get_screen (GTK_WIDGET (drive_list));
 
     gtk_show_uri_on_window (NULL,
-                           "help:mate-drivemount",
+                           "help:cafe-drivemount",
                             gtk_get_current_event_time (),
                             &error);
 
@@ -186,8 +186,8 @@ applet_factory (MatePanelApplet *applet,
 
 	gtk_window_set_default_icon_name ("media-floppy");
 
-	mate_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
-	mate_panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
+	cafe_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+	cafe_panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
 
 	drive_list = drive_list_new ();
 
@@ -202,7 +202,7 @@ applet_factory (MatePanelApplet *applet,
 
 	/* set initial state */
 	change_orient (applet,
-		       mate_panel_applet_get_orient (applet),
+		       cafe_panel_applet_get_orient (applet),
 		       DRIVE_LIST (drive_list));
 
 	action_group = gtk_action_group_new ("DriveMount Applet Actions");
@@ -212,7 +212,7 @@ applet_factory (MatePanelApplet *applet,
 				      G_N_ELEMENTS (applet_menu_actions),
 				      drive_list);
 	ui_path = g_build_filename (DRIVEMOUNT_MENU_UI_DIR, "drivemount-applet-menu.xml", NULL);
-	mate_panel_applet_setup_menu_from_file (applet, ui_path, action_group);
+	cafe_panel_applet_setup_menu_from_file (applet, ui_path, action_group);
 	g_free (ui_path);
 	g_object_unref (action_group);
 

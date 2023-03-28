@@ -1,6 +1,6 @@
 @YELP_HELP_RULES@
 
-HELP_ID = mate-geyes
+HELP_ID = cafe-geyes
 HELP_FILES = index.docbook legal.xml
 
 HELP_MEDIA = figures/geyes_applet.png

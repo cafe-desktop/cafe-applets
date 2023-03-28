@@ -4,8 +4,8 @@
 #include <glib/gi18n.h>
 #include <gtk/gtk.h>
 #include <gio/gio.h>
-#include <mate-panel-applet.h>
-#include <mate-panel-applet-gsettings.h>
+#include <cafe-panel-applet.h>
+#include <cafe-panel-applet-gsettings.h>
 
 #define NO_LAST_INDEX -1
 

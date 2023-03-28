@@ -288,7 +288,7 @@ trash_empty_require_confirmation (void)
 {
   gboolean confirm_trash;
   GSettings *settings;
-  settings = g_settings_new ("org.mate.caja.preferences");
+  settings = g_settings_new ("org.cafe.caja.preferences");
   confirm_trash = g_settings_get_boolean (settings, "confirm-trash");
   g_object_unref (settings);
   return confirm_trash;

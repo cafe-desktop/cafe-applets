@@ -24,10 +24,10 @@
 #include <gdk/gdk.h>
 #include <gtk/gtk.h>
 #include <gio/gio.h>
-#include <mate-panel-applet.h>
+#include <cafe-panel-applet.h>
 
 
-#define STICKYNOTES_SCHEMA	"org.mate.stickynotes"
+#define STICKYNOTES_SCHEMA	"org.cafe.stickynotes"
 #define BUILDER_PATH	GTK_BUILDERDIR "/stickynotes.ui"
 
 #define STICKYNOTES_STOCK_LOCKED	"stickynotes-stock-locked"
@@ -94,10 +94,10 @@ typedef enum
 
 extern StickyNotes *stickynotes;
 
-void stickynotes_applet_init(MatePanelApplet *mate_panel_applet);
+void stickynotes_applet_init(MatePanelApplet *cafe_panel_applet);
 void stickynotes_applet_init_prefs(void);
 
-StickyNotesApplet * stickynotes_applet_new(MatePanelApplet *mate_panel_applet);
+StickyNotesApplet * stickynotes_applet_new(MatePanelApplet *cafe_panel_applet);
 
 void stickynotes_applet_update_icon(StickyNotesApplet *applet);
 void stickynotes_applet_update_prefs(void);

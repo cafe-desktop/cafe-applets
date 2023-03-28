@@ -1,5 +1,5 @@
 <schemalist gettext-domain="@GETTEXT_PACKAGE@">
-  <schema id="org.mate.drivemount" path="/org/mate/panel/drivemount/">
+  <schema id="org.cafe.drivemount" path="/org/cafe/panel/drivemount/">
     <key name="drivemount-checkmark-color" type="s">
       <default>'#00e300'</default>
       <summary>Checkmark color for mounted drive or share</summary>

@@ -1,5 +1,5 @@
 <schemalist gettext-domain="@GETTEXT_PACKAGE@">
-  <schema id="org.mate.panel.applet.command">
+  <schema id="org.cafe.panel.applet.command">
     <key name="command" type="s">
       <default>'date +%T'</default>
       <summary>Command to execute</summary>

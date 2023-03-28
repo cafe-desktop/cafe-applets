@@ -1,6 +1,6 @@
 
 soundlistdir = $(sysconfdir)/sound/events
-soundlist_in_files = mate-battstat_applet.soundlist.desktop.in
+soundlist_in_files = cafe-battstat_applet.soundlist.desktop.in
 soundlist_DATA = $(soundlist_in_files:.soundlist.desktop.in=.soundlist)
 
 $(soundlist_DATA): $(soundlist_in_files) Makefile

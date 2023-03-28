@@ -9,21 +9,21 @@ AM_CPPFLAGS =						\
 	-DGEYES_THEMES_DIR=\""$(pkgdatadir)/geyes/"\"	\
 	-DGEYES_MENU_UI_DIR=\""$(uidir)"\"
 
-libexec_PROGRAMS = mate-geyes-applet
+libexec_PROGRAMS = cafe-geyes-applet
 
-mate_geyes_applet_SOURCES =	\
+cafe_geyes_applet_SOURCES =	\
         geyes.c \
 	themes.c \
 	geyes.h
 
-mate_geyes_applet_LDADD = 		\
+cafe_geyes_applet_LDADD = 		\
 	$(MATE_APPLETS4_LIBS) \
 	$(MATEDESKTOP_LIBS) \
 	-lm
 
-appletdir       = $(datadir)/mate-panel/applets
-applet_in_files = org.mate.applets.GeyesApplet.mate-panel-applet.desktop.in
-applet_DATA     = $(applet_in_files:.mate-panel-applet.desktop.in=.mate-panel-applet)
+appletdir       = $(datadir)/cafe-panel/applets
+applet_in_files = org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in
+applet_DATA     = $(applet_in_files:.cafe-panel-applet.desktop.in=.cafe-panel-applet)
 
 $(applet_in_files): $(applet_in_files).in Makefile
 	$(AM_V_GEN)sed \
@@ -35,31 +35,31 @@ $(applet_DATA): $(applet_in_files) Makefile
 	$(AM_V_GEN) $(MSGFMT) --desktop --keyword=Name --keyword=Description --template $< -d $(top_srcdir)/po -o $@
 
 servicedir       = $(datadir)/dbus-1/services
-service_in_files = org.mate.panel.applet.GeyesAppletFactory.service.in
+service_in_files = org.cafe.panel.applet.GeyesAppletFactory.service.in
 service_DATA     = $(service_in_files:.service.in=.service)
 
-org.mate.panel.applet.GeyesAppletFactory.service: $(service_in_files)
+org.cafe.panel.applet.GeyesAppletFactory.service: $(service_in_files)
 	$(AM_V_GEN)sed \
             -e "s|\@LIBEXECDIR\@|$(libexecdir)|" \
             $< > $@
 
-uidir = $(datadir)/mate/ui
+uidir = $(datadir)/cafe/ui
 ui_DATA = geyes-applet-menu.xml
 
-geyes_gschema_in_files = org.mate.panel.applet.geyes.gschema.xml.in
+geyes_gschema_in_files = org.cafe.panel.applet.geyes.gschema.xml.in
 gsettings_SCHEMAS = $(geyes_gschema_in_files:.xml.in=.xml)
 @GSETTINGS_RULES@
 
 themesdir = $(pkgdatadir)/geyes
 
 icons =	\
-	mate-eyes-applet.svg		\
-	mate-eyes-applet.256.png	\
-	mate-eyes-applet.64.png		\
-	mate-eyes-applet.32.png		\
-	mate-eyes-applet.24.png		\
-	mate-eyes-applet.22.png		\
-	mate-eyes-applet.16.png
+	cafe-eyes-applet.svg		\
+	cafe-eyes-applet.256.png	\
+	cafe-eyes-applet.64.png		\
+	cafe-eyes-applet.32.png		\
+	cafe-eyes-applet.24.png		\
+	cafe-eyes-applet.22.png		\
+	cafe-eyes-applet.16.png
 
 CLEANFILES = $(applet_DATA) $(applet_in_files) $(service_DATA) $(gsettings_SCHEMAS) *.gschema.valid
 

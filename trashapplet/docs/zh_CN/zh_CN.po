@@ -2,7 +2,7 @@
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Mingcong Bai <jeffbai@aosc.xyz>, 2020
-# Wolfgang Ulbrich <mate@raveit.de>, 2020
+# Wolfgang Ulbrich <cafe@raveit.de>, 2020
 # CNAmira <forucial@icloud.com>, 2020
 # biqiu-ssw <shenshuaiwen@gmail.com>, 2020
 # zhineng404 <zhinengge@gmail.com>, 2020
@@ -15,7 +15,7 @@ msgstr ""
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 12:22+0000\n"
 "Last-Translator: 邢家朋 <xingjiapeng10@163.com>, 2020\n"
-"Language-Team: Chinese (China) (https://www.transifex.com/mate/teams/13566/zh_CN/)\n"
+"Language-Team: Chinese (China) (https://www.transifex.com/cafe/teams/13566/zh_CN/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -165,10 +165,10 @@ msgstr "反馈"
 #: C/index.docbook:123
 msgid ""
 "To report a bug or make a suggestion regarding the Panel Trash applet or "
-"this manual, follow the directions in the <ulink url=\"help:mate-user-"
+"this manual, follow the directions in the <ulink url=\"help:cafe-user-"
 "guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
 msgstr ""
-"要报告有关面板废纸篓小程序或本手册的错误或提出建议，请按照<ulink url=\"help:mate-user-guide/feedback\" "
+"要报告有关面板废纸篓小程序或本手册的错误或提出建议，请按照<ulink url=\"help:cafe-user-guide/feedback\" "
 "type=\"help\">MATE 反馈页面</ulink>中的说明进行操作。"
 
 #. (itstool) path: article/indexterm
@@ -233,9 +233,9 @@ msgstr "点击 <guibutton>添加</guibutton>."
 #: C/index.docbook:165
 msgid ""
 "For more information on working with the panel, see the <ulink type=\"help\""
-" url=\"help:mate-user-guide/panels\">Desktop User Guide</ulink>."
+" url=\"help:cafe-user-guide/panels\">Desktop User Guide</ulink>."
 msgstr ""
-"有关使用面板的更多信息，请参阅<ulink type=\"help\" url=\"help:mate-user-"
+"有关使用面板的更多信息，请参阅<ulink type=\"help\" url=\"help:cafe-user-"
 "guide/panels\">桌面用户指南</ulink>。"
 
 #. (itstool) path: sect1/title

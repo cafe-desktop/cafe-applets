@@ -17,11 +17,11 @@
 
 #define MATEWEATHER_I_KNOW_THIS_IS_UNSTABLE
 
-#include "mateweather.h"
+#include "cafeweather.h"
 
 G_BEGIN_DECLS
 
-#define MATEWEATHER_TYPE_PREF		(mateweather_pref_get_type ())
+#define MATEWEATHER_TYPE_PREF		(cafeweather_pref_get_type ())
 #define MATEWEATHER_PREF(obj)		(G_TYPE_CHECK_INSTANCE_CAST ((obj), MATEWEATHER_TYPE_PREF, MateWeatherPref))
 #define MATEWEATHER_PREF_CLASS(klass)	(G_TYPE_CHECK_CLASS_CAST ((klass), MATEWEATHER_TYPE_PREF, MateWeatherPrefClass))
 #define MATEWEATHER_IS_PREF(obj)		(G_TYPE_CHECK_INSTANCE_TYPE ((obj), MATEWEATHER_TYPE_PREF))
@@ -46,8 +46,8 @@ struct _MateWeatherPrefClass
 	GtkDialogClass parent_class;
 };
 
-GType		 mateweather_pref_get_type	(void);
-GtkWidget	*mateweather_pref_new	(MateWeatherApplet *applet);
+GType		 cafeweather_pref_get_type	(void);
+GtkWidget	*cafeweather_pref_new	(MateWeatherApplet *applet);
 
 
 void set_access_namedesc (GtkWidget *widget, const gchar *name, const gchar *desc);

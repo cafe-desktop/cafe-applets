@@ -7,23 +7,23 @@ AM_CPPFLAGS =					\
 	$(MATE_APPLETS4_CFLAGS)			\
 	$(MATEDESKTOP_CFLAGS)
 
-libexec_PROGRAMS = mate-drivemount-applet
+libexec_PROGRAMS = cafe-drivemount-applet
 
-mate_drivemount_applet_SOURCES =	\
+cafe_drivemount_applet_SOURCES =	\
 	drivemount.c		\
 	drive-list.c		\
 	drive-list.h		\
 	drive-button.c		\
 	drive-button.h
 
-mate_drivemount_applet_LDADD =	\
+cafe_drivemount_applet_LDADD =	\
 	$(MATE_APPLETS4_LIBS)	\
 	$(MATEDESKTOP_LIBS)
 
-uidir           = $(datadir)/mate/ui
+uidir           = $(datadir)/cafe/ui
 ui_DATA         = drivemount-applet-menu.xml
 
-drivemount_gschema_in_files = org.mate.drivemount.gschema.xml.in
+drivemount_gschema_in_files = org.cafe.drivemount.gschema.xml.in
 gsettings_SCHEMAS = $(drivemount_gschema_in_files:.xml.in=.xml)
 @GSETTINGS_RULES@
 
@@ -34,9 +34,9 @@ EXTRA_DIST =                                                    \
         $(ui_DATA)
 
 
-appletdir       = $(datadir)/mate-panel/applets
-applet_in_files = org.mate.applets.DriveMountApplet.mate-panel-applet.desktop.in
-applet_DATA     = $(applet_in_files:.mate-panel-applet.desktop.in=.mate-panel-applet)
+appletdir       = $(datadir)/cafe-panel/applets
+applet_in_files = org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in
+applet_DATA     = $(applet_in_files:.cafe-panel-applet.desktop.in=.cafe-panel-applet)
 
 $(applet_in_files): $(applet_in_files).in Makefile
 	$(AM_V_GEN)sed \
@@ -48,10 +48,10 @@ $(applet_DATA): $(applet_in_files) Makefile
 	$(AM_V_GEN) $(MSGFMT) --desktop --keyword=Name --keyword=Description --template $< -d $(top_srcdir)/po -o $@
 
 servicedir       = $(datadir)/dbus-1/services
-service_in_files = org.mate.panel.applet.DriveMountAppletFactory.service.in
+service_in_files = org.cafe.panel.applet.DriveMountAppletFactory.service.in
 service_DATA     = $(service_in_files:.service.in=.service)
 
-org.mate.panel.applet.DriveMountAppletFactory.service: $(service_in_files)
+org.cafe.panel.applet.DriveMountAppletFactory.service: $(service_in_files)
 	$(AM_V_GEN)sed \
             -e "s|\@LIBEXECDIR\@|$(libexecdir)|" \
             $< > $@

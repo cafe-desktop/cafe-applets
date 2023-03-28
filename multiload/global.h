@@ -6,7 +6,7 @@
 #include <gdk-pixbuf/gdk-pixbuf.h>
 #include <gtk/gtk.h>
 #include <gio/gio.h>
-#include <mate-panel-applet.h>
+#include <cafe-panel-applet.h>
 
 G_BEGIN_DECLS
 

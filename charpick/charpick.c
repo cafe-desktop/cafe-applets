@@ -1,12 +1,12 @@
-/* charpick.c  This is a mate panel applet that allow users to select
+/* charpick.c  This is a cafe panel applet that allow users to select
  * accented (and other) characters to be pasted into other apps.
  */
 
 #include <gdk/gdkx.h>
 #include <config.h>
 #include <string.h>
-#include <mate-panel-applet.h>
-#include <mate-panel-applet-gsettings.h>
+#include <cafe-panel-applet.h>
+#include <cafe-panel-applet-gsettings.h>
 #ifdef HAVE_GUCHARMAP
 #include <gucharmap/gucharmap.h>
 #endif
@@ -325,7 +325,7 @@ populate_menu (charpick_data *curr_data)
 	GtkStyleContext *context;
 	context = gtk_widget_get_style_context (GTK_WIDGET(toplevel));
 	gtk_style_context_add_class(context,"gnome-panel-menu-bar");
-	gtk_style_context_add_class(context,"mate-panel-menu-bar");
+	gtk_style_context_add_class(context,"cafe-panel-menu-bar");
 }
 
 static void
@@ -403,7 +403,7 @@ build_table(charpick_data *p_curr_data)
   {
     gtk_widget_set_tooltip_text (button, _("Available palettes"));
   
-    switch (mate_panel_applet_get_orient (MATE_PANEL_APPLET (p_curr_data->applet))) {
+    switch (cafe_panel_applet_get_orient (MATE_PANEL_APPLET (p_curr_data->applet))) {
        	case MATE_PANEL_APPLET_ORIENT_DOWN:
           	arrow = gtk_image_new_from_icon_name ("pan-down-symbolic", GTK_ICON_SIZE_MENU);
        		break;
@@ -603,7 +603,7 @@ help_cb (GtkAction     *action,
   GError *error = NULL;
 
   gtk_show_uri_on_window (NULL,
-                          "help:mate-char-palette",
+                          "help:cafe-char-palette",
                           gtk_get_current_event_time (),
                           &error);
 
@@ -636,7 +636,7 @@ applet_destroy (GtkWidget *widget, gpointer data)
 void 
 save_chartable (charpick_data *curr_data)
 {
-	mate_panel_applet_settings_set_glist (curr_data->settings,
+	cafe_panel_applet_settings_set_glist (curr_data->settings,
 		"chartable", curr_data->chartable);
 }
 
@@ -647,7 +647,7 @@ get_chartable (charpick_data *curr_data)
 	gint i, n;
 	GList *value = NULL;
 	
-	value = mate_panel_applet_settings_get_glist (curr_data->settings, "chartable");
+	value = cafe_panel_applet_settings_get_glist (curr_data->settings, "chartable");
 	if (value) {
 		curr_data->chartable = value;
 	}
@@ -715,16 +715,16 @@ charpicker_applet_fill (MatePanelApplet *applet)
   
   gtk_window_set_default_icon_name ("accessories-character-map");
 
-  mate_panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
+  cafe_panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
 
-  mate_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+  cafe_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
    
   curr_data = g_new0 (charpick_data, 1);
   curr_data->last_index = NO_LAST_INDEX;
   curr_data->applet = GTK_WIDGET (applet);
   curr_data->about_dialog = NULL;
   curr_data->add_edit_dialog = NULL;
-  curr_data->settings = mate_panel_applet_settings_new (applet, "org.mate.panel.applet.charpick");
+  curr_data->settings = cafe_panel_applet_settings_new (applet, "org.cafe.panel.applet.charpick");
  
   get_chartable (curr_data);
   
@@ -747,9 +747,9 @@ charpicker_applet_fill (MatePanelApplet *applet)
   	curr_data->charlist = curr_data->chartable->data;  
   }
  
-  curr_data->panel_size = mate_panel_applet_get_size (applet);
+  curr_data->panel_size = cafe_panel_applet_get_size (applet);
   
-  orientation = mate_panel_applet_get_orient (applet);
+  orientation = cafe_panel_applet_get_orient (applet);
   curr_data->panel_vertical = (orientation == MATE_PANEL_APPLET_ORIENT_LEFT) 
                               || (orientation == MATE_PANEL_APPLET_ORIENT_RIGHT);
   build_table (curr_data);
@@ -794,11 +794,11 @@ charpicker_applet_fill (MatePanelApplet *applet)
 				G_N_ELEMENTS (charpick_applet_menu_actions),
 				curr_data);
   ui_path = g_build_filename (CHARPICK_MENU_UI_DIR, "charpick-applet-menu.xml", NULL);
-  mate_panel_applet_setup_menu_from_file (MATE_PANEL_APPLET (applet),
+  cafe_panel_applet_setup_menu_from_file (MATE_PANEL_APPLET (applet),
                                      ui_path, action_group);
   g_free (ui_path);
 
-  if (mate_panel_applet_get_locked_down (MATE_PANEL_APPLET (applet))) {
+  if (cafe_panel_applet_get_locked_down (MATE_PANEL_APPLET (applet))) {
 	  GtkAction *action;
 
 	  action = gtk_action_group_get_action (action_group, "Preferences");

@@ -155,9 +155,9 @@ selector_set_frequency_async (SelectorAsyncData *data)
 	}
 
 	proxy = dbus_g_proxy_new_for_name (data->selector->system_bus,
-					   "org.mate.CPUFreqSelector",
-					   "/org/mate/cpufreq_selector/selector",
-					   "org.mate.CPUFreqSelector");
+					   "org.cafe.CPUFreqSelector",
+					   "/org/cafe/cpufreq_selector/selector",
+					   "org.cafe.CPUFreqSelector");
 
 	dbus_g_proxy_begin_call_with_timeout (proxy, "SetFrequency",
 					      dbus_set_call_notify_cb,
@@ -206,9 +206,9 @@ selector_set_governor_async (SelectorAsyncData *data)
 	}
 
 	proxy = dbus_g_proxy_new_for_name (data->selector->system_bus,
-					   "org.mate.CPUFreqSelector",
-					   "/org/mate/cpufreq_selector/selector",
-					   "org.mate.CPUFreqSelector");
+					   "org.cafe.CPUFreqSelector",
+					   "/org/cafe/cpufreq_selector/selector",
+					   "org.cafe.CPUFreqSelector");
 
 	dbus_g_proxy_begin_call_with_timeout (proxy, "SetGovernor",
 					      dbus_set_call_notify_cb,
