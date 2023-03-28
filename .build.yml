@@ -53,7 +53,7 @@ requires:
     # required for libcafeweather
     - autoconf-archive
     - intltool
-    - ctk-doc-tools
+    - gtk-doc-tools
     - libsoup-gnome2.4-dev
     - libsoup2.4-dev
     - libtool
