@@ -8,7 +8,7 @@
 <!-- 
       (Do not remove this comment block.)
   Maintained by the MATE Documentation Project
-  http://wiki.mate-desktop.org/dev-doc:doc-team-guide
+  http://wiki.cafe-desktop.org/dev-doc:doc-team-guide
   Template version: 2.0 beta
   Template last modified Feb 12, 2002
 -->
@@ -185,7 +185,7 @@
       <title>Feedback</title>
       <para>
         To report a bug or make a suggestion regarding the &applet; applet or
-        this manual, follow the directions in the <ulink url="help:mate-user-guide/feedback"
+        this manual, follow the directions in the <ulink url="help:cafe-user-guide/feedback"
         type="help">MATE Feedback Page</ulink>.
       </para>
     </legalnotice>
@@ -222,7 +222,7 @@
       The <application>&applet;</application> shows the
       status of any batteries in your laptop computer. The monitor can tell you
       the capacity remaining both visually and as a percentage, as well as offer
-      you an estimate of the time remaining based off the current usage rate.
+      you an esticafe of the time remaining based off the current usage rate.
     </para>
 
     <sect2 id="battstat-introduction-add">
@@ -292,7 +292,7 @@
         <xref linkend="battstat-troubleshooting"/>;
        </para></listitem>
        <listitem><para>
-        <ulink url="http://ml.mate-desktop.org/listinfo/">MATE mailing
+        <ulink url="http://ml.cafe-desktop.org/listinfo/">MATE mailing
 	lists</ulink>
        </para></listitem>
       </itemizedlist>
@@ -445,7 +445,7 @@
      The following information may be useful for troubleshooting what is wrong
      with your battery monitor. It is by no means exhaustive. If you find a bug
      with the &applet; (that is not caused by bad information being reported
-     by ACPI), please <ulink url="http://bugzilla.mate.org/">report it</ulink>.
+     by ACPI), please <ulink url="http://bugzilla.cafe.org/">report it</ulink>.
     </para>
 
     <sect2 id="battstat-troubleshooting-backends">

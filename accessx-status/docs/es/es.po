@@ -3,7 +3,7 @@
 # Adolfo Jayme-Barrientos, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Toni Estévez <toni.estevez@gmail.com>, 2020
-# Wolfgang Ulbrich <mate@raveit.de>, 2020
+# Wolfgang Ulbrich <cafe@raveit.de>, 2020
 # Joel Barrios <darkshram@gmail.com>, 2020
 # ZenWalker <scow@riseup.net>, 2020
 # Rodrigo Lledó <rodhos92@gmail.com>, 2020
@@ -14,7 +14,7 @@ msgstr ""
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:23+0000\n"
 "Last-Translator: Rodrigo Lledó <rodhos92@gmail.com>, 2020\n"
-"Language-Team: Spanish (https://www.transifex.com/mate/teams/13566/es/)\n"
+"Language-Team: Spanish (https://www.transifex.com/cafe/teams/13566/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -177,12 +177,12 @@ msgstr "Comentarios"
 msgid ""
 "To report a bug or make a suggestion regarding the Keyboard Accessibility "
 "Monitor applet or this manual, follow the directions in the <ulink "
-"url=\"help:mate-user-guide/feedback\" type=\"help\">MATE Feedback "
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">MATE Feedback "
 "Page</ulink>."
 msgstr ""
 "Para informar de un error o hacer una sugerencia en relación con la "
 "miniaplicación del Monitor de la accesibilidad del teclado o este manual, "
-"siga las direcciones en la <ulink url=\"help:mate-user-guide/feedback\" "
+"siga las direcciones en la <ulink url=\"help:cafe-user-guide/feedback\" "
 "type=\"help\">Página de comentarios de MATE</ulink>."
 
 #. (itstool) path: article/indexterm
@@ -244,10 +244,10 @@ msgstr ""
 #: C/index.docbook:163
 msgid ""
 "For more on using keyboard accessibility features, see the <ulink url=\"help"
-":mate-access-guide\">Desktop Accessibility Guide</ulink>."
+":cafe-access-guide\">Desktop Accessibility Guide</ulink>."
 msgstr ""
 "Para obtener más información sobre usar características de accesibilidad del"
-" teclado, consulte la <ulink url=\"help:mate-access-guide\">Guia de "
+" teclado, consulte la <ulink url=\"help:cafe-access-guide\">Guia de "
 "accesibilidad del escritorio</ulink>."
 
 #. (itstool) path: sect2/title

@@ -1,13 +1,13 @@
 @YELP_HELP_RULES@
 
-HELP_ID = mateweather
+HELP_ID = cafeweather
 HELP_FILES = index.docbook legal.xml
 
-HELP_MEDIA = figures/mateweather_applet.png \
-		figures/mateweather-details.png \
-		figures/mateweather-menu-prefs.png \
-		figures/mateweather-prefs-general.png \
-		figures/mateweather-prefs-locations.png \
+HELP_MEDIA = figures/cafeweather_applet.png \
+		figures/cafeweather-details.png \
+		figures/cafeweather-menu-prefs.png \
+		figures/cafeweather-prefs-general.png \
+		figures/cafeweather-prefs-locations.png \
 		figures/stock_weather-cloudy.png \
 		figures/stock_weather-few-clouds.png \
 		figures/stock_weather-fog.png \

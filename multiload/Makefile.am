@@ -8,9 +8,9 @@ AM_CPPFLAGS =			\
 	$(MATEDESKTOP_CFLAGS)	\
 	$(GIO_CFLAGS)
 
-libexec_PROGRAMS = mate-multiload-applet
+libexec_PROGRAMS = cafe-multiload-applet
 
-mate_multiload_applet_SOURCES = \
+cafe_multiload_applet_SOURCES = \
 			global.h	\
 			linux-proc.h	\
 			load-graph.h	\
@@ -22,14 +22,14 @@ mate_multiload_applet_SOURCES = \
 			autoscaler.c	\
 			autoscaler.h
 
-mate_multiload_applet_LDADD = \
+cafe_multiload_applet_LDADD = \
 				$(MATE_APPLETS4_LIBS) 	\
 				$(GTOP_APPLETS_LIBS)	\
 				$(MATEDESKTOP_LIBS)		\
 				$(GIO_LIBS)				\
 				-lm
 
-multiload_gschema_in_files = org.mate.panel.applet.multiload.gschema.xml.in
+multiload_gschema_in_files = org.cafe.panel.applet.multiload.gschema.xml.in
 gsettings_SCHEMAS = $(multiload_gschema_in_files:.xml.in=.xml)
 @GSETTINGS_RULES@
 
@@ -39,12 +39,12 @@ EXTRA_DIST =							\
 	$(multiload_gschema_in_files)				\
 	$(ui_DATA)
 
-uidir		= $(datadir)/mate/ui
+uidir		= $(datadir)/cafe/ui
 ui_DATA		= multiload-applet-menu.xml
 
-appletdir       = $(datadir)/mate-panel/applets
-applet_in_files = org.mate.applets.MultiLoadApplet.mate-panel-applet.desktop.in
-applet_DATA     = $(applet_in_files:.mate-panel-applet.desktop.in=.mate-panel-applet)
+appletdir       = $(datadir)/cafe-panel/applets
+applet_in_files = org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in
+applet_DATA     = $(applet_in_files:.cafe-panel-applet.desktop.in=.cafe-panel-applet)
 
 $(applet_in_files): $(applet_in_files).in Makefile
 	$(AM_V_GEN)sed \
@@ -56,10 +56,10 @@ $(applet_DATA): $(applet_in_files) Makefile
 	$(AM_V_GEN) $(MSGFMT) --desktop --keyword=Name --keyword=Description --template $< -d $(top_srcdir)/po -o $@
 
 servicedir       = $(datadir)/dbus-1/services
-service_in_files = org.mate.panel.applet.MultiLoadAppletFactory.service.in
+service_in_files = org.cafe.panel.applet.MultiLoadAppletFactory.service.in
 service_DATA     = $(service_in_files:.service.in=.service)
 
-org.mate.panel.applet.MultiLoadAppletFactory.service: $(service_in_files)
+org.cafe.panel.applet.MultiLoadAppletFactory.service: $(service_in_files)
 	$(AM_V_GEN)sed \
             -e "s|\@LIBEXECDIR\@|$(libexecdir)|" \
             $< > $@

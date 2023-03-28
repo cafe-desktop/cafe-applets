@@ -401,7 +401,7 @@ drive_button_update (gpointer user_data)
 
         GdkRGBA color;
         GSettings *settings;
-        settings = g_settings_new ("org.mate.drivemount");
+        settings = g_settings_new ("org.cafe.drivemount");
         gchar *color_string = g_settings_get_string (settings, "drivemount-checkmark-color");
         if (!color_string)
                 color_string = g_strdup ("#00ff00");
@@ -630,7 +630,7 @@ open_drive (DriveButton *self, GtkWidget *item)
     g_object_unref(file);
 }
 
-/* copied from mate-volume-manager/src/manager.c maybe there is a better way than
+/* copied from cafe-volume-manager/src/manager.c maybe there is a better way than
  * duplicating this code? */
 
 /*
@@ -714,7 +714,7 @@ gvm_check_dvd_only (const char *udi, const char *device, const char *mount_point
 
 	return retval;
 }
-/* END copied from mate-volume-manager/src/manager.c */
+/* END copied from cafe-volume-manager/src/manager.c */
 
 static gboolean
 check_dvd_video (DriveButton *self)
@@ -986,5 +986,5 @@ drive_button_ensure_popup (DriveButton *self)
 	GtkStyleContext *context;
 	context = gtk_widget_get_style_context (GTK_WIDGET(toplevel));
 	gtk_style_context_add_class(context,"gnome-panel-menu-bar");
-	gtk_style_context_add_class(context,"mate-panel-menu-bar");
+	gtk_style_context_add_class(context,"cafe-panel-menu-bar");
 }

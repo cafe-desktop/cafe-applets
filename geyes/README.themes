@@ -5,7 +5,7 @@ and I'll probably throw it into the distro.
 Here are some guidlines for creating themes:
 
 Themes are stored in their own directories, either in $(datadir)/geyes/ or
-~/.mate/geyes-themes/. 
+~/.cafe/geyes-themes/. 
 
 A theme consists of three files:
 * The eye pixmap.  This is the static, non-moving part of the eye

@@ -1,7 +1,7 @@
 <!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
 
-<node name="/org/mate/CPUFreqSelector">
-  <interface name="org.mate.CPUFreqSelector">
+<node name="/org/cafe/CPUFreqSelector">
+  <interface name="org.cafe.CPUFreqSelector">
     <method name="SetFrequency">
       <annotation name="org.freedesktop.DBus.GLib.Async" value=""/>
       <arg name="cpu" direction="in" type="u"/>

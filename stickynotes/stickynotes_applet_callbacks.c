@@ -204,7 +204,7 @@ void install_check_click_on_desktop (void)
 }
 
 /* Applet Callback : Change the panel orientation. */
-void applet_change_orient_cb(MatePanelApplet *mate_panel_applet, MatePanelAppletOrient orient, StickyNotesApplet *applet)
+void applet_change_orient_cb(MatePanelApplet *cafe_panel_applet, MatePanelAppletOrient orient, StickyNotesApplet *applet)
 {
 	applet->panel_orient = orient;
 }
@@ -228,7 +228,7 @@ void applet_size_allocate_cb(GtkWidget *widget, GtkAllocation *allocation, Stick
 }
 
 /* Applet Callback : Deletes the applet. */
-void applet_destroy_cb (MatePanelApplet *mate_panel_applet, StickyNotesApplet *applet)
+void applet_destroy_cb (MatePanelApplet *cafe_panel_applet, StickyNotesApplet *applet)
 {
 	GList *notes;
 
@@ -337,7 +337,7 @@ void menu_help_cb(GtkAction *action, StickyNotesApplet *applet)
 	GError *error = NULL;
 
 	gtk_show_uri_on_window (NULL,
-	                        "help:mate-stickynotes-applet",
+	                        "help:cafe-stickynotes-applet",
 	                        gtk_get_current_event_time (),
 	                        &error);
 	if (error) {
@@ -386,7 +386,7 @@ menu_about_cb (GtkAction *action,
 		"authors",	authors,
 		"documenters",	documenters,
 		"translator-credits",	_("translator-credits"),
-		"logo-icon-name",	"mate-sticky-notes-applet",
+		"logo-icon-name",	"cafe-sticky-notes-applet",
 		NULL);
 }
 
@@ -532,7 +532,7 @@ void preferences_response_cb(GtkWidget *dialog, gint response, gpointer data)
 		GError *error = NULL;
 
 		gtk_show_uri_on_window (GTK_WINDOW (dialog),
-		                        "help:mate-stickynotes-applet/stickynotes-advanced-settings",
+		                        "help:cafe-stickynotes-applet/stickynotes-advanced-settings",
 		                        gtk_get_current_event_time (),
 		                        &error);
 		if (error) {

@@ -22,10 +22,10 @@
 
 #define MATEWEATHER_I_KNOW_THIS_IS_UNSTABLE
 
-#include "mateweather.h"
-#include "mateweather-applet.h"
-#include "mateweather-pref.h"
-#include "mateweather-dialog.h"
+#include "cafeweather.h"
+#include "cafeweather-applet.h"
+#include "cafeweather-pref.h"
+#include "cafeweather-dialog.h"
 
 struct _MateWeatherDialogPrivate {
 	GtkWidget* cond_location;
@@ -53,12 +53,12 @@ enum {
 	PROP_MATEWEATHER_APPLET,
 };
 
-G_DEFINE_TYPE_WITH_PRIVATE (MateWeatherDialog, mateweather_dialog, GTK_TYPE_DIALOG);
+G_DEFINE_TYPE_WITH_PRIVATE (MateWeatherDialog, cafeweather_dialog, GTK_TYPE_DIALOG);
 
-#define MONOSPACE_FONT_SCHEMA  "org.mate.interface"
+#define MONOSPACE_FONT_SCHEMA  "org.cafe.interface"
 #define MONOSPACE_FONT_KEY     "monospace-font-name"
 
-static void mateweather_dialog_save_geometry(MateWeatherDialog* dialog)
+static void cafeweather_dialog_save_geometry(MateWeatherDialog* dialog)
 {
 	GSettings* settings;
 	int w, h;
@@ -68,13 +68,13 @@ static void mateweather_dialog_save_geometry(MateWeatherDialog* dialog)
 	gtk_window_get_size(GTK_WINDOW(dialog), &w, &h);
 
 #if 0
-	/* FIXME those keys are not in org.mate.weather! */
+	/* FIXME those keys are not in org.cafe.weather! */
 	g_settings_set_int (settings, "dialog-width", w);
 	g_settings_set_int (settings, "dialog-height", h);
 #endif
 }
 
-static void mateweather_dialog_load_geometry(MateWeatherDialog* dialog)
+static void cafeweather_dialog_load_geometry(MateWeatherDialog* dialog)
 {
 	GSettings* settings;
 	int w, h;
@@ -82,7 +82,7 @@ static void mateweather_dialog_load_geometry(MateWeatherDialog* dialog)
 	settings = dialog->priv->applet->settings;
 
 #if 0
-	/* FIXME those keys are not in org.mate.weather! */
+	/* FIXME those keys are not in org.cafe.weather! */
 	w = g_settings_get_int (settings, "dialog-width");
 	h = g_settings_get_int (settings, "dialog-height");
 
@@ -96,9 +96,9 @@ static void mateweather_dialog_load_geometry(MateWeatherDialog* dialog)
 static void response_cb(MateWeatherDialog* dialog, gint id, gpointer data)
 {
     if (id == GTK_RESPONSE_OK) {
-	mateweather_update (dialog->priv->applet);
+	cafeweather_update (dialog->priv->applet);
 
-	mateweather_dialog_update (dialog);
+	cafeweather_dialog_update (dialog);
     } else {
         gtk_widget_destroy (GTK_WIDGET(dialog));
     }
@@ -140,7 +140,7 @@ static gchar* replace_multiple_new_lines(gchar* s)
 	return prev_s;
 }
 
-static void mateweather_dialog_create(MateWeatherDialog* dialog)
+static void cafeweather_dialog_create(MateWeatherDialog* dialog)
 {
   MateWeatherDialogPrivate *priv;
   MateWeatherApplet *gw_applet;
@@ -188,14 +188,14 @@ static void mateweather_dialog_create(MateWeatherDialog* dialog)
   gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 2);
   gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
 
-  if (gw_applet->mateweather_pref.radar_enabled)
+  if (gw_applet->cafeweather_pref.radar_enabled)
       gtk_window_set_default_size (GTK_WINDOW (dialog), 570,440);
   else
       gtk_window_set_default_size (GTK_WINDOW (dialog), 590, 340);
 
   gtk_window_set_screen (GTK_WINDOW (dialog),
 			 gtk_widget_get_screen (GTK_WIDGET (gw_applet->applet)));
-  mateweather_dialog_load_geometry (dialog);
+  cafeweather_dialog_load_geometry (dialog);
 
   /* Must come after load geometry, otherwise it will get reset. */
   gtk_window_set_resizable (GTK_WINDOW (dialog), TRUE);
@@ -404,7 +404,7 @@ static void mateweather_dialog_create(MateWeatherDialog* dialog)
   gtk_widget_show (current_note_lbl);
   gtk_notebook_set_tab_label (GTK_NOTEBOOK (weather_notebook), gtk_notebook_get_nth_page (GTK_NOTEBOOK (weather_notebook), 0), current_note_lbl);
 
-  if (gw_applet->mateweather_pref.location->zone_valid) {
+  if (gw_applet->cafeweather_pref.location->zone_valid) {
 
       forecast_hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
       gtk_container_set_border_width (GTK_CONTAINER (forecast_hbox), 12);
@@ -433,7 +433,7 @@ static void mateweather_dialog_create(MateWeatherDialog* dialog)
 
   }
 
-  if (gw_applet->mateweather_pref.radar_enabled) {
+  if (gw_applet->cafeweather_pref.radar_enabled) {
 
       radar_note_lbl = gtk_label_new_with_mnemonic (_("Radar Map"));
       gtk_widget_show (radar_note_lbl);
@@ -549,7 +549,7 @@ override_widget_font (GtkWidget            *widget,
     g_free (size);
 }
 
-void mateweather_dialog_update(MateWeatherDialog* dialog)
+void cafeweather_dialog_update(MateWeatherDialog* dialog)
 {
     MateWeatherDialogPrivate *priv;
     MateWeatherApplet *gw_applet;
@@ -562,31 +562,31 @@ void mateweather_dialog_update(MateWeatherDialog* dialog)
     gw_applet = priv->applet;
 
     /* Check for parallel network update in progress */
-    if(gw_applet->mateweather_info == NULL)
+    if(gw_applet->cafeweather_info == NULL)
     	return;
 
     /* Update icon */
-    icon_name = weather_info_get_icon_name (gw_applet->mateweather_info);
+    icon_name = weather_info_get_icon_name (gw_applet->cafeweather_info);
     gtk_image_set_from_icon_name (GTK_IMAGE (priv->cond_image),
                                   icon_name, GTK_ICON_SIZE_DIALOG);
 
     /* Update current condition fields and forecast */
-    gtk_label_set_text(GTK_LABEL(priv->cond_location), weather_info_get_location_name(gw_applet->mateweather_info));
-    gtk_label_set_text(GTK_LABEL(priv->cond_update), weather_info_get_update(gw_applet->mateweather_info));
-    gtk_label_set_text(GTK_LABEL(priv->cond_cond), weather_info_get_conditions(gw_applet->mateweather_info));
-    gtk_label_set_text(GTK_LABEL(priv->cond_sky), weather_info_get_sky(gw_applet->mateweather_info));
-    gtk_label_set_text(GTK_LABEL(priv->cond_temp), weather_info_get_temp(gw_applet->mateweather_info));
-    gtk_label_set_text(GTK_LABEL(priv->cond_apparent), weather_info_get_apparent(gw_applet->mateweather_info));
-    gtk_label_set_text(GTK_LABEL(priv->cond_dew), weather_info_get_dew(gw_applet->mateweather_info));
-    gtk_label_set_text(GTK_LABEL(priv->cond_humidity), weather_info_get_humidity(gw_applet->mateweather_info));
-    gtk_label_set_text(GTK_LABEL(priv->cond_wind), weather_info_get_wind(gw_applet->mateweather_info));
-    gtk_label_set_text(GTK_LABEL(priv->cond_pressure), weather_info_get_pressure(gw_applet->mateweather_info));
-    gtk_label_set_text(GTK_LABEL(priv->cond_vis), weather_info_get_visibility(gw_applet->mateweather_info));
-    gtk_label_set_text(GTK_LABEL(priv->cond_sunrise), weather_info_get_sunrise(gw_applet->mateweather_info));
-    gtk_label_set_text(GTK_LABEL(priv->cond_sunset), weather_info_get_sunset(gw_applet->mateweather_info));
+    gtk_label_set_text(GTK_LABEL(priv->cond_location), weather_info_get_location_name(gw_applet->cafeweather_info));
+    gtk_label_set_text(GTK_LABEL(priv->cond_update), weather_info_get_update(gw_applet->cafeweather_info));
+    gtk_label_set_text(GTK_LABEL(priv->cond_cond), weather_info_get_conditions(gw_applet->cafeweather_info));
+    gtk_label_set_text(GTK_LABEL(priv->cond_sky), weather_info_get_sky(gw_applet->cafeweather_info));
+    gtk_label_set_text(GTK_LABEL(priv->cond_temp), weather_info_get_temp(gw_applet->cafeweather_info));
+    gtk_label_set_text(GTK_LABEL(priv->cond_apparent), weather_info_get_apparent(gw_applet->cafeweather_info));
+    gtk_label_set_text(GTK_LABEL(priv->cond_dew), weather_info_get_dew(gw_applet->cafeweather_info));
+    gtk_label_set_text(GTK_LABEL(priv->cond_humidity), weather_info_get_humidity(gw_applet->cafeweather_info));
+    gtk_label_set_text(GTK_LABEL(priv->cond_wind), weather_info_get_wind(gw_applet->cafeweather_info));
+    gtk_label_set_text(GTK_LABEL(priv->cond_pressure), weather_info_get_pressure(gw_applet->cafeweather_info));
+    gtk_label_set_text(GTK_LABEL(priv->cond_vis), weather_info_get_visibility(gw_applet->cafeweather_info));
+    gtk_label_set_text(GTK_LABEL(priv->cond_sunrise), weather_info_get_sunrise(gw_applet->cafeweather_info));
+    gtk_label_set_text(GTK_LABEL(priv->cond_sunset), weather_info_get_sunset(gw_applet->cafeweather_info));
 
     /* Update forecast */
-    if (gw_applet->mateweather_pref.location->zone_valid) {
+    if (gw_applet->cafeweather_pref.location->zone_valid) {
 	font_desc = get_system_monospace_font ();
 	if (font_desc) {
             override_widget_font (priv->forecast_text, font_desc);
@@ -594,7 +594,7 @@ void mateweather_dialog_update(MateWeatherDialog* dialog)
 	}
 
         buffer = gtk_text_view_get_buffer (GTK_TEXT_VIEW (priv->forecast_text));
-        forecast = g_strdup(weather_info_get_forecast(gw_applet->mateweather_info));
+        forecast = g_strdup(weather_info_get_forecast(gw_applet->cafeweather_info));
         if (forecast) {
             forecast = g_strstrip(replace_multiple_new_lines(forecast));
             gtk_text_buffer_set_text(buffer, forecast, -1);
@@ -605,17 +605,17 @@ void mateweather_dialog_update(MateWeatherDialog* dialog)
     }
 
     /* Update radar map */
-    if (gw_applet->mateweather_pref.radar_enabled) {
+    if (gw_applet->cafeweather_pref.radar_enabled) {
         GdkPixbufAnimation *radar;
 
-	radar = weather_info_get_radar (gw_applet->mateweather_info);
+	radar = weather_info_get_radar (gw_applet->cafeweather_info);
         if (radar) {
             gtk_image_set_from_animation (GTK_IMAGE (priv->radar_image), radar);
         }
     }
 }
 
-static void mateweather_dialog_set_property(GObject* object, guint prop_id, const GValue* value, GParamSpec* pspec)
+static void cafeweather_dialog_set_property(GObject* object, guint prop_id, const GValue* value, GParamSpec* pspec)
 {
     MateWeatherDialog *dialog = MATEWEATHER_DIALOG (object);
 
@@ -626,7 +626,7 @@ static void mateweather_dialog_set_property(GObject* object, guint prop_id, cons
     }
 }
 
-static void mateweather_dialog_get_property(GObject* object, guint prop_id, GValue* value, GParamSpec* pspec)
+static void cafeweather_dialog_get_property(GObject* object, guint prop_id, GValue* value, GParamSpec* pspec)
 {
     MateWeatherDialog *dialog = MATEWEATHER_DIALOG (object);
 
@@ -637,54 +637,54 @@ static void mateweather_dialog_get_property(GObject* object, guint prop_id, GVal
     }
 }
 
-static void mateweather_dialog_init(MateWeatherDialog* self)
+static void cafeweather_dialog_init(MateWeatherDialog* self)
 {
-    self->priv = mateweather_dialog_get_instance_private (self);
+    self->priv = cafeweather_dialog_get_instance_private (self);
 }
 
-static GObject* mateweather_dialog_constructor(GType type, guint n_construct_params, GObjectConstructParam* construct_params)
+static GObject* cafeweather_dialog_constructor(GType type, guint n_construct_params, GObjectConstructParam* construct_params)
 {
     GObject *object;
     MateWeatherDialog *self;
 
-    object = G_OBJECT_CLASS (mateweather_dialog_parent_class)->
+    object = G_OBJECT_CLASS (cafeweather_dialog_parent_class)->
         constructor (type, n_construct_params, construct_params);
     self = MATEWEATHER_DIALOG (object);
 
-    mateweather_dialog_create (self);
-    mateweather_dialog_update (self);
+    cafeweather_dialog_create (self);
+    cafeweather_dialog_update (self);
 
     return object;
 }
 
-GtkWidget* mateweather_dialog_new(MateWeatherApplet* applet)
+GtkWidget* cafeweather_dialog_new(MateWeatherApplet* applet)
 {
 	return g_object_new(MATEWEATHER_TYPE_DIALOG,
-		"mateweather-applet", applet,
+		"cafeweather-applet", applet,
 		NULL);
 }
 
-static void mateweather_dialog_unrealize(GtkWidget* widget)
+static void cafeweather_dialog_unrealize(GtkWidget* widget)
 {
     MateWeatherDialog* self = MATEWEATHER_DIALOG(widget);
 
-    mateweather_dialog_save_geometry(self);
+    cafeweather_dialog_save_geometry(self);
 
-    GTK_WIDGET_CLASS(mateweather_dialog_parent_class)->unrealize(widget);
+    GTK_WIDGET_CLASS(cafeweather_dialog_parent_class)->unrealize(widget);
 }
 
-static void mateweather_dialog_class_init(MateWeatherDialogClass* klass)
+static void cafeweather_dialog_class_init(MateWeatherDialogClass* klass)
 {
     GObjectClass *object_class = G_OBJECT_CLASS (klass);
     GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
 
-    mateweather_dialog_parent_class = g_type_class_peek_parent (klass);
+    cafeweather_dialog_parent_class = g_type_class_peek_parent (klass);
 
-    object_class->set_property = mateweather_dialog_set_property;
-    object_class->get_property = mateweather_dialog_get_property;
-    object_class->constructor = mateweather_dialog_constructor;
-    widget_class->unrealize = mateweather_dialog_unrealize;
+    object_class->set_property = cafeweather_dialog_set_property;
+    object_class->get_property = cafeweather_dialog_get_property;
+    object_class->constructor = cafeweather_dialog_constructor;
+    widget_class->unrealize = cafeweather_dialog_unrealize;
 
     /* This becomes an OBJECT property when MateWeatherApplet is redone */
-    g_object_class_install_property(object_class, PROP_MATEWEATHER_APPLET, g_param_spec_pointer ("mateweather-applet", "MateWeather Applet", "The MateWeather Applet", G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY));
+    g_object_class_install_property(object_class, PROP_MATEWEATHER_APPLET, g_param_spec_pointer ("cafeweather-applet", "MateWeather Applet", "The MateWeather Applet", G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY));
 }

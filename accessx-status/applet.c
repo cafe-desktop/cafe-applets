@@ -29,7 +29,7 @@
 #include <gio/gdesktopappinfo.h>
 #include <gdk/gdkkeysyms.h>
 #include <gdk/gdkx.h>
-#include <mate-panel-applet.h>
+#include <cafe-panel-applet.h>
 #include <X11/XKBlib.h>
 
 #define XK_MISCELLANY
@@ -113,7 +113,7 @@ static void help_cb(GtkAction* action, AccessxStatusApplet* sapplet)
 	GdkScreen* screen = gtk_widget_get_screen(GTK_WIDGET(sapplet->applet));
 
 	gtk_show_uri_on_window(NULL,
-	                       "help:mate-accessx-status",
+	                       "help:cafe-accessx-status",
 	                       gtk_get_current_event_time(),
 	                       &error);
 
@@ -148,7 +148,7 @@ static void dialog_cb(GtkAction* action, AccessxStatusApplet* sapplet)
 
 
 	screen = gtk_widget_get_screen (GTK_WIDGET (sapplet->applet));
-	appinfo = g_app_info_create_from_commandline ("mate-keyboard-properties --a11y",
+	appinfo = g_app_info_create_from_commandline ("cafe-keyboard-properties --a11y",
 						      _("Open the keyboard preferences dialog"),
 						      G_APP_INFO_CREATE_NONE,
 						      &error);
@@ -334,7 +334,7 @@ static void accessx_status_applet_init_modifiers(AccessxStatusApplet* sapplet)
 static gboolean timer_reset_slowkeys_image(AccessxStatusApplet* sapplet)
 {
 	GtkIconTheme *icon_theme = gtk_icon_theme_get_default ();
-	gint icon_size = mate_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
+	gint icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
 	gint icon_scale = gtk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
 	cairo_surface_t* surface = gtk_icon_theme_load_surface (icon_theme, SLOWKEYS_IDLE_ICON, icon_size, icon_scale, NULL, 0, NULL);
 
@@ -347,7 +347,7 @@ static gboolean timer_reset_slowkeys_image(AccessxStatusApplet* sapplet)
 static gboolean timer_reset_bouncekeys_image(AccessxStatusApplet* sapplet)
 {
 	GtkIconTheme *icon_theme = gtk_icon_theme_get_default ();
-	gint icon_size = mate_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
+	gint icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
 	gint icon_scale = gtk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
 	cairo_surface_t* surface = gtk_icon_theme_load_surface (icon_theme, BOUNCEKEYS_ICON, icon_size, icon_scale, NULL, 0, NULL);
 
@@ -414,7 +414,7 @@ static cairo_surface_t* accessx_status_applet_altgraph_image(AccessxStatusApplet
 	int icon_size, icon_scale;
 
 	icon_theme = gtk_icon_theme_get_default ();
-	icon_size = mate_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
+	icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
 	icon_scale = gtk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
 
 	switch (state)
@@ -467,7 +467,7 @@ static cairo_surface_t* accessx_status_applet_slowkeys_image(AccessxStatusApplet
 	gboolean is_idle = TRUE;
 	gchar* icon_name = SLOWKEYS_IDLE_ICON;
 	GtkIconTheme *icon_theme = gtk_icon_theme_get_default ();
-	gint icon_size = mate_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
+	gint icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
 	gint icon_scale = gtk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
 
 	if (event != NULL)
@@ -559,7 +559,7 @@ static cairo_surface_t* accessx_status_applet_bouncekeys_image(AccessxStatusAppl
 	gchar* icon_name = ACCESSX_BASE_ICON;
 	gint alpha;
 	GtkIconTheme *icon_theme = gtk_icon_theme_get_default ();
-	gint icon_size = mate_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
+	gint icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
 	gint icon_scale = gtk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
 
 	g_assert(sapplet->applet);
@@ -623,7 +623,7 @@ static cairo_surface_t* accessx_status_applet_mousekeys_image(AccessxStatusApple
 	cairo_surface_t *surface;
 	gchar* which_dot = MOUSEKEYS_DOT_LEFT;
 	GtkIconTheme *icon_theme = gtk_icon_theme_get_default ();
-	gint icon_size = mate_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
+	gint icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
 	gint icon_scale = gtk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
 	tmp_pixbuf = gtk_icon_theme_load_icon_for_scale (icon_theme, MOUSEKEYS_BASE_ICON, icon_size, icon_scale, 0, NULL);
 	mouse_pixbuf = gdk_pixbuf_copy(tmp_pixbuf);
@@ -742,7 +742,7 @@ static void accessx_status_applet_set_state_icon (AccessxStatusApplet* sapplet, 
 	if (surface == NULL && icon_name != NULL)
 	{
 		icon_theme = gtk_icon_theme_get_default();
-		icon_size = mate_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
+		icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
 		icon_scale = gtk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
 		surface = gtk_icon_theme_load_surface (icon_theme, icon_name, icon_size, icon_scale, NULL, 0, NULL);
 	}
@@ -1114,8 +1114,8 @@ static AccessxStatusApplet* create_applet(MatePanelApplet* applet)
 	sapplet->initialized = False; /* there must be a better way */
 	sapplet->error_type = ACCESSX_STATUS_ERROR_NONE;
 	sapplet->applet = applet;
-	mate_panel_applet_set_flags(applet, MATE_PANEL_APPLET_EXPAND_MINOR);
-	sapplet->orient = mate_panel_applet_get_orient(applet);
+	cafe_panel_applet_set_flags(applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+	sapplet->orient = cafe_panel_applet_get_orient(applet);
 
 	if (sapplet->orient == MATE_PANEL_APPLET_ORIENT_LEFT || sapplet->orient == MATE_PANEL_APPLET_ORIENT_RIGHT)
 	{
@@ -1131,7 +1131,7 @@ static AccessxStatusApplet* create_applet(MatePanelApplet* applet)
 	gtk_box_set_homogeneous (GTK_BOX (stickyfoo), TRUE);
 
 	icon_theme = gtk_icon_theme_get_default();
-	icon_size = mate_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
+	icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
 	icon_scale = gtk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
 
 	surface = accessx_status_applet_mousekeys_image(sapplet, NULL);
@@ -1297,7 +1297,7 @@ static gboolean accessx_status_applet_reset(gpointer user_data)
 {
 	AccessxStatusApplet* sapplet = user_data;
 	g_assert(sapplet->applet);
-	accessx_status_applet_reorient(GTK_WIDGET(sapplet->applet), mate_panel_applet_get_orient(sapplet->applet), sapplet);
+	accessx_status_applet_reorient(GTK_WIDGET(sapplet->applet), cafe_panel_applet_get_orient(sapplet->applet), sapplet);
 
 	return FALSE;
 }
@@ -1371,10 +1371,10 @@ static gboolean accessx_status_applet_fill(MatePanelApplet* applet)
 	gtk_action_group_set_translation_domain(action_group, GETTEXT_PACKAGE);
 	gtk_action_group_add_actions(action_group, accessx_status_applet_menu_actions, G_N_ELEMENTS(accessx_status_applet_menu_actions), sapplet);
 	ui_path = g_build_filename(ACCESSX_MENU_UI_DIR, "accessx-status-applet-menu.xml", NULL);
-	mate_panel_applet_setup_menu_from_file(sapplet->applet, ui_path, action_group);
+	cafe_panel_applet_setup_menu_from_file(sapplet->applet, ui_path, action_group);
 	g_free(ui_path);
 
-	if (mate_panel_applet_get_locked_down(sapplet->applet))
+	if (cafe_panel_applet_get_locked_down(sapplet->applet))
 	{
 		GtkAction* action = gtk_action_group_get_action(action_group, "Dialog");
 		gtk_action_set_visible(action, FALSE);
@@ -1394,7 +1394,7 @@ static gboolean accessx_status_applet_fill(MatePanelApplet* applet)
 		accessx_status_applet_reset(sapplet);
 	}
 
-	mate_panel_applet_set_background_widget (sapplet->applet, GTK_WIDGET (sapplet->applet));
+	cafe_panel_applet_set_background_widget (sapplet->applet, GTK_WIDGET (sapplet->applet));
 
 	return TRUE;
 }

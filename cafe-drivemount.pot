@@ -153,7 +153,7 @@ msgstr ""
 
 #. (itstool) path: legalnotice/para
 #: C/index.docbook:170
-msgid "To report a bug or make a suggestion regarding the <application>Disk Mounter</application> or this manual, follow the directions in the <ulink url=\"help:mate-user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+msgid "To report a bug or make a suggestion regarding the <application>Disk Mounter</application> or this manual, follow the directions in the <ulink url=\"help:cafe-user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm

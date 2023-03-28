@@ -2,7 +2,7 @@
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # ToMáš Marný, 2020
-# Wolfgang Ulbrich <mate@raveit.de>, 2020
+# Wolfgang Ulbrich <cafe@raveit.de>, 2020
 # Lucas Lommer <drom@kdyne.net>, 2020
 # 
 msgid ""
@@ -11,7 +11,7 @@ msgstr ""
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:33+0000\n"
 "Last-Translator: Lucas Lommer <drom@kdyne.net>, 2020\n"
-"Language-Team: Czech (https://www.transifex.com/mate/teams/13566/cs/)\n"
+"Language-Team: Czech (https://www.transifex.com/cafe/teams/13566/cs/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -223,12 +223,12 @@ msgstr "Ohlasy"
 msgid ""
 "To report a bug or make a suggestion regarding the <application>Disk "
 "Mounter</application> or this manual, follow the directions in the <ulink "
-"url=\"help:mate-user-guide/feedback\" type=\"help\">MATE Feedback "
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">MATE Feedback "
 "Page</ulink>."
 msgstr ""
 "Chcete-li nahlásit chybu nebo učinit návrh týkající se appletu "
 "<application>Připojování disků</application> nebo této příručky, postupujte "
-"podle pokynů na <ulink url=\"help:mate-user-guide/feedback\" "
+"podle pokynů na <ulink url=\"help:cafe-user-guide/feedback\" "
 "type=\"help\">stránce ohlasů na MATE</ulink>."
 
 #. (itstool) path: article/indexterm
@@ -376,7 +376,7 @@ msgid ""
 "example by using the <application>Disk Mounter</application>."
 msgstr ""
 "Oddíly na zařízeních jako pevné disky jsou obvykle připojeny při startu "
-"systému a odpojeny, když je počítač vypnut. Vyjímatelná média musejí být "
+"systému a odpojeny, když je počítač vypnut. Vyjícafelná média musejí být "
 "ručně připojována a odpojována, například pomocí appletu "
 "<application>Připojování disků</application>."
 
@@ -388,7 +388,7 @@ msgid ""
 " Mounter</application> so that you can unmount them when you are finished, "
 "and provide a visual indication that they are present."
 msgstr ""
-"Některé systémy mohou automaticky připojovat i některá vyjímatelná média "
+"Některé systémy mohou automaticky připojovat i některá vyjícafelná média "
 "(jako disky připojené přes USB či IEEE1394 - FireWire). I tato zařízení "
 "mohou být spravována appletem <application>Připojování disků</application>."
 "  Můžete je tak po dokončení práce ručně odpojit a applet poskytuje vizuální"

@@ -87,7 +87,7 @@ drive_list_init (DriveList *self)
     self->mounts = g_hash_table_new (NULL, NULL);
     self->orientation = GTK_ORIENTATION_HORIZONTAL;
     self->layout_tag = 0;
-    self->settings = g_settings_new ("org.mate.drivemount");
+    self->settings = g_settings_new ("org.cafe.drivemount");
     self->icon_size = 24;
     self->relief = GTK_RELIEF_NORMAL;
 

@@ -37,8 +37,8 @@
 
 #include <gtk/gtk.h>
 
-#include <mate-panel-applet.h>
-#include <mate-panel-applet-gsettings.h>
+#include <cafe-panel-applet.h>
+#include <cafe-panel-applet-gsettings.h>
 
 #ifdef HAVE_LIBNOTIFY
 #include <libnotify/notify.h>
@@ -50,7 +50,7 @@
 #define gettext_noop(String) (String)
 #endif
 
-#define BATTSTAT_SCHEMA "org.mate.panel.applet.battstat"
+#define BATTSTAT_SCHEMA "org.cafe.panel.applet.battstat"
 
 static gboolean check_for_updates (gpointer data);
 static void about_cb( GtkAction *, ProgressData * );
@@ -593,7 +593,7 @@ possibly_update_status_icon( ProgressData *battstat, BatteryStatus *info )
 
   theme = gtk_icon_theme_get_for_screen (gtk_widget_get_screen (GTK_WIDGET (battstat->applet)));
 
-  icon_size = mate_panel_applet_get_size (MATE_PANEL_APPLET (battstat->applet));
+  icon_size = cafe_panel_applet_get_size (MATE_PANEL_APPLET (battstat->applet));
   icon_scale = gtk_widget_get_scale_factor (GTK_WIDGET (battstat->applet));
 
   surface = gtk_icon_theme_load_surface (theme, icon_name, icon_size, icon_scale, NULL, 0, NULL);
@@ -766,9 +766,9 @@ battstat_show_help( ProgressData *battstat, const char *section )
   char *uri;
 
   if (section)
-    uri = g_strdup_printf ("help:mate-battstat/%s", section);
+    uri = g_strdup_printf ("help:cafe-battstat/%s", section);
   else
-    uri = g_strdup ("help:mate-battstat");
+    uri = g_strdup ("help:cafe-battstat");
 
   gtk_show_uri_on_window (NULL,
                 uri,
@@ -1049,7 +1049,7 @@ create_layout(ProgressData *battstat)
   if (DEBUG) g_print("create_layout()\n");
 
   /* Have our background automatically painted. */
-  mate_panel_applet_set_background_widget( MATE_PANEL_APPLET( battstat->applet ),
+  cafe_panel_applet_set_background_widget( MATE_PANEL_APPLET( battstat->applet ),
                                       GTK_WIDGET( battstat->applet ) );
 
   /* Allocate the four widgets that we need. */
@@ -1116,10 +1116,10 @@ battstat_applet_fill (MatePanelApplet *applet)
 
   gtk_window_set_default_icon_name ("battery");
 
-  mate_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+  cafe_panel_applet_set_flags (applet, MATE_PANEL_APPLET_EXPAND_MINOR);
 
   battstat = g_new0 (ProgressData, 1);
-  battstat->settings = mate_panel_applet_settings_new (applet, BATTSTAT_SCHEMA);
+  battstat->settings = cafe_panel_applet_settings_new (applet, BATTSTAT_SCHEMA);
 
   /* Some starting values... */
   battstat->applet = GTK_WIDGET (applet);
@@ -1127,7 +1127,7 @@ battstat_applet_fill (MatePanelApplet *applet)
   battstat->last_batt_life = 1000;
   battstat->last_acline_status = 1000;
   battstat->last_charging = 1000;
-  battstat->orienttype = mate_panel_applet_get_orient (applet);
+  battstat->orienttype = cafe_panel_applet_get_orient (applet);
   battstat->battery_low_dialog = NULL;
   battstat->battery_low_label = NULL;
   battstat->timeout = -1;
@@ -1148,11 +1148,11 @@ battstat_applet_fill (MatePanelApplet *applet)
 				G_N_ELEMENTS (battstat_menu_actions),
 				battstat);
   ui_path = g_build_filename (BATTSTAT_MENU_UI_DIR, "battstat-applet-menu.xml", NULL);
-  mate_panel_applet_setup_menu_from_file (MATE_PANEL_APPLET (battstat->applet),
+  cafe_panel_applet_setup_menu_from_file (MATE_PANEL_APPLET (battstat->applet),
 				     ui_path, action_group);
   g_free (ui_path);
 
-  if (mate_panel_applet_get_locked_down (MATE_PANEL_APPLET (battstat->applet))) {
+  if (cafe_panel_applet_get_locked_down (MATE_PANEL_APPLET (battstat->applet))) {
 	  GtkAction *action;
 
 	  action = gtk_action_group_get_action (action_group, "BattstatProperties");

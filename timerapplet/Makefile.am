@@ -12,9 +12,9 @@ timer_applet_SOURCES = timerapplet.c
 timer_applet_LDADD = $(MATE_APPLETS4_LIBS) $(MATEDESKTOP_LIBS) $(LIBNOTIFY_LIBS)
 timer_applet_CFLAGS = $(WARN_CFLAGS)
 
-appletsdir       = $(datadir)/mate-panel/applets
-applets_in_files = org.mate.applets.TimerApplet.mate-panel-applet.desktop.in
-applets_DATA     = $(applets_in_files:.mate-panel-applet.desktop.in=.mate-panel-applet)
+appletsdir       = $(datadir)/cafe-panel/applets
+applets_in_files = org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in
+applets_DATA     = $(applets_in_files:.cafe-panel-applet.desktop.in=.cafe-panel-applet)
 
 $(applets_in_files): $(applets_in_files).in Makefile
 	$(AM_V_GEN)sed \
@@ -24,15 +24,15 @@ $(applets_DATA): $(applets_in_files) Makefile
 	$(AM_V_GEN) $(MSGFMT) --desktop --keyword=Name --keyword=Description --template $< -d $(top_srcdir)/po -o $@
 
 servicedir       = $(datadir)/dbus-1/services
-service_in_files = org.mate.panel.applet.TimerAppletFactory.service.in
+service_in_files = org.cafe.panel.applet.TimerAppletFactory.service.in
 service_DATA     = $(service_in_files:.service.in=.service)
 
-org.mate.panel.applet.TimerAppletFactory.service: $(service_in_files)
+org.cafe.panel.applet.TimerAppletFactory.service: $(service_in_files)
 	$(AM_V_GEN)sed \
 		-e "s|\@LOCATION\@|$(APPLET_LOCATION)|" \
 		$< > $@
 
-timer_gschema_in_files = org.mate.panel.applet.timer.gschema.xml.in
+timer_gschema_in_files = org.cafe.panel.applet.timer.gschema.xml.in
 gsettings_SCHEMAS = $(timer_gschema_in_files:.xml.in=.xml)
 @GSETTINGS_RULES@
 

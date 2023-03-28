@@ -3,7 +3,7 @@
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Toni Estévez <toni.estevez@gmail.com>, 2020
 # elio <micta2003@hotmail.com>, 2020
-# Wolfgang Ulbrich <mate@raveit.de>, 2020
+# Wolfgang Ulbrich <cafe@raveit.de>, 2020
 # Joel Barrios <darkshram@gmail.com>, 2020
 # 
 msgid ""
@@ -12,7 +12,7 @@ msgstr ""
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:33+0000\n"
 "Last-Translator: Joel Barrios <darkshram@gmail.com>, 2020\n"
-"Language-Team: Spanish (https://www.transifex.com/mate/teams/13566/es/)\n"
+"Language-Team: Spanish (https://www.transifex.com/cafe/teams/13566/es/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -218,12 +218,12 @@ msgstr "Comentarios"
 msgid ""
 "To report a bug or make a suggestion regarding the <application>Disk "
 "Mounter</application> or this manual, follow the directions in the <ulink "
-"url=\"help:mate-user-guide/feedback\" type=\"help\">MATE Feedback "
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">MATE Feedback "
 "Page</ulink>."
 msgstr ""
 "Para informar de un error o hacer una sugerencia con respecto a "
 "<application>Montador de discos</application> o a este manual, siga las "
-"instrucciones de la <ulink url=\"help:mate-user-guide/feedback\" "
+"instrucciones de la <ulink url=\"help:cafe-user-guide/feedback\" "
 "type=\"help\">Página de comentarios de MATE.</ulink>"
 
 #. (itstool) path: article/indexterm

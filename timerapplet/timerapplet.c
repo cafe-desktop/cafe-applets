@@ -31,15 +31,15 @@
 
 #include <libnotify/notify.h>
 
-#include <mate-panel-applet.h>
-#include <mate-panel-applet-gsettings.h>
+#include <cafe-panel-applet.h>
+#include <cafe-panel-applet-gsettings.h>
 
 /* Applet constants */
-#define APPLET_ICON  "mate-panel-clock"
+#define APPLET_ICON  "cafe-panel-clock"
 #define STEP         100
 
 /* GSettings constants */
-#define TIMER_SCHEMA            "org.mate.panel.applet.timer"
+#define TIMER_SCHEMA            "org.cafe.panel.applet.timer"
 #define NAME_KEY                "name"
 #define DURATION_KEY            "duration"
 #define SHOW_NOTIFICATION_KEY   "show-notification"
@@ -406,12 +406,12 @@ timer_applet_fill (MatePanelApplet* applet_widget)
     if (!notify_is_initted ())
         notify_init ("timer-applet");
 
-    mate_panel_applet_set_flags (applet_widget, MATE_PANEL_APPLET_EXPAND_MINOR);
-    mate_panel_applet_set_background_widget (MATE_PANEL_APPLET (applet_widget), GTK_WIDGET (applet_widget));
+    cafe_panel_applet_set_flags (applet_widget, MATE_PANEL_APPLET_EXPAND_MINOR);
+    cafe_panel_applet_set_background_widget (MATE_PANEL_APPLET (applet_widget), GTK_WIDGET (applet_widget));
 
     applet = g_malloc0(sizeof(TimerApplet));
     applet->applet = applet_widget;
-    applet->settings = mate_panel_applet_settings_new (applet_widget,TIMER_SCHEMA);
+    applet->settings = cafe_panel_applet_settings_new (applet_widget,TIMER_SCHEMA);
     applet->timeout_id = 0;
     applet->active = FALSE;
     applet->pause = FALSE;
@@ -450,7 +450,7 @@ timer_applet_fill (MatePanelApplet* applet_widget)
     gtk_action_group_set_translation_domain (applet->action_group, GETTEXT_PACKAGE);
     gtk_action_group_add_actions (applet->action_group, applet_menu_actions,
                                   G_N_ELEMENTS (applet_menu_actions), applet);
-    mate_panel_applet_setup_menu (applet->applet, ui, applet->action_group);
+    cafe_panel_applet_setup_menu (applet->applet, ui, applet->action_group);
 
     /* execute callback to set actions sensitiveness */
     timer_callback (applet);
@@ -462,7 +462,7 @@ timer_applet_fill (MatePanelApplet* applet_widget)
     return TRUE;
 }
 
-/* this function, called by mate-panel, will create the applet */
+/* this function, called by cafe-panel, will create the applet */
 static gboolean
 timer_factory (MatePanelApplet* applet, const char* iid, gpointer data)
 {
@@ -474,7 +474,7 @@ timer_factory (MatePanelApplet* applet, const char* iid, gpointer data)
     return retval;
 }
 
-/* needed by mate-panel applet library */
+/* needed by cafe-panel applet library */
 MATE_PANEL_APPLET_OUT_PROCESS_FACTORY("TimerAppletFactory",
                                       PANEL_TYPE_APPLET,
                                       "Timer applet",

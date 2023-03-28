@@ -7,7 +7,7 @@
 <!-- 
       (Do not remove this comment block.)
   Maintained by the MATE Documentation Project
-  http://wiki.mate-desktop.org/dev-doc:doc-team-guide
+  http://wiki.cafe-desktop.org/dev-doc:doc-team-guide
   Template version: 2.0 beta
   Template last modified Feb 06, 2003
 -->
@@ -130,7 +130,7 @@
 		<title>Feedback</title>
 		<para>
 		   To report a bug or make a suggestion regarding the &applet; applet or
-		   this manual, follow the directions in the <ulink url="help:mate-user-guide/feedback"
+		   this manual, follow the directions in the <ulink url="help:cafe-user-guide/feedback"
 		   type="help">MATE Feedback Page</ulink>.
 	        </para>
 	     </legalnotice>
@@ -202,7 +202,7 @@
    instance of &applet; for each CPU that you want to monitor if you are in a
    multiprocessor (SMP) system.</para>
 
-   <sect2 id="mate-cpufreq-icons">
+   <sect2 id="cafe-cpufreq-icons">
      <title>Understanding the Icons</title>
      <para>
        The &applet; has a series of icons that graphically represent the current
@@ -270,7 +270,7 @@
       </informaltable>
    </sect2>
    
-   <sect2 id="mate-cpufreq-selector">
+   <sect2 id="cafe-cpufreq-selector">
       <title>Frequency and Governor Selector</title>
       <warning><para>The Frequency Selector functionality may not be available
       on your MATE Desktop by default. Please consult your system
@@ -388,7 +388,7 @@
 	    <para>
 	     This option allows you to choose how much information is shown in
 	     the frequency selector dropdown
-	     (see <xref linkend="mate-cpufreq-selector"/>). You can select to
+	     (see <xref linkend="cafe-cpufreq-selector"/>). You can select to
 	     display <guilabel>Frequencies</guilabel>,
 	     <guilabel>Governors</guilabel> or both <guilabel>Frequencies and
 	     Governors</guilabel>.

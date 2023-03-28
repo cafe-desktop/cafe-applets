@@ -3,8 +3,8 @@
 ##########################################################
 requires:
   debian:
-    # Useful URL: https://github.com/mate-desktop/debian-packages
-    # Useful URL: https://salsa.debian.org/debian-mate-team/mate-applets
+    # Useful URL: https://github.com/cafe-desktop/debian-packages
+    # Useful URL: https://salsa.debian.org/debian-cafe-team/cafe-applets
     - aptitude
     - autopoint
     - clang
@@ -22,8 +22,8 @@ requires:
     - libgtop2-dev
     - libgucharmap-2-90-dev
     - libiw-dev
-    - libmate-panel-applet-dev
-    - libmateweather-dev
+    - libcafe-panel-applet-dev
+    - libcafeweather-dev
     - libnotify-dev
     - libpolkit-gobject-1-dev
     - libupower-glib-dev
@@ -31,13 +31,13 @@ requires:
     - libx11-dev
     - libxml2-dev
     - make
-    - mate-common
+    - cafe-common
     - x11proto-kb-dev
     - yelp-tools
 
 before_scripts:
   - ./html-cppcheck
-  - ./install-from-git https://github.com/mate-desktop/mate-common master
+  - ./install-from-git https://github.com/cafe-desktop/cafe-common master
 
 build_scripts:
   - ./before-build
@@ -45,4 +45,4 @@ build_scripts:
   - ./after-build
 
 after_scripts:
-  - if [ -f "gen-index" ]; then ./gen-index -l 20 -i https://github.com/${OWNER_NAME}/mate-applets/raw/master/cpufreq/pixmaps/cpufreq-100.png; fi
+  - if [ -f "gen-index" ]; then ./gen-index -l 20 -i https://github.com/${OWNER_NAME}/cafe-applets/raw/master/cpufreq/pixmaps/cpufreq-100.png; fi

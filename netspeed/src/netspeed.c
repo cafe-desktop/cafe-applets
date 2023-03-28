@@ -25,8 +25,8 @@
 
 #include <math.h>
 #include <gtk/gtk.h>
-#include <mate-panel-applet.h>
-#include <mate-panel-applet-gsettings.h>
+#include <cafe-panel-applet.h>
+#include <cafe-panel-applet-gsettings.h>
 #include <glib.h>
 #include <glib/gi18n.h>
 #include <gio/gio.h>
@@ -40,22 +40,22 @@ static const char* const dev_type_icon[DEV_UNKNOWN + 1] = {
 	"network-wired",             /* DEV_ETHERNET */
 	"network-wireless",          /* DEV_WIRELESS */
 	"modem",                     /* DEV_PPP */
-	"mate-netspeed-plip",        /* DEV_PLIP */
-	"mate-netspeed-plip",        /* DEV_SLIP */
+	"cafe-netspeed-plip",        /* DEV_PLIP */
+	"cafe-netspeed-plip",        /* DEV_SLIP */
 	"network-workgroup",         /* DEV_UNKNOWN */
 };
 
 static const char* wireless_quality_icon[] = {
-	"mate-netspeed-wireless-25",
-	"mate-netspeed-wireless-50",
-	"mate-netspeed-wireless-75",
-	"mate-netspeed-wireless-100"
+	"cafe-netspeed-wireless-25",
+	"cafe-netspeed-wireless-50",
+	"cafe-netspeed-wireless-75",
+	"cafe-netspeed-wireless-100"
 };
 
 static const char IN_ICON[] = "go-down";
 static const char OUT_ICON[] = "go-up";
 static const char ERROR_ICON[] = "gtk-dialog-error";
-static const char LOGO_ICON[] = "mate-netspeed-applet";
+static const char LOGO_ICON[] = "cafe-netspeed-applet";
 
 /* How many old in out values do we store?
  * The value actually shown in the applet is the average
@@ -149,7 +149,7 @@ change_icons(MateNetspeedApplet *applet)
 	GtkIconTheme *icon_theme;
 	gint icon_scale;
 
-	gint icon_size = mate_panel_applet_get_size (MATE_PANEL_APPLET (applet->applet)) - 8;
+	gint icon_size = cafe_panel_applet_get_size (MATE_PANEL_APPLET (applet->applet)) - 8;
 	/* FIXME: Not all network icons include a high enough resolution, so to make them all
 	 * consistent, we cap them at 48px.*/
 	icon_size = CLAMP (icon_size, 16, 48);
@@ -238,8 +238,8 @@ applet_change_size_or_orient(MatePanelApplet *applet_widget, int arg1, MateNetsp
 
 	g_assert(applet);
 
-	size = mate_panel_applet_get_size(applet_widget);
-	orient = mate_panel_applet_get_orient(applet_widget);
+	size = cafe_panel_applet_get_size(applet_widget);
+	orient = cafe_panel_applet_get_orient(applet_widget);
 
 	g_object_ref(applet->pix_box);
 	g_object_ref(applet->in_pix);
@@ -766,9 +766,9 @@ display_help (GtkWidget *dialog, const gchar *section)
 	char *uri;
 
 	if (section)
-		uri = g_strdup_printf ("help:mate-netspeed-applet/%s", section);
+		uri = g_strdup_printf ("help:cafe-netspeed-applet/%s", section);
 	else
-		uri = g_strdup ("help:mate-netspeed-applet");
+		uri = g_strdup ("help:cafe-netspeed-applet");
 
 	ret = gtk_show_uri_on_window (NULL,
 	                              uri,
@@ -827,7 +827,7 @@ about_cb(GtkAction *action, gpointer data)
 			       "authors", authors,
 			       "documenters", NULL,
 			       "translator-credits", _("translator-credits"),
-			       "website", "http://www.mate-desktop.org/",
+			       "website", "http://www.cafe-desktop.org/",
 			       "logo-icon-name", LOGO_ICON,
 			       NULL);
 
@@ -1368,7 +1368,7 @@ showinfo_cb(GtkAction *action, gpointer data)
 	gtk_widget_show_all(GTK_WIDGET(applet->details));
 }
 
-static const GtkActionEntry mate_netspeed_applet_menu_actions [] = {
+static const GtkActionEntry cafe_netspeed_applet_menu_actions [] = {
 		{ "MateNetspeedAppletDetails", "dialog-information", N_("Device _Details"),
 		  NULL, NULL, G_CALLBACK (showinfo_cb) },
 		{ "MateNetspeedAppletProperties", "document-properties", N_("Preferences..."),
@@ -1383,7 +1383,7 @@ static const GtkActionEntry mate_netspeed_applet_menu_actions [] = {
  * text changes. Only if the label wants to grow, we give
  * permission. This will eventually result in the maximal
  * size of the applet and prevents the icons and labels from
- * "jumping around" in the mate_panel which looks uggly
+ * "jumping around" in the cafe_panel which looks uggly
  */
 static void
 label_size_allocate_cb(GtkWidget *widget, GtkAllocation *allocation, MateNetspeedApplet *applet)
@@ -1543,7 +1543,7 @@ update_tooltip(MateNetspeedApplet* applet)
 
 
 static gboolean
-mate_netspeed_enter_cb(GtkWidget *widget, GdkEventCrossing *event, gpointer data)
+cafe_netspeed_enter_cb(GtkWidget *widget, GdkEventCrossing *event, gpointer data)
 {
 	MateNetspeedApplet *applet = data;
 
@@ -1554,7 +1554,7 @@ mate_netspeed_enter_cb(GtkWidget *widget, GdkEventCrossing *event, gpointer data
 }
 
 static gboolean
-mate_netspeed_leave_cb(GtkWidget *widget, GdkEventCrossing *event, gpointer data)
+cafe_netspeed_leave_cb(GtkWidget *widget, GdkEventCrossing *event, gpointer data)
 {
 	MateNetspeedApplet *applet = data;
 
@@ -1565,7 +1565,7 @@ mate_netspeed_leave_cb(GtkWidget *widget, GdkEventCrossing *event, gpointer data
 /* The "main" function of the applet
  */
 static gboolean
-mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, gpointer data)
+cafe_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, gpointer data)
 {
 	MateNetspeedApplet *applet;
 	int i;
@@ -1574,7 +1574,7 @@ mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, g
 	GtkWidget *spacer, *spacer_box;
 
 	/* Have our background automatically painted. */
-	mate_panel_applet_set_background_widget(MATE_PANEL_APPLET(applet_widget),
+	cafe_panel_applet_set_background_widget(MATE_PANEL_APPLET(applet_widget),
 		GTK_WIDGET(applet_widget));
 
 	if (strcmp (iid, "NetspeedApplet"))
@@ -1615,7 +1615,7 @@ mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, g
 		applet->out_graph[i] = -1;
 	}
 
-	applet->gsettings = mate_panel_applet_settings_new (applet_widget, "org.mate.panel.applet.netspeed");
+	applet->gsettings = cafe_panel_applet_settings_new (applet_widget, "org.cafe.panel.applet.netspeed");
 
 	/* Get stored settings from gsettings
 	 */
@@ -1703,7 +1703,7 @@ mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, g
 	gtk_widget_show_all(GTK_WIDGET(applet_widget));
 	update_applet(applet);
 
-	mate_panel_applet_set_flags(applet_widget, MATE_PANEL_APPLET_EXPAND_MINOR);
+	cafe_panel_applet_set_flags(applet_widget, MATE_PANEL_APPLET_EXPAND_MINOR);
 
 	applet->timeout_id = g_timeout_add(applet->refresh_time,
                            (GSourceFunc)timeout_function,
@@ -1742,11 +1742,11 @@ mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, g
                            (gpointer)applet);
 
 	g_signal_connect(G_OBJECT(applet_widget), "leave_notify_event",
-			 G_CALLBACK(mate_netspeed_leave_cb),
+			 G_CALLBACK(cafe_netspeed_leave_cb),
 			 (gpointer)applet);
 
 	g_signal_connect(G_OBJECT(applet_widget), "enter_notify_event",
-			 G_CALLBACK(mate_netspeed_enter_cb),
+			 G_CALLBACK(cafe_netspeed_enter_cb),
 			 (gpointer)applet);
 
 	GtkActionGroup *action_group;
@@ -1754,11 +1754,11 @@ mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, g
 	action_group = gtk_action_group_new ("Netspeed Applet Actions");
 	gtk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
 	gtk_action_group_add_actions (action_group,
-                                  mate_netspeed_applet_menu_actions,
-                                  G_N_ELEMENTS (mate_netspeed_applet_menu_actions),
+                                  cafe_netspeed_applet_menu_actions,
+                                  G_N_ELEMENTS (cafe_netspeed_applet_menu_actions),
                                   applet);
 	ui_path = g_build_filename (NETSPEED_MENU_UI_DIR, "netspeed-menu.xml", NULL);
-	mate_panel_applet_setup_menu_from_file (MATE_PANEL_APPLET (applet->applet), ui_path, action_group);
+	cafe_panel_applet_setup_menu_from_file (MATE_PANEL_APPLET (applet->applet), ui_path, action_group);
 	g_free (ui_path);
 	g_object_unref (action_group);
 
@@ -1768,5 +1768,5 @@ mate_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, g
 MATE_PANEL_APPLET_OUT_PROCESS_FACTORY("NetspeedAppletFactory",
 									  PANEL_TYPE_APPLET,
 									  "NetspeedApplet",
-									  mate_netspeed_applet_factory,
+									  cafe_netspeed_applet_factory,
 									  NULL)

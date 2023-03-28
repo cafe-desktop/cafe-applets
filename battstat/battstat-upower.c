@@ -302,7 +302,7 @@ battstat_upower_get_battery_info( BatteryStatus *status )
   else if( charging && rate_total != 0 )
   {
     /* Calculate time remaining until charged.  For systems with more than
-     * one battery, this code is very approximate.  The assumption is that if
+     * one battery, this code is very approxicafe.  The assumption is that if
      * one battery reaches full charge before the other that the other will
      * start charging faster due to the increase in available power (similar
      * to how a laptop will charge faster if you're not using it).

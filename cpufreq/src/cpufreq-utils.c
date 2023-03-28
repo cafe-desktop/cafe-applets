@@ -127,15 +127,15 @@ selector_is_available (void)
 	}
 
         proxy = dbus_g_proxy_new_for_name (system_bus,
-                                           "org.mate.CPUFreqSelector",
-                                           "/org/mate/cpufreq_selector/selector",
-                                           "org.mate.CPUFreqSelector");
+                                           "org.cafe.CPUFreqSelector",
+                                           "/org/cafe/cpufreq_selector/selector",
+                                           "org.cafe.CPUFreqSelector");
 
         if (!dbus_g_proxy_call (proxy, "CanSet", &error,
                            	G_TYPE_INVALID,
                            	G_TYPE_BOOLEAN, &result,
                            	G_TYPE_INVALID)) {
-		g_warning ("Error calling org.mate.CPUFreqSelector.CanSet: %s", error->message);
+		g_warning ("Error calling org.cafe.CPUFreqSelector.CanSet: %s", error->message);
 		g_error_free (error);
 		result = FALSE;
 	}

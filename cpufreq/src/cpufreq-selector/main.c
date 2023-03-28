@@ -72,9 +72,9 @@ cpufreq_selector_set_values_dbus (void)
 	}
 
 	proxy = dbus_g_proxy_new_for_name (connection,
-					   "org.mate.CPUFreqSelector",
-					   "/org/mate/cpufreq_selector/selector",
-					   "org.mate.CPUFreqSelector");
+					   "org.cafe.CPUFreqSelector",
+					   "/org/cafe/cpufreq_selector/selector",
+					   "org.cafe.CPUFreqSelector");
 	if (!proxy) {
 		g_printerr ("Could not construct proxy object\n");
 

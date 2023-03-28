@@ -127,7 +127,7 @@ msgstr ""
 
 #. (itstool) path: legalnotice/para
 #: C/index.docbook:133
-msgid "To report a bug or make a suggestion regarding the Keyboard Accessibility Monitor applet or this manual, follow the directions in the <ulink url=\"help:mate-user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+msgid "To report a bug or make a suggestion regarding the Keyboard Accessibility Monitor applet or this manual, follow the directions in the <ulink url=\"help:cafe-user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -167,7 +167,7 @@ msgstr ""
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:163
-msgid "For more on using keyboard accessibility features, see the <ulink url=\"help:mate-access-guide\">Desktop Accessibility Guide</ulink>."
+msgid "For more on using keyboard accessibility features, see the <ulink url=\"help:cafe-access-guide\">Desktop Accessibility Guide</ulink>."
 msgstr ""
 
 #. (itstool) path: sect2/title

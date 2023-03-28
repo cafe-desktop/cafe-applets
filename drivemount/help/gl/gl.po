@@ -3,15 +3,15 @@
 # Miguel Anxo Bouzada <mbouzada@gmail.com>, 2020
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
-# Wolfgang Ulbrich <mate@raveit.de>, 2020
+# Wolfgang Ulbrich <cafe@raveit.de>, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:33+0000\n"
-"Last-Translator: Wolfgang Ulbrich <mate@raveit.de>, 2020\n"
-"Language-Team: Galician (https://www.transifex.com/mate/teams/13566/gl/)\n"
+"Last-Translator: Wolfgang Ulbrich <cafe@raveit.de>, 2020\n"
+"Language-Team: Galician (https://www.transifex.com/cafe/teams/13566/gl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -215,12 +215,12 @@ msgstr "Comentarios"
 msgid ""
 "To report a bug or make a suggestion regarding the <application>Disk "
 "Mounter</application> or this manual, follow the directions in the <ulink "
-"url=\"help:mate-user-guide/feedback\" type=\"help\">MATE Feedback "
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">MATE Feedback "
 "Page</ulink>."
 msgstr ""
 "Para informar dun fallo ou facer unha suxestión sobre o "
 "<application>Montador de discos</application> ou este manual, siga as "
-"instrucións na <ulink url=\"help:mate-user-guide/feedback\" "
+"instrucións na <ulink url=\"help:cafe-user-guide/feedback\" "
 "type=\"help\">páxina de comentarios do MATE</ulink>."
 
 #. (itstool) path: article/indexterm
@@ -350,7 +350,7 @@ msgid ""
 "system."
 msgstr ""
 "Cando se monta un sistema de ficheiros, pode ler e escribir no sistema de "
-"ficheiros. Cando remate de traballar cun sistema de ficheiros, debería "
+"ficheiros. Cando recafe de traballar cun sistema de ficheiros, debería "
 "desmontalo."
 
 #. (itstool) path: sect2/para
@@ -391,7 +391,7 @@ msgstr ""
 "Algúns sistemas tamén poden montar automaticamente algúns dispositivos "
 "extraíbeis (como discos USB e IEEE1394), estes dispositivos tamén poden "
 "aparecer no <application>Montador de discos</application> para poder "
-"desmontalos cando remate e proporcionar unha indicación visual de que están "
+"desmontalos cando recafe e proporcionar unha indicación visual de que están "
 "presentes."
 
 #. (itstool) path: sect1/title

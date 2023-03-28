@@ -1,5 +1,5 @@
 <schemalist gettext-domain="@GETTEXT_PACKAGE@">
-  <schema id="org.mate.panel.applet.battstat">
+  <schema id="org.cafe.panel.applet.battstat">
     <key name="red-value" type="i">
       <default>15</default>
       <summary>Red value level</summary>

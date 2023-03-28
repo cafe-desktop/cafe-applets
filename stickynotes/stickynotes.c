@@ -380,7 +380,7 @@ response_cb (GtkWidget *dialog, gint id, gpointer data)
 {
         if (id == GTK_RESPONSE_HELP)
 		gtk_show_uri_on_window (GTK_WINDOW (dialog),
-		                        "help:mate-stickynotes-applet/stickynotes-settings-individual",
+		                        "help:cafe-stickynotes-applet/stickynotes-settings-individual",
 		                        gtk_get_current_event_time (),
 		                        NULL);
         else if (id == GTK_RESPONSE_CLOSE)
@@ -783,9 +783,9 @@ stickynotes_save_now (void)
 		g_free(body);
 	}
 
-	/* The XML file is $HOME/.config/mate/stickynotes-applet, most probably */
+	/* The XML file is $HOME/.config/cafe/stickynotes-applet, most probably */
 	{
-		gchar* path = g_build_filename(g_get_user_config_dir(), "mate", NULL);
+		gchar* path = g_build_filename(g_get_user_config_dir(), "cafe", NULL);
 		gchar* file = g_build_filename(path, "stickynotes-applet.xml", NULL);
 		g_mkdir_with_parents(path, S_IRWXU);
 		g_free(path);
@@ -824,9 +824,9 @@ stickynotes_load (GdkScreen *screen)
 	GList *new_nodes; /* Lists of xmlNodePtr's */
 	int x, y, w, h;
 
-	/* The XML file is $HOME/.config/mate/stickynotes-applet, most probably */
+	/* The XML file is $HOME/.config/cafe/stickynotes-applet, most probably */
 	{
-		gchar* file = g_build_filename(g_get_user_config_dir(), "mate", "stickynotes-applet.xml", NULL);
+		gchar* file = g_build_filename(g_get_user_config_dir(), "cafe", "stickynotes-applet.xml", NULL);
 
 		if (g_file_test(file, G_FILE_TEST_EXISTS))
 		{
@@ -838,7 +838,7 @@ stickynotes_load (GdkScreen *screen)
 			/* old one */
 			g_free(file);
 
-			file = g_build_filename(g_get_home_dir(), ".mate2", "stickynotes_applet", NULL);
+			file = g_build_filename(g_get_home_dir(), ".cafe2", "stickynotes_applet", NULL);
 
 			if (g_file_test(file, G_FILE_TEST_EXISTS))
 			{

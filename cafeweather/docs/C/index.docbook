@@ -7,7 +7,7 @@
 <!-- 
       (Do not remove this comment block.)
   Maintained by the MATE Documentation Project
-  http://wiki.mate-desktop.org/dev-doc:doc-team-guide
+  http://wiki.cafe-desktop.org/dev-doc:doc-team-guide
   Template version: 2.0 beta
   Template last modified Feb 12, 2002
 -->
@@ -232,7 +232,7 @@ customizable.</para>
       <legalnotice>
          <title>Feedback</title>
          <para>
-             To report a bug or make a suggestion regarding the &applet; applet or this manual, follow the directions in the <ulink url="help:mate-user-guide/feedback" type="help">MATE Feedback Page</ulink>.
+             To report a bug or make a suggestion regarding the &applet; applet or this manual, follow the directions in the <ulink url="help:cafe-user-guide/feedback" type="help">MATE Feedback Page</ulink>.
          </para>
 
       </legalnotice>
@@ -243,7 +243,7 @@ customizable.</para>
        </indexterm> 
    <!-- ============= Document Body ============================= -->
    <!-- ============= Introduction ============================== -->
-   <sect1 id="mateweather-introduction">
+   <sect1 id="cafeweather-introduction">
       <title>Introduction</title>
       <!-- ==== Figure ============================================= -->
       	 
@@ -252,7 +252,7 @@ customizable.</para>
          <screenshot>             		  
             <mediaobject>                 			 
                <imageobject>
-                  <imagedata fileref="figures/mateweather_applet.png" format="PNG"/>                  			 
+                  <imagedata fileref="figures/cafeweather_applet.png" format="PNG"/>                  			 
                </imageobject>
                <textobject>
                   <phrase>Shows &applet;. Contains a weather icon and current temperature</phrase> 			 
@@ -277,7 +277,7 @@ customizable.</para>
          <listitem>
             <para>
                A weather icon that represents the general weather conditions.
-	       See <xref linkend="mateweather-introduction-icons" />.
+	       See <xref linkend="cafeweather-introduction-icons" />.
             </para>
          </listitem>
          <listitem>
@@ -287,7 +287,7 @@ customizable.</para>
          </listitem>
       </itemizedlist>
 
-    <sect2 id="mateweather-introduction-icons">
+    <sect2 id="cafeweather-introduction-icons">
      <title>Weather Icons on Panel</title>
      <informaltable frame="all">
       <tgroup cols="2" colsep="1" rowsep="1">
@@ -394,7 +394,7 @@ customizable.</para>
      </informaltable>
     </sect2>
 
-    <sect2 id="mateweather-introduction-add">
+    <sect2 id="cafeweather-introduction-add">
       <title>To Add &applet; to a Panel</title>
       <para>
         To add <application>&applet;</application> to a panel, perform the
@@ -428,7 +428,7 @@ customizable.</para>
       
    </sect1>
    <!-- ============= Preferences ===================================== -->
-   <sect1 id="mateweather-prefs">
+   <sect1 id="cafeweather-prefs">
       <title>Preferences</title>
       <para>
        The preferences dialog is accessed by right-clicking on the &applet; in
@@ -438,7 +438,7 @@ customizable.</para>
          <screenshot>
             <mediaobject>                 			 
                <imageobject>
-                  <imagedata fileref="figures/mateweather-menu-prefs.png" format="PNG"/>                  			 
+                  <imagedata fileref="figures/cafeweather-menu-prefs.png" format="PNG"/>                  			 
                </imageobject>
                <textobject>
                   <phrase>Context menu</phrase>
@@ -447,14 +447,14 @@ customizable.</para>
          </screenshot>
       </figure>
       </para>
-      <sect2 id="mateweather-change-location">
+      <sect2 id="cafeweather-change-location">
          <title>Changing to Particular Location</title>
       <figure id="weather-applet-prefs-locations-fig">
 	<title>Location Preferences</title>
          <screenshot>
             <mediaobject>                 			 
                <imageobject>
-                  <imagedata fileref="figures/mateweather-prefs-locations.png" format="PNG"/>                  			 
+                  <imagedata fileref="figures/cafeweather-prefs-locations.png" format="PNG"/>                  			 
                </imageobject>
                <textobject>
                   <phrase>Location Preferences</phrase>
@@ -513,7 +513,7 @@ customizable.</para>
 	  city in the region.
 	 </para>
       </sect2>
-      <sect2 id="mateweather-update">
+      <sect2 id="cafeweather-update">
          <title>Updating Weather Information</title>
          <para>
             To update the weather information that the &applet; displays in the
@@ -528,14 +528,14 @@ customizable.</para>
                     <listitem><para>Click <guibutton>Close</guibutton> to close the <guilabel>Weather Preferences</guilabel> dialog.</para></listitem>
 	      </orderedlist>
          </sect2>
-        <sect2 id="mateweather-metric"> 
+        <sect2 id="cafeweather-metric"> 
                <title>Changing Units</title>
       <figure id="weather-applet-prefs-general-fig">
 	<title>General Preferences</title>
          <screenshot>
             <mediaobject>                 			 
                <imageobject>
-                  <imagedata fileref="figures/mateweather-prefs-general.png" format="PNG"/>
+                  <imagedata fileref="figures/cafeweather-prefs-general.png" format="PNG"/>
                </imageobject>
                <textobject>
                   <phrase>General Preferences</phrase>
@@ -561,7 +561,7 @@ customizable.</para>
          
    </sect1>
    <!-- ============= Details ================================== -->
-   <sect1 id="mateweather-details">
+   <sect1 id="cafeweather-details">
       <title>Details</title>
 
          <para>
@@ -585,14 +585,14 @@ customizable.</para>
                </para>
             </listitem>
          </itemizedlist>
-         <sect2 id="mateweather-current-conditions">
+         <sect2 id="cafeweather-current-conditions">
             <title>Current Conditions</title>
       <figure id="weather-applet-details-fig">
 	<title>&applet; Details</title>  		
          <screenshot>             		  
             <mediaobject>                 			 
                <imageobject>
-                  <imagedata fileref="figures/mateweather-details.png" format="PNG"/>                  			 
+                  <imagedata fileref="figures/cafeweather-details.png" format="PNG"/>                  			 
                </imageobject>
                <textobject>
                   <phrase>&applet; details</phrase>
@@ -756,7 +756,7 @@ customizable.</para>
 	     sunset may be off by up to 10 minutes.
 	    </para></note>
          </sect2>
-         <sect2 id="mateweather-forecast">
+         <sect2 id="cafeweather-forecast">
             <title>Forecast</title>
             <para>
                The <guilabel>Forecast</guilabel> tabbed section displays a forecast for the location for the immediate future, usually the next five days. 
@@ -768,7 +768,7 @@ customizable.</para>
                </para>
             </note>
          </sect2>
-         <sect2 id="mateweather-radar-map">
+         <sect2 id="cafeweather-radar-map">
             <title>Radar Map</title>
             <para>
                By default, the <guilabel>Radar Map</guilabel> tabbed section is

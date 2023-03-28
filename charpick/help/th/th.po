@@ -1,7 +1,7 @@
 # 
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
-# Wolfgang Ulbrich <mate@raveit.de>, 2020
+# Wolfgang Ulbrich <cafe@raveit.de>, 2020
 # Akom <knight2000@gmail.com>, 2020
 # 
 msgid ""
@@ -10,7 +10,7 @@ msgstr ""
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:29+0000\n"
 "Last-Translator: Akom <knight2000@gmail.com>, 2020\n"
-"Language-Team: Thai (https://www.transifex.com/mate/teams/13566/th/)\n"
+"Language-Team: Thai (https://www.transifex.com/cafe/teams/13566/th/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -230,7 +230,7 @@ msgstr "ร่วมเสนอแนะ"
 msgid ""
 "To report a bug or make a suggestion regarding the Character Palette "
 "application or this manual, follow the directions in the <ulink url=\"help"
-":mate-user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+":cafe-user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm

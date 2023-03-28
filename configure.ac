@@ -1,7 +1,7 @@
 dnl ***************************************************************************
 dnl *** configure.in for MATE-APPLETS                                      ***
 dnl ***************************************************************************
-AC_INIT(mate-applets, 1.24.1)
+AC_INIT(cafe-applets, 1.24.1)
 AC_PREREQ(2.59)
 
 AC_CONFIG_HEADERS(config.h)
@@ -98,8 +98,8 @@ PKG_CHECK_MODULES(GTK, gtk+-3.0 >= $GTK_REQUIRED)
 AC_SUBST(GTK_FLAGS)
 AC_SUBST(GTK_LIBS)
 
-dnl -- check for libmatepanelapplet4 (required) ------------------------------------
-PKG_CHECK_MODULES(MATE_APPLETS4, libmatepanelapplet-4.0 >= $LIBPANEL4_REQUIRED)
+dnl -- check for libcafepanelapplet4 (required) ------------------------------------
+PKG_CHECK_MODULES(MATE_APPLETS4, libcafepanelapplet-4.0 >= $LIBPANEL4_REQUIRED)
 AC_SUBST(MATE_APPLETS4_CFLAGS)
 AC_SUBST(MATE_APPLETS4_LIBS)
 
@@ -115,7 +115,7 @@ AM_CONDITIONAL(BUILD_GTOP_APPLETS, $build_gtop_applets)
 
 dnl -- check for libwnck (required) -------------------------------------------
 PKG_CHECK_MODULES(LIBWNCK, libwnck-3.0 >= $LIBWNCK_REQUIRED,,
-	AC_MSG_ERROR([libwnck is required to build mate-applets.], 1))
+	AC_MSG_ERROR([libwnck is required to build cafe-applets.], 1))
 
 AC_SUBST(LIBWNCK_CFLAGS)
 AC_SUBST(LIBWNCK_LIBS)
@@ -155,7 +155,7 @@ PKG_CHECK_MODULES(DBUS, dbus-1 >= $DBUS_REQUIRED dbus-glib-1 >= $DBUS_GLIB_REQUI
 AC_SUBST(DBUS_CFLAGS)
 AC_SUBST(DBUS_LIBS)
 
-dnl -- check for PolicyKit and PolicyKit-mate (optional) -----------------------------------------
+dnl -- check for PolicyKit and PolicyKit-cafe (optional) -----------------------------------------
 POLKIT_CFLAGS=
 POLKIT_LIBS=
 AC_ARG_ENABLE([polkit],
@@ -218,14 +218,14 @@ PKG_CHECK_MODULES(XML2, libxml-2.0 >= $LIBXML_REQUIRED)
 AC_SUBST(XML2_CFLAGS)
 AC_SUBST(XML2_LIBS)
 
- dnl -- check for libmateweather (required for mateweather applet) ------------------
-build_libmateweather_applets=false
-PKG_CHECK_MODULES(LIBMATEWEATHER, mateweather >= 1.17.0,
-	          build_libmateweather_applets=true,
-		  AC_MSG_WARN([libmateweather not found. Not building the weather applet.]))
+ dnl -- check for libcafeweather (required for cafeweather applet) ------------------
+build_libcafeweather_applets=false
+PKG_CHECK_MODULES(LIBMATEWEATHER, cafeweather >= 1.17.0,
+	          build_libcafeweather_applets=true,
+		  AC_MSG_WARN([libcafeweather not found. Not building the weather applet.]))
 AC_SUBST(LIBMATEWEATHER_CFLAGS)
 AC_SUBST(LIBMATEWEATHER_LIBS)
-AM_CONDITIONAL(BUILD_LIBMATEWEATHER_APPLETS, $build_libmateweather_applets)
+AM_CONDITIONAL(BUILD_LIBMATEWEATHER_APPLETS, $build_libcafeweather_applets)
 
 dnl ***************************************************************************
 dnl *** GSettings                                                               ***
@@ -239,7 +239,7 @@ dnl ***************************************************************************
 AM_GNU_GETTEXT_VERSION([0.19.8])
 AM_GNU_GETTEXT([external])
 
-GETTEXT_PACKAGE=mate-applets
+GETTEXT_PACKAGE=cafe-applets
 AC_SUBST(GETTEXT_PACKAGE)
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Gettext Package])
 AC_DEFINE_DIR(MATELOCALEDIR, "${datadir}/locale", [locale directory])
@@ -518,7 +518,7 @@ iconsdir="${datadir}/icons"
 AC_SUBST(iconsdir)
 pixmapsdir="${datadir}/pixmaps"
 AC_SUBST(pixmapsdir)
-pkgdatadir="${datadir}/mate-applets"
+pkgdatadir="${datadir}/cafe-applets"
 AC_SUBST(pkgdatadir)
 builderdir="${pkgdatadir}/builder"
 AC_SUBST(builderdir)
@@ -558,27 +558,27 @@ accessx-status/pixmaps/32x32/Makefile
 accessx-status/pixmaps/48x48/Makefile
 drivemount/Makefile
 drivemount/help/Makefile
-drivemount/org.mate.drivemount.gschema.xml
+drivemount/org.cafe.drivemount.gschema.xml
 multiload/Makefile
-multiload/org.mate.panel.applet.multiload.gschema.xml
+multiload/org.cafe.panel.applet.multiload.gschema.xml
 multiload/docs/Makefile
 charpick/Makefile
-charpick/org.mate.panel.applet.charpick.gschema.xml
+charpick/org.cafe.panel.applet.charpick.gschema.xml
 charpick/help/Makefile
-mateweather/Makefile
-mateweather/docs/Makefile
+cafeweather/Makefile
+cafeweather/docs/Makefile
 geyes/Makefile
-geyes/org.mate.panel.applet.geyes.gschema.xml
+geyes/org.cafe.panel.applet.geyes.gschema.xml
 geyes/themes/Makefile
 geyes/docs/Makefile
 battstat/Makefile
-battstat/org.mate.panel.applet.battstat.gschema.xml
+battstat/org.cafe.panel.applet.battstat.gschema.xml
 battstat/apmlib/Makefile
 battstat/sounds/Makefile
 battstat/docs/Makefile
 man/Makefile
 stickynotes/Makefile
-stickynotes/org.mate.stickynotes.gschema.xml
+stickynotes/org.cafe.stickynotes.gschema.xml
 stickynotes/pixmaps/Makefile
 stickynotes/docs/Makefile
 trashapplet/Makefile
@@ -586,17 +586,17 @@ trashapplet/src/Makefile
 trashapplet/docs/Makefile
 cpufreq/Makefile
 cpufreq/src/Makefile
-cpufreq/org.mate.panel.applet.cpufreq.gschema.xml
+cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml
 cpufreq/src/cpufreq-selector/Makefile
 cpufreq/pixmaps/Makefile
 cpufreq/help/Makefile
 timerapplet/Makefile
-timerapplet/org.mate.panel.applet.timer.gschema.xml
+timerapplet/org.cafe.panel.applet.timer.gschema.xml
 command/Makefile
-command/org.mate.panel.applet.command.gschema.xml
+command/org.cafe.panel.applet.command.gschema.xml
 netspeed/Makefile
 netspeed/data/Makefile
-netspeed/data/org.mate.panel.applet.netspeed.gschema.xml
+netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml
 netspeed/icons/Makefile
 netspeed/icons/16x16/Makefile
 netspeed/icons/16x16/apps/Makefile
@@ -624,7 +624,7 @@ dnl ***************************************************************************
 dnl *** Display Summary                                                     ***
 dnl ***************************************************************************
 echo "
-mate-applets-$VERSION configure summary:
+cafe-applets-$VERSION configure summary:
 
     Prefix:                        ${prefix}
     Source code location:          ${srcdir}
@@ -643,7 +643,7 @@ mate-applets-$VERSION configure summary:
             - enabling suid bit    $enable_suid
         - drivemount               always
         - geyes                    always
-        - mateweather              $build_libmateweather_applets
+        - cafeweather              $build_libcafeweather_applets
         - multiload                $build_gtop_applets
         - netspeed                 $build_gtop_applets
             - iwlib support        $have_iwevgenie

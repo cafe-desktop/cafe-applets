@@ -1,5 +1,5 @@
 <schemalist gettext-domain="@GETTEXT_PACKAGE@">
-  <schema id="org.mate.panel.applet.timer">
+  <schema id="org.cafe.panel.applet.timer">
     <key name="name" type="s">
       <default>'Timer'</default>
       <summary>Name of timer</summary>

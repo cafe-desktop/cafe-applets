@@ -5,18 +5,18 @@ endif
 SUBDIRS = $(selector_SUBDIR)
 
 AM_CPPFLAGS = \
-	-DCPUFREQ_MENU_UI_DIR=\""$(datadir)/mate/ui"\" 	\
+	-DCPUFREQ_MENU_UI_DIR=\""$(datadir)/cafe/ui"\" 	\
 	$(MATE_APPLETS4_CFLAGS) 				\
 	$(MATEDESKTOP_CFLAGS) 				\
 	$(DBUS_CFLAGS)
 
-libexec_PROGRAMS = mate-cpufreq-applet
+libexec_PROGRAMS = cafe-cpufreq-applet
 
 if HAVE_LIBCPUFREQ
 cpufreq_files=cpufreq-monitor-libcpufreq.c    cpufreq-monitor-libcpufreq.h
 endif
 
-mate_cpufreq_applet_SOURCES =  \
+cafe_cpufreq_applet_SOURCES =  \
 	cpufreq-applet.c        	cpufreq-applet.h        	\
 	cpufreq-utils.c			cpufreq-utils.h			\
 	cpufreq-prefs.c         	cpufreq-prefs.h         	\
@@ -29,7 +29,7 @@ mate_cpufreq_applet_SOURCES =  \
 	$(cpufreq_files)						\
 	cpufreq-monitor-cpuinfo.c       cpufreq-monitor-cpuinfo.h
 
-mate_cpufreq_applet_LDADD =  \
+cafe_cpufreq_applet_LDADD =  \
 	$(MATE_APPLETS4_LIBS)   	\
 	$(MATEDESKTOP_LIBS)   	\
 	$(LIBCPUFREQ_LIBS)		\

@@ -31,7 +31,7 @@
 #include <gtk/gtk.h>
 #include <gdk/gdkkeysyms.h>
 #include <gio/gio.h>
-#include <mate-panel-applet.h>
+#include <cafe-panel-applet.h>
 
 #include "trash-empty.h"
 #include "xstuff.h"
@@ -169,7 +169,7 @@ trash_applet_size_allocate (GtkWidget    *widget,
   GTK_WIDGET_CLASS (trash_applet_parent_class)
     ->size_allocate (widget, allocation);
 
-  switch (mate_panel_applet_get_orient (MATE_PANEL_APPLET (applet)))
+  switch (cafe_panel_applet_get_orient (MATE_PANEL_APPLET (applet)))
   {
     case MATE_PANEL_APPLET_ORIENT_LEFT:
     case MATE_PANEL_APPLET_ORIENT_RIGHT:
@@ -214,10 +214,10 @@ trash_applet_init (TrashApplet *applet)
   const GtkTargetEntry drop_types[] = { { "text/uri-list" } };
 
   /* needed to clamp ourselves to the panel size */
-  mate_panel_applet_set_flags (MATE_PANEL_APPLET (applet), MATE_PANEL_APPLET_EXPAND_MINOR);
+  cafe_panel_applet_set_flags (MATE_PANEL_APPLET (applet), MATE_PANEL_APPLET_EXPAND_MINOR);
 
   /* enable transparency hack */
-  mate_panel_applet_set_background_widget (MATE_PANEL_APPLET (applet),
+  cafe_panel_applet_set_background_widget (MATE_PANEL_APPLET (applet),
                                       GTK_WIDGET (applet));
 
   /* setup the image */
@@ -243,7 +243,7 @@ trash_applet_init (TrashApplet *applet)
   trash_applet_monitor_changed (applet);
 }
 
-#define PANEL_SCHEMA "org.mate.panel"
+#define PANEL_SCHEMA "org.cafe.panel"
 #define PANEL_ENABLE_ANIMATIONS "enable-animations"
 static gboolean
 trash_applet_button_release (GtkWidget      *widget,
@@ -258,7 +258,7 @@ trash_applet_button_release (GtkWidget      *widget,
   if (event->button == 1)
     {
       if (g_settings_get_boolean (settings, PANEL_ENABLE_ANIMATIONS))
-        xstuff_zoom_animate (widget, NULL);
+        xstuff_zoom_anicafe (widget, NULL);
 
       trash_applet_open_folder (NULL, applet);
 
@@ -389,7 +389,7 @@ trash_applet_show_help (GtkAction   *action,
 
   /* FIXME - Actually, we need a user guide */
   gtk_show_uri_on_window (NULL,
-                          "help:mate-trashapplet",
+                          "help:cafe-trashapplet",
                           gtk_get_current_event_time (),
                           &err);
 
@@ -634,7 +634,7 @@ trash_applet_factory (MatePanelApplet *applet,
 				    G_N_ELEMENTS (trash_applet_menu_actions),
 				    applet);
       ui_path = g_build_filename (TRASH_MENU_UI_DIR, "trashapplet-menu.xml", NULL);
-      mate_panel_applet_setup_menu_from_file (applet, ui_path, action_group);
+      cafe_panel_applet_setup_menu_from_file (applet, ui_path, action_group);
       g_free (ui_path);
       g_object_unref (action_group);
 

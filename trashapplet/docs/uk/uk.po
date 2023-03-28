@@ -3,15 +3,15 @@
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Микола Ткач <chistomov@gmail.com>, 2020
 # clefebvre <clement.lefebvre@linuxmint.com>, 2020
-# Wolfgang Ulbrich <mate@raveit.de>, 2020
+# Wolfgang Ulbrich <cafe@raveit.de>, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 12:22+0000\n"
-"Last-Translator: Wolfgang Ulbrich <mate@raveit.de>, 2020\n"
-"Language-Team: Ukrainian (https://www.transifex.com/mate/teams/13566/uk/)\n"
+"Last-Translator: Wolfgang Ulbrich <cafe@raveit.de>, 2020\n"
+"Language-Team: Ukrainian (https://www.transifex.com/cafe/teams/13566/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -146,7 +146,7 @@ msgstr "Зворотній зв'язок"
 #: C/index.docbook:123
 msgid ""
 "To report a bug or make a suggestion regarding the Panel Trash applet or "
-"this manual, follow the directions in the <ulink url=\"help:mate-user-"
+"this manual, follow the directions in the <ulink url=\"help:cafe-user-"
 "guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
 msgstr ""
 
@@ -212,7 +212,7 @@ msgstr "Натисніть <guibutton>Додати</guibutton>."
 #: C/index.docbook:165
 msgid ""
 "For more information on working with the panel, see the <ulink type=\"help\""
-" url=\"help:mate-user-guide/panels\">Desktop User Guide</ulink>."
+" url=\"help:cafe-user-guide/panels\">Desktop User Guide</ulink>."
 msgstr ""
 
 #. (itstool) path: sect1/title

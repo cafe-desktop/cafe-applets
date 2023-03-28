@@ -2,15 +2,15 @@
 # Translators:
 # abuyop <abuyop@gmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
-# Wolfgang Ulbrich <mate@raveit.de>, 2020
+# Wolfgang Ulbrich <cafe@raveit.de>, 2020
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:29+0000\n"
-"Last-Translator: Wolfgang Ulbrich <mate@raveit.de>, 2020\n"
-"Language-Team: Malay (https://www.transifex.com/mate/teams/13566/ms/)\n"
+"Last-Translator: Wolfgang Ulbrich <cafe@raveit.de>, 2020\n"
+"Language-Team: Malay (https://www.transifex.com/cafe/teams/13566/ms/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -35,7 +35,7 @@ msgid ""
 "special symbols, and punctuation marks."
 msgstr ""
 "Pelet Aksara menyediakan satu cara mudah untuk mencapai aksara yang tiada "
-"dalam papan kekunci anda, seperti aksara teraksen, simbol matematik, simbol "
+"dalam papan kekunci anda, seperti aksara teraksen, simbol cafematik, simbol "
 "khas, dan tanda baca."
 
 #. (itstool) path: articleinfo/copyright
@@ -268,10 +268,10 @@ msgstr "Maklumbalas"
 msgid ""
 "To report a bug or make a suggestion regarding the Character Palette "
 "application or this manual, follow the directions in the <ulink url=\"help"
-":mate-user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
+":cafe-user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
 msgstr ""
 "Untuk melaporkan pepijat atau membuat saranan berkenaan aplikasi Pelet "
-"Aksara atau panduan ini, ikuti arahan di dalam <ulink url=\"help:mate-user-"
+"Aksara atau panduan ini, ikuti arahan di dalam <ulink url=\"help:cafe-user-"
 "guide/feedback\" type=\"help\">Halaman Maklumbalas MATE</ulink>."
 
 #. (itstool) path: article/indexterm
@@ -326,7 +326,7 @@ msgid ""
 msgstr ""
 "<application>Pelet Aksara</application> menyediakan satu cara mudah untuk "
 "mencapai aksara yang tiada dalam papan kekunci anda, seperti aksara "
-"teraksen, simbol matematik, simbol khas, dan tanda baca. Anda boleh menyisip"
+"teraksen, simbol cafematik, simbol khas, dan tanda baca. Anda boleh menyisip"
 " aksara dari aplet ke dalam rentetan teks, sebagai contoh dalam dokumen teks"
 " atau dalam baris perintah. Anda boleh suaikan kandungan aplet untuk "
 "memenuhi keperluan anda."

@@ -16,8 +16,8 @@
 #include <gtk/gtk.h>
 
 #include <gio/gio.h>
-#include <mate-panel-applet.h>
-#include <mate-panel-applet-gsettings.h>
+#include <cafe-panel-applet.h>
+#include <cafe-panel-applet-gsettings.h>
 
 #include "global.h"
 
@@ -87,7 +87,7 @@ properties_close_cb (GtkWidget *widget, gint arg, MultiloadApplet *ma)
 		case GTK_RESPONSE_HELP:
 
 			gtk_show_uri_on_window (NULL,
-			                        "help:mate-multiload/multiload-prefs",
+			                        "help:cafe-multiload/multiload-prefs",
 			                        gtk_get_current_event_time (),
 			                        &error);
 
@@ -535,7 +535,7 @@ fill_properties(GtkWidget *dialog, MultiloadApplet *ma)
 
 	label_size = gtk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
 
-	orient = mate_panel_applet_get_orient(ma->applet);
+	orient = cafe_panel_applet_get_orient(ma->applet);
 	if ( (orient == MATE_PANEL_APPLET_ORIENT_UP) || (orient == MATE_PANEL_APPLET_ORIENT_DOWN) )
 		label_text = g_strdup(_("System m_onitor width: "));
 	else

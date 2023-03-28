@@ -22,8 +22,8 @@
 #include <resolv.h>
 
 #include <gio/gio.h>
-#include <mate-panel-applet.h>
-#include <mate-panel-applet-gsettings.h>
+#include <cafe-panel-applet.h>
+#include <cafe-panel-applet-gsettings.h>
 
 #include <gdk/gdkkeysyms.h>
 
@@ -33,11 +33,11 @@
 
 #define MATEWEATHER_I_KNOW_THIS_IS_UNSTABLE
 
-#include "mateweather.h"
-#include "mateweather-about.h"
-#include "mateweather-pref.h"
-#include "mateweather-dialog.h"
-#include "mateweather-applet.h"
+#include "cafeweather.h"
+#include "cafeweather-about.h"
+#include "cafeweather-pref.h"
+#include "cafeweather-dialog.h"
+#include "cafeweather-applet.h"
 
 #define MAX_CONSECUTIVE_FAULTS (3)
 
@@ -45,7 +45,7 @@ static void about_cb (GtkAction      *action,
 		      MateWeatherApplet *gw_applet)
 {
 
-    mateweather_about_run (gw_applet);
+    cafeweather_about_run (gw_applet);
 }
 
 static void help_cb (GtkAction      *action,
@@ -54,7 +54,7 @@ static void help_cb (GtkAction      *action,
     GError *error = NULL;
 
     gtk_show_uri_on_window (NULL,
-                            "help:mateweather",
+                            "help:cafeweather",
                             gtk_get_current_event_time (),
                             &error);
 
@@ -76,7 +76,7 @@ static void pref_cb (GtkAction      *action,
    if (gw_applet->pref_dialog) {
 	gtk_window_present (GTK_WINDOW (gw_applet->pref_dialog));
    } else {
-	gw_applet->pref_dialog = mateweather_pref_new(gw_applet);
+	gw_applet->pref_dialog = cafeweather_pref_new(gw_applet);
 	g_object_add_weak_pointer(G_OBJECT(gw_applet->pref_dialog),
 				  (gpointer *)&(gw_applet->pref_dialog));
 	gtk_widget_show_all (gw_applet->pref_dialog);
@@ -89,10 +89,10 @@ static void details_cb (GtkAction      *action,
    if (gw_applet->details_dialog) {
 	gtk_window_present (GTK_WINDOW (gw_applet->details_dialog));
    } else {
-	gw_applet->details_dialog = mateweather_dialog_new(gw_applet);
+	gw_applet->details_dialog = cafeweather_dialog_new(gw_applet);
 	g_object_add_weak_pointer(G_OBJECT(gw_applet->details_dialog),
 				  (gpointer *)&(gw_applet->details_dialog));
-	mateweather_dialog_update (MATEWEATHER_DIALOG (gw_applet->details_dialog));
+	cafeweather_dialog_update (MATEWEATHER_DIALOG (gw_applet->details_dialog));
 	gtk_widget_show (gw_applet->details_dialog);
    }
 }
@@ -100,7 +100,7 @@ static void details_cb (GtkAction      *action,
 static void update_cb (GtkAction      *action,
 		       MateWeatherApplet *gw_applet)
 {
-    mateweather_update (gw_applet);
+    cafeweather_update (gw_applet);
 }
 
 
@@ -143,7 +143,7 @@ static void place_widgets (MateWeatherApplet *gw_applet)
     }
 
     /* Create the weather icon */
-    icon_name = weather_info_get_icon_name (gw_applet->mateweather_info);
+    icon_name = weather_info_get_icon_name (gw_applet->cafeweather_info);
     gw_applet->image = gtk_image_new_from_icon_name(icon_name, GTK_ICON_SIZE_BUTTON); 
 
     if (icon_name != NULL) {
@@ -159,7 +159,7 @@ static void place_widgets (MateWeatherApplet *gw_applet)
     gw_applet->label = gtk_label_new("0\302\260F");
     
     /* Update temperature text */
-    temp = weather_info_get_temp_summary(gw_applet->mateweather_info);
+    temp = weather_info_get_temp_summary(gw_applet->cafeweather_info);
     if (temp) 
         gtk_label_set_text(GTK_LABEL(gw_applet->label), temp);
 
@@ -250,7 +250,7 @@ key_press_cb (GtkWidget *widget, GdkEventKey *event, MateWeatherApplet *gw_apple
 	switch (event->keyval) {	
 	case GDK_KEY_u:
 		if (event->state == GDK_CONTROL_MASK) {
-			mateweather_update (gw_applet);
+			cafeweather_update (gw_applet);
 			return TRUE;
 		}
 		break;
@@ -280,7 +280,7 @@ static void
 network_changed (GNetworkMonitor *monitor, gboolean available, MateWeatherApplet *gw_applet)
 {
     if (available) {
-        mateweather_update (gw_applet);
+        cafeweather_update (gw_applet);
     }
 }
 
@@ -316,30 +316,30 @@ applet_destroy (GtkWidget *widget, MateWeatherApplet *gw_applet)
                                           G_CALLBACK (network_changed),
                                           gw_applet);
 
-    weather_info_abort (gw_applet->mateweather_info);
+    weather_info_abort (gw_applet->cafeweather_info);
 }
 
-void mateweather_applet_create (MateWeatherApplet *gw_applet)
+void cafeweather_applet_create (MateWeatherApplet *gw_applet)
 {
     GtkActionGroup *action_group;
     gchar          *ui_path;
     AtkObject      *atk_obj;
     GNetworkMonitor*monitor;
 
-    gw_applet->mateweather_pref.location = NULL;
-    gw_applet->mateweather_pref.show_notifications = FALSE;
-    gw_applet->mateweather_pref.update_interval = 1800;
-    gw_applet->mateweather_pref.update_enabled = TRUE;
-    gw_applet->mateweather_pref.detailed = FALSE;
-    gw_applet->mateweather_pref.radar_enabled = TRUE;
-    gw_applet->mateweather_pref.temperature_unit = TEMP_UNIT_INVALID;
-    gw_applet->mateweather_pref.speed_unit = SPEED_UNIT_INVALID;
-    gw_applet->mateweather_pref.pressure_unit = PRESSURE_UNIT_INVALID;
-    gw_applet->mateweather_pref.distance_unit = DISTANCE_UNIT_INVALID;
+    gw_applet->cafeweather_pref.location = NULL;
+    gw_applet->cafeweather_pref.show_notifications = FALSE;
+    gw_applet->cafeweather_pref.update_interval = 1800;
+    gw_applet->cafeweather_pref.update_enabled = TRUE;
+    gw_applet->cafeweather_pref.detailed = FALSE;
+    gw_applet->cafeweather_pref.radar_enabled = TRUE;
+    gw_applet->cafeweather_pref.temperature_unit = TEMP_UNIT_INVALID;
+    gw_applet->cafeweather_pref.speed_unit = SPEED_UNIT_INVALID;
+    gw_applet->cafeweather_pref.pressure_unit = PRESSURE_UNIT_INVALID;
+    gw_applet->cafeweather_pref.distance_unit = DISTANCE_UNIT_INVALID;
     
-    mate_panel_applet_set_flags (gw_applet->applet, MATE_PANEL_APPLET_EXPAND_MINOR);
+    cafe_panel_applet_set_flags (gw_applet->applet, MATE_PANEL_APPLET_EXPAND_MINOR);
 
-    mate_panel_applet_set_background_widget(gw_applet->applet,
+    cafe_panel_applet_set_background_widget(gw_applet->applet,
                                        GTK_WIDGET(gw_applet->applet));
 
     g_set_application_name (_("Weather Report"));
@@ -363,9 +363,9 @@ void mateweather_applet_create (MateWeatherApplet *gw_applet)
     if (GTK_IS_ACCESSIBLE (atk_obj))
 	   atk_object_set_name (atk_obj, _("MATE Weather"));
 
-    gw_applet->size = mate_panel_applet_get_size (gw_applet->applet);
+    gw_applet->size = cafe_panel_applet_get_size (gw_applet->applet);
 
-    gw_applet->orient = mate_panel_applet_get_orient (gw_applet->applet);
+    gw_applet->orient = cafe_panel_applet_get_orient (gw_applet->applet);
 
     action_group = gtk_action_group_new ("MateWeather Applet Actions");
     gtk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
@@ -373,12 +373,12 @@ void mateweather_applet_create (MateWeatherApplet *gw_applet)
 				  weather_applet_menu_actions,
 				  G_N_ELEMENTS (weather_applet_menu_actions),
 				  gw_applet);
-    ui_path = g_build_filename (MATEWEATHER_MENU_UI_DIR, "mateweather-applet-menu.xml", NULL);
-    mate_panel_applet_setup_menu_from_file (gw_applet->applet,
+    ui_path = g_build_filename (MATEWEATHER_MENU_UI_DIR, "cafeweather-applet-menu.xml", NULL);
+    cafe_panel_applet_setup_menu_from_file (gw_applet->applet,
 				       ui_path, action_group);
     g_free (ui_path);
 
-    if (mate_panel_applet_get_locked_down (gw_applet->applet)) {
+    if (cafe_panel_applet_get_locked_down (gw_applet->applet)) {
 	    GtkAction *action;
 
 	    action = gtk_action_group_get_action (action_group, "Props");
@@ -396,8 +396,8 @@ gint timeout_cb (gpointer data)
 {
     MateWeatherApplet *gw_applet = (MateWeatherApplet *)data;
 	
-    mateweather_update(gw_applet);
-    return 0;  /* Do not repeat timeout (will be reset by mateweather_update) */
+    cafeweather_update(gw_applet);
+    return 0;  /* Do not repeat timeout (will be reset by cafeweather_update) */
 }
 
 static void
@@ -415,14 +415,14 @@ update_finish (WeatherInfo *info, gpointer data)
     /* Update timer */
     if (gw_applet->timeout_tag > 0)
         g_source_remove(gw_applet->timeout_tag);
-    if (gw_applet->mateweather_pref.update_enabled)
+    if (gw_applet->cafeweather_pref.update_enabled)
     {
 	gw_applet->timeout_tag =
 		g_timeout_add_seconds (
-                       gw_applet->mateweather_pref.update_interval,
+                       gw_applet->cafeweather_pref.update_interval,
                         timeout_cb, gw_applet);
 
-        nxtSunEvent = weather_info_next_sun_event(gw_applet->mateweather_info);
+        nxtSunEvent = weather_info_next_sun_event(gw_applet->cafeweather_info);
         if (nxtSunEvent >= 0)
             gw_applet->suncalc_timeout_tag =
                         g_timeout_add_seconds (nxtSunEvent,
@@ -433,28 +433,28 @@ update_finish (WeatherInfo *info, gpointer data)
 	     (gw_fault_counter >= MAX_CONSECUTIVE_FAULTS))
     {
 	    gw_fault_counter = 0;
-            icon_name = weather_info_get_icon_name (gw_applet->mateweather_info);
+            icon_name = weather_info_get_icon_name (gw_applet->cafeweather_info);
             gtk_image_set_from_icon_name (GTK_IMAGE(gw_applet->image), 
                                           icon_name, GTK_ICON_SIZE_BUTTON);
 	      
 	    gtk_label_set_text (GTK_LABEL (gw_applet->label), 
 	        		weather_info_get_temp_summary(
-					gw_applet->mateweather_info));
+					gw_applet->cafeweather_info));
 	    
-	    s = weather_info_get_weather_summary (gw_applet->mateweather_info);
+	    s = weather_info_get_weather_summary (gw_applet->cafeweather_info);
 	    gtk_widget_set_tooltip_text (GTK_WIDGET (gw_applet->applet), s);
 	    g_free (s);
 
 	    /* Update dialog -- if one is present */
 	    if (gw_applet->details_dialog) {
-	    	mateweather_dialog_update (MATEWEATHER_DIALOG (gw_applet->details_dialog));
+	    	cafeweather_dialog_update (MATEWEATHER_DIALOG (gw_applet->details_dialog));
 	    }
 
 	    /* update applet */
 	    place_widgets(gw_applet);
 
 #ifdef HAVE_LIBNOTIFY
-        if (gw_applet->mateweather_pref.show_notifications)
+        if (gw_applet->cafeweather_pref.show_notifications)
         {
 		    NotifyNotification *n;
 	            
@@ -477,7 +477,7 @@ update_finish (WeatherInfo *info, gpointer data)
 					 weather_info_get_sky (info),
 					 weather_info_get_temp_summary (info));
 
-			 icon = weather_info_get_icon_name (gw_applet->mateweather_info);
+			 icon = weather_info_get_icon_name (gw_applet->cafeweather_info);
 			 if (icon == NULL)
 				 icon = "stock-unknown";
 	           	 
@@ -507,46 +507,46 @@ update_finish (WeatherInfo *info, gpointer data)
 
 gint suncalc_timeout_cb (gpointer data)
 {
-    WeatherInfo *info = ((MateWeatherApplet *)data)->mateweather_info;
+    WeatherInfo *info = ((MateWeatherApplet *)data)->cafeweather_info;
     update_finish(info, data);
     return 0;  /* Do not repeat timeout (will be reset by update_finish) */
 }
 
 
-void mateweather_update (MateWeatherApplet *gw_applet)
+void cafeweather_update (MateWeatherApplet *gw_applet)
 {
     WeatherPrefs prefs;
     const gchar *icon_name;
 
-    icon_name = weather_info_get_icon_name(gw_applet->mateweather_info);
+    icon_name = weather_info_get_icon_name(gw_applet->cafeweather_info);
     gtk_image_set_from_icon_name (GTK_IMAGE (gw_applet->image), 
     			          icon_name, GTK_ICON_SIZE_BUTTON); 
     gtk_widget_set_tooltip_text (GTK_WIDGET(gw_applet->applet),  _("Updating..."));
 
     /* Set preferred forecast type */
-    prefs.type = gw_applet->mateweather_pref.detailed ? FORECAST_ZONE : FORECAST_STATE;
+    prefs.type = gw_applet->cafeweather_pref.detailed ? FORECAST_ZONE : FORECAST_STATE;
 
     /* Set radar map retrieval option */
-    prefs.radar = gw_applet->mateweather_pref.radar_enabled;
-    prefs.radar_custom_url = (gw_applet->mateweather_pref.use_custom_radar_url &&
-    				gw_applet->mateweather_pref.radar) ?
-				gw_applet->mateweather_pref.radar : NULL;
+    prefs.radar = gw_applet->cafeweather_pref.radar_enabled;
+    prefs.radar_custom_url = (gw_applet->cafeweather_pref.use_custom_radar_url &&
+    				gw_applet->cafeweather_pref.radar) ?
+				gw_applet->cafeweather_pref.radar : NULL;
 
     /* Set the units */
-    prefs.temperature_unit = gw_applet->mateweather_pref.temperature_unit;
-    prefs.speed_unit = gw_applet->mateweather_pref.speed_unit;
-    prefs.pressure_unit = gw_applet->mateweather_pref.pressure_unit;
-    prefs.distance_unit = gw_applet->mateweather_pref.distance_unit;
+    prefs.temperature_unit = gw_applet->cafeweather_pref.temperature_unit;
+    prefs.speed_unit = gw_applet->cafeweather_pref.speed_unit;
+    prefs.pressure_unit = gw_applet->cafeweather_pref.pressure_unit;
+    prefs.distance_unit = gw_applet->cafeweather_pref.distance_unit;
 
     /* Update current conditions */
-    if (gw_applet->mateweather_info && 
-    	weather_location_equal(weather_info_get_location(gw_applet->mateweather_info),
-    			       gw_applet->mateweather_pref.location)) {
-	weather_info_update(gw_applet->mateweather_info, &prefs,
+    if (gw_applet->cafeweather_info && 
+    	weather_location_equal(weather_info_get_location(gw_applet->cafeweather_info),
+    			       gw_applet->cafeweather_pref.location)) {
+	weather_info_update(gw_applet->cafeweather_info, &prefs,
 			    update_finish, gw_applet);
     } else {
-        weather_info_free(gw_applet->mateweather_info);
-        gw_applet->mateweather_info = weather_info_new(gw_applet->mateweather_pref.location,
+        weather_info_free(gw_applet->cafeweather_info);
+        gw_applet->cafeweather_info = weather_info_new(gw_applet->cafeweather_pref.location,
 						    &prefs,
 						    update_finish, gw_applet);
     }

@@ -10,8 +10,8 @@
 #include <gdk/gdkx.h>
 #include <gtk/gtk.h>
 #include <gio/gio.h>
-#include <mate-panel-applet.h>
-#include <mate-panel-applet-gsettings.h>
+#include <cafe-panel-applet.h>
+#include <cafe-panel-applet-gsettings.h>
 #include <math.h>
 
 #include "global.h"
@@ -414,7 +414,7 @@ load_graph_new (MultiloadApplet *ma, guint n, const gchar *label,
     g->id = id;
     g->speed  = MAX (speed, 50);
     g->size   = MAX (size, 10);
-    g->pixel_size = mate_panel_applet_get_size (ma->applet);
+    g->pixel_size = cafe_panel_applet_get_size (ma->applet);
     g->tooltip_update = FALSE;
     g->show_frame = TRUE;
     g->multiload = ma;
@@ -423,7 +423,7 @@ load_graph_new (MultiloadApplet *ma, guint n, const gchar *label,
 
     g->box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 
-    orient = mate_panel_applet_get_orient (g->multiload->applet);
+    orient = cafe_panel_applet_get_orient (g->multiload->applet);
     switch (orient)
     {
     case MATE_PANEL_APPLET_ORIENT_UP:

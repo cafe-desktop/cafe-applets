@@ -2,7 +2,7 @@
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # AlexL <loginov.alex.valer@gmail.com>, 2020
-# Wolfgang Ulbrich <mate@raveit.de>, 2020
+# Wolfgang Ulbrich <cafe@raveit.de>, 2020
 # Михаил Ильинский <mail@milinsky.com>, 2020
 # Alex Putz, 2020
 # Артур Мальцев <arturiosboss@gmail.com>, 2020
@@ -16,7 +16,7 @@ msgstr ""
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:24+0000\n"
 "Last-Translator: Aleksey Kabanov <ak099@mail.ru>, 2020\n"
-"Language-Team: Russian (https://www.transifex.com/mate/teams/13566/ru/)\n"
+"Language-Team: Russian (https://www.transifex.com/cafe/teams/13566/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -259,12 +259,12 @@ msgstr "Обратная связь"
 #: C/index.docbook:186
 msgid ""
 "To report a bug or make a suggestion regarding the Battery Charge Monitor "
-"applet or this manual, follow the directions in the <ulink url=\"help:mate-"
+"applet or this manual, follow the directions in the <ulink url=\"help:cafe-"
 "user-guide/feedback\" type=\"help\">MATE Feedback Page</ulink>."
 msgstr ""
 "Чтобы сообщить об ошибке или внести предложение относительно апплета "
 "индикатора состояния батареи или этого руководства, следуйте указаниям на "
-"<ulink url=\"help:mate-user-guide/feedback\" type=\"help\">странице обратной"
+"<ulink url=\"help:cafe-user-guide/feedback\" type=\"help\">странице обратной"
 " связи MATE</ulink>."
 
 #. (itstool) path: article/indexterm
@@ -318,7 +318,7 @@ msgid ""
 "The <application>Battery Charge Monitor</application> shows the status of "
 "any batteries in your laptop computer. The monitor can tell you the capacity"
 " remaining both visually and as a percentage, as well as offer you an "
-"estimate of the time remaining based off the current usage rate."
+"esticafe of the time remaining based off the current usage rate."
 msgstr ""
 "<application>Индикатор состояния батареи</application> показывает состояние "
 "аккумуляторов вашего ноутбука. Он может может как показывать уровень "
@@ -421,10 +421,10 @@ msgstr "<xref linkend=\"battstat-troubleshooting\"/>;"
 #. (itstool) path: listitem/para
 #: C/index.docbook:294
 msgid ""
-"<ulink url=\"http://ml.mate-desktop.org/listinfo/\">MATE mailing "
+"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">MATE mailing "
 "lists</ulink>"
 msgstr ""
-"<ulink url=\"http://ml.mate-desktop.org/listinfo/\">Списки почтовой рассылки"
+"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">Списки почтовой рассылки"
 " MATE</ulink>"
 
 #. (itstool) path: sect1/title
@@ -679,14 +679,14 @@ msgid ""
 "The following information may be useful for troubleshooting what is wrong "
 "with your battery monitor. It is by no means exhaustive. If you find a bug "
 "with the Battery Charge Monitor (that is not caused by bad information being"
-" reported by ACPI), please <ulink url=\"http://bugzilla.mate.org/\">report "
+" reported by ACPI), please <ulink url=\"http://bugzilla.cafe.org/\">report "
 "it</ulink>."
 msgstr ""
 "Следующие сведения могут быть полезными для решения проблем с индикатором "
 "состояния батареи. Их ни в коем случае не следует считать исчерпывающими. "
 "Если вы обнаружили ошибку в индикаторе состояния батареи (не вызванную "
 "получением ошибочной информации от  ACPI), пожалуйста,<ulink "
-"url=\"http://bugzilla.mate.org/\">сообщите о ней</ulink>."
+"url=\"http://bugzilla.cafe.org/\">сообщите о ней</ulink>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:452

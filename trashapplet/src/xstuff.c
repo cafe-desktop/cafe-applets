@@ -148,7 +148,7 @@ draw_zoom_animation (GdkScreen *gscreen,
 #undef FRAMES
 
 void
-xstuff_zoom_animate (GtkWidget *widget, GdkRectangle *opt_rect)
+xstuff_zoom_anicafe (GtkWidget *widget, GdkRectangle *opt_rect)
 {
 	GdkScreen    *gscreen;
 	GdkRectangle  rect, dest;

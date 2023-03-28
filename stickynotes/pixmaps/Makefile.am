@@ -8,11 +8,11 @@ app_icons = \
 	stickynotes-stock-resize-sw.png
 
 icons = \
-	mate-sticky-notes-applet.16.png \
-	mate-sticky-notes-applet.32.png \
-	mate-sticky-notes-applet.22.png \
-	mate-sticky-notes-applet.24.png \
-	mate-sticky-notes-applet.svg
+	cafe-sticky-notes-applet.16.png \
+	cafe-sticky-notes-applet.32.png \
+	cafe-sticky-notes-applet.22.png \
+	cafe-sticky-notes-applet.24.png \
+	cafe-sticky-notes-applet.svg
 
 EXTRA_DIST = \
 	$(app_icons) \
