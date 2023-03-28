@@ -78,7 +78,7 @@ typedef struct
 	gboolean prelighted;		/* Whether applet is prelighted */
 
 	gint panel_size;
-	MatePanelAppletOrient panel_orient;
+	CafePanelAppletOrient panel_orient;
 
 	GtkActionGroup *action_group;
 	GtkWidget *menu_tip;
@@ -94,10 +94,10 @@ typedef enum
 
 extern StickyNotes *stickynotes;
 
-void stickynotes_applet_init(MatePanelApplet *cafe_panel_applet);
+void stickynotes_applet_init(CafePanelApplet *cafe_panel_applet);
 void stickynotes_applet_init_prefs(void);
 
-StickyNotesApplet * stickynotes_applet_new(MatePanelApplet *cafe_panel_applet);
+StickyNotesApplet * stickynotes_applet_new(CafePanelApplet *cafe_panel_applet);
 
 void stickynotes_applet_update_icon(StickyNotesApplet *applet);
 void stickynotes_applet_update_prefs(void);

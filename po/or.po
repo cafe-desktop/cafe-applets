@@ -477,7 +477,7 @@ msgstr ""
 
 #: charpick/charpick.c:587
 msgid ""
-"Mate Panel applet for selecting strange characters that are not on my "
+"Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
 "ନୋର କିବୋର୍ଡରେ ନଥିବା ଅଜ୍ଞାତ ଅକ୍ଷରଗୁଡିକୁ ମନୋନୀତ କରିବା ପାଇଁ ଜେନୋମ ପ୍ଯାନେଲ ଆପଲେଟ"
@@ -979,7 +979,7 @@ msgid "_Update"
 msgstr "ଅଦ୍ୟତନ କରନ୍ତୁ (_U)"
 
 #: cafeweather/cafeweather-applet.c:345
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:9
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Weather Report"
 msgstr "ପାଣିପାଗ ସୂଚନା"
 
@@ -1269,22 +1269,22 @@ msgstr "ପରବର୍ତ୍ତୀ ଉପସ୍ଥିତି ସନ୍ଧାନ 
 msgid "Location"
 msgstr "ଅବସ୍ଥାନ"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:5
-msgid "Mateweather Applet Factory"
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:5
+msgid "Cafeweather Applet Factory"
 msgstr ""
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:6
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for creating the weather applet."
 msgstr "ପାଣିପାଗ ଆପଲେଟ୍ ପ୍ରସ୍ତୁତ କରିବା ପାଇଁ କାରଖାନା।"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:10
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr ""
 "ବର୍ତମାନ ପାଣିପାଗର ପରିସ୍ଥିତି ଉପରେ ଦ୍ରୁଷ୍ଟି ରଖଥାଏ, ଏବଂ ପୂର୍ବାନୁମାନ କରିଥାଏ"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:12
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
 msgid "weather-storm"
 msgstr ""
 

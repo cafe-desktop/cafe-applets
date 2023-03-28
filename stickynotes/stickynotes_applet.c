@@ -59,7 +59,7 @@ static const GtkToggleActionEntry stickynotes_applet_menu_toggle_actions[] =
 };
 
 /* Sticky Notes applet factory */
-static gboolean stickynotes_applet_factory(MatePanelApplet *cafe_panel_applet, const gchar *iid, gpointer data)
+static gboolean stickynotes_applet_factory(CafePanelApplet *cafe_panel_applet, const gchar *iid, gpointer data)
 {
 	if (!strcmp(iid, "StickyNotesApplet")) {
 		if (!stickynotes)
@@ -153,7 +153,7 @@ stickynotes_destroy (GtkWidget *widget,
 
 /* Create and initalize global sticky notes instance */
 void
-stickynotes_applet_init (MatePanelApplet *cafe_panel_applet)
+stickynotes_applet_init (CafePanelApplet *cafe_panel_applet)
 {
 	cairo_t *cr;
 	gint size, scale;
@@ -337,7 +337,7 @@ void stickynotes_applet_init_prefs(void)
 
 /* Create a Sticky Notes applet */
 StickyNotesApplet *
-stickynotes_applet_new(MatePanelApplet *cafe_panel_applet)
+stickynotes_applet_new(CafePanelApplet *cafe_panel_applet)
 {
 	AtkObject *atk_obj;
 	gchar *ui_path;

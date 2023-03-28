@@ -9,7 +9,7 @@ Name=Eyes
 Description=A set of eyeballs for your panel
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=cafe-eyes-applet
-MateComponentId=OAFIID:MATE_GeyesApplet
+CafeComponentId=OAFIID:MATE_GeyesApplet
 X-MATE-Bugzilla-Bugzilla=MATE
 X-MATE-Bugzilla-Product=cafe-applets
 X-MATE-Bugzilla-Component=geyes

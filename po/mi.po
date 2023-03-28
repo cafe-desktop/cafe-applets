@@ -441,7 +441,7 @@ msgstr ""
 
 #: ../charpick/charpick.c:582
 msgid ""
-"Mate Panel applet for selecting strange characters that are not on my "
+"Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
 
@@ -848,7 +848,7 @@ msgid "_Update"
 msgstr ""
 
 #: ../cafeweather/cafeweather-applet.c:339
-#: ../cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.in.in.h:3
+#: ../cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.in.in.h:3
 msgid "Weather Report"
 msgstr ""
 
@@ -1160,15 +1160,15 @@ msgstr ""
 msgid "Location"
 msgstr ""
 
-#: ../cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.in.in.h:1
-msgid "Mateweather Applet Factory"
+#: ../cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.in.in.h:1
+msgid "Cafeweather Applet Factory"
 msgstr ""
 
-#: ../cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.in.in.h:2
+#: ../cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.in.in.h:2
 msgid "Factory for creating the weather applet."
 msgstr ""
 
-#: ../cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.in.in.h:4
+#: ../cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.in.in.h:4
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr ""
 
@@ -1794,7 +1794,7 @@ msgid ""
 msgstr ""
 
 #: ../netspeed/src/netspeed.c:996
-msgid "Mate Netspeed Preferences"
+msgid "Cafe Netspeed Preferences"
 msgstr ""
 
 #: ../netspeed/src/netspeed.c:1018
@@ -1957,7 +1957,7 @@ msgid "unknown"
 msgstr ""
 
 #: ../netspeed/src/netspeed.c:1593
-msgid "Mate Netspeed"
+msgid "Cafe Netspeed"
 msgstr ""
 
 #: ../stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.in.in.h:1

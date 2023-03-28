@@ -47,7 +47,7 @@
 
 typedef struct
 {
-    MatePanelApplet   *applet;
+    CafePanelApplet   *applet;
 
     GSettings         *settings;
 
@@ -92,7 +92,7 @@ static char *ui = "<menuitem name='Item 1' action='Start' />"
                   "<menuitem name='Item 6' action='About' />";
 
 static void
-timer_applet_destroy (MatePanelApplet *applet_widget, TimerApplet *applet)
+timer_applet_destroy (CafePanelApplet *applet_widget, TimerApplet *applet)
 {
     g_assert (applet);
 
@@ -396,7 +396,7 @@ timer_settings_changed (GSettings *settings, gchar *key, TimerApplet *applet)
 }
 
 static gboolean
-timer_applet_fill (MatePanelApplet* applet_widget)
+timer_applet_fill (CafePanelApplet* applet_widget)
 {
     TimerApplet *applet;
 
@@ -464,7 +464,7 @@ timer_applet_fill (MatePanelApplet* applet_widget)
 
 /* this function, called by cafe-panel, will create the applet */
 static gboolean
-timer_factory (MatePanelApplet* applet, const char* iid, gpointer data)
+timer_factory (CafePanelApplet* applet, const char* iid, gpointer data)
 {
     gboolean retval = FALSE;
 

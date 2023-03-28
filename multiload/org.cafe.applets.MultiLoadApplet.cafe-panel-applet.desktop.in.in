@@ -9,7 +9,7 @@ Name=System Monitor
 Description=A system load indicator
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=utilities-system-monitor
-MateComponentId=OAFIID:MATE_MultiLoadApplet
+CafeComponentId=OAFIID:MATE_MultiLoadApplet
 X-MATE-Bugzilla-Bugzilla=MATE
 X-MATE-Bugzilla-Product=cafe-applets
 X-MATE-Bugzilla-Component=multiload

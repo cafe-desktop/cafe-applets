@@ -500,7 +500,7 @@ msgstr ""
 
 #: charpick/charpick.c:587
 msgid ""
-"Mate Panel applet for selecting strange characters that are not on my "
+"Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
 "Aplet pulta MATE za izbiro nevsakdanjih znakov. Objavljeno pod pogoji "
@@ -934,7 +934,7 @@ msgstr ""
 #: geyes/geyes.c:389 geyes/geyes.c:419 geyes/geyes.c:421
 #: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Eyes"
-msgstr "Oči Mate"
+msgstr "Oči Cafe"
 
 #: geyes/geyes.c:422
 msgid "The eyes look in the direction of the mouse pointer"
@@ -947,7 +947,7 @@ msgstr "Tovarna apleta oči"
 
 #: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A set of eyeballs for your panel"
-msgstr "Par oči za Vaš pult Mate"
+msgstr "Par oči za Vaš pult Cafe"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
@@ -1003,7 +1003,7 @@ msgid "_Update"
 msgstr "Poso_dobi"
 
 #: cafeweather/cafeweather-applet.c:345
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:9
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Weather Report"
 msgstr "Vremensko poročilo"
 
@@ -1292,21 +1292,21 @@ msgstr "Najdi _naslednje"
 msgid "Location"
 msgstr "Mesto"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:5
-msgid "Mateweather Applet Factory"
-msgstr "Tovarna apleta Mateweather"
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:5
+msgid "Cafeweather Applet Factory"
+msgstr "Tovarna apleta Cafeweather"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:6
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for creating the weather applet."
 msgstr "Tovarna za ustvarjanje apleta vremena."
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:10
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "Spremljanje trenutnih vremenskih razmer in napovedi"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:12
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
 msgid "weather-storm"
 msgstr ""
 

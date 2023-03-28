@@ -71,7 +71,7 @@ static const char LOGO_ICON[] = "cafe-netspeed-applet";
  */
 typedef struct
 {
-	MatePanelApplet *applet;
+	CafePanelApplet *applet;
 	GtkWidget *box, *pix_box, *speed_box,
 	*in_box, *in_label, *in_pix,
 	*out_box, *out_label, *out_pix,
@@ -111,13 +111,13 @@ typedef struct
 	gboolean show_tooltip;
 
 	GSettings *gsettings;
-} MateNetspeedApplet;
+} CafeNetspeedApplet;
 
 static void
-update_tooltip(MateNetspeedApplet* applet);
+update_tooltip(CafeNetspeedApplet* applet);
 
 static void
-device_change_cb(GtkComboBox *combo, MateNetspeedApplet *applet);
+device_change_cb(GtkComboBox *combo, CafeNetspeedApplet *applet);
 
 /* Adds a Pango markup "size" to a bytestring
  */
@@ -142,7 +142,7 @@ add_markup_fgcolor(char **string, const char *color)
 /* Change the icons according to the selected device
  */
 static void
-change_icons(MateNetspeedApplet *applet)
+change_icons(CafeNetspeedApplet *applet)
 {
 	cairo_surface_t *dev, *down;
 	cairo_surface_t *in_arrow, *out_arrow;
@@ -231,10 +231,10 @@ change_icons(MateNetspeedApplet *applet)
  * or just the sum
  */
 static void
-applet_change_size_or_orient(MatePanelApplet *applet_widget, int arg1, MateNetspeedApplet *applet)
+applet_change_size_or_orient(CafePanelApplet *applet_widget, int arg1, CafeNetspeedApplet *applet)
 {
 	int size;
-	MatePanelAppletOrient orient;
+	CafePanelAppletOrient orient;
 
 	g_assert(applet);
 
@@ -328,7 +328,7 @@ applet_change_size_or_orient(MatePanelApplet *applet_widget, int arg1, MateNetsp
 /* Change visibility of signal quality icon for wireless devices
  */
 static void
-change_quality_icon(MateNetspeedApplet *applet)
+change_quality_icon(CafeNetspeedApplet *applet)
 {
 	if (applet->devinfo.type == DEV_WIRELESS &&
 		applet->devinfo.up && applet->show_quality_icon) {
@@ -339,7 +339,7 @@ change_quality_icon(MateNetspeedApplet *applet)
 }
 
 static void
-update_quality_icon(MateNetspeedApplet *applet)
+update_quality_icon(CafeNetspeedApplet *applet)
 {
 	if (!applet->show_quality_icon) {
 		return;
@@ -354,7 +354,7 @@ update_quality_icon(MateNetspeedApplet *applet)
 }
 
 static void
-init_quality_surfaces(MateNetspeedApplet *applet)
+init_quality_surfaces(CafeNetspeedApplet *applet)
 {
 	GtkIconTheme *icon_theme;
 	int i;
@@ -393,7 +393,7 @@ init_quality_surfaces(MateNetspeedApplet *applet)
 static void
 icon_theme_changed_cb(GtkIconTheme *icon_theme, gpointer user_data)
 {
-    MateNetspeedApplet *applet = (MateNetspeedApplet*)user_data;
+    CafeNetspeedApplet *applet = (CafeNetspeedApplet*)user_data;
 
     init_quality_surfaces(user_data);
     if (applet->devinfo.type == DEV_WIRELESS && applet->devinfo.up)
@@ -468,7 +468,7 @@ bytes_to_string(double bytes, gboolean per_sec, gboolean bits, gboolean shortene
  * Some really black magic is going on in here ;-)
  */
 static void
-redraw_graph(MateNetspeedApplet *applet, cairo_t *cr)
+redraw_graph(CafeNetspeedApplet *applet, cairo_t *cr)
 {
 	GtkWidget *da = GTK_WIDGET(applet->drawingarea);
 	GtkStyleContext *stylecontext = gtk_widget_get_style_context (da);
@@ -557,7 +557,7 @@ redraw_graph(MateNetspeedApplet *applet, cairo_t *cr)
 }
 
 static gboolean
-set_applet_devinfo(MateNetspeedApplet* applet, const char* iface)
+set_applet_devinfo(CafeNetspeedApplet* applet, const char* iface)
 {
 	DevInfo info;
 
@@ -576,7 +576,7 @@ set_applet_devinfo(MateNetspeedApplet* applet, const char* iface)
 
 /* Find the first available device, that is running and != lo */
 static void
-search_for_up_if(MateNetspeedApplet *applet)
+search_for_up_if(CafeNetspeedApplet *applet)
 {
 	const gchar *default_route;
 	GList *devices, *tmp;
@@ -601,7 +601,7 @@ search_for_up_if(MateNetspeedApplet *applet)
 
 /* Here happens the really interesting stuff */
 static void
-update_applet(MateNetspeedApplet *applet)
+update_applet(CafeNetspeedApplet *applet)
 {
 	guint64 indiff, outdiff;
 	double inrate, outrate;
@@ -745,7 +745,7 @@ update_applet(MateNetspeedApplet *applet)
 }
 
 static gboolean
-timeout_function(MateNetspeedApplet *applet)
+timeout_function(CafeNetspeedApplet *applet)
 {
 	if (!applet)
 		return FALSE;
@@ -796,7 +796,7 @@ display_help (GtkWidget *dialog, const gchar *section)
 /* Opens gnome help application
  */
 static void
-help_cb (GtkAction *action, MateNetspeedApplet *ap)
+help_cb (GtkAction *action, CafeNetspeedApplet *ap)
 {
 	display_help (GTK_WIDGET (ap->applet), NULL);
 }
@@ -837,7 +837,7 @@ about_cb(GtkAction *action, gpointer data)
  * and then calls applet_device_change() and change_icons()
  */
 static void
-device_change_cb(GtkComboBox *combo, MateNetspeedApplet *applet)
+device_change_cb(GtkComboBox *combo, CafeNetspeedApplet *applet)
 {
 	GList *devices;
 	int i, active;
@@ -872,7 +872,7 @@ device_change_cb(GtkComboBox *combo, MateNetspeedApplet *applet)
 static void
 pref_response_cb (GtkDialog *dialog, gint id, gpointer data)
 {
-    MateNetspeedApplet *applet = data;
+    CafeNetspeedApplet *applet = data;
 
     if(id == GTK_RESPONSE_HELP){
         display_help (GTK_WIDGET (dialog), "netspeed_applet-settings");
@@ -896,7 +896,7 @@ pref_response_cb (GtkDialog *dialog, gint id, gpointer data)
 /* Called when the showsum checkbutton is toggled...
  */
 static void
-showsum_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *applet)
+showsum_change_cb(GtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
 {
 	applet->show_sum = gtk_toggle_button_get_active(togglebutton);
 	applet_change_size_or_orient(applet->applet, -1, (gpointer)applet);
@@ -906,7 +906,7 @@ showsum_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *applet)
 /* Called when the showbits checkbutton is toggled...
  */
 static void
-showbits_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *applet)
+showbits_change_cb(GtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
 {
 	applet->show_bits = gtk_toggle_button_get_active(togglebutton);
 }
@@ -914,7 +914,7 @@ showbits_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *applet)
 /* Called when the shortunit checkbutton is toggled...
  */
 static void
-shortunit_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *applet)
+shortunit_change_cb(GtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
 {
 	applet->short_unit = gtk_toggle_button_get_active(togglebutton);
 }
@@ -922,7 +922,7 @@ shortunit_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *applet)
 /* Called when the showicon checkbutton is toggled...
  */
 static void
-showicon_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *applet)
+showicon_change_cb(GtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
 {
 	applet->show_icon = gtk_toggle_button_get_active(togglebutton);
 	change_icons(applet);
@@ -931,7 +931,7 @@ showicon_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *applet)
 /* Called when the showqualityicon checkbutton is toggled...
  */
 static void
-showqualityicon_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *applet)
+showqualityicon_change_cb(GtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
 {
 	applet->show_quality_icon = gtk_toggle_button_get_active(togglebutton);
 	change_quality_icon(applet);
@@ -940,7 +940,7 @@ showqualityicon_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *app
 /* Called when the changeicon checkbutton is toggled...
  */
 static void
-changeicon_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *applet)
+changeicon_change_cb(GtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
 {
 	applet->change_icon = gtk_toggle_button_get_active(togglebutton);
 	change_icons(applet);
@@ -953,7 +953,7 @@ changeicon_change_cb(GtkToggleButton *togglebutton, MateNetspeedApplet *applet)
 static void
 settings_cb(GtkAction *action, gpointer data)
 {
-	MateNetspeedApplet *applet = (MateNetspeedApplet*)data;
+	CafeNetspeedApplet *applet = (CafeNetspeedApplet*)data;
 	GtkWidget *vbox;
 	GtkWidget *hbox;
 	GtkWidget *categories_vbox;
@@ -1109,7 +1109,7 @@ settings_cb(GtkAction *action, gpointer data)
 static gboolean
 da_draw(GtkWidget *widget, cairo_t *cr, gpointer data)
 {
-	MateNetspeedApplet *applet = (MateNetspeedApplet*)data;
+	CafeNetspeedApplet *applet = (CafeNetspeedApplet*)data;
 
 	redraw_graph(applet, cr);
 
@@ -1119,7 +1119,7 @@ da_draw(GtkWidget *widget, cairo_t *cr, gpointer data)
 static void
 incolor_changed_cb (GtkColorChooser *button, gpointer data)
 {
-	MateNetspeedApplet *applet = (MateNetspeedApplet*)data;
+	CafeNetspeedApplet *applet = (CafeNetspeedApplet*)data;
 	GdkRGBA color;
 	gchar *string;
 
@@ -1134,7 +1134,7 @@ incolor_changed_cb (GtkColorChooser *button, gpointer data)
 static void
 outcolor_changed_cb (GtkColorChooser *button, gpointer data)
 {
-	MateNetspeedApplet *applet = (MateNetspeedApplet*)data;
+	CafeNetspeedApplet *applet = (CafeNetspeedApplet*)data;
 	GdkRGBA color;
 	gchar *string;
 
@@ -1149,7 +1149,7 @@ outcolor_changed_cb (GtkColorChooser *button, gpointer data)
 /* Handle info dialog response event
  */
 static void
-info_response_cb (GtkDialog *dialog, gint id, MateNetspeedApplet *applet)
+info_response_cb (GtkDialog *dialog, gint id, CafeNetspeedApplet *applet)
 {
 
 	if(id == GTK_RESPONSE_HELP){
@@ -1171,7 +1171,7 @@ info_response_cb (GtkDialog *dialog, gint id, MateNetspeedApplet *applet)
 static void
 showinfo_cb(GtkAction *action, gpointer data)
 {
-	MateNetspeedApplet *applet = (MateNetspeedApplet*)data;
+	CafeNetspeedApplet *applet = (CafeNetspeedApplet*)data;
 	GtkWidget *box, *hbox;
 	GtkWidget *grid, *da_frame;
 	GtkWidget *ip_label, *netmask_label;
@@ -1369,13 +1369,13 @@ showinfo_cb(GtkAction *action, gpointer data)
 }
 
 static const GtkActionEntry cafe_netspeed_applet_menu_actions [] = {
-		{ "MateNetspeedAppletDetails", "dialog-information", N_("Device _Details"),
+		{ "CafeNetspeedAppletDetails", "dialog-information", N_("Device _Details"),
 		  NULL, NULL, G_CALLBACK (showinfo_cb) },
-		{ "MateNetspeedAppletProperties", "document-properties", N_("Preferences..."),
+		{ "CafeNetspeedAppletProperties", "document-properties", N_("Preferences..."),
 		  NULL, NULL, G_CALLBACK (settings_cb) },
-		{ "MateNetspeedAppletHelp", "help-browser", N_("Help"),
+		{ "CafeNetspeedAppletHelp", "help-browser", N_("Help"),
 		  NULL, NULL, G_CALLBACK (help_cb) },
-		{ "MateNetspeedAppletAbout", "help-about", N_("About..."),
+		{ "CafeNetspeedAppletAbout", "help-about", N_("About..."),
 		  NULL, NULL, G_CALLBACK (about_cb) }
 };
 
@@ -1386,7 +1386,7 @@ static const GtkActionEntry cafe_netspeed_applet_menu_actions [] = {
  * "jumping around" in the cafe_panel which looks uggly
  */
 static void
-label_size_allocate_cb(GtkWidget *widget, GtkAllocation *allocation, MateNetspeedApplet *applet)
+label_size_allocate_cb(GtkWidget *widget, GtkAllocation *allocation, CafeNetspeedApplet *applet)
 {
 	if (applet->labels_dont_shrink) {
 		if (allocation->width <= applet->width)
@@ -1397,7 +1397,7 @@ label_size_allocate_cb(GtkWidget *widget, GtkAllocation *allocation, MateNetspee
 }
 
 static gboolean
-applet_button_press(GtkWidget *widget, GdkEventButton *event, MateNetspeedApplet *applet)
+applet_button_press(GtkWidget *widget, GdkEventButton *event, CafeNetspeedApplet *applet)
 {
 	if (event->button == 1)
 	{
@@ -1466,7 +1466,7 @@ applet_button_press(GtkWidget *widget, GdkEventButton *event, MateNetspeedApplet
  * Removes the timeout_cb
  */
 static void
-applet_destroy(MatePanelApplet *applet_widget, MateNetspeedApplet *applet)
+applet_destroy(CafePanelApplet *applet_widget, CafeNetspeedApplet *applet)
 {
 	GtkIconTheme *icon_theme;
 
@@ -1496,7 +1496,7 @@ applet_destroy(MatePanelApplet *applet_widget, MateNetspeedApplet *applet)
 
 
 static void
-update_tooltip(MateNetspeedApplet* applet)
+update_tooltip(CafeNetspeedApplet* applet)
 {
   GString* tooltip;
 
@@ -1545,7 +1545,7 @@ update_tooltip(MateNetspeedApplet* applet)
 static gboolean
 cafe_netspeed_enter_cb(GtkWidget *widget, GdkEventCrossing *event, gpointer data)
 {
-	MateNetspeedApplet *applet = data;
+	CafeNetspeedApplet *applet = data;
 
 	applet->show_tooltip = TRUE;
 	update_tooltip(applet);
@@ -1556,7 +1556,7 @@ cafe_netspeed_enter_cb(GtkWidget *widget, GdkEventCrossing *event, gpointer data
 static gboolean
 cafe_netspeed_leave_cb(GtkWidget *widget, GdkEventCrossing *event, gpointer data)
 {
-	MateNetspeedApplet *applet = data;
+	CafeNetspeedApplet *applet = data;
 
 	applet->show_tooltip = FALSE;
 	return TRUE;
@@ -1565,9 +1565,9 @@ cafe_netspeed_leave_cb(GtkWidget *widget, GdkEventCrossing *event, gpointer data
 /* The "main" function of the applet
  */
 static gboolean
-cafe_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, gpointer data)
+cafe_netspeed_applet_factory(CafePanelApplet *applet_widget, const gchar *iid, gpointer data)
 {
-	MateNetspeedApplet *applet;
+	CafeNetspeedApplet *applet;
 	int i;
 	char* menu_string;
 	GtkIconTheme *icon_theme;
@@ -1588,7 +1588,7 @@ cafe_netspeed_applet_factory(MatePanelApplet *applet_widget, const gchar *iid, g
 	/* Alloc the applet. The "NULL-setting" is really redudant
  	 * but aren't we paranoid?
 	 */
-	applet = g_malloc0(sizeof(MateNetspeedApplet));
+	applet = g_malloc0(sizeof(CafeNetspeedApplet));
 	applet->applet = applet_widget;
 	memset(&applet->devinfo, 0, sizeof(DevInfo));
 	applet->refresh_time = 1000.0;

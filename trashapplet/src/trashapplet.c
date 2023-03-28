@@ -36,11 +36,11 @@
 #include "trash-empty.h"
 #include "xstuff.h"
 
-typedef MatePanelAppletClass TrashAppletClass;
+typedef CafePanelAppletClass TrashAppletClass;
 
 typedef struct
 {
-  MatePanelApplet applet;
+  CafePanelApplet applet;
 
   GFileMonitor *trash_monitor;
   GFile *trash;
@@ -611,7 +611,7 @@ trash_applet_class_init (TrashAppletClass *class)
 }
 
 static gboolean
-trash_applet_factory (MatePanelApplet *applet,
+trash_applet_factory (CafePanelApplet *applet,
                       const gchar *iid,
                       gpointer     data)
 {

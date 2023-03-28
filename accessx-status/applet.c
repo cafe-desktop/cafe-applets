@@ -1096,7 +1096,7 @@ static void popup_error_dialog(AccessxStatusApplet* sapplet)
 	g_free(error_txt);
 }
 
-static AccessxStatusApplet* create_applet(MatePanelApplet* applet)
+static AccessxStatusApplet* create_applet(CafePanelApplet* applet)
 {
 	AccessxStatusApplet* sapplet = g_new0(AccessxStatusApplet, 1);
 	GtkWidget* box;
@@ -1214,7 +1214,7 @@ static void accessx_status_applet_destroy(GtkWidget* widget, gpointer user_data)
 	}
 }
 
-static void accessx_status_applet_reorient(GtkWidget* widget, MatePanelAppletOrient o, gpointer user_data)
+static void accessx_status_applet_reorient(GtkWidget* widget, CafePanelAppletOrient o, gpointer user_data)
 {
 	AccessxStatusApplet* sapplet = user_data;
 	GtkWidget* box;
@@ -1338,7 +1338,7 @@ static void accessx_status_applet_realize(GtkWidget* widget, gpointer user_data)
 	return;
 }
 
-static gboolean accessx_status_applet_fill(MatePanelApplet* applet)
+static gboolean accessx_status_applet_fill(CafePanelApplet* applet)
 {
 	AccessxStatusApplet* sapplet;
 	AtkObject* atk_object;
@@ -1399,7 +1399,7 @@ static gboolean accessx_status_applet_fill(MatePanelApplet* applet)
 	return TRUE;
 }
 
-static gboolean accessx_status_applet_factory(MatePanelApplet* applet, const gchar* iid, gpointer data)
+static gboolean accessx_status_applet_factory(CafePanelApplet* applet, const gchar* iid, gpointer data)
 {
 	gboolean retval = FALSE;
 

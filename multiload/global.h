@@ -61,7 +61,7 @@ struct _LoadGraph {
 
 struct _MultiloadApplet
 {
-	MatePanelApplet *applet;
+	CafePanelApplet *applet;
 
 	GSettings *settings;
 

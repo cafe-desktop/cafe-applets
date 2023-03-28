@@ -27,11 +27,11 @@
 #include "cafeweather-applet.h"
 
 
-static gboolean cafeweather_applet_new(MatePanelApplet* applet, const gchar* iid, gpointer data)
+static gboolean cafeweather_applet_new(CafePanelApplet* applet, const gchar* iid, gpointer data)
 {
-	MateWeatherApplet* gw_applet;
+	CafeWeatherApplet* gw_applet;
 
-	gw_applet = g_new0(MateWeatherApplet, 1);
+	gw_applet = g_new0(CafeWeatherApplet, 1);
 
 	gw_applet->applet = applet;
 	gw_applet->cafeweather_info = NULL;
@@ -46,7 +46,7 @@ static gboolean cafeweather_applet_new(MatePanelApplet* applet, const gchar* iid
 	return TRUE;
 }
 
-static gboolean cafeweather_applet_factory(MatePanelApplet* applet, const gchar* iid, gpointer data)
+static gboolean cafeweather_applet_factory(CafePanelApplet* applet, const gchar* iid, gpointer data)
 {
 	gboolean retval = FALSE;
 
@@ -55,4 +55,4 @@ static gboolean cafeweather_applet_factory(MatePanelApplet* applet, const gchar*
 	return retval;
 }
 
-MATE_PANEL_APPLET_OUT_PROCESS_FACTORY("MateWeatherAppletFactory", PANEL_TYPE_APPLET, "cafeweather", cafeweather_applet_factory, NULL)
+MATE_PANEL_APPLET_OUT_PROCESS_FACTORY("CafeWeatherAppletFactory", PANEL_TYPE_APPLET, "cafeweather", cafeweather_applet_factory, NULL)

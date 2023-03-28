@@ -9,7 +9,7 @@ Name=Disk Mounter
 Description=Mount local disks and devices
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=media-floppy
-MateComponentId=OAFIID:MATE_DriveMountApplet
+CafeComponentId=OAFIID:MATE_DriveMountApplet
 X-MATE-Bugzilla-Bugzilla=MATE
 X-MATE-Bugzilla-Product=cafe-applets
 X-MATE-Bugzilla-Component=Disk Mounter (drivemount)

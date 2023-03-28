@@ -131,7 +131,7 @@ typedef struct _ProgressData {
   gboolean horizont;
 
   /* on a vertical or horizontal panel? (up/down/left/right) */
-  MatePanelAppletOrient orienttype;
+  CafePanelAppletOrient orienttype;
 
   /* the current layout of the visual elements inside the grid */
   LayoutConfiguration layout;

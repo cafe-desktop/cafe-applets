@@ -36,7 +36,7 @@ static const char drivemount_iid[] = "DriveMountApplet";
 static const char factory_iid[] = "DriveMountAppletFactory";
 
 static void
-change_orient (MatePanelApplet *applet, MatePanelAppletOrient o, DriveList *drive_list)
+change_orient (CafePanelApplet *applet, CafePanelAppletOrient o, DriveList *drive_list)
 {
     GtkOrientation orientation;
 
@@ -55,7 +55,7 @@ change_orient (MatePanelApplet *applet, MatePanelAppletOrient o, DriveList *driv
 }
 
 static void
-size_allocate (MatePanelApplet  *applet,
+size_allocate (CafePanelApplet  *applet,
 	       GdkRectangle *allocation,
 	       DriveList    *drive_list)
 {
@@ -76,8 +76,8 @@ size_allocate (MatePanelApplet  *applet,
 }
 
 static void
-change_background (MatePanelApplet               *applet,
-		   MatePanelAppletBackgroundType  type,
+change_background (CafePanelApplet               *applet,
+		   CafePanelAppletBackgroundType  type,
 		   GdkColor                  *colour,
 		   cairo_pattern_t           *pattern,
 		   DriveList                 *drivelist)
@@ -171,7 +171,7 @@ static const GtkActionEntry applet_menu_actions[] = {
 };
 
 static gboolean
-applet_factory (MatePanelApplet *applet,
+applet_factory (CafePanelApplet *applet,
 		const char  *iid,
 		gpointer     user_data)
 {

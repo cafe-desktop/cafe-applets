@@ -131,7 +131,7 @@ msgid ""
 "<affiliation> <orgname>Sun Microsystems</orgname> </affiliation>"
 msgstr ""
 "<firstname>Sun </firstname> <surname>Team di documentazione di "
-"Mate</surname> <affiliation> <orgname>Sun Microsystems</orgname> "
+"Cafe</surname> <affiliation> <orgname>Sun Microsystems</orgname> "
 "</affiliation>"
 
 #. (itstool) path: authorgroup/author

@@ -9,7 +9,7 @@ Name=Keyboard Accessibility Status
 Description=Shows the status of keyboard accessibility features
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=preferences-desktop-accessibility
-MateComponentId=OAFIID:MATE_AccessxStatusApplet
+CafeComponentId=OAFIID:MATE_AccessxStatusApplet
 X-MATE-Bugzilla-Bugzilla=MATE
 X-MATE-Bugzilla-Product=cafe-applets
 X-MATE-Bugzilla-Component=keyboard-accessibility (accessx-status)

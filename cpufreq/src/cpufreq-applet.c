@@ -41,7 +41,7 @@
 #include "cpufreq-utils.h"
 
 struct _CPUFreqApplet {
-        MatePanelApplet       base;
+        CafePanelApplet       base;
 
         /* Visibility */
 	CPUFreqShowMode   show_mode;
@@ -53,7 +53,7 @@ struct _CPUFreqApplet {
 
         CPUFreqMonitor   *monitor;
 
-        MatePanelAppletOrient orient;
+        CafePanelAppletOrient orient;
         gint              size;
 
         GtkWidget        *label;
@@ -71,7 +71,7 @@ struct _CPUFreqApplet {
 };
 
 struct _CPUFreqAppletClass {
-        MatePanelAppletClass parent_class;
+        CafePanelAppletClass parent_class;
 };
 
 static void     cpufreq_applet_preferences_cb    (GtkAction          *action,
@@ -96,8 +96,8 @@ static gboolean cpufreq_applet_key_press         (GtkWidget          *widget,
                                                   GdkEventKey        *event);
 static void     cpufreq_applet_size_allocate     (GtkWidget          *widget,
                                                   GtkAllocation      *allocation);
-static void     cpufreq_applet_change_orient     (MatePanelApplet        *pa,
-                                                  MatePanelAppletOrient   orient);
+static void     cpufreq_applet_change_orient     (CafePanelApplet        *pa,
+                                                  CafePanelAppletOrient   orient);
 static void     cpufreq_applet_style_updated     (GtkWidget *widget);
 static gboolean cpufreq_applet_factory           (CPUFreqApplet      *applet,
                                                   const gchar        *iid,
@@ -206,7 +206,7 @@ cpufreq_applet_init (CPUFreqApplet *applet)
 static void
 cpufreq_applet_class_init (CPUFreqAppletClass *klass)
 {
-        MatePanelAppletClass *applet_class = MATE_PANEL_APPLET_CLASS (klass);
+        CafePanelAppletClass *applet_class = MATE_PANEL_APPLET_CLASS (klass);
         GObjectClass     *gobject_class = G_OBJECT_CLASS (klass);
         GtkWidgetClass   *widget_class = GTK_WIDGET_CLASS (klass);
 
@@ -383,7 +383,7 @@ cpufreq_applet_key_press (GtkWidget *widget, GdkEventKey *event)
 }
 
 static void
-cpufreq_applet_change_orient (MatePanelApplet *pa, MatePanelAppletOrient orient)
+cpufreq_applet_change_orient (CafePanelApplet *pa, CafePanelAppletOrient orient)
 {
         CPUFreqApplet *applet;
         GtkAllocation  allocation;
@@ -891,5 +891,5 @@ cpufreq_applet_factory (CPUFreqApplet *applet, const gchar *iid, gpointer gdata)
 MATE_PANEL_APPLET_OUT_PROCESS_FACTORY ("CPUFreqAppletFactory",
 				  CPUFREQ_TYPE_APPLET,
 				  "cpufreq-applet",
-				  (MatePanelAppletFactoryCallback) cpufreq_applet_factory,
+				  (CafePanelAppletFactoryCallback) cpufreq_applet_factory,
 				  NULL)

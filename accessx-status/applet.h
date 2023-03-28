@@ -82,7 +82,7 @@ typedef enum {
 }AccessxStatusErrorType;
 
 typedef struct {
-	MatePanelApplet* applet;
+	CafePanelApplet* applet;
 	GtkWidget* box;
 	GtkWidget* idlefoo;
 	GtkWidget* mousefoo;
@@ -96,7 +96,7 @@ typedef struct {
 	GtkWidget* hyper_indicator;
 	GtkWidget* super_indicator;
 	GtkWidget* alt_graph_indicator;
-	MatePanelAppletOrient orient;
+	CafePanelAppletOrient orient;
 	GtkIconFactory* icon_factory;
 	gboolean initialized;
 	XkbDescRec* xkb;

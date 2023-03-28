@@ -9,7 +9,7 @@ Name=Network Monitor
 Description=Netspeed Applet
 # Translators: Do NOT translate or transliterate this text (this is an icon file name)!
 Icon=cafe-netspeed-applet
-MateComponentId=OAFIID:MATE_NetspeedApplet
+CafeComponentId=OAFIID:MATE_NetspeedApplet
 X-MATE-Bugzilla-Bugzilla=MATE
 X-MATE-Bugzilla-Product=cafe-netspeed
 X-MATE-Bugzilla-Component=netspeed

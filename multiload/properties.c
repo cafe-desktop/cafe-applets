@@ -381,7 +381,7 @@ fill_properties(GtkWidget *dialog, MultiloadApplet *ma)
 	GtkWidget *indent;
 	GtkWidget *spin_button;
 	GtkWidget *label;
-	MatePanelAppletOrient orient;
+	CafePanelAppletOrient orient;
 	GtkSizeGroup *label_size;
 	GtkSizeGroup *spin_size;
 	gchar *label_text;

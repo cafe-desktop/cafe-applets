@@ -483,7 +483,7 @@ msgstr ""
 
 #: charpick/charpick.c:587
 msgid ""
-"Mate Panel applet for selecting strange characters that are not on my "
+"Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr "本 MATE 面板程式可用來選取在鍵盤上找不到的特殊字元。遵照 GNU 公共授權條款 (GPL) 發行。"
 
@@ -982,7 +982,7 @@ msgid "_Update"
 msgstr "更新(_U)"
 
 #: cafeweather/cafeweather-applet.c:345
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:9
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Weather Report"
 msgstr "天氣報告"
 
@@ -1270,21 +1270,21 @@ msgstr "找下一個(_N)"
 msgid "Location"
 msgstr "位置"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:5
-msgid "Mateweather Applet Factory"
-msgstr "Mateweather 小程式工廠"
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:5
+msgid "Cafeweather Applet Factory"
+msgstr "Cafeweather 小程式工廠"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:6
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for creating the weather applet."
 msgstr "用來產生天氣面板程式的工廠。"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:10
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "監控目前的天氣情況及進行天氣預報"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:12
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
 msgid "weather-storm"
 msgstr "weather-storm"
 
@@ -1965,7 +1965,7 @@ msgstr "會顯示在指定網路裝置上流量的某些資訊的小型程式"
 
 #: netspeed/src/netspeed.c:987
 msgid "MATE Netspeed Preferences"
-msgstr "關於 Mate Netspeed 偏好設定"
+msgstr "關於 Cafe Netspeed 偏好設定"
 
 #: netspeed/src/netspeed.c:1009
 msgid "General Settings"

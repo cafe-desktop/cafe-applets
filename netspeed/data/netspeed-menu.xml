@@ -1,5 +1,5 @@
-<menuitem name="MateNetspeedAppletDetails" action="MateNetspeedAppletDetails" />
+<menuitem name="CafeNetspeedAppletDetails" action="CafeNetspeedAppletDetails" />
 <separator/>
-<menuitem name="MateNetspeedAppletProperties" action="MateNetspeedAppletProperties" />
-<menuitem name="MateNetspeedAppletHelp" action="MateNetspeedAppletHelp" />
-<menuitem name="MateNetspeedAppletAbout" action="MateNetspeedAppletAbout" />
+<menuitem name="CafeNetspeedAppletProperties" action="CafeNetspeedAppletProperties" />
+<menuitem name="CafeNetspeedAppletHelp" action="CafeNetspeedAppletHelp" />
+<menuitem name="CafeNetspeedAppletAbout" action="CafeNetspeedAppletAbout" />

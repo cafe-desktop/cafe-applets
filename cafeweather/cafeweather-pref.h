@@ -22,32 +22,32 @@
 G_BEGIN_DECLS
 
 #define MATEWEATHER_TYPE_PREF		(cafeweather_pref_get_type ())
-#define MATEWEATHER_PREF(obj)		(G_TYPE_CHECK_INSTANCE_CAST ((obj), MATEWEATHER_TYPE_PREF, MateWeatherPref))
-#define MATEWEATHER_PREF_CLASS(klass)	(G_TYPE_CHECK_CLASS_CAST ((klass), MATEWEATHER_TYPE_PREF, MateWeatherPrefClass))
+#define MATEWEATHER_PREF(obj)		(G_TYPE_CHECK_INSTANCE_CAST ((obj), MATEWEATHER_TYPE_PREF, CafeWeatherPref))
+#define MATEWEATHER_PREF_CLASS(klass)	(G_TYPE_CHECK_CLASS_CAST ((klass), MATEWEATHER_TYPE_PREF, CafeWeatherPrefClass))
 #define MATEWEATHER_IS_PREF(obj)		(G_TYPE_CHECK_INSTANCE_TYPE ((obj), MATEWEATHER_TYPE_PREF))
 #define MATEWEATHER_IS_PREF_CLASS(klass)	(G_TYPE_CHECK_CLASS_TYPE ((klass), MATEWEATHER_TYPE_PREF))
-#define MATEWEATHER_PREF_GET_CLASS(obj)	(G_TYPE_INSTANCE_GET_CLASS ((obj), MATEWEATHER_TYPE_PREF, MateWeatherPrefClass))
+#define MATEWEATHER_PREF_GET_CLASS(obj)	(G_TYPE_INSTANCE_GET_CLASS ((obj), MATEWEATHER_TYPE_PREF, CafeWeatherPrefClass))
 
-typedef struct _MateWeatherPref MateWeatherPref;
-typedef struct _MateWeatherPrefPrivate MateWeatherPrefPrivate;
-typedef struct _MateWeatherPrefClass MateWeatherPrefClass;
+typedef struct _CafeWeatherPref CafeWeatherPref;
+typedef struct _CafeWeatherPrefPrivate CafeWeatherPrefPrivate;
+typedef struct _CafeWeatherPrefClass CafeWeatherPrefClass;
 
-struct _MateWeatherPref
+struct _CafeWeatherPref
 {
 	GtkDialog parent;
 
 	/* private */
-	MateWeatherPrefPrivate *priv;
+	CafeWeatherPrefPrivate *priv;
 };
 
 
-struct _MateWeatherPrefClass
+struct _CafeWeatherPrefClass
 {
 	GtkDialogClass parent_class;
 };
 
 GType		 cafeweather_pref_get_type	(void);
-GtkWidget	*cafeweather_pref_new	(MateWeatherApplet *applet);
+GtkWidget	*cafeweather_pref_new	(CafeWeatherApplet *applet);
 
 
 void set_access_namedesc (GtkWidget *widget, const gchar *name, const gchar *desc);

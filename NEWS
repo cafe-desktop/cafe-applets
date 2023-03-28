@@ -226,7 +226,7 @@
 ### cafe-applets 1.16.0
 
   * Build: require polkit 0.97
-  * Use GtkAboutDialog instead of MateAboutDialog
+  * Use GtkAboutDialog instead of CafeAboutDialog
   * Netspeed: use GtkColorButton/GtkColorChooser
   * Drop dependency on libcafe-desktop
   * GTK+3: fix various deprecations
@@ -246,7 +246,7 @@
 
 ### cafe-applets 1.14.0
 
-  * Drop MateConf migration scripts
+  * Drop CafeConf migration scripts
   * Drop null_applet which isn't even buildable these days
   * Re-license command and timer applets under GPL-2+
   * Merge netspeed applet from cafe-netspeed project (and discontinue
@@ -294,7 +294,7 @@
 
 ### cafe-applets 1.10.0
 
-  * Use MateAboutDialog from libcafe-desktop.
+  * Use CafeAboutDialog from libcafe-desktop.
 
 ### cafe-applets 1.8.0
 

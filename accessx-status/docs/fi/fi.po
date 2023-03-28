@@ -60,7 +60,7 @@ msgstr "<year>2003</year> <holder>Sun Microsystems</holder>"
 #. (itstool) path: revdescription/para
 #: C/index.docbook:46 C/index.docbook:98
 msgid "MATE Documentation Project"
-msgstr "Maten dokumentointiprojekti"
+msgstr "Cafen dokumentointiprojekti"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
