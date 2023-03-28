@@ -43,10 +43,10 @@ gboolean stickynote_resize_cb(GtkWidget *widget, GdkEventButton *event, StickyNo
 {
 	if (event->type == GDK_BUTTON_PRESS && event->button == 1) {
 		if (widget == note->w_resize_se)
-			gtk_window_begin_resize_drag(GTK_WINDOW(note->w_window), GDK_WINDOW_EDGE_SOUTH_EAST,
+			ctk_window_begin_resize_drag(GTK_WINDOW(note->w_window), GDK_WINDOW_EDGE_SOUTH_EAST,
 						     event->button, event->x_root, event->y_root, event->time);
 		else /* if (widget == note->w_resize_sw) */
-			gtk_window_begin_resize_drag(GTK_WINDOW(note->w_window), GDK_WINDOW_EDGE_SOUTH_WEST,
+			ctk_window_begin_resize_drag(GTK_WINDOW(note->w_window), GDK_WINDOW_EDGE_SOUTH_WEST,
 						     event->button, event->x_root, event->y_root, event->time);
 	}
 	else
@@ -59,7 +59,7 @@ gboolean stickynote_resize_cb(GtkWidget *widget, GdkEventButton *event, StickyNo
 gboolean stickynote_move_cb(GtkWidget *widget, GdkEventButton *event, StickyNote *note)
 {
 	if (event->type == GDK_BUTTON_PRESS && event->button == 1)
-		gtk_window_begin_move_drag(GTK_WINDOW(note->w_window), event->button, event->x_root, event->y_root, event->time);
+		ctk_window_begin_move_drag(GTK_WINDOW(note->w_window), event->button, event->x_root, event->y_root, event->time);
 	else if (event->type == GDK_2BUTTON_PRESS && event->button == 1)
 		stickynote_change_properties(note);
 	else
@@ -95,7 +95,7 @@ stickynote_show_popup_menu (GtkWidget *widget, GdkEventButton *event, GtkWidget 
 {
 	if (event->type == GDK_BUTTON_PRESS && event->button == 3)
 	{
-		gtk_menu_popup_at_pointer (GTK_MENU (popup_menu),
+		ctk_menu_popup_at_pointer (GTK_MENU (popup_menu),
 		                           (const GdkEvent*) event);
 	}
 
@@ -106,7 +106,7 @@ stickynote_show_popup_menu (GtkWidget *widget, GdkEventButton *event, GtkWidget 
 /* Popup Menu Callback : Create a new sticky note */
 void popup_create_cb(GtkWidget *widget, StickyNote *note)
 {
-	stickynotes_add(gtk_widget_get_screen(note->w_window));
+	stickynotes_add(ctk_widget_get_screen(note->w_window));
 }
 
 /* Popup Menu Callback : Destroy selected sticky note */
@@ -118,7 +118,7 @@ void popup_destroy_cb(GtkWidget *widget, StickyNote *note)
 /* Popup Menu Callback : Lock/Unlock selected sticky note */
 void popup_toggle_lock_cb(GtkToggleAction *action, StickyNote *note)
 {
-	stickynote_set_locked(note, gtk_toggle_action_get_active(action));
+	stickynote_set_locked(note, ctk_toggle_action_get_active(action));
 }
 
 /* Popup Menu Callback : Change sticky note properties */
@@ -130,7 +130,7 @@ void popup_properties_cb(GtkWidget *widget, StickyNote *note)
 /* Properties Dialog Callback : Apply title */
 void properties_apply_title_cb(StickyNote *note)
 {
-	stickynote_set_title(note, gtk_entry_get_text(GTK_ENTRY(note->w_entry)));
+	stickynote_set_title(note, ctk_entry_get_text(GTK_ENTRY(note->w_entry)));
 }
 
 /* Properties Dialog Callback : Apply color */
@@ -139,12 +139,12 @@ void properties_apply_color_cb(StickyNote *note)
 	char *color_str = NULL;
 	char *font_color_str = NULL;
 	
-	if (!gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(note->w_def_color)))
+	if (!ctk_toggle_button_get_active(GTK_TOGGLE_BUTTON(note->w_def_color)))
 	{
 		GdkRGBA color, font_color;
 
-		gtk_color_chooser_get_rgba (GTK_COLOR_CHOOSER (note->w_color), &color);
-		gtk_color_chooser_get_rgba (GTK_COLOR_CHOOSER (note->w_font_color), &font_color);
+		ctk_color_chooser_get_rgba (GTK_COLOR_CHOOSER (note->w_color), &color);
+		ctk_color_chooser_get_rgba (GTK_COLOR_CHOOSER (note->w_font_color), &font_color);
 
 		color_str = gdk_rgba_to_string (&color);
 		font_color_str = gdk_rgba_to_string (&font_color);
@@ -161,9 +161,9 @@ void properties_apply_font_cb(StickyNote *note)
 {
 	const gchar *font_str = NULL;
 	
-	if (!gtk_toggle_button_get_active(GTK_TOGGLE_BUTTON(note->w_def_font)))
+	if (!ctk_toggle_button_get_active(GTK_TOGGLE_BUTTON(note->w_def_font)))
 	{
-		font_str = gtk_font_button_get_font_name (
+		font_str = ctk_font_button_get_font_name (
 				GTK_FONT_BUTTON (note->w_font));
 	}
 
@@ -180,12 +180,12 @@ properties_color_cb (GtkWidget *button, StickyNote *note)
 /* Properties Dialog Callback : Font */
 void properties_font_cb (GtkWidget *button, StickyNote *note)
 {
-	const char *font_str = gtk_font_button_get_font_name (GTK_FONT_BUTTON (button));
+	const char *font_str = ctk_font_button_get_font_name (GTK_FONT_BUTTON (button));
 	stickynote_set_font(note, font_str, TRUE);
 }
 
 /* Properties Dialog Callback : Activate */
 void properties_activate_cb(GtkWidget *widget, StickyNote *note)
 {
-	gtk_dialog_response(GTK_DIALOG(note->w_properties), GTK_RESPONSE_CLOSE);
+	ctk_dialog_response(GTK_DIALOG(note->w_properties), GTK_RESPONSE_CLOSE);
 }

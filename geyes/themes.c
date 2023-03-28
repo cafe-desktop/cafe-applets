@@ -22,7 +22,7 @@
 #include <dirent.h>
 #include <limits.h>
 #include <ctype.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <gio/gio.h>
 #include "geyes.h"
 
@@ -121,7 +121,7 @@ load_theme (EyesApplet *eyes_applet, const gchar *theme_dir)
 
 	/* if it's still NULL we've got a major problem */
 	if (theme_file == NULL) {
-		dialog = gtk_message_dialog_new_with_markup (NULL,
+		dialog = ctk_message_dialog_new_with_markup (NULL,
 				GTK_DIALOG_DESTROY_WITH_PARENT,
 				GTK_MESSAGE_ERROR,
 				GTK_BUTTONS_OK,
@@ -129,10 +129,10 @@ load_theme (EyesApplet *eyes_applet, const gchar *theme_dir)
 				_("Can not launch the eyes applet."),
 				_("There was a fatal error while trying to load the theme."));
 
-		gtk_dialog_run (GTK_DIALOG (dialog));
-		gtk_widget_destroy (dialog);
+		ctk_dialog_run (GTK_DIALOG (dialog));
+		ctk_widget_destroy (dialog);
 
-		gtk_widget_destroy (GTK_WIDGET (eyes_applet->applet));
+		ctk_widget_destroy (GTK_WIDGET (eyes_applet->applet));
 
 		return FALSE;
 	}
@@ -183,10 +183,10 @@ theme_selected_cb (GtkTreeSelection *selection, gpointer data)
 	gchar *theme;
 	gchar *theme_dir;
 
-	if (!gtk_tree_selection_get_selected (selection, &model, &iter))
+	if (!ctk_tree_selection_get_selected (selection, &model, &iter))
 		return;
 
-	gtk_tree_model_get (model, &iter, COL_THEME_DIR, &theme, -1);
+	ctk_tree_model_get (model, &iter, COL_THEME_DIR, &theme, -1);
 
 	g_return_if_fail (theme);
 
@@ -213,18 +213,18 @@ phelp_cb (GtkDialog *dialog)
 {
 	GError *error = NULL;
 
-	gtk_show_uri_on_window (GTK_WINDOW (dialog),
+	ctk_show_uri_on_window (GTK_WINDOW (dialog),
 	                        "help:cafe-geyes/geyes-settings",
-	                        gtk_get_current_event_time (),
+	                        ctk_get_current_event_time (),
 	                        &error);
 
 	if (error) {
-		GtkWidget *error_dialog = gtk_message_dialog_new (NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE,
+		GtkWidget *error_dialog = ctk_message_dialog_new (NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE,
 								  _("There was an error displaying help: %s"), error->message);
-		g_signal_connect (G_OBJECT (error_dialog), "response", G_CALLBACK (gtk_widget_destroy) , NULL);
-		gtk_window_set_resizable (GTK_WINDOW (error_dialog), FALSE);
-		gtk_window_set_screen (GTK_WINDOW (error_dialog), gtk_widget_get_screen (GTK_WIDGET (dialog)));
-		gtk_widget_show (error_dialog);
+		g_signal_connect (G_OBJECT (error_dialog), "response", G_CALLBACK (ctk_widget_destroy) , NULL);
+		ctk_window_set_resizable (GTK_WINDOW (error_dialog), FALSE);
+		ctk_window_set_screen (GTK_WINDOW (error_dialog), ctk_widget_get_screen (GTK_WIDGET (dialog)));
+		ctk_widget_show (error_dialog);
 		g_error_free (error);
 		error = NULL;
 	}
@@ -240,7 +240,7 @@ presponse_cb (GtkDialog *dialog, gint id, gpointer data)
 	}
 
 
-	gtk_widget_destroy (GTK_WIDGET (dialog));
+	ctk_widget_destroy (GTK_WIDGET (dialog));
 
 	eyes_applet->prop_box.pbox = NULL;
 }
@@ -272,98 +272,98 @@ properties_cb (GtkAction  *action,
         gchar *title;
 
 	if (eyes_applet->prop_box.pbox) {
-		gtk_window_set_screen (
+		ctk_window_set_screen (
 			GTK_WINDOW (eyes_applet->prop_box.pbox),
-			gtk_widget_get_screen (GTK_WIDGET (eyes_applet->applet)));
-		gtk_window_present (GTK_WINDOW (eyes_applet->prop_box.pbox));
+			ctk_widget_get_screen (GTK_WIDGET (eyes_applet->applet)));
+		ctk_window_present (GTK_WINDOW (eyes_applet->prop_box.pbox));
 		return;
 	}
 
-        pbox = gtk_dialog_new_with_buttons (_("Eyes Preferences"), NULL,
+        pbox = ctk_dialog_new_with_buttons (_("Eyes Preferences"), NULL,
         				     GTK_DIALOG_DESTROY_WITH_PARENT,
-					     "gtk-close", GTK_RESPONSE_CLOSE,
-					     "gtk-help", GTK_RESPONSE_HELP,
+					     "ctk-close", GTK_RESPONSE_CLOSE,
+					     "ctk-help", GTK_RESPONSE_HELP,
 					     NULL);
 
-	gtk_window_set_screen (GTK_WINDOW (pbox),
-			       gtk_widget_get_screen (GTK_WIDGET (eyes_applet->applet)));
+	ctk_window_set_screen (GTK_WINDOW (pbox),
+			       ctk_widget_get_screen (GTK_WIDGET (eyes_applet->applet)));
 
-	gtk_widget_set_size_request (GTK_WIDGET (pbox), 300, 200);
-        gtk_dialog_set_default_response(GTK_DIALOG (pbox), GTK_RESPONSE_CLOSE);
-        gtk_container_set_border_width (GTK_CONTAINER (pbox), 5);
-	gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (pbox))), 2);
+	ctk_widget_set_size_request (GTK_WIDGET (pbox), 300, 200);
+        ctk_dialog_set_default_response(GTK_DIALOG (pbox), GTK_RESPONSE_CLOSE);
+        ctk_container_set_border_width (GTK_CONTAINER (pbox), 5);
+	ctk_box_set_spacing (GTK_BOX (ctk_dialog_get_content_area (GTK_DIALOG (pbox))), 2);
 
         g_signal_connect (pbox, "response",
 			  G_CALLBACK (presponse_cb),
 			  eyes_applet);
 
-	vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	gtk_container_set_border_width (GTK_CONTAINER (vbox), 5);
-	gtk_widget_show (vbox);
+	vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+	ctk_container_set_border_width (GTK_CONTAINER (vbox), 5);
+	ctk_widget_show (vbox);
 
-	gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (pbox))), vbox,
+	ctk_box_pack_start (GTK_BOX (ctk_dialog_get_content_area (GTK_DIALOG (pbox))), vbox,
 			    TRUE, TRUE, 0);
 
-	categories_vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 18);
-	gtk_box_pack_start (GTK_BOX (vbox), categories_vbox, TRUE, TRUE, 0);
-	gtk_widget_show (categories_vbox);
+	categories_vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 18);
+	ctk_box_pack_start (GTK_BOX (vbox), categories_vbox, TRUE, TRUE, 0);
+	ctk_widget_show (categories_vbox);
 
-	category_vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-	gtk_box_pack_start (GTK_BOX (categories_vbox), category_vbox, TRUE, TRUE, 0);
-	gtk_widget_show (category_vbox);
+	category_vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
+	ctk_box_pack_start (GTK_BOX (categories_vbox), category_vbox, TRUE, TRUE, 0);
+	ctk_widget_show (category_vbox);
 
 	title = g_strconcat ("<span weight=\"bold\">", _("Themes"), "</span>", NULL);
-	label = gtk_label_new (_(title));
-	gtk_label_set_use_markup (GTK_LABEL (label), TRUE);
-	gtk_label_set_justify (GTK_LABEL (label), GTK_JUSTIFY_LEFT);
-	gtk_label_set_xalign (GTK_LABEL (label), 0.0);
-	gtk_box_pack_start (GTK_BOX (category_vbox), label, FALSE, FALSE, 0);
+	label = ctk_label_new (_(title));
+	ctk_label_set_use_markup (GTK_LABEL (label), TRUE);
+	ctk_label_set_justify (GTK_LABEL (label), GTK_JUSTIFY_LEFT);
+	ctk_label_set_xalign (GTK_LABEL (label), 0.0);
+	ctk_box_pack_start (GTK_BOX (category_vbox), label, FALSE, FALSE, 0);
 	g_free (title);
 
-	hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-	gtk_box_pack_start (GTK_BOX (category_vbox), hbox, TRUE, TRUE, 0);
-	gtk_widget_show (hbox);
+	hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+	ctk_box_pack_start (GTK_BOX (category_vbox), hbox, TRUE, TRUE, 0);
+	ctk_widget_show (hbox);
 
-	indent = gtk_label_new (HIG_IDENTATION);
-	gtk_label_set_justify (GTK_LABEL (indent), GTK_JUSTIFY_LEFT);
-	gtk_box_pack_start (GTK_BOX (hbox), indent, FALSE, FALSE, 0);
-	gtk_widget_show (indent);
+	indent = ctk_label_new (HIG_IDENTATION);
+	ctk_label_set_justify (GTK_LABEL (indent), GTK_JUSTIFY_LEFT);
+	ctk_box_pack_start (GTK_BOX (hbox), indent, FALSE, FALSE, 0);
+	ctk_widget_show (indent);
 
-	control_vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-	gtk_box_pack_start (GTK_BOX (hbox), control_vbox, TRUE, TRUE, 0);
-	gtk_widget_show (control_vbox);
+	control_vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
+	ctk_box_pack_start (GTK_BOX (hbox), control_vbox, TRUE, TRUE, 0);
+	ctk_widget_show (control_vbox);
 
-	label = gtk_label_new_with_mnemonic (_("_Select a theme:"));
-	gtk_label_set_xalign (GTK_LABEL (label), 0.0);
-	gtk_box_pack_start (GTK_BOX (control_vbox), label, FALSE, FALSE, 0);
+	label = ctk_label_new_with_mnemonic (_("_Select a theme:"));
+	ctk_label_set_xalign (GTK_LABEL (label), 0.0);
+	ctk_box_pack_start (GTK_BOX (control_vbox), label, FALSE, FALSE, 0);
 
-	scrolled = gtk_scrolled_window_new (NULL, NULL);
-	gtk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (scrolled), GTK_SHADOW_IN);
-	gtk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (scrolled),
+	scrolled = ctk_scrolled_window_new (NULL, NULL);
+	ctk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (scrolled), GTK_SHADOW_IN);
+	ctk_scrolled_window_set_policy (GTK_SCROLLED_WINDOW (scrolled),
 					GTK_POLICY_AUTOMATIC,
 					GTK_POLICY_AUTOMATIC);
 
-	model = gtk_list_store_new (TOTAL_COLS, G_TYPE_STRING, G_TYPE_STRING);
-	tree = gtk_tree_view_new_with_model (GTK_TREE_MODEL (model));
-	gtk_tree_view_set_headers_visible (GTK_TREE_VIEW (tree), FALSE);
-	gtk_label_set_mnemonic_widget (GTK_LABEL (label), tree);
+	model = ctk_list_store_new (TOTAL_COLS, G_TYPE_STRING, G_TYPE_STRING);
+	tree = ctk_tree_view_new_with_model (GTK_TREE_MODEL (model));
+	ctk_tree_view_set_headers_visible (GTK_TREE_VIEW (tree), FALSE);
+	ctk_label_set_mnemonic_widget (GTK_LABEL (label), tree);
 	g_object_unref (model);
 
-	gtk_container_add (GTK_CONTAINER (scrolled), tree);
+	ctk_container_add (GTK_CONTAINER (scrolled), tree);
 
-	cell = gtk_cell_renderer_text_new ();
-	column = gtk_tree_view_column_new_with_attributes ("not used", cell,
+	cell = ctk_cell_renderer_text_new ();
+	column = ctk_tree_view_column_new_with_attributes ("not used", cell,
                                                            "text", COL_THEME_NAME, NULL);
-        gtk_tree_view_append_column (GTK_TREE_VIEW (tree), column);
+        ctk_tree_view_append_column (GTK_TREE_VIEW (tree), column);
 
-        selection = gtk_tree_view_get_selection (GTK_TREE_VIEW (tree));
+        selection = ctk_tree_view_get_selection (GTK_TREE_VIEW (tree));
 	g_signal_connect (selection, "changed",
 			  G_CALLBACK (theme_selected_cb),
 			  eyes_applet);
 
 	if ( ! g_settings_is_writable (eyes_applet->settings, "theme-path")) {
-		gtk_widget_set_sensitive (tree, FALSE);
-		gtk_widget_set_sensitive (label, FALSE);
+		ctk_widget_set_sensitive (tree, FALSE);
+		ctk_widget_set_sensitive (label, FALSE);
 	}
 
         for (i = 0; i < NUM_THEME_DIRECTORIES; i++) {
@@ -382,21 +382,21 @@ properties_cb (GtkAction  *action,
 					theme_dir = g_strdup_printf ("%s/", filename);
 					theme_name = g_path_get_basename (filename);
 
-                                        gtk_list_store_append (model, &iter);
-                                        gtk_list_store_set (model, &iter,
+                                        ctk_list_store_append (model, &iter);
+                                        ctk_list_store_set (model, &iter,
 							    COL_THEME_DIR, &filename,
 							    COL_THEME_NAME, theme_name,
 							    -1);
 
 					if (!g_ascii_strncasecmp (eyes_applet->theme_dir, theme_dir, strlen (theme_dir))) {
                                         	GtkTreePath *path;
-                                        	path = gtk_tree_model_get_path (GTK_TREE_MODEL (model),
+                                        	path = ctk_tree_model_get_path (GTK_TREE_MODEL (model),
                                                         			&iter);
-                                                gtk_tree_view_set_cursor (GTK_TREE_VIEW (tree),
+                                                ctk_tree_view_set_cursor (GTK_TREE_VIEW (tree),
                                                 			  path,
                                                 			  NULL,
                                                 			  FALSE);
-                                                gtk_tree_path_free (path);
+                                                ctk_tree_path_free (path);
                                         }
 					g_free (theme_name);
                                         g_free (theme_dir);
@@ -409,9 +409,9 @@ properties_cb (GtkAction  *action,
 	g_free (filename);
 #endif
 
-        gtk_box_pack_start (GTK_BOX (control_vbox), scrolled, TRUE, TRUE, 0);
+        ctk_box_pack_start (GTK_BOX (control_vbox), scrolled, TRUE, TRUE, 0);
 
-        gtk_widget_show_all (pbox);
+        ctk_widget_show_all (pbox);
 
         eyes_applet->prop_box.pbox = pbox;
 

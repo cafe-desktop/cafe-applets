@@ -23,7 +23,7 @@
 #ifndef DRIVE_LIST_H
 #define DRIVE_LIST_H
 
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 G_BEGIN_DECLS
 

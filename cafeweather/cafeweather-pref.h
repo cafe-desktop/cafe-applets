@@ -13,7 +13,7 @@
 #ifndef __CAFEWEATHER_PREF_H_
 #define __CAFEWEATHER_PREF_H_
 
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 #define CAFEWEATHER_I_KNOW_THIS_IS_UNSTABLE
 

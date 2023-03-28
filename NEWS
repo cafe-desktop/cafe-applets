@@ -101,22 +101,22 @@
   * Fix memory leak on accessx-status.
   * sticky-notes: fix a memory leak
   * timerapplet: Allow reseting timer when inactive
-  * Avoid newly deprecated gtk_css_provider_get_default
+  * Avoid newly deprecated ctk_css_provider_get_default
   * Weather: apply a widget name to the textview
   * weather: add cssprovider for widget not for screen
-  * cafeweather-dialog.c: avoid deprecated 'gtk_widget_override_font'
-  * cpufreq: stop segfault with gtk3.23
-  * trash applet: avoid deprecated 'gtk_window_set_wmclass'
+  * cafeweather-dialog.c: avoid deprecated 'ctk_widget_override_font'
+  * cpufreq: stop segfault with ctk3.23
+  * trash applet: avoid deprecated 'ctk_window_set_wmclass'
   * cpufreq: fix a -Wimplicit-function-declaration
   * trash: fix a -Wincompatible-pointer-types warning
   * weather-applet: replace deprecated GtkAlignment
   * weather-dialog: replace deprecated GtkAlignment
-  * weather-prefs: replace deprecated gtk_alignment_new
+  * weather-prefs: replace deprecated ctk_alignment_new
   * stickynotes: replace deprecated gdk_error_trap_push/pop functions
-  * cpu-freq: replace deprecated gtk_menu_popup
-  * sticknotes: replace deprecated gtk_menu_popup
-  * drivemount: replace deprecated gtk_menu_popup
-  * charpick: replace deprecated gtk_menu_popup
+  * cpu-freq: replace deprecated ctk_menu_popup
+  * sticknotes: replace deprecated ctk_menu_popup
+  * drivemount: replace deprecated ctk_menu_popup
+  * charpick: replace deprecated ctk_menu_popup
 
 ### cafe-applets 1.21.0
 
@@ -158,7 +158,7 @@
   * Translations update
   * command: bump range of interval
   * WidthOfScreen and HeightOfScreen implementation
-  * build: when gtksourceview isn't found, show this package name
+  * build: when ctksourceview isn't found, show this package name
   * Cpufreq: Update tooltips with latest values
   * Cpufreq: fix a build warning
   * Cpufreq: stop jumping numbers moving units label
@@ -181,20 +181,20 @@
   * GSettings for checkmark color shown for mounted volumes.
   * cpufreq: fix random invisibility of the applet
   * Mounted drives will show a little bit different icon.
-  * gtk 3.22: avoid deprecated gdk_screen_get_monitor... functions:
+  * ctk 3.22: avoid deprecated gdk_screen_get_monitor... functions:
   * README: remove link to mailing list, do some cleanup
   * Get rid of misleading_indentation and maybe-uninitialized warnings during build
   * avoid deprecated gdk_screen_width/height
   * avoid deprecated gdk_screen_get_width/height
   * Revert "weather-prefs: correct help link for testing"
-  * all applets: don't use deprecated gtk_show_uri
+  * all applets: don't use deprecated ctk_show_uri
   * add new digital theme
 
 ### cafe-applets 1.19.0
 
   * drivemount: fix a build warning
   * Translations update
-  * cpufreq-prefs: don't use deprecated gtk_show_uri
+  * cpufreq-prefs: don't use deprecated ctk_show_uri
   * bump libcafeweather requirement to 1.19.1
   * weather: If location changes, abort any outstanding weather updates
   * weather: Added logic to not send notification if weather update is equal
@@ -216,7 +216,7 @@
     to make generating release announcements easier
   * Build: require libcafeweather and cafe-panel >= 1.17
   * Move to GTK+3 (require GTK+ >= 3.14), drop GTK+2 code and
-    --with-gtk build option
+    --with-ctk build option
   * Weather: fix temperature label placement
   * Weather: show proper help section for each tab of prefs dialog
   * Fix some GTK+ deprecations and runtime warnings

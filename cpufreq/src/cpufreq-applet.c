@@ -23,7 +23,7 @@
 #include "config.h"
 #endif
 
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <gdk/gdkx.h>
 #include <gdk/gdkkeysyms.h>
 #include <gio/gio.h>
@@ -172,9 +172,9 @@ cpufreq_applet_init (CPUFreqApplet *applet)
         applet->popup = NULL;
         applet->monitor = NULL;
 
-        applet->label = gtk_label_new (NULL);
-        applet->unit_label = gtk_label_new (NULL);
-        applet->icon = gtk_image_new ();
+        applet->label = ctk_label_new (NULL);
+        applet->unit_label = ctk_label_new (NULL);
+        applet->icon = ctk_image_new ();
         applet->box = NULL;
 
 	applet->show_mode = CPUFREQ_MODE_BOTH;
@@ -191,16 +191,16 @@ cpufreq_applet_init (CPUFreqApplet *applet)
 	switch (applet->orient) {
 	case CAFE_PANEL_APPLET_ORIENT_LEFT:
 	case CAFE_PANEL_APPLET_ORIENT_RIGHT:
-		applet->container = gtk_alignment_new (0.5, 0.5, 0, 0);
+		applet->container = ctk_alignment_new (0.5, 0.5, 0, 0);
 		break;
 	case CAFE_PANEL_APPLET_ORIENT_UP:
 	case CAFE_PANEL_APPLET_ORIENT_DOWN:
-		applet->container = gtk_alignment_new (0, 0.5, 0, 0);
+		applet->container = ctk_alignment_new (0, 0.5, 0, 0);
 		break;
 	}
 
-	gtk_container_add (GTK_CONTAINER (applet), applet->container);
-	gtk_widget_show (applet->container);
+	ctk_container_add (GTK_CONTAINER (applet), applet->container);
+	ctk_widget_show (applet->container);
 }
 
 static void
@@ -288,7 +288,7 @@ get_max_text_width (GtkWidget *widget,
 	PangoLayout *layout;
 	PangoRectangle logical_rect;
 
-	context = gtk_widget_get_pango_context (widget);
+	context = ctk_widget_get_pango_context (widget);
 	layout = pango_layout_new (context);
 	pango_layout_set_text (layout, text, -1);
 	pango_layout_get_pixel_extents (layout, NULL, &logical_rect);
@@ -319,18 +319,18 @@ cpufreq_applet_menu_popup (CPUFreqApplet *applet,
                 return;
                 
         /*Set up theme and transparency support*/
-        GtkWidget *toplevel = gtk_widget_get_toplevel (menu);
-        /* Fix any failures of compiz/other wm's to communicate with gtk for transparency */
-        GdkScreen *screen = gtk_widget_get_screen(GTK_WIDGET(toplevel));
+        GtkWidget *toplevel = ctk_widget_get_toplevel (menu);
+        /* Fix any failures of compiz/other wm's to communicate with ctk for transparency */
+        GdkScreen *screen = ctk_widget_get_screen(GTK_WIDGET(toplevel));
         GdkVisual *visual = gdk_screen_get_rgba_visual(screen);
-        gtk_widget_set_visual(GTK_WIDGET(toplevel), visual);
+        ctk_widget_set_visual(GTK_WIDGET(toplevel), visual);
         /* Set menu and it's toplevel window to follow panel theme */
         GtkStyleContext *context;
-        context = gtk_widget_get_style_context (GTK_WIDGET(toplevel));
-        gtk_style_context_add_class(context,"gnome-panel-menu-bar");
-        gtk_style_context_add_class(context,"cafe-panel-menu-bar");
+        context = ctk_widget_get_style_context (GTK_WIDGET(toplevel));
+        ctk_style_context_add_class(context,"gnome-panel-menu-bar");
+        ctk_style_context_add_class(context,"cafe-panel-menu-bar");
 
-        gtk_menu_popup_at_widget (GTK_MENU (menu),
+        ctk_menu_popup_at_widget (GTK_MENU (menu),
                                   GTK_WIDGET (applet),
                                   GDK_GRAVITY_SOUTH_WEST,
                                   GDK_GRAVITY_NORTH_WEST,
@@ -393,16 +393,16 @@ cpufreq_applet_change_orient (CafePanelApplet *pa, CafePanelAppletOrient orient)
 
         applet->orient = orient;
 
-        gtk_widget_get_allocation (GTK_WIDGET (applet), &allocation);
+        ctk_widget_get_allocation (GTK_WIDGET (applet), &allocation);
 
         if ((orient == CAFE_PANEL_APPLET_ORIENT_LEFT) ||
             (orient == CAFE_PANEL_APPLET_ORIENT_RIGHT)) {
                 size = allocation.width;
-		gtk_alignment_set (GTK_ALIGNMENT (applet->container),
+		ctk_alignment_set (GTK_ALIGNMENT (applet->container),
 				   0.5, 0.5, 0, 0);
         } else {
                 size = allocation.height;
-		gtk_alignment_set (GTK_ALIGNMENT (applet->container),
+		ctk_alignment_set (GTK_ALIGNMENT (applet->container),
 				   0, 0.5, 0, 0);
         }
 
@@ -422,8 +422,8 @@ cpufreq_applet_style_updated (GtkWidget *widget)
         cpufreq_applet_refresh (applet);
 
         /*Reset label sizes to zero that have been held to maximum reached width*/
-        gtk_widget_set_size_request (GTK_WIDGET (applet->label), 0, 0);
-        gtk_widget_set_size_request (GTK_WIDGET (applet->unit_label), 0, 0);
+        ctk_widget_set_size_request (GTK_WIDGET (applet->label), 0, 0);
+        ctk_widget_set_size_request (GTK_WIDGET (applet->unit_label), 0, 0);
 }
 
 static void
@@ -431,7 +431,7 @@ cpufreq_applet_preferences_cb (GtkAction     *action,
                                CPUFreqApplet *applet)
 {
         cpufreq_preferences_dialog_run (applet->prefs,
-                                        gtk_widget_get_screen (GTK_WIDGET (applet)));
+                                        ctk_widget_get_screen (GTK_WIDGET (applet)));
 }
 
 static void
@@ -440,9 +440,9 @@ cpufreq_applet_help_cb (GtkAction     *action,
 {
         GError *error = NULL;
 
-	gtk_show_uri_on_window (NULL,
+	ctk_show_uri_on_window (NULL,
 	                        "help:cafe-cpufreq-applet",
-	                        gtk_get_current_event_time (),
+	                        ctk_get_current_event_time (),
 	                        &error);
 
         if (error) {
@@ -477,7 +477,7 @@ cpufreq_applet_about_cb (GtkAction     *action,
 		*p = _(*p);
 #endif
 
-        gtk_show_about_dialog (NULL,
+        ctk_show_about_dialog (NULL,
                                "title",         _("About CPU Frequency Scaling Monitor"),
                                "version",       VERSION,
                                "copyright",     _("Copyright \xC2\xA9 2004 Carlos Garcia Campos\n"
@@ -515,7 +515,7 @@ cpufreq_applet_pixmap_set_image (CPUFreqApplet *applet, gint perc)
         else
                 image = 4;
 
-        scale = gtk_widget_get_scale_factor (GTK_WIDGET (applet->icon));
+        scale = ctk_widget_get_scale_factor (GTK_WIDGET (applet->icon));
 
         if (applet->surfaces[image] == NULL) {
                 GdkPixbuf *pixbuf = gdk_pixbuf_new_from_file_at_scale (cpufreq_icons[image],
@@ -526,7 +526,7 @@ cpufreq_applet_pixmap_set_image (CPUFreqApplet *applet, gint perc)
                 applet->surfaces[image] = gdk_cairo_surface_create_from_pixbuf (pixbuf, scale, NULL);
         }
 
-        gtk_image_set_from_surface (GTK_IMAGE (applet->icon), applet->surfaces[image]);
+        ctk_image_set_from_surface (GTK_IMAGE (applet->icon), applet->surfaces[image]);
 }
 
 static gboolean
@@ -645,29 +645,29 @@ cpufreq_applet_update (CPUFreqApplet *applet, CPUFreqMonitor *monitor)
         if (applet->show_freq) {
                 /*Force the label to render if frequencies are not found right away*/
                 if (freq_label == NULL){
-                        gtk_label_set_text (GTK_LABEL (applet->label),"---");
+                        ctk_label_set_text (GTK_LABEL (applet->label),"---");
                 }
                 else{
-                        gtk_label_set_text (GTK_LABEL (applet->label), freq_label);
+                        ctk_label_set_text (GTK_LABEL (applet->label), freq_label);
                 }
                 /*Hold the largest size set by any jumping text */
-                gtk_widget_get_preferred_size (GTK_WIDGET (applet->label),&req, NULL);
-                gtk_widget_set_size_request (GTK_WIDGET (applet->label),req.width, req.height);
+                ctk_widget_get_preferred_size (GTK_WIDGET (applet->label),&req, NULL);
+                ctk_widget_set_size_request (GTK_WIDGET (applet->label),req.width, req.height);
         }
 
         if (applet->show_perc) {
                 gchar *text_perc;
 
                 text_perc = g_strdup_printf ("%d%%", perc);
-                gtk_label_set_text (GTK_LABEL (applet->label), text_perc);
+                ctk_label_set_text (GTK_LABEL (applet->label), text_perc);
                 g_free (text_perc);
         }
 
         if (applet->show_unit) {
-                gtk_label_set_text (GTK_LABEL (applet->unit_label), unit_label);
+                ctk_label_set_text (GTK_LABEL (applet->unit_label), unit_label);
                 /*Hold the largest size set by MHZ or GHZ to prevent jumping */
-                gtk_widget_get_preferred_size (GTK_WIDGET (applet->unit_label),&req, NULL);
-                gtk_widget_set_size_request (GTK_WIDGET (applet->unit_label),req.width, req.height);
+                ctk_widget_get_preferred_size (GTK_WIDGET (applet->unit_label),&req, NULL);
+                ctk_widget_set_size_request (GTK_WIDGET (applet->unit_label),req.width, req.height);
         }
 
         if (applet->show_icon) {
@@ -696,7 +696,7 @@ cpufreq_applet_update (CPUFreqApplet *applet, CPUFreqMonitor *monitor)
 			g_strdup_printf ("CPU %u - %s", cpu, text_mode);
 		g_free (text_mode);
 
-		gtk_widget_set_tooltip_text (GTK_WIDGET (applet), text_tip);
+		ctk_widget_set_tooltip_text (GTK_WIDGET (applet), text_tip);
 		g_free (text_tip);
 	}
 
@@ -725,56 +725,56 @@ cpufreq_applet_refresh (CPUFreqApplet *applet)
 
        /* We want a fixed label size, the biggest */
 
-    gtk_widget_get_preferred_width(GTK_WIDGET(applet->label), &label_size, NULL);
+    ctk_widget_get_preferred_width(GTK_WIDGET(applet->label), &label_size, NULL);
     total_size += label_size;
 
-    gtk_widget_get_preferred_width(GTK_WIDGET(applet->unit_label), &unit_label_size, NULL);
+    ctk_widget_get_preferred_width(GTK_WIDGET(applet->unit_label), &unit_label_size, NULL);
     total_size += unit_label_size;
 
-    gtk_widget_get_preferred_width(GTK_WIDGET(applet->icon), &pixmap_size, NULL);
+    ctk_widget_get_preferred_width(GTK_WIDGET(applet->icon), &pixmap_size, NULL);
     total_size += pixmap_size;
 
         if (applet->box) {
                 do_unref = TRUE;
                 g_object_ref (applet->icon);
-                gtk_container_remove (GTK_CONTAINER (applet->box), applet->icon);
+                ctk_container_remove (GTK_CONTAINER (applet->box), applet->icon);
         if (applet->labels_box) {
                         g_object_ref (applet->label);
-                        gtk_container_remove (GTK_CONTAINER (applet->labels_box), applet->label);
+                        ctk_container_remove (GTK_CONTAINER (applet->labels_box), applet->label);
                         g_object_ref (applet->unit_label);
-                        gtk_container_remove (GTK_CONTAINER (applet->labels_box), applet->unit_label);
+                        ctk_container_remove (GTK_CONTAINER (applet->labels_box), applet->unit_label);
                 }
-                gtk_widget_destroy (applet->box);
+                ctk_widget_destroy (applet->box);
         }
 
     if (horizontal) {
-        applet->labels_box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
+        applet->labels_box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
         if ((label_size + pixmap_size) <= panel_size)
-            applet->box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 2);
+            applet->box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 2);
         else
-            applet->box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
+            applet->box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
     } else {
                 if (total_size <= panel_size) {
-                        applet->box = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
-                        applet->labels_box  = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
+                        applet->box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
+                        applet->labels_box  = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
                 } else if ((label_size + unit_label_size) <= (panel_size - size_step)) {
-                        applet->box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 2);
-                        applet->labels_box  = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
+                        applet->box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 2);
+                        applet->labels_box  = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 2);
                 } else {
-                        applet->box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 2);
-                        applet->labels_box  = gtk_box_new (GTK_ORIENTATION_VERTICAL, 2);
+                        applet->box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 2);
+                        applet->labels_box  = ctk_box_new (GTK_ORIENTATION_VERTICAL, 2);
                 }
 	}
 
-        gtk_box_pack_start (GTK_BOX (applet->labels_box), applet->label, FALSE, FALSE, 0);
-        gtk_box_pack_start (GTK_BOX (applet->labels_box), applet->unit_label, FALSE, FALSE, 0);
-        gtk_box_pack_start (GTK_BOX (applet->box), applet->icon, FALSE, FALSE, 0);
+        ctk_box_pack_start (GTK_BOX (applet->labels_box), applet->label, FALSE, FALSE, 0);
+        ctk_box_pack_start (GTK_BOX (applet->labels_box), applet->unit_label, FALSE, FALSE, 0);
+        ctk_box_pack_start (GTK_BOX (applet->box), applet->icon, FALSE, FALSE, 0);
 
-        gtk_box_pack_start (GTK_BOX (applet->box), applet->labels_box, FALSE, FALSE, 0);
-        gtk_widget_show (applet->labels_box);
+        ctk_box_pack_start (GTK_BOX (applet->box), applet->labels_box, FALSE, FALSE, 0);
+        ctk_widget_show (applet->labels_box);
 
-        gtk_container_add (GTK_CONTAINER (applet->container), applet->box);
-        gtk_widget_show (applet->box);
+        ctk_container_add (GTK_CONTAINER (applet->container), applet->box);
+        ctk_widget_show (applet->box);
 
         if (do_unref) {
                 g_object_unref (applet->label);
@@ -812,7 +812,7 @@ cpufreq_applet_setup (CPUFreqApplet *applet)
 
 	g_set_application_name  (_("CPU Frequency Scaling Monitor"));
 
-	gtk_window_set_default_icon_name ("cafe-cpu-frequency-applet");
+	ctk_window_set_default_icon_name ("cafe-cpu-frequency-applet");
 
         /* Preferences */
         if (applet->prefs)
@@ -843,9 +843,9 @@ cpufreq_applet_setup (CPUFreqApplet *applet)
                                   (gpointer) applet);
 
         /* Setup the menus */
-	action_group = gtk_action_group_new ("CPUFreq Applet Actions");
-	gtk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
-	gtk_action_group_add_actions (action_group,
+	action_group = ctk_action_group_new ("CPUFreq Applet Actions");
+	ctk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
+	ctk_action_group_add_actions (action_group,
 				      cpufreq_applet_menu_actions,
 				      G_N_ELEMENTS (cpufreq_applet_menu_actions),
 				      applet);
@@ -857,12 +857,12 @@ cpufreq_applet_setup (CPUFreqApplet *applet)
         if (cafe_panel_applet_get_locked_down (CAFE_PANEL_APPLET (applet))) {
 		GtkAction *action;
 
-		action = gtk_action_group_get_action (action_group, "CPUFreqPreferences");
-		gtk_action_set_visible (action, FALSE);
+		action = ctk_action_group_get_action (action_group, "CPUFreqPreferences");
+		ctk_action_set_visible (action, FALSE);
         }
 	g_object_unref (action_group);
 
-        atk_obj = gtk_widget_get_accessible (GTK_WIDGET (applet));
+        atk_obj = ctk_widget_get_accessible (GTK_WIDGET (applet));
 
         if (GTK_IS_ACCESSIBLE (atk_obj)) {
                 atk_object_set_name (atk_obj, _("CPU Frequency Scaling Monitor"));
@@ -871,7 +871,7 @@ cpufreq_applet_setup (CPUFreqApplet *applet)
 
 	cpufreq_applet_update_visibility (applet);
 
-	gtk_widget_show (GTK_WIDGET (applet));
+	ctk_widget_show (GTK_WIDGET (applet));
 }
 
 static gboolean

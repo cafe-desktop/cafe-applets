@@ -340,14 +340,14 @@ error_dialog( const char *fmt , ...)
   va_end(ap);
   GtkWidget *dialog;
 
-  dialog = gtk_message_dialog_new( NULL, 0, GTK_MESSAGE_ERROR,
+  dialog = ctk_message_dialog_new( NULL, 0, GTK_MESSAGE_ERROR,
                                    GTK_BUTTONS_OK, "%s", str);
 
   g_signal_connect_swapped( G_OBJECT (dialog), "response",
-                            G_CALLBACK (gtk_widget_destroy),
+                            G_CALLBACK (ctk_widget_destroy),
                             G_OBJECT (dialog) );
 
-  gtk_widget_show_all( dialog );
+  ctk_widget_show_all( dialog );
 }
 
 #endif /* HAVE_UPOWER */

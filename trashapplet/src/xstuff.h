@@ -2,7 +2,7 @@
 #define __XSTUFF_H__
 
 #include <gdk/gdk.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 
 void xstuff_zoom_anicafe                (GtkWidget    *widget,
 					 GdkRectangle *opt_src_rect);

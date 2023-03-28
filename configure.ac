@@ -94,7 +94,7 @@ AC_SUBST(GIO_CFLAGS)
 AC_SUBST(GIO_LIBS)
 
 dnl -- Check for GTK+ 3.0 (required) ------------------------------------------
-PKG_CHECK_MODULES(GTK, gtk+-3.0 >= $GTK_REQUIRED)
+PKG_CHECK_MODULES(GTK, ctk+-3.0 >= $GTK_REQUIRED)
 AC_SUBST(GTK_FLAGS)
 AC_SUBST(GTK_LIBS)
 
@@ -315,14 +315,14 @@ AC_ARG_ENABLE([stickynotes],
     enable_stickynotes=$enableval,
     enable_stickynotes=yes)
 if test "x$enable_stickynotes" = "xyes"; then
-    PKG_CHECK_MODULES(STICKYNOTES, gtksourceview-3.0,
-                      have_gtksourceview=yes, have_gtksourceview=no)
+    PKG_CHECK_MODULES(STICKYNOTES, ctksourceview-3.0,
+                      have_ctksourceview=yes, have_ctksourceview=no)
 
-    if test "x$enable_stickynotes" = "xyes" -a "x$have_gtksourceview" = "xno"; then
-        AC_MSG_ERROR([Stickynotes explicitly requested but gtksourceview not found])
+    if test "x$enable_stickynotes" = "xyes" -a "x$have_ctksourceview" = "xno"; then
+        AC_MSG_ERROR([Stickynotes explicitly requested but ctksourceview not found])
     fi
 fi
-AM_CONDITIONAL(BUILD_STICKYNOTES_APPLET, test "x$have_gtksourceview" = "xyes")
+AM_CONDITIONAL(BUILD_STICKYNOTES_APPLET, test "x$have_ctksourceview" = "xyes")
 
 dnl ***************************************************************************
 dnl *** keyboard accessibility status applet check                          ***
@@ -498,9 +498,9 @@ AC_MSG_CHECKING([for _NL_MEASUREMENT_MEASUREMENT])
 AC_TRY_LINK([#include <langinfo.h>], [
 char c;
 c = *((unsigned char *)  nl_langinfo(_NL_MEASUREMENT_MEASUREMENT));
-], gtk_ok=yes, gtk_ok=no)
-AC_MSG_RESULT($gtk_ok)
-if test "$gtk_ok" = "yes"; then
+], ctk_ok=yes, ctk_ok=no)
+AC_MSG_RESULT($ctk_ok)
+if test "$ctk_ok" = "yes"; then
   AC_DEFINE([HAVE__NL_MEASUREMENT_MEASUREMENT], [1],
             [Define if _NL_MEASUREMENT_MEASUREMENT is available])
 fi

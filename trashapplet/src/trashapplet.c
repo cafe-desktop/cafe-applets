@@ -28,7 +28,7 @@
 #include <string.h>
 
 #include <glib/gi18n.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <gdk/gdkkeysyms.h>
 #include <gio/gio.h>
 #include <cafe-panel-applet.h>
@@ -109,7 +109,7 @@ trash_applet_monitor_changed (TrashApplet *applet)
       /* note: the size is meaningless here,
        * since we do set_pixel_size() later
        */
-      gtk_image_set_from_gicon (GTK_IMAGE (applet->image),
+      ctk_image_set_from_gicon (GTK_IMAGE (applet->image),
                                 icon, GTK_ICON_SIZE_MENU);
 
       if (applet->icon)
@@ -127,11 +127,11 @@ trash_applet_monitor_changed (TrashApplet *applet)
           text = g_strdup_printf (ngettext ("%d Item in Trash",
                                             "%d Items in Trash",
                                             items), items);
-          gtk_widget_set_tooltip_text (GTK_WIDGET (applet), text);
+          ctk_widget_set_tooltip_text (GTK_WIDGET (applet), text);
           g_free (text);
         }
       else
-        gtk_widget_set_tooltip_text (GTK_WIDGET (applet),
+        ctk_widget_set_tooltip_text (GTK_WIDGET (applet),
                                      _("No Items in Trash"));
 
       applet->items = items;
@@ -157,7 +157,7 @@ trash_applet_set_icon_size (TrashApplet *applet,
     size = 48;
 
   /* GtkImage already contains a check to do nothing if it's the same */
-  gtk_image_set_pixel_size (applet->image, size);
+  ctk_image_set_pixel_size (applet->image, size);
 }
 
 static void
@@ -221,10 +221,10 @@ trash_applet_init (TrashApplet *applet)
                                       GTK_WIDGET (applet));
 
   /* setup the image */
-  applet->image = g_object_ref_sink (GTK_IMAGE (gtk_image_new ()));
-  gtk_container_add (GTK_CONTAINER (applet),
+  applet->image = g_object_ref_sink (GTK_IMAGE (ctk_image_new ()));
+  ctk_container_add (GTK_CONTAINER (applet),
                      GTK_WIDGET (applet->image));
-  gtk_widget_show (GTK_WIDGET (applet->image));
+  ctk_widget_show (GTK_WIDGET (applet->image));
 
   /* setup the trash backend */
   applet->trash = g_file_new_for_uri ("trash:/");
@@ -234,7 +234,7 @@ trash_applet_init (TrashApplet *applet)
                             applet);
 
   /* setup drag and drop */
-  gtk_drag_dest_set (GTK_WIDGET (applet), GTK_DEST_DEFAULT_ALL,
+  ctk_drag_dest_set (GTK_WIDGET (applet), GTK_DEST_DEFAULT_ALL,
                      drop_types, G_N_ELEMENTS (drop_types),
                      GDK_ACTION_MOVE);
 
@@ -339,18 +339,18 @@ error_dialog (TrashApplet *applet, const gchar *error, ...)
   error_string = g_strdup_vprintf (error, args);
   va_end (args);
 
-  dialog = gtk_message_dialog_new (NULL, GTK_DIALOG_MODAL,
+  dialog = ctk_message_dialog_new (NULL, GTK_DIALOG_MODAL,
                                    GTK_MESSAGE_ERROR, GTK_BUTTONS_OK,
                                    "%s", error_string);
 
   g_signal_connect (G_OBJECT (dialog), "response",
-                    G_CALLBACK (gtk_widget_destroy),
+                    G_CALLBACK (ctk_widget_destroy),
                     NULL);
 
-  gtk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
-  gtk_window_set_screen (GTK_WINDOW(dialog),
-                         gtk_widget_get_screen (GTK_WIDGET (applet)));
-  gtk_widget_show (dialog);
+  ctk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
+  ctk_window_set_screen (GTK_WINDOW(dialog),
+                         ctk_widget_get_screen (GTK_WIDGET (applet)));
+  ctk_widget_show (dialog);
 
   g_free (error_string);
 }
@@ -368,9 +368,9 @@ trash_applet_open_folder (GtkAction   *action,
 {
   GError *err = NULL;
 
-  gtk_show_uri_on_window (NULL,
+  ctk_show_uri_on_window (NULL,
                           "trash:",
-                          gtk_get_current_event_time (),
+                          ctk_get_current_event_time (),
                           &err);
 
   if (err)
@@ -388,9 +388,9 @@ trash_applet_show_help (GtkAction   *action,
   GError *err = NULL;
 
   /* FIXME - Actually, we need a user guide */
-  gtk_show_uri_on_window (NULL,
+  ctk_show_uri_on_window (NULL,
                           "help:cafe-trashapplet",
-                          gtk_get_current_event_time (),
+                          ctk_get_current_event_time (),
                           &err);
 
   if (err)
@@ -428,7 +428,7 @@ trash_applet_show_about (GtkAction   *action,
     *p = _(*p);
 #endif
 
-  gtk_show_about_dialog (NULL,
+  ctk_show_about_dialog (NULL,
                          "title", _("About Trash Applet"),
                          "version", VERSION,
                          "copyright", _("Copyright \xc2\xa9 2004 Michiel Sikkes\n"
@@ -454,38 +454,38 @@ confirm_delete_immediately (GtkWidget *parent_view,
   gchar *str, *prompt, *detail;
   int response;
 
-  screen = gtk_widget_get_screen (parent_view);
+  screen = ctk_widget_get_screen (parent_view);
 
-  dialog = gtk_dialog_new ();
-  gtk_window_set_screen (GTK_WINDOW (dialog), screen);
-  atk_object_set_role (gtk_widget_get_accessible (dialog), ATK_ROLE_ALERT);
-  gtk_window_set_title (GTK_WINDOW (dialog), _("Delete Immediately?"));
-  gtk_container_set_border_width (GTK_CONTAINER (dialog), 5);
-  gtk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
+  dialog = ctk_dialog_new ();
+  ctk_window_set_screen (GTK_WINDOW (dialog), screen);
+  atk_object_set_role (ctk_widget_get_accessible (dialog), ATK_ROLE_ALERT);
+  ctk_window_set_title (GTK_WINDOW (dialog), _("Delete Immediately?"));
+  ctk_container_set_border_width (GTK_CONTAINER (dialog), 5);
+  ctk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
 
-  gtk_widget_realize (dialog);
-  gdk_window_set_transient_for (gtk_widget_get_window (GTK_WIDGET (dialog)),
+  ctk_widget_realize (dialog);
+  gdk_window_set_transient_for (ctk_widget_get_window (GTK_WIDGET (dialog)),
                                 gdk_screen_get_root_window (screen));
-  gtk_window_set_modal (GTK_WINDOW (dialog), TRUE);
+  ctk_window_set_modal (GTK_WINDOW (dialog), TRUE);
 
-  gtk_box_set_spacing (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
+  ctk_box_set_spacing (GTK_BOX (ctk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
 
-  hbox = gtk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
-  gtk_container_set_border_width (GTK_CONTAINER (hbox), 5);
-  gtk_widget_show (hbox);
-  gtk_box_pack_start (GTK_BOX (gtk_dialog_get_content_area (GTK_DIALOG (dialog))), hbox,
+  hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
+  ctk_container_set_border_width (GTK_CONTAINER (hbox), 5);
+  ctk_widget_show (hbox);
+  ctk_box_pack_start (GTK_BOX (ctk_dialog_get_content_area (GTK_DIALOG (dialog))), hbox,
                       FALSE, FALSE, 0);
 
-  image = gtk_image_new_from_icon_name ("dialog-question",
+  image = ctk_image_new_from_icon_name ("dialog-question",
                                         GTK_ICON_SIZE_DIALOG);
-  gtk_widget_set_halign (image, GTK_ALIGN_CENTER);
-  gtk_widget_set_valign (image, GTK_ALIGN_START);
-  gtk_widget_show (image);
-  gtk_box_pack_start (GTK_BOX (hbox), image, FALSE, FALSE, 0);
+  ctk_widget_set_halign (image, GTK_ALIGN_CENTER);
+  ctk_widget_set_valign (image, GTK_ALIGN_START);
+  ctk_widget_show (image);
+  ctk_box_pack_start (GTK_BOX (hbox), image, FALSE, FALSE, 0);
 
-  vbox = gtk_box_new (GTK_ORIENTATION_VERTICAL, 12);
-  gtk_box_pack_start (GTK_BOX (hbox), vbox, TRUE, TRUE, 0);
-  gtk_widget_show (vbox);
+  vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 12);
+  ctk_box_pack_start (GTK_BOX (hbox), vbox, TRUE, TRUE, 0);
+  ctk_widget_show (vbox);
 
   if (all)
     {
@@ -500,33 +500,33 @@ confirm_delete_immediately (GtkWidget *parent_view,
 
   str = g_strconcat ("<span weight=\"bold\" size=\"larger\">",
                      prompt, "</span>", NULL);
-  label = gtk_label_new (str);
-  gtk_label_set_use_markup (GTK_LABEL (label), TRUE);
-  gtk_label_set_justify (GTK_LABEL (label), GTK_JUSTIFY_LEFT);
-  gtk_label_set_line_wrap (GTK_LABEL (label), TRUE);
-  gtk_label_set_xalign (GTK_LABEL (label), 0.0);
-  gtk_box_pack_start (GTK_BOX (vbox), label, FALSE, FALSE, 0);
-  gtk_widget_show (label);
+  label = ctk_label_new (str);
+  ctk_label_set_use_markup (GTK_LABEL (label), TRUE);
+  ctk_label_set_justify (GTK_LABEL (label), GTK_JUSTIFY_LEFT);
+  ctk_label_set_line_wrap (GTK_LABEL (label), TRUE);
+  ctk_label_set_xalign (GTK_LABEL (label), 0.0);
+  ctk_box_pack_start (GTK_BOX (vbox), label, FALSE, FALSE, 0);
+  ctk_widget_show (label);
   g_free (str);
 
-  label = gtk_label_new (detail);
-  gtk_label_set_justify (GTK_LABEL (label), GTK_JUSTIFY_LEFT);
-  gtk_label_set_line_wrap (GTK_LABEL (label), TRUE);
-  gtk_label_set_xalign (GTK_LABEL (label), 0.0);
-  gtk_box_pack_start (GTK_BOX (vbox), label, FALSE, FALSE, 0);
-  gtk_widget_show (label);
+  label = ctk_label_new (detail);
+  ctk_label_set_justify (GTK_LABEL (label), GTK_JUSTIFY_LEFT);
+  ctk_label_set_line_wrap (GTK_LABEL (label), TRUE);
+  ctk_label_set_xalign (GTK_LABEL (label), 0.0);
+  ctk_box_pack_start (GTK_BOX (vbox), label, FALSE, FALSE, 0);
+  ctk_widget_show (label);
   g_free (detail);
 
-  gtk_dialog_add_button (GTK_DIALOG (dialog), "gtk-cancel",
+  ctk_dialog_add_button (GTK_DIALOG (dialog), "ctk-cancel",
                          GTK_RESPONSE_CANCEL);
-  gtk_dialog_add_button (GTK_DIALOG (dialog), "gtk-delete",
+  ctk_dialog_add_button (GTK_DIALOG (dialog), "ctk-delete",
                          GTK_RESPONSE_YES);
-  gtk_dialog_set_default_response (GTK_DIALOG (dialog),
+  ctk_dialog_set_default_response (GTK_DIALOG (dialog),
                                    GTK_RESPONSE_YES);
 
-  response = gtk_dialog_run (GTK_DIALOG (dialog));
+  response = ctk_dialog_run (GTK_DIALOG (dialog));
 
-  gtk_widget_destroy (GTK_WIDGET (dialog));
+  ctk_widget_destroy (GTK_WIDGET (dialog));
 
   return response == GTK_RESPONSE_YES;
 }
@@ -547,7 +547,7 @@ trash_applet_drag_data_received (GtkWidget        *widget,
   GList *l;
   GError *error = NULL;
 
-  list = g_uri_list_extract_uris ((gchar *)gtk_selection_data_get_data (selectiondata));
+  list = g_uri_list_extract_uris ((gchar *)ctk_selection_data_get_data (selectiondata));
 
   for (i = 0; list[i]; i++)
     {
@@ -593,7 +593,7 @@ trash_applet_drag_data_received (GtkWidget        *widget,
 
   g_strfreev (list);
 
-  gtk_drag_finish (context, TRUE, FALSE, time_);
+  ctk_drag_finish (context, TRUE, FALSE, time_);
 }
 
 static void
@@ -624,12 +624,12 @@ trash_applet_factory (CafePanelApplet *applet,
 
       g_set_application_name (_("Trash Applet"));
 
-      gtk_window_set_default_icon_name ("user-trash");
+      ctk_window_set_default_icon_name ("user-trash");
 
       /* Set up the menu */
-      action_group = gtk_action_group_new ("Trash Applet Actions");
-      gtk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
-      gtk_action_group_add_actions (action_group,
+      action_group = ctk_action_group_new ("Trash Applet Actions");
+      ctk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
+      ctk_action_group_add_actions (action_group,
 				    trash_applet_menu_actions,
 				    G_N_ELEMENTS (trash_applet_menu_actions),
 				    applet);
@@ -638,7 +638,7 @@ trash_applet_factory (CafePanelApplet *applet,
       g_free (ui_path);
       g_object_unref (action_group);
 
-      gtk_widget_show (GTK_WIDGET (applet));
+      ctk_widget_show (GTK_WIDGET (applet));
 
       retval = TRUE;
   }

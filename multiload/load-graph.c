@@ -8,7 +8,7 @@
 #include <time.h>
 #include <glib.h>
 #include <gdk/gdkx.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <gio/gio.h>
 #include <cafe-panel-applet.h>
 #include <cafe-panel-applet-gsettings.h>
@@ -57,7 +57,7 @@ load_graph_draw (LoadGraph *g)
    * (after the user resized the applet in the prop dialog). */
 
   if (!g->surface)
-    g->surface = gdk_window_create_similar_surface (gtk_widget_get_window (g->disp),
+    g->surface = gdk_window_create_similar_surface (ctk_widget_get_window (g->disp),
                                                     CAIRO_CONTENT_COLOR,
                                                     g->draw_width, g->draw_height);
 
@@ -220,7 +220,7 @@ load_graph_draw (LoadGraph *g)
 
     cairo_stroke (cr);
   }
-  gtk_widget_queue_draw (g->disp);
+  ctk_widget_queue_draw (g->disp);
 
   cairo_destroy (cr);
 }
@@ -302,7 +302,7 @@ load_graph_configure (GtkWidget *widget, GdkEventConfigure *event,
 
     load_graph_unalloc (c);
 
-    gtk_widget_get_allocation (c->disp, &allocation);
+    ctk_widget_get_allocation (c->disp, &allocation);
 
     c->draw_width = allocation.width;
     c->draw_height = allocation.height;
@@ -312,10 +312,10 @@ load_graph_configure (GtkWidget *widget, GdkEventConfigure *event,
     load_graph_alloc (c);
 
     if (!c->surface)
-        c->surface = gdk_window_create_similar_surface (gtk_widget_get_window (c->disp),
+        c->surface = gdk_window_create_similar_surface (ctk_widget_get_window (c->disp),
                                                         CAIRO_CONTENT_COLOR,
                                                         c->draw_width, c->draw_height);
-    gtk_widget_queue_draw (widget);
+    ctk_widget_queue_draw (widget);
 
     return TRUE;
 }
@@ -342,7 +342,7 @@ load_graph_destroy (GtkWidget *widget, gpointer data_ptr)
     netspeed_delete(g->netspeed_in);
     netspeed_delete(g->netspeed_out);
 
-    gtk_widget_destroy(widget);
+    ctk_widget_destroy(widget);
 }
 
 static gboolean
@@ -419,9 +419,9 @@ load_graph_new (MultiloadApplet *ma, guint n, const gchar *label,
     g->show_frame = TRUE;
     g->multiload = ma;
 
-    g->main_widget = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+    g->main_widget = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 
-    g->box = gtk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+    g->box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
 
     orient = cafe_panel_applet_get_orient (g->multiload->applet);
     switch (orient)
@@ -444,15 +444,15 @@ load_graph_new (MultiloadApplet *ma, guint n, const gchar *label,
 
     if (g->show_frame)
     {
-        g->frame = gtk_frame_new (NULL);
-        gtk_frame_set_shadow_type (GTK_FRAME (g->frame), GTK_SHADOW_IN);
-        gtk_container_add (GTK_CONTAINER (g->frame), g->box);
-        gtk_box_pack_start (GTK_BOX (g->main_widget), g->frame, TRUE, TRUE, 0);
+        g->frame = ctk_frame_new (NULL);
+        ctk_frame_set_shadow_type (GTK_FRAME (g->frame), GTK_SHADOW_IN);
+        ctk_container_add (GTK_CONTAINER (g->frame), g->box);
+        ctk_box_pack_start (GTK_BOX (g->main_widget), g->frame, TRUE, TRUE, 0);
     }
     else
     {
         g->frame = NULL;
-        gtk_box_pack_start (GTK_BOX (g->main_widget), g->box, TRUE, TRUE, 0);
+        ctk_box_pack_start (GTK_BOX (g->main_widget), g->box, TRUE, TRUE, 0);
     }
 
     load_graph_load_config (g);
@@ -462,12 +462,12 @@ load_graph_new (MultiloadApplet *ma, guint n, const gchar *label,
     g->timer_index = -1;
 
     if (g->orient)
-        gtk_widget_set_size_request (g->main_widget, -1, g->size);
+        ctk_widget_set_size_request (g->main_widget, -1, g->size);
     else
-        gtk_widget_set_size_request (g->main_widget, g->size, -1);
+        ctk_widget_set_size_request (g->main_widget, g->size, -1);
 
-    g->disp = gtk_drawing_area_new ();
-    gtk_widget_set_events (g->disp, GDK_EXPOSURE_MASK |
+    g->disp = ctk_drawing_area_new ();
+    ctk_widget_set_events (g->disp, GDK_EXPOSURE_MASK |
                                     GDK_ENTER_NOTIFY_MASK |
                                     GDK_LEAVE_NOTIFY_MASK |
                                     GDK_BUTTON_PRESS_MASK);
@@ -485,8 +485,8 @@ load_graph_new (MultiloadApplet *ma, guint n, const gchar *label,
     g_signal_connect (G_OBJECT(g->disp), "leave-notify-event",
                       G_CALLBACK(load_graph_leave_cb), g);
 
-    gtk_box_pack_start (GTK_BOX (g->box), g->disp, TRUE, TRUE, 0);
-    gtk_widget_show_all(g->box);
+    ctk_box_pack_start (GTK_BOX (g->box), g->disp, TRUE, TRUE, 0);
+    ctk_widget_show_all(g->box);
 
     return g;
 }

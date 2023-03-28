@@ -50,7 +50,7 @@ void cafeweather_about_run(CafeWeatherApplet* gw_applet)
 		*p = _(*p);
 #endif
 
-	gtk_show_about_dialog(NULL,
+	ctk_show_about_dialog(NULL,
 		"title", _("About Weather Report"),
 		"version", VERSION,
 		"copyright", _("Copyright \xC2\xA9 1999-2005 by S. Papadimitriou and others\n"

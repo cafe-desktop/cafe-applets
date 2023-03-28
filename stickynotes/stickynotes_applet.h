@@ -22,7 +22,7 @@
 
 #include <glib/gi18n.h>
 #include <gdk/gdk.h>
-#include <gtk/gtk.h>
+#include <ctk/ctk.h>
 #include <gio/gio.h>
 #include <cafe-panel-applet.h>
 

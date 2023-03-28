@@ -158,9 +158,9 @@ xstuff_zoom_anicafe (GtkWidget *widget, GdkRectangle *opt_rect)
 	if (opt_rect)
 		rect = *opt_rect;
 	else {
-		gdk_window_get_origin (gtk_widget_get_window (widget), &rect.x, &rect.y);
-		gtk_widget_get_allocation (widget, &allocation);
-		if (!gtk_widget_get_has_window (widget)) {
+		gdk_window_get_origin (ctk_widget_get_window (widget), &rect.x, &rect.y);
+		ctk_widget_get_allocation (widget, &allocation);
+		if (!ctk_widget_get_has_window (widget)) {
 			rect.x += allocation.x;
 			rect.y += allocation.y;
 		}
@@ -168,9 +168,9 @@ xstuff_zoom_anicafe (GtkWidget *widget, GdkRectangle *opt_rect)
 		rect.width = allocation.width;
 	}
 
-	gscreen = gtk_widget_get_screen (widget);
+	gscreen = ctk_widget_get_screen (widget);
 	monitor = gdk_display_get_monitor_at_window (gdk_screen_get_display (gscreen),
-						     gtk_widget_get_window (widget));
+						     ctk_widget_get_window (widget));
 	gdk_monitor_get_geometry (monitor, &dest);
 
 	draw_zoom_animation (gscreen,
