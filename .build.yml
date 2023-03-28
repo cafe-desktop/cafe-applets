@@ -32,6 +32,14 @@ requires:
     - x11proto-kb-dev
     - yelp-tools
 
+    # required for libvnck
+    - build-essential
+    - docbook-xml
+    - gettext
+    - libxext-dev
+    - libxres-dev
+    - ninja-build
+
     # required for cafe-common
     - autoconf
     - xz-utils
@@ -71,6 +79,7 @@ requires:
 before_scripts:
   - ./html-cppcheck
   - ./debrepo-install 'libctk-3-dev gir1.2-ctk-3.0 libctk-3-common libctk-3-0 libctk-3-doc'
+  - ./install-from-git https://github.com/cafe-desktop/libvnck master meson
   - ./install-from-git https://github.com/cafe-desktop/cafe-common master
   - ./install-from-git https://github.com/cafe-desktop/cafe-desktop master
   - ./install-from-git https://github.com/cafe-desktop/cafe-menus master
