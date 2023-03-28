@@ -313,7 +313,7 @@ dnl ***************************************************************************
 AC_ARG_ENABLE([stickynotes],
     AC_HELP_STRING([--enable-stickynotes], [Enable stickynotes applet.]),
     enable_stickynotes=$enableval,
-    enable_stickynotes=yes)
+    enable_stickynotes=no)
 if test "x$enable_stickynotes" = "xyes"; then
     PKG_CHECK_MODULES(STICKYNOTES, ctksourceview-3.0,
                       have_ctksourceview=yes, have_ctksourceview=no)
