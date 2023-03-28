@@ -104,7 +104,7 @@ status_change_callback (void)
    initialisation is done.  When the last instance exits, cleanup occurs.
 
    The teardown code here isn't entirely complete (for example, it doesn't
-   deallocate the GdkColors or free the GdkPixmaps.  This is OK so long
+   deallocate the CdkColors or free the CdkPixmaps.  This is OK so long
    as the process quits immediately when the last applet is removed (which
    it does.)
 */
@@ -223,7 +223,7 @@ battery_full_notify (CtkWidget *applet)
 {
 #ifdef HAVE_LIBNOTIFY
 	GError *error = NULL;
-	GdkPixbuf *icon;
+	CdkPixbuf *icon;
 	gboolean result;
 
 	if (!notify_is_initted () && !notify_init (_("Battery Monitor")))

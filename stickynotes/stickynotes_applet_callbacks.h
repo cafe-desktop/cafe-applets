@@ -23,10 +23,10 @@
 #define __STICKYNOTES_APPLET_CALLBACKS_H__
 
 /* Callbacks for the sticky notes applet */
-gboolean applet_button_cb(CtkWidget *widget, GdkEventButton *event, StickyNotesApplet *applet);
-gboolean applet_key_cb(CtkWidget *widget, GdkEventKey *event, StickyNotesApplet *applet);
-gboolean applet_cross_cb(CtkWidget *widget, GdkEventCrossing *event, StickyNotesApplet *applet);
-gboolean applet_focus_cb(CtkWidget *widget, GdkEventFocus *event, StickyNotesApplet *applet);
+gboolean applet_button_cb(CtkWidget *widget, CdkEventButton *event, StickyNotesApplet *applet);
+gboolean applet_key_cb(CtkWidget *widget, CdkEventKey *event, StickyNotesApplet *applet);
+gboolean applet_cross_cb(CtkWidget *widget, CdkEventCrossing *event, StickyNotesApplet *applet);
+gboolean applet_focus_cb(CtkWidget *widget, CdkEventFocus *event, StickyNotesApplet *applet);
 void install_check_click_on_desktop (void);
 void applet_change_orient_cb(CafePanelApplet *cafe_panel_applet, CafePanelAppletOrient orient, StickyNotesApplet *applet);
 void applet_size_allocate_cb(CtkWidget *widget, CtkAllocation *allocation, StickyNotesApplet *applet);
@@ -47,6 +47,6 @@ void preferences_color_cb (CtkWidget *button, gpointer data);
 void preferences_font_cb (CtkWidget *button, gpointer data);
 void preferences_apply_cb(GSettings *settings, gchar *key, gpointer data);
 void preferences_response_cb(CtkWidget *dialog, gint response, gpointer data);
-gboolean preferences_delete_cb(CtkWidget *widget, GdkEvent *event, gpointer data);
+gboolean preferences_delete_cb(CtkWidget *widget, CdkEvent *event, gpointer data);
 
 #endif /* __STICKYNOTES_APPLET_CALLBACKS_H__ */

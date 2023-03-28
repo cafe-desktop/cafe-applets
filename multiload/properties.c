@@ -255,7 +255,7 @@ color_picker_set_cb(CtkColorChooser *color_picker, gchar *key)
 {
 	gchar *color_string;
 	guint8 prop_type;
-	GdkRGBA color;
+	CdkRGBA color;
 	MultiloadApplet *ma;
 
 	ma = g_object_get_data (G_OBJECT (color_picker), "MultiloadApplet");
@@ -293,7 +293,7 @@ add_color_selector(CtkWidget *page, gchar *name, gchar *key, MultiloadApplet *ma
 	CtkWidget *vbox;
 	CtkWidget *label;
 	CtkWidget *color_picker;
-	GdkRGBA color;
+	CdkRGBA color;
 	gchar *color_string;
 
 	color_string = g_settings_get_string (ma->settings, key);

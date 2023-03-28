@@ -25,11 +25,11 @@
 /* Callbacks for the sticky notes windows */
 gboolean stickynote_toggle_lock_cb(CtkWidget *widget, StickyNote *note);
 gboolean stickynote_close_cb(CtkWidget *widget, StickyNote *note);
-gboolean stickynote_resize_cb(CtkWidget *widget, GdkEventButton *event, StickyNote *note);
-gboolean stickynote_move_cb(CtkWidget *widget, GdkEventButton *event, StickyNote *note);
-gboolean stickynote_configure_cb(CtkWidget *widget, GdkEventConfigure *event, StickyNote *note);
-gboolean stickynote_delete_cb(CtkWidget *widget, GdkEvent *event, StickyNote *note);
-gboolean stickynote_show_popup_menu(CtkWidget *widget, GdkEventButton *event, CtkWidget *popup_menu);
+gboolean stickynote_resize_cb(CtkWidget *widget, CdkEventButton *event, StickyNote *note);
+gboolean stickynote_move_cb(CtkWidget *widget, CdkEventButton *event, StickyNote *note);
+gboolean stickynote_configure_cb(CtkWidget *widget, CdkEventConfigure *event, StickyNote *note);
+gboolean stickynote_delete_cb(CtkWidget *widget, CdkEvent *event, StickyNote *note);
+gboolean stickynote_show_popup_menu(CtkWidget *widget, CdkEventButton *event, CtkWidget *popup_menu);
 
 /* Callbacks for the sticky notes popup menu */
 void popup_create_cb(CtkWidget *widget, StickyNote *note);

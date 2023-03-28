@@ -5,6 +5,6 @@
 #include <ctk/ctk.h>
 
 void xstuff_zoom_anicafe                (CtkWidget    *widget,
-					 GdkRectangle *opt_src_rect);
+					 CdkRectangle *opt_src_rect);
 
 #endif /* __XSTUFF_H__ */

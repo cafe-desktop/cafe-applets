@@ -44,7 +44,7 @@ static void response_cb (CtkWidget *dialog, gint id, gpointer data);
 
 /* Based on a function found in wnck */
 static void
-set_icon_geometry (GdkWindow *window,
+set_icon_geometry (CdkWindow *window,
                    int        x,
                    int        y,
                    int        width,
@@ -97,7 +97,7 @@ buffer_changed (CtkTextBuffer *buffer, StickyNote *note)
 /* Create a new (empty) Sticky Note at a specific position
    and with specific size */
 static StickyNote *
-stickynote_new_aux (GdkScreen *screen, gint x, gint y, gint w, gint h)
+stickynote_new_aux (CdkScreen *screen, gint x, gint y, gint w, gint h)
 {
 	StickyNote *note;
 	CtkBuilder *builder;
@@ -304,7 +304,7 @@ stickynote_new_aux (GdkScreen *screen, gint x, gint y, gint w, gint h)
 
 /* Create a new (empty) Sticky Note */
 StickyNote *
-stickynote_new (GdkScreen *screen)
+stickynote_new (CdkScreen *screen)
 {
 	return stickynote_new_aux (screen, -1, -1, 0, 0);
 }
@@ -343,7 +343,7 @@ void stickynote_change_properties (StickyNote *note)
 
 	if (color_str)
 	{
-		GdkRGBA color;
+		CdkRGBA color;
 		cdk_rgba_parse (&color, color_str);
 		ctk_color_chooser_set_rgba (CTK_COLOR_CHOOSER (note->w_color), &color);
 		g_free (color_str);
@@ -358,7 +358,7 @@ void stickynote_change_properties (StickyNote *note)
 
 	if (color_str)
 	{
-		GdkRGBA font_color;
+		CdkRGBA font_color;
 		cdk_rgba_parse (&font_color, color_str);
 		ctk_color_chooser_set_rgba (CTK_COLOR_CHOOSER (note->w_font_color), &font_color);
 		g_free (color_str);
@@ -476,7 +476,7 @@ stickynote_set_color (StickyNote  *note,
 
 	/* Do not use custom colors if "use_system_color" is enabled */
 	if (color_str_actual) {
-		GdkRGBA colors[4];
+		CdkRGBA colors[4];
 		gint i;
 
 		for (i = 0; i <= 3; i++)
@@ -504,7 +504,7 @@ stickynote_set_color (StickyNote  *note,
 
 	if (font_color_str_actual)
 	{
-		GdkRGBA color;
+		CdkRGBA color;
 
 		cdk_rgba_parse (&color, font_color_str_actual);
 
@@ -640,7 +640,7 @@ stickynote_set_visible (StickyNote *note, gboolean visible)
 }
 
 /* Add a sticky note */
-void stickynotes_add (GdkScreen *screen)
+void stickynotes_add (CdkScreen *screen)
 {
 	StickyNote *note;
 
@@ -814,7 +814,7 @@ stickynotes_save (void)
 
 /* Load all sticky notes from an XML configuration file */
 void
-stickynotes_load (GdkScreen *screen)
+stickynotes_load (CdkScreen *screen)
 {
 	xmlDocPtr doc = NULL;
 	xmlNodePtr root;

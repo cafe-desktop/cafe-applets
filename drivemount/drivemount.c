@@ -56,7 +56,7 @@ change_orient (CafePanelApplet *applet, CafePanelAppletOrient o, DriveList *driv
 
 static void
 size_allocate (CafePanelApplet  *applet,
-	       GdkRectangle *allocation,
+	       CdkRectangle *allocation,
 	       DriveList    *drive_list)
 {
     int size;
@@ -78,7 +78,7 @@ size_allocate (CafePanelApplet  *applet,
 static void
 change_background (CafePanelApplet               *applet,
 		   CafePanelAppletBackgroundType  type,
-		   GdkColor                  *colour,
+		   CdkColor                  *colour,
 		   cairo_pattern_t           *pattern,
 		   DriveList                 *drivelist)
 {
@@ -133,7 +133,7 @@ static void
 display_help (CtkAction *action,
 	      DriveList *drive_list)
 {
-    GdkScreen *screen;
+    CdkScreen *screen;
     GError *error = NULL;
 
     screen = ctk_widget_get_screen (CTK_WIDGET (drive_list));

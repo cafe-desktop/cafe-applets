@@ -73,7 +73,7 @@ typedef struct
 static void command_about_callback (CtkAction *action, CommandApplet *command_applet);
 static void command_settings_callback (CtkAction *action, CommandApplet *command_applet);
 static gboolean command_execute (CommandApplet *command_applet);
-static gboolean command_text_changed (CtkWidget *widget, GdkEvent  *event, gpointer user_data);
+static gboolean command_text_changed (CtkWidget *widget, CdkEvent  *event, gpointer user_data);
 static void interval_value_changed (CtkSpinButton *spin_button, gpointer user_data);
 static void width_value_changed (CtkSpinButton *spin_button, gpointer user_data);
 static void command_async_ready_callback (GObject *source_object, GAsyncResult *res, gpointer user_data);
@@ -131,7 +131,7 @@ command_about_callback (CtkAction *action, CommandApplet *command_applet)
 }
 
 static gboolean
-command_text_changed (CtkWidget *widget, GdkEvent  *event, gpointer user_data)
+command_text_changed (CtkWidget *widget, CdkEvent  *event, gpointer user_data)
 {
     const gchar *text;
     CommandApplet *command_applet;

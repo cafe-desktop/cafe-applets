@@ -162,7 +162,7 @@ trash_applet_set_icon_size (TrashApplet *applet,
 
 static void
 trash_applet_size_allocate (CtkWidget    *widget,
-                            GdkRectangle *allocation)
+                            CdkRectangle *allocation)
 {
   TrashApplet *applet = TRASH_APPLET (widget);
 
@@ -247,7 +247,7 @@ trash_applet_init (TrashApplet *applet)
 #define PANEL_ENABLE_ANIMATIONS "enable-animations"
 static gboolean
 trash_applet_button_release (CtkWidget      *widget,
-                             GdkEventButton *event)
+                             CdkEventButton *event)
 {
   TrashApplet *applet = TRASH_APPLET (widget);
   static GSettings *settings;
@@ -273,7 +273,7 @@ trash_applet_button_release (CtkWidget      *widget,
 }
 static gboolean
 trash_applet_key_press (CtkWidget   *widget,
-                        GdkEventKey *event)
+                        CdkEventKey *event)
 {
   TrashApplet *applet = TRASH_APPLET (widget);
 
@@ -301,7 +301,7 @@ trash_applet_key_press (CtkWidget   *widget,
 
 static gboolean
 trash_applet_drag_motion (CtkWidget      *widget,
-                          GdkDragContext *context,
+                          CdkDragContext *context,
                           gint            x,
                           gint            y,
                           guint           time)
@@ -449,7 +449,7 @@ confirm_delete_immediately (CtkWidget *parent_view,
                             gint num_files,
                             gboolean all)
 {
-  GdkScreen *screen;
+  CdkScreen *screen;
   CtkWidget *dialog, *hbox, *vbox, *image, *label;
   gchar *str, *prompt, *detail;
   int response;
@@ -533,7 +533,7 @@ confirm_delete_immediately (CtkWidget *parent_view,
 
 static void
 trash_applet_drag_data_received (CtkWidget        *widget,
-                                 GdkDragContext   *context,
+                                 CdkDragContext   *context,
                                  gint              x,
                                  gint              y,
                                  CtkSelectionData *selectiondata,

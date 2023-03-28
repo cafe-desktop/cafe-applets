@@ -135,7 +135,7 @@ charpick_selection_handler(CtkWidget *widget,
 
 /* untoggles the active toggle_button when we lose the selection */
 static gint
-selection_clear_cb (CtkWidget *widget, GdkEventSelection *event,
+selection_clear_cb (CtkWidget *widget, CdkEventSelection *event,
                     gpointer data)
 {
   charpick_data *curr_data = data;
@@ -187,11 +187,11 @@ toggle_button_toggled_cb(CtkToggleButton *button, gpointer data)
  */
 static gboolean
 button_press_hack (CtkWidget      *widget,
-		   GdkEventButton *event,
+		   CdkEventButton *event,
 		   CtkWidget      *applet)
 {
     if (event->button == 3 || event->button == 2) {
-	ctk_propagate_event (applet, (GdkEvent *) event);
+	ctk_propagate_event (applet, (CdkEvent *) event);
 
 	return TRUE;
     }
@@ -200,7 +200,7 @@ button_press_hack (CtkWidget      *widget,
 }
 
 static gint
-key_press_event(CtkWidget *widget, GdkEventKey *event, gpointer data)
+key_press_event(CtkWidget *widget, CdkEventKey *event, gpointer data)
 {
 #if 0
   charpick_data *p_curr_data = data;
@@ -318,8 +318,8 @@ populate_menu (charpick_data *curr_data)
 	/*Set up custom theme and transparency support*/
 	CtkWidget *toplevel = ctk_widget_get_toplevel (CTK_WIDGET (menu));
 	/* Fix any failures of compiz/other wm's to communicate with ctk for transparency */
-	GdkScreen *screen = ctk_widget_get_screen(CTK_WIDGET(toplevel));
-	GdkVisual *visual = cdk_screen_get_rgba_visual(screen);
+	CdkScreen *screen = ctk_widget_get_screen(CTK_WIDGET(toplevel));
+	CdkVisual *visual = cdk_screen_get_rgba_visual(screen);
 	ctk_widget_set_visual(CTK_WIDGET(toplevel), visual);
 	/* Set menu and it's toplevel window to follow panel theme */
 	CtkStyleContext *context;
@@ -705,7 +705,7 @@ charpicker_applet_fill (CafePanelApplet *applet)
 {
   CafePanelAppletOrient orientation;
   charpick_data *curr_data;
-  GdkAtom utf8_atom;
+  CdkAtom utf8_atom;
   GList *list;
   gchar *string;
   CtkActionGroup *action_group;

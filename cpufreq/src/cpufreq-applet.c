@@ -91,9 +91,9 @@ static void     cpufreq_applet_refresh           (CPUFreqApplet      *applet);
 
 static void     cpufreq_applet_dispose           (GObject            *widget);
 static gboolean cpufreq_applet_button_press      (CtkWidget          *widget,
-                                                  GdkEventButton     *event);
+                                                  CdkEventButton     *event);
 static gboolean cpufreq_applet_key_press         (CtkWidget          *widget,
-                                                  GdkEventKey        *event);
+                                                  CdkEventKey        *event);
 static void     cpufreq_applet_size_allocate     (CtkWidget          *widget,
                                                   CtkAllocation      *allocation);
 static void     cpufreq_applet_change_orient     (CafePanelApplet        *pa,
@@ -321,8 +321,8 @@ cpufreq_applet_menu_popup (CPUFreqApplet *applet,
         /*Set up theme and transparency support*/
         CtkWidget *toplevel = ctk_widget_get_toplevel (menu);
         /* Fix any failures of compiz/other wm's to communicate with ctk for transparency */
-        GdkScreen *screen = ctk_widget_get_screen(CTK_WIDGET(toplevel));
-        GdkVisual *visual = cdk_screen_get_rgba_visual(screen);
+        CdkScreen *screen = ctk_widget_get_screen(CTK_WIDGET(toplevel));
+        CdkVisual *visual = cdk_screen_get_rgba_visual(screen);
         ctk_widget_set_visual(CTK_WIDGET(toplevel), visual);
         /* Set menu and it's toplevel window to follow panel theme */
         CtkStyleContext *context;
@@ -338,7 +338,7 @@ cpufreq_applet_menu_popup (CPUFreqApplet *applet,
 }
 
 static gboolean
-cpufreq_applet_button_press (CtkWidget *widget, GdkEventButton *event)
+cpufreq_applet_button_press (CtkWidget *widget, CdkEventButton *event)
 {
         CPUFreqApplet *applet;
 
@@ -359,7 +359,7 @@ cpufreq_applet_button_press (CtkWidget *widget, GdkEventButton *event)
 }
 
 static gboolean
-cpufreq_applet_key_press (CtkWidget *widget, GdkEventKey *event)
+cpufreq_applet_key_press (CtkWidget *widget, CdkEventKey *event)
 {
         CPUFreqApplet *applet;
 
@@ -518,7 +518,7 @@ cpufreq_applet_pixmap_set_image (CPUFreqApplet *applet, gint perc)
         scale = ctk_widget_get_scale_factor (CTK_WIDGET (applet->icon));
 
         if (applet->surfaces[image] == NULL) {
-                GdkPixbuf *pixbuf = cdk_pixbuf_new_from_file_at_scale (cpufreq_icons[image],
+                CdkPixbuf *pixbuf = cdk_pixbuf_new_from_file_at_scale (cpufreq_icons[image],
                                                                        size * scale,
                                                                        size * scale,
                                                                        TRUE,

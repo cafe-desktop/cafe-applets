@@ -86,7 +86,7 @@ xstuff_get_current_workspace (CtkWindow *window)
 	int     format;
 	int     result;
 	int     retval;
-	GdkDisplay *cdk_display;
+	CdkDisplay *cdk_display;
 	Display *xdisplay;
 
 	root_window = GDK_WINDOW_XID (ctk_widget_get_window (CTK_WIDGET (window)));

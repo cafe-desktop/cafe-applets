@@ -73,7 +73,7 @@ typedef struct
 
 } StickyNote;
 
-StickyNote * stickynote_new(GdkScreen *screen);
+StickyNote * stickynote_new(CdkScreen *screen);
 void stickynote_free(StickyNote *note);
 
 gboolean stickynote_get_empty(const StickyNote *note);
@@ -89,10 +89,10 @@ void stickynote_set_visible(StickyNote *note, gboolean visible);
 
 void stickynote_change_properties(StickyNote *note);
 
-void stickynotes_add(GdkScreen *screen);
+void stickynotes_add(CdkScreen *screen);
 void stickynotes_remove(StickyNote *note);
 void stickynotes_save(void);
 gboolean stickynotes_save_now (void);
-void stickynotes_load(GdkScreen *screen);
+void stickynotes_load(CdkScreen *screen);
 
 #endif /* __STICKYNOTES_H__ */

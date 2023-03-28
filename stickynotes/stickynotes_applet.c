@@ -454,7 +454,7 @@ stickynotes_applet_update_prefs (void)
 	gboolean sys_color, sys_font, sticky, force_default, desktop_hide;
 	char *font_str;
 	char *color_str, *font_color_str;
-	GdkRGBA color, font_color;
+	CdkRGBA color, font_color;
 
 	width = g_settings_get_int (stickynotes->settings, "default-width");
 	width = MAX (width, 1);

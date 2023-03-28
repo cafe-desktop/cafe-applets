@@ -564,7 +564,7 @@ cpufreq_prefs_dialog_create (CPUFreqPrefs *prefs)
 }
 
 void 
-cpufreq_preferences_dialog_run (CPUFreqPrefs *prefs, GdkScreen *screen)
+cpufreq_preferences_dialog_run (CPUFreqPrefs *prefs, CdkScreen *screen)
 {
         g_return_if_fail (CPUFREQ_IS_PREFS (prefs));
 
