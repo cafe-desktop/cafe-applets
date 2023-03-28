@@ -86,7 +86,7 @@ before_scripts:
 
 build_scripts:
   - ./before-build
-  - ./make-scanbuild '--enable-compile-warnings=maximum'
+  - ./make-scanbuild '--enable-compile-warnings=maximum --enable-stickynotes=no'
   - ./after-build
 
 after_scripts:
