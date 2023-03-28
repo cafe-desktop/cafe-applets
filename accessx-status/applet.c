@@ -357,9 +357,9 @@ static gboolean timer_reset_bouncekeys_image(AccessxStatusApplet* sapplet)
 	return G_SOURCE_REMOVE;
 }
 
-static CdkPixbuf* accessx_status_applet_get_glyph_pixbuf(CtkWidget* widget, CdkPixbuf* base, CdkRGBA* fg, gchar* glyphstring)
+static GdkPixbuf* accessx_status_applet_get_glyph_pixbuf(CtkWidget* widget, GdkPixbuf* base, CdkRGBA* fg, gchar* glyphstring)
 {
-	CdkPixbuf* glyph_pixbuf;
+	GdkPixbuf* glyph_pixbuf;
 	cairo_surface_t *surface;
 	PangoLayout* layout;
 	PangoRectangle ink, logic;
@@ -404,9 +404,9 @@ static cairo_surface_t* accessx_status_applet_altgraph_image(AccessxStatusApplet
 {
 	CtkIconTheme *icon_theme;
 	cairo_t* cr;
-	CdkPixbuf* pixbuf;
-	CdkPixbuf* glyph_pixbuf;
-	CdkPixbuf* icon_base;
+	GdkPixbuf* pixbuf;
+	GdkPixbuf* glyph_pixbuf;
+	GdkPixbuf* icon_base;
 	cairo_surface_t *surface;
 	CdkRGBA fg;
 	gchar* icon_name;
@@ -461,7 +461,7 @@ static cairo_surface_t* accessx_status_applet_altgraph_image(AccessxStatusApplet
 
 static cairo_surface_t* accessx_status_applet_slowkeys_image(AccessxStatusApplet* sapplet, XkbAccessXNotifyEvent* event)
 {
-	CdkPixbuf* ret_pixbuf;
+	GdkPixbuf* ret_pixbuf;
 	cairo_surface_t *surface;
 	CdkWindow* window;
 	gboolean is_idle = TRUE;
@@ -498,8 +498,8 @@ static cairo_surface_t* accessx_status_applet_slowkeys_image(AccessxStatusApplet
 
 	if (!is_idle)
 	{
-		CdkPixbuf* glyph_pixbuf;
-		CdkPixbuf* tmp_pixbuf;
+		GdkPixbuf* glyph_pixbuf;
+		GdkPixbuf* tmp_pixbuf;
 		CdkRGBA fg;
 		gchar* glyphstring = N_("a");
 		gint alpha;
@@ -551,8 +551,8 @@ static cairo_surface_t* accessx_status_applet_slowkeys_image(AccessxStatusApplet
 static cairo_surface_t* accessx_status_applet_bouncekeys_image(AccessxStatusApplet* sapplet, XkbAccessXNotifyEvent* event)
 {
 	CdkRGBA fg;
-	CdkPixbuf* icon_base = NULL;
-	CdkPixbuf* tmp_pixbuf;
+	GdkPixbuf* icon_base = NULL;
+	GdkPixbuf* tmp_pixbuf;
 	cairo_surface_t *surface;
 	/* Note to translators: the first letter of the alphabet, not the indefinite article */
 	gchar* glyphstring = N_("a");
@@ -601,7 +601,7 @@ static cairo_surface_t* accessx_status_applet_bouncekeys_image(AccessxStatusAppl
 
 	if (tmp_pixbuf)
 	{
-		CdkPixbuf* glyph_pixbuf;
+		GdkPixbuf* glyph_pixbuf;
 		icon_base = cdk_pixbuf_copy(tmp_pixbuf);
 		g_object_unref(tmp_pixbuf);
 		glyph_pixbuf = accessx_status_applet_get_glyph_pixbuf(CTK_WIDGET(sapplet->applet), icon_base, &fg, glyphstring);
@@ -619,7 +619,7 @@ static cairo_surface_t* accessx_status_applet_bouncekeys_image(AccessxStatusAppl
 
 static cairo_surface_t* accessx_status_applet_mousekeys_image(AccessxStatusApplet* sapplet, XkbStateNotifyEvent* event)
 {
-	CdkPixbuf* mouse_pixbuf = NULL, *button_pixbuf, *dot_pixbuf, *tmp_pixbuf;
+	GdkPixbuf* mouse_pixbuf = NULL, *button_pixbuf, *dot_pixbuf, *tmp_pixbuf;
 	cairo_surface_t *surface;
 	gchar* which_dot = MOUSEKEYS_DOT_LEFT;
 	CtkIconTheme *icon_theme = ctk_icon_theme_get_default ();

@@ -92,7 +92,7 @@ draw_eye (EyesApplet *eyes_applet,
           gint pupil_x, 
           gint pupil_y)
 {
-	CdkPixbuf *pixbuf;
+	GdkPixbuf *pixbuf;
 	CdkRectangle rect, r1, r2;
 
 	pixbuf = cdk_pixbuf_copy (eyes_applet->eye_image);

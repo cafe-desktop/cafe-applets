@@ -223,7 +223,7 @@ battery_full_notify (CtkWidget *applet)
 {
 #ifdef HAVE_LIBNOTIFY
 	GError *error = NULL;
-	CdkPixbuf *icon;
+	GdkPixbuf *icon;
 	gboolean result;
 
 	if (!notify_is_initted () && !notify_init (_("Battery Monitor")))
