@@ -21,7 +21,7 @@
 #include <glibtop.h>
 #include <ctk/ctk.h>
 #include <cdk/cdkkeysyms.h>
-#include <cdk-pixbuf/cdk-pixbuf.h>
+#include <gdk-pixbuf/gdk-pixbuf.h>
 #include <gio/gio.h>
 #include <gio/gdesktopappinfo.h>
 #include <cafe-panel-applet.h>
