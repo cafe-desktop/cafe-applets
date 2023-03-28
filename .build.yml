@@ -32,6 +32,36 @@ requires:
     - x11proto-kb-dev
     - yelp-tools
 
+    # required for cafe-common
+    - autoconf
+    - xz-utils
+
+    # required for libcafeweather
+    - autoconf-archive
+    - intltool
+    - gtk-doc-tools
+    - libsoup-gnome2.4-dev
+    - libsoup2.4-dev
+    - libtool
+    - libxml2-utils
+    - tzdata
+
+    # required for cafe-panel
+    - gir1.2-freedesktop
+    - gobject-introspection
+    - libatk1.0-dev
+    - libcairo2-dev
+    - libdconf-dev
+    - libgirepository1.0-dev
+    - libice-dev
+    - libpango1.0-dev
+    - librsvg2-dev
+    - libsm-dev
+    - libxau-dev
+    - libxrandr-dev
+    - lsb-release
+    - meson
+
 before_scripts:
   - ./html-cppcheck
   - ./debrepo-install 'libctk-3-dev gir1.2-ctk-3.0 libctk-3-common libctk-3-0 libctk-3-doc'
