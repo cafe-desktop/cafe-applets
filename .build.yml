@@ -22,8 +22,6 @@ requires:
     - libgtop2-dev
     - libgucharmap-2-90-dev
     - libiw-dev
-    - libcafe-panel-applet-dev
-    - libcafeweather-dev
     - libnotify-dev
     - libpolkit-gobject-1-dev
     - libupower-glib-dev
@@ -31,13 +29,15 @@ requires:
     - libx11-dev
     - libxml2-dev
     - make
-    - cafe-common
     - x11proto-kb-dev
     - yelp-tools
 
 before_scripts:
   - ./html-cppcheck
+  - ./debrepo-install 'libctk-3-dev gir1.2-ctk-3.0 libctk-3-common libctk-3-0 libctk-3-doc'
   - ./install-from-git https://github.com/cafe-desktop/cafe-common master
+  - ./install-from-git https://github.com/cafe-desktop/libcafeweather master
+  - ./install-from-git https://github.com/cafe-desktop/cafe-panel master
 
 build_scripts:
   - ./before-build
