@@ -20,7 +20,7 @@
 #include <config.h>
 #include <libxml/parser.h>
 #include <X11/Xatom.h>
-#include <gdk/gdkx.h>
+#include <cdk/cdkx.h>
 #include <ctk/ctk.h>
 #define WNCK_I_KNOW_THIS_IS_UNSTABLE 1
 #include <libwnck/libwnck.h>
@@ -53,7 +53,7 @@ set_icon_geometry (GdkWindow *window,
 	gulong data[4];
 	Display *dpy;
 
-	dpy = gdk_x11_display_get_xdisplay (gdk_window_get_display (window));
+	dpy = cdk_x11_display_get_xdisplay (cdk_window_get_display (window));
 
 	data[0] = x;
 	data[1] = y;
@@ -62,8 +62,8 @@ set_icon_geometry (GdkWindow *window,
 
 	XChangeProperty (dpy,
 	                 GDK_WINDOW_XID (window),
-	                 gdk_x11_get_xatom_by_name_for_display (
-	                     gdk_window_get_display (window),
+	                 cdk_x11_get_xatom_by_name_for_display (
+	                     cdk_window_get_display (window),
 	                     "_NET_WM_ICON_GEOMETRY"),
 	                 XA_CARDINAL, 32, PropModeReplace,
 	                 (guchar *)&data, 4);
@@ -344,7 +344,7 @@ void stickynote_change_properties (StickyNote *note)
 	if (color_str)
 	{
 		GdkRGBA color;
-		gdk_rgba_parse (&color, color_str);
+		cdk_rgba_parse (&color, color_str);
 		ctk_color_chooser_set_rgba (CTK_COLOR_CHOOSER (note->w_color), &color);
 		g_free (color_str);
 	}
@@ -359,7 +359,7 @@ void stickynote_change_properties (StickyNote *note)
 	if (color_str)
 	{
 		GdkRGBA font_color;
-		gdk_rgba_parse (&font_color, color_str);
+		cdk_rgba_parse (&font_color, color_str);
 		ctk_color_chooser_set_rgba (CTK_COLOR_CHOOSER (note->w_font_color), &font_color);
 		g_free (color_str);
 	}
@@ -481,7 +481,7 @@ stickynote_set_color (StickyNote  *note,
 
 		for (i = 0; i <= 3; i++)
 		{
-			gdk_rgba_parse (&colors[i], color_str_actual);
+			cdk_rgba_parse (&colors[i], color_str_actual);
 			colors[i].red = (colors[i].red * (10 - i)) / 10;
 			colors[i].green = (colors[i].green * (10 - i)) / 10;
 			colors[i].blue = (colors[i].blue * (10 - i)) / 10;
@@ -506,7 +506,7 @@ stickynote_set_color (StickyNote  *note,
 	{
 		GdkRGBA color;
 
-		gdk_rgba_parse (&color, font_color_str_actual);
+		cdk_rgba_parse (&color, font_color_str_actual);
 
 		ctk_widget_override_color (note->w_window, CTK_STATE_NORMAL, &color);
 		ctk_widget_override_color (note->w_body, CTK_STATE_NORMAL, &color);

@@ -481,8 +481,8 @@ redraw_graph(CafeNetspeedApplet *applet, cairo_t *cr)
 	double max_val;
 	double dash[2] = { 1.0, 2.0 };
 
-	w = gdk_window_get_width (real_window);
-	h = gdk_window_get_height (real_window);
+	w = cdk_window_get_width (real_window);
+	h = cdk_window_get_height (real_window);
 
 	/* the graph hight should be: hight/2 <= applet->max_graph < hight */
 	for (max_val = 1; max_val < applet->max_graph; max_val *= 2) ;
@@ -526,13 +526,13 @@ redraw_graph(CafeNetspeedApplet *applet, cairo_t *cr)
 	cairo_set_line_cap (cr, CAIRO_LINE_CAP_ROUND);
 	cairo_set_line_join (cr, CAIRO_LINE_JOIN_ROUND);
 
-	gdk_cairo_set_source_rgba (cr, &applet->in_color);
+	cdk_cairo_set_source_rgba (cr, &applet->in_color);
 	for (i = offset; i < GRAPH_VALUES; i++) {
 		cairo_line_to (cr, in_points[i].x, in_points[i].y);
 	}
 	cairo_stroke (cr);
 
-	gdk_cairo_set_source_rgba (cr, &applet->out_color);
+	cdk_cairo_set_source_rgba (cr, &applet->out_color);
 	for (i = offset; i < GRAPH_VALUES; i++) {
 		cairo_line_to (cr, out_points[i].x, out_points[i].y);
 	}
@@ -1126,7 +1126,7 @@ incolor_changed_cb (CtkColorChooser *button, gpointer data)
 	ctk_color_chooser_get_rgba (CTK_COLOR_CHOOSER (button), &color);
 	applet->in_color = color;
 
-	string = gdk_rgba_to_string (&color);
+	string = cdk_rgba_to_string (&color);
 	g_settings_set_string (applet->gsettings, "in-color", string);
 	g_free (string);
 }
@@ -1141,7 +1141,7 @@ outcolor_changed_cb (CtkColorChooser *button, gpointer data)
 	ctk_color_chooser_get_rgba (CTK_COLOR_CHOOSER (button), &color);
 	applet->out_color = color;
 
-	string = gdk_rgba_to_string (&color);
+	string = cdk_rgba_to_string (&color);
 	g_settings_set_string (applet->gsettings, "out-color", string);
 	g_free (string);
 }
@@ -1651,13 +1651,13 @@ cafe_netspeed_applet_factory(CafePanelApplet *applet_widget, const gchar *iid, g
 	tmp = g_settings_get_string (applet->gsettings, "in-color");
 	if (tmp)
 	{
-		gdk_rgba_parse (&applet->in_color, tmp);
+		cdk_rgba_parse (&applet->in_color, tmp);
 		g_free(tmp);
 	}
 	tmp = g_settings_get_string (applet->gsettings, "out-color");
 	if (tmp)
 	{
-		gdk_rgba_parse (&applet->out_color, tmp);
+		cdk_rgba_parse (&applet->out_color, tmp);
 		g_free(tmp);
 	}
 

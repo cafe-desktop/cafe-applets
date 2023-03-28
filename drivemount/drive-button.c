@@ -28,7 +28,7 @@
 #include <gio/gio.h>
 #include "drive-button.h"
 #include <glib/gi18n.h>
-#include <gdk/gdkkeysyms.h>
+#include <cdk/cdkkeysyms.h>
 #include <gio/gdesktopappinfo.h>
 
 #include <string.h>
@@ -80,7 +80,7 @@ drive_button_class_init (DriveButtonClass *class)
                                      "}",
                                      -1, NULL);
 
-    ctk_style_context_add_provider_for_screen (gdk_screen_get_default(),
+    ctk_style_context_add_provider_for_screen (cdk_screen_get_default(),
                                     CTK_STYLE_PROVIDER (provider),
                                     CTK_STYLE_PROVIDER_PRIORITY_APPLICATION);
     g_object_unref (provider);
@@ -172,12 +172,12 @@ _ctk_get_monitor_num (GdkMonitor *monitor)
     GdkDisplay *display;
     int n_monitors, i;
 
-    display = gdk_monitor_get_display(monitor);
-    n_monitors = gdk_display_get_n_monitors(display);
+    display = cdk_monitor_get_display(monitor);
+    n_monitors = cdk_display_get_n_monitors(display);
 
     for(i = 0; i < n_monitors; i++)
     {
-        if(gdk_display_get_monitor(display, i) == monitor) return i;
+        if(cdk_display_get_monitor(display, i) == monitor) return i;
     }
 
     return -1;
@@ -405,7 +405,7 @@ drive_button_update (gpointer user_data)
         gchar *color_string = g_settings_get_string (settings, "drivemount-checkmark-color");
         if (!color_string)
                 color_string = g_strdup ("#00ff00");
-        gdk_rgba_parse (&color, color_string);
+        cdk_rgba_parse (&color, color_string);
         g_free (color_string);
         g_object_unref (settings);
 
@@ -598,9 +598,9 @@ open_drive (DriveButton *self, CtkWidget *item)
 
     if (app_info) {
 	GdkDisplay *display = ctk_widget_get_display (item);
-	launch_context = gdk_display_get_app_launch_context (display);
+	launch_context = cdk_display_get_app_launch_context (display);
 	screen = ctk_widget_get_screen (CTK_WIDGET (self));
-	gdk_app_launch_context_set_screen (launch_context, screen);
+	cdk_app_launch_context_set_screen (launch_context, screen);
 	files = g_list_prepend (files, file);
 	g_app_info_launch (app_info,
 	files,
@@ -980,7 +980,7 @@ drive_button_ensure_popup (DriveButton *self)
 	CtkWidget *toplevel = ctk_widget_get_toplevel (self->popup_menu);
 	/* Fix any failures of compiz/other wm's to communicate with ctk for transparency */
 	GdkScreen *screen2 = ctk_widget_get_screen(CTK_WIDGET(toplevel));
-	GdkVisual *visual = gdk_screen_get_rgba_visual(screen2);
+	GdkVisual *visual = cdk_screen_get_rgba_visual(screen2);
 	ctk_widget_set_visual(CTK_WIDGET(toplevel), visual);
 	/*set menu and it's toplevel window to follow panel theme */
 	CtkStyleContext *context;

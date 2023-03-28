@@ -2,7 +2,7 @@
  * accented (and other) characters to be pasted into other apps.
  */
 
-#include <gdk/gdkx.h>
+#include <cdk/cdkx.h>
 #include <config.h>
 #include <string.h>
 #include <cafe-panel-applet.h>
@@ -319,7 +319,7 @@ populate_menu (charpick_data *curr_data)
 	CtkWidget *toplevel = ctk_widget_get_toplevel (CTK_WIDGET (menu));
 	/* Fix any failures of compiz/other wm's to communicate with ctk for transparency */
 	GdkScreen *screen = ctk_widget_get_screen(CTK_WIDGET(toplevel));
-	GdkVisual *visual = gdk_screen_get_rgba_visual(screen);
+	GdkVisual *visual = cdk_screen_get_rgba_visual(screen);
 	ctk_widget_set_visual(CTK_WIDGET(toplevel), visual);
 	/* Set menu and it's toplevel window to follow panel theme */
 	CtkStyleContext *context;
@@ -757,7 +757,7 @@ charpicker_applet_fill (CafePanelApplet *applet)
   g_signal_connect (G_OBJECT (curr_data->applet), "key_press_event",
 		             G_CALLBACK (key_press_event), curr_data);
 
-  utf8_atom = gdk_atom_intern ("UTF8_STRING", FALSE);
+  utf8_atom = cdk_atom_intern ("UTF8_STRING", FALSE);
   ctk_selection_add_target (curr_data->applet, 
 			    GDK_SELECTION_PRIMARY,
                             utf8_atom,

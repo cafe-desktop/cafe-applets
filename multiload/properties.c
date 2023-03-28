@@ -277,10 +277,10 @@ color_picker_set_cb(CtkColorChooser *color_picker, gchar *key)
 
 	ctk_color_chooser_get_rgba(color_picker, &color);
 
-	color_string = gdk_rgba_to_string (&color);
+	color_string = cdk_rgba_to_string (&color);
 	g_settings_set_string(ma->settings, key, color_string);
 
-	gdk_rgba_parse(&(ma->graphs[prop_type]->colors[g_ascii_digit_value(key[strlen(key) - 1]) ]),
+	cdk_rgba_parse(&(ma->graphs[prop_type]->colors[g_ascii_digit_value(key[strlen(key) - 1]) ]),
 					color_string);
 
 	return;
@@ -299,7 +299,7 @@ add_color_selector(CtkWidget *page, gchar *name, gchar *key, MultiloadApplet *ma
 	color_string = g_settings_get_string (ma->settings, key);
 	if (!color_string)
 		color_string = g_strdup ("#000000");
-	gdk_rgba_parse (&color, color_string);
+	cdk_rgba_parse (&color, color_string);
 	g_free (color_string);
 
 	vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 6);

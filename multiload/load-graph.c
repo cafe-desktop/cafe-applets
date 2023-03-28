@@ -7,7 +7,7 @@
 #include <string.h>
 #include <time.h>
 #include <glib.h>
-#include <gdk/gdkx.h>
+#include <cdk/cdkx.h>
 #include <ctk/ctk.h>
 #include <gio/gio.h>
 #include <cafe-panel-applet.h>
@@ -57,7 +57,7 @@ load_graph_draw (LoadGraph *g)
    * (after the user resized the applet in the prop dialog). */
 
   if (!g->surface)
-    g->surface = gdk_window_create_similar_surface (ctk_widget_get_window (g->disp),
+    g->surface = cdk_window_create_similar_surface (ctk_widget_get_window (g->disp),
                                                     CAIRO_CONTENT_COLOR,
                                                     g->draw_width, g->draw_height);
 
@@ -74,7 +74,7 @@ load_graph_draw (LoadGraph *g)
 
     for (j = 0; j < g->n; j++)
     {
-      gdk_cairo_set_source_rgba (cr, &(g->colors [j]));
+      cdk_cairo_set_source_rgba (cr, &(g->colors [j]));
 
       for (i = 0; i < g->draw_width; i++)
       {
@@ -131,7 +131,7 @@ load_graph_draw (LoadGraph *g)
 
     for (j = 0; j < g->n-1; j++)
     {
-      gdk_cairo_set_source_rgba (cr, &(g->colors [j]));
+      cdk_cairo_set_source_rgba (cr, &(g->colors [j]));
 
       for (i = 0; i < g->draw_width; i++)
       {
@@ -144,7 +144,7 @@ load_graph_draw (LoadGraph *g)
 
     for (j = g->n-1; j < g->n; j++)
     {
-      gdk_cairo_set_source_rgba (cr, &(g->colors [j]));
+      cdk_cairo_set_source_rgba (cr, &(g->colors [j]));
       for (i = 0; i < g->draw_width; i++)
       {
           cairo_move_to (cr, g->draw_width - i - 0.5, g->pos[i] + 0.5);
@@ -154,7 +154,7 @@ load_graph_draw (LoadGraph *g)
     }
 
     /* draw grid lines if needed */
-    gdk_cairo_set_source_rgba (cr, &(g->colors [4]));
+    cdk_cairo_set_source_rgba (cr, &(g->colors [4]));
     double spacing = 0;
     for (k = 0; k < segments -1; k++)
     {
@@ -166,7 +166,7 @@ load_graph_draw (LoadGraph *g)
     /* draw indicator if needed */
     if (level > 0)
     {
-      gdk_cairo_set_source_rgba (cr, &(g->colors [5]));
+      cdk_cairo_set_source_rgba (cr, &(g->colors [5]));
       for (k = 0; k< level; k++ )
         cairo_rectangle(cr, 0.5, (k*2) * g->draw_height/5, 5, g->draw_height/5);
       cairo_fill(cr);
@@ -189,7 +189,7 @@ load_graph_draw (LoadGraph *g)
 
     for (j = 0; j < g->n; j++)
     {
-      gdk_cairo_set_source_rgba (cr, &(g->colors [j]));
+      cdk_cairo_set_source_rgba (cr, &(g->colors [j]));
 
       for (i = 0; i < g->draw_width; i++)
       {
@@ -208,7 +208,7 @@ load_graph_draw (LoadGraph *g)
     }
 
     /* draw grid lines in Load graph if needed */
-    gdk_cairo_set_source_rgba (cr, &(g->colors [2]));
+    cdk_cairo_set_source_rgba (cr, &(g->colors [2]));
 
     double spacing = 0;
     for (k = 0; k < load - 1; k++)
@@ -312,7 +312,7 @@ load_graph_configure (CtkWidget *widget, GdkEventConfigure *event,
     load_graph_alloc (c);
 
     if (!c->surface)
-        c->surface = gdk_window_create_similar_surface (ctk_widget_get_window (c->disp),
+        c->surface = cdk_window_create_similar_surface (ctk_widget_get_window (c->disp),
                                                         CAIRO_CONTENT_COLOR,
                                                         c->draw_width, c->draw_height);
     ctk_widget_queue_draw (widget);
@@ -391,7 +391,7 @@ load_graph_load_config (LoadGraph *g)
         temp = g_settings_get_string(g->multiload->settings, name);
         if (!temp)
             temp = g_strdup ("#000000");
-        gdk_rgba_parse(&(g->colors[i]), temp);
+        cdk_rgba_parse(&(g->colors[i]), temp);
         g_free(temp);
         g_free(name);
     }

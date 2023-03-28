@@ -25,7 +25,7 @@
 #include <cafe-panel-applet.h>
 #include <cafe-panel-applet-gsettings.h>
 
-#include <gdk/gdkkeysyms.h>
+#include <cdk/cdkkeysyms.h>
 
 #ifdef HAVE_LIBNOTIFY
 #include <libnotify/notify.h>

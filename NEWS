@@ -112,7 +112,7 @@
   * weather-applet: replace deprecated CtkAlignment
   * weather-dialog: replace deprecated CtkAlignment
   * weather-prefs: replace deprecated ctk_alignment_new
-  * stickynotes: replace deprecated gdk_error_trap_push/pop functions
+  * stickynotes: replace deprecated cdk_error_trap_push/pop functions
   * cpu-freq: replace deprecated ctk_menu_popup
   * sticknotes: replace deprecated ctk_menu_popup
   * drivemount: replace deprecated ctk_menu_popup
@@ -181,11 +181,11 @@
   * GSettings for checkmark color shown for mounted volumes.
   * cpufreq: fix random invisibility of the applet
   * Mounted drives will show a little bit different icon.
-  * ctk 3.22: avoid deprecated gdk_screen_get_monitor... functions:
+  * ctk 3.22: avoid deprecated cdk_screen_get_monitor... functions:
   * README: remove link to mailing list, do some cleanup
   * Get rid of misleading_indentation and maybe-uninitialized warnings during build
-  * avoid deprecated gdk_screen_width/height
-  * avoid deprecated gdk_screen_get_width/height
+  * avoid deprecated cdk_screen_width/height
+  * avoid deprecated cdk_screen_get_width/height
   * Revert "weather-prefs: correct help link for testing"
   * all applets: don't use deprecated ctk_show_uri
   * add new digital theme
@@ -199,7 +199,7 @@
   * weather: If location changes, abort any outstanding weather updates
   * weather: Added logic to not send notification if weather update is equal
     (as decided by weather_info_equal ()) to the previous update
-  * avoid deprecated gdk_screen_get_number
+  * avoid deprecated cdk_screen_get_number
   * drivemount: If the list is empty, it will show media-floppy icon
   * stickynotes: reword previous commit a bit and don't leak dir name
   * stickynotes: create parent dir for "stickynotes-applet.xml" if it does not exist.

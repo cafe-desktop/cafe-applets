@@ -21,9 +21,9 @@
 #include <string.h>
 #include "stickynotes_applet_callbacks.h"
 #include "stickynotes.h"
-#include <gdk/gdkkeysyms.h>
+#include <cdk/cdkkeysyms.h>
 #include <X11/Xatom.h>
-#include <gdk/gdkx.h>
+#include <cdk/cdkx.h>
 
 static gboolean get_desktop_window (Window *window)
 {
@@ -33,12 +33,12 @@ static gboolean get_desktop_window (Window *window)
 	int format_returned;
 	int length_returned;
 
-	root_window = gdk_screen_get_root_window (
-				gdk_screen_get_default ());
+	root_window = cdk_screen_get_root_window (
+				cdk_screen_get_default ());
 
-	if (gdk_property_get (root_window,
-			      gdk_atom_intern ("CAJA_DESKTOP_WINDOW_ID", FALSE),
-			      gdk_x11_xatom_to_atom (XA_WINDOW),
+	if (cdk_property_get (root_window,
+			      cdk_atom_intern ("CAJA_DESKTOP_WINDOW_ID", FALSE),
+			      cdk_x11_xatom_to_atom (XA_WINDOW),
 			      0, 4, FALSE,
 			      &type_returned,
 			      &format_returned,
@@ -145,7 +145,7 @@ static GdkFilterReturn desktop_window_event_filter (GdkXEvent *xevent,
 	gboolean desktop_hide = g_settings_get_boolean (stickynotes->settings, "desktop-hide");
 	if (desktop_hide  &&
 	    (((XEvent*)xevent)->xany.type == PropertyNotify) &&
-	    (((XEvent*)xevent)->xproperty.atom == gdk_x11_get_xatom_by_name ("_NET_WM_USER_TIME"))) {
+	    (((XEvent*)xevent)->xproperty.atom == cdk_x11_get_xatom_by_name ("_NET_WM_USER_TIME"))) {
 		stickynote_show_notes (FALSE);
 	}
 	return GDK_FILTER_CONTINUE;
@@ -163,13 +163,13 @@ void install_check_click_on_desktop (void)
 	}
 
 	/* Access the desktop window. desktop_window is the root window for the
-	 * default screen, so we know using gdk_display_get_default() is correct. */
-	window = gdk_x11_window_foreign_new_for_display (gdk_display_get_default (),
+	 * default screen, so we know using cdk_display_get_default() is correct. */
+	window = cdk_x11_window_foreign_new_for_display (cdk_display_get_default (),
 	                                                 desktop_window);
 
 	/* It may contain an atom to tell us which other window to monitor */
-	user_time_window = gdk_x11_get_xatom_by_name ("_NET_WM_USER_TIME_WINDOW");
-	user_time = gdk_x11_get_xatom_by_name ("_NET_WM_USER_TIME");
+	user_time_window = cdk_x11_get_xatom_by_name ("_NET_WM_USER_TIME_WINDOW");
+	user_time = cdk_x11_get_xatom_by_name ("_NET_WM_USER_TIME");
 	if (user_time != None  &&  user_time_window != None)
 	{
 		/* Looks like the atoms are there */
@@ -180,27 +180,27 @@ void install_check_click_on_desktop (void)
 		gulong bytes;
 
 		/* We only use this extra property if the actual user-time property's missing */
-		XGetWindowProperty(GDK_DISPLAY_XDISPLAY(gdk_window_get_display(window)), desktop_window, user_time,
+		XGetWindowProperty(GDK_DISPLAY_XDISPLAY(cdk_window_get_display(window)), desktop_window, user_time,
 					0, 4, False, AnyPropertyType, &actual_type, &actual_format,
 					&nitems, &bytes, (unsigned char **)&data );
 		if (actual_type == None)
 		{
 			/* No user-time property, so look for the user-time-window */
-			XGetWindowProperty(GDK_DISPLAY_XDISPLAY(gdk_window_get_display(window)), desktop_window, user_time_window,
+			XGetWindowProperty(GDK_DISPLAY_XDISPLAY(cdk_window_get_display(window)), desktop_window, user_time_window,
 					0, 4, False, AnyPropertyType, &actual_type, &actual_format,
 					&nitems, &bytes, (unsigned char **)&data );
 			if (actual_type != None)
 			{
 				/* We have another window to monitor */
 				desktop_window = *data;
-				window = gdk_x11_window_foreign_new_for_display (gdk_window_get_display (window),
+				window = cdk_x11_window_foreign_new_for_display (cdk_window_get_display (window),
 				                                                 desktop_window);
 			}
 		}
 	}
 
-	gdk_window_set_events (window, GDK_PROPERTY_CHANGE_MASK);
-	gdk_window_add_filter (window, desktop_window_event_filter, NULL);
+	cdk_window_set_events (window, GDK_PROPERTY_CHANGE_MASK);
+	cdk_window_add_filter (window, desktop_window_event_filter, NULL);
 }
 
 /* Applet Callback : Change the panel orientation. */
@@ -434,8 +434,8 @@ preferences_color_cb (CtkWidget *button, gpointer data)
 	ctk_color_chooser_get_rgba (CTK_COLOR_CHOOSER (stickynotes->w_prefs_color), &color);
 	ctk_color_chooser_get_rgba (CTK_COLOR_CHOOSER (stickynotes->w_prefs_font_color), &font_color);
 
-	color_str = gdk_rgba_to_string (&color);
-	font_color_str = gdk_rgba_to_string (&font_color);
+	color_str = cdk_rgba_to_string (&color);
+	font_color_str = cdk_rgba_to_string (&font_color);
 
 	g_settings_set_string (stickynotes->settings, "default-color", color_str);
 	g_settings_set_string (stickynotes->settings, "default-font-color", font_color_str);

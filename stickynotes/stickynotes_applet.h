@@ -21,7 +21,7 @@
 #define __STICKYNOTES_APPLET_H__
 
 #include <glib/gi18n.h>
-#include <gdk/gdk.h>
+#include <cdk/cdk.h>
 #include <ctk/ctk.h>
 #include <gio/gio.h>
 #include <cafe-panel-applet.h>

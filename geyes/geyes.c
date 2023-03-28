@@ -95,7 +95,7 @@ draw_eye (EyesApplet *eyes_applet,
 	GdkPixbuf *pixbuf;
 	GdkRectangle rect, r1, r2;
 
-	pixbuf = gdk_pixbuf_copy (eyes_applet->eye_image);
+	pixbuf = cdk_pixbuf_copy (eyes_applet->eye_image);
 	r1.x = pupil_x - eyes_applet->pupil_width / 2;
 	r1.y = pupil_y - eyes_applet->pupil_height / 2;
 	r1.width = eyes_applet->pupil_width;
@@ -104,8 +104,8 @@ draw_eye (EyesApplet *eyes_applet,
 	r2.y = 0;
 	r2.width = eyes_applet->eye_width;
 	r2.height = eyes_applet->eye_height;
-	gdk_rectangle_intersect (&r1, &r2, &rect);
-	gdk_pixbuf_composite (eyes_applet->pupil_image, pixbuf, 
+	cdk_rectangle_intersect (&r1, &r2, &rect);
+	cdk_pixbuf_composite (eyes_applet->pupil_image, pixbuf, 
 					   rect.x,
 					   rect.y,
 					   rect.width,
@@ -130,12 +130,12 @@ timer_cb (EyesApplet *eyes_applet)
         gint i;
 
         display = ctk_widget_get_display (CTK_WIDGET (eyes_applet->applet));
-        seat = gdk_display_get_default_seat (display);
+        seat = cdk_display_get_default_seat (display);
 
         for (i = 0; i < eyes_applet->num_eyes; i++) {
 		if (ctk_widget_get_realized (eyes_applet->eyes[i])) {
-            gdk_window_get_device_position (ctk_widget_get_window (eyes_applet->eyes[i]),
-                                            gdk_seat_get_pointer (seat),
+            cdk_window_get_device_position (ctk_widget_get_window (eyes_applet->eyes[i]),
+                                            cdk_seat_get_pointer (seat),
                                             &x, &y, NULL);
 
 			if ((x != eyes_applet->pointer_last_x[i]) || (y != eyes_applet->pointer_last_y[i])) { 

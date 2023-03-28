@@ -15,8 +15,8 @@
 #include <config.h>
 #include <unistd.h>
 
-#include <gdk/gdk.h>
-#include <gdk/gdkx.h>
+#include <cdk/cdk.h>
+#include <cdk/cdkx.h>
 
 #include <X11/Xlib.h>
 
@@ -48,9 +48,9 @@ draw_zoom_animation (GdkScreen *gscreen,
 	int screen;
 	int depth;
 
-	dpy = gdk_x11_display_get_xdisplay (gdk_screen_get_display (gscreen));
-	root_win = GDK_WINDOW_XID (gdk_screen_get_root_window (gscreen));
-	screen = gdk_x11_screen_get_screen_number (gscreen);
+	dpy = cdk_x11_display_get_xdisplay (cdk_screen_get_display (gscreen));
+	root_win = GDK_WINDOW_XID (cdk_screen_get_root_window (gscreen));
+	screen = cdk_x11_screen_get_screen_number (gscreen);
 	depth = DefaultDepth(dpy,screen);
 
 	/* frame GC */
@@ -158,7 +158,7 @@ xstuff_zoom_anicafe (CtkWidget *widget, GdkRectangle *opt_rect)
 	if (opt_rect)
 		rect = *opt_rect;
 	else {
-		gdk_window_get_origin (ctk_widget_get_window (widget), &rect.x, &rect.y);
+		cdk_window_get_origin (ctk_widget_get_window (widget), &rect.x, &rect.y);
 		ctk_widget_get_allocation (widget, &allocation);
 		if (!ctk_widget_get_has_window (widget)) {
 			rect.x += allocation.x;
@@ -169,9 +169,9 @@ xstuff_zoom_anicafe (CtkWidget *widget, GdkRectangle *opt_rect)
 	}
 
 	gscreen = ctk_widget_get_screen (widget);
-	monitor = gdk_display_get_monitor_at_window (gdk_screen_get_display (gscreen),
+	monitor = cdk_display_get_monitor_at_window (cdk_screen_get_display (gscreen),
 						     ctk_widget_get_window (widget));
-	gdk_monitor_get_geometry (monitor, &dest);
+	cdk_monitor_get_geometry (monitor, &dest);
 
 	draw_zoom_animation (gscreen,
 			     rect.x, rect.y, rect.width, rect.height,

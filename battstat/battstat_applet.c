@@ -664,7 +664,7 @@ check_for_updates( gpointer data )
       battery_low_dialog(battstat, &info);
 
       if(battstat->beep)
-	gdk_display_beep (gdk_display_get_default ());
+	cdk_display_beep (cdk_display_get_default ());
     }
   }
 
@@ -682,7 +682,7 @@ check_for_updates( gpointer data )
       battery_full_dialog (battstat->applet);
 
       if (battstat->beep)
-	gdk_display_beep (gdk_display_get_default ());
+	cdk_display_beep (cdk_display_get_default ());
     }
   }
 

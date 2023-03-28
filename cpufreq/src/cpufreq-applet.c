@@ -24,8 +24,8 @@
 #endif
 
 #include <ctk/ctk.h>
-#include <gdk/gdkx.h>
-#include <gdk/gdkkeysyms.h>
+#include <cdk/cdkx.h>
+#include <cdk/cdkkeysyms.h>
 #include <gio/gio.h>
 #include <cafe-panel-applet.h>
 #include <cafe-panel-applet-gsettings.h>
@@ -322,7 +322,7 @@ cpufreq_applet_menu_popup (CPUFreqApplet *applet,
         CtkWidget *toplevel = ctk_widget_get_toplevel (menu);
         /* Fix any failures of compiz/other wm's to communicate with ctk for transparency */
         GdkScreen *screen = ctk_widget_get_screen(CTK_WIDGET(toplevel));
-        GdkVisual *visual = gdk_screen_get_rgba_visual(screen);
+        GdkVisual *visual = cdk_screen_get_rgba_visual(screen);
         ctk_widget_set_visual(CTK_WIDGET(toplevel), visual);
         /* Set menu and it's toplevel window to follow panel theme */
         CtkStyleContext *context;
@@ -518,12 +518,12 @@ cpufreq_applet_pixmap_set_image (CPUFreqApplet *applet, gint perc)
         scale = ctk_widget_get_scale_factor (CTK_WIDGET (applet->icon));
 
         if (applet->surfaces[image] == NULL) {
-                GdkPixbuf *pixbuf = gdk_pixbuf_new_from_file_at_scale (cpufreq_icons[image],
+                GdkPixbuf *pixbuf = cdk_pixbuf_new_from_file_at_scale (cpufreq_icons[image],
                                                                        size * scale,
                                                                        size * scale,
                                                                        TRUE,
                                                                        NULL);
-                applet->surfaces[image] = gdk_cairo_surface_create_from_pixbuf (pixbuf, scale, NULL);
+                applet->surfaces[image] = cdk_cairo_surface_create_from_pixbuf (pixbuf, scale, NULL);
         }
 
         ctk_image_set_from_surface (CTK_IMAGE (applet->icon), applet->surfaces[image]);

@@ -24,8 +24,8 @@
 
 #include <X11/Xlib.h>
 #include <X11/Xatom.h>
-#include <gdk/gdk.h>
-#include <gdk/gdkx.h>
+#include <cdk/cdk.h>
+#include <cdk/cdkx.h>
 #include <ctk/ctk.h>
 
 /* Returns the current date in a customizable form, the default
@@ -57,7 +57,7 @@ xstuff_atom_get (const char *atom_name)
 
 	g_return_val_if_fail (atom_name != NULL, None);
 
-	xdisplay = GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
+	xdisplay = GDK_DISPLAY_XDISPLAY (cdk_display_get_default ());
 
 	if (!atom_hash)
 		atom_hash = g_hash_table_new_full (
@@ -86,14 +86,14 @@ xstuff_get_current_workspace (CtkWindow *window)
 	int     format;
 	int     result;
 	int     retval;
-	GdkDisplay *gdk_display;
+	GdkDisplay *cdk_display;
 	Display *xdisplay;
 
 	root_window = GDK_WINDOW_XID (ctk_widget_get_window (CTK_WIDGET (window)));
-    gdk_display = gdk_display_get_default ();
-	xdisplay = GDK_DISPLAY_XDISPLAY (gdk_display);
+    cdk_display = cdk_display_get_default ();
+	xdisplay = GDK_DISPLAY_XDISPLAY (cdk_display);
 
-	gdk_x11_display_error_trap_push (gdk_display);
+	cdk_x11_display_error_trap_push (cdk_display);
 	result = XGetWindowProperty (xdisplay,
 				     root_window,
 				     xstuff_atom_get ("_NET_CURRENT_DESKTOP"),
@@ -101,7 +101,7 @@ xstuff_get_current_workspace (CtkWindow *window)
 				     False, XA_CARDINAL,
 				     &type, &format, &nitems,
 				     &bytes_after, (gpointer) &num);
-	if (gdk_x11_display_error_trap_pop (gdk_display) || result != Success)
+	if (cdk_x11_display_error_trap_pop (cdk_display) || result != Success)
 		return -1;
  
 	if (type != XA_CARDINAL) {
@@ -121,17 +121,17 @@ xstuff_change_workspace (CtkWindow *window,
 {
   XEvent xev;
   Window xwindow;
-  Display *gdk_display;
+  Display *cdk_display;
   Screen *screen;
 
-  gdk_display = GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
+  cdk_display = GDK_DISPLAY_XDISPLAY (cdk_display_get_default ());
   xwindow = GDK_WINDOW_XID (GDK_WINDOW (ctk_widget_get_window (CTK_WIDGET (window))));
   screen = GDK_SCREEN_XSCREEN (ctk_widget_get_screen (CTK_WIDGET (window)));
   
   xev.xclient.type = ClientMessage;
   xev.xclient.serial = 0;
   xev.xclient.send_event = True;
-  xev.xclient.display = gdk_display;
+  xev.xclient.display = cdk_display;
   xev.xclient.window = xwindow;
   xev.xclient.message_type = xstuff_atom_get ("_NET_WM_DESKTOP");
   xev.xclient.format = 32;
@@ -139,7 +139,7 @@ xstuff_change_workspace (CtkWindow *window,
   xev.xclient.data.l[1] = 0;
   xev.xclient.data.l[2] = 0;
 
-  XSendEvent (gdk_display,
+  XSendEvent (cdk_display,
 	      RootWindowOfScreen (screen),
               False,
 	      SubstructureRedirectMask | SubstructureNotifyMask,
