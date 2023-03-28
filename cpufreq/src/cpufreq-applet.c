@@ -518,7 +518,7 @@ cpufreq_applet_pixmap_set_image (CPUFreqApplet *applet, gint perc)
         scale = ctk_widget_get_scale_factor (CTK_WIDGET (applet->icon));
 
         if (applet->surfaces[image] == NULL) {
-                CdkPixbuf *pixbuf = cdk_pixbuf_new_from_file_at_scale (cpufreq_icons[image],
+                GdkPixbuf *pixbuf = cdk_pixbuf_new_from_file_at_scale (cpufreq_icons[image],
                                                                        size * scale,
                                                                        size * scale,
                                                                        TRUE,

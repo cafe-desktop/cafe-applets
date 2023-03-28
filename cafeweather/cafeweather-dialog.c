@@ -606,7 +606,7 @@ void cafeweather_dialog_update(CafeWeatherDialog* dialog)
 
     /* Update radar map */
     if (gw_applet->cafeweather_pref.radar_enabled) {
-        CdkPixbufAnimation *radar;
+        GdkPixbufAnimation *radar;
 
 	radar = weather_info_get_radar (gw_applet->cafeweather_info);
         if (radar) {
