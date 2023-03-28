@@ -54,7 +54,7 @@
 
 /* set sensitive and setup NEVER_SENSITIVE appropriately */
 static void
-hard_set_sensitive (GtkWidget *w, gboolean sensitivity)
+hard_set_sensitive (CtkWidget *w, gboolean sensitivity)
 {
 	ctk_widget_set_sensitive (w, sensitivity);
 	g_object_set_data (G_OBJECT (w), NEVER_SENSITIVE,
@@ -65,7 +65,7 @@ hard_set_sensitive (GtkWidget *w, gboolean sensitivity)
 #if 0
 /* set sensitive, but always insensitive if NEVER_SENSITIVE is set */
 static void
-soft_set_sensitive (GtkWidget *w, gboolean sensitivity)
+soft_set_sensitive (CtkWidget *w, gboolean sensitivity)
 {
 	if (g_object_get_data (G_OBJECT (w), NEVER_SENSITIVE))
 		ctk_widget_set_sensitive (w, FALSE);
@@ -75,7 +75,7 @@ soft_set_sensitive (GtkWidget *w, gboolean sensitivity)
 #endif /* 0 */
 
 static void
-combo_ptr_cb (GtkWidget *combo_ptr, gpointer data)
+combo_ptr_cb (CtkWidget *combo_ptr, gpointer data)
 {
 	ProgressData *battstat = data;
 	
@@ -90,7 +90,7 @@ combo_ptr_cb (GtkWidget *combo_ptr, gpointer data)
 }
 
 static void
-spin_ptr_cb (GtkWidget *spin_ptr, gpointer data)
+spin_ptr_cb (CtkWidget *spin_ptr, gpointer data)
 {
 	ProgressData *battstat = data;
 
@@ -111,7 +111,7 @@ spin_ptr_cb (GtkWidget *spin_ptr, gpointer data)
 }
 
 static void
-show_text_toggled (GtkToggleButton *button, gpointer data)
+show_text_toggled (CtkToggleButton *button, gpointer data)
 {
   ProgressData   *battstat = data;
   
@@ -139,7 +139,7 @@ show_text_toggled (GtkToggleButton *button, gpointer data)
 }
 
 static void
-lowbatt_toggled (GtkToggleButton *button, gpointer data)
+lowbatt_toggled (CtkToggleButton *button, gpointer data)
 {
   ProgressData   *battstat = data;
   
@@ -151,7 +151,7 @@ lowbatt_toggled (GtkToggleButton *button, gpointer data)
 }
 
 static void
-full_toggled (GtkToggleButton *button, gpointer data)
+full_toggled (CtkToggleButton *button, gpointer data)
 {
   ProgressData   *battstat = data;
   
@@ -161,7 +161,7 @@ full_toggled (GtkToggleButton *button, gpointer data)
 }
 
 static void
-response_cb (GtkDialog *dialog, gint id, gpointer data)
+response_cb (CtkDialog *dialog, gint id, gpointer data)
 {
   ProgressData *battstat = data;
   
@@ -172,14 +172,14 @@ response_cb (GtkDialog *dialog, gint id, gpointer data)
 }
 
 void
-prop_cb (GtkAction    *action,
+prop_cb (CtkAction    *action,
 				 ProgressData *battstat)
 {
-  GtkBuilder *builder;
-  GtkWidget *combo_ptr, *spin_ptr;
-  GtkListStore *liststore;
-  GtkCellRenderer *renderer;
-  GtkTreeIter iter;
+  CtkBuilder *builder;
+  CtkWidget *combo_ptr, *spin_ptr;
+  CtkListStore *liststore;
+  CtkCellRenderer *renderer;
+  CtkTreeIter iter;
 
   if (DEBUG) g_print("prop_cb()\n");
 

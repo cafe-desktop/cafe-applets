@@ -26,11 +26,11 @@
 #include "config.h"
 
 /* only one concurrent trash empty operation can occur */
-static GtkDialog          *trash_empty_confirm_dialog;
-static GtkDialog          *trash_empty_dialog;
-static GtkProgressBar     *trash_empty_progress_bar;
-static GtkLabel           *trash_empty_location;
-static GtkLabel           *trash_empty_file;
+static CtkDialog          *trash_empty_confirm_dialog;
+static CtkDialog          *trash_empty_dialog;
+static CtkProgressBar     *trash_empty_progress_bar;
+static CtkLabel           *trash_empty_location;
+static CtkLabel           *trash_empty_file;
 
 /* the rules:
  * 1) nothing here may be modified while trash_empty_update_pending.
@@ -231,7 +231,7 @@ trash_empty_job (GIOSchedulerJob *job,
 /* ================ worker thread code ends here ================ */
 
 static void
-trash_empty_start (GtkWidget *parent)
+trash_empty_start (CtkWidget *parent)
 {
   struct { const char *name; gpointer *pointer; } widgets[] =
     {
@@ -241,7 +241,7 @@ trash_empty_start (GtkWidget *parent)
       { "file_label",        (gpointer *) &trash_empty_file          }
     };
   GCancellable *cancellable;
-  GtkBuilder *builder;
+  CtkBuilder *builder;
   gint i;
 
   builder = ctk_builder_new ();
@@ -295,7 +295,7 @@ trash_empty_require_confirmation (void)
 }
 
 static void
-trash_empty_confirmation_response (GtkDialog *dialog,
+trash_empty_confirmation_response (CtkDialog *dialog,
                                    gint       response_id,
                                    gpointer   user_data)
 {
@@ -312,10 +312,10 @@ trash_empty_confirmation_response (GtkDialog *dialog,
  * by Michiel Sikkes <michiel@eyesopened.nl> and adapted for the applet.
  */
 static void
-trash_empty_show_confirmation_dialog (GtkWidget *parent)
+trash_empty_show_confirmation_dialog (CtkWidget *parent)
 {
-  GtkWidget *dialog;
-  GtkWidget *button;
+  CtkWidget *dialog;
+  CtkWidget *button;
   GdkScreen *screen;
 
   if (!trash_empty_require_confirmation ())
@@ -366,7 +366,7 @@ trash_empty_show_confirmation_dialog (GtkWidget *parent)
 }
 
 void
-trash_empty (GtkWidget *parent)
+trash_empty (CtkWidget *parent)
 {
   if (trash_empty_confirm_dialog)
     ctk_window_present (GTK_WINDOW (trash_empty_confirm_dialog));

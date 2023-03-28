@@ -53,10 +53,10 @@
 #define BATTSTAT_SCHEMA "org.cafe.panel.applet.battstat"
 
 static gboolean check_for_updates (gpointer data);
-static void about_cb( GtkAction *, ProgressData * );
-static void help_cb( GtkAction *, ProgressData * );
+static void about_cb( CtkAction *, ProgressData * );
+static void help_cb( CtkAction *, ProgressData * );
 
-static const GtkActionEntry battstat_menu_actions [] = {
+static const CtkActionEntry battstat_menu_actions [] = {
 	{ "BattstatProperties", "document-properties", N_("_Preferences"),
 	  NULL, NULL,
 	  G_CALLBACK (prop_cb) },
@@ -143,9 +143,9 @@ static_global_teardown (ProgressData *battstat)
 /* Pop up an error dialog on the same screen as 'applet' saying 'msg'.
  */
 static void
-battstat_error_dialog( GtkWidget *applet, const char *msg )
+battstat_error_dialog( CtkWidget *applet, const char *msg )
 {
-  GtkWidget *dialog;
+  CtkWidget *dialog;
 
   dialog = ctk_message_dialog_new( NULL, 0, GTK_MESSAGE_ERROR,
                                    GTK_BUTTONS_OK, "%s", msg);
@@ -219,7 +219,7 @@ get_remaining (BatteryStatus *info)
 }
 
 static gboolean
-battery_full_notify (GtkWidget *applet)
+battery_full_notify (CtkWidget *applet)
 {
 #ifdef HAVE_LIBNOTIFY
 	GError *error = NULL;
@@ -261,13 +261,13 @@ battery_full_notify (GtkWidget *applet)
 /* Show a dialog notifying the user that their battery is done charging.
  */
 static void
-battery_full_dialog (GtkWidget *applet)
+battery_full_dialog (CtkWidget *applet)
 {
   /* first attempt to use libnotify */
   if (battery_full_notify (applet))
 	  return;
 
-  GtkWidget *dialog, *hbox, *image, *label;
+  CtkWidget *dialog, *hbox, *image, *label;
   cairo_surface_t *surface;
 
   gchar *new_label;
@@ -353,7 +353,7 @@ battery_low_update_text( ProgressData *battstat, BatteryStatus *info )
 {
   const char *suggest;
   gchar *remaining, *new_label;
-  GtkRequisition size;
+  CtkRequisition size;
 
   /* If we're not displaying the dialog then don't update it. */
   if( battstat->battery_low_label == NULL ||
@@ -420,8 +420,8 @@ battery_low_update_text( ProgressData *battstat, BatteryStatus *info )
 static void
 battery_low_dialog( ProgressData *battery, BatteryStatus *info )
 {
-  GtkWidget *hbox, *image, *label;
-  GtkWidget *vbox;
+  CtkWidget *hbox, *image, *label;
+  CtkWidget *vbox;
   cairo_surface_t *surface;
 
   /* If the dialog is already displayed then don't display it again. */
@@ -550,7 +550,7 @@ update_percent_label( ProgressData *battstat, BatteryStatus *info )
 static void
 possibly_update_status_icon( ProgressData *battstat, BatteryStatus *info )
 {
-  GtkIconTheme *theme;
+  CtkIconTheme *theme;
   cairo_surface_t *surface;
   gint icon_size, icon_scale;
   gchar *icon_name;
@@ -734,7 +734,7 @@ check_for_updates( gpointer data )
    decrease our applet count (and possibly perform global cleanup)
  */
 static void
-destroy_applet( GtkWidget *widget, ProgressData *battstat )
+destroy_applet( CtkWidget *widget, ProgressData *battstat )
 {
   if (DEBUG) g_print("destroy_applet()\n");
 
@@ -793,7 +793,7 @@ battstat_show_help( ProgressData *battstat, const char *section )
 /* Called when the user selects the 'help' menu item.
  */
 static void
-help_cb( GtkAction *action, ProgressData *battstat )
+help_cb( CtkAction *action, ProgressData *battstat )
 {
   battstat_show_help( battstat, NULL );
 }
@@ -801,7 +801,7 @@ help_cb( GtkAction *action, ProgressData *battstat )
 /* Called when the user selects the 'about' menu item.
  */
 static void
-about_cb( GtkAction *action, ProgressData *battstat )
+about_cb( CtkAction *action, ProgressData *battstat )
 {
   const gchar *authors[] = {
     "J\xC3\xB6rgen Pehrson <jp@spektr.eu.org>",
@@ -894,7 +894,7 @@ change_orient (CafePanelApplet       *applet,
    is just created or if the size of the panel has changed.
 */
 static void
-size_allocate( CafePanelApplet *applet, GtkAllocation *allocation,
+size_allocate( CafePanelApplet *applet, CtkAllocation *allocation,
                ProgressData *battstat)
 {
   if (DEBUG) g_print("applet_change_pixel_size()\n");
@@ -937,12 +937,12 @@ load_preferences(ProgressData *battstat)
   battstat->showtext = g_settings_get_int (settings, "show-text");
 }
 
-/* Convenience function to attach a child widget to a GtkGrid in the
+/* Convenience function to attach a child widget to a CtkGrid in the
    position indicated by 'loc'.  This is very special-purpose for 3x3
    gridss and only supports positions that are used in this applet.
  */
 static void
-grid_layout_attach (GtkGrid *grid, LayoutLocation loc, GtkWidget *child)
+grid_layout_attach (CtkGrid *grid, LayoutLocation loc, CtkWidget *child)
 {
   switch( loc )
   {
@@ -1057,7 +1057,7 @@ create_layout(ProgressData *battstat)
   battstat->percent = ctk_label_new( "" );
   battstat->status = ctk_image_new();
 
-  /* When you first get a pointer to a newly created GtkWidget it has one
+  /* When you first get a pointer to a newly created CtkWidget it has one
      'floating' reference.  When you first add this widget to a container
      the container adds a real reference and removes the floating reference
      if one exists.  Since we insert/remove these widgets from the table
@@ -1106,7 +1106,7 @@ battstat_applet_fill (CafePanelApplet *applet)
 {
   ProgressData *battstat;
   AtkObject *atk_widget;
-  GtkActionGroup *action_group;
+  CtkActionGroup *action_group;
   gchar *ui_path;
   const char *err;
 
@@ -1153,7 +1153,7 @@ battstat_applet_fill (CafePanelApplet *applet)
   g_free (ui_path);
 
   if (cafe_panel_applet_get_locked_down (CAFE_PANEL_APPLET (battstat->applet))) {
-	  GtkAction *action;
+	  CtkAction *action;
 
 	  action = ctk_action_group_get_action (action_group, "BattstatProperties");
 	  ctk_action_set_visible (action, FALSE);

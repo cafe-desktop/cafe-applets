@@ -28,22 +28,22 @@
 #include "cafeweather-dialog.h"
 
 struct _CafeWeatherDialogPrivate {
-	GtkWidget* cond_location;
-	GtkWidget* cond_update;
-	GtkWidget* cond_cond;
-	GtkWidget* cond_sky;
-	GtkWidget* cond_temp;
-	GtkWidget* cond_dew;
-	GtkWidget* cond_humidity;
-	GtkWidget* cond_wind;
-	GtkWidget* cond_pressure;
-	GtkWidget* cond_vis;
-	GtkWidget* cond_apparent;
-	GtkWidget* cond_sunrise;
-	GtkWidget* cond_sunset;
-	GtkWidget* cond_image;
-	GtkWidget* forecast_text;
-	GtkWidget* radar_image;
+	CtkWidget* cond_location;
+	CtkWidget* cond_update;
+	CtkWidget* cond_cond;
+	CtkWidget* cond_sky;
+	CtkWidget* cond_temp;
+	CtkWidget* cond_dew;
+	CtkWidget* cond_humidity;
+	CtkWidget* cond_wind;
+	CtkWidget* cond_pressure;
+	CtkWidget* cond_vis;
+	CtkWidget* cond_apparent;
+	CtkWidget* cond_sunrise;
+	CtkWidget* cond_sunset;
+	CtkWidget* cond_image;
+	CtkWidget* forecast_text;
+	CtkWidget* radar_image;
 
 	CafeWeatherApplet* applet;
 };
@@ -104,7 +104,7 @@ static void response_cb(CafeWeatherDialog* dialog, gint id, gpointer data)
     }
 }
 
-static void link_cb(GtkButton* button, gpointer data)
+static void link_cb(CtkButton* button, gpointer data)
 {
     ctk_show_uri_on_window (NULL,
                             "http://www.weather.com/",
@@ -145,34 +145,34 @@ static void cafeweather_dialog_create(CafeWeatherDialog* dialog)
   CafeWeatherDialogPrivate *priv;
   CafeWeatherApplet *gw_applet;
 
-  GtkWidget *weather_vbox;
-  GtkWidget *weather_notebook;
-  GtkWidget *cond_hbox;
-  GtkWidget *cond_grid;
-  GtkWidget *cond_location_lbl;
-  GtkWidget *cond_update_lbl;
-  GtkWidget *cond_temp_lbl;
-  GtkWidget *cond_cond_lbl;
-  GtkWidget *cond_sky_lbl;
-  GtkWidget *cond_wind_lbl;
-  GtkWidget *cond_humidity_lbl;
-  GtkWidget *cond_pressure_lbl;
-  GtkWidget *cond_vis_lbl;
-  GtkWidget *cond_dew_lbl;
-  GtkWidget *cond_apparent_lbl;
-  GtkWidget *cond_sunrise_lbl;
-  GtkWidget *cond_sunset_lbl;
-  GtkWidget *cond_vbox;
-  GtkWidget *current_note_lbl;
-  GtkWidget *forecast_note_lbl;
-  GtkWidget *radar_note_lbl;
-  GtkWidget *radar_vbox;
-  GtkWidget *radar_link_btn;
-  GtkWidget *radar_link_box;
-  GtkWidget *forecast_hbox;
-  GtkWidget *ebox;
-  GtkWidget *scrolled_window;
-  GtkWidget *imagescroll_window;
+  CtkWidget *weather_vbox;
+  CtkWidget *weather_notebook;
+  CtkWidget *cond_hbox;
+  CtkWidget *cond_grid;
+  CtkWidget *cond_location_lbl;
+  CtkWidget *cond_update_lbl;
+  CtkWidget *cond_temp_lbl;
+  CtkWidget *cond_cond_lbl;
+  CtkWidget *cond_sky_lbl;
+  CtkWidget *cond_wind_lbl;
+  CtkWidget *cond_humidity_lbl;
+  CtkWidget *cond_pressure_lbl;
+  CtkWidget *cond_vis_lbl;
+  CtkWidget *cond_dew_lbl;
+  CtkWidget *cond_apparent_lbl;
+  CtkWidget *cond_sunrise_lbl;
+  CtkWidget *cond_sunset_lbl;
+  CtkWidget *cond_vbox;
+  CtkWidget *current_note_lbl;
+  CtkWidget *forecast_note_lbl;
+  CtkWidget *radar_note_lbl;
+  CtkWidget *radar_vbox;
+  CtkWidget *radar_link_btn;
+  CtkWidget *radar_link_box;
+  CtkWidget *forecast_hbox;
+  CtkWidget *ebox;
+  CtkWidget *scrolled_window;
+  CtkWidget *imagescroll_window;
 
   priv = dialog->priv;
   gw_applet = priv->applet;
@@ -504,11 +504,11 @@ static PangoFontDescription* get_system_monospace_font(void)
 }
 
 static void
-override_widget_font (GtkWidget            *widget,
+override_widget_font (CtkWidget            *widget,
                       PangoFontDescription *font)
 {
     static gboolean provider_added = FALSE;
-    static GtkCssProvider *provider;
+    static CtkCssProvider *provider;
     gchar          *css;
     gchar          *family;
     gchar          *weight;
@@ -554,7 +554,7 @@ void cafeweather_dialog_update(CafeWeatherDialog* dialog)
     CafeWeatherDialogPrivate *priv;
     CafeWeatherApplet *gw_applet;
     gchar *forecast;
-    GtkTextBuffer *buffer;
+    CtkTextBuffer *buffer;
     PangoFontDescription *font_desc;
     const gchar *icon_name;
 
@@ -657,14 +657,14 @@ static GObject* cafeweather_dialog_constructor(GType type, guint n_construct_par
     return object;
 }
 
-GtkWidget* cafeweather_dialog_new(CafeWeatherApplet* applet)
+CtkWidget* cafeweather_dialog_new(CafeWeatherApplet* applet)
 {
 	return g_object_new(CAFEWEATHER_TYPE_DIALOG,
 		"cafeweather-applet", applet,
 		NULL);
 }
 
-static void cafeweather_dialog_unrealize(GtkWidget* widget)
+static void cafeweather_dialog_unrealize(CtkWidget* widget)
 {
     CafeWeatherDialog* self = CAFEWEATHER_DIALOG(widget);
 
@@ -676,7 +676,7 @@ static void cafeweather_dialog_unrealize(GtkWidget* widget)
 static void cafeweather_dialog_class_init(CafeWeatherDialogClass* klass)
 {
     GObjectClass *object_class = G_OBJECT_CLASS (klass);
-    GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
+    CtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
 
     cafeweather_dialog_parent_class = g_type_class_peek_parent (klass);
 

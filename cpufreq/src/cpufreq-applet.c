@@ -56,12 +56,12 @@ struct _CPUFreqApplet {
         CafePanelAppletOrient orient;
         gint              size;
 
-        GtkWidget        *label;
-        GtkWidget        *unit_label;
-        GtkWidget        *icon;
-        GtkWidget        *box;
-	GtkWidget        *labels_box;
-        GtkWidget        *container;
+        CtkWidget        *label;
+        CtkWidget        *unit_label;
+        CtkWidget        *icon;
+        CtkWidget        *box;
+	CtkWidget        *labels_box;
+        CtkWidget        *container;
         cairo_surface_t  *surfaces[5];
 
 	gboolean          need_refresh;
@@ -74,11 +74,11 @@ struct _CPUFreqAppletClass {
         CafePanelAppletClass parent_class;
 };
 
-static void     cpufreq_applet_preferences_cb    (GtkAction          *action,
+static void     cpufreq_applet_preferences_cb    (CtkAction          *action,
                                                   CPUFreqApplet      *applet);
-static void     cpufreq_applet_help_cb           (GtkAction          *action,
+static void     cpufreq_applet_help_cb           (CtkAction          *action,
                                                   CPUFreqApplet      *applet);
-static void     cpufreq_applet_about_cb          (GtkAction          *action,
+static void     cpufreq_applet_about_cb          (CtkAction          *action,
                                                   CPUFreqApplet      *applet);
 
 static void     cpufreq_applet_pixmap_set_image  (CPUFreqApplet      *applet,
@@ -90,15 +90,15 @@ static void     cpufreq_applet_update            (CPUFreqApplet      *applet,
 static void     cpufreq_applet_refresh           (CPUFreqApplet      *applet);
 
 static void     cpufreq_applet_dispose           (GObject            *widget);
-static gboolean cpufreq_applet_button_press      (GtkWidget          *widget,
+static gboolean cpufreq_applet_button_press      (CtkWidget          *widget,
                                                   GdkEventButton     *event);
-static gboolean cpufreq_applet_key_press         (GtkWidget          *widget,
+static gboolean cpufreq_applet_key_press         (CtkWidget          *widget,
                                                   GdkEventKey        *event);
-static void     cpufreq_applet_size_allocate     (GtkWidget          *widget,
-                                                  GtkAllocation      *allocation);
+static void     cpufreq_applet_size_allocate     (CtkWidget          *widget,
+                                                  CtkAllocation      *allocation);
 static void     cpufreq_applet_change_orient     (CafePanelApplet        *pa,
                                                   CafePanelAppletOrient   orient);
-static void     cpufreq_applet_style_updated     (GtkWidget *widget);
+static void     cpufreq_applet_style_updated     (CtkWidget *widget);
 static gboolean cpufreq_applet_factory           (CPUFreqApplet      *applet,
                                                   const gchar        *iid,
                                                   gpointer            gdata);
@@ -112,7 +112,7 @@ static const gchar* const cpufreq_icons[] = {
 	NULL
 };
 
-static const GtkActionEntry cpufreq_applet_menu_actions[] = {
+static const CtkActionEntry cpufreq_applet_menu_actions[] = {
 	{ "CPUFreqAppletPreferences", "document-properties", N_("_Preferences"),
 	  NULL, NULL,
 	  G_CALLBACK (cpufreq_applet_preferences_cb) },
@@ -208,7 +208,7 @@ cpufreq_applet_class_init (CPUFreqAppletClass *klass)
 {
         CafePanelAppletClass *applet_class = CAFE_PANEL_APPLET_CLASS (klass);
         GObjectClass     *gobject_class = G_OBJECT_CLASS (klass);
-        GtkWidgetClass   *widget_class = GTK_WIDGET_CLASS (klass);
+        CtkWidgetClass   *widget_class = GTK_WIDGET_CLASS (klass);
 
         gobject_class->dispose = cpufreq_applet_dispose;
 
@@ -254,7 +254,7 @@ cpufreq_applet_dispose (GObject *widget)
 }
 
 static void
-cpufreq_applet_size_allocate (GtkWidget *widget, GtkAllocation *allocation)
+cpufreq_applet_size_allocate (CtkWidget *widget, CtkAllocation *allocation)
 {
         CPUFreqApplet *applet;
         gint           size = 0;
@@ -281,7 +281,7 @@ cpufreq_applet_size_allocate (GtkWidget *widget, GtkAllocation *allocation)
 }
 
 static gint
-get_max_text_width (GtkWidget *widget,
+get_max_text_width (CtkWidget *widget,
                     const char *text)
 {
 	PangoContext *context;
@@ -302,7 +302,7 @@ static void
 cpufreq_applet_menu_popup (CPUFreqApplet *applet,
                            guint32        time)
 {
-        GtkWidget *menu;
+        CtkWidget *menu;
 
         if (!cpufreq_utils_selector_is_available ())
                 return;
@@ -319,13 +319,13 @@ cpufreq_applet_menu_popup (CPUFreqApplet *applet,
                 return;
                 
         /*Set up theme and transparency support*/
-        GtkWidget *toplevel = ctk_widget_get_toplevel (menu);
+        CtkWidget *toplevel = ctk_widget_get_toplevel (menu);
         /* Fix any failures of compiz/other wm's to communicate with ctk for transparency */
         GdkScreen *screen = ctk_widget_get_screen(GTK_WIDGET(toplevel));
         GdkVisual *visual = gdk_screen_get_rgba_visual(screen);
         ctk_widget_set_visual(GTK_WIDGET(toplevel), visual);
         /* Set menu and it's toplevel window to follow panel theme */
-        GtkStyleContext *context;
+        CtkStyleContext *context;
         context = ctk_widget_get_style_context (GTK_WIDGET(toplevel));
         ctk_style_context_add_class(context,"gnome-panel-menu-bar");
         ctk_style_context_add_class(context,"cafe-panel-menu-bar");
@@ -338,7 +338,7 @@ cpufreq_applet_menu_popup (CPUFreqApplet *applet,
 }
 
 static gboolean
-cpufreq_applet_button_press (GtkWidget *widget, GdkEventButton *event)
+cpufreq_applet_button_press (CtkWidget *widget, GdkEventButton *event)
 {
         CPUFreqApplet *applet;
 
@@ -359,7 +359,7 @@ cpufreq_applet_button_press (GtkWidget *widget, GdkEventButton *event)
 }
 
 static gboolean
-cpufreq_applet_key_press (GtkWidget *widget, GdkEventKey *event)
+cpufreq_applet_key_press (CtkWidget *widget, GdkEventKey *event)
 {
         CPUFreqApplet *applet;
 
@@ -386,7 +386,7 @@ static void
 cpufreq_applet_change_orient (CafePanelApplet *pa, CafePanelAppletOrient orient)
 {
         CPUFreqApplet *applet;
-        GtkAllocation  allocation;
+        CtkAllocation  allocation;
         gint           size;
 
         applet = CPUFREQ_APPLET (pa);
@@ -413,7 +413,7 @@ cpufreq_applet_change_orient (CafePanelApplet *pa, CafePanelAppletOrient orient)
 }
 
 static void
-cpufreq_applet_style_updated (GtkWidget *widget)
+cpufreq_applet_style_updated (CtkWidget *widget)
 {
         CPUFreqApplet *applet;
 
@@ -427,7 +427,7 @@ cpufreq_applet_style_updated (GtkWidget *widget)
 }
 
 static void
-cpufreq_applet_preferences_cb (GtkAction     *action,
+cpufreq_applet_preferences_cb (CtkAction     *action,
                                CPUFreqApplet *applet)
 {
         cpufreq_preferences_dialog_run (applet->prefs,
@@ -435,7 +435,7 @@ cpufreq_applet_preferences_cb (GtkAction     *action,
 }
 
 static void
-cpufreq_applet_help_cb (GtkAction     *action,
+cpufreq_applet_help_cb (CtkAction     *action,
                         CPUFreqApplet *applet)
 {
         GError *error = NULL;
@@ -453,7 +453,7 @@ cpufreq_applet_help_cb (GtkAction     *action,
 }
 
 static void
-cpufreq_applet_about_cb (GtkAction     *action,
+cpufreq_applet_about_cb (CtkAction     *action,
                          CPUFreqApplet *applet)
 {
         static const gchar *const authors[] = {
@@ -631,7 +631,7 @@ cpufreq_applet_update (CPUFreqApplet *applet, CPUFreqMonitor *monitor)
         gint         freq;
         gint         perc;
         guint        cpu;
-        GtkRequisition  req;
+        CtkRequisition  req;
         const gchar *governor;
 
         cpu = cpufreq_monitor_get_cpu (monitor);
@@ -804,7 +804,7 @@ cpufreq_applet_prefs_show_mode_changed (CPUFreqPrefs  *prefs,
 static void
 cpufreq_applet_setup (CPUFreqApplet *applet)
 {
-	GtkActionGroup *action_group;
+	CtkActionGroup *action_group;
 	gchar          *ui_path;
         AtkObject      *atk_obj;
         gchar          *prefs_key;
@@ -855,7 +855,7 @@ cpufreq_applet_setup (CPUFreqApplet *applet)
 	g_free (ui_path);
 
         if (cafe_panel_applet_get_locked_down (CAFE_PANEL_APPLET (applet))) {
-		GtkAction *action;
+		CtkAction *action;
 
 		action = ctk_action_group_get_action (action_group, "CPUFreqPreferences");
 		ctk_action_set_visible (action, FALSE);

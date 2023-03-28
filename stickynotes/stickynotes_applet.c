@@ -29,7 +29,7 @@
 StickyNotes *stickynotes = NULL;
 
 /* Popup menu on the applet */
-static const GtkActionEntry stickynotes_applet_menu_actions[] =
+static const CtkActionEntry stickynotes_applet_menu_actions[] =
 {
 	{ "new_note", "document-new", N_("_New Note"),
 	  NULL, NULL,
@@ -51,7 +51,7 @@ static const GtkActionEntry stickynotes_applet_menu_actions[] =
 	  G_CALLBACK (menu_about_cb) }
 };
 
-static const GtkToggleActionEntry stickynotes_applet_menu_toggle_actions[] =
+static const CtkToggleActionEntry stickynotes_applet_menu_toggle_actions[] =
 {
 	{ "lock", NULL, N_("_Lock Notes"),
 	  NULL, NULL,
@@ -124,7 +124,7 @@ stickynotes_make_prelight_icon (cairo_surface_t *dest, cairo_surface_t *src, int
 }
 
 static void
-icon_theme_changed (GtkIconTheme *icon_theme,
+icon_theme_changed (CtkIconTheme *icon_theme,
                     gpointer      user_data)
 {
 	ctk_icon_theme_append_search_path (icon_theme,
@@ -134,7 +134,7 @@ icon_theme_changed (GtkIconTheme *icon_theme,
 static void
 stickynotes_applet_init_icons (void)
 {
-	GtkIconTheme *icon_theme;
+	CtkIconTheme *icon_theme;
 
 	icon_theme = ctk_icon_theme_get_default ();
 	icon_theme_changed (icon_theme, NULL);
@@ -144,7 +144,7 @@ stickynotes_applet_init_icons (void)
 }
 
 static void
-stickynotes_destroy (GtkWidget *widget,
+stickynotes_destroy (CtkWidget *widget,
                      gpointer   user_dta)
 {
 	g_signal_handlers_disconnect_by_func (ctk_icon_theme_get_default (),
@@ -272,7 +272,7 @@ void stickynotes_applet_init_prefs(void)
 			"toggled", G_CALLBACK (preferences_save_cb), NULL);
 
 	{
-		GtkSizeGroup *group = ctk_size_group_new(GTK_SIZE_GROUP_HORIZONTAL);
+		CtkSizeGroup *group = ctk_size_group_new(GTK_SIZE_GROUP_HORIZONTAL);
 
 		ctk_size_group_add_widget(group, GTK_WIDGET (ctk_builder_get_object (stickynotes->builder, "width_label")));
 		ctk_size_group_add_widget(group, GTK_WIDGET (ctk_builder_get_object (stickynotes->builder, "height_label")));
@@ -378,7 +378,7 @@ stickynotes_applet_new(CafePanelApplet *cafe_panel_applet)
 	g_free (ui_path);
 
 	if (cafe_panel_applet_get_locked_down (cafe_panel_applet)) {
-		GtkAction *action;
+		CtkAction *action;
 
 		action = ctk_action_group_get_action (applet->action_group, "preferences");
 		ctk_action_set_visible (action, FALSE);
@@ -561,7 +561,7 @@ void stickynotes_applet_update_menus(void)
 		StickyNotesApplet *applet = l->data;
 		GSList *proxies, *p;
 
-		GtkAction *action = ctk_action_group_get_action (applet->action_group, "lock");
+		CtkAction *action = ctk_action_group_get_action (applet->action_group, "lock");
 
 		g_object_set (action,
 			      "active", locked,
@@ -609,9 +609,9 @@ stickynotes_applet_update_tooltips (void)
 void
 stickynotes_applet_panel_icon_get_geometry (int *x, int *y, int *width, int *height)
 {
-	GtkWidget *widget;
-        GtkAllocation allocation;
-	GtkRequisition requisition;
+	CtkWidget *widget;
+        CtkAllocation allocation;
+	CtkRequisition requisition;
 	StickyNotesApplet *applet;
 
 	applet = stickynotes->applets->data;

@@ -24,6 +24,6 @@
 
 #include <ctk/ctk.h>
 
-void trash_empty (GtkWidget *parent);
+void trash_empty (CtkWidget *parent);
 
 #endif /* _trash_empty_h_ */

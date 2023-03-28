@@ -58,8 +58,8 @@ void          cpufreq_popup_set_preferences (CPUFreqPopup   *popup,
 void          cpufreq_popup_set_monitor     (CPUFreqPopup   *popup,
 					     CPUFreqMonitor *monitor);
 void          cpufreq_popup_set_parent      (CPUFreqPopup   *popup,
-					     GtkWidget      *parent);
-GtkWidget    *cpufreq_popup_get_menu        (CPUFreqPopup   *popup);
+					     CtkWidget      *parent);
+CtkWidget    *cpufreq_popup_get_menu        (CPUFreqPopup   *popup);
 
 G_END_DECLS
 

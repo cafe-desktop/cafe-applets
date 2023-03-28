@@ -51,15 +51,15 @@ typedef struct
 
     GSettings         *settings;
 
-    GtkActionGroup    *action_group;
-    GtkLabel          *label;
-    GtkImage          *image;
-    GtkImage          *pause_image;
-    GtkBox            *box;
+    CtkActionGroup    *action_group;
+    CtkLabel          *label;
+    CtkImage          *image;
+    CtkImage          *pause_image;
+    CtkBox            *box;
 
-    GtkSpinButton     *hours;
-    GtkSpinButton     *minutes;
-    GtkSpinButton     *seconds;
+    CtkSpinButton     *hours;
+    CtkSpinButton     *minutes;
+    CtkSpinButton     *seconds;
 
     gboolean           active;
     gboolean           pause;
@@ -68,14 +68,14 @@ typedef struct
     guint              timeout_id;
 } TimerApplet;
 
-static void timer_start_callback (GtkAction *action, TimerApplet *applet);
-static void timer_pause_callback (GtkAction *action, TimerApplet *applet);
-static void timer_stop_callback (GtkAction *action, TimerApplet *applet);
-static void timer_about_callback (GtkAction *action, TimerApplet *applet);
-static void timer_reset_callback (GtkAction *action, TimerApplet *applet);
-static void timer_preferences_callback (GtkAction *action, TimerApplet *applet);
+static void timer_start_callback (CtkAction *action, TimerApplet *applet);
+static void timer_pause_callback (CtkAction *action, TimerApplet *applet);
+static void timer_stop_callback (CtkAction *action, TimerApplet *applet);
+static void timer_about_callback (CtkAction *action, TimerApplet *applet);
+static void timer_reset_callback (CtkAction *action, TimerApplet *applet);
+static void timer_preferences_callback (CtkAction *action, TimerApplet *applet);
 
-static const GtkActionEntry applet_menu_actions [] = {
+static const CtkActionEntry applet_menu_actions [] = {
     { "Start", "media-playback-start", N_("_Start timer"), NULL, NULL, G_CALLBACK (timer_start_callback) },
     { "Pause", "media-playback-pause", N_("P_ause timer"), NULL, NULL, G_CALLBACK (timer_pause_callback) },
     { "Stop", "media-playback-stop", N_("S_top timer"), NULL, NULL, G_CALLBACK (timer_stop_callback) },
@@ -161,7 +161,7 @@ timer_callback (TimerApplet *applet)
 
             if (g_settings_get_boolean (applet->settings, SHOW_DIALOG_KEY))
             {
-                GtkWidget *dialog = ctk_message_dialog_new_with_markup (NULL,
+                CtkWidget *dialog = ctk_message_dialog_new_with_markup (NULL,
                                                                         GTK_DIALOG_MODAL,
                                                                         GTK_MESSAGE_INFO,
                                                                         GTK_BUTTONS_OK,
@@ -216,7 +216,7 @@ timer_callback (TimerApplet *applet)
 
 /* start action */
 static void
-timer_start_callback (GtkAction *action, TimerApplet *applet)
+timer_start_callback (CtkAction *action, TimerApplet *applet)
 {
     applet->active = TRUE;
     if (applet->pause)
@@ -228,7 +228,7 @@ timer_start_callback (GtkAction *action, TimerApplet *applet)
 
 /* pause action */
 static void
-timer_pause_callback (GtkAction *action, TimerApplet *applet)
+timer_pause_callback (CtkAction *action, TimerApplet *applet)
 {
     applet->pause = TRUE;
     if (applet->timeout_id != 0)
@@ -241,7 +241,7 @@ timer_pause_callback (GtkAction *action, TimerApplet *applet)
 
 /* stop action */
 static void
-timer_stop_callback (GtkAction *action, TimerApplet *applet)
+timer_stop_callback (CtkAction *action, TimerApplet *applet)
 {
     applet->active = FALSE;
     if (applet->timeout_id != 0)
@@ -254,7 +254,7 @@ timer_stop_callback (GtkAction *action, TimerApplet *applet)
 
 /* reset action */
 static void
-timer_reset_callback (GtkAction *action, TimerApplet *applet)
+timer_reset_callback (CtkAction *action, TimerApplet *applet)
 {
     applet->active = FALSE;
     applet->pause = FALSE;
@@ -264,7 +264,7 @@ timer_reset_callback (GtkAction *action, TimerApplet *applet)
 
 /* Show the about dialog */
 static void
-timer_about_callback (GtkAction *action, TimerApplet *applet)
+timer_about_callback (CtkAction *action, TimerApplet *applet)
 {
     const char* authors[] = { "Stefano Karapetsas <stefano@karapetsas.com>", NULL };
 
@@ -282,7 +282,7 @@ timer_about_callback (GtkAction *action, TimerApplet *applet)
 
 /* calculate duration and save in GSettings */
 static void
-timer_spin_button_value_changed (GtkSpinButton *spinbutton, TimerApplet *applet)
+timer_spin_button_value_changed (CtkSpinButton *spinbutton, TimerApplet *applet)
 {
     gint duration = 0;
 
@@ -295,11 +295,11 @@ timer_spin_button_value_changed (GtkSpinButton *spinbutton, TimerApplet *applet)
 
 /* Show the preferences dialog */
 static void
-timer_preferences_callback (GtkAction *action, TimerApplet *applet)
+timer_preferences_callback (CtkAction *action, TimerApplet *applet)
 {
-    GtkDialog *dialog;
-    GtkGrid *grid;
-    GtkWidget *widget;
+    CtkDialog *dialog;
+    CtkGrid *grid;
+    CtkWidget *widget;
     gint duration, hours, minutes, seconds;
 
     duration = g_settings_get_int (applet->settings, DURATION_KEY);
@@ -421,7 +421,7 @@ timer_applet_fill (CafePanelApplet* applet_widget)
     applet->pause_image = GTK_IMAGE (ctk_image_new_from_icon_name ("media-playback-pause", GTK_ICON_SIZE_BUTTON));
     applet->label = GTK_LABEL (ctk_label_new (""));
 
-    /* we add the Gtk label into the applet */
+    /* we add the Ctk label into the applet */
     ctk_box_pack_start (applet->box,
                         GTK_WIDGET (applet->image),
                         TRUE, TRUE, 0);

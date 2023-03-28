@@ -2,20 +2,20 @@
 <interface>
   <requires lib="ctk+" version="2.16"/>
   <!-- interface-naming-policy toplevel-contextual -->
-  <object class="GtkDialog" id="empty_trash">
+  <object class="CtkDialog" id="empty_trash">
     <property name="border_width">6</property>
     <property name="title" translatable="yes">Emptying the Trash</property>
     <property name="default_width">400</property>
     <property name="type_hint">normal</property>
     <child internal-child="vbox">
-      <object class="GtkVBox" id="dialog-vbox1">
+      <object class="CtkVBox" id="dialog-vbox1">
         <child>
-          <object class="GtkVBox" id="vbox1">
+          <object class="CtkVBox" id="vbox1">
             <property name="visible">True</property>
             <property name="border_width">6</property>
             <property name="spacing">12</property>
             <child>
-              <object class="GtkLabel" id="label1">
+              <object class="CtkLabel" id="label1">
                 <property name="visible">True</property>
                 <property name="xalign">0</property>
                 <property name="label" translatable="yes">Emptying the Trash</property>
@@ -29,10 +29,10 @@
               </packing>
             </child>
             <child>
-              <object class="GtkHBox" id="hbox1">
+              <object class="CtkHBox" id="hbox1">
                 <property name="visible">True</property>
                 <child>
-                  <object class="GtkLabel" id="label3">
+                  <object class="CtkLabel" id="label3">
                     <property name="label" translatable="yes">From:</property>
                     <attributes>
                       <attribute name="weight" value="bold"/>
@@ -44,7 +44,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="location_label">
+                  <object class="CtkLabel" id="location_label">
                     <property name="visible">True</property>
                     <property name="xalign">0</property>
                     <property name="ellipsize">middle</property>
@@ -59,10 +59,10 @@
               </packing>
             </child>
             <child>
-              <object class="GtkVBox" id="vbox2">
+              <object class="CtkVBox" id="vbox2">
                 <property name="visible">True</property>
                 <child>
-                  <object class="GtkProgressBar" id="progressbar">
+                  <object class="CtkProgressBar" id="progressbar">
                     <property name="visible">True</property>
                     <property name="text">  </property>
                   </object>
@@ -71,7 +71,7 @@
                   </packing>
                 </child>
                 <child>
-                  <object class="GtkLabel" id="file_label">
+                  <object class="CtkLabel" id="file_label">
                     <property name="visible">True</property>
                     <property name="xalign">0</property>
                     <property name="label">  </property>
@@ -92,9 +92,9 @@
           </packing>
         </child>
         <child internal-child="action_area">
-          <object class="GtkHButtonBox" id="dialog-action_area1">
+          <object class="CtkHButtonBox" id="dialog-action_area1">
             <child>
-              <object class="GtkButton" id="cancel_button">
+              <object class="CtkButton" id="cancel_button">
                 <property name="label">ctk-cancel</property>
                 <property name="visible">True</property>
                 <property name="can_focus">False</property>

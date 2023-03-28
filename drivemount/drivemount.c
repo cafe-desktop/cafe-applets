@@ -38,7 +38,7 @@ static const char factory_iid[] = "DriveMountAppletFactory";
 static void
 change_orient (CafePanelApplet *applet, CafePanelAppletOrient o, DriveList *drive_list)
 {
-    GtkOrientation orientation;
+    CtkOrientation orientation;
 
     switch (o) {
     case CAFE_PANEL_APPLET_ORIENT_LEFT:
@@ -95,7 +95,7 @@ change_background (CafePanelApplet               *applet,
 }
 
 static void
-display_about_dialog (GtkAction *action,
+display_about_dialog (CtkAction *action,
 		      DriveList *drive_list)
 {
     const gchar *authors[] = {
@@ -130,7 +130,7 @@ display_about_dialog (GtkAction *action,
 }
 
 static void
-display_help (GtkAction *action,
+display_help (CtkAction *action,
 	      DriveList *drive_list)
 {
     GdkScreen *screen;
@@ -144,7 +144,7 @@ display_help (GtkAction *action,
                             &error);
 
     if (error) {
-	GtkWidget *dialog;
+	CtkWidget *dialog;
 
 	dialog = ctk_message_dialog_new (NULL,
 					 GTK_DIALOG_MODAL,
@@ -161,7 +161,7 @@ display_help (GtkAction *action,
     }
 }
 
-static const GtkActionEntry applet_menu_actions[] = {
+static const CtkActionEntry applet_menu_actions[] = {
     { "Help", "help-browser", N_("_Help"),
       NULL, NULL,
       G_CALLBACK (display_help) },
@@ -176,9 +176,9 @@ applet_factory (CafePanelApplet *applet,
 		gpointer     user_data)
 {
     gboolean ret = FALSE;
-    GtkWidget *drive_list;
+    CtkWidget *drive_list;
     AtkObject *ao;
-    GtkActionGroup *action_group;
+    CtkActionGroup *action_group;
     gchar *ui_path;
 
     if (!strcmp (iid, drivemount_iid)) {

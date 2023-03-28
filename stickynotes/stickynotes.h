@@ -28,36 +28,36 @@
 
 typedef struct
 {
-	GtkWidget *w_window;		/* Sticky Note window */
-	GtkWidget *w_menu;		/* Sticky Note menu */
-	GtkWidget *w_properties;	/* Sticky Note properties dialog */
+	CtkWidget *w_window;		/* Sticky Note window */
+	CtkWidget *w_menu;		/* Sticky Note menu */
+	CtkWidget *w_properties;	/* Sticky Note properties dialog */
 
-	GtkWidget *w_entry;		/* Sticky Note title entry */
-	GtkWidget *w_color;		/* Sticky Note color picker */
-	GtkWidget *w_color_label;	/* Sticky Note color label */
-	GtkWidget *w_font_color;	/* Sticky Note font color picker */
-	GtkWidget *w_font_color_label;	/* Sticky Note font color label */
-	GtkWidget *w_font;		/* Sticky Note font picker */
-	GtkWidget *w_font_label;	/* Sticky Note font label */
-	GtkWidget *w_def_color;		/* Sticky Note default color setting */
-	GtkWidget *w_def_font;		/* Sticky Note default font setting */
+	CtkWidget *w_entry;		/* Sticky Note title entry */
+	CtkWidget *w_color;		/* Sticky Note color picker */
+	CtkWidget *w_color_label;	/* Sticky Note color label */
+	CtkWidget *w_font_color;	/* Sticky Note font color picker */
+	CtkWidget *w_font_color_label;	/* Sticky Note font color label */
+	CtkWidget *w_font;		/* Sticky Note font picker */
+	CtkWidget *w_font_label;	/* Sticky Note font label */
+	CtkWidget *w_def_color;		/* Sticky Note default color setting */
+	CtkWidget *w_def_font;		/* Sticky Note default font setting */
 
-	GtkWidget *w_title;		/* Sticky Note title */
-	GtkWidget *w_body;		/* Sticky Note text body */
-	GtkWidget *w_scroller;          /* Sticky Note scroller */
-	GtkWidget *w_lock;		/* Sticky Note lock button */
-	GtkWidget *w_close;		/* Sticky Note close button */
-	GtkWidget *w_resize_se;		/* Sticky Note resize button (south east) */
-	GtkWidget *w_resize_sw;		/* Sticky Note resize button (south west) */
+	CtkWidget *w_title;		/* Sticky Note title */
+	CtkWidget *w_body;		/* Sticky Note text body */
+	CtkWidget *w_scroller;          /* Sticky Note scroller */
+	CtkWidget *w_lock;		/* Sticky Note lock button */
+	CtkWidget *w_close;		/* Sticky Note close button */
+	CtkWidget *w_resize_se;		/* Sticky Note resize button (south east) */
+	CtkWidget *w_resize_sw;		/* Sticky Note resize button (south west) */
 
-	GtkSourceBuffer *buffer;	/* Sticky Note text buffer for undo/redo */
+	CtkSourceBuffer *buffer;	/* Sticky Note text buffer for undo/redo */
 
-	GtkToggleAction *ta_lock_toggle_item; /* Lock item in the popup menu */
+	CtkToggleAction *ta_lock_toggle_item; /* Lock item in the popup menu */
 
-	GtkImage *img_lock;		/* Lock image */
-	GtkImage *img_close;		/* Close image */
-	GtkImage *img_resize_se;	/* SE resize image */
-	GtkImage *img_resize_sw;	/* SW resize image */
+	CtkImage *img_lock;		/* Lock image */
+	CtkImage *img_close;		/* Close image */
+	CtkImage *img_resize_se;	/* SE resize image */
+	CtkImage *img_resize_sw;	/* SW resize image */
 
 	gchar *color;			/* Note color */
 	gchar *font_color;		/* Font color */

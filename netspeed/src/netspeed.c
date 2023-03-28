@@ -72,13 +72,13 @@ static const char LOGO_ICON[] = "cafe-netspeed-applet";
 typedef struct
 {
 	CafePanelApplet *applet;
-	GtkWidget *box, *pix_box, *speed_box,
+	CtkWidget *box, *pix_box, *speed_box,
 	*in_box, *in_label, *in_pix,
 	*out_box, *out_label, *out_pix,
 	*sum_box, *sum_label, *dev_pix, *qual_pix;
 	cairo_surface_t *qual_surfaces[4];
 
-	GtkWidget *signalbar;
+	CtkWidget *signalbar;
 
 	gboolean labels_dont_shrink;
 
@@ -96,17 +96,17 @@ typedef struct
 	GdkRGBA         out_color;
 	int width;
 
-	GtkWidget *inbytes_text, *outbytes_text;
-	GtkDialog *details, *settings;
-	GtkDrawingArea *drawingarea;
-	GtkWidget *network_device_combo;
+	CtkWidget *inbytes_text, *outbytes_text;
+	CtkDialog *details, *settings;
+	CtkDrawingArea *drawingarea;
+	CtkWidget *network_device_combo;
 
 	guint index_old;
 	guint64 in_old[OLD_VALUES], out_old[OLD_VALUES];
 	double max_graph, in_graph[GRAPH_VALUES], out_graph[GRAPH_VALUES];
 	int index_graph;
 
-	GtkWidget *connect_dialog;
+	CtkWidget *connect_dialog;
 
 	gboolean show_tooltip;
 
@@ -117,7 +117,7 @@ static void
 update_tooltip(CafeNetspeedApplet* applet);
 
 static void
-device_change_cb(GtkComboBox *combo, CafeNetspeedApplet *applet);
+device_change_cb(CtkComboBox *combo, CafeNetspeedApplet *applet);
 
 /* Adds a Pango markup "size" to a bytestring
  */
@@ -146,7 +146,7 @@ change_icons(CafeNetspeedApplet *applet)
 {
 	cairo_surface_t *dev, *down;
 	cairo_surface_t *in_arrow, *out_arrow;
-	GtkIconTheme *icon_theme;
+	CtkIconTheme *icon_theme;
 	gint icon_scale;
 
 	gint icon_size = cafe_panel_applet_get_size (CAFE_PANEL_APPLET (applet->applet)) - 8;
@@ -356,7 +356,7 @@ update_quality_icon(CafeNetspeedApplet *applet)
 static void
 init_quality_surfaces(CafeNetspeedApplet *applet)
 {
-	GtkIconTheme *icon_theme;
+	CtkIconTheme *icon_theme;
 	int i;
 	cairo_surface_t *surface;
 	gint icon_scale;
@@ -391,7 +391,7 @@ init_quality_surfaces(CafeNetspeedApplet *applet)
 
 
 static void
-icon_theme_changed_cb(GtkIconTheme *icon_theme, gpointer user_data)
+icon_theme_changed_cb(CtkIconTheme *icon_theme, gpointer user_data)
 {
     CafeNetspeedApplet *applet = (CafeNetspeedApplet*)user_data;
 
@@ -470,8 +470,8 @@ bytes_to_string(double bytes, gboolean per_sec, gboolean bits, gboolean shortene
 static void
 redraw_graph(CafeNetspeedApplet *applet, cairo_t *cr)
 {
-	GtkWidget *da = GTK_WIDGET(applet->drawingarea);
-	GtkStyleContext *stylecontext = ctk_widget_get_style_context (da);
+	CtkWidget *da = GTK_WIDGET(applet->drawingarea);
+	CtkStyleContext *stylecontext = ctk_widget_get_style_context (da);
 	GdkWindow *real_window = ctk_widget_get_window (da);
 	GdkPoint in_points[GRAPH_VALUES], out_points[GRAPH_VALUES];
 	PangoLayout *layout;
@@ -759,7 +759,7 @@ timeout_function(CafeNetspeedApplet *applet)
 /* Display a section of netspeed help
  */
 static void
-display_help (GtkWidget *dialog, const gchar *section)
+display_help (CtkWidget *dialog, const gchar *section)
 {
 	GError *error = NULL;
 	gboolean ret;
@@ -777,7 +777,7 @@ display_help (GtkWidget *dialog, const gchar *section)
 	g_free (uri);
 
 	if (ret == FALSE) {
-		GtkWidget *error_dialog = ctk_message_dialog_new (NULL,
+		CtkWidget *error_dialog = ctk_message_dialog_new (NULL,
 								  GTK_DIALOG_MODAL,
 								  GTK_MESSAGE_ERROR,
 								  GTK_BUTTONS_OK,
@@ -796,7 +796,7 @@ display_help (GtkWidget *dialog, const gchar *section)
 /* Opens gnome help application
  */
 static void
-help_cb (GtkAction *action, CafeNetspeedApplet *ap)
+help_cb (CtkAction *action, CafeNetspeedApplet *ap)
 {
 	display_help (GTK_WIDGET (ap->applet), NULL);
 }
@@ -804,7 +804,7 @@ help_cb (GtkAction *action, CafeNetspeedApplet *ap)
 /* Just the about window... If it's already open, just fokus it
  */
 static void
-about_cb(GtkAction *action, gpointer data)
+about_cb(CtkAction *action, gpointer data)
 {
 	const char *authors[] =
 	{
@@ -837,7 +837,7 @@ about_cb(GtkAction *action, gpointer data)
  * and then calls applet_device_change() and change_icons()
  */
 static void
-device_change_cb(GtkComboBox *combo, CafeNetspeedApplet *applet)
+device_change_cb(CtkComboBox *combo, CafeNetspeedApplet *applet)
 {
 	GList *devices;
 	int i, active;
@@ -870,7 +870,7 @@ device_change_cb(GtkComboBox *combo, CafeNetspeedApplet *applet)
 /* Handle preference dialog response event
  */
 static void
-pref_response_cb (GtkDialog *dialog, gint id, gpointer data)
+pref_response_cb (CtkDialog *dialog, gint id, gpointer data)
 {
     CafeNetspeedApplet *applet = data;
 
@@ -896,7 +896,7 @@ pref_response_cb (GtkDialog *dialog, gint id, gpointer data)
 /* Called when the showsum checkbutton is toggled...
  */
 static void
-showsum_change_cb(GtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
+showsum_change_cb(CtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
 {
 	applet->show_sum = ctk_toggle_button_get_active(togglebutton);
 	applet_change_size_or_orient(applet->applet, -1, (gpointer)applet);
@@ -906,7 +906,7 @@ showsum_change_cb(GtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
 /* Called when the showbits checkbutton is toggled...
  */
 static void
-showbits_change_cb(GtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
+showbits_change_cb(CtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
 {
 	applet->show_bits = ctk_toggle_button_get_active(togglebutton);
 }
@@ -914,7 +914,7 @@ showbits_change_cb(GtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
 /* Called when the shortunit checkbutton is toggled...
  */
 static void
-shortunit_change_cb(GtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
+shortunit_change_cb(CtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
 {
 	applet->short_unit = ctk_toggle_button_get_active(togglebutton);
 }
@@ -922,7 +922,7 @@ shortunit_change_cb(GtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
 /* Called when the showicon checkbutton is toggled...
  */
 static void
-showicon_change_cb(GtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
+showicon_change_cb(CtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
 {
 	applet->show_icon = ctk_toggle_button_get_active(togglebutton);
 	change_icons(applet);
@@ -931,7 +931,7 @@ showicon_change_cb(GtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
 /* Called when the showqualityicon checkbutton is toggled...
  */
 static void
-showqualityicon_change_cb(GtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
+showqualityicon_change_cb(CtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
 {
 	applet->show_quality_icon = ctk_toggle_button_get_active(togglebutton);
 	change_quality_icon(applet);
@@ -940,7 +940,7 @@ showqualityicon_change_cb(GtkToggleButton *togglebutton, CafeNetspeedApplet *app
 /* Called when the changeicon checkbutton is toggled...
  */
 static void
-changeicon_change_cb(GtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
+changeicon_change_cb(CtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
 {
 	applet->change_icon = ctk_toggle_button_get_active(togglebutton);
 	change_icons(applet);
@@ -951,25 +951,25 @@ changeicon_change_cb(GtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
  * them in the gsettings database
  */
 static void
-settings_cb(GtkAction *action, gpointer data)
+settings_cb(CtkAction *action, gpointer data)
 {
 	CafeNetspeedApplet *applet = (CafeNetspeedApplet*)data;
-	GtkWidget *vbox;
-	GtkWidget *hbox;
-	GtkWidget *categories_vbox;
-	GtkWidget *category_vbox;
-	GtkWidget *controls_vbox;
-	GtkWidget *category_header_label;
-	GtkWidget *network_device_hbox;
-	GtkWidget *network_device_label;
-	GtkWidget *indent_label;
-	GtkWidget *show_sum_checkbutton;
-	GtkWidget *show_bits_checkbutton;
-	GtkWidget *short_unit_checkbutton;
-	GtkWidget *show_icon_checkbutton;
-	GtkWidget *show_quality_icon_checkbutton;
-	GtkWidget *change_icon_checkbutton;
-	GtkSizeGroup *category_label_size_group;
+	CtkWidget *vbox;
+	CtkWidget *hbox;
+	CtkWidget *categories_vbox;
+	CtkWidget *category_vbox;
+	CtkWidget *controls_vbox;
+	CtkWidget *category_header_label;
+	CtkWidget *network_device_hbox;
+	CtkWidget *network_device_label;
+	CtkWidget *indent_label;
+	CtkWidget *show_sum_checkbutton;
+	CtkWidget *show_bits_checkbutton;
+	CtkWidget *short_unit_checkbutton;
+	CtkWidget *show_icon_checkbutton;
+	CtkWidget *show_quality_icon_checkbutton;
+	CtkWidget *change_icon_checkbutton;
+	CtkSizeGroup *category_label_size_group;
   	gchar *header_str;
 	GList *ptr, *devices;
 	int i, active = -1;
@@ -1107,7 +1107,7 @@ settings_cb(GtkAction *action, gpointer data)
 }
 
 static gboolean
-da_draw(GtkWidget *widget, cairo_t *cr, gpointer data)
+da_draw(CtkWidget *widget, cairo_t *cr, gpointer data)
 {
 	CafeNetspeedApplet *applet = (CafeNetspeedApplet*)data;
 
@@ -1117,7 +1117,7 @@ da_draw(GtkWidget *widget, cairo_t *cr, gpointer data)
 }
 
 static void
-incolor_changed_cb (GtkColorChooser *button, gpointer data)
+incolor_changed_cb (CtkColorChooser *button, gpointer data)
 {
 	CafeNetspeedApplet *applet = (CafeNetspeedApplet*)data;
 	GdkRGBA color;
@@ -1132,7 +1132,7 @@ incolor_changed_cb (GtkColorChooser *button, gpointer data)
 }
 
 static void
-outcolor_changed_cb (GtkColorChooser *button, gpointer data)
+outcolor_changed_cb (CtkColorChooser *button, gpointer data)
 {
 	CafeNetspeedApplet *applet = (CafeNetspeedApplet*)data;
 	GdkRGBA color;
@@ -1149,7 +1149,7 @@ outcolor_changed_cb (GtkColorChooser *button, gpointer data)
 /* Handle info dialog response event
  */
 static void
-info_response_cb (GtkDialog *dialog, gint id, CafeNetspeedApplet *applet)
+info_response_cb (CtkDialog *dialog, gint id, CafeNetspeedApplet *applet)
 {
 
 	if(id == GTK_RESPONSE_HELP){
@@ -1169,18 +1169,18 @@ info_response_cb (GtkDialog *dialog, gint id, CafeNetspeedApplet *applet)
 /* Creates the details dialog
  */
 static void
-showinfo_cb(GtkAction *action, gpointer data)
+showinfo_cb(CtkAction *action, gpointer data)
 {
 	CafeNetspeedApplet *applet = (CafeNetspeedApplet*)data;
-	GtkWidget *box, *hbox;
-	GtkWidget *grid, *da_frame;
-	GtkWidget *ip_label, *netmask_label;
-	GtkWidget *hwaddr_label, *ptpip_label;
-	GtkWidget *ip_text, *netmask_text;
-	GtkWidget *hwaddr_text, *ptpip_text;
-	GtkWidget *inbytes_label, *outbytes_label;
-	GtkWidget *incolor_sel, *incolor_label;
-	GtkWidget *outcolor_sel, *outcolor_label;
+	CtkWidget *box, *hbox;
+	CtkWidget *grid, *da_frame;
+	CtkWidget *ip_label, *netmask_label;
+	CtkWidget *hwaddr_label, *ptpip_label;
+	CtkWidget *ip_text, *netmask_text;
+	CtkWidget *hwaddr_text, *ptpip_text;
+	CtkWidget *inbytes_label, *outbytes_label;
+	CtkWidget *incolor_sel, *incolor_label;
+	CtkWidget *outcolor_sel, *outcolor_label;
 	char *title;
 
 	g_assert(applet);
@@ -1292,7 +1292,7 @@ showinfo_cb(GtkAction *action, gpointer data)
 
 	/* check if we got an ipv6 address */
 	if (applet->devinfo.ipv6 && (strlen (applet->devinfo.ipv6) > 2)) {
-		GtkWidget *ipv6_label, *ipv6_text;
+		CtkWidget *ipv6_label, *ipv6_text;
 
 		ipv6_label = ctk_label_new (_("IPV6 Address:"));
 		ipv6_text = ctk_label_new (applet->devinfo.ipv6);
@@ -1308,9 +1308,9 @@ showinfo_cb(GtkAction *action, gpointer data)
 	}
 
 	if (applet->devinfo.type == DEV_WIRELESS) {
-		GtkWidget *signal_label;
-		GtkWidget *essid_label;
-		GtkWidget *essid_text;
+		CtkWidget *signal_label;
+		CtkWidget *essid_label;
+		CtkWidget *essid_text;
 		float quality;
 		char *text;
 
@@ -1368,7 +1368,7 @@ showinfo_cb(GtkAction *action, gpointer data)
 	ctk_widget_show_all(GTK_WIDGET(applet->details));
 }
 
-static const GtkActionEntry cafe_netspeed_applet_menu_actions [] = {
+static const CtkActionEntry cafe_netspeed_applet_menu_actions [] = {
 		{ "CafeNetspeedAppletDetails", "dialog-information", N_("Device _Details"),
 		  NULL, NULL, G_CALLBACK (showinfo_cb) },
 		{ "CafeNetspeedAppletProperties", "document-properties", N_("Preferences..."),
@@ -1386,7 +1386,7 @@ static const GtkActionEntry cafe_netspeed_applet_menu_actions [] = {
  * "jumping around" in the cafe_panel which looks uggly
  */
 static void
-label_size_allocate_cb(GtkWidget *widget, GtkAllocation *allocation, CafeNetspeedApplet *applet)
+label_size_allocate_cb(CtkWidget *widget, CtkAllocation *allocation, CafeNetspeedApplet *applet)
 {
 	if (applet->labels_dont_shrink) {
 		if (allocation->width <= applet->width)
@@ -1397,7 +1397,7 @@ label_size_allocate_cb(GtkWidget *widget, GtkAllocation *allocation, CafeNetspee
 }
 
 static gboolean
-applet_button_press(GtkWidget *widget, GdkEventButton *event, CafeNetspeedApplet *applet)
+applet_button_press(CtkWidget *widget, GdkEventButton *event, CafeNetspeedApplet *applet)
 {
 	if (event->button == 1)
 	{
@@ -1434,7 +1434,7 @@ applet_button_press(GtkWidget *widget, GdkEventButton *event, CafeNetspeedApplet
 
 			if (response == GTK_RESPONSE_YES)
 			{
-				GtkWidget *dialog;
+				CtkWidget *dialog;
 				char *command;
 
 				command = g_strdup_printf("%s %s",
@@ -1468,7 +1468,7 @@ applet_button_press(GtkWidget *widget, GdkEventButton *event, CafeNetspeedApplet
 static void
 applet_destroy(CafePanelApplet *applet_widget, CafeNetspeedApplet *applet)
 {
-	GtkIconTheme *icon_theme;
+	CtkIconTheme *icon_theme;
 
 	g_assert(applet);
 
@@ -1543,7 +1543,7 @@ update_tooltip(CafeNetspeedApplet* applet)
 
 
 static gboolean
-cafe_netspeed_enter_cb(GtkWidget *widget, GdkEventCrossing *event, gpointer data)
+cafe_netspeed_enter_cb(CtkWidget *widget, GdkEventCrossing *event, gpointer data)
 {
 	CafeNetspeedApplet *applet = data;
 
@@ -1554,7 +1554,7 @@ cafe_netspeed_enter_cb(GtkWidget *widget, GdkEventCrossing *event, gpointer data
 }
 
 static gboolean
-cafe_netspeed_leave_cb(GtkWidget *widget, GdkEventCrossing *event, gpointer data)
+cafe_netspeed_leave_cb(CtkWidget *widget, GdkEventCrossing *event, gpointer data)
 {
 	CafeNetspeedApplet *applet = data;
 
@@ -1570,8 +1570,8 @@ cafe_netspeed_applet_factory(CafePanelApplet *applet_widget, const gchar *iid, g
 	CafeNetspeedApplet *applet;
 	int i;
 	char* menu_string;
-	GtkIconTheme *icon_theme;
-	GtkWidget *spacer, *spacer_box;
+	CtkIconTheme *icon_theme;
+	CtkWidget *spacer, *spacer_box;
 
 	/* Have our background automatically painted. */
 	cafe_panel_applet_set_background_widget(CAFE_PANEL_APPLET(applet_widget),
@@ -1749,7 +1749,7 @@ cafe_netspeed_applet_factory(CafePanelApplet *applet_widget, const gchar *iid, g
 			 G_CALLBACK(cafe_netspeed_enter_cb),
 			 (gpointer)applet);
 
-	GtkActionGroup *action_group;
+	CtkActionGroup *action_group;
 	gchar *ui_path;
 	action_group = ctk_action_group_new ("Netspeed Applet Actions");
 	ctk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);

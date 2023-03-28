@@ -45,7 +45,7 @@ typedef struct
   GFileMonitor *trash_monitor;
   GFile *trash;
 
-  GtkImage *image;
+  CtkImage *image;
   GIcon *icon;
   gint items;
 } TrashApplet;
@@ -55,16 +55,16 @@ G_DEFINE_TYPE (TrashApplet, trash_applet, PANEL_TYPE_APPLET);
 #define TRASH_APPLET(obj) (G_TYPE_CHECK_INSTANCE_CAST ((obj), \
                            TRASH_TYPE_APPLET, TrashApplet))
 
-static void trash_applet_do_empty    (GtkAction   *action,
+static void trash_applet_do_empty    (CtkAction   *action,
                                       TrashApplet *applet);
-static void trash_applet_show_about  (GtkAction   *action,
+static void trash_applet_show_about  (CtkAction   *action,
                                       TrashApplet *applet);
-static void trash_applet_open_folder (GtkAction   *action,
+static void trash_applet_open_folder (CtkAction   *action,
                                       TrashApplet *applet);
-static void trash_applet_show_help   (GtkAction   *action,
+static void trash_applet_show_help   (CtkAction   *action,
                                       TrashApplet *applet);
 
-static const GtkActionEntry trash_applet_menu_actions [] = {
+static const CtkActionEntry trash_applet_menu_actions [] = {
 	{ "EmptyTrash", "edit-clear", N_("_Empty Trash"),
 	  NULL, NULL,
 	  G_CALLBACK (trash_applet_do_empty) },
@@ -156,12 +156,12 @@ trash_applet_set_icon_size (TrashApplet *applet,
   else
     size = 48;
 
-  /* GtkImage already contains a check to do nothing if it's the same */
+  /* CtkImage already contains a check to do nothing if it's the same */
   ctk_image_set_pixel_size (applet->image, size);
 }
 
 static void
-trash_applet_size_allocate (GtkWidget    *widget,
+trash_applet_size_allocate (CtkWidget    *widget,
                             GdkRectangle *allocation)
 {
   TrashApplet *applet = TRASH_APPLET (widget);
@@ -211,7 +211,7 @@ trash_applet_dispose (GObject *object)
 static void
 trash_applet_init (TrashApplet *applet)
 {
-  const GtkTargetEntry drop_types[] = { { "text/uri-list" } };
+  const CtkTargetEntry drop_types[] = { { "text/uri-list" } };
 
   /* needed to clamp ourselves to the panel size */
   cafe_panel_applet_set_flags (CAFE_PANEL_APPLET (applet), CAFE_PANEL_APPLET_EXPAND_MINOR);
@@ -246,7 +246,7 @@ trash_applet_init (TrashApplet *applet)
 #define PANEL_SCHEMA "org.cafe.panel"
 #define PANEL_ENABLE_ANIMATIONS "enable-animations"
 static gboolean
-trash_applet_button_release (GtkWidget      *widget,
+trash_applet_button_release (CtkWidget      *widget,
                              GdkEventButton *event)
 {
   TrashApplet *applet = TRASH_APPLET (widget);
@@ -272,7 +272,7 @@ trash_applet_button_release (GtkWidget      *widget,
     return FALSE;
 }
 static gboolean
-trash_applet_key_press (GtkWidget   *widget,
+trash_applet_key_press (CtkWidget   *widget,
                         GdkEventKey *event)
 {
   TrashApplet *applet = TRASH_APPLET (widget);
@@ -300,7 +300,7 @@ trash_applet_key_press (GtkWidget   *widget,
 }
 
 static gboolean
-trash_applet_drag_motion (GtkWidget      *widget,
+trash_applet_drag_motion (CtkWidget      *widget,
                           GdkDragContext *context,
                           gint            x,
                           gint            y,
@@ -331,7 +331,7 @@ error_dialog (TrashApplet *applet, const gchar *error, ...)
 {
   va_list args;
   gchar *error_string;
-  GtkWidget *dialog;
+  CtkWidget *dialog;
 
   g_return_if_fail (error != NULL);
 
@@ -356,14 +356,14 @@ error_dialog (TrashApplet *applet, const gchar *error, ...)
 }
 
 static void
-trash_applet_do_empty (GtkAction   *action,
+trash_applet_do_empty (CtkAction   *action,
                        TrashApplet *applet)
 {
   trash_empty (GTK_WIDGET (applet));
 }
 
 static void
-trash_applet_open_folder (GtkAction   *action,
+trash_applet_open_folder (CtkAction   *action,
                           TrashApplet *applet)
 {
   GError *err = NULL;
@@ -382,7 +382,7 @@ trash_applet_open_folder (GtkAction   *action,
 }
 
 static void
-trash_applet_show_help (GtkAction   *action,
+trash_applet_show_help (CtkAction   *action,
                         TrashApplet *applet)
 {
   GError *err = NULL;
@@ -404,7 +404,7 @@ trash_applet_show_help (GtkAction   *action,
 
 
 static void
-trash_applet_show_about (GtkAction   *action,
+trash_applet_show_about (CtkAction   *action,
                          TrashApplet *applet)
 {
   static const char *authors[] = {
@@ -445,12 +445,12 @@ trash_applet_show_about (GtkAction   *action,
 }
 
 static gboolean
-confirm_delete_immediately (GtkWidget *parent_view,
+confirm_delete_immediately (CtkWidget *parent_view,
                             gint num_files,
                             gboolean all)
 {
   GdkScreen *screen;
-  GtkWidget *dialog, *hbox, *vbox, *image, *label;
+  CtkWidget *dialog, *hbox, *vbox, *image, *label;
   gchar *str, *prompt, *detail;
   int response;
 
@@ -532,11 +532,11 @@ confirm_delete_immediately (GtkWidget *parent_view,
 }
 
 static void
-trash_applet_drag_data_received (GtkWidget        *widget,
+trash_applet_drag_data_received (CtkWidget        *widget,
                                  GdkDragContext   *context,
                                  gint              x,
                                  gint              y,
-                                 GtkSelectionData *selectiondata,
+                                 CtkSelectionData *selectiondata,
                                  guint             info,
                                  guint             time_)
 {
@@ -600,7 +600,7 @@ static void
 trash_applet_class_init (TrashAppletClass *class)
 {
   GObjectClass *gobject_class = G_OBJECT_CLASS (class);
-  GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (class);
+  CtkWidgetClass *widget_class = GTK_WIDGET_CLASS (class);
 
   gobject_class->dispose = trash_applet_dispose;
   widget_class->size_allocate = trash_applet_size_allocate;
@@ -619,7 +619,7 @@ trash_applet_factory (CafePanelApplet *applet,
 
   if (!strcmp (iid, "TrashApplet"))
     {
-      GtkActionGroup *action_group;
+      CtkActionGroup *action_group;
       gchar          *ui_path;
 
       g_set_application_name (_("Trash Applet"));

@@ -31,13 +31,13 @@
 #include "cpufreq-utils.h"
 
 struct _CPUFreqPopupPrivate {
-	GtkUIManager        *ui_manager;
+	CtkUIManager        *ui_manager;
 	GSList              *radio_group;
 
-	GtkActionGroup      *freqs_group;
+	CtkActionGroup      *freqs_group;
 	GSList              *freqs_actions;
 
-	GtkActionGroup      *govs_group;
+	CtkActionGroup      *govs_group;
 	GSList              *govs_actions;
 
 	guint                merge_id;
@@ -45,7 +45,7 @@ struct _CPUFreqPopupPrivate {
 	gboolean             show_freqs;
 
 	CPUFreqMonitor      *monitor;
-	GtkWidget           *parent;
+	CtkWidget           *parent;
 };
 
 static void cpufreq_popup_finalize   (GObject           *object);
@@ -165,7 +165,7 @@ cpufreq_popup_set_monitor (CPUFreqPopup   *popup,
 
 void
 cpufreq_popup_set_parent (CPUFreqPopup *popup,
-			  GtkWidget    *parent)
+			  CtkWidget    *parent)
 {
 	g_return_if_fail (CPUFREQ_IS_POPUP (popup));
 	g_return_if_fail (GTK_IS_WIDGET (parent));
@@ -174,7 +174,7 @@ cpufreq_popup_set_parent (CPUFreqPopup *popup,
 }
 
 static void
-cpufreq_popup_frequencies_menu_activate (GtkAction    *action,
+cpufreq_popup_frequencies_menu_activate (CtkAction    *action,
 					 CPUFreqPopup *popup)
 {
 	CPUFreqSelector *selector;
@@ -195,7 +195,7 @@ cpufreq_popup_frequencies_menu_activate (GtkAction    *action,
 }
 
 static void
-cpufreq_popup_governors_menu_activate (GtkAction    *action,
+cpufreq_popup_governors_menu_activate (CtkAction    *action,
 				       CPUFreqPopup *popup)
 {
 	CPUFreqSelector *selector;
@@ -218,12 +218,12 @@ cpufreq_popup_governors_menu_activate (GtkAction    *action,
 static void
 cpufreq_popup_menu_add_action (CPUFreqPopup   *popup,
 			       const gchar    *menu,
-			       GtkActionGroup *action_group,
+			       CtkActionGroup *action_group,
 			       const gchar    *action_name,
 			       const gchar    *label,
 			       gboolean        sensitive)
 {
-	GtkToggleAction *action;
+	CtkToggleAction *action;
 	gchar           *name;
 
 	name = g_strdup_printf ("%s%s", menu, action_name);
@@ -334,11 +334,11 @@ cpufreq_popup_build_ui (CPUFreqPopup *popup,
 	GSList *l = NULL;
 	
 	for (l = actions; l && l->data; l = g_slist_next (l)) { 		
-		GtkAction *action;
+		CtkAction *action;
 		gchar     *name = NULL;
 		gchar     *label = NULL;
 
-		action = (GtkAction *) l->data;
+		action = (CtkAction *) l->data;
 
 		g_object_get (G_OBJECT (action),
 			      "name", &name,
@@ -362,7 +362,7 @@ cpufreq_popup_build_frequencies_menu (CPUFreqPopup *popup,
 				      const gchar  *path)
 {
 	if (!popup->priv->freqs_group) {
-		GtkActionGroup *action_group;
+		CtkActionGroup *action_group;
 
 		action_group = ctk_action_group_new ("FreqsActions");
 		popup->priv->freqs_group = action_group;
@@ -384,7 +384,7 @@ cpufreq_popup_build_governors_menu (CPUFreqPopup *popup,
 				    const gchar  *path)
 {
 	if (!popup->priv->govs_group) {
-		GtkActionGroup *action_group;
+		CtkActionGroup *action_group;
 
 		action_group = ctk_action_group_new ("GovsActions");
 		popup->priv->govs_group = action_group;
@@ -421,12 +421,12 @@ cpufreq_popup_build_menu (CPUFreqPopup *popup)
 
 static void
 cpufreq_popup_menu_set_active_action (CPUFreqPopup   *popup,
-				      GtkActionGroup *action_group,
+				      CtkActionGroup *action_group,
 				      const gchar    *prefix,
 				      const gchar    *item)
 {
 	gchar      name[128];
-	GtkAction *action;
+	CtkAction *action;
 
 	g_snprintf (name, sizeof (name), "%s%s", prefix, item);
 	action = ctk_action_group_get_action (action_group, name);
@@ -481,10 +481,10 @@ cpufreq_popup_menu_set_active (CPUFreqPopup *popup)
 	}
 }
 
-GtkWidget *
+CtkWidget *
 cpufreq_popup_get_menu (CPUFreqPopup *popup)
 {
-	GtkWidget *menu;
+	CtkWidget *menu;
 	
 	g_return_val_if_fail (CPUFREQ_IS_POPUP (popup), NULL);
 	g_return_val_if_fail (CPUFREQ_IS_MONITOR (popup->priv->monitor), NULL);

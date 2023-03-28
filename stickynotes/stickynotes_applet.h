@@ -39,19 +39,19 @@
 /* Global Sticky Notes instance */
 typedef struct
 {
-	GtkBuilder *builder;		
+	CtkBuilder *builder;		
 
-	GtkWidget *w_prefs;		/* The prefs dialog */
-	GtkAdjustment *w_prefs_width;
-	GtkAdjustment *w_prefs_height;
-	GtkWidget *w_prefs_color;
-	GtkWidget *w_prefs_font_color;
-	GtkWidget *w_prefs_sys_color;
-	GtkWidget *w_prefs_font;
-	GtkWidget *w_prefs_sys_font;
-	GtkWidget *w_prefs_sticky;
-	GtkWidget *w_prefs_force;
-	GtkWidget *w_prefs_desktop;
+	CtkWidget *w_prefs;		/* The prefs dialog */
+	CtkAdjustment *w_prefs_width;
+	CtkAdjustment *w_prefs_height;
+	CtkWidget *w_prefs_color;
+	CtkWidget *w_prefs_font_color;
+	CtkWidget *w_prefs_sys_color;
+	CtkWidget *w_prefs_font;
+	CtkWidget *w_prefs_sys_font;
+	CtkWidget *w_prefs_sticky;
+	CtkWidget *w_prefs_force;
+	CtkWidget *w_prefs_desktop;
 
 	GList *notes;			/* Linked-List of all the sticky notes */
 	GList *applets;			/* Linked-List of all the applets */
@@ -70,18 +70,18 @@ typedef struct
 /* Sticky Notes Applet */
 typedef struct
 {
-	GtkWidget *w_applet;		/* The applet */
-	GtkWidget *w_image;		/* The applet icon */
+	CtkWidget *w_applet;		/* The applet */
+	CtkWidget *w_image;		/* The applet icon */
 
-	GtkWidget *destroy_all_dialog;	/* The applet it's destroy all dialog */
+	CtkWidget *destroy_all_dialog;	/* The applet it's destroy all dialog */
 	
 	gboolean prelighted;		/* Whether applet is prelighted */
 
 	gint panel_size;
 	CafePanelAppletOrient panel_orient;
 
-	GtkActionGroup *action_group;
-	GtkWidget *menu_tip;
+	CtkActionGroup *action_group;
+	CtkWidget *menu_tip;
 } StickyNotesApplet;
 	
 typedef enum

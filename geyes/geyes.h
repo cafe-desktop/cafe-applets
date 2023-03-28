@@ -30,7 +30,7 @@
 #define MAX_EYES 1000
 typedef struct
 {
-	GtkWidget *pbox;
+	CtkWidget *pbox;
     
 	gint selected_row;
 } EyesPropertyBox;
@@ -39,9 +39,9 @@ typedef struct
 {
 	/* Applet */
 	CafePanelApplet *applet;
-	GtkWidget   *vbox;
-	GtkWidget   *hbox;
-	GtkWidget   **eyes;
+	CtkWidget   *vbox;
+	CtkWidget   *hbox;
+	CtkWidget   **eyes;
 	guint        timeout_id;
 	gint 	    *pointer_last_x;
 	gint 	    *pointer_last_y;
@@ -79,7 +79,7 @@ void theme_dirs_create (void);
 int load_theme    (EyesApplet        *eyes_applet,
 		   const gchar       *theme_dir);
 
-void properties_cb (GtkAction         *action,
+void properties_cb (CtkAction         *action,
 		    EyesApplet        *eyes_applet);
 
 #endif

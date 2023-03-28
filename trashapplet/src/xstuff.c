@@ -148,11 +148,11 @@ draw_zoom_animation (GdkScreen *gscreen,
 #undef FRAMES
 
 void
-xstuff_zoom_anicafe (GtkWidget *widget, GdkRectangle *opt_rect)
+xstuff_zoom_anicafe (CtkWidget *widget, GdkRectangle *opt_rect)
 {
 	GdkScreen    *gscreen;
 	GdkRectangle  rect, dest;
-	GtkAllocation allocation;
+	CtkAllocation allocation;
 	GdkMonitor   *monitor;
 
 	if (opt_rect)
