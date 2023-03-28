@@ -30,7 +30,7 @@
 #define MINIATURIZE_ANIMATION_DELAY_Z    10
 
 static void
-draw_zoom_animation (GdkScreen *gscreen,
+draw_zoom_animation (CdkScreen *gscreen,
 		     int x, int y, int w, int h,
 		     int fx, int fy, int fw, int fh,
 		     int steps)
@@ -42,7 +42,7 @@ draw_zoom_animation (GdkScreen *gscreen,
 	int i, j;
 	GC frame_gc;
 	XGCValues gcv;
-	GdkColor color = { 65535, 65535, 65535 };
+	CdkColor color = { 65535, 65535, 65535 };
 	Display *dpy;
 	Window root_win;
 	int screen;
@@ -148,12 +148,12 @@ draw_zoom_animation (GdkScreen *gscreen,
 #undef FRAMES
 
 void
-xstuff_zoom_anicafe (CtkWidget *widget, GdkRectangle *opt_rect)
+xstuff_zoom_anicafe (CtkWidget *widget, CdkRectangle *opt_rect)
 {
-	GdkScreen    *gscreen;
-	GdkRectangle  rect, dest;
+	CdkScreen    *gscreen;
+	CdkRectangle  rect, dest;
 	CtkAllocation allocation;
-	GdkMonitor   *monitor;
+	CdkMonitor   *monitor;
 
 	if (opt_rect)
 		rect = *opt_rect;

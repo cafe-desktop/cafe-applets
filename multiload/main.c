@@ -100,10 +100,10 @@ start_procman (MultiloadApplet *ma)
 	GError *error = NULL;
 	GDesktopAppInfo *appinfo;
 	gchar *monitor;
-	GdkAppLaunchContext *launch_context;
-	GdkDisplay *display;
+	CdkAppLaunchContext *launch_context;
+	CdkDisplay *display;
 	GAppInfo *app_info;
-	GdkScreen *screen;
+	CdkScreen *screen;
 
 	g_return_if_fail (ma != NULL);
 
@@ -114,8 +114,8 @@ start_procman (MultiloadApplet *ma)
 	screen = ctk_widget_get_screen (CTK_WIDGET (ma->applet));
 	appinfo = g_desktop_app_info_new (monitor);
 	if (appinfo) {
-		GdkScreen *screen;
-		GdkAppLaunchContext *context;
+		CdkScreen *screen;
+		CdkAppLaunchContext *context;
 		screen = ctk_widget_get_screen (CTK_WIDGET (ma->applet));
 		display = cdk_screen_get_display (screen);
 		context = cdk_display_get_app_launch_context (display);
@@ -227,7 +227,7 @@ multiload_destroy_cb(CtkWidget *widget, gpointer data)
 
 
 static gboolean
-multiload_button_press_event_cb (CtkWidget *widget, GdkEventButton *event, MultiloadApplet *ma)
+multiload_button_press_event_cb (CtkWidget *widget, CdkEventButton *event, MultiloadApplet *ma)
 {
 	g_return_val_if_fail (event != NULL, FALSE);
 	g_return_val_if_fail (ma != NULL, FALSE);
@@ -240,7 +240,7 @@ multiload_button_press_event_cb (CtkWidget *widget, GdkEventButton *event, Multi
 }
 
 static gboolean
-multiload_key_press_event_cb (CtkWidget *widget, GdkEventKey *event, MultiloadApplet *ma)
+multiload_key_press_event_cb (CtkWidget *widget, CdkEventKey *event, MultiloadApplet *ma)
 {
 	g_return_val_if_fail (event != NULL, FALSE);
 	g_return_val_if_fail (ma != NULL, FALSE);

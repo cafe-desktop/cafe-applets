@@ -30,7 +30,7 @@ struct _LoadGraph {
 
     guint allocated;
 
-    GdkRGBA *colors;
+    CdkRGBA *colors;
     gint **data;
     guint data_size;
     guint *pos;

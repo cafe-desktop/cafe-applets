@@ -47,8 +47,8 @@ typedef struct
 	gint 	    *pointer_last_y;
 
 	/* Theme */
-	GdkPixbuf *eye_image;
-	GdkPixbuf *pupil_image;
+	CdkPixbuf *eye_image;
+	CdkPixbuf *pupil_image;
 	gchar *theme_dir;
 	gchar *theme_name;
 	gchar *eye_filename;

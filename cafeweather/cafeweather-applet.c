@@ -225,7 +225,7 @@ static void size_allocate_cb(CafePanelApplet *w, CtkAllocation *allocation, gpoi
     return;
 }
 
-static gboolean clicked_cb (CtkWidget *widget, GdkEventButton *ev, gpointer data)
+static gboolean clicked_cb (CtkWidget *widget, CdkEventButton *ev, gpointer data)
 {
     CafeWeatherApplet *gw_applet = data;
 
@@ -245,7 +245,7 @@ static gboolean clicked_cb (CtkWidget *widget, GdkEventButton *ev, gpointer data
 }
 
 static gboolean 
-key_press_cb (CtkWidget *widget, GdkEventKey *event, CafeWeatherApplet *gw_applet)
+key_press_cb (CtkWidget *widget, CdkEventKey *event, CafeWeatherApplet *gw_applet)
 {
 	switch (event->keyval) {	
 	case GDK_KEY_u:

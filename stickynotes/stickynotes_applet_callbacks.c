@@ -28,8 +28,8 @@
 static gboolean get_desktop_window (Window *window)
 {
 	Window *desktop_window;
-	GdkWindow *root_window;
-	GdkAtom type_returned;
+	CdkWindow *root_window;
+	CdkAtom type_returned;
 	int format_returned;
 	int length_returned;
 
@@ -85,7 +85,7 @@ stickynote_toggle_notes_visible ()
 /* Applet Callback : Mouse button press on the applet. */
 gboolean
 applet_button_cb (CtkWidget         *widget,
-                  GdkEventButton    *event,
+                  CdkEventButton    *event,
                   StickyNotesApplet *applet)
 {
 	if (event->type == GDK_2BUTTON_PRESS)
@@ -105,7 +105,7 @@ applet_button_cb (CtkWidget         *widget,
 /* Applet Callback : Keypress on the applet. */
 gboolean
 applet_key_cb (CtkWidget         *widget,
-               GdkEventKey       *event,
+               CdkEventKey       *event,
                StickyNotesApplet *applet)
 {
 	switch (event->keyval)
@@ -121,7 +121,7 @@ applet_key_cb (CtkWidget         *widget,
 }
 
 /* Applet Callback : Cross (enter or leave) the applet. */
-gboolean applet_cross_cb(CtkWidget *widget, GdkEventCrossing *event, StickyNotesApplet *applet)
+gboolean applet_cross_cb(CtkWidget *widget, CdkEventCrossing *event, StickyNotesApplet *applet)
 {
 	applet->prelighted = event->type == GDK_ENTER_NOTIFY || ctk_widget_has_focus(widget);
 
@@ -131,15 +131,15 @@ gboolean applet_cross_cb(CtkWidget *widget, GdkEventCrossing *event, StickyNotes
 }
 
 /* Applet Callback : On focus (in or out) of the applet. */
-gboolean applet_focus_cb(CtkWidget *widget, GdkEventFocus *event, StickyNotesApplet *applet)
+gboolean applet_focus_cb(CtkWidget *widget, CdkEventFocus *event, StickyNotesApplet *applet)
 {
 	stickynotes_applet_update_icon(applet);
 
 	return FALSE;
 }
 
-static GdkFilterReturn desktop_window_event_filter (GdkXEvent *xevent,
-						    GdkEvent  *event,
+static CdkFilterReturn desktop_window_event_filter (CdkXEvent *xevent,
+						    CdkEvent  *event,
 						    gpointer   data)
 {
 	gboolean desktop_hide = g_settings_get_boolean (stickynotes->settings, "desktop-hide");
@@ -154,7 +154,7 @@ static GdkFilterReturn desktop_window_event_filter (GdkXEvent *xevent,
 void install_check_click_on_desktop (void)
 {
 	Window desktop_window;
-	GdkWindow *window;
+	CdkWindow *window;
 	Atom user_time_window;
 	Atom user_time;
 
@@ -429,7 +429,7 @@ preferences_color_cb (CtkWidget *button, gpointer data)
 {
 	char *color_str, *font_color_str;
 
-	GdkRGBA color, font_color;
+	CdkRGBA color, font_color;
 
 	ctk_color_chooser_get_rgba (CTK_COLOR_CHOOSER (stickynotes->w_prefs_color), &color);
 	ctk_color_chooser_get_rgba (CTK_COLOR_CHOOSER (stickynotes->w_prefs_font_color), &font_color);
@@ -551,7 +551,7 @@ void preferences_response_cb(CtkWidget *dialog, gint response, gpointer data)
 }
 
 /* Preferences Callback : Delete */
-gboolean preferences_delete_cb(CtkWidget *widget, GdkEvent *event, gpointer data)
+gboolean preferences_delete_cb(CtkWidget *widget, CdkEvent *event, gpointer data)
 {
 	ctk_widget_hide(widget);
 

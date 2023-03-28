@@ -476,7 +476,7 @@ static void use_radar_url_toggled(CtkToggleButton* button, CafeWeatherPref* pref
     soft_set_sensitive(pref->priv->basic_radar_url_hbox, toggled);
 }
 
-static gboolean radar_url_changed(CtkWidget* widget, GdkEventFocus* event, CafeWeatherPref* pref)
+static gboolean radar_url_changed(CtkWidget* widget, CdkEventFocus* event, CafeWeatherPref* pref)
 {
 	CafeWeatherApplet* gw_applet = pref->priv->applet;
 	gchar *text;

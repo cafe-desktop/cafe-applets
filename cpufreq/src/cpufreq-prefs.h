@@ -60,7 +60,7 @@ CPUFreqShowTextMode cpufreq_prefs_get_show_text_mode (CPUFreqPrefs *prefs);
 
 /* Properties dialog */
 void                cpufreq_preferences_dialog_run   (CPUFreqPrefs *prefs,
-						      GdkScreen    *screen);
+						      CdkScreen    *screen);
 
 G_END_DECLS
 

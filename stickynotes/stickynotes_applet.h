@@ -104,7 +104,7 @@ void stickynotes_applet_update_prefs(void);
 void stickynotes_applet_update_menus(void);
 void stickynotes_applet_update_tooltips(void);
 
-void stickynotes_applet_do_default_action(GdkScreen *screen);
+void stickynotes_applet_do_default_action(CdkScreen *screen);
 
 void stickynotes_applet_panel_icon_get_geometry (int *x, int *y, int *width, int *height);
 

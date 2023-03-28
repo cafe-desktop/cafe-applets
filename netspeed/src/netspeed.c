@@ -92,8 +92,8 @@ typedef struct
 	gboolean change_icon, auto_change_device;
 	gboolean show_icon, short_unit;
 	gboolean show_quality_icon;
-	GdkRGBA         in_color;
-	GdkRGBA         out_color;
+	CdkRGBA         in_color;
+	CdkRGBA         out_color;
 	int width;
 
 	CtkWidget *inbytes_text, *outbytes_text;
@@ -472,8 +472,8 @@ redraw_graph(CafeNetspeedApplet *applet, cairo_t *cr)
 {
 	CtkWidget *da = CTK_WIDGET(applet->drawingarea);
 	CtkStyleContext *stylecontext = ctk_widget_get_style_context (da);
-	GdkWindow *real_window = ctk_widget_get_window (da);
-	GdkPoint in_points[GRAPH_VALUES], out_points[GRAPH_VALUES];
+	CdkWindow *real_window = ctk_widget_get_window (da);
+	CdkPoint in_points[GRAPH_VALUES], out_points[GRAPH_VALUES];
 	PangoLayout *layout;
 	PangoRectangle logical_rect;
 	char *text;
@@ -487,7 +487,7 @@ redraw_graph(CafeNetspeedApplet *applet, cairo_t *cr)
 	/* the graph hight should be: hight/2 <= applet->max_graph < hight */
 	for (max_val = 1; max_val < applet->max_graph; max_val *= 2) ;
 
-	/* calculate the polygons (GdkPoint[]) for the graphs */
+	/* calculate the polygons (CdkPoint[]) for the graphs */
 	offset = 0;
 	for (i = (applet->index_graph + 1) % GRAPH_VALUES; applet->in_graph[i] < 0; i = (i + 1) % GRAPH_VALUES)
 		offset++;
@@ -1120,7 +1120,7 @@ static void
 incolor_changed_cb (CtkColorChooser *button, gpointer data)
 {
 	CafeNetspeedApplet *applet = (CafeNetspeedApplet*)data;
-	GdkRGBA color;
+	CdkRGBA color;
 	gchar *string;
 
 	ctk_color_chooser_get_rgba (CTK_COLOR_CHOOSER (button), &color);
@@ -1135,7 +1135,7 @@ static void
 outcolor_changed_cb (CtkColorChooser *button, gpointer data)
 {
 	CafeNetspeedApplet *applet = (CafeNetspeedApplet*)data;
-	GdkRGBA color;
+	CdkRGBA color;
 	gchar *string;
 
 	ctk_color_chooser_get_rgba (CTK_COLOR_CHOOSER (button), &color);
@@ -1397,7 +1397,7 @@ label_size_allocate_cb(CtkWidget *widget, CtkAllocation *allocation, CafeNetspee
 }
 
 static gboolean
-applet_button_press(CtkWidget *widget, GdkEventButton *event, CafeNetspeedApplet *applet)
+applet_button_press(CtkWidget *widget, CdkEventButton *event, CafeNetspeedApplet *applet)
 {
 	if (event->button == 1)
 	{
@@ -1543,7 +1543,7 @@ update_tooltip(CafeNetspeedApplet* applet)
 
 
 static gboolean
-cafe_netspeed_enter_cb(CtkWidget *widget, GdkEventCrossing *event, gpointer data)
+cafe_netspeed_enter_cb(CtkWidget *widget, CdkEventCrossing *event, gpointer data)
 {
 	CafeNetspeedApplet *applet = data;
 
@@ -1554,7 +1554,7 @@ cafe_netspeed_enter_cb(CtkWidget *widget, GdkEventCrossing *event, gpointer data
 }
 
 static gboolean
-cafe_netspeed_leave_cb(CtkWidget *widget, GdkEventCrossing *event, gpointer data)
+cafe_netspeed_leave_cb(CtkWidget *widget, CdkEventCrossing *event, gpointer data)
 {
 	CafeNetspeedApplet *applet = data;
 

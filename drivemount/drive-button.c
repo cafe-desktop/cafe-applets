@@ -55,9 +55,9 @@ static void     drive_button_dispose      (GObject        *object);
 static void     drive_button_unrealize    (CtkWidget      *widget);
 #endif /* 0 */
 static gboolean drive_button_button_press (CtkWidget      *widget,
-					   GdkEventButton *event);
+					   CdkEventButton *event);
 static gboolean drive_button_key_press    (CtkWidget      *widget,
-					   GdkEventKey    *event);
+					   CdkEventKey    *event);
 static void drive_button_theme_change     (CtkIconTheme   *icon_theme,
 					   gpointer        data);
 
@@ -167,9 +167,9 @@ drive_button_unrealize (CtkWidget *widget)
 #endif /* 0 */
 
 static int
-_ctk_get_monitor_num (GdkMonitor *monitor)
+_ctk_get_monitor_num (CdkMonitor *monitor)
 {
-    GdkDisplay *display;
+    CdkDisplay *display;
     int n_monitors, i;
 
     display = cdk_monitor_get_display(monitor);
@@ -185,7 +185,7 @@ _ctk_get_monitor_num (GdkMonitor *monitor)
 
 static gboolean
 drive_button_button_press (CtkWidget      *widget,
-			   GdkEventButton *event)
+			   CdkEventButton *event)
 {
     DriveButton *self = DRIVE_BUTTON (widget);
 
@@ -197,7 +197,7 @@ drive_button_button_press (CtkWidget      *widget,
 		                          widget,
 		                          GDK_GRAVITY_SOUTH_WEST,
 		                          GDK_GRAVITY_NORTH_WEST,
-		                          (const GdkEvent*) event);
+		                          (const CdkEvent*) event);
 	}
 	return TRUE;
     }
@@ -206,7 +206,7 @@ drive_button_button_press (CtkWidget      *widget,
 
 static gboolean
 drive_button_key_press (CtkWidget      *widget,
-			GdkEventKey    *event)
+			CdkEventKey    *event)
 {
     DriveButton *self = DRIVE_BUTTON (widget);
 
@@ -221,7 +221,7 @@ drive_button_key_press (CtkWidget      *widget,
 		                          widget,
 		                          GDK_GRAVITY_SOUTH_WEST,
 		                          GDK_GRAVITY_NORTH_WEST,
-		                          (const GdkEvent*) event);
+		                          (const CdkEvent*) event);
 	}
 	return TRUE;
     }
@@ -278,7 +278,7 @@ static gboolean
 drive_button_update (gpointer user_data)
 {
     DriveButton *self;
-    GdkScreen *screen;
+    CdkScreen *screen;
     CtkIconTheme *icon_theme;
     CtkIconInfo *icon_info;
     GIcon *icon;
@@ -399,7 +399,7 @@ drive_button_update (gpointer user_data)
         rowstride = cairo_image_surface_get_stride (tmp_surface);
         pixels = cairo_image_surface_get_data (tmp_surface);
 
-        GdkRGBA color;
+        CdkRGBA color;
         GSettings *settings;
         settings = g_settings_new ("org.cafe.drivemount");
         gchar *color_string = g_settings_get_string (settings, "drivemount-checkmark-color");
@@ -571,12 +571,12 @@ create_menu_item (DriveButton *self, const gchar *icon_name,
 static void
 open_drive (DriveButton *self, CtkWidget *item)
 {
-    GdkScreen *screen;
+    CdkScreen *screen;
     CtkWidget *dialog;
     GError *error = NULL;
     GFile *file = NULL;
     GList *files = NULL;
-    GdkAppLaunchContext *launch_context;
+    CdkAppLaunchContext *launch_context;
     GAppInfo *app_info;
 
     if (self->volume) {
@@ -597,7 +597,7 @@ open_drive (DriveButton *self, CtkWidget *item)
       app_info = G_APP_INFO (g_desktop_app_info_new ("caja.desktop"));
 
     if (app_info) {
-	GdkDisplay *display = ctk_widget_get_display (item);
+	CdkDisplay *display = ctk_widget_get_display (item);
 	launch_context = cdk_display_get_app_launch_context (display);
 	screen = ctk_widget_get_screen (CTK_WIDGET (self));
 	cdk_app_launch_context_set_screen (launch_context, screen);
@@ -979,8 +979,8 @@ drive_button_ensure_popup (DriveButton *self)
 	/*Set up custom theme and transparency support */
 	CtkWidget *toplevel = ctk_widget_get_toplevel (self->popup_menu);
 	/* Fix any failures of compiz/other wm's to communicate with ctk for transparency */
-	GdkScreen *screen2 = ctk_widget_get_screen(CTK_WIDGET(toplevel));
-	GdkVisual *visual = cdk_screen_get_rgba_visual(screen2);
+	CdkScreen *screen2 = ctk_widget_get_screen(CTK_WIDGET(toplevel));
+	CdkVisual *visual = cdk_screen_get_rgba_visual(screen2);
 	ctk_widget_set_visual(CTK_WIDGET(toplevel), visual);
 	/*set menu and it's toplevel window to follow panel theme */
 	CtkStyleContext *context;

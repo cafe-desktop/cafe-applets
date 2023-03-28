@@ -92,8 +92,8 @@ draw_eye (EyesApplet *eyes_applet,
           gint pupil_x, 
           gint pupil_y)
 {
-	GdkPixbuf *pixbuf;
-	GdkRectangle rect, r1, r2;
+	CdkPixbuf *pixbuf;
+	CdkRectangle rect, r1, r2;
 
 	pixbuf = cdk_pixbuf_copy (eyes_applet->eye_image);
 	r1.x = pupil_x - eyes_applet->pupil_width / 2;
@@ -123,8 +123,8 @@ draw_eye (EyesApplet *eyes_applet,
 static gint 
 timer_cb (EyesApplet *eyes_applet)
 {
-        GdkDisplay *display;
-        GdkSeat *seat;
+        CdkDisplay *display;
+        CdkSeat *seat;
         gint x, y;
         gint pupil_x, pupil_y;
         gint i;

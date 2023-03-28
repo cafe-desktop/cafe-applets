@@ -316,7 +316,7 @@ trash_empty_show_confirmation_dialog (CtkWidget *parent)
 {
   CtkWidget *dialog;
   CtkWidget *button;
-  GdkScreen *screen;
+  CdkScreen *screen;
 
   if (!trash_empty_require_confirmation ())
     {

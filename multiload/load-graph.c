@@ -106,7 +106,7 @@ load_graph_draw (LoadGraph *g)
     }
     //printf("max = %d ", maxnet);
     guint level = 0;
-    GdkRGBA grid_color;
+    CdkRGBA grid_color;
     if (maxnet > g->net_threshold3) {
       g->net_threshold = g->net_threshold3;
       level = 3;
@@ -294,7 +294,7 @@ load_graph_alloc (LoadGraph *g)
 }
 
 static gint
-load_graph_configure (CtkWidget *widget, GdkEventConfigure *event,
+load_graph_configure (CtkWidget *widget, CdkEventConfigure *event,
                       gpointer data_ptr)
 {
     CtkAllocation allocation;
@@ -346,7 +346,7 @@ load_graph_destroy (CtkWidget *widget, gpointer data_ptr)
 }
 
 static gboolean
-load_graph_clicked (CtkWidget *widget, GdkEventButton *event, LoadGraph *load)
+load_graph_clicked (CtkWidget *widget, CdkEventButton *event, LoadGraph *load)
 {
     load->multiload->last_clicked = load->id;
 
@@ -354,7 +354,7 @@ load_graph_clicked (CtkWidget *widget, GdkEventButton *event, LoadGraph *load)
 }
 
 static gboolean
-load_graph_enter_cb(CtkWidget *widget, GdkEventCrossing *event, gpointer data)
+load_graph_enter_cb(CtkWidget *widget, CdkEventCrossing *event, gpointer data)
 {
     LoadGraph *graph;
     graph = (LoadGraph *)data;
@@ -366,7 +366,7 @@ load_graph_enter_cb(CtkWidget *widget, GdkEventCrossing *event, gpointer data)
 }
 
 static gboolean
-load_graph_leave_cb(CtkWidget *widget, GdkEventCrossing *event, gpointer data)
+load_graph_leave_cb(CtkWidget *widget, CdkEventCrossing *event, gpointer data)
 {
     LoadGraph *graph;
     graph = (LoadGraph *)data;
@@ -383,7 +383,7 @@ load_graph_load_config (LoadGraph *g)
     guint i;
 
     if (!g->colors)
-        g->colors = g_new0(GdkRGBA, g->n);
+        g->colors = g_new0(CdkRGBA, g->n);
 
     for (i = 0; i < g->n; i++)
     {
