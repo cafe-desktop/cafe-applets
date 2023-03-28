@@ -116,8 +116,8 @@ static const gunichar * const chartable[] = {
 
 /* sets the picked character as the selection when it gets a request */
 static void
-charpick_selection_handler(GtkWidget *widget,
-			   GtkSelectionData *selection_data,
+charpick_selection_handler(CtkWidget *widget,
+			   CtkSelectionData *selection_data,
 			   guint info,
 			   guint time,
 		           gpointer data)
@@ -135,7 +135,7 @@ charpick_selection_handler(GtkWidget *widget,
 
 /* untoggles the active toggle_button when we lose the selection */
 static gint
-selection_clear_cb (GtkWidget *widget, GdkEventSelection *event,
+selection_clear_cb (CtkWidget *widget, GdkEventSelection *event,
                     gpointer data)
 {
   charpick_data *curr_data = data;
@@ -149,7 +149,7 @@ selection_clear_cb (GtkWidget *widget, GdkEventSelection *event,
 
 
 static gint
-toggle_button_toggled_cb(GtkToggleButton *button, gpointer data)
+toggle_button_toggled_cb(CtkToggleButton *button, gpointer data)
 {
   charpick_data *curr_data = data;
   gint button_index;
@@ -186,9 +186,9 @@ toggle_button_toggled_cb(GtkToggleButton *button, gpointer data)
  * propogate button presses on button2/3.
  */
 static gboolean
-button_press_hack (GtkWidget      *widget,
+button_press_hack (CtkWidget      *widget,
 		   GdkEventButton *event,
-		   GtkWidget      *applet)
+		   CtkWidget      *applet)
 {
     if (event->button == 3 || event->button == 2) {
 	ctk_propagate_event (applet, (GdkEvent *) event);
@@ -200,7 +200,7 @@ button_press_hack (GtkWidget      *widget,
 }
 
 static gint
-key_press_event(GtkWidget *widget, GdkEventKey *event, gpointer data)
+key_press_event(CtkWidget *widget, GdkEventKey *event, gpointer data)
 {
 #if 0
   charpick_data *p_curr_data = data;
@@ -271,7 +271,7 @@ key_press_event(GtkWidget *widget, GdkEventKey *event, gpointer data)
 }
 
 static void
-menuitem_activated (GtkMenuItem *menuitem, charpick_data *curr_data)
+menuitem_activated (CtkMenuItem *menuitem, charpick_data *curr_data)
 {
 	gchar *string;
 	CafePanelApplet *applet = CAFE_PANEL_APPLET (curr_data->applet);
@@ -291,8 +291,8 @@ populate_menu (charpick_data *curr_data)
 {
 	GList *list = curr_data->chartable;
 	GSList *group = NULL;
-	GtkMenu *menu;
-	GtkWidget *menuitem;
+	CtkMenu *menu;
+	CtkWidget *menuitem;
 
 	if (curr_data->menu)
 		ctk_widget_destroy (curr_data->menu);
@@ -316,20 +316,20 @@ populate_menu (charpick_data *curr_data)
 	build_table(curr_data);
 	
 	/*Set up custom theme and transparency support*/
-	GtkWidget *toplevel = ctk_widget_get_toplevel (GTK_WIDGET (menu));
+	CtkWidget *toplevel = ctk_widget_get_toplevel (GTK_WIDGET (menu));
 	/* Fix any failures of compiz/other wm's to communicate with ctk for transparency */
 	GdkScreen *screen = ctk_widget_get_screen(GTK_WIDGET(toplevel));
 	GdkVisual *visual = gdk_screen_get_rgba_visual(screen);
 	ctk_widget_set_visual(GTK_WIDGET(toplevel), visual);
 	/* Set menu and it's toplevel window to follow panel theme */
-	GtkStyleContext *context;
+	CtkStyleContext *context;
 	context = ctk_widget_get_style_context (GTK_WIDGET(toplevel));
 	ctk_style_context_add_class(context,"gnome-panel-menu-bar");
 	ctk_style_context_add_class(context,"cafe-panel-menu-bar");
 }
 
 static void
-chooser_button_clicked (GtkButton *button, charpick_data *curr_data)
+chooser_button_clicked (CtkButton *button, charpick_data *curr_data)
 {
 	if (ctk_widget_get_visible (curr_data->menu))
 		ctk_menu_popdown (GTK_MENU (curr_data->menu));
@@ -349,9 +349,9 @@ chooser_button_clicked (GtkButton *button, charpick_data *curr_data)
    indication be drawn on the label itself when space is tight. Taken from the clock applet.
    FIXME : This is an Evil Hack and should be fixed when the focus padding can be overridden at the ctk+ level */
 
-static inline void force_no_button_padding (GtkWidget *widget)
+static inline void force_no_button_padding (CtkWidget *widget)
 {
-	GtkCssProvider *provider;
+	CtkCssProvider *provider;
 
 	provider = ctk_css_provider_new ();
 
@@ -378,15 +378,15 @@ static inline void force_no_button_padding (GtkWidget *widget)
 void
 build_table(charpick_data *p_curr_data)
 {
-  GtkWidget *box, *button_box, **row_box;
-  GtkWidget *button, *arrow;
+  CtkWidget *box, *button_box, **row_box;
+  CtkWidget *button, *arrow;
   gint i = 0, len = g_utf8_strlen (p_curr_data->charlist, -1);
-  GtkWidget **toggle_button;
+  CtkWidget **toggle_button;
   gchar *charlist;
   gint max_width=1, max_height=1;
   gint size_ratio;
 
-  toggle_button = g_new (GtkWidget *, len);
+  toggle_button = g_new (CtkWidget *, len);
   
   if (p_curr_data->box)
     ctk_widget_destroy(p_curr_data->box);
@@ -438,7 +438,7 @@ build_table(charpick_data *p_curr_data)
   charlist = g_strdup (p_curr_data->charlist);
   for (i = 0; i < len; i++) {
     gchar label[7];
-    GtkRequisition req;
+    CtkRequisition req;
     gchar *atk_desc;
     gchar *name;
     
@@ -495,7 +495,7 @@ build_table(charpick_data *p_curr_data)
   ctk_box_pack_start (GTK_BOX (box), button_box, TRUE, TRUE, 0);
   
   size_ratio = MAX (size_ratio, 1);
-  row_box = g_new0 (GtkWidget *, size_ratio);
+  row_box = g_new0 (CtkWidget *, size_ratio);
   for (i=0; i < size_ratio; i++) {
 	if (!p_curr_data->panel_vertical) row_box[i] = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 	else row_box[i] = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
@@ -527,7 +527,7 @@ build_table(charpick_data *p_curr_data)
   
 }
 
-static void applet_size_allocate(CafePanelApplet *applet, GtkAllocation *allocation, gpointer data)
+static void applet_size_allocate(CafePanelApplet *applet, CtkAllocation *allocation, gpointer data)
 {
   charpick_data *curr_data = data;
   if (curr_data->panel_vertical) {
@@ -558,7 +558,7 @@ static void applet_change_orient(CafePanelApplet *applet, CafePanelAppletOrient 
 
 
 static void
-about (GtkAction     *action,
+about (CtkAction     *action,
        charpick_data *curr_data)
 {
   static const char * const authors[] = {
@@ -597,7 +597,7 @@ about (GtkAction     *action,
 
 
 static void
-help_cb (GtkAction     *action,
+help_cb (CtkAction     *action,
 	 charpick_data *curr_data)
 {
   GError *error = NULL;
@@ -615,7 +615,7 @@ help_cb (GtkAction     *action,
 }
 
 static void
-applet_destroy (GtkWidget *widget, gpointer data)
+applet_destroy (CtkWidget *widget, gpointer data)
 {
   charpick_data *curr_data = data;
 
@@ -667,7 +667,7 @@ get_chartable (charpick_data *curr_data)
 
 }
 
-static const GtkActionEntry charpick_applet_menu_actions [] = {
+static const CtkActionEntry charpick_applet_menu_actions [] = {
 	{ "Preferences", "document-properties", N_("_Preferences"),
 	  NULL, NULL,
 	  G_CALLBACK (show_preferences_dialog) },
@@ -680,7 +680,7 @@ static const GtkActionEntry charpick_applet_menu_actions [] = {
 };
 
 void
-set_atk_name_description (GtkWidget *widget, const gchar *name,
+set_atk_name_description (CtkWidget *widget, const gchar *name,
                           const gchar *description)
 {
   AtkObject *aobj;
@@ -695,7 +695,7 @@ set_atk_name_description (GtkWidget *widget, const gchar *name,
 }
 
 static void
-make_applet_accessible (GtkWidget *applet)
+make_applet_accessible (CtkWidget *applet)
 {
   set_atk_name_description (applet, _("Character Palette"), _("Insert characters"));
 }
@@ -708,7 +708,7 @@ charpicker_applet_fill (CafePanelApplet *applet)
   GdkAtom utf8_atom;
   GList *list;
   gchar *string;
-  GtkActionGroup *action_group;
+  CtkActionGroup *action_group;
   gchar *ui_path;
 
   g_set_application_name (_("Character Palette"));
@@ -799,7 +799,7 @@ charpicker_applet_fill (CafePanelApplet *applet)
   g_free (ui_path);
 
   if (cafe_panel_applet_get_locked_down (CAFE_PANEL_APPLET (applet))) {
-	  GtkAction *action;
+	  CtkAction *action;
 
 	  action = ctk_action_group_get_action (action_group, "Preferences");
 	  ctk_action_set_visible (action, FALSE);

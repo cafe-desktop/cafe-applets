@@ -35,8 +35,8 @@ struct _LoadGraph {
     guint data_size;
     guint *pos;
 
-    GtkWidget *main_widget;
-    GtkWidget *frame, *box, *disp;
+    CtkWidget *main_widget;
+    CtkWidget *frame, *box, *disp;
     cairo_surface_t *surface;
     int timer_index;
 
@@ -67,7 +67,7 @@ struct _MultiloadApplet
 
 	LoadGraph *graphs[NGRAPHS];
 
-	GtkWidget *box;
+	CtkWidget *box;
 
 	gboolean view_cpuload;
 	gboolean view_memload;
@@ -76,10 +76,10 @@ struct _MultiloadApplet
 	gboolean view_loadavg;
 	gboolean view_diskload;
 
-	GtkWidget *about_dialog;
-	GtkWidget *check_boxes[NGRAPHS];
-	GtkWidget *prop_dialog;
-	GtkWidget *notebook;
+	CtkWidget *about_dialog;
+	CtkWidget *check_boxes[NGRAPHS];
+	CtkWidget *prop_dialog;
+	CtkWidget *notebook;
 	int last_clicked;
 };
 
@@ -88,7 +88,7 @@ struct _MultiloadApplet
 
 /* show properties dialog */
 G_GNUC_INTERNAL void
-multiload_properties_cb (GtkAction       *action,
+multiload_properties_cb (CtkAction       *action,
 			 MultiloadApplet *ma);
 
 /* remove the old graphs and rebuild them */

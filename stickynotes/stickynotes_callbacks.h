@@ -23,26 +23,26 @@
 #include <stickynotes.h>
 
 /* Callbacks for the sticky notes windows */
-gboolean stickynote_toggle_lock_cb(GtkWidget *widget, StickyNote *note);
-gboolean stickynote_close_cb(GtkWidget *widget, StickyNote *note);
-gboolean stickynote_resize_cb(GtkWidget *widget, GdkEventButton *event, StickyNote *note);
-gboolean stickynote_move_cb(GtkWidget *widget, GdkEventButton *event, StickyNote *note);
-gboolean stickynote_configure_cb(GtkWidget *widget, GdkEventConfigure *event, StickyNote *note);
-gboolean stickynote_delete_cb(GtkWidget *widget, GdkEvent *event, StickyNote *note);
-gboolean stickynote_show_popup_menu(GtkWidget *widget, GdkEventButton *event, GtkWidget *popup_menu);
+gboolean stickynote_toggle_lock_cb(CtkWidget *widget, StickyNote *note);
+gboolean stickynote_close_cb(CtkWidget *widget, StickyNote *note);
+gboolean stickynote_resize_cb(CtkWidget *widget, GdkEventButton *event, StickyNote *note);
+gboolean stickynote_move_cb(CtkWidget *widget, GdkEventButton *event, StickyNote *note);
+gboolean stickynote_configure_cb(CtkWidget *widget, GdkEventConfigure *event, StickyNote *note);
+gboolean stickynote_delete_cb(CtkWidget *widget, GdkEvent *event, StickyNote *note);
+gboolean stickynote_show_popup_menu(CtkWidget *widget, GdkEventButton *event, CtkWidget *popup_menu);
 
 /* Callbacks for the sticky notes popup menu */
-void popup_create_cb(GtkWidget *widget, StickyNote *note);
-void popup_destroy_cb(GtkWidget *widget, StickyNote *note);
-void popup_toggle_lock_cb(GtkToggleAction *action, StickyNote *note);
-void popup_properties_cb(GtkWidget *widget, StickyNote *note);
+void popup_create_cb(CtkWidget *widget, StickyNote *note);
+void popup_destroy_cb(CtkWidget *widget, StickyNote *note);
+void popup_toggle_lock_cb(CtkToggleAction *action, StickyNote *note);
+void popup_properties_cb(CtkWidget *widget, StickyNote *note);
 
 /* Callbacks for sticky notes properties dialog */
 void properties_apply_title_cb(StickyNote *note);
 void properties_apply_color_cb(StickyNote *note);
 void properties_apply_font_cb(StickyNote *note);
-void properties_color_cb(GtkWidget *button, StickyNote *note);
-void properties_font_cb(GtkWidget *button, StickyNote *note);
-void properties_activate_cb(GtkWidget *widget, StickyNote *note);
+void properties_color_cb(CtkWidget *button, StickyNote *note);
+void properties_font_cb(CtkWidget *button, StickyNote *note);
+void properties_activate_cb(CtkWidget *widget, StickyNote *note);
 
 #endif /* __STICKYNOTES_CALLBACKS_H__ */

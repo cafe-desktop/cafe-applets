@@ -85,15 +85,15 @@ typedef struct
 } LayoutConfiguration;
 
 typedef struct _ProgressData {
-  GtkWidget *applet;
+  CtkWidget *applet;
 
   /* these are used by properties.c */
-  GtkWidget *radio_text_1;
-  GtkWidget *radio_text_2;
-  GtkWidget *check_text;
-  GtkWidget *lowbatt_toggle;
-  GtkWidget *full_toggle;
-  GtkWidget *hbox_ptr;
+  CtkWidget *radio_text_1;
+  CtkWidget *radio_text_2;
+  CtkWidget *check_text;
+  CtkWidget *lowbatt_toggle;
+  CtkWidget *full_toggle;
+  CtkWidget *hbox_ptr;
 
   /* flags set from gsettings or the properties dialog */
   GSettings *settings;
@@ -110,19 +110,19 @@ typedef struct _ProgressData {
   gboolean refresh_label;
 
   /* the main grid that contains the visual elements */
-  GtkWidget *grid;
+  CtkWidget *grid;
 
   /* the visual elements */
-  GtkWidget *battery;
-  GtkWidget *status;
-  GtkWidget *percent;
+  CtkWidget *battery;
+  CtkWidget *status;
+  CtkWidget *percent;
 
   /* dialog boxes that might be displayed */
-  GtkDialog *prop_win;
-  GtkWidget *battery_low_dialog;
+  CtkDialog *prop_win;
+  CtkWidget *battery_low_dialog;
 
   /* text label inside the low battery dialog */
-  GtkLabel *battery_low_label;
+  CtkLabel *battery_low_label;
 
   /* our height/width as given to us by size_allocate */
   gint width, height;
@@ -150,7 +150,7 @@ typedef struct _ProgressData {
 } ProgressData;
 
 /* properties.c */
-void prop_cb (GtkAction *, ProgressData *);
+void prop_cb (CtkAction *, ProgressData *);
 
 /* battstat_applet.c */
 void reconfigure_layout( ProgressData *battstat );

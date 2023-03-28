@@ -53,7 +53,7 @@
   * cpufreq: deprecated g_type_class_add_private
   * cafeweather: deprecated g_type_class_add_private
   * cpufreq: support kernel 5.1.0
-  * weather: align Gtk_Box to center
+  * weather: align Ctk_Box to center
   * multiload: filter-out non-local disks and user mounts
   * Use g_list_free_full() convenience function
   * Fix use-after-free clang warning
@@ -109,8 +109,8 @@
   * trash applet: avoid deprecated 'ctk_window_set_wmclass'
   * cpufreq: fix a -Wimplicit-function-declaration
   * trash: fix a -Wincompatible-pointer-types warning
-  * weather-applet: replace deprecated GtkAlignment
-  * weather-dialog: replace deprecated GtkAlignment
+  * weather-applet: replace deprecated CtkAlignment
+  * weather-dialog: replace deprecated CtkAlignment
   * weather-prefs: replace deprecated ctk_alignment_new
   * stickynotes: replace deprecated gdk_error_trap_push/pop functions
   * cpu-freq: replace deprecated ctk_menu_popup
@@ -132,7 +132,7 @@
   * only text formatting to prepare for real change
   * Fix cpufreq applet spacing on HiDPI displays
   * multiload: add style class multiload-applet
-  * avoid deprecated GtkStock
+  * avoid deprecated CtkStock
 
 ### cafe-applets 1.20.0
 
@@ -226,8 +226,8 @@
 ### cafe-applets 1.16.0
 
   * Build: require polkit 0.97
-  * Use GtkAboutDialog instead of CafeAboutDialog
-  * Netspeed: use GtkColorButton/GtkColorChooser
+  * Use CtkAboutDialog instead of CafeAboutDialog
+  * Netspeed: use CtkColorButton/CtkColorChooser
   * Drop dependency on libcafe-desktop
   * GTK+3: fix various deprecations
   * Some code cleanups
@@ -301,7 +301,7 @@
   * Move from cafe-doc-utils to yelp-tools.
   * Replace libcafewnck with gnome's libwnck.
   * Replace mucharmap in with gucharmap.
-  * Add Gtk+3 support.
+  * Add Ctk+3 support.
   * New command applet that displays output from a command.
   * Replace broken timer applet with new applet written in C.
   * Serveal enhancement to invest-applet.

@@ -34,7 +34,7 @@ typedef struct _CafeWeatherPrefClass CafeWeatherPrefClass;
 
 struct _CafeWeatherPref
 {
-	GtkDialog parent;
+	CtkDialog parent;
 
 	/* private */
 	CafeWeatherPrefPrivate *priv;
@@ -43,14 +43,14 @@ struct _CafeWeatherPref
 
 struct _CafeWeatherPrefClass
 {
-	GtkDialogClass parent_class;
+	CtkDialogClass parent_class;
 };
 
 GType		 cafeweather_pref_get_type	(void);
-GtkWidget	*cafeweather_pref_new	(CafeWeatherApplet *applet);
+CtkWidget	*cafeweather_pref_new	(CafeWeatherApplet *applet);
 
 
-void set_access_namedesc (GtkWidget *widget, const gchar *name, const gchar *desc);
+void set_access_namedesc (CtkWidget *widget, const gchar *name, const gchar *desc);
 
 
 G_END_DECLS

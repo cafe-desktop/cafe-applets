@@ -76,7 +76,7 @@ xstuff_atom_get (const char *atom_name)
 }
 
 int
-xstuff_get_current_workspace (GtkWindow *window)
+xstuff_get_current_workspace (CtkWindow *window)
 {
 	Window  root_window;
 	Atom    type = None;
@@ -116,7 +116,7 @@ xstuff_get_current_workspace (GtkWindow *window)
 	return retval;
 }
 void
-xstuff_change_workspace (GtkWindow *window,
+xstuff_change_workspace (CtkWindow *window,
                          int        new_space)
 {
   XEvent xev;

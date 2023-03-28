@@ -36,7 +36,7 @@ uninstall-local:
 		rm -f $(DESTDIR)$(pkgdatadir)/icons/hicolor/48x48/apps/$$icon; \
 	done
 	@-if test -z "$(DESTDIR)"; then \
-		echo "Updating Gtk icon cache."; \
+		echo "Updating Ctk icon cache."; \
 		$(ctk_update_icon_cache); \
 	else \
 		echo "*** Icon cache not updated. After install, run this:"; \
@@ -61,7 +61,7 @@ install-data-local:
 		$(INSTALL_DATA) $(srcdir)/$$icon $(DESTDIR)$(pkgdatadir)/icons/hicolor/48x48/apps/$$icon; \
 	done
 	@-if test -z "$(DESTDIR)"; then \
-		echo "Updating Gtk icon cache."; \
+		echo "Updating Ctk icon cache."; \
 		$(ctk_update_icon_cache); \
 	else \
 		echo "*** Icon cache not updated. After install, run this:"; \

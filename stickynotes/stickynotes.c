@@ -40,7 +40,7 @@
 
 static gboolean save_scheduled = FALSE;
 
-static void response_cb (GtkWidget *dialog, gint id, gpointer data);
+static void response_cb (CtkWidget *dialog, gint id, gpointer data);
 
 /* Based on a function found in wnck */
 static void
@@ -80,7 +80,7 @@ timeout_happened (gpointer data)
 
 /* Called when a text buffer is changed.  */
 static void
-buffer_changed (GtkTextBuffer *buffer, StickyNote *note)
+buffer_changed (CtkTextBuffer *buffer, StickyNote *note)
 {
 	if ( (note->h + note->y) > stickynotes->max_height )
 		ctk_scrolled_window_set_policy ( GTK_SCROLLED_WINDOW(note->w_scroller),
@@ -100,7 +100,7 @@ static StickyNote *
 stickynote_new_aux (GdkScreen *screen, gint x, gint y, gint w, gint h)
 {
 	StickyNote *note;
-	GtkBuilder *builder;
+	CtkBuilder *builder;
 
 	note = g_new (StickyNote, 1);
 
@@ -215,9 +215,9 @@ stickynote_new_aux (GdkScreen *screen, gint x, gint y, gint w, gint h)
 	ctk_widget_realize (note->w_window);
 
 	/* Connect a popup menu to all buttons and title */
-	/* GtkBuilder holds and drops the references to all the widgets it
-	 * creates for as long as it exist (GtkBuilder). Hence in our callback
-	 * we would have an invalid GtkMenu. We need to ref it.
+	/* CtkBuilder holds and drops the references to all the widgets it
+	 * creates for as long as it exist (CtkBuilder). Hence in our callback
+	 * we would have an invalid CtkMenu. We need to ref it.
 	 */
 	g_object_ref (note->w_menu);
 	g_signal_connect (G_OBJECT (note->w_window), "button-press-event",
@@ -376,7 +376,7 @@ void stickynote_change_properties (StickyNote *note)
 }
 
 static void
-response_cb (GtkWidget *dialog, gint id, gpointer data)
+response_cb (CtkWidget *dialog, gint id, gpointer data)
 {
         if (id == GTK_RESPONSE_HELP)
 		ctk_show_uri_on_window (GTK_WINDOW (dialog),
@@ -655,8 +655,8 @@ void stickynotes_add (GdkScreen *screen)
 /* Remove a sticky note with confirmation, if needed */
 void stickynotes_remove(StickyNote *note)
 {
-	GtkBuilder *builder;
-	GtkWidget *dialog;
+	CtkBuilder *builder;
+	CtkWidget *dialog;
 
 	builder = ctk_builder_new ();
 	ctk_builder_add_from_file (builder, BUILDER_PATH, NULL);
@@ -692,8 +692,8 @@ stickynotes_save_now (void)
 {
 	WnckScreen *wnck_screen;
 	const gchar *title;
-	GtkTextBuffer *buffer;
-	GtkTextIter start, end;
+	CtkTextBuffer *buffer;
+	CtkTextIter start, end;
 	gchar *body;
 
 	gint i;
@@ -974,8 +974,8 @@ stickynotes_load (GdkScreen *screen)
 				gchar *body = (gchar *)xmlNodeListGetString(doc,
 						node->xmlChildrenNode, 1);
 				if (body) {
-					GtkTextBuffer *buffer;
-					GtkTextIter start, end;
+					CtkTextBuffer *buffer;
+					CtkTextIter start, end;
 
 					buffer = ctk_text_view_get_buffer(
 						GTK_TEXT_VIEW(note->w_body));

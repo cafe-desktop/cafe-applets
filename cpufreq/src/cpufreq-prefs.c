@@ -45,13 +45,13 @@ struct _CPUFreqPrefsPrivate {
 	CPUFreqShowTextMode show_text_mode;
 
 	/* Preferences dialog */
-	GtkWidget *dialog;
-	GtkWidget *show_freq;
-	GtkWidget *show_unit;
-	GtkWidget *show_perc;
-	GtkWidget *cpu_combo;
-	GtkWidget *monitor_settings_box;
-	GtkWidget *show_mode_combo;
+	CtkWidget *dialog;
+	CtkWidget *show_freq;
+	CtkWidget *show_unit;
+	CtkWidget *show_perc;
+	CtkWidget *cpu_combo;
+	CtkWidget *monitor_settings_box;
+	CtkWidget *show_mode_combo;
 };
 
 static void cpufreq_prefs_finalize                  (GObject           *object);
@@ -266,12 +266,12 @@ cpufreq_prefs_get_show_text_mode (CPUFreqPrefs *prefs)
 
 /* Preferences Dialog */
 static void
-cpufreq_prefs_dialog_show_freq_toggled (GtkWidget *show_freq, CPUFreqPrefs *prefs)
+cpufreq_prefs_dialog_show_freq_toggled (CtkWidget *show_freq, CPUFreqPrefs *prefs)
 {
 	CPUFreqShowTextMode show_text_mode;
            
         if (ctk_toggle_button_get_active (GTK_TOGGLE_BUTTON (show_freq))) {
-		GtkWidget *show_unit = prefs->priv->show_unit;
+		CtkWidget *show_unit = prefs->priv->show_unit;
 
                 if (ctk_toggle_button_get_active (GTK_TOGGLE_BUTTON (show_unit)))
                         show_text_mode = CPUFREQ_MODE_TEXT_FREQUENCY_UNIT;
@@ -285,7 +285,7 @@ cpufreq_prefs_dialog_show_freq_toggled (GtkWidget *show_freq, CPUFreqPrefs *pref
 }	
 
 static void
-cpufreq_prefs_dialog_show_unit_toggled (GtkWidget *show_unit, CPUFreqPrefs *prefs)
+cpufreq_prefs_dialog_show_unit_toggled (CtkWidget *show_unit, CPUFreqPrefs *prefs)
 {
 	CPUFreqShowTextMode show_text_mode;
            
@@ -301,7 +301,7 @@ cpufreq_prefs_dialog_show_unit_toggled (GtkWidget *show_unit, CPUFreqPrefs *pref
 }
 
 static void
-cpufreq_prefs_dialog_show_perc_toggled (GtkWidget *show_perc, CPUFreqPrefs *prefs)
+cpufreq_prefs_dialog_show_perc_toggled (CtkWidget *show_perc, CPUFreqPrefs *prefs)
 {
 
 	CPUFreqShowTextMode show_text_mode;
@@ -317,7 +317,7 @@ cpufreq_prefs_dialog_show_perc_toggled (GtkWidget *show_perc, CPUFreqPrefs *pref
 }
 
 static void
-cpufreq_prefs_dialog_cpu_number_changed (GtkWidget *cpu_combo, CPUFreqPrefs *prefs)
+cpufreq_prefs_dialog_cpu_number_changed (CtkWidget *cpu_combo, CPUFreqPrefs *prefs)
 {
         gint cpu;
 	
@@ -331,7 +331,7 @@ cpufreq_prefs_dialog_cpu_number_changed (GtkWidget *cpu_combo, CPUFreqPrefs *pre
 }
 
 static void
-cpufreq_prefs_dialog_show_mode_changed (GtkWidget *show_mode_combo, CPUFreqPrefs *prefs)
+cpufreq_prefs_dialog_show_mode_changed (CtkWidget *show_mode_combo, CPUFreqPrefs *prefs)
 {
 	CPUFreqShowMode show_mode;
            
@@ -344,7 +344,7 @@ cpufreq_prefs_dialog_show_mode_changed (GtkWidget *show_mode_combo, CPUFreqPrefs
 static void
 cpufreq_prefs_dialog_response_cb (CPUFreqPrefs *prefs,
 				  gint          response,
-				  GtkDialog    *dialog)
+				  CtkDialog    *dialog)
 {
         GError *error = NULL;
 
@@ -440,9 +440,9 @@ cpufreq_prefs_dialog_update (CPUFreqPrefs *prefs)
 static void
 cpufreq_prefs_dialog_cpu_combo_setup (CPUFreqPrefs *prefs)
 {
-	GtkListStore    *model;
-	GtkTreeIter      iter;
-	GtkCellRenderer *renderer;
+	CtkListStore    *model;
+	CtkTreeIter      iter;
+	CtkCellRenderer *renderer;
 	guint            i;
 	guint            n_cpus;
 
@@ -480,9 +480,9 @@ cpufreq_prefs_dialog_cpu_combo_setup (CPUFreqPrefs *prefs)
 static void
 cpufreq_prefs_dialog_show_mode_combo_setup (CPUFreqPrefs *prefs)
 {
-	GtkListStore    *model;
-	GtkTreeIter      iter;
-	GtkCellRenderer *renderer;
+	CtkListStore    *model;
+	CtkTreeIter      iter;
+	CtkCellRenderer *renderer;
 
 	model = ctk_list_store_new (1, G_TYPE_STRING);
 	ctk_combo_box_set_model (GTK_COMBO_BOX (prefs->priv->show_mode_combo),
@@ -518,7 +518,7 @@ cpufreq_prefs_dialog_show_mode_combo_setup (CPUFreqPrefs *prefs)
 static void
 cpufreq_prefs_dialog_create (CPUFreqPrefs *prefs)
 {
-	GtkBuilder *builder;
+	CtkBuilder *builder;
 
 	builder = ctk_builder_new ();
 	ctk_builder_add_from_file (builder, GTK_BUILDERDIR "/cpufreq-preferences.ui", NULL);

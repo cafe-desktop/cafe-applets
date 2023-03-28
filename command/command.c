@@ -56,9 +56,9 @@ typedef struct
 
     GSettings         *settings;
 
-    GtkLabel          *label;
-    GtkImage          *image;
-    GtkBox            *box;
+    CtkLabel          *label;
+    CtkImage          *image;
+    CtkBox            *box;
     MaCommand         *command;
     GCancellable      *cancellable;
     gboolean           running;
@@ -70,16 +70,16 @@ typedef struct
     guint              timeout_id;
 } CommandApplet;
 
-static void command_about_callback (GtkAction *action, CommandApplet *command_applet);
-static void command_settings_callback (GtkAction *action, CommandApplet *command_applet);
+static void command_about_callback (CtkAction *action, CommandApplet *command_applet);
+static void command_settings_callback (CtkAction *action, CommandApplet *command_applet);
 static gboolean command_execute (CommandApplet *command_applet);
-static gboolean command_text_changed (GtkWidget *widget, GdkEvent  *event, gpointer user_data);
-static void interval_value_changed (GtkSpinButton *spin_button, gpointer user_data);
-static void width_value_changed (GtkSpinButton *spin_button, gpointer user_data);
+static gboolean command_text_changed (CtkWidget *widget, GdkEvent  *event, gpointer user_data);
+static void interval_value_changed (CtkSpinButton *spin_button, gpointer user_data);
+static void width_value_changed (CtkSpinButton *spin_button, gpointer user_data);
 static void command_async_ready_callback (GObject *source_object, GAsyncResult *res, gpointer user_data);
 static gboolean timeout_callback (CommandApplet *command_applet);
 
-static const GtkActionEntry applet_menu_actions [] = {
+static const CtkActionEntry applet_menu_actions [] = {
     { "Preferences", "document-properties", N_("_Preferences"), NULL, NULL, G_CALLBACK (command_settings_callback) },
     { "About", "help-about", N_("_About"), NULL, NULL, G_CALLBACK (command_about_callback) }
 };
@@ -114,7 +114,7 @@ command_applet_destroy (CafePanelApplet *applet_widget, CommandApplet *command_a
 
 /* Show the about dialog */
 static void
-command_about_callback (GtkAction *action, CommandApplet *command_applet)
+command_about_callback (CtkAction *action, CommandApplet *command_applet)
 {
     const char* authors[] = { "Stefano Karapetsas <stefano@karapetsas.com>", NULL };
 
@@ -131,7 +131,7 @@ command_about_callback (GtkAction *action, CommandApplet *command_applet)
 }
 
 static gboolean
-command_text_changed (GtkWidget *widget, GdkEvent  *event, gpointer user_data)
+command_text_changed (CtkWidget *widget, GdkEvent  *event, gpointer user_data)
 {
     const gchar *text;
     CommandApplet *command_applet;
@@ -151,7 +151,7 @@ command_text_changed (GtkWidget *widget, GdkEvent  *event, gpointer user_data)
     return TRUE;
 }
 
-static void interval_value_changed (GtkSpinButton *spin_button, gpointer user_data)
+static void interval_value_changed (CtkSpinButton *spin_button, gpointer user_data)
 {
     gint value;
     CommandApplet *command_applet;
@@ -165,7 +165,7 @@ static void interval_value_changed (GtkSpinButton *spin_button, gpointer user_da
     g_settings_set_int (command_applet->settings, INTERVAL_KEY, value);
 }
 
-static void width_value_changed (GtkSpinButton *spin_button, gpointer user_data)
+static void width_value_changed (CtkSpinButton *spin_button, gpointer user_data)
 {
     gint value;
     CommandApplet *command_applet;
@@ -181,15 +181,15 @@ static void width_value_changed (GtkSpinButton *spin_button, gpointer user_data)
 
 /* Show the preferences dialog */
 static void
-command_settings_callback (GtkAction *action, CommandApplet *command_applet)
+command_settings_callback (CtkAction *action, CommandApplet *command_applet)
 {
-    GtkDialog *dialog;
-    GtkGrid *grid;
-    GtkWidget *widget;
-    GtkWidget *command;
-    GtkWidget *interval;
-    GtkWidget *width;
-    GtkWidget *showicon;
+    CtkDialog *dialog;
+    CtkGrid *grid;
+    CtkWidget *widget;
+    CtkWidget *command;
+    CtkWidget *interval;
+    CtkWidget *width;
+    CtkWidget *showicon;
 
     dialog = GTK_DIALOG (ctk_dialog_new_with_buttons(_("Command Applet Preferences"),
                                                      NULL,
@@ -461,7 +461,7 @@ command_applet_fill (CafePanelApplet* applet)
     command_applet->label = GTK_LABEL (ctk_label_new (ERROR_OUTPUT));
     command_applet->timeout_id = 0;
 
-    /* we add the Gtk label into the applet */
+    /* we add the Ctk label into the applet */
     ctk_box_pack_start (command_applet->box,
                         GTK_WIDGET (command_applet->image),
                         TRUE, TRUE, 0);
@@ -498,7 +498,7 @@ command_applet_fill (CafePanelApplet* applet)
                      G_SETTINGS_BIND_DEFAULT);
 
     /* set up context menu */
-    GtkActionGroup *action_group = ctk_action_group_new ("Command Applet Actions");
+    CtkActionGroup *action_group = ctk_action_group_new ("Command Applet Actions");
     ctk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
     ctk_action_group_add_actions (action_group, applet_menu_actions,
                                   G_N_ELEMENTS (applet_menu_actions), command_applet);

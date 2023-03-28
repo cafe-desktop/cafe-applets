@@ -30,7 +30,7 @@
 #include "global.h"
 
 static void
-about_cb (GtkAction       *action,
+about_cb (CtkAction       *action,
 	  MultiloadApplet *ma)
 {
     const gchar * const authors[] =
@@ -72,7 +72,7 @@ about_cb (GtkAction       *action,
 }
 
 static void
-help_cb (GtkAction       *action,
+help_cb (CtkAction       *action,
 	 MultiloadApplet *ma)
 {
 
@@ -142,7 +142,7 @@ start_procman (MultiloadApplet *ma)
 	g_free (monitor);
 
 	if (error) {
-		GtkWidget *dialog;
+		CtkWidget *dialog;
 
 		dialog = ctk_message_dialog_new (NULL,
 						 GTK_DIALOG_DESTROY_WITH_PARENT,
@@ -167,7 +167,7 @@ start_procman (MultiloadApplet *ma)
 }
 
 static void
-start_procman_cb (GtkAction       *action,
+start_procman_cb (CtkAction       *action,
 		  MultiloadApplet *ma)
 {
 	start_procman (ma);
@@ -193,7 +193,7 @@ multiload_change_orient_cb(CafePanelApplet *applet, gint arg1, gpointer data)
 }
 
 static void
-multiload_destroy_cb(GtkWidget *widget, gpointer data)
+multiload_destroy_cb(CtkWidget *widget, gpointer data)
 {
 	gint i;
 	MultiloadApplet *ma = data;
@@ -227,7 +227,7 @@ multiload_destroy_cb(GtkWidget *widget, gpointer data)
 
 
 static gboolean
-multiload_button_press_event_cb (GtkWidget *widget, GdkEventButton *event, MultiloadApplet *ma)
+multiload_button_press_event_cb (CtkWidget *widget, GdkEventButton *event, MultiloadApplet *ma)
 {
 	g_return_val_if_fail (event != NULL, FALSE);
 	g_return_val_if_fail (ma != NULL, FALSE);
@@ -240,7 +240,7 @@ multiload_button_press_event_cb (GtkWidget *widget, GdkEventButton *event, Multi
 }
 
 static gboolean
-multiload_key_press_event_cb (GtkWidget *widget, GdkEventKey *event, MultiloadApplet *ma)
+multiload_key_press_event_cb (CtkWidget *widget, GdkEventKey *event, MultiloadApplet *ma)
 {
 	g_return_val_if_fail (event != NULL, FALSE);
 	g_return_val_if_fail (ma != NULL, FALSE);
@@ -478,7 +478,7 @@ multiload_applet_refresh(MultiloadApplet *ma)
 	return;
 }
 
-static const GtkActionEntry multiload_menu_actions [] = {
+static const CtkActionEntry multiload_menu_actions [] = {
 	{ "MultiLoadProperties", "document-properties", N_("_Preferences"),
 	  NULL, NULL,
 	  G_CALLBACK (multiload_properties_cb) },
@@ -497,10 +497,10 @@ static const GtkActionEntry multiload_menu_actions [] = {
 static gboolean
 multiload_applet_new(CafePanelApplet *applet, const gchar *iid, gpointer data)
 {
-	GtkStyleContext *context;
+	CtkStyleContext *context;
 	MultiloadApplet *ma;
 	GSettings *lockdown_settings;
-	GtkActionGroup *action_group;
+	CtkActionGroup *action_group;
 	gchar *ui_path;
 
 	context = ctk_widget_get_style_context (GTK_WIDGET (applet));
@@ -534,7 +534,7 @@ multiload_applet_new(CafePanelApplet *applet, const gchar *iid, gpointer data)
 
 
 	if (cafe_panel_applet_get_locked_down (applet)) {
-		GtkAction *action;
+		CtkAction *action;
 
 		action = ctk_action_group_get_action (action_group, "MultiLoadProperties");
 		ctk_action_set_visible (action, FALSE);
@@ -543,7 +543,7 @@ multiload_applet_new(CafePanelApplet *applet, const gchar *iid, gpointer data)
 	lockdown_settings = g_settings_new ("org.cafe.lockdown");
 	if (g_settings_get_boolean (lockdown_settings, "disable-command-line") ||
 	    cafe_panel_applet_get_locked_down (applet)) {
-		GtkAction *action;
+		CtkAction *action;
 
 		/* When the panel is locked down or when the command line is inhibited,
 		   it seems very likely that running the procman would be at least harmful */

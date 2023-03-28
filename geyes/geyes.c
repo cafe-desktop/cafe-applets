@@ -27,7 +27,7 @@
 #define UPDATE_TIMEOUT 100
 
 static gfloat
-ctk_align_to_gfloat (GtkAlign align)
+ctk_align_to_gfloat (CtkAlign align)
 {
 	switch (align) {
 		case GTK_ALIGN_START:
@@ -46,9 +46,9 @@ ctk_align_to_gfloat (GtkAlign align)
 static void 
 calculate_pupil_xy (EyesApplet *eyes_applet,
 		    gint x, gint y,
-		    gint *pupil_x, gint *pupil_y, GtkWidget* widget)
+		    gint *pupil_x, gint *pupil_y, CtkWidget* widget)
 {
-        GtkAllocation allocation;
+        CtkAllocation allocation;
         double sina;
         double cosa;
         double h;
@@ -152,7 +152,7 @@ timer_cb (EyesApplet *eyes_applet)
 }
 
 static void
-about_cb (GtkAction   *action,
+about_cb (CtkAction   *action,
 	  EyesApplet  *eyes_applet)
 {
     static const gchar *authors [] = {
@@ -217,7 +217,7 @@ setup_eyes (EyesApplet *eyes_applet)
         eyes_applet->hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
         ctk_box_pack_start (GTK_BOX (eyes_applet->vbox), eyes_applet->hbox, TRUE, TRUE, 0);
 
-	eyes_applet->eyes = g_new0 (GtkWidget *, eyes_applet->num_eyes);
+	eyes_applet->eyes = g_new0 (CtkWidget *, eyes_applet->num_eyes);
 	eyes_applet->pointer_last_x = g_new0 (gint, eyes_applet->num_eyes);
 	eyes_applet->pointer_last_y = g_new0 (gint, eyes_applet->num_eyes);
 
@@ -329,7 +329,7 @@ dispose_cb (GObject *object, EyesApplet *eyes_applet)
 }
 
 static void
-help_cb (GtkAction  *action,
+help_cb (CtkAction  *action,
 	 EyesApplet *eyes_applet)
 {
 	GError *error = NULL;
@@ -340,7 +340,7 @@ help_cb (GtkAction  *action,
 	                        &error);
 
 	if (error) {
-		GtkWidget *dialog = ctk_message_dialog_new (NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE, 
+		CtkWidget *dialog = ctk_message_dialog_new (NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE, 
 							    _("There was an error displaying help: %s"), error->message);
 		g_signal_connect (G_OBJECT (dialog), "response", G_CALLBACK (ctk_widget_destroy), NULL);
 		ctk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
@@ -352,7 +352,7 @@ help_cb (GtkAction  *action,
 }
 
 
-static const GtkActionEntry geyes_applet_menu_actions [] = {
+static const CtkActionEntry geyes_applet_menu_actions [] = {
 	{ "Props", "document-properties", N_("_Preferences"),
 	  NULL, NULL,
 	  G_CALLBACK (properties_cb) },
@@ -365,7 +365,7 @@ static const GtkActionEntry geyes_applet_menu_actions [] = {
 };
 
 static void
-set_atk_name_description (GtkWidget *widget, const gchar *name,
+set_atk_name_description (CtkWidget *widget, const gchar *name,
     const gchar *description)
 {
 	AtkObject *aobj;
@@ -383,7 +383,7 @@ static gboolean
 geyes_applet_fill (CafePanelApplet *applet)
 {
 	EyesApplet *eyes_applet;
-	GtkActionGroup *action_group;
+	CtkActionGroup *action_group;
 	gchar *ui_path;
 
 	g_set_application_name (_("Eyes"));
@@ -409,7 +409,7 @@ geyes_applet_fill (CafePanelApplet *applet)
 	g_free (ui_path);
 
 	if (cafe_panel_applet_get_locked_down (eyes_applet->applet)) {
-		GtkAction *action;
+		CtkAction *action;
 
 		action = ctk_action_group_get_action (action_group, "Props");
 		ctk_action_set_visible (action, FALSE);

@@ -83,21 +83,21 @@ typedef enum {
 
 typedef struct {
 	CafePanelApplet* applet;
-	GtkWidget* box;
-	GtkWidget* idlefoo;
-	GtkWidget* mousefoo;
-	GtkWidget* stickyfoo;
-	GtkWidget* slowfoo;
-	GtkWidget* bouncefoo;
-	GtkWidget* shift_indicator;
-	GtkWidget* ctrl_indicator;
-	GtkWidget* alt_indicator;
-	GtkWidget* meta_indicator;
-	GtkWidget* hyper_indicator;
-	GtkWidget* super_indicator;
-	GtkWidget* alt_graph_indicator;
+	CtkWidget* box;
+	CtkWidget* idlefoo;
+	CtkWidget* mousefoo;
+	CtkWidget* stickyfoo;
+	CtkWidget* slowfoo;
+	CtkWidget* bouncefoo;
+	CtkWidget* shift_indicator;
+	CtkWidget* ctrl_indicator;
+	CtkWidget* alt_indicator;
+	CtkWidget* meta_indicator;
+	CtkWidget* hyper_indicator;
+	CtkWidget* super_indicator;
+	CtkWidget* alt_graph_indicator;
 	CafePanelAppletOrient orient;
-	GtkIconFactory* icon_factory;
+	CtkIconFactory* icon_factory;
 	gboolean initialized;
 	XkbDescRec* xkb;
 	Display* xkb_display;

@@ -39,14 +39,14 @@ typedef struct _DriveListClass DriveListClass;
 
 struct _DriveList
 {
-    GtkGrid parent;
+    CtkGrid parent;
 
     GHashTable *volumes;
     GHashTable *mounts;
-    GtkOrientation orientation;
+    CtkOrientation orientation;
     guint layout_tag;
-    GtkReliefStyle relief;
-    GtkWidget *dummy;
+    CtkReliefStyle relief;
+    CtkWidget *dummy;
     gint count;
 
     GSettings *settings;
@@ -56,13 +56,13 @@ struct _DriveList
 
 struct _DriveListClass
 {
-    GtkGridClass parent_class;
+    CtkGridClass parent_class;
 };
 
 GType      drive_list_get_type (void);
-GtkWidget *drive_list_new (void);
+CtkWidget *drive_list_new (void);
 void       drive_list_set_orientation (DriveList *list,
-				       GtkOrientation orientation);
+				       CtkOrientation orientation);
 void       drive_list_set_panel_size  (DriveList *list,
 				       int panel_size);
 void       drive_list_set_transparent (DriveList *self,

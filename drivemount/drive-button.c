@@ -52,13 +52,13 @@ static void     drive_button_ensure_popup (DriveButton    *self);
 
 static void     drive_button_dispose      (GObject        *object);
 #if 0
-static void     drive_button_unrealize    (GtkWidget      *widget);
+static void     drive_button_unrealize    (CtkWidget      *widget);
 #endif /* 0 */
-static gboolean drive_button_button_press (GtkWidget      *widget,
+static gboolean drive_button_button_press (CtkWidget      *widget,
 					   GdkEventButton *event);
-static gboolean drive_button_key_press    (GtkWidget      *widget,
+static gboolean drive_button_key_press    (CtkWidget      *widget,
 					   GdkEventKey    *event);
-static void drive_button_theme_change     (GtkIconTheme   *icon_theme,
+static void drive_button_theme_change     (CtkIconTheme   *icon_theme,
 					   gpointer        data);
 
 static void
@@ -68,7 +68,7 @@ drive_button_class_init (DriveButtonClass *class)
     GTK_WIDGET_CLASS(class)->button_press_event = drive_button_button_press;
     GTK_WIDGET_CLASS(class)->key_press_event = drive_button_key_press;
 
-    GtkCssProvider *provider;
+    CtkCssProvider *provider;
 
     provider = ctk_css_provider_new ();
 
@@ -89,7 +89,7 @@ drive_button_class_init (DriveButtonClass *class)
 static void
 drive_button_init (DriveButton *self)
 {
-    GtkWidget *image;
+    CtkWidget *image;
 
     image = ctk_image_new ();
     ctk_container_add (GTK_CONTAINER (self), image);
@@ -105,7 +105,7 @@ drive_button_init (DriveButton *self)
     ctk_widget_set_name (GTK_WIDGET (self), "drive-button");
 }
 
-GtkWidget *
+CtkWidget *
 drive_button_new (GVolume *volume)
 {
     DriveButton *self;
@@ -118,10 +118,10 @@ drive_button_new (GVolume *volume)
           self);
     }
 
-    return (GtkWidget *)self;
+    return (CtkWidget *)self;
 }
 
-GtkWidget *
+CtkWidget *
 drive_button_new_from_mount (GMount *mount)
 {
     DriveButton *self;
@@ -133,7 +133,7 @@ drive_button_new_from_mount (GMount *mount)
         "changed", G_CALLBACK (drive_button_theme_change),
         self);
 
-    return (GtkWidget *)self;
+    return (CtkWidget *)self;
 }
 
 static void
@@ -155,7 +155,7 @@ drive_button_dispose (GObject *object)
 
 #if 0
 static void
-drive_button_unrealize (GtkWidget *widget)
+drive_button_unrealize (CtkWidget *widget)
 {
     DriveButton *self = DRIVE_BUTTON (widget);
 
@@ -184,7 +184,7 @@ _ctk_get_monitor_num (GdkMonitor *monitor)
 }
 
 static gboolean
-drive_button_button_press (GtkWidget      *widget,
+drive_button_button_press (CtkWidget      *widget,
 			   GdkEventButton *event)
 {
     DriveButton *self = DRIVE_BUTTON (widget);
@@ -205,7 +205,7 @@ drive_button_button_press (GtkWidget      *widget,
 }
 
 static gboolean
-drive_button_key_press (GtkWidget      *widget,
+drive_button_key_press (CtkWidget      *widget,
 			GdkEventKey    *event)
 {
     DriveButton *self = DRIVE_BUTTON (widget);
@@ -229,7 +229,7 @@ drive_button_key_press (GtkWidget      *widget,
 }
 
 static void
-drive_button_theme_change (GtkIconTheme *icon_theme, gpointer data)
+drive_button_theme_change (CtkIconTheme *icon_theme, gpointer data)
 {
     drive_button_queue_update (data);
 }
@@ -279,14 +279,14 @@ drive_button_update (gpointer user_data)
 {
     DriveButton *self;
     GdkScreen *screen;
-    GtkIconTheme *icon_theme;
-    GtkIconInfo *icon_info;
+    CtkIconTheme *icon_theme;
+    CtkIconInfo *icon_info;
     GIcon *icon;
     int width, height, scale;
     cairo_t *cr;
     cairo_surface_t *surface = NULL;
     cairo_surface_t *tmp_surface = NULL;
-    GtkRequisition button_req, image_req;
+    CtkRequisition button_req, image_req;
     char *display_name, *tip;
 
     g_return_val_if_fail (DRIVE_IS_BUTTON (user_data), FALSE);
@@ -519,7 +519,7 @@ drive_button_reset_popup (DriveButton *self)
 
 #if 0
 static void
-popup_menu_detach (GtkWidget *attach_widget, GtkMenu *menu)
+popup_menu_detach (CtkWidget *attach_widget, CtkMenu *menu)
 {
     DRIVE_BUTTON (attach_widget)->popup_menu = NULL;
 }
@@ -547,12 +547,12 @@ escape_underscores (const char *str)
     new_str[j] = '\0';
     return new_str;
 }
-static GtkWidget *
+static CtkWidget *
 create_menu_item (DriveButton *self, const gchar *icon_name,
 		  const gchar *label, GCallback callback,
 		  gboolean sensitive)
 {
-    GtkWidget *item, *image;
+    CtkWidget *item, *image;
 
     item = ctk_image_menu_item_new_with_mnemonic (label);
     if (icon_name) {
@@ -569,10 +569,10 @@ create_menu_item (DriveButton *self, const gchar *icon_name,
 }
 
 static void
-open_drive (DriveButton *self, GtkWidget *item)
+open_drive (DriveButton *self, CtkWidget *item)
 {
     GdkScreen *screen;
-    GtkWidget *dialog;
+    CtkWidget *dialog;
     GError *error = NULL;
     GFile *file = NULL;
     GList *files = NULL;
@@ -822,7 +822,7 @@ static void dummy_async_ready_callback(GObject *source_object, GAsyncResult *res
 }
 
 static void
-mount_drive (DriveButton *self, GtkWidget *item)
+mount_drive (DriveButton *self, CtkWidget *item)
 {
     if (self->volume) {
         GMountOperation *mount_op = ctk_mount_operation_new (NULL);
@@ -835,7 +835,7 @@ mount_drive (DriveButton *self, GtkWidget *item)
 }
 
 static void
-unmount_drive (DriveButton *self, GtkWidget *item)
+unmount_drive (DriveButton *self, CtkWidget *item)
 {
     if (self->volume) {
 	GMount *mount;
@@ -863,7 +863,7 @@ static void eject_finish (DriveButton *self, GAsyncResult *res,
 }
 
 static void
-eject_drive (DriveButton *self, GtkWidget *item)
+eject_drive (DriveButton *self, CtkWidget *item)
 {
     if (self->volume) {
 	g_volume_eject_with_operation (self->volume, G_MOUNT_UNMOUNT_NONE,
@@ -886,14 +886,14 @@ play_autoplay_media (DriveButton *self, const char *dflt)
 }
 
 static void
-play_dvd (DriveButton *self, GtkWidget *item)
+play_dvd (DriveButton *self, CtkWidget *item)
 {
         /* FIXME add an option to set this */
         play_autoplay_media (self, "totem %d");
 }
 
 static void
-play_cda (DriveButton *self, GtkWidget *item)
+play_cda (DriveButton *self, CtkWidget *item)
 {
         /* FIXME add an option to set this */
         play_autoplay_media (self, "sound-juicer -d %d");
@@ -903,7 +903,7 @@ static void
 drive_button_ensure_popup (DriveButton *self)
 {
     char *display_name, *tmp, *label;
-    GtkWidget *item;
+    CtkWidget *item;
     gboolean mounted, ejectable;
 
     if (self->popup_menu) return;
@@ -977,13 +977,13 @@ drive_button_ensure_popup (DriveButton *self)
     }
 
 	/*Set up custom theme and transparency support */
-	GtkWidget *toplevel = ctk_widget_get_toplevel (self->popup_menu);
+	CtkWidget *toplevel = ctk_widget_get_toplevel (self->popup_menu);
 	/* Fix any failures of compiz/other wm's to communicate with ctk for transparency */
 	GdkScreen *screen2 = ctk_widget_get_screen(GTK_WIDGET(toplevel));
 	GdkVisual *visual = gdk_screen_get_rgba_visual(screen2);
 	ctk_widget_set_visual(GTK_WIDGET(toplevel), visual);
 	/*set menu and it's toplevel window to follow panel theme */
-	GtkStyleContext *context;
+	CtkStyleContext *context;
 	context = ctk_widget_get_style_context (GTK_WIDGET(toplevel));
 	ctk_style_context_add_class(context,"gnome-panel-menu-bar");
 	ctk_style_context_add_class(context,"cafe-panel-menu-bar");

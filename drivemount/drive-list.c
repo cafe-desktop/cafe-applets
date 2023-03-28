@@ -36,8 +36,8 @@ static GVolumeMonitor *volume_monitor = NULL;
 
 static void drive_list_finalize (GObject *object);
 static void drive_list_dispose  (GObject *object);
-static void drive_list_add      (GtkContainer *container, GtkWidget *child);
-static void drive_list_remove   (GtkContainer *container, GtkWidget *child);
+static void drive_list_add      (CtkContainer *container, CtkWidget *child);
+static void drive_list_remove   (CtkContainer *container, CtkWidget *child);
 
 static void mount_added        (GVolumeMonitor *monitor,
 				GMount *mount,
@@ -145,7 +145,7 @@ drive_list_init (DriveList *self)
     g_list_free (mounts);
 }
 
-GtkWidget *
+CtkWidget *
 drive_list_new (void)
 {
     return g_object_new (DRIVE_TYPE_LIST, NULL);
@@ -191,7 +191,7 @@ drive_list_dispose (GObject *object)
 }
 
 static void
-drive_list_add (GtkContainer *container, GtkWidget *child)
+drive_list_add (CtkContainer *container, CtkWidget *child)
 {
     DriveList *self;
     DriveButton *button;
@@ -212,7 +212,7 @@ drive_list_add (GtkContainer *container, GtkWidget *child)
 }
 
 static void
-drive_list_remove (GtkContainer *container, GtkWidget *child)
+drive_list_remove (CtkContainer *container, CtkWidget *child)
 {
     DriveList *self;
     DriveButton *button;
@@ -235,7 +235,7 @@ drive_list_remove (GtkContainer *container, GtkWidget *child)
 static void
 list_buttons (gpointer key, gpointer value, gpointer user_data)
 {
-    GtkWidget *button = value;
+    CtkWidget *button = value;
     GList **sorted_buttons = user_data;
 
     *sorted_buttons = g_list_insert_sorted (*sorted_buttons, button,
@@ -259,7 +259,7 @@ relayout_buttons (gpointer data)
 		/* position buttons in the table according to their sorted order */
 		for (tmp = sorted_buttons, i = 0; tmp != NULL; tmp = tmp->next, i++)
 		{
-			GtkWidget *button = tmp->data;
+			CtkWidget *button = tmp->data;
 
 			if (self->orientation == GTK_ORIENTATION_HORIZONTAL) {
 				ctk_container_child_set (GTK_CONTAINER (self), button,
@@ -389,7 +389,7 @@ volume_removed (GVolumeMonitor *monitor,
 static void
 add_volume (DriveList *self, GVolume *volume)
 {
-    GtkWidget *button;
+    CtkWidget *button;
 
     /* if the volume has already been added, return */
     if (g_hash_table_lookup (self->volumes, volume) != NULL)
@@ -406,7 +406,7 @@ add_volume (DriveList *self, GVolume *volume)
 static void
 remove_volume (DriveList *self, GVolume *volume)
 {
-    GtkWidget *button;
+    CtkWidget *button;
 
     /* if the volume has already been added, return */
     button = g_hash_table_lookup (self->volumes, volume);
@@ -419,7 +419,7 @@ remove_volume (DriveList *self, GVolume *volume)
 static void
 add_mount (DriveList *self, GMount *mount)
 {
-    GtkWidget *button;
+    CtkWidget *button;
     GVolume *volume;
 
     /* ignore mounts reported as shadowed */
@@ -449,7 +449,7 @@ add_mount (DriveList *self, GMount *mount)
 static void
 remove_mount (DriveList *self, GMount *mount)
 {
-    GtkWidget *button;
+    CtkWidget *button;
 
     /* if the mount has already been added, return */
     button = g_hash_table_lookup (self->mounts, mount);
@@ -461,7 +461,7 @@ remove_mount (DriveList *self, GMount *mount)
 
 void
 drive_list_set_orientation (DriveList *self,
-			    GtkOrientation orientation)
+			    CtkOrientation orientation)
 {
     g_return_if_fail (DRIVE_IS_LIST (self));
 
@@ -510,7 +510,7 @@ settings_color_changed (GSettings *settings, gchar *key, DriveList *drive_list)
 static void
 set_button_relief (gpointer key, gpointer value, gpointer user_data)
 {
-    GtkButton *button = value;
+    CtkButton *button = value;
     DriveList *self = user_data;
 
     ctk_button_set_relief (button, self->relief);
@@ -519,7 +519,7 @@ set_button_relief (gpointer key, gpointer value, gpointer user_data)
 void
 drive_list_set_transparent (DriveList *self, gboolean transparent)
 {
-    GtkReliefStyle relief;
+    CtkReliefStyle relief;
 
     relief  = transparent ? GTK_RELIEF_NONE : GTK_RELIEF_NORMAL;
 

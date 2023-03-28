@@ -103,7 +103,7 @@ parse_theme_file (EyesApplet *eyes_applet, FILE *theme_file)
 int
 load_theme (EyesApplet *eyes_applet, const gchar *theme_dir)
 {
-	GtkWidget *dialog;
+	CtkWidget *dialog;
 
 	FILE* theme_file;
         gchar *file_name;
@@ -175,11 +175,11 @@ destroy_theme (EyesApplet *eyes_applet)
 }
 
 static void
-theme_selected_cb (GtkTreeSelection *selection, gpointer data)
+theme_selected_cb (CtkTreeSelection *selection, gpointer data)
 {
 	EyesApplet *eyes_applet = data;
-	GtkTreeModel *model;
-	GtkTreeIter iter;
+	CtkTreeModel *model;
+	CtkTreeIter iter;
 	gchar *theme;
 	gchar *theme_dir;
 
@@ -209,7 +209,7 @@ theme_selected_cb (GtkTreeSelection *selection, gpointer data)
 }
 
 static void
-phelp_cb (GtkDialog *dialog)
+phelp_cb (CtkDialog *dialog)
 {
 	GError *error = NULL;
 
@@ -219,7 +219,7 @@ phelp_cb (GtkDialog *dialog)
 	                        &error);
 
 	if (error) {
-		GtkWidget *error_dialog = ctk_message_dialog_new (NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE,
+		CtkWidget *error_dialog = ctk_message_dialog_new (NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE,
 								  _("There was an error displaying help: %s"), error->message);
 		g_signal_connect (G_OBJECT (error_dialog), "response", G_CALLBACK (ctk_widget_destroy) , NULL);
 		ctk_window_set_resizable (GTK_WINDOW (error_dialog), FALSE);
@@ -231,7 +231,7 @@ phelp_cb (GtkDialog *dialog)
 }
 
 static void
-presponse_cb (GtkDialog *dialog, gint id, gpointer data)
+presponse_cb (CtkDialog *dialog, gint id, gpointer data)
 {
 	EyesApplet *eyes_applet = data;
 	if(id == GTK_RESPONSE_HELP){
@@ -246,21 +246,21 @@ presponse_cb (GtkDialog *dialog, gint id, gpointer data)
 }
 
 void
-properties_cb (GtkAction  *action,
+properties_cb (CtkAction  *action,
 	       EyesApplet *eyes_applet)
 {
-	GtkWidget *pbox, *hbox;
-	GtkWidget *vbox, *indent;
-	GtkWidget *categories_vbox;
-	GtkWidget *category_vbox, *control_vbox;
-        GtkWidget *tree;
-	GtkWidget *scrolled;
-        GtkWidget *label;
-        GtkListStore *model;
-        GtkTreeViewColumn *column;
-        GtkCellRenderer *cell;
-        GtkTreeSelection *selection;
-        GtkTreeIter iter;
+	CtkWidget *pbox, *hbox;
+	CtkWidget *vbox, *indent;
+	CtkWidget *categories_vbox;
+	CtkWidget *category_vbox, *control_vbox;
+        CtkWidget *tree;
+	CtkWidget *scrolled;
+        CtkWidget *label;
+        CtkListStore *model;
+        CtkTreeViewColumn *column;
+        CtkCellRenderer *cell;
+        CtkTreeSelection *selection;
+        CtkTreeIter iter;
         DIR *dfd;
         struct dirent *dp;
         int i;
@@ -389,7 +389,7 @@ properties_cb (GtkAction  *action,
 							    -1);
 
 					if (!g_ascii_strncasecmp (eyes_applet->theme_dir, theme_dir, strlen (theme_dir))) {
-                                        	GtkTreePath *path;
+                                        	CtkTreePath *path;
                                         	path = ctk_tree_model_get_path (GTK_TREE_MODEL (model),
                                                         			&iter);
                                                 ctk_tree_view_set_cursor (GTK_TREE_VIEW (tree),

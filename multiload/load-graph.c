@@ -294,10 +294,10 @@ load_graph_alloc (LoadGraph *g)
 }
 
 static gint
-load_graph_configure (GtkWidget *widget, GdkEventConfigure *event,
+load_graph_configure (CtkWidget *widget, GdkEventConfigure *event,
                       gpointer data_ptr)
 {
-    GtkAllocation allocation;
+    CtkAllocation allocation;
     LoadGraph *c = (LoadGraph *) data_ptr;
 
     load_graph_unalloc (c);
@@ -321,7 +321,7 @@ load_graph_configure (GtkWidget *widget, GdkEventConfigure *event,
 }
 
 static gint
-load_graph_expose (GtkWidget *widget,
+load_graph_expose (CtkWidget *widget,
                    cairo_t *cr,
                    gpointer data_ptr)
 {
@@ -334,7 +334,7 @@ load_graph_expose (GtkWidget *widget,
 }
 
 static void
-load_graph_destroy (GtkWidget *widget, gpointer data_ptr)
+load_graph_destroy (CtkWidget *widget, gpointer data_ptr)
 {
     LoadGraph *g = (LoadGraph *) data_ptr;
 
@@ -346,7 +346,7 @@ load_graph_destroy (GtkWidget *widget, gpointer data_ptr)
 }
 
 static gboolean
-load_graph_clicked (GtkWidget *widget, GdkEventButton *event, LoadGraph *load)
+load_graph_clicked (CtkWidget *widget, GdkEventButton *event, LoadGraph *load)
 {
     load->multiload->last_clicked = load->id;
 
@@ -354,7 +354,7 @@ load_graph_clicked (GtkWidget *widget, GdkEventButton *event, LoadGraph *load)
 }
 
 static gboolean
-load_graph_enter_cb(GtkWidget *widget, GdkEventCrossing *event, gpointer data)
+load_graph_enter_cb(CtkWidget *widget, GdkEventCrossing *event, gpointer data)
 {
     LoadGraph *graph;
     graph = (LoadGraph *)data;
@@ -366,7 +366,7 @@ load_graph_enter_cb(GtkWidget *widget, GdkEventCrossing *event, gpointer data)
 }
 
 static gboolean
-load_graph_leave_cb(GtkWidget *widget, GdkEventCrossing *event, gpointer data)
+load_graph_leave_cb(CtkWidget *widget, GdkEventCrossing *event, gpointer data)
 {
     LoadGraph *graph;
     graph = (LoadGraph *)data;

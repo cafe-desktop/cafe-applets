@@ -83,7 +83,7 @@ void
 cpufreq_utils_display_error (const gchar *message,
 			     const gchar *secondary)
 {
-	GtkWidget *dialog;
+	CtkWidget *dialog;
 
 	g_return_if_fail (message != NULL);
 

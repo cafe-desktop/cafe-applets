@@ -39,24 +39,24 @@ typedef struct _DriveButtonClass DriveButtonClass;
 
 struct _DriveButton
 {
-    GtkButton parent;
+    CtkButton parent;
 
     GVolume *volume;
     GMount *mount;
     int icon_size;
     guint update_tag;
 
-    GtkWidget *popup_menu;
+    CtkWidget *popup_menu;
 };
 
 struct _DriveButtonClass
 {
-    GtkButtonClass parent;
+    CtkButtonClass parent;
 };
 
 GType      drive_button_get_type        (void);
-GtkWidget *drive_button_new             (GVolume *volume);
-GtkWidget *drive_button_new_from_mount  (GMount *mount);
+CtkWidget *drive_button_new             (GVolume *volume);
+CtkWidget *drive_button_new_from_mount  (GMount *mount);
 void       drive_button_queue_update    (DriveButton *button);
 void       drive_button_set_size        (DriveButton *button,
 					 int          icon_size);

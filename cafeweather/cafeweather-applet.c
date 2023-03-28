@@ -41,14 +41,14 @@
 
 #define MAX_CONSECUTIVE_FAULTS (3)
 
-static void about_cb (GtkAction      *action,
+static void about_cb (CtkAction      *action,
 		      CafeWeatherApplet *gw_applet)
 {
 
     cafeweather_about_run (gw_applet);
 }
 
-static void help_cb (GtkAction      *action,
+static void help_cb (CtkAction      *action,
 		     CafeWeatherApplet *gw_applet)
 {
     GError *error = NULL;
@@ -59,7 +59,7 @@ static void help_cb (GtkAction      *action,
                             &error);
 
     if (error) { 
-	GtkWidget *dialog = ctk_message_dialog_new (NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE,
+	CtkWidget *dialog = ctk_message_dialog_new (NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE,
 						    _("There was an error displaying help: %s"), error->message);
 	g_signal_connect (G_OBJECT (dialog), "response", G_CALLBACK (ctk_widget_destroy), NULL);
 	ctk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
@@ -70,7 +70,7 @@ static void help_cb (GtkAction      *action,
     }
 }
 
-static void pref_cb (GtkAction      *action,
+static void pref_cb (CtkAction      *action,
 		     CafeWeatherApplet *gw_applet)
 {
    if (gw_applet->pref_dialog) {
@@ -83,7 +83,7 @@ static void pref_cb (GtkAction      *action,
    }
 }
 
-static void details_cb (GtkAction      *action,
+static void details_cb (CtkAction      *action,
 			CafeWeatherApplet *gw_applet)
 {
    if (gw_applet->details_dialog) {
@@ -97,14 +97,14 @@ static void details_cb (GtkAction      *action,
    }
 }
 
-static void update_cb (GtkAction      *action,
+static void update_cb (CtkAction      *action,
 		       CafeWeatherApplet *gw_applet)
 {
     cafeweather_update (gw_applet);
 }
 
 
-static const GtkActionEntry weather_applet_menu_actions [] = {
+static const CtkActionEntry weather_applet_menu_actions [] = {
 	{ "Details", NULL, N_("_Details"),
 	  NULL, NULL,
 	  G_CALLBACK (details_cb) },
@@ -124,7 +124,7 @@ static const GtkActionEntry weather_applet_menu_actions [] = {
 
 static void place_widgets (CafeWeatherApplet *gw_applet)
 {
-    GtkRequisition req;
+    CtkRequisition req;
     int total_size = 0;
     gboolean horizontal = FALSE;
     int panel_size = gw_applet->size;
@@ -207,7 +207,7 @@ static void change_orient_cb (CafePanelApplet *w, CafePanelAppletOrient o, gpoin
     return;
 }
 
-static void size_allocate_cb(CafePanelApplet *w, GtkAllocation *allocation, gpointer data)
+static void size_allocate_cb(CafePanelApplet *w, CtkAllocation *allocation, gpointer data)
 {
     CafeWeatherApplet *gw_applet = (CafeWeatherApplet *)data;
 	
@@ -225,7 +225,7 @@ static void size_allocate_cb(CafePanelApplet *w, GtkAllocation *allocation, gpoi
     return;
 }
 
-static gboolean clicked_cb (GtkWidget *widget, GdkEventButton *ev, gpointer data)
+static gboolean clicked_cb (CtkWidget *widget, GdkEventButton *ev, gpointer data)
 {
     CafeWeatherApplet *gw_applet = data;
 
@@ -245,7 +245,7 @@ static gboolean clicked_cb (GtkWidget *widget, GdkEventButton *ev, gpointer data
 }
 
 static gboolean 
-key_press_cb (GtkWidget *widget, GdkEventKey *event, CafeWeatherApplet *gw_applet)
+key_press_cb (CtkWidget *widget, GdkEventKey *event, CafeWeatherApplet *gw_applet)
 {
 	switch (event->keyval) {	
 	case GDK_KEY_u:
@@ -286,7 +286,7 @@ network_changed (GNetworkMonitor *monitor, gboolean available, CafeWeatherApplet
 
 
 static void
-applet_destroy (GtkWidget *widget, CafeWeatherApplet *gw_applet)
+applet_destroy (CtkWidget *widget, CafeWeatherApplet *gw_applet)
 {
     GNetworkMonitor *monitor;
 
@@ -321,7 +321,7 @@ applet_destroy (GtkWidget *widget, CafeWeatherApplet *gw_applet)
 
 void cafeweather_applet_create (CafeWeatherApplet *gw_applet)
 {
-    GtkActionGroup *action_group;
+    CtkActionGroup *action_group;
     gchar          *ui_path;
     AtkObject      *atk_obj;
     GNetworkMonitor*monitor;
@@ -379,7 +379,7 @@ void cafeweather_applet_create (CafeWeatherApplet *gw_applet)
     g_free (ui_path);
 
     if (cafe_panel_applet_get_locked_down (gw_applet->applet)) {
-	    GtkAction *action;
+	    CtkAction *action;
 
 	    action = ctk_action_group_get_action (action_group, "Props");
 	    ctk_action_set_visible (action, FALSE);

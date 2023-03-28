@@ -45,7 +45,7 @@ static int xkb_base_event_type = 0;
 
 typedef struct {
 	unsigned int mask;
-	GtkWidget* indicator;
+	CtkWidget* indicator;
 	gchar *icon_name;
 } ModifierStruct;
 
@@ -73,7 +73,7 @@ static ButtonIconStruct button_icons[] = {
 static void popup_error_dialog(AccessxStatusApplet* sapplet);
 
 /* cribbed from geyes */
-static void about_cb(GtkAction* action, AccessxStatusApplet* sapplet)
+static void about_cb(CtkAction* action, AccessxStatusApplet* sapplet)
 {
 	static const gchar* authors[] = {
 		"Calum Benson <calum.benson@sun.com>",
@@ -107,7 +107,7 @@ static void about_cb(GtkAction* action, AccessxStatusApplet* sapplet)
 		NULL);
 }
 
-static void help_cb(GtkAction* action, AccessxStatusApplet* sapplet)
+static void help_cb(CtkAction* action, AccessxStatusApplet* sapplet)
 {
 	GError* error = NULL;
 	GdkScreen* screen = ctk_widget_get_screen(GTK_WIDGET(sapplet->applet));
@@ -119,9 +119,9 @@ static void help_cb(GtkAction* action, AccessxStatusApplet* sapplet)
 
 	if (error)
 	{
-		GtkWidget* parent = ctk_widget_get_parent(GTK_WIDGET(sapplet->applet));
+		CtkWidget* parent = ctk_widget_get_parent(GTK_WIDGET(sapplet->applet));
 
-		GtkWidget* dialog = ctk_message_dialog_new(GTK_WINDOW(parent), GTK_DIALOG_DESTROY_WITH_PARENT, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE, _("There was an error launching the help viewer: %s"), error->message);
+		CtkWidget* dialog = ctk_message_dialog_new(GTK_WINDOW(parent), GTK_DIALOG_DESTROY_WITH_PARENT, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE, _("There was an error launching the help viewer: %s"), error->message);
 
 		g_signal_connect(G_OBJECT(dialog), "response", G_CALLBACK(ctk_widget_destroy), NULL);
 
@@ -133,7 +133,7 @@ static void help_cb(GtkAction* action, AccessxStatusApplet* sapplet)
 	}
 }
 
-static void dialog_cb(GtkAction* action, AccessxStatusApplet* sapplet)
+static void dialog_cb(CtkAction* action, AccessxStatusApplet* sapplet)
 {
 	GError* error = NULL;
 	GdkScreen *screen;
@@ -164,7 +164,7 @@ static void dialog_cb(GtkAction* action, AccessxStatusApplet* sapplet)
 
 	if (error != NULL)
 	{
-		GtkWidget* dialog = ctk_message_dialog_new(NULL, GTK_DIALOG_DESTROY_WITH_PARENT, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE, _("There was an error launching the keyboard preferences dialog: %s"), error->message);
+		CtkWidget* dialog = ctk_message_dialog_new(NULL, GTK_DIALOG_DESTROY_WITH_PARENT, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE, _("There was an error launching the keyboard preferences dialog: %s"), error->message);
 
 		g_signal_connect(G_OBJECT(dialog), "response", G_CALLBACK(ctk_widget_destroy), NULL);
 
@@ -178,7 +178,7 @@ static void dialog_cb(GtkAction* action, AccessxStatusApplet* sapplet)
 	g_object_unref (appinfo);
 }
 
-static const GtkActionEntry accessx_status_applet_menu_actions[] = {
+static const CtkActionEntry accessx_status_applet_menu_actions[] = {
 	{"Dialog", "document-properties", N_("_Keyboard Accessibility Preferences"), NULL, NULL, G_CALLBACK(dialog_cb)},
 	{"Help", "help-browser", N_("_Help"), NULL, NULL, G_CALLBACK(help_cb)},
 	{"About", "help-about", N_("_About"), NULL, NULL, G_CALLBACK(about_cb)}
@@ -333,7 +333,7 @@ static void accessx_status_applet_init_modifiers(AccessxStatusApplet* sapplet)
 
 static gboolean timer_reset_slowkeys_image(AccessxStatusApplet* sapplet)
 {
-	GtkIconTheme *icon_theme = ctk_icon_theme_get_default ();
+	CtkIconTheme *icon_theme = ctk_icon_theme_get_default ();
 	gint icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
 	gint icon_scale = ctk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
 	cairo_surface_t* surface = ctk_icon_theme_load_surface (icon_theme, SLOWKEYS_IDLE_ICON, icon_size, icon_scale, NULL, 0, NULL);
@@ -346,7 +346,7 @@ static gboolean timer_reset_slowkeys_image(AccessxStatusApplet* sapplet)
 
 static gboolean timer_reset_bouncekeys_image(AccessxStatusApplet* sapplet)
 {
-	GtkIconTheme *icon_theme = ctk_icon_theme_get_default ();
+	CtkIconTheme *icon_theme = ctk_icon_theme_get_default ();
 	gint icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
 	gint icon_scale = ctk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
 	cairo_surface_t* surface = ctk_icon_theme_load_surface (icon_theme, BOUNCEKEYS_ICON, icon_size, icon_scale, NULL, 0, NULL);
@@ -357,7 +357,7 @@ static gboolean timer_reset_bouncekeys_image(AccessxStatusApplet* sapplet)
 	return G_SOURCE_REMOVE;
 }
 
-static GdkPixbuf* accessx_status_applet_get_glyph_pixbuf(GtkWidget* widget, GdkPixbuf* base, GdkRGBA* fg, gchar* glyphstring)
+static GdkPixbuf* accessx_status_applet_get_glyph_pixbuf(CtkWidget* widget, GdkPixbuf* base, GdkRGBA* fg, gchar* glyphstring)
 {
 	GdkPixbuf* glyph_pixbuf;
 	cairo_surface_t *surface;
@@ -400,9 +400,9 @@ static GdkPixbuf* accessx_status_applet_get_glyph_pixbuf(GtkWidget* widget, GdkP
 	return glyph_pixbuf;
 }
 
-static cairo_surface_t* accessx_status_applet_altgraph_image(AccessxStatusApplet *sapplet, GtkStateFlags state)
+static cairo_surface_t* accessx_status_applet_altgraph_image(AccessxStatusApplet *sapplet, CtkStateFlags state)
 {
-	GtkIconTheme *icon_theme;
+	CtkIconTheme *icon_theme;
 	cairo_t* cr;
 	GdkPixbuf* pixbuf;
 	GdkPixbuf* glyph_pixbuf;
@@ -466,7 +466,7 @@ static cairo_surface_t* accessx_status_applet_slowkeys_image(AccessxStatusApplet
 	GdkWindow* window;
 	gboolean is_idle = TRUE;
 	gchar* icon_name = SLOWKEYS_IDLE_ICON;
-	GtkIconTheme *icon_theme = ctk_icon_theme_get_default ();
+	CtkIconTheme *icon_theme = ctk_icon_theme_get_default ();
 	gint icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
 	gint icon_scale = ctk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
 
@@ -558,7 +558,7 @@ static cairo_surface_t* accessx_status_applet_bouncekeys_image(AccessxStatusAppl
 	gchar* glyphstring = N_("a");
 	gchar* icon_name = ACCESSX_BASE_ICON;
 	gint alpha;
-	GtkIconTheme *icon_theme = ctk_icon_theme_get_default ();
+	CtkIconTheme *icon_theme = ctk_icon_theme_get_default ();
 	gint icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
 	gint icon_scale = ctk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
 
@@ -622,7 +622,7 @@ static cairo_surface_t* accessx_status_applet_mousekeys_image(AccessxStatusApple
 	GdkPixbuf* mouse_pixbuf = NULL, *button_pixbuf, *dot_pixbuf, *tmp_pixbuf;
 	cairo_surface_t *surface;
 	gchar* which_dot = MOUSEKEYS_DOT_LEFT;
-	GtkIconTheme *icon_theme = ctk_icon_theme_get_default ();
+	CtkIconTheme *icon_theme = ctk_icon_theme_get_default ();
 	gint icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
 	gint icon_scale = ctk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
 	tmp_pixbuf = ctk_icon_theme_load_icon_for_scale (icon_theme, MOUSEKEYS_BASE_ICON, icon_size, icon_scale, 0, NULL);
@@ -671,10 +671,10 @@ static cairo_surface_t* accessx_status_applet_mousekeys_image(AccessxStatusApple
 	return surface;
 }
 
-static void accessx_status_applet_set_state_icon (AccessxStatusApplet* sapplet, ModifierStruct* modifier, GtkStateFlags state)
+static void accessx_status_applet_set_state_icon (AccessxStatusApplet* sapplet, ModifierStruct* modifier, CtkStateFlags state)
 {
 	cairo_surface_t* surface = NULL;
-	GtkIconTheme *icon_theme;
+	CtkIconTheme *icon_theme;
 	gint icon_size, icon_scale;
 	gchar *icon_name = NULL;
 
@@ -994,7 +994,7 @@ static GdkFilterReturn accessx_status_xkb_filter(GdkXEvent* gdk_xevent, GdkEvent
 	return GDK_FILTER_CONTINUE;
 }
 
-static void accessx_status_applet_reparent_widget(GtkWidget* widget, GtkContainer* container)
+static void accessx_status_applet_reparent_widget(CtkWidget* widget, CtkContainer* container)
 {
 	if (widget)
 	{
@@ -1008,7 +1008,7 @@ static void accessx_status_applet_reparent_widget(GtkWidget* widget, GtkContaine
 	}
 }
 
-static void accessx_status_applet_layout_box(AccessxStatusApplet* sapplet, GtkWidget* box, GtkWidget* stickyfoo)
+static void accessx_status_applet_layout_box(AccessxStatusApplet* sapplet, CtkWidget* box, CtkWidget* stickyfoo)
 {
 	AtkObject* atko;
 
@@ -1069,7 +1069,7 @@ static void disable_applet(AccessxStatusApplet* sapplet)
 
 static void popup_error_dialog(AccessxStatusApplet* sapplet)
 {
-	GtkWidget* dialog;
+	CtkWidget* dialog;
 	gchar* error_txt;
 
 	switch (sapplet->error_type)
@@ -1099,11 +1099,11 @@ static void popup_error_dialog(AccessxStatusApplet* sapplet)
 static AccessxStatusApplet* create_applet(CafePanelApplet* applet)
 {
 	AccessxStatusApplet* sapplet = g_new0(AccessxStatusApplet, 1);
-	GtkWidget* box;
-	GtkWidget* stickyfoo;
+	CtkWidget* box;
+	CtkWidget* stickyfoo;
 	AtkObject* atko;
 	cairo_surface_t *surface;
-	GtkIconTheme *icon_theme;
+	CtkIconTheme *icon_theme;
 	gint icon_size, icon_scale;
 
 	g_set_application_name(_("AccessX Status"));
@@ -1196,7 +1196,7 @@ static AccessxStatusApplet* create_applet(CafePanelApplet* applet)
 	return sapplet;
 }
 
-static void accessx_status_applet_destroy(GtkWidget* widget, gpointer user_data)
+static void accessx_status_applet_destroy(CtkWidget* widget, gpointer user_data)
 {
 	AccessxStatusApplet* sapplet = user_data;
 	/* do we need to free the icon factory ? */
@@ -1214,11 +1214,11 @@ static void accessx_status_applet_destroy(GtkWidget* widget, gpointer user_data)
 	}
 }
 
-static void accessx_status_applet_reorient(GtkWidget* widget, CafePanelAppletOrient o, gpointer user_data)
+static void accessx_status_applet_reorient(CtkWidget* widget, CafePanelAppletOrient o, gpointer user_data)
 {
 	AccessxStatusApplet* sapplet = user_data;
-	GtkWidget* box;
-	GtkWidget* stickyfoo;
+	CtkWidget* box;
+	CtkWidget* stickyfoo;
 
 	sapplet->orient = o;
 
@@ -1236,12 +1236,12 @@ static void accessx_status_applet_reorient(GtkWidget* widget, CafePanelAppletOri
 	accessx_status_applet_layout_box(sapplet, box, stickyfoo);
 }
 
-static void accessx_status_applet_resize(GtkWidget* widget, int size, gpointer user_data)
+static void accessx_status_applet_resize(CtkWidget* widget, int size, gpointer user_data)
 {
 	cairo_surface_t *surface;
 
 	AccessxStatusApplet* sapplet = user_data;
-	GtkIconTheme *icon_theme = ctk_icon_theme_get_default ();
+	CtkIconTheme *icon_theme = ctk_icon_theme_get_default ();
 	gint icon_scale = ctk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
 
 	accessx_status_applet_update(sapplet, ACCESSX_STATUS_ALL, NULL);
@@ -1263,7 +1263,7 @@ static void accessx_status_applet_resize(GtkWidget* widget, int size, gpointer u
 	cairo_surface_destroy(surface);
 }
 
-static gboolean button_press_cb(GtkWidget* widget, GdkEventButton* event, AccessxStatusApplet* sapplet)
+static gboolean button_press_cb(CtkWidget* widget, GdkEventButton* event, AccessxStatusApplet* sapplet)
 {
 	if (event->button == 1 && event->type == GDK_BUTTON_PRESS)
 	{
@@ -1273,7 +1273,7 @@ static gboolean button_press_cb(GtkWidget* widget, GdkEventButton* event, Access
 	return FALSE;
 }
 
-static gboolean key_press_cb(GtkWidget* widget, GdkEventKey* event, AccessxStatusApplet* sapplet)
+static gboolean key_press_cb(CtkWidget* widget, GdkEventKey* event, AccessxStatusApplet* sapplet)
 {
 	switch (event->keyval)
 	{
@@ -1324,7 +1324,7 @@ static gboolean accessx_status_applet_initialize(AccessxStatusApplet* sapplet)
 	return TRUE;
 }
 
-static void accessx_status_applet_realize(GtkWidget* widget, gpointer user_data)
+static void accessx_status_applet_realize(CtkWidget* widget, gpointer user_data)
 {
 	AccessxStatusApplet* sapplet = user_data;
 
@@ -1342,7 +1342,7 @@ static gboolean accessx_status_applet_fill(CafePanelApplet* applet)
 {
 	AccessxStatusApplet* sapplet;
 	AtkObject* atk_object;
-	GtkActionGroup* action_group;
+	CtkActionGroup* action_group;
 	gchar* ui_path;
 	gboolean was_realized = FALSE;
 
@@ -1376,7 +1376,7 @@ static gboolean accessx_status_applet_fill(CafePanelApplet* applet)
 
 	if (cafe_panel_applet_get_locked_down(sapplet->applet))
 	{
-		GtkAction* action = ctk_action_group_get_action(action_group, "Dialog");
+		CtkAction* action = ctk_action_group_get_action(action_group, "Dialog");
 		ctk_action_set_visible(action, FALSE);
 	}
 

@@ -38,31 +38,31 @@
 #define NEVER_SENSITIVE "never_sensitive"
 
 struct _CafeWeatherPrefPrivate {
-	GtkWidget* notebook;
+	CtkWidget* notebook;
 
-	GtkWidget* basic_temp_combo;
-	GtkWidget* basic_speed_combo;
-	GtkWidget* basic_dist_combo;
-	GtkWidget* basic_pres_combo;
-	GtkWidget* find_entry;
-	GtkWidget* find_next_btn;
+	CtkWidget* basic_temp_combo;
+	CtkWidget* basic_speed_combo;
+	CtkWidget* basic_dist_combo;
+	CtkWidget* basic_pres_combo;
+	CtkWidget* find_entry;
+	CtkWidget* find_next_btn;
 
 	#ifdef RADARMAP
-		GtkWidget* basic_radar_btn;
-		GtkWidget* basic_radar_url_btn;
-		GtkWidget* basic_radar_url_hbox;
-		GtkWidget* basic_radar_url_entry;
+		CtkWidget* basic_radar_btn;
+		CtkWidget* basic_radar_url_btn;
+		CtkWidget* basic_radar_url_hbox;
+		CtkWidget* basic_radar_url_entry;
 	#endif /* RADARMAP */
 
     #ifdef HAVE_LIBNOTIFY
-        GtkWidget* basic_show_notifications_btn;
+        CtkWidget* basic_show_notifications_btn;
     #endif
 
-	GtkWidget* basic_update_spin;
-	GtkWidget* basic_update_btn;
-	GtkWidget* tree;
+	CtkWidget* basic_update_spin;
+	CtkWidget* basic_update_btn;
+	CtkWidget* tree;
 
-	GtkTreeModel* model;
+	CtkTreeModel* model;
 
 	CafeWeatherApplet* applet;
 };
@@ -75,7 +75,7 @@ enum {
 G_DEFINE_TYPE_WITH_PRIVATE (CafeWeatherPref, cafeweather_pref, GTK_TYPE_DIALOG);
 
 /* set sensitive and setup NEVER_SENSITIVE appropriately */
-static void hard_set_sensitive(GtkWidget* w, gboolean sensitivity)
+static void hard_set_sensitive(CtkWidget* w, gboolean sensitivity)
 {
 	ctk_widget_set_sensitive(w, sensitivity);
 	g_object_set_data(G_OBJECT(w), NEVER_SENSITIVE, GINT_TO_POINTER(!sensitivity));
@@ -83,7 +83,7 @@ static void hard_set_sensitive(GtkWidget* w, gboolean sensitivity)
 
 
 /* set sensitive, but always insensitive if NEVER_SENSITIVE is set */
-static void soft_set_sensitive(GtkWidget* w, gboolean sensitivity)
+static void soft_set_sensitive(CtkWidget* w, gboolean sensitivity)
 {
 	if (g_object_get_data(G_OBJECT(w), NEVER_SENSITIVE))
 	{
@@ -96,7 +96,7 @@ static void soft_set_sensitive(GtkWidget* w, gboolean sensitivity)
 }
 
 /* sets up ATK Relation between the widgets */
-static void add_atk_relation(GtkWidget* widget1, GtkWidget* widget2, AtkRelationType type)
+static void add_atk_relation(CtkWidget* widget1, CtkWidget* widget2, AtkRelationType type)
 {
 	AtkObject* atk_obj1;
 	AtkObject* atk_obj2;
@@ -119,7 +119,7 @@ static void add_atk_relation(GtkWidget* widget1, GtkWidget* widget2, AtkRelation
 }
 
 /* sets accessible name and description */
-void set_access_namedesc(GtkWidget* widget, const gchar* name, const gchar* desc)
+void set_access_namedesc(CtkWidget* widget, const gchar* name, const gchar* desc)
 {
 	AtkObject* obj = ctk_widget_get_accessible(widget);
 
@@ -200,12 +200,12 @@ static gboolean update_dialog(CafeWeatherPref* pref)
     return TRUE;
 }
 
-static void row_selected_cb(GtkTreeSelection* selection, CafeWeatherPref* pref)
+static void row_selected_cb(CtkTreeSelection* selection, CafeWeatherPref* pref)
 {
 	CafeWeatherApplet* gw_applet = pref->priv->applet;
-	GtkTreeModel* model;
+	CtkTreeModel* model;
 	WeatherLocation* loc = NULL;
-	GtkTreeIter iter;
+	CtkTreeIter iter;
 
 	if (!ctk_tree_selection_get_selected(selection, &model, &iter))
 		return;
@@ -235,11 +235,11 @@ static void row_selected_cb(GtkTreeSelection* selection, CafeWeatherPref* pref)
 	cafeweather_update(gw_applet);
 }
 
-static gboolean compare_location(GtkTreeModel* model, GtkTreePath* path, GtkTreeIter* iter, gpointer user_data)
+static gboolean compare_location(CtkTreeModel* model, CtkTreePath* path, CtkTreeIter* iter, gpointer user_data)
 {
     CafeWeatherPref* pref = user_data;
     WeatherLocation* loc;
-    GtkTreeView* view;
+    CtkTreeView* view;
 
     ctk_tree_model_get(model, iter, CAFEWEATHER_XML_COL_POINTER, &loc, -1);
 
@@ -264,9 +264,9 @@ static gboolean compare_location(GtkTreeModel* model, GtkTreePath* path, GtkTree
 static void load_locations(CafeWeatherPref* pref)
 {
 	CafeWeatherApplet* gw_applet = pref->priv->applet;
-	GtkTreeView* tree = GTK_TREE_VIEW(pref->priv->tree);
-	GtkTreeViewColumn* column;
-	GtkCellRenderer* cell_renderer;
+	CtkTreeView* tree = GTK_TREE_VIEW(pref->priv->tree);
+	CtkTreeViewColumn* column;
+	CtkCellRenderer* cell_renderer;
 	WeatherLocation* current_location;
 
 	/* Add a column for the locations */
@@ -280,7 +280,7 @@ static void load_locations(CafeWeatherPref* pref)
 
 	if (!pref->priv->model)
 	{
-		GtkWidget* d = ctk_message_dialog_new(NULL, 0, GTK_MESSAGE_ERROR, GTK_BUTTONS_OK, _("Failed to load the Locations XML database.  Please report this as a bug."));
+		CtkWidget* d = ctk_message_dialog_new(NULL, 0, GTK_MESSAGE_ERROR, GTK_BUTTONS_OK, _("Failed to load the Locations XML database.  Please report this as a bug."));
 		ctk_dialog_run(GTK_DIALOG(d));
 		ctk_widget_destroy(d);
 	}
@@ -294,7 +294,7 @@ static void load_locations(CafeWeatherPref* pref)
 	}
 }
 
-static void show_notifications_toggled(GtkToggleButton* button, CafeWeatherPref* pref)
+static void show_notifications_toggled(CtkToggleButton* button, CafeWeatherPref* pref)
 {
 	CafeWeatherApplet* gw_applet = pref->priv->applet;
 	
@@ -310,7 +310,7 @@ static void show_notifications_toggled(GtkToggleButton* button, CafeWeatherPref*
 	}
 }
 
-static void auto_update_toggled(GtkToggleButton* button, CafeWeatherPref* pref)
+static void auto_update_toggled(CtkToggleButton* button, CafeWeatherPref* pref)
 {
 	CafeWeatherApplet* gw_applet = pref->priv->applet;
 	gboolean toggled;
@@ -343,7 +343,7 @@ static void auto_update_toggled(GtkToggleButton* button, CafeWeatherPref* pref)
 	}
 }
 
-static void temp_combo_changed_cb(GtkComboBox* combo, CafeWeatherPref* pref)
+static void temp_combo_changed_cb(CtkComboBox* combo, CafeWeatherPref* pref)
 {
 	CafeWeatherApplet* gw_applet = pref->priv->applet;
 	TempUnit new_unit, old_unit;
@@ -371,7 +371,7 @@ static void temp_combo_changed_cb(GtkComboBox* combo, CafeWeatherPref* pref)
 	}
 }
 
-static void speed_combo_changed_cb(GtkComboBox* combo, CafeWeatherPref* pref)
+static void speed_combo_changed_cb(CtkComboBox* combo, CafeWeatherPref* pref)
 {
 	CafeWeatherApplet* gw_applet = pref->priv->applet;
 	SpeedUnit new_unit, old_unit;
@@ -397,7 +397,7 @@ static void speed_combo_changed_cb(GtkComboBox* combo, CafeWeatherPref* pref)
 	}
 }
 
-static void pres_combo_changed_cb(GtkComboBox* combo, CafeWeatherPref* pref)
+static void pres_combo_changed_cb(CtkComboBox* combo, CafeWeatherPref* pref)
 {
 	CafeWeatherApplet* gw_applet = pref->priv->applet;
 	PressureUnit new_unit, old_unit;
@@ -423,7 +423,7 @@ static void pres_combo_changed_cb(GtkComboBox* combo, CafeWeatherPref* pref)
 	}
 }
 
-static void dist_combo_changed_cb(GtkComboBox* combo, CafeWeatherPref* pref)
+static void dist_combo_changed_cb(CtkComboBox* combo, CafeWeatherPref* pref)
 {
 	CafeWeatherApplet* gw_applet = pref->priv->applet;
 	DistanceUnit new_unit, old_unit;
@@ -449,7 +449,7 @@ static void dist_combo_changed_cb(GtkComboBox* combo, CafeWeatherPref* pref)
 	}
 }
 
-static void radar_toggled(GtkToggleButton* button, CafeWeatherPref* pref)
+static void radar_toggled(CtkToggleButton* button, CafeWeatherPref* pref)
 {
     CafeWeatherApplet* gw_applet = pref->priv->applet;
     gboolean toggled;
@@ -465,7 +465,7 @@ static void radar_toggled(GtkToggleButton* button, CafeWeatherPref* pref)
 	}
 }
 
-static void use_radar_url_toggled(GtkToggleButton* button, CafeWeatherPref* pref)
+static void use_radar_url_toggled(CtkToggleButton* button, CafeWeatherPref* pref)
 {
     CafeWeatherApplet* gw_applet = pref->priv->applet;
     gboolean toggled;
@@ -476,7 +476,7 @@ static void use_radar_url_toggled(GtkToggleButton* button, CafeWeatherPref* pref
     soft_set_sensitive(pref->priv->basic_radar_url_hbox, toggled);
 }
 
-static gboolean radar_url_changed(GtkWidget* widget, GdkEventFocus* event, CafeWeatherPref* pref)
+static gboolean radar_url_changed(CtkWidget* widget, GdkEventFocus* event, CafeWeatherPref* pref)
 {
 	CafeWeatherApplet* gw_applet = pref->priv->applet;
 	gchar *text;
@@ -503,7 +503,7 @@ static gboolean radar_url_changed(GtkWidget* widget, GdkEventFocus* event, CafeW
 	return FALSE;
 }
 
-static void update_interval_changed(GtkSpinButton* button, CafeWeatherPref* pref)
+static void update_interval_changed(CtkSpinButton* button, CafeWeatherPref* pref)
 {
 	CafeWeatherApplet* gw_applet = pref->priv->applet;
 
@@ -521,7 +521,7 @@ static void update_interval_changed(GtkSpinButton* button, CafeWeatherPref* pref
 	}
 }
 
-static gboolean free_data(GtkTreeModel* model, GtkTreePath* path, GtkTreeIter* iter, gpointer data)
+static gboolean free_data(CtkTreeModel* model, CtkTreePath* path, CtkTreeIter* iter, gpointer data)
 {
 	WeatherLocation* location;
 
@@ -538,12 +538,12 @@ static gboolean free_data(GtkTreeModel* model, GtkTreePath* path, GtkTreeIter* i
 }
 
 
-static GtkWidget* create_hig_category(GtkWidget* main_box, gchar* title)
+static CtkWidget* create_hig_category(CtkWidget* main_box, gchar* title)
 {
-	GtkWidget* vbox;
-	GtkWidget* vbox2;
-	GtkWidget* hbox;
-	GtkWidget*label;
+	CtkWidget* vbox;
+	CtkWidget* vbox2;
+	CtkWidget* hbox;
+	CtkWidget*label;
 	gchar* tmp;
 
 	vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
@@ -568,10 +568,10 @@ static GtkWidget* create_hig_category(GtkWidget* main_box, gchar* title)
 	return vbox2;
 }
 
-static gboolean find_location(GtkTreeModel* model, GtkTreeIter* iter, const gchar* location, gboolean go_parent)
+static gboolean find_location(CtkTreeModel* model, CtkTreeIter* iter, const gchar* location, gboolean go_parent)
 {
-	GtkTreeIter iter_child;
-	GtkTreeIter iter_parent;
+	CtkTreeIter iter_child;
+	CtkTreeIter iter_parent;
 	gchar* aux_loc;
 	gboolean valid;
 	int len;
@@ -635,15 +635,15 @@ static gboolean find_location(GtkTreeModel* model, GtkTreeIter* iter, const gcha
 	return FALSE;
 }
 
-static void find_next_clicked(GtkButton* button, CafeWeatherPref* pref)
+static void find_next_clicked(CtkButton* button, CafeWeatherPref* pref)
 {
-	GtkTreeView *tree;
-	GtkTreeModel *model;
-	GtkEntry *entry;
-	GtkTreeSelection *selection;
-	GtkTreeIter iter;
-	GtkTreeIter iter_parent;
-	GtkTreePath *path;
+	CtkTreeView *tree;
+	CtkTreeModel *model;
+	CtkEntry *entry;
+	CtkTreeSelection *selection;
+	CtkTreeIter iter;
+	CtkTreeIter iter_parent;
+	CtkTreePath *path;
 	const gchar *location;
 
 	tree = GTK_TREE_VIEW (pref->priv->tree);
@@ -691,13 +691,13 @@ static void find_next_clicked(GtkButton* button, CafeWeatherPref* pref)
 	}
 }
 
-static void find_entry_changed(GtkEditable* entry, CafeWeatherPref* pref)
+static void find_entry_changed(CtkEditable* entry, CafeWeatherPref* pref)
 {
-	GtkTreeView *tree;
-	GtkTreeModel *model;
-	GtkTreeSelection *selection;
-	GtkTreeIter iter;
-	GtkTreePath *path;
+	CtkTreeView *tree;
+	CtkTreeModel *model;
+	CtkTreeSelection *selection;
+	CtkTreeIter iter;
+	CtkTreePath *path;
 	const gchar *location;
 
 	tree = GTK_TREE_VIEW (pref->priv->tree);
@@ -728,7 +728,7 @@ static void find_entry_changed(GtkEditable* entry, CafeWeatherPref* pref)
 }
 
 
-static void help_cb(GtkDialog* dialog, CafeWeatherPref* pref)
+static void help_cb(CtkDialog* dialog, CafeWeatherPref* pref)
 {
 	gint current_page;
 	gchar *uri;
@@ -744,7 +744,7 @@ static void help_cb(GtkDialog* dialog, CafeWeatherPref* pref)
 
 	if (error)
 	{
-		GtkWidget* error_dialog = ctk_message_dialog_new (NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE, _("There was an error displaying help: %s"), error->message);
+		CtkWidget* error_dialog = ctk_message_dialog_new (NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE, _("There was an error displaying help: %s"), error->message);
 		g_signal_connect (G_OBJECT (error_dialog), "response", G_CALLBACK (ctk_widget_destroy), NULL);
 		ctk_window_set_resizable (GTK_WINDOW (error_dialog), FALSE);
 		ctk_window_set_screen (GTK_WINDOW (error_dialog), ctk_widget_get_screen (GTK_WIDGET (dialog)));
@@ -755,7 +755,7 @@ static void help_cb(GtkDialog* dialog, CafeWeatherPref* pref)
 }
 
 
-static void response_cb(GtkDialog* dialog, gint id, CafeWeatherPref* pref)
+static void response_cb(CtkDialog* dialog, gint id, CafeWeatherPref* pref)
 {
 	if (id == GTK_RESPONSE_HELP)
 	{
@@ -770,37 +770,37 @@ static void response_cb(GtkDialog* dialog, gint id, CafeWeatherPref* pref)
 
 static void cafeweather_pref_create(CafeWeatherPref* pref)
 {
-	GtkWidget* pref_vbox;
+	CtkWidget* pref_vbox;
 	#ifdef RADARMAP
-		GtkWidget* radar_toggle_hbox;
+		CtkWidget* radar_toggle_hbox;
 	#endif /* RADARMAP */
-	GtkWidget* pref_basic_update_lbl;
-	GtkWidget* pref_basic_update_hbox;
-	GtkAdjustment* pref_basic_update_spin_adj;
-	GtkWidget* pref_basic_update_sec_lbl;
-	GtkWidget* pref_basic_note_lbl;
-	GtkWidget* pref_loc_hbox;
-	GtkWidget* pref_loc_note_lbl;
-	GtkWidget* scrolled_window;
-	GtkWidget* label;
-	GtkWidget* value_hbox;
-	GtkWidget* tree_label;
-	GtkTreeSelection *selection;
-	GtkWidget* pref_basic_vbox;
-	GtkWidget* vbox;
-	GtkWidget* frame;
-	GtkWidget* temp_label;
-	GtkWidget* temp_combo;
-	GtkWidget* speed_label;
-	GtkWidget* speed_combo;
-	GtkWidget* pres_label;
-	GtkWidget* pres_combo;
-	GtkWidget* dist_label;
-	GtkWidget* dist_combo;
-	GtkWidget* unit_grid;
-	GtkWidget* pref_find_label;
-	GtkWidget* pref_find_hbox;
-	GtkWidget* image;
+	CtkWidget* pref_basic_update_lbl;
+	CtkWidget* pref_basic_update_hbox;
+	CtkAdjustment* pref_basic_update_spin_adj;
+	CtkWidget* pref_basic_update_sec_lbl;
+	CtkWidget* pref_basic_note_lbl;
+	CtkWidget* pref_loc_hbox;
+	CtkWidget* pref_loc_note_lbl;
+	CtkWidget* scrolled_window;
+	CtkWidget* label;
+	CtkWidget* value_hbox;
+	CtkWidget* tree_label;
+	CtkTreeSelection *selection;
+	CtkWidget* pref_basic_vbox;
+	CtkWidget* vbox;
+	CtkWidget* frame;
+	CtkWidget* temp_label;
+	CtkWidget* temp_combo;
+	CtkWidget* speed_label;
+	CtkWidget* speed_combo;
+	CtkWidget* pres_label;
+	CtkWidget* pres_combo;
+	CtkWidget* dist_label;
+	CtkWidget* dist_combo;
+	CtkWidget* unit_grid;
+	CtkWidget* pref_find_label;
+	CtkWidget* pref_find_hbox;
+	CtkWidget* image;
 
 
 	g_object_set (pref, "destroy-with-parent", TRUE, NULL);
@@ -1201,7 +1201,7 @@ static GObject* cafeweather_pref_constructor(GType type, guint n_construct_param
 }
 
 
-GtkWidget* cafeweather_pref_new(CafeWeatherApplet* applet)
+CtkWidget* cafeweather_pref_new(CafeWeatherApplet* applet)
 {
     return g_object_new(CAFEWEATHER_TYPE_PREF, "cafeweather-applet", applet, NULL);
 }

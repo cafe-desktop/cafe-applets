@@ -24,8 +24,8 @@
 #include <ctk/ctk.h>
 
 gchar * get_current_date(const gchar *format);
-void	xstuff_change_workspace (GtkWindow *window,
+void	xstuff_change_workspace (CtkWindow *window,
 			         int        new_space);
-int	xstuff_get_current_workspace (GtkWindow *window);
+int	xstuff_get_current_workspace (CtkWindow *window);
 
 #endif /* #ifndef __UTIL_H__ */

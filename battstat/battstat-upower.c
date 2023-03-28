@@ -338,7 +338,7 @@ error_dialog( const char *fmt , ...)
   char str[1000];
   vsprintf(str, fmt, ap);
   va_end(ap);
-  GtkWidget *dialog;
+  CtkWidget *dialog;
 
   dialog = ctk_message_dialog_new( NULL, 0, GTK_MESSAGE_ERROR,
                                    GTK_BUTTONS_OK, "%s", str);

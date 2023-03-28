@@ -21,10 +21,10 @@ register_stock_for_edit (void)
   static gboolean registered = FALSE;
   if (!registered)
   {
-    GtkIconFactory *factory;
-    GtkIconSet     *icons;
+    CtkIconFactory *factory;
+    CtkIconSet     *icons;
 
-    static const GtkStockItem edit_item [] = {
+    static const CtkStockItem edit_item [] = {
            { CHARPICK_STOCK_EDIT, N_("_Edit"), 0, 0, GETTEXT_PACKAGE },
     };
     icons = ctk_icon_factory_lookup_default ("ctk-preferences");
@@ -38,7 +38,7 @@ register_stock_for_edit (void)
 
 #if 0
 static void
-set_atk_relation (GtkWidget *label, GtkWidget *widget)
+set_atk_relation (CtkWidget *label, CtkWidget *widget)
 {
   AtkObject *atk_widget;
   AtkObject *atk_label;
@@ -68,7 +68,7 @@ set_atk_relation (GtkWidget *label, GtkWidget *widget)
 /* sets accessible name and description */
 
 static void
-set_access_namedesc (GtkWidget *widget, const gchar *name, const gchar *desc)
+set_access_namedesc (CtkWidget *widget, const gchar *name, const gchar *desc)
 {
     AtkObject *obj;
 
@@ -85,11 +85,11 @@ set_access_namedesc (GtkWidget *widget, const gchar *name, const gchar *desc)
 void
 add_edit_dialog_create (charpick_data *curr_data, gchar *string, gchar *title)
 {
-	GtkWidget *dialog;
-	GtkWidget *entry;
-	GtkWidget *dbox;
-	GtkWidget *vbox, *hbox;
-	GtkWidget *label;
+	CtkWidget *dialog;
+	CtkWidget *entry;
+	CtkWidget *dbox;
+	CtkWidget *vbox, *hbox;
+	CtkWidget *label;
 
 	dialog = ctk_dialog_new_with_buttons (_(title), GTK_WINDOW (curr_data->propwindow),
 							    GTK_DIALOG_DESTROY_WITH_PARENT,
@@ -131,13 +131,13 @@ add_edit_dialog_create (charpick_data *curr_data, gchar *string, gchar *title)
 }
 
 static void
-add_palette_cb (GtkDialog *dialog, int response_id, charpick_data *curr_data)
+add_palette_cb (CtkDialog *dialog, int response_id, charpick_data *curr_data)
 {
 	GList *list = curr_data->chartable;
-	GtkTreeModel *model;
-	GtkTreeIter iter;
-	GtkTreeSelection *selection;
-	GtkTreePath *path;
+	CtkTreeModel *model;
+	CtkTreeIter iter;
+	CtkTreeSelection *selection;
+	CtkTreePath *path;
 	char *new;
 
 	ctk_widget_set_sensitive (curr_data->propwindow, TRUE);
@@ -186,11 +186,11 @@ add_palette_cb (GtkDialog *dialog, int response_id, charpick_data *curr_data)
 }
 
 static void
-edit_palette_cb (GtkDialog *dialog, int response_id, charpick_data *curr_data)
+edit_palette_cb (CtkDialog *dialog, int response_id, charpick_data *curr_data)
 {
-	GtkTreeSelection *selection;
-	GtkTreeIter iter;
-	GtkTreeModel *model;
+	CtkTreeSelection *selection;
+	CtkTreeIter iter;
+	CtkTreeModel *model;
 	GList *list;
 	char *new, *charlist;
 
@@ -233,7 +233,7 @@ edit_palette_cb (GtkDialog *dialog, int response_id, charpick_data *curr_data)
 }
 
 static void
-add_palette (GtkButton *buttonk, charpick_data *curr_data)
+add_palette (CtkButton *buttonk, charpick_data *curr_data)
 {
 	if (curr_data->add_edit_dialog == NULL) {
 		add_edit_dialog_create (curr_data, NULL, _("Add Palette"));
@@ -258,11 +258,11 @@ add_palette (GtkButton *buttonk, charpick_data *curr_data)
 }
 
 static void
-edit_palette (GtkButton *button, charpick_data *curr_data)
+edit_palette (CtkButton *button, charpick_data *curr_data)
 {
-	GtkTreeSelection *selection;
-	GtkTreeIter iter;
-	GtkTreeModel *model;
+	CtkTreeSelection *selection;
+	CtkTreeIter iter;
+	CtkTreeModel *model;
 	char *charlist;
 
 	if (curr_data->add_edit_dialog == NULL) {
@@ -295,11 +295,11 @@ edit_palette (GtkButton *button, charpick_data *curr_data)
 }
 
 static void
-delete_palette (GtkButton *button, charpick_data *curr_data)
+delete_palette (CtkButton *button, charpick_data *curr_data)
 {
-	GtkTreeSelection *selection;
-	GtkTreeIter iter, next;
-	GtkTreeModel *model;
+	CtkTreeSelection *selection;
+	CtkTreeIter iter, next;
+	CtkTreeModel *model;
 	gchar *charlist;
 	
 	selection = ctk_tree_view_get_selection (GTK_TREE_VIEW (curr_data->pref_tree));
@@ -327,7 +327,7 @@ delete_palette (GtkButton *button, charpick_data *curr_data)
 	if (ctk_tree_model_iter_next (model, &next) )
 		ctk_tree_selection_select_iter (selection, &next);
 	else {
-		GtkTreePath *path;
+		CtkTreePath *path;
 		path = ctk_tree_model_get_path (model, &iter);
 		if (ctk_tree_path_prev (path))
 			ctk_tree_selection_select_path (selection, path);
@@ -338,10 +338,10 @@ delete_palette (GtkButton *button, charpick_data *curr_data)
 }
 
 static void
-selection_changed (GtkTreeSelection *selection, gpointer data)
+selection_changed (CtkTreeSelection *selection, gpointer data)
 {
-	GtkWidget *scrolled = data;
-	GtkWidget *edit_button, *delete_button;
+	CtkWidget *scrolled = data;
+	CtkWidget *edit_button, *delete_button;
 	gboolean selected;
 	
 	selected = ctk_tree_selection_get_selected (selection, NULL, NULL);
@@ -351,16 +351,16 @@ selection_changed (GtkTreeSelection *selection, gpointer data)
 	ctk_widget_set_sensitive (delete_button, selected);
 }
 
-static GtkWidget *
-create_palettes_tree (charpick_data *curr_data, GtkWidget *label)
+static CtkWidget *
+create_palettes_tree (charpick_data *curr_data, CtkWidget *label)
 {
-	GtkWidget *scrolled;
-	GtkWidget *tree;
-	GtkListStore *model;
-	GtkCellRenderer *cell;
-	GtkTreeViewColumn *column;
+	CtkWidget *scrolled;
+	CtkWidget *tree;
+	CtkListStore *model;
+	CtkCellRenderer *cell;
+	CtkTreeViewColumn *column;
 	GList *list = curr_data->chartable;
-	GtkTreeSelection *selection;
+	CtkTreeSelection *selection;
 	
 	scrolled = ctk_scrolled_window_new (NULL,NULL);
 	ctk_scrolled_window_set_shadow_type (GTK_SCROLLED_WINDOW (scrolled), GTK_SHADOW_IN);
@@ -386,7 +386,7 @@ create_palettes_tree (charpick_data *curr_data, GtkWidget *label)
         ctk_tree_view_set_headers_visible (GTK_TREE_VIEW (tree), FALSE);
         
         while (list) {
-        	GtkTreeIter iter;
+        	CtkTreeIter iter;
         	gchar *charlist = list->data;
         	
         	ctk_list_store_append (GTK_LIST_STORE (model), &iter);
@@ -403,11 +403,11 @@ create_palettes_tree (charpick_data *curr_data, GtkWidget *label)
 
 }
 
-static GtkWidget *
-create_hig_catagory (GtkWidget *main_box, gchar *title)
+static CtkWidget *
+create_hig_catagory (CtkWidget *main_box, gchar *title)
 {
-	GtkWidget *vbox, *vbox2, *hbox;
-	GtkWidget *label;
+	CtkWidget *vbox, *vbox2, *hbox;
+	CtkWidget *label;
 	gchar *tmp;
 		
 	vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
@@ -435,12 +435,12 @@ create_hig_catagory (GtkWidget *main_box, gchar *title)
 
 static void default_chars_frame_create(charpick_data *curr_data)
 {
-  GtkWidget *dialog = curr_data->propwindow;
-  GtkWidget *dbox, *vbox, *vbox1, *vbox2, *vbox3;
-  GtkWidget *hbox;
-  GtkWidget *label;
-  GtkWidget *scrolled;
-  GtkWidget *button;
+  CtkWidget *dialog = curr_data->propwindow;
+  CtkWidget *dbox, *vbox, *vbox1, *vbox2, *vbox3;
+  CtkWidget *hbox;
+  CtkWidget *label;
+  CtkWidget *scrolled;
+  CtkWidget *button;
 
   dbox = ctk_dialog_get_content_area(GTK_DIALOG (dialog));
 
@@ -511,7 +511,7 @@ static void default_chars_frame_create(charpick_data *curr_data)
 }
 
 static void
-phelp_cb (GtkDialog *dialog, gint tab, gpointer data)
+phelp_cb (CtkDialog *dialog, gint tab, gpointer data)
 {
   GError *error = NULL;
 
@@ -528,7 +528,7 @@ phelp_cb (GtkDialog *dialog, gint tab, gpointer data)
 }
 
 static void
-response_cb (GtkDialog *dialog, gint id, gpointer data)
+response_cb (CtkDialog *dialog, gint id, gpointer data)
 {
   charpick_data *curr_data = data;
 
@@ -543,7 +543,7 @@ response_cb (GtkDialog *dialog, gint id, gpointer data)
 }
 
 void
-show_preferences_dialog (GtkAction     *action,
+show_preferences_dialog (CtkAction     *action,
 			 charpick_data *curr_data)
 {
   if (curr_data->propwindow) {

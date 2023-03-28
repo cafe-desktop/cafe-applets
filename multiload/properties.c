@@ -38,7 +38,7 @@
 
 /* set sensitive and setup NEVER_SENSITIVE appropriately */
 static void
-hard_set_sensitive (GtkWidget *w, gboolean sensitivity)
+hard_set_sensitive (CtkWidget *w, gboolean sensitivity)
 {
 	ctk_widget_set_sensitive (w, sensitivity);
 	g_object_set_data (G_OBJECT (w), NEVER_SENSITIVE,
@@ -48,7 +48,7 @@ hard_set_sensitive (GtkWidget *w, gboolean sensitivity)
 
 /* set sensitive, but always insensitive if NEVER_SENSITIVE is set */
 static void
-soft_set_sensitive (GtkWidget *w, gboolean sensitivity)
+soft_set_sensitive (CtkWidget *w, gboolean sensitivity)
 {
 	if (g_object_get_data (G_OBJECT (w), NEVER_SENSITIVE))
 		ctk_widget_set_sensitive (w, FALSE);
@@ -78,7 +78,7 @@ properties_set_insensitive(MultiloadApplet *ma)
 }
 
 static void
-properties_close_cb (GtkWidget *widget, gint arg, MultiloadApplet *ma)
+properties_close_cb (CtkWidget *widget, gint arg, MultiloadApplet *ma)
 {
 	GError *error = NULL;
 
@@ -106,7 +106,7 @@ properties_close_cb (GtkWidget *widget, gint arg, MultiloadApplet *ma)
 }
 
 static void
-property_toggled_cb(GtkWidget *widget, gpointer name)
+property_toggled_cb(CtkWidget *widget, gpointer name)
 {
 	MultiloadApplet *ma;
 	gint prop_type, i;
@@ -140,7 +140,7 @@ property_toggled_cb(GtkWidget *widget, gpointer name)
 }
 
 static void
-spin_button_changed_cb(GtkWidget *widget, gpointer name)
+spin_button_changed_cb(CtkWidget *widget, gpointer name)
 {
   MultiloadApplet *ma;
   gint value;
@@ -233,11 +233,11 @@ spin_button_changed_cb(GtkWidget *widget, gpointer name)
 }
 
 /* create a new page in the notebook widget, add it, and return a pointer to it */
-static GtkWidget *
-add_page(GtkWidget *notebook, gchar *label)
+static CtkWidget *
+add_page(CtkWidget *notebook, gchar *label)
 {
-	GtkWidget *page;
-	GtkWidget *page_label;
+	CtkWidget *page;
+	CtkWidget *page_label;
 
 	page = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
 	ctk_box_set_homogeneous (GTK_BOX (page), TRUE);
@@ -251,7 +251,7 @@ add_page(GtkWidget *notebook, gchar *label)
 
 /* save the selected color to gsettings and apply it on the applet */
 static void
-color_picker_set_cb(GtkColorChooser *color_picker, gchar *key)
+color_picker_set_cb(CtkColorChooser *color_picker, gchar *key)
 {
 	gchar *color_string;
 	guint8 prop_type;
@@ -288,11 +288,11 @@ color_picker_set_cb(GtkColorChooser *color_picker, gchar *key)
 
 /* create a color selector */
 static void
-add_color_selector(GtkWidget *page, gchar *name, gchar *key, MultiloadApplet *ma)
+add_color_selector(CtkWidget *page, gchar *name, gchar *key, MultiloadApplet *ma)
 {
-	GtkWidget *vbox;
-	GtkWidget *label;
-	GtkWidget *color_picker;
+	CtkWidget *vbox;
+	CtkWidget *label;
+	CtkWidget *color_picker;
 	GdkRGBA color;
 	gchar *color_string;
 
@@ -326,7 +326,7 @@ add_color_selector(GtkWidget *page, gchar *name, gchar *key, MultiloadApplet *ma
 
 /* save the checkbox option to gsettings and apply it on the applet */
 static void
-checkbox_toggled_cb(GtkCheckButton *checkbox, gchar *key)
+checkbox_toggled_cb(CtkCheckButton *checkbox, gchar *key)
 {
 	MultiloadApplet *ma;
 	gboolean option;
@@ -341,10 +341,10 @@ checkbox_toggled_cb(GtkCheckButton *checkbox, gchar *key)
 
 /* adds checkbox option */
 static void
-add_checkbox(GtkWidget *page, gchar *name, gchar *key, MultiloadApplet *ma)
+add_checkbox(CtkWidget *page, gchar *name, gchar *key, MultiloadApplet *ma)
 {
-	GtkWidget *vbox;
-	GtkWidget *checkbox;
+	CtkWidget *vbox;
+	CtkWidget *checkbox;
 	gboolean option;
 
 	option = g_settings_get_boolean (ma->settings, key);
@@ -369,21 +369,21 @@ add_checkbox(GtkWidget *page, gchar *name, gchar *key, MultiloadApplet *ma)
 
 /* creates the properties dialog using up-to-the-minute info from gsettings */
 static void
-fill_properties(GtkWidget *dialog, MultiloadApplet *ma)
+fill_properties(CtkWidget *dialog, MultiloadApplet *ma)
 {
-	GtkWidget *page;
-	GtkWidget *hbox, *vbox;
-	GtkWidget *categories_vbox;
-	GtkWidget *category_vbox;
-	GtkWidget *control_vbox;
-	GtkWidget *control_hbox;
-	GtkWidget *check_box;
-	GtkWidget *indent;
-	GtkWidget *spin_button;
-	GtkWidget *label;
+	CtkWidget *page;
+	CtkWidget *hbox, *vbox;
+	CtkWidget *categories_vbox;
+	CtkWidget *category_vbox;
+	CtkWidget *control_vbox;
+	CtkWidget *control_hbox;
+	CtkWidget *check_box;
+	CtkWidget *indent;
+	CtkWidget *spin_button;
+	CtkWidget *label;
 	CafePanelAppletOrient orient;
-	GtkSizeGroup *label_size;
-	GtkSizeGroup *spin_size;
+	CtkSizeGroup *label_size;
+	CtkSizeGroup *spin_size;
 	gchar *label_text;
 	gchar *title;
 
@@ -833,10 +833,10 @@ fill_properties(GtkWidget *dialog, MultiloadApplet *ma)
 
 /* show properties dialog */
 void
-multiload_properties_cb (GtkAction       *action,
+multiload_properties_cb (CtkAction       *action,
 			 MultiloadApplet *ma)
 {
-	GtkWidget *dialog = NULL;
+	CtkWidget *dialog = NULL;
 
 	if (ma->prop_dialog) {
 		dialog = ma->prop_dialog;

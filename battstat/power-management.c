@@ -94,13 +94,13 @@ static int using_upower;
 BatteryStatus test_status;
 
 static void
-test_update_boolean( GtkToggleButton *button, gboolean *value )
+test_update_boolean( CtkToggleButton *button, gboolean *value )
 {
   *value = ctk_toggle_button_get_active( button );
 }
 
 static void
-test_update_integer( GtkSpinButton *spin, gint *value )
+test_update_integer( CtkSpinButton *spin, gint *value )
 {
   *value = ctk_spin_button_get_value_as_int( spin );
 }
@@ -108,8 +108,8 @@ test_update_integer( GtkSpinButton *spin, gint *value )
 static void
 initialise_test( void )
 {
-  GtkWidget *w;
-  GtkBox *box;
+  CtkWidget *w;
+  CtkBox *box;
 
   test_status.percent = 50;
   test_status.minutes = 180;

@@ -30,10 +30,10 @@ typedef struct _CafeWeatherApplet {
 
 	GSettings* settings;
 
-	GtkWidget* container;
-	GtkWidget* box;
-	GtkWidget* label;
-	GtkWidget* image;
+	CtkWidget* container;
+	CtkWidget* box;
+	CtkWidget* label;
+	CtkWidget* image;
 
 	CafePanelAppletOrient orient;
 	gint size;
@@ -43,10 +43,10 @@ typedef struct _CafeWeatherApplet {
 	/* preferences  */
 	CafeWeatherPrefs cafeweather_pref;
 
-	GtkWidget* pref_dialog;
+	CtkWidget* pref_dialog;
 
 	/* dialog stuff */
-	GtkWidget* details_dialog;
+	CtkWidget* details_dialog;
 } CafeWeatherApplet;
 
 G_END_DECLS
