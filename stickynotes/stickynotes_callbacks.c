@@ -41,12 +41,12 @@ stickynote_close_cb (CtkWidget *widget, StickyNote *note)
 /* Sticky Window Callback : Resize the window. */
 gboolean stickynote_resize_cb(CtkWidget *widget, CdkEventButton *event, StickyNote *note)
 {
-	if (event->type == GDK_BUTTON_PRESS && event->button == 1) {
+	if (event->type == CDK_BUTTON_PRESS && event->button == 1) {
 		if (widget == note->w_resize_se)
-			ctk_window_begin_resize_drag(CTK_WINDOW(note->w_window), GDK_WINDOW_EDGE_SOUTH_EAST,
+			ctk_window_begin_resize_drag(CTK_WINDOW(note->w_window), CDK_WINDOW_EDGE_SOUTH_EAST,
 						     event->button, event->x_root, event->y_root, event->time);
 		else /* if (widget == note->w_resize_sw) */
-			ctk_window_begin_resize_drag(CTK_WINDOW(note->w_window), GDK_WINDOW_EDGE_SOUTH_WEST,
+			ctk_window_begin_resize_drag(CTK_WINDOW(note->w_window), CDK_WINDOW_EDGE_SOUTH_WEST,
 						     event->button, event->x_root, event->y_root, event->time);
 	}
 	else
@@ -58,9 +58,9 @@ gboolean stickynote_resize_cb(CtkWidget *widget, CdkEventButton *event, StickyNo
 /* Sticky Window Callback : Move the window or edit the title. */
 gboolean stickynote_move_cb(CtkWidget *widget, CdkEventButton *event, StickyNote *note)
 {
-	if (event->type == GDK_BUTTON_PRESS && event->button == 1)
+	if (event->type == CDK_BUTTON_PRESS && event->button == 1)
 		ctk_window_begin_move_drag(CTK_WINDOW(note->w_window), event->button, event->x_root, event->y_root, event->time);
-	else if (event->type == GDK_2BUTTON_PRESS && event->button == 1)
+	else if (event->type == CDK_2BUTTON_PRESS && event->button == 1)
 		stickynote_change_properties(note);
 	else
 		return FALSE;
@@ -93,7 +93,7 @@ gboolean stickynote_delete_cb(CtkWidget *widget, CdkEvent *event, StickyNote *no
 gboolean
 stickynote_show_popup_menu (CtkWidget *widget, CdkEventButton *event, CtkWidget *popup_menu)
 {
-	if (event->type == GDK_BUTTON_PRESS && event->button == 3)
+	if (event->type == CDK_BUTTON_PRESS && event->button == 3)
 	{
 		ctk_menu_popup_at_pointer (CTK_MENU (popup_menu),
 		                           (const CdkEvent*) event);

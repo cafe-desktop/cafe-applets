@@ -232,7 +232,7 @@ static gboolean clicked_cb (CtkWidget *widget, CdkEventButton *ev, gpointer data
     if ((ev == NULL) || (ev->button != 1))
         return FALSE;
 
-    if (ev->type == GDK_BUTTON_PRESS) {
+    if (ev->type == CDK_BUTTON_PRESS) {
 	if (!gw_applet->details_dialog)
 		details_cb (NULL, gw_applet);
 	else
@@ -248,24 +248,24 @@ static gboolean
 key_press_cb (CtkWidget *widget, CdkEventKey *event, CafeWeatherApplet *gw_applet)
 {
 	switch (event->keyval) {	
-	case GDK_KEY_u:
-		if (event->state == GDK_CONTROL_MASK) {
+	case CDK_KEY_u:
+		if (event->state == CDK_CONTROL_MASK) {
 			cafeweather_update (gw_applet);
 			return TRUE;
 		}
 		break;
-	case GDK_KEY_d:
-		if (event->state == GDK_CONTROL_MASK) {
+	case CDK_KEY_d:
+		if (event->state == CDK_CONTROL_MASK) {
 			details_cb (NULL, gw_applet);
 			return TRUE;
 		}
 		break;		
-	case GDK_KEY_KP_Enter:
-	case GDK_KEY_ISO_Enter:
-	case GDK_KEY_3270_Enter:
-	case GDK_KEY_Return:
-	case GDK_KEY_space:
-	case GDK_KEY_KP_Space:
+	case CDK_KEY_KP_Enter:
+	case CDK_KEY_ISO_Enter:
+	case CDK_KEY_3270_Enter:
+	case CDK_KEY_Return:
+	case CDK_KEY_space:
+	case CDK_KEY_KP_Space:
 		details_cb (NULL, gw_applet);
 		return TRUE;
 	default:

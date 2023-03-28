@@ -332,8 +332,8 @@ cpufreq_applet_menu_popup (CPUFreqApplet *applet,
 
         ctk_menu_popup_at_widget (CTK_MENU (menu),
                                   CTK_WIDGET (applet),
-                                  GDK_GRAVITY_SOUTH_WEST,
-                                  GDK_GRAVITY_NORTH_WEST,
+                                  CDK_GRAVITY_SOUTH_WEST,
+                                  CDK_GRAVITY_NORTH_WEST,
                                   NULL);
 }
 
@@ -348,8 +348,8 @@ cpufreq_applet_button_press (CtkWidget *widget, CdkEventButton *event)
                 return FALSE;
 
         if (event->button == 1 &&
-            event->type != GDK_2BUTTON_PRESS &&
-            event->type != GDK_3BUTTON_PRESS) {
+            event->type != CDK_2BUTTON_PRESS &&
+            event->type != CDK_3BUTTON_PRESS) {
                 cpufreq_applet_menu_popup (applet, event->time);
 
                 return TRUE;
@@ -366,12 +366,12 @@ cpufreq_applet_key_press (CtkWidget *widget, CdkEventKey *event)
         applet = CPUFREQ_APPLET (widget);
 
         switch (event->keyval) {
-        case GDK_KEY_KP_Enter:
-        case GDK_KEY_ISO_Enter:
-        case GDK_KEY_3270_Enter:
-        case GDK_KEY_Return:
-        case GDK_KEY_space:
-        case GDK_KEY_KP_Space:
+        case CDK_KEY_KP_Enter:
+        case CDK_KEY_ISO_Enter:
+        case CDK_KEY_3270_Enter:
+        case CDK_KEY_Return:
+        case CDK_KEY_space:
+        case CDK_KEY_KP_Space:
                 cpufreq_applet_menu_popup (applet, event->time);
 
                 return TRUE;

@@ -236,7 +236,7 @@ trash_applet_init (TrashApplet *applet)
   /* setup drag and drop */
   ctk_drag_dest_set (CTK_WIDGET (applet), CTK_DEST_DEFAULT_ALL,
                      drop_types, G_N_ELEMENTS (drop_types),
-                     GDK_ACTION_MOVE);
+                     CDK_ACTION_MOVE);
 
   /* synthesise the first update */
   applet->items = -1;
@@ -279,12 +279,12 @@ trash_applet_key_press (CtkWidget   *widget,
 
   switch (event->keyval)
     {
-     case GDK_KEY_KP_Enter:
-     case GDK_KEY_ISO_Enter:
-     case GDK_KEY_3270_Enter:
-     case GDK_KEY_Return:
-     case GDK_KEY_space:
-     case GDK_KEY_KP_Space:
+     case CDK_KEY_KP_Enter:
+     case CDK_KEY_ISO_Enter:
+     case CDK_KEY_3270_Enter:
+     case CDK_KEY_Return:
+     case CDK_KEY_space:
+     case CDK_KEY_KP_Space:
       trash_applet_open_folder (NULL, applet);
       return TRUE;
 
@@ -320,7 +320,7 @@ trash_applet_drag_motion (CtkWidget      *widget,
   if (target)
     cdk_drag_status (context, 0, time);
   else
-    cdk_drag_status (context, GDK_ACTION_MOVE, time);
+    cdk_drag_status (context, CDK_ACTION_MOVE, time);
 
   return TRUE;
 }

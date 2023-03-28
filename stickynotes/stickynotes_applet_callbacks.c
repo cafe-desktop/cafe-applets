@@ -88,7 +88,7 @@ applet_button_cb (CtkWidget         *widget,
                   CdkEventButton    *event,
                   StickyNotesApplet *applet)
 {
-	if (event->type == GDK_2BUTTON_PRESS)
+	if (event->type == CDK_2BUTTON_PRESS)
 	{
 		popup_add_note (applet, NULL);
 		return TRUE;
@@ -110,10 +110,10 @@ applet_key_cb (CtkWidget         *widget,
 {
 	switch (event->keyval)
 	{
-		case GDK_KEY_KP_Space:
-		case GDK_KEY_space:
-		case GDK_KEY_KP_Enter:
-		case GDK_KEY_Return:
+		case CDK_KEY_KP_Space:
+		case CDK_KEY_space:
+		case CDK_KEY_KP_Enter:
+		case CDK_KEY_Return:
 			stickynote_show_notes (TRUE);
 			return TRUE;
 	}
@@ -123,7 +123,7 @@ applet_key_cb (CtkWidget         *widget,
 /* Applet Callback : Cross (enter or leave) the applet. */
 gboolean applet_cross_cb(CtkWidget *widget, CdkEventCrossing *event, StickyNotesApplet *applet)
 {
-	applet->prelighted = event->type == GDK_ENTER_NOTIFY || ctk_widget_has_focus(widget);
+	applet->prelighted = event->type == CDK_ENTER_NOTIFY || ctk_widget_has_focus(widget);
 
 	stickynotes_applet_update_icon(applet);
 
@@ -148,7 +148,7 @@ static CdkFilterReturn desktop_window_event_filter (CdkXEvent *xevent,
 	    (((XEvent*)xevent)->xproperty.atom == cdk_x11_get_xatom_by_name ("_NET_WM_USER_TIME"))) {
 		stickynote_show_notes (FALSE);
 	}
-	return GDK_FILTER_CONTINUE;
+	return CDK_FILTER_CONTINUE;
 }
 
 void install_check_click_on_desktop (void)
@@ -180,13 +180,13 @@ void install_check_click_on_desktop (void)
 		gulong bytes;
 
 		/* We only use this extra property if the actual user-time property's missing */
-		XGetWindowProperty(GDK_DISPLAY_XDISPLAY(cdk_window_get_display(window)), desktop_window, user_time,
+		XGetWindowProperty(CDK_DISPLAY_XDISPLAY(cdk_window_get_display(window)), desktop_window, user_time,
 					0, 4, False, AnyPropertyType, &actual_type, &actual_format,
 					&nitems, &bytes, (unsigned char **)&data );
 		if (actual_type == None)
 		{
 			/* No user-time property, so look for the user-time-window */
-			XGetWindowProperty(GDK_DISPLAY_XDISPLAY(cdk_window_get_display(window)), desktop_window, user_time_window,
+			XGetWindowProperty(CDK_DISPLAY_XDISPLAY(cdk_window_get_display(window)), desktop_window, user_time_window,
 					0, 4, False, AnyPropertyType, &actual_type, &actual_format,
 					&nitems, &bytes, (unsigned char **)&data );
 			if (actual_type != None)
@@ -199,7 +199,7 @@ void install_check_click_on_desktop (void)
 		}
 	}
 
-	cdk_window_set_events (window, GDK_PROPERTY_CHANGE_MASK);
+	cdk_window_set_events (window, CDK_PROPERTY_CHANGE_MASK);
 	cdk_window_add_filter (window, desktop_window_event_filter, NULL);
 }
 

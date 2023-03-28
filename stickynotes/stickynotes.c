@@ -61,7 +61,7 @@ set_icon_geometry (CdkWindow *window,
 	data[3] = height;
 
 	XChangeProperty (dpy,
-	                 GDK_WINDOW_XID (window),
+	                 CDK_WINDOW_XID (window),
 	                 cdk_x11_get_xatom_by_name_for_display (
 	                     cdk_window_get_display (window),
 	                     "_NET_WM_ICON_GEOMETRY"),
@@ -112,22 +112,22 @@ stickynote_new_aux (CdkScreen *screen, gint x, gint y, gint w, gint h)
 	ctk_window_set_decorated (CTK_WINDOW (note->w_window), FALSE);
 	ctk_window_set_skip_taskbar_hint (CTK_WINDOW (note->w_window), TRUE);
 	ctk_window_set_skip_pager_hint (CTK_WINDOW (note->w_window), TRUE);
-	ctk_widget_add_events (note->w_window, GDK_BUTTON_PRESS_MASK);
+	ctk_widget_add_events (note->w_window, CDK_BUTTON_PRESS_MASK);
 
 	note->w_title = CTK_WIDGET (ctk_builder_get_object (builder, "title_label"));
 	note->w_body = CTK_WIDGET (ctk_builder_get_object (builder, "body_text"));
 	note->w_scroller = CTK_WIDGET (ctk_builder_get_object (builder, "body_scroller"));
 	note->w_lock = CTK_WIDGET (ctk_builder_get_object (builder, "lock_button"));
-	ctk_widget_add_events (note->w_lock, GDK_BUTTON_PRESS_MASK);
+	ctk_widget_add_events (note->w_lock, CDK_BUTTON_PRESS_MASK);
 
 	note->buffer = CTK_SOURCE_BUFFER(ctk_text_view_get_buffer(CTK_TEXT_VIEW(note->w_body)));
 
 	note->w_close = CTK_WIDGET (ctk_builder_get_object (builder, "close_button"));
-	ctk_widget_add_events (note->w_close, GDK_BUTTON_PRESS_MASK);
+	ctk_widget_add_events (note->w_close, CDK_BUTTON_PRESS_MASK);
 	note->w_resize_se = CTK_WIDGET (ctk_builder_get_object (builder, "resize_se_box"));
-	ctk_widget_add_events (note->w_resize_se, GDK_BUTTON_PRESS_MASK);
+	ctk_widget_add_events (note->w_resize_se, CDK_BUTTON_PRESS_MASK);
 	note->w_resize_sw = CTK_WIDGET (ctk_builder_get_object (builder, "resize_sw_box"));
-	ctk_widget_add_events (note->w_resize_sw, GDK_BUTTON_PRESS_MASK);
+	ctk_widget_add_events (note->w_resize_sw, CDK_BUTTON_PRESS_MASK);
 
 	note->img_lock = CTK_IMAGE (ctk_builder_get_object (builder,
 	                "lock_img"));
@@ -613,7 +613,7 @@ stickynote_set_visible (StickyNote *note, gboolean visible)
 			g_print ("set_visible(): workspace = %i\n",
 					note->workspace);
 
-			xid = GDK_WINDOW_XID (note->w_window->window);
+			xid = CDK_WINDOW_XID (note->w_window->window);
 			wnck_screen = wnck_screen_get_default ();
 			wnck_win = wnck_window_get (xid);
 			wnck_ws = wnck_screen_get_workspace (
@@ -724,7 +724,7 @@ stickynotes_save_now (void)
 		gchar *x_str = g_strdup_printf("%d", note->x);
 		gchar *y_str = g_strdup_printf("%d", note->y);
 
-		xid = GDK_WINDOW_XID (ctk_widget_get_window (note->w_window));
+		xid = CDK_WINDOW_XID (ctk_widget_get_window (note->w_window));
 		wnck_win = wnck_window_get (xid);
 
 		if (!g_settings_get_boolean (stickynotes->settings, "sticky") &&

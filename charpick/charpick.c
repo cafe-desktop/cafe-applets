@@ -171,11 +171,11 @@ toggle_button_toggled_cb(CtkToggleButton *button, gpointer data)
     curr_data->selected_unichar = unichar;
     /* set this? widget as the selection owner */
     ctk_selection_owner_set (curr_data->applet,
-	  		     GDK_SELECTION_PRIMARY,
-                             GDK_CURRENT_TIME); 
+	  		     CDK_SELECTION_PRIMARY,
+                             CDK_CURRENT_TIME); 
     ctk_selection_owner_set (curr_data->applet,
-	  		     GDK_SELECTION_CLIPBOARD,
-                             GDK_CURRENT_TIME); 
+	  		     CDK_SELECTION_CLIPBOARD,
+                             CDK_CURRENT_TIME); 
     curr_data->last_index = button_index;
   }	
 	     
@@ -339,8 +339,8 @@ chooser_button_clicked (CtkButton *button, charpick_data *curr_data)
 		
 		ctk_menu_popup_at_widget (CTK_MENU (curr_data->menu),
 		                          CTK_WIDGET (button),
-		                          GDK_GRAVITY_SOUTH_WEST,
-		                          GDK_GRAVITY_NORTH_WEST,
+		                          CDK_GRAVITY_SOUTH_WEST,
+		                          CDK_GRAVITY_NORTH_WEST,
 		                          NULL);
 	}				    
 }
@@ -759,11 +759,11 @@ charpicker_applet_fill (CafePanelApplet *applet)
 
   utf8_atom = cdk_atom_intern ("UTF8_STRING", FALSE);
   ctk_selection_add_target (curr_data->applet, 
-			    GDK_SELECTION_PRIMARY,
+			    CDK_SELECTION_PRIMARY,
                             utf8_atom,
 			    0);
   ctk_selection_add_target (curr_data->applet, 
-			    GDK_SELECTION_CLIPBOARD,
+			    CDK_SELECTION_CLIPBOARD,
                             utf8_atom,
 			    0);
   g_signal_connect (G_OBJECT (curr_data->applet), "selection_get",
