@@ -84,7 +84,7 @@ properties_close_cb (CtkWidget *widget, gint arg, MultiloadApplet *ma)
 
 	switch (arg)
 	{
-		case GTK_RESPONSE_HELP:
+		case CTK_RESPONSE_HELP:
 
 			ctk_show_uri_on_window (NULL,
 			                        "help:cafe-multiload/multiload-prefs",
@@ -98,7 +98,7 @@ properties_close_cb (CtkWidget *widget, gint arg, MultiloadApplet *ma)
 			}
 			break;
 
-		case GTK_RESPONSE_CLOSE:
+		case CTK_RESPONSE_CLOSE:
 		default:
 			ctk_widget_destroy (widget);
 			ma->prop_dialog = NULL;
@@ -110,7 +110,7 @@ property_toggled_cb(CtkWidget *widget, gpointer name)
 {
 	MultiloadApplet *ma;
 	gint prop_type, i;
-	gboolean active = ctk_toggle_button_get_active(GTK_TOGGLE_BUTTON(widget));
+	gboolean active = ctk_toggle_button_get_active(CTK_TOGGLE_BUTTON(widget));
 
 	ma = g_object_get_data(G_OBJECT(widget), "MultiloadApplet");
 	prop_type = GPOINTER_TO_INT(g_object_get_data(G_OBJECT(widget), "prop_type"));
@@ -148,7 +148,7 @@ spin_button_changed_cb(CtkWidget *widget, gpointer name)
 
   ma = g_object_get_data(G_OBJECT(widget), "MultiloadApplet");
   prop_type = GPOINTER_TO_INT(g_object_get_data(G_OBJECT(widget), "prop_type"));
-  value = ctk_spin_button_get_value_as_int(GTK_SPIN_BUTTON(widget));
+  value = ctk_spin_button_get_value_as_int(CTK_SPIN_BUTTON(widget));
 
   switch(prop_type)
   {
@@ -187,7 +187,7 @@ spin_button_changed_cb(CtkWidget *widget, gpointer name)
       g_settings_set_uint (ma->settings, (gchar *)name, value);
       if (value >= ma->graphs[2]->net_threshold2)
       {
-        ctk_spin_button_set_value(GTK_SPIN_BUTTON(widget),
+        ctk_spin_button_set_value(CTK_SPIN_BUTTON(widget),
             (gdouble)g_settings_get_uint (ma->settings, "netthreshold2") - 1);
         ma->graphs[2]->net_threshold1 = g_settings_get_uint (ma->settings, "netthreshold2") - 1;
       }
@@ -199,13 +199,13 @@ spin_button_changed_cb(CtkWidget *widget, gpointer name)
       g_settings_set_uint (ma->settings, (gchar *)name, value);
       if (value >= ma->graphs[2]->net_threshold3)
       {
-        ctk_spin_button_set_value(GTK_SPIN_BUTTON(widget),
+        ctk_spin_button_set_value(CTK_SPIN_BUTTON(widget),
             (gdouble)g_settings_get_uint (ma->settings, "netthreshold3") - 1);
         ma->graphs[2]->net_threshold2 = g_settings_get_uint (ma->settings, "netthreshold3") - 1;
       }
       else if (value <= ma->graphs[2]->net_threshold1)
       {
-        ctk_spin_button_set_value(GTK_SPIN_BUTTON(widget),
+        ctk_spin_button_set_value(CTK_SPIN_BUTTON(widget),
             (gdouble)g_settings_get_uint (ma->settings, "netthreshold1") + 1);
         ma->graphs[2]->net_threshold2 = g_settings_get_uint (ma->settings, "netthreshold1") + 1;
       }
@@ -218,7 +218,7 @@ spin_button_changed_cb(CtkWidget *widget, gpointer name)
       g_settings_set_uint (ma->settings, (gchar *)name, value);
       if (value <= ma->graphs[2]->net_threshold2)
       {
-        ctk_spin_button_set_value(GTK_SPIN_BUTTON(widget),
+        ctk_spin_button_set_value(CTK_SPIN_BUTTON(widget),
             (gdouble)g_settings_get_uint (ma->settings, "netthreshold2") + 1);
         ma->graphs[2]->net_threshold3 = g_settings_get_uint (ma->settings, "netthreshold2") + 1;
       }
@@ -239,12 +239,12 @@ add_page(CtkWidget *notebook, gchar *label)
 	CtkWidget *page;
 	CtkWidget *page_label;
 
-	page = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-	ctk_box_set_homogeneous (GTK_BOX (page), TRUE);
+	page = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 0);
+	ctk_box_set_homogeneous (CTK_BOX (page), TRUE);
 	page_label = ctk_label_new(label);
-	ctk_container_set_border_width(GTK_CONTAINER(page), 6);
+	ctk_container_set_border_width(CTK_CONTAINER(page), 6);
 
-	ctk_notebook_append_page(GTK_NOTEBOOK(notebook), page, page_label);
+	ctk_notebook_append_page(CTK_NOTEBOOK(notebook), page, page_label);
 
 	return page;
 }
@@ -302,19 +302,19 @@ add_color_selector(CtkWidget *page, gchar *name, gchar *key, MultiloadApplet *ma
 	gdk_rgba_parse (&color, color_string);
 	g_free (color_string);
 
-	vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
+	vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 6);
 	label = ctk_label_new_with_mnemonic(name);
 	color_picker = ctk_color_button_new();
-	ctk_label_set_mnemonic_widget (GTK_LABEL (label), color_picker);
+	ctk_label_set_mnemonic_widget (CTK_LABEL (label), color_picker);
 
-	ctk_box_pack_start(GTK_BOX(vbox), color_picker, FALSE, FALSE, 0);
-	ctk_box_pack_start (GTK_BOX (vbox), label, FALSE, FALSE, 0);
+	ctk_box_pack_start(CTK_BOX(vbox), color_picker, FALSE, FALSE, 0);
+	ctk_box_pack_start (CTK_BOX (vbox), label, FALSE, FALSE, 0);
 
-	ctk_box_pack_start(GTK_BOX(page), vbox, FALSE, FALSE, 0);
+	ctk_box_pack_start(CTK_BOX(page), vbox, FALSE, FALSE, 0);
 
 	g_object_set_data (G_OBJECT (color_picker), "MultiloadApplet", ma);
 
-	ctk_color_chooser_set_rgba(GTK_COLOR_CHOOSER(color_picker), &color);
+	ctk_color_chooser_set_rgba(CTK_COLOR_CHOOSER(color_picker), &color);
 
 	g_signal_connect(G_OBJECT(color_picker), "color_set", G_CALLBACK(color_picker_set_cb), key);
 
@@ -349,13 +349,13 @@ add_checkbox(CtkWidget *page, gchar *name, gchar *key, MultiloadApplet *ma)
 
 	option = g_settings_get_boolean (ma->settings, key);
 
-	vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
+	vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 6);
 	checkbox = ctk_check_button_new_with_mnemonic (name);
-	ctk_toggle_button_set_active (GTK_TOGGLE_BUTTON(checkbox), option);
+	ctk_toggle_button_set_active (CTK_TOGGLE_BUTTON(checkbox), option);
 
-	ctk_box_pack_start(GTK_BOX(vbox), checkbox, FALSE, FALSE, 0);
+	ctk_box_pack_start(CTK_BOX(vbox), checkbox, FALSE, FALSE, 0);
 
-	ctk_box_pack_start(GTK_BOX(page), vbox, FALSE, FALSE, 0);
+	ctk_box_pack_start(CTK_BOX(page), vbox, FALSE, FALSE, 0);
 
 	g_object_set_data (G_OBJECT (checkbox), "MultiloadApplet", ma);
 
@@ -387,153 +387,153 @@ fill_properties(CtkWidget *dialog, MultiloadApplet *ma)
 	gchar *label_text;
 	gchar *title;
 
-	vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-	ctk_container_set_border_width (GTK_CONTAINER (vbox), 5);
+	vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
+	ctk_container_set_border_width (CTK_CONTAINER (vbox), 5);
 	ctk_widget_show (vbox);
 
-	ctk_box_pack_start (GTK_BOX (ctk_dialog_get_content_area (GTK_DIALOG (dialog))), vbox,
+	ctk_box_pack_start (CTK_BOX (ctk_dialog_get_content_area (CTK_DIALOG (dialog))), vbox,
 			    TRUE, TRUE, 0);
 
-	categories_vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 18);
-	ctk_box_pack_start (GTK_BOX (vbox), categories_vbox, TRUE, TRUE, 0);
+	categories_vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 18);
+	ctk_box_pack_start (CTK_BOX (vbox), categories_vbox, TRUE, TRUE, 0);
 	ctk_widget_show (categories_vbox);
 
-	category_vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-	ctk_box_pack_start (GTK_BOX (categories_vbox), category_vbox, TRUE, TRUE, 0);
+	category_vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 6);
+	ctk_box_pack_start (CTK_BOX (categories_vbox), category_vbox, TRUE, TRUE, 0);
 	ctk_widget_show (category_vbox);
 
 	title = g_strconcat ("<span weight=\"bold\">", _("Monitored Resources"), "</span>", NULL);
 	label = ctk_label_new_with_mnemonic (_(title));
-	ctk_label_set_use_markup (GTK_LABEL (label), TRUE);
-	ctk_label_set_justify (GTK_LABEL (label), GTK_JUSTIFY_LEFT);
-	ctk_label_set_xalign (GTK_LABEL (label), 0.0);
-	ctk_box_pack_start (GTK_BOX (category_vbox), label, FALSE, FALSE, 0);
+	ctk_label_set_use_markup (CTK_LABEL (label), TRUE);
+	ctk_label_set_justify (CTK_LABEL (label), CTK_JUSTIFY_LEFT);
+	ctk_label_set_xalign (CTK_LABEL (label), 0.0);
+	ctk_box_pack_start (CTK_BOX (category_vbox), label, FALSE, FALSE, 0);
 	g_free (title);
 
-	hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-	ctk_box_pack_start (GTK_BOX (category_vbox), hbox, TRUE, TRUE, 0);
+	hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 0);
+	ctk_box_pack_start (CTK_BOX (category_vbox), hbox, TRUE, TRUE, 0);
 	ctk_widget_show (hbox);
 
 	indent = ctk_label_new (HIG_IDENTATION);
-	ctk_label_set_justify (GTK_LABEL (indent), GTK_JUSTIFY_LEFT);
-	ctk_box_pack_start (GTK_BOX (hbox), indent, FALSE, FALSE, 0);
+	ctk_label_set_justify (CTK_LABEL (indent), CTK_JUSTIFY_LEFT);
+	ctk_box_pack_start (CTK_BOX (hbox), indent, FALSE, FALSE, 0);
 	ctk_widget_show (indent);
 
-	control_vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-	ctk_box_pack_start (GTK_BOX (hbox), control_vbox, TRUE, TRUE, 0);
+	control_vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 6);
+	ctk_box_pack_start (CTK_BOX (hbox), control_vbox, TRUE, TRUE, 0);
 	ctk_widget_show (control_vbox);
 
-	control_hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
-	ctk_box_pack_start (GTK_BOX (control_vbox), control_hbox, TRUE, TRUE, 0);
+	control_hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 12);
+	ctk_box_pack_start (CTK_BOX (control_vbox), control_hbox, TRUE, TRUE, 0);
 	ctk_widget_show (control_hbox);
 
 	check_box = ctk_check_button_new_with_mnemonic(_("_Processor"));
 	ma->check_boxes[0] = check_box;
-	ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(check_box),
+	ctk_toggle_button_set_active(CTK_TOGGLE_BUTTON(check_box),
 				g_settings_get_boolean (ma->settings, "view-cpuload"));
 	g_object_set_data(G_OBJECT(check_box), "MultiloadApplet", ma);
 	g_object_set_data(G_OBJECT(check_box), "prop_type", GINT_TO_POINTER(PROP_CPU));
 	g_signal_connect(G_OBJECT(check_box), "toggled",
 				G_CALLBACK(property_toggled_cb), "view-cpuload");
-	ctk_box_pack_start (GTK_BOX (control_hbox), check_box, FALSE, FALSE, 0);
+	ctk_box_pack_start (CTK_BOX (control_hbox), check_box, FALSE, FALSE, 0);
 
 	if ( ! g_settings_is_writable (ma->settings, "view-cpuload"))
 		hard_set_sensitive (check_box, FALSE);
 
 	check_box = ctk_check_button_new_with_mnemonic(_("_Memory"));
 	ma->check_boxes[1] = check_box;
-	ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(check_box),
+	ctk_toggle_button_set_active(CTK_TOGGLE_BUTTON(check_box),
 				g_settings_get_boolean (ma->settings, "view-memload"));
 	g_object_set_data(G_OBJECT(check_box), "MultiloadApplet", ma);
 	g_object_set_data(G_OBJECT(check_box), "prop_type", GINT_TO_POINTER(PROP_MEM));
 	g_signal_connect(G_OBJECT(check_box), "toggled",
 				G_CALLBACK(property_toggled_cb), "view-memload");
-	ctk_box_pack_start (GTK_BOX (control_hbox), check_box, FALSE, FALSE, 0);
+	ctk_box_pack_start (CTK_BOX (control_hbox), check_box, FALSE, FALSE, 0);
 
 	if ( ! g_settings_is_writable (ma->settings, "view-memload"))
 		hard_set_sensitive (check_box, FALSE);
 
 	check_box = ctk_check_button_new_with_mnemonic(_("_Network"));
 	ma->check_boxes[2] = check_box;
-	ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(check_box),
+	ctk_toggle_button_set_active(CTK_TOGGLE_BUTTON(check_box),
 				g_settings_get_boolean (ma->settings, "view-netload"));
 	g_object_set_data(G_OBJECT(check_box), "MultiloadApplet", ma);
 	g_object_set_data(G_OBJECT(check_box), "prop_type", GINT_TO_POINTER(PROP_NET));
 	g_signal_connect(G_OBJECT(check_box), "toggled",
 				G_CALLBACK(property_toggled_cb), "view-netload");
-	ctk_box_pack_start (GTK_BOX (control_hbox), check_box, FALSE, FALSE, 0);
+	ctk_box_pack_start (CTK_BOX (control_hbox), check_box, FALSE, FALSE, 0);
 
 	if ( ! g_settings_is_writable (ma->settings, "view-netload"))
 		hard_set_sensitive (check_box, FALSE);
 
 	check_box = ctk_check_button_new_with_mnemonic (_("S_wap Space"));
 	ma->check_boxes[3] = check_box;
-	ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(check_box),
+	ctk_toggle_button_set_active(CTK_TOGGLE_BUTTON(check_box),
 				g_settings_get_boolean (ma->settings, "view-swapload"));
 	g_object_set_data(G_OBJECT(check_box), "MultiloadApplet", ma);
 	g_object_set_data(G_OBJECT(check_box), "prop_type", GINT_TO_POINTER(PROP_SWAP));
 	g_signal_connect(G_OBJECT(check_box), "toggled",
 				G_CALLBACK(property_toggled_cb), "view-swapload");
-	ctk_box_pack_start (GTK_BOX (control_hbox), check_box, FALSE, FALSE, 0);
+	ctk_box_pack_start (CTK_BOX (control_hbox), check_box, FALSE, FALSE, 0);
 
 	if ( ! g_settings_is_writable (ma->settings, "view-swapload"))
 		hard_set_sensitive (check_box, FALSE);
 
 	check_box = ctk_check_button_new_with_mnemonic(_("_Load"));
 	ma->check_boxes[4] = check_box;
-	ctk_toggle_button_set_active(GTK_TOGGLE_BUTTON(check_box),
+	ctk_toggle_button_set_active(CTK_TOGGLE_BUTTON(check_box),
 				g_settings_get_boolean (ma->settings, "view-loadavg"));
 	g_object_set_data(G_OBJECT(check_box), "MultiloadApplet", ma);
 	g_object_set_data(G_OBJECT(check_box), "prop_type", GINT_TO_POINTER(PROP_AVG));
 	g_signal_connect(G_OBJECT(check_box), "toggled",
 				G_CALLBACK(property_toggled_cb), "view-loadavg");
-	ctk_box_pack_start(GTK_BOX(control_hbox), check_box, FALSE, FALSE, 0);
+	ctk_box_pack_start(CTK_BOX(control_hbox), check_box, FALSE, FALSE, 0);
 
 	if ( ! g_settings_is_writable (ma->settings, "view-loadavg"))
 		hard_set_sensitive (check_box, FALSE);
 
 	check_box = ctk_check_button_new_with_mnemonic(_("_Harddisk"));
 	ma->check_boxes[5] = check_box;
-	ctk_toggle_button_set_active (GTK_TOGGLE_BUTTON (check_box),
+	ctk_toggle_button_set_active (CTK_TOGGLE_BUTTON (check_box),
 			g_settings_get_boolean (ma->settings, "view-diskload"));
 	g_object_set_data (G_OBJECT (check_box), "MultiloadApplet", ma);
 	g_object_set_data (G_OBJECT (check_box), "prop_type",
 			GINT_TO_POINTER (PROP_DISK));
 	g_signal_connect (G_OBJECT (check_box), "toggled",
 			G_CALLBACK (property_toggled_cb), "view-diskload");
-	ctk_box_pack_start (GTK_BOX (control_hbox), check_box, FALSE, FALSE, 0);
+	ctk_box_pack_start (CTK_BOX (control_hbox), check_box, FALSE, FALSE, 0);
 
-	category_vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-	ctk_box_pack_start (GTK_BOX (categories_vbox), category_vbox, TRUE, TRUE, 0);
+	category_vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 6);
+	ctk_box_pack_start (CTK_BOX (categories_vbox), category_vbox, TRUE, TRUE, 0);
 	ctk_widget_show (category_vbox);
 
 	title = g_strconcat ("<span weight=\"bold\">", _("Options"), "</span>", NULL);
 	label = ctk_label_new (title);
-	ctk_label_set_use_markup (GTK_LABEL (label), TRUE);
-	ctk_label_set_justify (GTK_LABEL (label), GTK_JUSTIFY_LEFT);
-	ctk_label_set_xalign (GTK_LABEL (label), 0.0);
-	ctk_box_pack_start (GTK_BOX (category_vbox), label, FALSE, FALSE, 0);
+	ctk_label_set_use_markup (CTK_LABEL (label), TRUE);
+	ctk_label_set_justify (CTK_LABEL (label), CTK_JUSTIFY_LEFT);
+	ctk_label_set_xalign (CTK_LABEL (label), 0.0);
+	ctk_box_pack_start (CTK_BOX (category_vbox), label, FALSE, FALSE, 0);
 	ctk_widget_show (label);
 	g_free (title);
 
-	hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-	ctk_box_pack_start (GTK_BOX (category_vbox), hbox, TRUE, TRUE, 0);
+	hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 0);
+	ctk_box_pack_start (CTK_BOX (category_vbox), hbox, TRUE, TRUE, 0);
 	ctk_widget_show (hbox);
 
 	indent = ctk_label_new (HIG_IDENTATION);
-	ctk_label_set_justify (GTK_LABEL (indent), GTK_JUSTIFY_LEFT);
-	ctk_box_pack_start (GTK_BOX (hbox), indent, FALSE, FALSE, 0);
+	ctk_label_set_justify (CTK_LABEL (indent), CTK_JUSTIFY_LEFT);
+	ctk_box_pack_start (CTK_BOX (hbox), indent, FALSE, FALSE, 0);
 	ctk_widget_show (indent);
 
-	control_vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-	ctk_box_pack_start (GTK_BOX (hbox), control_vbox, TRUE, TRUE, 0);
+	control_vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 6);
+	ctk_box_pack_start (CTK_BOX (hbox), control_vbox, TRUE, TRUE, 0);
 	ctk_widget_show (control_vbox);
 
-	control_hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
-	ctk_box_pack_start (GTK_BOX (control_vbox), control_hbox, TRUE, TRUE, 0);
+	control_hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 12);
+	ctk_box_pack_start (CTK_BOX (control_vbox), control_hbox, TRUE, TRUE, 0);
 	ctk_widget_show (control_hbox);
 
-	label_size = ctk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
+	label_size = ctk_size_group_new (CTK_SIZE_GROUP_HORIZONTAL);
 
 	orient = cafe_panel_applet_get_orient(ma->applet);
 	if ( (orient == CAFE_PANEL_APPLET_ORIENT_UP) || (orient == CAFE_PANEL_APPLET_ORIENT_DOWN) )
@@ -542,22 +542,22 @@ fill_properties(CtkWidget *dialog, MultiloadApplet *ma)
 		label_text = g_strdup(_("System m_onitor height: "));
 
 	label = ctk_label_new_with_mnemonic(label_text);
-	ctk_label_set_xalign (GTK_LABEL (label), 0.0f);
+	ctk_label_set_xalign (CTK_LABEL (label), 0.0f);
 	ctk_size_group_add_widget (label_size, label);
-        ctk_box_pack_start (GTK_BOX (control_hbox), label, FALSE, FALSE, 0);
+        ctk_box_pack_start (CTK_BOX (control_hbox), label, FALSE, FALSE, 0);
 
-	hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
-	ctk_box_pack_start (GTK_BOX (control_hbox), hbox, TRUE, TRUE, 0);
+	hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 6);
+	ctk_box_pack_start (CTK_BOX (control_hbox), hbox, TRUE, TRUE, 0);
 	ctk_widget_show (hbox);
 
-	spin_size = ctk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
+	spin_size = ctk_size_group_new (CTK_SIZE_GROUP_HORIZONTAL);
 
 	spin_button = ctk_spin_button_new_with_range(10, 1000, 5);
-	ctk_label_set_mnemonic_widget (GTK_LABEL (label), spin_button);
+	ctk_label_set_mnemonic_widget (CTK_LABEL (label), spin_button);
 	g_object_set_data(G_OBJECT(spin_button), "MultiloadApplet", ma);
 	g_object_set_data(G_OBJECT(spin_button), "prop_type",
 				GINT_TO_POINTER(PROP_SIZE));
-	ctk_spin_button_set_value(GTK_SPIN_BUTTON(spin_button),
+	ctk_spin_button_set_value(CTK_SPIN_BUTTON(spin_button),
 				(gdouble)g_settings_get_int(ma->settings, "size"));
 	g_signal_connect(G_OBJECT(spin_button), "value_changed",
 				G_CALLBACK(spin_button_changed_cb), "size");
@@ -568,36 +568,36 @@ fill_properties(CtkWidget *dialog, MultiloadApplet *ma)
 	}
 
 	ctk_size_group_add_widget (spin_size, spin_button);
-	ctk_box_pack_start (GTK_BOX (hbox), spin_button, FALSE, FALSE, 0);
+	ctk_box_pack_start (CTK_BOX (hbox), spin_button, FALSE, FALSE, 0);
 
 	label = ctk_label_new (_("pixels"));
-	ctk_label_set_xalign (GTK_LABEL (label), 0.0f);
-	ctk_box_pack_start (GTK_BOX (hbox), label, FALSE, FALSE, 0);
+	ctk_label_set_xalign (CTK_LABEL (label), 0.0f);
+	ctk_box_pack_start (CTK_BOX (hbox), label, FALSE, FALSE, 0);
 
-	control_hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
-	ctk_box_pack_start (GTK_BOX (control_vbox), control_hbox, TRUE, TRUE, 0);
+	control_hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 12);
+	ctk_box_pack_start (CTK_BOX (control_vbox), control_hbox, TRUE, TRUE, 0);
 	ctk_widget_show (control_hbox);
 
 	label = ctk_label_new_with_mnemonic(_("Sys_tem monitor update interval: "));
-	ctk_label_set_xalign (GTK_LABEL (label), 0.0f);
+	ctk_label_set_xalign (CTK_LABEL (label), 0.0f);
 	ctk_size_group_add_widget (label_size, label);
-	ctk_box_pack_start (GTK_BOX (control_hbox), label, FALSE, FALSE, 0);
+	ctk_box_pack_start (CTK_BOX (control_hbox), label, FALSE, FALSE, 0);
 
-	hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
-	ctk_box_pack_start (GTK_BOX (control_hbox), hbox, TRUE, TRUE, 0);
+	hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 6);
+	ctk_box_pack_start (CTK_BOX (control_hbox), hbox, TRUE, TRUE, 0);
 	ctk_widget_show (hbox);
 
 	spin_button = ctk_spin_button_new_with_range(50, 10000, 50);
-	ctk_label_set_mnemonic_widget (GTK_LABEL (label), spin_button);
+	ctk_label_set_mnemonic_widget (CTK_LABEL (label), spin_button);
 	g_object_set_data(G_OBJECT(spin_button), "MultiloadApplet", ma);
 	g_object_set_data(G_OBJECT(spin_button), "prop_type",
 				GINT_TO_POINTER(PROP_SPEED));
-	ctk_spin_button_set_value(GTK_SPIN_BUTTON(spin_button),
+	ctk_spin_button_set_value(CTK_SPIN_BUTTON(spin_button),
 				(gdouble)g_settings_get_int (ma->settings, "speed"));
 	g_signal_connect(G_OBJECT(spin_button), "value_changed",
 				G_CALLBACK(spin_button_changed_cb), "speed");
 	ctk_size_group_add_widget (spin_size, spin_button);
-	ctk_box_pack_start (GTK_BOX (hbox), spin_button, FALSE, FALSE, 0);
+	ctk_box_pack_start (CTK_BOX (hbox), spin_button, FALSE, FALSE, 0);
 
 	if ( ! g_settings_is_writable (ma->settings, "speed")) {
 		hard_set_sensitive (label, FALSE);
@@ -605,43 +605,43 @@ fill_properties(CtkWidget *dialog, MultiloadApplet *ma)
 	}
 
 	label = ctk_label_new(_("milliseconds"));
-	ctk_label_set_xalign (GTK_LABEL (label), 0.0f);
-	ctk_box_pack_start (GTK_BOX (hbox), label, FALSE, FALSE, 0);
+	ctk_label_set_xalign (CTK_LABEL (label), 0.0f);
+	ctk_box_pack_start (CTK_BOX (hbox), label, FALSE, FALSE, 0);
 
 	g_free(label_text);
 
 
-	category_vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-	ctk_box_pack_start (GTK_BOX (categories_vbox), category_vbox, TRUE, TRUE, 0);
+	category_vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 6);
+	ctk_box_pack_start (CTK_BOX (categories_vbox), category_vbox, TRUE, TRUE, 0);
 	ctk_widget_show (category_vbox);
 
 	title = g_strconcat ("<span weight=\"bold\">", _("Colors"), "</span>", NULL);
 	label = ctk_label_new (title);
-	ctk_label_set_use_markup (GTK_LABEL (label), TRUE);
-	ctk_label_set_justify (GTK_LABEL (label), GTK_JUSTIFY_LEFT);
-	ctk_label_set_xalign (GTK_LABEL (label), 0.0);
-	ctk_box_pack_start (GTK_BOX (category_vbox), label, FALSE, FALSE, 0);
+	ctk_label_set_use_markup (CTK_LABEL (label), TRUE);
+	ctk_label_set_justify (CTK_LABEL (label), CTK_JUSTIFY_LEFT);
+	ctk_label_set_xalign (CTK_LABEL (label), 0.0);
+	ctk_box_pack_start (CTK_BOX (category_vbox), label, FALSE, FALSE, 0);
 	ctk_widget_show (label);
 	g_free (title);
 
-	hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-	ctk_box_pack_start (GTK_BOX (category_vbox), hbox, TRUE, TRUE, 0);
+	hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 0);
+	ctk_box_pack_start (CTK_BOX (category_vbox), hbox, TRUE, TRUE, 0);
 	ctk_widget_show (hbox);
 
 	indent = ctk_label_new (HIG_IDENTATION);
-	ctk_label_set_justify (GTK_LABEL (indent), GTK_JUSTIFY_LEFT);
-	ctk_box_pack_start (GTK_BOX (hbox), indent, FALSE, FALSE, 0);
+	ctk_label_set_justify (CTK_LABEL (indent), CTK_JUSTIFY_LEFT);
+	ctk_box_pack_start (CTK_BOX (hbox), indent, FALSE, FALSE, 0);
 	ctk_widget_show (indent);
 
-	control_vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-	ctk_box_pack_start (GTK_BOX (hbox), control_vbox, TRUE, TRUE, 0);
+	control_vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 6);
+	ctk_box_pack_start (CTK_BOX (hbox), control_vbox, TRUE, TRUE, 0);
 	ctk_widget_show (control_vbox);
 
 	ma->notebook = ctk_notebook_new();
-	ctk_container_add (GTK_CONTAINER (control_vbox), ma->notebook);
+	ctk_container_add (CTK_CONTAINER (control_vbox), ma->notebook);
 
 	page = add_page(ma->notebook,  _("Processor"));
-	ctk_container_set_border_width (GTK_CONTAINER (page), 12);
+	ctk_container_set_border_width (CTK_CONTAINER (page), 12);
 	add_color_selector(page, _("_User"), "cpuload-color0", ma);
 	add_color_selector(page, _("S_ystem"), "cpuload-color1", ma);
 	add_color_selector(page, _("N_ice"), "cpuload-color2", ma);
@@ -649,7 +649,7 @@ fill_properties(CtkWidget *dialog, MultiloadApplet *ma)
 	add_color_selector(page, _("I_dle"), "cpuload-color4", ma);
 
 	page = add_page(ma->notebook,  _("Memory"));
-	ctk_container_set_border_width (GTK_CONTAINER (page), 12);
+	ctk_container_set_border_width (CTK_CONTAINER (page), 12);
 	add_color_selector(page, _("_User"), "memload-color0", ma);
 	add_color_selector(page, _("Sh_ared"), "memload-color1", ma);
 	add_color_selector(page, _("_Buffers"), "memload-color2", ma);
@@ -657,7 +657,7 @@ fill_properties(CtkWidget *dialog, MultiloadApplet *ma)
 	add_color_selector(page, _("F_ree"), "memload-color4", ma);
 
 	page = add_page(ma->notebook,  _("Network"));
-	ctk_container_set_border_width (GTK_CONTAINER (page), 12);
+	ctk_container_set_border_width (CTK_CONTAINER (page), 12);
 	add_color_selector (page, _("_In"), "netload2-color0", ma);
 	add_color_selector(page, _("_Out"), "netload2-color1", ma);
 	add_color_selector (page, _("_Local"), "netload2-color2", ma);
@@ -666,18 +666,18 @@ fill_properties(CtkWidget *dialog, MultiloadApplet *ma)
 	add_color_selector(page, _("_Indicator"), "netload2-color5", ma);
 
 	page = add_page(ma->notebook,  _("Swap Space"));
-	ctk_container_set_border_width (GTK_CONTAINER (page), 12);
+	ctk_container_set_border_width (CTK_CONTAINER (page), 12);
 	add_color_selector(page, _("_Used"), "swapload-color0", ma);
 	add_color_selector(page, _("_Free"), "swapload-color1", ma);
 
 	page = add_page(ma->notebook,  _("Load"));
-	ctk_container_set_border_width (GTK_CONTAINER (page), 12);
+	ctk_container_set_border_width (CTK_CONTAINER (page), 12);
 	add_color_selector(page, _("_Average"), "loadavg-color0", ma);
 	add_color_selector(page, _("_Background"), "loadavg-color1", ma);
 	add_color_selector(page, _("_Gridline"), "loadavg-color2", ma);
 
 	page = add_page (ma->notebook, _("Harddisk"));
-	ctk_container_set_border_width (GTK_CONTAINER (page), 12);
+	ctk_container_set_border_width (CTK_CONTAINER (page), 12);
 	add_color_selector (page, _("_Read"), "diskload-color0", ma);
 	add_color_selector (page, _("_Write"), "diskload-color1", ma);
 	add_color_selector (page, _("_Background"), "diskload-color2", ma);
@@ -685,50 +685,50 @@ fill_properties(CtkWidget *dialog, MultiloadApplet *ma)
 
 	title = g_strconcat ("<span weight=\"bold\">", _("Network speed thresholds"), "</span>", NULL);
 	label = ctk_label_new (title);
-	ctk_label_set_use_markup (GTK_LABEL (label), TRUE);
-	ctk_label_set_justify (GTK_LABEL (label), GTK_JUSTIFY_LEFT);
-	ctk_label_set_xalign (GTK_LABEL (label), 0.0);
-	ctk_box_pack_start (GTK_BOX (category_vbox), label, FALSE, FALSE, 0);
+	ctk_label_set_use_markup (CTK_LABEL (label), TRUE);
+	ctk_label_set_justify (CTK_LABEL (label), CTK_JUSTIFY_LEFT);
+	ctk_label_set_xalign (CTK_LABEL (label), 0.0);
+	ctk_box_pack_start (CTK_BOX (category_vbox), label, FALSE, FALSE, 0);
 	ctk_widget_show (label);
 	g_free (title);
 
-	hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-	ctk_box_pack_start (GTK_BOX (category_vbox), hbox, TRUE, TRUE, 0);
+	hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 0);
+	ctk_box_pack_start (CTK_BOX (category_vbox), hbox, TRUE, TRUE, 0);
 	ctk_widget_show (hbox);
 
 	indent = ctk_label_new (HIG_IDENTATION);
-	ctk_label_set_justify (GTK_LABEL (indent), GTK_JUSTIFY_LEFT);
-	ctk_box_pack_start (GTK_BOX (hbox), indent, FALSE, FALSE, 0);
+	ctk_label_set_justify (CTK_LABEL (indent), CTK_JUSTIFY_LEFT);
+	ctk_box_pack_start (CTK_BOX (hbox), indent, FALSE, FALSE, 0);
 	ctk_widget_show (indent);
 
-	control_vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-	ctk_box_pack_start (GTK_BOX (hbox), control_vbox, TRUE, TRUE, 0);
+	control_vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 6);
+	ctk_box_pack_start (CTK_BOX (hbox), control_vbox, TRUE, TRUE, 0);
 	ctk_widget_show (control_vbox);
 
-	control_hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
-	ctk_box_pack_start (GTK_BOX (control_vbox), control_hbox, TRUE, TRUE, 0);
+	control_hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 12);
+	ctk_box_pack_start (CTK_BOX (control_vbox), control_hbox, TRUE, TRUE, 0);
 	ctk_widget_show (control_hbox);
 
-	label_size = ctk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
+	label_size = ctk_size_group_new (CTK_SIZE_GROUP_HORIZONTAL);
 
 	label_text = g_strdup(_("Threshold 1: "));
 	label = ctk_label_new_with_mnemonic(label_text);
-	ctk_label_set_xalign (GTK_LABEL (label), 0.0f);
+	ctk_label_set_xalign (CTK_LABEL (label), 0.0f);
 	ctk_size_group_add_widget (label_size, label);
-	ctk_box_pack_start (GTK_BOX (control_hbox), label, FALSE, FALSE, 0);
+	ctk_box_pack_start (CTK_BOX (control_hbox), label, FALSE, FALSE, 0);
 
-	hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
-	ctk_box_pack_start (GTK_BOX (control_hbox), hbox, TRUE, TRUE, 0);
+	hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 6);
+	ctk_box_pack_start (CTK_BOX (control_hbox), hbox, TRUE, TRUE, 0);
 	ctk_widget_show (hbox);
 
-	spin_size = ctk_size_group_new (GTK_SIZE_GROUP_HORIZONTAL);
+	spin_size = ctk_size_group_new (CTK_SIZE_GROUP_HORIZONTAL);
 
 	spin_button = ctk_spin_button_new_with_range(10, 1000000000, 5);
-	ctk_label_set_mnemonic_widget (GTK_LABEL (label), spin_button);
+	ctk_label_set_mnemonic_widget (CTK_LABEL (label), spin_button);
 	g_object_set_data(G_OBJECT(spin_button), "MultiloadApplet", ma);
 	g_object_set_data(G_OBJECT(spin_button), "prop_type",
 				GUINT_TO_POINTER(PROP_NET_THRESHOLD1));
-	ctk_spin_button_set_value(GTK_SPIN_BUTTON(spin_button),
+	ctk_spin_button_set_value(CTK_SPIN_BUTTON(spin_button),
 				(gdouble)g_settings_get_uint(ma->settings, "netthreshold1"));
 	g_signal_connect(G_OBJECT(spin_button), "value_changed",
 				G_CALLBACK(spin_button_changed_cb), "netthreshold1");
@@ -740,36 +740,36 @@ fill_properties(CtkWidget *dialog, MultiloadApplet *ma)
 	}
 
 	ctk_size_group_add_widget (spin_size, spin_button);
-	ctk_box_pack_start (GTK_BOX (hbox), spin_button, FALSE, FALSE, 0);
+	ctk_box_pack_start (CTK_BOX (hbox), spin_button, FALSE, FALSE, 0);
 
 	label = ctk_label_new (_("bytes"));
-	ctk_label_set_xalign (GTK_LABEL (label), 0.0f);
-	ctk_box_pack_start (GTK_BOX (hbox), label, FALSE, FALSE, 0);
+	ctk_label_set_xalign (CTK_LABEL (label), 0.0f);
+	ctk_box_pack_start (CTK_BOX (hbox), label, FALSE, FALSE, 0);
 
-	control_hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
-	ctk_box_pack_start (GTK_BOX (control_vbox), control_hbox, TRUE, TRUE, 0);
+	control_hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 12);
+	ctk_box_pack_start (CTK_BOX (control_vbox), control_hbox, TRUE, TRUE, 0);
 	ctk_widget_show (control_hbox);
 
 	label = ctk_label_new_with_mnemonic(_("Threshold 2: "));
-	ctk_label_set_xalign (GTK_LABEL (label), 0.0f);
+	ctk_label_set_xalign (CTK_LABEL (label), 0.0f);
 	ctk_size_group_add_widget (label_size, label);
-	ctk_box_pack_start (GTK_BOX (control_hbox), label, FALSE, FALSE, 0);
+	ctk_box_pack_start (CTK_BOX (control_hbox), label, FALSE, FALSE, 0);
 
-	hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
-	ctk_box_pack_start (GTK_BOX (control_hbox), hbox, TRUE, TRUE, 0);
+	hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 6);
+	ctk_box_pack_start (CTK_BOX (control_hbox), hbox, TRUE, TRUE, 0);
 	ctk_widget_show (hbox);
 
 	spin_button = ctk_spin_button_new_with_range(10, 1000000000, 5);
-	ctk_label_set_mnemonic_widget (GTK_LABEL (label), spin_button);
+	ctk_label_set_mnemonic_widget (CTK_LABEL (label), spin_button);
 	g_object_set_data(G_OBJECT(spin_button), "MultiloadApplet", ma);
 	g_object_set_data(G_OBJECT(spin_button), "prop_type",
 				GINT_TO_POINTER(PROP_NET_THRESHOLD2));
-	ctk_spin_button_set_value(GTK_SPIN_BUTTON(spin_button),
+	ctk_spin_button_set_value(CTK_SPIN_BUTTON(spin_button),
 				(gdouble)g_settings_get_uint (ma->settings, "netthreshold2"));
 	g_signal_connect(G_OBJECT(spin_button), "value_changed",
 				G_CALLBACK(spin_button_changed_cb), "netthreshold2");
 	ctk_size_group_add_widget (spin_size, spin_button);
-	ctk_box_pack_start (GTK_BOX (hbox), spin_button, FALSE, FALSE, 0);
+	ctk_box_pack_start (CTK_BOX (hbox), spin_button, FALSE, FALSE, 0);
 
 	if ( ! g_settings_is_writable (ma->settings, "netthreshold2"))
 	{
@@ -778,33 +778,33 @@ fill_properties(CtkWidget *dialog, MultiloadApplet *ma)
 	}
 
 	label = ctk_label_new(_("bytes"));
-	ctk_label_set_xalign (GTK_LABEL (label), 0.0f);
-	ctk_box_pack_start (GTK_BOX (hbox), label, FALSE, FALSE, 0);
+	ctk_label_set_xalign (CTK_LABEL (label), 0.0f);
+	ctk_box_pack_start (CTK_BOX (hbox), label, FALSE, FALSE, 0);
 
-	control_hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
-	ctk_box_pack_start (GTK_BOX (control_vbox), control_hbox, TRUE, TRUE, 0);
+	control_hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 12);
+	ctk_box_pack_start (CTK_BOX (control_vbox), control_hbox, TRUE, TRUE, 0);
 	ctk_widget_show (control_hbox);
 
 	label = ctk_label_new_with_mnemonic(_("Threshold 3: "));
-	ctk_label_set_xalign (GTK_LABEL (label), 0.0f);
+	ctk_label_set_xalign (CTK_LABEL (label), 0.0f);
 	ctk_size_group_add_widget (label_size, label);
-	ctk_box_pack_start (GTK_BOX (control_hbox), label, FALSE, FALSE, 0);
+	ctk_box_pack_start (CTK_BOX (control_hbox), label, FALSE, FALSE, 0);
 
-	hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 6);
-	ctk_box_pack_start (GTK_BOX (control_hbox), hbox, TRUE, TRUE, 0);
+	hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 6);
+	ctk_box_pack_start (CTK_BOX (control_hbox), hbox, TRUE, TRUE, 0);
 	ctk_widget_show (hbox);
 
 	spin_button = ctk_spin_button_new_with_range(10, 1000000000, 5);
-	ctk_label_set_mnemonic_widget (GTK_LABEL (label), spin_button);
+	ctk_label_set_mnemonic_widget (CTK_LABEL (label), spin_button);
 	g_object_set_data(G_OBJECT(spin_button), "MultiloadApplet", ma);
 	g_object_set_data(G_OBJECT(spin_button), "prop_type",
 			GINT_TO_POINTER(PROP_NET_THRESHOLD3));
-	ctk_spin_button_set_value(GTK_SPIN_BUTTON(spin_button),
+	ctk_spin_button_set_value(CTK_SPIN_BUTTON(spin_button),
 			(gdouble)g_settings_get_uint (ma->settings, "netthreshold3"));
 	g_signal_connect(G_OBJECT(spin_button), "value_changed",
 			G_CALLBACK(spin_button_changed_cb), "netthreshold3");
 	ctk_size_group_add_widget (spin_size, spin_button);
-	ctk_box_pack_start (GTK_BOX (hbox), spin_button, FALSE, FALSE, 0);
+	ctk_box_pack_start (CTK_BOX (hbox), spin_button, FALSE, FALSE, 0);
 
 	if ( ! g_settings_is_writable (ma->settings, "netthreshold3"))
 	{
@@ -813,16 +813,16 @@ fill_properties(CtkWidget *dialog, MultiloadApplet *ma)
 	}
 
 	label = ctk_label_new(_("bytes"));
-	ctk_label_set_xalign (GTK_LABEL (label), 0.0f);
-	ctk_box_pack_start (GTK_BOX (hbox), label, FALSE, FALSE, 0);
+	ctk_label_set_xalign (CTK_LABEL (label), 0.0f);
+	ctk_box_pack_start (CTK_BOX (hbox), label, FALSE, FALSE, 0);
 
 	g_free(label_text);
 
-	category_vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 6);
-	ctk_box_pack_start (GTK_BOX (categories_vbox), category_vbox, TRUE, TRUE, 0);
+	category_vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 6);
+	ctk_box_pack_start (CTK_BOX (categories_vbox), category_vbox, TRUE, TRUE, 0);
 
-	control_hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
-	ctk_box_pack_start (GTK_BOX (control_vbox), control_hbox, TRUE, TRUE, 0);
+	control_hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 12);
+	ctk_box_pack_start (CTK_BOX (control_vbox), control_hbox, TRUE, TRUE, 0);
 	ctk_widget_show (control_hbox);
 
 	ctk_widget_show (category_vbox);
@@ -841,26 +841,26 @@ multiload_properties_cb (CtkAction       *action,
 	if (ma->prop_dialog) {
 		dialog = ma->prop_dialog;
 
-		ctk_window_set_screen (GTK_WINDOW (dialog),
-				ctk_widget_get_screen (GTK_WIDGET (ma->applet)));
+		ctk_window_set_screen (CTK_WINDOW (dialog),
+				ctk_widget_get_screen (CTK_WIDGET (ma->applet)));
 
-		ctk_notebook_set_current_page (GTK_NOTEBOOK (ma->notebook),
+		ctk_notebook_set_current_page (CTK_NOTEBOOK (ma->notebook),
 					       ma->last_clicked);
-		ctk_window_present (GTK_WINDOW (dialog));
+		ctk_window_present (CTK_WINDOW (dialog));
 		return;
 	}
 
 	dialog = ctk_dialog_new_with_buttons (_("System Monitor Preferences"),
 					      NULL, 0,
-					   "ctk-help", GTK_RESPONSE_HELP,
-					   "ctk-close", GTK_RESPONSE_CLOSE,
+					   "ctk-help", CTK_RESPONSE_HELP,
+					   "ctk-close", CTK_RESPONSE_CLOSE,
 					      NULL);
-	ctk_window_set_screen (GTK_WINDOW (dialog),
-			       ctk_widget_get_screen (GTK_WIDGET (ma->applet)));
-	ctk_dialog_set_default_response (GTK_DIALOG (dialog), GTK_RESPONSE_CLOSE);
-	ctk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
-	ctk_container_set_border_width (GTK_CONTAINER (dialog), 5);
-	ctk_box_set_spacing (GTK_BOX (ctk_dialog_get_content_area (GTK_DIALOG (dialog))), 2);
+	ctk_window_set_screen (CTK_WINDOW (dialog),
+			       ctk_widget_get_screen (CTK_WIDGET (ma->applet)));
+	ctk_dialog_set_default_response (CTK_DIALOG (dialog), CTK_RESPONSE_CLOSE);
+	ctk_window_set_resizable (CTK_WINDOW (dialog), FALSE);
+	ctk_container_set_border_width (CTK_CONTAINER (dialog), 5);
+	ctk_box_set_spacing (CTK_BOX (ctk_dialog_get_content_area (CTK_DIALOG (dialog))), 2);
 
 	fill_properties(dialog, ma);
 
@@ -873,6 +873,6 @@ multiload_properties_cb (CtkAction       *action,
 
 	ctk_widget_show_all(dialog);
 
-	ctk_notebook_set_current_page (GTK_NOTEBOOK (ma->notebook),
+	ctk_notebook_set_current_page (CTK_NOTEBOOK (ma->notebook),
 				       ma->last_clicked);
 }

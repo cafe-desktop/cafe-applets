@@ -128,8 +128,8 @@ timer_callback (TimerApplet *applet)
         applet->elapsed = 0;
 
         ctk_label_set_text (applet->label, name);
-        ctk_widget_set_tooltip_text (GTK_WIDGET (applet->label), "");
-        ctk_widget_hide (GTK_WIDGET (applet->pause_image));
+        ctk_widget_set_tooltip_text (CTK_WIDGET (applet->label), "");
+        ctk_widget_hide (CTK_WIDGET (applet->pause_image));
     }
     else
     {
@@ -147,8 +147,8 @@ timer_callback (TimerApplet *applet)
 
             label = g_strdup_printf ("Finished %s", name);
             ctk_label_set_text (applet->label, label);
-            ctk_widget_set_tooltip_text (GTK_WIDGET (applet->label), name);
-            ctk_widget_hide (GTK_WIDGET (applet->pause_image));
+            ctk_widget_set_tooltip_text (CTK_WIDGET (applet->label), name);
+            ctk_widget_hide (CTK_WIDGET (applet->pause_image));
 
             if (g_settings_get_boolean (applet->settings, SHOW_NOTIFICATION_KEY))
             {
@@ -162,11 +162,11 @@ timer_callback (TimerApplet *applet)
             if (g_settings_get_boolean (applet->settings, SHOW_DIALOG_KEY))
             {
                 CtkWidget *dialog = ctk_message_dialog_new_with_markup (NULL,
-                                                                        GTK_DIALOG_MODAL,
-                                                                        GTK_MESSAGE_INFO,
-                                                                        GTK_BUTTONS_OK,
+                                                                        CTK_DIALOG_MODAL,
+                                                                        CTK_MESSAGE_INFO,
+                                                                        CTK_BUTTONS_OK,
                                                                         "<b>%s</b>\n\n%s", name, _("Timer finished!"));
-                ctk_dialog_run (GTK_DIALOG (dialog));
+                ctk_dialog_run (CTK_DIALOG (dialog));
                 ctk_widget_destroy (dialog);
             }
 
@@ -194,8 +194,8 @@ timer_callback (TimerApplet *applet)
                 tooltip = g_strdup_printf ("%s (%02d:%02d)", name, minutes, seconds);
 
             ctk_label_set_text (applet->label, label);
-            ctk_widget_set_tooltip_text (GTK_WIDGET (applet->label), tooltip);
-            ctk_widget_set_visible (GTK_WIDGET (applet->pause_image), applet->pause);
+            ctk_widget_set_tooltip_text (CTK_WIDGET (applet->label), tooltip);
+            ctk_widget_set_visible (CTK_WIDGET (applet->pause_image), applet->pause);
         }
 
         g_free (label);
@@ -307,22 +307,22 @@ timer_preferences_callback (CtkAction *action, TimerApplet *applet)
     minutes = duration / 60 % 60;
     seconds = duration % 60;
 
-    dialog = GTK_DIALOG (ctk_dialog_new_with_buttons(_("Timer Applet Preferences"),
+    dialog = CTK_DIALOG (ctk_dialog_new_with_buttons(_("Timer Applet Preferences"),
                                                      NULL,
-                                                     GTK_DIALOG_MODAL,
+                                                     CTK_DIALOG_MODAL,
                                                      "ctk-close",
-                                                     GTK_RESPONSE_CLOSE,
+                                                     CTK_RESPONSE_CLOSE,
                                                      NULL));
-    grid = GTK_GRID (ctk_grid_new ());
+    grid = CTK_GRID (ctk_grid_new ());
     ctk_grid_set_row_spacing (grid, 12);
     ctk_grid_set_column_spacing (grid, 12);
 
-    ctk_window_set_default_size (GTK_WINDOW (dialog), 350, 150);
-    ctk_container_set_border_width (GTK_CONTAINER (dialog), 10);
+    ctk_window_set_default_size (CTK_WINDOW (dialog), 350, 150);
+    ctk_container_set_border_width (CTK_CONTAINER (dialog), 10);
 
     widget = ctk_label_new (_("Name:"));
-    ctk_label_set_xalign (GTK_LABEL (widget), 1.0);
-    ctk_label_set_yalign (GTK_LABEL (widget), 0.5);
+    ctk_label_set_xalign (CTK_LABEL (widget), 1.0);
+    ctk_label_set_yalign (CTK_LABEL (widget), 0.5);
     ctk_grid_attach (grid, widget, 1, 0, 1, 1);
 
     widget = ctk_entry_new ();
@@ -330,36 +330,36 @@ timer_preferences_callback (CtkAction *action, TimerApplet *applet)
     g_settings_bind (applet->settings, NAME_KEY, widget, "text", G_SETTINGS_BIND_DEFAULT);
 
     widget = ctk_label_new (_("Hours:"));
-    ctk_label_set_xalign (GTK_LABEL (widget), 1.0);
-    ctk_label_set_yalign (GTK_LABEL (widget), 0.5);
+    ctk_label_set_xalign (CTK_LABEL (widget), 1.0);
+    ctk_label_set_yalign (CTK_LABEL (widget), 0.5);
     ctk_grid_attach (grid, widget, 1, 1, 1, 1);
 
     widget = ctk_spin_button_new_with_range (0.0, 100.0, 1.0);
-    ctk_spin_button_set_value (GTK_SPIN_BUTTON (widget), hours);
+    ctk_spin_button_set_value (CTK_SPIN_BUTTON (widget), hours);
     ctk_grid_attach (grid, widget, 2, 1, 1, 1);
-    applet->hours = GTK_SPIN_BUTTON (widget);
+    applet->hours = CTK_SPIN_BUTTON (widget);
     g_signal_connect (widget, "value-changed", G_CALLBACK (timer_spin_button_value_changed), applet);
 
     widget = ctk_label_new (_("Minutes:"));
-    ctk_label_set_xalign (GTK_LABEL (widget), 1.0);
-    ctk_label_set_yalign (GTK_LABEL (widget), 0.5);
+    ctk_label_set_xalign (CTK_LABEL (widget), 1.0);
+    ctk_label_set_yalign (CTK_LABEL (widget), 0.5);
     ctk_grid_attach (grid, widget, 1, 2, 1, 1);
 
     widget = ctk_spin_button_new_with_range (0.0, 59.0, 1.0);
-    ctk_spin_button_set_value (GTK_SPIN_BUTTON (widget), minutes);
+    ctk_spin_button_set_value (CTK_SPIN_BUTTON (widget), minutes);
     ctk_grid_attach (grid, widget, 2, 2, 1, 1);;
-    applet->minutes = GTK_SPIN_BUTTON (widget);
+    applet->minutes = CTK_SPIN_BUTTON (widget);
     g_signal_connect (widget, "value-changed", G_CALLBACK (timer_spin_button_value_changed), applet);
 
     widget = ctk_label_new (_("Seconds:"));
-    ctk_label_set_xalign (GTK_LABEL (widget), 1.0);
-    ctk_label_set_yalign (GTK_LABEL (widget), 0.5);
+    ctk_label_set_xalign (CTK_LABEL (widget), 1.0);
+    ctk_label_set_yalign (CTK_LABEL (widget), 0.5);
     ctk_grid_attach (grid, widget, 1, 3, 1, 1);
 
     widget = ctk_spin_button_new_with_range (0.0, 59.0, 1.0);
-    ctk_spin_button_set_value (GTK_SPIN_BUTTON (widget), seconds);
+    ctk_spin_button_set_value (CTK_SPIN_BUTTON (widget), seconds);
     ctk_grid_attach (grid, widget, 2, 3, 1, 1);
-    applet->seconds = GTK_SPIN_BUTTON (widget);
+    applet->seconds = CTK_SPIN_BUTTON (widget);
     g_signal_connect (widget, "value-changed", G_CALLBACK (timer_spin_button_value_changed), applet);
 
     widget = ctk_check_button_new_with_label (_("Show notification popup"));
@@ -370,11 +370,11 @@ timer_preferences_callback (CtkAction *action, TimerApplet *applet)
     ctk_grid_attach (grid, widget, 2, 5, 1, 1);
     g_settings_bind (applet->settings, SHOW_DIALOG_KEY, widget, "active", G_SETTINGS_BIND_DEFAULT);
 
-    ctk_box_pack_start (GTK_BOX (ctk_dialog_get_content_area (dialog)), GTK_WIDGET (grid), TRUE, TRUE, 0);
+    ctk_box_pack_start (CTK_BOX (ctk_dialog_get_content_area (dialog)), CTK_WIDGET (grid), TRUE, TRUE, 0);
 
     g_signal_connect (dialog, "response", G_CALLBACK (ctk_widget_destroy), dialog);
 
-    ctk_widget_show_all (GTK_WIDGET (dialog));
+    ctk_widget_show_all (CTK_WIDGET (dialog));
 }
 
 static gboolean
@@ -407,7 +407,7 @@ timer_applet_fill (CafePanelApplet* applet_widget)
         notify_init ("timer-applet");
 
     cafe_panel_applet_set_flags (applet_widget, CAFE_PANEL_APPLET_EXPAND_MINOR);
-    cafe_panel_applet_set_background_widget (CAFE_PANEL_APPLET (applet_widget), GTK_WIDGET (applet_widget));
+    cafe_panel_applet_set_background_widget (CAFE_PANEL_APPLET (applet_widget), CTK_WIDGET (applet_widget));
 
     applet = g_malloc0(sizeof(TimerApplet));
     applet->applet = applet_widget;
@@ -416,33 +416,33 @@ timer_applet_fill (CafePanelApplet* applet_widget)
     applet->active = FALSE;
     applet->pause = FALSE;
 
-    applet->box = GTK_BOX (ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0));
-    applet->image = GTK_IMAGE (ctk_image_new_from_icon_name (APPLET_ICON, GTK_ICON_SIZE_BUTTON));
-    applet->pause_image = GTK_IMAGE (ctk_image_new_from_icon_name ("media-playback-pause", GTK_ICON_SIZE_BUTTON));
-    applet->label = GTK_LABEL (ctk_label_new (""));
+    applet->box = CTK_BOX (ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 0));
+    applet->image = CTK_IMAGE (ctk_image_new_from_icon_name (APPLET_ICON, CTK_ICON_SIZE_BUTTON));
+    applet->pause_image = CTK_IMAGE (ctk_image_new_from_icon_name ("media-playback-pause", CTK_ICON_SIZE_BUTTON));
+    applet->label = CTK_LABEL (ctk_label_new (""));
 
     /* we add the Ctk label into the applet */
     ctk_box_pack_start (applet->box,
-                        GTK_WIDGET (applet->image),
+                        CTK_WIDGET (applet->image),
                         TRUE, TRUE, 0);
     ctk_box_pack_start (applet->box,
-                        GTK_WIDGET (applet->pause_image),
+                        CTK_WIDGET (applet->pause_image),
                         TRUE, TRUE, 0);
     ctk_box_pack_start (applet->box,
-                        GTK_WIDGET (applet->label),
+                        CTK_WIDGET (applet->label),
                         TRUE, TRUE, 3);
 
-    ctk_container_add (GTK_CONTAINER (applet_widget),
-                       GTK_WIDGET (applet->box));
+    ctk_container_add (CTK_CONTAINER (applet_widget),
+                       CTK_WIDGET (applet->box));
 
-    ctk_widget_show_all (GTK_WIDGET (applet->applet));
-    ctk_widget_hide (GTK_WIDGET (applet->pause_image));
+    ctk_widget_show_all (CTK_WIDGET (applet->applet));
+    ctk_widget_hide (CTK_WIDGET (applet->pause_image));
 
     g_signal_connect(G_OBJECT (applet->applet), "destroy",
                      G_CALLBACK (timer_applet_destroy),
                      applet);
 
-    g_signal_connect_swapped(GTK_WIDGET (applet->applet), "button-release-event",
+    g_signal_connect_swapped(CTK_WIDGET (applet->applet), "button-release-event",
                              G_CALLBACK (timer_applet_click), applet);
 
     /* set up context menu */

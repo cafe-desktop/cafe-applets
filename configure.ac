@@ -14,7 +14,7 @@ dnl *** Minimum library versions for CAFE-APPLETS                          ***
 dnl ***************************************************************************
 GLIB_REQUIRED=2.50.0
 GIO_REQUIRED=2.50.0
-GTK_REQUIRED=3.22.0
+CTK_REQUIRED=3.22.0
 LIBPANEL4_REQUIRED=1.17.0
 LIBGTOP_REQUIRED=2.12.0
 LIBNOTIFY_REQUIRED=0.7.0
@@ -93,10 +93,10 @@ PKG_CHECK_MODULES(GIO, gio-2.0 >= $GIO_REQUIRED gio-unix-2.0)
 AC_SUBST(GIO_CFLAGS)
 AC_SUBST(GIO_LIBS)
 
-dnl -- Check for GTK+ 3.0 (required) ------------------------------------------
-PKG_CHECK_MODULES(GTK, ctk+-3.0 >= $GTK_REQUIRED)
-AC_SUBST(GTK_FLAGS)
-AC_SUBST(GTK_LIBS)
+dnl -- Check for CTK+ 3.0 (required) ------------------------------------------
+PKG_CHECK_MODULES(CTK, ctk+-3.0 >= $CTK_REQUIRED)
+AC_SUBST(CTK_FLAGS)
+AC_SUBST(CTK_LIBS)
 
 dnl -- check for libcafepanelapplet4 (required) ------------------------------------
 PKG_CHECK_MODULES(CAFE_APPLETS4, libcafepanelapplet-4.0 >= $LIBPANEL4_REQUIRED)
@@ -526,7 +526,7 @@ AC_SUBST(builderdir)
 AC_DEFINE_DIR(CAFE_ICONDIR, "${iconsdir}", [Cafe Icon Directory])
 AC_DEFINE_DIR(CAFE_PIXMAPSDIR, "${pixmapsdir}", [Cafe Pixmaps Directory])
 AC_DEFINE_DIR(PKGDATADIR, "${pkgdatadir}", [Cafe Applets Directory])
-AC_DEFINE_DIR(GTK_BUILDERDIR, "${builderdir}", [CtkBuilder Resources Directory])
+AC_DEFINE_DIR(CTK_BUILDERDIR, "${builderdir}", [CtkBuilder Resources Directory])
 AC_DEFINE_DIR(DATADIR, "${datadir}", [datadir])
 AC_DEFINE_DIR(PKG_DATA_DIR, "${pkgdatadir}", [pkgdatadir])
 AC_DEFINE_DIR(SYSCONFDIR, "${sysconfdir}", [sysconfdir])

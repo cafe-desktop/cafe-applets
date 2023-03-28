@@ -111,7 +111,7 @@ trash_empty_update_dialog (gpointer user_data)
       g_free (tmp);
 
       /* unhide the labels */
-      ctk_widget_show_all (GTK_WIDGET (trash_empty_dialog));
+      ctk_widget_show_all (CTK_WIDGET (trash_empty_dialog));
     }
 
   trash_empty_current_file = NULL;
@@ -125,7 +125,7 @@ trash_empty_update_dialog (gpointer user_data)
 static gboolean
 trash_empty_done (gpointer user_data)
 {
-  ctk_widget_destroy (GTK_WIDGET (trash_empty_dialog));
+  ctk_widget_destroy (CTK_WIDGET (trash_empty_dialog));
 
   g_assert (trash_empty_dialog == NULL);
 
@@ -246,7 +246,7 @@ trash_empty_start (CtkWidget *parent)
 
   builder = ctk_builder_new ();
   ctk_builder_add_from_file (builder,
-                             GTK_BUILDERDIR "/trashapplet-empty-progress.ui",
+                             CTK_BUILDERDIR "/trashapplet-empty-progress.ui",
                              NULL);
 
   for (i = 0; i < G_N_ELEMENTS (widgets); i++)
@@ -260,7 +260,7 @@ trash_empty_start (CtkWidget *parent)
           g_critical ("failed to parse trash-empty dialog markup");
 
           if (trash_empty_dialog)
-            ctk_widget_destroy (GTK_WIDGET (trash_empty_dialog));
+            ctk_widget_destroy (CTK_WIDGET (trash_empty_dialog));
 
           g_object_unref (builder);
           return;
@@ -278,9 +278,9 @@ trash_empty_start (CtkWidget *parent)
   g_io_scheduler_push_job (trash_empty_job, NULL, NULL, 0, cancellable);
   g_object_unref (cancellable);
 
-  ctk_window_set_screen (GTK_WINDOW (trash_empty_dialog),
+  ctk_window_set_screen (CTK_WINDOW (trash_empty_dialog),
                          ctk_widget_get_screen (parent));
-  ctk_widget_show (GTK_WIDGET (trash_empty_dialog));
+  ctk_widget_show (CTK_WIDGET (trash_empty_dialog));
 }
 
 static gboolean
@@ -299,10 +299,10 @@ trash_empty_confirmation_response (CtkDialog *dialog,
                                    gint       response_id,
                                    gpointer   user_data)
 {
-  if (response_id == GTK_RESPONSE_YES)
-    trash_empty_start (GTK_WIDGET (dialog));
+  if (response_id == CTK_RESPONSE_YES)
+    trash_empty_start (CTK_WIDGET (dialog));
 
-  ctk_widget_destroy (GTK_WIDGET (dialog));
+  ctk_widget_destroy (CTK_WIDGET (dialog));
   g_assert (trash_empty_confirm_dialog == NULL);
 }
 
@@ -326,16 +326,16 @@ trash_empty_show_confirmation_dialog (CtkWidget *parent)
 
   screen = ctk_widget_get_screen (parent);
 
-  dialog = ctk_message_dialog_new (NULL, GTK_DIALOG_MODAL,
-                                   GTK_MESSAGE_WARNING,
-                                   GTK_BUTTONS_NONE,
+  dialog = ctk_message_dialog_new (NULL, CTK_DIALOG_MODAL,
+                                   CTK_MESSAGE_WARNING,
+                                   CTK_BUTTONS_NONE,
                                    _("Empty all of the items from "
                                      "the trash?"));
-  trash_empty_confirm_dialog = GTK_DIALOG (dialog);
+  trash_empty_confirm_dialog = CTK_DIALOG (dialog);
   g_object_add_weak_pointer (G_OBJECT (dialog),
                              (gpointer *) &trash_empty_confirm_dialog);
 
-  ctk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
+  ctk_message_dialog_format_secondary_text (CTK_MESSAGE_DIALOG (dialog),
                                             _("If you choose to empty "
                                               "the trash, all items in "
                                               "it will be permanently "
@@ -343,21 +343,21 @@ trash_empty_show_confirmation_dialog (CtkWidget *parent)
                                               "you can also delete them "
                                               "separately."));
 
-  ctk_window_set_screen (GTK_WINDOW (dialog), screen);
+  ctk_window_set_screen (CTK_WINDOW (dialog), screen);
   atk_object_set_role (ctk_widget_get_accessible (dialog), ATK_ROLE_ALERT);
 
-  ctk_dialog_add_button (GTK_DIALOG (dialog), "ctk-cancel",
-                         GTK_RESPONSE_CANCEL);
+  ctk_dialog_add_button (CTK_DIALOG (dialog), "ctk-cancel",
+                         CTK_RESPONSE_CANCEL);
 
   button = ctk_button_new_with_mnemonic (_("_Empty Trash"));
   ctk_widget_show (button);
   ctk_widget_set_can_default (button, TRUE);
 
-  ctk_dialog_add_action_widget (GTK_DIALOG (dialog), button,
-                                GTK_RESPONSE_YES);
+  ctk_dialog_add_action_widget (CTK_DIALOG (dialog), button,
+                                CTK_RESPONSE_YES);
 
-  ctk_dialog_set_default_response (GTK_DIALOG (dialog),
-                                   GTK_RESPONSE_YES);
+  ctk_dialog_set_default_response (CTK_DIALOG (dialog),
+                                   CTK_RESPONSE_YES);
 
   ctk_widget_show (dialog);
 
@@ -369,9 +369,9 @@ void
 trash_empty (CtkWidget *parent)
 {
   if (trash_empty_confirm_dialog)
-    ctk_window_present (GTK_WINDOW (trash_empty_confirm_dialog));
+    ctk_window_present (CTK_WINDOW (trash_empty_confirm_dialog));
   else if (trash_empty_dialog)
-    ctk_window_present (GTK_WINDOW (trash_empty_dialog));
+    ctk_window_present (CTK_WINDOW (trash_empty_dialog));
 
   /* theoretically possible that an update is pending, but very unlikely. */
   else if (!trash_empty_update_pending)

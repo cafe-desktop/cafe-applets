@@ -110,7 +110,7 @@ static void about_cb(CtkAction* action, AccessxStatusApplet* sapplet)
 static void help_cb(CtkAction* action, AccessxStatusApplet* sapplet)
 {
 	GError* error = NULL;
-	GdkScreen* screen = ctk_widget_get_screen(GTK_WIDGET(sapplet->applet));
+	GdkScreen* screen = ctk_widget_get_screen(CTK_WIDGET(sapplet->applet));
 
 	ctk_show_uri_on_window(NULL,
 	                       "help:cafe-accessx-status",
@@ -119,14 +119,14 @@ static void help_cb(CtkAction* action, AccessxStatusApplet* sapplet)
 
 	if (error)
 	{
-		CtkWidget* parent = ctk_widget_get_parent(GTK_WIDGET(sapplet->applet));
+		CtkWidget* parent = ctk_widget_get_parent(CTK_WIDGET(sapplet->applet));
 
-		CtkWidget* dialog = ctk_message_dialog_new(GTK_WINDOW(parent), GTK_DIALOG_DESTROY_WITH_PARENT, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE, _("There was an error launching the help viewer: %s"), error->message);
+		CtkWidget* dialog = ctk_message_dialog_new(CTK_WINDOW(parent), CTK_DIALOG_DESTROY_WITH_PARENT, CTK_MESSAGE_ERROR, CTK_BUTTONS_CLOSE, _("There was an error launching the help viewer: %s"), error->message);
 
 		g_signal_connect(G_OBJECT(dialog), "response", G_CALLBACK(ctk_widget_destroy), NULL);
 
-		ctk_window_set_screen(GTK_WINDOW(dialog), screen);
-		ctk_window_set_resizable(GTK_WINDOW(dialog), FALSE);
+		ctk_window_set_screen(CTK_WINDOW(dialog), screen);
+		ctk_window_set_resizable(CTK_WINDOW(dialog), FALSE);
 
 		ctk_widget_show(dialog);
 		g_error_free(error);
@@ -147,7 +147,7 @@ static void dialog_cb(CtkAction* action, AccessxStatusApplet* sapplet)
 	}
 
 
-	screen = ctk_widget_get_screen (GTK_WIDGET (sapplet->applet));
+	screen = ctk_widget_get_screen (CTK_WIDGET (sapplet->applet));
 	appinfo = g_app_info_create_from_commandline ("cafe-keyboard-properties --a11y",
 						      _("Open the keyboard preferences dialog"),
 						      G_APP_INFO_CREATE_NONE,
@@ -155,7 +155,7 @@ static void dialog_cb(CtkAction* action, AccessxStatusApplet* sapplet)
 
 	if (!error) {
 		launch_context = gdk_display_get_app_launch_context (
-				             ctk_widget_get_display (GTK_WIDGET (sapplet->applet)));
+				             ctk_widget_get_display (CTK_WIDGET (sapplet->applet)));
 		gdk_app_launch_context_set_screen (launch_context, screen);
 		g_app_info_launch (appinfo, NULL, G_APP_LAUNCH_CONTEXT (launch_context), &error);
 
@@ -164,12 +164,12 @@ static void dialog_cb(CtkAction* action, AccessxStatusApplet* sapplet)
 
 	if (error != NULL)
 	{
-		CtkWidget* dialog = ctk_message_dialog_new(NULL, GTK_DIALOG_DESTROY_WITH_PARENT, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE, _("There was an error launching the keyboard preferences dialog: %s"), error->message);
+		CtkWidget* dialog = ctk_message_dialog_new(NULL, CTK_DIALOG_DESTROY_WITH_PARENT, CTK_MESSAGE_ERROR, CTK_BUTTONS_CLOSE, _("There was an error launching the keyboard preferences dialog: %s"), error->message);
 
 		g_signal_connect(G_OBJECT(dialog), "response", G_CALLBACK(ctk_widget_destroy), NULL);
 
-		ctk_window_set_screen(GTK_WINDOW(dialog), screen);
-		ctk_window_set_resizable(GTK_WINDOW(dialog), FALSE);
+		ctk_window_set_screen(CTK_WINDOW(dialog), screen);
+		ctk_window_set_resizable(CTK_WINDOW(dialog), FALSE);
 
 		ctk_widget_show(dialog);
 		g_error_free(error);
@@ -220,7 +220,7 @@ static gboolean accessx_status_applet_xkb_select(AccessxStatusApplet* sapplet)
 {
 	int opcode_rtn, error_rtn;
 	gboolean retval = FALSE;
-	GdkWindow* window = ctk_widget_get_window(GTK_WIDGET(sapplet->applet));
+	GdkWindow* window = ctk_widget_get_window(CTK_WIDGET(sapplet->applet));
 
 	g_assert(sapplet && sapplet->applet && window);
 
@@ -335,10 +335,10 @@ static gboolean timer_reset_slowkeys_image(AccessxStatusApplet* sapplet)
 {
 	CtkIconTheme *icon_theme = ctk_icon_theme_get_default ();
 	gint icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
-	gint icon_scale = ctk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
+	gint icon_scale = ctk_widget_get_scale_factor(CTK_WIDGET(sapplet->applet));
 	cairo_surface_t* surface = ctk_icon_theme_load_surface (icon_theme, SLOWKEYS_IDLE_ICON, icon_size, icon_scale, NULL, 0, NULL);
 
-	ctk_image_set_from_surface(GTK_IMAGE(sapplet->slowfoo), surface);
+	ctk_image_set_from_surface(CTK_IMAGE(sapplet->slowfoo), surface);
 	cairo_surface_destroy(surface);
 
 	return G_SOURCE_REMOVE;
@@ -348,10 +348,10 @@ static gboolean timer_reset_bouncekeys_image(AccessxStatusApplet* sapplet)
 {
 	CtkIconTheme *icon_theme = ctk_icon_theme_get_default ();
 	gint icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
-	gint icon_scale = ctk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
+	gint icon_scale = ctk_widget_get_scale_factor(CTK_WIDGET(sapplet->applet));
 	cairo_surface_t* surface = ctk_icon_theme_load_surface (icon_theme, BOUNCEKEYS_ICON, icon_size, icon_scale, NULL, 0, NULL);
 
-	ctk_image_set_from_surface(GTK_IMAGE(sapplet->bouncefoo), surface);
+	ctk_image_set_from_surface(CTK_IMAGE(sapplet->bouncefoo), surface);
 	cairo_surface_destroy(surface);
 
 	return G_SOURCE_REMOVE;
@@ -415,21 +415,21 @@ static cairo_surface_t* accessx_status_applet_altgraph_image(AccessxStatusApplet
 
 	icon_theme = ctk_icon_theme_get_default ();
 	icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
-	icon_scale = ctk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
+	icon_scale = ctk_widget_get_scale_factor(CTK_WIDGET(sapplet->applet));
 
 	switch (state)
 	{
-		case GTK_STATE_FLAG_NORMAL:
+		case CTK_STATE_FLAG_NORMAL:
 			icon_name = ACCESSX_BASE_ICON_BASE;
 			alpha = 255;
 			gdk_rgba_parse(&fg, "black");
 			break;
-		case GTK_STATE_FLAG_SELECTED:
+		case CTK_STATE_FLAG_SELECTED:
 			icon_name = ACCESSX_BASE_ICON_INVERSE;
 			alpha = 255;
 			gdk_rgba_parse(&fg, "white");
 			break;
-		case GTK_STATE_FLAG_INSENSITIVE:
+		case CTK_STATE_FLAG_INSENSITIVE:
 		default:
 			icon_name = ACCESSX_BASE_ICON;
 			alpha = 63;
@@ -449,7 +449,7 @@ static cairo_surface_t* accessx_status_applet_altgraph_image(AccessxStatusApplet
 	 * from Level 2, i.e. an AltGraph character from a common keyboard
 	 * in your locale.
 	 */
-	glyph_pixbuf = accessx_status_applet_get_glyph_pixbuf(GTK_WIDGET(sapplet->applet), pixbuf, &fg, ("æ"));
+	glyph_pixbuf = accessx_status_applet_get_glyph_pixbuf(CTK_WIDGET(sapplet->applet), pixbuf, &fg, ("æ"));
 	gdk_pixbuf_composite(glyph_pixbuf, pixbuf, 0, 0, gdk_pixbuf_get_width(glyph_pixbuf), gdk_pixbuf_get_height(glyph_pixbuf), 0., 0., 1.0, 1.0, GDK_INTERP_NEAREST, alpha);
 	g_object_unref(glyph_pixbuf);
 
@@ -468,7 +468,7 @@ static cairo_surface_t* accessx_status_applet_slowkeys_image(AccessxStatusApplet
 	gchar* icon_name = SLOWKEYS_IDLE_ICON;
 	CtkIconTheme *icon_theme = ctk_icon_theme_get_default ();
 	gint icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
-	gint icon_scale = ctk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
+	gint icon_scale = ctk_widget_get_scale_factor(CTK_WIDGET(sapplet->applet));
 
 	if (event != NULL)
 	{
@@ -507,7 +507,7 @@ static cairo_surface_t* accessx_status_applet_slowkeys_image(AccessxStatusApplet
 		ret_pixbuf = gdk_pixbuf_copy(tmp_pixbuf);
 		g_object_unref(tmp_pixbuf);
 
-		window = ctk_widget_get_window(GTK_WIDGET(sapplet->applet));
+		window = ctk_widget_get_window(CTK_WIDGET(sapplet->applet));
 
 		if (event && window)
 		{
@@ -520,24 +520,24 @@ static cairo_surface_t* accessx_status_applet_slowkeys_image(AccessxStatusApplet
 			}
 		}
 
-		switch (ctk_widget_get_state_flags (GTK_WIDGET (sapplet->applet)))
+		switch (ctk_widget_get_state_flags (CTK_WIDGET (sapplet->applet)))
 		{
-			case GTK_STATE_FLAG_NORMAL:
+			case CTK_STATE_FLAG_NORMAL:
 				alpha = 255;
 				gdk_rgba_parse(&fg, "black");
 				break;
-			case GTK_STATE_FLAG_SELECTED:
+			case CTK_STATE_FLAG_SELECTED:
 				alpha = 255;
 				gdk_rgba_parse(&fg, "white");
 				break;
-			case GTK_STATE_FLAG_INSENSITIVE:
+			case CTK_STATE_FLAG_INSENSITIVE:
 			default:
 				alpha = 63;
 				gdk_rgba_parse(&fg, "black");
 				break;
 		}
 
-		glyph_pixbuf = accessx_status_applet_get_glyph_pixbuf(GTK_WIDGET(sapplet->applet), ret_pixbuf, &fg, glyphstring);
+		glyph_pixbuf = accessx_status_applet_get_glyph_pixbuf(CTK_WIDGET(sapplet->applet), ret_pixbuf, &fg, glyphstring);
 		gdk_pixbuf_composite(glyph_pixbuf, ret_pixbuf, 0, 0, gdk_pixbuf_get_width(glyph_pixbuf), gdk_pixbuf_get_height(glyph_pixbuf), 0., 0., 1.0, 1.0, GDK_INTERP_NEAREST, alpha);
 		g_object_unref(glyph_pixbuf);
 	}
@@ -560,21 +560,21 @@ static cairo_surface_t* accessx_status_applet_bouncekeys_image(AccessxStatusAppl
 	gint alpha;
 	CtkIconTheme *icon_theme = ctk_icon_theme_get_default ();
 	gint icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
-	gint icon_scale = ctk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
+	gint icon_scale = ctk_widget_get_scale_factor(CTK_WIDGET(sapplet->applet));
 
 	g_assert(sapplet->applet);
 
-	switch (ctk_widget_get_state_flags (GTK_WIDGET (sapplet->applet)))
+	switch (ctk_widget_get_state_flags (CTK_WIDGET (sapplet->applet)))
 	{
-		case GTK_STATE_FLAG_NORMAL:
+		case CTK_STATE_FLAG_NORMAL:
 			alpha = 255;
 			gdk_rgba_parse(&fg, "black");
 			break;
-		case GTK_STATE_FLAG_SELECTED:
+		case CTK_STATE_FLAG_SELECTED:
 			alpha = 255;
 			gdk_rgba_parse(&fg, "white");
 			break;
-		case GTK_STATE_FLAG_INSENSITIVE:
+		case CTK_STATE_FLAG_INSENSITIVE:
 		default:
 			alpha = 63;
 			gdk_rgba_parse(&fg, "black");
@@ -604,7 +604,7 @@ static cairo_surface_t* accessx_status_applet_bouncekeys_image(AccessxStatusAppl
 		GdkPixbuf* glyph_pixbuf;
 		icon_base = gdk_pixbuf_copy(tmp_pixbuf);
 		g_object_unref(tmp_pixbuf);
-		glyph_pixbuf = accessx_status_applet_get_glyph_pixbuf(GTK_WIDGET(sapplet->applet), icon_base, &fg, glyphstring);
+		glyph_pixbuf = accessx_status_applet_get_glyph_pixbuf(CTK_WIDGET(sapplet->applet), icon_base, &fg, glyphstring);
 		gdk_pixbuf_composite(glyph_pixbuf, icon_base, 2, 2, gdk_pixbuf_get_width(glyph_pixbuf) - 2, gdk_pixbuf_get_height(glyph_pixbuf) - 2, -2., -2., 1.0, 1.0, GDK_INTERP_NEAREST, 96);
 		gdk_pixbuf_composite(glyph_pixbuf, icon_base, 1, 1, gdk_pixbuf_get_width(glyph_pixbuf) - 1, gdk_pixbuf_get_height(glyph_pixbuf) - 1, 1., 1., 1.0, 1.0, GDK_INTERP_NEAREST, alpha);
 
@@ -624,7 +624,7 @@ static cairo_surface_t* accessx_status_applet_mousekeys_image(AccessxStatusApple
 	gchar* which_dot = MOUSEKEYS_DOT_LEFT;
 	CtkIconTheme *icon_theme = ctk_icon_theme_get_default ();
 	gint icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
-	gint icon_scale = ctk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
+	gint icon_scale = ctk_widget_get_scale_factor(CTK_WIDGET(sapplet->applet));
 	tmp_pixbuf = ctk_icon_theme_load_icon_for_scale (icon_theme, MOUSEKEYS_BASE_ICON, icon_size, icon_scale, 0, NULL);
 	mouse_pixbuf = gdk_pixbuf_copy(tmp_pixbuf);
 	g_object_unref(tmp_pixbuf);
@@ -681,54 +681,54 @@ static void accessx_status_applet_set_state_icon (AccessxStatusApplet* sapplet, 
 	switch (modifier->mask)
 	{
 		case ShiftMask:
-			if (state == GTK_STATE_FLAG_SELECTED)
+			if (state == CTK_STATE_FLAG_SELECTED)
 				icon_name = SHIFT_KEY_ICON_LOCKED;
-			else if (state == GTK_STATE_FLAG_NORMAL)
+			else if (state == CTK_STATE_FLAG_NORMAL)
 				icon_name = SHIFT_KEY_ICON_LATCHED;
 			else
 				icon_name = SHIFT_KEY_ICON;
 			break;
 
 		case ControlMask:
-			if (state == GTK_STATE_FLAG_SELECTED)
+			if (state == CTK_STATE_FLAG_SELECTED)
 				icon_name = CONTROL_KEY_ICON_LOCKED;
-			else if (state == GTK_STATE_FLAG_NORMAL)
+			else if (state == CTK_STATE_FLAG_NORMAL)
 				icon_name = CONTROL_KEY_ICON_LATCHED;
 			else
 				icon_name = CONTROL_KEY_ICON;
 			break;
 
 		case Mod1Mask:
-			if (state == GTK_STATE_FLAG_SELECTED)
+			if (state == CTK_STATE_FLAG_SELECTED)
 				icon_name = ALT_KEY_ICON_LOCKED;
-			else if (state == GTK_STATE_FLAG_NORMAL)
+			else if (state == CTK_STATE_FLAG_NORMAL)
 				icon_name = ALT_KEY_ICON_LATCHED;
 			else
 				icon_name = ALT_KEY_ICON;
 			break;
 
 		case Mod2Mask:
-			if (state == GTK_STATE_FLAG_SELECTED)
+			if (state == CTK_STATE_FLAG_SELECTED)
 				icon_name = META_KEY_ICON_LOCKED;
-			else if (state == GTK_STATE_FLAG_NORMAL)
+			else if (state == CTK_STATE_FLAG_NORMAL)
 				icon_name = META_KEY_ICON_LATCHED;
 			else
 				icon_name = META_KEY_ICON;
 			break;
 
 		case Mod3Mask:
-			if (state == GTK_STATE_FLAG_SELECTED)
+			if (state == CTK_STATE_FLAG_SELECTED)
 				icon_name = HYPER_KEY_ICON_LOCKED;
-			else if (state == GTK_STATE_FLAG_NORMAL)
+			else if (state == CTK_STATE_FLAG_NORMAL)
 				icon_name = HYPER_KEY_ICON_LATCHED;
 			else
 				icon_name = HYPER_KEY_ICON;
 			break;
 
 		case Mod4Mask:
-			if (state == GTK_STATE_FLAG_SELECTED)
+			if (state == CTK_STATE_FLAG_SELECTED)
 				icon_name = SUPER_KEY_ICON_LOCKED;
-			else if (state == GTK_STATE_FLAG_NORMAL)
+			else if (state == CTK_STATE_FLAG_NORMAL)
 				icon_name = SUPER_KEY_ICON_LATCHED;
 			else
 				icon_name = SUPER_KEY_ICON;
@@ -743,13 +743,13 @@ static void accessx_status_applet_set_state_icon (AccessxStatusApplet* sapplet, 
 	{
 		icon_theme = ctk_icon_theme_get_default();
 		icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
-		icon_scale = ctk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
+		icon_scale = ctk_widget_get_scale_factor(CTK_WIDGET(sapplet->applet));
 		surface = ctk_icon_theme_load_surface (icon_theme, icon_name, icon_size, icon_scale, NULL, 0, NULL);
 	}
 
 	if (surface != NULL)
 	{
-		ctk_image_set_from_surface(GTK_IMAGE(modifier->indicator), surface);
+		ctk_image_set_from_surface(CTK_IMAGE(modifier->indicator), surface);
 		cairo_surface_destroy(surface);
 	}
 }
@@ -759,7 +759,7 @@ static void accessx_status_applet_update(AccessxStatusApplet* sapplet, AccessxSt
 	GdkWindow* window;
 	gint i;
 
-	window = ctk_widget_get_window(GTK_WIDGET(sapplet->applet));
+	window = ctk_widget_get_window(CTK_WIDGET(sapplet->applet));
 
 	if (notify_type & ACCESSX_STATUS_MODIFIERS)
 	{
@@ -785,17 +785,17 @@ static void accessx_status_applet_update(AccessxStatusApplet* sapplet, AccessxSt
 				if (locked_mods & modifiers[i].mask)
 				{
 					ctk_widget_set_sensitive(modifiers[i].indicator, TRUE);
-					accessx_status_applet_set_state_icon (sapplet, &modifiers[i], GTK_STATE_FLAG_SELECTED);
+					accessx_status_applet_set_state_icon (sapplet, &modifiers[i], CTK_STATE_FLAG_SELECTED);
 				}
 				else if (latched_mods & modifiers[i].mask)
 				{
 					ctk_widget_set_sensitive(modifiers[i].indicator, TRUE);
-					accessx_status_applet_set_state_icon (sapplet, &modifiers[i], GTK_STATE_FLAG_NORMAL);
+					accessx_status_applet_set_state_icon (sapplet, &modifiers[i], CTK_STATE_FLAG_NORMAL);
 				}
 				else
 				{
 					ctk_widget_set_sensitive(modifiers[i].indicator, FALSE);
-					accessx_status_applet_set_state_icon (sapplet, &modifiers[i], GTK_STATE_FLAG_INSENSITIVE);
+					accessx_status_applet_set_state_icon (sapplet, &modifiers[i], CTK_STATE_FLAG_INSENSITIVE);
 				}
 			}
 		}
@@ -804,21 +804,21 @@ static void accessx_status_applet_update(AccessxStatusApplet* sapplet, AccessxSt
 	if ((notify_type & ACCESSX_STATUS_SLOWKEYS) && (event != NULL))
 	{
 		cairo_surface_t* surface = accessx_status_applet_slowkeys_image(sapplet, &event->accessx);
-		ctk_image_set_from_surface(GTK_IMAGE(sapplet->slowfoo), surface);
+		ctk_image_set_from_surface(CTK_IMAGE(sapplet->slowfoo), surface);
 		cairo_surface_destroy(surface);
 	}
 
 	if ((notify_type & ACCESSX_STATUS_BOUNCEKEYS) && (event != NULL))
 	{
 		cairo_surface_t* surface = accessx_status_applet_bouncekeys_image(sapplet, &event->accessx);
-		ctk_image_set_from_surface(GTK_IMAGE(sapplet->bouncefoo), surface);
+		ctk_image_set_from_surface(CTK_IMAGE(sapplet->bouncefoo), surface);
 		cairo_surface_destroy(surface);
 	}
 
 	if ((notify_type & ACCESSX_STATUS_MOUSEKEYS) && (event != NULL))
 	{
 		cairo_surface_t* surface = accessx_status_applet_mousekeys_image(sapplet, &event->state);
-		ctk_image_set_from_surface(GTK_IMAGE(sapplet->mousefoo), surface);
+		ctk_image_set_from_surface(CTK_IMAGE(sapplet->mousefoo), surface);
 		cairo_surface_destroy(surface);
 	}
 
@@ -926,12 +926,12 @@ static void accessx_status_applet_notify_xkb_device(AccessxStatusApplet* sapplet
 		if (event->led_state &= ALT_GRAPH_LED_MASK)
 		{
 			ctk_widget_set_sensitive(sapplet->alt_graph_indicator, TRUE);
-			accessx_status_applet_set_state_icon (sapplet, &modifiers[Mod5Mask], GTK_STATE_FLAG_NORMAL);
+			accessx_status_applet_set_state_icon (sapplet, &modifiers[Mod5Mask], CTK_STATE_FLAG_NORMAL);
 		}
 		else
 		{
 			ctk_widget_set_sensitive(sapplet->alt_graph_indicator, FALSE);
-			accessx_status_applet_set_state_icon (sapplet, &modifiers[Mod5Mask], GTK_STATE_FLAG_INSENSITIVE);
+			accessx_status_applet_set_state_icon (sapplet, &modifiers[Mod5Mask], CTK_STATE_FLAG_INSENSITIVE);
 		}
 	}
 }
@@ -1001,7 +1001,7 @@ static void accessx_status_applet_reparent_widget(CtkWidget* widget, CtkContaine
 		if (ctk_widget_get_parent(widget))
 		{
 			g_object_ref(G_OBJECT(widget));
-			ctk_container_remove(GTK_CONTAINER(ctk_widget_get_parent(widget)), widget);
+			ctk_container_remove(CTK_CONTAINER(ctk_widget_get_parent(widget)), widget);
 		}
 
 		ctk_container_add(container, widget);
@@ -1012,18 +1012,18 @@ static void accessx_status_applet_layout_box(AccessxStatusApplet* sapplet, CtkWi
 {
 	AtkObject* atko;
 
-	accessx_status_applet_reparent_widget(sapplet->shift_indicator, GTK_CONTAINER(stickyfoo));
-	accessx_status_applet_reparent_widget(sapplet->ctrl_indicator, GTK_CONTAINER(stickyfoo));
-	accessx_status_applet_reparent_widget(sapplet->alt_indicator, GTK_CONTAINER(stickyfoo));
-	accessx_status_applet_reparent_widget(sapplet->meta_indicator, GTK_CONTAINER(stickyfoo));
-	accessx_status_applet_reparent_widget(sapplet->hyper_indicator, GTK_CONTAINER(stickyfoo));
-	accessx_status_applet_reparent_widget(sapplet->super_indicator, GTK_CONTAINER(stickyfoo));
-	accessx_status_applet_reparent_widget(sapplet->alt_graph_indicator, GTK_CONTAINER(stickyfoo));
-	accessx_status_applet_reparent_widget(sapplet->idlefoo, GTK_CONTAINER(box));
-	accessx_status_applet_reparent_widget(sapplet->mousefoo, GTK_CONTAINER(box));
-	accessx_status_applet_reparent_widget(stickyfoo, GTK_CONTAINER(box));
-	accessx_status_applet_reparent_widget(sapplet->slowfoo, GTK_CONTAINER(box));
-	accessx_status_applet_reparent_widget(sapplet->bouncefoo, GTK_CONTAINER(box));
+	accessx_status_applet_reparent_widget(sapplet->shift_indicator, CTK_CONTAINER(stickyfoo));
+	accessx_status_applet_reparent_widget(sapplet->ctrl_indicator, CTK_CONTAINER(stickyfoo));
+	accessx_status_applet_reparent_widget(sapplet->alt_indicator, CTK_CONTAINER(stickyfoo));
+	accessx_status_applet_reparent_widget(sapplet->meta_indicator, CTK_CONTAINER(stickyfoo));
+	accessx_status_applet_reparent_widget(sapplet->hyper_indicator, CTK_CONTAINER(stickyfoo));
+	accessx_status_applet_reparent_widget(sapplet->super_indicator, CTK_CONTAINER(stickyfoo));
+	accessx_status_applet_reparent_widget(sapplet->alt_graph_indicator, CTK_CONTAINER(stickyfoo));
+	accessx_status_applet_reparent_widget(sapplet->idlefoo, CTK_CONTAINER(box));
+	accessx_status_applet_reparent_widget(sapplet->mousefoo, CTK_CONTAINER(box));
+	accessx_status_applet_reparent_widget(stickyfoo, CTK_CONTAINER(box));
+	accessx_status_applet_reparent_widget(sapplet->slowfoo, CTK_CONTAINER(box));
+	accessx_status_applet_reparent_widget(sapplet->bouncefoo, CTK_CONTAINER(box));
 
 	if (sapplet->stickyfoo)
 	{
@@ -1032,10 +1032,10 @@ static void accessx_status_applet_layout_box(AccessxStatusApplet* sapplet, CtkWi
 
 	if (sapplet->box)
 	{
-		ctk_container_remove(GTK_CONTAINER(sapplet->applet), sapplet->box);
+		ctk_container_remove(CTK_CONTAINER(sapplet->applet), sapplet->box);
 	}
 
-	ctk_container_add(GTK_CONTAINER(sapplet->applet), box);
+	ctk_container_add(CTK_CONTAINER(sapplet->applet), box);
 	sapplet->stickyfoo = stickyfoo;
 	sapplet->box = box;
 
@@ -1044,7 +1044,7 @@ static void accessx_status_applet_layout_box(AccessxStatusApplet* sapplet, CtkWi
 	atk_object_set_description(atko, _("Shows keyboard status when accessibility features are used."));
 
 	ctk_widget_show(sapplet->box);
-	ctk_widget_show(GTK_WIDGET(sapplet->applet));
+	ctk_widget_show(CTK_WIDGET(sapplet->applet));
 
 	if (ctk_widget_get_realized(sapplet->box) && sapplet->initialized)
 	{
@@ -1084,13 +1084,13 @@ static void popup_error_dialog(AccessxStatusApplet* sapplet)
 			break;
 	}
 
-	dialog = ctk_message_dialog_new(NULL, GTK_DIALOG_DESTROY_WITH_PARENT, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE, _("Error: %s"), error_txt);
+	dialog = ctk_message_dialog_new(NULL, CTK_DIALOG_DESTROY_WITH_PARENT, CTK_MESSAGE_ERROR, CTK_BUTTONS_CLOSE, _("Error: %s"), error_txt);
 
 	g_signal_connect(G_OBJECT(dialog), "response", G_CALLBACK(ctk_widget_destroy), NULL);
 
-	ctk_window_set_screen(GTK_WINDOW(dialog), ctk_widget_get_screen(GTK_WIDGET(sapplet->applet)));
+	ctk_window_set_screen(CTK_WINDOW(dialog), ctk_widget_get_screen(CTK_WIDGET(sapplet->applet)));
 
-	ctk_window_set_resizable(GTK_WINDOW(dialog), FALSE);
+	ctk_window_set_resizable(CTK_WINDOW(dialog), FALSE);
 
 	ctk_widget_show(dialog);
 	g_free(error_txt);
@@ -1119,20 +1119,20 @@ static AccessxStatusApplet* create_applet(CafePanelApplet* applet)
 
 	if (sapplet->orient == CAFE_PANEL_APPLET_ORIENT_LEFT || sapplet->orient == CAFE_PANEL_APPLET_ORIENT_RIGHT)
 	{
-		box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-		stickyfoo = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+		box = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
+		stickyfoo = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
 	}
 	else
 	{
-		box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-		stickyfoo = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+		box = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 0);
+		stickyfoo = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 0);
 	}
 
-	ctk_box_set_homogeneous (GTK_BOX (stickyfoo), TRUE);
+	ctk_box_set_homogeneous (CTK_BOX (stickyfoo), TRUE);
 
 	icon_theme = ctk_icon_theme_get_default();
 	icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
-	icon_scale = ctk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
+	icon_scale = ctk_widget_get_scale_factor(CTK_WIDGET(sapplet->applet));
 
 	surface = accessx_status_applet_mousekeys_image(sapplet, NULL);
 	sapplet->mousefoo = ctk_image_new_from_surface(surface);
@@ -1169,7 +1169,7 @@ static AccessxStatusApplet* create_applet(CafePanelApplet* applet)
 	ctk_widget_set_sensitive(sapplet->super_indicator, FALSE);
 	ctk_widget_hide(sapplet->super_indicator);
 
-	surface = accessx_status_applet_altgraph_image(sapplet, GTK_STATE_FLAG_NORMAL);
+	surface = accessx_status_applet_altgraph_image(sapplet, CTK_STATE_FLAG_NORMAL);
 	sapplet->alt_graph_indicator = ctk_image_new_from_surface(surface);
 	cairo_surface_destroy(surface);
 	ctk_widget_set_sensitive(sapplet->alt_graph_indicator, FALSE);
@@ -1190,7 +1190,7 @@ static AccessxStatusApplet* create_applet(CafePanelApplet* applet)
 	ctk_widget_show(sapplet->idlefoo);
 
 	accessx_status_applet_layout_box(sapplet, box, stickyfoo);
-	atko = ctk_widget_get_accessible(GTK_WIDGET(sapplet->applet));
+	atko = ctk_widget_get_accessible(CTK_WIDGET(sapplet->applet));
 	atk_object_set_name(atko, _("AccessX Status"));
 	atk_object_set_description(atko, _("Shows keyboard status when accessibility features are used."));
 	return sapplet;
@@ -1224,15 +1224,15 @@ static void accessx_status_applet_reorient(CtkWidget* widget, CafePanelAppletOri
 
 	if (o == CAFE_PANEL_APPLET_ORIENT_LEFT || o == CAFE_PANEL_APPLET_ORIENT_RIGHT)
 	{
-		box = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
-		stickyfoo = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+		box = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
+		stickyfoo = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
 	}
 	else
 	{
-		box = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-		stickyfoo = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
+		box = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 0);
+		stickyfoo = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 0);
 	}
-	ctk_box_set_homogeneous (GTK_BOX (stickyfoo), TRUE);
+	ctk_box_set_homogeneous (CTK_BOX (stickyfoo), TRUE);
 	accessx_status_applet_layout_box(sapplet, box, stickyfoo);
 }
 
@@ -1242,24 +1242,24 @@ static void accessx_status_applet_resize(CtkWidget* widget, int size, gpointer u
 
 	AccessxStatusApplet* sapplet = user_data;
 	CtkIconTheme *icon_theme = ctk_icon_theme_get_default ();
-	gint icon_scale = ctk_widget_get_scale_factor(GTK_WIDGET(sapplet->applet));
+	gint icon_scale = ctk_widget_get_scale_factor(CTK_WIDGET(sapplet->applet));
 
 	accessx_status_applet_update(sapplet, ACCESSX_STATUS_ALL, NULL);
 
 	surface = accessx_status_applet_slowkeys_image(sapplet, NULL);
-	ctk_image_set_from_surface(GTK_IMAGE(sapplet->slowfoo), surface);
+	ctk_image_set_from_surface(CTK_IMAGE(sapplet->slowfoo), surface);
 	cairo_surface_destroy(surface);
 
 	surface = accessx_status_applet_bouncekeys_image(sapplet, NULL);
-	ctk_image_set_from_surface(GTK_IMAGE(sapplet->bouncefoo), surface);
+	ctk_image_set_from_surface(CTK_IMAGE(sapplet->bouncefoo), surface);
 	cairo_surface_destroy(surface);
 
 	surface = accessx_status_applet_mousekeys_image(sapplet, NULL);
-	ctk_image_set_from_surface(GTK_IMAGE(sapplet->mousefoo), surface);
+	ctk_image_set_from_surface(CTK_IMAGE(sapplet->mousefoo), surface);
 	cairo_surface_destroy(surface);
 
 	surface = ctk_icon_theme_load_surface (icon_theme, ACCESSX_APPLET, size - ICON_PADDING, icon_scale, NULL, 0, NULL);
-	ctk_image_set_from_surface(GTK_IMAGE(sapplet->idlefoo), surface);
+	ctk_image_set_from_surface(CTK_IMAGE(sapplet->idlefoo), surface);
 	cairo_surface_destroy(surface);
 }
 
@@ -1297,7 +1297,7 @@ static gboolean accessx_status_applet_reset(gpointer user_data)
 {
 	AccessxStatusApplet* sapplet = user_data;
 	g_assert(sapplet->applet);
-	accessx_status_applet_reorient(GTK_WIDGET(sapplet->applet), cafe_panel_applet_get_orient(sapplet->applet), sapplet);
+	accessx_status_applet_reorient(CTK_WIDGET(sapplet->applet), cafe_panel_applet_get_orient(sapplet->applet), sapplet);
 
 	return FALSE;
 }
@@ -1382,19 +1382,19 @@ static gboolean accessx_status_applet_fill(CafePanelApplet* applet)
 
 	g_object_unref(action_group);
 
-	ctk_widget_set_tooltip_text(GTK_WIDGET(sapplet->applet), _("Keyboard Accessibility Status"));
+	ctk_widget_set_tooltip_text(CTK_WIDGET(sapplet->applet), _("Keyboard Accessibility Status"));
 
-	atk_object = ctk_widget_get_accessible(GTK_WIDGET(sapplet->applet));
+	atk_object = ctk_widget_get_accessible(CTK_WIDGET(sapplet->applet));
 	atk_object_set_name(atk_object, _("AccessX Status"));
 	atk_object_set_description(atk_object, _("Displays current state of keyboard accessibility features"));
-	ctk_widget_show_all(GTK_WIDGET(sapplet->applet));
+	ctk_widget_show_all(CTK_WIDGET(sapplet->applet));
 
 	if (was_realized)
 	{
 		accessx_status_applet_reset(sapplet);
 	}
 
-	cafe_panel_applet_set_background_widget (sapplet->applet, GTK_WIDGET (sapplet->applet));
+	cafe_panel_applet_set_background_widget (sapplet->applet, CTK_WIDGET (sapplet->applet));
 
 	return TRUE;
 }

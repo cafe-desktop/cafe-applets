@@ -89,7 +89,7 @@ xstuff_get_current_workspace (CtkWindow *window)
 	GdkDisplay *gdk_display;
 	Display *xdisplay;
 
-	root_window = GDK_WINDOW_XID (ctk_widget_get_window (GTK_WIDGET (window)));
+	root_window = GDK_WINDOW_XID (ctk_widget_get_window (CTK_WIDGET (window)));
     gdk_display = gdk_display_get_default ();
 	xdisplay = GDK_DISPLAY_XDISPLAY (gdk_display);
 
@@ -125,8 +125,8 @@ xstuff_change_workspace (CtkWindow *window,
   Screen *screen;
 
   gdk_display = GDK_DISPLAY_XDISPLAY (gdk_display_get_default ());
-  xwindow = GDK_WINDOW_XID (GDK_WINDOW (ctk_widget_get_window (GTK_WIDGET (window))));
-  screen = GDK_SCREEN_XSCREEN (ctk_widget_get_screen (GTK_WIDGET (window)));
+  xwindow = GDK_WINDOW_XID (GDK_WINDOW (ctk_widget_get_window (CTK_WIDGET (window))));
+  screen = GDK_SCREEN_XSCREEN (ctk_widget_get_screen (CTK_WIDGET (window)));
   
   xev.xclient.type = ClientMessage;
   xev.xclient.serial = 0;

@@ -1004,7 +1004,7 @@ msgstr ""
 msgid "_Temperature unit:"
 msgstr ""
 
-#. ctk_combo_box_append_text (GTK_COMBO_BOX (temp_combo), _("Default"));
+#. ctk_combo_box_append_text (CTK_COMBO_BOX (temp_combo), _("Default"));
 #: ../cafeweather/cafeweather-pref.c:861
 msgid "Kelvin"
 msgstr "Kelvin"
@@ -1023,7 +1023,7 @@ msgstr ""
 msgid "_Wind speed unit:"
 msgstr ""
 
-#. ctk_combo_box_append_text (GTK_COMBO_BOX (speed_combo), _("Default"));
+#. ctk_combo_box_append_text (CTK_COMBO_BOX (speed_combo), _("Default"));
 #. TRANSLATOR: The wind speed unit "meters per second"
 #: ../cafeweather/cafeweather-pref.c:884
 msgid "m/s"
@@ -1053,7 +1053,7 @@ msgstr ""
 msgid "_Pressure unit:"
 msgstr ""
 
-#. ctk_combo_box_append_text (GTK_COMBO_BOX (pres_combo), _("Default"));
+#. ctk_combo_box_append_text (CTK_COMBO_BOX (pres_combo), _("Default"));
 #. TRANSLATOR: The pressure unit "kiloPascals"
 #: ../cafeweather/cafeweather-pref.c:911
 msgid "kPa"
@@ -1089,7 +1089,7 @@ msgstr ""
 msgid "_Visibility unit:"
 msgstr ""
 
-#. ctk_combo_box_append_text (GTK_COMBO_BOX (dist_combo), _("Default"));
+#. ctk_combo_box_append_text (CTK_COMBO_BOX (dist_combo), _("Default"));
 #. TRANSLATOR: The distance unit "meters"
 #: ../cafeweather/cafeweather-pref.c:941
 msgid "meters"

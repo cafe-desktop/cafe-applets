@@ -30,12 +30,12 @@ static gfloat
 ctk_align_to_gfloat (CtkAlign align)
 {
 	switch (align) {
-		case GTK_ALIGN_START:
+		case CTK_ALIGN_START:
 			return 0.0;
-		case GTK_ALIGN_END:
+		case CTK_ALIGN_END:
 			return 1.0;
-		case GTK_ALIGN_CENTER:
-		case GTK_ALIGN_FILL:
+		case CTK_ALIGN_CENTER:
+		case CTK_ALIGN_FILL:
 			return 0.5;
 		default:
 			return 0.0;
@@ -58,7 +58,7 @@ calculate_pupil_xy (EyesApplet *eyes_applet,
 	 gfloat xalign, yalign;
 	 gint width, height;
 
-	 ctk_widget_get_allocation (GTK_WIDGET(widget), &allocation);
+	 ctk_widget_get_allocation (CTK_WIDGET(widget), &allocation);
 	 width = allocation.width;
 	 height = allocation.height;
 	 xalign = ctk_align_to_gfloat (ctk_widget_get_halign (widget));
@@ -114,7 +114,7 @@ draw_eye (EyesApplet *eyes_applet,
 					   pupil_y - eyes_applet->pupil_height / 2, 1.0, 1.0,
 				      	   GDK_INTERP_BILINEAR,
 				           255);
-	ctk_image_set_from_pixbuf (GTK_IMAGE (eyes_applet->eyes[eye_num]),
+	ctk_image_set_from_pixbuf (CTK_IMAGE (eyes_applet->eyes[eye_num]),
 						  pixbuf);
 	g_object_unref (pixbuf);
 
@@ -129,7 +129,7 @@ timer_cb (EyesApplet *eyes_applet)
         gint pupil_x, pupil_y;
         gint i;
 
-        display = ctk_widget_get_display (GTK_WIDGET (eyes_applet->applet));
+        display = ctk_widget_get_display (CTK_WIDGET (eyes_applet->applet));
         seat = gdk_display_get_default_seat (display);
 
         for (i = 0; i < eyes_applet->num_eyes; i++) {
@@ -214,8 +214,8 @@ setup_eyes (EyesApplet *eyes_applet)
 {
 	int i;
 
-        eyes_applet->hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 0);
-        ctk_box_pack_start (GTK_BOX (eyes_applet->vbox), eyes_applet->hbox, TRUE, TRUE, 0);
+        eyes_applet->hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 0);
+        ctk_box_pack_start (CTK_BOX (eyes_applet->vbox), eyes_applet->hbox, TRUE, TRUE, 0);
 
 	eyes_applet->eyes = g_new0 (CtkWidget *, eyes_applet->num_eyes);
 	eyes_applet->pointer_last_x = g_new0 (gint, eyes_applet->num_eyes);
@@ -226,29 +226,29 @@ setup_eyes (EyesApplet *eyes_applet)
                 if (eyes_applet->eyes[i] == NULL)
                         g_error ("Error creating geyes\n");
                
-		ctk_widget_set_size_request (GTK_WIDGET (eyes_applet->eyes[i]),
+		ctk_widget_set_size_request (CTK_WIDGET (eyes_applet->eyes[i]),
 					     eyes_applet->eye_width,
 					     eyes_applet->eye_height);
  
                 ctk_widget_show (eyes_applet->eyes[i]);
                 
-		ctk_box_pack_start (GTK_BOX (eyes_applet->hbox), 
+		ctk_box_pack_start (CTK_BOX (eyes_applet->hbox), 
                                     eyes_applet->eyes [i],
                                     TRUE,
                                     TRUE,
                                     0);
                 
 		if ((eyes_applet->num_eyes != 1) && (i == 0)) {
-			ctk_widget_set_halign (eyes_applet->eyes[i], GTK_ALIGN_END);
-			ctk_widget_set_valign (eyes_applet->eyes[i], GTK_ALIGN_CENTER);
+			ctk_widget_set_halign (eyes_applet->eyes[i], CTK_ALIGN_END);
+			ctk_widget_set_valign (eyes_applet->eyes[i], CTK_ALIGN_CENTER);
 		}
 		else if ((eyes_applet->num_eyes != 1) && (i == eyes_applet->num_eyes - 1)) {
-			ctk_widget_set_halign (eyes_applet->eyes[i], GTK_ALIGN_START);
-			ctk_widget_set_valign (eyes_applet->eyes[i], GTK_ALIGN_CENTER);
+			ctk_widget_set_halign (eyes_applet->eyes[i], CTK_ALIGN_START);
+			ctk_widget_set_valign (eyes_applet->eyes[i], CTK_ALIGN_CENTER);
 		}
 		else {
-			ctk_widget_set_halign (eyes_applet->eyes[i], GTK_ALIGN_CENTER);
-			ctk_widget_set_valign (eyes_applet->eyes[i], GTK_ALIGN_CENTER);
+			ctk_widget_set_halign (eyes_applet->eyes[i], CTK_ALIGN_CENTER);
+			ctk_widget_set_valign (eyes_applet->eyes[i], CTK_ALIGN_CENTER);
 		}
 		
                 ctk_widget_realize (eyes_applet->eyes[i]);
@@ -281,11 +281,11 @@ create_eyes (CafePanelApplet *applet)
 	EyesApplet *eyes_applet = g_new0 (EyesApplet, 1);
 
         eyes_applet->applet = applet;
-        eyes_applet->vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 0);
+        eyes_applet->vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 0);
 	eyes_applet->settings = 
 		cafe_panel_applet_settings_new (applet, "org.cafe.panel.applet.geyes");
 
-	ctk_container_add (GTK_CONTAINER (applet), eyes_applet->vbox);
+	ctk_container_add (CTK_CONTAINER (applet), eyes_applet->vbox);
 
 	return eyes_applet;
 }
@@ -340,11 +340,11 @@ help_cb (CtkAction  *action,
 	                        &error);
 
 	if (error) {
-		CtkWidget *dialog = ctk_message_dialog_new (NULL, GTK_DIALOG_MODAL, GTK_MESSAGE_ERROR, GTK_BUTTONS_CLOSE, 
+		CtkWidget *dialog = ctk_message_dialog_new (NULL, CTK_DIALOG_MODAL, CTK_MESSAGE_ERROR, CTK_BUTTONS_CLOSE, 
 							    _("There was an error displaying help: %s"), error->message);
 		g_signal_connect (G_OBJECT (dialog), "response", G_CALLBACK (ctk_widget_destroy), NULL);
-		ctk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
-		ctk_window_set_screen (GTK_WINDOW (dialog), ctk_widget_get_screen (GTK_WIDGET (eyes_applet->applet)));
+		ctk_window_set_resizable (CTK_WINDOW (dialog), FALSE);
+		ctk_window_set_screen (CTK_WINDOW (dialog), ctk_widget_get_screen (CTK_WIDGET (eyes_applet->applet)));
 		ctk_widget_show (dialog);
 		g_error_free (error);
 		error = NULL;
@@ -372,7 +372,7 @@ set_atk_name_description (CtkWidget *widget, const gchar *name,
    
 	aobj = ctk_widget_get_accessible (widget);
 	/* Check if gail is loaded */
-	if (GTK_IS_ACCESSIBLE (aobj) == FALSE)
+	if (CTK_IS_ACCESSIBLE (aobj) == FALSE)
 		return;
 
 	atk_object_set_name (aobj, name);
@@ -390,7 +390,7 @@ geyes_applet_fill (CafePanelApplet *applet)
 	
 	ctk_window_set_default_icon_name ("cafe-eyes-applet");
 	cafe_panel_applet_set_flags (applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
-	cafe_panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
+	cafe_panel_applet_set_background_widget (applet, CTK_WIDGET (applet));
 	
         eyes_applet = create_eyes (applet);
 
@@ -416,9 +416,9 @@ geyes_applet_fill (CafePanelApplet *applet)
 	}
 	g_object_unref (action_group);
 
-	ctk_widget_set_tooltip_text (GTK_WIDGET (eyes_applet->applet), _("Eyes"));
+	ctk_widget_set_tooltip_text (CTK_WIDGET (eyes_applet->applet), _("Eyes"));
 
-	set_atk_name_description (GTK_WIDGET (eyes_applet->applet), _("Eyes"), 
+	set_atk_name_description (CTK_WIDGET (eyes_applet->applet), _("Eyes"), 
 			_("The eyes look in the direction of the mouse pointer"));
 
 	g_signal_connect (eyes_applet->vbox,
@@ -426,7 +426,7 @@ geyes_applet_fill (CafePanelApplet *applet)
 			  G_CALLBACK (dispose_cb),
 			  eyes_applet);
 
-	ctk_widget_show_all (GTK_WIDGET (eyes_applet->applet));
+	ctk_widget_show_all (CTK_WIDGET (eyes_applet->applet));
 
 	/* setup here and not in create eyes so the destroy signal is set so 
 	 * that when there is an error within loading the theme

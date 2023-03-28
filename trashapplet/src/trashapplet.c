@@ -109,8 +109,8 @@ trash_applet_monitor_changed (TrashApplet *applet)
       /* note: the size is meaningless here,
        * since we do set_pixel_size() later
        */
-      ctk_image_set_from_gicon (GTK_IMAGE (applet->image),
-                                icon, GTK_ICON_SIZE_MENU);
+      ctk_image_set_from_gicon (CTK_IMAGE (applet->image),
+                                icon, CTK_ICON_SIZE_MENU);
 
       if (applet->icon)
         g_object_unref (applet->icon);
@@ -127,11 +127,11 @@ trash_applet_monitor_changed (TrashApplet *applet)
           text = g_strdup_printf (ngettext ("%d Item in Trash",
                                             "%d Items in Trash",
                                             items), items);
-          ctk_widget_set_tooltip_text (GTK_WIDGET (applet), text);
+          ctk_widget_set_tooltip_text (CTK_WIDGET (applet), text);
           g_free (text);
         }
       else
-        ctk_widget_set_tooltip_text (GTK_WIDGET (applet),
+        ctk_widget_set_tooltip_text (CTK_WIDGET (applet),
                                      _("No Items in Trash"));
 
       applet->items = items;
@@ -166,7 +166,7 @@ trash_applet_size_allocate (CtkWidget    *widget,
 {
   TrashApplet *applet = TRASH_APPLET (widget);
 
-  GTK_WIDGET_CLASS (trash_applet_parent_class)
+  CTK_WIDGET_CLASS (trash_applet_parent_class)
     ->size_allocate (widget, allocation);
 
   switch (cafe_panel_applet_get_orient (CAFE_PANEL_APPLET (applet)))
@@ -218,13 +218,13 @@ trash_applet_init (TrashApplet *applet)
 
   /* enable transparency hack */
   cafe_panel_applet_set_background_widget (CAFE_PANEL_APPLET (applet),
-                                      GTK_WIDGET (applet));
+                                      CTK_WIDGET (applet));
 
   /* setup the image */
-  applet->image = g_object_ref_sink (GTK_IMAGE (ctk_image_new ()));
-  ctk_container_add (GTK_CONTAINER (applet),
-                     GTK_WIDGET (applet->image));
-  ctk_widget_show (GTK_WIDGET (applet->image));
+  applet->image = g_object_ref_sink (CTK_IMAGE (ctk_image_new ()));
+  ctk_container_add (CTK_CONTAINER (applet),
+                     CTK_WIDGET (applet->image));
+  ctk_widget_show (CTK_WIDGET (applet->image));
 
   /* setup the trash backend */
   applet->trash = g_file_new_for_uri ("trash:/");
@@ -234,7 +234,7 @@ trash_applet_init (TrashApplet *applet)
                             applet);
 
   /* setup drag and drop */
-  ctk_drag_dest_set (GTK_WIDGET (applet), GTK_DEST_DEFAULT_ALL,
+  ctk_drag_dest_set (CTK_WIDGET (applet), CTK_DEST_DEFAULT_ALL,
                      drop_types, G_N_ELEMENTS (drop_types),
                      GDK_ACTION_MOVE);
 
@@ -265,8 +265,8 @@ trash_applet_button_release (CtkWidget      *widget,
       return TRUE;
     }
 
-  if (GTK_WIDGET_CLASS (trash_applet_parent_class)->button_release_event)
-    return GTK_WIDGET_CLASS (trash_applet_parent_class)
+  if (CTK_WIDGET_CLASS (trash_applet_parent_class)->button_release_event)
+    return CTK_WIDGET_CLASS (trash_applet_parent_class)
         ->button_release_event (widget, event);
   else
     return FALSE;
@@ -292,8 +292,8 @@ trash_applet_key_press (CtkWidget   *widget,
       break;
     }
 
-  if (GTK_WIDGET_CLASS (trash_applet_parent_class)->key_press_event)
-    return GTK_WIDGET_CLASS (trash_applet_parent_class)
+  if (CTK_WIDGET_CLASS (trash_applet_parent_class)->key_press_event)
+    return CTK_WIDGET_CLASS (trash_applet_parent_class)
       ->key_press_event (widget, event);
   else
     return FALSE;
@@ -339,17 +339,17 @@ error_dialog (TrashApplet *applet, const gchar *error, ...)
   error_string = g_strdup_vprintf (error, args);
   va_end (args);
 
-  dialog = ctk_message_dialog_new (NULL, GTK_DIALOG_MODAL,
-                                   GTK_MESSAGE_ERROR, GTK_BUTTONS_OK,
+  dialog = ctk_message_dialog_new (NULL, CTK_DIALOG_MODAL,
+                                   CTK_MESSAGE_ERROR, CTK_BUTTONS_OK,
                                    "%s", error_string);
 
   g_signal_connect (G_OBJECT (dialog), "response",
                     G_CALLBACK (ctk_widget_destroy),
                     NULL);
 
-  ctk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
-  ctk_window_set_screen (GTK_WINDOW(dialog),
-                         ctk_widget_get_screen (GTK_WIDGET (applet)));
+  ctk_window_set_resizable (CTK_WINDOW (dialog), FALSE);
+  ctk_window_set_screen (CTK_WINDOW(dialog),
+                         ctk_widget_get_screen (CTK_WIDGET (applet)));
   ctk_widget_show (dialog);
 
   g_free (error_string);
@@ -359,7 +359,7 @@ static void
 trash_applet_do_empty (CtkAction   *action,
                        TrashApplet *applet)
 {
-  trash_empty (GTK_WIDGET (applet));
+  trash_empty (CTK_WIDGET (applet));
 }
 
 static void
@@ -457,34 +457,34 @@ confirm_delete_immediately (CtkWidget *parent_view,
   screen = ctk_widget_get_screen (parent_view);
 
   dialog = ctk_dialog_new ();
-  ctk_window_set_screen (GTK_WINDOW (dialog), screen);
+  ctk_window_set_screen (CTK_WINDOW (dialog), screen);
   atk_object_set_role (ctk_widget_get_accessible (dialog), ATK_ROLE_ALERT);
-  ctk_window_set_title (GTK_WINDOW (dialog), _("Delete Immediately?"));
-  ctk_container_set_border_width (GTK_CONTAINER (dialog), 5);
-  ctk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
+  ctk_window_set_title (CTK_WINDOW (dialog), _("Delete Immediately?"));
+  ctk_container_set_border_width (CTK_CONTAINER (dialog), 5);
+  ctk_window_set_resizable (CTK_WINDOW (dialog), FALSE);
 
   ctk_widget_realize (dialog);
-  gdk_window_set_transient_for (ctk_widget_get_window (GTK_WIDGET (dialog)),
+  gdk_window_set_transient_for (ctk_widget_get_window (CTK_WIDGET (dialog)),
                                 gdk_screen_get_root_window (screen));
-  ctk_window_set_modal (GTK_WINDOW (dialog), TRUE);
+  ctk_window_set_modal (CTK_WINDOW (dialog), TRUE);
 
-  ctk_box_set_spacing (GTK_BOX (ctk_dialog_get_content_area (GTK_DIALOG (dialog))), 14);
+  ctk_box_set_spacing (CTK_BOX (ctk_dialog_get_content_area (CTK_DIALOG (dialog))), 14);
 
-  hbox = ctk_box_new (GTK_ORIENTATION_HORIZONTAL, 12);
-  ctk_container_set_border_width (GTK_CONTAINER (hbox), 5);
+  hbox = ctk_box_new (CTK_ORIENTATION_HORIZONTAL, 12);
+  ctk_container_set_border_width (CTK_CONTAINER (hbox), 5);
   ctk_widget_show (hbox);
-  ctk_box_pack_start (GTK_BOX (ctk_dialog_get_content_area (GTK_DIALOG (dialog))), hbox,
+  ctk_box_pack_start (CTK_BOX (ctk_dialog_get_content_area (CTK_DIALOG (dialog))), hbox,
                       FALSE, FALSE, 0);
 
   image = ctk_image_new_from_icon_name ("dialog-question",
-                                        GTK_ICON_SIZE_DIALOG);
-  ctk_widget_set_halign (image, GTK_ALIGN_CENTER);
-  ctk_widget_set_valign (image, GTK_ALIGN_START);
+                                        CTK_ICON_SIZE_DIALOG);
+  ctk_widget_set_halign (image, CTK_ALIGN_CENTER);
+  ctk_widget_set_valign (image, CTK_ALIGN_START);
   ctk_widget_show (image);
-  ctk_box_pack_start (GTK_BOX (hbox), image, FALSE, FALSE, 0);
+  ctk_box_pack_start (CTK_BOX (hbox), image, FALSE, FALSE, 0);
 
-  vbox = ctk_box_new (GTK_ORIENTATION_VERTICAL, 12);
-  ctk_box_pack_start (GTK_BOX (hbox), vbox, TRUE, TRUE, 0);
+  vbox = ctk_box_new (CTK_ORIENTATION_VERTICAL, 12);
+  ctk_box_pack_start (CTK_BOX (hbox), vbox, TRUE, TRUE, 0);
   ctk_widget_show (vbox);
 
   if (all)
@@ -501,34 +501,34 @@ confirm_delete_immediately (CtkWidget *parent_view,
   str = g_strconcat ("<span weight=\"bold\" size=\"larger\">",
                      prompt, "</span>", NULL);
   label = ctk_label_new (str);
-  ctk_label_set_use_markup (GTK_LABEL (label), TRUE);
-  ctk_label_set_justify (GTK_LABEL (label), GTK_JUSTIFY_LEFT);
-  ctk_label_set_line_wrap (GTK_LABEL (label), TRUE);
-  ctk_label_set_xalign (GTK_LABEL (label), 0.0);
-  ctk_box_pack_start (GTK_BOX (vbox), label, FALSE, FALSE, 0);
+  ctk_label_set_use_markup (CTK_LABEL (label), TRUE);
+  ctk_label_set_justify (CTK_LABEL (label), CTK_JUSTIFY_LEFT);
+  ctk_label_set_line_wrap (CTK_LABEL (label), TRUE);
+  ctk_label_set_xalign (CTK_LABEL (label), 0.0);
+  ctk_box_pack_start (CTK_BOX (vbox), label, FALSE, FALSE, 0);
   ctk_widget_show (label);
   g_free (str);
 
   label = ctk_label_new (detail);
-  ctk_label_set_justify (GTK_LABEL (label), GTK_JUSTIFY_LEFT);
-  ctk_label_set_line_wrap (GTK_LABEL (label), TRUE);
-  ctk_label_set_xalign (GTK_LABEL (label), 0.0);
-  ctk_box_pack_start (GTK_BOX (vbox), label, FALSE, FALSE, 0);
+  ctk_label_set_justify (CTK_LABEL (label), CTK_JUSTIFY_LEFT);
+  ctk_label_set_line_wrap (CTK_LABEL (label), TRUE);
+  ctk_label_set_xalign (CTK_LABEL (label), 0.0);
+  ctk_box_pack_start (CTK_BOX (vbox), label, FALSE, FALSE, 0);
   ctk_widget_show (label);
   g_free (detail);
 
-  ctk_dialog_add_button (GTK_DIALOG (dialog), "ctk-cancel",
-                         GTK_RESPONSE_CANCEL);
-  ctk_dialog_add_button (GTK_DIALOG (dialog), "ctk-delete",
-                         GTK_RESPONSE_YES);
-  ctk_dialog_set_default_response (GTK_DIALOG (dialog),
-                                   GTK_RESPONSE_YES);
+  ctk_dialog_add_button (CTK_DIALOG (dialog), "ctk-cancel",
+                         CTK_RESPONSE_CANCEL);
+  ctk_dialog_add_button (CTK_DIALOG (dialog), "ctk-delete",
+                         CTK_RESPONSE_YES);
+  ctk_dialog_set_default_response (CTK_DIALOG (dialog),
+                                   CTK_RESPONSE_YES);
 
-  response = ctk_dialog_run (GTK_DIALOG (dialog));
+  response = ctk_dialog_run (CTK_DIALOG (dialog));
 
-  ctk_widget_destroy (GTK_WIDGET (dialog));
+  ctk_widget_destroy (CTK_WIDGET (dialog));
 
-  return response == GTK_RESPONSE_YES;
+  return response == CTK_RESPONSE_YES;
 }
 
 static void
@@ -600,7 +600,7 @@ static void
 trash_applet_class_init (TrashAppletClass *class)
 {
   GObjectClass *gobject_class = G_OBJECT_CLASS (class);
-  CtkWidgetClass *widget_class = GTK_WIDGET_CLASS (class);
+  CtkWidgetClass *widget_class = CTK_WIDGET_CLASS (class);
 
   gobject_class->dispose = trash_applet_dispose;
   widget_class->size_allocate = trash_applet_size_allocate;
@@ -638,7 +638,7 @@ trash_applet_factory (CafePanelApplet *applet,
       g_free (ui_path);
       g_object_unref (action_group);
 
-      ctk_widget_show (GTK_WIDGET (applet));
+      ctk_widget_show (CTK_WIDGET (applet));
 
       retval = TRUE;
   }

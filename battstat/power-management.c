@@ -117,18 +117,18 @@ initialise_test( void )
   test_status.on_ac_power = FALSE;
   test_status.charging = FALSE;
 
-  box = GTK_BOX( ctk_box_new (GTK_ORIENTATION_VERTICAL, 5 ) );
+  box = CTK_BOX( ctk_box_new (CTK_ORIENTATION_VERTICAL, 5 ) );
 
   ctk_box_pack_start( box, ctk_label_new( "percent" ), TRUE, TRUE, 0);
   w = ctk_spin_button_new_with_range( -1.0, 100.0, 1 );
-  ctk_spin_button_set_value( GTK_SPIN_BUTTON( w ), 50.0 );
+  ctk_spin_button_set_value( CTK_SPIN_BUTTON( w ), 50.0 );
   g_signal_connect( G_OBJECT( w ), "value-changed",
                     G_CALLBACK( test_update_integer ), &test_status.percent );
   ctk_box_pack_start( box, w, TRUE, TRUE, 0 );
 
   ctk_box_pack_start( box, ctk_label_new( "minutes" ), TRUE, TRUE, 0);
   w = ctk_spin_button_new_with_range( -1.0, 1000.0, 1 );
-  ctk_spin_button_set_value( GTK_SPIN_BUTTON( w ), 180.0 );
+  ctk_spin_button_set_value( CTK_SPIN_BUTTON( w ), 180.0 );
   g_signal_connect( G_OBJECT( w ), "value-changed",
                     G_CALLBACK( test_update_integer ), &test_status.minutes );
   ctk_box_pack_start( box, w, TRUE, TRUE, 0);
@@ -146,13 +146,13 @@ initialise_test( void )
   ctk_box_pack_start( box, w, TRUE, TRUE, 0);
 
   w = ctk_toggle_button_new_with_label( "present" );
-  ctk_toggle_button_set_active( GTK_TOGGLE_BUTTON( w ), TRUE );
+  ctk_toggle_button_set_active( CTK_TOGGLE_BUTTON( w ), TRUE );
   g_signal_connect( G_OBJECT( w ), "toggled",
                     G_CALLBACK( test_update_boolean ), &test_status.present );
   ctk_box_pack_start( box, w, TRUE, TRUE, 0);
 
-  w = ctk_window_new( GTK_WINDOW_TOPLEVEL );
-  ctk_container_add( GTK_CONTAINER( w ), GTK_WIDGET( box ) );
+  w = ctk_window_new( CTK_WINDOW_TOPLEVEL );
+  ctk_container_add( CTK_CONTAINER( w ), CTK_WIDGET( box ) );
   ctk_widget_show_all( w );
 }
 

@@ -43,12 +43,12 @@ change_orient (CafePanelApplet *applet, CafePanelAppletOrient o, DriveList *driv
     switch (o) {
     case CAFE_PANEL_APPLET_ORIENT_LEFT:
     case CAFE_PANEL_APPLET_ORIENT_RIGHT:
-	orientation = GTK_ORIENTATION_VERTICAL;
+	orientation = CTK_ORIENTATION_VERTICAL;
 	break;
     case CAFE_PANEL_APPLET_ORIENT_UP:
     case CAFE_PANEL_APPLET_ORIENT_DOWN:
     default:
-	orientation = GTK_ORIENTATION_HORIZONTAL;
+	orientation = CTK_ORIENTATION_HORIZONTAL;
 	break;
     }
     drive_list_set_orientation (drive_list, orientation);
@@ -136,7 +136,7 @@ display_help (CtkAction *action,
     GdkScreen *screen;
     GError *error = NULL;
 
-    screen = ctk_widget_get_screen (GTK_WIDGET (drive_list));
+    screen = ctk_widget_get_screen (CTK_WIDGET (drive_list));
 
     ctk_show_uri_on_window (NULL,
                            "help:cafe-drivemount",
@@ -147,15 +147,15 @@ display_help (CtkAction *action,
 	CtkWidget *dialog;
 
 	dialog = ctk_message_dialog_new (NULL,
-					 GTK_DIALOG_MODAL,
-					 GTK_MESSAGE_ERROR,
-					 GTK_BUTTONS_OK,
+					 CTK_DIALOG_MODAL,
+					 CTK_MESSAGE_ERROR,
+					 CTK_BUTTONS_OK,
 					 _("There was an error displaying help: %s"),
 					 error->message);
 	g_signal_connect (dialog, "response",
 			  G_CALLBACK (ctk_widget_destroy), NULL);
-	ctk_window_set_resizable (GTK_WINDOW (dialog), FALSE);
-	ctk_window_set_screen (GTK_WINDOW (dialog), screen);
+	ctk_window_set_resizable (CTK_WINDOW (dialog), FALSE);
+	ctk_window_set_screen (CTK_WINDOW (dialog), screen);
 	ctk_widget_show (dialog);
 	g_error_free (error);
     }
@@ -187,11 +187,11 @@ applet_factory (CafePanelApplet *applet,
 	ctk_window_set_default_icon_name ("media-floppy");
 
 	cafe_panel_applet_set_flags (applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
-	cafe_panel_applet_set_background_widget (applet, GTK_WIDGET (applet));
+	cafe_panel_applet_set_background_widget (applet, CTK_WIDGET (applet));
 
 	drive_list = drive_list_new ();
 
-	ctk_container_add (GTK_CONTAINER (applet), drive_list);
+	ctk_container_add (CTK_CONTAINER (applet), drive_list);
 
 	g_signal_connect_object (applet, "change_orient",
 				 G_CALLBACK (change_orient), drive_list, 0);
@@ -216,10 +216,10 @@ applet_factory (CafePanelApplet *applet,
 	g_free (ui_path);
 	g_object_unref (action_group);
 
-	ao = ctk_widget_get_accessible (GTK_WIDGET (applet));
+	ao = ctk_widget_get_accessible (CTK_WIDGET (applet));
 	atk_object_set_name (ao, _("Disk Mounter"));
 
-	ctk_widget_show_all (GTK_WIDGET (applet));
+	ctk_widget_show_all (CTK_WIDGET (applet));
 
 	ret = TRUE;
     }

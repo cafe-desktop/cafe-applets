@@ -88,17 +88,17 @@ cpufreq_utils_display_error (const gchar *message,
 	g_return_if_fail (message != NULL);
 
 	dialog = ctk_message_dialog_new (NULL,
-					 GTK_DIALOG_DESTROY_WITH_PARENT,
-					 GTK_MESSAGE_ERROR,
-					 GTK_BUTTONS_OK,
+					 CTK_DIALOG_DESTROY_WITH_PARENT,
+					 CTK_MESSAGE_ERROR,
+					 CTK_BUTTONS_OK,
 					 "%s", message);
 	if (secondary) {
-		ctk_message_dialog_format_secondary_text (GTK_MESSAGE_DIALOG (dialog),
+		ctk_message_dialog_format_secondary_text (CTK_MESSAGE_DIALOG (dialog),
 							  "%s", secondary);
 	}
 	
-	ctk_window_set_title (GTK_WINDOW (dialog), ""); /* as per HIG */
-	ctk_window_set_skip_taskbar_hint (GTK_WINDOW (dialog), TRUE);
+	ctk_window_set_title (CTK_WINDOW (dialog), ""); /* as per HIG */
+	ctk_window_set_skip_taskbar_hint (CTK_WINDOW (dialog), TRUE);
 	g_signal_connect (G_OBJECT (dialog),
 			  "response",
 			  G_CALLBACK (ctk_widget_destroy), NULL);
