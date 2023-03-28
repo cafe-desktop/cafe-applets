@@ -519,7 +519,7 @@ msgstr ""
 
 #: charpick/charpick.c:587
 msgid ""
-"Mate Panel applet for selecting strange characters that are not on my "
+"Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
 "Applet du tableau de bord MATE pour sélectionner des caractères qui ne sont "
@@ -1039,7 +1039,7 @@ msgid "_Update"
 msgstr "_Mettre à jour"
 
 #: cafeweather/cafeweather-applet.c:345
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:9
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Weather Report"
 msgstr "Applet bulletin météo"
 
@@ -1330,21 +1330,21 @@ msgstr "Rechercher le _suivant"
 msgid "Location"
 msgstr "Emplacement"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:5
-msgid "Mateweather Applet Factory"
-msgstr "Fabrique pour l'applet Mateweather"
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:5
+msgid "Cafeweather Applet Factory"
+msgstr "Fabrique pour l'applet Cafeweather"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:6
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for creating the weather applet."
 msgstr "Fabrique pour créer l'applet météo."
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:10
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "Surveille les conditions météos, et donne des prévisions"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:12
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
 msgid "weather-storm"
 msgstr "weather-storm"
 

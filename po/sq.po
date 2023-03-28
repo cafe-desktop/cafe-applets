@@ -487,10 +487,10 @@ msgstr ""
 
 #: charpick/charpick.c:587
 msgid ""
-"Mate Panel applet for selecting strange characters that are not on my "
+"Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
-"Applet i Panelit Mate për zgjedhjen e simboleve të veçantë që nuk gjenden në"
+"Applet i Panelit Cafe për zgjedhjen e simboleve të veçantë që nuk gjenden në"
 " tastierë. Rilëshuar nën Liçencën e Përgjithshme Publike GNU."
 
 #: charpick/charpick.c:699 charpick/charpick.c:713
@@ -989,7 +989,7 @@ msgid "_Update"
 msgstr "_Përditëso"
 
 #: cafeweather/cafeweather-applet.c:345
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:9
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Weather Report"
 msgstr "Njoftimet e motit"
 
@@ -1279,21 +1279,21 @@ msgstr "Gjej _pasardhësen"
 msgid "Location"
 msgstr "Vendodhja"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:5
-msgid "Mateweather Applet Factory"
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:5
+msgid "Cafeweather Applet Factory"
 msgstr ""
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:6
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for creating the weather applet."
 msgstr "Fabrika për krijimin e miniaplikativit të motit."
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:10
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "Vëzhgo të dhënat e motit dhe parashikimet"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:12
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
 msgid "weather-storm"
 msgstr ""
 

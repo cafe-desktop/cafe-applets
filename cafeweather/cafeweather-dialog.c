@@ -27,7 +27,7 @@
 #include "cafeweather-pref.h"
 #include "cafeweather-dialog.h"
 
-struct _MateWeatherDialogPrivate {
+struct _CafeWeatherDialogPrivate {
 	GtkWidget* cond_location;
 	GtkWidget* cond_update;
 	GtkWidget* cond_cond;
@@ -45,7 +45,7 @@ struct _MateWeatherDialogPrivate {
 	GtkWidget* forecast_text;
 	GtkWidget* radar_image;
 
-	MateWeatherApplet* applet;
+	CafeWeatherApplet* applet;
 };
 
 enum {
@@ -53,12 +53,12 @@ enum {
 	PROP_MATEWEATHER_APPLET,
 };
 
-G_DEFINE_TYPE_WITH_PRIVATE (MateWeatherDialog, cafeweather_dialog, GTK_TYPE_DIALOG);
+G_DEFINE_TYPE_WITH_PRIVATE (CafeWeatherDialog, cafeweather_dialog, GTK_TYPE_DIALOG);
 
 #define MONOSPACE_FONT_SCHEMA  "org.cafe.interface"
 #define MONOSPACE_FONT_KEY     "monospace-font-name"
 
-static void cafeweather_dialog_save_geometry(MateWeatherDialog* dialog)
+static void cafeweather_dialog_save_geometry(CafeWeatherDialog* dialog)
 {
 	GSettings* settings;
 	int w, h;
@@ -74,7 +74,7 @@ static void cafeweather_dialog_save_geometry(MateWeatherDialog* dialog)
 #endif
 }
 
-static void cafeweather_dialog_load_geometry(MateWeatherDialog* dialog)
+static void cafeweather_dialog_load_geometry(CafeWeatherDialog* dialog)
 {
 	GSettings* settings;
 	int w, h;
@@ -93,7 +93,7 @@ static void cafeweather_dialog_load_geometry(MateWeatherDialog* dialog)
 #endif
 }
 
-static void response_cb(MateWeatherDialog* dialog, gint id, gpointer data)
+static void response_cb(CafeWeatherDialog* dialog, gint id, gpointer data)
 {
     if (id == GTK_RESPONSE_OK) {
 	cafeweather_update (dialog->priv->applet);
@@ -140,10 +140,10 @@ static gchar* replace_multiple_new_lines(gchar* s)
 	return prev_s;
 }
 
-static void cafeweather_dialog_create(MateWeatherDialog* dialog)
+static void cafeweather_dialog_create(CafeWeatherDialog* dialog)
 {
-  MateWeatherDialogPrivate *priv;
-  MateWeatherApplet *gw_applet;
+  CafeWeatherDialogPrivate *priv;
+  CafeWeatherApplet *gw_applet;
 
   GtkWidget *weather_vbox;
   GtkWidget *weather_notebook;
@@ -532,8 +532,8 @@ override_widget_font (GtkWidget            *widget,
     if (!provider_added)
         provider = gtk_css_provider_new ();
 
-    gtk_widget_set_name(GTK_WIDGET(widget), "MateWeatherAppletTextView");
-    css = g_strdup_printf ("#MateWeatherAppletTextView { %s %s %s %s }", family, weight, style, size);
+    gtk_widget_set_name(GTK_WIDGET(widget), "CafeWeatherAppletTextView");
+    css = g_strdup_printf ("#CafeWeatherAppletTextView { %s %s %s %s }", family, weight, style, size);
     gtk_css_provider_load_from_data (provider, css, -1, NULL);
 
     if (!provider_added) {
@@ -549,10 +549,10 @@ override_widget_font (GtkWidget            *widget,
     g_free (size);
 }
 
-void cafeweather_dialog_update(MateWeatherDialog* dialog)
+void cafeweather_dialog_update(CafeWeatherDialog* dialog)
 {
-    MateWeatherDialogPrivate *priv;
-    MateWeatherApplet *gw_applet;
+    CafeWeatherDialogPrivate *priv;
+    CafeWeatherApplet *gw_applet;
     gchar *forecast;
     GtkTextBuffer *buffer;
     PangoFontDescription *font_desc;
@@ -617,7 +617,7 @@ void cafeweather_dialog_update(MateWeatherDialog* dialog)
 
 static void cafeweather_dialog_set_property(GObject* object, guint prop_id, const GValue* value, GParamSpec* pspec)
 {
-    MateWeatherDialog *dialog = MATEWEATHER_DIALOG (object);
+    CafeWeatherDialog *dialog = MATEWEATHER_DIALOG (object);
 
     switch (prop_id) {
 	case PROP_MATEWEATHER_APPLET:
@@ -628,7 +628,7 @@ static void cafeweather_dialog_set_property(GObject* object, guint prop_id, cons
 
 static void cafeweather_dialog_get_property(GObject* object, guint prop_id, GValue* value, GParamSpec* pspec)
 {
-    MateWeatherDialog *dialog = MATEWEATHER_DIALOG (object);
+    CafeWeatherDialog *dialog = MATEWEATHER_DIALOG (object);
 
     switch (prop_id) {
 	case PROP_MATEWEATHER_APPLET:
@@ -637,7 +637,7 @@ static void cafeweather_dialog_get_property(GObject* object, guint prop_id, GVal
     }
 }
 
-static void cafeweather_dialog_init(MateWeatherDialog* self)
+static void cafeweather_dialog_init(CafeWeatherDialog* self)
 {
     self->priv = cafeweather_dialog_get_instance_private (self);
 }
@@ -645,7 +645,7 @@ static void cafeweather_dialog_init(MateWeatherDialog* self)
 static GObject* cafeweather_dialog_constructor(GType type, guint n_construct_params, GObjectConstructParam* construct_params)
 {
     GObject *object;
-    MateWeatherDialog *self;
+    CafeWeatherDialog *self;
 
     object = G_OBJECT_CLASS (cafeweather_dialog_parent_class)->
         constructor (type, n_construct_params, construct_params);
@@ -657,7 +657,7 @@ static GObject* cafeweather_dialog_constructor(GType type, guint n_construct_par
     return object;
 }
 
-GtkWidget* cafeweather_dialog_new(MateWeatherApplet* applet)
+GtkWidget* cafeweather_dialog_new(CafeWeatherApplet* applet)
 {
 	return g_object_new(MATEWEATHER_TYPE_DIALOG,
 		"cafeweather-applet", applet,
@@ -666,14 +666,14 @@ GtkWidget* cafeweather_dialog_new(MateWeatherApplet* applet)
 
 static void cafeweather_dialog_unrealize(GtkWidget* widget)
 {
-    MateWeatherDialog* self = MATEWEATHER_DIALOG(widget);
+    CafeWeatherDialog* self = MATEWEATHER_DIALOG(widget);
 
     cafeweather_dialog_save_geometry(self);
 
     GTK_WIDGET_CLASS(cafeweather_dialog_parent_class)->unrealize(widget);
 }
 
-static void cafeweather_dialog_class_init(MateWeatherDialogClass* klass)
+static void cafeweather_dialog_class_init(CafeWeatherDialogClass* klass)
 {
     GObjectClass *object_class = G_OBJECT_CLASS (klass);
     GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
@@ -685,6 +685,6 @@ static void cafeweather_dialog_class_init(MateWeatherDialogClass* klass)
     object_class->constructor = cafeweather_dialog_constructor;
     widget_class->unrealize = cafeweather_dialog_unrealize;
 
-    /* This becomes an OBJECT property when MateWeatherApplet is redone */
-    g_object_class_install_property(object_class, PROP_MATEWEATHER_APPLET, g_param_spec_pointer ("cafeweather-applet", "MateWeather Applet", "The MateWeather Applet", G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY));
+    /* This becomes an OBJECT property when CafeWeatherApplet is redone */
+    g_object_class_install_property(object_class, PROP_MATEWEATHER_APPLET, g_param_spec_pointer ("cafeweather-applet", "CafeWeather Applet", "The CafeWeather Applet", G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY));
 }

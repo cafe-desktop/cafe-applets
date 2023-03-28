@@ -52,7 +52,7 @@
 
 typedef struct
 {
-    MatePanelApplet   *applet;
+    CafePanelApplet   *applet;
 
     GSettings         *settings;
 
@@ -88,7 +88,7 @@ static char *ui = "<menuitem name='Item 1' action='Preferences' />"
                   "<menuitem name='Item 2' action='About' />";
 
 static void
-command_applet_destroy (MatePanelApplet *applet_widget, CommandApplet *command_applet)
+command_applet_destroy (CafePanelApplet *applet_widget, CommandApplet *command_applet)
 {
     g_assert (command_applet);
 
@@ -436,7 +436,7 @@ command_execute (CommandApplet *command_applet)
 }
 
 static gboolean
-command_applet_fill (MatePanelApplet* applet)
+command_applet_fill (CafePanelApplet* applet)
 {
     CommandApplet *command_applet;
 
@@ -511,7 +511,7 @@ command_applet_fill (MatePanelApplet* applet)
 
 /* this function, called by cafe-panel, will create the applet */
 static gboolean
-command_factory (MatePanelApplet* applet, const char* iid, gpointer data)
+command_factory (CafePanelApplet* applet, const char* iid, gpointer data)
 {
     gboolean retval = FALSE;
 

@@ -174,7 +174,7 @@ start_procman_cb (GtkAction       *action,
 }
 
 static void
-multiload_change_size_cb(MatePanelApplet *applet, gint size, gpointer data)
+multiload_change_size_cb(CafePanelApplet *applet, gint size, gpointer data)
 {
 	MultiloadApplet *ma = (MultiloadApplet *)data;
 
@@ -184,7 +184,7 @@ multiload_change_size_cb(MatePanelApplet *applet, gint size, gpointer data)
 }
 
 static void
-multiload_change_orient_cb(MatePanelApplet *applet, gint arg1, gpointer data)
+multiload_change_orient_cb(CafePanelApplet *applet, gint arg1, gpointer data)
 {
 	MultiloadApplet *ma = data;
 	multiload_applet_refresh((MultiloadApplet *)data);
@@ -430,7 +430,7 @@ void
 multiload_applet_refresh(MultiloadApplet *ma)
 {
 	gint i;
-	MatePanelAppletOrient orientation;
+	CafePanelAppletOrient orientation;
 
 	/* stop and free the old graphs */
 	for (i = 0; i < NGRAPHS; i++)
@@ -495,7 +495,7 @@ static const GtkActionEntry multiload_menu_actions [] = {
 
 /* create a box and stuff the load graphs inside of it */
 static gboolean
-multiload_applet_new(MatePanelApplet *applet, const gchar *iid, gpointer data)
+multiload_applet_new(CafePanelApplet *applet, const gchar *iid, gpointer data)
 {
 	GtkStyleContext *context;
 	MultiloadApplet *ma;
@@ -573,7 +573,7 @@ multiload_applet_new(MatePanelApplet *applet, const gchar *iid, gpointer data)
 }
 
 static gboolean
-multiload_factory (MatePanelApplet *applet,
+multiload_factory (CafePanelApplet *applet,
 				const gchar *iid,
 				gpointer data)
 {

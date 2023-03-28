@@ -522,7 +522,7 @@ msgstr ""
 
 #: charpick/charpick.c:587
 msgid ""
-"Mate Panel applet for selecting strange characters that are not on my "
+"Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
 "Applet pro panel MATE sloužící k výběru znaků, které není možno zadat z "
@@ -1032,7 +1032,7 @@ msgid "_Update"
 msgstr "_Aktualizovat"
 
 #: cafeweather/cafeweather-applet.c:345
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:9
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Weather Report"
 msgstr "Zprávy o počasí"
 
@@ -1320,21 +1320,21 @@ msgstr "Hledat _následující"
 msgid "Location"
 msgstr "Poloha"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:5
-msgid "Mateweather Applet Factory"
-msgstr "Generátor appletu Mateweather"
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:5
+msgid "Cafeweather Applet Factory"
+msgstr "Generátor appletu Cafeweather"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:6
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for creating the weather applet."
 msgstr "Generátor appletu počasí."
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:10
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "Sleduje aktuální počasí a předpovědi"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:12
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
 msgid "weather-storm"
 msgstr "weather-storm"
 

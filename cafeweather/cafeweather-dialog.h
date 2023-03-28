@@ -22,33 +22,33 @@
 G_BEGIN_DECLS
 
 #define MATEWEATHER_TYPE_DIALOG		(cafeweather_dialog_get_type ())
-#define MATEWEATHER_DIALOG(obj)		(G_TYPE_CHECK_INSTANCE_CAST ((obj), MATEWEATHER_TYPE_DIALOG, MateWeatherDialog))
-#define MATEWEATHER_DIALOG_CLASS(klass)	(G_TYPE_CHECK_CLASS_CAST ((klass), MATEWEATHER_TYPE_DIALOG, MateWeatherDialogClass))
+#define MATEWEATHER_DIALOG(obj)		(G_TYPE_CHECK_INSTANCE_CAST ((obj), MATEWEATHER_TYPE_DIALOG, CafeWeatherDialog))
+#define MATEWEATHER_DIALOG_CLASS(klass)	(G_TYPE_CHECK_CLASS_CAST ((klass), MATEWEATHER_TYPE_DIALOG, CafeWeatherDialogClass))
 #define MATEWEATHER_IS_DIALOG(obj)		(G_TYPE_CHECK_INSTANCE_TYPE ((obj), MATEWEATHER_TYPE_DIALOG))
 #define MATEWEATHER_IS_DIALOG_CLASS(klass)	(G_TYPE_CHECK_CLASS_TYPE ((klass), MATEWEATHER_TYPE_DIALOG))
-#define MATEWEATHER_DIALOG_GET_CLASS(obj)	(G_TYPE_INSTANCE_GET_CLASS ((obj), MATEWEATHER_TYPE_DIALOG, MateWeatherDialogClass))
+#define MATEWEATHER_DIALOG_GET_CLASS(obj)	(G_TYPE_INSTANCE_GET_CLASS ((obj), MATEWEATHER_TYPE_DIALOG, CafeWeatherDialogClass))
 
-typedef struct _MateWeatherDialog MateWeatherDialog;
-typedef struct _MateWeatherDialogPrivate MateWeatherDialogPrivate;
-typedef struct _MateWeatherDialogClass MateWeatherDialogClass;
+typedef struct _CafeWeatherDialog CafeWeatherDialog;
+typedef struct _CafeWeatherDialogPrivate CafeWeatherDialogPrivate;
+typedef struct _CafeWeatherDialogClass CafeWeatherDialogClass;
 
-struct _MateWeatherDialog
+struct _CafeWeatherDialog
 {
 	GtkDialog parent;
 
 	/* private */
-	MateWeatherDialogPrivate *priv;
+	CafeWeatherDialogPrivate *priv;
 };
 
 
-struct _MateWeatherDialogClass
+struct _CafeWeatherDialogClass
 {
 	GtkDialogClass parent_class;
 };
 
 GType		 cafeweather_dialog_get_type	(void);
-GtkWidget	*cafeweather_dialog_new		(MateWeatherApplet *applet);
-void		 cafeweather_dialog_update		(MateWeatherDialog *dialog);
+GtkWidget	*cafeweather_dialog_new		(CafeWeatherApplet *applet);
+void		 cafeweather_dialog_update		(CafeWeatherDialog *dialog);
 
 G_END_DECLS
 

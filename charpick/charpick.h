@@ -57,5 +57,5 @@ void add_edit_dialog_create (charpick_data	 *curr_data,
 void set_atk_name_description (GtkWidget         *widget,
 			       const char        *name,
 			       const char        *description);
-gboolean key_writable (MatePanelApplet *applet, const char *key);
+gboolean key_writable (CafePanelApplet *applet, const char *key);
 

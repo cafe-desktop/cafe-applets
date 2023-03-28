@@ -276,7 +276,7 @@ destroy_eyes (EyesApplet *eyes_applet)
 }
 
 static EyesApplet *
-create_eyes (MatePanelApplet *applet)
+create_eyes (CafePanelApplet *applet)
 {
 	EyesApplet *eyes_applet = g_new0 (EyesApplet, 1);
 
@@ -380,7 +380,7 @@ set_atk_name_description (GtkWidget *widget, const gchar *name,
 }
 
 static gboolean
-geyes_applet_fill (MatePanelApplet *applet)
+geyes_applet_fill (CafePanelApplet *applet)
 {
 	EyesApplet *eyes_applet;
 	GtkActionGroup *action_group;
@@ -440,7 +440,7 @@ geyes_applet_fill (MatePanelApplet *applet)
 }
 
 static gboolean
-geyes_applet_factory (MatePanelApplet *applet,
+geyes_applet_factory (CafePanelApplet *applet,
 		      const gchar *iid,
 		      gpointer     data)
 {

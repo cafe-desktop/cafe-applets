@@ -475,10 +475,10 @@ msgstr ""
 
 #: charpick/charpick.c:587
 msgid ""
-"Mate Panel applet for selecting strange characters that are not on my "
+"Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
-"Klaviaturanda olmayan xüsusi hərfləri seçmək üçün balaca bir Mate panel "
+"Klaviaturanda olmayan xüsusi hərfləri seçmək üçün balaca bir Cafe panel "
 "appleti .GNU General Public Licence'ə görə nəşr edilib."
 
 #: charpick/charpick.c:699 charpick/charpick.c:713
@@ -967,7 +967,7 @@ msgid "_Update"
 msgstr "_Güncəllə"
 
 #: cafeweather/cafeweather-applet.c:345
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:9
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Weather Report"
 msgstr "Hava Təxmini Raportu"
 
@@ -1252,21 +1252,21 @@ msgstr "_Sonrakını Tap"
 msgid "Location"
 msgstr "Mövqe"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:5
-msgid "Mateweather Applet Factory"
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:5
+msgid "Cafeweather Applet Factory"
 msgstr ""
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:6
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for creating the weather applet."
 msgstr "Hava apleti yaradmaq üçün e'malatxana."
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:10
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "Hazırkı hava vəziyyətini və təxmini izlə"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:12
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
 msgid "weather-storm"
 msgstr ""
 

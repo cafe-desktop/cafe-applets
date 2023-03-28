@@ -2,7 +2,7 @@
 # Translators:
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
-# Mateusz Mikołajczyk <mikolajczyk.cafeusz@gmail.com>, 2020
+# Cafeusz Mikołajczyk <mikolajczyk.cafeusz@gmail.com>, 2020
 # clefebvre <clement.lefebvre@linuxmint.com>, 2020
 # Dominik Adrian Grzywak, 2020
 # Jan Bońkowski <bonkowskijan@gmail.com>, 2020

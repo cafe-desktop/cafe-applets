@@ -38,7 +38,7 @@ cafeweather/cafeweather-applet.c
 cafeweather/cafeweather-dialog.c
 cafeweather/cafeweather-pref.c
 cafeweather/main.c
-cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in
+cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in
 # NB. these are actually separate files
 multiload/linux-proc.c
 multiload/load-graph.c

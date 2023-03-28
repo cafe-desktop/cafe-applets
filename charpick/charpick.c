@@ -274,7 +274,7 @@ static void
 menuitem_activated (GtkMenuItem *menuitem, charpick_data *curr_data)
 {
 	gchar *string;
-	MatePanelApplet *applet = MATE_PANEL_APPLET (curr_data->applet);
+	CafePanelApplet *applet = MATE_PANEL_APPLET (curr_data->applet);
 	
 	string = g_object_get_data (G_OBJECT (menuitem), "string");
 	if (g_ascii_strcasecmp (curr_data->charlist, string) == 0)
@@ -527,7 +527,7 @@ build_table(charpick_data *p_curr_data)
   
 }
 
-static void applet_size_allocate(MatePanelApplet *applet, GtkAllocation *allocation, gpointer data)
+static void applet_size_allocate(CafePanelApplet *applet, GtkAllocation *allocation, gpointer data)
 {
   charpick_data *curr_data = data;
   if (curr_data->panel_vertical) {
@@ -544,7 +544,7 @@ static void applet_size_allocate(MatePanelApplet *applet, GtkAllocation *allocat
   return;
 }
 
-static void applet_change_orient(MatePanelApplet *applet, MatePanelAppletOrient o, gpointer data)
+static void applet_change_orient(CafePanelApplet *applet, CafePanelAppletOrient o, gpointer data)
 {
   charpick_data *curr_data = data;
   if (o == MATE_PANEL_APPLET_ORIENT_UP ||
@@ -585,7 +585,7 @@ about (GtkAction     *action,
 	"version",	VERSION,
 	"copyright",	_("Copyright \xc2\xa9 1998, 2004-2005 GNOME Applets Maintainers and others\n"
 	                  "Copyright \xc2\xa9 2012-2020 MATE developers"),
-	"comments",	_("Mate Panel applet for selecting strange "
+	"comments",	_("Cafe Panel applet for selecting strange "
 			  "characters that are not on my keyboard. "
 			  "Released under GNU General Public Licence."),
 	"authors",	authors,
@@ -643,7 +643,7 @@ save_chartable (charpick_data *curr_data)
 static void
 get_chartable (charpick_data *curr_data)
 {
-	MatePanelApplet *applet = MATE_PANEL_APPLET (curr_data->applet);
+	CafePanelApplet *applet = MATE_PANEL_APPLET (curr_data->applet);
 	gint i, n;
 	GList *value = NULL;
 	
@@ -701,9 +701,9 @@ make_applet_accessible (GtkWidget *applet)
 }
 
 static gboolean
-charpicker_applet_fill (MatePanelApplet *applet)
+charpicker_applet_fill (CafePanelApplet *applet)
 {
-  MatePanelAppletOrient orientation;
+  CafePanelAppletOrient orientation;
   charpick_data *curr_data;
   GdkAtom utf8_atom;
   GList *list;
@@ -813,7 +813,7 @@ charpicker_applet_fill (MatePanelApplet *applet)
 }
 
 static gboolean
-charpicker_applet_factory (MatePanelApplet *applet,
+charpicker_applet_factory (CafePanelApplet *applet,
 			   const gchar          *iid,
 			   gpointer              data)
 {

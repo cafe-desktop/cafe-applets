@@ -479,10 +479,10 @@ msgstr ""
 
 #: charpick/charpick.c:587
 msgid ""
-"Mate Panel applet for selecting strange characters that are not on my "
+"Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
-"চাবিৰ ফলকত অনুপস্থিত বিশেষ অক্ষৰ নিৰ্বাচনৰ বাবে ব্যৱহৃত Mate Panel এপ্লেট । "
+"চাবিৰ ফলকত অনুপস্থিত বিশেষ অক্ষৰ নিৰ্বাচনৰ বাবে ব্যৱহৃত Cafe Panel এপ্লেট । "
 "GNU সাধাৰণ ৰাজহুৱা লাইসেন্সৰ অধীন বিতৰণ কৰা হৈছে ।"
 
 #: charpick/charpick.c:699 charpick/charpick.c:713
@@ -979,7 +979,7 @@ msgid "_Update"
 msgstr "আপডেট কৰা হ'ব (_U)"
 
 #: cafeweather/cafeweather-applet.c:345
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:9
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Weather Report"
 msgstr "আবহাৱৰ সংবাদ"
 
@@ -1267,21 +1267,21 @@ msgstr "পৰবৰ্তী উপস্থিতি অনুসন্ধা�
 msgid "Location"
 msgstr "অবস্থান"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:5
-msgid "Mateweather Applet Factory"
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:5
+msgid "Cafeweather Applet Factory"
 msgstr ""
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:6
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for creating the weather applet."
 msgstr "আবহাৱ এপ্লেট নিৰ্মাণৰ কলঘৰ ।"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:10
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "আবহাৱৰ বৰ্তমান অৱস্থা আৰু পূৰ্বাভাস নিৰীক্ষণ কৰক"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:12
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
 msgid "weather-storm"
 msgstr ""
 

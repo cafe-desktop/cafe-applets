@@ -16,7 +16,7 @@
  *
  *  Netspeed Applet was writen by Jörgen Scheibengruber <mfcn@gmx.de>
  *
- *  Mate Netspeed Applet migrated by Stefano Karapetsas <stefano@karapetsas.com>
+ *  Cafe Netspeed Applet migrated by Stefano Karapetsas <stefano@karapetsas.com>
  */
 
 #ifdef HAVE_CONFIG_H

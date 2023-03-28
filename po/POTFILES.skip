@@ -9,7 +9,7 @@ charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.in
 cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.in
 drivemount/drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.in
 geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.in
-cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.in
+cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.in
 cafeweather/Locations.xml.in
 mini-commander/src/org.cafe.applets.MiniCommanderApplet.cafe-panel-applet.in
 mixer/org.cafe.applets.MixerApplet.cafe-panel-applet.in

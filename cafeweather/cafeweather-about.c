@@ -23,7 +23,7 @@
 #include "cafeweather.h"
 #include "cafeweather-about.h"
 
-void cafeweather_about_run(MateWeatherApplet* gw_applet)
+void cafeweather_about_run(CafeWeatherApplet* gw_applet)
 {
 	static const gchar* authors[] = {
 		"Todd Kulesza <fflewddur@dropline.net>",

@@ -512,7 +512,7 @@ msgstr ""
 
 #: charpick/charpick.c:587
 msgid ""
-"Mate Panel applet for selecting strange characters that are not on my "
+"Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
 "Applet voor het kiezen van bijzondere tekens en symbolen die niet op het "
@@ -939,7 +939,7 @@ msgstr "Over Eyes"
 
 #: geyes/geyes.c:180
 msgid "A goofy set of eyes for the MATE panel. They follow your mouse."
-msgstr "Een alziend paar ogen voor het Mate-paneel. Ze volgen de muis!"
+msgstr "Een alziend paar ogen voor het Cafe-paneel. Ze volgen de muis!"
 
 #: geyes/geyes.c:182
 msgid ""
@@ -1023,7 +1023,7 @@ msgid "_Update"
 msgstr "_Bijwerken"
 
 #: cafeweather/cafeweather-applet.c:345
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:9
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Weather Report"
 msgstr "Weerbericht"
 
@@ -1313,21 +1313,21 @@ msgstr "V_olgende zoeken"
 msgid "Location"
 msgstr "Locatie"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:5
-msgid "Mateweather Applet Factory"
-msgstr "Mate Weerbericht Applet Fabriek"
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:5
+msgid "Cafeweather Applet Factory"
+msgstr "Cafe Weerbericht Applet Fabriek"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:6
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for creating the weather applet."
 msgstr "Fabriek om het weerbericht-applet te maken."
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:10
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "Bekijk het huidige weer, en de vooruitzichten"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:12
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
 msgid "weather-storm"
 msgstr "weather-storm"
 
@@ -2596,7 +2596,7 @@ msgstr ""
 
 #: stickynotes/stickynotes_applet_callbacks.c:384
 msgid "Sticky Notes for the MATE Desktop Environment"
-msgstr "Memo's voor de Mate-werkomgeving"
+msgstr "Memo's voor de Cafe-werkomgeving"
 
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:5
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:6
@@ -2765,7 +2765,7 @@ msgid ""
 "A MATE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
 msgstr ""
-"Een Mate-prullenbak voor op uw paneel. Hiermee kunt u in de prullenbak "
+"Een Cafe-prullenbak voor op uw paneel. Hiermee kunt u in de prullenbak "
 "kijken of er objecten naar toe slepen."
 
 #: trashapplet/src/trashapplet.c:462

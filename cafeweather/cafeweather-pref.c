@@ -37,7 +37,7 @@
 
 #define NEVER_SENSITIVE "never_sensitive"
 
-struct _MateWeatherPrefPrivate {
+struct _CafeWeatherPrefPrivate {
 	GtkWidget* notebook;
 
 	GtkWidget* basic_temp_combo;
@@ -64,7 +64,7 @@ struct _MateWeatherPrefPrivate {
 
 	GtkTreeModel* model;
 
-	MateWeatherApplet* applet;
+	CafeWeatherApplet* applet;
 };
 
 enum {
@@ -72,7 +72,7 @@ enum {
 	PROP_MATEWEATHER_APPLET,
 };
 
-G_DEFINE_TYPE_WITH_PRIVATE (MateWeatherPref, cafeweather_pref, GTK_TYPE_DIALOG);
+G_DEFINE_TYPE_WITH_PRIVATE (CafeWeatherPref, cafeweather_pref, GTK_TYPE_DIALOG);
 
 /* set sensitive and setup NEVER_SENSITIVE appropriately */
 static void hard_set_sensitive(GtkWidget* w, gboolean sensitivity)
@@ -143,7 +143,7 @@ void set_access_namedesc(GtkWidget* widget, const gchar* name, const gchar* desc
  * and CONTROLLER_FOR relations for the components
  * in cafeweather preference dialog.
  */
-static void cafeweather_pref_set_accessibility(MateWeatherPref* pref)
+static void cafeweather_pref_set_accessibility(CafeWeatherPref* pref)
 {
     /* Relation between components in General page */
     add_atk_relation(pref->priv->basic_update_btn, pref->priv->basic_update_spin, ATK_RELATION_CONTROLLER_FOR);
@@ -162,9 +162,9 @@ static void cafeweather_pref_set_accessibility(MateWeatherPref* pref)
 
 
 /* Update pref dialog from cafeweather_pref */
-static gboolean update_dialog(MateWeatherPref* pref)
+static gboolean update_dialog(CafeWeatherPref* pref)
 {
-    MateWeatherApplet* gw_applet = pref->priv->applet;
+    CafeWeatherApplet* gw_applet = pref->priv->applet;
 
     g_return_val_if_fail(gw_applet->cafeweather_pref.location != NULL, FALSE);
 
@@ -200,9 +200,9 @@ static gboolean update_dialog(MateWeatherPref* pref)
     return TRUE;
 }
 
-static void row_selected_cb(GtkTreeSelection* selection, MateWeatherPref* pref)
+static void row_selected_cb(GtkTreeSelection* selection, CafeWeatherPref* pref)
 {
-	MateWeatherApplet* gw_applet = pref->priv->applet;
+	CafeWeatherApplet* gw_applet = pref->priv->applet;
 	GtkTreeModel* model;
 	WeatherLocation* loc = NULL;
 	GtkTreeIter iter;
@@ -237,7 +237,7 @@ static void row_selected_cb(GtkTreeSelection* selection, MateWeatherPref* pref)
 
 static gboolean compare_location(GtkTreeModel* model, GtkTreePath* path, GtkTreeIter* iter, gpointer user_data)
 {
-    MateWeatherPref* pref = user_data;
+    CafeWeatherPref* pref = user_data;
     WeatherLocation* loc;
     GtkTreeView* view;
 
@@ -261,9 +261,9 @@ static gboolean compare_location(GtkTreeModel* model, GtkTreePath* path, GtkTree
     return TRUE;
 }
 
-static void load_locations(MateWeatherPref* pref)
+static void load_locations(CafeWeatherPref* pref)
 {
-	MateWeatherApplet* gw_applet = pref->priv->applet;
+	CafeWeatherApplet* gw_applet = pref->priv->applet;
 	GtkTreeView* tree = GTK_TREE_VIEW(pref->priv->tree);
 	GtkTreeViewColumn* column;
 	GtkCellRenderer* cell_renderer;
@@ -294,9 +294,9 @@ static void load_locations(MateWeatherPref* pref)
 	}
 }
 
-static void show_notifications_toggled(GtkToggleButton* button, MateWeatherPref* pref)
+static void show_notifications_toggled(GtkToggleButton* button, CafeWeatherPref* pref)
 {
-	MateWeatherApplet* gw_applet = pref->priv->applet;
+	CafeWeatherApplet* gw_applet = pref->priv->applet;
 	
 	gboolean toggled = gtk_toggle_button_get_active(button);
 	
@@ -310,9 +310,9 @@ static void show_notifications_toggled(GtkToggleButton* button, MateWeatherPref*
 	}
 }
 
-static void auto_update_toggled(GtkToggleButton* button, MateWeatherPref* pref)
+static void auto_update_toggled(GtkToggleButton* button, CafeWeatherPref* pref)
 {
-	MateWeatherApplet* gw_applet = pref->priv->applet;
+	CafeWeatherApplet* gw_applet = pref->priv->applet;
 	gboolean toggled;
 	gint nxtSunEvent;
 
@@ -343,9 +343,9 @@ static void auto_update_toggled(GtkToggleButton* button, MateWeatherPref* pref)
 	}
 }
 
-static void temp_combo_changed_cb(GtkComboBox* combo, MateWeatherPref* pref)
+static void temp_combo_changed_cb(GtkComboBox* combo, CafeWeatherPref* pref)
 {
-	MateWeatherApplet* gw_applet = pref->priv->applet;
+	CafeWeatherApplet* gw_applet = pref->priv->applet;
 	TempUnit new_unit, old_unit;
 
 	g_return_if_fail(gw_applet != NULL);
@@ -371,9 +371,9 @@ static void temp_combo_changed_cb(GtkComboBox* combo, MateWeatherPref* pref)
 	}
 }
 
-static void speed_combo_changed_cb(GtkComboBox* combo, MateWeatherPref* pref)
+static void speed_combo_changed_cb(GtkComboBox* combo, CafeWeatherPref* pref)
 {
-	MateWeatherApplet* gw_applet = pref->priv->applet;
+	CafeWeatherApplet* gw_applet = pref->priv->applet;
 	SpeedUnit new_unit, old_unit;
 
 	g_return_if_fail(gw_applet != NULL);
@@ -397,9 +397,9 @@ static void speed_combo_changed_cb(GtkComboBox* combo, MateWeatherPref* pref)
 	}
 }
 
-static void pres_combo_changed_cb(GtkComboBox* combo, MateWeatherPref* pref)
+static void pres_combo_changed_cb(GtkComboBox* combo, CafeWeatherPref* pref)
 {
-	MateWeatherApplet* gw_applet = pref->priv->applet;
+	CafeWeatherApplet* gw_applet = pref->priv->applet;
 	PressureUnit new_unit, old_unit;
 
 	g_return_if_fail(gw_applet != NULL);
@@ -423,9 +423,9 @@ static void pres_combo_changed_cb(GtkComboBox* combo, MateWeatherPref* pref)
 	}
 }
 
-static void dist_combo_changed_cb(GtkComboBox* combo, MateWeatherPref* pref)
+static void dist_combo_changed_cb(GtkComboBox* combo, CafeWeatherPref* pref)
 {
-	MateWeatherApplet* gw_applet = pref->priv->applet;
+	CafeWeatherApplet* gw_applet = pref->priv->applet;
 	DistanceUnit new_unit, old_unit;
 
 	g_return_if_fail(gw_applet != NULL);
@@ -449,9 +449,9 @@ static void dist_combo_changed_cb(GtkComboBox* combo, MateWeatherPref* pref)
 	}
 }
 
-static void radar_toggled(GtkToggleButton* button, MateWeatherPref* pref)
+static void radar_toggled(GtkToggleButton* button, CafeWeatherPref* pref)
 {
-    MateWeatherApplet* gw_applet = pref->priv->applet;
+    CafeWeatherApplet* gw_applet = pref->priv->applet;
     gboolean toggled;
 
     toggled = gtk_toggle_button_get_active(button);
@@ -465,9 +465,9 @@ static void radar_toggled(GtkToggleButton* button, MateWeatherPref* pref)
 	}
 }
 
-static void use_radar_url_toggled(GtkToggleButton* button, MateWeatherPref* pref)
+static void use_radar_url_toggled(GtkToggleButton* button, CafeWeatherPref* pref)
 {
-    MateWeatherApplet* gw_applet = pref->priv->applet;
+    CafeWeatherApplet* gw_applet = pref->priv->applet;
     gboolean toggled;
 
     toggled = gtk_toggle_button_get_active(button);
@@ -476,9 +476,9 @@ static void use_radar_url_toggled(GtkToggleButton* button, MateWeatherPref* pref
     soft_set_sensitive(pref->priv->basic_radar_url_hbox, toggled);
 }
 
-static gboolean radar_url_changed(GtkWidget* widget, GdkEventFocus* event, MateWeatherPref* pref)
+static gboolean radar_url_changed(GtkWidget* widget, GdkEventFocus* event, CafeWeatherPref* pref)
 {
-	MateWeatherApplet* gw_applet = pref->priv->applet;
+	CafeWeatherApplet* gw_applet = pref->priv->applet;
 	gchar *text;
 
 	text = gtk_editable_get_chars(GTK_EDITABLE(widget), 0, -1);
@@ -503,9 +503,9 @@ static gboolean radar_url_changed(GtkWidget* widget, GdkEventFocus* event, MateW
 	return FALSE;
 }
 
-static void update_interval_changed(GtkSpinButton* button, MateWeatherPref* pref)
+static void update_interval_changed(GtkSpinButton* button, CafeWeatherPref* pref)
 {
-	MateWeatherApplet* gw_applet = pref->priv->applet;
+	CafeWeatherApplet* gw_applet = pref->priv->applet;
 
 	gw_applet->cafeweather_pref.update_interval = gtk_spin_button_get_value_as_int(button)*60;
 	g_settings_set_int (gw_applet->settings, "auto-update-interval", gw_applet->cafeweather_pref.update_interval);
@@ -635,7 +635,7 @@ static gboolean find_location(GtkTreeModel* model, GtkTreeIter* iter, const gcha
 	return FALSE;
 }
 
-static void find_next_clicked(GtkButton* button, MateWeatherPref* pref)
+static void find_next_clicked(GtkButton* button, CafeWeatherPref* pref)
 {
 	GtkTreeView *tree;
 	GtkTreeModel *model;
@@ -691,7 +691,7 @@ static void find_next_clicked(GtkButton* button, MateWeatherPref* pref)
 	}
 }
 
-static void find_entry_changed(GtkEditable* entry, MateWeatherPref* pref)
+static void find_entry_changed(GtkEditable* entry, CafeWeatherPref* pref)
 {
 	GtkTreeView *tree;
 	GtkTreeModel *model;
@@ -728,7 +728,7 @@ static void find_entry_changed(GtkEditable* entry, MateWeatherPref* pref)
 }
 
 
-static void help_cb(GtkDialog* dialog, MateWeatherPref* pref)
+static void help_cb(GtkDialog* dialog, CafeWeatherPref* pref)
 {
 	gint current_page;
 	gchar *uri;
@@ -755,7 +755,7 @@ static void help_cb(GtkDialog* dialog, MateWeatherPref* pref)
 }
 
 
-static void response_cb(GtkDialog* dialog, gint id, MateWeatherPref* pref)
+static void response_cb(GtkDialog* dialog, gint id, CafeWeatherPref* pref)
 {
 	if (id == GTK_RESPONSE_HELP)
 	{
@@ -768,7 +768,7 @@ static void response_cb(GtkDialog* dialog, gint id, MateWeatherPref* pref)
 }
 
 
-static void cafeweather_pref_create(MateWeatherPref* pref)
+static void cafeweather_pref_create(CafeWeatherPref* pref)
 {
 	GtkWidget* pref_vbox;
 	#ifdef RADARMAP
@@ -1156,7 +1156,7 @@ static void cafeweather_pref_create(MateWeatherPref* pref)
 
 static void cafeweather_pref_set_property(GObject* object, guint prop_id, const GValue* value, GParamSpec *pspec)
 {
-    MateWeatherPref* pref = MATEWEATHER_PREF(object);
+    CafeWeatherPref* pref = MATEWEATHER_PREF(object);
 
     switch (prop_id)
     {
@@ -1169,7 +1169,7 @@ static void cafeweather_pref_set_property(GObject* object, guint prop_id, const 
 
 static void cafeweather_pref_get_property(GObject* object, guint prop_id, GValue* value, GParamSpec* pspec)
 {
-    MateWeatherPref* pref = MATEWEATHER_PREF(object);
+    CafeWeatherPref* pref = MATEWEATHER_PREF(object);
 
     switch (prop_id)
     {
@@ -1180,7 +1180,7 @@ static void cafeweather_pref_get_property(GObject* object, guint prop_id, GValue
 }
 
 
-static void cafeweather_pref_init(MateWeatherPref* self)
+static void cafeweather_pref_init(CafeWeatherPref* self)
 {
 	self->priv = cafeweather_pref_get_instance_private(self);
 }
@@ -1189,7 +1189,7 @@ static void cafeweather_pref_init(MateWeatherPref* self)
 static GObject* cafeweather_pref_constructor(GType type, guint n_construct_params, GObjectConstructParam* construct_params)
 {
     GObject* object;
-    MateWeatherPref* self;
+    CafeWeatherPref* self;
 
     object = G_OBJECT_CLASS(cafeweather_pref_parent_class)->constructor(type, n_construct_params, construct_params);
     self = MATEWEATHER_PREF(object);
@@ -1201,7 +1201,7 @@ static GObject* cafeweather_pref_constructor(GType type, guint n_construct_param
 }
 
 
-GtkWidget* cafeweather_pref_new(MateWeatherApplet* applet)
+GtkWidget* cafeweather_pref_new(CafeWeatherApplet* applet)
 {
     return g_object_new(MATEWEATHER_TYPE_PREF, "cafeweather-applet", applet, NULL);
 }
@@ -1209,7 +1209,7 @@ GtkWidget* cafeweather_pref_new(MateWeatherApplet* applet)
 
 static void cafeweather_pref_finalize(GObject* object)
 {
-	MateWeatherPref* self = MATEWEATHER_PREF(object);
+	CafeWeatherPref* self = MATEWEATHER_PREF(object);
 
 	gtk_tree_model_foreach(self->priv->model, free_data, NULL);
 	g_object_unref(G_OBJECT(self->priv->model));
@@ -1218,7 +1218,7 @@ static void cafeweather_pref_finalize(GObject* object)
 }
 
 
-static void cafeweather_pref_class_init(MateWeatherPrefClass* klass)
+static void cafeweather_pref_class_init(CafeWeatherPrefClass* klass)
 {
     GObjectClass* object_class = G_OBJECT_CLASS(klass);
 
@@ -1229,8 +1229,8 @@ static void cafeweather_pref_class_init(MateWeatherPrefClass* klass)
     object_class->constructor = cafeweather_pref_constructor;
     object_class->finalize = cafeweather_pref_finalize;
 
-    /* This becomes an OBJECT property when MateWeatherApplet is redone */
-    g_object_class_install_property(object_class, PROP_MATEWEATHER_APPLET, g_param_spec_pointer("cafeweather-applet", "MateWeather Applet", "The MateWeather Applet", G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY));
+    /* This becomes an OBJECT property when CafeWeatherApplet is redone */
+    g_object_class_install_property(object_class, PROP_MATEWEATHER_APPLET, g_param_spec_pointer("cafeweather-applet", "CafeWeather Applet", "The CafeWeather Applet", G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY));
 }
 
 

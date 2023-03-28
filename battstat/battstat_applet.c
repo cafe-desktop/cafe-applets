@@ -871,8 +871,8 @@ setup_text_orientation( ProgressData *battstat )
    has changed orientation.
 */
 static void
-change_orient (MatePanelApplet       *applet,
-	       MatePanelAppletOrient  orient,
+change_orient (CafePanelApplet       *applet,
+	       CafePanelAppletOrient  orient,
 	       ProgressData      *battstat)
 {
   if (DEBUG) g_print("change_orient()\n");
@@ -894,7 +894,7 @@ change_orient (MatePanelApplet       *applet,
    is just created or if the size of the panel has changed.
 */
 static void
-size_allocate( MatePanelApplet *applet, GtkAllocation *allocation,
+size_allocate( CafePanelApplet *applet, GtkAllocation *allocation,
                ProgressData *battstat)
 {
   if (DEBUG) g_print("applet_change_pixel_size()\n");
@@ -1102,7 +1102,7 @@ create_layout(ProgressData *battstat)
 /* Called by the factory to fill in the fields for the applet.
  */
 static gboolean
-battstat_applet_fill (MatePanelApplet *applet)
+battstat_applet_fill (CafePanelApplet *applet)
 {
   ProgressData *battstat;
   AtkObject *atk_widget;
@@ -1174,7 +1174,7 @@ battstat_applet_fill (MatePanelApplet *applet)
 
 /* Boilerplate... */
 static gboolean
-battstat_applet_factory (MatePanelApplet *applet,
+battstat_applet_factory (CafePanelApplet *applet,
 			 const gchar          *iid,
 			 gpointer              data)
 {

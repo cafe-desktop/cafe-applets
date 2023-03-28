@@ -24,8 +24,8 @@
 
 G_BEGIN_DECLS
 
-typedef struct _MateWeatherApplet {
-	MatePanelApplet* applet;
+typedef struct _CafeWeatherApplet {
+	CafePanelApplet* applet;
 	WeatherInfo* cafeweather_info;
 
 	GSettings* settings;
@@ -35,19 +35,19 @@ typedef struct _MateWeatherApplet {
 	GtkWidget* label;
 	GtkWidget* image;
 
-	MatePanelAppletOrient orient;
+	CafePanelAppletOrient orient;
 	gint size;
 	gint timeout_tag;
 	gint suncalc_timeout_tag;
 
 	/* preferences  */
-	MateWeatherPrefs cafeweather_pref;
+	CafeWeatherPrefs cafeweather_pref;
 
 	GtkWidget* pref_dialog;
 
 	/* dialog stuff */
 	GtkWidget* details_dialog;
-} MateWeatherApplet;
+} CafeWeatherApplet;
 
 G_END_DECLS
 

@@ -19,10 +19,10 @@
 
 G_BEGIN_DECLS
 
-extern void cafeweather_applet_create(MateWeatherApplet *gw_applet);
+extern void cafeweather_applet_create(CafeWeatherApplet *gw_applet);
 extern gint timeout_cb (gpointer data);
 extern gint suncalc_timeout_cb (gpointer data);
-extern void cafeweather_update (MateWeatherApplet *applet);
+extern void cafeweather_update (CafeWeatherApplet *applet);
 
 G_END_DECLS
 

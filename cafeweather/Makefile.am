@@ -34,7 +34,7 @@ uidir = $(datadir)/cafe/ui
 ui_DATA = cafeweather-applet-menu.xml
 
 appletdir       = $(datadir)/cafe-panel/applets
-applet_in_files = org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in
+applet_in_files = org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in
 applet_DATA     = $(applet_in_files:.cafe-panel-applet.desktop.in=.cafe-panel-applet)
 
 $(applet_in_files): $(applet_in_files).in Makefile
@@ -47,10 +47,10 @@ $(applet_DATA): $(applet_in_files) Makefile
 	$(AM_V_GEN) $(MSGFMT) --desktop --keyword=Name --keyword=Description --template $< -d $(top_srcdir)/po -o $@
 
 servicedir       = $(datadir)/dbus-1/services
-service_in_files = org.cafe.panel.applet.MateWeatherAppletFactory.service.in
+service_in_files = org.cafe.panel.applet.CafeWeatherAppletFactory.service.in
 service_DATA     = $(service_in_files:.service.in=.service)
 
-org.cafe.panel.applet.MateWeatherAppletFactory.service: $(service_in_files)
+org.cafe.panel.applet.CafeWeatherAppletFactory.service: $(service_in_files)
 	$(AM_V_GEN)sed \
             -e "s|\@LIBEXECDIR\@|$(libexecdir)|" \
             $< > $@

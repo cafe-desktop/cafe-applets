@@ -37,7 +37,7 @@ msgstr ""
 #: stickynotes/stickynotes_applet_callbacks.c:368
 #: trashapplet/src/trashapplet.c:421
 msgid "MATE Documentation Team"
-msgstr "Mate dokumentatzeko taldea"
+msgstr "Cafe dokumentatzeko taldea"
 
 #: accessx-status/applet.c:98
 msgid "About AccessX Status"
@@ -491,10 +491,10 @@ msgstr ""
 
 #: charpick/charpick.c:587
 msgid ""
-"Mate Panel applet for selecting strange characters that are not on my "
+"Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
-"Teklatuan ez dauden karaktere arrotzak hautatzeko Mate Paneleko "
+"Teklatuan ez dauden karaktere arrotzak hautatzeko Cafe Paneleko "
 "miniaplikazioa. GNU Lizentzia Publiko Orokorraren pean argitaratua."
 
 #: charpick/charpick.c:699 charpick/charpick.c:713
@@ -991,7 +991,7 @@ msgid "_Update"
 msgstr "_Eguneratu"
 
 #: cafeweather/cafeweather-applet.c:345
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:9
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Weather Report"
 msgstr "Eguraldi-informazioa"
 
@@ -1280,21 +1280,21 @@ msgstr "Bilatu _hurrengoa"
 msgid "Location"
 msgstr "Kokalekua"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:5
-msgid "Mateweather Applet Factory"
-msgstr "Mateweather miniaplikazioaren fabrika"
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:5
+msgid "Cafeweather Applet Factory"
+msgstr "Cafeweather miniaplikazioaren fabrika"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:6
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for creating the weather applet."
 msgstr "Eguraldiaren miniaplikazioa sortzeko fabrika."
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:10
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "Uneko eguraldia eta iragarpenak kontrolatzen ditu"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:12
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
 msgid "weather-storm"
 msgstr ""
 

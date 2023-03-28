@@ -83,7 +83,7 @@ msgstr ""
 #. (itstool) path: revdescription/para
 #: C/index.docbook:70 C/index.docbook:144
 msgid "MATE Documentation Project"
-msgstr "Maten dokumentointiprojekti"
+msgstr "Cafen dokumentointiprojekti"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para

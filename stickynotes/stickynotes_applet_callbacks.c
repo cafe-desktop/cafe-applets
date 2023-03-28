@@ -204,7 +204,7 @@ void install_check_click_on_desktop (void)
 }
 
 /* Applet Callback : Change the panel orientation. */
-void applet_change_orient_cb(MatePanelApplet *cafe_panel_applet, MatePanelAppletOrient orient, StickyNotesApplet *applet)
+void applet_change_orient_cb(CafePanelApplet *cafe_panel_applet, CafePanelAppletOrient orient, StickyNotesApplet *applet)
 {
 	applet->panel_orient = orient;
 }
@@ -228,7 +228,7 @@ void applet_size_allocate_cb(GtkWidget *widget, GtkAllocation *allocation, Stick
 }
 
 /* Applet Callback : Deletes the applet. */
-void applet_destroy_cb (MatePanelApplet *cafe_panel_applet, StickyNotesApplet *applet)
+void applet_destroy_cb (CafePanelApplet *cafe_panel_applet, StickyNotesApplet *applet)
 {
 	GList *notes;
 

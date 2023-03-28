@@ -403,7 +403,7 @@ load_graph_new (MultiloadApplet *ma, guint n, const gchar *label,
                 const gchar *name, LoadGraphDataFunc get_data)
 {
     LoadGraph *g;
-    MatePanelAppletOrient orient;
+    CafePanelAppletOrient orient;
 
     g = g_new0 (LoadGraph, 1);
     g->netspeed_in = netspeed_new(g);

@@ -38,7 +38,7 @@ typedef struct
 typedef struct 
 {
 	/* Applet */
-	MatePanelApplet *applet;
+	CafePanelApplet *applet;
 	GtkWidget   *vbox;
 	GtkWidget   *hbox;
 	GtkWidget   **eyes;

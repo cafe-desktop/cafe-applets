@@ -42,14 +42,14 @@
 #define MAX_CONSECUTIVE_FAULTS (3)
 
 static void about_cb (GtkAction      *action,
-		      MateWeatherApplet *gw_applet)
+		      CafeWeatherApplet *gw_applet)
 {
 
     cafeweather_about_run (gw_applet);
 }
 
 static void help_cb (GtkAction      *action,
-		     MateWeatherApplet *gw_applet)
+		     CafeWeatherApplet *gw_applet)
 {
     GError *error = NULL;
 
@@ -71,7 +71,7 @@ static void help_cb (GtkAction      *action,
 }
 
 static void pref_cb (GtkAction      *action,
-		     MateWeatherApplet *gw_applet)
+		     CafeWeatherApplet *gw_applet)
 {
    if (gw_applet->pref_dialog) {
 	gtk_window_present (GTK_WINDOW (gw_applet->pref_dialog));
@@ -84,7 +84,7 @@ static void pref_cb (GtkAction      *action,
 }
 
 static void details_cb (GtkAction      *action,
-			MateWeatherApplet *gw_applet)
+			CafeWeatherApplet *gw_applet)
 {
    if (gw_applet->details_dialog) {
 	gtk_window_present (GTK_WINDOW (gw_applet->details_dialog));
@@ -98,7 +98,7 @@ static void details_cb (GtkAction      *action,
 }
 
 static void update_cb (GtkAction      *action,
-		       MateWeatherApplet *gw_applet)
+		       CafeWeatherApplet *gw_applet)
 {
     cafeweather_update (gw_applet);
 }
@@ -122,7 +122,7 @@ static const GtkActionEntry weather_applet_menu_actions [] = {
 	  G_CALLBACK (about_cb) }
 };
 
-static void place_widgets (MateWeatherApplet *gw_applet)
+static void place_widgets (CafeWeatherApplet *gw_applet)
 {
     GtkRequisition req;
     int total_size = 0;
@@ -198,18 +198,18 @@ static void place_widgets (MateWeatherApplet *gw_applet)
     gtk_widget_show_all (GTK_WIDGET (gw_applet->applet));
 }
 
-static void change_orient_cb (MatePanelApplet *w, MatePanelAppletOrient o, gpointer data)
+static void change_orient_cb (CafePanelApplet *w, CafePanelAppletOrient o, gpointer data)
 {
-    MateWeatherApplet *gw_applet = (MateWeatherApplet *)data;
+    CafeWeatherApplet *gw_applet = (CafeWeatherApplet *)data;
 	
     gw_applet->orient = o;
     place_widgets(gw_applet);
     return;
 }
 
-static void size_allocate_cb(MatePanelApplet *w, GtkAllocation *allocation, gpointer data)
+static void size_allocate_cb(CafePanelApplet *w, GtkAllocation *allocation, gpointer data)
 {
-    MateWeatherApplet *gw_applet = (MateWeatherApplet *)data;
+    CafeWeatherApplet *gw_applet = (CafeWeatherApplet *)data;
 	
     if ((gw_applet->orient == MATE_PANEL_APPLET_ORIENT_LEFT) || (gw_applet->orient == MATE_PANEL_APPLET_ORIENT_RIGHT)) {
       if (gw_applet->size == allocation->width)
@@ -227,7 +227,7 @@ static void size_allocate_cb(MatePanelApplet *w, GtkAllocation *allocation, gpoi
 
 static gboolean clicked_cb (GtkWidget *widget, GdkEventButton *ev, gpointer data)
 {
-    MateWeatherApplet *gw_applet = data;
+    CafeWeatherApplet *gw_applet = data;
 
     if ((ev == NULL) || (ev->button != 1))
         return FALSE;
@@ -245,7 +245,7 @@ static gboolean clicked_cb (GtkWidget *widget, GdkEventButton *ev, gpointer data
 }
 
 static gboolean 
-key_press_cb (GtkWidget *widget, GdkEventKey *event, MateWeatherApplet *gw_applet)
+key_press_cb (GtkWidget *widget, GdkEventKey *event, CafeWeatherApplet *gw_applet)
 {
 	switch (event->keyval) {	
 	case GDK_KEY_u:
@@ -277,7 +277,7 @@ key_press_cb (GtkWidget *widget, GdkEventKey *event, MateWeatherApplet *gw_apple
 }
 
 static void
-network_changed (GNetworkMonitor *monitor, gboolean available, MateWeatherApplet *gw_applet)
+network_changed (GNetworkMonitor *monitor, gboolean available, CafeWeatherApplet *gw_applet)
 {
     if (available) {
         cafeweather_update (gw_applet);
@@ -286,7 +286,7 @@ network_changed (GNetworkMonitor *monitor, gboolean available, MateWeatherApplet
 
 
 static void
-applet_destroy (GtkWidget *widget, MateWeatherApplet *gw_applet)
+applet_destroy (GtkWidget *widget, CafeWeatherApplet *gw_applet)
 {
     GNetworkMonitor *monitor;
 
@@ -319,7 +319,7 @@ applet_destroy (GtkWidget *widget, MateWeatherApplet *gw_applet)
     weather_info_abort (gw_applet->cafeweather_info);
 }
 
-void cafeweather_applet_create (MateWeatherApplet *gw_applet)
+void cafeweather_applet_create (CafeWeatherApplet *gw_applet)
 {
     GtkActionGroup *action_group;
     gchar          *ui_path;
@@ -367,7 +367,7 @@ void cafeweather_applet_create (MateWeatherApplet *gw_applet)
 
     gw_applet->orient = cafe_panel_applet_get_orient (gw_applet->applet);
 
-    action_group = gtk_action_group_new ("MateWeather Applet Actions");
+    action_group = gtk_action_group_new ("CafeWeather Applet Actions");
     gtk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
     gtk_action_group_add_actions (action_group,
 				  weather_applet_menu_actions,
@@ -394,7 +394,7 @@ void cafeweather_applet_create (MateWeatherApplet *gw_applet)
 
 gint timeout_cb (gpointer data)
 {
-    MateWeatherApplet *gw_applet = (MateWeatherApplet *)data;
+    CafeWeatherApplet *gw_applet = (CafeWeatherApplet *)data;
 	
     cafeweather_update(gw_applet);
     return 0;  /* Do not repeat timeout (will be reset by cafeweather_update) */
@@ -408,7 +408,7 @@ update_finish (WeatherInfo *info, gpointer data)
     char *message, *detail;
 #endif
     char *s;
-    MateWeatherApplet *gw_applet = (MateWeatherApplet *)data;
+    CafeWeatherApplet *gw_applet = (CafeWeatherApplet *)data;
     gint nxtSunEvent;
     const gchar *icon_name;
 
@@ -507,13 +507,13 @@ update_finish (WeatherInfo *info, gpointer data)
 
 gint suncalc_timeout_cb (gpointer data)
 {
-    WeatherInfo *info = ((MateWeatherApplet *)data)->cafeweather_info;
+    WeatherInfo *info = ((CafeWeatherApplet *)data)->cafeweather_info;
     update_finish(info, data);
     return 0;  /* Do not repeat timeout (will be reset by update_finish) */
 }
 
 
-void cafeweather_update (MateWeatherApplet *gw_applet)
+void cafeweather_update (CafeWeatherApplet *gw_applet)
 {
     WeatherPrefs prefs;
     const gchar *icon_name;

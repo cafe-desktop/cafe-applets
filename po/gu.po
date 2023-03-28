@@ -477,10 +477,10 @@ msgstr ""
 
 #: charpick/charpick.c:587
 msgid ""
-"Mate Panel applet for selecting strange characters that are not on my "
+"Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
-"વિચિત્ર અક્ષરો કે જે અક્ષરો મારા કીબોર્ડ પર નથી પસંદ કરવા માટે Mate પેનલની "
+"વિચિત્ર અક્ષરો કે જે અક્ષરો મારા કીબોર્ડ પર નથી પસંદ કરવા માટે Cafe પેનલની "
 "એપ્લેટ GNU સામાન્ય સાર્વજનિક પરવાનગી હેઠળ તે પ્રકાશિત થઇ રહ્યું છે."
 
 #: charpick/charpick.c:699 charpick/charpick.c:713
@@ -976,7 +976,7 @@ msgid "_Update"
 msgstr "સુધારો (_U)"
 
 #: cafeweather/cafeweather-applet.c:345
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:9
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Weather Report"
 msgstr "હવામાનનો અહેવાલ"
 
@@ -1265,21 +1265,21 @@ msgstr "પછીનું શોધો (_N)"
 msgid "Location"
 msgstr "સ્થાન"
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:5
-msgid "Mateweather Applet Factory"
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:5
+msgid "Cafeweather Applet Factory"
 msgstr ""
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:6
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Factory for creating the weather applet."
 msgstr "હવામાન એપ્લેટ બનાવવાનું કારખાનું."
 
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:10
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "વર્તમાન હવામાનની પરિસ્થિતિઓનું ધ્યાન રાખો અને અનુમાન કરો"
 
 #. Translators: Do NOT translate or transliterate this text (this is an icon
 #. file name)!
-#: cafeweather/org.cafe.applets.MateWeatherApplet.cafe-panel-applet.desktop.in.in:12
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
 msgid "weather-storm"
 msgstr ""
 

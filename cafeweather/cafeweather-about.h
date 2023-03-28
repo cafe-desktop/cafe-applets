@@ -19,7 +19,7 @@
 
 G_BEGIN_DECLS
 
-extern void cafeweather_about_run (MateWeatherApplet *gw_applet);
+extern void cafeweather_about_run (CafeWeatherApplet *gw_applet);
 
 G_END_DECLS
 
