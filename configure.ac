@@ -315,7 +315,7 @@ AC_ARG_ENABLE([stickynotes],
     enable_stickynotes=$enableval,
     enable_stickynotes=yes)
 if test "x$enable_stickynotes" = "xyes"; then
-    PKG_CHECK_MODULES(STICKYNOTES, ctksourceview-3.0,
+    PKG_CHECK_MODULES(STICKYNOTES, ctksourceview-4,
                       have_ctksourceview=yes, have_ctksourceview=no)
 
     if test "x$enable_stickynotes" = "xyes" -a "x$have_ctksourceview" = "xno"; then
