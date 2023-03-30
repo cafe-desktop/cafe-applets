@@ -299,7 +299,7 @@
 ### cafe-applets 1.8.0
 
   * Move from cafe-doc-utils to yelp-tools.
-  * Replace libcafewnck with gnome's libwnck.
+  * Replace libcafevnck with gnome's libvnck.
   * Replace mucharmap in with gucharmap.
   * Add Ctk+3 support.
   * New command applet that displays output from a command.

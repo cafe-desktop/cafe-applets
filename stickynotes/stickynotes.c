@@ -23,7 +23,7 @@
 #include <cdk/cdkx.h>
 #include <ctk/ctk.h>
 #define WNCK_I_KNOW_THIS_IS_UNSTABLE 1
-#include <libwnck/libwnck.h>
+#include <libvnck/libvnck.h>
 #include <string.h>
 #include <sys/stat.h>
 
@@ -42,7 +42,7 @@ static gboolean save_scheduled = FALSE;
 
 static void response_cb (CtkWidget *dialog, gint id, gpointer data);
 
-/* Based on a function found in wnck */
+/* Based on a function found in vnck */
 static void
 set_icon_geometry (CdkWindow *window,
                    int        x,
@@ -605,23 +605,23 @@ stickynote_set_visible (StickyNote *note, gboolean visible)
 		else if (note->workspace > 0)
 		{
 #if 0
-			WnckWorkspace *wnck_ws;
+			WnckWorkspace *vnck_ws;
 			gulong xid;
-			WnckWindow *wnck_win;
-			WnckScreen *wnck_screen;
+			WnckWindow *vnck_win;
+			WnckScreen *vnck_screen;
 
 			g_print ("set_visible(): workspace = %i\n",
 					note->workspace);
 
 			xid = CDK_WINDOW_XID (note->w_window->window);
-			wnck_screen = wnck_screen_get_default ();
-			wnck_win = wnck_window_get (xid);
-			wnck_ws = wnck_screen_get_workspace (
-					wnck_screen,
+			vnck_screen = vnck_screen_get_default ();
+			vnck_win = vnck_window_get (xid);
+			vnck_ws = vnck_screen_get_workspace (
+					vnck_screen,
 					note->workspace - 1);
-			if (wnck_win && wnck_ws)
-				wnck_window_move_to_workspace (
-						wnck_win, wnck_ws);
+			if (vnck_win && vnck_ws)
+				vnck_window_move_to_workspace (
+						vnck_win, vnck_ws);
 			else
 				g_print ("set_visible(): errr\n");
 #endif
@@ -690,7 +690,7 @@ void stickynotes_remove(StickyNote *note)
 gboolean
 stickynotes_save_now (void)
 {
-	WnckScreen *wnck_screen;
+	WnckScreen *vnck_screen;
 	const gchar *title;
 	CtkTextBuffer *buffer;
 	CtkTextIter start, end;
@@ -705,12 +705,12 @@ stickynotes_save_now (void)
 	xmlDocSetRootElement(doc, root);
 	xmlNewProp(root, XML_CHAR("version"), XML_CHAR (VERSION));
 
-	wnck_screen = wnck_screen_get_default ();
-	wnck_screen_force_update (wnck_screen);
+	vnck_screen = vnck_screen_get_default ();
+	vnck_screen_force_update (vnck_screen);
 
 	/* For all sticky notes */
 	for (i = 0; i < g_list_length(stickynotes->notes); i++) {
-		WnckWindow *wnck_win;
+		WnckWindow *vnck_win;
 		gulong xid = 0;
 
 		/* Access the current note in the list */
@@ -725,13 +725,13 @@ stickynotes_save_now (void)
 		gchar *y_str = g_strdup_printf("%d", note->y);
 
 		xid = CDK_WINDOW_XID (ctk_widget_get_window (note->w_window));
-		wnck_win = wnck_window_get (xid);
+		vnck_win = vnck_window_get (xid);
 
 		if (!g_settings_get_boolean (stickynotes->settings, "sticky") &&
-			wnck_win)
+			vnck_win)
 			note->workspace = 1 +
-				wnck_workspace_get_number (
-				wnck_window_get_workspace (wnck_win));
+				vnck_workspace_get_number (
+				vnck_window_get_workspace (vnck_win));
 		else
 			note->workspace = 0;
 
@@ -819,7 +819,7 @@ stickynotes_load (CdkScreen *screen)
 	xmlDocPtr doc = NULL;
 	xmlNodePtr root;
 	xmlNodePtr node;
-	/* WnckScreen *wnck_screen; */
+	/* WnckScreen *vnck_screen; */
 	GList *new_notes, *tmp1;  /* Lists of StickyNote*'s */
 	GList *new_nodes; /* Lists of xmlNodePtr's */
 	int x, y, w, h;
@@ -1003,8 +1003,8 @@ stickynotes_load (CdkScreen *screen)
 
 	tmp1 = new_notes;
 	/*
-	wnck_screen = wnck_screen_get_default ();
-	wnck_screen_force_update (wnck_screen);
+	vnck_screen = vnck_screen_get_default ();
+	vnck_screen_force_update (vnck_screen);
 	*/
 
 	while (tmp1)

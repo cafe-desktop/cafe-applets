@@ -113,9 +113,9 @@ AC_SUBST(GTOP_APPLETS_CFLAGS)
 AC_SUBST(GTOP_APPLETS_LIBS)
 AM_CONDITIONAL(BUILD_GTOP_APPLETS, $build_gtop_applets)
 
-dnl -- check for libwnck (required) -------------------------------------------
-PKG_CHECK_MODULES(LIBWNCK, libwnck-3.0 >= $LIBWNCK_REQUIRED,,
-	AC_MSG_ERROR([libwnck is required to build cafe-applets.], 1))
+dnl -- check for libvnck (required) -------------------------------------------
+PKG_CHECK_MODULES(LIBWNCK, libvnck-3.0 >= $LIBWNCK_REQUIRED,,
+	AC_MSG_ERROR([libvnck is required to build cafe-applets.], 1))
 
 AC_SUBST(LIBWNCK_CFLAGS)
 AC_SUBST(LIBWNCK_LIBS)
