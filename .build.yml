@@ -23,7 +23,6 @@ requires:
     - libnotify-dev
     - libpolkit-gobject-1-dev
     - libupower-glib-dev
-    - libwnck-3-dev
     - libx11-dev
     - libxml2-dev
     - make
