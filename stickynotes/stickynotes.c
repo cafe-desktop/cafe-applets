@@ -605,10 +605,10 @@ stickynote_set_visible (StickyNote *note, gboolean visible)
 		else if (note->workspace > 0)
 		{
 #if 0
-			WnckWorkspace *vnck_ws;
+			VnckWorkspace *vnck_ws;
 			gulong xid;
-			WnckWindow *vnck_win;
-			WnckScreen *vnck_screen;
+			VnckWindow *vnck_win;
+			VnckScreen *vnck_screen;
 
 			g_print ("set_visible(): workspace = %i\n",
 					note->workspace);
@@ -690,7 +690,7 @@ void stickynotes_remove(StickyNote *note)
 gboolean
 stickynotes_save_now (void)
 {
-	WnckScreen *vnck_screen;
+	VnckScreen *vnck_screen;
 	const gchar *title;
 	CtkTextBuffer *buffer;
 	CtkTextIter start, end;
@@ -710,7 +710,7 @@ stickynotes_save_now (void)
 
 	/* For all sticky notes */
 	for (i = 0; i < g_list_length(stickynotes->notes); i++) {
-		WnckWindow *vnck_win;
+		VnckWindow *vnck_win;
 		gulong xid = 0;
 
 		/* Access the current note in the list */
@@ -819,7 +819,7 @@ stickynotes_load (CdkScreen *screen)
 	xmlDocPtr doc = NULL;
 	xmlNodePtr root;
 	xmlNodePtr node;
-	/* WnckScreen *vnck_screen; */
+	/* VnckScreen *vnck_screen; */
 	GList *new_notes, *tmp1;  /* Lists of StickyNote*'s */
 	GList *new_nodes; /* Lists of xmlNodePtr's */
 	int x, y, w, h;
