@@ -20,7 +20,7 @@
 #ifndef __STICKYNOTES_H__
 #define __STICKYNOTES_H__
 
-#define WNCK_I_KNOW_THIS_IS_UNSTABLE 1
+#define VNCK_I_KNOW_THIS_IS_UNSTABLE 1
 #include <libvnck/libvnck.h>
 #include <stickynotes_applet.h>
 
