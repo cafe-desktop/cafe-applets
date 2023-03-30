@@ -23,7 +23,7 @@ DBUS_REQUIRED=1.10.0
 DBUS_GLIB_REQUIRED=0.74
 LIBXML_REQUIRED=2.5.0
 POLKIT_REQUIRED=0.97
-LIBWNCK_REQUIRED=3.0.0
+LIBVNCK_REQUIRED=3.0.0
 GUCHARMAP_REQUIRED=3.0.0
 dnl ***************************************************************************
 
@@ -114,11 +114,11 @@ AC_SUBST(GTOP_APPLETS_LIBS)
 AM_CONDITIONAL(BUILD_GTOP_APPLETS, $build_gtop_applets)
 
 dnl -- check for libvnck (required) -------------------------------------------
-PKG_CHECK_MODULES(LIBWNCK, libvnck-3.0 >= $LIBWNCK_REQUIRED,,
+PKG_CHECK_MODULES(LIBVNCK, libvnck-3.0 >= $LIBVNCK_REQUIRED,,
 	AC_MSG_ERROR([libvnck is required to build cafe-applets.], 1))
 
-AC_SUBST(LIBWNCK_CFLAGS)
-AC_SUBST(LIBWNCK_LIBS)
+AC_SUBST(LIBVNCK_CFLAGS)
+AC_SUBST(LIBVNCK_LIBS)
 
 dnl -- check for libnotify (optional) -----------------------------------------
 LIBNOTIFY_CFLAGS=

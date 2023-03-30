@@ -22,7 +22,7 @@
 #include <X11/Xatom.h>
 #include <cdk/cdkx.h>
 #include <ctk/ctk.h>
-#define WNCK_I_KNOW_THIS_IS_UNSTABLE 1
+#define VNCK_I_KNOW_THIS_IS_UNSTABLE 1
 #include <libvnck/libvnck.h>
 #include <string.h>
 #include <sys/stat.h>
