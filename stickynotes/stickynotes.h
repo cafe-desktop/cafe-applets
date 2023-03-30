@@ -21,7 +21,7 @@
 #define __STICKYNOTES_H__
 
 #define WNCK_I_KNOW_THIS_IS_UNSTABLE 1
-#include <libwnck/libwnck.h>
+#include <libvnck/libvnck.h>
 #include <stickynotes_applet.h>
 
 #include <ctksourceview/ctksource.h>
