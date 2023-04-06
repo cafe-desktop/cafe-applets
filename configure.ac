@@ -134,7 +134,7 @@ AC_SUBST(LIBNOTIFY_LIBS)
 
 dnl -- Check for D-Bus -----------------------------------------
 AC_ARG_WITH(dbus-sys,
-        [AC_HELP_STRING([--with-dbus-sys=<dir>],
+        [AS_HELP_STRING([--with-dbus-sys=<dir>],
         [where D-BUS system.d directory is])])
 if ! test -z "$with_dbus_sys" ; then
         DBUS_SYS_DIR="$with_dbus_sys"
@@ -158,7 +158,7 @@ dnl -- check for PolicyKit and PolicyKit-cafe (optional) -----------------------
 POLKIT_CFLAGS=
 POLKIT_LIBS=
 AC_ARG_ENABLE([polkit],
-    AC_HELP_STRING([--enable-polkit], [Enable PolicyKit support @<:@default auto@:>@]),
+    AS_HELP_STRING([--enable-polkit], [Enable PolicyKit support @<:@default auto@:>@]),
     enable_polkit=$enableval,
     enable_polkit=auto)
 if test "x$enable_polkit" != "xno"; then
@@ -310,7 +310,7 @@ dnl ***************************************************************************
 dnl *** Stickynotes specific checks                                         ***
 dnl ***************************************************************************
 AC_ARG_ENABLE([stickynotes],
-    AC_HELP_STRING([--enable-stickynotes], [Enable stickynotes applet.]),
+    AS_HELP_STRING([--enable-stickynotes], [Enable stickynotes applet.]),
     enable_stickynotes=$enableval,
     enable_stickynotes=yes)
 if test "x$enable_stickynotes" = "xyes"; then
