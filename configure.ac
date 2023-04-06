@@ -545,7 +545,7 @@ AC_SUBST(BUILDERDIR)
 dnl ***************************************************************************
 dnl *** Output Makefiles et al                                              ***
 dnl ***************************************************************************
-AC_OUTPUT([
+AC_CONFIG_FILES([
 Makefile
 po/Makefile.in
 accessx-status/Makefile
@@ -618,6 +618,8 @@ netspeed/icons/scalable/apps/Makefile
 netspeed/src/Makefile
 netspeed/help/Makefile
 ])
+
+AC_OUTPUT
 
 dnl ***************************************************************************
 dnl *** Display Summary                                                     ***
