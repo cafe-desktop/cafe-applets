@@ -67,9 +67,9 @@ if test "$GCC" = "yes" -a "$set_more_warnings" != "no"; then
         SAVE_CFLAGS="$CFLAGS"
         CFLAGS="$CFLAGS $option"
         AC_MSG_CHECKING([whether gcc understands $option])
-        AC_TRY_COMPILE([], [],
+        AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[]], [[]])],
             has_option=yes,
-            has_option=no,)
+            has_option=no)
         if test $has_option = no; then
             CFLAGS="$SAVE_CFLAGS"
         fi
@@ -445,11 +445,11 @@ AC_ARG_ENABLE(ipv6, [  --enable-ipv6 enable IPv6 extensions], ,enable_ipv6=yes)
 if test $enable_ipv6 = yes; then
 
   dnl Code for checking presence of AF_INET6 on the system.
-  AC_TRY_COMPILE([
+  AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[
     #include <sys/types.h>
-    #include <sys/socket.h>], [
+    #include <sys/socket.h>]], [[
     socket(AF_INET6, SOCK_STREAM, 0)
-    ],
+    ]])],
     have_ipv6=yes,
     have_ipv6=no
   )
