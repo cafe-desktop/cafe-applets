@@ -744,7 +744,7 @@ check_dvd_video (DriveButton *self)
 	device_path = g_volume_get_identifier (self->volume,
 					       G_VOLUME_IDENTIFIER_KIND_UNIX_DEVICE);
 	udi = g_volume_get_identifier (self->volume,
-				       G_VOLUME_IDENTIFIER_KIND_HAL_UDI);
+				       G_VOLUME_IDENTIFIER_KIND_UUID);
 
 	result = gvm_check_dvd_only (udi, device_path, mount_path);
 
