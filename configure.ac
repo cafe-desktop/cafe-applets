@@ -494,10 +494,10 @@ dnl ***************************************************************************
 dnl *** _NL_MEASUREMENT_MEASUREMENT is an enum and not a define             ***
 dnl ***************************************************************************
 AC_MSG_CHECKING([for _NL_MEASUREMENT_MEASUREMENT])
-AC_TRY_LINK([#include <langinfo.h>], [
+AC_LINK_IFELSE([AC_LANG_PROGRAM([[#include <langinfo.h>]], [[
 char c;
 c = *((unsigned char *)  nl_langinfo(_NL_MEASUREMENT_MEASUREMENT));
-], ctk_ok=yes, ctk_ok=no)
+]])], ctk_ok=yes, ctk_ok=no)
 AC_MSG_RESULT($ctk_ok)
 if test "$ctk_ok" = "yes"; then
   AC_DEFINE([HAVE__NL_MEASUREMENT_MEASUREMENT], [1],
