@@ -97,7 +97,7 @@ battstat_upower_initialise (void (*callback) (void))
   GError *gerror;
 
 #if UP_CHECK_VERSION(0, 99, 0)
-  devices = up_client_get_devices(upc);
+  devices = up_client_get_devices2(upc);
   if (!devices) {
     goto error_shutdownclient;
   }
@@ -155,7 +155,7 @@ void
 battstat_upower_get_battery_info( BatteryStatus *status )
 {
 
-  GPtrArray *devices = up_client_get_devices( upc );
+  GPtrArray *devices = up_client_get_devices2( upc );
 
   /* The calculation to get overall percentage power remaining is as follows:
    *
