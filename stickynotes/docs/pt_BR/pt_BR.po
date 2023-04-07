@@ -1,4 +1,4 @@
-# 
+#
 # Translators:
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
@@ -9,18 +9,19 @@
 # b36c7cf4cf669a51ae00d04c19629819, 2020
 # Alceu Nogueira <alceunogueira@gmail.com>, 2020
 # George Silva <algoritmo.linux@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 12:20+0000\n"
 "Last-Translator: George Silva <algoritmo.linux@gmail.com>, 2020\n"
-"Language-Team: Portuguese (Brazil) (https://www.transifex.com/cafe/teams/13566/pt_BR/)\n"
+"Language-Team: Portuguese (Brazil) (https://www.transifex.com/cafe/"
+"teams/13566/pt_BR/)\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -28,7 +29,8 @@ msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Equipe de tradução no Transifex:\n"
-"Fabrizzio Alphonsus Soares https://www.transifex.com/accounts/profile/fabrizzio\n"
+"Fabrizzio Alphonsus Soares https://www.transifex.com/accounts/profile/"
+"fabrizzio\n"
 "Alberto Federman Neto https://www.transifex.com/accounts/profile/albfneto\n"
 "Aldo Oliveira https://www.transifex.com/user/profile/AldoBR/\n"
 "Appes https://www.transifex.com/accounts/profile/apps\n"
@@ -38,18 +40,23 @@ msgstr ""
 "Enrico Nicoletto https://www.transifex.com/accounts/profile/EnricoNicoletto\n"
 "everton_seib https://www.transifex.com/accounts/profile/everton_seib\n"
 "Felipe Rozelio https://www.transifex.com/accounts/profile/feliperozelio\n"
-"João Paulo da Silva Júnior https://www.transifex.com/accounts/profile/jpsilvaj\n"
+"João Paulo da Silva Júnior https://www.transifex.com/accounts/profile/"
+"jpsilvaj\n"
 "Juliana Paula Felix https://www.transifex.com/accounts/profile/jufelix\n"
-"Lucas Cenir Friederich https://www.transifex.com/user/profile/lucasalvarokedrines\n"
+"Lucas Cenir Friederich https://www.transifex.com/user/profile/"
+"lucasalvarokedrines\n"
 "Marcelo Ghelman https://www.transifex.com/accounts/profile/marcelo.ghelman\n"
 "Marcio Andre Padula https://www.transifex.com/accounts/profile/Padula\n"
-"Marcus Vinícius Marques https://www.transifex.com/accounts/profile/Pygmalion\n"
+"Marcus Vinícius Marques https://www.transifex.com/accounts/profile/"
+"Pygmalion\n"
 "Matheus Macabu https://www.transifex.com/accounts/profile/mkbu95\n"
 "Matheus Martins https://www.transifex.com/accounts/profile/Matheus_Martins\n"
-"Michele dos Santos da Silva https://www.transifex.com/accounts/profile/mchelem\n"
+"Michele dos Santos da Silva https://www.transifex.com/accounts/profile/"
+"mchelem\n"
 "Thiago Cangussu https://www.transifex.com/accounts/profile/cangussu.thg\n"
 "vitorgatti https://www.transifex.com/accounts/profile/vitorgatti\n"
-"George Salu da Silva https://www.transifex.com/user/profile/George_salu_da_silva/"
+"George Salu da Silva https://www.transifex.com/user/profile/"
+"George_salu_da_silva/"
 
 #. (itstool) path: articleinfo/title
 #: C/index.docbook:19
@@ -119,8 +126,8 @@ msgstr ""
 #: C/index.docbook:75
 msgid ""
 "<firstname>Shaun</firstname> <surname>McCance</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> "
-"<address><email>shaunm@gnome.org</email></address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address><email>shaunm@gnome."
+"org</email></address> </affiliation>"
 msgstr ""
 "<firstname>Shaun</firstname> <surname>McCance</surname> <affiliation> "
 "<orgname>GNOME Projeto de documentação</orgname> "
@@ -148,12 +155,12 @@ msgstr ""
 #: C/index.docbook:97
 msgid ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Project</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME Project</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 msgstr ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Projeto</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME Projeto</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:125
@@ -163,8 +170,8 @@ msgstr "Equipe de Documentação do CAFE"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:121
 msgid ""
-"<revnumber>Sticky Notes Applet Manual V2.7</revnumber> <date>July "
-"2015</date> <_:revdescription-1/>"
+"<revnumber>Sticky Notes Applet Manual V2.7</revnumber> <date>July 2015</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -175,15 +182,15 @@ msgstr "Davyd Madeley"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:129
 msgid ""
-"<revnumber>Sticky Notes Applet Manual V2.6</revnumber> <date>September "
-"2005</date> <_:revdescription-1/>"
+"<revnumber>Sticky Notes Applet Manual V2.6</revnumber> <date>September 2005</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:136
 msgid ""
-"<revnumber>Sticky Notes Applet Manual V2.5</revnumber> <date>March "
-"2005</date> <_:revdescription-1/>"
+"<revnumber>Sticky Notes Applet Manual V2.5</revnumber> <date>March 2005</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -194,8 +201,8 @@ msgstr "Angela Boyle"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:143
 msgid ""
-"<revnumber>Sticky Notes Applet Manual V2.4</revnumber> <date>September "
-"2004</date> <_:revdescription-1/>"
+"<revnumber>Sticky Notes Applet Manual V2.4</revnumber> <date>September 2004</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -206,22 +213,22 @@ msgstr "Equipe de Documentação do Sun GNOME"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:151
 msgid ""
-"<revnumber>Sticky Notes Applet Manual V2.3</revnumber> <date>February "
-"2004</date> <_:revdescription-1/>"
+"<revnumber>Sticky Notes Applet Manual V2.3</revnumber> <date>February 2004</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:159
 msgid ""
-"<revnumber>Sticky Notes Applet Manual V2.2</revnumber> <date>November "
-"2003</date> <_:revdescription-1/>"
+"<revnumber>Sticky Notes Applet Manual V2.2</revnumber> <date>November 2003</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:167
 msgid ""
-"<revnumber>Sticky Notes Applet Manual V2.1</revnumber> <date>August "
-"2003</date> <_:revdescription-1/>"
+"<revnumber>Sticky Notes Applet Manual V2.1</revnumber> <date>August 2003</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -232,8 +239,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:175
 msgid ""
-"<revnumber>Sticky Notes Applet Manual V2.0</revnumber> <date>May 2003</date>"
-" <_:revdescription-1/>"
+"<revnumber>Sticky Notes Applet Manual V2.0</revnumber> <date>May 2003</date> "
+"<_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: articleinfo/releaseinfo
@@ -250,8 +257,8 @@ msgstr "Retorno"
 #: C/index.docbook:190
 msgid ""
 "To report a bug or make a suggestion regarding the <application>Sticky "
-"Notes</application> application or this manual, follow the directions in the"
-" <ulink url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback "
+"Notes</application> application or this manual, follow the directions in the "
+"<ulink url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback "
 "Page</ulink>."
 msgstr ""
 
@@ -288,15 +295,15 @@ msgstr ""
 #: C/index.docbook:204
 msgid ""
 "<imageobject> <imagedata fileref=\"figures/stickynotes_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject><phrase>Shows Sticky "
-"Notes</phrase></textobject>"
+"format=\"PNG\"/> </imageobject> <textobject><phrase>Shows Sticky Notes</"
+"phrase></textobject>"
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:213
 msgid ""
-"The <application>Sticky Notes</application> panel application enables you to"
-" create, view, and manage sticky notes on your desktop. You can edit the "
+"The <application>Sticky Notes</application> panel application enables you to "
+"create, view, and manage sticky notes on your desktop. You can edit the "
 "title, contents, dimensions, and style of sticky notes. When the panel is "
 "restarted, for example when you log out and log in again, all sticky notes "
 "are saved and reopened in the same position with the same dimensions and "
@@ -421,8 +428,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:287
 msgid ""
-"You can lock or unlock all sticky notes at the same time, or you can lock or"
-" unlock individual sticky notes. Locking a sticky note prevents you from "
+"You can lock or unlock all sticky notes at the same time, or you can lock or "
+"unlock individual sticky notes. Locking a sticky note prevents you from "
 "accidentally changing the contents of the note."
 msgstr ""
 
@@ -462,8 +469,8 @@ msgstr ""
 #: C/index.docbook:305
 msgid ""
 "To lock all sticky notes so that the notes cannot be edited, choose "
-"<guimenuitem>Lock Notes</guimenuitem> from the icon right-click menu so that"
-" there is a check mark next to it. To unlock all sticky notes, choose "
+"<guimenuitem>Lock Notes</guimenuitem> from the icon right-click menu so that "
+"there is a check mark next to it. To unlock all sticky notes, choose "
 "<guimenuitem>Lock Notes</guimenuitem> from the icon right-click menu again "
 "so that there is not a check mark next to it."
 msgstr ""
@@ -471,9 +478,9 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:311
 msgid ""
-"Note that all panel applications have the <guimenuitem>Lock to "
-"Panel</guimenuitem> item in the right-click menu, which locks the position "
-"of the panel application on the panel. Do not confuse this with the "
+"Note that all panel applications have the <guimenuitem>Lock to Panel</"
+"guimenuitem> item in the right-click menu, which locks the position of the "
+"panel application on the panel. Do not confuse this with the "
 "<guimenuitem>Lock Notes</guimenuitem> item."
 msgstr ""
 
@@ -487,8 +494,8 @@ msgstr ""
 msgid ""
 "To lock an individual sticky note, right-click on the title of the note, "
 "then choose <guimenuitem>Lock Note</guimenuitem> from the popup menu. To "
-"unlock an individual note, right-click on the title of the note, then choose"
-" <guimenuitem>Unlock Note</guimenuitem> from the popup menu again. You can "
+"unlock an individual note, right-click on the title of the note, then choose "
+"<guimenuitem>Unlock Note</guimenuitem> from the popup menu again. You can "
 "also toggle the lock/unlock state of a sticky note by clicking the lock "
 "button in the top left corner of the sticky note."
 msgstr ""
@@ -573,8 +580,8 @@ msgstr ""
 #: C/index.docbook:375
 msgid ""
 "To configure the default size for all sticky notes, right-click on the "
-"sticky notes icon, then choose <guimenu>Preferences</guimenu> from the popup"
-" menu. The <application>Sticky Notes Preferences</application> dialog is "
+"sticky notes icon, then choose <guimenu>Preferences</guimenu> from the popup "
+"menu. The <application>Sticky Notes Preferences</application> dialog is "
 "displayed."
 msgstr ""
 
@@ -687,8 +694,8 @@ msgstr ""
 #: C/index.docbook:444
 msgid ""
 "To customize the behavior of <application>Sticky Notes</application>, right-"
-"click on the icon, then choose <guimenu>Preferences</guimenu> from the popup"
-" menu. The <application>Sticky Notes Preferences</application> dialog is "
+"click on the icon, then choose <guimenu>Preferences</guimenu> from the popup "
+"menu. The <application>Sticky Notes Preferences</application> dialog is "
 "displayed."
 msgstr ""
 
@@ -705,8 +712,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:454
 msgid ""
-"The option, <guilabel>Force default color and font on notes</guilabel>, will"
-" force all sticky notes on your desktop to use the color and font settings "
+"The option, <guilabel>Force default color and font on notes</guilabel>, will "
+"force all sticky notes on your desktop to use the color and font settings "
 "specified in the <guilabel>Default Note Properties</guilabel> above (see "
 "<xref linkend=\"stickynotes-color\"/>)."
 msgstr ""
@@ -749,8 +756,8 @@ msgid ""
 "You can customize the look of each individual sticky note. This can be "
 "useful for visually distinguishing different types of notes quickly. To "
 "configure the settings for an individual sticky note, right-click on the "
-"note's title, then choose <guimenu>Properties</guimenu> from the popup menu."
-" The <application>Sticky Note Properties</application> dialog is displayed."
+"note's title, then choose <guimenu>Properties</guimenu> from the popup menu. "
+"The <application>Sticky Note Properties</application> dialog is displayed."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
@@ -772,8 +779,8 @@ msgstr ""
 #: C/index.docbook:491
 msgid ""
 "Select this option to use the default base color for this sticky note. For "
-"information on setting the default base color, see <xref linkend"
-"=\"stickynotes-color\"/>."
+"information on setting the default base color, see <xref "
+"linkend=\"stickynotes-color\"/>."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -824,14 +831,14 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "É concedida permissão para copiar, distribuir e / ou modificar este "
 "documento sob os termos da Licença de Documentação Livre GNU (GFDL), Versão "
-"1.1 ou qualquer versão posterior publicada pela Free Software Foundation sem"
-" Seções Invariantes, sem Textos de Capa Frontal e sem textos de contracapa. "
+"1.1 ou qualquer versão posterior publicada pela Free Software Foundation sem "
+"Seções Invariantes, sem Textos de Capa Frontal e sem textos de contracapa. "
 "Você pode encontrar uma cópia da GFDL no <_:ulink-1/> ou no arquivo COPYING-"
 "DOCS distribuído com este manual."
 
@@ -840,8 +847,8 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Esse manual é parte de uma coleção de manuais do CAFE distribuída sob a "
 "GFDL. Se você quiser distribuir essa manual separado da coleção, pode fazê-"
@@ -885,25 +892,24 @@ msgstr ""
 "SEM INFRAÇÕES. TODO O RISCO A RESPEITO DA QUALIDADE, EXATIDÃO, E DESEMPENHO "
 "DO DOCUMENTO OU VERSÕES MODIFICADAS DO DOCUMENTO É SEU. SE ALGUM DOCUMENTO "
 "OU VERSÃO MODIFICADA SE PROVAR DEFEITUOSO EM QUALQUER ASPECTO, VOCÊ (NÃO O "
-"ESCRITOR INICIAL, AUTOR OU QUALQUER CONTRIBUIDOR) ASSUME O CUSTO DE QUALQUER"
-" SERVIÇO NECESSÁRIO, REPARO OU CORREÇÃO. ESTA RENÚNCIA DE GARANTIAS "
-"CONSTITUI UMA PARTE ESSENCIAL DESTA LICENÇA. NENHUM USO DESTE DOCUMENTO OU "
-"VERSÃO MODIFICADA DESTE DOCUMENTO É AUTORIZADO SE NÃO FOR SOB ESTA RENÚNCIA;"
-" E"
+"ESCRITOR INICIAL, AUTOR OU QUALQUER CONTRIBUIDOR) ASSUME O CUSTO DE QUALQUER "
+"SERVIÇO NECESSÁRIO, REPARO OU CORREÇÃO. ESTA RENÚNCIA DE GARANTIAS CONSTITUI "
+"UMA PARTE ESSENCIAL DESTA LICENÇA. NENHUM USO DESTE DOCUMENTO OU VERSÃO "
+"MODIFICADA DESTE DOCUMENTO É AUTORIZADO SE NÃO FOR SOB ESTA RENÚNCIA; E"
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "SOB NENHUM CIRCUNSTÂNCIA E SOB NENHUMA TEORIA LEGAL, TANTO EM DADO "
 "(INCLUINDO NEGLIGÊNCIA), CONTRATO, OU OUTROS, DEVEM O AUTOR, ESCRITOR "
@@ -914,8 +920,8 @@ msgstr ""
 "INDIVÍDUO, INCLUINDO, SEM LIMITAÇÃO, DANOS POR PERDA DE BOA VONTADE, "
 "TRABALHO PARADO, FALHA NO COMPUTADOR OU MAL FUNCIONAMENTO, OU QUALQUER E "
 "TODOS OS OUTROS DANOS OU PERDAS RESULTANTES OU RELACIONADAS AO USO DO "
-"DOCUMENTO E VERSÕES MODIFICADAS, MESMO QUE TAL PARTE TENHA SIDO INFORMADA DA"
-" POSSIBILIDADE DE TAIS DANOS."
+"DOCUMENTO E VERSÕES MODIFICADAS, MESMO QUE TAL PARTE TENHA SIDO INFORMADA DA "
+"POSSIBILIDADE DE TAIS DANOS."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:28

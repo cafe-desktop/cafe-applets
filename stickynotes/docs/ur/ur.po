@@ -1,7 +1,7 @@
-# 
+#
 # Translators:
 # mauron, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -9,10 +9,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 12:20+0000\n"
 "Last-Translator: mauron, 2020\n"
 "Language-Team: Urdu (https://www.transifex.com/cafe/teams/13566/ur/)\n"
+"Language: ur\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ur\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -92,8 +92,8 @@ msgstr ""
 #: C/index.docbook:75
 msgid ""
 "<firstname>Shaun</firstname> <surname>McCance</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> "
-"<address><email>shaunm@gnome.org</email></address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address><email>shaunm@gnome."
+"org</email></address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
@@ -114,8 +114,8 @@ msgstr ""
 #: C/index.docbook:97
 msgid ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Project</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME Project</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -126,8 +126,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:121
 msgid ""
-"<revnumber>Sticky Notes Applet Manual V2.7</revnumber> <date>July "
-"2015</date> <_:revdescription-1/>"
+"<revnumber>Sticky Notes Applet Manual V2.7</revnumber> <date>July 2015</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -138,15 +138,15 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:129
 msgid ""
-"<revnumber>Sticky Notes Applet Manual V2.6</revnumber> <date>September "
-"2005</date> <_:revdescription-1/>"
+"<revnumber>Sticky Notes Applet Manual V2.6</revnumber> <date>September 2005</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:136
 msgid ""
-"<revnumber>Sticky Notes Applet Manual V2.5</revnumber> <date>March "
-"2005</date> <_:revdescription-1/>"
+"<revnumber>Sticky Notes Applet Manual V2.5</revnumber> <date>March 2005</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -157,8 +157,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:143
 msgid ""
-"<revnumber>Sticky Notes Applet Manual V2.4</revnumber> <date>September "
-"2004</date> <_:revdescription-1/>"
+"<revnumber>Sticky Notes Applet Manual V2.4</revnumber> <date>September 2004</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -169,22 +169,22 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:151
 msgid ""
-"<revnumber>Sticky Notes Applet Manual V2.3</revnumber> <date>February "
-"2004</date> <_:revdescription-1/>"
+"<revnumber>Sticky Notes Applet Manual V2.3</revnumber> <date>February 2004</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:159
 msgid ""
-"<revnumber>Sticky Notes Applet Manual V2.2</revnumber> <date>November "
-"2003</date> <_:revdescription-1/>"
+"<revnumber>Sticky Notes Applet Manual V2.2</revnumber> <date>November 2003</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:167
 msgid ""
-"<revnumber>Sticky Notes Applet Manual V2.1</revnumber> <date>August "
-"2003</date> <_:revdescription-1/>"
+"<revnumber>Sticky Notes Applet Manual V2.1</revnumber> <date>August 2003</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -195,8 +195,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:175
 msgid ""
-"<revnumber>Sticky Notes Applet Manual V2.0</revnumber> <date>May 2003</date>"
-" <_:revdescription-1/>"
+"<revnumber>Sticky Notes Applet Manual V2.0</revnumber> <date>May 2003</date> "
+"<_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: articleinfo/releaseinfo
@@ -213,8 +213,8 @@ msgstr ""
 #: C/index.docbook:190
 msgid ""
 "To report a bug or make a suggestion regarding the <application>Sticky "
-"Notes</application> application or this manual, follow the directions in the"
-" <ulink url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback "
+"Notes</application> application or this manual, follow the directions in the "
+"<ulink url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback "
 "Page</ulink>."
 msgstr ""
 
@@ -249,15 +249,15 @@ msgstr ""
 #: C/index.docbook:204
 msgid ""
 "<imageobject> <imagedata fileref=\"figures/stickynotes_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject><phrase>Shows Sticky "
-"Notes</phrase></textobject>"
+"format=\"PNG\"/> </imageobject> <textobject><phrase>Shows Sticky Notes</"
+"phrase></textobject>"
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:213
 msgid ""
-"The <application>Sticky Notes</application> panel application enables you to"
-" create, view, and manage sticky notes on your desktop. You can edit the "
+"The <application>Sticky Notes</application> panel application enables you to "
+"create, view, and manage sticky notes on your desktop. You can edit the "
 "title, contents, dimensions, and style of sticky notes. When the panel is "
 "restarted, for example when you log out and log in again, all sticky notes "
 "are saved and reopened in the same position with the same dimensions and "
@@ -380,8 +380,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:287
 msgid ""
-"You can lock or unlock all sticky notes at the same time, or you can lock or"
-" unlock individual sticky notes. Locking a sticky note prevents you from "
+"You can lock or unlock all sticky notes at the same time, or you can lock or "
+"unlock individual sticky notes. Locking a sticky note prevents you from "
 "accidentally changing the contents of the note."
 msgstr ""
 
@@ -419,8 +419,8 @@ msgstr ""
 #: C/index.docbook:305
 msgid ""
 "To lock all sticky notes so that the notes cannot be edited, choose "
-"<guimenuitem>Lock Notes</guimenuitem> from the icon right-click menu so that"
-" there is a check mark next to it. To unlock all sticky notes, choose "
+"<guimenuitem>Lock Notes</guimenuitem> from the icon right-click menu so that "
+"there is a check mark next to it. To unlock all sticky notes, choose "
 "<guimenuitem>Lock Notes</guimenuitem> from the icon right-click menu again "
 "so that there is not a check mark next to it."
 msgstr ""
@@ -428,9 +428,9 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:311
 msgid ""
-"Note that all panel applications have the <guimenuitem>Lock to "
-"Panel</guimenuitem> item in the right-click menu, which locks the position "
-"of the panel application on the panel. Do not confuse this with the "
+"Note that all panel applications have the <guimenuitem>Lock to Panel</"
+"guimenuitem> item in the right-click menu, which locks the position of the "
+"panel application on the panel. Do not confuse this with the "
 "<guimenuitem>Lock Notes</guimenuitem> item."
 msgstr ""
 
@@ -444,8 +444,8 @@ msgstr ""
 msgid ""
 "To lock an individual sticky note, right-click on the title of the note, "
 "then choose <guimenuitem>Lock Note</guimenuitem> from the popup menu. To "
-"unlock an individual note, right-click on the title of the note, then choose"
-" <guimenuitem>Unlock Note</guimenuitem> from the popup menu again. You can "
+"unlock an individual note, right-click on the title of the note, then choose "
+"<guimenuitem>Unlock Note</guimenuitem> from the popup menu again. You can "
 "also toggle the lock/unlock state of a sticky note by clicking the lock "
 "button in the top left corner of the sticky note."
 msgstr ""
@@ -528,8 +528,8 @@ msgstr ""
 #: C/index.docbook:375
 msgid ""
 "To configure the default size for all sticky notes, right-click on the "
-"sticky notes icon, then choose <guimenu>Preferences</guimenu> from the popup"
-" menu. The <application>Sticky Notes Preferences</application> dialog is "
+"sticky notes icon, then choose <guimenu>Preferences</guimenu> from the popup "
+"menu. The <application>Sticky Notes Preferences</application> dialog is "
 "displayed."
 msgstr ""
 
@@ -642,8 +642,8 @@ msgstr ""
 #: C/index.docbook:444
 msgid ""
 "To customize the behavior of <application>Sticky Notes</application>, right-"
-"click on the icon, then choose <guimenu>Preferences</guimenu> from the popup"
-" menu. The <application>Sticky Notes Preferences</application> dialog is "
+"click on the icon, then choose <guimenu>Preferences</guimenu> from the popup "
+"menu. The <application>Sticky Notes Preferences</application> dialog is "
 "displayed."
 msgstr ""
 
@@ -660,8 +660,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:454
 msgid ""
-"The option, <guilabel>Force default color and font on notes</guilabel>, will"
-" force all sticky notes on your desktop to use the color and font settings "
+"The option, <guilabel>Force default color and font on notes</guilabel>, will "
+"force all sticky notes on your desktop to use the color and font settings "
 "specified in the <guilabel>Default Note Properties</guilabel> above (see "
 "<xref linkend=\"stickynotes-color\"/>)."
 msgstr ""
@@ -702,8 +702,8 @@ msgid ""
 "You can customize the look of each individual sticky note. This can be "
 "useful for visually distinguishing different types of notes quickly. To "
 "configure the settings for an individual sticky note, right-click on the "
-"note's title, then choose <guimenu>Properties</guimenu> from the popup menu."
-" The <application>Sticky Note Properties</application> dialog is displayed."
+"note's title, then choose <guimenu>Properties</guimenu> from the popup menu. "
+"The <application>Sticky Note Properties</application> dialog is displayed."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
@@ -725,8 +725,8 @@ msgstr ""
 #: C/index.docbook:491
 msgid ""
 "Select this option to use the default base color for this sticky note. For "
-"information on setting the default base color, see <xref linkend"
-"=\"stickynotes-color\"/>."
+"information on setting the default base color, see <xref "
+"linkend=\"stickynotes-color\"/>."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -777,8 +777,8 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 
@@ -787,8 +787,8 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 
 #. (itstool) path: legalnotice/para
@@ -820,16 +820,16 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 
 #. (itstool) path: legalnotice/para
