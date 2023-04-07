@@ -1,7 +1,7 @@
 dnl ***************************************************************************
 dnl *** configure.in for CAFE-APPLETS                                      ***
 dnl ***************************************************************************
-AC_INIT(cafe-applets, 1.24.1)
+AC_INIT(cafe-applets, 1.25.0)
 AC_PREREQ(2.59)
 
 AC_CONFIG_HEADERS(config.h)
