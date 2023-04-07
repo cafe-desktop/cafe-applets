@@ -1,11 +1,11 @@
-# 
+#
 # Translators:
 # mauron, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # clefebvre <clement.lefebvre@linuxmint.com>, 2020
 # 0d1bdb3b9a0d4e8f77bc854af8bf3dfc_e6913f4, 2020
 # Butterfly <gokhanlnx@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -13,10 +13,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 11:33+0000\n"
 "Last-Translator: Butterfly <gokhanlnx@gmail.com>, 2020\n"
 "Language-Team: Turkish (https://www.transifex.com/cafe/teams/13566/tr/)\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -97,8 +97,8 @@ msgstr ""
 #: C/index.docbook:73
 msgid ""
 "<firstname>Trent</firstname> <surname>Lloyd</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> "
-"<address><email>lathiat@bur.st</email></address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address><email>lathiat@bur."
+"st</email></address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
@@ -122,8 +122,8 @@ msgstr ""
 #: C/index.docbook:94
 msgid ""
 "<firstname>Dan </firstname> <surname> Mueth</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> <address> "
-"<email>muet@alumni.uchicago.edu</email> </address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address> <email>muet@alumni."
+"uchicago.edu</email> </address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -134,8 +134,8 @@ msgstr "CAFE Belgelendirme Projesi"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:120
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.12</revnumber> <date>July "
-"2015</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.12</revnumber> <date>July 2015</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -146,8 +146,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:128
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.11</revnumber> <date>July "
-"2015</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.11</revnumber> <date>July 2015</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -158,8 +158,8 @@ msgstr "Sun GNOME Belgelendirme Takımı"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:136
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.10</revnumber> <date>February "
-"2004</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.10</revnumber> <date>February 2004</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -170,8 +170,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:144
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.0</revnumber> <date>March "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.0</revnumber> <date>March 2002</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -182,8 +182,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:154
 msgid ""
-"<revnumber>Drive Mount Applet Manual</revnumber> <date>April 2000</date> "
-"<_:revdescription-1/>"
+"<revnumber>Drive Mount Applet Manual</revnumber> <date>April 2000</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: articleinfo/releaseinfo
@@ -201,8 +201,8 @@ msgstr "Geri bildirim"
 msgid ""
 "To report a bug or make a suggestion regarding the <application>Disk "
 "Mounter</application> or this manual, follow the directions in the <ulink "
-"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback "
-"Page</ulink>."
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</"
+"ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -236,15 +236,15 @@ msgstr ""
 #: C/index.docbook:190
 msgid ""
 "<imageobject><imagedata fileref=\"figures/drivemount-applet_example.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>The Disk Mounter "
-"applet.</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>The Disk Mounter applet."
+"</phrase> </textobject>"
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:201
 msgid ""
-"The <application>Disk Mounter</application> enables you to quickly mount and"
-" unmount various types of drives and file systems."
+"The <application>Disk Mounter</application> enables you to quickly mount and "
+"unmount various types of drives and file systems."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -252,9 +252,9 @@ msgstr ""
 msgid ""
 "For the <application>Disk Mounter</application> to work properly, your "
 "system administrator must configure your system appropriately. Refer to the "
-"<ulink url=\"man:fstab\" "
-"type=\"man\"><citerefentry><refentrytitle>fstab</refentrytitle><manvolnum>5</manvolnum></citerefentry></ulink>"
-" for more information about the necessary system administration tasks."
+"<ulink url=\"man:fstab\" type=\"man\"><citerefentry><refentrytitle>fstab</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry></ulink> for more "
+"information about the necessary system administration tasks."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -333,8 +333,8 @@ msgstr ""
 #: C/index.docbook:253
 msgid ""
 "Some systems may also automatically mount some removable media (such as USB "
-"and IEEE1394 disks), these devices may also come up in the <application>Disk"
-" Mounter</application> so that you can unmount them when you are finished, "
+"and IEEE1394 disks), these devices may also come up in the <application>Disk "
+"Mounter</application> so that you can unmount them when you are finished, "
 "and provide a visual indication that they are present."
 msgstr ""
 
@@ -352,8 +352,8 @@ msgstr ""
 #: C/index.docbook:266
 msgid ""
 "To display the name and mount status of a drive, move the mouse pointer to "
-"the drive icon in the panel. A tooltip displays the name and mount status of"
-" the drive."
+"the drive icon in the panel. A tooltip displays the name and mount status of "
+"the drive."
 msgstr ""
 
 #. (itstool) path: imageobject/imagedata
@@ -395,8 +395,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:282
 msgid ""
-"To unmount a drive, click on the drive icon in the panel and then select the"
-" <guimenuitem>Unmount Drive</guimenuitem> option, or if the device is a CD-"
+"To unmount a drive, click on the drive icon in the panel and then select the "
+"<guimenuitem>Unmount Drive</guimenuitem> option, or if the device is a CD-"
 "ROM Drive, it may be labeled <guimenuitem>Eject Drive</guimenuitem>"
 msgstr ""
 
@@ -452,24 +452,24 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
-"Bu belgeyi kopyalama, dağıtma ve/veya değiştirme izni, değişmez bölümsüz, ön"
-" kapak metinsiz ve arka kapak metinsiz şekilde GNU Free Documentation "
-"License (GNU Özgür Belgeleme Lisansı, GFDL), sürüm 1.1 ya da Free Software "
-"Foundation tarafından yayınlanan daha yeni bir sürüm kapsamında verilmiştir."
-" GFDL'in bir kopyasını bu <_:ulink-1/>  ya da bu kılavuzla dağıtılan "
-"COPYING-DOCS dosyasında bulabilirsiniz."
+"Bu belgeyi kopyalama, dağıtma ve/veya değiştirme izni, değişmez bölümsüz, ön "
+"kapak metinsiz ve arka kapak metinsiz şekilde GNU Free Documentation License "
+"(GNU Özgür Belgeleme Lisansı, GFDL), sürüm 1.1 ya da Free Software "
+"Foundation tarafından yayınlanan daha yeni bir sürüm kapsamında verilmiştir. "
+"GFDL'in bir kopyasını bu <_:ulink-1/>  ya da bu kılavuzla dağıtılan COPYING-"
+"DOCS dosyasında bulabilirsiniz."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Bu kılavuz, GFDL (GNU Özgür Belgelendirme Lisansı) kapsamında yayınlanan "
 "CAFE kılavuzları koleksiyonunun bir parçasıdır. Bu kılavuzu koleksiyondan "
@@ -487,8 +487,8 @@ msgid ""
 msgstr ""
 "Firmalar tarafından ürün ve hizmetlerinin ayırt edilmeleri için "
 "kullandıkları isimlerin birçoğu tescilli marka olarak ayrılmıştır. Bu "
-"isimlerin CAFE belgelendirilmesinde yer alması ve CAFE Belgelendirme Projesi"
-" mensupları bu tescilli markalardan haberdar edildikleri durumda, isimlerin "
+"isimlerin CAFE belgelendirilmesinde yer alması ve CAFE Belgelendirme Projesi "
+"mensupları bu tescilli markalardan haberdar edildikleri durumda, isimlerin "
 "ilk harfi ya da tamamı büyük harflerle yazılır."
 
 #. (itstool) path: listitem/para
@@ -506,10 +506,10 @@ msgid ""
 "ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
 "OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
 msgstr ""
-"BELGE OLDUĞU GİBİ, AÇIK VEYA ZIMNİ HİÇBİR TÜRLÜ GARANTİ OLMADAN SUNULMUŞTUR,"
-" Kİ BUNA SINIRLAMA OLMAKSIZIN BELGE VEYA BELGENİN DEĞİŞTİRİLMİŞ SÜRÜMLERİNİN"
-" BELLİ BİR AMACA UYGUN OLMALARI, KUSURDAN ARINMIŞ OLMALARI VEYA HAK "
-"İHLALİNDE BULUNMAMALARI GARANTİLERİ OLMAMASI DA DAHİLDİR. BELGE VE BELGENİN "
+"BELGE OLDUĞU GİBİ, AÇIK VEYA ZIMNİ HİÇBİR TÜRLÜ GARANTİ OLMADAN SUNULMUŞTUR, "
+"Kİ BUNA SINIRLAMA OLMAKSIZIN BELGE VEYA BELGENİN DEĞİŞTİRİLMİŞ SÜRÜMLERİNİN "
+"BELLİ BİR AMACA UYGUN OLMALARI, KUSURDAN ARINMIŞ OLMALARI VEYA HAK İHLALİNDE "
+"BULUNMAMALARI GARANTİLERİ OLMAMASI DA DAHİLDİR. BELGE VE BELGENİN "
 "DEĞİŞTİRİLMİŞ SÜRÜMLERİNİN KALİTESİ, DOĞRULUĞU VE PERFORMANSINA İLİŞKİN TÜM "
 "RİSK SİZE AİTTİR. HERHANGİ BİR BELGE VEYA BELGENİN DEĞİŞTİRİLMİŞ SÜRÜMÜNÜN "
 "KUSURLU OLMASI HALİNDE, GEREKLİ SERVİS, ONARIM VE DÜZELTMENİN ÜCRETİNİ SİZ "
@@ -521,19 +521,19 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
-"HİÇBİR KOŞULDA VE HİÇBİR YASAL TEORİDE, Kİ BU TAZMİNAT YÜKÜMLÜLÜĞÜ (İHMAK DE"
-" DAHİL), KONTRATO VEYA BAŞKA BİR ŞEKİLİ DE İÇERİR, BELGEYİ VE BELGENİN "
+"HİÇBİR KOŞULDA VE HİÇBİR YASAL TEORİDE, Kİ BU TAZMİNAT YÜKÜMLÜLÜĞÜ (İHMAK DE "
+"DAHİL), KONTRATO VEYA BAŞKA BİR ŞEKİLİ DE İÇERİR, BELGEYİ VE BELGENİN "
 "DEĞİŞTİRİLMİŞ SÜRÜMLERİNİ İLK YAZAN, YAZAR, HERHANGİ BİR KATKIDA BULUNAN, "
 "DAĞITAN VEYA BU TARAFLARIN HERHANGİ BİR TEDARİKÇİSİ HERHANGİ DOĞRUDAN, "
 "DOLAYLI, ÖZEL, ARIZİ  ZARARLARDAN HERHANGİ BİR KİŞİ SORUMLU DEĞİLDİR, Kİ "

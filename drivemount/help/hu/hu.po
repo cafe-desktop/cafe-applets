@@ -1,4 +1,4 @@
-# 
+#
 # Translators:
 # KAMI KAMI <kami911@gmail.com>, 2020
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2020
@@ -9,7 +9,7 @@
 # Balázs Meskó <meskobalazs@mailbox.org>, 2020
 # Csaba Székely <szekelycsaba76@gmail.com>, 2020
 # Szabó Máté <cafeszabo2001@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -17,10 +17,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 11:33+0000\n"
 "Last-Translator: Szabó Máté <cafeszabo2001@gmail.com>, 2020\n"
 "Language-Team: Hungarian (https://www.transifex.com/cafe/teams/13566/hu/)\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -92,16 +92,15 @@ msgid ""
 "<firstname>CAFE Documentation Team</firstname> <surname/> <affiliation> "
 "<orgname>CAFE Desktop</orgname> </affiliation>"
 msgstr ""
-"<firstname>CAFE Documentation Team "
-"</firstname><surname/><affiliation><orgname>CAFE "
-"Desktop</orgname></affiliation>"
+"<firstname>CAFE Documentation Team </firstname><surname/"
+"><affiliation><orgname>CAFE Desktop</orgname></affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:73
 msgid ""
 "<firstname>Trent</firstname> <surname>Lloyd</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> "
-"<address><email>lathiat@bur.st</email></address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address><email>lathiat@bur."
+"st</email></address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
@@ -123,8 +122,8 @@ msgstr ""
 #: C/index.docbook:94
 msgid ""
 "<firstname>Dan </firstname> <surname> Mueth</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> <address> "
-"<email>muet@alumni.uchicago.edu</email> </address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address> <email>muet@alumni."
+"uchicago.edu</email> </address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -135,8 +134,8 @@ msgstr "CAFE dokumentációs csapat"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:120
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.12</revnumber> <date>July "
-"2015</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.12</revnumber> <date>July 2015</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -147,8 +146,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:128
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.11</revnumber> <date>July "
-"2015</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.11</revnumber> <date>July 2015</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -159,8 +158,8 @@ msgstr "Sun GNOME Dokumentációs csapat"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:136
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.10</revnumber> <date>February "
-"2004</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.10</revnumber> <date>February 2004</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -171,8 +170,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:144
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.0</revnumber> <date>March "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.0</revnumber> <date>March 2002</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -183,8 +182,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:154
 msgid ""
-"<revnumber>Drive Mount Applet Manual</revnumber> <date>April 2000</date> "
-"<_:revdescription-1/>"
+"<revnumber>Drive Mount Applet Manual</revnumber> <date>April 2000</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: articleinfo/releaseinfo
@@ -202,8 +201,8 @@ msgstr "Visszajelzés"
 msgid ""
 "To report a bug or make a suggestion regarding the <application>Disk "
 "Mounter</application> or this manual, follow the directions in the <ulink "
-"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback "
-"Page</ulink>."
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</"
+"ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -237,15 +236,15 @@ msgstr ""
 #: C/index.docbook:190
 msgid ""
 "<imageobject><imagedata fileref=\"figures/drivemount-applet_example.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>The Disk Mounter "
-"applet.</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>The Disk Mounter applet."
+"</phrase> </textobject>"
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:201
 msgid ""
-"The <application>Disk Mounter</application> enables you to quickly mount and"
-" unmount various types of drives and file systems."
+"The <application>Disk Mounter</application> enables you to quickly mount and "
+"unmount various types of drives and file systems."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -253,9 +252,9 @@ msgstr ""
 msgid ""
 "For the <application>Disk Mounter</application> to work properly, your "
 "system administrator must configure your system appropriately. Refer to the "
-"<ulink url=\"man:fstab\" "
-"type=\"man\"><citerefentry><refentrytitle>fstab</refentrytitle><manvolnum>5</manvolnum></citerefentry></ulink>"
-" for more information about the necessary system administration tasks."
+"<ulink url=\"man:fstab\" type=\"man\"><citerefentry><refentrytitle>fstab</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry></ulink> for more "
+"information about the necessary system administration tasks."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -334,8 +333,8 @@ msgstr ""
 #: C/index.docbook:253
 msgid ""
 "Some systems may also automatically mount some removable media (such as USB "
-"and IEEE1394 disks), these devices may also come up in the <application>Disk"
-" Mounter</application> so that you can unmount them when you are finished, "
+"and IEEE1394 disks), these devices may also come up in the <application>Disk "
+"Mounter</application> so that you can unmount them when you are finished, "
 "and provide a visual indication that they are present."
 msgstr ""
 
@@ -353,8 +352,8 @@ msgstr ""
 #: C/index.docbook:266
 msgid ""
 "To display the name and mount status of a drive, move the mouse pointer to "
-"the drive icon in the panel. A tooltip displays the name and mount status of"
-" the drive."
+"the drive icon in the panel. A tooltip displays the name and mount status of "
+"the drive."
 msgstr ""
 
 #. (itstool) path: imageobject/imagedata
@@ -396,8 +395,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:282
 msgid ""
-"To unmount a drive, click on the drive icon in the panel and then select the"
-" <guimenuitem>Unmount Drive</guimenuitem> option, or if the device is a CD-"
+"To unmount a drive, click on the drive icon in the panel and then select the "
+"<guimenuitem>Unmount Drive</guimenuitem> option, or if the device is a CD-"
 "ROM Drive, it may be labeled <guimenuitem>Eject Drive</guimenuitem>"
 msgstr ""
 
@@ -453,8 +452,8 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Jelen dokumentum szabadon másolható, terjeszthető és/vagy módosítható a GNU "
@@ -469,8 +468,8 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Ez a kézikönyv része a GFDL alatt megjelenő CAFE dokumentációk "
 "gyűjteményének. A kézikönyv a gyűjteménytől függetlenül szabadon "
@@ -486,11 +485,11 @@ msgid ""
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
-"A cégek különböző, védjegy alá tartozó elnevezéseket használnak termékeik és"
-" szolgáltatásuk megkülönböztetéséhez. Ahol ezek a nevek megjelennek "
-"bármelyik CAFE dokumentációban és a CAFE dokumentációs projekt tagjainak "
-"tudomásuk van a védjegyről, abban az esetben ezek az elnevezések teljes "
-"egészében vagy kezdőbetűik nagybetűsek."
+"A cégek különböző, védjegy alá tartozó elnevezéseket használnak termékeik és "
+"szolgáltatásuk megkülönböztetéséhez. Ahol ezek a nevek megjelennek bármelyik "
+"CAFE dokumentációban és a CAFE dokumentációs projekt tagjainak tudomásuk van "
+"a védjegyről, abban az esetben ezek az elnevezések teljes egészében vagy "
+"kezdőbetűik nagybetűsek."
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:35
@@ -522,16 +521,16 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "SEMMILYEN KÖRÜLMÉNYEK KÖZÖTT ÉS SEMMILYEN JOGI MEGFONTOLÁSBÓL, LEGYEN AZ "
 "MAGÁNJOGI VÉTKES CSELEKMÉNY (BELEÉRTVE A HANYAGSÁGOT), SZERZŐDÉS VAGY "
@@ -542,8 +541,8 @@ msgstr ""
 "SZÁMÍTÓGÉP MEGHIBÁSODÁSÁBÓL VAGY HELYTELEN MŰKÖDÉSÉBŐL SZÁRMAZÓ, VAGY "
 "BÁRMELY EGYÉB KERESKEDELMI KÁROKAT ÉS VESZTESÉGEKET, MÉG AKKOR IS, HA AZ "
 "ILYEN FÉL INFORMÁLVA LETT AZ ILYEN KÁROK ELŐFORDULÁSÁNAK LEHETŐSÉGÉRŐL. A "
-"FELELŐSSÉG EZEN KORLÁTOZÁSA NEM ALKALMAZHATÓ ABBAN AZ ESETBEN, HA HALÁL VAGY"
-" SZEMÉLYI SÉRÜLÉS TÖRTÉNT A FÉL HANYAGSÁGÁBÓL KIFOLYÓLAG, OLYAN MÉRTÉKBEN, "
+"FELELŐSSÉG EZEN KORLÁTOZÁSA NEM ALKALMAZHATÓ ABBAN AZ ESETBEN, HA HALÁL VAGY "
+"SZEMÉLYI SÉRÜLÉS TÖRTÉNT A FÉL HANYAGSÁGÁBÓL KIFOLYÓLAG, OLYAN MÉRTÉKBEN, "
 "AMENNYIRE AZ ALKALMAZHATÓ TÖRVÉNYEK MEGTILTJÁK AZ ILYEN KORLÁTOZÁSOKAT."
 
 #. (itstool) path: legalnotice/para
@@ -554,5 +553,5 @@ msgid ""
 "<_:orderedlist-1/>"
 msgstr ""
 "A DOKUMENTUM ÉS A DOKUMENTUM MÓDOSÍTOTT VERZIÓI A GNU FREE DOCUMENTATION "
-"LICENSE FELTÉTELEI SZERINT KERÜLNEK KÖZREADÁSRA, A TOVÁBBIAK ISMERETÉBEN: "
-"<_:orderedlist-1/>"
+"LICENSE FELTÉTELEI SZERINT KERÜLNEK KÖZREADÁSRA, A TOVÁBBIAK ISMERETÉBEN: <_:"
+"orderedlist-1/>"

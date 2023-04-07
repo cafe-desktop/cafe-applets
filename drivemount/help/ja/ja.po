@@ -1,11 +1,11 @@
-# 
+#
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # ABE Tsunehiko, 2020
 # あわしろいくや <ikunya@gmail.com>, 2020
 # Wolfgang Ulbrich <cafe@raveit.de>, 2020
 # Aefgh Threenine <aefgh3962@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -13,10 +13,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 11:33+0000\n"
 "Last-Translator: Aefgh Threenine <aefgh3962@gmail.com>, 2020\n"
 "Language-Team: Japanese (https://www.transifex.com/cafe/teams/13566/ja/)\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -96,8 +96,8 @@ msgstr ""
 #: C/index.docbook:73
 msgid ""
 "<firstname>Trent</firstname> <surname>Lloyd</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> "
-"<address><email>lathiat@bur.st</email></address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address><email>lathiat@bur."
+"st</email></address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
@@ -119,8 +119,8 @@ msgstr ""
 #: C/index.docbook:94
 msgid ""
 "<firstname>Dan </firstname> <surname> Mueth</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> <address> "
-"<email>muet@alumni.uchicago.edu</email> </address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address> <email>muet@alumni."
+"uchicago.edu</email> </address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -131,8 +131,8 @@ msgstr "CAFE ドキュメンテーション・チーム"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:120
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.12</revnumber> <date>July "
-"2015</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.12</revnumber> <date>July 2015</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -143,8 +143,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:128
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.11</revnumber> <date>July "
-"2015</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.11</revnumber> <date>July 2015</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -155,8 +155,8 @@ msgstr "Sun GNOME ドキュメンテーション・チーム"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:136
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.10</revnumber> <date>February "
-"2004</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.10</revnumber> <date>February 2004</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -167,8 +167,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:144
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.0</revnumber> <date>March "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.0</revnumber> <date>March 2002</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -179,8 +179,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:154
 msgid ""
-"<revnumber>Drive Mount Applet Manual</revnumber> <date>April 2000</date> "
-"<_:revdescription-1/>"
+"<revnumber>Drive Mount Applet Manual</revnumber> <date>April 2000</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: articleinfo/releaseinfo
@@ -198,8 +198,8 @@ msgstr "フィードバック"
 msgid ""
 "To report a bug or make a suggestion regarding the <application>Disk "
 "Mounter</application> or this manual, follow the directions in the <ulink "
-"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback "
-"Page</ulink>."
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</"
+"ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -233,15 +233,15 @@ msgstr ""
 #: C/index.docbook:190
 msgid ""
 "<imageobject><imagedata fileref=\"figures/drivemount-applet_example.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>The Disk Mounter "
-"applet.</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>The Disk Mounter applet."
+"</phrase> </textobject>"
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:201
 msgid ""
-"The <application>Disk Mounter</application> enables you to quickly mount and"
-" unmount various types of drives and file systems."
+"The <application>Disk Mounter</application> enables you to quickly mount and "
+"unmount various types of drives and file systems."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -249,9 +249,9 @@ msgstr ""
 msgid ""
 "For the <application>Disk Mounter</application> to work properly, your "
 "system administrator must configure your system appropriately. Refer to the "
-"<ulink url=\"man:fstab\" "
-"type=\"man\"><citerefentry><refentrytitle>fstab</refentrytitle><manvolnum>5</manvolnum></citerefentry></ulink>"
-" for more information about the necessary system administration tasks."
+"<ulink url=\"man:fstab\" type=\"man\"><citerefentry><refentrytitle>fstab</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry></ulink> for more "
+"information about the necessary system administration tasks."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -330,8 +330,8 @@ msgstr ""
 #: C/index.docbook:253
 msgid ""
 "Some systems may also automatically mount some removable media (such as USB "
-"and IEEE1394 disks), these devices may also come up in the <application>Disk"
-" Mounter</application> so that you can unmount them when you are finished, "
+"and IEEE1394 disks), these devices may also come up in the <application>Disk "
+"Mounter</application> so that you can unmount them when you are finished, "
 "and provide a visual indication that they are present."
 msgstr ""
 
@@ -349,8 +349,8 @@ msgstr ""
 #: C/index.docbook:266
 msgid ""
 "To display the name and mount status of a drive, move the mouse pointer to "
-"the drive icon in the panel. A tooltip displays the name and mount status of"
-" the drive."
+"the drive icon in the panel. A tooltip displays the name and mount status of "
+"the drive."
 msgstr ""
 
 #. (itstool) path: imageobject/imagedata
@@ -392,8 +392,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:282
 msgid ""
-"To unmount a drive, click on the drive icon in the panel and then select the"
-" <guimenuitem>Unmount Drive</guimenuitem> option, or if the device is a CD-"
+"To unmount a drive, click on the drive icon in the panel and then select the "
+"<guimenuitem>Unmount Drive</guimenuitem> option, or if the device is a CD-"
 "ROM Drive, it may be labeled <guimenuitem>Eject Drive</guimenuitem>"
 msgstr ""
 
@@ -449,8 +449,8 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 
@@ -459,12 +459,13 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
-"本ドキュメントは GFDL の下で配布されているその他の CAFE "
-"マニュアル集の一部である。これらのマニュアルとは別に本ドキュメントを別個に配布する場合は、GFDL "
-"のセクション6で説明しているように、そのマニュアル集に対するライセンスの複製を添付することで実現できる。"
+"本ドキュメントは GFDL の下で配布されているその他の CAFE マニュアル集の一部で"
+"ある。これらのマニュアルとは別に本ドキュメントを別個に配布する場合は、GFDL の"
+"セクション6で説明しているように、そのマニュアル集に対するライセンスの複製を添"
+"付することで実現できる。"
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:19
@@ -475,9 +476,10 @@ msgid ""
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
-"企業は自分達の製品とサービスを区別するために使用する多くの名称が登録商標であると主張している。これらの名称が CAFE "
-"のドキュメントの中に表記されていたり、これらの登録商標が CAFE "
-"ドキュメンテーション・プロジェクトのメンバに提示している箇所は全部を大文字または最初の文字を大文字にしている。"
+"企業は自分達の製品とサービスを区別するために使用する多くの名称が登録商標であ"
+"ると主張している。これらの名称が CAFE のドキュメントの中に表記されていたり、"
+"これらの登録商標が CAFE ドキュメンテーション・プロジェクトのメンバに提示して"
+"いる箇所は全部を大文字または最初の文字を大文字にしている。"
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:35
@@ -509,27 +511,27 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:28

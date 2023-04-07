@@ -1,10 +1,10 @@
-# 
+#
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Микола Ткач <chistomov@gmail.com>, 2020
 # clefebvre <clement.lefebvre@linuxmint.com>, 2020
 # Wolfgang Ulbrich <cafe@raveit.de>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -12,11 +12,14 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 11:33+0000\n"
 "Last-Translator: Wolfgang Ulbrich <cafe@raveit.de>, 2020\n"
 "Language-Team: Ukrainian (https://www.transifex.com/cafe/teams/13566/uk/)\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: uk\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -37,8 +40,8 @@ msgid ""
 "The Disk Mounter applet enables you to quickly mount or unmount various "
 "types of drives and file systems from a panel."
 msgstr ""
-"Аплет Монтування дисків дозволяє швидко монтувати або демонтувати різні типи"
-" дисків і файлових систем з панелі."
+"Аплет Монтування дисків дозволяє швидко монтувати або демонтувати різні типи "
+"дисків і файлових систем з панелі."
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:28
@@ -91,12 +94,12 @@ msgstr ""
 #: C/index.docbook:73
 msgid ""
 "<firstname>Trent</firstname> <surname>Lloyd</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> "
-"<address><email>lathiat@bur.st</email></address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address><email>lathiat@bur."
+"st</email></address> </affiliation>"
 msgstr ""
 "<firstname>Трент</firstname> <surname>Ллойд</surname> <affiliation> "
-"<orgname>Проєкт документування GNOME</orgname> "
-"<address><email>lathiat@bur.st</email></address> </affiliation>"
+"<orgname>Проєкт документування GNOME</orgname> <address><email>lathiat@bur."
+"st</email></address> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:81
@@ -122,12 +125,12 @@ msgstr ""
 #: C/index.docbook:94
 msgid ""
 "<firstname>Dan </firstname> <surname> Mueth</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> <address> "
-"<email>muet@alumni.uchicago.edu</email> </address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address> <email>muet@alumni."
+"uchicago.edu</email> </address> </affiliation>"
 msgstr ""
 "<firstname>Ден </firstname> <surname> Мует</surname> <affiliation> "
-"<orgname>Проєкт документування GNOME</orgname> <address> "
-"<email>muet@alumni.uchicago.edu</email> </address> </affiliation>"
+"<orgname>Проєкт документування GNOME</orgname> <address> <email>muet@alumni."
+"uchicago.edu</email> </address> </affiliation>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:124
@@ -137,8 +140,8 @@ msgstr "Команда документування CAFE"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:120
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.12</revnumber> <date>July "
-"2015</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.12</revnumber> <date>July 2015</"
+"date> <_:revdescription-1/>"
 msgstr ""
 "<revnumber>Керівництво аплету Монтування дисків V2.12</revnumber> "
 "<date>Липень 2015</date> <_:revdescription-1/>"
@@ -151,8 +154,8 @@ msgstr "Трент Ллойд"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:128
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.11</revnumber> <date>July "
-"2015</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.11</revnumber> <date>July 2015</"
+"date> <_:revdescription-1/>"
 msgstr ""
 "<revnumber>Керівництво аплету Монтування дисків V2.11</revnumber> "
 "<date>Липень 2015</date> <_:revdescription-1/>"
@@ -165,8 +168,8 @@ msgstr "Сан Команда документування GNOME "
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:136
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.10</revnumber> <date>February "
-"2004</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.10</revnumber> <date>February 2004</"
+"date> <_:revdescription-1/>"
 msgstr ""
 "<revnumber>Керівництво аплету Монтування дисків V2.10</revnumber> "
 "<date>Лютий 2004</date> <_:revdescription-1/>"
@@ -179,8 +182,8 @@ msgstr "Джон Флек <email>jfleck@inkstain.net</email>"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:144
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.0</revnumber> <date>March "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.0</revnumber> <date>March 2002</"
+"date> <_:revdescription-1/>"
 msgstr ""
 "<revnumber>Керівництво аплету Монтування дисків V2.0</revnumber> "
 "<date>Березень 2002</date> <_:revdescription-1/>"
@@ -193,8 +196,8 @@ msgstr "Ден Мует <email>muet@alumni.uchicago.edu</email>"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:154
 msgid ""
-"<revnumber>Drive Mount Applet Manual</revnumber> <date>April 2000</date> "
-"<_:revdescription-1/>"
+"<revnumber>Drive Mount Applet Manual</revnumber> <date>April 2000</date> <_:"
+"revdescription-1/>"
 msgstr ""
 "<revnumber>Керівництво аплету Монтування дисків</revnumber> <date>Квітень "
 "2000</date> <_:revdescription-1/>"
@@ -214,8 +217,8 @@ msgstr "Зворотній зв'язок"
 msgid ""
 "To report a bug or make a suggestion regarding the <application>Disk "
 "Mounter</application> or this manual, follow the directions in the <ulink "
-"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback "
-"Page</ulink>."
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</"
+"ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -251,18 +254,18 @@ msgstr ""
 #: C/index.docbook:190
 msgid ""
 "<imageobject><imagedata fileref=\"figures/drivemount-applet_example.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>The Disk Mounter "
-"applet.</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>The Disk Mounter applet."
+"</phrase> </textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/drivemount-applet_example.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Аплет Монтування "
-"дисків.</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Аплет Монтування дисків."
+"</phrase> </textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:201
 msgid ""
-"The <application>Disk Mounter</application> enables you to quickly mount and"
-" unmount various types of drives and file systems."
+"The <application>Disk Mounter</application> enables you to quickly mount and "
+"unmount various types of drives and file systems."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -270,9 +273,9 @@ msgstr ""
 msgid ""
 "For the <application>Disk Mounter</application> to work properly, your "
 "system administrator must configure your system appropriately. Refer to the "
-"<ulink url=\"man:fstab\" "
-"type=\"man\"><citerefentry><refentrytitle>fstab</refentrytitle><manvolnum>5</manvolnum></citerefentry></ulink>"
-" for more information about the necessary system administration tasks."
+"<ulink url=\"man:fstab\" type=\"man\"><citerefentry><refentrytitle>fstab</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry></ulink> for more "
+"information about the necessary system administration tasks."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -358,8 +361,8 @@ msgstr ""
 #: C/index.docbook:253
 msgid ""
 "Some systems may also automatically mount some removable media (such as USB "
-"and IEEE1394 disks), these devices may also come up in the <application>Disk"
-" Mounter</application> so that you can unmount them when you are finished, "
+"and IEEE1394 disks), these devices may also come up in the <application>Disk "
+"Mounter</application> so that you can unmount them when you are finished, "
 "and provide a visual indication that they are present."
 msgstr ""
 
@@ -377,12 +380,11 @@ msgstr "Щоб показати ім'я та стан монтування ди�
 #: C/index.docbook:266
 msgid ""
 "To display the name and mount status of a drive, move the mouse pointer to "
-"the drive icon in the panel. A tooltip displays the name and mount status of"
-" the drive."
+"the drive icon in the panel. A tooltip displays the name and mount status of "
+"the drive."
 msgstr ""
 "Щоб показати ім'я та статус монтування диску, перемістіть вказівник миші на "
-"піктограму диску на панелі. Підказка показує ім'я та статус монтування "
-"диску."
+"піктограму диску на панелі. Підказка показує ім'я та статус монтування диску."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -427,8 +429,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:282
 msgid ""
-"To unmount a drive, click on the drive icon in the panel and then select the"
-" <guimenuitem>Unmount Drive</guimenuitem> option, or if the device is a CD-"
+"To unmount a drive, click on the drive icon in the panel and then select the "
+"<guimenuitem>Unmount Drive</guimenuitem> option, or if the device is a CD-"
 "ROM Drive, it may be labeled <guimenuitem>Eject Drive</guimenuitem>"
 msgstr ""
 
@@ -458,8 +460,8 @@ msgid ""
 "icon in the panel, then choose <guimenuitem>Open Drive</guimenuitem>."
 msgstr ""
 "Щоб використовувати файловий керівник для перегляду вмісту диска, натисніть "
-"на піктограму диска на панелі та виберіть <guimenuitem>Відкрити "
-"диск</guimenuitem>."
+"на піктограму диска на панелі та виберіть <guimenuitem>Відкрити диск</"
+"guimenuitem>."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -491,15 +493,15 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 
 #. (itstool) path: legalnotice/para
@@ -507,8 +509,8 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Цей посібник є частиною збірки документації CAFE, яка розповсюджується за "
 "умовами ліцензії GFDL. Якщо ви бажаєте розповсюджувати цей посібник окремо "
@@ -547,29 +549,29 @@ msgid ""
 msgstr ""
 "ДОКУМЕНТ НАДАЄТЬСЯ \\\"ЯК Є\\\", БЕЗ БУДЬ-ЯКИХ ГАРАНТІЇ, ЯВНИХ ЧИ НЕЯВНИХ, "
 "ВКЛЮЧАЮЧИ, АЛЕ НЕ ОБМЕЖУЮЧИСЬ, ГАРАНТІЙ ЩО ЦЕЙ ДОКУМЕНТ ЧИ ЗМІНЕНА ВЕРСІЯ "
-"ДОКУМЕНТА ВІЛЬНІ ВІД ДЕФЕКТІВ, ПРИДАТНІ ДО ПРОДАЖУ, ВІДПОВІДАЮТЬ ПЕВНІЙ МЕТІ"
-" АБО НЕ ПОРУШУЮТЬ ЧИЇСЬ ПРАВА. ВЕСЬ РИЗИК ЗА ЯКІСТЬ, ТОЧНІСТЬ, ТА ЧИННІСТЬ "
+"ДОКУМЕНТА ВІЛЬНІ ВІД ДЕФЕКТІВ, ПРИДАТНІ ДО ПРОДАЖУ, ВІДПОВІДАЮТЬ ПЕВНІЙ МЕТІ "
+"АБО НЕ ПОРУШУЮТЬ ЧИЇСЬ ПРАВА. ВЕСЬ РИЗИК ЗА ЯКІСТЬ, ТОЧНІСТЬ, ТА ЧИННІСТЬ "
 "ЦЬОГО ДОКУМЕНТУ АБО ЙОГО ЗМІНЕНИХ ВЕРСІЙ ЛЕЖИТЬ НА ВАС.  ЯКЩО БУДЬ-ЯКИЙ "
 "ДОКУМЕНТ ЧИ ЗМІНЕНА ВЕРСІЯ БУДУТЬ ВИЗНАНІ ДЕФЕКТНИМИ У БУДЬ-ЯКОМУ "
-"ВІДНОШЕННІ, ВИ (НЕ ПОЧАТКОВИЙ УКЛАДАЧ, АВТОР АБО БУДЬ-ЯКИЙ СПІВАВТОР) БЕРЕТЕ"
-" НА СЕБЕ ВИТРАТИ ЗА БУДЬ-ЯКЕ НЕОБХІДНЕ ОБСЛУГОВУВАННЯ, РЕМОНТ ЧИ "
-"ВИПРАВЛЕННЯ. ЦЯ ВІДМОВА ВІД ГАРАНТІЙ СКЛАДАЄ ВАЖЛИВУ ЧАСТИНУ ЦІЄЇ ЛІЦЕНЗІЇ. "
-"НЕ ДОПУСКАЄТЬСЯ ВИКОРИСТАННЯ ЦЬОГО ДОКУМЕНТУ АБО ЙОГО ЗМІНЕНОЇ ВЕРСІЇ БЕЗ "
+"ВІДНОШЕННІ, ВИ (НЕ ПОЧАТКОВИЙ УКЛАДАЧ, АВТОР АБО БУДЬ-ЯКИЙ СПІВАВТОР) БЕРЕТЕ "
+"НА СЕБЕ ВИТРАТИ ЗА БУДЬ-ЯКЕ НЕОБХІДНЕ ОБСЛУГОВУВАННЯ, РЕМОНТ ЧИ ВИПРАВЛЕННЯ. "
+"ЦЯ ВІДМОВА ВІД ГАРАНТІЙ СКЛАДАЄ ВАЖЛИВУ ЧАСТИНУ ЦІЄЇ ЛІЦЕНЗІЇ. НЕ "
+"ДОПУСКАЄТЬСЯ ВИКОРИСТАННЯ ЦЬОГО ДОКУМЕНТУ АБО ЙОГО ЗМІНЕНОЇ ВЕРСІЇ БЕЗ "
 "ПРИЙНЯТТЯ ЦІЄЇ ВІДМОВИ; ТА"
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "НІ ЗА ЯКИХ ОБСТАВИН ТА ЗА БУДЬ-ЯКОГО ЗАКОНОДАВСТВА, ЧИ ТО ГРОМАДЯНСЬКОЇ "
 "ВІДПОВІДАЛЬНОСТІ (ВКЛЮЧАЮЧИ ХАЛАТНІСТЬ), ДОГОВОРУ, ЧИ ЧОГОСЬ ІНШОГО, АВТОР, "
@@ -577,11 +579,11 @@ msgstr ""
 "ЗМІНЕНОЇ ВЕРСІЇ ДОКУМЕНТУ, АБО БУДЬ-ЯКИЙ ПОСТАЧАЛЬНИК БУДЬ-ЯКОЇ З ЦИХ "
 "СТОРІН, НЕ НЕСЕ ВІДПОВІДАЛЬНІСТЬ ПЕРЕД БУДЬ-ЯКОЮ ОСОБОЮ ЗА БУДЬ-ЯКІ ПРЯМІ, "
 "НЕПРЯМІ, ОСОБЛИВІ, ВИПАДКОВІ, АБО ІСТОТНІ ЗБИТКИ БУДЬ-ЯКОГО ХАРАКТЕРУ "
-"ВКЛЮЧАЮЧИ, АЛЕ НЕ ОБМЕЖУЮЧИСЬ, ЗБИТКАМИ ВІД ВТРАТИ ПРЕСТИЖУ, ЗУПИНКИ РОБОТИ,"
-" ЗБОЇВ АБО НЕСПРАВНОСТЕЙ КОМП'ЮТЕРА, АБО БУДЬ-ЯКІ ІНШІ ЗБИТКИ АБО ВТРАТИ ЩО "
+"ВКЛЮЧАЮЧИ, АЛЕ НЕ ОБМЕЖУЮЧИСЬ, ЗБИТКАМИ ВІД ВТРАТИ ПРЕСТИЖУ, ЗУПИНКИ РОБОТИ, "
+"ЗБОЇВ АБО НЕСПРАВНОСТЕЙ КОМП'ЮТЕРА, АБО БУДЬ-ЯКІ ІНШІ ЗБИТКИ АБО ВТРАТИ ЩО "
 "ВИНИКЛИ БЕЗВІДНОСНО АБО ВНАСЛІДОК ВИКОРИСТАННЯ ЦЬОГО ДОКУМЕНТУ ТА ЗМІНЕНИХ "
-"ВЕРСІЙ ЦЬОГО ДОКУМЕНТУ, НАВІТЬ ЯКЩО ЦІ СТОРОНИ, МОЖЛИВО, БУЛИ ПРОІНФОРМОВАНІ"
-" ПРО МОЖЛИВІСТЬ ТАКИХ ЗБИТКІВ."
+"ВЕРСІЙ ЦЬОГО ДОКУМЕНТУ, НАВІТЬ ЯКЩО ЦІ СТОРОНИ, МОЖЛИВО, БУЛИ ПРОІНФОРМОВАНІ "
+"ПРО МОЖЛИВІСТЬ ТАКИХ ЗБИТКІВ."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:28

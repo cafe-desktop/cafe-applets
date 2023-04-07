@@ -1,21 +1,22 @@
-# 
+#
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Jose Alfredo Murcia Andrés <joamuran@gmail.com>, 2020
 # Pilar Embid <embid.mar@gmail.com>, 2020
 # Empar Montoro <emontra2018@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 11:33+0000\n"
 "Last-Translator: Empar Montoro <emontra2018@gmail.com>, 2020\n"
-"Language-Team: Catalan (Valencian) (https://www.transifex.com/cafe/teams/13566/ca@valencia/)\n"
+"Language-Team: Catalan (Valencian) (https://www.transifex.com/cafe/"
+"teams/13566/ca@valencia/)\n"
+"Language: ca@valencia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ca@valencia\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -90,8 +91,8 @@ msgstr ""
 #: C/index.docbook:73
 msgid ""
 "<firstname>Trent</firstname> <surname>Lloyd</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> "
-"<address><email>lathiat@bur.st</email></address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address><email>lathiat@bur."
+"st</email></address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
@@ -100,8 +101,8 @@ msgid ""
 "<firstname>Sun</firstname> <surname>GNOME Documentation Team</surname> "
 "<affiliation><orgname>Sun Microsystems</orgname></affiliation>"
 msgstr ""
-"<firstname>Sun</firstname> <surname>Equip de documentació de GNOME</surname>"
-" <affiliation> <orgname>Sun Microsystems</orgname> </affiliation>"
+"<firstname>Sun</firstname> <surname>Equip de documentació de GNOME</surname> "
+"<affiliation> <orgname>Sun Microsystems</orgname> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:86
@@ -115,8 +116,8 @@ msgstr ""
 #: C/index.docbook:94
 msgid ""
 "<firstname>Dan </firstname> <surname> Mueth</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> <address> "
-"<email>muet@alumni.uchicago.edu</email> </address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address> <email>muet@alumni."
+"uchicago.edu</email> </address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -127,8 +128,8 @@ msgstr "Equip de documentació del CAFE"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:120
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.12</revnumber> <date>July "
-"2015</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.12</revnumber> <date>July 2015</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -139,8 +140,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:128
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.11</revnumber> <date>July "
-"2015</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.11</revnumber> <date>July 2015</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -151,8 +152,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:136
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.10</revnumber> <date>February "
-"2004</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.10</revnumber> <date>February 2004</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -163,8 +164,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:144
 msgid ""
-"<revnumber>Disk Mounter Applet Manual V2.0</revnumber> <date>March "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Disk Mounter Applet Manual V2.0</revnumber> <date>March 2002</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -175,8 +176,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:154
 msgid ""
-"<revnumber>Drive Mount Applet Manual</revnumber> <date>April 2000</date> "
-"<_:revdescription-1/>"
+"<revnumber>Drive Mount Applet Manual</revnumber> <date>April 2000</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: articleinfo/releaseinfo
@@ -194,8 +195,8 @@ msgstr "Comentaris"
 msgid ""
 "To report a bug or make a suggestion regarding the <application>Disk "
 "Mounter</application> or this manual, follow the directions in the <ulink "
-"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback "
-"Page</ulink>."
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</"
+"ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -229,15 +230,15 @@ msgstr ""
 #: C/index.docbook:190
 msgid ""
 "<imageobject><imagedata fileref=\"figures/drivemount-applet_example.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>The Disk Mounter "
-"applet.</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>The Disk Mounter applet."
+"</phrase> </textobject>"
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:201
 msgid ""
-"The <application>Disk Mounter</application> enables you to quickly mount and"
-" unmount various types of drives and file systems."
+"The <application>Disk Mounter</application> enables you to quickly mount and "
+"unmount various types of drives and file systems."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -245,9 +246,9 @@ msgstr ""
 msgid ""
 "For the <application>Disk Mounter</application> to work properly, your "
 "system administrator must configure your system appropriately. Refer to the "
-"<ulink url=\"man:fstab\" "
-"type=\"man\"><citerefentry><refentrytitle>fstab</refentrytitle><manvolnum>5</manvolnum></citerefentry></ulink>"
-" for more information about the necessary system administration tasks."
+"<ulink url=\"man:fstab\" type=\"man\"><citerefentry><refentrytitle>fstab</"
+"refentrytitle><manvolnum>5</manvolnum></citerefentry></ulink> for more "
+"information about the necessary system administration tasks."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -326,8 +327,8 @@ msgstr ""
 #: C/index.docbook:253
 msgid ""
 "Some systems may also automatically mount some removable media (such as USB "
-"and IEEE1394 disks), these devices may also come up in the <application>Disk"
-" Mounter</application> so that you can unmount them when you are finished, "
+"and IEEE1394 disks), these devices may also come up in the <application>Disk "
+"Mounter</application> so that you can unmount them when you are finished, "
 "and provide a visual indication that they are present."
 msgstr ""
 
@@ -345,8 +346,8 @@ msgstr ""
 #: C/index.docbook:266
 msgid ""
 "To display the name and mount status of a drive, move the mouse pointer to "
-"the drive icon in the panel. A tooltip displays the name and mount status of"
-" the drive."
+"the drive icon in the panel. A tooltip displays the name and mount status of "
+"the drive."
 msgstr ""
 
 #. (itstool) path: imageobject/imagedata
@@ -388,8 +389,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:282
 msgid ""
-"To unmount a drive, click on the drive icon in the panel and then select the"
-" <guimenuitem>Unmount Drive</guimenuitem> option, or if the device is a CD-"
+"To unmount a drive, click on the drive icon in the panel and then select the "
+"<guimenuitem>Unmount Drive</guimenuitem> option, or if the device is a CD-"
 "ROM Drive, it may be labeled <guimenuitem>Eject Drive</guimenuitem>"
 msgstr ""
 
@@ -445,13 +446,13 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Es concedeix el permís per a copiar, distribuir i / o modificar aquest "
-"document sota els termes de la GFDL (GNU Free Documentation License), versió"
-" 1.1 o qualsevol versió posterior publicada per la Free Software Foundation "
+"document sota els termes de la GFDL (GNU Free Documentation License), versió "
+"1.1 o qualsevol versió posterior publicada per la Free Software Foundation "
 "que tinguen les seccions invariants, i sense cap text a la portada. Podeu "
 "trobar una còpia de la GFDL en aquest <_:ulink-1/> o bé al fitxer COPYING-"
 "DOCS que es distribueix amb aquest manual."
@@ -461,13 +462,13 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Aquest manual forma part d'una col·lecció de manuals del CAFE que estan "
 "distribuïts sota la GFDL. Si voleu distribuir aquest manual per separat de "
-"la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal"
-" com es descriu a la secció 6 de la llicència."
+"la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal "
+"com es descriu a la secció 6 de la llicència."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:19
@@ -481,8 +482,8 @@ msgstr ""
 "Molts dels noms utilitzats per les empreses per a distingir els seus "
 "productes i serveis es consideren marques comercials. Quan aquests noms "
 "apareixen en qualsevol documentació del CAFE, i els membres del projecte de "
-"documentació del CAFE en són conscients, els noms tenen lletres majúscules o"
-" bé comencen amb majúscula."
+"documentació del CAFE en són conscients, els noms tenen lletres majúscules o "
+"bé comencen amb majúscula."
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:35
@@ -507,29 +508,28 @@ msgstr ""
 "DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL "
 "DOCUMENT RESULTARA DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO L'ESCRIPTOR "
 "INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE "
-"MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX"
-" UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT"
-" O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA;"
-" I"
+"MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX "
+"UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT "
+"O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I"
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
-"EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGA PER AGREUJAMENT "
-"(INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR "
-"ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA "
-"VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN "
+"EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGA PER AGREUJAMENT (INCLOENT-"
+"HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR ORIGINAL, "
+"QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA VERSIÓ "
+"MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN "
 "RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, "
 "ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITACIÓ, "
 "ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FAENA, FALLADA O MAL "
