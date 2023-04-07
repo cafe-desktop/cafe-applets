@@ -5,7 +5,7 @@
 # Wolfgang Ulbrich <cafe@raveit.de>, 2019
 # Balázs Meskó <meskobalazs@gmail.com>, 2019
 # Csaba Székely <szekelycsaba76@gmail.com>, 2019
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -13,10 +13,10 @@ msgstr ""
 "PO-Revision-Date: 2018-09-27 15:11+0000\n"
 "Last-Translator: Csaba Székely <szekelycsaba76@gmail.com>, 2019\n"
 "Language-Team: Hungarian (https://www.transifex.com/cafe/teams/13566/hu/)\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -92,16 +92,16 @@ msgstr ""
 #: C/index.docbook:72
 msgid ""
 "<firstname>Sun</firstname> <surname>GNOME Documentation Team</surname> "
-"<affiliation> <orgname>Sun Microsystems</orgname> <_:address-1/> "
-"</affiliation>"
+"<affiliation> <orgname>Sun Microsystems</orgname> <_:address-1/> </"
+"affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:80
 msgid ""
 "<firstname>Telsa</firstname> <surname>Gwynne</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> <address> "
-"<email>hobbit@aloss.ukuu.org.uk</email> </address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address> <email>hobbit@aloss."
+"ukuu.org.uk</email> </address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
@@ -120,8 +120,8 @@ msgstr "CAFE dokumentációs csapat"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:113
 msgid ""
-"<revnumber>Eyes Applet Manual V2.8</revnumber> <date>July 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Eyes Applet Manual V2.8</revnumber> <date>July 2015</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -146,8 +146,8 @@ msgstr "Sun GNOME Dokumentációs csapat"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:129
 msgid ""
-"<revnumber>Eyes Applet Manual V2.6</revnumber> <date>February 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Eyes Applet Manual V2.6</revnumber> <date>February 2004</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
@@ -160,36 +160,36 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:145
 msgid ""
-"<revnumber>Geyes Applet Manual V2.4</revnumber> <date>August 2003</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.4</revnumber> <date>August 2003</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:153
 msgid ""
-"<revnumber>Geyes Applet Manual V2.3</revnumber> <date>January 2003</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.3</revnumber> <date>January 2003</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:161
 msgid ""
-"<revnumber>Geyes Applet Manual V2.2</revnumber> <date>August 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.2</revnumber> <date>August 2002</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:169
 msgid ""
-"<revnumber>Geyes Applet Manual V2.1</revnumber> <date>June 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.1</revnumber> <date>June 2002</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:177
 msgid ""
-"<revnumber>Geyes Applet Manual V2.0</revnumber> <date>March 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.0</revnumber> <date>March 2002</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -222,8 +222,8 @@ msgstr "Visszajelzés"
 #: C/index.docbook:201
 msgid ""
 "To report a bug or make a suggestion regarding the Eyes applet or this "
-"manual, follow the directions in the <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"manual, follow the directions in the <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -256,17 +256,17 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:219
 msgid ""
-"<imageobject><imagedata fileref=\"figures/geyes_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows Eyes "
-"applet.</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/geyes_applet.png\" format=\"PNG\"/"
+"> </imageobject> <textobject> <phrase>Shows Eyes applet.</phrase> </"
+"textobject>"
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:229
 msgid ""
 "The <application>Eyes</application> applet provides an entertaining way to "
-"track the movement of the mouse pointer around your screen. The applet is an"
-" image of one or more eyes that follow the mouse pointer around the screen."
+"track the movement of the mouse pointer around your screen. The applet is an "
+"image of one or more eyes that follow the mouse pointer around the screen."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -306,8 +306,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:263
 msgid ""
-"The layout of the <application>Eyes</application> applet varies depending on"
-" the size and type of panel in which the applet resides."
+"The layout of the <application>Eyes</application> applet varies depending on "
+"the size and type of panel in which the applet resides."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -335,8 +335,8 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Jelen dokumentum szabadon másolható, terjeszthető és/vagy módosítható a GNU "
@@ -351,8 +351,8 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Ez a kézikönyv része a GFDL alatt megjelenő CAFE dokumentációk "
 "gyűjteményének. A kézikönyv a gyűjteménytől függetlenül szabadon "
@@ -368,11 +368,11 @@ msgid ""
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
-"A cégek különböző, védjegy alá tartozó elnevezéseket használnak termékeik és"
-" szolgáltatásuk megkülönböztetéséhez. Ahol ezek a nevek megjelennek "
-"bármelyik CAFE dokumentációban és a CAFE dokumentációs projekt tagjainak "
-"tudomásuk van a védjegyről, abban az esetben ezek az elnevezések teljes "
-"egészében vagy kezdőbetűik nagybetűsek."
+"A cégek különböző, védjegy alá tartozó elnevezéseket használnak termékeik és "
+"szolgáltatásuk megkülönböztetéséhez. Ahol ezek a nevek megjelennek bármelyik "
+"CAFE dokumentációban és a CAFE dokumentációs projekt tagjainak tudomásuk van "
+"a védjegyről, abban az esetben ezek az elnevezések teljes egészében vagy "
+"kezdőbetűik nagybetűsek."
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:35
@@ -404,16 +404,16 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "SEMMILYEN KÖRÜLMÉNYEK KÖZÖTT ÉS SEMMILYEN JOGI MEGFONTOLÁSBÓL, LEGYEN AZ "
 "MAGÁNJOGI VÉTKES CSELEKMÉNY (BELEÉRTVE A HANYAGSÁGOT), SZERZŐDÉS VAGY "
@@ -424,8 +424,8 @@ msgstr ""
 "SZÁMÍTÓGÉP MEGHIBÁSODÁSÁBÓL VAGY HELYTELEN MŰKÖDÉSÉBŐL SZÁRMAZÓ, VAGY "
 "BÁRMELY EGYÉB KERESKEDELMI KÁROKAT ÉS VESZTESÉGEKET, MÉG AKKOR IS, HA AZ "
 "ILYEN FÉL INFORMÁLVA LETT AZ ILYEN KÁROK ELŐFORDULÁSÁNAK LEHETŐSÉGÉRŐL. A "
-"FELELŐSSÉG EZEN KORLÁTOZÁSA NEM ALKALMAZHATÓ ABBAN AZ ESETBEN, HA HALÁL VAGY"
-" SZEMÉLYI SÉRÜLÉS TÖRTÉNT A FÉL HANYAGSÁGÁBÓL KIFOLYÓLAG, OLYAN MÉRTÉKBEN, "
+"FELELŐSSÉG EZEN KORLÁTOZÁSA NEM ALKALMAZHATÓ ABBAN AZ ESETBEN, HA HALÁL VAGY "
+"SZEMÉLYI SÉRÜLÉS TÖRTÉNT A FÉL HANYAGSÁGÁBÓL KIFOLYÓLAG, OLYAN MÉRTÉKBEN, "
 "AMENNYIRE AZ ALKALMAZHATÓ TÖRVÉNYEK MEGTILTJÁK AZ ILYEN KORLÁTOZÁSOKAT."
 
 #. (itstool) path: legalnotice/para
@@ -436,5 +436,5 @@ msgid ""
 "<_:orderedlist-1/>"
 msgstr ""
 "A DOKUMENTUM ÉS A DOKUMENTUM MÓDOSÍTOTT VERZIÓI A GNU FREE DOCUMENTATION "
-"LICENSE FELTÉTELEI SZERINT KERÜLNEK KÖZREADÁSRA, A TOVÁBBIAK ISMERETÉBEN: "
-"<_:orderedlist-1/>"
+"LICENSE FELTÉTELEI SZERINT KERÜLNEK KÖZREADÁSRA, A TOVÁBBIAK ISMERETÉBEN: <_:"
+"orderedlist-1/>"

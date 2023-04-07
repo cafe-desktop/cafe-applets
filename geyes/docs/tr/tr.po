@@ -3,7 +3,7 @@
 # Butterfly <gokhanlnx@gmail.com>, 2018
 # Murat Servan Kahraman, 2018
 # mauron, 2018
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -11,10 +11,10 @@ msgstr ""
 "PO-Revision-Date: 2018-09-27 15:11+0000\n"
 "Last-Translator: mauron, 2018\n"
 "Language-Team: Turkish (https://www.transifex.com/cafe/teams/13566/tr/)\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -98,23 +98,23 @@ msgstr ""
 #: C/index.docbook:72
 msgid ""
 "<firstname>Sun</firstname> <surname>GNOME Documentation Team</surname> "
-"<affiliation> <orgname>Sun Microsystems</orgname> <_:address-1/> "
-"</affiliation>"
+"<affiliation> <orgname>Sun Microsystems</orgname> <_:address-1/> </"
+"affiliation>"
 msgstr ""
 "<firstname>Sun</firstname> <surname>GNOME Belgelendirme Projesi</surname> "
-"<affiliation> <orgname>Sun Microsystems</orgname> <_:address-1/> "
-"</affiliation>"
+"<affiliation> <orgname>Sun Microsystems</orgname> <_:address-1/> </"
+"affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:80
 msgid ""
 "<firstname>Telsa</firstname> <surname>Gwynne</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> <address> "
-"<email>hobbit@aloss.ukuu.org.uk</email> </address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address> <email>hobbit@aloss."
+"ukuu.org.uk</email> </address> </affiliation>"
 msgstr ""
 "<firstname>Telsa</firstname> <surname>Gwynne</surname> <affiliation> "
-"<orgname>GNOME Belgelendirme Projesi</orgname> <address> "
-"<email>hobbit@aloss.ukuu.org.uk</email> </address> </affiliation>"
+"<orgname>GNOME Belgelendirme Projesi</orgname> <address> <email>hobbit@aloss."
+"ukuu.org.uk</email> </address> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:88
@@ -135,11 +135,11 @@ msgstr "CAFE Belgelendirme Projesi"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:113
 msgid ""
-"<revnumber>Eyes Applet Manual V2.8</revnumber> <date>July 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Eyes Applet Manual V2.8</revnumber> <date>July 2015</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Gözler Uygulamacığı Kılavuzu V2.8</revnumber> <date>Temmuz "
-"2015</date> <_:revdescription-1/>"
+"<revnumber>Gözler Uygulamacığı Kılavuzu V2.8</revnumber> <date>Temmuz 2015</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:125
@@ -152,8 +152,8 @@ msgid ""
 "<revnumber>Eyes Applet Manual V2.7</revnumber> <date>September 2004</date> "
 "<_:revdescription-1/>"
 msgstr ""
-"<revnumber>Gözler Uygulamacığı Kılavuzu V2.7</revnumber> <date>Eylül "
-"2004</date> <_:revdescription-1/>"
+"<revnumber>Gözler Uygulamacığı Kılavuzu V2.7</revnumber> <date>Eylül 2004</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:133 C/index.docbook:141 C/index.docbook:149
@@ -165,11 +165,11 @@ msgstr "Sun GNOME Belgelendirme Takımı"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:129
 msgid ""
-"<revnumber>Eyes Applet Manual V2.6</revnumber> <date>February 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Eyes Applet Manual V2.6</revnumber> <date>February 2004</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Gözler Uygulamacığı Kılavuzu V2.6</revnumber> <date>Şubat "
-"2004</date> <_:revdescription-1/>"
+"<revnumber>Gözler Uygulamacığı Kılavuzu V2.6</revnumber> <date>Şubat 2004</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:137
@@ -177,53 +177,53 @@ msgid ""
 "<revnumber>Geyes Applet Manual V2.5</revnumber> <date>September 2003</date> "
 "<_:revdescription-1/>"
 msgstr ""
-"<revnumber>Gözler Uygulamacığı Kılavuzu V2.5</revnumber> <date>Eylül "
-"2003</date> <_:revdescription-1/>"
+"<revnumber>Gözler Uygulamacığı Kılavuzu V2.5</revnumber> <date>Eylül 2003</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:145
 msgid ""
-"<revnumber>Geyes Applet Manual V2.4</revnumber> <date>August 2003</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.4</revnumber> <date>August 2003</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Gözler Uygulamacığı Kılavuzu V2.4</revnumber> <date>Ağustos "
-"2003</date> <_:revdescription-1/>"
+"<revnumber>Gözler Uygulamacığı Kılavuzu V2.4</revnumber> <date>Ağustos 2003</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:153
 msgid ""
-"<revnumber>Geyes Applet Manual V2.3</revnumber> <date>January 2003</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.3</revnumber> <date>January 2003</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Gözler Uygulamacığı Kılavuzu V2.3</revnumber> <date>Ocak "
-"2003</date> <_:revdescription-1/>"
+"<revnumber>Gözler Uygulamacığı Kılavuzu V2.3</revnumber> <date>Ocak 2003</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:161
 msgid ""
-"<revnumber>Geyes Applet Manual V2.2</revnumber> <date>August 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.2</revnumber> <date>August 2002</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Gözler Uygulamacığı Kılavuzu V2.2</revnumber> <date>Ağustos "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Gözler Uygulamacığı Kılavuzu V2.2</revnumber> <date>Ağustos 2002</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:169
 msgid ""
-"<revnumber>Geyes Applet Manual V2.1</revnumber> <date>June 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.1</revnumber> <date>June 2002</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Gözler Uygulamacığı Kılavuzu V2.1</revnumber> <date>Haziran "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Gözler Uygulamacığı Kılavuzu V2.1</revnumber> <date>Haziran 2002</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:177
 msgid ""
-"<revnumber>Geyes Applet Manual V2.0</revnumber> <date>March 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.0</revnumber> <date>March 2002</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Gözler Uygulamacığı Kılavuzu V2.0</revnumber> <date>Mart "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Gözler Uygulamacığı Kılavuzu V2.0</revnumber> <date>Mart 2002</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:189
@@ -240,8 +240,8 @@ msgstr "Arjan Scherpenisse <email>acscherp@wins.uva.nl</email>"
 msgid ""
 "<revnumber>gEyes Applet</revnumber> <date>2000</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Gözler Uygulamacığı</revnumber> <date>2000</date> "
-"<_:revdescription-1/>"
+"<revnumber>Gözler Uygulamacığı</revnumber> <date>2000</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: articleinfo/releaseinfo
 #: C/index.docbook:197
@@ -257,8 +257,8 @@ msgstr "Geri bildirim"
 #: C/index.docbook:201
 msgid ""
 "To report a bug or make a suggestion regarding the Eyes applet or this "
-"manual, follow the directions in the <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"manual, follow the directions in the <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 "Bu kılavuz veya Gözler uygulamacığı hakkında hata raporlamak veya öneride "
 "bulunmak için <ulink url=\"help:cafe-user-guide/feedback\" "
@@ -296,20 +296,20 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:219
 msgid ""
-"<imageobject><imagedata fileref=\"figures/geyes_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows Eyes "
-"applet.</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/geyes_applet.png\" format=\"PNG\"/"
+"> </imageobject> <textobject> <phrase>Shows Eyes applet.</phrase> </"
+"textobject>"
 msgstr ""
-"<imageobject><imagedata fileref=\"figures/geyes_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Gözler Uygulamacığını "
-"Gösterir applet.</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/geyes_applet.png\" format=\"PNG\"/"
+"> </imageobject> <textobject> <phrase>Gözler Uygulamacığını Gösterir applet."
+"</phrase> </textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:229
 msgid ""
 "The <application>Eyes</application> applet provides an entertaining way to "
-"track the movement of the mouse pointer around your screen. The applet is an"
-" image of one or more eyes that follow the mouse pointer around the screen."
+"track the movement of the mouse pointer around your screen. The applet is an "
+"image of one or more eyes that follow the mouse pointer around the screen."
 msgstr ""
 "<application>Gözler</application> uygulamacığı, fare işaretçisinin "
 "hareketini ekranınızda takip etmek için eğlenceli bir yol sağlar. "
@@ -327,8 +327,8 @@ msgid ""
 "To add <application>Eyes</application> to a panel, perform the following "
 "steps:"
 msgstr ""
-"Bir panele <application>Gözler</application> eklemek için aşağıdaki adımları"
-" gerçekleştirin:"
+"Bir panele <application>Gözler</application> eklemek için aşağıdaki adımları "
+"gerçekleştirin:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:242
@@ -357,8 +357,8 @@ msgstr "<guibutton>Ekle</guibutton> düğmesine tıklayın."
 #. (itstool) path: sect2/para
 #: C/index.docbook:263
 msgid ""
-"The layout of the <application>Eyes</application> applet varies depending on"
-" the size and type of panel in which the applet resides."
+"The layout of the <application>Eyes</application> applet varies depending on "
+"the size and type of panel in which the applet resides."
 msgstr ""
 "<application>Gözler</application> uygulamacığının düzeni bulunduğu panelin "
 "boyutu ve türüne göre değişiklik gösteir."
@@ -376,10 +376,10 @@ msgid ""
 "<guimenuitem>Preferences</guimenuitem>. You can choose from a number of "
 "different themes. Each theme affects how the eyes look."
 msgstr ""
-"<application>Gözleri</application> yapılandırmak için "
-"<application>Gözler</application> uygulamacığına sağ tıklayın, ardından "
-"<guimenuitem>Tercihler</guimenuitem> unsurunu seçin. Çeşitli temalardan "
-"seçim yapabilirsiniz. Her tema gözlerin görünüşünü etkiler."
+"<application>Gözleri</application> yapılandırmak için <application>Gözler</"
+"application> uygulamacığına sağ tıklayın, ardından <guimenuitem>Tercihler</"
+"guimenuitem> unsurunu seçin. Çeşitli temalardan seçim yapabilirsiniz. Her "
+"tema gözlerin görünüşünü etkiler."
 
 #. (itstool) path: para/ulink
 #: C/legal.xml:9
@@ -392,24 +392,24 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
-"Bu belgeyi kopyalama, dağıtma ve/veya değiştirme izni, değişmez bölümsüz, ön"
-" kapak metinsiz ve arka kapak metinsiz şekilde GNU Free Documentation "
-"License (GNU Özgür Belgeleme Lisansı, GFDL), sürüm 1.1 ya da Free Software "
-"Foundation tarafından yayınlanan daha yeni bir sürüm kapsamında verilmiştir."
-" GFDL'in bir kopyasını bu <_:ulink-1/>  ya da bu kılavuzla dağıtılan "
-"COPYING-DOCS dosyasında bulabilirsiniz."
+"Bu belgeyi kopyalama, dağıtma ve/veya değiştirme izni, değişmez bölümsüz, ön "
+"kapak metinsiz ve arka kapak metinsiz şekilde GNU Free Documentation License "
+"(GNU Özgür Belgeleme Lisansı, GFDL), sürüm 1.1 ya da Free Software "
+"Foundation tarafından yayınlanan daha yeni bir sürüm kapsamında verilmiştir. "
+"GFDL'in bir kopyasını bu <_:ulink-1/>  ya da bu kılavuzla dağıtılan COPYING-"
+"DOCS dosyasında bulabilirsiniz."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Bu kılavuz, GFDL (GNU Özgür Belgelendirme Lisansı) kapsamında yayınlanan "
 "CAFE kılavuzları koleksiyonunun bir parçasıdır. Bu kılavuzu koleksiyondan "
@@ -427,8 +427,8 @@ msgid ""
 msgstr ""
 "Firmalar tarafından ürün ve hizmetlerinin ayırt edilmeleri için "
 "kullandıkları isimlerin birçoğu tescilli marka olarak ayrılmıştır. Bu "
-"isimlerin CAFE belgelendirilmesinde yer alması ve CAFE Belgelendirme Projesi"
-" mensupları bu tescilli markalardan haberdar edildikleri durumda, isimlerin "
+"isimlerin CAFE belgelendirilmesinde yer alması ve CAFE Belgelendirme Projesi "
+"mensupları bu tescilli markalardan haberdar edildikleri durumda, isimlerin "
 "ilk harfi ya da tamamı büyük harflerle yazılır."
 
 #. (itstool) path: listitem/para
@@ -446,10 +446,10 @@ msgid ""
 "ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
 "OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
 msgstr ""
-"BELGE OLDUĞU GİBİ, AÇIK VEYA ZIMNİ HİÇBİR TÜRLÜ GARANTİ OLMADAN SUNULMUŞTUR,"
-" Kİ BUNA SINIRLAMA OLMAKSIZIN BELGE VEYA BELGENİN DEĞİŞTİRİLMİŞ SÜRÜMLERİNİN"
-" BELLİ BİR AMACA UYGUN OLMALARI, KUSURDAN ARINMIŞ OLMALARI VEYA HAK "
-"İHLALİNDE BULUNMAMALARI GARANTİLERİ OLMAMASI DA DAHİLDİR. BELGE VE BELGENİN "
+"BELGE OLDUĞU GİBİ, AÇIK VEYA ZIMNİ HİÇBİR TÜRLÜ GARANTİ OLMADAN SUNULMUŞTUR, "
+"Kİ BUNA SINIRLAMA OLMAKSIZIN BELGE VEYA BELGENİN DEĞİŞTİRİLMİŞ SÜRÜMLERİNİN "
+"BELLİ BİR AMACA UYGUN OLMALARI, KUSURDAN ARINMIŞ OLMALARI VEYA HAK İHLALİNDE "
+"BULUNMAMALARI GARANTİLERİ OLMAMASI DA DAHİLDİR. BELGE VE BELGENİN "
 "DEĞİŞTİRİLMİŞ SÜRÜMLERİNİN KALİTESİ, DOĞRULUĞU VE PERFORMANSINA İLİŞKİN TÜM "
 "RİSK SİZE AİTTİR. HERHANGİ BİR BELGE VEYA BELGENİN DEĞİŞTİRİLMİŞ SÜRÜMÜNÜN "
 "KUSURLU OLMASI HALİNDE, GEREKLİ SERVİS, ONARIM VE DÜZELTMENİN ÜCRETİNİ SİZ "
@@ -461,19 +461,19 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
-"HİÇBİR KOŞULDA VE HİÇBİR YASAL TEORİDE, Kİ BU TAZMİNAT YÜKÜMLÜLÜĞÜ (İHMAK DE"
-" DAHİL), KONTRATO VEYA BAŞKA BİR ŞEKİLİ DE İÇERİR, BELGEYİ VE BELGENİN "
+"HİÇBİR KOŞULDA VE HİÇBİR YASAL TEORİDE, Kİ BU TAZMİNAT YÜKÜMLÜLÜĞÜ (İHMAK DE "
+"DAHİL), KONTRATO VEYA BAŞKA BİR ŞEKİLİ DE İÇERİR, BELGEYİ VE BELGENİN "
 "DEĞİŞTİRİLMİŞ SÜRÜMLERİNİ İLK YAZAN, YAZAR, HERHANGİ BİR KATKIDA BULUNAN, "
 "DAĞITAN VEYA BU TARAFLARIN HERHANGİ BİR TEDARİKÇİSİ HERHANGİ DOĞRUDAN, "
 "DOLAYLI, ÖZEL, ARIZİ  ZARARLARDAN HERHANGİ BİR KİŞİ SORUMLU DEĞİLDİR, Kİ "

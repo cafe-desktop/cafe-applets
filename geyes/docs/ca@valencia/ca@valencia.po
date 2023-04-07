@@ -3,18 +3,19 @@
 # Jose Alfredo Murcia Andrés <joamuran@gmail.com>, 2018
 # Pilar Embid <embid.mar@gmail.com>, 2018
 # Empar Montoro <emontra2018@gmail.com>, 2018
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2018-09-27 15:11+0000\n"
 "Last-Translator: Empar Montoro <emontra2018@gmail.com>, 2018\n"
-"Language-Team: Catalan (Valencian) (https://www.transifex.com/cafe/teams/13566/ca@valencia/)\n"
+"Language-Team: Catalan (Valencian) (https://www.transifex.com/cafe/"
+"teams/13566/ca@valencia/)\n"
+"Language: ca@valencia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ca@valencia\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -88,16 +89,16 @@ msgstr ""
 #: C/index.docbook:72
 msgid ""
 "<firstname>Sun</firstname> <surname>GNOME Documentation Team</surname> "
-"<affiliation> <orgname>Sun Microsystems</orgname> <_:address-1/> "
-"</affiliation>"
+"<affiliation> <orgname>Sun Microsystems</orgname> <_:address-1/> </"
+"affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:80
 msgid ""
 "<firstname>Telsa</firstname> <surname>Gwynne</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> <address> "
-"<email>hobbit@aloss.ukuu.org.uk</email> </address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address> <email>hobbit@aloss."
+"ukuu.org.uk</email> </address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
@@ -116,8 +117,8 @@ msgstr "Equip de documentació del CAFE"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:113
 msgid ""
-"<revnumber>Eyes Applet Manual V2.8</revnumber> <date>July 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Eyes Applet Manual V2.8</revnumber> <date>July 2015</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -142,8 +143,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:129
 msgid ""
-"<revnumber>Eyes Applet Manual V2.6</revnumber> <date>February 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Eyes Applet Manual V2.6</revnumber> <date>February 2004</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
@@ -156,36 +157,36 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:145
 msgid ""
-"<revnumber>Geyes Applet Manual V2.4</revnumber> <date>August 2003</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.4</revnumber> <date>August 2003</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:153
 msgid ""
-"<revnumber>Geyes Applet Manual V2.3</revnumber> <date>January 2003</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.3</revnumber> <date>January 2003</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:161
 msgid ""
-"<revnumber>Geyes Applet Manual V2.2</revnumber> <date>August 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.2</revnumber> <date>August 2002</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:169
 msgid ""
-"<revnumber>Geyes Applet Manual V2.1</revnumber> <date>June 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.1</revnumber> <date>June 2002</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:177
 msgid ""
-"<revnumber>Geyes Applet Manual V2.0</revnumber> <date>March 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.0</revnumber> <date>March 2002</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -218,8 +219,8 @@ msgstr "Comentaris"
 #: C/index.docbook:201
 msgid ""
 "To report a bug or make a suggestion regarding the Eyes applet or this "
-"manual, follow the directions in the <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"manual, follow the directions in the <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -252,17 +253,17 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:219
 msgid ""
-"<imageobject><imagedata fileref=\"figures/geyes_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows Eyes "
-"applet.</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/geyes_applet.png\" format=\"PNG\"/"
+"> </imageobject> <textobject> <phrase>Shows Eyes applet.</phrase> </"
+"textobject>"
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:229
 msgid ""
 "The <application>Eyes</application> applet provides an entertaining way to "
-"track the movement of the mouse pointer around your screen. The applet is an"
-" image of one or more eyes that follow the mouse pointer around the screen."
+"track the movement of the mouse pointer around your screen. The applet is an "
+"image of one or more eyes that follow the mouse pointer around the screen."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -302,8 +303,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:263
 msgid ""
-"The layout of the <application>Eyes</application> applet varies depending on"
-" the size and type of panel in which the applet resides."
+"The layout of the <application>Eyes</application> applet varies depending on "
+"the size and type of panel in which the applet resides."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -331,13 +332,13 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Es concedeix el permís per a copiar, distribuir i / o modificar aquest "
-"document sota els termes de la GFDL (GNU Free Documentation License), versió"
-" 1.1 o qualsevol versió posterior publicada per la Free Software Foundation "
+"document sota els termes de la GFDL (GNU Free Documentation License), versió "
+"1.1 o qualsevol versió posterior publicada per la Free Software Foundation "
 "que tinguen les seccions invariants, i sense cap text a la portada. Podeu "
 "trobar una còpia de la GFDL en aquest <_:ulink-1/> o bé al fitxer COPYING-"
 "DOCS que es distribueix amb aquest manual."
@@ -347,13 +348,13 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Aquest manual forma part d'una col·lecció de manuals del CAFE que estan "
 "distribuïts sota la GFDL. Si voleu distribuir aquest manual per separat de "
-"la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal"
-" com es descriu a la secció 6 de la llicència."
+"la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal "
+"com es descriu a la secció 6 de la llicència."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:19
@@ -367,8 +368,8 @@ msgstr ""
 "Molts dels noms utilitzats per les empreses per a distingir els seus "
 "productes i serveis es consideren marques comercials. Quan aquests noms "
 "apareixen en qualsevol documentació del CAFE, i els membres del projecte de "
-"documentació del CAFE en són conscients, els noms tenen lletres majúscules o"
-" bé comencen amb majúscula."
+"documentació del CAFE en són conscients, els noms tenen lletres majúscules o "
+"bé comencen amb majúscula."
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:35
@@ -393,29 +394,28 @@ msgstr ""
 "DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL "
 "DOCUMENT RESULTARA DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO L'ESCRIPTOR "
 "INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE "
-"MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX"
-" UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT"
-" O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA;"
-" I"
+"MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX "
+"UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT "
+"O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I"
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
-"EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGA PER AGREUJAMENT "
-"(INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR "
-"ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA "
-"VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN "
+"EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGA PER AGREUJAMENT (INCLOENT-"
+"HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR ORIGINAL, "
+"QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA VERSIÓ "
+"MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN "
 "RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, "
 "ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITACIÓ, "
 "ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FAENA, FALLADA O MAL "

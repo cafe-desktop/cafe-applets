@@ -7,7 +7,7 @@
 # andrea pittaro <transifex@andreapittaro.it>, 2019
 # Enrico B. <enricobe@hotmail.com>, 2019
 # Alessandro Volturno <alelvb@inwind.it>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -15,10 +15,10 @@ msgstr ""
 "PO-Revision-Date: 2018-09-27 15:11+0000\n"
 "Last-Translator: Alessandro Volturno <alelvb@inwind.it>, 2020\n"
 "Language-Team: Italian (https://www.transifex.com/cafe/teams/13566/it/)\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -93,23 +93,23 @@ msgstr ""
 #: C/index.docbook:72
 msgid ""
 "<firstname>Sun</firstname> <surname>GNOME Documentation Team</surname> "
-"<affiliation> <orgname>Sun Microsystems</orgname> <_:address-1/> "
-"</affiliation>"
+"<affiliation> <orgname>Sun Microsystems</orgname> <_:address-1/> </"
+"affiliation>"
 msgstr ""
 "<firstname>Sun</firstname> <surname>GNOME Documentation Team</surname> "
-"<affiliation> <orgname>Sun Microsystems</orgname> <_:address-1/> "
-"</affiliation>"
+"<affiliation> <orgname>Sun Microsystems</orgname> <_:address-1/> </"
+"affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:80
 msgid ""
 "<firstname>Telsa</firstname> <surname>Gwynne</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> <address> "
-"<email>hobbit@aloss.ukuu.org.uk</email> </address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address> <email>hobbit@aloss."
+"ukuu.org.uk</email> </address> </affiliation>"
 msgstr ""
 "<firstname>Telsa</firstname> <surname>Gwynne</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> <address> "
-"<email>hobbit@aloss.ukuu.org.uk</email> </address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address> <email>hobbit@aloss."
+"ukuu.org.uk</email> </address> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:88
@@ -130,11 +130,11 @@ msgstr "Squadra Documentazione CAFE"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:113
 msgid ""
-"<revnumber>Eyes Applet Manual V2.8</revnumber> <date>July 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Eyes Applet Manual V2.8</revnumber> <date>July 2015</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Manuale applet Occhi V2.8</revnumber> <date>Luglio 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Manuale applet Occhi V2.8</revnumber> <date>Luglio 2015</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:125
@@ -147,8 +147,8 @@ msgid ""
 "<revnumber>Eyes Applet Manual V2.7</revnumber> <date>September 2004</date> "
 "<_:revdescription-1/>"
 msgstr ""
-"<revnumber>Manuale applet Occhi V2.7</revnumber> <date>Settembre 2004</date>"
-" <_:revdescription-1/>"
+"<revnumber>Manuale applet Occhi V2.7</revnumber> <date>Settembre 2004</date> "
+"<_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:133 C/index.docbook:141 C/index.docbook:149
@@ -160,8 +160,8 @@ msgstr "Team Documentazione GNOME Sun"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:129
 msgid ""
-"<revnumber>Eyes Applet Manual V2.6</revnumber> <date>February 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Eyes Applet Manual V2.6</revnumber> <date>February 2004</date> <_:"
+"revdescription-1/>"
 msgstr ""
 "<revnumber>Manuale applet Occhi V2.6</revnumber> <date>Febbraio 2004</date> "
 "<_:revdescription-1/>"
@@ -172,23 +172,23 @@ msgid ""
 "<revnumber>Geyes Applet Manual V2.5</revnumber> <date>September 2003</date> "
 "<_:revdescription-1/>"
 msgstr ""
-"<revnumber>Manuale applet Occhi V2.5</revnumber> <date>Settembre 2003</date>"
-" <_:revdescription-1/>"
+"<revnumber>Manuale applet Occhi V2.5</revnumber> <date>Settembre 2003</date> "
+"<_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:145
 msgid ""
-"<revnumber>Geyes Applet Manual V2.4</revnumber> <date>August 2003</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.4</revnumber> <date>August 2003</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Manuale applet Occhi V2.4</revnumber> <date>Agosto 2003</date> "
-"<_:revdescription-1/>"
+"<revnumber>Manuale applet Occhi V2.4</revnumber> <date>Agosto 2003</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:153
 msgid ""
-"<revnumber>Geyes Applet Manual V2.3</revnumber> <date>January 2003</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.3</revnumber> <date>January 2003</date> <_:"
+"revdescription-1/>"
 msgstr ""
 "<revnumber>Manuale applet Occhi V2.3</revnumber> <date>Gennaio 2003</date> "
 "<_:revdescription-1/>"
@@ -196,29 +196,29 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:161
 msgid ""
-"<revnumber>Geyes Applet Manual V2.2</revnumber> <date>August 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.2</revnumber> <date>August 2002</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Manuale applet Occhi V2.2</revnumber> <date>Agosto 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Manuale applet Occhi V2.2</revnumber> <date>Agosto 2002</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:169
 msgid ""
-"<revnumber>Geyes Applet Manual V2.1</revnumber> <date>June 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.1</revnumber> <date>June 2002</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Manuale applet Occhi V2.1</revnumber> <date>Giugno 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Manuale applet Occhi V2.1</revnumber> <date>Giugno 2002</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:177
 msgid ""
-"<revnumber>Geyes Applet Manual V2.0</revnumber> <date>March 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.0</revnumber> <date>March 2002</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Manuale applet Occhi V2.0</revnumber> <date>Marzo 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Manuale applet Occhi V2.0</revnumber> <date>Marzo 2002</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:189
@@ -251,12 +251,12 @@ msgstr "Commenti"
 #: C/index.docbook:201
 msgid ""
 "To report a bug or make a suggestion regarding the Eyes applet or this "
-"manual, follow the directions in the <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"manual, follow the directions in the <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 "Per segnalare un malfunzionamento o un suggerimento su Occhi o su questo "
-"manuale, segui le istruzioni nella <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">pagina di feedback di CAFE</ulink>."
+"manuale, segui le istruzioni nella <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">pagina di feedback di CAFE</ulink>."
 
 #. (itstool) path: article/indexterm
 #: C/index.docbook:207
@@ -290,20 +290,20 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:219
 msgid ""
-"<imageobject><imagedata fileref=\"figures/geyes_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows Eyes "
-"applet.</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/geyes_applet.png\" format=\"PNG\"/"
+"> </imageobject> <textobject> <phrase>Shows Eyes applet.</phrase> </"
+"textobject>"
 msgstr ""
-"<imageobject><imagedata fileref=\"figures/geyes_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Mostra applet "
-"Occhi.</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/geyes_applet.png\" format=\"PNG\"/"
+"> </imageobject> <textobject> <phrase>Mostra applet Occhi.</phrase> </"
+"textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:229
 msgid ""
 "The <application>Eyes</application> applet provides an entertaining way to "
-"track the movement of the mouse pointer around your screen. The applet is an"
-" image of one or more eyes that follow the mouse pointer around the screen."
+"track the movement of the mouse pointer around your screen. The applet is an "
+"image of one or more eyes that follow the mouse pointer around the screen."
 msgstr ""
 "La applet <application>Occhi</application> fornisce un modo divertente per "
 "tracciare i movimento del puntatore del mouse. La applet è un'immagine di "
@@ -350,8 +350,8 @@ msgstr "Clicca su <guibutton>Aggiungi</guibutton>"
 #. (itstool) path: sect2/para
 #: C/index.docbook:263
 msgid ""
-"The layout of the <application>Eyes</application> applet varies depending on"
-" the size and type of panel in which the applet resides."
+"The layout of the <application>Eyes</application> applet varies depending on "
+"the size and type of panel in which the applet resides."
 msgstr ""
 "Il layout della applet <application>Occhi</application> varia in base alla "
 "dimensione e al tipo di pannello in cui viene inserito."
@@ -370,9 +370,9 @@ msgid ""
 "different themes. Each theme affects how the eyes look."
 msgstr ""
 "Per configurare <application>Occhi</application>, clicca col destro su "
-"<application>Occhi</application> e seleziona "
-"<guimenuitem>Preferenze</guimenuitem>. Puoi scegliere tra vari temi diversi "
-"che influenzano come viene mostrata la applet."
+"<application>Occhi</application> e seleziona <guimenuitem>Preferenze</"
+"guimenuitem>. Puoi scegliere tra vari temi diversi che influenzano come "
+"viene mostrata la applet."
 
 #. (itstool) path: para/ulink
 #: C/legal.xml:9
@@ -385,15 +385,15 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "È concesso il permesso di copiare, distribuire e/o modificare questo "
 "documento in base ai termini della GNU Free Documentation License (GFDL), "
 "Versione 1.1 o qualsiasi versione successiva pubblicata dalla Free Software "
-"Foundation senza sezioni invarianti, senza testi di copertina e nessun testo"
-" di retro copertina. Puoi trovare una copia del GFDL qui <_:ulink-1/> o nel "
+"Foundation senza sezioni invarianti, senza testi di copertina e nessun testo "
+"di retro copertina. Puoi trovare una copia del GFDL qui <_:ulink-1/> o nel "
 "file COPYING-DOCS distribuito con questo manuale."
 
 #. (itstool) path: legalnotice/para
@@ -401,13 +401,13 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Questo manuale fa parte di una raccolta di manuali CAFE distribuita in "
 "conformità con la GFDL. Per poter distribuire questo manuale separatamente, "
-"è necessario inserirvi una copia della licenza, come descritto nella sezione"
-" 6 della licenza."
+"è necessario inserirvi una copia della licenza, come descritto nella sezione "
+"6 della licenza."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:19
@@ -443,29 +443,29 @@ msgstr ""
 "IMPLICITE, INCLUSE, MA SENZA LIMITAZIONE, LE GARANZIE ATTESTANTI CHE IL "
 "DOCUMENTO O LE SUE VERSIONI MODIFICATE SIANO PRIVI DI DIFETTI, "
 "COMMERCIALIZZABILI, IDONEI A UN DETERMINATO SCOPO O CHE NON VIOLINO DIRITTI "
-"DI TERZI. SI DECLINA QUALUNQUE RESPONSABILITÀ RIGUARDO AI RISCHI INERENTI LA"
-" QUALITÀ, L'ACCURATEZZA E LE PRESTAZIONI DEL DOCUMENTO O DI UNA SUA VERSIONE"
-" MODIFICATA. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA DOVESSERO "
+"DI TERZI. SI DECLINA QUALUNQUE RESPONSABILITÀ RIGUARDO AI RISCHI INERENTI LA "
+"QUALITÀ, L'ACCURATEZZA E LE PRESTAZIONI DEL DOCUMENTO O DI UNA SUA VERSIONE "
+"MODIFICATA. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA DOVESSERO "
 "PRESENTARE QUALUNQUE TIPO DI DIFETTO, IL COSTO DI EVENTUALI INTERVENTI DI "
 "ASSISTENZA, RIPARAZIONE O CORREZIONE SARÀ A CARICO DELL'UTENTE (NON DEL "
 "REDATTORE INIZIALE, DELL'AUTORE O DI ALTRI COLLABORATORI). QUESTA "
-"LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO"
-" DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I "
+"LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO "
+"DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I "
 "TERMINI DI QUESTA LIMITAZIONE DELLA GARANZIA;"
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "IN NESSUNA CIRCOSTANZA E PER NESSUNA RAGIONE LEGALE, INCLUSI I PRINCIPI DI "
 "COLPA (INCLUSA LA NEGLIGENZA), ACCORDO CONTRATTUALE O ALTRO, SARÀ POSSIBILE "
@@ -475,8 +475,8 @@ msgstr ""
 "QUALUNQUE PERSONA PER DANNI DIRETTI, INDIRETTI, SPECIALI, INCIDENTALI O "
 "CONSEGUENTI DI QUALUNQUE NATURA, INCLUSI, MA SENZA LIMITAZIONE, I DANNI PER "
 "PERDITA DI AVVIAMENTO, INTERRUZIONE DEL LAVORO, GUASTO O MALFUNZIONAMENTO "
-"DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO"
-" DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE "
+"DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO "
+"DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE "
 "CITATE FOSSERO STATE INFORCAFE DELLA POSSIBILITÀ DI TALI DANNI."
 
 #. (itstool) path: legalnotice/para
@@ -487,5 +487,5 @@ msgid ""
 "<_:orderedlist-1/>"
 msgstr ""
 "IL DOCUMENTO E LE VERSIONI MODIFICATE DEL DOCUMENTO VENGONO RILASCIATE "
-"SECONDO I TERMINI DELLA GNU FREE DOCUMENTATION LICENSE TENENDO PRESENTE CHE:"
-" <_:orderedlist-1/>"
+"SECONDO I TERMINI DELLA GNU FREE DOCUMENTATION LICENSE TENENDO PRESENTE CHE: "
+"<_:orderedlist-1/>"

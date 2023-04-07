@@ -2,7 +2,7 @@
 # Dušan Kazik <prescott66@gmail.com>, 2018
 # Stefano Karapetsas <stefano@karapetsas.com>, 2018
 # Vendelín Slezák <klaykap@yandex.com>, 2018
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -10,11 +10,12 @@ msgstr ""
 "PO-Revision-Date: 2018-09-27 15:11+0000\n"
 "Last-Translator: Vendelín Slezák <klaykap@yandex.com>, 2018\n"
 "Language-Team: Slovak (https://www.transifex.com/cafe/teams/13566/sk/)\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sk\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n "
+">= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -90,23 +91,23 @@ msgstr ""
 #: C/index.docbook:72
 msgid ""
 "<firstname>Sun</firstname> <surname>GNOME Documentation Team</surname> "
-"<affiliation> <orgname>Sun Microsystems</orgname> <_:address-1/> "
-"</affiliation>"
+"<affiliation> <orgname>Sun Microsystems</orgname> <_:address-1/> </"
+"affiliation>"
 msgstr ""
 "<firstname>Sun</firstname> <surname>GNOME Dokumentačný tím</surname> "
-"<affiliation> <orgname>Sun Microsystems</orgname> <_:address-1/> "
-"</affiliation>"
+"<affiliation> <orgname>Sun Microsystems</orgname> <_:address-1/> </"
+"affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:80
 msgid ""
 "<firstname>Telsa</firstname> <surname>Gwynne</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> <address> "
-"<email>hobbit@aloss.ukuu.org.uk</email> </address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address> <email>hobbit@aloss."
+"ukuu.org.uk</email> </address> </affiliation>"
 msgstr ""
 "<firstname>Telsa</firstname> <surname>Gwynne</surname> <affiliation> "
-"<orgname>GNOME Dokumentačný projekt</orgname> <address> "
-"<email>hobbit@aloss.ukuu.org.uk</email> </address> </affiliation>"
+"<orgname>GNOME Dokumentačný projekt</orgname> <address> <email>hobbit@aloss."
+"ukuu.org.uk</email> </address> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:88
@@ -116,8 +117,8 @@ msgid ""
 "<email>acscherp@wins.uva.nl</email> </address> </affiliation>"
 msgstr ""
 "<firstname>Arjan</firstname> <surname>Scherpenisse</surname> <affiliation> "
-"<orgname>GNOME Dokumentačný projekt</orgname> <address> "
-"<email>acscherp@wins.uva.nl</email> </address> </affiliation>"
+"<orgname>GNOME Dokumentačný projekt</orgname> <address> <email>acscherp@wins."
+"uva.nl</email> </address> </affiliation>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:117
@@ -127,11 +128,11 @@ msgstr "CAFE Dokumentačný projekt"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:113
 msgid ""
-"<revnumber>Eyes Applet Manual V2.8</revnumber> <date>July 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Eyes Applet Manual V2.8</revnumber> <date>July 2015</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Manuál Apletu Oči  V2.8</revnumber> <date>Júl 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Manuál Apletu Oči  V2.8</revnumber> <date>Júl 2015</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:125
@@ -144,8 +145,8 @@ msgid ""
 "<revnumber>Eyes Applet Manual V2.7</revnumber> <date>September 2004</date> "
 "<_:revdescription-1/>"
 msgstr ""
-"<revnumber>Manuál Apletu Oči V2.7</revnumber> <date>September 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Manuál Apletu Oči V2.7</revnumber> <date>September 2004</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:133 C/index.docbook:141 C/index.docbook:149
@@ -157,11 +158,11 @@ msgstr "Sun GNOME Dokumentačný tím"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:129
 msgid ""
-"<revnumber>Eyes Applet Manual V2.6</revnumber> <date>February 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Eyes Applet Manual V2.6</revnumber> <date>February 2004</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Manuál Apletu Oči V2.6</revnumber> <date>Február 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Manuál Apletu Oči V2.6</revnumber> <date>Február 2004</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:137
@@ -175,47 +176,47 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:145
 msgid ""
-"<revnumber>Geyes Applet Manual V2.4</revnumber> <date>August 2003</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.4</revnumber> <date>August 2003</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Manuál Apletu G-Oči V2.4</revnumber> <date>August 2003</date> "
-"<_:revdescription-1/>"
+"<revnumber>Manuál Apletu G-Oči V2.4</revnumber> <date>August 2003</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:153
 msgid ""
-"<revnumber>Geyes Applet Manual V2.3</revnumber> <date>January 2003</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.3</revnumber> <date>January 2003</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Manuál Apletu G-Oči V2.3</revnumber> <date>January 2003</date> "
-"<_:revdescription-1/>"
+"<revnumber>Manuál Apletu G-Oči V2.3</revnumber> <date>January 2003</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:161
 msgid ""
-"<revnumber>Geyes Applet Manual V2.2</revnumber> <date>August 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.2</revnumber> <date>August 2002</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Manuál Apletu G-Oči V2.2</revnumber> <date>August 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Manuál Apletu G-Oči V2.2</revnumber> <date>August 2002</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:169
 msgid ""
-"<revnumber>Geyes Applet Manual V2.1</revnumber> <date>June 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.1</revnumber> <date>June 2002</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Manuál Apletu G-Očil V2.1</revnumber> <date>Jún 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Manuál Apletu G-Očil V2.1</revnumber> <date>Jún 2002</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:177
 msgid ""
-"<revnumber>Geyes Applet Manual V2.0</revnumber> <date>March 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Geyes Applet Manual V2.0</revnumber> <date>March 2002</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Manuál Apletu G-Oči V2.0</revnumber> <date>Marec 2002</date> "
-"<_:revdescription-1/>"
+"<revnumber>Manuál Apletu G-Oči V2.0</revnumber> <date>Marec 2002</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:189
@@ -248,8 +249,8 @@ msgstr "Reakcia"
 #: C/index.docbook:201
 msgid ""
 "To report a bug or make a suggestion regarding the Eyes applet or this "
-"manual, follow the directions in the <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"manual, follow the directions in the <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 "Ak by ste chceli nahlásiť chybu alebo poslať nejaký nápad o Očiach, "
 "postupujte prosím podľa <ulink url=\"help:cafe-user-guide/feedback\" "
@@ -281,26 +282,25 @@ msgid ""
 "external ref='figures/geyes_applet.png' "
 "md5='97e7bcbcdc3bbc8fb3af2b4d22057e36'"
 msgstr ""
-"externý ref='figures/geyes_applet.png' "
-"md5='97e7bcbcdc3bbc8fb3af2b4d22057e36'"
+"externý ref='figures/geyes_applet.png' md5='97e7bcbcdc3bbc8fb3af2b4d22057e36'"
 
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:219
 msgid ""
-"<imageobject><imagedata fileref=\"figures/geyes_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows Eyes "
-"applet.</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/geyes_applet.png\" format=\"PNG\"/"
+"> </imageobject> <textobject> <phrase>Shows Eyes applet.</phrase> </"
+"textobject>"
 msgstr ""
-"<imageobject><imagedata fileref=\"figures/geyes_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Ukázať Aplet "
-"Oči.</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/geyes_applet.png\" format=\"PNG\"/"
+"> </imageobject> <textobject> <phrase>Ukázať Aplet Oči.</phrase> </"
+"textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:229
 msgid ""
 "The <application>Eyes</application> applet provides an entertaining way to "
-"track the movement of the mouse pointer around your screen. The applet is an"
-" image of one or more eyes that follow the mouse pointer around the screen."
+"track the movement of the mouse pointer around your screen. The applet is an "
+"image of one or more eyes that follow the mouse pointer around the screen."
 msgstr ""
 "Aplet <application>Oči</application> je program ktorý zobrazuje na paneli "
 "jedno alebo viac očí ktoré stále sledujú kurzor."
@@ -346,8 +346,8 @@ msgstr "Stlačte <guibutton>Pridať</guibutton>."
 #. (itstool) path: sect2/para
 #: C/index.docbook:263
 msgid ""
-"The layout of the <application>Eyes</application> applet varies depending on"
-" the size and type of panel in which the applet resides."
+"The layout of the <application>Eyes</application> applet varies depending on "
+"the size and type of panel in which the applet resides."
 msgstr "Podľa typu panelu sa nastaví výzor <application>Očí</application>."
 
 #. (itstool) path: sect1/title
@@ -378,14 +378,14 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Je povolené kopírovať, šíriť a upravovať tento dokument pod podmienkami GNU "
-"Free Documentation License(GFDL), verzie 1.1 alebo akýchkoľvek ďaľších verzí"
-" poublikovaných Free Softvare Foundation s Nemennými sekciami, bez vrchných "
-"a bez spodných textov. Kópiu GFDL môžete nájsť na na <_:ulink-1/> alebo v "
+"Free Documentation License(GFDL), verzie 1.1 alebo akýchkoľvek ďaľších verzí "
+"poublikovaných Free Softvare Foundation s Nemennými sekciami, bez vrchných a "
+"bez spodných textov. Kópiu GFDL môžete nájsť na na <_:ulink-1/> alebo v "
 "súbore COPYING-DOCS ktorý je distribuovaný spolu s týmto manuálom."
 
 #. (itstool) path: legalnotice/para
@@ -393,13 +393,13 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Tento manuál je časť s kolekcie CAFE manuálov ktoré sú distribuované pod "
 "GFDL. Ak chcete distribuovať tento manuál bez celej kolekcie, môžete to "
-"spraviť ak ku nemu pridáte kópiu licencie, ako je to vysvetlené v sekcií 6 v"
-" licencí."
+"spraviť ak ku nemu pridáte kópiu licencie, ako je to vysvetlené v sekcií 6 v "
+"licencí."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:19
@@ -430,38 +430,38 @@ msgid ""
 "OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
 msgstr ""
 "DOKUMNET SA POSKYTUJE \"TAK AKO JE\", BEZ ZÁRUKY AKÉHOKOĽVEK DRUHU, ČI UŽ "
-"VÝSLOVNÉHO, VYPLÝVAJÚCEHO, A BEZ ZÁRUKY ŽE TENTO DOKUMENT JE BEZ AKÝCHKOĽVEK"
-" CHÝB, ALEBO VHODNÝ PRE KONKRÉTNY ÚČEL ALEBO OPRÁVNENIE. VŠETKA ZODPOVEDNOSŤ"
-" ZA KVALITU, PRESNOSŤ A ÚČINNOSŤ DOKUMENTU JE NA VÁS. AK SA DOKUMENT ALEBO "
-"JEHO MODIFIKÁCIA UKÁŽE PREUKÁZATEĽNE VADNÁ, MÔŽETE(ALE NIE AK STE POČIATOČNÝ"
-" AUTOR, AUTOR ALEBO AKÝKOĽVEK PRISPIEVATEĽ) PREVZIAŤ NÁKLADY NA UDRŽIAVANIE,"
-" OPRAVOVANIE A OPRAVU. TOTO VYHLÁSENIE SA POKLADÁ ZA NEODDELITELNÚ SÚČASŤ "
+"VÝSLOVNÉHO, VYPLÝVAJÚCEHO, A BEZ ZÁRUKY ŽE TENTO DOKUMENT JE BEZ AKÝCHKOĽVEK "
+"CHÝB, ALEBO VHODNÝ PRE KONKRÉTNY ÚČEL ALEBO OPRÁVNENIE. VŠETKA ZODPOVEDNOSŤ "
+"ZA KVALITU, PRESNOSŤ A ÚČINNOSŤ DOKUMENTU JE NA VÁS. AK SA DOKUMENT ALEBO "
+"JEHO MODIFIKÁCIA UKÁŽE PREUKÁZATEĽNE VADNÁ, MÔŽETE(ALE NIE AK STE POČIATOČNÝ "
+"AUTOR, AUTOR ALEBO AKÝKOĽVEK PRISPIEVATEĽ) PREVZIAŤ NÁKLADY NA UDRŽIAVANIE, "
+"OPRAVOVANIE A OPRAVU. TOTO VYHLÁSENIE SA POKLADÁ ZA NEODDELITELNÚ SÚČASŤ "
 "LICENCIE. NA POUŽÍVANIE DOKUMENTOV ALEBO ICH ZMENENÝCH VERZÍ SA VZŤAHUJE "
 "TÁTO LICENCIA OKREM TOHTO VYLÚČENIA ZODPOVEDNOSTI; A"
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "V ŽIADNOM PRÍPADE A ZA ŽIADNYCH PRÁVNYCH TEÓRIÍ, ČI ÚMYSELNÉ UBLÍŽENIE(AJ Z "
 "NEDBANLIVOSTI), ZMLUVOU, ALEBO INAK SA AUTOR, POČIATOČNÝ SPISOVATEĽ, VŠETCI "
 "PRISPIEVATELIA, DISTRIBÚTOR DOKUMENTU ALEBO JEHO MODIFIKOVANIEJ VERZIE, "
 "ALEBO DODÁVATEĽ AKEJKOĽVEK STRANY,  NEZODPOVEDÁ ŽIADNEJ OSOBE ZA AKÉKOĽVEK "
 "PRIAME, NEPRIAME, ZVLÁŠTNE, NÁHODNÉ, ALEBO VYPLÝVAJÚCE ŠKODY AKÉHOKOĽVEK "
-"CHARAKTERU,  AKO OBMEDZENIA, STRATA DOBRÉHO MENA, PRERUŠENIE PRÁCE, ZLYHANIE"
-" POČÍTAČA ČI PORUCHY, ALEBO AKÉKOĽVEK INÉ ŠKODY A STRATY KTORÉ VZNIKNÚ, "
-"ALEBO SA BUDÚ VZŤAHOVAŤ NA POUŽÍVANIE TOHOTO DOKUMENTU ČI ZMENENÝCH VERZÍ "
-"TOHTO DOKUMENTU AJ KEĎ STRANA BOLA INFORMOVANÁ O MOŽNOSTI TAKÝCHTO ŠKÔD."
+"CHARAKTERU,  AKO OBMEDZENIA, STRATA DOBRÉHO MENA, PRERUŠENIE PRÁCE, ZLYHANIE "
+"POČÍTAČA ČI PORUCHY, ALEBO AKÉKOĽVEK INÉ ŠKODY A STRATY KTORÉ VZNIKNÚ, ALEBO "
+"SA BUDÚ VZŤAHOVAŤ NA POUŽÍVANIE TOHOTO DOKUMENTU ČI ZMENENÝCH VERZÍ TOHTO "
+"DOKUMENTU AJ KEĎ STRANA BOLA INFORMOVANÁ O MOŽNOSTI TAKÝCHTO ŠKÔD."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:28
