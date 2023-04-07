@@ -1,30 +1,31 @@
-# 
+#
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Cédric Valmary <cvalmary@yahoo.fr>, 2020
 # Wolfgang Ulbrich <cafe@raveit.de>, 2020
 # 48c2de07903ce5a77a8e90265f95c4c2_8909374 <837c8d0ab97b27e737893c19f79bd4de_348476>, 2020
 # Quentin PAGÈS, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 12:19+0000\n"
 "Last-Translator: Quentin PAGÈS, 2020\n"
-"Language-Team: Occitan (post 1500) (https://www.transifex.com/cafe/teams/13566/oc/)\n"
+"Language-Team: Occitan (post 1500) (https://www.transifex.com/cafe/"
+"teams/13566/oc/)\n"
+"Language: oc\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: oc\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
 msgid "translator-credits"
 msgstr ""
-"Yannig Marchegay (Kokoyaya) <yannig@marchegay.org> & Cédric Valmary "
-"(totenoc.eu) <cvalmary@yahoo.fr>"
+"Yannig Marchegay (Kokoyaya) <yannig@marchegay.org> & Cédric Valmary (totenoc."
+"eu) <cvalmary@yahoo.fr>"
 
 #. (itstool) path: articleinfo/title
 #: C/index.docbook:23
@@ -145,8 +146,8 @@ msgstr "Comentaris"
 #: C/index.docbook:138
 msgid ""
 "To report a bug or make a suggestion regarding the Netspeed Applet "
-"application or this manual, follow the directions in the <ulink url=\"help"
-":cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"application or this manual, follow the directions in the <ulink url=\"help:"
+"cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -180,8 +181,8 @@ msgstr ""
 #: C/index.docbook:156
 msgid ""
 "<imageobject><imagedata fileref=\"figures/netspeed_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Netspeed.</phrase> "
-"</textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Netspeed.</phrase> </"
+"textobject>"
 msgstr ""
 
 #. (itstool) path: figure/title
@@ -204,15 +205,15 @@ msgstr ""
 #: C/index.docbook:168
 msgid ""
 "<imageobject><imagedata fileref=\"figures/eth_sum_48.png\" format=\"PNG\"/> "
-"</imageobject> <textobject> <phrase>Netspeed showing the sum in a 48px "
-"panel.</phrase> </textobject>"
+"</imageobject> <textobject> <phrase>Netspeed showing the sum in a 48px panel."
+"</phrase> </textobject>"
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:177
 msgid ""
-"<application>Netspeed Applet</application> displays the network traffic on a"
-" specified device like eth0, ppp0, plip0, etc. More over it provides "
+"<application>Netspeed Applet</application> displays the network traffic on a "
+"specified device like eth0, ppp0, plip0, etc. More over it provides "
 "information about the configuration of the network device."
 msgstr ""
 
@@ -245,9 +246,9 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:196
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/loopback.png\""
-" format=\"PNG\"/> </imageobject><textobject> <phrase>Loopback</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/loopback.png\" "
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Loopback</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 
 #. (itstool) path: entry/para
@@ -269,9 +270,9 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:208
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ethernet.png\""
-" format=\"PNG\"/> </imageobject><textobject> <phrase>Ethernet</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ethernet.png\" "
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Ethernet</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 
 #. (itstool) path: entry/para
@@ -293,12 +294,12 @@ msgstr "external ref='figures/ppp.png' md5='b88d98a9ccdd489d91b45c8cf2dcbad1'"
 #: C/index.docbook:220
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ppp.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>PPP</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>PPP</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ppp.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>PPP</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>PPP</phrase> </"
+"textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:227
@@ -321,12 +322,12 @@ msgstr ""
 #: C/index.docbook:232
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/wavelan.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>Wireless</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Wireless</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/wavelan.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>Sens fil</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Sens fil</phrase> </"
+"textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:239
@@ -341,19 +342,18 @@ msgstr "Connexion sens fil."
 #: C/index.docbook:246
 msgctxt "_"
 msgid "external ref='figures/plip.png' md5='0761a22dfa7b0b56e41e020cd701db68'"
-msgstr ""
-"external ref='figures/plip.png' md5='0761a22dfa7b0b56e41e020cd701db68'"
+msgstr "external ref='figures/plip.png' md5='0761a22dfa7b0b56e41e020cd701db68'"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:244
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/plip.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>PLIP</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>PLIP</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/plip.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>PLIP</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>PLIP</phrase> </"
+"textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:251
@@ -418,9 +418,9 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:295
 msgid ""
-"<imageobject><imagedata fileref=\"figures/settings.png\" format=\"PNG\"/> "
-"</imageobject> <textobject> <phrase>Netspeed Applet Settings.</phrase> "
-"</textobject>"
+"<imageobject><imagedata fileref=\"figures/settings.png\" format=\"PNG\"/> </"
+"imageobject> <textobject> <phrase>Netspeed Applet Settings.</phrase> </"
+"textobject>"
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -504,9 +504,8 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:342
 msgid ""
-"<imageobject><imagedata fileref=\"figures/details.png\" format=\"PNG\"/> "
-"</imageobject> <textobject> <phrase>The details dialog</phrase> "
-"</textobject>"
+"<imageobject><imagedata fileref=\"figures/details.png\" format=\"PNG\"/> </"
+"imageobject> <textobject> <phrase>The details dialog</phrase> </textobject>"
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -519,16 +518,15 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:356
 msgid ""
-"<guilabel>Internet Address:</guilabel> The IP (Internet Protocol) address of"
-" the network device."
+"<guilabel>Internet Address:</guilabel> The IP (Internet Protocol) address of "
+"the network device."
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:359
 msgid ""
 "<guilabel>Netmask:</guilabel> The netmask which depends on the size of your "
-"LAN (Local Area Network). A usual value is 255.255.255.0 (a class C "
-"network)."
+"LAN (Local Area Network). A usual value is 255.255.255.0 (a class C network)."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -571,8 +569,8 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 
@@ -581,8 +579,8 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 
 #. (itstool) path: legalnotice/para
@@ -614,16 +612,16 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 
 #. (itstool) path: legalnotice/para
@@ -633,5 +631,5 @@ msgid ""
 "OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
 "<_:orderedlist-1/>"
 msgstr ""
-"LOS DOCUMENTS E LAS VERSIONS MODIFICADAS D’AQUESTE DOCUMENT SON FORNITS JOLS"
-" TÈRMES DE LA LICÉNCIA DE DOCUMENTACION LIURA GNU ESTANT QUE :"
+"LOS DOCUMENTS E LAS VERSIONS MODIFICADAS D’AQUESTE DOCUMENT SON FORNITS JOLS "
+"TÈRMES DE LA LICÉNCIA DE DOCUMENTACION LIURA GNU ESTANT QUE :"

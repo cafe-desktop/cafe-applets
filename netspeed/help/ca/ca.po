@@ -1,8 +1,8 @@
-# 
+#
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -10,10 +10,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 12:19+0000\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2020\n"
 "Language-Team: Catalan (https://www.transifex.com/cafe/teams/13566/ca/)\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ca\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -146,12 +146,12 @@ msgstr "Retroacció"
 #: C/index.docbook:138
 msgid ""
 "To report a bug or make a suggestion regarding the Netspeed Applet "
-"application or this manual, follow the directions in the <ulink url=\"help"
-":cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"application or this manual, follow the directions in the <ulink url=\"help:"
+"cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
-"Per informar d'un error o fer un suggeriment sobre la miniaplicació Netspeed"
-" o d'aquest manual, seguiu les instruccions de la <ulink url=\"help:cafe-"
-"user-guide/feedback\" type=\"help\">pàgina de retroacció de CAFE</ulink>."
+"Per informar d'un error o fer un suggeriment sobre la miniaplicació Netspeed "
+"o d'aquest manual, seguiu les instruccions de la <ulink url=\"help:cafe-user-"
+"guide/feedback\" type=\"help\">pàgina de retroacció de CAFE</ulink>."
 
 #. (itstool) path: article/indexterm
 #: C/index.docbook:146
@@ -186,12 +186,12 @@ msgstr ""
 #: C/index.docbook:156
 msgid ""
 "<imageobject><imagedata fileref=\"figures/netspeed_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Netspeed.</phrase> "
-"</textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Netspeed.</phrase> </"
+"textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/netspeed_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Netspeed.</phrase> "
-"</textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Netspeed.</phrase> </"
+"textobject>"
 
 #. (itstool) path: figure/title
 #: C/index.docbook:166
@@ -214,8 +214,8 @@ msgstr ""
 #: C/index.docbook:168
 msgid ""
 "<imageobject><imagedata fileref=\"figures/eth_sum_48.png\" format=\"PNG\"/> "
-"</imageobject> <textobject> <phrase>Netspeed showing the sum in a 48px "
-"panel.</phrase> </textobject>"
+"</imageobject> <textobject> <phrase>Netspeed showing the sum in a 48px panel."
+"</phrase> </textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/eth_sum_48.png\" format=\"PNG\"/> "
 "</imageobject> <textobject> <phrase>Netspeed mostrant la suma en un tauler "
@@ -224,8 +224,8 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: C/index.docbook:177
 msgid ""
-"<application>Netspeed Applet</application> displays the network traffic on a"
-" specified device like eth0, ppp0, plip0, etc. More over it provides "
+"<application>Netspeed Applet</application> displays the network traffic on a "
+"specified device like eth0, ppp0, plip0, etc. More over it provides "
 "information about the configuration of the network device."
 msgstr ""
 "La <application>miniaplicació Netspeed</application> mostra el trànsit de "
@@ -262,13 +262,13 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:196
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/loopback.png\""
-" format=\"PNG\"/> </imageobject><textobject> <phrase>Loopback</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/loopback.png\" "
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Loopback</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/loopback.png\""
-" format=\"PNG\"/> </imageobject><textobject> <phrase>Loopback</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/loopback.png\" "
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Loopback</phrase> </"
+"textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:203
@@ -290,13 +290,13 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:208
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ethernet.png\""
-" format=\"PNG\"/> </imageobject><textobject> <phrase>Ethernet</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ethernet.png\" "
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Ethernet</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ethernet.png\""
-" format=\"PNG\"/> </imageobject><textobject> <phrase>Ethernet</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ethernet.png\" "
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Ethernet</phrase> </"
+"textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:215
@@ -317,12 +317,12 @@ msgstr "external ref='figures/ppp.png' md5='b88d98a9ccdd489d91b45c8cf2dcbad1'"
 #: C/index.docbook:220
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ppp.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>PPP</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>PPP</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ppp.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>PPP</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>PPP</phrase> </"
+"textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:227
@@ -345,12 +345,12 @@ msgstr ""
 #: C/index.docbook:232
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/wavelan.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>Wireless</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Wireless</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/wavelan.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>Xarxa sense fil</phrase>"
-" </textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Xarxa sense fil</phrase> "
+"</textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:239
@@ -365,19 +365,18 @@ msgstr "Connexió de xarxa sense fil."
 #: C/index.docbook:246
 msgctxt "_"
 msgid "external ref='figures/plip.png' md5='0761a22dfa7b0b56e41e020cd701db68'"
-msgstr ""
-"external ref='figures/plip.png' md5='0761a22dfa7b0b56e41e020cd701db68'"
+msgstr "external ref='figures/plip.png' md5='0761a22dfa7b0b56e41e020cd701db68'"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:244
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/plip.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>PLIP</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>PLIP</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/plip.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>PLIP</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>PLIP</phrase> </"
+"textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:251
@@ -395,8 +394,8 @@ msgid ""
 "To add <application>Netspeed Applet</application> to a panel, perform the "
 "following steps:"
 msgstr ""
-"Per afegir la <application>miniaplicació Netspeed</application> a un tauler,"
-" realitzeu els passos següents:"
+"Per afegir la <application>miniaplicació Netspeed</application> a un tauler, "
+"realitzeu els passos següents:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:267
@@ -448,13 +447,13 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:295
 msgid ""
-"<imageobject><imagedata fileref=\"figures/settings.png\" format=\"PNG\"/> "
-"</imageobject> <textobject> <phrase>Netspeed Applet Settings.</phrase> "
-"</textobject>"
+"<imageobject><imagedata fileref=\"figures/settings.png\" format=\"PNG\"/> </"
+"imageobject> <textobject> <phrase>Netspeed Applet Settings.</phrase> </"
+"textobject>"
 msgstr ""
-"<imageobject><imagedata fileref=\"figures/settings.png\" format=\"PNG\"/> "
-"</imageobject> <textobject> <phrase>Ajusts de la miniaplicació "
-"Netspeed.</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/settings.png\" format=\"PNG\"/> </"
+"imageobject> <textobject> <phrase>Ajusts de la miniaplicació Netspeed.</"
+"phrase> </textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:304
@@ -480,8 +479,8 @@ msgid ""
 "<guilabel>Update interval:</guilabel> Enter the time between two updates of "
 "the applet."
 msgstr ""
-"<guilabel>Interval d'actualització:</guilabel> introduïu el temps entre dues"
-" actualitzacions de la miniaplicació."
+"<guilabel>Interval d'actualització:</guilabel> introduïu el temps entre dues "
+"actualitzacions de la miniaplicació."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:315
@@ -501,8 +500,8 @@ msgid ""
 msgstr ""
 "<guilabel>Mostra la suma en lloc de l'entrada i la sortida:</guilabel> si "
 "marqueu aquesta casella, la miniaplicació mostrarà la suma de la taxa "
-"d'entrada i sortida. En aquest cas, la miniaplicació només ocuparà la meitat"
-" de l'espai al tauler."
+"d'entrada i sortida. En aquest cas, la miniaplicació només ocuparà la meitat "
+"de l'espai al tauler."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:322
@@ -511,8 +510,7 @@ msgid ""
 "if you want the applet to display bits per second instead of bytes/s."
 msgstr ""
 "<guilabel>Mostra bits/s (b/s) en lloc de bytes/s (B/s):</guilabel> marqueu-"
-"ho si voleu que la miniaplicació mostri bits per segon en comptes de "
-"bytes/s."
+"ho si voleu que la miniaplicació mostri bits per segon en comptes de bytes/s."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:326
@@ -539,9 +537,9 @@ msgid ""
 "your connection is down, Netspeed Applet look for a running one for "
 "monitoring."
 msgstr ""
-"<guilabel>Monitora sempre un dispositiu connectat, si és "
-"possible:</guilabel> quan la connexió estigui desactivada, la miniaplicació "
-"Netspeed en cercarà una d'activa per al monitoratge."
+"<guilabel>Monitora sempre un dispositiu connectat, si és possible:</"
+"guilabel> quan la connexió estigui desactivada, la miniaplicació Netspeed en "
+"cercarà una d'activa per al monitoratge."
 
 #. (itstool) path: sect1/title
 #. (itstool) path: figure/title
@@ -564,13 +562,12 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:342
 msgid ""
-"<imageobject><imagedata fileref=\"figures/details.png\" format=\"PNG\"/> "
-"</imageobject> <textobject> <phrase>The details dialog</phrase> "
-"</textobject>"
+"<imageobject><imagedata fileref=\"figures/details.png\" format=\"PNG\"/> </"
+"imageobject> <textobject> <phrase>The details dialog</phrase> </textobject>"
 msgstr ""
-"<imageobject><imagedata fileref=\"figures/details.png\" format=\"PNG\"/> "
-"</imageobject> <textobject> <phrase>El diàleg dels detalls</phrase> "
-"</textobject>"
+"<imageobject><imagedata fileref=\"figures/details.png\" format=\"PNG\"/> </"
+"imageobject> <textobject> <phrase>El diàleg dels detalls</phrase> </"
+"textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:351
@@ -584,8 +581,8 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:356
 msgid ""
-"<guilabel>Internet Address:</guilabel> The IP (Internet Protocol) address of"
-" the network device."
+"<guilabel>Internet Address:</guilabel> The IP (Internet Protocol) address of "
+"the network device."
 msgstr ""
 "<guilabel>Adreça d'Internet:</guilabel> l'adreça IP (Internet Protocol) del "
 "dispositiu de xarxa."
@@ -594,8 +591,7 @@ msgstr ""
 #: C/index.docbook:359
 msgid ""
 "<guilabel>Netmask:</guilabel> The netmask which depends on the size of your "
-"LAN (Local Area Network). A usual value is 255.255.255.0 (a class C "
-"network)."
+"LAN (Local Area Network). A usual value is 255.255.255.0 (a class C network)."
 msgstr ""
 "<guilabel>Màscara de xarxa:</guilabel> la màscara de xarxa depèn de la mida "
 "de la vostra LAN (Local Area Network). Un valor habitual és 255.255.255.0 "
@@ -650,13 +646,13 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Es concedeix el permís per copiar, distribuir i / o modificar aquest "
-"document sota els termes de la GFDL (GNU Free Documentation License), versió"
-" 1.1 o qualsevol versió posterior publicada per la Free Software Foundation "
+"document sota els termes de la GFDL (GNU Free Documentation License), versió "
+"1.1 o qualsevol versió posterior publicada per la Free Software Foundation "
 "que tinguin les seccions invariants, i sense cap text a la portada. Podeu "
 "trobar una còpia de la GFDL en aquest <_:ulink-1/> o bé al fitxer COPYING-"
 "DOCS que es distribueix amb aquest manual."
@@ -666,13 +662,13 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Aquest manual forma part d'una col·lecció de manuals de CAFE que estan "
 "distribuïts sota la GFDL. Si voleu distribuir aquest manual per separat de "
-"la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal"
-" com es descriu a la secció 6 de la llicència."
+"la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal "
+"com es descriu a la secció 6 de la llicència."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:19
@@ -683,8 +679,8 @@ msgid ""
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
-"Molts dels noms utilitzats per les empreses per distingir els seus productes"
-" i serveis es consideren marques comercials. Quan aquests noms apareixen en "
+"Molts dels noms utilitzats per les empreses per distingir els seus productes "
+"i serveis es consideren marques comercials. Quan aquests noms apareixen en "
 "qualsevol documentació de CAFE, i els membres del projecte de documentació "
 "de CAFE en són conscients, els noms tenen lletres majúscules o bé comencen "
 "en majúscules."
@@ -712,35 +708,34 @@ msgstr ""
 "DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL "
 "DOCUMENT RESULTÉS DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO PAS L'ESCRIPTOR "
 "INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE "
-"MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX"
-" UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT"
-" O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA;"
-" I"
+"MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX "
+"UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT "
+"O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I"
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGUI PER AGREUJAMENT "
 "(INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR "
 "ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA "
 "VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN "
 "RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, "
-"ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI,"
-" ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O "
+"ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI, "
+"ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O "
 "MALFUNCIONAMENT DE L'ORDINADOR, O QUALSEVOL ALTRA PÈRDUA O DANY RELACIONAT "
-"AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI"
-" S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS."
+"AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI "
+"S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:28

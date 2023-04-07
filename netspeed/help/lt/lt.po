@@ -1,11 +1,11 @@
-# 
+#
 # Translators:
 # brennus <jonas.ska@gmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # clefebvre <clement.lefebvre@linuxmint.com>, 2020
 # Moo, 2020
 # Džiugas Grėbliūnas <dziugas.grebliunas@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -13,11 +13,13 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 12:19+0000\n"
 "Last-Translator: Džiugas Grėbliūnas <dziugas.grebliunas@gmail.com>, 2020\n"
 "Language-Team: Lithuanian (https://www.transifex.com/cafe/teams/13566/lt/)\n"
+"Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: lt\n"
-"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);\n"
+"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < "
+"11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
+"1 : n % 1 != 0 ? 2: 3);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -155,12 +157,12 @@ msgstr "Atsiliepimai"
 #: C/index.docbook:138
 msgid ""
 "To report a bug or make a suggestion regarding the Netspeed Applet "
-"application or this manual, follow the directions in the <ulink url=\"help"
-":cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"application or this manual, follow the directions in the <ulink url=\"help:"
+"cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 "Pranešimui apie programos klaidą arba pasiūlymams dėl CAFE tinklo greičio "
-"programos ar šio žinyno, sekite nuorodas <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">CAFE atsako puslapyje</ulink>."
+"programos ar šio žinyno, sekite nuorodas <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">CAFE atsako puslapyje</ulink>."
 
 #. (itstool) path: article/indexterm
 #: C/index.docbook:146
@@ -195,12 +197,12 @@ msgstr ""
 #: C/index.docbook:156
 msgid ""
 "<imageobject><imagedata fileref=\"figures/netspeed_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Netspeed.</phrase> "
-"</textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Netspeed.</phrase> </"
+"textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/netspeed_applet.png\" "
-"format=\"PNG\"/></imageobject><textobject><phrase>Tinklo "
-"greitis.</phrase></textobject>"
+"format=\"PNG\"/></imageobject><textobject><phrase>Tinklo greitis.</phrase></"
+"textobject>"
 
 #. (itstool) path: figure/title
 #: C/index.docbook:166
@@ -223,18 +225,18 @@ msgstr ""
 #: C/index.docbook:168
 msgid ""
 "<imageobject><imagedata fileref=\"figures/eth_sum_48.png\" format=\"PNG\"/> "
-"</imageobject> <textobject> <phrase>Netspeed showing the sum in a 48px "
-"panel.</phrase> </textobject>"
+"</imageobject> <textobject> <phrase>Netspeed showing the sum in a 48px panel."
+"</phrase> </textobject>"
 msgstr ""
-"<imageobject><imagedata fileref=\"figures/eth_sum_48.png\" "
-"format=\"PNG\"/></imageobject><textobject><phrase>Tinklo greičio rodoma suma"
-" 48 pikelių skydelyje.</phrase></textobject>"
+"<imageobject><imagedata fileref=\"figures/eth_sum_48.png\" format=\"PNG\"/></"
+"imageobject><textobject><phrase>Tinklo greičio rodoma suma 48 pikelių "
+"skydelyje.</phrase></textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:177
 msgid ""
-"<application>Netspeed Applet</application> displays the network traffic on a"
-" specified device like eth0, ppp0, plip0, etc. More over it provides "
+"<application>Netspeed Applet</application> displays the network traffic on a "
+"specified device like eth0, ppp0, plip0, etc. More over it provides "
 "information about the configuration of the network device."
 msgstr ""
 "<application>CAFE tinklo greičio</application> įtaisas rodo duomenų srautą "
@@ -271,13 +273,13 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:196
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/loopback.png\""
-" format=\"PNG\"/> </imageobject><textobject> <phrase>Loopback</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/loopback.png\" "
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Loopback</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject><imagedata fileref=\"figures/loopback.png\" "
-"format=\"PNG\"/></imageobject><textobject><phrase>Kilpinis "
-"sujungimas</phrase></textobject></inlinemediaobject>"
+"format=\"PNG\"/></imageobject><textobject><phrase>Kilpinis sujungimas</"
+"phrase></textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:203
@@ -299,12 +301,13 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:208
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ethernet.png\""
-" format=\"PNG\"/> </imageobject><textobject> <phrase>Ethernet</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ethernet.png\" "
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Ethernet</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject><imagedata fileref=\"figures/ethernet.png\" "
-"format=\"PNG\"/></imageobject><textobject><phrase>Eternetas</phrase></textobject></inlinemediaobject>"
+"format=\"PNG\"/></imageobject><textobject><phrase>Eternetas</phrase></"
+"textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:215
@@ -325,12 +328,12 @@ msgstr "external ref='figures/ppp.png' md5='b88d98a9ccdd489d91b45c8cf2dcbad1'"
 #: C/index.docbook:220
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ppp.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>PPP</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>PPP</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ppp.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>PPP</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>PPP</phrase> </"
+"textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:227
@@ -353,12 +356,12 @@ msgstr ""
 #: C/index.docbook:232
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/wavelan.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>Wireless</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Wireless</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject><imagedata fileref=\"figures/wavelan.png\" "
-"format=\"PNG\"/></imageobject><textobject><phrase>Belaidis "
-"ryšys</phrase></textobject></inlinemediaobject>"
+"format=\"PNG\"/></imageobject><textobject><phrase>Belaidis ryšys</phrase></"
+"textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:239
@@ -373,18 +376,18 @@ msgstr "Belaidis ryšys."
 #: C/index.docbook:246
 msgctxt "_"
 msgid "external ref='figures/plip.png' md5='0761a22dfa7b0b56e41e020cd701db68'"
-msgstr ""
-"external ref='figures/plip.png' md5='0761a22dfa7b0b56e41e020cd701db68'"
+msgstr "external ref='figures/plip.png' md5='0761a22dfa7b0b56e41e020cd701db68'"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:244
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/plip.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>PLIP</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>PLIP</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject><imagedata fileref=\"figures/plip.png\" "
-"format=\"PNG\"/></imageobject><textobject><phrase>PLIP</phrase></textobject></inlinemediaobject>"
+"format=\"PNG\"/></imageobject><textobject><phrase>PLIP</phrase></"
+"textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:251
@@ -454,13 +457,13 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:295
 msgid ""
-"<imageobject><imagedata fileref=\"figures/settings.png\" format=\"PNG\"/> "
-"</imageobject> <textobject> <phrase>Netspeed Applet Settings.</phrase> "
-"</textobject>"
+"<imageobject><imagedata fileref=\"figures/settings.png\" format=\"PNG\"/> </"
+"imageobject> <textobject> <phrase>Netspeed Applet Settings.</phrase> </"
+"textobject>"
 msgstr ""
-"<imageobject><imagedata fileref=\"figures/settings.png\" format=\"PNG\"/> "
-"</imageobject> <textobject> <phrase>Tinklo monitoriaus nustatymai.</phrase> "
-"</textobject>"
+"<imageobject><imagedata fileref=\"figures/settings.png\" format=\"PNG\"/> </"
+"imageobject> <textobject> <phrase>Tinklo monitoriaus nustatymai.</phrase> </"
+"textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:304
@@ -475,8 +478,8 @@ msgid ""
 "available devices are listed, however you can enter one yourself, too."
 msgstr ""
 "<guilabel>Tinklo įrenginys:</guilabel> Iš išskleidžiamo meniu pasirinkite "
-"tinklo įrenginį, kurį norite stebėti įtaise. Įprastai čia būna surašyti visi"
-" įrenginiai, bet galite įvesti ir pats."
+"tinklo įrenginį, kurį norite stebėti įtaise. Įprastai čia būna surašyti visi "
+"įrenginiai, bet galite įvesti ir pats."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:312
@@ -503,8 +506,8 @@ msgid ""
 "then the applet will show the sum of the in and out rate. The applet will "
 "take only half of the space in the panel in this case."
 msgstr ""
-"<guilabel>Rodyti sumą vietoje gaunamo ir išsiunčiamo srauto:</guilabel> jegu"
-" pažymėtas šis langelis, įtaisas rodys išsiunčiamo ir gaunamo srauto sumą. "
+"<guilabel>Rodyti sumą vietoje gaunamo ir išsiunčiamo srauto:</guilabel> jegu "
+"pažymėtas šis langelis, įtaisas rodys išsiunčiamo ir gaunamo srauto sumą. "
 "Įtaisas užims perpus mažiau vietos skydelyje."
 
 #. (itstool) path: listitem/para
@@ -530,8 +533,8 @@ msgstr ""
 "<guilabel>Keisti piktogramą atsižvelgiant į pasirinktą įrenginį:</guilabel> "
 "Įprastai įtaise bus rodoma piktograma, atspindinti stebimą naudojamą tinklo "
 "įrenginį. Telefonas bus rodomas naudojant PPP ryšį, tinklo plokštė rodoma "
-"naudojant eternetą (eth) ir t. t. Nepažymėjus šio langelio, įtaisas visuomet"
-" rodys tinklo plokštės piktogramą nepriklausmai nuo naudojamo ryšio."
+"naudojant eternetą (eth) ir t. t. Nepažymėjus šio langelio, įtaisas visuomet "
+"rodys tinklo plokštės piktogramą nepriklausmai nuo naudojamo ryšio."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:332
@@ -541,8 +544,7 @@ msgid ""
 "monitoring."
 msgstr ""
 "<guilabel>Esant galimybei visuomet stebėti prijungtą įrenginį:</guilabel> "
-"nutrūkus ryšiui Tinklo monitorius ieškos veikiančio, kurį būtų galima "
-"rodyti."
+"nutrūkus ryšiui Tinklo monitorius ieškos veikiančio, kurį būtų galima rodyti."
 
 #. (itstool) path: sect1/title
 #. (itstool) path: figure/title
@@ -565,13 +567,12 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:342
 msgid ""
-"<imageobject><imagedata fileref=\"figures/details.png\" format=\"PNG\"/> "
-"</imageobject> <textobject> <phrase>The details dialog</phrase> "
-"</textobject>"
+"<imageobject><imagedata fileref=\"figures/details.png\" format=\"PNG\"/> </"
+"imageobject> <textobject> <phrase>The details dialog</phrase> </textobject>"
 msgstr ""
-"<imageobject><imagedata fileref=\"figures/details.png\" "
-"format=\"PNG\"/></imageobject><textobject><phrase>Išsamesnės įrenginio "
-"informacijos dialogas</phrase></textobject>"
+"<imageobject><imagedata fileref=\"figures/details.png\" format=\"PNG\"/></"
+"imageobject><textobject><phrase>Išsamesnės įrenginio informacijos dialogas</"
+"phrase></textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:351
@@ -585,8 +586,8 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:356
 msgid ""
-"<guilabel>Internet Address:</guilabel> The IP (Internet Protocol) address of"
-" the network device."
+"<guilabel>Internet Address:</guilabel> The IP (Internet Protocol) address of "
+"the network device."
 msgstr ""
 "<guilabel>Interneto adresas:</guilabel> tinklo įrenginio IP (interneto "
 "protokolo) adresas."
@@ -595,11 +596,10 @@ msgstr ""
 #: C/index.docbook:359
 msgid ""
 "<guilabel>Netmask:</guilabel> The netmask which depends on the size of your "
-"LAN (Local Area Network). A usual value is 255.255.255.0 (a class C "
-"network)."
+"LAN (Local Area Network). A usual value is 255.255.255.0 (a class C network)."
 msgstr ""
-"<guilabel>Tinklo kaukė:</guilabel> tinklo kaukė, kuri priklauso nuo vietinio"
-" tinklo (LAN). Dažna (C klasės tinklo) vertė – 255.255.255.0."
+"<guilabel>Tinklo kaukė:</guilabel> tinklo kaukė, kuri priklauso nuo vietinio "
+"tinklo (LAN). Dažna (C klasės tinklo) vertė – 255.255.255.0."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:363
@@ -650,8 +650,8 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Suteikiamas leidimas kopijuoti, platinti ir/arba modifikuoti šį dokumentą "
@@ -666,11 +666,11 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
-"Šis žinynas yra CAFE žinynų rinkinio, platinamo GFDL sąlygomis, dalis. Jeigu"
-" norite dalintis šiuo žinynu atskirai nuo šio rinkinio, galite tą daryti "
+"Šis žinynas yra CAFE žinynų rinkinio, platinamo GFDL sąlygomis, dalis. Jeigu "
+"norite dalintis šiuo žinynu atskirai nuo šio rinkinio, galite tą daryti "
 "pridėdami šios licencijos kopiją, kaip nurodyta 6 šios licencijos dalyje."
 
 #. (itstool) path: legalnotice/para
@@ -682,8 +682,8 @@ msgid ""
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
-"Nemažai įmonių, jų produktų ir paslaugų pavadinimai laikomi prekės ženklais."
-" Kuomet šie pavadinimai pasirodo bet kur CAFE dokumentacijoje, ir CAFE "
+"Nemažai įmonių, jų produktų ir paslaugų pavadinimai laikomi prekės ženklais. "
+"Kuomet šie pavadinimai pasirodo bet kur CAFE dokumentacijoje, ir CAFE "
 "dokumentacijos projekto nariai atkreipia į juos dėmesį, šie pavadinimai "
 "radomi didžiosiomis raidėmis arba pradedami didžiąja raide."
 
@@ -704,8 +704,8 @@ msgid ""
 msgstr ""
 "DOKUMENTAS PATEIKIAMAS TOKS, KOKS YRA, BE BET KOKIOS RŪŠIES GARANTIJŲ, "
 "IŠREIKŠTŲ AR PAREIKŠTŲ, NERIBOTAI LAIKANT, KAD DOKUMENTAS AR JO MODIFIKUOTA "
-"VERSIJA YRA BE KLAIDŲ, TINKAMA KONKREČIAI PASKIRČIAI ARBA NEPAŽEIDŽIANTI TAM"
-" TIKRŲ TEISIŲ. VISA ŠIO DOKUMENTO  AR JO MODIFIKUOTOS VERSIJOS KOKYBĖS, "
+"VERSIJA YRA BE KLAIDŲ, TINKAMA KONKREČIAI PASKIRČIAI ARBA NEPAŽEIDŽIANTI TAM "
+"TIKRŲ TEISIŲ. VISA ŠIO DOKUMENTO  AR JO MODIFIKUOTOS VERSIJOS KOKYBĖS, "
 "TIKSLUMO IR VEIKIMO PRIKLAUSO JUMS. ESANT BET KOKIAM ŠIO DOKUMENTO AR JO "
 "MODIFIKUOTOS VERSIJOS TRŪKUMUI, JŪS (NE PIRMINIS RAŠYTOJAS, AUTORIUS AR "
 "KITAS PAGALBININKAS) PRISIICAFE REIKIAMO APTARNAVIMO, REMONTO AR TAISYMO "
@@ -716,26 +716,26 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "ESANT JOKIOMS APLINKYMBĖMS IR JOKIAI TEISINEI TEORIJAI AR DELIKTUI "
 "(ĮSKAITANT APLAIDUMĄ), SUTARČIAI AR KITAIS ATŽVILGIAIS, ŠIO DOKUMETNO AR JO "
 "MODIFIKUOTOS VERSIJOS AUTORIUS, PRADINIS RAŠYTOJAS, BET KURIS PAGALBININKAS "
-"ARBA BET KURIS PLATINTOJAS NĖRA ATSAKINGAS BET KURIAM ASMENIUI UŽ BET KOKIUS"
-" TIESIOGINIUS, NETIESIOGINIUS, YPATINGUS, ATSITIKTINIUS AR PASEKMINIUS "
+"ARBA BET KURIS PLATINTOJAS NĖRA ATSAKINGAS BET KURIAM ASMENIUI UŽ BET KOKIUS "
+"TIESIOGINIUS, NETIESIOGINIUS, YPATINGUS, ATSITIKTINIUS AR PASEKMINIUS "
 "NUOSTOLIUS, ĮSKAITANT DARBO SUSTOJIMĄ, KOMPIUTERIO GEDIMUS AR BET KURIUOS "
 "KITUS NUOSTOLIUS ARBA PRARADIMUS, KYLANČIUS IŠ ARBA SUSIJUSIUS SU ŠIO "
-"DOKUMENTO AR JO MODIFIKUOTŲ VERSIJŲ NAUDOJIMU, NET JEI IR VIENA IŠ PUSIŲ YRA"
-" INFORMUOTA APIE TOKIŲ NUOSTOLIŲ GALIMYBĘ."
+"DOKUMENTO AR JO MODIFIKUOTŲ VERSIJŲ NAUDOJIMU, NET JEI IR VIENA IŠ PUSIŲ YRA "
+"INFORMUOTA APIE TOKIŲ NUOSTOLIŲ GALIMYBĘ."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:28
@@ -745,5 +745,5 @@ msgid ""
 "<_:orderedlist-1/>"
 msgstr ""
 "DOKUMENTAS IR MODIFIKUOTOS JO VERSIJOS PATEIKIAMOS GNU LAISVOSIOS "
-"DOKUMENTACIJOS LICENCIJOS SĄLYGOMIS SU TOLESNIU SUPRATIMU, KAD: "
-"<_:orderedlist-1/>"
+"DOKUMENTACIJOS LICENCIJOS SĄLYGOMIS SU TOLESNIU SUPRATIMU, KAD: <_:"
+"orderedlist-1/>"

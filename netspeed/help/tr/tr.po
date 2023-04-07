@@ -1,11 +1,11 @@
-# 
+#
 # Translators:
 # mauron, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # clefebvre <clement.lefebvre@linuxmint.com>, 2020
 # Wolfgang Ulbrich <cafe@raveit.de>, 2020
 # Butterfly <gokhanlnx@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -13,10 +13,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 12:19+0000\n"
 "Last-Translator: Butterfly <gokhanlnx@gmail.com>, 2020\n"
 "Language-Team: Turkish (https://www.transifex.com/cafe/teams/13566/tr/)\n"
+"Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -153,8 +153,8 @@ msgstr "Geri bildirim"
 #: C/index.docbook:138
 msgid ""
 "To report a bug or make a suggestion regarding the Netspeed Applet "
-"application or this manual, follow the directions in the <ulink url=\"help"
-":cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"application or this manual, follow the directions in the <ulink url=\"help:"
+"cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 "Bu kılavuz veya Netspeed Uygulamacığı hakkında hata raporlamak veya öneride "
 "bulunmak için <ulink url=\"help:cafe-user-guide/feedback\" "
@@ -193,12 +193,12 @@ msgstr ""
 #: C/index.docbook:156
 msgid ""
 "<imageobject><imagedata fileref=\"figures/netspeed_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Netspeed.</phrase> "
-"</textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Netspeed.</phrase> </"
+"textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/netspeed_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Netspeed.</phrase> "
-"</textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Netspeed.</phrase> </"
+"textobject>"
 
 #. (itstool) path: figure/title
 #: C/index.docbook:166
@@ -221,8 +221,8 @@ msgstr ""
 #: C/index.docbook:168
 msgid ""
 "<imageobject><imagedata fileref=\"figures/eth_sum_48.png\" format=\"PNG\"/> "
-"</imageobject> <textobject> <phrase>Netspeed showing the sum in a 48px "
-"panel.</phrase> </textobject>"
+"</imageobject> <textobject> <phrase>Netspeed showing the sum in a 48px panel."
+"</phrase> </textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/eth_sum_48.png\" format=\"PNG\"/> "
 "</imageobject> <textobject> <phrase>48 piksellik bir panelde toplamı "
@@ -231,12 +231,12 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: C/index.docbook:177
 msgid ""
-"<application>Netspeed Applet</application> displays the network traffic on a"
-" specified device like eth0, ppp0, plip0, etc. More over it provides "
+"<application>Netspeed Applet</application> displays the network traffic on a "
+"specified device like eth0, ppp0, plip0, etc. More over it provides "
 "information about the configuration of the network device."
 msgstr ""
-"<application>Netspeed Uygulamacığı</application> eth0, ppp0, plip0, vs. gibi"
-" belirtilen cihazdaki ağ trafiğini görüntüler. Ayrıca ağ cihazının "
+"<application>Netspeed Uygulamacığı</application> eth0, ppp0, plip0, vs. gibi "
+"belirtilen cihazdaki ağ trafiğini görüntüler. Ayrıca ağ cihazının "
 "yapılındırılması hakkında bilgi de sağlar."
 
 #. (itstool) path: sect2/title
@@ -269,13 +269,13 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:196
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/loopback.png\""
-" format=\"PNG\"/> </imageobject><textobject> <phrase>Loopback</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/loopback.png\" "
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Loopback</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/loopback.png\""
-" format=\"PNG\"/> </imageobject><textobject> <phrase>Geri döngü</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/loopback.png\" "
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Geri döngü</phrase> </"
+"textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:203
@@ -297,13 +297,13 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:208
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ethernet.png\""
-" format=\"PNG\"/> </imageobject><textobject> <phrase>Ethernet</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ethernet.png\" "
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Ethernet</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ethernet.png\""
-" format=\"PNG\"/> </imageobject><textobject> <phrase>Ethernet</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ethernet.png\" "
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Ethernet</phrase> </"
+"textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:215
@@ -324,12 +324,12 @@ msgstr "external ref='figures/ppp.png' md5='b88d98a9ccdd489d91b45c8cf2dcbad1'"
 #: C/index.docbook:220
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ppp.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>PPP</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>PPP</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ppp.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>PPP</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>PPP</phrase> </"
+"textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:227
@@ -352,12 +352,12 @@ msgstr ""
 #: C/index.docbook:232
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/wavelan.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>Wireless</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Wireless</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/wavelan.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>Kablosuz</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>Kablosuz</phrase> </"
+"textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:239
@@ -372,19 +372,18 @@ msgstr "Kablosuz bağlantı."
 #: C/index.docbook:246
 msgctxt "_"
 msgid "external ref='figures/plip.png' md5='0761a22dfa7b0b56e41e020cd701db68'"
-msgstr ""
-"external ref='figures/plip.png' md5='0761a22dfa7b0b56e41e020cd701db68'"
+msgstr "external ref='figures/plip.png' md5='0761a22dfa7b0b56e41e020cd701db68'"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:244
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/plip.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>PLIP</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>PLIP</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/plip.png\" "
-"format=\"PNG\"/> </imageobject><textobject> <phrase>PLIP</phrase> "
-"</textobject></inlinemediaobject>"
+"format=\"PNG\"/> </imageobject><textobject> <phrase>PLIP</phrase> </"
+"textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:251
@@ -454,13 +453,13 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:295
 msgid ""
-"<imageobject><imagedata fileref=\"figures/settings.png\" format=\"PNG\"/> "
-"</imageobject> <textobject> <phrase>Netspeed Applet Settings.</phrase> "
-"</textobject>"
+"<imageobject><imagedata fileref=\"figures/settings.png\" format=\"PNG\"/> </"
+"imageobject> <textobject> <phrase>Netspeed Applet Settings.</phrase> </"
+"textobject>"
 msgstr ""
-"<imageobject><imagedata fileref=\"figures/settings.png\" format=\"PNG\"/> "
-"</imageobject> <textobject> <phrase>Netspeed Uygulamacığı Ayarları.</phrase>"
-" </textobject>"
+"<imageobject><imagedata fileref=\"figures/settings.png\" format=\"PNG\"/> </"
+"imageobject> <textobject> <phrase>Netspeed Uygulamacığı Ayarları.</phrase> </"
+"textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:304
@@ -504,8 +503,8 @@ msgid ""
 "take only half of the space in the panel in this case."
 msgstr ""
 "<guilabel>Giden ve gelen yerine toplam kullan:</guilabel> Eğer bu kutuyu "
-"seçerseniz, uygulamacık gelen ve giden verilerin toplamını gösterecektir. Bu"
-" durumda uygulamacık paneldeki alanın sadece yarısını alacaktır."
+"seçerseniz, uygulamacık gelen ve giden verilerin toplamını gösterecektir. Bu "
+"durumda uygulamacık paneldeki alanın sadece yarısını alacaktır."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:322
@@ -527,8 +526,8 @@ msgid ""
 "which device you monitor."
 msgstr ""
 "<guilabel>Seçilen aygıta göre simgeyi değiştir:</guilabel> Genel olarak "
-"uygulamacık izlediğiniz ağ cihazı türünü temsil eden bir ikon gösterecektir."
-" Yani Noktadan Noktaya bağlantılar (ppp - modemler, vs.) için  bir telefon, "
+"uygulamacık izlediğiniz ağ cihazı türünü temsil eden bir ikon gösterecektir. "
+"Yani Noktadan Noktaya bağlantılar (ppp - modemler, vs.) için  bir telefon, "
 "Ethernet (eth) için bir ağ kartı vs. Bu şık seçilmediğinde, uygulamacık "
 "izlediğiniz cihazdan bağımsız olarak daima bir ağ kartı ikonu gösterecektir."
 
@@ -564,12 +563,11 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:342
 msgid ""
-"<imageobject><imagedata fileref=\"figures/details.png\" format=\"PNG\"/> "
-"</imageobject> <textobject> <phrase>The details dialog</phrase> "
-"</textobject>"
+"<imageobject><imagedata fileref=\"figures/details.png\" format=\"PNG\"/> </"
+"imageobject> <textobject> <phrase>The details dialog</phrase> </textobject>"
 msgstr ""
-"<imageobject><imagedata fileref=\"figures/details.png\" format=\"PNG\"/> "
-"</imageobject> <textobject> <phrase>Detaylar diyaloğu</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/details.png\" format=\"PNG\"/> </"
+"imageobject> <textobject> <phrase>Detaylar diyaloğu</phrase> </textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:351
@@ -583,8 +581,8 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:356
 msgid ""
-"<guilabel>Internet Address:</guilabel> The IP (Internet Protocol) address of"
-" the network device."
+"<guilabel>Internet Address:</guilabel> The IP (Internet Protocol) address of "
+"the network device."
 msgstr ""
 "<guilabel>İnternet Adresi:</guilabel> ağ cihazının IP (Internet Protocol) "
 "adresi."
@@ -593,8 +591,7 @@ msgstr ""
 #: C/index.docbook:359
 msgid ""
 "<guilabel>Netmask:</guilabel> The netmask which depends on the size of your "
-"LAN (Local Area Network). A usual value is 255.255.255.0 (a class C "
-"network)."
+"LAN (Local Area Network). A usual value is 255.255.255.0 (a class C network)."
 msgstr ""
 "<guilabel>Ağ maskesi:</guilabel> LAN (Local Area Network yani Yerel "
 "Ağınızın) boyutuna bağlı olan ağ maskesi. Normal bir değer şudur: "
@@ -627,8 +624,8 @@ msgid ""
 "<guilabel>Bytes in:</guilabel> The amount of bytes that the network device "
 "has received since it has been connected to the network."
 msgstr ""
-"<guilabel>Gelen bayt:</guilabel> Ağa bağlandığından beri ağ cihazının aldığı"
-" bayt miktarı."
+"<guilabel>Gelen bayt:</guilabel> Ağa bağlandığından beri ağ cihazının aldığı "
+"bayt miktarı."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:375
@@ -650,24 +647,24 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
-"Bu belgeyi kopyalama, dağıtma ve/veya değiştirme izni, değişmez bölümsüz, ön"
-" kapak metinsiz ve arka kapak metinsiz şekilde GNU Free Documentation "
-"License (GNU Özgür Belgeleme Lisansı, GFDL), sürüm 1.1 ya da Free Software "
-"Foundation tarafından yayınlanan daha yeni bir sürüm kapsamında verilmiştir."
-" GFDL'in bir kopyasını bu <_:ulink-1/>  ya da bu kılavuzla dağıtılan "
-"COPYING-DOCS dosyasında bulabilirsiniz."
+"Bu belgeyi kopyalama, dağıtma ve/veya değiştirme izni, değişmez bölümsüz, ön "
+"kapak metinsiz ve arka kapak metinsiz şekilde GNU Free Documentation License "
+"(GNU Özgür Belgeleme Lisansı, GFDL), sürüm 1.1 ya da Free Software "
+"Foundation tarafından yayınlanan daha yeni bir sürüm kapsamında verilmiştir. "
+"GFDL'in bir kopyasını bu <_:ulink-1/>  ya da bu kılavuzla dağıtılan COPYING-"
+"DOCS dosyasında bulabilirsiniz."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Bu kılavuz, GFDL (GNU Özgür Belgelendirme Lisansı) kapsamında yayınlanan "
 "CAFE kılavuzları koleksiyonunun bir parçasıdır. Bu kılavuzu koleksiyondan "
@@ -685,8 +682,8 @@ msgid ""
 msgstr ""
 "Firmalar tarafından ürün ve hizmetlerinin ayırt edilmeleri için "
 "kullandıkları isimlerin birçoğu tescilli marka olarak ayrılmıştır. Bu "
-"isimlerin CAFE belgelendirilmesinde yer alması ve CAFE Belgelendirme Projesi"
-" mensupları bu tescilli markalardan haberdar edildikleri durumda, isimlerin "
+"isimlerin CAFE belgelendirilmesinde yer alması ve CAFE Belgelendirme Projesi "
+"mensupları bu tescilli markalardan haberdar edildikleri durumda, isimlerin "
 "ilk harfi ya da tamamı büyük harflerle yazılır."
 
 #. (itstool) path: listitem/para
@@ -704,10 +701,10 @@ msgid ""
 "ESSENTIAL PART OF THIS LICENSE. NO USE OF ANY DOCUMENT OR MODIFIED VERSION "
 "OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
 msgstr ""
-"BELGE OLDUĞU GİBİ, AÇIK VEYA ZIMNİ HİÇBİR TÜRLÜ GARANTİ OLMADAN SUNULMUŞTUR,"
-" Kİ BUNA SINIRLAMA OLMAKSIZIN BELGE VEYA BELGENİN DEĞİŞTİRİLMİŞ SÜRÜMLERİNİN"
-" BELLİ BİR AMACA UYGUN OLMALARI, KUSURDAN ARINMIŞ OLMALARI VEYA HAK "
-"İHLALİNDE BULUNMAMALARI GARANTİLERİ OLMAMASI DA DAHİLDİR. BELGE VE BELGENİN "
+"BELGE OLDUĞU GİBİ, AÇIK VEYA ZIMNİ HİÇBİR TÜRLÜ GARANTİ OLMADAN SUNULMUŞTUR, "
+"Kİ BUNA SINIRLAMA OLMAKSIZIN BELGE VEYA BELGENİN DEĞİŞTİRİLMİŞ SÜRÜMLERİNİN "
+"BELLİ BİR AMACA UYGUN OLMALARI, KUSURDAN ARINMIŞ OLMALARI VEYA HAK İHLALİNDE "
+"BULUNMAMALARI GARANTİLERİ OLMAMASI DA DAHİLDİR. BELGE VE BELGENİN "
 "DEĞİŞTİRİLMİŞ SÜRÜMLERİNİN KALİTESİ, DOĞRULUĞU VE PERFORMANSINA İLİŞKİN TÜM "
 "RİSK SİZE AİTTİR. HERHANGİ BİR BELGE VEYA BELGENİN DEĞİŞTİRİLMİŞ SÜRÜMÜNÜN "
 "KUSURLU OLMASI HALİNDE, GEREKLİ SERVİS, ONARIM VE DÜZELTMENİN ÜCRETİNİ SİZ "
@@ -719,19 +716,19 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
-"HİÇBİR KOŞULDA VE HİÇBİR YASAL TEORİDE, Kİ BU TAZMİNAT YÜKÜMLÜLÜĞÜ (İHMAK DE"
-" DAHİL), KONTRATO VEYA BAŞKA BİR ŞEKİLİ DE İÇERİR, BELGEYİ VE BELGENİN "
+"HİÇBİR KOŞULDA VE HİÇBİR YASAL TEORİDE, Kİ BU TAZMİNAT YÜKÜMLÜLÜĞÜ (İHMAK DE "
+"DAHİL), KONTRATO VEYA BAŞKA BİR ŞEKİLİ DE İÇERİR, BELGEYİ VE BELGENİN "
 "DEĞİŞTİRİLMİŞ SÜRÜMLERİNİ İLK YAZAN, YAZAR, HERHANGİ BİR KATKIDA BULUNAN, "
 "DAĞITAN VEYA BU TARAFLARIN HERHANGİ BİR TEDARİKÇİSİ HERHANGİ DOĞRUDAN, "
 "DOLAYLI, ÖZEL, ARIZİ  ZARARLARDAN HERHANGİ BİR KİŞİ SORUMLU DEĞİLDİR, Kİ "
