@@ -1,4 +1,4 @@
-# 
+#
 # Translators:
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
@@ -11,7 +11,7 @@
 # Laurent Napias <tamplan+transifex@free.fr>, 2020
 # Laurent Napias, 2020
 # Jerom Turible <jeromet9208@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -19,10 +19,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 11:31+0000\n"
 "Last-Translator: Jerom Turible <jeromet9208@gmail.com>, 2020\n"
 "Language-Team: French (https://www.transifex.com/cafe/teams/13566/fr/)\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -55,9 +55,9 @@ msgid ""
 "CPU Frequency Scaling Monitor shows the current clock speed of the CPU and "
 "provides an interface to change the clock speed if the CPU supports it."
 msgstr ""
-"L'applet moniteur de fréquence du processeur indique la vitesse d'horloge du"
-" processeur et propose une interface pour modifier la vitesse d'horloge "
-"quand le processeur le permet."
+"L'applet moniteur de fréquence du processeur indique la vitesse d'horloge du "
+"processeur et propose une interface pour modifier la vitesse d'horloge quand "
+"le processeur le permet."
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:24
@@ -98,17 +98,17 @@ msgstr ""
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:61
 msgid ""
-"<firstname>Carlos</firstname> <surname>Garcia Campos</surname> <affiliation>"
-" <orgname>GNOME Project</orgname> "
-"<address><email>carlosgc@gnome.org</email></address> </affiliation>"
+"<firstname>Carlos</firstname> <surname>Garcia Campos</surname> <affiliation> "
+"<orgname>GNOME Project</orgname> <address><email>carlosgc@gnome.org</email></"
+"address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:69
 msgid ""
 "<firstname>Davyd</firstname> <surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Project</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME Project</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -169,8 +169,8 @@ msgstr "Votre avis"
 msgid ""
 "To report a bug or make a suggestion regarding the CPU Frequency Scaling "
 "Monitor applet or this manual, follow the directions in the <ulink "
-"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback "
-"Page</ulink>."
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</"
+"ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -246,8 +246,8 @@ msgid ""
 "Linux machines that have support in the kernel. It can however, support the "
 "several generations of frequency scaling interfaces in the kernel."
 msgstr ""
-"Malheureusement, surveiller les changements de fréquence du processeur n'est"
-" possible que sur les postes Linux intégrant cette fonctionnalité dans le "
+"Malheureusement, surveiller les changements de fréquence du processeur n'est "
+"possible que sur les postes Linux intégrant cette fonctionnalité dans le "
 "noyau. Le moniteur peut cependant utiliser les différentes générations "
 "d'interfaces de changements de fréquence disponibles dans le noyau."
 
@@ -269,8 +269,8 @@ msgid ""
 "progress bar represents the current CPU frequency with respect to the "
 "maximum frequency."
 msgstr ""
-"Quand le système prend en charge les changements de fréquence du processeur,"
-" l'applet Moniteur de fréquence du processeur affiche l'icône du processeur "
+"Quand le système prend en charge les changements de fréquence du processeur, "
+"l'applet Moniteur de fréquence du processeur affiche l'icône du processeur "
 "avec une barre de progression. Le niveau de cette barre de progression "
 "représente la fréquence actuelle du processeur par rapport à sa fréquence "
 "maximale."
@@ -285,22 +285,22 @@ msgid ""
 "applet-prefs\"/>."
 msgstr ""
 "Par défaut, l'applet Moniteur de fréquence du processeur affiche la "
-"fréquence actuelle du processeur en Hertz (la mesure standard de fréquence),"
-" mais l'applet peut être configurée pour afficher un pourcentage à la place."
-" Pour plus d'informations sur la façon de configurer l'applet Moniteur de "
+"fréquence actuelle du processeur en Hertz (la mesure standard de fréquence), "
+"mais l'applet peut être configurée pour afficher un pourcentage à la place. "
+"Pour plus d'informations sur la façon de configurer l'applet Moniteur de "
 "fréquence du processeur, consultez <xref linkend=\"cpufreq-applet-prefs\"/>."
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:201
 msgid ""
-"Each instance of CPU Frequency Scaling Monitor can monitor only one CPU. You"
-" must start an instance of CPU Frequency Scaling Monitor for each CPU that "
+"Each instance of CPU Frequency Scaling Monitor can monitor only one CPU. You "
+"must start an instance of CPU Frequency Scaling Monitor for each CPU that "
 "you want to monitor if you are in a multiprocessor (SMP) system."
 msgstr ""
 "Chaque instance de l'applet Moniteur de fréquence du processeur ne peut "
 "surveiller qu'un seul processeur. Vous devez démarrer une instance de "
-"l'applet Moniteur de fréquence du processeur pour chaque processeur que vous"
-" voulez surveiller si vous êtes dans le cadre d'un système multiprocesseurs "
+"l'applet Moniteur de fréquence du processeur pour chaque processeur que vous "
+"voulez surveiller si vous êtes dans le cadre d'un système multiprocesseurs "
 "(SMP)."
 
 #. (itstool) path: sect2/title
@@ -337,17 +337,15 @@ msgstr "Description"
 #: C/index.docbook:227
 msgctxt "_"
 msgid ""
-"external ref='figures/cpufreq-100.png' "
-"md5='298d50a03bfcf5143bb9877703de9541'"
+"external ref='figures/cpufreq-100.png' md5='298d50a03bfcf5143bb9877703de9541'"
 msgstr ""
 
 #. (itstool) path: entry/para
 #: C/index.docbook:225
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata "
-"fileref=\"figures/cpufreq-100.png\" format=\"PNG\"/> "
-"</imageobject><textobject> <phrase>100% Power</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/cpufreq-100."
+"png\" format=\"PNG\"/> </imageobject><textobject> <phrase>100% Power</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
 
 #. (itstool) path: entry/para
@@ -369,9 +367,8 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:236
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata "
-"fileref=\"figures/cpufreq-75.png\" format=\"PNG\"/> "
-"</imageobject><textobject> <phrase>75% Power</phrase> "
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/cpufreq-75."
+"png\" format=\"PNG\"/> </imageobject><textobject> <phrase>75% Power</phrase> "
 "</textobject></inlinemediaobject>"
 msgstr ""
 
@@ -394,9 +391,8 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:247
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata "
-"fileref=\"figures/cpufreq-50.png\" format=\"PNG\"/> "
-"</imageobject><textobject> <phrase>50% Power</phrase> "
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/cpufreq-50."
+"png\" format=\"PNG\"/> </imageobject><textobject> <phrase>50% Power</phrase> "
 "</textobject></inlinemediaobject>"
 msgstr ""
 
@@ -419,9 +415,8 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:258
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata "
-"fileref=\"figures/cpufreq-25.png\" format=\"PNG\"/> "
-"</imageobject><textobject> <phrase>25% Power</phrase> "
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/cpufreq-25."
+"png\" format=\"PNG\"/> </imageobject><textobject> <phrase>25% Power</phrase> "
 "</textobject></inlinemediaobject>"
 msgstr ""
 
@@ -442,8 +437,8 @@ msgid ""
 "Desktop by default. Please consult your system administrator, vendor "
 "documentation, or the documentation that came with this software."
 msgstr ""
-"La fonctionnalité de sélection de fréquence peut ne pas être disponible avec"
-" votre bureau CAFE par défaut. Merci de consulter votre administratrice ou "
+"La fonctionnalité de sélection de fréquence peut ne pas être disponible avec "
+"votre bureau CAFE par défaut. Merci de consulter votre administratrice ou "
 "administrateur système, la documentation du constructeur ou celle fournie "
 "avec ce logiciel."
 
@@ -454,10 +449,9 @@ msgid ""
 "shown. This menu will offer you a list of available frequencies and/or "
 "frequency governors for your machine."
 msgstr ""
-"Pour régler la fréquence du processeur, cliquez (avec le bouton gauche de la"
-" souris) sur le moniteur et un menu apparaîtra. Ce menu propose une liste "
-"des fréquences et/ou des gouverneurs de fréquence disponibles pour votre "
-"machine."
+"Pour régler la fréquence du processeur, cliquez (avec le bouton gauche de la "
+"souris) sur le moniteur et un menu apparaîtra. Ce menu propose une liste des "
+"fréquences et/ou des gouverneurs de fréquence disponibles pour votre machine."
 
 #. (itstool) path: tip/para
 #: C/index.docbook:284
@@ -467,8 +461,8 @@ msgid ""
 "prefs\"/> for more information."
 msgstr ""
 "Vous pouvez choisir si vous souhaitez afficher les fréquences ou les "
-"gouverneurs disponibles dans les <guilabel>Préférences</guilabel>. Consultez"
-" <xref linkend=\"cpufreq-applet-prefs\"/> pour plus d'informations."
+"gouverneurs disponibles dans les <guilabel>Préférences</guilabel>. Consultez "
+"<xref linkend=\"cpufreq-applet-prefs\"/> pour plus d'informations."
 
 #. (itstool) path: figure/title
 #: C/index.docbook:291
@@ -513,13 +507,12 @@ msgstr "Préférences"
 #: C/index.docbook:318
 msgid ""
 "To configure the <application>CPU Frequency Scaling Monitor</application>, "
-"right-click on the applet, then choose "
-"<guimenuitem>Preferences</guimenuitem> from the popup menu."
+"right-click on the applet, then choose <guimenuitem>Preferences</"
+"guimenuitem> from the popup menu."
 msgstr ""
-"Pour configurer le <application>Moniteur de fréquence du "
-"processeur</application>, cliquez avec le bouton droit de la souris sur "
-"l'applet, puis choisissez <guimenuitem>Préférences</guimenuitem> depuis le "
-"menu contextuel."
+"Pour configurer le <application>Moniteur de fréquence du processeur</"
+"application>, cliquez avec le bouton droit de la souris sur l'applet, puis "
+"choisissez <guimenuitem>Préférences</guimenuitem> depuis le menu contextuel."
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:319
@@ -586,9 +579,9 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:341
 msgid ""
-"<imageobject><imagedata fileref=\"figures/cpufreq-applet-preferences-"
-"smp.png\" format=\"PNG\"/> </imageobject> <textobject> <phrase>CPU Frequency"
-" Scaling Monitor preferences dialog CPU selector</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/cpufreq-applet-preferences-smp."
+"png\" format=\"PNG\"/> </imageobject> <textobject> <phrase>CPU Frequency "
+"Scaling Monitor preferences dialog CPU selector</phrase> </textobject>"
 msgstr ""
 
 #. (itstool) path: note/para
@@ -611,8 +604,8 @@ msgid ""
 "Use this drop-down list to select the mode in which you want to display the "
 "applet. Available modes are: Graphic, Text and both (Graphic and Text)"
 msgstr ""
-"Utilisez cette liste déroulante pour choisir le mode dans lequel vous voulez"
-" afficher l'applet. Les modes disponibles sont : Graphique, Texte ou "
+"Utilisez cette liste déroulante pour choisir le mode dans lequel vous voulez "
+"afficher l'applet. Les modes disponibles sont : Graphique, Texte ou "
 "Graphique et texte"
 
 #. (itstool) path: varlistentry/term
@@ -666,19 +659,19 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:398
 msgid ""
-"<imageobject><imagedata fileref=\"figures/cpufreq-applet-selector-both.png\""
-" format=\"PNG\"/> </imageobject> <textobject> <phrase>CPU governors "
-"selector</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/cpufreq-applet-selector-both.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>CPU governors selector</"
+"phrase> </textobject>"
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:388
 msgid ""
 "This option allows you to choose how much information is shown in the "
-"frequency selector dropdown (see <xref linkend=\"cafe-cpufreq-selector\"/>)."
-" You can select to display <guilabel>Frequencies</guilabel>, "
-"<guilabel>Governors</guilabel> or both <guilabel>Frequencies and "
-"Governors</guilabel>. <_:figure-1/>"
+"frequency selector dropdown (see <xref linkend=\"cafe-cpufreq-selector\"/>). "
+"You can select to display <guilabel>Frequencies</guilabel>, "
+"<guilabel>Governors</guilabel> or both <guilabel>Frequencies and Governors</"
+"guilabel>. <_:figure-1/>"
 msgstr ""
 
 #. (itstool) path: para/ulink
@@ -692,16 +685,16 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Permission vous est donnée de copier, distribuer et/ou modifier ce document "
 "selon les termes de la Licence GNU Free Documentation License, Version 1.1 "
 "ou ultérieure publiée par la Free Software Foundation sans section "
 "inaltérable, sans texte de première page de couverture ni texte de dernière "
-"page de couverture. Vous trouverez un exemplaire de cette licence en suivant"
-" ce <_:ulink-1/> ou dans le fichier COPYING-DOCS fourni avec le présent "
+"page de couverture. Vous trouverez un exemplaire de cette licence en suivant "
+"ce <_:ulink-1/> ou dans le fichier COPYING-DOCS fourni avec le présent "
 "manuel."
 
 #. (itstool) path: legalnotice/para
@@ -709,8 +702,8 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Ce manuel fait partie de la collection de manuels CAFE distribués selon les "
 "termes de la licence de documentation libre GNU. Si vous souhaitez "
@@ -752,28 +745,28 @@ msgstr ""
 "OU IMPLICITE, Y COMPRIS, ET SANS LIMITATION, LES GARANTIES DE BONNE QUALITÉ "
 "MARCHANDE OU D'APTITUDE À UN EMPLOI PARTICULIER OU AUTORISÉ DU DOCUMENT OU "
 "DE SA VERSION MODIFIÉE. L'UTILISATEUR ASSUME TOUT RISQUE RELATIF À LA "
-"QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE SA VERSION DE"
-" MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT DÉFECTUEUSE, "
+"QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE SA VERSION DE "
+"MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT DÉFECTUEUSE, "
 "L'UTILISATEUR (ET NON LE RÉDACTEUR INITIAL, L'AUTEUR, NI TOUT AUTRE "
 "PARTICIPANT) ENDOSSERA LES COÛTS DE TOUTE INTERVENTION, RÉPARATION OU "
 "CORRECTION NÉCESSAIRE. CETTE DÉNÉGATION DE RESPONSABILITÉ CONSTITUE UNE "
-"PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE"
-" SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ "
+"PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE "
+"SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ "
 "SOUS CETTE DÉNÉGATION DE RESPONSABILITÉ ; "
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "EN AUCUNE CIRCONSTANCE ET SOUS AUCUNE INTERPRÉTATION DE LA LOI, QU'IL "
 "S'AGISSE DE RESPONSABILITÉ CIVILE (Y COMPRIS LA NÉGLIGENCE), CONTRACTUELLE "
@@ -784,8 +777,8 @@ msgstr ""
 "PARTICULIER OU ACCIDENTEL DE TOUT TYPE Y COMPRIS, SANS LIMITATION, LES "
 "DOMMAGES LIÉS À LA PERTE DE CLIENTÈLE, AUX ARRÊTS DE TRAVAIL, AUX "
 "DÉFAILLANCES ET AUX DYSFONCTIONNEMENTS INFORMATIQUES OU TOUT AUTRE DOMMAGE "
-"OU PERTE LIÉE À L'UTILISATION DU PRÉSENT DOCUMENT ET DE SES VERSIONS DE MISE"
-" À JOUR, ET CE MÊME SI CES PARTIES ONT ÉTÉ INFORMÉES DE LA POSSIBILITÉ DE "
+"OU PERTE LIÉE À L'UTILISATION DU PRÉSENT DOCUMENT ET DE SES VERSIONS DE MISE "
+"À JOUR, ET CE MÊME SI CES PARTIES ONT ÉTÉ INFORMÉES DE LA POSSIBILITÉ DE "
 "TELS DOMMAGES."
 
 #. (itstool) path: legalnotice/para

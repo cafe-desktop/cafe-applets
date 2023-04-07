@@ -1,10 +1,10 @@
-# 
+#
 # Translators:
 # Miguel Anxo Bouzada <mbouzada@gmail.com>, 2020
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Wolfgang Ulbrich <cafe@raveit.de>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -12,10 +12,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 11:31+0000\n"
 "Last-Translator: Wolfgang Ulbrich <cafe@raveit.de>, 2020\n"
 "Language-Team: Galician (https://www.transifex.com/cafe/teams/13566/gl/)\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: gl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -77,17 +77,17 @@ msgstr ""
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:61
 msgid ""
-"<firstname>Carlos</firstname> <surname>Garcia Campos</surname> <affiliation>"
-" <orgname>GNOME Project</orgname> "
-"<address><email>carlosgc@gnome.org</email></address> </affiliation>"
+"<firstname>Carlos</firstname> <surname>Garcia Campos</surname> <affiliation> "
+"<orgname>GNOME Project</orgname> <address><email>carlosgc@gnome.org</email></"
+"address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:69
 msgid ""
 "<firstname>Davyd</firstname> <surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Project</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME Project</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -148,8 +148,8 @@ msgstr "Comentarios"
 msgid ""
 "To report a bug or make a suggestion regarding the CPU Frequency Scaling "
 "Monitor applet or this manual, follow the directions in the <ulink "
-"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback "
-"Page</ulink>."
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</"
+"ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -254,8 +254,8 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: C/index.docbook:201
 msgid ""
-"Each instance of CPU Frequency Scaling Monitor can monitor only one CPU. You"
-" must start an instance of CPU Frequency Scaling Monitor for each CPU that "
+"Each instance of CPU Frequency Scaling Monitor can monitor only one CPU. You "
+"must start an instance of CPU Frequency Scaling Monitor for each CPU that "
 "you want to monitor if you are in a multiprocessor (SMP) system."
 msgstr ""
 
@@ -290,19 +290,16 @@ msgstr "Descrición"
 #: C/index.docbook:227
 msgctxt "_"
 msgid ""
-"external ref='figures/cpufreq-100.png' "
-"md5='298d50a03bfcf5143bb9877703de9541'"
+"external ref='figures/cpufreq-100.png' md5='298d50a03bfcf5143bb9877703de9541'"
 msgstr ""
-"external ref='figures/cpufreq-100.png' "
-"md5='298d50a03bfcf5143bb9877703de9541'"
+"external ref='figures/cpufreq-100.png' md5='298d50a03bfcf5143bb9877703de9541'"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:225
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata "
-"fileref=\"figures/cpufreq-100.png\" format=\"PNG\"/> "
-"</imageobject><textobject> <phrase>100% Power</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/cpufreq-100."
+"png\" format=\"PNG\"/> </imageobject><textobject> <phrase>100% Power</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
 
 #. (itstool) path: entry/para
@@ -325,9 +322,8 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:236
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata "
-"fileref=\"figures/cpufreq-75.png\" format=\"PNG\"/> "
-"</imageobject><textobject> <phrase>75% Power</phrase> "
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/cpufreq-75."
+"png\" format=\"PNG\"/> </imageobject><textobject> <phrase>75% Power</phrase> "
 "</textobject></inlinemediaobject>"
 msgstr ""
 
@@ -351,9 +347,8 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:247
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata "
-"fileref=\"figures/cpufreq-50.png\" format=\"PNG\"/> "
-"</imageobject><textobject> <phrase>50% Power</phrase> "
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/cpufreq-50."
+"png\" format=\"PNG\"/> </imageobject><textobject> <phrase>50% Power</phrase> "
 "</textobject></inlinemediaobject>"
 msgstr ""
 
@@ -377,9 +372,8 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:258
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata "
-"fileref=\"figures/cpufreq-25.png\" format=\"PNG\"/> "
-"</imageobject><textobject> <phrase>25% Power</phrase> "
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/cpufreq-25."
+"png\" format=\"PNG\"/> </imageobject><textobject> <phrase>25% Power</phrase> "
 "</textobject></inlinemediaobject>"
 msgstr ""
 
@@ -464,8 +458,8 @@ msgstr "Preferencias"
 #: C/index.docbook:318
 msgid ""
 "To configure the <application>CPU Frequency Scaling Monitor</application>, "
-"right-click on the applet, then choose "
-"<guimenuitem>Preferences</guimenuitem> from the popup menu."
+"right-click on the applet, then choose <guimenuitem>Preferences</"
+"guimenuitem> from the popup menu."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -534,9 +528,9 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:341
 msgid ""
-"<imageobject><imagedata fileref=\"figures/cpufreq-applet-preferences-"
-"smp.png\" format=\"PNG\"/> </imageobject> <textobject> <phrase>CPU Frequency"
-" Scaling Monitor preferences dialog CPU selector</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/cpufreq-applet-preferences-smp."
+"png\" format=\"PNG\"/> </imageobject> <textobject> <phrase>CPU Frequency "
+"Scaling Monitor preferences dialog CPU selector</phrase> </textobject>"
 msgstr ""
 
 #. (itstool) path: note/para
@@ -604,19 +598,19 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:398
 msgid ""
-"<imageobject><imagedata fileref=\"figures/cpufreq-applet-selector-both.png\""
-" format=\"PNG\"/> </imageobject> <textobject> <phrase>CPU governors "
-"selector</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/cpufreq-applet-selector-both.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>CPU governors selector</"
+"phrase> </textobject>"
 msgstr ""
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:388
 msgid ""
 "This option allows you to choose how much information is shown in the "
-"frequency selector dropdown (see <xref linkend=\"cafe-cpufreq-selector\"/>)."
-" You can select to display <guilabel>Frequencies</guilabel>, "
-"<guilabel>Governors</guilabel> or both <guilabel>Frequencies and "
-"Governors</guilabel>. <_:figure-1/>"
+"frequency selector dropdown (see <xref linkend=\"cafe-cpufreq-selector\"/>). "
+"You can select to display <guilabel>Frequencies</guilabel>, "
+"<guilabel>Governors</guilabel> or both <guilabel>Frequencies and Governors</"
+"guilabel>. <_:figure-1/>"
 msgstr ""
 
 #. (itstool) path: para/ulink
@@ -630,14 +624,14 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Autorízase a copia, distribución e/ou modificación deste documento baixo os "
 "termos da Licenza de Documentación Libre de GNU (GFDL), versión 1.1 ou "
-"calquera outra versión posterior publicada pola Free Software Foundation sen"
-" seccións invariantes, sen textos de cuberta e sen textos de cuberta "
+"calquera outra versión posterior publicada pola Free Software Foundation sen "
+"seccións invariantes, sen textos de cuberta e sen textos de cuberta "
 "traseira. Pode atopar unha copia da GFDL en <_:ulink-1/> ou no ficheiro "
 "COPYING-DOCS distribuído con este manual."
 
@@ -646,8 +640,8 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Este manual forma parte da colección de manuais CAFE distribuídos baixo a "
 "licenza GFDL. Se quere distribuír este manual separadamente da colección, "
@@ -666,8 +660,8 @@ msgstr ""
 "Moitos dos nomes utilizados polas empresas para distinguir os seus produtos "
 "e servizos son reivindicados como marcas comerciais. Cando estes nomes "
 "aparecen en calquera documentación de CAFE e os membros do Proxecto de "
-"documentación de CAFE son conscientes das marcas rexistradas, os nomes están"
-" en letras maiúsculas ou maiúsculas iniciais."
+"documentación de CAFE son conscientes das marcas rexistradas, os nomes están "
+"en letras maiúsculas ou maiúsculas iniciais."
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:35
@@ -700,28 +694,28 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "BAIXO NINGUNHA CIRCUNSTANCIA NIN BAIXO NINGUNHA TEORÍA LEGAL, SEXA POR ERRO "
 "(INCLUÍNDO NEGLIXENCIA), CONTRATO OU DE ALGÚN OUTRO MODO, O AUTOR, O "
 "ESCRITOR INICIAL, CALQUERA COLABORADOR, OU CALQUERA DISTRIBUIDOR DO "
 "DOCUMENTO OU VERSIÓN MODIFICADA DO DOCUMENTO, OU CALQUERA PROVEDOR DE "
-"CALQUERA DESAS PARTES, SERÁ RESPONSÁBEL ANTE NINGUNHA PERSOA POR NINGÚN DANO"
-" DIRECTO, INDIRECTO, ESPECIAL, INCIDENTAL OU DERIVADO DE NINGÚN TIPO, "
-"INCLUÍNDO, SEN LIMITACIÓN DANOS POR PERDA DE MERCANCÍAS, PARO TÉCNICO, FALLO"
-" INFORMÁTICO OU MAL FUNCIONAMENTO OU CALQUERA OUTRO POSÍBEL DANO OU PERDAS "
+"CALQUERA DESAS PARTES, SERÁ RESPONSÁBEL ANTE NINGUNHA PERSOA POR NINGÚN DANO "
+"DIRECTO, INDIRECTO, ESPECIAL, INCIDENTAL OU DERIVADO DE NINGÚN TIPO, "
+"INCLUÍNDO, SEN LIMITACIÓN DANOS POR PERDA DE MERCANCÍAS, PARO TÉCNICO, FALLO "
+"INFORMÁTICO OU MAL FUNCIONAMENTO OU CALQUERA OUTRO POSÍBEL DANO OU PERDAS "
 "DERIVADAS OU RELACIONADAS CO USO DO DOCUMENTO OU AS SÚAS VERSIÓNS "
-"MODIFICADAS, AÍNDA QUE DITA PARTE TEÑA SIDO INFORMADA DA POSIBILIDADE DE QUE"
-" SE PRODUCISEN DITOS DANOS."
+"MODIFICADAS, AÍNDA QUE DITA PARTE TEÑA SIDO INFORMADA DA POSIBILIDADE DE QUE "
+"SE PRODUCISEN DITOS DANOS."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:28
@@ -731,5 +725,5 @@ msgid ""
 "<_:orderedlist-1/>"
 msgstr ""
 "O DOCUMENTO E AS VERSIÓNS MODIFICADAS DO DOCUMENTO FORNÉCENSE BAIXO OS "
-"TERMOS DA LICENZA LIBRE DE DOCUMENTACIÓN DE GNU CO ACORDO ADICIONAL "
-"DE:<_:orderedlist-1/>"
+"TERMOS DA LICENZA LIBRE DE DOCUMENTACIÓN DE GNU CO ACORDO ADICIONAL DE:<_:"
+"orderedlist-1/>"

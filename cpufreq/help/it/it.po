@@ -1,4 +1,4 @@
-# 
+#
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Giuseppe Pignataro <rogepix@gmail.com>, 2020
@@ -7,7 +7,7 @@
 # Marco Z. <minaz666@gmail.com>, 2020
 # andrea pittaro <transifex@andreapittaro.it>, 2020
 # Alessandro Volturno <alelvb@inwind.it>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -15,10 +15,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 11:31+0000\n"
 "Last-Translator: Alessandro Volturno <alelvb@inwind.it>, 2020\n"
 "Language-Team: Italian (https://www.transifex.com/cafe/teams/13566/it/)\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -80,24 +80,24 @@ msgstr ""
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:61
 msgid ""
-"<firstname>Carlos</firstname> <surname>Garcia Campos</surname> <affiliation>"
-" <orgname>GNOME Project</orgname> "
-"<address><email>carlosgc@gnome.org</email></address> </affiliation>"
+"<firstname>Carlos</firstname> <surname>Garcia Campos</surname> <affiliation> "
+"<orgname>GNOME Project</orgname> <address><email>carlosgc@gnome.org</email></"
+"address> </affiliation>"
 msgstr ""
-"<firstname>Carlos</firstname> <surname>Garcia Campos</surname> <affiliation>"
-" <orgname>GNOME Project</orgname> "
-"<address><email>carlosgc@gnome.org</email></address> </affiliation>"
+"<firstname>Carlos</firstname> <surname>Garcia Campos</surname> <affiliation> "
+"<orgname>GNOME Project</orgname> <address><email>carlosgc@gnome.org</email></"
+"address> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:69
 msgid ""
 "<firstname>Davyd</firstname> <surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Project</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME Project</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 msgstr ""
 "<firstname>Davyd</firstname> <surname>Madeley</surname> <affiliation> "
-"<orgname>Progetto GNOME</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>Progetto GNOME</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:98
@@ -167,8 +167,8 @@ msgstr "Commenti"
 msgid ""
 "To report a bug or make a suggestion regarding the CPU Frequency Scaling "
 "Monitor applet or this manual, follow the directions in the <ulink "
-"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback "
-"Page</ulink>."
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</"
+"ulink>."
 msgstr ""
 "Per segnalare un malfunzionamento o un suggerimento su Variazione frequenza "
 "CPU o su questo manuale, segui le istruzioni nella <ulink url=\"help:cafe-"
@@ -237,9 +237,9 @@ msgid ""
 "Scroll down the list of items in the <guilabel>Add to Panel</guilabel> "
 "dialog, then select <guilabel>CPU Frequency Scaling Monitor</guilabel>."
 msgstr ""
-"Scorri in basso la lista degli elementi nella finestra <guilabel>Aggiungi al"
-" pannello</guilabel> e seleziona <guilabel>Variazione frequenza "
-"CPU</guilabel>."
+"Scorri in basso la lista degli elementi nella finestra <guilabel>Aggiungi al "
+"pannello</guilabel> e seleziona <guilabel>Variazione frequenza CPU</"
+"guilabel>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:184
@@ -253,8 +253,8 @@ msgid ""
 "Linux machines that have support in the kernel. It can however, support the "
 "several generations of frequency scaling interfaces in the kernel."
 msgstr ""
-"Purtroppo la variazione della frequenza della CPU può essere monitorato solo"
-" su macchine Linux in quanto dispongono del supporto integrato nel kernel. "
+"Purtroppo la variazione della frequenza della CPU può essere monitorato solo "
+"su macchine Linux in quanto dispongono del supporto integrato nel kernel. "
 "Tuttavia, può supportare le diverse generazioni di interfacce di variazione "
 "delle frequenze del kernel."
 
@@ -292,14 +292,14 @@ msgstr ""
 "Per impostazione predefinita, Variazione frequenza CPU visualizza la "
 "frequenza corrente della CPU come valore in Hertz (la misura standard della "
 "frequenza), ma può essere configurato per visualizzare una percentuale. Per "
-"ulteriori informazioni su come configurare il monitor, vedi <xref linkend"
-"=\"cpufreq-applet-prefs\"/>."
+"ulteriori informazioni su come configurare il monitor, vedi <xref "
+"linkend=\"cpufreq-applet-prefs\"/>."
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:201
 msgid ""
-"Each instance of CPU Frequency Scaling Monitor can monitor only one CPU. You"
-" must start an instance of CPU Frequency Scaling Monitor for each CPU that "
+"Each instance of CPU Frequency Scaling Monitor can monitor only one CPU. You "
+"must start an instance of CPU Frequency Scaling Monitor for each CPU that "
 "you want to monitor if you are in a multiprocessor (SMP) system."
 msgstr ""
 "Ogni istanza di Variazione frequenza CPU può monitorare solo una CPU. È "
@@ -340,24 +340,20 @@ msgstr "Descrizione"
 #: C/index.docbook:227
 msgctxt "_"
 msgid ""
-"external ref='figures/cpufreq-100.png' "
-"md5='298d50a03bfcf5143bb9877703de9541'"
+"external ref='figures/cpufreq-100.png' md5='298d50a03bfcf5143bb9877703de9541'"
 msgstr ""
-"external ref='figures/cpufreq-100.png' "
-"md5='298d50a03bfcf5143bb9877703de9541'"
+"external ref='figures/cpufreq-100.png' md5='298d50a03bfcf5143bb9877703de9541'"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:225
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata "
-"fileref=\"figures/cpufreq-100.png\" format=\"PNG\"/> "
-"</imageobject><textobject> <phrase>100% Power</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/cpufreq-100."
+"png\" format=\"PNG\"/> </imageobject><textobject> <phrase>100% Power</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata "
-"fileref=\"figures/cpufreq-100.png\" format=\"PNG\"/> "
-"</imageobject><textobject> <phrase>100% della potenza</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/cpufreq-100."
+"png\" format=\"PNG\"/> </imageobject><textobject> <phrase>100% della "
+"potenza</phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:231
@@ -379,15 +375,13 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:236
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata "
-"fileref=\"figures/cpufreq-75.png\" format=\"PNG\"/> "
-"</imageobject><textobject> <phrase>75% Power</phrase> "
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/cpufreq-75."
+"png\" format=\"PNG\"/> </imageobject><textobject> <phrase>75% Power</phrase> "
 "</textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata "
-"fileref=\"figures/cpufreq-75.png\" format=\"PNG\"/> "
-"</imageobject><textobject> <phrase>75% della potenza</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/cpufreq-75."
+"png\" format=\"PNG\"/> </imageobject><textobject> <phrase>75% della potenza</"
+"phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:242
@@ -409,15 +403,13 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:247
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata "
-"fileref=\"figures/cpufreq-50.png\" format=\"PNG\"/> "
-"</imageobject><textobject> <phrase>50% Power</phrase> "
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/cpufreq-50."
+"png\" format=\"PNG\"/> </imageobject><textobject> <phrase>50% Power</phrase> "
 "</textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata "
-"fileref=\"figures/cpufreq-50.png\" format=\"PNG\"/> "
-"</imageobject><textobject> <phrase>50% della potenza</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/cpufreq-50."
+"png\" format=\"PNG\"/> </imageobject><textobject> <phrase>50% della potenza</"
+"phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:253
@@ -439,15 +431,13 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:258
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata "
-"fileref=\"figures/cpufreq-25.png\" format=\"PNG\"/> "
-"</imageobject><textobject> <phrase>25% Power</phrase> "
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/cpufreq-25."
+"png\" format=\"PNG\"/> </imageobject><textobject> <phrase>25% Power</phrase> "
 "</textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata "
-"fileref=\"figures/cpufreq-25.png\" format=\"PNG\"/> "
-"</imageobject><textobject> <phrase>25% della potenza</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/cpufreq-25."
+"png\" format=\"PNG\"/> </imageobject><textobject> <phrase>25% della potenza</"
+"phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:264
@@ -467,8 +457,8 @@ msgid ""
 "documentation, or the documentation that came with this software."
 msgstr ""
 "Il Selettore di frequenza potrebbe non essere disponibile di default su "
-"CAFE. Contatta l'amministratore di sistema, la documentazione del produttore"
-" o la documentazione fornita con questo software."
+"CAFE. Contatta l'amministratore di sistema, la documentazione del produttore "
+"o la documentazione fornita con questo software."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:279
@@ -489,8 +479,8 @@ msgid ""
 "prefs\"/> for more information."
 msgstr ""
 "È possibile scegliere se mostrare le frequenze e le regolazioni nella "
-"sezione <guilabel>Preferenze</guilabel>. Vedi <xref linkend=\"cpufreq-"
-"applet-prefs\"/> per ulteriori informazioni."
+"sezione <guilabel>Preferenze</guilabel>. Vedi <xref linkend=\"cpufreq-applet-"
+"prefs\"/> per ulteriori informazioni."
 
 #. (itstool) path: figure/title
 #: C/index.docbook:291
@@ -539,8 +529,8 @@ msgstr "Preferenze"
 #: C/index.docbook:318
 msgid ""
 "To configure the <application>CPU Frequency Scaling Monitor</application>, "
-"right-click on the applet, then choose "
-"<guimenuitem>Preferences</guimenuitem> from the popup menu."
+"right-click on the applet, then choose <guimenuitem>Preferences</"
+"guimenuitem> from the popup menu."
 msgstr ""
 "Per configurare <application>Variazione frequenza CPU</application>, fai "
 "clic destro sull'applet e seleziona <guimenuitem>Preferenze</guimenuitem> "
@@ -616,13 +606,13 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:341
 msgid ""
-"<imageobject><imagedata fileref=\"figures/cpufreq-applet-preferences-"
-"smp.png\" format=\"PNG\"/> </imageobject> <textobject> <phrase>CPU Frequency"
-" Scaling Monitor preferences dialog CPU selector</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/cpufreq-applet-preferences-smp."
+"png\" format=\"PNG\"/> </imageobject> <textobject> <phrase>CPU Frequency "
+"Scaling Monitor preferences dialog CPU selector</phrase> </textobject>"
 msgstr ""
-"<imageobject><imagedata fileref=\"figures/cpufreq-applet-preferences-"
-"smp.png\" format=\"PNG\"/> </imageobject> <textobject> <phrase>Selezione CPU"
-" di Variazione frequenza CPU</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/cpufreq-applet-preferences-smp."
+"png\" format=\"PNG\"/> </imageobject> <textobject> <phrase>Selezione CPU di "
+"Variazione frequenza CPU</phrase> </textobject>"
 
 #. (itstool) path: note/para
 #: C/index.docbook:350
@@ -669,8 +659,7 @@ msgstr "<guilabel>Mostrare unità di misura della frequenza</guilabel>"
 msgid ""
 "Select this option to display or not the frequency units in the frequency "
 "mode."
-msgstr ""
-"Selezionare questa opzione per visualizzare o meno le unità di misura."
+msgstr "Selezionare questa opzione per visualizzare o meno le unità di misura."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:379
@@ -698,22 +687,22 @@ msgstr "Il selettore configurato su Frequenze e regolazioni"
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:398
 msgid ""
-"<imageobject><imagedata fileref=\"figures/cpufreq-applet-selector-both.png\""
-" format=\"PNG\"/> </imageobject> <textobject> <phrase>CPU governors "
-"selector</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/cpufreq-applet-selector-both.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>CPU governors selector</"
+"phrase> </textobject>"
 msgstr ""
-"<imageobject><imagedata fileref=\"figures/cpufreq-applet-selector-both.png\""
-" format=\"PNG\"/> </imageobject> <textobject> <phrase>Selettore regolazioni "
+"<imageobject><imagedata fileref=\"figures/cpufreq-applet-selector-both.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Selettore regolazioni "
 "CPU</phrase> </textobject>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:388
 msgid ""
 "This option allows you to choose how much information is shown in the "
-"frequency selector dropdown (see <xref linkend=\"cafe-cpufreq-selector\"/>)."
-" You can select to display <guilabel>Frequencies</guilabel>, "
-"<guilabel>Governors</guilabel> or both <guilabel>Frequencies and "
-"Governors</guilabel>. <_:figure-1/>"
+"frequency selector dropdown (see <xref linkend=\"cafe-cpufreq-selector\"/>). "
+"You can select to display <guilabel>Frequencies</guilabel>, "
+"<guilabel>Governors</guilabel> or both <guilabel>Frequencies and Governors</"
+"guilabel>. <_:figure-1/>"
 msgstr ""
 "Questa opzione consente di scegliere quante informazioni vengono "
 "visualizzate nel menu a tendina del selettore di frequenza. (vedi <xref "
@@ -732,29 +721,29 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "È concesso il permesso di copiare, distribuire e/o modificare questo "
 "documento in base ai termini della GNU Free Documentation License (GFDL), "
 "Versione 1.1 o qualsiasi versione successiva pubblicata dalla Free Software "
-"Foundation senza sezioni invarianti, senza testi di copertina e nessun testo"
-" di retro copertina. Potete trovare una copia del GFDL qui <_:ulink-1/> o "
-"nel file COPYING-DOCS distribuito con questo manuale."
+"Foundation senza sezioni invarianti, senza testi di copertina e nessun testo "
+"di retro copertina. Potete trovare una copia del GFDL qui <_:ulink-1/> o nel "
+"file COPYING-DOCS distribuito con questo manuale."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:12
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Questo manuale fa parte di una raccolta di manuali CAFE distribuita in "
 "conformità con la GFDL. Per poter distribuire questo manuale separatamente, "
-"è necessario inserirvi una copia della licenza, come descritto nella sezione"
-" 6 della licenza."
+"è necessario inserirvi una copia della licenza, come descritto nella sezione "
+"6 della licenza."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:19
@@ -790,29 +779,29 @@ msgstr ""
 "IMPLICITE, INCLUSE, MA SENZA LIMITAZIONE, LE GARANZIE ATTESTANTI CHE IL "
 "DOCUMENTO O LE SUE VERSIONI MODIFICATE SIANO PRIVI DI DIFETTI, "
 "COMMERCIALIZZABILI, IDONEI A UN DETERMINATO SCOPO O CHE NON VIOLINO DIRITTI "
-"DI TERZI. SI DECLINA QUALUNQUE RESPONSABILITÀ RIGUARDO AI RISCHI INERENTI LA"
-" QUALITÀ, L'ACCURATEZZA E LE PRESTAZIONI DEL DOCUMENTO O DI UNA SUA VERSIONE"
-" MODIFICATA. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA DOVESSERO "
+"DI TERZI. SI DECLINA QUALUNQUE RESPONSABILITÀ RIGUARDO AI RISCHI INERENTI LA "
+"QUALITÀ, L'ACCURATEZZA E LE PRESTAZIONI DEL DOCUMENTO O DI UNA SUA VERSIONE "
+"MODIFICATA. QUALORA UN DOCUMENTO O UNA SUA VERSIONE MODIFICATA DOVESSERO "
 "PRESENTARE QUALUNQUE TIPO DI DIFETTO, IL COSTO DI EVENTUALI INTERVENTI DI "
 "ASSISTENZA, RIPARAZIONE O CORREZIONE SARÀ A CARICO DELL'UTENTE (NON DEL "
 "REDATTORE INIZIALE, DELL'AUTORE O DI ALTRI COLLABORATORI). QUESTA "
-"LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO"
-" DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I "
+"LIMITAZIONE DELLA GARANZIA COSTITUISCE PARTE ESSENZIALE DELLA LICENZA. L'USO "
+"DEL DOCUMENTO O DELLE SUE VERSIONI MODIFICATE È CONSENTITO SOLO ENTRO I "
 "TERMINI DI QUESTA LIMITAZIONE DELLA GARANZIA; E"
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "IN NESSUNA CIRCOSTANZA E PER NESSUNA RAGIONE LEGALE, INCLUSI I PRINCIPI DI "
 "COLPA (INCLUSA LA NEGLIGENZA), ACCORDO CONTRATTUALE O ALTRO, SARÀ POSSIBILE "
@@ -822,8 +811,8 @@ msgstr ""
 "QUALUNQUE PERSONA PER DANNI DIRETTI, INDIRETTI, SPECIALI, INCIDENTALI O "
 "CONSEGUENTI DI QUALUNQUE NATURA, INCLUSI, MA SENZA LIMITAZIONE, I DANNI PER "
 "PERDITA DI AVVIAMENTO, INTERRUZIONE DEL LAVORO, GUASTO O MALFUNZIONAMENTO "
-"DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO"
-" DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE "
+"DEL COMPUTER O QUALUNQUE ALTRO DANNO O PERDITA DERIVANTE O CORRELATA ALL'USO "
+"DEL DOCUMENTO O DI UNA SUA VERSIONE MODIFICATA, ANCHE QUALORA LE PERSONE "
 "CITATE FOSSERO STATE INFORCAFE DELLA POSSIBILITÀ DI TALI DANNI."
 
 #. (itstool) path: legalnotice/para
@@ -834,5 +823,5 @@ msgid ""
 "<_:orderedlist-1/>"
 msgstr ""
 "IL DOCUMENTO E LE VERSIONI MODIFICATE DEL DOCUMENTO VENGONO RILASCIATE "
-"SECONDO I TERMINI DELLA GNU FREE DOCUMENTATION LICENSE TENENDO PRESENTE CHE:"
-" <_:orderedlist-1/>"
+"SECONDO I TERMINI DELLA GNU FREE DOCUMENTATION LICENSE TENENDO PRESENTE CHE: "
+"<_:orderedlist-1/>"
