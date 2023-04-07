@@ -1,4 +1,4 @@
-# 
+#
 # Translators:
 # Carlos Moreira, 2020
 # fc2d9c36d73e741383fbbf46a4aac49f_013445b, 2020
@@ -9,7 +9,7 @@
 # Manuela Silva <manuelarodsilva@gmail.com>, 2020
 # José Vieira <jvieira33@sapo.pt>, 2020
 # Hugo Carvalho <hugokarvalho@hotmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -17,10 +17,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 12:18+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>, 2020\n"
 "Language-Team: Portuguese (https://www.transifex.com/cafe/teams/13566/pt/)\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -87,34 +87,34 @@ msgstr ""
 #: C/index.docbook:71
 msgid ""
 "<firstname>Angela</firstname> <surname>Boyle</surname> "
-"<affiliation><address> <email>aboyle@aboyle.com</email> "
-"</address></affiliation>"
+"<affiliation><address> <email>aboyle@aboyle.com</email> </address></"
+"affiliation>"
 msgstr ""
 "<firstname>Angela</firstname> <surname>Boyle</surname> "
-"<affiliation><address> <email>aboyle@aboyle.com</email> "
-"</address></affiliation>"
+"<affiliation><address> <email>aboyle@aboyle.com</email> </address></"
+"affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:79
 msgid ""
 "<firstname>Chee Bin</firstname> <surname>HOH</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> "
-"<address><email>cbhoh@mimos.my</email></address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address><email>cbhoh@mimos."
+"my</email></address> </affiliation>"
 msgstr ""
 "<firstname>Chee Bin</firstname> <surname>HOH</surname> <affiliation> "
-"<orgname>Projeto de Documentação GNOME</orgname> "
-"<address><email>cbhoh@mimos.my</email></address> </affiliation>"
+"<orgname>Projeto de Documentação GNOME</orgname> <address><email>cbhoh@mimos."
+"my</email></address> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:88
 msgid ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Project</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME Project</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 msgstr ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>Projeto GNOME</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>Projeto GNOME</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:117
@@ -124,8 +124,8 @@ msgstr "Equipa de Documentação do CAFE"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:113
 msgid ""
-"<revnumber>System Monitor V2.12</revnumber> <date>July 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>System Monitor V2.12</revnumber> <date>July 2015</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -136,11 +136,11 @@ msgstr "Davyd Madeley"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:122
 msgid ""
-"<revnumber>Version 2.10</revnumber> <date>March 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.10</revnumber> <date>March 2005</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Versão 2.10</revnumber> <date>Março de 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Versão 2.10</revnumber> <date>Março de 2005</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:134
@@ -150,11 +150,11 @@ msgstr "Angela Boyle"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:130
 msgid ""
-"<revnumber>Version 2.8</revnumber> <date>August 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.8</revnumber> <date>August 2004</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Versão 2.8</revnumber> <date>Agosto de 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Versão 2.8</revnumber> <date>Agosto de 2004</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:143
@@ -176,8 +176,8 @@ msgstr "Chee Bin HOH <email>cbhoh@mimos.my</email>"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:148
 msgid ""
-"<revnumber>System Monitor Applet Manual V2.0</revnumber> <date>July "
-"2003</date> <_:revdescription-1/>"
+"<revnumber>System Monitor Applet Manual V2.0</revnumber> <date>July 2003</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: articleinfo/releaseinfo
@@ -194,8 +194,8 @@ msgstr "Opinião"
 #: C/index.docbook:165
 msgid ""
 "To report a bug or make a suggestion regarding the System Monitor applet or "
-"this manual, follow the directions in the <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"this manual, follow the directions in the <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -235,8 +235,8 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:188
 msgid ""
-"<imageobject><imagedata fileref=\"figures/system-monitor-applet_window.png\""
-" format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows System Monitor. "
+"<imageobject><imagedata fileref=\"figures/system-monitor-applet_window.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows System Monitor. "
 "Displays a graph for system CPU load. </phrase> </textobject>"
 msgstr ""
 
@@ -316,8 +316,8 @@ msgstr "Clique em <guibutton>Adicionar</guibutton>."
 #. (itstool) path: sect2/para
 #: C/index.docbook:265
 msgid ""
-"The layout of the <application>System Monitor</application> varies depending"
-" on the size and type of panel in which the applet resides."
+"The layout of the <application>System Monitor</application> varies depending "
+"on the size and type of panel in which the applet resides."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -335,8 +335,8 @@ msgstr ""
 msgid ""
 "To configure the <application>System Monitor</application> applet, right-"
 "click on the applet, then choose <guimenuitem>Preferences</guimenuitem>. "
-"Under <guilabel>Monitored Resources</guilabel> you can choose which graphics"
-" you want to display:"
+"Under <guilabel>Monitored Resources</guilabel> you can choose which graphics "
+"you want to display:"
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -420,8 +420,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:343
 msgid ""
-"To display additional system monitor information, right-click on the applet,"
-" then choose <guimenuitem>Open System Monitor</guimenuitem> to start the "
+"To display additional system monitor information, right-click on the applet, "
+"then choose <guimenuitem>Open System Monitor</guimenuitem> to start the "
 "<application>System Monitor</application> application."
 msgstr ""
 
@@ -430,8 +430,8 @@ msgstr ""
 msgid ""
 "The <application>System Monitor</application> application enables you to "
 "monitor system processes and usage of system resources. You can use the "
-"<application>System Monitor</application> application to modify the behavior"
-" of your system."
+"<application>System Monitor</application> application to modify the behavior "
+"of your system."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -462,8 +462,8 @@ msgstr ""
 #: C/index.docbook:364
 msgid ""
 "<imageobject><imagedata fileref=\"figures/multiload-preferences.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Preferences Dialog "
-"</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Preferences Dialog </"
+"phrase> </textobject>"
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -474,10 +474,10 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:377
 msgid ""
-"In the right-click menu, go to <guimenuitem>Preferences</guimenuitem>. Under"
-" <guilabel>Options</guilabel>, use the <guilabel>System monitor "
-"width</guilabel> spin box to specify the width of each <application>System "
-"Monitor</application> graph in pixels."
+"In the right-click menu, go to <guimenuitem>Preferences</guimenuitem>. Under "
+"<guilabel>Options</guilabel>, use the <guilabel>System monitor width</"
+"guilabel> spin box to specify the width of each <application>System Monitor</"
+"application> graph in pixels."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -488,8 +488,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:381
 msgid ""
-"In the right-click menu, go to <guimenuitem>Preferences</guimenuitem>. Under"
-" <guilabel>Options</guilabel>, use the <guilabel>System monitor update "
+"In the right-click menu, go to <guimenuitem>Preferences</guimenuitem>. Under "
+"<guilabel>Options</guilabel>, use the <guilabel>System monitor update "
 "interval</guilabel> spin box to specify the interval at which you want to "
 "update the graphs in milliseconds."
 msgstr ""
@@ -507,8 +507,8 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:392
 msgid ""
-"Right-click on the applet, then choose "
-"<guimenuitem>Preferences</guimenuitem>."
+"Right-click on the applet, then choose <guimenuitem>Preferences</"
+"guimenuitem>."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -527,8 +527,8 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:408
 msgid ""
-"On the <guilabel>Pick a Color</guilabel> dialog, use the color wheel or spin"
-" boxes to choose the line color for the selected parameter."
+"On the <guilabel>Pick a Color</guilabel> dialog, use the color wheel or spin "
+"boxes to choose the line color for the selected parameter."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -791,11 +791,11 @@ msgstr "Limiares de velocidade da rede"
 #: C/index.docbook:677
 msgid ""
 "Thresholds together with indicator allow network graph to scale and better "
-"represent actual workload. If combined network traffic (in + out + loopback)"
-" is below threshold1, no indicator is shown, y-axis on network graph go from"
-" 0 to threshold1. When traffic is more than threshold1, one indicator will "
-"be shown and y-axis now go from 0 to threshold2. When threshold2 is reached,"
-" two indicators will be shown and y-axis go from 0 to threshold3. When "
+"represent actual workload. If combined network traffic (in + out + loopback) "
+"is below threshold1, no indicator is shown, y-axis on network graph go from "
+"0 to threshold1. When traffic is more than threshold1, one indicator will be "
+"shown and y-axis now go from 0 to threshold2. When threshold2 is reached, "
+"two indicators will be shown and y-axis go from 0 to threshold3. When "
 "threshold3 is reached, three indicators are shown and y-axis go form 0 to "
 "whatever is current maximum in graph."
 msgstr ""
@@ -816,8 +816,8 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "É dada permissão para copiar, distribuir e/ou alterar este documento sob os "
@@ -832,8 +832,8 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Este manual é parte de uma coleção de manuais CAFE distribuídos sob a GFDL. "
 "Se desejar distribuir este manual separadamente da coleção, poderá fazê-lo "
@@ -887,16 +887,16 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "SOB QUAISQUER CIRCUNSTÂNCIAS E TEORIA LEGAL, QUER SEJA POR ERRO (INCLUINDO "
 "NEGLIGÊNCIA), CONTRATO, OU QUALQUER OUTRO MOTIVO, PODERÁ O AUTOR, ESCRITOR "
@@ -918,5 +918,5 @@ msgid ""
 "<_:orderedlist-1/>"
 msgstr ""
 "O DOCUMENTO E VERSÕES MODIFICADAS DO DOCUMENTO SÃO DISPONIBILIZADAS NOS "
-"TERMOS DA LICENÇA DE DOCUMENTAÇÃO LIVRE GNU (GNU FREE DOCUMENTATION LICENSE)"
-" COM O SUBSEQUENTE ENTENDIMENTO DE QUE: <_:orderedlist-1/>"
+"TERMOS DA LICENÇA DE DOCUMENTAÇÃO LIVRE GNU (GNU FREE DOCUMENTATION LICENSE) "
+"COM O SUBSEQUENTE ENTENDIMENTO DE QUE: <_:orderedlist-1/>"

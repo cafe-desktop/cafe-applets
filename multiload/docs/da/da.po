@@ -1,8 +1,8 @@
-# 
+#
 # Translators:
 # Joe Hansen <joedalton2@yahoo.dk>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -10,10 +10,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 12:18+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2020\n"
 "Language-Team: Danish (https://www.transifex.com/cafe/teams/13566/da/)\n"
+"Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: da\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -78,41 +78,41 @@ msgid ""
 "<firstname>CAFE Documentation Team</firstname> <surname/> <affiliation> "
 "<orgname>CAFE Desktop</orgname> </affiliation>"
 msgstr ""
-"<firstname>CAFE-dokumentationsprojektet</firstname> <surname/> <affiliation>"
-" <orgname>CAFE-skrivebordet</orgname> </affiliation>"
+"<firstname>CAFE-dokumentationsprojektet</firstname> <surname/> <affiliation> "
+"<orgname>CAFE-skrivebordet</orgname> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:71
 msgid ""
 "<firstname>Angela</firstname> <surname>Boyle</surname> "
-"<affiliation><address> <email>aboyle@aboyle.com</email> "
-"</address></affiliation>"
+"<affiliation><address> <email>aboyle@aboyle.com</email> </address></"
+"affiliation>"
 msgstr ""
 "<firstname>Angela</firstname> <surname>Boyle</surname> "
-"<affiliation><address> <email>aboyle@aboyle.com</email> "
-"</address></affiliation>"
+"<affiliation><address> <email>aboyle@aboyle.com</email> </address></"
+"affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:79
 msgid ""
 "<firstname>Chee Bin</firstname> <surname>HOH</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> "
-"<address><email>cbhoh@mimos.my</email></address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address><email>cbhoh@mimos."
+"my</email></address> </affiliation>"
 msgstr ""
 "<firstname>Chee Bin</firstname> <surname>HOH</surname> <affiliation> "
-"<orgname>GNOME-dokumentationsprojektet</orgname> "
-"<address><email>cbhoh@mimos.my</email></address> </affiliation>"
+"<orgname>GNOME-dokumentationsprojektet</orgname> <address><email>cbhoh@mimos."
+"my</email></address> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:88
 msgid ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Project</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME Project</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 msgstr ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME-projektet</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME-projektet</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:117
@@ -122,11 +122,11 @@ msgstr "CAFE-dokumentationsholdet"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:113
 msgid ""
-"<revnumber>System Monitor V2.12</revnumber> <date>July 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>System Monitor V2.12</revnumber> <date>July 2015</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Systemovervågning version 2.12</revnumber> <date>Juli 2015</date>"
-" <_:revdescription-1/>"
+"<revnumber>Systemovervågning version 2.12</revnumber> <date>Juli 2015</date> "
+"<_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:126
@@ -136,11 +136,11 @@ msgstr "Davyd Madeley"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:122
 msgid ""
-"<revnumber>Version 2.10</revnumber> <date>March 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.10</revnumber> <date>March 2005</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Version 2.10</revnumber> <date>Marts 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.10</revnumber> <date>Marts 2005</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:134
@@ -150,11 +150,11 @@ msgstr "Angela Boyle"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:130
 msgid ""
-"<revnumber>Version 2.8</revnumber> <date>August 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.8</revnumber> <date>August 2004</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Version 2.8</revnumber> <date>August 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.8</revnumber> <date>August 2004</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:143
@@ -167,8 +167,8 @@ msgid ""
 "<revnumber>System Monitor Applet Manual V2.1</revnumber> <date>February "
 "2004</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Manual for panelprogrammet Systemovervågning version "
-"2.1</revnumber> <date>Februar 2004</date> <_:revdescription-1/>"
+"<revnumber>Manual for panelprogrammet Systemovervågning version 2.1</"
+"revnumber> <date>Februar 2004</date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:152
@@ -178,11 +178,11 @@ msgstr "Chee Bin HOH <email>cbhoh@mimos.my</email>"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:148
 msgid ""
-"<revnumber>System Monitor Applet Manual V2.0</revnumber> <date>July "
-"2003</date> <_:revdescription-1/>"
+"<revnumber>System Monitor Applet Manual V2.0</revnumber> <date>July 2003</"
+"date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Manual for panelprogrammet Systemovervågning version "
-"2.0</revnumber> <date>Juli 2003</date> <_:revdescription-1/>"
+"<revnumber>Manual for panelprogrammet Systemovervågning version 2.0</"
+"revnumber> <date>Juli 2003</date> <_:revdescription-1/>"
 
 #. (itstool) path: articleinfo/releaseinfo
 #: C/index.docbook:161
@@ -198,11 +198,11 @@ msgstr "Tilbagemelding"
 #: C/index.docbook:165
 msgid ""
 "To report a bug or make a suggestion regarding the System Monitor applet or "
-"this manual, follow the directions in the <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"this manual, follow the directions in the <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
-"For at rapportere en fejl eller komme med et forslag jævnfør panelprogrammet"
-" Systemovervågning eller denne manual, så følg retningslinjerne i <ulink "
+"For at rapportere en fejl eller komme med et forslag jævnfør panelprogrammet "
+"Systemovervågning eller denne manual, så følg retningslinjerne i <ulink "
 "url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE's side for "
 "tilbagemeldinger</ulink>."
 
@@ -243,14 +243,14 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:188
 msgid ""
-"<imageobject><imagedata fileref=\"figures/system-monitor-applet_window.png\""
-" format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows System Monitor. "
+"<imageobject><imagedata fileref=\"figures/system-monitor-applet_window.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows System Monitor. "
 "Displays a graph for system CPU load. </phrase> </textobject>"
 msgstr ""
-"<imageobject><imagedata fileref=\"figures/system-monitor-applet_window.png\""
-" format=\"PNG\"/> </imageobject> <textobject> <phrase>Viser "
-"Systemovervågning. Viser en graf for systemets cpu-belastning. </phrase> "
-"</textobject>"
+"<imageobject><imagedata fileref=\"figures/system-monitor-applet_window.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Viser "
+"Systemovervågning. Viser en graf for systemets cpu-belastning. </phrase> </"
+"textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:201
@@ -325,8 +325,8 @@ msgid ""
 "Scroll down the list of items in the <guilabel>Add to Panel</guilabel> "
 "dialog, then select <guilabel>System Monitor</guilabel>."
 msgstr ""
-"Rul ned igennem elementlisten i dialogen <guilabel>Tilføj til "
-"panel</guilabel>, vælg så <guilabel>Systemovervågning</guilabel>."
+"Rul ned igennem elementlisten i dialogen <guilabel>Tilføj til panel</"
+"guilabel>, vælg så <guilabel>Systemovervågning</guilabel>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:260
@@ -336,8 +336,8 @@ msgstr "Klik på <guibutton>Tilføj</guibutton>."
 #. (itstool) path: sect2/para
 #: C/index.docbook:265
 msgid ""
-"The layout of the <application>System Monitor</application> varies depending"
-" on the size and type of panel in which the applet resides."
+"The layout of the <application>System Monitor</application> varies depending "
+"on the size and type of panel in which the applet resides."
 msgstr ""
 "Layouttet for <application>Systemovervågningen</application> varierer "
 "afhængig af størrelsen og typen af panel hvor panelprogrammet befinder sig."
@@ -357,12 +357,12 @@ msgstr "Visning af yderligere grafer"
 msgid ""
 "To configure the <application>System Monitor</application> applet, right-"
 "click on the applet, then choose <guimenuitem>Preferences</guimenuitem>. "
-"Under <guilabel>Monitored Resources</guilabel> you can choose which graphics"
-" you want to display:"
+"Under <guilabel>Monitored Resources</guilabel> you can choose which graphics "
+"you want to display:"
 msgstr ""
-"For at konfigurere panelprogrammet "
-"<application>Systemovervågning</application>, højreklik på panelprogrammet, "
-"vælg så <guimenuitem>Præferencer</guimenuitem>. Under <guilabel>Overvågede "
+"For at konfigurere panelprogrammet <application>Systemovervågning</"
+"application>, højreklik på panelprogrammet, vælg så "
+"<guimenuitem>Præferencer</guimenuitem>. Under <guilabel>Overvågede "
 "ressourcer</guilabel> kan du vælge hvilke grader du ønsker at vise:"
 
 #. (itstool) path: listitem/para
@@ -414,8 +414,7 @@ msgstr "<guilabel>Belastning</guilabel>"
 #: C/index.docbook:319
 msgid "Select this option to display the graph for average system load."
 msgstr ""
-"Vælg denne indstilling for at vise grafen for gennemsnitlig "
-"systembelastning."
+"Vælg denne indstilling for at vise grafen for gennemsnitlig systembelastning."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:324 C/index.docbook:637
@@ -439,8 +438,8 @@ msgid ""
 "pointer over the corresponding graph in the applet. A tooltip displays the "
 "current usage as a percentage."
 msgstr ""
-"For at vise det nuværende forbrug af en systemressource, placer musemarkøren"
-" over den tilsvarende graf i panelprogrammet. Et værktøjsfif viser det "
+"For at vise det nuværende forbrug af en systemressource, placer musemarkøren "
+"over den tilsvarende graf i panelprogrammet. Et værktøjsfif viser det "
 "nuværende forbrug som en procent."
 
 #. (itstool) path: sect2/title
@@ -451,8 +450,8 @@ msgstr "For at vise yderligere systemovervågningsinformation"
 #. (itstool) path: sect2/para
 #: C/index.docbook:343
 msgid ""
-"To display additional system monitor information, right-click on the applet,"
-" then choose <guimenuitem>Open System Monitor</guimenuitem> to start the "
+"To display additional system monitor information, right-click on the applet, "
+"then choose <guimenuitem>Open System Monitor</guimenuitem> to start the "
 "<application>System Monitor</application> application."
 msgstr ""
 "For at vise yderligere systemovervågningsinformation, højreklik på "
@@ -464,8 +463,8 @@ msgstr ""
 msgid ""
 "The <application>System Monitor</application> application enables you to "
 "monitor system processes and usage of system resources. You can use the "
-"<application>System Monitor</application> application to modify the behavior"
-" of your system."
+"<application>System Monitor</application> application to modify the behavior "
+"of your system."
 msgstr ""
 "Programmet <application>Systemovervågning</application> gør det muligt at "
 "overvåge processer og brug af systemressourcer. Du kan bruge programmet "
@@ -500,12 +499,12 @@ msgstr ""
 #: C/index.docbook:364
 msgid ""
 "<imageobject><imagedata fileref=\"figures/multiload-preferences.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Preferences Dialog "
-"</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Preferences Dialog </"
+"phrase> </textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/multiload-preferences.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Præferencedialog "
-"</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Præferencedialog </"
+"phrase> </textobject>"
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:376
@@ -515,10 +514,10 @@ msgstr "For at ændre bredden"
 #. (itstool) path: sect2/para
 #: C/index.docbook:377
 msgid ""
-"In the right-click menu, go to <guimenuitem>Preferences</guimenuitem>. Under"
-" <guilabel>Options</guilabel>, use the <guilabel>System monitor "
-"width</guilabel> spin box to specify the width of each <application>System "
-"Monitor</application> graph in pixels."
+"In the right-click menu, go to <guimenuitem>Preferences</guimenuitem>. Under "
+"<guilabel>Options</guilabel>, use the <guilabel>System monitor width</"
+"guilabel> spin box to specify the width of each <application>System Monitor</"
+"application> graph in pixels."
 msgstr ""
 "I højrekliksmenuen, gå til <guimenuitem>Præferencer</guimenuitem>. Under "
 "<guilabel>Indstillinger</guilabel>, brug rulleboksen <guilabel>Bredde på "
@@ -533,8 +532,8 @@ msgstr "For at opdatere via intervaller"
 #. (itstool) path: sect2/para
 #: C/index.docbook:381
 msgid ""
-"In the right-click menu, go to <guimenuitem>Preferences</guimenuitem>. Under"
-" <guilabel>Options</guilabel>, use the <guilabel>System monitor update "
+"In the right-click menu, go to <guimenuitem>Preferences</guimenuitem>. Under "
+"<guilabel>Options</guilabel>, use the <guilabel>System monitor update "
 "interval</guilabel> spin box to specify the interval at which you want to "
 "update the graphs in milliseconds."
 msgstr ""
@@ -556,8 +555,8 @@ msgstr "For at ændre farverne i en graf, udfør de følgende trin:"
 #. (itstool) path: listitem/para
 #: C/index.docbook:392
 msgid ""
-"Right-click on the applet, then choose "
-"<guimenuitem>Preferences</guimenuitem>."
+"Right-click on the applet, then choose <guimenuitem>Preferences</"
+"guimenuitem>."
 msgstr ""
 "Højreklik på panelprogrammet, vælg så<guimenuitem>Præferencer</guimenuitem>."
 
@@ -579,8 +578,8 @@ msgstr "Klik på den relevante farveknap i det valgte fanebladsafsnit."
 #. (itstool) path: listitem/para
 #: C/index.docbook:408
 msgid ""
-"On the <guilabel>Pick a Color</guilabel> dialog, use the color wheel or spin"
-" boxes to choose the line color for the selected parameter."
+"On the <guilabel>Pick a Color</guilabel> dialog, use the color wheel or spin "
+"boxes to choose the line color for the selected parameter."
 msgstr ""
 "Åbn dialogen <guilabel>Vælg en farve</guilabel>, brug farvehjulet eller "
 "rulleboksene til at vælge linjefarven for den valgte parameter."
@@ -596,8 +595,8 @@ msgid ""
 "The tabbed section for each resource provides color selection buttons that "
 "you can use to change the color of the parameters for each resource."
 msgstr ""
-"Fanebladet for hver ressource tilbyder knapper til farvevalg, som kan bruges"
-" til at ændre farven for parametrene for hver ressource."
+"Fanebladet for hver ressource tilbyder knapper til farvevalg, som kan bruges "
+"til at ændre farven for parametrene for hver ressource."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:429 C/index.docbook:475 C/index.docbook:519
@@ -848,11 +847,11 @@ msgstr "Netværkshastighedstærskler"
 #: C/index.docbook:677
 msgid ""
 "Thresholds together with indicator allow network graph to scale and better "
-"represent actual workload. If combined network traffic (in + out + loopback)"
-" is below threshold1, no indicator is shown, y-axis on network graph go from"
-" 0 to threshold1. When traffic is more than threshold1, one indicator will "
-"be shown and y-axis now go from 0 to threshold2. When threshold2 is reached,"
-" two indicators will be shown and y-axis go from 0 to threshold3. When "
+"represent actual workload. If combined network traffic (in + out + loopback) "
+"is below threshold1, no indicator is shown, y-axis on network graph go from "
+"0 to threshold1. When traffic is more than threshold1, one indicator will be "
+"shown and y-axis now go from 0 to threshold2. When threshold2 is reached, "
+"two indicators will be shown and y-axis go from 0 to threshold3. When "
 "threshold3 is reached, three indicators are shown and y-axis go form 0 to "
 "whatever is current maximum in graph."
 msgstr ""
@@ -868,8 +867,7 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:685
 msgid "Gridlines are hard to explain, just observe, and they are obvious."
-msgstr ""
-"Gitterlinjer er svære at forklare, kig i stedet for, de er indlysende."
+msgstr "Gitterlinjer er svære at forklare, kig i stedet for, de er indlysende."
 
 #. (itstool) path: para/ulink
 #: C/legal.xml:9
@@ -882,8 +880,8 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Der gives tilladelse til at kopiere, distribuere og/eller ændre dette "
@@ -898,11 +896,11 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
-"Denne manual er en del af CAFE-manualsamlingen distribueret under GFDL. Hvis"
-" du vil distribuere denne manual separat fra denne samling, kan du gøre det "
+"Denne manual er en del af CAFE-manualsamlingen distribueret under GFDL. Hvis "
+"du vil distribuere denne manual separat fra denne samling, kan du gøre det "
 "ved at tilføje en kopi af licensen til manualen, som beskrevet i sektion 6 "
 "af licensen."
 
@@ -915,8 +913,8 @@ msgid ""
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
-"Mange af navnene brugt af firmaer til at skelne deres produkter og tjenester"
-" er registrerede varemærker. Der hvor disse navne optræder i CAFE-"
+"Mange af navnene brugt af firmaer til at skelne deres produkter og tjenester "
+"er registrerede varemærker. Der hvor disse navne optræder i CAFE-"
 "dokumentationen, og medlemmerne af CAFE-dokumentationsprojektet er blevet "
 "gjort opmærksomme på disse varemærker, er navnene skrevet med store "
 "bogstaver eller store forbogstaver."
@@ -938,8 +936,8 @@ msgid ""
 msgstr ""
 "DETTE DOKUMENT GØRES TILGÆNGELIGT SÅDAN SOM DET ER, UDEN NOGEN FORM FOR "
 "GARANTI, HVERKEN UDTALT ELLER ANTYDET, DERIBLANDT, UDEN BEGRÆNSNINGER, "
-"GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT FOR"
-" DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU HÆFTER "
+"GARANTIER OM AT DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET ER FRIT FOR "
+"DEFEKTER, PASSENDE TIL ET BESTEMT FORMÅL ELLER IKKE-KRÆNKENDE. DU HÆFTER "
 "SELV FOR HELE RISIKOEN VEDRØRENDE KVALITET, KORREKTHED OG YDELSE FOR "
 "DOKUMENTET ELLER ÆNDREDE VERSIONER AF DOKUMENTET. SKULLE ET DOKUMENT, ELLER "
 "EN ÆNDRET VERSION AF ET DOKUMENT VISE SIG AT VÆRE DEFEKT PÅ EN HVILKEN SOM "
@@ -953,26 +951,26 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "UNDER INGEN OMSTÆNDIGHEDER OG UNDER INGEN JURIDISK TEORI, UANSET OM DET ER "
-"EN BEVIDST SKADENDE HANDLING (INKLUSIVE UFORSVARLIGHED) ELLER PÅ HVILKEN SOM"
-" HELST ANDEN MÅDE, KAN FORFATTEREN, SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER "
+"EN BEVIDST SKADENDE HANDLING (INKLUSIVE UFORSVARLIGHED) ELLER PÅ HVILKEN SOM "
+"HELST ANDEN MÅDE, KAN FORFATTEREN, SKRIBENT, BIDRAGYDERE, DISTRIBUTØRER "
 "ELLER FORSYNER AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER GØRES "
 "ANSVARLIG OVERFOR NOGEN PERSON FOR NOGEN DIREKTE, INDIREKTE, SPECIEL, "
 "TILFÆLDIG ELLER FØLGENDE SKADE PÅFØRT NOGEN INKLUSIVE, UDEN BEGRÆNSNING, "
 "SKADE SOM FØLGE AF TAB AF RYGTE, ARBEJDSSTOP, COMPUTER-FEJL ELLER -SVIGT, "
-"ELLER ENHVER ANDEN FORM FOR SKADE ELLER TAB SOM ER OPSTÅET I FORBINDELSE MED"
-" BRUG AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER HERAF, SELV HVIS EN "
+"ELLER ENHVER ANDEN FORM FOR SKADE ELLER TAB SOM ER OPSTÅET I FORBINDELSE MED "
+"BRUG AF DETTE DOKUMENT ELLER MODIFICEREDE VERSIONER HERAF, SELV HVIS EN "
 "SÅDAN PART HAR VÆRET INFORMERET OM MULIGHEDEN FOR SÅDANNE SKADER."
 
 #. (itstool) path: legalnotice/para
@@ -983,5 +981,5 @@ msgid ""
 "<_:orderedlist-1/>"
 msgstr ""
 "DETTE DOKUMENT OG MODIFICEREDE VERSIONER GØRES TILGÆNGELIGT UNDER "
-"BETINGELSERNE I GNU FREE DOCUMENTATION LICENSE UNDER DEN FORUDSÆTNING AT: "
-"<_:orderedlist-1/>"
+"BETINGELSERNE I GNU FREE DOCUMENTATION LICENSE UNDER DEN FORUDSÆTNING AT: <_:"
+"orderedlist-1/>"
