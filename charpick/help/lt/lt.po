@@ -1,9 +1,9 @@
-# 
+#
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Moo, 2020
 # Džiugas Grėbliūnas <dziugas.grebliunas@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -11,11 +11,13 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 11:29+0000\n"
 "Last-Translator: Džiugas Grėbliūnas <dziugas.grebliunas@gmail.com>, 2020\n"
 "Language-Team: Lithuanian (https://www.transifex.com/cafe/teams/13566/lt/)\n"
+"Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: lt\n"
-"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);\n"
+"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < "
+"11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
+"1 : n % 1 != 0 ? 2: 3);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -110,12 +112,12 @@ msgstr ""
 #: C/index.docbook:69
 msgid ""
 "<firstname>Dan</firstname> <surname>Mueth</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> </affiliation> "
-"<email>d-mueth@uchicago.edu</email>"
+"<orgname>GNOME Documentation Project</orgname> </affiliation> <email>d-"
+"mueth@uchicago.edu</email>"
 msgstr ""
 "<firstname>Dan</firstname> <surname>Mueth</surname> <affiliation> "
-"<orgname>GNOME dokumentacijos projektas</orgname> </affiliation> "
-"<email>d-mueth@uchicago.edu</email>"
+"<orgname>GNOME dokumentacijos projektas</orgname> </affiliation> <email>d-"
+"mueth@uchicago.edu</email>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:77
@@ -141,12 +143,12 @@ msgstr ""
 #: C/index.docbook:92
 msgid ""
 "<firstname>Davyd</firstname> <surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Project</orgname> </affiliation> "
-"<email>davyd@madeley.id.au</email>"
+"<orgname>GNOME Project</orgname> </affiliation> <email>davyd@madeley.id.au</"
+"email>"
 msgstr ""
 "<firstname>Davyd</firstname> <surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME projektas</orgname> </affiliation> "
-"<email>davyd@madeley.id.au</email>"
+"<orgname>GNOME projektas</orgname> </affiliation> <email>davyd@madeley.id."
+"au</email>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:109
@@ -156,11 +158,11 @@ msgstr "CAFE dokumentacijos komanda"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:105
 msgid ""
-"<revnumber>Version 2.11</revnumber> <date>July 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.11</revnumber> <date>July 2015</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Versija 2.11</revnumber> <date>2015 liepa</date> "
-"<_:revdescription-1/>"
+"<revnumber>Versija 2.11</revnumber> <date>2015 liepa</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:117
@@ -170,11 +172,11 @@ msgstr "Davyd Madeley"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:113
 msgid ""
-"<revnumber>Version 2.10</revnumber> <date>March 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.10</revnumber> <date>March 2005</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Versija 2.10</revnumber> <date>2005 kovas</date> "
-"<_:revdescription-1/>"
+"<revnumber>Versija 2.10</revnumber> <date>2005 kovas</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:124
@@ -184,11 +186,10 @@ msgstr "Angela Boyle"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:120
 msgid ""
-"<revnumber>Version 2.8</revnumber> <date>Unknown</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.8</revnumber> <date>Unknown</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Versija 2.8</revnumber> <date>Nežinoma</date> "
-"<_:revdescription-1/>"
+"<revnumber>Versija 2.8</revnumber> <date>Nežinoma</date> <_:revdescription-1/"
+">"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:132 C/index.docbook:140 C/index.docbook:148
@@ -235,8 +236,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:160
 msgid ""
-"<revnumber>Character Palette Applet Manual V2.1</revnumber> <date>July "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Character Palette Applet Manual V2.1</revnumber> <date>July 2002</"
+"date> <_:revdescription-1/>"
 msgstr ""
 "<revnumber>Simbolių paletės įtaiso žinynas V2.1</revnumber> <date>2002 "
 "liepa</date> <_:revdescription-1/>"
@@ -258,11 +259,11 @@ msgstr "Dan Mueth <email>d-mueth@uchicago.edu</email>"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:176
 msgid ""
-"<revnumber>Character Picker Applet</revnumber> <date>2000</date> "
-"<_:revdescription-1/>"
+"<revnumber>Character Picker Applet</revnumber> <date>2000</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>„Character Picker“ įtaisas</revnumber> <date>2000</date> "
-"<_:revdescription-1/>"
+"<revnumber>„Character Picker“ įtaisas</revnumber> <date>2000</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: articleinfo/releaseinfo
 #: C/index.docbook:186
@@ -278,12 +279,12 @@ msgstr "Atsiliepimai"
 #: C/index.docbook:190
 msgid ""
 "To report a bug or make a suggestion regarding the Character Palette "
-"application or this manual, follow the directions in the <ulink url=\"help"
-":cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"application or this manual, follow the directions in the <ulink url=\"help:"
+"cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 "Pranešimui apie programos klaidą arba pasiūlymams dėl Simbolių paletės "
-"programos ar šio žinyno, sekite nuorodas <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">CAFE atsako puslapyje</ulink>."
+"programos ar šio žinyno, sekite nuorodas <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">CAFE atsako puslapyje</ulink>."
 
 #. (itstool) path: article/indexterm
 #: C/index.docbook:197
@@ -318,12 +319,12 @@ msgstr ""
 #: C/index.docbook:207
 msgid ""
 "<imageobject><imagedata fileref=\"figures/charpalette_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Character "
-"Palette</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Character Palette</"
+"phrase> </textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/charpalette_applet.png\" "
-"format=\"PNG\"/></imageobject><textobject><phrase>Simboilų "
-"paletė</phrase></textobject>"
+"format=\"PNG\"/></imageobject><textobject><phrase>Simboilų paletė</phrase></"
+"textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:214
@@ -332,8 +333,8 @@ msgid ""
 "to access characters that are not on your keyboard, such as accented "
 "characters, mathematical symbols, special symbols, and punctuation marks. "
 "You can insert characters from the applet into text strings, for example in "
-"text documents or at the command line. You can customize the contents of the"
-" applet to suit your requirements."
+"text documents or at the command line. You can customize the contents of the "
+"applet to suit your requirements."
 msgstr ""
 "Simbolių paletė leidžia jums patogiai pasiekti kompiuterio klaviatūroje "
 "nesančius simbolius, pavyzdžiui diakritikus, cafematinius simbolius, "
@@ -345,8 +346,7 @@ msgstr ""
 #: C/index.docbook:221
 msgid ""
 "<application>Character Palette</application> supports the UTF-8 character "
-"encoding so you can use the palette to display or copy any Unicode "
-"character."
+"encoding so you can use the palette to display or copy any Unicode character."
 msgstr ""
 "<application>Simbolių paletė</application> palaiko UTF-8 koduotę, todėl "
 "įtaisą galite naudoti bet kokio Unikodo ženklo įvedimui."
@@ -397,17 +397,16 @@ msgstr "Simboliai"
 #. (itstool) path: sect1/para
 #: C/index.docbook:259
 msgid ""
-"When you add <application>Character Palette</application> to a panel for the"
-" first time, the application displays a default palette of characters. You "
+"When you add <application>Character Palette</application> to a panel for the "
+"first time, the application displays a default palette of characters. You "
 "can select a character from the default palette, or you can select a "
-"character from predefined palettes of characters. Each predefined palette of"
-" characters is associated with a standard character on your keyboard."
+"character from predefined palettes of characters. Each predefined palette of "
+"characters is associated with a standard character on your keyboard."
 msgstr ""
-"Kuomet pirmąkart į skydelį pridedate <application>Simbolių "
-"paletę</application>, ja bus galima įvesti iš anksto numatytuosius "
-"simbolius. Juos galite pasirinkti iš numatytosios ar kitų paruoštų palečių. "
-"Kiekviena paruoštoji paletė yra susieta su standartiniais ženklais jūsų "
-"klaviatūroje."
+"Kuomet pirmąkart į skydelį pridedate <application>Simbolių paletę</"
+"application>, ja bus galima įvesti iš anksto numatytuosius simbolius. Juos "
+"galite pasirinkti iš numatytosios ar kitų paruoštų palečių. Kiekviena "
+"paruoštoji paletė yra susieta su standartiniais ženklais jūsų klaviatūroje."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:262
@@ -439,20 +438,20 @@ msgid ""
 "clipboard."
 msgstr ""
 "Nuveskite pelės žymeklį į programą, kurioje norite panaudoti simbolį ir "
-"simbolio įterpimui paspauskite vidurinį pelės mygtuką. Jei programa leidžia,"
-" simbolį taip pat galima įdėti iš iškarpinės."
+"simbolio įterpimui paspauskite vidurinį pelės mygtuką. Jei programa leidžia, "
+"simbolį taip pat galima įdėti iš iškarpinės."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:274
 msgid ""
 "You can repeat the insertion using middle-click as many times as you want "
 "until you either deselect the character or select text in another "
-"application. You can continue pasting the character from the clipboard until"
-" you either deselect the character or copy to the clipboard from another "
+"application. You can continue pasting the character from the clipboard until "
+"you either deselect the character or copy to the clipboard from another "
 "application."
 msgstr ""
-"Įterpimą galite kartoti spaudinėdami vidurinį pelės mygtuką kiek tik norite,"
-" kol arba simbolis atžymimas, arba pasirenkate tekstą kitoje programoje."
+"Įterpimą galite kartoti spaudinėdami vidurinį pelės mygtuką kiek tik norite, "
+"kol arba simbolis atžymimas, arba pasirenkate tekstą kitoje programoje."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:282
@@ -473,9 +472,9 @@ msgstr "Iš anksto numatytos simbolių paletės rodymas"
 #. (itstool) path: sect2/para
 #: C/index.docbook:289
 msgid ""
-"You can change the characters that are displayed in the application from the"
-" default palette to a predefined palette of characters. To display a palette"
-" of predefined characters, perform the following steps:"
+"You can change the characters that are displayed in the application from the "
+"default palette to a predefined palette of characters. To display a palette "
+"of predefined characters, perform the following steps:"
 msgstr ""
 "Galite pakeisti programos rodomus simbolius į kitą jau paruoštą paletę. Kad "
 "ją matytumėte, atlikite šiuos žingsnius:"
@@ -486,8 +485,8 @@ msgid ""
 "Click on the <guibutton>Available palettes</guibutton> button on the "
 "application, the down arrow on the left."
 msgstr ""
-"Paspauskite <guibutton>Pasiekiamų palečių</guibutton> mygtuką įtaise – žemyn"
-" nukreiptą rodyklę kairėje."
+"Paspauskite <guibutton>Pasiekiamų palečių</guibutton> mygtuką įtaise – žemyn "
+"nukreiptą rodyklę kairėje."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:295
@@ -497,8 +496,8 @@ msgstr "Paspauskite ant paletės, kurią norite matyti."
 #. (itstool) path: sect2/para
 #: C/index.docbook:298
 msgid ""
-"You can select the character that you require from the palette of characters"
-" that is displayed in the application, then insert the character into your "
+"You can select the character that you require from the palette of characters "
+"that is displayed in the application, then insert the character into your "
 "text string."
 msgstr ""
 "Galite pasirinkti reikiamą simbolį iš įtaise rodomos simbolių paletės, tada "
@@ -512,14 +511,14 @@ msgstr "Simbolių klavišai"
 #. (itstool) path: sect2/para
 #: C/index.docbook:303
 msgid ""
-"The following chart lists keyboard characters and their associated groups of"
-" characters. The keyboard characters are listed in the first column of each "
+"The following chart lists keyboard characters and their associated groups of "
+"characters. The keyboard characters are listed in the first column of each "
 "section in the chart. The character groups that are associated with each "
 "keyboard character are shown in the other columns."
 msgstr ""
 "Šioje lentelėje pavaizuoti klaviatūros simboliai ir su jais susiejamų "
-"simbolių grupės. Klaviatūros simboliai surašyti pirmame lentelės stulpelyje,"
-" o susiejamų simbolių grupės – kituose."
+"simbolių grupės. Klaviatūros simboliai surašyti pirmame lentelės stulpelyje, "
+"o susiejamų simbolių grupės – kituose."
 
 #. (itstool) path: figure/title
 #: C/index.docbook:305
@@ -603,10 +602,10 @@ msgid ""
 msgstr ""
 "Kad sukonfigūruotumėte <application>Simbolių paletę</application>, ant "
 "įtaiso spauskite dešiniu pelės mygtuku ir pasirinkite "
-"<guimenuitem>Nustatymai</guimenuitem>. <guilabel>Simbolių paletės "
-"nustatymų</guilabel> dialoge yra <guilabel>Palečių</guilabel> sąrašas su "
-"įtaise galimomis paletėmis. Dialogo išjungimui spauskite "
-"<guibutton>Užverti</guibutton>."
+"<guimenuitem>Nustatymai</guimenuitem>. <guilabel>Simbolių paletės nustatymų</"
+"guilabel> dialoge yra <guilabel>Palečių</guilabel> sąrašas su įtaise "
+"galimomis paletėmis. Dialogo išjungimui spauskite <guibutton>Užverti</"
+"guibutton>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:337
@@ -614,9 +613,9 @@ msgid ""
 "To add a new palette to the applet, click on the <guibutton>Add</guibutton> "
 "button. See <xref linkend=\"charpick-default-new\"/> for more information."
 msgstr ""
-"Kad pridėtumėte naują paletę, spauskite mygtuką "
-"<guibutton>Pridėti</guibutton>. Daugiau informacijos – žr. <xref linkend"
-"=\"charpick-default-new\"/>"
+"Kad pridėtumėte naują paletę, spauskite mygtuką <guibutton>Pridėti</"
+"guibutton>. Daugiau informacijos – žr. <xref linkend=\"charpick-default-"
+"new\"/>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:338
@@ -624,19 +623,19 @@ msgid ""
 "To delete a palette from the applet, select the palette, then click on the "
 "<guibutton>Delete</guibutton> button."
 msgstr ""
-"Kad paletę pašalintumėte iš įtaiso, spauskite mygtuką "
-"<guibutton>Ištrinti</guibutton>."
+"Kad paletę pašalintumėte iš įtaiso, spauskite mygtuką <guibutton>Ištrinti</"
+"guibutton>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:339
 msgid ""
-"To modify a palette, select the palette, then click on the "
-"<guibutton>Edit</guibutton> button. Modify the palette in the <guilabel>Edit"
-" Palette</guilabel> dialog, then click <guibutton>OK</guibutton>."
+"To modify a palette, select the palette, then click on the <guibutton>Edit</"
+"guibutton> button. Modify the palette in the <guilabel>Edit Palette</"
+"guilabel> dialog, then click <guibutton>OK</guibutton>."
 msgstr ""
 "Kad paletę redaguotumėte, pasirinkite ją ir spauskite mygtuką "
-"<guibutton>Taisa</guibutton>. Paletę pakeiskite <guilabel>Redaguoti "
-"paletę</guilabel> dialoge, tada  spauskite <guibutton>Gerai</guibutton>."
+"<guibutton>Taisa</guibutton>. Paletę pakeiskite <guilabel>Redaguoti paletę</"
+"guilabel> dialoge, tada  spauskite <guibutton>Gerai</guibutton>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:343
@@ -646,8 +645,8 @@ msgstr "Naujos simbolių paletės paruošimas"
 #. (itstool) path: sect2/para
 #: C/index.docbook:344
 msgid ""
-"You can use a character selection application such as <application>Character"
-" Map</application> to set up a new palette of characters. For example, to "
+"You can use a character selection application such as <application>Character "
+"Map</application> to set up a new palette of characters. For example, to "
 "create a new palette with <application>Character Map</application>, perform "
 "the following steps:"
 msgstr ""
@@ -657,9 +656,9 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:347
 msgid ""
-"Right-click on the applet, then choose "
-"<guimenuitem>Preferences</guimenuitem>. The <guilabel>Character Palette "
-"Preferences</guilabel> dialog is displayed."
+"Right-click on the applet, then choose <guimenuitem>Preferences</"
+"guimenuitem>. The <guilabel>Character Palette Preferences</guilabel> dialog "
+"is displayed."
 msgstr ""
 "Įtaisą paspauskite dešiniu pelės klavišu, pasirinkite "
 "<guimenuitem>Nustatymai</guimenuitem>. Rodomas Nustatymų dialogas."
@@ -687,8 +686,8 @@ msgstr ""
 #: C/index.docbook:356
 msgid ""
 "Copy the contents of the <guilabel>Text to copy</guilabel> text box from "
-"<application>Character Map</application> to the <guilabel>Palette</guilabel>"
-" text box in the <guilabel>Add Palette</guilabel> window."
+"<application>Character Map</application> to the <guilabel>Palette</guilabel> "
+"text box in the <guilabel>Add Palette</guilabel> window."
 msgstr ""
 "Nukopijuokite <guilabel>Teksto kopijavimui</guilabel> turinį iš "
 "<application>Simbolių lentelės</application> į paletės teksto langelį "
@@ -719,8 +718,8 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Suteikiamas leidimas kopijuoti, platinti ir/arba modifikuoti šį dokumentą "
@@ -735,11 +734,11 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
-"Šis žinynas yra CAFE žinynų rinkinio, platinamo GFDL sąlygomis, dalis. Jeigu"
-" norite dalintis šiuo žinynu atskirai nuo šio rinkinio, galite tą daryti "
+"Šis žinynas yra CAFE žinynų rinkinio, platinamo GFDL sąlygomis, dalis. Jeigu "
+"norite dalintis šiuo žinynu atskirai nuo šio rinkinio, galite tą daryti "
 "pridėdami šios licencijos kopiją, kaip nurodyta 6 šios licencijos dalyje."
 
 #. (itstool) path: legalnotice/para
@@ -751,8 +750,8 @@ msgid ""
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
-"Nemažai įmonių, jų produktų ir paslaugų pavadinimai laikomi prekės ženklais."
-" Kuomet šie pavadinimai pasirodo bet kur CAFE dokumentacijoje, ir CAFE "
+"Nemažai įmonių, jų produktų ir paslaugų pavadinimai laikomi prekės ženklais. "
+"Kuomet šie pavadinimai pasirodo bet kur CAFE dokumentacijoje, ir CAFE "
 "dokumentacijos projekto nariai atkreipia į juos dėmesį, šie pavadinimai "
 "radomi didžiosiomis raidėmis arba pradedami didžiąja raide."
 
@@ -773,8 +772,8 @@ msgid ""
 msgstr ""
 "DOKUMENTAS PATEIKIAMAS TOKS, KOKS YRA, BE BET KOKIOS RŪŠIES GARANTIJŲ, "
 "IŠREIKŠTŲ AR PAREIKŠTŲ, NERIBOTAI LAIKANT, KAD DOKUMENTAS AR JO MODIFIKUOTA "
-"VERSIJA YRA BE KLAIDŲ, TINKAMA KONKREČIAI PASKIRČIAI ARBA NEPAŽEIDŽIANTI TAM"
-" TIKRŲ TEISIŲ. VISA ŠIO DOKUMENTO  AR JO MODIFIKUOTOS VERSIJOS KOKYBĖS, "
+"VERSIJA YRA BE KLAIDŲ, TINKAMA KONKREČIAI PASKIRČIAI ARBA NEPAŽEIDŽIANTI TAM "
+"TIKRŲ TEISIŲ. VISA ŠIO DOKUMENTO  AR JO MODIFIKUOTOS VERSIJOS KOKYBĖS, "
 "TIKSLUMO IR VEIKIMO PRIKLAUSO JUMS. ESANT BET KOKIAM ŠIO DOKUMENTO AR JO "
 "MODIFIKUOTOS VERSIJOS TRŪKUMUI, JŪS (NE PIRMINIS RAŠYTOJAS, AUTORIUS AR "
 "KITAS PAGALBININKAS) PRISIICAFE REIKIAMO APTARNAVIMO, REMONTO AR TAISYMO "
@@ -785,26 +784,26 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "ESANT JOKIOMS APLINKYMBĖMS IR JOKIAI TEISINEI TEORIJAI AR DELIKTUI "
 "(ĮSKAITANT APLAIDUMĄ), SUTARČIAI AR KITAIS ATŽVILGIAIS, ŠIO DOKUMETNO AR JO "
 "MODIFIKUOTOS VERSIJOS AUTORIUS, PRADINIS RAŠYTOJAS, BET KURIS PAGALBININKAS "
-"ARBA BET KURIS PLATINTOJAS NĖRA ATSAKINGAS BET KURIAM ASMENIUI UŽ BET KOKIUS"
-" TIESIOGINIUS, NETIESIOGINIUS, YPATINGUS, ATSITIKTINIUS AR PASEKMINIUS "
+"ARBA BET KURIS PLATINTOJAS NĖRA ATSAKINGAS BET KURIAM ASMENIUI UŽ BET KOKIUS "
+"TIESIOGINIUS, NETIESIOGINIUS, YPATINGUS, ATSITIKTINIUS AR PASEKMINIUS "
 "NUOSTOLIUS, ĮSKAITANT DARBO SUSTOJIMĄ, KOMPIUTERIO GEDIMUS AR BET KURIUOS "
 "KITUS NUOSTOLIUS ARBA PRARADIMUS, KYLANČIUS IŠ ARBA SUSIJUSIUS SU ŠIO "
-"DOKUMENTO AR JO MODIFIKUOTŲ VERSIJŲ NAUDOJIMU, NET JEI IR VIENA IŠ PUSIŲ YRA"
-" INFORMUOTA APIE TOKIŲ NUOSTOLIŲ GALIMYBĘ."
+"DOKUMENTO AR JO MODIFIKUOTŲ VERSIJŲ NAUDOJIMU, NET JEI IR VIENA IŠ PUSIŲ YRA "
+"INFORMUOTA APIE TOKIŲ NUOSTOLIŲ GALIMYBĘ."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:28
@@ -814,5 +813,5 @@ msgid ""
 "<_:orderedlist-1/>"
 msgstr ""
 "DOKUMENTAS IR MODIFIKUOTOS JO VERSIJOS PATEIKIAMOS GNU LAISVOSIOS "
-"DOKUMENTACIJOS LICENCIJOS SĄLYGOMIS SU TOLESNIU SUPRATIMU, KAD: "
-"<_:orderedlist-1/>"
+"DOKUMENTACIJOS LICENCIJOS SĄLYGOMIS SU TOLESNIU SUPRATIMU, KAD: <_:"
+"orderedlist-1/>"

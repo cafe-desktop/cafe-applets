@@ -1,9 +1,9 @@
-# 
+#
 # Translators:
 # abuyop <abuyop@gmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Wolfgang Ulbrich <cafe@raveit.de>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -11,10 +11,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 11:29+0000\n"
 "Last-Translator: Wolfgang Ulbrich <cafe@raveit.de>, 2020\n"
 "Language-Team: Malay (https://www.transifex.com/cafe/teams/13566/ms/)\n"
+"Language: ms\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ms\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -99,12 +99,12 @@ msgstr ""
 #: C/index.docbook:69
 msgid ""
 "<firstname>Dan</firstname> <surname>Mueth</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> </affiliation> "
-"<email>d-mueth@uchicago.edu</email>"
+"<orgname>GNOME Documentation Project</orgname> </affiliation> <email>d-"
+"mueth@uchicago.edu</email>"
 msgstr ""
 "<firstname>Dan</firstname> <surname>Mueth</surname> <affiliation> "
-"<orgname>Projek Dokumentasi GNOME</orgname> </affiliation> "
-"<email>d-mueth@uchicago.edu</email>"
+"<orgname>Projek Dokumentasi GNOME</orgname> </affiliation> <email>d-"
+"mueth@uchicago.edu</email>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:77
@@ -130,12 +130,12 @@ msgstr ""
 #: C/index.docbook:92
 msgid ""
 "<firstname>Davyd</firstname> <surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Project</orgname> </affiliation> "
-"<email>davyd@madeley.id.au</email>"
+"<orgname>GNOME Project</orgname> </affiliation> <email>davyd@madeley.id.au</"
+"email>"
 msgstr ""
 "<firstname>Davyd</firstname> <surname>Madeley</surname> <affiliation> "
-"<orgname>Projek GNOME</orgname> </affiliation> "
-"<email>davyd@madeley.id.au</email>"
+"<orgname>Projek GNOME</orgname> </affiliation> <email>davyd@madeley.id.au</"
+"email>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:109
@@ -145,11 +145,11 @@ msgstr "Pasukan Dokumentasi CAFE"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:105
 msgid ""
-"<revnumber>Version 2.11</revnumber> <date>July 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.11</revnumber> <date>July 2015</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Versi 2.11</revnumber> <date>Julai 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Versi 2.11</revnumber> <date>Julai 2015</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:117
@@ -159,11 +159,10 @@ msgstr "Davyd Madeley"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:113
 msgid ""
-"<revnumber>Version 2.10</revnumber> <date>March 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.10</revnumber> <date>March 2005</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Versi 2.10</revnumber> <date>Mac 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Versi 2.10</revnumber> <date>Mac 2005</date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:124
@@ -173,11 +172,10 @@ msgstr "Angela Boyle"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:120
 msgid ""
-"<revnumber>Version 2.8</revnumber> <date>Unknown</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.8</revnumber> <date>Unknown</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Versi 2.8</revnumber> <date>Tidak Diketahui</date> "
-"<_:revdescription-1/>"
+"<revnumber>Versi 2.8</revnumber> <date>Tidak Diketahui</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:132 C/index.docbook:140 C/index.docbook:148
@@ -191,8 +189,8 @@ msgid ""
 "<revnumber>Character Palette Applet Manual V2.6</revnumber> <date>August "
 "2004</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Panduan Aplet Pelet Aksara V2.6</revnumber> <date>Ogos "
-"2004</date> <_:revdescription-1/>"
+"<revnumber>Panduan Aplet Pelet Aksara V2.6</revnumber> <date>Ogos 2004</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:136
@@ -200,8 +198,8 @@ msgid ""
 "<revnumber>Character Palette Applet Manual V2.4</revnumber> <date>August "
 "2003</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Panduan Aplet Pelet Aksara V2.4</revnumber> <date>Ogos "
-"2003</date> <_:revdescription-1/>"
+"<revnumber>Panduan Aplet Pelet Aksara V2.4</revnumber> <date>Ogos 2003</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:144
@@ -209,8 +207,8 @@ msgid ""
 "<revnumber>Character Palette Applet Manual V2.3</revnumber> <date>October "
 "2002</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Panduan Aplet Pelet Aksara V2.3</revnumber> <date>Oktober "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Panduan Aplet Pelet Aksara V2.3</revnumber> <date>Oktober 2002</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:152
@@ -218,17 +216,17 @@ msgid ""
 "<revnumber>Character Palette Applet Manual V2.2</revnumber> <date>August "
 "2002</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Panduan Aplet Pelet Aksara V2.2</revnumber> <date>Ogos "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Panduan Aplet Pelet Aksara V2.2</revnumber> <date>Ogos 2002</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:160
 msgid ""
-"<revnumber>Character Palette Applet Manual V2.1</revnumber> <date>July "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Character Palette Applet Manual V2.1</revnumber> <date>July 2002</"
+"date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Panduan Aplet Pelet Aksara V2.1</revnumber> <date>Julai "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Panduan Aplet Pelet Aksara V2.1</revnumber> <date>Julai 2002</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:168
@@ -236,8 +234,8 @@ msgid ""
 "<revnumber>Character Palette Applet Manual V2.0</revnumber> <date>March "
 "2002</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Panduan Aplet Pelet Aksara V2.0</revnumber> <date>Mac 2002</date>"
-" <_:revdescription-1/>"
+"<revnumber>Panduan Aplet Pelet Aksara V2.0</revnumber> <date>Mac 2002</date> "
+"<_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:180
@@ -247,11 +245,11 @@ msgstr "Dan Mueth <email>d-mueth@uchicago.edu</email>"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:176
 msgid ""
-"<revnumber>Character Picker Applet</revnumber> <date>2000</date> "
-"<_:revdescription-1/>"
+"<revnumber>Character Picker Applet</revnumber> <date>2000</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Aplet Pemilih Aksara</revnumber> <date>2000</date> "
-"<_:revdescription-1/>"
+"<revnumber>Aplet Pemilih Aksara</revnumber> <date>2000</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: articleinfo/releaseinfo
 #: C/index.docbook:186
@@ -267,8 +265,8 @@ msgstr "Maklumbalas"
 #: C/index.docbook:190
 msgid ""
 "To report a bug or make a suggestion regarding the Character Palette "
-"application or this manual, follow the directions in the <ulink url=\"help"
-":cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"application or this manual, follow the directions in the <ulink url=\"help:"
+"cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 "Untuk melaporkan pepijat atau membuat saranan berkenaan aplikasi Pelet "
 "Aksara atau panduan ini, ikuti arahan di dalam <ulink url=\"help:cafe-user-"
@@ -307,12 +305,12 @@ msgstr ""
 #: C/index.docbook:207
 msgid ""
 "<imageobject><imagedata fileref=\"figures/charpalette_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Character "
-"Palette</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Character Palette</"
+"phrase> </textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/charpalette_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Pelet Aksara</phrase> "
-"</textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Pelet Aksara</phrase> </"
+"textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:214
@@ -321,22 +319,21 @@ msgid ""
 "to access characters that are not on your keyboard, such as accented "
 "characters, mathematical symbols, special symbols, and punctuation marks. "
 "You can insert characters from the applet into text strings, for example in "
-"text documents or at the command line. You can customize the contents of the"
-" applet to suit your requirements."
+"text documents or at the command line. You can customize the contents of the "
+"applet to suit your requirements."
 msgstr ""
 "<application>Pelet Aksara</application> menyediakan satu cara mudah untuk "
 "mencapai aksara yang tiada dalam papan kekunci anda, seperti aksara "
-"teraksen, simbol cafematik, simbol khas, dan tanda baca. Anda boleh menyisip"
-" aksara dari aplet ke dalam rentetan teks, sebagai contoh dalam dokumen teks"
-" atau dalam baris perintah. Anda boleh suaikan kandungan aplet untuk "
-"memenuhi keperluan anda."
+"teraksen, simbol cafematik, simbol khas, dan tanda baca. Anda boleh menyisip "
+"aksara dari aplet ke dalam rentetan teks, sebagai contoh dalam dokumen teks "
+"atau dalam baris perintah. Anda boleh suaikan kandungan aplet untuk memenuhi "
+"keperluan anda."
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:221
 msgid ""
 "<application>Character Palette</application> supports the UTF-8 character "
-"encoding so you can use the palette to display or copy any Unicode "
-"character."
+"encoding so you can use the palette to display or copy any Unicode character."
 msgstr ""
 "<application>Pelet Aksara</application> menyokong pengekodan aksara UTF-8 "
 "supaya anda dapat guna pelet untuk dipapar atau menyalin mana-mana aksara "
@@ -372,8 +369,8 @@ msgid ""
 "Scroll down the list of items in the <guilabel>Add to Panel</guilabel> "
 "dialog, then select <guilabel>Character Palette</guilabel>."
 msgstr ""
-"Tatal ke bawah senarai item di dalam dialog <guilabel>Tambah ke "
-"Panel</guilabel>, kemudian pilih <guilabel>Pelet Aksara</guilabel>."
+"Tatal ke bawah senarai item di dalam dialog <guilabel>Tambah ke Panel</"
+"guilabel>, kemudian pilih <guilabel>Pelet Aksara</guilabel>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:249
@@ -388,11 +385,11 @@ msgstr "Mendapatkan Aksara"
 #. (itstool) path: sect1/para
 #: C/index.docbook:259
 msgid ""
-"When you add <application>Character Palette</application> to a panel for the"
-" first time, the application displays a default palette of characters. You "
+"When you add <application>Character Palette</application> to a panel for the "
+"first time, the application displays a default palette of characters. You "
 "can select a character from the default palette, or you can select a "
-"character from predefined palettes of characters. Each predefined palette of"
-" characters is associated with a standard character on your keyboard."
+"character from predefined palettes of characters. Each predefined palette of "
+"characters is associated with a standard character on your keyboard."
 msgstr ""
 "Ketika anda menambah <application>Pelet Aksara</application> ke dalam panel "
 "buat kali pertama, aplikasi memaparkan pelet aksara lalai. Oleh itu, anda "
@@ -411,8 +408,8 @@ msgid ""
 "To select a character from the palette and insert the character into a text "
 "string, perform the following steps:"
 msgstr ""
-"Untuk memilih satu aksara dari pelet dan menyisipnya ke dalam rentetan teks,"
-" buat langkah-langkah berikut:"
+"Untuk memilih satu aksara dari pelet dan menyisipnya ke dalam rentetan teks, "
+"buat langkah-langkah berikut:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:265
@@ -431,18 +428,17 @@ msgid ""
 "into the application if the application allows you to paste from the "
 "clipboard."
 msgstr ""
-"Pergi ke lokasi dalam aplikasi yang mahu dimasukkan aksara tersebut dan "
-"klik-tengah untuk menyisipnya. Anda juga boleh menampal aksara ke dalam "
-"aplikasi jika aplikasi tersebut membenarkan anda tampal melalui papan "
-"keratan."
+"Pergi ke lokasi dalam aplikasi yang mahu dimasukkan aksara tersebut dan klik-"
+"tengah untuk menyisipnya. Anda juga boleh menampal aksara ke dalam aplikasi "
+"jika aplikasi tersebut membenarkan anda tampal melalui papan keratan."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:274
 msgid ""
 "You can repeat the insertion using middle-click as many times as you want "
 "until you either deselect the character or select text in another "
-"application. You can continue pasting the character from the clipboard until"
-" you either deselect the character or copy to the clipboard from another "
+"application. You can continue pasting the character from the clipboard until "
+"you either deselect the character or copy to the clipboard from another "
 "application."
 msgstr ""
 "Anda boleh ulangi penyisipan melalui kaedah klik-tengah sebanyak mana yang "
@@ -469,9 +465,9 @@ msgstr "Memaparkan Pelet Pra-takrif Aksara"
 #. (itstool) path: sect2/para
 #: C/index.docbook:289
 msgid ""
-"You can change the characters that are displayed in the application from the"
-" default palette to a predefined palette of characters. To display a palette"
-" of predefined characters, perform the following steps:"
+"You can change the characters that are displayed in the application from the "
+"default palette to a predefined palette of characters. To display a palette "
+"of predefined characters, perform the following steps:"
 msgstr ""
 "Anda boleh mengubah aksara yang terpapar dalam aplikasi melalui pelet lalai "
 "ke dalam pelet pra-takrif aksara. Untuk memaparkan pelet pra-takrif aksara, "
@@ -494,8 +490,8 @@ msgstr "Klik pada pelet yang mahu dipaparkan."
 #. (itstool) path: sect2/para
 #: C/index.docbook:298
 msgid ""
-"You can select the character that you require from the palette of characters"
-" that is displayed in the application, then insert the character into your "
+"You can select the character that you require from the palette of characters "
+"that is displayed in the application, then insert the character into your "
 "text string."
 msgstr ""
 "Anda boleh memilih aksara yang diperlukan dari pelet aksara yang dipapar "
@@ -509,8 +505,8 @@ msgstr "Kekunci Aksara"
 #. (itstool) path: sect2/para
 #: C/index.docbook:303
 msgid ""
-"The following chart lists keyboard characters and their associated groups of"
-" characters. The keyboard characters are listed in the first column of each "
+"The following chart lists keyboard characters and their associated groups of "
+"characters. The keyboard characters are listed in the first column of each "
 "section in the chart. The character groups that are associated with each "
 "keyboard character are shown in the other columns."
 msgstr ""
@@ -547,8 +543,8 @@ msgid ""
 msgstr ""
 "<imageobject> <imagedata fileref=\"figures/charpick_characters.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Menunjukkan kumpulan "
-"aksara berkaitan dengan pelbagai kekunci papan kekunci. </phrase> "
-"</textobject>"
+"aksara berkaitan dengan pelbagai kekunci papan kekunci. </phrase> </"
+"textobject>"
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:323
@@ -582,8 +578,8 @@ msgid ""
 "Preferences</phrase> </textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/charpick-preferences.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Keutamaan Pelet "
-"Aksara</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Keutamaan Pelet Aksara</"
+"phrase> </textobject>"
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:334
@@ -603,8 +599,8 @@ msgstr ""
 "Untuk mengkonfigur <application>Pelet Aksara</application>, klik-kanan pada "
 "aplet, kemudian pilih <guimenuitem>Keutamaan</guimenuitem>. Dialog "
 "<guilabel>Keutamaan Pelet Aksara</guilabel> mengandungi kotak senarai "
-"<guilabel>Pelet</guilabel>, menyenaraikan pelet yang tersedia melalui aplet."
-" Untuk menutup dialog <guilabel>Keutamaan Pelet Aksara</guilabel>, klik "
+"<guilabel>Pelet</guilabel>, menyenaraikan pelet yang tersedia melalui aplet. "
+"Untuk menutup dialog <guilabel>Keutamaan Pelet Aksara</guilabel>, klik "
 "<guibutton>Tutup</guibutton>."
 
 #. (itstool) path: listitem/para
@@ -629,9 +625,9 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:339
 msgid ""
-"To modify a palette, select the palette, then click on the "
-"<guibutton>Edit</guibutton> button. Modify the palette in the <guilabel>Edit"
-" Palette</guilabel> dialog, then click <guibutton>OK</guibutton>."
+"To modify a palette, select the palette, then click on the <guibutton>Edit</"
+"guibutton> button. Modify the palette in the <guilabel>Edit Palette</"
+"guilabel> dialog, then click <guibutton>OK</guibutton>."
 msgstr ""
 "Untuk mengubahsuai pelet, pilih satu pelet, kemudian klik pada butang "
 "<guibutton>Sunting</guibutton>. Ubahsuai pelet di dalam dialog "
@@ -645,8 +641,8 @@ msgstr "Menetapkan Pelet Aksara Baharu"
 #. (itstool) path: sect2/para
 #: C/index.docbook:344
 msgid ""
-"You can use a character selection application such as <application>Character"
-" Map</application> to set up a new palette of characters. For example, to "
+"You can use a character selection application such as <application>Character "
+"Map</application> to set up a new palette of characters. For example, to "
 "create a new palette with <application>Character Map</application>, perform "
 "the following steps:"
 msgstr ""
@@ -658,9 +654,9 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:347
 msgid ""
-"Right-click on the applet, then choose "
-"<guimenuitem>Preferences</guimenuitem>. The <guilabel>Character Palette "
-"Preferences</guilabel> dialog is displayed."
+"Right-click on the applet, then choose <guimenuitem>Preferences</"
+"guimenuitem>. The <guilabel>Character Palette Preferences</guilabel> dialog "
+"is displayed."
 msgstr ""
 "Klik-kanan pada aplet, kemudian pilih <guimenuitem>Keutamaan</guimenuitem>. "
 "Dialog <guilabel>Keutamaan Pelet Aksara</guilabel> dipaparkan."
@@ -681,20 +677,19 @@ msgid ""
 "that you want to display in the new palette. You can select up to 25 "
 "characters."
 msgstr ""
-"Buka <application>Peta Aksara</application>, kemudian pilih aksara yang mahu"
-" dipaparkan dalam pelet baharu. Anda boleh memilih sehingga 25 aksara."
+"Buka <application>Peta Aksara</application>, kemudian pilih aksara yang mahu "
+"dipaparkan dalam pelet baharu. Anda boleh memilih sehingga 25 aksara."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:356
 msgid ""
 "Copy the contents of the <guilabel>Text to copy</guilabel> text box from "
-"<application>Character Map</application> to the <guilabel>Palette</guilabel>"
-" text box in the <guilabel>Add Palette</guilabel> window."
+"<application>Character Map</application> to the <guilabel>Palette</guilabel> "
+"text box in the <guilabel>Add Palette</guilabel> window."
 msgstr ""
 "Salin kandungan kotak teks <guilabel>Teks untuk disalin</guilabel> melalui "
-"<application>Peta Aksara</application> ke kotak teks "
-"<guilabel>Pelet</guilabel> dalam tetingkap <guilabel>Tambah "
-"Pelet</guilabel>."
+"<application>Peta Aksara</application> ke kotak teks <guilabel>Pelet</"
+"guilabel> dalam tetingkap <guilabel>Tambah Pelet</guilabel>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:359
@@ -721,8 +716,8 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Keizinan diberi untuk menyalin, mengedar dan/atau mengubahsuai dokumen ini "
@@ -737,13 +732,13 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Panduan ini adalah sebahagian dari koleksi panduan CAFE yang diedar bawah "
 "GFDL. Jika anda mahu edar panduan ini secara berasingan dari koleksi "
-"asalnya, anda boleh membuat sedemikian dengan menambah satu salinan lesen ke"
-" dalam panduan sepertimana yang dijelaskan dalam seksyen 6 lesen tersebut."
+"asalnya, anda boleh membuat sedemikian dengan menambah satu salinan lesen ke "
+"dalam panduan sepertimana yang dijelaskan dalam seksyen 6 lesen tersebut."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:19
@@ -791,16 +786,16 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "TANPA DI BAWAH APA-APA KEADAAN DAN TEORI PERUNDANGAN, SAMA ADA DALAM TORT "
 "(TERMASUKLAH KECUAIAN), KONTRAK, ATAU SEUMPAMA DENGANNYA, SI PENGARANG, "
@@ -810,8 +805,8 @@ msgstr ""
 "SECARA KHUSUS, TIDAK SENGAJA ATAU, KEROSAKAN LANJUTAN TERHADAP SESIAPA "
 "SAHAJA, TERMASUKLAH TANPA HAD BAGI KEROSAKAN NAMA BAIK, GANGGUAN KERJA, "
 "KEGAGALAN ATAU KEROSAKAN KOMPUTER, ATAU MANA-MANA  MAHUPUN SEMUA KEROSAKAN "
-"LAIN BERKAITAN PENGGUNAAN DOKUMEN DAN VERSI UBAHSUAI DOKUMEN, WALAUPUN PIHAK"
-" TERSEBUT TELAH DIMAKLUMKAN ADANYA KEBARANGKALIAN KEROSAKAN SEBEGITU BOLEH "
+"LAIN BERKAITAN PENGGUNAAN DOKUMEN DAN VERSI UBAHSUAI DOKUMEN, WALAUPUN PIHAK "
+"TERSEBUT TELAH DIMAKLUMKAN ADANYA KEBARANGKALIAN KEROSAKAN SEBEGITU BOLEH "
 "BERLAKU."
 
 #. (itstool) path: legalnotice/para

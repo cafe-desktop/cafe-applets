@@ -1,8 +1,8 @@
-# 
+#
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -10,10 +10,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 11:29+0000\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2020\n"
 "Language-Team: Catalan (https://www.transifex.com/cafe/teams/13566/ca/)\n"
+"Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ca\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -92,19 +92,19 @@ msgid ""
 "<firstname>Sun</firstname> <surname>GNOME Documentation Team</surname> "
 "<affiliation> <orgname>Sun Microsystems</orgname> </affiliation>"
 msgstr ""
-"<firstname>Sun</firstname> <surname>Equip de documentació de GNOME</surname>"
-" <affiliation> <orgname>Sun Microsystems</orgname> </affiliation>"
+"<firstname>Sun</firstname> <surname>Equip de documentació de GNOME</surname> "
+"<affiliation> <orgname>Sun Microsystems</orgname> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:69
 msgid ""
 "<firstname>Dan</firstname> <surname>Mueth</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> </affiliation> "
-"<email>d-mueth@uchicago.edu</email>"
+"<orgname>GNOME Documentation Project</orgname> </affiliation> <email>d-"
+"mueth@uchicago.edu</email>"
 msgstr ""
 "<firstname>Dan</firstname> <surname>Mueth</surname> <affiliation> "
-"<orgname>Projecte de documentació de GNOME</orgname> </affiliation> "
-"<email>d-mueth@uchicago.edu</email>"
+"<orgname>Projecte de documentació de GNOME</orgname> </affiliation> <email>d-"
+"mueth@uchicago.edu</email>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:77
@@ -130,12 +130,12 @@ msgstr ""
 #: C/index.docbook:92
 msgid ""
 "<firstname>Davyd</firstname> <surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Project</orgname> </affiliation> "
-"<email>davyd@madeley.id.au</email>"
+"<orgname>GNOME Project</orgname> </affiliation> <email>davyd@madeley.id.au</"
+"email>"
 msgstr ""
 "<firstname>Davyd</firstname> <surname>Madeley</surname> <affiliation> "
-"<orgname>Projecte GNOME</orgname> </affiliation> "
-"<email>davyd@madeley.id.au</email>"
+"<orgname>Projecte GNOME</orgname> </affiliation> <email>davyd@madeley.id.au</"
+"email>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:109
@@ -145,11 +145,11 @@ msgstr "Equip de documentació de CAFE"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:105
 msgid ""
-"<revnumber>Version 2.11</revnumber> <date>July 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.11</revnumber> <date>July 2015</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Versió 2.11</revnumber> <date>Juliol de 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Versió 2.11</revnumber> <date>Juliol de 2015</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:117
@@ -159,11 +159,11 @@ msgstr "Davyd Madeley"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:113
 msgid ""
-"<revnumber>Version 2.10</revnumber> <date>March 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.10</revnumber> <date>March 2005</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Versió 2.10</revnumber> <date>Març de 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Versió 2.10</revnumber> <date>Març de 2005</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:124
@@ -173,11 +173,10 @@ msgstr "Angela Boyle"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:120
 msgid ""
-"<revnumber>Version 2.8</revnumber> <date>Unknown</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.8</revnumber> <date>Unknown</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Versió 2.8</revnumber> <date>desconeguda</date> "
-"<_:revdescription-1/>"
+"<revnumber>Versió 2.8</revnumber> <date>desconeguda</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:132 C/index.docbook:140 C/index.docbook:148
@@ -224,8 +223,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:160
 msgid ""
-"<revnumber>Character Palette Applet Manual V2.1</revnumber> <date>July "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Character Palette Applet Manual V2.1</revnumber> <date>July 2002</"
+"date> <_:revdescription-1/>"
 msgstr ""
 "<revnumber>Versió 2.1 del manual de la paleta de caràcters</revnumber> "
 "<date>Juliol de 2002</date> <_:revdescription-1/>"
@@ -247,8 +246,8 @@ msgstr "Dan Mueth <email>d-mueth@uchicago.edu</email>"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:176
 msgid ""
-"<revnumber>Character Picker Applet</revnumber> <date>2000</date> "
-"<_:revdescription-1/>"
+"<revnumber>Character Picker Applet</revnumber> <date>2000</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: articleinfo/releaseinfo
@@ -265,13 +264,13 @@ msgstr "Retroacció"
 #: C/index.docbook:190
 msgid ""
 "To report a bug or make a suggestion regarding the Character Palette "
-"application or this manual, follow the directions in the <ulink url=\"help"
-":cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"application or this manual, follow the directions in the <ulink url=\"help:"
+"cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 "Per informar d'un error o fer un suggeriment sobre l'aplicació Paleta de "
-"caràcters o d'aquest manual, seguiu les instruccions de la <ulink url=\"help"
-":cafe-user-guide/feedback\" type=\"help\">pàgina de retroacció de "
-"CAFE</ulink>."
+"caràcters o d'aquest manual, seguiu les instruccions de la <ulink url=\"help:"
+"cafe-user-guide/feedback\" type=\"help\">pàgina de retroacció de CAFE</"
+"ulink>."
 
 #. (itstool) path: article/indexterm
 #: C/index.docbook:197
@@ -306,12 +305,12 @@ msgstr ""
 #: C/index.docbook:207
 msgid ""
 "<imageobject><imagedata fileref=\"figures/charpalette_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Character "
-"Palette</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Character Palette</"
+"phrase> </textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/charpalette_applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Paleta de "
-"caràcters</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Paleta de caràcters</"
+"phrase> </textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:214
@@ -320,16 +319,15 @@ msgid ""
 "to access characters that are not on your keyboard, such as accented "
 "characters, mathematical symbols, special symbols, and punctuation marks. "
 "You can insert characters from the applet into text strings, for example in "
-"text documents or at the command line. You can customize the contents of the"
-" applet to suit your requirements."
+"text documents or at the command line. You can customize the contents of the "
+"applet to suit your requirements."
 msgstr ""
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:221
 msgid ""
 "<application>Character Palette</application> supports the UTF-8 character "
-"encoding so you can use the palette to display or copy any Unicode "
-"character."
+"encoding so you can use the palette to display or copy any Unicode character."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -363,8 +361,8 @@ msgid ""
 "dialog, then select <guilabel>Character Palette</guilabel>."
 msgstr ""
 "Desplaceu-vos cap avall per la llista d'elements del diàleg "
-"<guilabel>Afegeix al tauler</guilabel>, després seleccioneu <guilabel>Paleta"
-" de caràcters</guilabel>."
+"<guilabel>Afegeix al tauler</guilabel>, després seleccioneu <guilabel>Paleta "
+"de caràcters</guilabel>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:249
@@ -379,11 +377,11 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: C/index.docbook:259
 msgid ""
-"When you add <application>Character Palette</application> to a panel for the"
-" first time, the application displays a default palette of characters. You "
+"When you add <application>Character Palette</application> to a panel for the "
+"first time, the application displays a default palette of characters. You "
 "can select a character from the default palette, or you can select a "
-"character from predefined palettes of characters. Each predefined palette of"
-" characters is associated with a standard character on your keyboard."
+"character from predefined palettes of characters. Each predefined palette of "
+"characters is associated with a standard character on your keyboard."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -419,8 +417,8 @@ msgstr ""
 msgid ""
 "You can repeat the insertion using middle-click as many times as you want "
 "until you either deselect the character or select text in another "
-"application. You can continue pasting the character from the clipboard until"
-" you either deselect the character or copy to the clipboard from another "
+"application. You can continue pasting the character from the clipboard until "
+"you either deselect the character or copy to the clipboard from another "
 "application."
 msgstr ""
 
@@ -442,9 +440,9 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:289
 msgid ""
-"You can change the characters that are displayed in the application from the"
-" default palette to a predefined palette of characters. To display a palette"
-" of predefined characters, perform the following steps:"
+"You can change the characters that are displayed in the application from the "
+"default palette to a predefined palette of characters. To display a palette "
+"of predefined characters, perform the following steps:"
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -462,8 +460,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:298
 msgid ""
-"You can select the character that you require from the palette of characters"
-" that is displayed in the application, then insert the character into your "
+"You can select the character that you require from the palette of characters "
+"that is displayed in the application, then insert the character into your "
 "text string."
 msgstr ""
 
@@ -475,8 +473,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:303
 msgid ""
-"The following chart lists keyboard characters and their associated groups of"
-" characters. The keyboard characters are listed in the first column of each "
+"The following chart lists keyboard characters and their associated groups of "
+"characters. The keyboard characters are listed in the first column of each "
 "section in the chart. The character groups that are associated with each "
 "keyboard character are shown in the other columns."
 msgstr ""
@@ -573,9 +571,9 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:339
 msgid ""
-"To modify a palette, select the palette, then click on the "
-"<guibutton>Edit</guibutton> button. Modify the palette in the <guilabel>Edit"
-" Palette</guilabel> dialog, then click <guibutton>OK</guibutton>."
+"To modify a palette, select the palette, then click on the <guibutton>Edit</"
+"guibutton> button. Modify the palette in the <guilabel>Edit Palette</"
+"guilabel> dialog, then click <guibutton>OK</guibutton>."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -586,8 +584,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:344
 msgid ""
-"You can use a character selection application such as <application>Character"
-" Map</application> to set up a new palette of characters. For example, to "
+"You can use a character selection application such as <application>Character "
+"Map</application> to set up a new palette of characters. For example, to "
 "create a new palette with <application>Character Map</application>, perform "
 "the following steps:"
 msgstr ""
@@ -595,9 +593,9 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:347
 msgid ""
-"Right-click on the applet, then choose "
-"<guimenuitem>Preferences</guimenuitem>. The <guilabel>Character Palette "
-"Preferences</guilabel> dialog is displayed."
+"Right-click on the applet, then choose <guimenuitem>Preferences</"
+"guimenuitem>. The <guilabel>Character Palette Preferences</guilabel> dialog "
+"is displayed."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -619,8 +617,8 @@ msgstr ""
 #: C/index.docbook:356
 msgid ""
 "Copy the contents of the <guilabel>Text to copy</guilabel> text box from "
-"<application>Character Map</application> to the <guilabel>Palette</guilabel>"
-" text box in the <guilabel>Add Palette</guilabel> window."
+"<application>Character Map</application> to the <guilabel>Palette</guilabel> "
+"text box in the <guilabel>Add Palette</guilabel> window."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -646,13 +644,13 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Es concedeix el permís per copiar, distribuir i / o modificar aquest "
-"document sota els termes de la GFDL (GNU Free Documentation License), versió"
-" 1.1 o qualsevol versió posterior publicada per la Free Software Foundation "
+"document sota els termes de la GFDL (GNU Free Documentation License), versió "
+"1.1 o qualsevol versió posterior publicada per la Free Software Foundation "
 "que tinguin les seccions invariants, i sense cap text a la portada. Podeu "
 "trobar una còpia de la GFDL en aquest <_:ulink-1/> o bé al fitxer COPYING-"
 "DOCS que es distribueix amb aquest manual."
@@ -662,13 +660,13 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Aquest manual forma part d'una col·lecció de manuals de CAFE que estan "
 "distribuïts sota la GFDL. Si voleu distribuir aquest manual per separat de "
-"la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal"
-" com es descriu a la secció 6 de la llicència."
+"la col·lecció, podeu fer-ho afegint una còpia de la llicència al manual, tal "
+"com es descriu a la secció 6 de la llicència."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:19
@@ -679,8 +677,8 @@ msgid ""
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
-"Molts dels noms utilitzats per les empreses per distingir els seus productes"
-" i serveis es consideren marques comercials. Quan aquests noms apareixen en "
+"Molts dels noms utilitzats per les empreses per distingir els seus productes "
+"i serveis es consideren marques comercials. Quan aquests noms apareixen en "
 "qualsevol documentació de CAFE, i els membres del projecte de documentació "
 "de CAFE en són conscients, els noms tenen lletres majúscules o bé comencen "
 "en majúscules."
@@ -708,35 +706,34 @@ msgstr ""
 "DOCUMENT O LA VERSIÓ MODIFICADA DEL DOCUMENT ÉS VOSTRE. EN CAS QUE EL "
 "DOCUMENT RESULTÉS DEFECTUÓS EN QUALSEVOL ASPECTE, VÓS (NO PAS L'ESCRIPTOR "
 "INICIAL, L'AUTOR O CAP ALTRE COL·LABORADOR) ASSUMIU TOT EL COST DE "
-"MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX"
-" UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT"
-" O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA;"
-" I"
+"MANTENIMENT, REPARACIÓ O CORRECCIÓ. AQUESTA RENÚNCIA DE GARANTIA CONSTITUEIX "
+"UNA PART ESSENCIAL D'AQUESTA LLICÈNCIA. NO S'AUTORITZA L'ÚS DE CAP DOCUMENT "
+"O VERSIÓ MODIFICADA DEL DOCUMENT EXCEPTE SOTA AQUESTA RENÚNCIA DE GARANTIA; I"
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "EN CAP CAS I SOTA CAP INTERPRETACIÓ LEGAL, JA SIGUI PER AGREUJAMENT "
 "(INCLOENT-HI LA NEGLIGÈNCIA), CONTRACTE O ALTRE CAS, L'AUTOR, L'ESCRIPTOR "
 "ORIGINAL, QUALSEVOL DELS COL·LABORADORS O DISTRIBUÏDORS DEL DOCUMENT O UNA "
 "VERSIÓ MODIFICADA DEL DOCUMENT NI CAP PROVEÏDOR D'AQUESTES PARTS NO SERAN "
 "RESPONSABLES DAVANT DE NINGÚ PER CAP DANY DIRECTE, INDIRECTE, ESPECIAL, "
-"ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI,"
-" ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O "
+"ACCIDENTAL O CONSECUTIU DE QUALSEVOL TIPUS; AIXÒ INCLOU, SENSE LIMITAR-S'HI, "
+"ELS DANYS PER PÈRDUA DE CLIENTS, INTERRUPCIONS DE LA FEINA, FALLADA O "
 "MALFUNCIONAMENT DE L'ORDINADOR, O QUALSEVOL ALTRA PÈRDUA O DANY RELACIONAT "
-"AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI"
-" S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS."
+"AMB L'ÚS DEL DOCUMENT I LES VERSIONS MODIFICADES DEL DOCUMENT, FINS I TOT SI "
+"S'HA INFORMAT AQUESTA PART DE LA POSSIBILITAT D'AQUESTS DANYS."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:28
