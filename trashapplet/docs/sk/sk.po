@@ -1,11 +1,11 @@
-# 
+#
 # Translators:
 # Dušan Kazik <prescott66@gmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Tibor Kaputa <tibbbi2@gmail.com>, 2020
 # Vendelín Slezák <klaykap@yandex.com>, 2020
 # Ján Ďanovský <dagsoftware@yahoo.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -13,11 +13,12 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 12:22+0000\n"
 "Last-Translator: Ján Ďanovský <dagsoftware@yahoo.com>, 2020\n"
 "Language-Team: Slovak (https://www.transifex.com/cafe/teams/13566/sk/)\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sk\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n >= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n == 1 ? 0 : n % 1 == 0 && n "
+">= 2 && n <= 4 ? 1 : n % 1 != 0 ? 2: 3);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -90,8 +91,8 @@ msgstr ""
 #: C/index.docbook:70
 msgid ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Project</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME Project</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -102,8 +103,8 @@ msgstr "CAFE Dokumentačný projekt"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:94
 msgid ""
-"<revnumber>Panel Trash V2.12</revnumber> <date>July 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Panel Trash V2.12</revnumber> <date>July 2015</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -114,8 +115,8 @@ msgstr "Davyd Madeley"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:102
 msgid ""
-"<revnumber>Panel Trash 2.10</revnumber> <date>March 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Panel Trash 2.10</revnumber> <date>March 2005</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -126,8 +127,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:110
 msgid ""
-"<revnumber>Panel Trash V2.8</revnumber> <date>July 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Panel Trash V2.8</revnumber> <date>July 2004</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: articleinfo/releaseinfo
@@ -144,8 +145,8 @@ msgstr "Reakcia"
 #: C/index.docbook:123
 msgid ""
 "To report a bug or make a suggestion regarding the Panel Trash applet or "
-"this manual, follow the directions in the <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"this manual, follow the directions in the <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -161,8 +162,8 @@ msgstr "Úvod"
 #. (itstool) path: sect1/para
 #: C/index.docbook:133
 msgid ""
-"The <application>Panel Trash</application> applet lets you manage your Trash"
-" from the panel."
+"The <application>Panel Trash</application> applet lets you manage your Trash "
+"from the panel."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -180,8 +181,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:142
 msgid ""
-"To add the <application>Panel Trash</application> applet to a panel, perform"
-" the following steps:"
+"To add the <application>Panel Trash</application> applet to a panel, perform "
+"the following steps:"
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -209,8 +210,8 @@ msgstr "Stlačte <guibutton>Pridať</guibutton>."
 #. (itstool) path: sect2/para
 #: C/index.docbook:165
 msgid ""
-"For more information on working with the panel, see the <ulink type=\"help\""
-" url=\"help:cafe-user-guide/panels\">Desktop User Guide</ulink>."
+"For more information on working with the panel, see the <ulink type=\"help\" "
+"url=\"help:cafe-user-guide/panels\">Desktop User Guide</ulink>."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -255,9 +256,9 @@ msgstr "Vyprázdňuje sa Kôš"
 #. (itstool) path: sect2/para
 #: C/index.docbook:191
 msgid ""
-"To permanently delete all the items in the Trash, right-click on the applet,"
-" then choose <menuchoice> <guimenuitem>Empty Trash</guimenuitem> "
-"</menuchoice>."
+"To permanently delete all the items in the Trash, right-click on the applet, "
+"then choose <menuchoice> <guimenuitem>Empty Trash</guimenuitem> </"
+"menuchoice>."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -284,14 +285,14 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Je povolené kopírovať, šíriť a upravovať tento dokument pod podmienkami GNU "
-"Free Documentation License(GFDL), verzie 1.1 alebo akýchkoľvek ďaľších verzí"
-" poublikovaných Free Softvare Foundation s Nemennými sekciami, bez vrchných "
-"a bez spodných textov. Kópiu GFDL môžete nájsť na na <_:ulink-1/> alebo v "
+"Free Documentation License(GFDL), verzie 1.1 alebo akýchkoľvek ďaľších verzí "
+"poublikovaných Free Softvare Foundation s Nemennými sekciami, bez vrchných a "
+"bez spodných textov. Kópiu GFDL môžete nájsť na na <_:ulink-1/> alebo v "
 "súbore COPYING-DOCS ktorý je distribuovaný spolu s týmto manuálom."
 
 #. (itstool) path: legalnotice/para
@@ -299,13 +300,13 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Tento manuál je časť s kolekcie CAFE manuálov ktoré sú distribuované pod "
 "GFDL. Ak chcete distribuovať tento manuál bez celej kolekcie, môžete to "
-"spraviť ak ku nemu pridáte kópiu licencie, ako je to vysvetlené v sekcií 6 v"
-" licencí."
+"spraviť ak ku nemu pridáte kópiu licencie, ako je to vysvetlené v sekcií 6 v "
+"licencí."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:19
@@ -336,38 +337,38 @@ msgid ""
 "OF THE DOCUMENT IS AUTHORIZED HEREUNDER EXCEPT UNDER THIS DISCLAIMER; AND"
 msgstr ""
 "DOKUMNET SA POSKYTUJE \"TAK AKO JE\", BEZ ZÁRUKY AKÉHOKOĽVEK DRUHU, ČI UŽ "
-"VÝSLOVNÉHO, VYPLÝVAJÚCEHO, A BEZ ZÁRUKY ŽE TENTO DOKUMENT JE BEZ AKÝCHKOĽVEK"
-" CHÝB, ALEBO VHODNÝ PRE KONKRÉTNY ÚČEL ALEBO OPRÁVNENIE. VŠETKA ZODPOVEDNOSŤ"
-" ZA KVALITU, PRESNOSŤ A ÚČINNOSŤ DOKUMENTU JE NA VÁS. AK SA DOKUMENT ALEBO "
-"JEHO MODIFIKÁCIA UKÁŽE PREUKÁZATEĽNE VADNÁ, MÔŽETE(ALE NIE AK STE POČIATOČNÝ"
-" AUTOR, AUTOR ALEBO AKÝKOĽVEK PRISPIEVATEĽ) PREVZIAŤ NÁKLADY NA UDRŽIAVANIE,"
-" OPRAVOVANIE A OPRAVU. TOTO VYHLÁSENIE SA POKLADÁ ZA NEODDELITELNÚ SÚČASŤ "
+"VÝSLOVNÉHO, VYPLÝVAJÚCEHO, A BEZ ZÁRUKY ŽE TENTO DOKUMENT JE BEZ AKÝCHKOĽVEK "
+"CHÝB, ALEBO VHODNÝ PRE KONKRÉTNY ÚČEL ALEBO OPRÁVNENIE. VŠETKA ZODPOVEDNOSŤ "
+"ZA KVALITU, PRESNOSŤ A ÚČINNOSŤ DOKUMENTU JE NA VÁS. AK SA DOKUMENT ALEBO "
+"JEHO MODIFIKÁCIA UKÁŽE PREUKÁZATEĽNE VADNÁ, MÔŽETE(ALE NIE AK STE POČIATOČNÝ "
+"AUTOR, AUTOR ALEBO AKÝKOĽVEK PRISPIEVATEĽ) PREVZIAŤ NÁKLADY NA UDRŽIAVANIE, "
+"OPRAVOVANIE A OPRAVU. TOTO VYHLÁSENIE SA POKLADÁ ZA NEODDELITELNÚ SÚČASŤ "
 "LICENCIE. NA POUŽÍVANIE DOKUMENTOV ALEBO ICH ZMENENÝCH VERZÍ SA VZŤAHUJE "
 "TÁTO LICENCIA OKREM TOHTO VYLÚČENIA ZODPOVEDNOSTI; A"
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
-"V ŽIADNOM PRÍPADE A ZA ŽIADNYCH PRÁVNYCH TEÓRIÍ, ČI ÚMYSELNÉ UBLÍŽENIE (AJ Z"
-" NEDBANLIVOSTI), ZMLUVOU, ALEBO INAK SA AUTOR, POČIATOČNÝ SPISOVATEĽ, VŠETCI"
-" PRISPIEVATELIA, DISTRIBÚTOR DOKUMENTU ALEBO JEHO MODIFIKOVANEJ VERZIE, "
-"ALEBO DODÁVATEĽ AKEJKOĽVEK STRANY,  NEZODPOVEDÁ ŽIADNEJ OSOBE ZA AKÉKOĽVEK "
-"PRIAME, NEPRIAME, ZVLÁŠTNE, NÁHODNÉ, ALEBO VYPLÝVAJÚCE ŠKODY AKÉHOKOĽVEK "
-"CHARAKTERU,  AKO OBMEDZENIA, STRATA DOBRÉHO MENA, PRERUŠENIE PRÁCE, ZLYHANIE"
-" POČÍTAČA ČI PORUCHY, ALEBO AKÉKOĽVEK INÉ ŠKODY A STRATY KTORÉ VZNIKNÚ, "
-"ALEBO SA BUDÚ VZŤAHOVAŤ NA POUŽÍVANIE TOHOTO DOKUMENTU ČI ZMENENÝCH VERZIÍ "
-"TOHTO DOKUMENTU AJ KEĎ STRANA BOLA INFORMOVANÁ O MOŽNOSTI TAKÝCHTO ŠKÔD."
+"V ŽIADNOM PRÍPADE A ZA ŽIADNYCH PRÁVNYCH TEÓRIÍ, ČI ÚMYSELNÉ UBLÍŽENIE (AJ Z "
+"NEDBANLIVOSTI), ZMLUVOU, ALEBO INAK SA AUTOR, POČIATOČNÝ SPISOVATEĽ, VŠETCI "
+"PRISPIEVATELIA, DISTRIBÚTOR DOKUMENTU ALEBO JEHO MODIFIKOVANEJ VERZIE, ALEBO "
+"DODÁVATEĽ AKEJKOĽVEK STRANY,  NEZODPOVEDÁ ŽIADNEJ OSOBE ZA AKÉKOĽVEK PRIAME, "
+"NEPRIAME, ZVLÁŠTNE, NÁHODNÉ, ALEBO VYPLÝVAJÚCE ŠKODY AKÉHOKOĽVEK "
+"CHARAKTERU,  AKO OBMEDZENIA, STRATA DOBRÉHO MENA, PRERUŠENIE PRÁCE, ZLYHANIE "
+"POČÍTAČA ČI PORUCHY, ALEBO AKÉKOĽVEK INÉ ŠKODY A STRATY KTORÉ VZNIKNÚ, ALEBO "
+"SA BUDÚ VZŤAHOVAŤ NA POUŽÍVANIE TOHOTO DOKUMENTU ČI ZMENENÝCH VERZIÍ TOHTO "
+"DOKUMENTU AJ KEĎ STRANA BOLA INFORMOVANÁ O MOŽNOSTI TAKÝCHTO ŠKÔD."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:28

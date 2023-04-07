@@ -1,9 +1,9 @@
-# 
+#
 # Translators:
 # Elvis M. Lukšić <meluksic@yahoo.com>, 2020
 # Ivica  Kolić <ikoli@yahoo.com>, 2020
 # Radovan Gundulić <radovangaming21@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -11,11 +11,12 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 12:22+0000\n"
 "Last-Translator: Radovan Gundulić <radovangaming21@gmail.com>, 2020\n"
 "Language-Team: Croatian (https://www.transifex.com/cafe/teams/13566/hr/)\n"
+"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hr\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -38,7 +39,8 @@ msgstr ""
 "  Bojan Sudarević https://launchpad.net/~sudarevic\n"
 "  Danijel Šnajder https://launchpad.net/~phantomlord\n"
 "  Krešo Kunjas https://launchpad.net/~deresh\n"
-"  Launchpad Translations Administrators https://launchpad.net/~rosetta-admins\n"
+"  Launchpad Translations Administrators https://launchpad.net/~rosetta-"
+"admins\n"
 "  Miroslav Sabljić https://launchpad.net/~civija\n"
 "  Valentin Vidic https://launchpad.net/~vvidic\n"
 "  alja https://launchpad.net/~alja\n"
@@ -108,12 +110,12 @@ msgstr ""
 #: C/index.docbook:70
 msgid ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Project</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME Project</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 msgstr ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Project</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME Project</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:98
@@ -123,8 +125,8 @@ msgstr "CAFE dokumentacijski tim"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:94
 msgid ""
-"<revnumber>Panel Trash V2.12</revnumber> <date>July 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Panel Trash V2.12</revnumber> <date>July 2015</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -135,8 +137,8 @@ msgstr "Davyd Madeley"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:102
 msgid ""
-"<revnumber>Panel Trash 2.10</revnumber> <date>March 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Panel Trash 2.10</revnumber> <date>March 2005</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -147,8 +149,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:110
 msgid ""
-"<revnumber>Panel Trash V2.8</revnumber> <date>July 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Panel Trash V2.8</revnumber> <date>July 2004</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: articleinfo/releaseinfo
@@ -165,8 +167,8 @@ msgstr "Povratne informacije"
 #: C/index.docbook:123
 msgid ""
 "To report a bug or make a suggestion regarding the Panel Trash applet or "
-"this manual, follow the directions in the <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"this manual, follow the directions in the <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -182,8 +184,8 @@ msgstr "Uvod"
 #. (itstool) path: sect1/para
 #: C/index.docbook:133
 msgid ""
-"The <application>Panel Trash</application> applet lets you manage your Trash"
-" from the panel."
+"The <application>Panel Trash</application> applet lets you manage your Trash "
+"from the panel."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -201,8 +203,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:142
 msgid ""
-"To add the <application>Panel Trash</application> applet to a panel, perform"
-" the following steps:"
+"To add the <application>Panel Trash</application> applet to a panel, perform "
+"the following steps:"
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -230,8 +232,8 @@ msgstr "Klikni <guibutton>Dodaj</guibutton>."
 #. (itstool) path: sect2/para
 #: C/index.docbook:165
 msgid ""
-"For more information on working with the panel, see the <ulink type=\"help\""
-" url=\"help:cafe-user-guide/panels\">Desktop User Guide</ulink>."
+"For more information on working with the panel, see the <ulink type=\"help\" "
+"url=\"help:cafe-user-guide/panels\">Desktop User Guide</ulink>."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -276,9 +278,9 @@ msgstr "Pražnjenje smeća"
 #. (itstool) path: sect2/para
 #: C/index.docbook:191
 msgid ""
-"To permanently delete all the items in the Trash, right-click on the applet,"
-" then choose <menuchoice> <guimenuitem>Empty Trash</guimenuitem> "
-"</menuchoice>."
+"To permanently delete all the items in the Trash, right-click on the applet, "
+"then choose <menuchoice> <guimenuitem>Empty Trash</guimenuitem> </"
+"menuchoice>."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -305,8 +307,8 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 
@@ -315,8 +317,8 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 
 #. (itstool) path: legalnotice/para
@@ -358,16 +360,16 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 
 #. (itstool) path: legalnotice/para

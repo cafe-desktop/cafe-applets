@@ -1,10 +1,10 @@
-# 
+#
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # clefebvre <clement.lefebvre@linuxmint.com>, 2020
 # Moo, 2020
 # Džiugas Grėbliūnas <dziugas.grebliunas@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -12,11 +12,13 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 12:22+0000\n"
 "Last-Translator: Džiugas Grėbliūnas <dziugas.grebliunas@gmail.com>, 2020\n"
 "Language-Team: Lithuanian (https://www.transifex.com/cafe/teams/13566/lt/)\n"
+"Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: lt\n"
-"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < 11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? 1 : n % 1 != 0 ? 2: 3);\n"
+"Plural-Forms: nplurals=4; plural=(n % 10 == 1 && (n % 100 > 19 || n % 100 < "
+"11) ? 0 : (n % 10 >= 2 && n % 10 <=9) && (n % 100 > 19 || n % 100 < 11) ? "
+"1 : n % 1 != 0 ? 2: 3);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -99,12 +101,12 @@ msgstr ""
 #: C/index.docbook:70
 msgid ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Project</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME Project</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 msgstr ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME projektas</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME projektas</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:98
@@ -114,11 +116,11 @@ msgstr "CAFE dokumentacijos komanda"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:94
 msgid ""
-"<revnumber>Panel Trash V2.12</revnumber> <date>July 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Panel Trash V2.12</revnumber> <date>July 2015</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Skydelio šiukšlinė V2.12</revnumber> <date>2015 liepa</date> "
-"<_:revdescription-1/>"
+"<revnumber>Skydelio šiukšlinė V2.12</revnumber> <date>2015 liepa</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:106
@@ -128,11 +130,11 @@ msgstr "Davyd Madeley"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:102
 msgid ""
-"<revnumber>Panel Trash 2.10</revnumber> <date>March 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Panel Trash 2.10</revnumber> <date>March 2005</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Skydelio šiukšlinė 2.10</revnumber> <date>2005 kovas</date> "
-"<_:revdescription-1/>"
+"<revnumber>Skydelio šiukšlinė 2.10</revnumber> <date>2005 kovas</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:114
@@ -142,11 +144,11 @@ msgstr "Michiel Sikkes"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:110
 msgid ""
-"<revnumber>Panel Trash V2.8</revnumber> <date>July 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Panel Trash V2.8</revnumber> <date>July 2004</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Skydelio šiukšlinė V2.8</revnumber> <date>2004 liepa</date> "
-"<_:revdescription-1/>"
+"<revnumber>Skydelio šiukšlinė V2.8</revnumber> <date>2004 liepa</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: articleinfo/releaseinfo
 #: C/index.docbook:119
@@ -162,12 +164,12 @@ msgstr "Atsiliepimai"
 #: C/index.docbook:123
 msgid ""
 "To report a bug or make a suggestion regarding the Panel Trash applet or "
-"this manual, follow the directions in the <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"this manual, follow the directions in the <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 "Pranešimui apie programos klaidą arba pasiūlymams dėl Skydelio šiukšlinės "
-"įtaiso ar šio žinyno, sekite nuorodas <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">CAFE atsako puslapyje</ulink>."
+"įtaiso ar šio žinyno, sekite nuorodas <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">CAFE atsako puslapyje</ulink>."
 
 #. (itstool) path: article/indexterm
 #: C/index.docbook:127
@@ -182,8 +184,8 @@ msgstr "Įžanga"
 #. (itstool) path: sect1/para
 #: C/index.docbook:133
 msgid ""
-"The <application>Panel Trash</application> applet lets you manage your Trash"
-" from the panel."
+"The <application>Panel Trash</application> applet lets you manage your Trash "
+"from the panel."
 msgstr ""
 "<application>Skydelio šiukšlinės</application> įtaisas leidžia valdyti "
 "šiukšlinę iš skydelio. "
@@ -205,8 +207,8 @@ msgstr "Pridėti skydelio šiukšlinę į skydelį"
 #. (itstool) path: sect2/para
 #: C/index.docbook:142
 msgid ""
-"To add the <application>Panel Trash</application> applet to a panel, perform"
-" the following steps:"
+"To add the <application>Panel Trash</application> applet to a panel, perform "
+"the following steps:"
 msgstr ""
 "Kad pridėtumėte <application>skydelio šiukšlinės</application> įtaisą į "
 "skydelį, atlikite šiuos žingsnius;"
@@ -240,11 +242,11 @@ msgstr "Spauskite <guibutton>pridėti</guibutton>."
 #. (itstool) path: sect2/para
 #: C/index.docbook:165
 msgid ""
-"For more information on working with the panel, see the <ulink type=\"help\""
-" url=\"help:cafe-user-guide/panels\">Desktop User Guide</ulink>."
+"For more information on working with the panel, see the <ulink type=\"help\" "
+"url=\"help:cafe-user-guide/panels\">Desktop User Guide</ulink>."
 msgstr ""
-"Daugiau informacijos apie darbą su šiuo skydeliu rasite <ulink type=\"help\""
-" url=\"help:cafe-user-guide/panels\">Darbalaukio naudotojo gide</ulink>."
+"Daugiau informacijos apie darbą su šiuo skydeliu rasite <ulink type=\"help\" "
+"url=\"help:cafe-user-guide/panels\">Darbalaukio naudotojo gide</ulink>."
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:171
@@ -281,8 +283,8 @@ msgid ""
 "To move items to the Trash, drag them from the file manager to the "
 "<application>Panel Trash</application> applet."
 msgstr ""
-"Kad pekeltumėte elementus į šiušlinę, nutempkite juos iš failų tvarkytuvės į"
-" <application>Skydelio šiukšlinės</application> įtaisą."
+"Kad pekeltumėte elementus į šiušlinę, nutempkite juos iš failų tvarkytuvės į "
+"<application>Skydelio šiukšlinės</application> įtaisą."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:190
@@ -292,9 +294,9 @@ msgstr "Išvaloma šiukšlinė"
 #. (itstool) path: sect2/para
 #: C/index.docbook:191
 msgid ""
-"To permanently delete all the items in the Trash, right-click on the applet,"
-" then choose <menuchoice> <guimenuitem>Empty Trash</guimenuitem> "
-"</menuchoice>."
+"To permanently delete all the items in the Trash, right-click on the applet, "
+"then choose <menuchoice> <guimenuitem>Empty Trash</guimenuitem> </"
+"menuchoice>."
 msgstr ""
 "Kad negrįžtamai ištrintumėte visus šiukšlinės elementus, dešiniuoju pelės "
 "klavišu paspauskite įtaisą, tada pasirinkite <menuchoice> "
@@ -312,9 +314,9 @@ msgid ""
 "<guimenuitem>Open Trash</guimenuitem> </menuchoice>. The Trash window opens "
 "in <application>Caja</application> file manager."
 msgstr ""
-"Kad atvertumėte šiukšlinę, dešiniuoju pelės klavišu paspauskite įtaisą, tada"
-" pasirinkite <menuchoice> <guimenuitem>Atverti šiukšlinę</guimenuitem> "
-"</menuchoice>.  Šiukšlinės langas atsidaro <application>Caja</application> "
+"Kad atvertumėte šiukšlinę, dešiniuoju pelės klavišu paspauskite įtaisą, tada "
+"pasirinkite <menuchoice> <guimenuitem>Atverti šiukšlinę</guimenuitem> </"
+"menuchoice>.  Šiukšlinės langas atsidaro <application>Caja</application> "
 "failų tvarkytuvėje."
 
 #. (itstool) path: para/ulink
@@ -328,8 +330,8 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Suteikiamas leidimas kopijuoti, platinti ir/arba modifikuoti šį dokumentą "
@@ -344,11 +346,11 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
-"Šis žinynas yra CAFE žinynų rinkinio, platinamo GFDL sąlygomis, dalis. Jeigu"
-" norite dalintis šiuo žinynu atskirai nuo šio rinkinio, galite tą daryti "
+"Šis žinynas yra CAFE žinynų rinkinio, platinamo GFDL sąlygomis, dalis. Jeigu "
+"norite dalintis šiuo žinynu atskirai nuo šio rinkinio, galite tą daryti "
 "pridėdami šios licencijos kopiją, kaip nurodyta 6 šios licencijos dalyje."
 
 #. (itstool) path: legalnotice/para
@@ -360,8 +362,8 @@ msgid ""
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
-"Nemažai įmonių, jų produktų ir paslaugų pavadinimai laikomi prekės ženklais."
-" Kuomet šie pavadinimai pasirodo bet kur CAFE dokumentacijoje, ir CAFE "
+"Nemažai įmonių, jų produktų ir paslaugų pavadinimai laikomi prekės ženklais. "
+"Kuomet šie pavadinimai pasirodo bet kur CAFE dokumentacijoje, ir CAFE "
 "dokumentacijos projekto nariai atkreipia į juos dėmesį, šie pavadinimai "
 "radomi didžiosiomis raidėmis arba pradedami didžiąja raide."
 
@@ -382,8 +384,8 @@ msgid ""
 msgstr ""
 "DOKUMENTAS PATEIKIAMAS TOKS, KOKS YRA, BE BET KOKIOS RŪŠIES GARANTIJŲ, "
 "IŠREIKŠTŲ AR PAREIKŠTŲ, NERIBOTAI LAIKANT, KAD DOKUMENTAS AR JO MODIFIKUOTA "
-"VERSIJA YRA BE KLAIDŲ, TINKAMA KONKREČIAI PASKIRČIAI ARBA NEPAŽEIDŽIANTI TAM"
-" TIKRŲ TEISIŲ. VISA ŠIO DOKUMENTO  AR JO MODIFIKUOTOS VERSIJOS KOKYBĖS, "
+"VERSIJA YRA BE KLAIDŲ, TINKAMA KONKREČIAI PASKIRČIAI ARBA NEPAŽEIDŽIANTI TAM "
+"TIKRŲ TEISIŲ. VISA ŠIO DOKUMENTO  AR JO MODIFIKUOTOS VERSIJOS KOKYBĖS, "
 "TIKSLUMO IR VEIKIMO PRIKLAUSO JUMS. ESANT BET KOKIAM ŠIO DOKUMENTO AR JO "
 "MODIFIKUOTOS VERSIJOS TRŪKUMUI, JŪS (NE PIRMINIS RAŠYTOJAS, AUTORIUS AR "
 "KITAS PAGALBININKAS) PRISIICAFE REIKIAMO APTARNAVIMO, REMONTO AR TAISYMO "
@@ -394,26 +396,26 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "ESANT JOKIOMS APLINKYMBĖMS IR JOKIAI TEISINEI TEORIJAI AR DELIKTUI "
 "(ĮSKAITANT APLAIDUMĄ), SUTARČIAI AR KITAIS ATŽVILGIAIS, ŠIO DOKUMETNO AR JO "
 "MODIFIKUOTOS VERSIJOS AUTORIUS, PRADINIS RAŠYTOJAS, BET KURIS PAGALBININKAS "
-"ARBA BET KURIS PLATINTOJAS NĖRA ATSAKINGAS BET KURIAM ASMENIUI UŽ BET KOKIUS"
-" TIESIOGINIUS, NETIESIOGINIUS, YPATINGUS, ATSITIKTINIUS AR PASEKMINIUS "
+"ARBA BET KURIS PLATINTOJAS NĖRA ATSAKINGAS BET KURIAM ASMENIUI UŽ BET KOKIUS "
+"TIESIOGINIUS, NETIESIOGINIUS, YPATINGUS, ATSITIKTINIUS AR PASEKMINIUS "
 "NUOSTOLIUS, ĮSKAITANT DARBO SUSTOJIMĄ, KOMPIUTERIO GEDIMUS AR BET KURIUOS "
 "KITUS NUOSTOLIUS ARBA PRARADIMUS, KYLANČIUS IŠ ARBA SUSIJUSIUS SU ŠIO "
-"DOKUMENTO AR JO MODIFIKUOTŲ VERSIJŲ NAUDOJIMU, NET JEI IR VIENA IŠ PUSIŲ YRA"
-" INFORMUOTA APIE TOKIŲ NUOSTOLIŲ GALIMYBĘ."
+"DOKUMENTO AR JO MODIFIKUOTŲ VERSIJŲ NAUDOJIMU, NET JEI IR VIENA IŠ PUSIŲ YRA "
+"INFORMUOTA APIE TOKIŲ NUOSTOLIŲ GALIMYBĘ."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:28
@@ -423,5 +425,5 @@ msgid ""
 "<_:orderedlist-1/>"
 msgstr ""
 "DOKUMENTAS IR MODIFIKUOTOS JO VERSIJOS PATEIKIAMOS GNU LAISVOSIOS "
-"DOKUMENTACIJOS LICENCIJOS SĄLYGOMIS SU TOLESNIU SUPRATIMU, KAD: "
-"<_:orderedlist-1/>"
+"DOKUMENTACIJOS LICENCIJOS SĄLYGOMIS SU TOLESNIU SUPRATIMU, KAD: <_:"
+"orderedlist-1/>"

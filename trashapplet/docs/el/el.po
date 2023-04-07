@@ -1,4 +1,4 @@
-# 
+#
 # Translators:
 # anvo <fragos.george@hotmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
@@ -6,7 +6,7 @@
 # Alexandros Kapetanios <alexandros@gnugr.org>, 2020
 # kosmmart <kosmmartak@gmail.com>, 2020
 # TheDimitris15, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 12:22+0000\n"
 "Last-Translator: TheDimitris15, 2020\n"
 "Language-Team: Greek (https://www.transifex.com/cafe/teams/13566/el/)\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -90,8 +90,8 @@ msgstr ""
 #: C/index.docbook:70
 msgid ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Project</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME Project</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -102,8 +102,8 @@ msgstr "Ομάδα τεκμηρίωσης CAFE"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:94
 msgid ""
-"<revnumber>Panel Trash V2.12</revnumber> <date>July 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Panel Trash V2.12</revnumber> <date>July 2015</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -114,8 +114,8 @@ msgstr "Davyd Madeley"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:102
 msgid ""
-"<revnumber>Panel Trash 2.10</revnumber> <date>March 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Panel Trash 2.10</revnumber> <date>March 2005</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -126,8 +126,8 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:110
 msgid ""
-"<revnumber>Panel Trash V2.8</revnumber> <date>July 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Panel Trash V2.8</revnumber> <date>July 2004</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: articleinfo/releaseinfo
@@ -144,8 +144,8 @@ msgstr "Ανάδραση"
 #: C/index.docbook:123
 msgid ""
 "To report a bug or make a suggestion regarding the Panel Trash applet or "
-"this manual, follow the directions in the <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"this manual, follow the directions in the <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -161,8 +161,8 @@ msgstr "Εισαγωγή"
 #. (itstool) path: sect1/para
 #: C/index.docbook:133
 msgid ""
-"The <application>Panel Trash</application> applet lets you manage your Trash"
-" from the panel."
+"The <application>Panel Trash</application> applet lets you manage your Trash "
+"from the panel."
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -180,8 +180,8 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:142
 msgid ""
-"To add the <application>Panel Trash</application> applet to a panel, perform"
-" the following steps:"
+"To add the <application>Panel Trash</application> applet to a panel, perform "
+"the following steps:"
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -192,8 +192,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:150
 msgid "Choose <guimenuitem>Add to Panel</guimenuitem>."
-msgstr ""
-"Επιλέξτε <guimenuitem>Προσθήκη στον Πίνακα Εφαρμογών...</guimenuitem>."
+msgstr "Επιλέξτε <guimenuitem>Προσθήκη στον Πίνακα Εφαρμογών...</guimenuitem>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:155
@@ -210,8 +209,8 @@ msgstr "Πατήστε <guibutton>Προσθήκη</guibutton>."
 #. (itstool) path: sect2/para
 #: C/index.docbook:165
 msgid ""
-"For more information on working with the panel, see the <ulink type=\"help\""
-" url=\"help:cafe-user-guide/panels\">Desktop User Guide</ulink>."
+"For more information on working with the panel, see the <ulink type=\"help\" "
+"url=\"help:cafe-user-guide/panels\">Desktop User Guide</ulink>."
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -256,9 +255,9 @@ msgstr "Άδειασμα απορριμμάτων..."
 #. (itstool) path: sect2/para
 #: C/index.docbook:191
 msgid ""
-"To permanently delete all the items in the Trash, right-click on the applet,"
-" then choose <menuchoice> <guimenuitem>Empty Trash</guimenuitem> "
-"</menuchoice>."
+"To permanently delete all the items in the Trash, right-click on the applet, "
+"then choose <menuchoice> <guimenuitem>Empty Trash</guimenuitem> </"
+"menuchoice>."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -285,8 +284,8 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Επιτρέπεται η αντιγραφή, η διανομή και / η τροποποίηση αυτού του εγγράφου "
@@ -302,13 +301,13 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του CAFE όπως "
 "διανέμεται υπό τους όρους του GFDL. Εάν επιθυμείτε να διανείμετε αυτή την "
-"τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση"
-" συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 "
+"τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση "
+"συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 "
 "της άδειας."
 
 #. (itstool) path: legalnotice/para
@@ -347,28 +346,28 @@ msgstr ""
 "ΑΥΤΗΣ ΑΝΗΚΕΙ ΣΕ ΕΣΑΣ. ΕΑΝ Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ Ή ΠΑΡΑΛΛΑΓΗ ΑΥΤΗΣ ΕΙΝΑΙ ΛΑΘΟΣ "
 "ΚΑΤΑ ΚΑΠΟΙΟ ΤΡΟΠΟ ΕΣΕΙΣ ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΗΝ ΕΥΘΥΝΗ ΤΗΣ ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ "
 "ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. "
-"ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ"
-" ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ."
+"ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ "
+"ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ."
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή "
 "ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ "
 "ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ "
-"ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ"
-" ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ "
+"ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ "
+"ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ "
 "ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ."
 
 #. (itstool) path: legalnotice/para
@@ -378,6 +377,6 @@ msgid ""
 "OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
 "<_:orderedlist-1/>"
 msgstr ""
-"ΤΟ ΕΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΤΟΥ ΕΓΓΡΑΦΟΥ ΠΑΡΕΧΟΝΤΑΙ ΜΕ ΤΟΥΣ ΟΡΟΥΣ"
-" ΤΗΣ ΑΔΕΙΑΣ ΤΕΚΜΗΡΙΩΣΗ ΕΛΕΥΘΕΡΟΥ ΛΟΓΙΣΜΙΚΟΥ GNU ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΚΑΤΑΝΟΜΗ "
+"ΤΟ ΕΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΤΟΥ ΕΓΓΡΑΦΟΥ ΠΑΡΕΧΟΝΤΑΙ ΜΕ ΤΟΥΣ ΟΡΟΥΣ "
+"ΤΗΣ ΑΔΕΙΑΣ ΤΕΚΜΗΡΙΩΣΗ ΕΛΕΥΘΕΡΟΥ ΛΟΓΙΣΜΙΚΟΥ GNU ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΚΑΤΑΝΟΜΗ "
 "ΟΤΙ: <_:orderedlist-1/>"

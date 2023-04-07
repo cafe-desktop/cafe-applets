@@ -1,4 +1,4 @@
-# 
+#
 # Translators:
 # Carlos Moreira, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
@@ -8,7 +8,7 @@
 # Manuela Silva <manuelarodsilva@gmail.com>, 2020
 # José Vieira <jvieira33@sapo.pt>, 2020
 # Hugo Carvalho <hugokarvalho@hotmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -16,10 +16,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 12:22+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>, 2020\n"
 "Language-Team: Portuguese (https://www.transifex.com/cafe/teams/13566/pt/)\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -94,12 +94,12 @@ msgstr ""
 #: C/index.docbook:70
 msgid ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Project</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME Project</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 msgstr ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>Projeto GNOME</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>Projeto GNOME</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:98
@@ -109,11 +109,11 @@ msgstr "Equipa de Documentação do CAFE"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:94
 msgid ""
-"<revnumber>Panel Trash V2.12</revnumber> <date>July 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Panel Trash V2.12</revnumber> <date>July 2015</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Painel Lixo V2.12</revnumber> <date>Julho de 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Painel Lixo V2.12</revnumber> <date>Julho de 2015</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:106
@@ -123,11 +123,11 @@ msgstr "Davyd Madeley"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:102
 msgid ""
-"<revnumber>Panel Trash 2.10</revnumber> <date>March 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Panel Trash 2.10</revnumber> <date>March 2005</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Painel Lixo 2.10</revnumber> <date>Março de 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Painel Lixo 2.10</revnumber> <date>Março de 2005</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:114
@@ -137,11 +137,11 @@ msgstr "Michiel Sikkes"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:110
 msgid ""
-"<revnumber>Panel Trash V2.8</revnumber> <date>July 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Panel Trash V2.8</revnumber> <date>July 2004</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Painel Lixo V2.8</revnumber> <date>Julho de 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Painel Lixo V2.8</revnumber> <date>Julho de 2004</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: articleinfo/releaseinfo
 #: C/index.docbook:119
@@ -157,12 +157,12 @@ msgstr "Opinião"
 #: C/index.docbook:123
 msgid ""
 "To report a bug or make a suggestion regarding the Panel Trash applet or "
-"this manual, follow the directions in the <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"this manual, follow the directions in the <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 "Para reportar um erro ou fazer uma sugestão sobre a mini-aplicação Painel "
-"Lixo deste manual, siga as indicações na <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">Página de Opiniões do CAFE</ulink>."
+"Lixo deste manual, siga as indicações na <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">Página de Opiniões do CAFE</ulink>."
 
 #. (itstool) path: article/indexterm
 #: C/index.docbook:127
@@ -177,11 +177,11 @@ msgstr "Introdução"
 #. (itstool) path: sect1/para
 #: C/index.docbook:133
 msgid ""
-"The <application>Panel Trash</application> applet lets you manage your Trash"
-" from the panel."
+"The <application>Panel Trash</application> applet lets you manage your Trash "
+"from the panel."
 msgstr ""
-"A mini-aplicação <application>Painel Lixo</application> permite gerir o Lixo"
-" do painel."
+"A mini-aplicação <application>Painel Lixo</application> permite gerir o Lixo "
+"do painel."
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:136
@@ -201,8 +201,8 @@ msgstr "Adicionar o Painel Lixo a um Painel"
 #. (itstool) path: sect2/para
 #: C/index.docbook:142
 msgid ""
-"To add the <application>Panel Trash</application> applet to a panel, perform"
-" the following steps:"
+"To add the <application>Panel Trash</application> applet to a panel, perform "
+"the following steps:"
 msgstr ""
 "Para adicionar a mini-aplicação <application>Painel Lixo</application> a um "
 "painel, realize os seguintes passos:"
@@ -236,8 +236,8 @@ msgstr "Clique em <guibutton>Adicionar</guibutton>."
 #. (itstool) path: sect2/para
 #: C/index.docbook:165
 msgid ""
-"For more information on working with the panel, see the <ulink type=\"help\""
-" url=\"help:cafe-user-guide/panels\">Desktop User Guide</ulink>."
+"For more information on working with the panel, see the <ulink type=\"help\" "
+"url=\"help:cafe-user-guide/panels\">Desktop User Guide</ulink>."
 msgstr ""
 "Para mais informações sobre o funcionamento do painel, veja o <ulink "
 "type=\"help\" url=\"help:cafe-user-guide/panels\">Guia de Utilização do "
@@ -289,9 +289,9 @@ msgstr "A Esvaziar o Lixo"
 #. (itstool) path: sect2/para
 #: C/index.docbook:191
 msgid ""
-"To permanently delete all the items in the Trash, right-click on the applet,"
-" then choose <menuchoice> <guimenuitem>Empty Trash</guimenuitem> "
-"</menuchoice>."
+"To permanently delete all the items in the Trash, right-click on the applet, "
+"then choose <menuchoice> <guimenuitem>Empty Trash</guimenuitem> </"
+"menuchoice>."
 msgstr ""
 "Para eliminar permanentemente todos os itens no Lixo, clique com o botão "
 "direito do rato na mini-aplicação e depois escolha <menuchoice> "
@@ -310,9 +310,9 @@ msgid ""
 "in <application>Caja</application> file manager."
 msgstr ""
 "Para abrir o Lixo, clique com o botão direito do rato na mini-aplicação e "
-"depois escolha <menuchoice> <guimenuitem>Abrir Lixo</guimenuitem> "
-"</menuchoice>. A janela do Lixo abre no gestor de ficheiros "
-"<application>Caja</application>."
+"depois escolha <menuchoice> <guimenuitem>Abrir Lixo</guimenuitem> </"
+"menuchoice>. A janela do Lixo abre no gestor de ficheiros <application>Caja</"
+"application>."
 
 #. (itstool) path: para/ulink
 #: C/legal.xml:9
@@ -325,8 +325,8 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "É dada permissão para copiar, distribuir e/ou alterar este documento sob os "
@@ -341,8 +341,8 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Este manual é parte de uma coleção de manuais CAFE distribuídos sob a GFDL. "
 "Se desejar distribuir este manual separadamente da coleção, poderá fazê-lo "
@@ -396,16 +396,16 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "SOB QUAISQUER CIRCUNSTÂNCIAS E TEORIA LEGAL, QUER SEJA POR ERRO (INCLUINDO "
 "NEGLIGÊNCIA), CONTRATO, OU QUALQUER OUTRO MOTIVO, PODERÁ O AUTOR, ESCRITOR "
@@ -427,5 +427,5 @@ msgid ""
 "<_:orderedlist-1/>"
 msgstr ""
 "O DOCUMENTO E VERSÕES MODIFICADAS DO DOCUMENTO SÃO DISPONIBILIZADAS NOS "
-"TERMOS DA LICENÇA DE DOCUMENTAÇÃO LIVRE GNU (GNU FREE DOCUMENTATION LICENSE)"
-" COM O SUBSEQUENTE ENTENDIMENTO DE QUE: <_:orderedlist-1/>"
+"TERMOS DA LICENÇA DE DOCUMENTAÇÃO LIVRE GNU (GNU FREE DOCUMENTATION LICENSE) "
+"COM O SUBSEQUENTE ENTENDIMENTO DE QUE: <_:orderedlist-1/>"
