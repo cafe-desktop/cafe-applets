@@ -1,4 +1,4 @@
-# 
+#
 # Translators:
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
@@ -12,7 +12,7 @@
 # Stéphane PETRUS <stephane.petrus@posteo.net>, 2020
 # Laurent Napias, 2020
 # Jerom Turible <jeromet9208@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -20,10 +20,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 11:24+0000\n"
 "Last-Translator: Jerom Turible <jeromet9208@gmail.com>, 2020\n"
 "Language-Team: French (https://www.transifex.com/cafe/teams/13566/fr/)\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -56,8 +56,8 @@ msgid ""
 "Battery Charge Monitor shows the current charge of the battery and provides "
 "notifications if charge drops below a certain threshold."
 msgstr ""
-"Le moniteur de charge de batterie affiche le niveau de charge de la batterie"
-" et vous avertit lorsque celui-ci passe en dessous d'un certain seuil."
+"Le moniteur de charge de batterie affiche le niveau de charge de la batterie "
+"et vous avertit lorsque celui-ci passe en dessous d'un certain seuil."
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:27
@@ -128,8 +128,8 @@ msgstr ""
 #: C/index.docbook:88
 msgid ""
 "<firstname>Jorgen </firstname> <surname> Pehrson</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> <address> "
-"<email>jp@spektr.eu.org</email> </address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address> <email>jp@spektr.eu."
+"org</email> </address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
@@ -154,8 +154,8 @@ msgstr "Équipe de documentation CAFE"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:128
 msgid ""
-"<revnumber>Version 2.13</revnumber> <date>July 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.13</revnumber> <date>July 2015</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -166,15 +166,15 @@ msgstr "Davyd Madeley"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:136
 msgid ""
-"<revnumber>Version 2.12</revnumber> <date>September 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.12</revnumber> <date>September 2005</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:143
 msgid ""
-"<revnumber>Version 2.10</revnumber> <date>March 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.10</revnumber> <date>March 2005</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -185,8 +185,8 @@ msgstr "Angela Boyle"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:150
 msgid ""
-"<revnumber>Version 2.8</revnumber> <date>September 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.8</revnumber> <date>September 2004</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -280,8 +280,8 @@ msgstr ""
 #: C/index.docbook:221
 msgid ""
 "The <application>Battery Charge Monitor</application> shows the status of "
-"any batteries in your laptop computer. The monitor can tell you the capacity"
-" remaining both visually and as a percentage, as well as offer you an "
+"any batteries in your laptop computer. The monitor can tell you the capacity "
+"remaining both visually and as a percentage, as well as offer you an "
 "esticafe of the time remaining based off the current usage rate."
 msgstr ""
 "L'applet <application>moniteur de charge de batterie</application> affiche "
@@ -298,8 +298,8 @@ msgstr "Ajout du moniteur de charge de batterie à un tableau de bord"
 #. (itstool) path: sect2/para
 #: C/index.docbook:230
 msgid ""
-"To add <application>Battery Charge Monitor</application> to a panel, perform"
-" the following steps:"
+"To add <application>Battery Charge Monitor</application> to a panel, perform "
+"the following steps:"
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -330,9 +330,9 @@ msgid ""
 "The layout of the <application>Battery Charge Monitor</application> applet "
 "varies depending on the size and type of panel in which the applet resides."
 msgstr ""
-"L'agencement de l'applet <application>moniteur de charge de "
-"batterie</application> varie en fonction de la taille et du type de tableau "
-"de bord dans lequel il se trouve."
+"L'agencement de l'applet <application>moniteur de charge de batterie</"
+"application> varie en fonction de la taille et du type de tableau de bord "
+"dans lequel il se trouve."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:264
@@ -342,8 +342,8 @@ msgstr "Moteurs de gestion d'alimentation"
 #. (itstool) path: sect2/para
 #: C/index.docbook:266
 msgid ""
-"The battery monitor supports a number of power management backends. If it is"
-" available, the monitor will attempt to use the freedesktop.org <ulink "
+"The battery monitor supports a number of power management backends. If it is "
+"available, the monitor will attempt to use the freedesktop.org <ulink "
 "url=\"http://upower.freedesktop.org/\">upower</ulink> interface. If it is "
 "unavailable or unsupported on your platform, it will fall back to the "
 "freedesktop.org <ulink url=\"http://freedesktop.org/Software/hal\">HAL "
@@ -359,11 +359,11 @@ msgid ""
 "hardware. If the battery monitor is misreporting information from your "
 "battery see <xref linkend=\"battstat-troubleshooting\"/>."
 msgstr ""
-"Tous les moteurs de gestion d'alimentation ne sont pas disponibles pour tous"
-" les constructeurs, et certains constructeurs rajoutent leur propre moteur "
+"Tous les moteurs de gestion d'alimentation ne sont pas disponibles pour tous "
+"les constructeurs, et certains constructeurs rajoutent leur propre moteur "
 "additionnel pour du matériel et des plateformes spécifiques. Si le moniteur "
-"de batterie rapporte des informations fausses pour votre batterie, consultez"
-" <xref linkend=\"battstat-troubleshooting\"/>."
+"de batterie rapporte des informations fausses pour votre batterie, consultez "
+"<xref linkend=\"battstat-troubleshooting\"/>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:285
@@ -386,8 +386,8 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:294
 msgid ""
-"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">CAFE mailing "
-"lists</ulink>"
+"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">CAFE mailing lists</"
+"ulink>"
 msgstr ""
 
 #. (itstool) path: sect1/title
@@ -426,9 +426,9 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:313
 msgid ""
-"<imageobject><imagedata fileref=\"figures/context-menu.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Battery Charge Monitor "
-"context menu</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/context-menu.png\" format=\"PNG\"/"
+"> </imageobject> <textobject> <phrase>Battery Charge Monitor context menu</"
+"phrase> </textobject>"
 msgstr ""
 
 #. (itstool) path: figure/title
@@ -452,8 +452,8 @@ msgstr ""
 #: C/index.docbook:326
 msgid ""
 "<imageobject><imagedata fileref=\"figures/battstat-preferences.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Preferences "
-"Dialog</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Preferences Dialog</"
+"phrase> </textobject>"
 msgstr ""
 
 #. (itstool) path: varlistentry/term
@@ -475,8 +475,8 @@ msgstr ""
 #: C/index.docbook:350
 msgid ""
 "<imageobject><imagedata fileref=\"figures/battstat-applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Compact View</phrase> "
-"</textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Compact View</phrase> </"
+"textobject>"
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -545,10 +545,10 @@ msgid ""
 "remaining in the battery."
 msgstr ""
 "Cocher cette option affichera l'une des deux informations. "
-"<guilabel>Afficher le temps restant</guilabel> indique le nombre d'heures et"
-" de minutes restantes avant que la batterie ne soit complètement déchargée "
-"ou rechargée. <guilabel>Afficher le pourcentage restant</guilabel> indique "
-"le pourcentage de charge restante dans la batterie."
+"<guilabel>Afficher le temps restant</guilabel> indique le nombre d'heures et "
+"de minutes restantes avant que la batterie ne soit complètement déchargée ou "
+"rechargée. <guilabel>Afficher le pourcentage restant</guilabel> indique le "
+"pourcentage de charge restante dans la batterie."
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:400
@@ -567,8 +567,8 @@ msgid ""
 "your laptop battery reaches specified value, either as a percentage "
 "remaining or a number of minutes remaining. This indicates that the amount "
 "of charge remaining in your battery is critically low. charge. You can "
-"dismiss this warning dialog yourself, otherwise it will vanish automatically"
-" when you plug your laptop into mains power."
+"dismiss this warning dialog yourself, otherwise it will vanish automatically "
+"when you plug your laptop into mains power."
 msgstr ""
 "Cocher cette option affichera un message d'avertissement dès que la charge "
 "de la batterie de votre ordinateur portable atteint une certaine valeur, "
@@ -599,8 +599,8 @@ msgstr "Dépannage"
 #. (itstool) path: sect1/para
 #: C/index.docbook:437
 msgid ""
-"Due to the complexities of power management and the vast differences between"
-" each of the different power management systems available, debugging errors "
+"Due to the complexities of power management and the vast differences between "
+"each of the different power management systems available, debugging errors "
 "in the battery monitor can be difficult. You will need to determine if the "
 "error exists in the battery monitor or is a bug in the information provided "
 "by your machine."
@@ -617,15 +617,15 @@ msgstr ""
 msgid ""
 "The following information may be useful for troubleshooting what is wrong "
 "with your battery monitor. It is by no means exhaustive. If you find a bug "
-"with the Battery Charge Monitor (that is not caused by bad information being"
-" reported by ACPI), please <ulink url=\"http://bugzilla.cafe.org/\">report "
+"with the Battery Charge Monitor (that is not caused by bad information being "
+"reported by ACPI), please <ulink url=\"http://bugzilla.cafe.org/\">report "
 "it</ulink>."
 msgstr ""
-"Les informations suivantes pourront être utiles pour déterminer ce qui ne va"
-" pas avec votre moniteur de batterie. Celles-ci ne sont en aucun cas "
-"exhaustives. Si vous trouvez un bogue avec le moniteur de charge de batterie"
-" (qui n'est pas dû à de mauvaises informations retournées par ACPI), "
-"veuillez <ulink url=\"http://bugzilla.cafe.org/\">le rapporter</ulink>."
+"Les informations suivantes pourront être utiles pour déterminer ce qui ne va "
+"pas avec votre moniteur de batterie. Celles-ci ne sont en aucun cas "
+"exhaustives. Si vous trouvez un bogue avec le moniteur de charge de batterie "
+"(qui n'est pas dû à de mauvaises informations retournées par ACPI), veuillez "
+"<ulink url=\"http://bugzilla.cafe.org/\">le rapporter</ulink>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:452
@@ -690,8 +690,8 @@ msgstr "Vérification des informations d'ACPI"
 msgid ""
 "If you are using the ACPI backend for the Battery Charge Monitor, it is "
 "important to check that ACPI is giving you the right information. If it "
-"isn't, then you will need to look into upgrading your DSDT or something else"
-" related to ACPI."
+"isn't, then you will need to look into upgrading your DSDT or something else "
+"related to ACPI."
 msgstr ""
 "Si vous utilisez le moteur de traitement ACPI pour le moniteur de charge de "
 "batterie, il est important de vérifier qu'ACPI vous donne les bonnes "
@@ -735,17 +735,16 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:514
 msgid ""
-"You can quickly calculate the percentage remaining using <guilabel>remaining"
-" capacity</guilabel> divided by <guilabel>last full capacity</guilabel>, you"
-" can calculate the time remaining by taking <guilabel>remaining "
-"capacity</guilabel> divided by <guilabel>present rate</guilabel>."
+"You can quickly calculate the percentage remaining using <guilabel>remaining "
+"capacity</guilabel> divided by <guilabel>last full capacity</guilabel>, you "
+"can calculate the time remaining by taking <guilabel>remaining capacity</"
+"guilabel> divided by <guilabel>present rate</guilabel>."
 msgstr ""
 "Vous pouvez calculer rapidement le pourcentage restant en utilisant "
 "<guilabel>remaining capacity</guilabel> (capacité restante) divisé par "
 "<guilabel>last full capacity</guilabel> (dernière capacité complète), vous "
-"pouvez calculer le temps restant en prenant <guilabel>remaining "
-"capacity</guilabel> (capacité restante) divisé par <guilabel>present "
-"rate</guilabel>."
+"pouvez calculer le temps restant en prenant <guilabel>remaining capacity</"
+"guilabel> (capacité restante) divisé par <guilabel>present rate</guilabel>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:523
@@ -765,26 +764,26 @@ msgstr ""
 #: C/index.docbook:530
 msgid ""
 "Select <guimenuitem>Configuration Editor</guimenuitem> from the "
-"<guimenu>Applications</guimenu> menu, under <guisubmenu>System "
-"Tools</guisubmenu>. Search for the key value "
-"<prompt>OAFIID:CAFE_BattstatApplet</prompt> which should be located in the "
-"path <filename>/apps/panel/applets</filename>."
+"<guimenu>Applications</guimenu> menu, under <guisubmenu>System Tools</"
+"guisubmenu>. Search for the key value <prompt>OAFIID:CAFE_BattstatApplet</"
+"prompt> which should be located in the path <filename>/apps/panel/applets</"
+"filename>."
 msgstr ""
 "Sélectionnez <guimenuitem>Éditeur de configuration</guimenuitem> depuis le "
-"menu <guimenu>Applications</guimenu>, dans <guisubmenu>Outils "
-"système</guisubmenu>. Recherchez la valeur de clé "
-"<prompt>OAFIID:CAFE_BattstatApplet</prompt> dont le chemin devrait se situer"
-" dans l'arborescence <filename>/apps/panel/applets</filename>."
+"menu <guimenu>Applications</guimenu>, dans <guisubmenu>Outils système</"
+"guisubmenu>. Recherchez la valeur de clé <prompt>OAFIID:CAFE_BattstatApplet</"
+"prompt> dont le chemin devrait se situer dans l'arborescence <filename>/apps/"
+"panel/applets</filename>."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:537
 msgid ""
 "Assuming the path is <filename>/apps/panel/applets/applet_1</filename>. In "
 "<filename>/apps/panel/applets/applet_1/prefs</filename> add a "
-"<guimenuitem>New Key...</guimenuitem> called <guilabel>no_hal</guilabel> and"
-" set it to the boolean value of true. This will disable the usage of HAL "
-"(see <xref linkend=\"battstat-troubleshooting-backends\"/> to learn how to "
-"check this)."
+"<guimenuitem>New Key...</guimenuitem> called <guilabel>no_hal</guilabel> and "
+"set it to the boolean value of true. This will disable the usage of HAL (see "
+"<xref linkend=\"battstat-troubleshooting-backends\"/> to learn how to check "
+"this)."
 msgstr ""
 
 #. (itstool) path: para/ulink
@@ -798,16 +797,16 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Permission vous est donnée de copier, distribuer et/ou modifier ce document "
 "selon les termes de la Licence GNU Free Documentation License, Version 1.1 "
 "ou ultérieure publiée par la Free Software Foundation sans section "
 "inaltérable, sans texte de première page de couverture ni texte de dernière "
-"page de couverture. Vous trouverez un exemplaire de cette licence en suivant"
-" ce <_:ulink-1/> ou dans le fichier COPYING-DOCS fourni avec le présent "
+"page de couverture. Vous trouverez un exemplaire de cette licence en suivant "
+"ce <_:ulink-1/> ou dans le fichier COPYING-DOCS fourni avec le présent "
 "manuel."
 
 #. (itstool) path: legalnotice/para
@@ -815,8 +814,8 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Ce manuel fait partie de la collection de manuels CAFE distribués selon les "
 "termes de la licence de documentation libre GNU. Si vous souhaitez "
@@ -858,28 +857,28 @@ msgstr ""
 "OU IMPLICITE, Y COMPRIS, ET SANS LIMITATION, LES GARANTIES DE BONNE QUALITÉ "
 "MARCHANDE OU D'APTITUDE À UN EMPLOI PARTICULIER OU AUTORISÉ DU DOCUMENT OU "
 "DE SA VERSION MODIFIÉE. L'UTILISATEUR ASSUME TOUT RISQUE RELATIF À LA "
-"QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE SA VERSION DE"
-" MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT DÉFECTUEUSE, "
+"QUALITÉ, À LA PERTINENCE ET À LA PERFORMANCE DU DOCUMENT OU DE SA VERSION DE "
+"MISE À JOUR. SI LE DOCUMENT OU SA VERSION MODIFIÉE S'AVÉRAIT DÉFECTUEUSE, "
 "L'UTILISATEUR (ET NON LE RÉDACTEUR INITIAL, L'AUTEUR, NI TOUT AUTRE "
 "PARTICIPANT) ENDOSSERA LES COÛTS DE TOUTE INTERVENTION, RÉPARATION OU "
 "CORRECTION NÉCESSAIRE. CETTE DÉNÉGATION DE RESPONSABILITÉ CONSTITUE UNE "
-"PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE"
-" SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ "
+"PARTIE ESSENTIELLE DE CETTE LICENCE. AUCUNE UTILISATION DE CE DOCUMENT OU DE "
+"SA VERSION MODIFIÉE N'EST AUTORISÉE AUX TERMES DU PRÉSENT ACCORD, EXCEPTÉ "
 "SOUS CETTE DÉNÉGATION DE RESPONSABILITÉ ; "
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "EN AUCUNE CIRCONSTANCE ET SOUS AUCUNE INTERPRÉTATION DE LA LOI, QU'IL "
 "S'AGISSE DE RESPONSABILITÉ CIVILE (Y COMPRIS LA NÉGLIGENCE), CONTRACTUELLE "
@@ -890,8 +889,8 @@ msgstr ""
 "PARTICULIER OU ACCIDENTEL DE TOUT TYPE Y COMPRIS, SANS LIMITATION, LES "
 "DOMMAGES LIÉS À LA PERTE DE CLIENTÈLE, AUX ARRÊTS DE TRAVAIL, AUX "
 "DÉFAILLANCES ET AUX DYSFONCTIONNEMENTS INFORMATIQUES OU TOUT AUTRE DOMMAGE "
-"OU PERTE LIÉE À L'UTILISATION DU PRÉSENT DOCUMENT ET DE SES VERSIONS DE MISE"
-" À JOUR, ET CE MÊME SI CES PARTIES ONT ÉTÉ INFORMÉES DE LA POSSIBILITÉ DE "
+"OU PERTE LIÉE À L'UTILISATION DU PRÉSENT DOCUMENT ET DE SES VERSIONS DE MISE "
+"À JOUR, ET CE MÊME SI CES PARTIES ONT ÉTÉ INFORMÉES DE LA POSSIBILITÉ DE "
 "TELS DOMMAGES."
 
 #. (itstool) path: legalnotice/para

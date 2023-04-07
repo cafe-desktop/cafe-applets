@@ -1,10 +1,10 @@
-# 
+#
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Микола Ткач <chistomov@gmail.com>, 2020
 # clefebvre <clement.lefebvre@linuxmint.com>, 2020
 # Wolfgang Ulbrich <cafe@raveit.de>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -12,11 +12,14 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 11:24+0000\n"
 "Last-Translator: Wolfgang Ulbrich <cafe@raveit.de>, 2020\n"
 "Language-Team: Ukrainian (https://www.transifex.com/cafe/teams/13566/uk/)\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: uk\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
 msgctxt "_"
@@ -112,12 +115,12 @@ msgstr ""
 #: C/index.docbook:88
 msgid ""
 "<firstname>Jorgen </firstname> <surname> Pehrson</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> <address> "
-"<email>jp@spektr.eu.org</email> </address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address> <email>jp@spektr.eu."
+"org</email> </address> </affiliation>"
 msgstr ""
 "<firstname>Йорген </firstname> <surname> Пхорсон</surname> <affiliation> "
-"<orgname>Проєкт документування GNOME</orgname> <address> "
-"<email>jp@spektr.eu.org</email> </address> </affiliation>"
+"<orgname>Проєкт документування GNOME</orgname> <address> <email>jp@spektr.eu."
+"org</email> </address> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:96
@@ -145,11 +148,11 @@ msgstr "Команда документування CAFE"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:128
 msgid ""
-"<revnumber>Version 2.13</revnumber> <date>July 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.13</revnumber> <date>July 2015</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Версія 2.13</revnumber> <date>Липень 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Версія 2.13</revnumber> <date>Липень 2015</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:140 C/index.docbook:147
@@ -159,20 +162,20 @@ msgstr "Давід Мейдлі"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:136
 msgid ""
-"<revnumber>Version 2.12</revnumber> <date>September 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.12</revnumber> <date>September 2005</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Версія 2.12</revnumber> <date>Вересень 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Версія 2.12</revnumber> <date>Вересень 2005</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:143
 msgid ""
-"<revnumber>Version 2.10</revnumber> <date>March 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.10</revnumber> <date>March 2005</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Версія 2.10</revnumber> <date>Березень 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Версія 2.10</revnumber> <date>Березень 2005</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:154
@@ -182,11 +185,11 @@ msgstr "Анґела Бойл"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:150
 msgid ""
-"<revnumber>Version 2.8</revnumber> <date>September 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.8</revnumber> <date>September 2004</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Версія 2.8</revnumber> <date>Вересень 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Версія 2.8</revnumber> <date>Вересень 2004</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:162
@@ -292,12 +295,12 @@ msgstr ""
 #: C/index.docbook:221
 msgid ""
 "The <application>Battery Charge Monitor</application> shows the status of "
-"any batteries in your laptop computer. The monitor can tell you the capacity"
-" remaining both visually and as a percentage, as well as offer you an "
+"any batteries in your laptop computer. The monitor can tell you the capacity "
+"remaining both visually and as a percentage, as well as offer you an "
 "esticafe of the time remaining based off the current usage rate."
 msgstr ""
-"<application>Індикатор стану батареї</application> показує стан акумуляторів"
-" вашого ноутбука. Він може як показувати рівень лишку заряду візуально й у "
+"<application>Індикатор стану батареї</application> показує стан акумуляторів "
+"вашого ноутбука. Він може як показувати рівень лишку заряду візуально й у "
 "відсотках, так і прогнозувати залишок часу роботи комп'ютера з врахуванням "
 "його поточного використання."
 
@@ -309,11 +312,11 @@ msgstr "Додавання індикатора стану батареї на �
 #. (itstool) path: sect2/para
 #: C/index.docbook:230
 msgid ""
-"To add <application>Battery Charge Monitor</application> to a panel, perform"
-" the following steps:"
+"To add <application>Battery Charge Monitor</application> to a panel, perform "
+"the following steps:"
 msgstr ""
-"Щоб додати <application>Індикатор зарядження батареї</application> до панелі"
-" виконайте такі кроки:"
+"Щоб додати <application>Індикатор зарядження батареї</application> до панелі "
+"виконайте такі кроки:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:236
@@ -354,8 +357,8 @@ msgstr "Бекенди керування живленням"
 #. (itstool) path: sect2/para
 #: C/index.docbook:266
 msgid ""
-"The battery monitor supports a number of power management backends. If it is"
-" available, the monitor will attempt to use the freedesktop.org <ulink "
+"The battery monitor supports a number of power management backends. If it is "
+"available, the monitor will attempt to use the freedesktop.org <ulink "
 "url=\"http://upower.freedesktop.org/\">upower</ulink> interface. If it is "
 "unavailable or unsupported on your platform, it will fall back to the "
 "freedesktop.org <ulink url=\"http://freedesktop.org/Software/hal\">HAL "
@@ -395,8 +398,8 @@ msgstr "<xref linkend=\"battstat-troubleshooting\"/>;"
 #. (itstool) path: listitem/para
 #: C/index.docbook:294
 msgid ""
-"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">CAFE mailing "
-"lists</ulink>"
+"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">CAFE mailing lists</"
+"ulink>"
 msgstr ""
 "<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">Переліки поштової "
 "розсилки CAFE</ulink>"
@@ -437,13 +440,13 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:313
 msgid ""
-"<imageobject><imagedata fileref=\"figures/context-menu.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Battery Charge Monitor "
-"context menu</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/context-menu.png\" format=\"PNG\"/"
+"> </imageobject> <textobject> <phrase>Battery Charge Monitor context menu</"
+"phrase> </textobject>"
 msgstr ""
-"<imageobject><imagedata fileref=\"figures/context-menu.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Контекстне меню "
-"індикатора стану батареї</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/context-menu.png\" format=\"PNG\"/"
+"> </imageobject> <textobject> <phrase>Контекстне меню індикатора стану "
+"батареї</phrase> </textobject>"
 
 #. (itstool) path: figure/title
 #: C/index.docbook:324
@@ -468,8 +471,8 @@ msgstr ""
 #: C/index.docbook:326
 msgid ""
 "<imageobject><imagedata fileref=\"figures/battstat-preferences.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Preferences "
-"Dialog</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Preferences Dialog</"
+"phrase> </textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/battstat-preferences.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Діялоґове вікно "
@@ -494,12 +497,12 @@ msgstr "Компактний вигляд"
 #: C/index.docbook:350
 msgid ""
 "<imageobject><imagedata fileref=\"figures/battstat-applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Compact View</phrase> "
-"</textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Compact View</phrase> </"
+"textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/battstat-applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Компактний "
-"вигляд</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Компактний вигляд</"
+"phrase> </textobject>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:343
@@ -549,8 +552,8 @@ msgid ""
 "</textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/battstat-applet-expanded.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Розширений вид</phrase>"
-" </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Розширений вид</phrase> "
+"</textobject>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:368
@@ -560,8 +563,8 @@ msgid ""
 "what state the battery is in. <_:figure-1/>"
 msgstr ""
 "Розширений вид використовувався у попередніх версіях CAFE. Тут показується "
-"більша діяграмма заряду, так і окремий значок, що показує стан батареї. "
-"<_:figure-1/>"
+"більша діяграмма заряду, так і окремий значок, що показує стан батареї. <_:"
+"figure-1/>"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:388
@@ -600,8 +603,8 @@ msgid ""
 "your laptop battery reaches specified value, either as a percentage "
 "remaining or a number of minutes remaining. This indicates that the amount "
 "of charge remaining in your battery is critically low. charge. You can "
-"dismiss this warning dialog yourself, otherwise it will vanish automatically"
-" when you plug your laptop into mains power."
+"dismiss this warning dialog yourself, otherwise it will vanish automatically "
+"when you plug your laptop into mains power."
 msgstr ""
 "При встановленні цього прапорця буде з'являтися попередження, коли заряд "
 "акумулятора досягне заданого значення, або у відсотках, або у хвилинах "
@@ -633,8 +636,8 @@ msgstr "Усунення проблем"
 #. (itstool) path: sect1/para
 #: C/index.docbook:437
 msgid ""
-"Due to the complexities of power management and the vast differences between"
-" each of the different power management systems available, debugging errors "
+"Due to the complexities of power management and the vast differences between "
+"each of the different power management systems available, debugging errors "
 "in the battery monitor can be difficult. You will need to determine if the "
 "error exists in the battery monitor or is a bug in the information provided "
 "by your machine."
@@ -649,15 +652,15 @@ msgstr ""
 msgid ""
 "The following information may be useful for troubleshooting what is wrong "
 "with your battery monitor. It is by no means exhaustive. If you find a bug "
-"with the Battery Charge Monitor (that is not caused by bad information being"
-" reported by ACPI), please <ulink url=\"http://bugzilla.cafe.org/\">report "
+"with the Battery Charge Monitor (that is not caused by bad information being "
+"reported by ACPI), please <ulink url=\"http://bugzilla.cafe.org/\">report "
 "it</ulink>."
 msgstr ""
-"Наступні відомости можуть бути корисними для вирішення проблем з індикатором"
-" стану батареї. Їх ні в якому разі не потрібно вважати вичерпними. Якщо ви "
+"Наступні відомости можуть бути корисними для вирішення проблем з індикатором "
+"стану батареї. Їх ні в якому разі не потрібно вважати вичерпними. Якщо ви "
 "виявили помилку в індикаторі стану батареї (не викликану отриманням "
-"помилкової інформації від ACPI), будь ласка, <ulink "
-"url=\"http://bugzilla.cafe.org/\">повідомте про неї</ulink>."
+"помилкової інформації від ACPI), будь ласка, <ulink url=\"http://bugzilla."
+"cafe.org/\">повідомте про неї</ulink>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:452
@@ -691,8 +694,8 @@ msgid ""
 "</textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/battstat-credits-hal.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Розширений вид</phrase>"
-" </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Розширений вид</phrase> "
+"</textobject>"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:453
@@ -702,10 +705,10 @@ msgid ""
 "indicated in the about dialog by placing a star next to the author of the "
 "HAL backend. <_:figure-1/>"
 msgstr ""
-"Якщо використовується інтерфейс upower або Hardware Abstraction Layer "
-"(див.<xref linkend=\"battstat-power-backends\"/>, то це буде вказано у "
-"діялозі відомостей про аплет шляхом розташування зірочки поряд з іменем "
-"автора бекенду HAL.  <_:figure-1/>"
+"Якщо використовується інтерфейс upower або Hardware Abstraction Layer (див."
+"<xref linkend=\"battstat-power-backends\"/>, то це буде вказано у діялозі "
+"відомостей про аплет шляхом розташування зірочки поряд з іменем автора "
+"бекенду HAL.  <_:figure-1/>"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:473
@@ -726,8 +729,8 @@ msgstr "Перевірка інформації від ACPI"
 msgid ""
 "If you are using the ACPI backend for the Battery Charge Monitor, it is "
 "important to check that ACPI is giving you the right information. If it "
-"isn't, then you will need to look into upgrading your DSDT or something else"
-" related to ACPI."
+"isn't, then you will need to look into upgrading your DSDT or something else "
+"related to ACPI."
 msgstr ""
 "Якщо на вашому комп'ютері індикатор стану батареї використовує бекенд ACPI, "
 "важливо перевірити, чи правильну інформацію надає ACPI. Якщо ні, то вам, "
@@ -793,16 +796,15 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:514
 msgid ""
-"You can quickly calculate the percentage remaining using <guilabel>remaining"
-" capacity</guilabel> divided by <guilabel>last full capacity</guilabel>, you"
-" can calculate the time remaining by taking <guilabel>remaining "
-"capacity</guilabel> divided by <guilabel>present rate</guilabel>."
+"You can quickly calculate the percentage remaining using <guilabel>remaining "
+"capacity</guilabel> divided by <guilabel>last full capacity</guilabel>, you "
+"can calculate the time remaining by taking <guilabel>remaining capacity</"
+"guilabel> divided by <guilabel>present rate</guilabel>."
 msgstr ""
 "Можна швидко вирахувати відсоток залишку заряду, поділивши "
-"<guilabel>remaining capacity</guilabel> на <guilabel>last full "
-"capacity</guilabel>. Залишок часу можна вирахувати, поділивши "
-"<guilabel>remaining capacity</guilabel> на <guilabel>present "
-"rate</guilabel>."
+"<guilabel>remaining capacity</guilabel> на <guilabel>last full capacity</"
+"guilabel>. Залишок часу можна вирахувати, поділивши <guilabel>remaining "
+"capacity</guilabel> на <guilabel>present rate</guilabel>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:523
@@ -818,18 +820,18 @@ msgid ""
 "the HAL backend by setting a GSettings key."
 msgstr ""
 "Ви можете перевірити, чи визначає HAL ваш акумулятор, за допомогою команди "
-"<command>hal-device-manager</command>. Якщо акумулятором не визначається HAL"
-" або виводиться неправильна інформація про нього, можете спробувати "
+"<command>hal-device-manager</command>. Якщо акумулятором не визначається HAL "
+"або виводиться неправильна інформація про нього, можете спробувати "
 "відімкнути бекенд HAL, вказавши відповідний ключ в GSettings."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:530
 msgid ""
 "Select <guimenuitem>Configuration Editor</guimenuitem> from the "
-"<guimenu>Applications</guimenu> menu, under <guisubmenu>System "
-"Tools</guisubmenu>. Search for the key value "
-"<prompt>OAFIID:CAFE_BattstatApplet</prompt> which should be located in the "
-"path <filename>/apps/panel/applets</filename>."
+"<guimenu>Applications</guimenu> menu, under <guisubmenu>System Tools</"
+"guisubmenu>. Search for the key value <prompt>OAFIID:CAFE_BattstatApplet</"
+"prompt> which should be located in the path <filename>/apps/panel/applets</"
+"filename>."
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -837,10 +839,10 @@ msgstr ""
 msgid ""
 "Assuming the path is <filename>/apps/panel/applets/applet_1</filename>. In "
 "<filename>/apps/panel/applets/applet_1/prefs</filename> add a "
-"<guimenuitem>New Key...</guimenuitem> called <guilabel>no_hal</guilabel> and"
-" set it to the boolean value of true. This will disable the usage of HAL "
-"(see <xref linkend=\"battstat-troubleshooting-backends\"/> to learn how to "
-"check this)."
+"<guimenuitem>New Key...</guimenuitem> called <guilabel>no_hal</guilabel> and "
+"set it to the boolean value of true. This will disable the usage of HAL (see "
+"<xref linkend=\"battstat-troubleshooting-backends\"/> to learn how to check "
+"this)."
 msgstr ""
 
 #. (itstool) path: para/ulink
@@ -854,15 +856,15 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 
 #. (itstool) path: legalnotice/para
@@ -870,8 +872,8 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Цей посібник є частиною збірки документації CAFE, яка розповсюджується за "
 "умовами ліцензії GFDL. Якщо ви бажаєте розповсюджувати цей посібник окремо "
@@ -910,29 +912,29 @@ msgid ""
 msgstr ""
 "ДОКУМЕНТ НАДАЄТЬСЯ \\\"ЯК Є\\\", БЕЗ БУДЬ-ЯКИХ ГАРАНТІЇ, ЯВНИХ ЧИ НЕЯВНИХ, "
 "ВКЛЮЧАЮЧИ, АЛЕ НЕ ОБМЕЖУЮЧИСЬ, ГАРАНТІЙ ЩО ЦЕЙ ДОКУМЕНТ ЧИ ЗМІНЕНА ВЕРСІЯ "
-"ДОКУМЕНТА ВІЛЬНІ ВІД ДЕФЕКТІВ, ПРИДАТНІ ДО ПРОДАЖУ, ВІДПОВІДАЮТЬ ПЕВНІЙ МЕТІ"
-" АБО НЕ ПОРУШУЮТЬ ЧИЇСЬ ПРАВА. ВЕСЬ РИЗИК ЗА ЯКІСТЬ, ТОЧНІСТЬ, ТА ЧИННІСТЬ "
+"ДОКУМЕНТА ВІЛЬНІ ВІД ДЕФЕКТІВ, ПРИДАТНІ ДО ПРОДАЖУ, ВІДПОВІДАЮТЬ ПЕВНІЙ МЕТІ "
+"АБО НЕ ПОРУШУЮТЬ ЧИЇСЬ ПРАВА. ВЕСЬ РИЗИК ЗА ЯКІСТЬ, ТОЧНІСТЬ, ТА ЧИННІСТЬ "
 "ЦЬОГО ДОКУМЕНТУ АБО ЙОГО ЗМІНЕНИХ ВЕРСІЙ ЛЕЖИТЬ НА ВАС.  ЯКЩО БУДЬ-ЯКИЙ "
 "ДОКУМЕНТ ЧИ ЗМІНЕНА ВЕРСІЯ БУДУТЬ ВИЗНАНІ ДЕФЕКТНИМИ У БУДЬ-ЯКОМУ "
-"ВІДНОШЕННІ, ВИ (НЕ ПОЧАТКОВИЙ УКЛАДАЧ, АВТОР АБО БУДЬ-ЯКИЙ СПІВАВТОР) БЕРЕТЕ"
-" НА СЕБЕ ВИТРАТИ ЗА БУДЬ-ЯКЕ НЕОБХІДНЕ ОБСЛУГОВУВАННЯ, РЕМОНТ ЧИ "
-"ВИПРАВЛЕННЯ. ЦЯ ВІДМОВА ВІД ГАРАНТІЙ СКЛАДАЄ ВАЖЛИВУ ЧАСТИНУ ЦІЄЇ ЛІЦЕНЗІЇ. "
-"НЕ ДОПУСКАЄТЬСЯ ВИКОРИСТАННЯ ЦЬОГО ДОКУМЕНТУ АБО ЙОГО ЗМІНЕНОЇ ВЕРСІЇ БЕЗ "
+"ВІДНОШЕННІ, ВИ (НЕ ПОЧАТКОВИЙ УКЛАДАЧ, АВТОР АБО БУДЬ-ЯКИЙ СПІВАВТОР) БЕРЕТЕ "
+"НА СЕБЕ ВИТРАТИ ЗА БУДЬ-ЯКЕ НЕОБХІДНЕ ОБСЛУГОВУВАННЯ, РЕМОНТ ЧИ ВИПРАВЛЕННЯ. "
+"ЦЯ ВІДМОВА ВІД ГАРАНТІЙ СКЛАДАЄ ВАЖЛИВУ ЧАСТИНУ ЦІЄЇ ЛІЦЕНЗІЇ. НЕ "
+"ДОПУСКАЄТЬСЯ ВИКОРИСТАННЯ ЦЬОГО ДОКУМЕНТУ АБО ЙОГО ЗМІНЕНОЇ ВЕРСІЇ БЕЗ "
 "ПРИЙНЯТТЯ ЦІЄЇ ВІДМОВИ; ТА"
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "НІ ЗА ЯКИХ ОБСТАВИН ТА ЗА БУДЬ-ЯКОГО ЗАКОНОДАВСТВА, ЧИ ТО ГРОМАДЯНСЬКОЇ "
 "ВІДПОВІДАЛЬНОСТІ (ВКЛЮЧАЮЧИ ХАЛАТНІСТЬ), ДОГОВОРУ, ЧИ ЧОГОСЬ ІНШОГО, АВТОР, "
@@ -940,11 +942,11 @@ msgstr ""
 "ЗМІНЕНОЇ ВЕРСІЇ ДОКУМЕНТУ, АБО БУДЬ-ЯКИЙ ПОСТАЧАЛЬНИК БУДЬ-ЯКОЇ З ЦИХ "
 "СТОРІН, НЕ НЕСЕ ВІДПОВІДАЛЬНІСТЬ ПЕРЕД БУДЬ-ЯКОЮ ОСОБОЮ ЗА БУДЬ-ЯКІ ПРЯМІ, "
 "НЕПРЯМІ, ОСОБЛИВІ, ВИПАДКОВІ, АБО ІСТОТНІ ЗБИТКИ БУДЬ-ЯКОГО ХАРАКТЕРУ "
-"ВКЛЮЧАЮЧИ, АЛЕ НЕ ОБМЕЖУЮЧИСЬ, ЗБИТКАМИ ВІД ВТРАТИ ПРЕСТИЖУ, ЗУПИНКИ РОБОТИ,"
-" ЗБОЇВ АБО НЕСПРАВНОСТЕЙ КОМП'ЮТЕРА, АБО БУДЬ-ЯКІ ІНШІ ЗБИТКИ АБО ВТРАТИ ЩО "
+"ВКЛЮЧАЮЧИ, АЛЕ НЕ ОБМЕЖУЮЧИСЬ, ЗБИТКАМИ ВІД ВТРАТИ ПРЕСТИЖУ, ЗУПИНКИ РОБОТИ, "
+"ЗБОЇВ АБО НЕСПРАВНОСТЕЙ КОМП'ЮТЕРА, АБО БУДЬ-ЯКІ ІНШІ ЗБИТКИ АБО ВТРАТИ ЩО "
 "ВИНИКЛИ БЕЗВІДНОСНО АБО ВНАСЛІДОК ВИКОРИСТАННЯ ЦЬОГО ДОКУМЕНТУ ТА ЗМІНЕНИХ "
-"ВЕРСІЙ ЦЬОГО ДОКУМЕНТУ, НАВІТЬ ЯКЩО ЦІ СТОРОНИ, МОЖЛИВО, БУЛИ ПРОІНФОРМОВАНІ"
-" ПРО МОЖЛИВІСТЬ ТАКИХ ЗБИТКІВ."
+"ВЕРСІЙ ЦЬОГО ДОКУМЕНТУ, НАВІТЬ ЯКЩО ЦІ СТОРОНИ, МОЖЛИВО, БУЛИ ПРОІНФОРМОВАНІ "
+"ПРО МОЖЛИВІСТЬ ТАКИХ ЗБИТКІВ."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:28

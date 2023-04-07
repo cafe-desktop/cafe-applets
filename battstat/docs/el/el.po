@@ -1,4 +1,4 @@
-# 
+#
 # Translators:
 # anvo <fragos.george@hotmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
@@ -8,7 +8,7 @@
 # kosmmart <kosmmartak@gmail.com>, 2020
 # TheDimitris15, 2020
 # Dimitris Vagiakakos <dimitrislinuxos@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -16,10 +16,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 11:24+0000\n"
 "Last-Translator: Dimitris Vagiakakos <dimitrislinuxos@gmail.com>, 2020\n"
 "Language-Team: Greek (https://www.transifex.com/cafe/teams/13566/el/)\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -118,12 +118,12 @@ msgstr ""
 #: C/index.docbook:88
 msgid ""
 "<firstname>Jorgen </firstname> <surname> Pehrson</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> <address> "
-"<email>jp@spektr.eu.org</email> </address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address> <email>jp@spektr.eu."
+"org</email> </address> </affiliation>"
 msgstr ""
 "<firstname>Jorgen </firstname> <surname> Pehrson</surname> <affiliation> "
-"<orgname>Έργο Τεκμηρίωσης του GNOME</orgname> <address> "
-"<email>jp@spektr.eu.org</email> </address> </affiliation>"
+"<orgname>Έργο Τεκμηρίωσης του GNOME</orgname> <address> <email>jp@spektr.eu."
+"org</email> </address> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:96
@@ -151,11 +151,11 @@ msgstr "Ομάδα τεκμηρίωσης CAFE"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:128
 msgid ""
-"<revnumber>Version 2.13</revnumber> <date>July 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.13</revnumber> <date>July 2015</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Version 2.13</revnumber> <date>Ιούλιος 2015</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.13</revnumber> <date>Ιούλιος 2015</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:140 C/index.docbook:147
@@ -165,20 +165,20 @@ msgstr "Davyd Madeley"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:136
 msgid ""
-"<revnumber>Version 2.12</revnumber> <date>September 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.12</revnumber> <date>September 2005</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Έκδοση 2.12</revnumber> <date>Σεπτέμβριος 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Έκδοση 2.12</revnumber> <date>Σεπτέμβριος 2005</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:143
 msgid ""
-"<revnumber>Version 2.10</revnumber> <date>March 2005</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.10</revnumber> <date>March 2005</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Έκδοση 2.10</revnumber> <date>Μάρτιος "
-"2005</date><_:revdescription-1/>"
+"<revnumber>Έκδοση 2.10</revnumber> <date>Μάρτιος 2005</date><_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:154
@@ -188,11 +188,11 @@ msgstr "Angela Boyle"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:150
 msgid ""
-"<revnumber>Version 2.8</revnumber> <date>September 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Version 2.8</revnumber> <date>September 2004</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Έκδοση 2.8</revnumber> <date>Σεπτέμβριος 2004</date> "
-"<_:revdescription-1/>"
+"<revnumber>Έκδοση 2.8</revnumber> <date>Σεπτέμβριος 2004</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:162
@@ -205,8 +205,8 @@ msgid ""
 "<revnumber>Battery Charge Monitor Applet Manual V2.2</revnumber> "
 "<date>August 2004</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Εγχειρίδιο της εφαρμογής παρακολούθησης φορτίου μπαταρίας "
-"V2.2</revnumber> <date>Αύγουστος 2004</date> <_:revdescription-1/>"
+"<revnumber>Εγχειρίδιο της εφαρμογής παρακολούθησης φορτίου μπαταρίας V2.2</"
+"revnumber> <date>Αύγουστος 2004</date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:170
@@ -224,8 +224,8 @@ msgid ""
 "<revnumber>Battery Charge Monitor Applet Manual V2.0</revnumber> <date>May "
 "2002</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Εγχειρίδιο της εφαρμογής παρακολούθησης φορτίου μπαταρίας "
-"V2.0</revnumber> <date>Μάϊος 2002</date> <_:revdescription-1/>"
+"<revnumber>Εγχειρίδιο της εφαρμογής παρακολούθησης φορτίου μπαταρίας V2.0</"
+"revnumber> <date>Μάϊος 2002</date> <_:revdescription-1/>"
 
 #. (itstool) path: articleinfo/releaseinfo
 #: C/index.docbook:181
@@ -300,14 +300,14 @@ msgstr ""
 #: C/index.docbook:221
 msgid ""
 "The <application>Battery Charge Monitor</application> shows the status of "
-"any batteries in your laptop computer. The monitor can tell you the capacity"
-" remaining both visually and as a percentage, as well as offer you an "
+"any batteries in your laptop computer. The monitor can tell you the capacity "
+"remaining both visually and as a percentage, as well as offer you an "
 "esticafe of the time remaining based off the current usage rate."
 msgstr ""
 "Η Παρακολούθηση φορτίου μπαταρίας δείχνει την κατάσταση οποιασδήποτε "
 "μπαταρίας το φορητού υπολογιστή σας. Η εφαρμογή εμφανίζει την χωρητικότητα "
-"που απομένει τόσο οπτικά όσο και ως ποσοστό και σας παρέχει μια εκτίμηση για"
-" τον χρόνο που απομένει βάσει του τρέχοντος ρυθμού χρήσης."
+"που απομένει τόσο οπτικά όσο και ως ποσοστό και σας παρέχει μια εκτίμηση για "
+"τον χρόνο που απομένει βάσει του τρέχοντος ρυθμού χρήσης."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:229
@@ -317,11 +317,11 @@ msgstr "Προσθήκη της Παρακολούθησης φορτίου μπ
 #. (itstool) path: sect2/para
 #: C/index.docbook:230
 msgid ""
-"To add <application>Battery Charge Monitor</application> to a panel, perform"
-" the following steps:"
+"To add <application>Battery Charge Monitor</application> to a panel, perform "
+"the following steps:"
 msgstr ""
-"Για να προσθέσετε την <application>Παρακολούθηση φορτίου "
-"μπαταρίας</application> σε ένα πίνακα ακολουθήστε τα παρακάτω βήματα:"
+"Για να προσθέσετε την <application>Παρακολούθηση φορτίου μπαταρίας</"
+"application> σε ένα πίνακα ακολουθήστε τα παρακάτω βήματα:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:236
@@ -331,8 +331,7 @@ msgstr "Κάνετε δεξί κλικ στον πίνακα."
 #. (itstool) path: listitem/para
 #: C/index.docbook:241
 msgid "Choose <guimenuitem>Add to Panel</guimenuitem>."
-msgstr ""
-"Επιλέξτε <guimenuitem>Προσθήκη στον Πίνακα Εφαρμογών...</guimenuitem>."
+msgstr "Επιλέξτε <guimenuitem>Προσθήκη στον Πίνακα Εφαρμογών...</guimenuitem>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:246
@@ -341,8 +340,8 @@ msgid ""
 "dialog, then select <guilabel>Battery Charge Monitor</guilabel>."
 msgstr ""
 "Κυλήστε προς τα κάτω την λίστα του διαλόγου <guilabel>Προσθήκη στον πίνακα "
-"εφαρμογών</guilabel>και επιλέξτε <guilabel>Παρακολούθηση φορτίου "
-"μπαταρίας</guilabel>."
+"εφαρμογών</guilabel>και επιλέξτε <guilabel>Παρακολούθηση φορτίου μπαταρίας</"
+"guilabel>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:252
@@ -367,8 +366,8 @@ msgstr "Συστήματα υποστήριξης Διαχείρισης ενέ�
 #. (itstool) path: sect2/para
 #: C/index.docbook:266
 msgid ""
-"The battery monitor supports a number of power management backends. If it is"
-" available, the monitor will attempt to use the freedesktop.org <ulink "
+"The battery monitor supports a number of power management backends. If it is "
+"available, the monitor will attempt to use the freedesktop.org <ulink "
 "url=\"http://upower.freedesktop.org/\">upower</ulink> interface. If it is "
 "unavailable or unsupported on your platform, it will fall back to the "
 "freedesktop.org <ulink url=\"http://freedesktop.org/Software/hal\">HAL "
@@ -377,14 +376,13 @@ msgid ""
 msgstr ""
 "Η παρακολούθηση της μπαταρίας υποστηρίζει ένα πλήθος συστημάτων υποστήριξης "
 "διαχείρισης ενέργειας. Η μικροεφαρμογή Παρακολούθησης φορτίου μπαταρίας θα "
-"επιχειρήσει να χρησιμοποιήσει την διεπαφή <ulink "
-"url=\"http://upower.freedesktop.org/\">upower</ulink> του freedesktop.org, "
-"εφόσον αυτή είναι διαθέσιμη. Αν δεν είναι διαθέσιμη ή δεν υποστηρίζεται από "
-"την συσκευή σας θα χρησιμοποιήσει το <ulink "
-"url=\"http://freedesktop.org/Software/hal\">HAL (Επίπεδο Αφαίρεσης "
-"Υλικού)</ulink> του freedesktop.org. Αν και ετούτο δεν είναι διαθέσιμο η "
-"παρακολούθηση της μπαταρίας θα επιχειρήσει άμεση πρόσβαση στο σύστημα "
-"διαχείρισης ενέργειας."
+"επιχειρήσει να χρησιμοποιήσει την διεπαφή <ulink url=\"http://upower."
+"freedesktop.org/\">upower</ulink> του freedesktop.org, εφόσον αυτή είναι "
+"διαθέσιμη. Αν δεν είναι διαθέσιμη ή δεν υποστηρίζεται από την συσκευή σας θα "
+"χρησιμοποιήσει το <ulink url=\"http://freedesktop.org/Software/hal\">HAL "
+"(Επίπεδο Αφαίρεσης Υλικού)</ulink> του freedesktop.org. Αν και ετούτο δεν "
+"είναι διαθέσιμο η παρακολούθηση της μπαταρίας θα επιχειρήσει άμεση πρόσβαση "
+"στο σύστημα διαχείρισης ενέργειας."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:276
@@ -421,8 +419,8 @@ msgstr "<xref linkend=\"battstat-troubleshooting\"/>;"
 #. (itstool) path: listitem/para
 #: C/index.docbook:294
 msgid ""
-"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">CAFE mailing "
-"lists</ulink>"
+"<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">CAFE mailing lists</"
+"ulink>"
 msgstr ""
 "<ulink url=\"http://ml.cafe-desktop.org/listinfo/\">Λίστα ταχυδρομείου του "
 "CAFE</ulink>"
@@ -464,13 +462,13 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:313
 msgid ""
-"<imageobject><imagedata fileref=\"figures/context-menu.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Battery Charge Monitor "
-"context menu</phrase> </textobject>"
+"<imageobject><imagedata fileref=\"figures/context-menu.png\" format=\"PNG\"/"
+"> </imageobject> <textobject> <phrase>Battery Charge Monitor context menu</"
+"phrase> </textobject>"
 msgstr ""
-"<imageobject><imagedata fileref=\"figures/context-menu.png\" "
-"format=\"PNG\"/></imageobject><textobject><phrase>Αναδυόμενο μενού της "
-"Παρακολούθησης φορτίου μπαταρίας</phrase></textobject>"
+"<imageobject><imagedata fileref=\"figures/context-menu.png\" format=\"PNG\"/"
+"></imageobject><textobject><phrase>Αναδυόμενο μενού της Παρακολούθησης "
+"φορτίου μπαταρίας</phrase></textobject>"
 
 #. (itstool) path: figure/title
 #: C/index.docbook:324
@@ -495,12 +493,12 @@ msgstr ""
 #: C/index.docbook:326
 msgid ""
 "<imageobject><imagedata fileref=\"figures/battstat-preferences.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Preferences "
-"Dialog</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Preferences Dialog</"
+"phrase> </textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/battstat-preferences.png\" "
-"format=\"PNG\"/></imageobject><textobject><phrase>Διάλογος "
-"προτιμήσεων</phrase></textobject>"
+"format=\"PNG\"/></imageobject><textobject><phrase>Διάλογος προτιμήσεων</"
+"phrase></textobject>"
 
 #. (itstool) path: varlistentry/term
 #: C/index.docbook:338
@@ -521,12 +519,12 @@ msgstr "Συμπαγής εμφάνιση"
 #: C/index.docbook:350
 msgid ""
 "<imageobject><imagedata fileref=\"figures/battstat-applet.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Compact View</phrase> "
-"</textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Compact View</phrase> </"
+"textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/battstat-applet.png\" "
-"format=\"PNG\"/></imageobject><textobject><phrase>Συμπαγής "
-"εμφάνιση</phrase></textobject>"
+"format=\"PNG\"/></imageobject><textobject><phrase>Συμπαγής εμφάνιση</"
+"phrase></textobject>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:343
@@ -579,8 +577,8 @@ msgid ""
 "</textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/battstat-applet-expanded.png\" "
-"format=\"PNG\"/></imageobject><textobject><phrase>Επεκταμένη "
-"Προβολή</phrase></textobject>"
+"format=\"PNG\"/></imageobject><textobject><phrase>Επεκταμένη Προβολή</"
+"phrase></textobject>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:368
@@ -621,8 +619,7 @@ msgstr "<guilabel>Ανακοινώσεις</guilabel>"
 #. (itstool) path: listitem/para
 #: C/index.docbook:403
 msgid "<guilabel> Warn when battery charge drops to </guilabel>"
-msgstr ""
-"<guilabel>Προειδοποίηση όταν το φορτίο μπαταρίας πέφτει στο</guilabel>"
+msgstr "<guilabel>Προειδοποίηση όταν το φορτίο μπαταρίας πέφτει στο</guilabel>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:406
@@ -631,22 +628,21 @@ msgid ""
 "your laptop battery reaches specified value, either as a percentage "
 "remaining or a number of minutes remaining. This indicates that the amount "
 "of charge remaining in your battery is critically low. charge. You can "
-"dismiss this warning dialog yourself, otherwise it will vanish automatically"
-" when you plug your laptop into mains power."
+"dismiss this warning dialog yourself, otherwise it will vanish automatically "
+"when you plug your laptop into mains power."
 msgstr ""
 "Με την επιλογή αυτή θα ενεργοποιείται ένα προειδοποιητικός διάλογος που θα "
-"εμφανίζεται κάθε φορά που η μπαταρία του φορητού υπολογιστή σας θα φτάνει σε"
-" μια συγκεκριμένη τιμή, εκφρασμένη είτε ως εναπομείναν ποσοστό είτε ως "
-"πλήθος εναπομεινάντων λεπτών της ώρας. Τούτο θα υποδεικνύει ότι το ποσό του "
-"φορτίου που απομένει στην μπαταρία σας είναι εξαιρετικά χαμηλό. Μπορείτε να "
-"κλείσετε οι ίδιοι τον διάλογο αυτόν, αλλιώς θα κλείσει αυτόματα μόλις "
-"συνδέσετε τον υπολογιστή σας σε μια εξωτερική παροχή ισχύος."
+"εμφανίζεται κάθε φορά που η μπαταρία του φορητού υπολογιστή σας θα φτάνει σε "
+"μια συγκεκριμένη τιμή, εκφρασμένη είτε ως εναπομείναν ποσοστό είτε ως πλήθος "
+"εναπομεινάντων λεπτών της ώρας. Τούτο θα υποδεικνύει ότι το ποσό του φορτίου "
+"που απομένει στην μπαταρία σας είναι εξαιρετικά χαμηλό. Μπορείτε να κλείσετε "
+"οι ίδιοι τον διάλογο αυτόν, αλλιώς θα κλείσει αυτόματα μόλις συνδέσετε τον "
+"υπολογιστή σας σε μια εξωτερική παροχή ισχύος."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:418
 msgid "<guilabel> Notify when the battery is fully recharged </guilabel>"
-msgstr ""
-"<guilabel>Ειδοποίηση όταν η  μπαταρία επαναφορτιστεί πλήρως</guilabel>"
+msgstr "<guilabel>Ειδοποίηση όταν η  μπαταρία επαναφορτιστεί πλήρως</guilabel>"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:421
@@ -656,8 +652,8 @@ msgid ""
 "intrusive notification will popup from the monitor on the panel."
 msgstr ""
 "Με την επιλογή αυτή θα ειδοποιείστε όταν η μπαταρία επαναφορτίζεται πλήρως. "
-"Αν έχετε μεταγλωτίσσει την Παρακολούθηση φορτίου μπαταρίας με υποστήριξη για"
-" libnotify, από την παρακολούθηση μέσα στον πίνακα θα προβάλλει μια απλή "
+"Αν έχετε μεταγλωτίσσει την Παρακολούθηση φορτίου μπαταρίας με υποστήριξη για "
+"libnotify, από την παρακολούθηση μέσα στον πίνακα θα προβάλλει μια απλή "
 "προειδοποίηση."
 
 #. (itstool) path: sect1/title
@@ -668,8 +664,8 @@ msgstr "Αντιμετώπιση προβλημάτων"
 #. (itstool) path: sect1/para
 #: C/index.docbook:437
 msgid ""
-"Due to the complexities of power management and the vast differences between"
-" each of the different power management systems available, debugging errors "
+"Due to the complexities of power management and the vast differences between "
+"each of the different power management systems available, debugging errors "
 "in the battery monitor can be difficult. You will need to determine if the "
 "error exists in the battery monitor or is a bug in the information provided "
 "by your machine."
@@ -685,8 +681,8 @@ msgstr ""
 msgid ""
 "The following information may be useful for troubleshooting what is wrong "
 "with your battery monitor. It is by no means exhaustive. If you find a bug "
-"with the Battery Charge Monitor (that is not caused by bad information being"
-" reported by ACPI), please <ulink url=\"http://bugzilla.cafe.org/\">report "
+"with the Battery Charge Monitor (that is not caused by bad information being "
+"reported by ACPI), please <ulink url=\"http://bugzilla.cafe.org/\">report "
 "it</ulink>."
 msgstr ""
 "Οι πληροφορίες που ακολουθούν είναι χρήσιμες στην αντιμετώπιση προβλημάτων "
@@ -727,8 +723,8 @@ msgid ""
 "</textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/battstat-credits-hal.png\" "
-"format=\"PNG\"/></imageobject><textobject><phrase>Επεκταμένη "
-"προβολή</phrase></textobject>"
+"format=\"PNG\"/></imageobject><textobject><phrase>Επεκταμένη προβολή</"
+"phrase></textobject>"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:453
@@ -739,9 +735,9 @@ msgid ""
 "HAL backend. <_:figure-1/>"
 msgstr ""
 "Αν χρησιμοποιείτε την διεπαφή upower ή το Επίπεδο Αφαίρεσης Υλικού (δείτε "
-"<xref linkend=\"battstat-power-backends\"/>) αυτό θα αναφέρεται στον διάλογο"
-" Περί με την τοποθέτηση ενός αστεριού δίπλα στο όνομα του προγραμματιστή του"
-" συστήματος υποστήριξης HAL. <_:figure-1/>"
+"<xref linkend=\"battstat-power-backends\"/>) αυτό θα αναφέρεται στον διάλογο "
+"Περί με την τοποθέτηση ενός αστεριού δίπλα στο όνομα του προγραμματιστή του "
+"συστήματος υποστήριξης HAL. <_:figure-1/>"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:473
@@ -767,14 +763,14 @@ msgstr "Ελέγχοντας τις πληροφορίες ACPI"
 msgid ""
 "If you are using the ACPI backend for the Battery Charge Monitor, it is "
 "important to check that ACPI is giving you the right information. If it "
-"isn't, then you will need to look into upgrading your DSDT or something else"
-" related to ACPI."
+"isn't, then you will need to look into upgrading your DSDT or something else "
+"related to ACPI."
 msgstr ""
 "Αν χρησιμοποιείτε το σύστημα υποστήριξης ACPI για την Παρακολούθηση φορτίου "
 "μπαταρίας είναι σημαντικό να ελέγξετε ότι το ACPI σας δίνει τις σωστές "
 "πληροφορίες. Αν δεν δίνει σωστές πληροφορίες τότε θα πρέπει να αναζητήσετε "
-"αναβάθμιση των DSDT της συσκευής σας ή κάποια άλλη λύση που να σχετίζεται με"
-" το ACPI."
+"αναβάθμιση των DSDT της συσκευής σας ή κάποια άλλη λύση που να σχετίζεται με "
+"το ACPI."
 
 #. (itstool) path: example/title
 #: C/index.docbook:489
@@ -836,17 +832,16 @@ msgstr ""
 #. (itstool) path: sect2/para
 #: C/index.docbook:514
 msgid ""
-"You can quickly calculate the percentage remaining using <guilabel>remaining"
-" capacity</guilabel> divided by <guilabel>last full capacity</guilabel>, you"
-" can calculate the time remaining by taking <guilabel>remaining "
-"capacity</guilabel> divided by <guilabel>present rate</guilabel>."
+"You can quickly calculate the percentage remaining using <guilabel>remaining "
+"capacity</guilabel> divided by <guilabel>last full capacity</guilabel>, you "
+"can calculate the time remaining by taking <guilabel>remaining capacity</"
+"guilabel> divided by <guilabel>present rate</guilabel>."
 msgstr ""
 "Μπορείτε να υπολογίσετε γρήγορα το εναπομείναν ποσοστό χρησιμοποιώντας "
 "<guilabel>την εναπομείνασα χωρητικότητα</guilabel> διαιρεμένη με "
-"<guilabel>την τελευταία πλήρη χωρητικότητα</guilabel> και να υπολογίσετε τον"
-" εναπομείναντα χρόνο διαιρώντας <guilabel>την εναπομείνασα "
-"χωρητικότητα</guilabel> με <guilabel>την τρέχουσα τιμή "
-"χωρητικότητας</guilabel>."
+"<guilabel>την τελευταία πλήρη χωρητικότητα</guilabel> και να υπολογίσετε τον "
+"εναπομείναντα χρόνο διαιρώντας <guilabel>την εναπομείνασα χωρητικότητα</"
+"guilabel> με <guilabel>την τρέχουσα τιμή χωρητικότητας</guilabel>."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:523
@@ -871,34 +866,33 @@ msgstr ""
 #: C/index.docbook:530
 msgid ""
 "Select <guimenuitem>Configuration Editor</guimenuitem> from the "
-"<guimenu>Applications</guimenu> menu, under <guisubmenu>System "
-"Tools</guisubmenu>. Search for the key value "
-"<prompt>OAFIID:CAFE_BattstatApplet</prompt> which should be located in the "
-"path <filename>/apps/panel/applets</filename>."
+"<guimenu>Applications</guimenu> menu, under <guisubmenu>System Tools</"
+"guisubmenu>. Search for the key value <prompt>OAFIID:CAFE_BattstatApplet</"
+"prompt> which should be located in the path <filename>/apps/panel/applets</"
+"filename>."
 msgstr ""
 "<guimenuitem>Επεξεργαστής ρυθμίσεων</guimenuitem> από το μενού "
-"<guimenu>Εφαρμογές</guimenu> της ενότητας <guisubmenu>Εργαλεία "
-"συστήματος</guisubmenu>. Αναζητήστε την τιμή κλειδιού "
-"<prompt>OAFIID:CAFE_BattstatAppletΕπιλέξτε</prompt> η οποία θα πρέπει να "
-"βρίσκεται στην διαδρομή <filename>/apps/panel/applets</filename>."
+"<guimenu>Εφαρμογές</guimenu> της ενότητας <guisubmenu>Εργαλεία συστήματος</"
+"guisubmenu>. Αναζητήστε την τιμή κλειδιού <prompt>OAFIID:"
+"CAFE_BattstatAppletΕπιλέξτε</prompt> η οποία θα πρέπει να βρίσκεται στην "
+"διαδρομή <filename>/apps/panel/applets</filename>."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:537
 msgid ""
 "Assuming the path is <filename>/apps/panel/applets/applet_1</filename>. In "
 "<filename>/apps/panel/applets/applet_1/prefs</filename> add a "
-"<guimenuitem>New Key...</guimenuitem> called <guilabel>no_hal</guilabel> and"
-" set it to the boolean value of true. This will disable the usage of HAL "
-"(see <xref linkend=\"battstat-troubleshooting-backends\"/> to learn how to "
-"check this)."
+"<guimenuitem>New Key...</guimenuitem> called <guilabel>no_hal</guilabel> and "
+"set it to the boolean value of true. This will disable the usage of HAL (see "
+"<xref linkend=\"battstat-troubleshooting-backends\"/> to learn how to check "
+"this)."
 msgstr ""
-"Υποθέτουμε ότι η διαδρομή είναι "
-"<filename>/apps/panel/applets/applet_1</filename>. Στην διαδρομή "
-"<filename>/apps/panel/applets/applet_1/prefs</filename> προσθέστε ένα "
-"<guimenuitem>Νέο κλειδί...</guimenuitem>με όνομα <guilabel>no_hal</guilabel>"
-" και ορίστε την «μποϋλιανή» τιμή του ως «αληθή». Η ενέργεια αυτή θα "
-"απενεργοποιήσει την χρήση του HAL (δείτε <xref linkend=\"battstat-"
-"troubleshooting-backends\"/> πώς να το διαπιστώσετε)."
+"Υποθέτουμε ότι η διαδρομή είναι <filename>/apps/panel/applets/applet_1</"
+"filename>. Στην διαδρομή <filename>/apps/panel/applets/applet_1/prefs</"
+"filename> προσθέστε ένα <guimenuitem>Νέο κλειδί...</guimenuitem>με όνομα "
+"<guilabel>no_hal</guilabel> και ορίστε την «μποϋλιανή» τιμή του ως «αληθή». "
+"Η ενέργεια αυτή θα απενεργοποιήσει την χρήση του HAL (δείτε <xref "
+"linkend=\"battstat-troubleshooting-backends\"/> πώς να το διαπιστώσετε)."
 
 #. (itstool) path: para/ulink
 #: C/legal.xml:9
@@ -911,8 +905,8 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Επιτρέπεται η αντιγραφή, η διανομή και / η τροποποίηση αυτού του εγγράφου "
@@ -928,13 +922,13 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του CAFE όπως "
 "διανέμεται υπό τους όρους του GFDL. Εάν επιθυμείτε να διανείμετε αυτή την "
-"τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση"
-" συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 "
+"τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση "
+"συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 "
 "της άδειας."
 
 #. (itstool) path: legalnotice/para
@@ -973,28 +967,28 @@ msgstr ""
 "ΑΥΤΗΣ ΑΝΗΚΕΙ ΣΕ ΕΣΑΣ. ΕΑΝ Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ Ή ΠΑΡΑΛΛΑΓΗ ΑΥΤΗΣ ΕΙΝΑΙ ΛΑΘΟΣ "
 "ΚΑΤΑ ΚΑΠΟΙΟ ΤΡΟΠΟ ΕΣΕΙΣ ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΗΝ ΕΥΘΥΝΗ ΤΗΣ ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ "
 "ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. "
-"ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ"
-" ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ."
+"ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ "
+"ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ."
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή "
 "ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ "
 "ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ "
-"ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ"
-" ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ "
+"ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ "
+"ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ "
 "ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ."
 
 #. (itstool) path: legalnotice/para
@@ -1004,6 +998,6 @@ msgid ""
 "OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
 "<_:orderedlist-1/>"
 msgstr ""
-"ΤΟ ΕΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΤΟΥ ΕΓΓΡΑΦΟΥ ΠΑΡΕΧΟΝΤΑΙ ΜΕ ΤΟΥΣ ΟΡΟΥΣ"
-" ΤΗΣ ΑΔΕΙΑΣ ΤΕΚΜΗΡΙΩΣΗ ΕΛΕΥΘΕΡΟΥ ΛΟΓΙΣΜΙΚΟΥ GNU ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΚΑΤΑΝΟΜΗ "
+"ΤΟ ΕΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΤΟΥ ΕΓΓΡΑΦΟΥ ΠΑΡΕΧΟΝΤΑΙ ΜΕ ΤΟΥΣ ΟΡΟΥΣ "
+"ΤΗΣ ΑΔΕΙΑΣ ΤΕΚΜΗΡΙΩΣΗ ΕΛΕΥΘΕΡΟΥ ΛΟΓΙΣΜΙΚΟΥ GNU ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΚΑΤΑΝΟΜΗ "
 "ΟΤΙ: <_:orderedlist-1/>"
