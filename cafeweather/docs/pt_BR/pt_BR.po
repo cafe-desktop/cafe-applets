@@ -1,4 +1,4 @@
-# 
+#
 # Translators:
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
@@ -10,18 +10,19 @@
 # b36c7cf4cf669a51ae00d04c19629819, 2020
 # Alceu Nogueira <alceunogueira@gmail.com>, 2020
 # George Silva <algoritmo.linux@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2020-01-10 17:58+0100\n"
 "PO-Revision-Date: 2020-02-15 12:16+0000\n"
 "Last-Translator: George Silva <algoritmo.linux@gmail.com>, 2020\n"
-"Language-Team: Portuguese (Brazil) (https://www.transifex.com/cafe/teams/13566/pt_BR/)\n"
+"Language-Team: Portuguese (Brazil) (https://www.transifex.com/cafe/"
+"teams/13566/pt_BR/)\n"
+"Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: pt_BR\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -29,7 +30,8 @@ msgctxt "_"
 msgid "translator-credits"
 msgstr ""
 "Equipe de tradução no Transifex:\n"
-"Fabrizzio Alphonsus Soares https://www.transifex.com/accounts/profile/fabrizzio\n"
+"Fabrizzio Alphonsus Soares https://www.transifex.com/accounts/profile/"
+"fabrizzio\n"
 "Alberto Federman Neto https://www.transifex.com/accounts/profile/albfneto\n"
 "Aldo Oliveira https://www.transifex.com/user/profile/AldoBR/\n"
 "Appes https://www.transifex.com/accounts/profile/apps\n"
@@ -39,18 +41,23 @@ msgstr ""
 "Enrico Nicoletto https://www.transifex.com/accounts/profile/EnricoNicoletto\n"
 "everton_seib https://www.transifex.com/accounts/profile/everton_seib\n"
 "Felipe Rozelio https://www.transifex.com/accounts/profile/feliperozelio\n"
-"João Paulo da Silva Júnior https://www.transifex.com/accounts/profile/jpsilvaj\n"
+"João Paulo da Silva Júnior https://www.transifex.com/accounts/profile/"
+"jpsilvaj\n"
 "Juliana Paula Felix https://www.transifex.com/accounts/profile/jufelix\n"
-"Lucas Cenir Friederich https://www.transifex.com/user/profile/lucasalvarokedrines\n"
+"Lucas Cenir Friederich https://www.transifex.com/user/profile/"
+"lucasalvarokedrines\n"
 "Marcelo Ghelman https://www.transifex.com/accounts/profile/marcelo.ghelman\n"
 "Marcio Andre Padula https://www.transifex.com/accounts/profile/Padula\n"
-"Marcus Vinícius Marques https://www.transifex.com/accounts/profile/Pygmalion\n"
+"Marcus Vinícius Marques https://www.transifex.com/accounts/profile/"
+"Pygmalion\n"
 "Matheus Macabu https://www.transifex.com/accounts/profile/mkbu95\n"
 "Matheus Martins https://www.transifex.com/accounts/profile/Matheus_Martins\n"
-"Michele dos Santos da Silva https://www.transifex.com/accounts/profile/mchelem\n"
+"Michele dos Santos da Silva https://www.transifex.com/accounts/profile/"
+"mchelem\n"
 "Thiago Cangussu https://www.transifex.com/accounts/profile/cangussu.thg\n"
 "vitorgatti https://www.transifex.com/accounts/profile/vitorgatti\n"
-"George Salu da Silva https://www.transifex.com/user/profile/George_salu_da_silva/"
+"George Salu da Silva https://www.transifex.com/user/profile/"
+"George_salu_da_silva/"
 
 #. (itstool) path: articleinfo/title
 #: C/index.docbook:20
@@ -60,11 +67,11 @@ msgstr "Manual do Relatório Meteorológico"
 #. (itstool) path: abstract/para
 #: C/index.docbook:22
 msgid ""
-"The Weather Report Applet downloads weather information for a given location"
-" from the internet and displays the temperature and a symbol representing "
-"the current weather conditions in the panel. When clicked on, more "
-"information is given, such as the forecast, the time of sunrise and sunset, "
-"wind direction, pressure, and more. All units are customizable."
+"The Weather Report Applet downloads weather information for a given location "
+"from the internet and displays the temperature and a symbol representing the "
+"current weather conditions in the panel. When clicked on, more information "
+"is given, such as the forecast, the time of sunrise and sunset, wind "
+"direction, pressure, and more. All units are customizable."
 msgstr ""
 "O aplicativo do Relatório Meteorológico faz o download das informações "
 "meteorológicas de um determinado local da Internet e exibe a temperatura e "
@@ -136,12 +143,12 @@ msgstr ""
 #: C/index.docbook:86
 msgid ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Project</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME Project</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 msgstr ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Projeto</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME Projeto</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:93
@@ -160,24 +167,24 @@ msgstr ""
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:104
 msgid ""
-"<firstname>Spiros</firstname> <surname>Papadimitriou</surname> <affiliation>"
-" <orgname>GNOME Documentation Project</orgname> "
-"<address><email>spapadim+@cs.cmu.edu</email> </address> </affiliation>"
+"<firstname>Spiros</firstname> <surname>Papadimitriou</surname> <affiliation> "
+"<orgname>GNOME Documentation Project</orgname> <address><email>spapadim+@cs."
+"cmu.edu</email> </address> </affiliation>"
 msgstr ""
-"<firstname>Spiros</firstname> <surname>Papadimitriou</surname> <affiliation>"
-" <orgname>GNOME Equipe de documentação</orgname> "
-"<address><email>spapadim+@cs.cmu.edu</email> </address> </affiliation>"
+"<firstname>Spiros</firstname> <surname>Papadimitriou</surname> <affiliation> "
+"<orgname>GNOME Equipe de documentação</orgname> <address><email>spapadim+@cs."
+"cmu.edu</email> </address> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:112
 msgid ""
 "<firstname>Dan</firstname> <surname>Mueth</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> "
-"<address><email>d-mueth@uchicago.edu</email> </address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address><email>d-"
+"mueth@uchicago.edu</email> </address> </affiliation>"
 msgstr ""
 "<firstname>Dan</firstname> <surname>Mueth</surname> <affiliation> "
-"<orgname>GNOME Equipe de documentação</orgname> "
-"<address><email>d-mueth@uchicago.edu</email> </address> </affiliation>"
+"<orgname>GNOME Equipe de documentação</orgname> <address><email>d-"
+"mueth@uchicago.edu</email> </address> </affiliation>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:143
@@ -187,8 +194,8 @@ msgstr "Equipe de Documentação do CAFE"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:139
 msgid ""
-"<revnumber>Weather Report Applet Manual V2.8</revnumber> <date>July "
-"2015</date> <_:revdescription-1/>"
+"<revnumber>Weather Report Applet Manual V2.8</revnumber> <date>July 2015</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -199,15 +206,15 @@ msgstr "Davyd Madeley"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:147
 msgid ""
-"<revnumber>Weather Report Applet Manual V2.7</revnumber> <date>March "
-"2005</date> <_:revdescription-1/>"
+"<revnumber>Weather Report Applet Manual V2.7</revnumber> <date>March 2005</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:154
 msgid ""
-"<revnumber>Weather Report Applet Manual V2.6</revnumber> <date>March "
-"2005</date> <_:revdescription-1/>"
+"<revnumber>Weather Report Applet Manual V2.6</revnumber> <date>March 2005</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -238,29 +245,29 @@ msgstr ""
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:177
 msgid ""
-"<revnumber>Weather Report Applet Manual V2.3</revnumber> <date>January "
-"2003</date> <_:revdescription-1/>"
+"<revnumber>Weather Report Applet Manual V2.3</revnumber> <date>January 2003</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:185
 msgid ""
-"<revnumber>Weather Report Applet Manual V2.2</revnumber> <date>August "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Weather Report Applet Manual V2.2</revnumber> <date>August 2002</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:193
 msgid ""
-"<revnumber>Weather Report Applet Manual V2.1</revnumber> <date>July "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Weather Report Applet Manual V2.1</revnumber> <date>July 2002</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:201
 msgid ""
-"<revnumber>Weather Report Applet Manual V2.0</revnumber> <date>March "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Weather Report Applet Manual V2.0</revnumber> <date>March 2002</"
+"date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
@@ -276,8 +283,8 @@ msgstr "Dan Mueth <email>d-mueth@uchicago.edu</email>"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:209
 msgid ""
-"<revnumber>GNOME Weather Applet</revnumber> <date>2000</date> "
-"<_:revdescription-1/>"
+"<revnumber>GNOME Weather Applet</revnumber> <date>2000</date> <_:"
+"revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: articleinfo/releaseinfo
@@ -294,8 +301,8 @@ msgstr "Retorno"
 #: C/index.docbook:234
 msgid ""
 "To report a bug or make a suggestion regarding the Weather Report applet or "
-"this manual, follow the directions in the <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"this manual, follow the directions in the <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 "Para relatar um erro ou fazer uma sugestão sobre o aplicativo Relatório "
 "Meteorológico ou este manual, siga as instruções no CAFE Feedback Page."
@@ -359,8 +366,8 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: C/index.docbook:273
 msgid ""
-"<application>Weather Report</application> displays the following information"
-" for the default location, or a location that you specify:"
+"<application>Weather Report</application> displays the following information "
+"for the default location, or a location that you specify:"
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -422,11 +429,11 @@ msgstr ""
 #: C/index.docbook:304
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
-"sunny.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock "
-"Sunny</phrase> </textobject></inlinemediaobject> "
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
-"night-clear.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock "
-"Night</phrase> </textobject></inlinemediaobject>"
+"sunny.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock Sunny</"
+"phrase> </textobject></inlinemediaobject> <inlinemediaobject><imageobject> "
+"<imagedata fileref=\"figures/stock_weather-night-clear.png\" format=\"PNG\"/"
+"> </imageobject><textobject> <phrase>Stock Night</phrase> </textobject></"
+"inlinemediaobject>"
 msgstr ""
 
 #. (itstool) path: entry/para
@@ -523,8 +530,8 @@ msgstr ""
 #: C/index.docbook:349
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
-"fog.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock "
-"Fog</phrase> </textobject></inlinemediaobject>"
+"fog.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock Fog</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
 
 #. (itstool) path: entry/para
@@ -577,8 +584,8 @@ msgstr ""
 #: C/index.docbook:371
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
-"snow.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock "
-"Snow</phrase> </textobject></inlinemediaobject>"
+"snow.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock Snow</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
 
 #. (itstool) path: entry/para
@@ -604,8 +611,8 @@ msgstr ""
 #: C/index.docbook:382
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
-"storm.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock "
-"Storm</phrase> </textobject></inlinemediaobject>"
+"storm.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock Storm</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
 
 #. (itstool) path: entry/para
@@ -675,8 +682,8 @@ msgstr ""
 #: C/index.docbook:439
 msgid ""
 "<imageobject> <imagedata fileref=\"figures/cafeweather-menu-prefs.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Context menu</phrase> "
-"</textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Context menu</phrase> </"
+"textobject>"
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -713,9 +720,9 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:455
 msgid ""
-"<imageobject> <imagedata fileref=\"figures/cafeweather-prefs-locations.png\""
-" format=\"PNG\"/> </imageobject> <textobject> <phrase>Location "
-"Preferences</phrase> </textobject>"
+"<imageobject> <imagedata fileref=\"figures/cafeweather-prefs-locations.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Location Preferences</"
+"phrase> </textobject>"
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -743,9 +750,9 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:482
 msgid ""
-"Select the <guilabel>Location</guilabel> tab. The "
-"<guilabel>Location</guilabel> tabbed section contains a list of geographical"
-" regions, subregions, and specific locations."
+"Select the <guilabel>Location</guilabel> tab. The <guilabel>Location</"
+"guilabel> tabbed section contains a list of geographical regions, "
+"subregions, and specific locations."
 msgstr ""
 
 #. (itstool) path: listitem/para
@@ -761,14 +768,13 @@ msgid ""
 "Click on the arrow next to a subregion to display the locations in the "
 "subregion."
 msgstr ""
-"Clique na seta ao lado de uma sub-região para exibir os locais na sub-"
-"região."
+"Clique na seta ao lado de uma sub-região para exibir os locais na sub-região."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:497
 msgid ""
-"Click on a location. While the application retrieves the weather information"
-" for the new location, the tooltip \"Updating\" is displayed when you point "
+"Click on a location. While the application retrieves the weather information "
+"for the new location, the tooltip \"Updating\" is displayed when you point "
 "to the icon."
 msgstr ""
 
@@ -783,9 +789,8 @@ msgstr ""
 #: C/index.docbook:509
 msgid ""
 "You can already try searching by entering the name of your city into the "
-"<guilabel>Find</guilabel> field. Be aware that for cities close together, or"
-" for cities with no airport you may have to pick a nearby city in the "
-"region."
+"<guilabel>Find</guilabel> field. Be aware that for cities close together, or "
+"for cities with no airport you may have to pick a nearby city in the region."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -797,8 +802,8 @@ msgstr "Atualizando Informações Meteorológicas"
 #: C/index.docbook:518
 msgid ""
 "To update the weather information that the Weather Report displays in the "
-"panel, right-click on the icon, then choose "
-"<guimenuitem>Update</guimenuitem>."
+"panel, right-click on the icon, then choose <guimenuitem>Update</"
+"guimenuitem>."
 msgstr ""
 "Para atualizar as informações meteorológicas que o Relatório Meteorológico "
 "exibe no painel, clique com o botão direito do mouse no ícone e selecione "
@@ -816,8 +821,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:524
 msgid ""
-"Go to the right-click menu and select "
-"<guimenuitem>Preferences</guimenuitem>."
+"Go to the right-click menu and select <guimenuitem>Preferences</guimenuitem>."
 msgstr "Clique com o botão direito do mouse e no menu selecione Preferences."
 
 #. (itstool) path: listitem/para
@@ -864,17 +868,17 @@ msgstr ""
 #: C/index.docbook:536
 msgid ""
 "<imageobject> <imagedata fileref=\"figures/cafeweather-prefs-general.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>General "
-"Preferences</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>General Preferences</"
+"phrase> </textobject>"
 msgstr ""
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:546
 msgid ""
-"Go to the right-click menu and select "
-"<guimenuitem>Preferences</guimenuitem>. In the <guilabel>Weather "
-"Preferences</guilabel> dialog under the <guilabel>General</guilabel> tab, "
-"select the units of measurement you want to use."
+"Go to the right-click menu and select <guimenuitem>Preferences</"
+"guimenuitem>. In the <guilabel>Weather Preferences</guilabel> dialog under "
+"the <guilabel>General</guilabel> tab, select the units of measurement you "
+"want to use."
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -945,8 +949,8 @@ msgstr ""
 #: C/index.docbook:593
 msgid ""
 "<imageobject> <imagedata fileref=\"figures/cafeweather-details.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Weather Report "
-"details</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Weather Report details</"
+"phrase> </textobject>"
 msgstr ""
 
 #. (itstool) path: sect2/para
@@ -974,11 +978,10 @@ msgstr "Última atualização"
 #. (itstool) path: entry/para
 #: C/index.docbook:630
 msgid ""
-"Time at which the weather conditions were last updated on the weather "
-"server."
+"Time at which the weather conditions were last updated on the weather server."
 msgstr ""
-"Hora em que as condições meteorológicas foram atualizadas pela última vez no"
-" servidor meteorológico."
+"Hora em que as condições meteorológicas foram atualizadas pela última vez no "
+"servidor meteorológico."
 
 #. (itstool) path: entry/para
 #: C/index.docbook:637
@@ -1086,14 +1089,14 @@ msgstr "O horário do pôr do sol calculado para sua localização"
 msgid ""
 "Sunrise and sunset times are calculated locally from latitude and longitude "
 "information stored on your computer. Some conditions, such as refraction of "
-"light through the air, are hard to model. Resultantly, the calculated values"
-" for sunrise and sunset may be off by up to 10 minutes."
+"light through the air, are hard to model. Resultantly, the calculated values "
+"for sunrise and sunset may be off by up to 10 minutes."
 msgstr ""
 "Os horários de nascer e pôr do sol são calculados localmente a partir de "
 "informações de latitude e longitude armazenadas em seu computador. Algumas "
 "condições, como a refração da luz pelo ar, são difíceis de modelar. "
-"Portanto, os valores calculados para o nascer e o pôr do sol podem variar em"
-" até 10 minutos."
+"Portanto, os valores calculados para o nascer e o pôr do sol podem variar em "
+"até 10 minutos."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:760
@@ -1103,8 +1106,8 @@ msgstr "Previsão"
 #. (itstool) path: sect2/para
 #: C/index.docbook:761
 msgid ""
-"The <guilabel>Forecast</guilabel> tabbed section displays a forecast for the"
-" location for the immediate future, usually the next five days."
+"The <guilabel>Forecast</guilabel> tabbed section displays a forecast for the "
+"location for the immediate future, usually the next five days."
 msgstr ""
 
 #. (itstool) path: note/para
@@ -1113,8 +1116,8 @@ msgid ""
 "Forecasts are only available for some locations in the U.S., Australia and "
 "the United Kingdom."
 msgstr ""
-"As previsões só estão disponíveis para alguns locais nos EUA, na Austrália e"
-" no Reino Unido."
+"As previsões só estão disponíveis para alguns locais nos EUA, na Austrália e "
+"no Reino Unido."
 
 #. (itstool) path: sect2/title
 #: C/index.docbook:772
@@ -1150,8 +1153,8 @@ msgstr ""
 #: C/index.docbook:784
 msgid ""
 "By default, <application>Weather Report</application> downloads the radar "
-"maps from www.weather.com. Select the <guilabel>Use custom address for radar"
-" map</guilabel> option to display radar maps from an alternative Internet "
+"maps from www.weather.com. Select the <guilabel>Use custom address for radar "
+"map</guilabel> option to display radar maps from an alternative Internet "
 "address. You must type the address in the <guilabel>Address</guilabel> text "
 "box."
 msgstr ""
@@ -1166,8 +1169,8 @@ msgstr ""
 #: C/index.docbook:787
 msgid ""
 "Most locations do not define a default radar map, especially outside of the "
-"U.S. Many locations will require you to specify a custom URL, if you wish to"
-" have a radar map."
+"U.S. Many locations will require you to specify a custom URL, if you wish to "
+"have a radar map."
 msgstr ""
 
 #. (itstool) path: para/ulink
@@ -1181,14 +1184,14 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "É concedida permissão para copiar, distribuir e / ou modificar este "
 "documento sob os termos da Licença de Documentação Livre GNU (GFDL), Versão "
-"1.1 ou qualquer versão posterior publicada pela Free Software Foundation sem"
-" Seções Invariantes, sem Textos de Capa Frontal e sem textos de contracapa. "
+"1.1 ou qualquer versão posterior publicada pela Free Software Foundation sem "
+"Seções Invariantes, sem Textos de Capa Frontal e sem textos de contracapa. "
 "Você pode encontrar uma cópia da GFDL no <_:ulink-1/> ou no arquivo COPYING-"
 "DOCS distribuído com este manual."
 
@@ -1197,8 +1200,8 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Esse manual é parte de uma coleção de manuais do CAFE distribuída sob a "
 "GFDL. Se você quiser distribuir essa manual separado da coleção, pode fazê-"
@@ -1242,25 +1245,24 @@ msgstr ""
 "SEM INFRAÇÕES. TODO O RISCO A RESPEITO DA QUALIDADE, EXATIDÃO, E DESEMPENHO "
 "DO DOCUMENTO OU VERSÕES MODIFICADAS DO DOCUMENTO É SEU. SE ALGUM DOCUMENTO "
 "OU VERSÃO MODIFICADA SE PROVAR DEFEITUOSO EM QUALQUER ASPECTO, VOCÊ (NÃO O "
-"ESCRITOR INICIAL, AUTOR OU QUALQUER CONTRIBUIDOR) ASSUME O CUSTO DE QUALQUER"
-" SERVIÇO NECESSÁRIO, REPARO OU CORREÇÃO. ESTA RENÚNCIA DE GARANTIAS "
-"CONSTITUI UMA PARTE ESSENCIAL DESTA LICENÇA. NENHUM USO DESTE DOCUMENTO OU "
-"VERSÃO MODIFICADA DESTE DOCUMENTO É AUTORIZADO SE NÃO FOR SOB ESTA RENÚNCIA;"
-" E"
+"ESCRITOR INICIAL, AUTOR OU QUALQUER CONTRIBUIDOR) ASSUME O CUSTO DE QUALQUER "
+"SERVIÇO NECESSÁRIO, REPARO OU CORREÇÃO. ESTA RENÚNCIA DE GARANTIAS CONSTITUI "
+"UMA PARTE ESSENCIAL DESTA LICENÇA. NENHUM USO DESTE DOCUMENTO OU VERSÃO "
+"MODIFICADA DESTE DOCUMENTO É AUTORIZADO SE NÃO FOR SOB ESTA RENÚNCIA; E"
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "SOB NENHUM CIRCUNSTÂNCIA E SOB NENHUMA TEORIA LEGAL, TANTO EM DADO "
 "(INCLUINDO NEGLIGÊNCIA), CONTRATO, OU OUTROS, DEVEM O AUTOR, ESCRITOR "
@@ -1271,8 +1273,8 @@ msgstr ""
 "INDIVÍDUO, INCLUINDO, SEM LIMITAÇÃO, DANOS POR PERDA DE BOA VONTADE, "
 "TRABALHO PARADO, FALHA NO COMPUTADOR OU MAL FUNCIONAMENTO, OU QUALQUER E "
 "TODOS OS OUTROS DANOS OU PERDAS RESULTANTES OU RELACIONADAS AO USO DO "
-"DOCUMENTO E VERSÕES MODIFICADAS, MESMO QUE TAL PARTE TENHA SIDO INFORMADA DA"
-" POSSIBILIDADE DE TAIS DANOS."
+"DOCUMENTO E VERSÕES MODIFICADAS, MESMO QUE TAL PARTE TENHA SIDO INFORMADA DA "
+"POSSIBILIDADE DE TAIS DANOS."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:28

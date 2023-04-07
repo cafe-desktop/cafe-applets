@@ -1,8 +1,8 @@
-# 
+#
 # Translators:
 # abuyop <abuyop@gmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -10,10 +10,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 12:16+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2020\n"
 "Language-Team: Malay (https://www.transifex.com/cafe/teams/13566/ms/)\n"
+"Language: ms\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ms\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -29,11 +29,11 @@ msgstr "Panduan Laporan Cuaca"
 #. (itstool) path: abstract/para
 #: C/index.docbook:22
 msgid ""
-"The Weather Report Applet downloads weather information for a given location"
-" from the internet and displays the temperature and a symbol representing "
-"the current weather conditions in the panel. When clicked on, more "
-"information is given, such as the forecast, the time of sunrise and sunset, "
-"wind direction, pressure, and more. All units are customizable."
+"The Weather Report Applet downloads weather information for a given location "
+"from the internet and displays the temperature and a symbol representing the "
+"current weather conditions in the panel. When clicked on, more information "
+"is given, such as the forecast, the time of sunrise and sunset, wind "
+"direction, pressure, and more. All units are customizable."
 msgstr ""
 "Aplet Laporan Cuaca memuat turun maklumat cuaca untuk lokasi yang "
 "dikehendaki melalui internet dan memaparkan suhu dan simbol yang mewakili "
@@ -104,12 +104,12 @@ msgstr ""
 #: C/index.docbook:86
 msgid ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>GNOME Project</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>GNOME Project</orgname> <address><email>davyd@madeley.id.au</"
+"email></address> </affiliation>"
 msgstr ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
-"<orgname>Projek GNOME</orgname> "
-"<address><email>davyd@madeley.id.au</email></address> </affiliation>"
+"<orgname>Projek GNOME</orgname> <address><email>davyd@madeley.id.au</email></"
+"address> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:93
@@ -128,24 +128,24 @@ msgstr ""
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:104
 msgid ""
-"<firstname>Spiros</firstname> <surname>Papadimitriou</surname> <affiliation>"
-" <orgname>GNOME Documentation Project</orgname> "
-"<address><email>spapadim+@cs.cmu.edu</email> </address> </affiliation>"
+"<firstname>Spiros</firstname> <surname>Papadimitriou</surname> <affiliation> "
+"<orgname>GNOME Documentation Project</orgname> <address><email>spapadim+@cs."
+"cmu.edu</email> </address> </affiliation>"
 msgstr ""
-"<firstname>Spiros</firstname> <surname>Papadimitriou</surname> <affiliation>"
-" <orgname>Projek Dokumentasi GNOME</orgname> "
-"<address><email>spapadim+@cs.cmu.edu</email> </address> </affiliation>"
+"<firstname>Spiros</firstname> <surname>Papadimitriou</surname> <affiliation> "
+"<orgname>Projek Dokumentasi GNOME</orgname> <address><email>spapadim+@cs.cmu."
+"edu</email> </address> </affiliation>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:112
 msgid ""
 "<firstname>Dan</firstname> <surname>Mueth</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> "
-"<address><email>d-mueth@uchicago.edu</email> </address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> <address><email>d-"
+"mueth@uchicago.edu</email> </address> </affiliation>"
 msgstr ""
 "<firstname>Dan</firstname> <surname>Mueth</surname> <affiliation> "
-"<orgname>Projek Dokumentasi GNOME</orgname> "
-"<address><email>d-mueth@uchicago.edu</email> </address> </affiliation>"
+"<orgname>Projek Dokumentasi GNOME</orgname> <address><email>d-mueth@uchicago."
+"edu</email> </address> </affiliation>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:143
@@ -155,11 +155,11 @@ msgstr "Pasukan Dokumentasi CAFE"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:139
 msgid ""
-"<revnumber>Weather Report Applet Manual V2.8</revnumber> <date>July "
-"2015</date> <_:revdescription-1/>"
+"<revnumber>Weather Report Applet Manual V2.8</revnumber> <date>July 2015</"
+"date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Panduan Aplet Laporan Cuaca V2.8</revnumber> <date>Julai "
-"2015</date> <_:revdescription-1/>"
+"<revnumber>Panduan Aplet Laporan Cuaca V2.8</revnumber> <date>Julai 2015</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:151 C/index.docbook:158
@@ -169,20 +169,20 @@ msgstr "Davyd Madeley"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:147
 msgid ""
-"<revnumber>Weather Report Applet Manual V2.7</revnumber> <date>March "
-"2005</date> <_:revdescription-1/>"
+"<revnumber>Weather Report Applet Manual V2.7</revnumber> <date>March 2005</"
+"date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Panduan Aplet Laporan Cuaca V2.7</revnumber> <date>Mac "
-"2005</date> <_:revdescription-1/>"
+"<revnumber>Panduan Aplet Laporan Cuaca V2.7</revnumber> <date>Mac 2005</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:154
 msgid ""
-"<revnumber>Weather Report Applet Manual V2.6</revnumber> <date>March "
-"2005</date> <_:revdescription-1/>"
+"<revnumber>Weather Report Applet Manual V2.6</revnumber> <date>March 2005</"
+"date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Panduan Aplet Laporan Cuaca V2.6</revnumber> <date>Mac "
-"2005</date> <_:revdescription-1/>"
+"<revnumber>Panduan Aplet Laporan Cuaca V2.6</revnumber> <date>Mac 2005</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:165
@@ -210,44 +210,44 @@ msgid ""
 "<revnumber>Weather Report Applet Manual V2.4</revnumber> <date>February "
 "2004</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Panduan Aplet Laporan Cuaca V2.4</revnumber> <date>Februari "
-"2004</date> <_:revdescription-1/>"
+"<revnumber>Panduan Aplet Laporan Cuaca V2.4</revnumber> <date>Februari 2004</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:177
 msgid ""
-"<revnumber>Weather Report Applet Manual V2.3</revnumber> <date>January "
-"2003</date> <_:revdescription-1/>"
+"<revnumber>Weather Report Applet Manual V2.3</revnumber> <date>January 2003</"
+"date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Panduan Aplet Laporan Cuaca V2.3</revnumber> <date>Januari "
-"2003</date> <_:revdescription-1/>"
+"<revnumber>Panduan Aplet Laporan Cuaca V2.3</revnumber> <date>Januari 2003</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:185
 msgid ""
-"<revnumber>Weather Report Applet Manual V2.2</revnumber> <date>August "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Weather Report Applet Manual V2.2</revnumber> <date>August 2002</"
+"date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Panduan Aplet Laporan Cuaca V2.2</revnumber> <date>Ogos "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Panduan Aplet Laporan Cuaca V2.2</revnumber> <date>Ogos 2002</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:193
 msgid ""
-"<revnumber>Weather Report Applet Manual V2.1</revnumber> <date>July "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Weather Report Applet Manual V2.1</revnumber> <date>July 2002</"
+"date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Panduan Aplet Laporan Cuaca V2.1</revnumber> <date>Julai "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Panduan Aplet Laporan Cuaca V2.1</revnumber> <date>Julai 2002</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:201
 msgid ""
-"<revnumber>Weather Report Applet Manual V2.0</revnumber> <date>March "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Weather Report Applet Manual V2.0</revnumber> <date>March 2002</"
+"date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Panduan Aplet Laporan Cuaca V2.0</revnumber> <date>Mac "
-"2002</date> <_:revdescription-1/>"
+"<revnumber>Panduan Aplet Laporan Cuaca V2.0</revnumber> <date>Mac 2002</"
+"date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:213
@@ -262,11 +262,11 @@ msgstr "Dan Mueth <email>d-mueth@uchicago.edu</email>"
 #. (itstool) path: revhistory/revision
 #: C/index.docbook:209
 msgid ""
-"<revnumber>GNOME Weather Applet</revnumber> <date>2000</date> "
-"<_:revdescription-1/>"
+"<revnumber>GNOME Weather Applet</revnumber> <date>2000</date> <_:"
+"revdescription-1/>"
 msgstr ""
-"<revnumber>Aplet Cuaca GNOME</revnumber> <date>2000</date> "
-"<_:revdescription-1/>"
+"<revnumber>Aplet Cuaca GNOME</revnumber> <date>2000</date> <_:"
+"revdescription-1/>"
 
 #. (itstool) path: articleinfo/releaseinfo
 #: C/index.docbook:228
@@ -282,12 +282,12 @@ msgstr "Maklumbalas"
 #: C/index.docbook:234
 msgid ""
 "To report a bug or make a suggestion regarding the Weather Report applet or "
-"this manual, follow the directions in the <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"this manual, follow the directions in the <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 "Untuk melaporkan pepijat atau membuat saranan berkenaan aplet Laporan Cuaca "
-"atau panduan ini, ikuti arahan di dalam <ulink url=\"help:cafe-user-"
-"guide/feedback\" type=\"help\">Halaman Maklumbalas CAFE</ulink>."
+"atau panduan ini, ikuti arahan di dalam <ulink url=\"help:cafe-user-guide/"
+"feedback\" type=\"help\">Halaman Maklumbalas CAFE</ulink>."
 
 #. (itstool) path: article/indexterm
 #: C/index.docbook:241
@@ -339,10 +339,10 @@ msgid ""
 "weather information and weather forecasts on your computer."
 msgstr ""
 "<application>Laporan Cuaca</application> memuat turun maklumat cuaca dari "
-"pelayan U.S. National Weather Service (NWS), termasuklah Interactive Weather"
-" Information Network (IWIN) dan lain-lain perkhidmatan cuaca. Anda boleh "
-"guna <application>Laporan Cuaca</application> untuk memaparkan maklumat "
-"cuaca semasa dan ramalan cuaca pada komputer anda."
+"pelayan U.S. National Weather Service (NWS), termasuklah Interactive Weather "
+"Information Network (IWIN) dan lain-lain perkhidmatan cuaca. Anda boleh guna "
+"<application>Laporan Cuaca</application> untuk memaparkan maklumat cuaca "
+"semasa dan ramalan cuaca pada komputer anda."
 
 #. (itstool) path: note/para
 #: C/index.docbook:269
@@ -360,8 +360,8 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: C/index.docbook:273
 msgid ""
-"<application>Weather Report</application> displays the following information"
-" for the default location, or a location that you specify:"
+"<application>Weather Report</application> displays the following information "
+"for the default location, or a location that you specify:"
 msgstr ""
 "<application>Laporan Cuaca</application> memaparkan maklumat berikut bagi "
 "lokasi lalai, atau lokasi yang anda tentukan:"
@@ -372,8 +372,8 @@ msgid ""
 "A weather icon that represents the general weather conditions. See <xref "
 "linkend=\"cafeweather-introduction-icons\"/>."
 msgstr ""
-"Satu ikon cuaca yang mewakili keadaan cuaca am. Sila rujuk <xref linkend"
-"=\"cafeweather-introduction-icons\"/>."
+"Satu ikon cuaca yang mewakili keadaan cuaca am. Sila rujuk <xref "
+"linkend=\"cafeweather-introduction-icons\"/>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:284
@@ -427,18 +427,18 @@ msgstr ""
 #: C/index.docbook:304
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
-"sunny.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock "
-"Sunny</phrase> </textobject></inlinemediaobject> "
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
-"night-clear.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock "
-"Night</phrase> </textobject></inlinemediaobject>"
+"sunny.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock Sunny</"
+"phrase> </textobject></inlinemediaobject> <inlinemediaobject><imageobject> "
+"<imagedata fileref=\"figures/stock_weather-night-clear.png\" format=\"PNG\"/"
+"> </imageobject><textobject> <phrase>Stock Night</phrase> </textobject></"
+"inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
-"sunny.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Siang "
-"Cerah</phrase> </textobject></inlinemediaobject> "
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
-"night-clear.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Malam "
-"Cerah</phrase> </textobject></inlinemediaobject>"
+"sunny.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Siang Cerah</"
+"phrase> </textobject></inlinemediaobject> <inlinemediaobject><imageobject> "
+"<imagedata fileref=\"figures/stock_weather-night-clear.png\" format=\"PNG\"/"
+"> </imageobject><textobject> <phrase>Malam Cerah</phrase> </textobject></"
+"inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:316
@@ -517,8 +517,8 @@ msgid ""
 "Cloudy</phrase> </textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
-"cloudy.png\" format=\"PNG\"/> </imageobject><textobject> "
-"<phrase>Mendung</phrase> </textobject></inlinemediaobject>"
+"cloudy.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Mendung</"
+"phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:344
@@ -543,12 +543,12 @@ msgstr ""
 #: C/index.docbook:349
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
-"fog.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock "
-"Fog</phrase> </textobject></inlinemediaobject>"
+"fog.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock Fog</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
-"fog.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Kabut</phrase>"
-" </textobject></inlinemediaobject>"
+"fog.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Kabut</phrase> "
+"</textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:355
@@ -577,8 +577,8 @@ msgid ""
 "Rain</phrase> </textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
-"showers.png\" format=\"PNG\"/> </imageobject><textobject> "
-"<phrase>Hujan</phrase> </textobject></inlinemediaobject>"
+"showers.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Hujan</"
+"phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:366
@@ -603,12 +603,12 @@ msgstr ""
 #: C/index.docbook:371
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
-"snow.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock "
-"Snow</phrase> </textobject></inlinemediaobject>"
+"snow.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock Snow</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
-"snow.png\" format=\"PNG\"/> </imageobject><textobject> "
-"<phrase>Salji</phrase> </textobject></inlinemediaobject>"
+"snow.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Salji</"
+"phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:377
@@ -633,12 +633,12 @@ msgstr ""
 #: C/index.docbook:382
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
-"storm.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock "
-"Storm</phrase> </textobject></inlinemediaobject>"
+"storm.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock Storm</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
-"storm.png\" format=\"PNG\"/> </imageobject><textobject> "
-"<phrase>Ribut</phrase> </textobject></inlinemediaobject>"
+"storm.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Ribut</"
+"phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:388
@@ -656,8 +656,8 @@ msgid ""
 "To add <application>Weather Report</application> to a panel, perform the "
 "following steps:"
 msgstr ""
-"Untuk menambah <application>Laporan Cuaca</application> ke dalam panel, buat"
-" langkah-langkah berikut:"
+"Untuk menambah <application>Laporan Cuaca</application> ke dalam panel, buat "
+"langkah-langkah berikut:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:405
@@ -675,8 +675,8 @@ msgid ""
 "Scroll down the list of items in the <guilabel>Add to Panel</guilabel> "
 "dialog, then select <guilabel>Weather Report</guilabel>."
 msgstr ""
-"Tatal ke bawah senarai item di dalam dialog <guilabel>Tambah ke "
-"Panel</guilabel>, kemudian pilih <guilabel>Laporan Cuaca</guilabel>."
+"Tatal ke bawah senarai item di dalam dialog <guilabel>Tambah ke Panel</"
+"guilabel>, kemudian pilih <guilabel>Laporan Cuaca</guilabel>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:421
@@ -711,12 +711,12 @@ msgstr ""
 #: C/index.docbook:439
 msgid ""
 "<imageobject> <imagedata fileref=\"figures/cafeweather-menu-prefs.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Context menu</phrase> "
-"</textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Context menu</phrase> </"
+"textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"figures/cafeweather-menu-prefs.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Menu Konteks</phrase> "
-"</textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Menu Konteks</phrase> </"
+"textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:433
@@ -754,13 +754,13 @@ msgstr ""
 #. (itstool) path: screenshot/mediaobject
 #: C/index.docbook:455
 msgid ""
-"<imageobject> <imagedata fileref=\"figures/cafeweather-prefs-locations.png\""
-" format=\"PNG\"/> </imageobject> <textobject> <phrase>Location "
-"Preferences</phrase> </textobject>"
+"<imageobject> <imagedata fileref=\"figures/cafeweather-prefs-locations.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Location Preferences</"
+"phrase> </textobject>"
 msgstr ""
-"<imageobject> <imagedata fileref=\"figures/cafeweather-prefs-locations.png\""
-" format=\"PNG\"/> </imageobject> <textobject> <phrase>Keutamaan "
-"Lokasi</phrase> </textobject>"
+"<imageobject> <imagedata fileref=\"figures/cafeweather-prefs-locations.png\" "
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Keutamaan Lokasi</"
+"phrase> </textobject>"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:465
@@ -793,13 +793,13 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:482
 msgid ""
-"Select the <guilabel>Location</guilabel> tab. The "
-"<guilabel>Location</guilabel> tabbed section contains a list of geographical"
-" regions, subregions, and specific locations."
+"Select the <guilabel>Location</guilabel> tab. The <guilabel>Location</"
+"guilabel> tabbed section contains a list of geographical regions, "
+"subregions, and specific locations."
 msgstr ""
-"Pilih tab <guilabel>Lokasi</guilabel>. Seksyen bertab "
-"<guilabel>Lokasi</guilabel> mengandungi satu senarai wilayah bergeografik, "
-"subwilayah, dan lokasi khusus."
+"Pilih tab <guilabel>Lokasi</guilabel>. Seksyen bertab <guilabel>Lokasi</"
+"guilabel> mengandungi satu senarai wilayah bergeografik, subwilayah, dan "
+"lokasi khusus."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:487
@@ -821,8 +821,8 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:497
 msgid ""
-"Click on a location. While the application retrieves the weather information"
-" for the new location, the tooltip \"Updating\" is displayed when you point "
+"Click on a location. While the application retrieves the weather information "
+"for the new location, the tooltip \"Updating\" is displayed when you point "
 "to the icon."
 msgstr ""
 "Klik pada lokasi. Semasa aplikasi mendapatkan maklumat cuaca bagi lokasi "
@@ -842,13 +842,12 @@ msgstr ""
 #: C/index.docbook:509
 msgid ""
 "You can already try searching by entering the name of your city into the "
-"<guilabel>Find</guilabel> field. Be aware that for cities close together, or"
-" for cities with no airport you may have to pick a nearby city in the "
-"region."
+"<guilabel>Find</guilabel> field. Be aware that for cities close together, or "
+"for cities with no airport you may have to pick a nearby city in the region."
 msgstr ""
 "Anda boleh menggelintar dengan masukkan nama bandar ke dalam medan "
-"<guilabel>Cari</guilabel>. Bagi bandar berhampiran atau kecil, ataupun tanpa"
-" kemudiahan lapangan terbang anda perlu memilih bandar tersedia yang "
+"<guilabel>Cari</guilabel>. Bagi bandar berhampiran atau kecil, ataupun tanpa "
+"kemudiahan lapangan terbang anda perlu memilih bandar tersedia yang "
 "terhampir di dalam wilayah."
 
 #. (itstool) path: sect2/title
@@ -860,8 +859,8 @@ msgstr "Mengemaskini Maklumat Cuaca"
 #: C/index.docbook:518
 msgid ""
 "To update the weather information that the Weather Report displays in the "
-"panel, right-click on the icon, then choose "
-"<guimenuitem>Update</guimenuitem>."
+"panel, right-click on the icon, then choose <guimenuitem>Update</"
+"guimenuitem>."
 msgstr ""
 "Untuk mengemaskini maklumat cuaca yang dipapar dalam panel, klik-kanan pada "
 "ikon kemudian pilih <guimenuitem>Kemaskini</guimenuitem>."
@@ -878,8 +877,7 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/index.docbook:524
 msgid ""
-"Go to the right-click menu and select "
-"<guimenuitem>Preferences</guimenuitem>."
+"Go to the right-click menu and select <guimenuitem>Preferences</guimenuitem>."
 msgstr ""
 "Pergi ke menu klik-kanan dan pilih <guimenuitem>Keutamaan</guimenuitem>."
 
@@ -890,9 +888,9 @@ msgid ""
 "<guilabel>General</guilabel> tab, select the <guilabel>Automatically update "
 "every ... minutes</guilabel> option."
 msgstr ""
-"Dalam dialog <guilabel>Keutamaan Cuaca</guilabel> di bawah tab "
-"<guilabel>Am</guilabel>, pilih pilihan <guilabel>Kemaskini secara automatik "
-"setiap ... minit</guilabel>."
+"Dalam dialog <guilabel>Keutamaan Cuaca</guilabel> di bawah tab <guilabel>Am</"
+"guilabel>, pilih pilihan <guilabel>Kemaskini secara automatik setiap ... "
+"minit</guilabel>."
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:526
@@ -901,8 +899,8 @@ msgid ""
 "retrieves updated information from the weather server. The default is to "
 "check every thirty minutes."
 msgstr ""
-"Guna kotak angka untuk tentukan sela yang mana Laporan Cuaca terima maklumat"
-" dikemaskini daripada pelayan cuaca. Lalai ialah pemeriksaan setiap tiga "
+"Guna kotak angka untuk tentukan sela yang mana Laporan Cuaca terima maklumat "
+"dikemaskini daripada pelayan cuaca. Lalai ialah pemeriksaan setiap tiga "
 "puluh minit."
 
 #. (itstool) path: sect2/title
@@ -933,24 +931,24 @@ msgstr ""
 #: C/index.docbook:536
 msgid ""
 "<imageobject> <imagedata fileref=\"figures/cafeweather-prefs-general.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>General "
-"Preferences</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>General Preferences</"
+"phrase> </textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"figures/cafeweather-prefs-general.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Keutamaan Am</phrase> "
-"</textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Keutamaan Am</phrase> </"
+"textobject>"
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:546
 msgid ""
-"Go to the right-click menu and select "
-"<guimenuitem>Preferences</guimenuitem>. In the <guilabel>Weather "
-"Preferences</guilabel> dialog under the <guilabel>General</guilabel> tab, "
-"select the units of measurement you want to use."
+"Go to the right-click menu and select <guimenuitem>Preferences</"
+"guimenuitem>. In the <guilabel>Weather Preferences</guilabel> dialog under "
+"the <guilabel>General</guilabel> tab, select the units of measurement you "
+"want to use."
 msgstr ""
 "Pergi ke menu klik-kanan dan pilih <guimenuitem>Keutamaan</guimenuitem>. "
-"Pada dialog <guilabel>Keutamaan Cuaca</guilabel> di bawah tab "
-"<guilabel>Am</guilabel>, pilih unit pengukuran yang dikehendaki."
+"Pada dialog <guilabel>Keutamaan Cuaca</guilabel> di bawah tab <guilabel>Am</"
+"guilabel>, pilih unit pengukuran yang dikehendaki."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:553
@@ -959,9 +957,9 @@ msgid ""
 "imperial, SI and others. The choice <guilabel>Default</guilabel> will use "
 "what we think is the default for your region, based off your chosen locale."
 msgstr ""
-"Terdapat beberapa unit pengukuran tersedia, termasuklah metrik, imperial, SI"
-" dan lain-lain. <guilabel>Lalai</guilabel> yang digunakan adalah berdasarkan"
-" wilayah di diami, berdasarkan lokasi anda."
+"Terdapat beberapa unit pengukuran tersedia, termasuklah metrik, imperial, SI "
+"dan lain-lain. <guilabel>Lalai</guilabel> yang digunakan adalah berdasarkan "
+"wilayah di diami, berdasarkan lokasi anda."
 
 #. (itstool) path: sect1/title
 #: C/index.docbook:565
@@ -978,9 +976,8 @@ msgid ""
 msgstr ""
 "Untuk melihat maklumat terperinci cuaca, klik-kanan pada Laporan Cuaca, "
 "kemudian pilih <guimenuitem>Perincian</guimenuitem>. Laporan Cuaca akan "
-"paparkan dialog <guilabel>Perincian</guilabel>. Dialog "
-"<guilabel>Perincian</guilabel> mengandungi seksyen bertab lalai seperti "
-"berikut:"
+"paparkan dialog <guilabel>Perincian</guilabel>. Dialog <guilabel>Perincian</"
+"guilabel> mengandungi seksyen bertab lalai seperti berikut:"
 
 #. (itstool) path: listitem/para
 #: C/index.docbook:573
@@ -1025,8 +1022,8 @@ msgstr ""
 #: C/index.docbook:593
 msgid ""
 "<imageobject> <imagedata fileref=\"figures/cafeweather-details.png\" "
-"format=\"PNG\"/> </imageobject> <textobject> <phrase>Weather Report "
-"details</phrase> </textobject>"
+"format=\"PNG\"/> </imageobject> <textobject> <phrase>Weather Report details</"
+"phrase> </textobject>"
 msgstr ""
 "<imageobject> <imagedata fileref=\"figures/cafeweather-details.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Perincian Laporan "
@@ -1059,8 +1056,7 @@ msgstr "Kemaskini terakhir"
 #. (itstool) path: entry/para
 #: C/index.docbook:630
 msgid ""
-"Time at which the weather conditions were last updated on the weather "
-"server."
+"Time at which the weather conditions were last updated on the weather server."
 msgstr "Waktu ketika keadaan cuaca terakhir dikemaskini pada pelayan cuaca."
 
 #. (itstool) path: entry/para
@@ -1168,8 +1164,8 @@ msgstr "Waktu matahari terbenam yang dikira untuk lokasi anda."
 msgid ""
 "Sunrise and sunset times are calculated locally from latitude and longitude "
 "information stored on your computer. Some conditions, such as refraction of "
-"light through the air, are hard to model. Resultantly, the calculated values"
-" for sunrise and sunset may be off by up to 10 minutes."
+"light through the air, are hard to model. Resultantly, the calculated values "
+"for sunrise and sunset may be off by up to 10 minutes."
 msgstr ""
 "Matahari terbit dan terbenam dikira secara setempat dari maklumat latitud "
 "dan longitud yang tersimpan pada komputer anda. Beberapa syarat, seperti "
@@ -1184,8 +1180,8 @@ msgstr "Ramalan"
 #. (itstool) path: sect2/para
 #: C/index.docbook:761
 msgid ""
-"The <guilabel>Forecast</guilabel> tabbed section displays a forecast for the"
-" location for the immediate future, usually the next five days."
+"The <guilabel>Forecast</guilabel> tabbed section displays a forecast for the "
+"location for the immediate future, usually the next five days."
 msgstr ""
 "Seksyen bertab <guilabel>Ramalan</guilabel> memaparkan ramalan untuk lokasi "
 "pada masa akan datang, biasanya sehingga lima hari berikutnya."
@@ -1243,30 +1239,30 @@ msgstr ""
 #: C/index.docbook:784
 msgid ""
 "By default, <application>Weather Report</application> downloads the radar "
-"maps from www.weather.com. Select the <guilabel>Use custom address for radar"
-" map</guilabel> option to display radar maps from an alternative Internet "
+"maps from www.weather.com. Select the <guilabel>Use custom address for radar "
+"map</guilabel> option to display radar maps from an alternative Internet "
 "address. You must type the address in the <guilabel>Address</guilabel> text "
 "box."
 msgstr ""
 "Secara lalai, <application>Laporan Cuaca</application> memuat turun peta "
 "radar dari www.weather.com. Pilih pilihan <guilabel>Guna alamat suai untuk "
-"peta radar</guilabel> untuk memaparkan peta radar dari alamat Internet lain."
-" Anda mesti taip alamat di dalam kotak teks <guilabel>Alamat</guilabel>."
+"peta radar</guilabel> untuk memaparkan peta radar dari alamat Internet lain. "
+"Anda mesti taip alamat di dalam kotak teks <guilabel>Alamat</guilabel>."
 
 #. (itstool) path: sect2/para
 #: C/index.docbook:780
 msgid ""
 "To enable the radar map, perform the following steps: <_:orderedlist-1/>"
 msgstr ""
-"Untuk membenarkan peta radar, buat langkah-langkah berikut: "
-"<_:orderedlist-1/>"
+"Untuk membenarkan peta radar, buat langkah-langkah berikut: <_:orderedlist-1/"
+">"
 
 #. (itstool) path: note/para
 #: C/index.docbook:787
 msgid ""
 "Most locations do not define a default radar map, especially outside of the "
-"U.S. Many locations will require you to specify a custom URL, if you wish to"
-" have a radar map."
+"U.S. Many locations will require you to specify a custom URL, if you wish to "
+"have a radar map."
 msgstr ""
 "Kebanyakan lokasi tidak takrifkan peta radar secara lalai, terutamanya "
 "diluar U.S. Kebanyakan lokasi memerlukan anda tentukan URL suai, jika anda "
@@ -1283,8 +1279,8 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Keizinan diberi untuk menyalin, mengedar dan/atau mengubahsuai dokumen ini "
@@ -1299,13 +1295,13 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Panduan ini adalah sebahagian dari koleksi panduan CAFE yang diedar bawah "
 "GFDL. Jika anda mahu edar panduan ini secara berasingan dari koleksi "
-"asalnya, anda boleh membuat sedemikian dengan menambah satu salinan lesen ke"
-" dalam panduan sepertimana yang dijelaskan dalam seksyen 6 lesen tersebut."
+"asalnya, anda boleh membuat sedemikian dengan menambah satu salinan lesen ke "
+"dalam panduan sepertimana yang dijelaskan dalam seksyen 6 lesen tersebut."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:19
@@ -1353,16 +1349,16 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "TANPA DI BAWAH APA-APA KEADAAN DAN TEORI PERUNDANGAN, SAMA ADA DALAM TORT "
 "(TERMASUKLAH KECUAIAN), KONTRAK, ATAU SEUMPAMA DENGANNYA, SI PENGARANG, "
@@ -1372,8 +1368,8 @@ msgstr ""
 "SECARA KHUSUS, TIDAK SENGAJA ATAU, KEROSAKAN LANJUTAN TERHADAP SESIAPA "
 "SAHAJA, TERMASUKLAH TANPA HAD BAGI KEROSAKAN NAMA BAIK, GANGGUAN KERJA, "
 "KEGAGALAN ATAU KEROSAKAN KOMPUTER, ATAU MANA-MANA  MAHUPUN SEMUA KEROSAKAN "
-"LAIN BERKAITAN PENGGUNAAN DOKUMEN DAN VERSI UBAHSUAI DOKUMEN, WALAUPUN PIHAK"
-" TERSEBUT TELAH DIMAKLUMKAN ADANYA KEBARANGKALIAN KEROSAKAN SEBEGITU BOLEH "
+"LAIN BERKAITAN PENGGUNAAN DOKUMEN DAN VERSI UBAHSUAI DOKUMEN, WALAUPUN PIHAK "
+"TERSEBUT TELAH DIMAKLUMKAN ADANYA KEBARANGKALIAN KEROSAKAN SEBEGITU BOLEH "
 "BERLAKU."
 
 #. (itstool) path: legalnotice/para
