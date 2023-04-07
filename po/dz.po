@@ -2,32 +2,32 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: cafe-applets 1.23.0\n"
+"Project-Id-Version: cafe-applets 1.25.0\n"
 "Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
-"POT-Creation-Date: 2020-01-10 17:58+0100\n"
+"POT-Creation-Date: 2020-08-11 21:05+0200\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2020\n"
 "Language-Team: Dzongkha (https://www.transifex.com/cafe/teams/13566/dz/)\n"
+"Language: dz\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: dz\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: accessx-status/applet.c:86 charpick/charpick.c:571 geyes/geyes.c:166
+#: accessx-status/applet.c:86 charpick/charpick.c:572 geyes/geyes.c:166
 #: cafeweather/cafeweather-about.c:41 multiload/main.c:48
 #: stickynotes/stickynotes_applet_callbacks.c:367
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
 
-#: accessx-status/applet.c:87 battstat/battstat_applet.c:819
-#: charpick/charpick.c:572 cpufreq/src/cpufreq-applet.c:466
+#: accessx-status/applet.c:87 battstat/battstat_applet.c:820
+#: charpick/charpick.c:573 cpufreq/src/cpufreq-applet.c:466
 #: drivemount/drivemount.c:109 geyes/geyes.c:167
 #: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
@@ -41,8 +41,7 @@ msgstr ""
 
 #: accessx-status/applet.c:100
 msgid "Shows the state of AccessX features such as latched modifiers"
-msgstr ""
-"འཛུལ་སྤྱོད་ཨེགསི་གི་ཁྱད་རྣམ་ ལེཊིཆ་ ལེགས་བཅོས་པ་བཟུམ་སྦེ་ གནས་ལུགས་སྟོན།"
+msgstr "འཛུལ་སྤྱོད་ཨེགསི་གི་ཁྱད་རྣམ་ ལེཊིཆ་ ལེགས་བཅོས་པ་བཟུམ་སྦེ་ གནས་ལུགས་སྟོན།"
 
 #: accessx-status/applet.c:101
 msgid ""
@@ -50,17 +49,16 @@ msgid ""
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: accessx-status/applet.c:105 battstat/battstat_applet.c:844
-#: charpick/charpick.c:592 command/command.c:128
+#: accessx-status/applet.c:105 battstat/battstat_applet.c:845
+#: charpick/charpick.c:593 command/command.c:128
 #: cpufreq/src/cpufreq-applet.c:490 drivemount/drivemount.c:127
 #: geyes/geyes.c:186 cafeweather/cafeweather-about.c:61 multiload/main.c:69
 #: netspeed/src/netspeed.c:829 stickynotes/stickynotes_applet_callbacks.c:388
 #: timerapplet/timerapplet.c:278 trashapplet/src/trashapplet.c:442
 msgid "translator-credits"
 msgstr ""
-"ཨའི་ཌི་ཨར་སི་གི་མ་དངུལ་རྒྱབ་སྐྱོར་ཐོག་ལས་ བརྡ་དོན་འཕྲུལ་རིག་ལས་ཁུངས་ནང་ "
-"སྐད་བསྒྱུར་འབད་ཡི། ཁ་གསལ་གྱི་དོན་ལུ་ འབྲེལ་བ་འཐབ་ས་: "
-"<pema_geyleg@druknet.bt>/<pgeyleg@dit.gov.bt>(_c)"
+"ཨའི་ཌི་ཨར་སི་གི་མ་དངུལ་རྒྱབ་སྐྱོར་ཐོག་ལས་ བརྡ་དོན་འཕྲུལ་རིག་ལས་ཁུངས་ནང་ སྐད་བསྒྱུར་འབད་ཡི། ཁ་གསལ་གྱི་"
+"དོན་ལུ་ འབྲེལ་བ་འཐབ་ས་: <pema_geyleg@druknet.bt>/<pgeyleg@dit.gov.bt>(_c)"
 
 #: accessx-status/applet.c:124
 #, c-format
@@ -74,15 +72,14 @@ msgstr ""
 #: accessx-status/applet.c:167
 #, c-format
 msgid "There was an error launching the keyboard preferences dialog: %s"
-msgstr ""
-"ལྡེ་སྒྲོམ་གྱི་དགའ་གདམ་ ཌའི་ལོག་ :%s གསར་བཙུགས་འབད་ནི་ལུ་ འཚོལ་བ་ཅིག་བྱུང་ནུག"
+msgstr "ལྡེ་སྒྲོམ་གྱི་དགའ་གདམ་ ཌའི་ལོག་ :%s གསར་བཙུགས་འབད་ནི་ལུ་ འཚོལ་བ་ཅིག་བྱུང་ནུག"
 
 #: accessx-status/applet.c:182
 msgid "_Keyboard Accessibility Preferences"
 msgstr "ལྡེ་སྒྲོམ་ལུ་ འཛུལ་སྤྱོད་ཀྱི་དགའ་གདམ་ཚུ།\"(_K)"
 
 #: accessx-status/applet.c:183 battstat/battstat_applet.c:63
-#: charpick/charpick.c:673 cpufreq/src/cpufreq-applet.c:119
+#: charpick/charpick.c:674 cpufreq/src/cpufreq-applet.c:119
 #: drivemount/drivemount.c:165 geyes/geyes.c:359
 #: cafeweather/cafeweather-applet.c:117 multiload/main.c:488
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
@@ -90,7 +87,7 @@ msgid "_Help"
 msgstr "གྲོགས་རམ།(_H)"
 
 #: accessx-status/applet.c:184 battstat/battstat_applet.c:66
-#: charpick/charpick.c:676 command/command.c:84
+#: charpick/charpick.c:677 command/command.c:84
 #: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:168
 #: geyes/geyes.c:362 cafeweather/cafeweather-applet.c:120 multiload/main.c:491
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
@@ -109,8 +106,7 @@ msgstr "འཛུལ་སྤྱོད་ཨེགསི་གི་གནས་
 
 #: accessx-status/applet.c:1044 accessx-status/applet.c:1195
 msgid "Shows keyboard status when accessibility features are used."
-msgstr ""
-"འཛུལ་སྤྱོད་ཀྱི་ཁྱད་རྣམ་ཚུ་ ལག་ལེན་འཐབ་པའི་སྐབས་ ལྡེ་སྒྲོམ་གྱི་གནས་ཚད་སྟོན།"
+msgstr "འཛུལ་སྤྱོད་ཀྱི་ཁྱད་རྣམ་ཚུ་ ལག་ལེན་འཐབ་པའི་སྐབས་ ལྡེ་སྒྲོམ་གྱི་གནས་ཚད་སྟོན།"
 
 #: accessx-status/applet.c:1078
 msgid "XKB Extension is not enabled"
@@ -146,13 +142,7 @@ msgstr "ལྡེ་སྒྲོམ་ལུ་ འཛུལ་སྤྱོད�
 msgid "Shows the status of keyboard accessibility features"
 msgstr "ལྡེ་སྒྲོམ་ལུ་ འཛུལ་སྤྱོད་ཁྱད་རྣམ་གྱི་ གནས་ཚད་སྟོན།"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:12
-msgid "preferences-desktop-accessibility"
-msgstr ""
-
-#: battstat/battstat_applet.c:60 charpick/charpick.c:670 command/command.c:83
+#: battstat/battstat_applet.c:60 charpick/charpick.c:671 command/command.c:83
 #: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:356
 #: cafeweather/cafeweather-applet.c:114 multiload/main.c:482
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
@@ -241,8 +231,7 @@ msgstr "འཕྲུལ་ལྟོའི་བརྡ་བསྐུལ།"
 #: battstat/battstat_applet.c:377
 #, c-format
 msgid "You have %d%% of your total battery capacity remaining."
-msgstr ""
-"ཁྱོད་རའི་འཕྲུལ་ལྟོ་ཤོང་ཚད་ལྷག་ལུད་ཀྱི་བསྡོམ་གྱི་ %d%% ཁྱོད་ལུ་ཡོདཔ་ཨིན།"
+msgstr "ཁྱོད་རའི་འཕྲུལ་ལྟོ་ཤོང་ཚད་ལྷག་ལུད་ཀྱི་བསྡོམ་གྱི་ %d%% ཁྱོད་ལུ་ཡོདཔ་ཨིན།"
 
 #: battstat/battstat_applet.c:383
 #, c-format
@@ -290,8 +279,8 @@ msgstr "འཕྲུལ་ལྟོའི་གནས་ཚད་མ་ཤེས
 msgid "N/A"
 msgstr "ཨེན་/ཨེ།"
 
-#: battstat/battstat_applet.c:783 drivemount/drivemount.c:153
-#: geyes/geyes.c:344 geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
+#: battstat/battstat_applet.c:784 drivemount/drivemount.c:153 geyes/geyes.c:344
+#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
 #: cafeweather/cafeweather-pref.c:747
 #: stickynotes/stickynotes_applet_callbacks.c:345
 #: stickynotes/stickynotes_applet_callbacks.c:540
@@ -300,35 +289,35 @@ msgstr "ཨེན་/ཨེ།"
 msgid "There was an error displaying help: %s"
 msgstr "གྲོགས་རམ་%sབཀྲམ་སྟོན་འབད་ནི་ལུ་ འཛོལ་བ་ཅིག་བྱུང་ནུག"
 
-#: battstat/battstat_applet.c:824
+#: battstat/battstat_applet.c:825
 msgid "This utility shows the status of your laptop battery."
 msgstr "སྤྱོད་ཆས་འདི་གིས་ ཁྱོད་ཀྱི་ལེཔ་ཊོཔ་གི་ འཕྲུལ་ལྟོའི་གནས་ཚད་སྟོནམ་ཨིན།"
 
-#: battstat/battstat_applet.c:826
+#: battstat/battstat_applet.c:827
 msgid "upower backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:827
+#: battstat/battstat_applet.c:828
 msgid "Legacy backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:836
+#: battstat/battstat_applet.c:837
 msgid "About Battery Charge Monitor"
 msgstr ""
 
-#: battstat/battstat_applet.c:838
+#: battstat/battstat_applet.c:839
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
+#: battstat/battstat_applet.c:1115 battstat/battstat_applet.c:1165
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Battery Charge Monitor"
 msgstr "འཕྲུལ་ལྟོའི་ཤུགས་ཚད་ ལྟ་རྟོག་།"
 
-#: battstat/battstat_applet.c:1165
+#: battstat/battstat_applet.c:1166
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor a laptop's remaining power"
 msgstr "ལེཔ་ཊོཔ་གི་ ནུས་ཤུགས་ལྷག་ལུས་ བལྟ་རྟོག་འབད།"
@@ -357,27 +346,19 @@ msgstr "ལྷག་ལུས་ཀྱི་བརྒྱ་ཆ་སྟོན།
 msgid "Notifications"
 msgstr ""
 
-#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge
-#. drops to: [XX] percent/minutes remaining'
+#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge drops to: [XX] percent/minutes remaining'
 #: battstat/battstat_applet.ui:206
 msgid "_Warn when battery charge drops to:"
 msgstr "འཕྲུལ་ལྟོའི་ནུས་ཤུགས་: ལུ་འབབ་པའི་འི་སྐབས་ ཉེན་བརྡ་འབད།(_W)"
 
 #: battstat/battstat_applet.ui:262
 msgid "_Notify when battery is fully recharged"
-msgstr ""
-"འཕྲུལ་ལྟོའི་ནུས་ཤུགས་གངམ་སྦེ་ བསྐྱར་བླུགས་འབད་སྐབས་ བརྡ་བསྐུལ་འབད།(_N)"
+msgstr "འཕྲུལ་ལྟོའི་ནུས་ཤུགས་གངམ་སྦེ་ བསྐྱར་བླུགས་འབད་སྐབས་ བརྡ་བསྐུལ་འབད།(_N)"
 
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:5
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Battstat Factory"
 msgstr "འཕྲུལ་ལྟོའི་གནས་ཚད་ འཕྲུལ་ཁང་།"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:12
-msgid "battery"
-msgstr ""
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:5
 msgid "Red value level"
@@ -388,8 +369,8 @@ msgid ""
 "The battery level below which the battery is displayed as red. Also the "
 "value at which the low battery warning is displayed."
 msgstr ""
-"དམརཔོ་གི་ཚད་ཀྱི་འོག་ལུ་ བཀྲམ་སྟོན་འབད་མི་ འཕྲུལ་ལྟོའི་གནས་རིམ། "
-"འཕྲུལ་ལྟོ་དམའ་བའི་ཉེན་བརྡ་ བཀྲམ་སྟོན་འབད་ཡོད་པའི་བེ་ལུ།"
+"དམརཔོ་གི་ཚད་ཀྱི་འོག་ལུ་ བཀྲམ་སྟོན་འབད་མི་ འཕྲུལ་ལྟོའི་གནས་རིམ། འཕྲུལ་ལྟོ་དམའ་བའི་ཉེན་བརྡ་ བཀྲམ་སྟོན་"
+"འབད་ཡོད་པའི་བེ་ལུ།"
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:10
 msgid "Warn on low time rather than low percentage"
@@ -400,8 +381,8 @@ msgid ""
 "Use the value defined in red_value as a time remaining to show the warning "
 "dialog rather than a percentage."
 msgstr ""
-"བརྒྱ་ཆའི་ཚབ་ལུ་ ཉེན་བརྡའི་ཌའི་ལོག་སྟོན་ནིའི་དོན་ལུ་ རེཌི་བེ་ལུ་ནང་ "
-"ངེས་འཛིན་འབད་མི་བེ་ལུ་དེ་ དུས་ཚོད་ལྷག་ལུས་བཟུམ་ཅིག་སྦེ་ ལག་ལེན་འཐབ།"
+"བརྒྱ་ཆའི་ཚབ་ལུ་ ཉེན་བརྡའི་ཌའི་ལོག་སྟོན་ནིའི་དོན་ལུ་ རེཌི་བེ་ལུ་ནང་ ངེས་འཛིན་འབད་མི་བེ་ལུ་དེ་ དུས་ཚོད་ལྷག་"
+"ལུས་བཟུམ་ཅིག་སྦེ་ ལག་ལེན་འཐབ།"
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:15
 msgid "Low Battery Notification"
@@ -433,8 +414,7 @@ msgstr "དུས་ཚོད་/བརྒྱ་ཆའི་ ཁ་ཡིག་�
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:31
 msgid "0 for no label, 1 for percentage and 2 for time remaining."
-msgstr ""
-"ཁ་ཡིག་མེད་པའི་དོན་ལུ་ ༠། བརྒྱ་ཆའི་དོན་ལུ་ ༡ དང་ དུས་ཚོད་ལྷག་ལུས་དོན་ལུ་ ༢།"
+msgstr "ཁ་ཡིག་མེད་པའི་དོན་ལུ་ ༠། བརྒྱ་ཆའི་དོན་ལུ་ ༡ དང་ དུས་ཚོད་ལྷག་ལུས་དོན་ལུ་ ༢།"
 
 #: battstat/properties.c:237
 msgid "Percent"
@@ -447,6 +427,14 @@ msgstr "སྐར་མ་ལྷག་ལུས།"
 #: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:3
 msgid "Battery Status Utility"
 msgstr "འཕྲུལ་ལྟོའི་གནས་ཚད་སྤྱོད་ཆས།"
+
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:7
+msgid "Battery power low"
+msgstr ""
+
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:11
+msgid "Battery fully re-charged"
+msgstr ""
 
 #: charpick/charpick.c:404
 msgid "Available palettes"
@@ -466,32 +454,31 @@ msgstr "དམིགས་བསལ་གྱི་ཡིག་འབྲུ་བ
 msgid "insert special character %s"
 msgstr "དམིགས་བསལ་གྱི་ཡིག་འབྲུ་%s བཙུགས།"
 
-#: charpick/charpick.c:583
+#: charpick/charpick.c:584
 msgid "About Character Palette"
 msgstr ""
 
-#: charpick/charpick.c:585
+#: charpick/charpick.c:586
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: charpick/charpick.c:587
+#: charpick/charpick.c:588
 msgid ""
 "Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
-"ངེད་ཀྱི་ལྡེ་སྒྲོམ་གུ་མེད་པའི་ ཡིག་འབྲུ་གསརཔ་ཚུ་ སེལ་འཐུའི་དོན་ལུ་ "
-"ཇི་ནོམ་པེ་ནཱལ་གྱི་ ཨེཔ་ལེཊི། ཇི་ཨེན་ཡུ་ ཡོངས་ཁྱབ་མི་མང་ཆོག་ཐམ་ཐོག་ལས་ "
-"འཛིན་གྲོལ་འབད་ཡོད།"
+"ངེད་ཀྱི་ལྡེ་སྒྲོམ་གུ་མེད་པའི་ ཡིག་འབྲུ་གསརཔ་ཚུ་ སེལ་འཐུའི་དོན་ལུ་ ཇི་ནོམ་པེ་ནཱལ་གྱི་ ཨེཔ་ལེཊི། ཇི་ཨེན་ཡུ་ "
+"ཡོངས་ཁྱབ་མི་མང་ཆོག་ཐམ་ཐོག་ལས་ འཛིན་གྲོལ་འབད་ཡོད།"
 
-#: charpick/charpick.c:699 charpick/charpick.c:713
+#: charpick/charpick.c:700 charpick/charpick.c:714
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:9
 #: charpick/properties.c:451
 msgid "Character Palette"
 msgstr "ཡིག་འབྲུའི་པེ་ལེཊི།"
 
-#: charpick/charpick.c:699
+#: charpick/charpick.c:700
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Insert characters"
 msgstr "ཡིག་འབྲུ་བཙུགས།"
@@ -500,12 +487,6 @@ msgstr "ཡིག་འབྲུ་བཙུགས།"
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Charpicker Applet Factory"
 msgstr "ཡིག་འབྲུ་འཐུ་མི་ ཨེཔ་ལེཊི་འཕྲུལ་ཁང་།"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:12
-msgid "accessories-character-map"
-msgstr ""
 
 #: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:5
 msgid "Characters shown on applet startup"
@@ -516,9 +497,8 @@ msgid ""
 "The string that the user had selected when the applet was last used. This "
 "string will be displayed when the user starts the applet."
 msgstr ""
-"ལག་ལེན་པ་གིས་ མཐའ་མཇུག་གི་པེ་ལེཊི་དེ་ ལག་ལེན་འཐབ་པའི་སྐབས་ "
-"སེལ་འཐུ་འབད་མི་ཡིག་རྒྱུན། ལག་ལེན་པ་གིས་ པེ་ལེཊི་དེ་ འགོ་བཙུགསཔ་ད་ "
-"ཡིག་རྒྱུན་དེ་བཀྲམ་སྟོན་འབད་འོང་།"
+"ལག་ལེན་པ་གིས་ མཐའ་མཇུག་གི་པེ་ལེཊི་དེ་ ལག་ལེན་འཐབ་པའི་སྐབས་ སེལ་འཐུ་འབད་མི་ཡིག་རྒྱུན། ལག་ལེན་པ་"
+"གིས་ པེ་ལེཊི་དེ་ འགོ་བཙུགསཔ་ད་ ཡིག་རྒྱུན་དེ་བཀྲམ་སྟོན་འབད་འོང་།"
 
 #: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:10
 #: charpick/properties.c:378
@@ -543,9 +523,7 @@ msgstr "པེ་ལེཊི་ཐོ་བཀོད།"
 
 #: charpick/properties.c:125
 msgid "Modify a palette by adding or removing characters"
-msgstr ""
-"ཡིག་འབྲུ་ཚུ་ ཁ་སྐོང་བརྐྱབས་པའམ་ རྩ་བསྐྲད་བཏང་ཐོག་ལས་ པེ་ལེཊི་ཅིག་ "
-"ལེགས་བཅོས་འབད།"
+msgstr "ཡིག་འབྲུ་ཚུ་ ཁ་སྐོང་བརྐྱབས་པའམ་ རྩ་བསྐྲད་བཏང་ཐོག་ལས་ པེ་ལེཊི་ཅིག་ ལེགས་བཅོས་འབད།"
 
 #: charpick/properties.c:239
 msgid "Add Palette"
@@ -641,12 +619,6 @@ msgstr ""
 msgid "Command"
 msgstr "བརྡ་བཀོད།"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:12
-msgid "utilities-terminal"
-msgstr ""
-
 #: command/org.cafe.panel.applet.command.gschema.xml.in:5
 msgid "Command to execute"
 msgstr ""
@@ -718,12 +690,6 @@ msgstr "ལས་སྦྱོར་ལྟེ་བ་འབྱུང་ཐེང
 msgid "Monitor the CPU Frequency Scaling"
 msgstr "ལས་སྦྱོར་ལྟེ་བའི་འབྱུང་ཐེངས་ཀྱི་ཆ་ཚད་འཇལ་ནི་ལུ་ བལྟ་རྟོག་འབད།"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-cpu-frequency-applet"
-msgstr ""
-
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:6
 msgid "CPU to Monitor"
 msgstr "ལས་སྦྱོར་ལྟེ་བ་ལས་ ལྟ་རྟོག་པ་ལུ།"
@@ -733,8 +699,8 @@ msgid ""
 "Set the CPU to monitor. In a single processor system you don't have to "
 "change it."
 msgstr ""
-"ལས་སྦྱོར་ལྟེ་བ་དེ་ ལྟ་རྟོག་་ལུ་ གཞི་སྒྲིག་འབད། "
-"ལས་སྦྱོར་གློག་འཕྲུལ་རྐྱང་པའི་རིམ་ལུགས་སྐབས་ བསྒྱུར་བཅོས་འབད་མི་དགོ"
+"ལས་སྦྱོར་ལྟེ་བ་དེ་ ལྟ་རྟོག་་ལུ་ གཞི་སྒྲིག་འབད། ལས་སྦྱོར་གློག་འཕྲུལ་རྐྱང་པའི་རིམ་ལུགས་སྐབས་ བསྒྱུར་བཅོས་འབད་"
+"མི་དགོ"
 
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:11
 msgid "Mode to show CPU usage"
@@ -743,17 +709,16 @@ msgstr ""
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:12
 msgid ""
 "A 0 value means to show the applet in graphic mode (pixmap only), 1 to show "
-"the applet in text mode (not to show the pixmap) and 2 to show the applet in"
-" graphic and text mode."
+"the applet in text mode (not to show the pixmap) and 2 to show the applet in "
+"graphic and text mode."
 msgstr ""
-"བེ་ལུ་༠ གིས་ ཚད་རིས་ཐབས་ལམ་(པར་ཁྲ་རྐྱངམ)ནང་ ཨེཔ་ལེཊི་སྟོནམ་ཨིན། ༡ གིས་ "
-"ཚིག་ཡིག་ཐབས་ལམ་ནང་(པར་ཁྲ་སྟོན་ནི་མེན་པར) ཨེཔ་ལེཊི་སྟོནམ་ཨིན། དེ་ལས་ ༢ ཀྱིས་ "
-"ཚད་རིས་དང་ ཚིག་ཡིག་ཐབས་ལམ་ནང་ ཨེཔ་ལེཊི་སྟོནམ་ཨིན།"
+"བེ་ལུ་༠ གིས་ ཚད་རིས་ཐབས་ལམ་(པར་ཁྲ་རྐྱངམ)ནང་ ཨེཔ་ལེཊི་སྟོནམ་ཨིན། ༡ གིས་ ཚིག་ཡིག་ཐབས་ལམ་ནང་(པར་"
+"ཁྲ་སྟོན་ནི་མེན་པར) ཨེཔ་ལེཊི་སྟོནམ་ཨིན། དེ་ལས་ ༢ ཀྱིས་ ཚད་རིས་དང་ ཚིག་ཡིག་ཐབས་ལམ་ནང་ ཨེཔ་ལེཊི་སྟོནམ་"
+"ཨིན།"
 
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:16
 msgid "The type of text to display (if the text is enabled)."
-msgstr ""
-"བཀྲམ་སྟོན་འབད་ནིའི་ ཚིག་ཡིག་གི་དབྱེ་བ། (ཚིག་ཡིག་དེ་ལྕོགས་ཅན་ཨིན་པ་ཅིན)"
+msgstr "བཀྲམ་སྟོན་འབད་ནིའི་ ཚིག་ཡིག་གི་དབྱེ་བ། (ཚིག་ཡིག་དེ་ལྕོགས་ཅན་ཨིན་པ་ཅིན)"
 
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:17
 msgid ""
@@ -777,9 +742,7 @@ msgstr ""
 
 #: cpufreq/src/cpufreq-applet.c:485
 msgid "This utility shows the current CPU Frequency Scaling."
-msgstr ""
-"སྤྱོད་ཆས་འདི་གིས་ "
-"ད་ལྟོའི་ལས་སྦྱོར་ལྟེ་བའི་འབྱུང་ཐེངས་ཀྱི་ཆ་ཚད་འཇལ་ཐངས་སྟོནམ་ཨིན།"
+msgstr "སྤྱོད་ཆས་འདི་གིས་ ད་ལྟོའི་ལས་སྦྱོར་ལྟེ་བའི་འབྱུང་ཐེངས་ཀྱི་ཆ་ཚད་འཇལ་ཐངས་སྟོནམ་ཨིན།"
 
 #: cpufreq/src/cpufreq-applet.c:869
 msgid "This utility shows the current CPU Frequency"
@@ -810,10 +773,8 @@ msgid ""
 "You will not be able to modify the frequency of your machine.  Your machine "
 "may be misconfigured or not have hardware support for CPU frequency scaling."
 msgstr ""
-"ཁྱོད་ཀྱིས་ཁྱོད་རའི་གློག་འཕྲུལ་གྱི་ འབྱུང་ཐེངས་དེ་ ལེགས་བཅོས་འབད་མི་ཚུགས། "
-"ཁྱོད་ཀྱི་གློག་འཕྲུལ་ལུ་ རིམ་སྒྲིག་ཕྱི་འགྱུར་འབད་ཡོད་པའམ་ "
-"ལས་སྦྱོར་ལྟེ་བའི་འབྱུང་ཐེངས་ཀྱི་ཆ་ཚད་འཇལ་ནིའི་དོན་ལུ་ "
-"སྲ་ཆས་ཀྱི་རྒྱབ་སྐྱོར་མི་འཐོབ།"
+"ཁྱོད་ཀྱིས་ཁྱོད་རའི་གློག་འཕྲུལ་གྱི་ འབྱུང་ཐེངས་དེ་ ལེགས་བཅོས་འབད་མི་ཚུགས། ཁྱོད་ཀྱི་གློག་འཕྲུལ་ལུ་ རིམ་སྒྲིག་ཕྱི་"
+"འགྱུར་འབད་ཡོད་པའམ་ ལས་སྦྱོར་ལྟེ་བའི་འབྱུང་ཐེངས་ཀྱི་ཆ་ཚད་འཇལ་ནིའི་དོན་ལུ་ སྲ་ཆས་ཀྱི་རྒྱབ་སྐྱོར་མི་འཐོབ།"
 
 #: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:14
 msgid "Change CPU Frequency scaling"
@@ -821,6 +782,10 @@ msgstr ""
 
 #: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:15
 msgid "Privileges are required to change the CPU Frequency scaling."
+msgstr ""
+
+#: drivemount/drive-button.c:307
+msgid "nothing to mount"
 msgstr ""
 
 #: drivemount/drive-button.c:340 drivemount/drive-button.c:354
@@ -875,11 +840,9 @@ msgstr ""
 
 #: drivemount/drivemount.c:124
 msgid "Applet for mounting and unmounting block volumes."
-msgstr ""
-"སྡེབ་ཚན་གྱི་བེ་ལུསི་ཚུ་ སྦྱར་བརྩེགས་འབད་ནི་དང་ "
-"བརྩེགས་བཤོལ་འབད་ནིའི་ཨེཔ་ལེཊི།"
+msgstr "སྡེབ་ཚན་གྱི་བེ་ལུསི་ཚུ་ སྦྱར་བརྩེགས་འབད་ནི་དང་ བརྩེགས་བཤོལ་འབད་ནིའི་ཨེཔ་ལེཊི།"
 
-#: drivemount/drivemount.c:185 drivemount/drivemount.c:225
+#: drivemount/drivemount.c:185 drivemount/drivemount.c:220
 #: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Disk Mounter"
 msgstr "ཌིཀསི་ སྦྱར་བརྩེགས་འབད་མི།"
@@ -896,12 +859,6 @@ msgstr "འཐེན་འཕྲུལ་སྦྱར་བརྩེགས་ཀ
 msgid "Mount local disks and devices"
 msgstr "ཉེ་གནས་ཀྱི་ཌིཀསི་དང་ ཐབས་འཕྲུལ་ཚུ་ སྦྱར་བརྩེགས་འབད།"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:12
-msgid "media-floppy"
-msgstr ""
-
 #: geyes/geyes.c:178
 msgid "About Eyes"
 msgstr ""
@@ -909,8 +866,8 @@ msgstr ""
 #: geyes/geyes.c:180
 msgid "A goofy set of eyes for the CAFE panel. They follow your mouse."
 msgstr ""
-"ཇི་ནོམ་ པེ་ནཱལ་གྱི་དོན་ལུ་ ངོ་འདྲ་བཟོ་མི་ ཨེགསི་མིག་རིལ་ཆུང་ཀུ་ཅིག། "
-"དེ་ཚུ་གིས་ ཁྱོད་ཀྱི་ མཱའུསི་ རྗེས་སུ་འབྲངམ་ ཨིན། "
+"ཇི་ནོམ་ པེ་ནཱལ་གྱི་དོན་ལུ་ ངོ་འདྲ་བཟོ་མི་ ཨེགསི་མིག་རིལ་ཆུང་ཀུ་ཅིག། དེ་ཚུ་གིས་ ཁྱོད་ཀྱི་ མཱའུསི་ རྗེས་སུ་"
+"འབྲངམ་ ཨིན། "
 
 #: geyes/geyes.c:182
 msgid ""
@@ -936,12 +893,6 @@ msgstr ""
 msgid "A set of eyeballs for your panel"
 msgstr "ཁྱོད་ཀྱི་པེ་ནཱལ་གྱི་དོན་ལུ་ མིག་རིལ་ཆ་ཚན་ཅིག"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-eyes-applet"
-msgstr ""
-
 #: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:5
 #: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:6
 msgid "Directory in which the theme is located"
@@ -953,9 +904,7 @@ msgstr "མིག་ཏོ་གི་ཨེཔ་ལེཊི་ གསར་�
 
 #: geyes/themes.c:130
 msgid "There was a fatal error while trying to load the theme."
-msgstr ""
-"བརྗོད་དོན་དེ་ མངོན་གསལ་འབད་ནི་ལུ་ འབད་རྩོལ་བསྐྱེད་པའི་སྐབས་ "
-"འཛོལ་བ་ཚབས་ཆེན་ཅིག་བྱུང་ནུག"
+msgstr "བརྗོད་དོན་དེ་ མངོན་གསལ་འབད་ནི་ལུ་ འབད་རྩོལ་བསྐྱེད་པའི་སྐབས་ འཛོལ་བ་ཚབས་ཆེན་ཅིག་བྱུང་ནུག"
 
 #: geyes/themes.c:282
 msgid "Eyes Preferences"
@@ -981,8 +930,7 @@ msgstr ""
 
 #: cafeweather/cafeweather-about.c:58
 msgid "A panel application for monitoring local weather conditions."
-msgstr ""
-"ཉེ་གནས་ཀྱི་གནམ་གཤིས་གནས་སྟངས་ ལྟ་རྟོག་གི་དོན་ལུ་ པེ་ནཱལ་གྱི་གློག་རིམ་ཅིག"
+msgstr "ཉེ་གནས་ཀྱི་གནམ་གཤིས་གནས་སྟངས་ ལྟ་རྟོག་གི་དོན་ལུ་ པེ་ནཱལ་གྱི་གློག་རིམ་ཅིག"
 
 #: cafeweather/cafeweather-applet.c:108
 msgid "_Details"
@@ -1140,8 +1088,8 @@ msgstr "ཡུ་ཨར་ཨེལ་བཙུགས།"
 msgid ""
 "Failed to load the Locations XML database.  Please report this as a bug."
 msgstr ""
-"གནས་ཁོངས་ཚུ་ ཨེགསི་ཨེམ་ཨེལ་ གནད་སྡུད་གཞི་རྟེན་ མངོན་གསལ་འབད་མ་ཚུགས། "
-"འདི་རྐྱེན་ཅིག་སྦེ་ སྙན་ཞུ་འབད་གནང་།"
+"གནས་ཁོངས་ཚུ་ ཨེགསི་ཨེམ་ཨེལ་ གནད་སྡུད་གཞི་རྟེན་ མངོན་གསལ་འབད་མ་ཚུགས། འདི་རྐྱེན་ཅིག་སྦེ་ སྙན་ཞུ་འབད་"
+"གནང་།"
 
 #: cafeweather/cafeweather-pref.c:807
 msgid "Weather Preferences"
@@ -1295,12 +1243,6 @@ msgstr "གནམ་གཤིས་ཀྱི་ཨེཔ་ལེཊི་ ག�
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "ད་ལྟོའི་གནམ་གཤིས་ཀྱི་ གནས་སྟངས་དང་ སྔོན་བཤད་ལུ་ བལྟ་རྟོག་འབད།"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
-msgid "weather-storm"
-msgstr ""
-
 #: multiload/main.c:60
 msgid "About System Monitor"
 msgstr ""
@@ -1316,9 +1258,8 @@ msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
-"ལས་སྦྱོར་ལྟེ་བ་དང་ རེམ་ བརྗེ་སོར་་བར་སྟོང་ལག་ལེན་ "
-"དེ་ལས་ཡོངས་འབྲེལ་འགྲུལ་ལམ་གྱི་དོན་ལུ་ ཚད་ཁྲམ་ཚུ་བཀྲམ་སྟོན་འབད་ནིའི་ "
-"ལྕོགས་གྲུབ་ཅན་གྱི་ རིམ་ལུགས་ལྗིད་ཚད་ལྟ་རྟོག་པ་ཅིག"
+"ལས་སྦྱོར་ལྟེ་བ་དང་ རེམ་ བརྗེ་སོར་་བར་སྟོང་ལག་ལེན་ དེ་ལས་ཡོངས་འབྲེལ་འགྲུལ་ལམ་གྱི་དོན་ལུ་ ཚད་ཁྲམ་ཚུ་"
+"བཀྲམ་སྟོན་འབད་ནིའི་ ལྕོགས་གྲུབ་ཅན་གྱི་ རིམ་ལུགས་ལྗིད་ཚད་ལྟ་རྟོག་པ་ཅིག"
 
 #: multiload/main.c:129
 msgid "Start system-monitor"
@@ -1416,7 +1357,7 @@ msgstr "རིམ་ལུགས་ལྟ་རྟོག་པ་ཁ་ཕྱེ
 msgid "System Monitor"
 msgstr "རིམ་ལུགས་ལྟ་རྟོག་པ།"
 
-#: multiload/netspeed.c:40
+#: multiload/netspeed.c:43
 #, c-format
 msgid "%s/s"
 msgstr "%s/s"
@@ -1432,12 +1373,6 @@ msgstr ""
 #: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A system load indicator"
 msgstr "རིམ་ལུགས་ལྗིད་ཚད་ཀྱི་བརྡ་སྟོན་པ་ཅིག།"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:12
-msgid "utilities-system-monitor"
-msgstr ""
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:5
 msgid "Enable CPU load graph"
@@ -1476,30 +1411,24 @@ msgid ""
 "For horizontal panels, the width of the graphs in pixels. For vertical "
 "panels, this is the height of the graphs."
 msgstr ""
-"ཐད་སྙོམས་པེ་ནཱལསི་གི་དོན་ལུ་ ཚད་ཁྲམ་གྱི་རྒྱ་ཚད་དེ་ པིཀ་སེལསི་ནང་ཨིན། "
-"ཀེར་ཕྲང་པེ་ནཱལ་ཚུ་གི་དོན་ལུ་ འདི་ཚད་ཁྲམ་གྱི་མཐོ་ཚད་ཨིན།"
+"ཐད་སྙོམས་པེ་ནཱལསི་གི་དོན་ལུ་ ཚད་ཁྲམ་གྱི་རྒྱ་ཚད་དེ་ པིཀ་སེལསི་ནང་ཨིན། ཀེར་ཕྲང་པེ་ནཱལ་ཚུ་གི་དོན་ལུ་ འདི་"
+"ཚད་ཁྲམ་གྱི་མཐོ་ཚད་ཨིན།"
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:38
 msgid "Graph color for user-related CPU activity"
-msgstr ""
-"ལག་ལེན་པ་དང་འབྲེལ་བའི་ ལས་སྦྱོར་ལྟེ་བའི་ལཱ་གི་དོན་ལུ་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
+msgstr "ལག་ལེན་པ་དང་འབྲེལ་བའི་ ལས་སྦྱོར་ལྟེ་བའི་ལཱ་གི་དོན་ལུ་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:42
 msgid "Graph color for system-related CPU activity"
-msgstr ""
-"རིམ་ལུགས་དང་འབྲེལ་བའི་ ལས་སྦྱོར་ལྟེ་བའི་ལཱ་གི་དོན་ལས་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
+msgstr "རིམ་ལུགས་དང་འབྲེལ་བའི་ ལས་སྦྱོར་ལྟེ་བའི་ལཱ་གི་དོན་ལས་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:46
 msgid "Graph color for nice-related CPU activity"
-msgstr ""
-"ཆུང་ཀུ་དང་འབྲེལ་བ་ཡོད་པའི་ ལས་སྦྱོར་ལྟེ་བའི་ལཱ་གི་དོན་ལུ་ "
-"ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
+msgstr "ཆུང་ཀུ་དང་འབྲེལ་བ་ཡོད་པའི་ ལས་སྦྱོར་ལྟེ་བའི་ལཱ་གི་དོན་ལུ་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:50
 msgid "Graph color for iowait related CPU activity"
-msgstr ""
-"ཨའི་ཨོ་ཝེཊི་དང་ འབྲེལ་བ་ཡོད་པའི་ ལས་སྦྱོར་ལྟེ་བའི་ ལཱ་གི་དོན་ལུ་ "
-"ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
+msgstr "ཨའི་ཨོ་ཝེཊི་དང་ འབྲེལ་བ་ཡོད་པའི་ ལས་སྦྱོར་ལྟེ་བའི་ ལཱ་གི་དོན་ལུ་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:54
 msgid "CPU graph background color"
@@ -1564,8 +1493,7 @@ msgstr ""
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:114
 msgid "Graph color for user-related swap usage"
-msgstr ""
-"ལག་ལེན་པ་དང་འབྲེལ་བའི་ བརྗེ་སོར་ལག་ལེན་གྱི་དོན་ལུ་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
+msgstr "ལག་ལེན་པ་དང་འབྲེལ་བའི་ བརྗེ་སོར་ལག་ལེན་གྱི་དོན་ལུ་ ཚད་ཁྲམ་གྱི་ཚོས་གཞི།"
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:118
 msgid "Swap graph background color"
@@ -1880,12 +1808,6 @@ msgstr ""
 msgid "Network Monitor"
 msgstr ""
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-netspeed-applet"
-msgstr ""
-
 #: netspeed/src/netspeed.c:427
 msgid "b"
 msgstr ""
@@ -2156,15 +2078,7 @@ msgstr "སྦྱར་རྩི་ཅན་གྱི་དྲན་འཛིན
 
 #: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Create, view, and manage sticky notes on the desktop"
-msgstr ""
-"ཌེཀསི་་ཊོཔ་གུ་ སྦྱར་རྩི་ཅན་གྱི་དྲན་འཛིན་ཚུ་ གསར་བསྐྲུན་འབད་ བལྟ་ "
-"འཛིན་སྐྱོང་འཐབ།"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-sticky-notes-applet"
-msgstr ""
+msgstr "ཌེཀསི་་ཊོཔ་གུ་ སྦྱར་རྩི་ཅན་གྱི་དྲན་འཛིན་ཚུ་ གསར་བསྐྲུན་འབད་ བལྟ་ འཛིན་སྐྱོང་འཐབ།"
 
 #: stickynotes/stickynotes.c:577
 msgid "This note is locked."
@@ -2200,9 +2114,7 @@ msgstr ""
 
 #: stickynotes/stickynotes.ui:119
 msgid "Choose a font to use for all sticky notes"
-msgstr ""
-"སྦྱར་རྩིས་ཅན་གྱི་ དྲན་འཛིན་ཆ་མཉམ་གྱི་དོན་ལུ་ ལག་ལེན་འཐབ་ནིའི་ ཡིག་གཟུགས་ཅིག་"
-" གདམ་ཁ་རྐྱབས།"
+msgstr "སྦྱར་རྩིས་ཅན་གྱི་ དྲན་འཛིན་ཆ་མཉམ་གྱི་དོན་ལུ་ ལག་ལེན་འཐབ་ནིའི་ ཡིག་གཟུགས་ཅིག་ གདམ་ཁ་རྐྱབས།"
 
 #: stickynotes/stickynotes.ui:120
 msgid "Pick a default sticky note font"
@@ -2227,8 +2139,7 @@ msgstr "ཡིག་གཟུགས་ཀྱི་ཚོས་གཞི་:"
 #: stickynotes/stickynotes.ui:230
 msgid "Choose a base color to use for all sticky notes"
 msgstr ""
-"སྦྱར་རྩིས་ཅན་གྱི་དྲན་འཛིན་ ཆ་མཉམ་གྱི་དོན་ལུ་ ལག་ལེན་འཐབ་ནིའི་ "
-"གཞི་རྟེན་ཚོས་གཞི་ཅིག་ གདམ་ཁ་རྐྱབས།"
+"སྦྱར་རྩིས་ཅན་གྱི་དྲན་འཛིན་ ཆ་མཉམ་གྱི་དོན་ལུ་ ལག་ལེན་འཐབ་ནིའི་ གཞི་རྟེན་ཚོས་གཞི་ཅིག་ གདམ་ཁ་རྐྱབས།"
 
 #: stickynotes/stickynotes.ui:231
 msgid "Pick a default sticky note color"
@@ -2240,13 +2151,11 @@ msgstr "རིམ་ལུགས་བརྗོད་དོན་ནང་ལས
 
 #: stickynotes/stickynotes.ui:262
 msgid "Specify the default height (in pixels) of new notes"
-msgstr ""
-"དྲན་འཛིན་གསརཔཚུ་གི་དོན་ལུ་ སྔོན་སྒྲིག་མཐོ་ཚད་ (པིག་སེལསི་ནང་) གསལ་བཀོད་འབད།"
+msgstr "དྲན་འཛིན་གསརཔཚུ་གི་དོན་ལུ་ སྔོན་སྒྲིག་མཐོ་ཚད་ (པིག་སེལསི་ནང་) གསལ་བཀོད་འབད།"
 
 #: stickynotes/stickynotes.ui:279
 msgid "Specify the default width (in pixels) of new notes"
-msgstr ""
-"དྲན་འཛིན་གསརཔ་ཚུ་གི་དོན་ལུ་ སྔོན་སྒྲིག་རྒྱ་ཚད་ (པིག་སེལསི་ནང་) གསལ་བཀོད་འབད།"
+msgstr "དྲན་འཛིན་གསརཔ་ཚུ་གི་དོན་ལུ་ སྔོན་སྒྲིག་རྒྱ་ཚད་ (པིག་སེལསི་ནང་) གསལ་བཀོད་འབད།"
 
 #: stickynotes/stickynotes.ui:294
 msgid "H_eight:"
@@ -2270,14 +2179,11 @@ msgstr ""
 
 #: stickynotes/stickynotes.ui:394
 msgid "Force _default color and font on notes"
-msgstr ""
-"དྲན་འཛིན་ཚུ་ལུ་ སྔོན་སྒྲིག་ཚོས་གཞི་དང་ ཡིག་གཟུགས་ཀྱིས་ དབང་མནོན་འབད།(_d)"
+msgstr "དྲན་འཛིན་ཚུ་ལུ་ སྔོན་སྒྲིག་ཚོས་གཞི་དང་ ཡིག་གཟུགས་ཀྱིས་ དབང་མནོན་འབད།(_d)"
 
 #: stickynotes/stickynotes.ui:398
 msgid "Choose if the default style is forced on all notes"
-msgstr ""
-"སྔོན་སྒྲིག་བཟོ་རྣམ་དེ་ དྲན་འཛིན་ཆ་མཉམ་ལུ་ དབང་མནོན་འབད་ཡོད་པ་ཅིན་ "
-"གདམ་ཁ་རྐྱབས།"
+msgstr "སྔོན་སྒྲིག་བཟོ་རྣམ་དེ་ དྲན་འཛིན་ཆ་མཉམ་ལུ་ དབང་མནོན་འབད་ཡོད་པ་ཅིན་ གདམ་ཁ་རྐྱབས།"
 
 #: stickynotes/stickynotes.ui:411
 msgid "_Put notes on all workspaces"
@@ -2373,9 +2279,7 @@ msgstr "དྲན་འཛིན་གསརཔ་ཚུ་གི་དོན་
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:6
 msgid "Default width for new sticky notes in pixels."
-msgstr ""
-"སྦྱར་རྩི་ཅན་གྱི་ དྲན་འཛིན་གསརཔ་ཚུ་གི་དོན་ལུ་ སྔོན་སྒྲིག་རྒྱ་ཚད་ "
-"པིག་སེལསི་ནང་།"
+msgstr "སྦྱར་རྩི་ཅན་གྱི་ དྲན་འཛིན་གསརཔ་ཚུ་གི་དོན་ལུ་ སྔོན་སྒྲིག་རྒྱ་ཚད་ པིག་སེལསི་ནང་།"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:10
 msgid "Default height for new notes"
@@ -2383,9 +2287,7 @@ msgstr "དྲན་འཛིན་་གསརཔ་ཚུ་གི་དོན
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:11
 msgid "Default height for new sticky notes in pixels."
-msgstr ""
-"སྦྱར་རྩི་ཅན་གྱི་ དྲན་འཛིན་གསརཔ་ཚུ་གི་དོན་ལུ་ སྔོན་སྒྲིག་མཐོ་ཚད་ "
-"པིག་སེལསི་ནང་།"
+msgstr "སྦྱར་རྩི་ཅན་གྱི་ དྲན་འཛིན་གསརཔ་ཚུ་གི་དོན་ལུ་ སྔོན་སྒྲིག་མཐོ་ཚད་ པིག་སེལསི་ནང་།"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:15
 msgid "Default color for new notes"
@@ -2396,8 +2298,8 @@ msgid ""
 "Default color for new sticky notes. This should be in html hex "
 "specification, for example \"#30FF50\"."
 msgstr ""
-"སྦྱར་རྩི་ཅན་གྱི་ དྲན་འཛིན་གསརཔ་ཚུ་གི་དོན་ལུ་ སྔོན་སྒྲིག་ཚོས་གཞི། འདི་ཡང་ "
-"ཨེཆ་ཊི་ཨེམ་ཨེལ་ ཧེགསི་གི་ཁྱད་རྣམ་ དཔེར་ན་\"#30FF50\" ནང་ལུ་ཨིན་དགོ"
+"སྦྱར་རྩི་ཅན་གྱི་ དྲན་འཛིན་གསརཔ་ཚུ་གི་དོན་ལུ་ སྔོན་སྒྲིག་ཚོས་གཞི། འདི་ཡང་ ཨེཆ་ཊི་ཨེམ་ཨེལ་ ཧེགསི་གི་ཁྱད་"
+"རྣམ་ དཔེར་ན་\"#30FF50\" ནང་ལུ་ཨིན་དགོ"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:20
 msgid "Default color for font"
@@ -2408,8 +2310,8 @@ msgid ""
 "Default font color for new sticky notes. This should be in html hex "
 "specification, for example \"#000000\"."
 msgstr ""
-"སྦྱར་རྩི་ཅན་གྱི་ དྲན་འཛིན་གསརཔ་ཚུ་གི་དོན་ལུ་སྔོན་སྒྲིག་ཚོས་གཞི། འདི་ཡང་ "
-"ཨེཆ་ཊི་ཨེམ་ཨེལ་ ཧེག་གི་ཁྱད་རྣམ་ དཔེར་ན་\"#000000\" ནང་ལུ་ཨིན་དགོ"
+"སྦྱར་རྩི་ཅན་གྱི་ དྲན་འཛིན་གསརཔ་ཚུ་གི་དོན་ལུ་སྔོན་སྒྲིག་ཚོས་གཞི། འདི་ཡང་ ཨེཆ་ཊི་ཨེམ་ཨེལ་ ཧེག་གི་ཁྱད་རྣམ་ "
+"དཔེར་ན་\"#000000\" ནང་ལུ་ཨིན་དགོ"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:25
 msgid "Default font for new notes"
@@ -2420,8 +2322,8 @@ msgid ""
 "Default font for new sticky notes. This should be a Pango Font Name, for "
 "example \"Sans Italic 10\"."
 msgstr ""
-"སྦྱར་རྩི་ཅན་གྱི་ དྲན་འཛིན་གསརཔ་ཚུ་གི་དོན་ལུ་ སྔོན་སྒྲིག་ཡིག་གཟུགས།  འདི་ཡང་ "
-"པང་གོ་ཡིག་གཟུགས་ཀྱི་མིང་ དཔེར་ན་\"Sans Italic 10\"ཅིག་ཨིན་དགོ། "
+"སྦྱར་རྩི་ཅན་གྱི་ དྲན་འཛིན་གསརཔ་ཚུ་གི་དོན་ལུ་ སྔོན་སྒྲིག་ཡིག་གཟུགས།  འདི་ཡང་ པང་གོ་ཡིག་གཟུགས་ཀྱི་མིང་ "
+"དཔེར་ན་\"Sans Italic 10\"ཅིག་ཨིན་དགོ། "
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:30
 msgid "Sticky notes' workspace stickyness"
@@ -2432,8 +2334,8 @@ msgid ""
 "Specifies whether the sticky notes are visible on ALL workspaces on the "
 "desktop, or not."
 msgstr ""
-"སྦྱར་རྩི་ཅན་གྱི་དྲན་འཛིན་ཚུ་ ཌེཀསི་ཊོཔ་གུ་ ལཱ་གི་ས་སྒོ་ཆ་མཉམ་ནང་ "
-"མཐོང་ཚུགས་ག་མི་ཚུགས་ གསལ་བཀོད་འབདཝ་ཨིན།"
+"སྦྱར་རྩི་ཅན་གྱི་དྲན་འཛིན་ཚུ་ ཌེཀསི་ཊོཔ་གུ་ ལཱ་གི་ས་སྒོ་ཆ་མཉམ་ནང་ མཐོང་ཚུགས་ག་མི་ཚུགས་ གསལ་བཀོད་"
+"འབདཝ་ཨིན།"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:35
 msgid "Sticky notes' locked state"
@@ -2442,8 +2344,7 @@ msgstr "སྦྱར་རྩི་ཅན་གྱི་དྲན་འཛིན
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:36
 msgid "Specifies whether the sticky notes are locked (non-editable) or not."
 msgstr ""
-"སྦྱར་རྩི་ཅན་གྱི་དྲན་འཛིན་ཚུ་ ལྡེ་མིག་བརྐྱབས་མ་བརྐྱབས་ (ཞུན་དག་བརྐྱབ་མ་བཏུབ) "
-"གསལ་བཀོད་འབདཝ་ཨིན།"
+"སྦྱར་རྩི་ཅན་གྱི་དྲན་འཛིན་ཚུ་ ལྡེ་མིག་བརྐྱབས་མ་བརྐྱབས་ (ཞུན་དག་བརྐྱབ་མ་བཏུབ) གསལ་བཀོད་འབདཝ་ཨིན།"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:40
 msgid "Date format of note's title"
@@ -2455,9 +2356,9 @@ msgid ""
 "are created. This format is used; anything that can be parsed by strftime() "
 "is valid."
 msgstr ""
-"སྔོན་སྒྲིག་གིས་ སྦྱར་རྩི་ཅན་གྱི་དྲན་འཛིན་ཚུ་ གསརཔ་བཟོ་བའི་སྐབས་ལུ་ "
-"མགོ་མིང་བཟུམ་ཅིག་སྦེ་ ད་ལྟོའི་ཚེས་གྲངས་བྱིནམ་ཨིན། strftime()  ནུས་ལྡན་གྱིས་ "
-"མིང་དཔྱད་འབད་ཚུགས་མི་ ག་ཅིའི་དོན་ལུ་ཡང་ ཚད་གཞི་འདི་ ལག་ལེན་འཐབ་ཨིན།"
+"སྔོན་སྒྲིག་གིས་ སྦྱར་རྩི་ཅན་གྱི་དྲན་འཛིན་ཚུ་ གསརཔ་བཟོ་བའི་སྐབས་ལུ་ མགོ་མིང་བཟུམ་ཅིག་སྦེ་ ད་ལྟོའི་ཚེས་གྲངས་"
+"བྱིནམ་ཨིན། strftime()  ནུས་ལྡན་གྱིས་ མིང་དཔྱད་འབད་ཚུགས་མི་ ག་ཅིའི་དོན་ལུ་ཡང་ ཚད་གཞི་འདི་ ལག་"
+"ལེན་འཐབ་ཨིན།"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:45
 msgid "Whether to use the default system color"
@@ -2468,8 +2369,8 @@ msgid ""
 "If this option is disabled, a custom color can be used as the default color "
 "for all sticky notes."
 msgstr ""
-"གདམ་ཁ་འདི་ ལྕོགས་མིན་ཨིན་པ་ཅིན་ སྦྱར་རྩི་ཅན་གྱི་དྲན་འཛིན་ ཆ་མཉམ་གྱི་དོན་ལས་ "
-"སྔོན་སྒྲིག་ཚོས་གཞི་སྦེ་ སྲོལ་སྒྲིག་ཚོས་གཞི་ཅིག་ ལག་ལེན་འཐབ།"
+"གདམ་ཁ་འདི་ ལྕོགས་མིན་ཨིན་པ་ཅིན་ སྦྱར་རྩི་ཅན་གྱི་དྲན་འཛིན་ ཆ་མཉམ་གྱི་དོན་ལས་ སྔོན་སྒྲིག་ཚོས་གཞི་སྦེ་ སྲོལ་"
+"སྒྲིག་ཚོས་གཞི་ཅིག་ ལག་ལེན་འཐབ།"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:50
 msgid "Whether to use the default system font"
@@ -2480,22 +2381,20 @@ msgid ""
 "If this option is disabled, a custom font can be used as the default font "
 "for all sticky notes."
 msgstr ""
-"གདམ་ཁ་འདི་ ལྕོགས་མིན་ཨིན་པ་ཅིན་ སྦྱར་རྩི་ཅན་གྱི་དྲན་འཛིན་ ཆ་མཉམ་གྱི་དོན་ལས་ "
-"སྔོན་སྒྲིག་ཡིག་གཟུགས་སྦེ་ སྲོལ་སྒྲིག་ཡིག་གཟུགས་ཅིག་ ལག་ལེན་འཐབ།"
+"གདམ་ཁ་འདི་ ལྕོགས་མིན་ཨིན་པ་ཅིན་ སྦྱར་རྩི་ཅན་གྱི་དྲན་འཛིན་ ཆ་མཉམ་གྱི་དོན་ལས་ སྔོན་སྒྲིག་ཡིག་གཟུགས་སྦེ་ "
+"སྲོལ་སྒྲིག་ཡིག་གཟུགས་ཅིག་ ལག་ལེན་འཐབ།"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:55
 msgid "Whether to force the default color and font on all notes"
-msgstr ""
-"དྲན་འཛིན་ཆ་མཉམ་གུ་ སྔོན་སྒྲིག་ཚོས་གཞི་དང་ཡིག་གཟུགས་ "
-"དབང་མནོན་འབད་དགོ་ག་མིན་དགོ"
+msgstr "དྲན་འཛིན་ཆ་མཉམ་གུ་ སྔོན་སྒྲིག་ཚོས་གཞི་དང་ཡིག་གཟུགས་ དབང་མནོན་འབད་དགོ་ག་མིན་དགོ"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:56
 msgid ""
 "If this option is enabled, the custom colors and fonts that have been "
 "assigned to individual notes will be ignored."
 msgstr ""
-"གདམ་ཁ་འདི་ ལྕོགས་ཅན་ཨིན་པ་ཅིན་ དྲན་འཛིན་སོ་སོ་ལུ་སྤྲོད་དེ་ཡོད་པའི་ "
-"སྲོལ་སྒྲིག་ཚོས་གཞི་དང་ ཡིག་གཟུགས་ཚུ་ སྣང་མེད་སྦེ་བཞགཔ་ཨིན།"
+"གདམ་ཁ་འདི་ ལྕོགས་ཅན་ཨིན་པ་ཅིན་ དྲན་འཛིན་སོ་སོ་ལུ་སྤྲོད་དེ་ཡོད་པའི་ སྲོལ་སྒྲིག་ཚོས་གཞི་དང་ ཡིག་གཟུགས་"
+"ཚུ་ སྣང་མེད་སྦེ་བཞགཔ་ཨིན།"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:60
 msgid "Whether to hide all notes when the desktop is selected"
@@ -2550,8 +2449,7 @@ msgstr ""
 
 #: stickynotes/stickynotes_applet_callbacks.c:384
 msgid "Sticky Notes for the CAFE Desktop Environment"
-msgstr ""
-"ཇི་ནོམ་ ཌེཀསི་ཊོཔ་གི་ མཐའ་འཁོར་གྱི་དོན་ལུ་ སྦྱར་རྩི་ཅན་གྱི་དྲན་འཛིན་ཚུ།"
+msgstr "ཇི་ནོམ་ ཌེཀསི་ཊོཔ་གི་ མཐའ་འཁོར་གྱི་དོན་ལུ་ སྦྱར་རྩི་ཅན་གྱི་དྲན་འཛིན་ཚུ།"
 
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:5
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:6
@@ -2565,12 +2463,6 @@ msgstr ""
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:10
 #: timerapplet/timerapplet.c:277
 msgid "Start a timer and receive a notification when it is finished"
-msgstr ""
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-panel-clock"
 msgstr ""
 
 #: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:5
@@ -2664,12 +2556,6 @@ msgstr "ཕྱགས་ཧོད།"
 msgid "Go to Trash"
 msgstr "ཕྱགས་ཧོད་ནང་འགྱོ།"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:12
-msgid "user-trash-full"
-msgstr ""
-
 #: trashapplet/src/trashapplet.c:68 trashapplet/src/trash-empty.c:352
 msgid "_Empty Trash"
 msgstr "ཕྱགས་ཧོད་སྟོངམ་བཏོན།(_E)"
@@ -2713,9 +2599,8 @@ msgid ""
 "A CAFE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
 msgstr ""
-"ཁྱོད་ཀྱི་པེ་ནཱལ་ནང་སྡོད་མི་ ཇི་ནོམ་ཕྱགས་ཧོད། འདི་ཁྱོད་ཀྱིས་ "
-"ཕྱགས་ཧོད་བལྟ་ནི་དང་ དོན་ཚན་ཚུ་འདྲུད་དེ་ ཕྱགས་ཧོད་ནང་བཙུགས་ནིའི་དོན་ལུ་ "
-"ལག་ལེན་འཐབ་བཏུབ།"
+"ཁྱོད་ཀྱི་པེ་ནཱལ་ནང་སྡོད་མི་ ཇི་ནོམ་ཕྱགས་ཧོད། འདི་ཁྱོད་ཀྱིས་ ཕྱགས་ཧོད་བལྟ་ནི་དང་ དོན་ཚན་ཚུ་འདྲུད་དེ་ ཕྱགས་"
+"ཧོད་ནང་བཙུགས་ནིའི་དོན་ལུ་ ལག་ལེན་འཐབ་བཏུབ།"
 
 #: trashapplet/src/trashapplet.c:462
 msgid "Delete Immediately?"
@@ -2723,16 +2608,12 @@ msgstr "དེ་འཕྲལ་ལས་ བཏོན་གཏང་ནི་�
 
 #: trashapplet/src/trashapplet.c:492
 msgid "Cannot move items to trash, do you want to delete them immediately?"
-msgstr ""
-"རྣམ་གྲངས་ཚུ་ ཕྱགས་ཧོད་ནང་ སྤོ་མི་ཚུགས་པས། དེ་ཚུ་དེ་འཕྲལ་ལས་ "
-"བཏོན་གཏང་ནི་ཨིན་ན?"
+msgstr "རྣམ་གྲངས་ཚུ་ ཕྱགས་ཧོད་ནང་ སྤོ་མི་ཚུགས་པས། དེ་ཚུ་དེ་འཕྲལ་ལས་ བཏོན་གཏང་ནི་ཨིན་ན?"
 
 #: trashapplet/src/trashapplet.c:497
 msgid ""
 "Cannot move some items to trash, do you want to delete these immediately?"
-msgstr ""
-"རྣམ་གྲངས་ལ་ལོ་ཅིག་ ཕྱགས་ཧོད་ནང་ སྤོ་་མི་ཚུགས་པས། དེ་ཚུ་དེ་འཕྲལ་ལས་ "
-"བཏོན་གཏང་ནི་ཨིན་ན?"
+msgstr "རྣམ་གྲངས་ལ་ལོ་ཅིག་ ཕྱགས་ཧོད་ནང་ སྤོ་་མི་ཚུགས་པས། དེ་ཚུ་དེ་འཕྲལ་ལས་ བཏོན་གཏང་ནི་ཨིན་ན?"
 
 #: trashapplet/src/trashapplet.c:625
 msgid "Trash Applet"
@@ -2759,9 +2640,8 @@ msgid ""
 "If you choose to empty the trash, all items in it will be permanently lost. "
 "Please note that you can also delete them separately."
 msgstr ""
-"ཁྱོད་ཀྱིས་ཕྱགས་ཧོད་ སྟོངམ་བཏོན་གཏང་པ་ཅིན་ དེ་ནང་ཡོད་པའི་ རྣམ་གྲངས་ཆ་མཉམ་ "
-"རྟག་བརྟན་སྦེ་ འཐོན་འགྱོ་འོང་། ཁྱོད་ཀྱིས་རྣམ་གྲངས་ཚུ་ རེ་རེ་འབད་ཡང་ "
-"བཏོན་གཏང་བཏུབ་ སེམས་ཁར་དྲན།"
+"ཁྱོད་ཀྱིས་ཕྱགས་ཧོད་ སྟོངམ་བཏོན་གཏང་པ་ཅིན་ དེ་ནང་ཡོད་པའི་ རྣམ་གྲངས་ཆ་མཉམ་ རྟག་བརྟན་སྦེ་ འཐོན་འགྱོ་"
+"འོང་། ཁྱོད་ཀྱིས་རྣམ་གྲངས་ཚུ་ རེ་རེ་འབད་ཡང་ བཏོན་གཏང་བཏུབ་ སེམས་ཁར་དྲན།"
 
 #: trashapplet/trashapplet-empty-progress.ui:7
 #: trashapplet/trashapplet-empty-progress.ui:21

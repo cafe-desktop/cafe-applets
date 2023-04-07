@@ -2,32 +2,32 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: cafe-applets 1.23.0\n"
+"Project-Id-Version: cafe-applets 1.25.0\n"
 "Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
-"POT-Creation-Date: 2020-01-10 17:58+0100\n"
+"POT-Creation-Date: 2020-08-11 21:05+0200\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2020\n"
 "Language-Team: Xhosa (https://www.transifex.com/cafe/teams/13566/xh/)\n"
+"Language: xh\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: xh\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: accessx-status/applet.c:86 charpick/charpick.c:571 geyes/geyes.c:166
+#: accessx-status/applet.c:86 charpick/charpick.c:572 geyes/geyes.c:166
 #: cafeweather/cafeweather-about.c:41 multiload/main.c:48
 #: stickynotes/stickynotes_applet_callbacks.c:367
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
 
-#: accessx-status/applet.c:87 battstat/battstat_applet.c:819
-#: charpick/charpick.c:572 cpufreq/src/cpufreq-applet.c:466
+#: accessx-status/applet.c:87 battstat/battstat_applet.c:820
+#: charpick/charpick.c:573 cpufreq/src/cpufreq-applet.c:466
 #: drivemount/drivemount.c:109 geyes/geyes.c:167
 #: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
@@ -51,8 +51,8 @@ msgid ""
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: accessx-status/applet.c:105 battstat/battstat_applet.c:844
-#: charpick/charpick.c:592 command/command.c:128
+#: accessx-status/applet.c:105 battstat/battstat_applet.c:845
+#: charpick/charpick.c:593 command/command.c:128
 #: cpufreq/src/cpufreq-applet.c:490 drivemount/drivemount.c:127
 #: geyes/geyes.c:186 cafeweather/cafeweather-about.c:61 multiload/main.c:69
 #: netspeed/src/netspeed.c:829 stickynotes/stickynotes_applet_callbacks.c:388
@@ -79,7 +79,7 @@ msgid "_Keyboard Accessibility Preferences"
 msgstr "_Okunokukhethwa kuko kufikelelo kwi-Keyboard"
 
 #: accessx-status/applet.c:183 battstat/battstat_applet.c:63
-#: charpick/charpick.c:673 cpufreq/src/cpufreq-applet.c:119
+#: charpick/charpick.c:674 cpufreq/src/cpufreq-applet.c:119
 #: drivemount/drivemount.c:165 geyes/geyes.c:359
 #: cafeweather/cafeweather-applet.c:117 multiload/main.c:488
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
@@ -87,7 +87,7 @@ msgid "_Help"
 msgstr "_Nceda"
 
 #: accessx-status/applet.c:184 battstat/battstat_applet.c:66
-#: charpick/charpick.c:676 command/command.c:84
+#: charpick/charpick.c:677 command/command.c:84
 #: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:168
 #: geyes/geyes.c:362 cafeweather/cafeweather-applet.c:120 multiload/main.c:491
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
@@ -142,13 +142,7 @@ msgstr "IFektri yoBume beNkqutyana yekhompyutha yoFikelelo kwi-Keyboard"
 msgid "Shows the status of keyboard accessibility features"
 msgstr "Ibonisa ubume beempawu zofikelelo kwi-keyboard"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:12
-msgid "preferences-desktop-accessibility"
-msgstr ""
-
-#: battstat/battstat_applet.c:60 charpick/charpick.c:670 command/command.c:83
+#: battstat/battstat_applet.c:60 charpick/charpick.c:671 command/command.c:83
 #: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:356
 #: cafeweather/cafeweather-applet.c:114 multiload/main.c:482
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
@@ -285,8 +279,8 @@ msgstr "Ubume bebhetri abaziwa"
 msgid "N/A"
 msgstr "N/A"
 
-#: battstat/battstat_applet.c:783 drivemount/drivemount.c:153
-#: geyes/geyes.c:344 geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
+#: battstat/battstat_applet.c:784 drivemount/drivemount.c:153 geyes/geyes.c:344
+#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
 #: cafeweather/cafeweather-pref.c:747
 #: stickynotes/stickynotes_applet_callbacks.c:345
 #: stickynotes/stickynotes_applet_callbacks.c:540
@@ -295,35 +289,35 @@ msgstr "N/A"
 msgid "There was an error displaying help: %s"
 msgstr "Kubekho impazamo yokubonisa uncedo: %s"
 
-#: battstat/battstat_applet.c:824
+#: battstat/battstat_applet.c:825
 msgid "This utility shows the status of your laptop battery."
 msgstr "Esi sixhobo sibonakalisa ubume bebhetri yakho ye-laptop."
 
-#: battstat/battstat_applet.c:826
+#: battstat/battstat_applet.c:827
 msgid "upower backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:827
+#: battstat/battstat_applet.c:828
 msgid "Legacy backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:836
+#: battstat/battstat_applet.c:837
 msgid "About Battery Charge Monitor"
 msgstr ""
 
-#: battstat/battstat_applet.c:838
+#: battstat/battstat_applet.c:839
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
+#: battstat/battstat_applet.c:1115 battstat/battstat_applet.c:1165
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Battery Charge Monitor"
 msgstr "iMonitha yokuGcwalisa iBhetri"
 
-#: battstat/battstat_applet.c:1165
+#: battstat/battstat_applet.c:1166
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor a laptop's remaining power"
 msgstr "Hlola amandla aseleyo e-laptop"
@@ -352,8 +346,7 @@ msgstr "Bonisa i_pesenti eseleyo"
 msgid "Notifications"
 msgstr ""
 
-#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge
-#. drops to: [XX] percent/minutes remaining'
+#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge drops to: [XX] percent/minutes remaining'
 #: battstat/battstat_applet.ui:206
 msgid "_Warn when battery charge drops to:"
 msgstr ""
@@ -366,12 +359,6 @@ msgstr ""
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Battstat Factory"
 msgstr "iFektri ye-Battstat"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:12
-msgid "battery"
-msgstr ""
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:5
 msgid "Red value level"
@@ -437,6 +424,14 @@ msgstr ""
 msgid "Battery Status Utility"
 msgstr "Isixhobo soBume beBhetri"
 
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:7
+msgid "Battery power low"
+msgstr ""
+
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:11
+msgid "Battery fully re-charged"
+msgstr ""
+
 #: charpick/charpick.c:404
 msgid "Available palettes"
 msgstr "Ingqokelela yezixhobo efumanekayo"
@@ -455,17 +450,17 @@ msgstr "Faka uphawu olukhethekileyo"
 msgid "insert special character %s"
 msgstr "faka uphawu olukhethekileyo %s"
 
-#: charpick/charpick.c:583
+#: charpick/charpick.c:584
 msgid "About Character Palette"
 msgstr ""
 
-#: charpick/charpick.c:585
+#: charpick/charpick.c:586
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: charpick/charpick.c:587
+#: charpick/charpick.c:588
 msgid ""
 "Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
@@ -474,13 +469,13 @@ msgstr ""
 "ezingaqhelekanga ezingekhoyo kwi-keyboard yam. Zikhululwe phantsi kweMvume "
 "yoluNtu Jikelele ye-GNU."
 
-#: charpick/charpick.c:699 charpick/charpick.c:713
+#: charpick/charpick.c:700 charpick/charpick.c:714
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:9
 #: charpick/properties.c:451
 msgid "Character Palette"
 msgstr "Uphawu lwengqokelela yezixhobo"
 
-#: charpick/charpick.c:699
+#: charpick/charpick.c:700
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Insert characters"
 msgstr "Faka iimpawu"
@@ -489,12 +484,6 @@ msgstr "Faka iimpawu"
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Charpicker Applet Factory"
 msgstr "Ifektri yenkqutyana yekhompyutha ye-Charpicker"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:12
-msgid "accessories-character-map"
-msgstr ""
 
 #: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:5
 msgid "Characters shown on applet startup"
@@ -628,12 +617,6 @@ msgstr ""
 msgid "Command"
 msgstr "Umyalelo"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:12
-msgid "utilities-terminal"
-msgstr ""
-
 #: command/org.cafe.panel.applet.command.gschema.xml.in:5
 msgid "Command to execute"
 msgstr ""
@@ -705,12 +688,6 @@ msgstr "iMonitha yobuNgakanani bokuPhindeka kwe-CPU"
 msgid "Monitor the CPU Frequency Scaling"
 msgstr "Hlola ubuNgakanani bokuPhindeka kwe-CPU"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-cpu-frequency-applet"
-msgstr ""
-
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:6
 msgid "CPU to Monitor"
 msgstr "iMonitha ye-CPU"
@@ -730,8 +707,8 @@ msgstr ""
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:12
 msgid ""
 "A 0 value means to show the applet in graphic mode (pixmap only), 1 to show "
-"the applet in text mode (not to show the pixmap) and 2 to show the applet in"
-" graphic and text mode."
+"the applet in text mode (not to show the pixmap) and 2 to show the applet in "
+"graphic and text mode."
 msgstr ""
 
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:16
@@ -803,6 +780,10 @@ msgstr ""
 msgid "Privileges are required to change the CPU Frequency scaling."
 msgstr ""
 
+#: drivemount/drive-button.c:307
+msgid "nothing to mount"
+msgstr ""
+
 #: drivemount/drive-button.c:340 drivemount/drive-button.c:354
 msgid "(mounted)"
 msgstr ""
@@ -859,7 +840,7 @@ msgstr ""
 "Inkqutyana yekhompyutha yokufaka kwisakhelo nokungafaki kwisakhelo "
 "ngobukhulu beebloko."
 
-#: drivemount/drivemount.c:185 drivemount/drivemount.c:225
+#: drivemount/drivemount.c:185 drivemount/drivemount.c:220
 #: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Disk Mounter"
 msgstr "Isifaki kwisakhelo sediski"
@@ -875,12 +856,6 @@ msgstr "iFektri yenkqutyana yekhompyutha ye-drive yokufaka kwisakhelo"
 #: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Mount local disks and devices"
 msgstr "Faka kwisakhelo iidiski kunye nezixhobo ezifikeleleka ngqo"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:12
-msgid "media-floppy"
-msgstr ""
 
 #: geyes/geyes.c:178
 msgid "About Eyes"
@@ -913,12 +888,6 @@ msgstr ""
 #: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A set of eyeballs for your panel"
 msgstr "Iseti yeebhola zamehlo zendawo yakho yolawulo"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-eyes-applet"
-msgstr ""
 
 #: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:5
 #: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:6
@@ -1265,12 +1234,6 @@ msgstr "iFektri yokudala inkqutyana yekhompyutha yemozulu."
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "Hlola iimeko zangoku zemozulu, kunye neengqikelelo"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
-msgid "weather-storm"
-msgstr ""
-
 #: multiload/main.c:60
 msgid "About System Monitor"
 msgstr ""
@@ -1383,7 +1346,7 @@ msgstr "_Vula iNkqubo yeMonitha"
 msgid "System Monitor"
 msgstr "iMonitha yeNkqubo"
 
-#: multiload/netspeed.c:40
+#: multiload/netspeed.c:43
 #, c-format
 msgid "%s/s"
 msgstr ""
@@ -1399,12 +1362,6 @@ msgstr ""
 #: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A system load indicator"
 msgstr "Isikhombisi sofako nkqubo"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:12
-msgid "utilities-system-monitor"
-msgstr ""
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:5
 msgid "Enable CPU load graph"
@@ -1842,12 +1799,6 @@ msgstr ""
 msgid "Network Monitor"
 msgstr ""
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-netspeed-applet"
-msgstr ""
-
 #: netspeed/src/netspeed.c:427
 msgid "b"
 msgstr ""
@@ -2120,12 +2071,6 @@ msgstr "AmaPhetshana aNcamathelayo"
 msgid "Create, view, and manage sticky notes on the desktop"
 msgstr "Dala, ubone, uze ulawule amaphetshana ancamathelayo kwi-desktop"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-sticky-notes-applet"
-msgstr ""
-
 #: stickynotes/stickynotes.c:577
 msgid "This note is locked."
 msgstr "Eli phetshana litshixiwe."
@@ -2334,8 +2279,7 @@ msgstr "Ubude obumiselweyo bamaphetshana amatsha"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:11
 msgid "Default height for new sticky notes in pixels."
-msgstr ""
-"Ubude obumiselweyo bamaphetshana amatsha ancamathelayo ngokwee-pixels."
+msgstr "Ubude obumiselweyo bamaphetshana amatsha ancamathelayo ngokwee-pixels."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:15
 msgid "Default color for new notes"
@@ -2417,8 +2361,8 @@ msgid ""
 "for all sticky notes."
 msgstr ""
 "Ukuba ngaba oku ekunokukhethwa kuko kwenziwe ukuba kungasebenzi, umbala "
-"ozenzele wona unokusetyenziswa njengombala omiselweyo kuwo onke amaphetshana"
-" ancamathelayo."
+"ozenzele wona unokusetyenziswa njengombala omiselweyo kuwo onke amaphetshana "
+"ancamathelayo."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:50
 msgid "Whether to use the default system font"
@@ -2429,14 +2373,13 @@ msgid ""
 "If this option is disabled, a custom font can be used as the default font "
 "for all sticky notes."
 msgstr ""
-"Ukuba oklu kunokukhethwa kuko kwenziwe ukuba kungasebenzi, ifonti ozenzeleyo"
-" yona isenokusetyenziswa njengefonti emiselweyo kuwo onke amaphetshana "
+"Ukuba oklu kunokukhethwa kuko kwenziwe ukuba kungasebenzi, ifonti ozenzeleyo "
+"yona isenokusetyenziswa njengefonti emiselweyo kuwo onke amaphetshana "
 "ancamathelayo."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:55
 msgid "Whether to force the default color and font on all notes"
-msgstr ""
-"Mhlawumbi ukunyanzela umbala nefonti emiselweyo kuwo onke amaphetshana"
+msgstr "Mhlawumbi ukunyanzela umbala nefonti emiselweyo kuwo onke amaphetshana"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:56
 msgid ""
@@ -2514,12 +2457,6 @@ msgstr ""
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:10
 #: timerapplet/timerapplet.c:277
 msgid "Start a timer and receive a notification when it is finished"
-msgstr ""
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-panel-clock"
 msgstr ""
 
 #: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:5
@@ -2613,12 +2550,6 @@ msgstr "uMgqomo"
 msgid "Go to Trash"
 msgstr "Yiya emgqomeni"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:12
-msgid "user-trash-full"
-msgstr ""
-
 #: trashapplet/src/trashapplet.c:68 trashapplet/src/trash-empty.c:352
 msgid "_Empty Trash"
 msgstr "_Umgqomo ongeNanto"
@@ -2678,8 +2609,8 @@ msgstr ""
 msgid ""
 "Cannot move some items to trash, do you want to delete these immediately?"
 msgstr ""
-"Ayikwazi ukususa ezinye izinto izise emgqomeni, ingaba ufuna ukuzicima ngoko"
-" nangoko ezi?"
+"Ayikwazi ukususa ezinye izinto izise emgqomeni, ingaba ufuna ukuzicima ngoko "
+"nangoko ezi?"
 
 #: trashapplet/src/trashapplet.c:625
 msgid "Trash Applet"

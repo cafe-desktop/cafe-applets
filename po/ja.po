@@ -2,7 +2,7 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # clefebvre <clement.lefebvre@linuxmint.com>, 2020
 # Martin Wimpress <code@flexion.org>, 2020
@@ -17,29 +17,29 @@
 # Rockers <sumorock@hotmail.com>, 2020
 # Ikuru K <kanumaiku@gmail.com>, 2020
 # semicolon <mail@semicln.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: cafe-applets 1.23.0\n"
+"Project-Id-Version: cafe-applets 1.25.0\n"
 "Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
-"POT-Creation-Date: 2020-01-10 17:58+0100\n"
+"POT-Creation-Date: 2020-08-11 21:05+0200\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: semicolon <mail@semicln.com>, 2020\n"
 "Language-Team: Japanese (https://www.transifex.com/cafe/teams/13566/ja/)\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: accessx-status/applet.c:86 charpick/charpick.c:571 geyes/geyes.c:166
+#: accessx-status/applet.c:86 charpick/charpick.c:572 geyes/geyes.c:166
 #: cafeweather/cafeweather-about.c:41 multiload/main.c:48
 #: stickynotes/stickynotes_applet_callbacks.c:367
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
 
-#: accessx-status/applet.c:87 battstat/battstat_applet.c:819
-#: charpick/charpick.c:572 cpufreq/src/cpufreq-applet.c:466
+#: accessx-status/applet.c:87 battstat/battstat_applet.c:820
+#: charpick/charpick.c:573 cpufreq/src/cpufreq-applet.c:466
 #: drivemount/drivemount.c:109 geyes/geyes.c:167
 #: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
@@ -61,8 +61,8 @@ msgid ""
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: accessx-status/applet.c:105 battstat/battstat_applet.c:844
-#: charpick/charpick.c:592 command/command.c:128
+#: accessx-status/applet.c:105 battstat/battstat_applet.c:845
+#: charpick/charpick.c:593 command/command.c:128
 #: cpufreq/src/cpufreq-applet.c:490 drivemount/drivemount.c:127
 #: geyes/geyes.c:186 cafeweather/cafeweather-about.c:61 multiload/main.c:69
 #: netspeed/src/netspeed.c:829 stickynotes/stickynotes_applet_callbacks.c:388
@@ -100,7 +100,7 @@ msgid "_Keyboard Accessibility Preferences"
 msgstr "キーボード操作性の設定(_K)"
 
 #: accessx-status/applet.c:183 battstat/battstat_applet.c:63
-#: charpick/charpick.c:673 cpufreq/src/cpufreq-applet.c:119
+#: charpick/charpick.c:674 cpufreq/src/cpufreq-applet.c:119
 #: drivemount/drivemount.c:165 geyes/geyes.c:359
 #: cafeweather/cafeweather-applet.c:117 multiload/main.c:488
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
@@ -108,7 +108,7 @@ msgid "_Help"
 msgstr "ヘルプ(_H)"
 
 #: accessx-status/applet.c:184 battstat/battstat_applet.c:66
-#: charpick/charpick.c:676 command/command.c:84
+#: charpick/charpick.c:677 command/command.c:84
 #: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:168
 #: geyes/geyes.c:362 cafeweather/cafeweather-applet.c:120 multiload/main.c:491
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
@@ -163,13 +163,7 @@ msgstr "キーボード操作性ステータス・アプレットのファクト
 msgid "Shows the status of keyboard accessibility features"
 msgstr "キーボード操作性の設定値を表示します"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:12
-msgid "preferences-desktop-accessibility"
-msgstr ""
-
-#: battstat/battstat_applet.c:60 charpick/charpick.c:670 command/command.c:83
+#: battstat/battstat_applet.c:60 charpick/charpick.c:671 command/command.c:83
 #: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:356
 #: cafeweather/cafeweather-applet.c:114 multiload/main.c:482
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
@@ -306,8 +300,8 @@ msgstr "バッテリの状態が不明です"
 msgid "N/A"
 msgstr "無し"
 
-#: battstat/battstat_applet.c:783 drivemount/drivemount.c:153
-#: geyes/geyes.c:344 geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
+#: battstat/battstat_applet.c:784 drivemount/drivemount.c:153 geyes/geyes.c:344
+#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
 #: cafeweather/cafeweather-pref.c:747
 #: stickynotes/stickynotes_applet_callbacks.c:345
 #: stickynotes/stickynotes_applet_callbacks.c:540
@@ -316,35 +310,35 @@ msgstr "無し"
 msgid "There was an error displaying help: %s"
 msgstr "ヘルプを表示する際にエラーが発生しました: %s"
 
-#: battstat/battstat_applet.c:824
+#: battstat/battstat_applet.c:825
 msgid "This utility shows the status of your laptop battery."
 msgstr "ラップトップのバッテリ充電率を表示します"
 
-#: battstat/battstat_applet.c:826
+#: battstat/battstat_applet.c:827
 msgid "upower backend enabled."
 msgstr "使用中のバックエンド: upower"
 
-#: battstat/battstat_applet.c:827
+#: battstat/battstat_applet.c:828
 msgid "Legacy backend enabled."
 msgstr "使用中のバックエンド: 旧式"
 
-#: battstat/battstat_applet.c:836
+#: battstat/battstat_applet.c:837
 msgid "About Battery Charge Monitor"
 msgstr ""
 
-#: battstat/battstat_applet.c:838
+#: battstat/battstat_applet.c:839
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
+#: battstat/battstat_applet.c:1115 battstat/battstat_applet.c:1165
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Battery Charge Monitor"
 msgstr "バッテリ充電モニタ"
 
-#: battstat/battstat_applet.c:1165
+#: battstat/battstat_applet.c:1166
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor a laptop's remaining power"
 msgstr "ラップトップのバッテリの残量をモニターします"
@@ -373,8 +367,7 @@ msgstr "残量を百分率(%)で表示する(_P)"
 msgid "Notifications"
 msgstr "通知"
 
-#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge
-#. drops to: [XX] percent/minutes remaining'
+#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge drops to: [XX] percent/minutes remaining'
 #: battstat/battstat_applet.ui:206
 msgid "_Warn when battery charge drops to:"
 msgstr "次の充電率に下がったら警告する(_W):"
@@ -388,12 +381,6 @@ msgstr "充電が完了したら通知する(_N)"
 msgid "Battstat Factory"
 msgstr "バッテリ充電モニタのファクトリ"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:12
-msgid "battery"
-msgstr ""
-
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:5
 msgid "Red value level"
 msgstr "赤色の割合"
@@ -402,7 +389,9 @@ msgstr "赤色の割合"
 msgid ""
 "The battery level below which the battery is displayed as red. Also the "
 "value at which the low battery warning is displayed."
-msgstr "バッテリ・レベルをバッテリの下部に赤色で表示します。さらに、レベルが低くなったら警告を表示します。"
+msgstr ""
+"バッテリ・レベルをバッテリの下部に赤色で表示します。さらに、レベルが低くなっ"
+"たら警告を表示します。"
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:10
 msgid "Warn on low time rather than low percentage"
@@ -412,7 +401,9 @@ msgstr "残量は百分率ではなく時間で警告する"
 msgid ""
 "Use the value defined in red_value as a time remaining to show the warning "
 "dialog rather than a percentage."
-msgstr "警告ダイアログでは充電率の表記ではなく残り時間の表記に red_value で定義した色を使います。"
+msgstr ""
+"警告ダイアログでは充電率の表記ではなく残り時間の表記に red_value で定義した色"
+"を使います。"
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:15
 msgid "Low Battery Notification"
@@ -444,7 +435,9 @@ msgstr "充電時間/率を示すラベルを表示する"
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:31
 msgid "0 for no label, 1 for percentage and 2 for time remaining."
-msgstr "バッテリ残量の表示形式です。指定可能な値: 0 (ラベルなし)、1 (充電率)、2 (残り時間)"
+msgstr ""
+"バッテリ残量の表示形式です。指定可能な値: 0 (ラベルなし)、1 (充電率)、2 (残り"
+"時間)"
 
 #: battstat/properties.c:237
 msgid "Percent"
@@ -457,6 +450,14 @@ msgstr "分 (残り時間)"
 #: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:3
 msgid "Battery Status Utility"
 msgstr "バッテリ充電モニタ"
+
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:7
+msgid "Battery power low"
+msgstr ""
+
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:11
+msgid "Battery fully re-charged"
+msgstr ""
 
 #: charpick/charpick.c:404
 msgid "Available palettes"
@@ -476,29 +477,31 @@ msgstr "特殊な文字を挿入します"
 msgid "insert special character %s"
 msgstr "特殊な文字 %s を挿入します"
 
-#: charpick/charpick.c:583
+#: charpick/charpick.c:584
 msgid "About Character Palette"
 msgstr ""
 
-#: charpick/charpick.c:585
+#: charpick/charpick.c:586
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: charpick/charpick.c:587
+#: charpick/charpick.c:588
 msgid ""
 "Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
-msgstr "私のキーボードからは打てない変わった文字を入力するためのパネルアプレットです。GNU一般公有使用許諾書の下にリリースされています。"
+msgstr ""
+"私のキーボードからは打てない変わった文字を入力するためのパネルアプレットで"
+"す。GNU一般公有使用許諾書の下にリリースされています。"
 
-#: charpick/charpick.c:699 charpick/charpick.c:713
+#: charpick/charpick.c:700 charpick/charpick.c:714
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:9
 #: charpick/properties.c:451
 msgid "Character Palette"
 msgstr "キャラクタ・パレット"
 
-#: charpick/charpick.c:699
+#: charpick/charpick.c:700
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Insert characters"
 msgstr "いろいろな文字を挿入します"
@@ -508,12 +511,6 @@ msgstr "いろいろな文字を挿入します"
 msgid "Charpicker Applet Factory"
 msgstr "キャラクタピッカー・アプレットのファクトリ"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:12
-msgid "accessories-character-map"
-msgstr ""
-
 #: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:5
 msgid "Characters shown on applet startup"
 msgstr "アプレット起動時に文字を表示する"
@@ -522,7 +519,9 @@ msgstr "アプレット起動時に文字を表示する"
 msgid ""
 "The string that the user had selected when the applet was last used. This "
 "string will be displayed when the user starts the applet."
-msgstr "アプレットが最後に使用していた際に選択していた文字列です。この文字列はアプレットを起動する際に表示されます。"
+msgstr ""
+"アプレットが最後に使用していた際に選択していた文字列です。この文字列はアプ"
+"レットを起動する際に表示されます。"
 
 #: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:10
 #: charpick/properties.c:378
@@ -643,12 +642,6 @@ msgstr "コマンドファクトリー"
 msgid "Command"
 msgstr "コマンド"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:12
-msgid "utilities-terminal"
-msgstr ""
-
 #: command/org.cafe.panel.applet.command.gschema.xml.in:5
 msgid "Command to execute"
 msgstr "実行するコマンド"
@@ -720,12 +713,6 @@ msgstr "CPU 周波数の計測モニタ"
 msgid "Monitor the CPU Frequency Scaling"
 msgstr "CPU 周波数を計測してモニターします"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-cpu-frequency-applet"
-msgstr ""
-
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:6
 msgid "CPU to Monitor"
 msgstr "モニターする CPU"
@@ -734,7 +721,9 @@ msgstr "モニターする CPU"
 msgid ""
 "Set the CPU to monitor. In a single processor system you don't have to "
 "change it."
-msgstr "モニターする CPU を指定してください。単一の CPU をお使いの場合は変更する必要はありません。"
+msgstr ""
+"モニターする CPU を指定してください。単一の CPU をお使いの場合は変更する必要"
+"はありません。"
 
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:11
 msgid "Mode to show CPU usage"
@@ -743,11 +732,12 @@ msgstr "CPU 負荷の表示モード"
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:12
 msgid ""
 "A 0 value means to show the applet in graphic mode (pixmap only), 1 to show "
-"the applet in text mode (not to show the pixmap) and 2 to show the applet in"
-" graphic and text mode."
+"the applet in text mode (not to show the pixmap) and 2 to show the applet in "
+"graphic and text mode."
 msgstr ""
-"値を 0 にするとアプレットをグラフィックス・モード (画像のみ) で表示し、1 にするとテキスト・モード (画像を表示しない) で表示し、2 "
-"にするとグラフィックスとテキストの両方のモードで表示します。"
+"値を 0 にするとアプレットをグラフィックス・モード (画像のみ) で表示し、1 にす"
+"るとテキスト・モード (画像を表示しない) で表示し、2 にするとグラフィックスと"
+"テキストの両方のモードで表示します。"
 
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:16
 msgid "The type of text to display (if the text is enabled)."
@@ -757,7 +747,9 @@ msgstr "表示するラベルの種類 (ラベルが使用可能ならば)"
 msgid ""
 "A 0 value means to show CPU frequency, 1 to show frequency and units, and 2 "
 "to show percentage instead of frequency."
-msgstr "0 はCPU 周波数の表示、1 は周波数と単位の表示、2 は周波数ではなく比率の表示を意味します"
+msgstr ""
+"0 はCPU 周波数の表示、1 は周波数と単位の表示、2 は周波数ではなく比率の表示を"
+"意味します"
 
 #: cpufreq/src/cpufreq-applet.c:449 cpufreq/src/cpufreq-prefs.c:358
 msgid "Could not open help document"
@@ -806,8 +798,9 @@ msgid ""
 "You will not be able to modify the frequency of your machine.  Your machine "
 "may be misconfigured or not have hardware support for CPU frequency scaling."
 msgstr ""
-"お使いのマシンの周波数を変更できません。お使いのシステムの設定が間違っているか、あるいは CPU "
-"周波数の計測をサポートするハードウェアではないかもしれません。"
+"お使いのマシンの周波数を変更できません。お使いのシステムの設定が間違っている"
+"か、あるいは CPU 周波数の計測をサポートするハードウェアではないかもしれませ"
+"ん。"
 
 #: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:14
 msgid "Change CPU Frequency scaling"
@@ -816,6 +809,10 @@ msgstr "CPU 周波数の変更"
 #: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:15
 msgid "Privileges are required to change the CPU Frequency scaling."
 msgstr "CPU 周波数を変更する際に必要となる特権です"
+
+#: drivemount/drive-button.c:307
+msgid "nothing to mount"
+msgstr ""
 
 #: drivemount/drive-button.c:340 drivemount/drive-button.c:354
 msgid "(mounted)"
@@ -869,9 +866,10 @@ msgstr ""
 
 #: drivemount/drivemount.c:124
 msgid "Applet for mounting and unmounting block volumes."
-msgstr "ブロック・ボリュームをマウントしたりアンマウントしたりするアプレットです。"
+msgstr ""
+"ブロック・ボリュームをマウントしたりアンマウントしたりするアプレットです。"
 
-#: drivemount/drivemount.c:185 drivemount/drivemount.c:225
+#: drivemount/drivemount.c:185 drivemount/drivemount.c:220
 #: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Disk Mounter"
 msgstr "ディスク・マウンタ"
@@ -887,12 +885,6 @@ msgstr "ドライブ・マウント・アプレットのファクトリ"
 #: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Mount local disks and devices"
 msgstr "ローカルディスクとデバイスをマウントします"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:12
-msgid "media-floppy"
-msgstr ""
 
 #: geyes/geyes.c:178
 msgid "About Eyes"
@@ -925,12 +917,6 @@ msgstr ""
 #: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A set of eyeballs for your panel"
 msgstr "パネル用の目玉アプレットです"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-eyes-applet"
-msgstr ""
 
 #: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:5
 #: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:6
@@ -1126,7 +1112,9 @@ msgstr "URL を入力してください"
 #: cafeweather/cafeweather-pref.c:283
 msgid ""
 "Failed to load the Locations XML database.  Please report this as a bug."
-msgstr "場所を定義した XML データベースの読み込みに失敗しました。これをバグとして報告してください。"
+msgstr ""
+"場所を定義した XML データベースの読み込みに失敗しました。これをバグとして報告"
+"してください。"
 
 #: cafeweather/cafeweather-pref.c:807
 msgid "Weather Preferences"
@@ -1280,12 +1268,6 @@ msgstr "天気予報アプレットを生成するファクトリ"
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "現在の天気概況と予報をモニタします"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
-msgid "weather-storm"
-msgstr ""
-
 #: multiload/main.c:60
 msgid "About System Monitor"
 msgstr ""
@@ -1300,7 +1282,9 @@ msgstr ""
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
-msgstr "CPU、RAM、スワップの使用率とネットワーク負荷のグラフを表示できるシステム負荷モニタです。"
+msgstr ""
+"CPU、RAM、スワップの使用率とネットワーク負荷のグラフを表示できるシステム負荷"
+"モニタです。"
 
 #: multiload/main.c:129
 msgid "Start system-monitor"
@@ -1401,7 +1385,7 @@ msgstr "システムモニタを開く(_O)"
 msgid "System Monitor"
 msgstr "システムモニター"
 
-#: multiload/netspeed.c:40
+#: multiload/netspeed.c:43
 #, c-format
 msgid "%s/s"
 msgstr "%s/秒"
@@ -1417,12 +1401,6 @@ msgstr ""
 #: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A system load indicator"
 msgstr "システム負荷を表示します"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:12
-msgid "utilities-system-monitor"
-msgstr ""
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:5
 msgid "Enable CPU load graph"
@@ -1460,7 +1438,9 @@ msgstr "グラフのサイズ"
 msgid ""
 "For horizontal panels, the width of the graphs in pixels. For vertical "
 "panels, this is the height of the graphs."
-msgstr "水平方向のパネルにおけるグラフ表示部の幅をピクセル単位で指定します。垂直方向のパネルではグラフの高さに相当します"
+msgstr ""
+"水平方向のパネルにおけるグラフ表示部の幅をピクセル単位で指定します。垂直方向"
+"のパネルではグラフの高さに相当します"
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:38
 msgid "Graph color for user-related CPU activity"
@@ -1856,12 +1836,6 @@ msgstr "ネットスピードアプレット"
 msgid "Network Monitor"
 msgstr "ネットワークモニター"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-netspeed-applet"
-msgstr ""
-
 #: netspeed/src/netspeed.c:427
 msgid "b"
 msgstr "b"
@@ -2145,12 +2119,6 @@ msgstr "付箋紙"
 msgid "Create, view, and manage sticky notes on the desktop"
 msgstr "デスクトップ上で付箋紙の生成/表示/管理を行います"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-sticky-notes-applet"
-msgstr ""
-
 #: stickynotes/stickynotes.c:577
 msgid "This note is locked."
 msgstr "ロックしています"
@@ -2367,7 +2335,9 @@ msgstr "新しい付箋紙のデフォルト色"
 msgid ""
 "Default color for new sticky notes. This should be in html hex "
 "specification, for example \"#30FF50\"."
-msgstr "新しい付箋紙のデフォルトの色です。これは HTML の 16進数表記 (例: \"#30FF50\") にしてください。"
+msgstr ""
+"新しい付箋紙のデフォルトの色です。これは HTML の 16進数表記 (例: "
+"\"#30FF50\") にしてください。"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:20
 msgid "Default color for font"
@@ -2377,7 +2347,9 @@ msgstr "フォントのデフォルト色"
 msgid ""
 "Default font color for new sticky notes. This should be in html hex "
 "specification, for example \"#000000\"."
-msgstr "新しい付箋紙のフォントのデフォルトの色です。これは HTML の 16進数表記 (例: \"#000000\") にしてください。"
+msgstr ""
+"新しい付箋紙のフォントのデフォルトの色です。これは HTML の 16進数表記 (例: "
+"\"#000000\") にしてください。"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:25
 msgid "Default font for new notes"
@@ -2387,7 +2359,9 @@ msgstr "新しい付箋紙のデフォルトフォント"
 msgid ""
 "Default font for new sticky notes. This should be a Pango Font Name, for "
 "example \"Sans Italic 10\"."
-msgstr "新しい付箋紙のデフォルトのフォントです。これは Pango フォント名 (例: \"Sans Italic 10\") にしてください。"
+msgstr ""
+"新しい付箋紙のデフォルトのフォントです。これは Pango フォント名 (例: \"Sans "
+"Italic 10\") にしてください。"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:30
 msgid "Sticky notes' workspace stickyness"
@@ -2417,7 +2391,8 @@ msgid ""
 "are created. This format is used; anything that can be parsed by strftime() "
 "is valid."
 msgstr ""
-"付箋紙を生成した際に、タイトルには現在の日付がデフォルトで付与されます。この書式は、strftime() 関数が解析できるものならば何でも構いません。"
+"付箋紙を生成した際に、タイトルには現在の日付がデフォルトで付与されます。この"
+"書式は、strftime() 関数が解析できるものならば何でも構いません。"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:45
 msgid "Whether to use the default system color"
@@ -2427,7 +2402,9 @@ msgstr "デフォルトのシステム色を適用するかどうか"
 msgid ""
 "If this option is disabled, a custom color can be used as the default color "
 "for all sticky notes."
-msgstr "このオプションが無効の場合、カスタム色がデフォルトの色としてすべての付箋紙に適用されます。"
+msgstr ""
+"このオプションが無効の場合、カスタム色がデフォルトの色としてすべての付箋紙に"
+"適用されます。"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:50
 msgid "Whether to use the default system font"
@@ -2437,7 +2414,9 @@ msgstr "デフォルトのシステム・フォントを適用するかどうか
 msgid ""
 "If this option is disabled, a custom font can be used as the default font "
 "for all sticky notes."
-msgstr "このオプションが無効の場合、カスタム・フォントがデフォルトのフォントとして全ての付箋紙に適用されます。"
+msgstr ""
+"このオプションが無効の場合、カスタム・フォントがデフォルトのフォントとして全"
+"ての付箋紙に適用されます。"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:55
 msgid "Whether to force the default color and font on all notes"
@@ -2447,7 +2426,9 @@ msgstr "すべての付箋紙にデフォルトの色とフォントを強制的
 msgid ""
 "If this option is enabled, the custom colors and fonts that have been "
 "assigned to individual notes will be ignored."
-msgstr "このオプションが有効の場合、個々の付箋紙に適用されていたカスタム色とカスタム・フォントを無視します。"
+msgstr ""
+"このオプションが有効の場合、個々の付箋紙に適用されていたカスタム色とカスタ"
+"ム・フォントを無視します。"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:60
 msgid "Whether to hide all notes when the desktop is selected"
@@ -2457,7 +2438,9 @@ msgstr "デスクトップが選択された時にすべての付箋紙を隠す
 msgid ""
 "If this option is enabled, selecting the desktop in any way will "
 "automatically hide all the open notes."
-msgstr "このオプションが有効になっていると、デスクトップが何らかの方法で選択されていると、開いている付箋がすべて隠れます。"
+msgstr ""
+"このオプションが有効になっていると、デスクトップが何らかの方法で選択されてい"
+"ると、開いている付箋がすべて隠れます。"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:65
 msgid "Whether to ask for confirmation when deleting a note"
@@ -2517,12 +2500,6 @@ msgstr "タイマー"
 #: timerapplet/timerapplet.c:277
 msgid "Start a timer and receive a notification when it is finished"
 msgstr "完了時にタイマーの開始と通知の表示をする"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-panel-clock"
-msgstr ""
 
 #: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:5
 msgid "Name of timer"
@@ -2615,12 +2592,6 @@ msgstr "ゴミ箱"
 msgid "Go to Trash"
 msgstr "パネルにゴミ箱を配置します"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:12
-msgid "user-trash-full"
-msgstr ""
-
 #: trashapplet/src/trashapplet.c:68 trashapplet/src/trash-empty.c:352
 msgid "_Empty Trash"
 msgstr "ゴミ箱を空にする(_E)"
@@ -2664,7 +2635,8 @@ msgid ""
 "A CAFE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
 msgstr ""
-"CAFE ゴミ箱アプレットはパネルの中に住み着きます。ゴミ箱の中をのぞいたり、不要なものをドラッグ・アンド・ドロップしてゴミ箱に捨てることができます。"
+"CAFE ゴミ箱アプレットはパネルの中に住み着きます。ゴミ箱の中をのぞいたり、不要"
+"なものをドラッグ・アンド・ドロップしてゴミ箱に捨てることができます。"
 
 #: trashapplet/src/trashapplet.c:462
 msgid "Delete Immediately?"
@@ -2677,7 +2649,8 @@ msgstr "アイテムをゴミ箱へ移動できません。今すぐ削除して
 #: trashapplet/src/trashapplet.c:497
 msgid ""
 "Cannot move some items to trash, do you want to delete these immediately?"
-msgstr "いくつかのアイテムをゴミ箱へ移動できません。今すぐ削除してもよろしいですか?"
+msgstr ""
+"いくつかのアイテムをゴミ箱へ移動できません。今すぐ削除してもよろしいですか?"
 
 #: trashapplet/src/trashapplet.c:625
 msgid "Trash Applet"
@@ -2703,7 +2676,9 @@ msgstr "ゴミ箱にあるすべてのアイテムを空にしてもよろしい
 msgid ""
 "If you choose to empty the trash, all items in it will be permanently lost. "
 "Please note that you can also delete them separately."
-msgstr "ゴミ箱を空にすると、アイテムを復活させることはできません。それぞれ個別に削除することも可能です。"
+msgstr ""
+"ゴミ箱を空にすると、アイテムを復活させることはできません。それぞれ個別に削除"
+"することも可能です。"
 
 #: trashapplet/trashapplet-empty-progress.ui:7
 #: trashapplet/trashapplet-empty-progress.ui:21

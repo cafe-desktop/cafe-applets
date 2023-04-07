@@ -2,34 +2,34 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Martin Wimpress <code@flexion.org>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Miguel Anxo Bouzada <mbouzada@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: cafe-applets 1.23.0\n"
+"Project-Id-Version: cafe-applets 1.25.0\n"
 "Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
-"POT-Creation-Date: 2020-01-10 17:58+0100\n"
+"POT-Creation-Date: 2020-08-11 21:05+0200\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>, 2020\n"
 "Language-Team: Galician (https://www.transifex.com/cafe/teams/13566/gl/)\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: gl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: accessx-status/applet.c:86 charpick/charpick.c:571 geyes/geyes.c:166
+#: accessx-status/applet.c:86 charpick/charpick.c:572 geyes/geyes.c:166
 #: cafeweather/cafeweather-about.c:41 multiload/main.c:48
 #: stickynotes/stickynotes_applet_callbacks.c:367
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr "Equipo de documentación do GNOME de Sun <gdocteam@sun.com>"
 
-#: accessx-status/applet.c:87 battstat/battstat_applet.c:819
-#: charpick/charpick.c:572 cpufreq/src/cpufreq-applet.c:466
+#: accessx-status/applet.c:87 battstat/battstat_applet.c:820
+#: charpick/charpick.c:573 cpufreq/src/cpufreq-applet.c:466
 #: drivemount/drivemount.c:109 geyes/geyes.c:167
 #: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
@@ -55,8 +55,8 @@ msgstr ""
 "Dereitos de autoría © 2003 Sun Microsystems\n"
 "Dereitos de autoría © 2012-2020 Os desenvolvedores do CAFE"
 
-#: accessx-status/applet.c:105 battstat/battstat_applet.c:844
-#: charpick/charpick.c:592 command/command.c:128
+#: accessx-status/applet.c:105 battstat/battstat_applet.c:845
+#: charpick/charpick.c:593 command/command.c:128
 #: cpufreq/src/cpufreq-applet.c:490 drivemount/drivemount.c:127
 #: geyes/geyes.c:186 cafeweather/cafeweather-about.c:61 multiload/main.c:69
 #: netspeed/src/netspeed.c:829 stickynotes/stickynotes_applet_callbacks.c:388
@@ -79,15 +79,15 @@ msgstr "Abre o diálogo de preferencias do teclado"
 #, c-format
 msgid "There was an error launching the keyboard preferences dialog: %s"
 msgstr ""
-"Produciuse un erro ao iniciar a caixa de diálogo de preferencias do teclado:"
-" %s"
+"Produciuse un erro ao iniciar a caixa de diálogo de preferencias do teclado: "
+"%s"
 
 #: accessx-status/applet.c:182
 msgid "_Keyboard Accessibility Preferences"
 msgstr "Preferencias de accesibilidade de _teclado"
 
 #: accessx-status/applet.c:183 battstat/battstat_applet.c:63
-#: charpick/charpick.c:673 cpufreq/src/cpufreq-applet.c:119
+#: charpick/charpick.c:674 cpufreq/src/cpufreq-applet.c:119
 #: drivemount/drivemount.c:165 geyes/geyes.c:359
 #: cafeweather/cafeweather-applet.c:117 multiload/main.c:488
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
@@ -95,7 +95,7 @@ msgid "_Help"
 msgstr "_Axuda"
 
 #: accessx-status/applet.c:184 battstat/battstat_applet.c:66
-#: charpick/charpick.c:676 command/command.c:84
+#: charpick/charpick.c:677 command/command.c:84
 #: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:168
 #: geyes/geyes.c:362 cafeweather/cafeweather-applet.c:120 multiload/main.c:491
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
@@ -137,8 +137,7 @@ msgstr "Estado da accesibilidade do teclado"
 
 #: accessx-status/applet.c:1389
 msgid "Displays current state of keyboard accessibility features"
-msgstr ""
-"Amosa o estado actual das características de accesibilidade de teclado"
+msgstr "Amosa o estado actual das características de accesibilidade de teclado"
 
 #: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:5
 msgid "AccessX Status Applet Factory"
@@ -152,13 +151,7 @@ msgstr "Factoría da miniaplicación de estado de accesibilidade do teclado"
 msgid "Shows the status of keyboard accessibility features"
 msgstr "Amosa o estado das características da accesibilidade do teclado"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:12
-msgid "preferences-desktop-accessibility"
-msgstr "preferences-desktop-accessibility"
-
-#: battstat/battstat_applet.c:60 charpick/charpick.c:670 command/command.c:83
+#: battstat/battstat_applet.c:60 charpick/charpick.c:671 command/command.c:83
 #: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:356
 #: cafeweather/cafeweather-applet.c:114 multiload/main.c:482
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
@@ -302,8 +295,8 @@ msgstr "Estado da batería descoñecido"
 msgid "N/A"
 msgstr "N/D"
 
-#: battstat/battstat_applet.c:783 drivemount/drivemount.c:153
-#: geyes/geyes.c:344 geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
+#: battstat/battstat_applet.c:784 drivemount/drivemount.c:153 geyes/geyes.c:344
+#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
 #: cafeweather/cafeweather-pref.c:747
 #: stickynotes/stickynotes_applet_callbacks.c:345
 #: stickynotes/stickynotes_applet_callbacks.c:540
@@ -312,23 +305,23 @@ msgstr "N/D"
 msgid "There was an error displaying help: %s"
 msgstr "Produciuse un erro ao amosar a axuda: %s"
 
-#: battstat/battstat_applet.c:824
+#: battstat/battstat_applet.c:825
 msgid "This utility shows the status of your laptop battery."
 msgstr "Esta utilidade amosa o estado da batería do seu portátil."
 
-#: battstat/battstat_applet.c:826
+#: battstat/battstat_applet.c:827
 msgid "upower backend enabled."
 msgstr "infraestrutura de «upower» activada."
 
-#: battstat/battstat_applet.c:827
+#: battstat/battstat_applet.c:828
 msgid "Legacy backend enabled."
 msgstr "A infraestrutura legada está activada."
 
-#: battstat/battstat_applet.c:836
+#: battstat/battstat_applet.c:837
 msgid "About Battery Charge Monitor"
 msgstr "Sobre o Monitor de carga da batería"
 
-#: battstat/battstat_applet.c:838
+#: battstat/battstat_applet.c:839
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
@@ -338,12 +331,12 @@ msgstr ""
 "Dereitos de autoría © 2002-2005 Free Software Foundation e outros\n"
 "Dereitos de autoría © 2012-2020 Os desenvolvedores do CAFE"
 
-#: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
+#: battstat/battstat_applet.c:1115 battstat/battstat_applet.c:1165
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Battery Charge Monitor"
 msgstr "Monitor de carga da batería"
 
-#: battstat/battstat_applet.c:1165
+#: battstat/battstat_applet.c:1166
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor a laptop's remaining power"
 msgstr "Monitorizar a enerxía restante dun portátil"
@@ -372,8 +365,7 @@ msgstr "Amosar a _porcentaxe restante"
 msgid "Notifications"
 msgstr "Notificacións"
 
-#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge
-#. drops to: [XX] percent/minutes remaining'
+#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge drops to: [XX] percent/minutes remaining'
 #: battstat/battstat_applet.ui:206
 msgid "_Warn when battery charge drops to:"
 msgstr "A_visar cando a carga da batería baixe de:"
@@ -386,12 +378,6 @@ msgstr "_Avisar cando a batería estea completamente recargada"
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Battstat Factory"
 msgstr "Factoría do estado da batería"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:12
-msgid "battery"
-msgstr "battery"
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:5
 msgid "Red value level"
@@ -415,8 +401,8 @@ msgid ""
 "Use the value defined in red_value as a time remaining to show the warning "
 "dialog rather than a percentage."
 msgstr ""
-"Usar o valor definido en red_value como tempo restante para amosar o diálogo"
-" de aviso en vez da porcentaxe."
+"Usar o valor definido en red_value como tempo restante para amosar o diálogo "
+"de aviso en vez da porcentaxe."
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:15
 msgid "Low Battery Notification"
@@ -462,6 +448,14 @@ msgstr "Minutos restantes"
 msgid "Battery Status Utility"
 msgstr "Utilidade de estado da batería"
 
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:7
+msgid "Battery power low"
+msgstr ""
+
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:11
+msgid "Battery fully re-charged"
+msgstr ""
+
 #: charpick/charpick.c:404
 msgid "Available palettes"
 msgstr "Paletas dispoñíbeis"
@@ -480,19 +474,20 @@ msgstr "Inserir un carácter especial"
 msgid "insert special character %s"
 msgstr "Inserir o carácter especial %s"
 
-#: charpick/charpick.c:583
+#: charpick/charpick.c:584
 msgid "About Character Palette"
 msgstr "Sobre o Paleta de caracteres"
 
-#: charpick/charpick.c:585
+#: charpick/charpick.c:586
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
-"Dereitos de autoría © 1998, 2004-2005 Os mantedores das miniaplicacións do GNOME e outros\n"
+"Dereitos de autoría © 1998, 2004-2005 Os mantedores das miniaplicacións do "
+"GNOME e outros\n"
 "Dereitos de autoría © 2012-2020 Os desenvolvedores do CAFE"
 
-#: charpick/charpick.c:587
+#: charpick/charpick.c:588
 msgid ""
 "Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
@@ -501,13 +496,13 @@ msgstr ""
 "que non se atopan no teclado. Distribuído baixo a Licenza Pública Xeral de "
 "GNU."
 
-#: charpick/charpick.c:699 charpick/charpick.c:713
+#: charpick/charpick.c:700 charpick/charpick.c:714
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:9
 #: charpick/properties.c:451
 msgid "Character Palette"
 msgstr "Paleta de caracteres"
 
-#: charpick/charpick.c:699
+#: charpick/charpick.c:700
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Insert characters"
 msgstr "Inserir caracteres"
@@ -516,12 +511,6 @@ msgstr "Inserir caracteres"
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Charpicker Applet Factory"
 msgstr "Factoría da miniaplicación do selector de caracteres"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:12
-msgid "accessories-character-map"
-msgstr "accessories-character-map"
 
 #: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:5
 msgid "Characters shown on applet startup"
@@ -656,12 +645,6 @@ msgstr "Factoría de ordes"
 msgid "Command"
 msgstr "Orde"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:12
-msgid "utilities-terminal"
-msgstr "utilities-terminal"
-
 #: command/org.cafe.panel.applet.command.gschema.xml.in:5
 msgid "Command to execute"
 msgstr "Orde a executar"
@@ -733,12 +716,6 @@ msgstr "Monitor de escala de frecuencia da CPU"
 msgid "Monitor the CPU Frequency Scaling"
 msgstr "Monitorizar a escala de frecuencia da CPU"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-cpu-frequency-applet"
-msgstr "cafe-cpu-frequency-applet"
-
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:6
 msgid "CPU to Monitor"
 msgstr "CPU para monitorizar"
@@ -758,8 +735,8 @@ msgstr "Modo no que amosar o uso da CPU"
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:12
 msgid ""
 "A 0 value means to show the applet in graphic mode (pixmap only), 1 to show "
-"the applet in text mode (not to show the pixmap) and 2 to show the applet in"
-" graphic and text mode."
+"the applet in text mode (not to show the pixmap) and 2 to show the applet in "
+"graphic and text mode."
 msgstr ""
 "Un valor 0 significa amosar a miniaplicación no modo imaxe (só o mapa de "
 "píxeis); 1 amosar a miniaplicación no modo texto (non amosar o mapa de "
@@ -826,8 +803,8 @@ msgid ""
 "You will not be able to modify the frequency of your machine.  Your machine "
 "may be misconfigured or not have hardware support for CPU frequency scaling."
 msgstr ""
-"Non poderá monitorizar a frecuencia da súa máquina. A súa máquina pode estar"
-" mal configurada ou o seu hardware non ser compatíbel coa escala de "
+"Non poderá monitorizar a frecuencia da súa máquina. A súa máquina pode estar "
+"mal configurada ou o seu hardware non ser compatíbel coa escala de "
 "frecuencia da CPU."
 
 #: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:14
@@ -838,6 +815,10 @@ msgstr "Cambiar o escalado de frecuencia da CPU"
 msgid "Privileges are required to change the CPU Frequency scaling."
 msgstr ""
 "Son necesarios privilexios para cambiar o escalado de frecuencia da CPU."
+
+#: drivemount/drive-button.c:307
+msgid "nothing to mount"
+msgstr ""
 
 #: drivemount/drive-button.c:340 drivemount/drive-button.c:354
 msgid "(mounted)"
@@ -895,7 +876,7 @@ msgstr ""
 msgid "Applet for mounting and unmounting block volumes."
 msgstr "Miniaplicación para montar e desmontar volumes de bloque."
 
-#: drivemount/drivemount.c:185 drivemount/drivemount.c:225
+#: drivemount/drivemount.c:185 drivemount/drivemount.c:220
 #: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Disk Mounter"
 msgstr "Montador de discos"
@@ -911,12 +892,6 @@ msgstr "Factoría para a miniaplicación montadora de unidades"
 #: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Mount local disks and devices"
 msgstr "Montar discos e dispositivos locais"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:12
-msgid "media-floppy"
-msgstr "media-floppy"
 
 #: geyes/geyes.c:178
 msgid "About Eyes"
@@ -952,12 +927,6 @@ msgstr "Factoría da miniaplicación Ollos"
 #: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A set of eyeballs for your panel"
 msgstr "Un par de ollos para o seu panel"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-eyes-applet"
-msgstr "cafe-eyes-applet"
 
 #: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:5
 #: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:6
@@ -1158,8 +1127,8 @@ msgstr "Introducir o URL"
 msgid ""
 "Failed to load the Locations XML database.  Please report this as a bug."
 msgstr ""
-"Produciuse un fallo ao cargar a base de datos XML de localizacións. Envíe un"
-" informe do erro."
+"Produciuse un fallo ao cargar a base de datos XML de localizacións. Envíe un "
+"informe do erro."
 
 #: cafeweather/cafeweather-pref.c:807
 msgid "Weather Preferences"
@@ -1313,12 +1282,6 @@ msgstr "Factoría para crear a miniaplicación de meteoroloxía."
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "Monitorizar as condicións meteorolóxicas actuais e os prognósticos"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
-msgid "weather-storm"
-msgstr "weather-storm"
-
 #: multiload/main.c:60
 msgid "About System Monitor"
 msgstr "Sobre o Monitor do sistema"
@@ -1443,7 +1406,7 @@ msgstr "_Abrir o monitor do sistema"
 msgid "System Monitor"
 msgstr "Monitor do sistema"
 
-#: multiload/netspeed.c:40
+#: multiload/netspeed.c:43
 #, c-format
 msgid "%s/s"
 msgstr "%s/s"
@@ -1459,12 +1422,6 @@ msgstr "Factoría para crear a miniaplicación de carga."
 #: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A system load indicator"
 msgstr "Indicador de carga do sistema"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:12
-msgid "utilities-system-monitor"
-msgstr "utilities-system-monitor"
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:5
 msgid "Enable CPU load graph"
@@ -1503,8 +1460,8 @@ msgid ""
 "For horizontal panels, the width of the graphs in pixels. For vertical "
 "panels, this is the height of the graphs."
 msgstr ""
-"Para os paneis horizontais, a largura das gráficas en píxeis. Para os paneis"
-" verticais, esta é a altura das gráficas."
+"Para os paneis horizontais, a largura das gráficas en píxeis. Para os paneis "
+"verticais, esta é a altura das gráficas."
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:38
 msgid "Graph color for user-related CPU activity"
@@ -1810,8 +1767,8 @@ msgstr "Amosar a suma de velocidades"
 #: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:11
 msgid "If true, show sum of inbound/outbound speed instead of separated ones."
 msgstr ""
-"Se é verdadeiro, amosa a suma das velocidades de de entrada e saída no canto"
-" de amosar cadansúa por separado."
+"Se é verdadeiro, amosa a suma das velocidades de de entrada e saída no canto "
+"de amosar cadansúa por separado."
 
 #: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:15
 msgid "Show bits"
@@ -1907,12 +1864,6 @@ msgstr "Miniaplicación Netspeed"
 #: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Network Monitor"
 msgstr "Monitor de rede"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-netspeed-applet"
-msgstr "cafe-netspeed-applet"
 
 #: netspeed/src/netspeed.c:427
 msgid "b"
@@ -2202,12 +2153,6 @@ msgstr "Notas adhesivas"
 msgid "Create, view, and manage sticky notes on the desktop"
 msgstr "Crear, ver e xestionar as notas adhesivas no escritorio"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-sticky-notes-applet"
-msgstr "cafe-sticky-notes-applet"
-
 #: stickynotes/stickynotes.c:577
 msgid "This note is locked."
 msgstr "Esta nota está bloqueada."
@@ -2484,8 +2429,8 @@ msgid ""
 "is valid."
 msgstr ""
 "Como predeterminado, as notas adhesivas utilizan a data actual como título "
-"ao seren creadas. Este é o formato utilizado. Calquera formato que poida ser"
-" analizado por strftime() é válido."
+"ao seren creadas. Este é o formato utilizado. Calquera formato que poida ser "
+"analizado por strftime() é válido."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:45
 msgid "Whether to use the default system color"
@@ -2600,12 +2545,6 @@ msgstr "Temporizador"
 msgid "Start a timer and receive a notification when it is finished"
 msgstr "Inicie un temporizador e reciba unha notificación cando recafe"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-panel-clock"
-msgstr "cafe-panel-clock"
-
 #: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:5
 msgid "Name of timer"
 msgstr "Nome do temporizador"
@@ -2698,12 +2637,6 @@ msgstr "Lixo"
 #: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Go to Trash"
 msgstr "Ir ao lixo"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:12
-msgid "user-trash-full"
-msgstr "user-trash-full"
 
 #: trashapplet/src/trashapplet.c:68 trashapplet/src/trash-empty.c:352
 msgid "_Empty Trash"

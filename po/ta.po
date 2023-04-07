@@ -2,35 +2,35 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Maurious Paul Vincent <paulmaurious@gmail.com>, 2020
 # Martin Wimpress <code@flexion.org>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Mooglie <mooglietech@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: cafe-applets 1.23.0\n"
+"Project-Id-Version: cafe-applets 1.25.0\n"
 "Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
-"POT-Creation-Date: 2020-01-10 17:58+0100\n"
+"POT-Creation-Date: 2020-08-11 21:05+0200\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Mooglie <mooglietech@gmail.com>, 2020\n"
 "Language-Team: Tamil (https://www.transifex.com/cafe/teams/13566/ta/)\n"
+"Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: ta\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: accessx-status/applet.c:86 charpick/charpick.c:571 geyes/geyes.c:166
+#: accessx-status/applet.c:86 charpick/charpick.c:572 geyes/geyes.c:166
 #: cafeweather/cafeweather-about.c:41 multiload/main.c:48
 #: stickynotes/stickynotes_applet_callbacks.c:367
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
 
-#: accessx-status/applet.c:87 battstat/battstat_applet.c:819
-#: charpick/charpick.c:572 cpufreq/src/cpufreq-applet.c:466
+#: accessx-status/applet.c:87 battstat/battstat_applet.c:820
+#: charpick/charpick.c:573 cpufreq/src/cpufreq-applet.c:466
 #: drivemount/drivemount.c:109 geyes/geyes.c:167
 #: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
@@ -52,8 +52,8 @@ msgid ""
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: accessx-status/applet.c:105 battstat/battstat_applet.c:844
-#: charpick/charpick.c:592 command/command.c:128
+#: accessx-status/applet.c:105 battstat/battstat_applet.c:845
+#: charpick/charpick.c:593 command/command.c:128
 #: cpufreq/src/cpufreq-applet.c:490 drivemount/drivemount.c:127
 #: geyes/geyes.c:186 cafeweather/cafeweather-about.c:61 multiload/main.c:69
 #: netspeed/src/netspeed.c:829 stickynotes/stickynotes_applet_callbacks.c:388
@@ -83,7 +83,7 @@ msgid "_Keyboard Accessibility Preferences"
 msgstr "விசைப்பலகை செயல்திறனின் முன்னுரிமைகள் (_K)"
 
 #: accessx-status/applet.c:183 battstat/battstat_applet.c:63
-#: charpick/charpick.c:673 cpufreq/src/cpufreq-applet.c:119
+#: charpick/charpick.c:674 cpufreq/src/cpufreq-applet.c:119
 #: drivemount/drivemount.c:165 geyes/geyes.c:359
 #: cafeweather/cafeweather-applet.c:117 multiload/main.c:488
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
@@ -91,7 +91,7 @@ msgid "_Help"
 msgstr "_உதவி"
 
 #: accessx-status/applet.c:184 battstat/battstat_applet.c:66
-#: charpick/charpick.c:676 command/command.c:84
+#: charpick/charpick.c:677 command/command.c:84
 #: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:168
 #: geyes/geyes.c:362 cafeweather/cafeweather-applet.c:120 multiload/main.c:491
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
@@ -111,8 +111,7 @@ msgstr "X நிலையின் செயல்திறன்"
 #: accessx-status/applet.c:1044 accessx-status/applet.c:1195
 msgid "Shows keyboard status when accessibility features are used."
 msgstr ""
-"அணுகுவதில் ஏற்ப்புத் தன்மை பயன்படுத்தப்பட்டுள்ள போது விசைப்பலகை நிலையை "
-"காட்டுகிறது ."
+"அணுகுவதில் ஏற்ப்புத் தன்மை பயன்படுத்தப்பட்டுள்ள போது விசைப்பலகை நிலையை காட்டுகிறது ."
 
 #: accessx-status/applet.c:1078
 msgid "XKB Extension is not enabled"
@@ -148,13 +147,7 @@ msgstr "விசைப்பலகை செயல்பாட்டு நி�
 msgid "Shows the status of keyboard accessibility features"
 msgstr "விசைபலகையின் அணுகுதல் பண்புக்கூற்றின் நிலையை காட்டு"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:12
-msgid "preferences-desktop-accessibility"
-msgstr ""
-
-#: battstat/battstat_applet.c:60 charpick/charpick.c:670 command/command.c:83
+#: battstat/battstat_applet.c:60 charpick/charpick.c:671 command/command.c:83
 #: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:356
 #: cafeweather/cafeweather-applet.c:114 multiload/main.c:482
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
@@ -298,8 +291,8 @@ msgstr "மின்கல நிலை தெரியவில்லை"
 msgid "N/A"
 msgstr "கிடைக்கவில்லை"
 
-#: battstat/battstat_applet.c:783 drivemount/drivemount.c:153
-#: geyes/geyes.c:344 geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
+#: battstat/battstat_applet.c:784 drivemount/drivemount.c:153 geyes/geyes.c:344
+#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
 #: cafeweather/cafeweather-pref.c:747
 #: stickynotes/stickynotes_applet_callbacks.c:345
 #: stickynotes/stickynotes_applet_callbacks.c:540
@@ -308,35 +301,35 @@ msgstr "கிடைக்கவில்லை"
 msgid "There was an error displaying help: %s"
 msgstr "தொடங்கும் போது பிழை.%s"
 
-#: battstat/battstat_applet.c:824
+#: battstat/battstat_applet.c:825
 msgid "This utility shows the status of your laptop battery."
 msgstr "இதன் பயன்பாடு தங்களின் மடிக்கணினி மின்கல நிலையைக் காட்டும்"
 
-#: battstat/battstat_applet.c:826
+#: battstat/battstat_applet.c:827
 msgid "upower backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:827
+#: battstat/battstat_applet.c:828
 msgid "Legacy backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:836
+#: battstat/battstat_applet.c:837
 msgid "About Battery Charge Monitor"
 msgstr ""
 
-#: battstat/battstat_applet.c:838
+#: battstat/battstat_applet.c:839
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
+#: battstat/battstat_applet.c:1115 battstat/battstat_applet.c:1165
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Battery Charge Monitor"
 msgstr "மின்கல மின்னூட்ட கண்காணி"
 
-#: battstat/battstat_applet.c:1165
+#: battstat/battstat_applet.c:1166
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor a laptop's remaining power"
 msgstr "மடிக்கணினியின் எஞ்சிய மின்திறனைக் கண்காணி"
@@ -365,8 +358,7 @@ msgstr "மீதமுள்ள சதவீதத்தை காட்டு 
 msgid "Notifications"
 msgstr "அறிவிப்புகள்"
 
-#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge
-#. drops to: [XX] percent/minutes remaining'
+#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge drops to: [XX] percent/minutes remaining'
 #: battstat/battstat_applet.ui:206
 msgid "_Warn when battery charge drops to:"
 msgstr "பாட்டரி சார்ஜ் இழக்கும் போது எச்சரி (_W):"
@@ -380,12 +372,6 @@ msgstr "மின்கலம் முழுமையாக ஏற்றப்�
 msgid "Battstat Factory"
 msgstr "பேட் ஸ்டாட் நிறுவனம்"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:12
-msgid "battery"
-msgstr ""
-
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:5
 msgid "Red value level"
 msgstr "சிகப்பு மதிப்பு நிலை"
@@ -395,8 +381,8 @@ msgid ""
 "The battery level below which the battery is displayed as red. Also the "
 "value at which the low battery warning is displayed."
 msgstr ""
-"மின்கலம் சிவப்பாக காட்டப் பட வேண்டிய மின்கலத்தின் மின்நிலை. தாழ்ந்த "
-"மின்நிலையாக எச்சரிக்கை காண்பிக்கப்பட வேண்டிய அளவு."
+"மின்கலம் சிவப்பாக காட்டப் பட வேண்டிய மின்கலத்தின் மின்நிலை. தாழ்ந்த மின்நிலையாக எச்சரிக்கை "
+"காண்பிக்கப்பட வேண்டிய அளவு."
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:10
 msgid "Warn on low time rather than low percentage"
@@ -407,8 +393,8 @@ msgid ""
 "Use the value defined in red_value as a time remaining to show the warning "
 "dialog rather than a percentage."
 msgstr ""
-"red_value இல் வரையறுத்த மதிப்பை எச்சரிக்கை உரையாடலை காட்ட இருப்பு நேரமாக "
-"பயன்படுத்து; சதவிகிதமாக அல்ல."
+"red_value இல் வரையறுத்த மதிப்பை எச்சரிக்கை உரையாடலை காட்ட இருப்பு நேரமாக பயன்படுத்து; "
+"சதவிகிதமாக அல்ல."
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:15
 msgid "Low Battery Notification"
@@ -440,8 +426,7 @@ msgstr "நேரம்/சதவிகிதம் குறிப்பை க
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:31
 msgid "0 for no label, 1 for percentage and 2 for time remaining."
-msgstr ""
-"0 என்றால் லேபிள் இல்லை, 1 என்றால் சதவீதம் மற்றும் 2 என்றால் மீதமுள்ள நேரம்."
+msgstr "0 என்றால் லேபிள் இல்லை, 1 என்றால் சதவீதம் மற்றும் 2 என்றால் மீதமுள்ள நேரம்."
 
 #: battstat/properties.c:237
 msgid "Percent"
@@ -454,6 +439,14 @@ msgstr "மீதமுள்ள நிமிடங்கள்"
 #: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:3
 msgid "Battery Status Utility"
 msgstr "மின்கல நிலை பயன்பாடு"
+
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:7
+msgid "Battery power low"
+msgstr ""
+
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:11
+msgid "Battery fully re-charged"
+msgstr ""
 
 #: charpick/charpick.c:404
 msgid "Available palettes"
@@ -473,32 +466,31 @@ msgstr "சிறப்பு எழுத்தை சொருகு"
 msgid "insert special character %s"
 msgstr "சிறப்பு எழுத்தை சொருகு %s"
 
-#: charpick/charpick.c:583
+#: charpick/charpick.c:584
 msgid "About Character Palette"
 msgstr ""
 
-#: charpick/charpick.c:585
+#: charpick/charpick.c:586
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: charpick/charpick.c:587
+#: charpick/charpick.c:588
 msgid ""
 "Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
 "எனது விசைப்பலகையில் காணாத விதவிதமான வரியுருகளை தெரிவு செய்வதற்கான நோம் "
-"பலகைக்கானகுறும்பயன். ஜி.என்.யு. ஜெனரல் பப்ளிக் லைசன்ஸ் மூலமாக "
-"வெளியிடப்பட்டது."
+"பலகைக்கானகுறும்பயன். ஜி.என்.யு. ஜெனரல் பப்ளிக் லைசன்ஸ் மூலமாக வெளியிடப்பட்டது."
 
-#: charpick/charpick.c:699 charpick/charpick.c:713
+#: charpick/charpick.c:700 charpick/charpick.c:714
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:9
 #: charpick/properties.c:451
 msgid "Character Palette"
 msgstr "எழுத்துக்களின் வண்ணத்தட்டு"
 
-#: charpick/charpick.c:699
+#: charpick/charpick.c:700
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Insert characters"
 msgstr "எழுத்துக்களைச் சொருகு"
@@ -507,12 +499,6 @@ msgstr "எழுத்துக்களைச் சொருகு"
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Charpicker Applet Factory"
 msgstr "வரியுருதெரிவியின் குறும்பயனகம்"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:12
-msgid "accessories-character-map"
-msgstr ""
 
 #: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:5
 msgid "Characters shown on applet startup"
@@ -523,8 +509,8 @@ msgid ""
 "The string that the user had selected when the applet was last used. This "
 "string will be displayed when the user starts the applet."
 msgstr ""
-"பயனர் கடைசியாக குறும்பயனில் தேர்ந்தெடுத்த சரம். இந்த சரம் குறும்பயனை "
-"துவக்கும் போது காட்டப் படும்."
+"பயனர் கடைசியாக குறும்பயனில் தேர்ந்தெடுத்த சரம். இந்த சரம் குறும்பயனை துவக்கும் போது "
+"காட்டப் படும்."
 
 #: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:10
 #: charpick/properties.c:378
@@ -645,12 +631,6 @@ msgstr ""
 msgid "Command"
 msgstr "கட்டளை"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:12
-msgid "utilities-terminal"
-msgstr ""
-
 #: command/org.cafe.panel.applet.command.gschema.xml.in:5
 msgid "Command to execute"
 msgstr ""
@@ -722,12 +702,6 @@ msgstr "ஸிபியு அலைவரிசை அளவிடும் க
 msgid "Monitor the CPU Frequency Scaling"
 msgstr "ஸிபியு அலைவரிசை அளவிடுதலை கண்காணிக்கவும்"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-cpu-frequency-applet"
-msgstr ""
-
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:6
 msgid "CPU to Monitor"
 msgstr "கண்காணிக்க வேண்டிய ஸிபியு "
@@ -736,8 +710,7 @@ msgstr "கண்காணிக்க வேண்டிய ஸிபியு 
 msgid ""
 "Set the CPU to monitor. In a single processor system you don't have to "
 "change it."
-msgstr ""
-"கண்காணிக்க வேண்டிய ஸிபியு ஐ அமை. தனி செயலகமானால் எதையும் மாற்ற தேவையில்லை."
+msgstr "கண்காணிக்க வேண்டிய ஸிபியு ஐ அமை. தனி செயலகமானால் எதையும் மாற்ற தேவையில்லை."
 
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:11
 msgid "Mode to show CPU usage"
@@ -746,12 +719,11 @@ msgstr ""
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:12
 msgid ""
 "A 0 value means to show the applet in graphic mode (pixmap only), 1 to show "
-"the applet in text mode (not to show the pixmap) and 2 to show the applet in"
-" graphic and text mode."
+"the applet in text mode (not to show the pixmap) and 2 to show the applet in "
+"graphic and text mode."
 msgstr ""
-"0 மதிப்பு குறு நிரலை வரைகலையாக (பிக்ஸ்மாப் மட்டும்) காட்டு,1 மதிப்பு குறு "
-"நிரலை உரை பாணியில் காட்டு (பிக்ஸ்மாப் அல்ல) மற்றும் 2 மதிப்பு இரண்டு "
-"பாணியிலும்.காட்டு."
+"0 மதிப்பு குறு நிரலை வரைகலையாக (பிக்ஸ்மாப் மட்டும்) காட்டு,1 மதிப்பு குறு நிரலை உரை "
+"பாணியில் காட்டு (பிக்ஸ்மாப் அல்ல) மற்றும் 2 மதிப்பு இரண்டு பாணியிலும்.காட்டு."
 
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:16
 msgid "The type of text to display (if the text is enabled)."
@@ -810,9 +782,8 @@ msgid ""
 "You will not be able to modify the frequency of your machine.  Your machine "
 "may be misconfigured or not have hardware support for CPU frequency scaling."
 msgstr ""
-"நீங்கள் உங்கள் இயந்திரத்தின் அதிர்வெண்ணை மாற்ற இயலாது உங்கள் இயந்திரம் "
-"சரியாக உரிவமைக்கப் படாது இருக்கலாம் அல்லது ஸிபியு அளவிடலுக்கு வன் பொருள் "
-"ஆதரவு இல்லை."
+"நீங்கள் உங்கள் இயந்திரத்தின் அதிர்வெண்ணை மாற்ற இயலாது உங்கள் இயந்திரம் சரியாக உரிவமைக்கப் "
+"படாது இருக்கலாம் அல்லது ஸிபியு அளவிடலுக்கு வன் பொருள் ஆதரவு இல்லை."
 
 #: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:14
 msgid "Change CPU Frequency scaling"
@@ -821,6 +792,10 @@ msgstr "CPU அலைவரிசை அளவிடுதலை மாற்ற
 #: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:15
 msgid "Privileges are required to change the CPU Frequency scaling."
 msgstr "CPU அலைவரிசை அளவிடுதலை மாற்ற முன்னுரிமைகள் தேவைப்படும்."
+
+#: drivemount/drive-button.c:307
+msgid "nothing to mount"
+msgstr ""
 
 #: drivemount/drive-button.c:340 drivemount/drive-button.c:354
 msgid "(mounted)"
@@ -876,7 +851,7 @@ msgstr ""
 msgid "Applet for mounting and unmounting block volumes."
 msgstr "ப்லாக் வால்யூம்களை ஏற்ற, இறக்க உதவும் குறும்பயன்"
 
-#: drivemount/drivemount.c:185 drivemount/drivemount.c:225
+#: drivemount/drivemount.c:185 drivemount/drivemount.c:220
 #: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Disk Mounter"
 msgstr "வட்டு ஏற்றி"
@@ -892,12 +867,6 @@ msgstr "இயக்கு மேலேற்று சிறுநிரல்�
 #: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Mount local disks and devices"
 msgstr "உண்ணிலை தகடு, சாதனத்தில் ஆகியவற்றை ஏற்று"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:12
-msgid "media-floppy"
-msgstr ""
 
 #: geyes/geyes.c:178
 msgid "About Eyes"
@@ -930,12 +899,6 @@ msgstr ""
 #: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A set of eyeballs for your panel"
 msgstr "உங்கள் பலகத்திற்கு ஒரு ஜோடி கண்கள்"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-eyes-applet"
-msgstr ""
 
 #: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:5
 #: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:6
@@ -1131,8 +1094,7 @@ msgstr "யுஆர்எல் ஐ நுழைவி"
 #: cafeweather/cafeweather-pref.c:283
 msgid ""
 "Failed to load the Locations XML database.  Please report this as a bug."
-msgstr ""
-"இடங்கள் எக்ஸ்எம்எல் ஐ ஏற்றுவதில் தோல்வி. இதை ஒரு பிழையாக தகவல் தரவும்."
+msgstr "இடங்கள் எக்ஸ்எம்எல் ஐ ஏற்றுவதில் தோல்வி. இதை ஒரு பிழையாக தகவல் தரவும்."
 
 #: cafeweather/cafeweather-pref.c:807
 msgid "Weather Preferences"
@@ -1286,12 +1248,6 @@ msgstr "தட்பவெப்பக் குறும்பயனை உர�
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "நடப்பு தட்பவெப்ப நிலைகளைக் கண்காணித்து முன்மதிப்பிடுகிறது"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
-msgid "weather-storm"
-msgstr ""
-
 #: multiload/main.c:60
 msgid "About System Monitor"
 msgstr ""
@@ -1307,9 +1263,8 @@ msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
-"ஒரு 'ஏற்றுதலைக் கண்காணித்தல்' அமைப்பு ஸிபியு, ரேம் மற்றும் ஸ்வாப் "
-"ஆகியவற்றின் வரைபடங்களையும் கோப்பை பயன்படுத்துதலையும், வலையமைப்பின் "
-"போக்குவரத்தையும் காட்ட வல்லது"
+"ஒரு 'ஏற்றுதலைக் கண்காணித்தல்' அமைப்பு ஸிபியு, ரேம் மற்றும் ஸ்வாப் ஆகியவற்றின் "
+"வரைபடங்களையும் கோப்பை பயன்படுத்துதலையும், வலையமைப்பின் போக்குவரத்தையும் காட்ட வல்லது"
 
 #: multiload/main.c:129
 msgid "Start system-monitor"
@@ -1411,7 +1366,7 @@ msgstr "_த அமைப்புக் கண்காணியை திற"
 msgid "System Monitor"
 msgstr "அமைப்புக் கண்காணி"
 
-#: multiload/netspeed.c:40
+#: multiload/netspeed.c:43
 #, c-format
 msgid "%s/s"
 msgstr "%s/s"
@@ -1427,12 +1382,6 @@ msgstr ""
 #: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A system load indicator"
 msgstr "ஒரு 'அமைப்பு ஏற்றுதல் காட்டி' "
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:12
-msgid "utilities-system-monitor"
-msgstr ""
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:5
 msgid "Enable CPU load graph"
@@ -1471,8 +1420,8 @@ msgid ""
 "For horizontal panels, the width of the graphs in pixels. For vertical "
 "panels, this is the height of the graphs."
 msgstr ""
-"கிடைமட்ட பலகத்தின் அகலம் படத் துணுக்குகளில் செங்குத்து பலகத்தின் உயரம் "
-"வரைபடத்தில் குறிக்கப்படும்"
+"கிடைமட்ட பலகத்தின் அகலம் படத் துணுக்குகளில் செங்குத்து பலகத்தின் உயரம் வரைபடத்தில் "
+"குறிக்கப்படும்"
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:38
 msgid "Graph color for user-related CPU activity"
@@ -1868,12 +1817,6 @@ msgstr ""
 msgid "Network Monitor"
 msgstr ""
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-netspeed-applet"
-msgstr ""
-
 #: netspeed/src/netspeed.c:427
 msgid "b"
 msgstr ""
@@ -2144,14 +2087,7 @@ msgstr "ஒட்டுகின்ற குறிப்புகள்"
 
 #: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Create, view, and manage sticky notes on the desktop"
-msgstr ""
-"மேற்மேசையில் பிடிக் குறிப்புகளை உருவாக்க, காண, மற்றும் நிர்வாகிக்கவும்"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-sticky-notes-applet"
-msgstr ""
+msgstr "மேற்மேசையில் பிடிக் குறிப்புகளை உருவாக்க, காண, மற்றும் நிர்வாகிக்கவும்"
 
 #: stickynotes/stickynotes.c:577
 msgid "This note is locked."
@@ -2248,8 +2184,8 @@ msgstr "_k மேல்மேசையை சொடுக்கினால் �
 #: stickynotes/stickynotes.ui:381
 msgid "Choose whether to hide all notes when selecting on the desktop"
 msgstr ""
-"மேல்மேசையை தேர்ந்தெடுக்க சொடுக்கினால் எல்லா குறிப்புகளையும் மறைக்க வேண்டுமா "
-"என தேர்ந்தெடுக்கவும்"
+"மேல்மேசையை தேர்ந்தெடுக்க சொடுக்கினால் எல்லா குறிப்புகளையும் மறைக்க வேண்டுமா என "
+"தேர்ந்தெடுக்கவும்"
 
 #: stickynotes/stickynotes.ui:394
 msgid "Force _default color and font on notes"
@@ -2257,8 +2193,7 @@ msgstr "குறிப்புகளில் முன்னிருப்�
 
 #: stickynotes/stickynotes.ui:398
 msgid "Choose if the default style is forced on all notes"
-msgstr ""
-"முன்னிருப்பு தோற்றம் அனைத்து குறிப்புகளை வலியுறுத்துகிறதா என தேர்ந்தெடு"
+msgstr "முன்னிருப்பு தோற்றம் அனைத்து குறிப்புகளை வலியுறுத்துகிறதா என தேர்ந்தெடு"
 
 #: stickynotes/stickynotes.ui:411
 msgid "_Put notes on all workspaces"
@@ -2373,8 +2308,8 @@ msgid ""
 "Default color for new sticky notes. This should be in html hex "
 "specification, for example \"#30FF50\"."
 msgstr ""
-"புதிய தேவையற்ற குறிப்பின் இயல்பான நிறம். இது html hex  குறியீடாக இருக்க "
-"வேண்டும் உதாரணம்  \"#30FF50\"."
+"புதிய தேவையற்ற குறிப்பின் இயல்பான நிறம். இது html hex  குறியீடாக இருக்க வேண்டும் "
+"உதாரணம்  \"#30FF50\"."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:20
 msgid "Default color for font"
@@ -2385,8 +2320,8 @@ msgid ""
 "Default font color for new sticky notes. This should be in html hex "
 "specification, for example \"#000000\"."
 msgstr ""
-"புதிய ஒட்டு குறிப்பின் இயல்பான குறியீடு. இது html hex  குறியீடாக இருக்க "
-"வேண்டும் உதாரணம் \"#30FF50\"."
+"புதிய ஒட்டு குறிப்பின் இயல்பான குறியீடு. இது html hex  குறியீடாக இருக்க வேண்டும் "
+"உதாரணம் \"#30FF50\"."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:25
 msgid "Default font for new notes"
@@ -2397,8 +2332,8 @@ msgid ""
 "Default font for new sticky notes. This should be a Pango Font Name, for "
 "example \"Sans Italic 10\"."
 msgstr ""
-"புதிய தேவையற்ற குறிப்பு பயன்படுத்த வேண்டிய முன்னிருப்பு எழுத்துரு. இது "
-"பாங்கோ எழுத்துரு பெயரை கொண்டிருக்க வேண்டும் உதாரணம் \"Sans Italic 10\""
+"புதிய தேவையற்ற குறிப்பு பயன்படுத்த வேண்டிய முன்னிருப்பு எழுத்துரு. இது பாங்கோ "
+"எழுத்துரு பெயரை கொண்டிருக்க வேண்டும் உதாரணம் \"Sans Italic 10\""
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:30
 msgid "Sticky notes' workspace stickyness"
@@ -2409,8 +2344,8 @@ msgid ""
 "Specifies whether the sticky notes are visible on ALL workspaces on the "
 "desktop, or not."
 msgstr ""
-"அனைத்து மேற்மேசை வேலை இடங்களிலும் பிடிக் குறிப்புகள் கண்களுக்குப் "
-"புலப்படுகிறதா அல்லது இல்லையா என்பதை குறிக்கிறது"
+"அனைத்து மேற்மேசை வேலை இடங்களிலும் பிடிக் குறிப்புகள் கண்களுக்குப் புலப்படுகிறதா அல்லது "
+"இல்லையா என்பதை குறிக்கிறது"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:35
 msgid "Sticky notes' locked state"
@@ -2419,8 +2354,8 @@ msgstr "ஒட்டு குறிப்பு பூட்டப்பட்�
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:36
 msgid "Specifies whether the sticky notes are locked (non-editable) or not."
 msgstr ""
-"பூட்டப் பட்ட பிடிக் குறிப்புகளை (திருத்த முடியாத) மூடுவதா அல்லது வேண்டாமா "
-"என்பதை குறிப்பிடுகிறது."
+"பூட்டப் பட்ட பிடிக் குறிப்புகளை (திருத்த முடியாத) மூடுவதா அல்லது வேண்டாமா என்பதை "
+"குறிப்பிடுகிறது."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:40
 msgid "Date format of note's title"
@@ -2432,9 +2367,8 @@ msgid ""
 "are created. This format is used; anything that can be parsed by strftime() "
 "is valid."
 msgstr ""
-"இயல்பாக, ஒட்டுகின்ற குறிப்புகள் உருவாக்கப்பட்ட தேதியில் பெயரை "
-"கொண்டிருக்கும்.strftime() செல்லக்கூடியதாக இருக்கும் போது இந்த வடிவமைப்பு "
-"பயன்படுத்தப்படும்."
+"இயல்பாக, ஒட்டுகின்ற குறிப்புகள் உருவாக்கப்பட்ட தேதியில் பெயரை கொண்டிருக்கும்.strftime() "
+"செல்லக்கூடியதாக இருக்கும் போது இந்த வடிவமைப்பு பயன்படுத்தப்படும்."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:45
 msgid "Whether to use the default system color"
@@ -2445,8 +2379,8 @@ msgid ""
 "If this option is disabled, a custom color can be used as the default color "
 "for all sticky notes."
 msgstr ""
-"இந்த விருப்பத்தேர்வுகள் செயலாக்கப்படாமலிருந்தால், பிடிக் குறிப்புகளில் "
-"முன்னிருப்பு வண்ணத்திற்குப் பதிலாக வேறொன்றைப் பயன்படுத்தலாம்."
+"இந்த விருப்பத்தேர்வுகள் செயலாக்கப்படாமலிருந்தால், பிடிக் குறிப்புகளில் முன்னிருப்பு "
+"வண்ணத்திற்குப் பதிலாக வேறொன்றைப் பயன்படுத்தலாம்."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:50
 msgid "Whether to use the default system font"
@@ -2457,37 +2391,33 @@ msgid ""
 "If this option is disabled, a custom font can be used as the default font "
 "for all sticky notes."
 msgstr ""
-"இந்த விருப்பத்தேர்வுகள் செயலாக்கப்படாமலிருந்தால், பிடிக் குறிப்புகளில் "
-"முன்னிருப்பு எழுத்துருக்களுக்குவண்ணத்திற்குப் பதிலாக வேறொன்றைப் "
-"பயன்படுத்தலாம்."
+"இந்த விருப்பத்தேர்வுகள் செயலாக்கப்படாமலிருந்தால், பிடிக் குறிப்புகளில் முன்னிருப்பு "
+"எழுத்துருக்களுக்குவண்ணத்திற்குப் பதிலாக வேறொன்றைப் பயன்படுத்தலாம்."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:55
 msgid "Whether to force the default color and font on all notes"
 msgstr ""
-"அனைத்துக் குறிப்புகளிலும் முன்னிருப்பு வண்ணத்தை உந்துவதா என்பதைப் பற்றிக் "
-"குறிப்பிடுக"
+"அனைத்துக் குறிப்புகளிலும் முன்னிருப்பு வண்ணத்தை உந்துவதா என்பதைப் பற்றிக் குறிப்பிடுக"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:56
 msgid ""
 "If this option is enabled, the custom colors and fonts that have been "
 "assigned to individual notes will be ignored."
 msgstr ""
-"இந்த விருப்பத்தேர்வுகள் செயலாக்கப்பட்டால், பிடிக் குறிப்புகளில் முன்னிருப்பு"
-" வண்ணத்திமோ அல்லது எழுத்துருக்களோ தனித்தனியாகக் குறிக்கப்பட்டக் குறிப்புகள் "
-"தவிர்க்கப் படும்."
+"இந்த விருப்பத்தேர்வுகள் செயலாக்கப்பட்டால், பிடிக் குறிப்புகளில் முன்னிருப்பு வண்ணத்திமோ "
+"அல்லது எழுத்துருக்களோ தனித்தனியாகக் குறிக்கப்பட்டக் குறிப்புகள் தவிர்க்கப் படும்."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:60
 msgid "Whether to hide all notes when the desktop is selected"
-msgstr ""
-"மேல்மேசையை தேர்ந்தெடுக்க சொடுக்கினால் எல்லா குறிப்புகளையும் மறைக்க வேண்டுமா"
+msgstr "மேல்மேசையை தேர்ந்தெடுக்க சொடுக்கினால் எல்லா குறிப்புகளையும் மறைக்க வேண்டுமா"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:61
 msgid ""
 "If this option is enabled, selecting the desktop in any way will "
 "automatically hide all the open notes."
 msgstr ""
-"இந்த தேர்வை செயலாக்கினால் மேல்மேசையை எப்படி தேர்ந்தெடுத்தாலும் எல்லா திறந்த "
-"குறிப்புகளும் தானியங்கியாக மறக்கப்படும்."
+"இந்த தேர்வை செயலாக்கினால் மேல்மேசையை எப்படி தேர்ந்தெடுத்தாலும் எல்லா திறந்த குறிப்புகளும் "
+"தானியங்கியாக மறக்கப்படும்."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:65
 msgid "Whether to ask for confirmation when deleting a note"
@@ -2547,12 +2477,6 @@ msgstr ""
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:10
 #: timerapplet/timerapplet.c:277
 msgid "Start a timer and receive a notification when it is finished"
-msgstr ""
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-panel-clock"
 msgstr ""
 
 #: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:5
@@ -2646,12 +2570,6 @@ msgstr "அகற்றிடம்"
 msgid "Go to Trash"
 msgstr "குப்பைக்கு செல்"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:12
-msgid "user-trash-full"
-msgstr ""
-
 #: trashapplet/src/trashapplet.c:68 trashapplet/src/trash-empty.c:352
 msgid "_Empty Trash"
 msgstr "_E குப்பையை காலியாக்கு"
@@ -2696,8 +2614,8 @@ msgid ""
 "A CAFE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
 msgstr ""
-"க்னோம் பலக குப்பை தொட்டி. நீங்கள் குப்பையை காண அல்லது உருப்படிகளை இழுத்து "
-"குப்பையில் போட உபயோகிக்கலாம்."
+"க்னோம் பலக குப்பை தொட்டி. நீங்கள் குப்பையை காண அல்லது உருப்படிகளை இழுத்து குப்பையில் போட "
+"உபயோகிக்கலாம்."
 
 #: trashapplet/src/trashapplet.c:462
 msgid "Delete Immediately?"
@@ -2705,14 +2623,12 @@ msgstr "உடனடியாக அழிக்க வேண்டுமா?"
 
 #: trashapplet/src/trashapplet.c:492
 msgid "Cannot move items to trash, do you want to delete them immediately?"
-msgstr ""
-"உருப்படிகளை குப்பைக்கு நகர்த்த முடியவில்லை, அவற்றை உடனே நீக்க வேண்டுமா?"
+msgstr "உருப்படிகளை குப்பைக்கு நகர்த்த முடியவில்லை, அவற்றை உடனே நீக்க வேண்டுமா?"
 
 #: trashapplet/src/trashapplet.c:497
 msgid ""
 "Cannot move some items to trash, do you want to delete these immediately?"
-msgstr ""
-"சில உருப்படிகளை குப்பைக்கு நகர்த்த முடியவில்லை, அவற்றை உடனே நீக்க வேண்டுமா? "
+msgstr "சில உருப்படிகளை குப்பைக்கு நகர்த்த முடியவில்லை, அவற்றை உடனே நீக்க வேண்டுமா? "
 
 #: trashapplet/src/trashapplet.c:625
 msgid "Trash Applet"
@@ -2739,8 +2655,8 @@ msgid ""
 "If you choose to empty the trash, all items in it will be permanently lost. "
 "Please note that you can also delete them separately."
 msgstr ""
-"குப்பையை காலி செய்யின் எல்லா உருப்படிகளும் நிரந்தரமாக இழக்கப்படும். அவற்றை "
-"தனியாகவும் நீக்கலாம் என அறியவும்."
+"குப்பையை காலி செய்யின் எல்லா உருப்படிகளும் நிரந்தரமாக இழக்கப்படும். அவற்றை தனியாகவும் "
+"நீக்கலாம் என அறியவும்."
 
 #: trashapplet/trashapplet-empty-progress.ui:7
 #: trashapplet/trashapplet-empty-progress.ui:21

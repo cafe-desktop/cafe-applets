@@ -2,34 +2,34 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Martin Wimpress <code@flexion.org>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Vaibhav S Dalvi <vaibhav.dlv@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: cafe-applets 1.23.0\n"
+"Project-Id-Version: cafe-applets 1.25.0\n"
 "Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
-"POT-Creation-Date: 2020-01-10 17:58+0100\n"
+"POT-Creation-Date: 2020-08-11 21:05+0200\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Vaibhav S Dalvi <vaibhav.dlv@gmail.com>, 2020\n"
 "Language-Team: Marathi (https://www.transifex.com/cafe/teams/13566/mr/)\n"
+"Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: mr\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: accessx-status/applet.c:86 charpick/charpick.c:571 geyes/geyes.c:166
+#: accessx-status/applet.c:86 charpick/charpick.c:572 geyes/geyes.c:166
 #: cafeweather/cafeweather-about.c:41 multiload/main.c:48
 #: stickynotes/stickynotes_applet_callbacks.c:367
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
 
-#: accessx-status/applet.c:87 battstat/battstat_applet.c:819
-#: charpick/charpick.c:572 cpufreq/src/cpufreq-applet.c:466
+#: accessx-status/applet.c:87 battstat/battstat_applet.c:820
+#: charpick/charpick.c:573 cpufreq/src/cpufreq-applet.c:466
 #: drivemount/drivemount.c:109 geyes/geyes.c:167
 #: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
@@ -51,8 +51,8 @@ msgid ""
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: accessx-status/applet.c:105 battstat/battstat_applet.c:844
-#: charpick/charpick.c:592 command/command.c:128
+#: accessx-status/applet.c:105 battstat/battstat_applet.c:845
+#: charpick/charpick.c:593 command/command.c:128
 #: cpufreq/src/cpufreq-applet.c:490 drivemount/drivemount.c:127
 #: geyes/geyes.c:186 cafeweather/cafeweather-about.c:61 multiload/main.c:69
 #: netspeed/src/netspeed.c:829 stickynotes/stickynotes_applet_callbacks.c:388
@@ -79,7 +79,7 @@ msgid "_Keyboard Accessibility Preferences"
 msgstr "कळफलक सुलभता आवड निवड(_K)"
 
 #: accessx-status/applet.c:183 battstat/battstat_applet.c:63
-#: charpick/charpick.c:673 cpufreq/src/cpufreq-applet.c:119
+#: charpick/charpick.c:674 cpufreq/src/cpufreq-applet.c:119
 #: drivemount/drivemount.c:165 geyes/geyes.c:359
 #: cafeweather/cafeweather-applet.c:117 multiload/main.c:488
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
@@ -87,7 +87,7 @@ msgid "_Help"
 msgstr "मदत(_H)"
 
 #: accessx-status/applet.c:184 battstat/battstat_applet.c:66
-#: charpick/charpick.c:676 command/command.c:84
+#: charpick/charpick.c:677 command/command.c:84
 #: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:168
 #: geyes/geyes.c:362 cafeweather/cafeweather-applet.c:120 multiload/main.c:491
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
@@ -142,13 +142,7 @@ msgstr "कळफलक सुलभता स्थिती एप्लेट
 msgid "Shows the status of keyboard accessibility features"
 msgstr "कळफलक सुलभता वैशिष्ट्यांची स्थिती दाखवा"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:12
-msgid "preferences-desktop-accessibility"
-msgstr ""
-
-#: battstat/battstat_applet.c:60 charpick/charpick.c:670 command/command.c:83
+#: battstat/battstat_applet.c:60 charpick/charpick.c:671 command/command.c:83
 #: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:356
 #: cafeweather/cafeweather-applet.c:114 multiload/main.c:482
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
@@ -292,8 +286,8 @@ msgstr "बॅटरी स्थिती अज्ञात"
 msgid "N/A"
 msgstr "N/A"
 
-#: battstat/battstat_applet.c:783 drivemount/drivemount.c:153
-#: geyes/geyes.c:344 geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
+#: battstat/battstat_applet.c:784 drivemount/drivemount.c:153 geyes/geyes.c:344
+#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
 #: cafeweather/cafeweather-pref.c:747
 #: stickynotes/stickynotes_applet_callbacks.c:345
 #: stickynotes/stickynotes_applet_callbacks.c:540
@@ -302,35 +296,35 @@ msgstr "N/A"
 msgid "There was an error displaying help: %s"
 msgstr "मदत दर्शवण्यात चूक झाली: %s"
 
-#: battstat/battstat_applet.c:824
+#: battstat/battstat_applet.c:825
 msgid "This utility shows the status of your laptop battery."
 msgstr "ही उपयुक्तता तुमच्या लॅपटॉप बॅटरीची स्थिती दाखवते."
 
-#: battstat/battstat_applet.c:826
+#: battstat/battstat_applet.c:827
 msgid "upower backend enabled."
 msgstr "upower बॅकेंड कार्यान्वीत."
 
-#: battstat/battstat_applet.c:827
+#: battstat/battstat_applet.c:828
 msgid "Legacy backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:836
+#: battstat/battstat_applet.c:837
 msgid "About Battery Charge Monitor"
 msgstr ""
 
-#: battstat/battstat_applet.c:838
+#: battstat/battstat_applet.c:839
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
+#: battstat/battstat_applet.c:1115 battstat/battstat_applet.c:1165
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Battery Charge Monitor"
 msgstr "बॅटरी चार्ज मॉनिटर"
 
-#: battstat/battstat_applet.c:1165
+#: battstat/battstat_applet.c:1166
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor a laptop's remaining power"
 msgstr "लॅपटॉपची उर्वरीत पॉवर(उर्जा) मॉनिटर करा"
@@ -359,8 +353,7 @@ msgstr "उर्वरीत टक्केवारी दाखवा (_p)"
 msgid "Notifications"
 msgstr "सूचना"
 
-#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge
-#. drops to: [XX] percent/minutes remaining'
+#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge drops to: [XX] percent/minutes remaining'
 #: battstat/battstat_applet.ui:206
 msgid "_Warn when battery charge drops to:"
 msgstr "बॅटरी चार्ज ठराविक स्तर खाली आल्यास सावध करा (_W):"
@@ -374,12 +367,6 @@ msgstr "बॅटरी पूर्ण पुन्ह चार्ज के�
 msgid "Battstat Factory"
 msgstr "बॅटस्टॅट फॅक्टरी"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:12
-msgid "battery"
-msgstr ""
-
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:5
 msgid "Red value level"
 msgstr "लाल मूल्य स्तर"
@@ -389,8 +376,8 @@ msgid ""
 "The battery level below which the battery is displayed as red. Also the "
 "value at which the low battery warning is displayed."
 msgstr ""
-"बॅटरी स्तर ज्याखाली बॅटरी आहे ती लाल दर्शवली आहे. तसेच मूल्य ज्यावर बॅटरी "
-"कमी असल्याची सुचना दर्शवली जाते."
+"बॅटरी स्तर ज्याखाली बॅटरी आहे ती लाल दर्शवली आहे. तसेच मूल्य ज्यावर बॅटरी कमी असल्याची "
+"सुचना दर्शवली जाते."
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:10
 msgid "Warn on low time rather than low percentage"
@@ -401,8 +388,8 @@ msgid ""
 "Use the value defined in red_value as a time remaining to show the warning "
 "dialog rather than a percentage."
 msgstr ""
-"सुचना संवादामध्ये दर्शवण्यासाठी टक्केवारीऐवजी red_value मध्ये व्याख्यीत "
-"उर्वरित वेळेचे मूल्य वापरा."
+"सुचना संवादामध्ये दर्शवण्यासाठी टक्केवारीऐवजी red_value मध्ये व्याख्यीत उर्वरित वेळेचे मूल्य "
+"वापरा."
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:15
 msgid "Low Battery Notification"
@@ -448,6 +435,14 @@ msgstr "मिनिटे शिल्लक"
 msgid "Battery Status Utility"
 msgstr "बॅटरी स्थिती उपयुक्तता"
 
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:7
+msgid "Battery power low"
+msgstr ""
+
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:11
+msgid "Battery fully re-charged"
+msgstr ""
+
 #: charpick/charpick.c:404
 msgid "Available palettes"
 msgstr "उपलब्ध पटले"
@@ -466,31 +461,31 @@ msgstr "विशेष अक्षर दाखल करा"
 msgid "insert special character %s"
 msgstr "विशेष अक्षर %s दाखल करा"
 
-#: charpick/charpick.c:583
+#: charpick/charpick.c:584
 msgid "About Character Palette"
 msgstr ""
 
-#: charpick/charpick.c:585
+#: charpick/charpick.c:586
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: charpick/charpick.c:587
+#: charpick/charpick.c:588
 msgid ""
 "Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
-"माझ्या कळफलकावर उपलब्ध नसलेली अनोळखी अक्षरे निवडण्यासाठी Cafe पॅनेल एप्लेट."
-"  GNU जनरल पब्लिक लायसंस अंतर्गत प्रकाशित."
+"माझ्या कळफलकावर उपलब्ध नसलेली अनोळखी अक्षरे निवडण्यासाठी Cafe पॅनेल एप्लेट.  GNU जनरल "
+"पब्लिक लायसंस अंतर्गत प्रकाशित."
 
-#: charpick/charpick.c:699 charpick/charpick.c:713
+#: charpick/charpick.c:700 charpick/charpick.c:714
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:9
 #: charpick/properties.c:451
 msgid "Character Palette"
 msgstr "अक्षर पटल"
 
-#: charpick/charpick.c:699
+#: charpick/charpick.c:700
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Insert characters"
 msgstr "अक्षरे प्रविष्ट करा"
@@ -499,12 +494,6 @@ msgstr "अक्षरे प्रविष्ट करा"
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Charpicker Applet Factory"
 msgstr "Charpicker एप्लेट फॅक्टरी"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:12
-msgid "accessories-character-map"
-msgstr ""
 
 #: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:5
 msgid "Characters shown on applet startup"
@@ -515,8 +504,8 @@ msgid ""
 "The string that the user had selected when the applet was last used. This "
 "string will be displayed when the user starts the applet."
 msgstr ""
-"मागील वेळी एप्लेट वापरले असताना उपयोक्त्याने निवडलेली ओळ. ही ओळ उपयोक्त्याने"
-" एप्लेट सुरू केल्यावर दर्शवली जाईल."
+"मागील वेळी एप्लेट वापरले असताना उपयोक्त्याने निवडलेली ओळ. ही ओळ उपयोक्त्याने एप्लेट सुरू "
+"केल्यावर दर्शवली जाईल."
 
 #: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:10
 #: charpick/properties.c:378
@@ -637,12 +626,6 @@ msgstr ""
 msgid "Command"
 msgstr "आदेश"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:12
-msgid "utilities-terminal"
-msgstr ""
-
 #: command/org.cafe.panel.applet.command.gschema.xml.in:5
 msgid "Command to execute"
 msgstr "चालवण्याजोगा आदेश"
@@ -714,12 +697,6 @@ msgstr "CPU वारंवारता मापन मॉनिटर"
 msgid "Monitor the CPU Frequency Scaling"
 msgstr "CPU वारंवारता मापनास मॉनिटर करा"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-cpu-frequency-applet"
-msgstr ""
-
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:6
 msgid "CPU to Monitor"
 msgstr "मॉनिटर करावयाचा CPU"
@@ -729,8 +706,7 @@ msgid ""
 "Set the CPU to monitor. In a single processor system you don't have to "
 "change it."
 msgstr ""
-"CPU ला मॉनिटरशी निर्धारित करा. एकमेव प्रोसेसर प्रणालीमध्ये तुम्हांस हे "
-"बदलावे लागत नाही."
+"CPU ला मॉनिटरशी निर्धारित करा. एकमेव प्रोसेसर प्रणालीमध्ये तुम्हांस हे बदलावे लागत नाही."
 
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:11
 msgid "Mode to show CPU usage"
@@ -739,12 +715,11 @@ msgstr ""
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:12
 msgid ""
 "A 0 value means to show the applet in graphic mode (pixmap only), 1 to show "
-"the applet in text mode (not to show the pixmap) and 2 to show the applet in"
-" graphic and text mode."
+"the applet in text mode (not to show the pixmap) and 2 to show the applet in "
+"graphic and text mode."
 msgstr ""
-"0 मूल्य म्हणजे एप्लेट आलेखीय रितीमध्ये दाखवणे(फक्त pixmap), 1 एप्लेट पाठ्य "
-"रितीमध्ये दाखवणे (pixmap न दाखवणे) आणि 2 एप्लेट आलेखीय व पाठ्य रितीमध्ये "
-"दाखवणे."
+"0 मूल्य म्हणजे एप्लेट आलेखीय रितीमध्ये दाखवणे(फक्त pixmap), 1 एप्लेट पाठ्य रितीमध्ये दाखवणे "
+"(pixmap न दाखवणे) आणि 2 एप्लेट आलेखीय व पाठ्य रितीमध्ये दाखवणे."
 
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:16
 msgid "The type of text to display (if the text is enabled)."
@@ -803,9 +778,8 @@ msgid ""
 "You will not be able to modify the frequency of your machine.  Your machine "
 "may be misconfigured or not have hardware support for CPU frequency scaling."
 msgstr ""
-"तुम्ही तुमच्या मशीनच्या वारंवारतेत बदल करू शकणार नाही. तुमची मशीन "
-"अयोग्यरित्या व्यूहरचित असेल किंवा तीस CPU वारंवारता मापनासाठी हार्डवेअर आधार"
-" नसेल."
+"तुम्ही तुमच्या मशीनच्या वारंवारतेत बदल करू शकणार नाही. तुमची मशीन अयोग्यरित्या व्यूहरचित "
+"असेल किंवा तीस CPU वारंवारता मापनासाठी हार्डवेअर आधार नसेल."
 
 #: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:14
 msgid "Change CPU Frequency scaling"
@@ -814,6 +788,10 @@ msgstr "CPU वारंवारता प्रमाण बदलवा"
 #: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:15
 msgid "Privileges are required to change the CPU Frequency scaling."
 msgstr "CPU वारंवारता बदलविण्याकरीता परवानगी आवश्यक आहे."
+
+#: drivemount/drive-button.c:307
+msgid "nothing to mount"
+msgstr ""
 
 #: drivemount/drive-button.c:340 drivemount/drive-button.c:354
 msgid "(mounted)"
@@ -869,7 +847,7 @@ msgstr ""
 msgid "Applet for mounting and unmounting block volumes."
 msgstr "ब्लॉक खंड आरोहित किंवा अनारोहित करण्यासाठी एप्लेट."
 
-#: drivemount/drivemount.c:185 drivemount/drivemount.c:225
+#: drivemount/drivemount.c:185 drivemount/drivemount.c:220
 #: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Disk Mounter"
 msgstr "डिस्क आरोहक"
@@ -885,12 +863,6 @@ msgstr "ड्राइव आरोहण एप्लेटसाठी फॅ
 #: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Mount local disks and devices"
 msgstr "स्थानिक डिस्क आणि यंत्रे आरोहित करा"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:12
-msgid "media-floppy"
-msgstr ""
 
 #: geyes/geyes.c:178
 msgid "About Eyes"
@@ -923,12 +895,6 @@ msgstr ""
 #: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A set of eyeballs for your panel"
 msgstr "तुमच्या पॅनेलसाठी आयबॉल्सचा संच"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-eyes-applet"
-msgstr ""
 
 #: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:5
 #: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:6
@@ -1124,9 +1090,7 @@ msgstr "URL दाखल करा"
 #: cafeweather/cafeweather-pref.c:283
 msgid ""
 "Failed to load the Locations XML database.  Please report this as a bug."
-msgstr ""
-"स्थानांचा XML डेटाबेस भारित करण्यास अपयशी. कृपया यास त्रुटी म्हणून अहवाल "
-"करा."
+msgstr "स्थानांचा XML डेटाबेस भारित करण्यास अपयशी. कृपया यास त्रुटी म्हणून अहवाल करा."
 
 #: cafeweather/cafeweather-pref.c:807
 msgid "Weather Preferences"
@@ -1280,12 +1244,6 @@ msgstr "हवामान एप्लेट तयार करणयासा
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "सद्य हवामान स्थिती आणि अंदाजांचे निरिक्षण करा"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
-msgid "weather-storm"
-msgstr ""
-
 #: multiload/main.c:60
 msgid "About System Monitor"
 msgstr ""
@@ -1301,8 +1259,8 @@ msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
-"CPU, ram, आणि स्वॅप जागा वापर, तसेच संजाळ रहदारी यांचे आलेख दर्शवण्यास समर्थ"
-" प्रणाली भार मॉनिटर."
+"CPU, ram, आणि स्वॅप जागा वापर, तसेच संजाळ रहदारी यांचे आलेख दर्शवण्यास समर्थ प्रणाली "
+"भार मॉनिटर."
 
 #: multiload/main.c:129
 msgid "Start system-monitor"
@@ -1404,7 +1362,7 @@ msgstr "प्रणाली मॉनिटर उघडा(_O)"
 msgid "System Monitor"
 msgstr "प्रणाली मॉनिटर"
 
-#: multiload/netspeed.c:40
+#: multiload/netspeed.c:43
 #, c-format
 msgid "%s/s"
 msgstr "%s/s"
@@ -1420,12 +1378,6 @@ msgstr ""
 #: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A system load indicator"
 msgstr "प्रणाली भार दर्शक"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:12
-msgid "utilities-system-monitor"
-msgstr ""
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:5
 msgid "Enable CPU load graph"
@@ -1463,9 +1415,7 @@ msgstr "आलेख आकार"
 msgid ""
 "For horizontal panels, the width of the graphs in pixels. For vertical "
 "panels, this is the height of the graphs."
-msgstr ""
-"आडव्या पॅनेलसाठी, आलेखाची रुंदी बिंदूंमध्ये. उभ्या पॅनेलसाठी, ही आलेखाची "
-"उंची आहे."
+msgstr "आडव्या पॅनेलसाठी, आलेखाची रुंदी बिंदूंमध्ये. उभ्या पॅनेलसाठी, ही आलेखाची उंची आहे."
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:38
 msgid "Graph color for user-related CPU activity"
@@ -1861,12 +1811,6 @@ msgstr ""
 msgid "Network Monitor"
 msgstr ""
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-netspeed-applet"
-msgstr ""
-
 #: netspeed/src/netspeed.c:427
 msgid "b"
 msgstr "b"
@@ -2148,12 +2092,6 @@ msgstr "स्टिकी टिप"
 msgid "Create, view, and manage sticky notes on the desktop"
 msgstr "स्टिकी टिपा डेस्कटॉपवर निर्माण करा, पहा, आणि सांभाळा"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-sticky-notes-applet"
-msgstr ""
-
 #: stickynotes/stickynotes.c:577
 msgid "This note is locked."
 msgstr "ही टीप ताळाबंद केली आहे."
@@ -2371,8 +2309,8 @@ msgid ""
 "Default color for new sticky notes. This should be in html hex "
 "specification, for example \"#30FF50\"."
 msgstr ""
-"नविन स्टिकी टिपांसाठी पूर्वनिर्धारीत रंग. हा html हेक्झ रंग निर्देशाप्रमाणे "
-"असावा, उदाहरणार्थ \"#30FF50\"."
+"नविन स्टिकी टिपांसाठी पूर्वनिर्धारीत रंग. हा html हेक्झ रंग निर्देशाप्रमाणे असावा, "
+"उदाहरणार्थ \"#30FF50\"."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:20
 msgid "Default color for font"
@@ -2383,8 +2321,8 @@ msgid ""
 "Default font color for new sticky notes. This should be in html hex "
 "specification, for example \"#000000\"."
 msgstr ""
-"नविन स्टिकी टिपांसाठी पूर्वनिर्धारीत फॉन्ट रंग. हा html हेक्झ "
-"निर्देशाप्रमाणे असावा, उदाहरणार्थ \"#000000\"."
+"नविन स्टिकी टिपांसाठी पूर्वनिर्धारीत फॉन्ट रंग. हा html हेक्झ निर्देशाप्रमाणे असावा, "
+"उदाहरणार्थ \"#000000\"."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:25
 msgid "Default font for new notes"
@@ -2395,8 +2333,8 @@ msgid ""
 "Default font for new sticky notes. This should be a Pango Font Name, for "
 "example \"Sans Italic 10\"."
 msgstr ""
-"नविन स्टिकी टिपांसाठी पूर्वनिर्धारीत फॉन्ट. हे पँगो फॉन्ट नाव असायला हवे, "
-"उदाहरणार्थ \"Sans Italic 10\"."
+"नविन स्टिकी टिपांसाठी पूर्वनिर्धारीत फॉन्ट. हे पँगो फॉन्ट नाव असायला हवे, उदाहरणार्थ "
+"\"Sans Italic 10\"."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:30
 msgid "Sticky notes' workspace stickyness"
@@ -2406,8 +2344,7 @@ msgstr "स्टिकी टिपांचा कार्यस्थळ स
 msgid ""
 "Specifies whether the sticky notes are visible on ALL workspaces on the "
 "desktop, or not."
-msgstr ""
-"स्टिकी टिपा डेस्कटॉपवरील सर्व कार्यस्थळावर दर्शनीय आहेत कि नाही हे दर्शविते."
+msgstr "स्टिकी टिपा डेस्कटॉपवरील सर्व कार्यस्थळावर दर्शनीय आहेत कि नाही हे दर्शविते."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:35
 msgid "Sticky notes' locked state"
@@ -2427,9 +2364,8 @@ msgid ""
 "are created. This format is used; anything that can be parsed by strftime() "
 "is valid."
 msgstr ""
-"पूर्वनिर्धारीतरित्या, स्टिकी टिपांना चालू दिनांक शिर्षक म्हणून दिली जाते "
-"जेव्हा त्यानिर्माण होतात. हे स्वरूप वापरले जाते; जेही काही strftime() तर्फे "
-"पार्स केले जाऊशकते ते वैध आहे."
+"पूर्वनिर्धारीतरित्या, स्टिकी टिपांना चालू दिनांक शिर्षक म्हणून दिली जाते जेव्हा त्यानिर्माण "
+"होतात. हे स्वरूप वापरले जाते; जेही काही strftime() तर्फे पार्स केले जाऊशकते ते वैध आहे."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:45
 msgid "Whether to use the default system color"
@@ -2440,8 +2376,8 @@ msgid ""
 "If this option is disabled, a custom color can be used as the default color "
 "for all sticky notes."
 msgstr ""
-"जर हा पर्याय अकार्यान्वीत केला असेल, तर स्वेच्छेचा रंग पूर्वनिर्धारीत रंग "
-"म्हणून सर्व स्टिकी टिपांसाठी वापरता येऊ शकतो."
+"जर हा पर्याय अकार्यान्वीत केला असेल, तर स्वेच्छेचा रंग पूर्वनिर्धारीत रंग म्हणून सर्व स्टिकी "
+"टिपांसाठी वापरता येऊ शकतो."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:50
 msgid "Whether to use the default system font"
@@ -2452,8 +2388,8 @@ msgid ""
 "If this option is disabled, a custom font can be used as the default font "
 "for all sticky notes."
 msgstr ""
-"जर हा पर्याय अकार्यान्वीत केला असेल, तर स्वेच्छेचा फॉन्ट पूर्वनिर्धारीत "
-"फॉन्ट म्हणून सर्व स्टिकी टिपांसाठी वापरता येऊ शकतो."
+"जर हा पर्याय अकार्यान्वीत केला असेल, तर स्वेच्छेचा फॉन्ट पूर्वनिर्धारीत फॉन्ट म्हणून सर्व "
+"स्टिकी टिपांसाठी वापरता येऊ शकतो."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:55
 msgid "Whether to force the default color and font on all notes"
@@ -2464,8 +2400,8 @@ msgid ""
 "If this option is enabled, the custom colors and fonts that have been "
 "assigned to individual notes will be ignored."
 msgstr ""
-"जर हा पर्याय कार्यान्वीत केला असेल, तर एकेकट्या टिपांसाठी लावलेले स्वेच्छेचे"
-" रंग आणि फॉन्ट दुर्लक्षत केले जातील."
+"जर हा पर्याय कार्यान्वीत केला असेल, तर एकेकट्या टिपांसाठी लावलेले स्वेच्छेचे रंग आणि फॉन्ट "
+"दुर्लक्षत केले जातील."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:60
 msgid "Whether to hide all notes when the desktop is selected"
@@ -2476,8 +2412,8 @@ msgid ""
 "If this option is enabled, selecting the desktop in any way will "
 "automatically hide all the open notes."
 msgstr ""
-"जर हा पर्याय कार्यान्वित असेल तर डेस्कटाॅपवर क्लिक केल्यावर सर्व उघड्या टीपा"
-" लपविल्या जातील"
+"जर हा पर्याय कार्यान्वित असेल तर डेस्कटाॅपवर क्लिक केल्यावर सर्व उघड्या टीपा लपविल्या "
+"जातील"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:65
 msgid "Whether to ask for confirmation when deleting a note"
@@ -2538,12 +2474,6 @@ msgstr ""
 #: timerapplet/timerapplet.c:277
 msgid "Start a timer and receive a notification when it is finished"
 msgstr "एक टायमर सुरु करा आणि तो संपल्यावर खबर मिळू द्या"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-panel-clock"
-msgstr ""
 
 #: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:5
 msgid "Name of timer"
@@ -2636,12 +2566,6 @@ msgstr "कचरापेटी"
 msgid "Go to Trash"
 msgstr "कचऱ्यात जा"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:12
-msgid "user-trash-full"
-msgstr ""
-
 #: trashapplet/src/trashapplet.c:68 trashapplet/src/trash-empty.c:352
 msgid "_Empty Trash"
 msgstr "कचरा रिकामा करा(_E)"
@@ -2686,8 +2610,8 @@ msgid ""
 "A CAFE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
 msgstr ""
-"CAFE कचरा पेटी जी तुमच्या पॅनेलमध्ये राहते.तुम्ही ती कचरा पाहण्यासाठी किंवा "
-"इतर बाबी कचऱ्यात खेचून टाकण्यासाठी वापरू शकता."
+"CAFE कचरा पेटी जी तुमच्या पॅनेलमध्ये राहते.तुम्ही ती कचरा पाहण्यासाठी किंवा इतर बाबी "
+"कचऱ्यात खेचून टाकण्यासाठी वापरू शकता."
 
 #: trashapplet/src/trashapplet.c:462
 msgid "Delete Immediately?"
@@ -2727,8 +2651,8 @@ msgid ""
 "If you choose to empty the trash, all items in it will be permanently lost. "
 "Please note that you can also delete them separately."
 msgstr ""
-"जर तुम्ही कचरा खाली करण्याचे निवडले, तर त्यातील सर्व गोष्टी कायमच्या नष्ट "
-"केल्या जातील. कृपया नोंद करा कि त्या तुम्ही वेगवेगळ्यादेखील नष्ट करू शकता."
+"जर तुम्ही कचरा खाली करण्याचे निवडले, तर त्यातील सर्व गोष्टी कायमच्या नष्ट केल्या जातील. "
+"कृपया नोंद करा कि त्या तुम्ही वेगवेगळ्यादेखील नष्ट करू शकता."
 
 #: trashapplet/trashapplet-empty-progress.ui:7
 #: trashapplet/trashapplet-empty-progress.ui:21

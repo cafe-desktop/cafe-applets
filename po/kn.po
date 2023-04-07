@@ -2,35 +2,35 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Yogesh K S <yogesh@karnatakaeducation.org.in>, 2020
 # Martin Wimpress <code@flexion.org>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # karthik holla <karthikholla87@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: cafe-applets 1.23.0\n"
+"Project-Id-Version: cafe-applets 1.25.0\n"
 "Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
-"POT-Creation-Date: 2020-01-10 17:58+0100\n"
+"POT-Creation-Date: 2020-08-11 21:05+0200\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: karthik holla <karthikholla87@gmail.com>, 2020\n"
 "Language-Team: Kannada (https://www.transifex.com/cafe/teams/13566/kn/)\n"
+"Language: kn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: kn\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: accessx-status/applet.c:86 charpick/charpick.c:571 geyes/geyes.c:166
+#: accessx-status/applet.c:86 charpick/charpick.c:572 geyes/geyes.c:166
 #: cafeweather/cafeweather-about.c:41 multiload/main.c:48
 #: stickynotes/stickynotes_applet_callbacks.c:367
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
 
-#: accessx-status/applet.c:87 battstat/battstat_applet.c:819
-#: charpick/charpick.c:572 cpufreq/src/cpufreq-applet.c:466
+#: accessx-status/applet.c:87 battstat/battstat_applet.c:820
+#: charpick/charpick.c:573 cpufreq/src/cpufreq-applet.c:466
 #: drivemount/drivemount.c:109 geyes/geyes.c:167
 #: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
@@ -52,8 +52,8 @@ msgid ""
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: accessx-status/applet.c:105 battstat/battstat_applet.c:844
-#: charpick/charpick.c:592 command/command.c:128
+#: accessx-status/applet.c:105 battstat/battstat_applet.c:845
+#: charpick/charpick.c:593 command/command.c:128
 #: cpufreq/src/cpufreq-applet.c:490 drivemount/drivemount.c:127
 #: geyes/geyes.c:186 cafeweather/cafeweather-about.c:61 multiload/main.c:69
 #: netspeed/src/netspeed.c:829 stickynotes/stickynotes_applet_callbacks.c:388
@@ -74,15 +74,14 @@ msgstr ""
 #: accessx-status/applet.c:167
 #, c-format
 msgid "There was an error launching the keyboard preferences dialog: %s"
-msgstr ""
-"ಕೀಲಿಮಣೆ ಆದ್ಯತೆಗಳ ಸಂವಾದ ಪೆಟ್ಟಿಗೆಯಯನ್ನು ಆರಂಭಿಸುವಾಗ ಒಂದು ದೋಷವು ಎದುರಾಗಿದೆ: %s"
+msgstr "ಕೀಲಿಮಣೆ ಆದ್ಯತೆಗಳ ಸಂವಾದ ಪೆಟ್ಟಿಗೆಯಯನ್ನು ಆರಂಭಿಸುವಾಗ ಒಂದು ದೋಷವು ಎದುರಾಗಿದೆ: %s"
 
 #: accessx-status/applet.c:182
 msgid "_Keyboard Accessibility Preferences"
 msgstr "ಕೀಲಿಮಣೆ ನಿಲುಕಣೆ ಆದ್ಯತೆಗಳು(_K)"
 
 #: accessx-status/applet.c:183 battstat/battstat_applet.c:63
-#: charpick/charpick.c:673 cpufreq/src/cpufreq-applet.c:119
+#: charpick/charpick.c:674 cpufreq/src/cpufreq-applet.c:119
 #: drivemount/drivemount.c:165 geyes/geyes.c:359
 #: cafeweather/cafeweather-applet.c:117 multiload/main.c:488
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
@@ -90,7 +89,7 @@ msgid "_Help"
 msgstr "ನೆರವು(_H)"
 
 #: accessx-status/applet.c:184 battstat/battstat_applet.c:66
-#: charpick/charpick.c:676 command/command.c:84
+#: charpick/charpick.c:677 command/command.c:84
 #: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:168
 #: geyes/geyes.c:362 cafeweather/cafeweather-applet.c:120 multiload/main.c:491
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
@@ -145,13 +144,7 @@ msgstr "ಕೀಲಿಮಣೆ ನಿಲುಕಣೆ ಸ್ಥಿತಿಯ ಆಪ
 msgid "Shows the status of keyboard accessibility features"
 msgstr "ಕೀಲಿಮಣೆ ನಿಲುಕಣೆಯ ವೈಶಿಷ್ಟ್ಯವನ್ನು ತೋರಿಸುತ್ತದೆ"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:12
-msgid "preferences-desktop-accessibility"
-msgstr ""
-
-#: battstat/battstat_applet.c:60 charpick/charpick.c:670 command/command.c:83
+#: battstat/battstat_applet.c:60 charpick/charpick.c:671 command/command.c:83
 #: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:356
 #: cafeweather/cafeweather-applet.c:114 multiload/main.c:482
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
@@ -295,8 +288,8 @@ msgstr "ಬ್ಯಾಟರಿಯ ಸ್ಥಿತಿಯು ಗೊತ್ತಿಲ�
 msgid "N/A"
 msgstr "N/A"
 
-#: battstat/battstat_applet.c:783 drivemount/drivemount.c:153
-#: geyes/geyes.c:344 geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
+#: battstat/battstat_applet.c:784 drivemount/drivemount.c:153 geyes/geyes.c:344
+#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
 #: cafeweather/cafeweather-pref.c:747
 #: stickynotes/stickynotes_applet_callbacks.c:345
 #: stickynotes/stickynotes_applet_callbacks.c:540
@@ -305,35 +298,35 @@ msgstr "N/A"
 msgid "There was an error displaying help: %s"
 msgstr "ನೆರವನ್ನು ತೋರಿಸುವಾಗ ಒಂದು ದೋಷ ಉಂಟಾಗಿದೆ: %s"
 
-#: battstat/battstat_applet.c:824
+#: battstat/battstat_applet.c:825
 msgid "This utility shows the status of your laptop battery."
 msgstr "ಈ ಉಪಯುಕ್ತತೆಯು ನಿಮ್ಮ ಲ್ಯಾಪ್‍ಟಾಪ್ ಬ್ಯಾಟರಿಯ ಸ್ಥಿತಿಯನ್ನು ತೋರಿಸುತ್ತದೆ."
 
-#: battstat/battstat_applet.c:826
+#: battstat/battstat_applet.c:827
 msgid "upower backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:827
+#: battstat/battstat_applet.c:828
 msgid "Legacy backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:836
+#: battstat/battstat_applet.c:837
 msgid "About Battery Charge Monitor"
 msgstr ""
 
-#: battstat/battstat_applet.c:838
+#: battstat/battstat_applet.c:839
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
+#: battstat/battstat_applet.c:1115 battstat/battstat_applet.c:1165
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Battery Charge Monitor"
 msgstr "ಬ್ಯಾಟರಿ ಚಾರ್ಜ್ ಮೇಲ್ವಿಚಾರಕ"
 
-#: battstat/battstat_applet.c:1165
+#: battstat/battstat_applet.c:1166
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor a laptop's remaining power"
 msgstr "ಒಂದು ಲ್ಯಾಪ್‍ಟಾಪ್‍ನ ಮಿಕ್ಕುಳಿದಿರುವ ವಿದ್ಯುಚ್ಚಕ್ತಿಯನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ನಡೆಸು"
@@ -362,8 +355,7 @@ msgstr "ಬಾಕಿ ಇರುವ ಪ್ರತಿಶತವನ್ನು ತೋರ
 msgid "Notifications"
 msgstr "ಸೂಚನೆಗಳು"
 
-#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge
-#. drops to: [XX] percent/minutes remaining'
+#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge drops to: [XX] percent/minutes remaining'
 #: battstat/battstat_applet.ui:206
 msgid "_Warn when battery charge drops to:"
 msgstr "ಬ್ಯಾಟರಿಯ ಚಾರ್ಜ್ ಈ ಹಂತಕ್ಕೆ ಇಳಿದಾಗ ಎಚ್ಚರಿಸು(_W):"
@@ -377,12 +369,6 @@ msgstr "ಬ್ಯಾಟರಿಯು ಸಂಪೂರ್ಣವಾಗಿ ಚಾರ�
 msgid "Battstat Factory"
 msgstr "ಬ್ಯಾಟ್‍ಸ್ಟ್ಯಾಟ್ ಫ್ಯಾಕ್ಟರಿ"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:12
-msgid "battery"
-msgstr ""
-
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:5
 msgid "Red value level"
 msgstr "ಕೆಂಪು ಮೌಲ್ಯದ ಮಟ್ಟ"
@@ -392,8 +378,8 @@ msgid ""
 "The battery level below which the battery is displayed as red. Also the "
 "value at which the low battery warning is displayed."
 msgstr ""
-"ಬ್ಯಾಟರಿಯ ಮಟ್ಟವು ಇದಕ್ಕಿಂತ ಕೆಳಕ್ಕಿದ್ದಲ್ಲಿ ಕೆಂಪಗೆ ತೋರಿಸುತ್ತದೆ. ಅಲ್ಲದೆ ಈ "
-"ಬ್ಯಾಟರಿಯ ಮಟ್ಟದಲ್ಲಿ ಬ್ಯಾಟರಿ ಕಡಿಮೆ ಇದೆ ಎಂಬ ಎಚ್ಚರಿಕೆಯನ್ನು ಸೂಚಿಸಲಾಗುತ್ತದೆ."
+"ಬ್ಯಾಟರಿಯ ಮಟ್ಟವು ಇದಕ್ಕಿಂತ ಕೆಳಕ್ಕಿದ್ದಲ್ಲಿ ಕೆಂಪಗೆ ತೋರಿಸುತ್ತದೆ. ಅಲ್ಲದೆ ಈ ಬ್ಯಾಟರಿಯ ಮಟ್ಟದಲ್ಲಿ "
+"ಬ್ಯಾಟರಿ ಕಡಿಮೆ ಇದೆ ಎಂಬ ಎಚ್ಚರಿಕೆಯನ್ನು ಸೂಚಿಸಲಾಗುತ್ತದೆ."
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:10
 msgid "Warn on low time rather than low percentage"
@@ -404,8 +390,8 @@ msgid ""
 "Use the value defined in red_value as a time remaining to show the warning "
 "dialog rather than a percentage."
 msgstr ""
-"ಎಚ್ಚರಿಕೆ ಸಂವಾದವನ್ನು ತೋರಿಸಲು ಪ್ರತಿಶತದ ಬದಲು red_value ನಲ್ಲಿ ಸೂಚಿಸಲಾದ "
-"ಮೌಲ್ಯವನ್ನು ಉಪಯೋಗಿಸಿ."
+"ಎಚ್ಚರಿಕೆ ಸಂವಾದವನ್ನು ತೋರಿಸಲು ಪ್ರತಿಶತದ ಬದಲು red_value ನಲ್ಲಿ ಸೂಚಿಸಲಾದ ಮೌಲ್ಯವನ್ನು "
+"ಉಪಯೋಗಿಸಿ."
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:15
 msgid "Low Battery Notification"
@@ -438,8 +424,7 @@ msgstr "ಸಮಯ/ಪ್ರತಿಶತ ಲೇಬಲನ್ನು ತೋರಿಸ
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:31
 msgid "0 for no label, 1 for percentage and 2 for time remaining."
 msgstr ""
-"0 ಯು ಲೇಬಲ್ ಇಲ್ಲದಿರುವುದನ್ನು, 1 ಪ್ರತಿಶತವನ್ನು ಹಾಗು 2 ಬಾಕಿ ಇರುವ ಸಮಯವನ್ನು "
-"ಸೂಚಿಸುತ್ತದೆ."
+"0 ಯು ಲೇಬಲ್ ಇಲ್ಲದಿರುವುದನ್ನು, 1 ಪ್ರತಿಶತವನ್ನು ಹಾಗು 2 ಬಾಕಿ ಇರುವ ಸಮಯವನ್ನು ಸೂಚಿಸುತ್ತದೆ."
 
 #: battstat/properties.c:237
 msgid "Percent"
@@ -452,6 +437,14 @@ msgstr "ಮಿಕ್ಕುಳಿದಿರುವ ನಿಮಿಷಗಳು"
 #: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:3
 msgid "Battery Status Utility"
 msgstr "ಬ್ಯಾಟರಿ ಸ್ಥಿತಿಯ ಸೌಲಭ್ಯ"
+
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:7
+msgid "Battery power low"
+msgstr ""
+
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:11
+msgid "Battery fully re-charged"
+msgstr ""
 
 #: charpick/charpick.c:404
 msgid "Available palettes"
@@ -471,17 +464,17 @@ msgstr "ವಿಶೇಷ ಅಕ್ಷರವನ್ನು ಸೇರಿಸು"
 msgid "insert special character %s"
 msgstr "%s ವಿಶೇಷ ಅಕ್ಷರವನ್ನು ಸೇರಿಸು"
 
-#: charpick/charpick.c:583
+#: charpick/charpick.c:584
 msgid "About Character Palette"
 msgstr ""
 
-#: charpick/charpick.c:585
+#: charpick/charpick.c:586
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: charpick/charpick.c:587
+#: charpick/charpick.c:588
 msgid ""
 "Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
@@ -489,13 +482,13 @@ msgstr ""
 "Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 
-#: charpick/charpick.c:699 charpick/charpick.c:713
+#: charpick/charpick.c:700 charpick/charpick.c:714
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:9
 #: charpick/properties.c:451
 msgid "Character Palette"
 msgstr "ಅಕ್ಷರ ಫಲಕ"
 
-#: charpick/charpick.c:699
+#: charpick/charpick.c:700
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Insert characters"
 msgstr "ಅಕ್ಷರಗಳನ್ನು ಸೇರಿಸು"
@@ -504,12 +497,6 @@ msgstr "ಅಕ್ಷರಗಳನ್ನು ಸೇರಿಸು"
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Charpicker Applet Factory"
 msgstr "ಕ್ಯಾರ್ಪಿಕ್ಕರ್ ಆಪ್ಲೆಟ್ ಫ್ಯಾಕ್ಟರಿ"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:12
-msgid "accessories-character-map"
-msgstr ""
 
 #: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:5
 msgid "Characters shown on applet startup"
@@ -520,8 +507,8 @@ msgid ""
 "The string that the user had selected when the applet was last used. This "
 "string will be displayed when the user starts the applet."
 msgstr ""
-"ಆಪ್ಲೆಟ್‌ ಅನ್ನು ಕೊನೆಯ ಬಾರಿಗೆ ಬಳಸಿದಾಗ ಬಳಕೆದಾರರು ಆಯ್ಕೆ ಮಾಡಿದ ವಾಕ್ಯ. ಬಳಕೆದಾರರು "
-"ಆಪ್ಲೆಟ್‌ ಅನ್ನು ಆರಂಭಿಸಿದಾಗ ಈ ವಾಕ್ಯವನ್ನು ತೋರಿಸಲಾಗುವುದು."
+"ಆಪ್ಲೆಟ್‌ ಅನ್ನು ಕೊನೆಯ ಬಾರಿಗೆ ಬಳಸಿದಾಗ ಬಳಕೆದಾರರು ಆಯ್ಕೆ ಮಾಡಿದ ವಾಕ್ಯ. ಬಳಕೆದಾರರು ಆಪ್ಲೆಟ್‌ "
+"ಅನ್ನು ಆರಂಭಿಸಿದಾಗ ಈ ವಾಕ್ಯವನ್ನು ತೋರಿಸಲಾಗುವುದು."
 
 #: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:10
 #: charpick/properties.c:378
@@ -642,12 +629,6 @@ msgstr ""
 msgid "Command"
 msgstr "ಆಜ್ಞೆ"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:12
-msgid "utilities-terminal"
-msgstr ""
-
 #: command/org.cafe.panel.applet.command.gschema.xml.in:5
 msgid "Command to execute"
 msgstr ""
@@ -719,12 +700,6 @@ msgstr "CPU ಫ್ರೀಕ್ವೆನ್ಸಿ ಸ್ಕೇಲಿಂಗ್ ಮ
 msgid "Monitor the CPU Frequency Scaling"
 msgstr "CPU ಫ್ರೀಕ್ವೆನ್ಸಿ ಸ್ಕೇಲಿಂಗ್ ಅನ್ನು ನೋಡಿಕೊಳ್ಳುತ್ತದೆ"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-cpu-frequency-applet"
-msgstr ""
-
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:6
 msgid "CPU to Monitor"
 msgstr "ಮೇಲ್ವಿಚಾರಣೆ ನೋಡಿಕೊಳ್ಳಬೇಕಾದ CPU"
@@ -734,8 +709,8 @@ msgid ""
 "Set the CPU to monitor. In a single processor system you don't have to "
 "change it."
 msgstr ""
-"CPU ಅನ್ನು ಮೇಲ್ವಿಚಾರಣೆಗೆ ಹೊಂದಿಸಿ. ಒಂದೆ ಸಂಸ್ಕಾರಕವನ್ನು ಹೊಂದಿರುವ ಗಣಕದಲ್ಲಿ ನೀವು "
-"ಅದನ್ನು ಬದಲಾಯಿಸುವ ಅಗತ್ಯವಿರುವುದಿಲ್ಲ."
+"CPU ಅನ್ನು ಮೇಲ್ವಿಚಾರಣೆಗೆ ಹೊಂದಿಸಿ. ಒಂದೆ ಸಂಸ್ಕಾರಕವನ್ನು ಹೊಂದಿರುವ ಗಣಕದಲ್ಲಿ ನೀವು ಅದನ್ನು "
+"ಬದಲಾಯಿಸುವ ಅಗತ್ಯವಿರುವುದಿಲ್ಲ."
 
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:11
 msgid "Mode to show CPU usage"
@@ -744,12 +719,12 @@ msgstr ""
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:12
 msgid ""
 "A 0 value means to show the applet in graphic mode (pixmap only), 1 to show "
-"the applet in text mode (not to show the pixmap) and 2 to show the applet in"
-" graphic and text mode."
+"the applet in text mode (not to show the pixmap) and 2 to show the applet in "
+"graphic and text mode."
 msgstr ""
-"0 ಮೌಲ್ಯವೆಂದರೆ ಅಪ್ಲೆಟ್‌ ಅನ್ನು ಒಂದು ಚಿತ್ರಾತ್ಮಕ ಕ್ರಮದಲ್ಲಿ(ಪಿಕ್ಸ್‌ಮ್ಯಾಪ್ ಮಾತ್ರ),"
-" 1 ಎಂದರೆ ಪಠ್ಯ ಕ್ರಮದಲ್ಲಿ (ಪಿಕ್ಸ್‌ಮ್ಯಾಪ್ ಅನ್ನು ತೋರಿಸದೆ ಇರಲು) ಹಾಗು 2 ಎಂದರೆ "
-"ಅಪ್ಲೆಟ್ ಅನ್ನು ಚಿತ್ರಾತ್ಮಕ ಹಾಗು ಪಠ್ಯ ಕ್ರಮದಲ್ಲಿ ತೋರಿಸು ಎಂದರ್ಥ."
+"0 ಮೌಲ್ಯವೆಂದರೆ ಅಪ್ಲೆಟ್‌ ಅನ್ನು ಒಂದು ಚಿತ್ರಾತ್ಮಕ ಕ್ರಮದಲ್ಲಿ(ಪಿಕ್ಸ್‌ಮ್ಯಾಪ್ ಮಾತ್ರ), 1 ಎಂದರೆ ಪಠ್ಯ "
+"ಕ್ರಮದಲ್ಲಿ (ಪಿಕ್ಸ್‌ಮ್ಯಾಪ್ ಅನ್ನು ತೋರಿಸದೆ ಇರಲು) ಹಾಗು 2 ಎಂದರೆ ಅಪ್ಲೆಟ್ ಅನ್ನು ಚಿತ್ರಾತ್ಮಕ ಹಾಗು "
+"ಪಠ್ಯ ಕ್ರಮದಲ್ಲಿ ತೋರಿಸು ಎಂದರ್ಥ."
 
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:16
 msgid "The type of text to display (if the text is enabled)."
@@ -808,9 +783,8 @@ msgid ""
 "You will not be able to modify the frequency of your machine.  Your machine "
 "may be misconfigured or not have hardware support for CPU frequency scaling."
 msgstr ""
-"ನೀವು ನಿಮ್ಮ ಗಣಕದ ಫ್ರೀಕ್ವೆನ್ಸಿಯನ್ನು ಬದಲಾಯಿಸಲು ಸಾಧ್ಯವಿರುವುದಿಲ್ಲ. ನಿಮ್ಮ ಗಣಕವನ್ನು"
-" ತಪ್ಪಾಗಿ ಸಂರಚಿಸಲಾಗಿರಬಹುದು ಅಥವ CPU ಫ್ರೀಕ್ವೆನ್ಸಿ ಸ್ಕೇಲಿಂಗ್‌ಗೆ ಯಂತ್ರಾಂಶ "
-"ಬೆಂಬಲವನ್ನು ಹೊಂದಿಲ್ಲ."
+"ನೀವು ನಿಮ್ಮ ಗಣಕದ ಫ್ರೀಕ್ವೆನ್ಸಿಯನ್ನು ಬದಲಾಯಿಸಲು ಸಾಧ್ಯವಿರುವುದಿಲ್ಲ. ನಿಮ್ಮ ಗಣಕವನ್ನು ತಪ್ಪಾಗಿ "
+"ಸಂರಚಿಸಲಾಗಿರಬಹುದು ಅಥವ CPU ಫ್ರೀಕ್ವೆನ್ಸಿ ಸ್ಕೇಲಿಂಗ್‌ಗೆ ಯಂತ್ರಾಂಶ ಬೆಂಬಲವನ್ನು ಹೊಂದಿಲ್ಲ."
 
 #: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:14
 msgid "Change CPU Frequency scaling"
@@ -819,6 +793,10 @@ msgstr "CPU ಫ್ರೀಕ್ವೆನ್ಸಿ ಸ್ಕೇಲಿಂಗ್ ಅ
 #: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:15
 msgid "Privileges are required to change the CPU Frequency scaling."
 msgstr "CPU ಫ್ರೀಕ್ವೆನ್ಸಿ ಸ್ಕೇಲಿಂಗ್ ಅನ್ನು ಬದಲಾಯಿಸಲು ಸವಲತ್ತುಗಳ ಅಗತ್ಯವಿದೆ."
+
+#: drivemount/drive-button.c:307
+msgid "nothing to mount"
+msgstr ""
 
 #: drivemount/drive-button.c:340 drivemount/drive-button.c:354
 msgid "(mounted)"
@@ -874,7 +852,7 @@ msgstr ""
 msgid "Applet for mounting and unmounting block volumes."
 msgstr "ಖಂಡ ಪರಿಮಾಣಗಳನ್ನು ಆರೋಹಿಸಲು ಹಾಗು ಅವರೋಹಿಸಲು ಸಲುವಾಗಿನ ಆಪ್ಲೆಟ್‌."
 
-#: drivemount/drivemount.c:185 drivemount/drivemount.c:225
+#: drivemount/drivemount.c:185 drivemount/drivemount.c:220
 #: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Disk Mounter"
 msgstr "ಡಿಸ್ಕ್‍ ಆರೋಹಕ"
@@ -890,12 +868,6 @@ msgstr "ಡ್ರೈವ್ ಆರೋಹಣ ಆಪ್ಲೆಟ್‍ಗಾಗಿ�
 #: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Mount local disks and devices"
 msgstr "ಸ್ಥಳೀಯ ಡಿಸ್ಕುಗಳನ್ನು ಹಾಗು ಸಾಧನಗಳನ್ನು ಆರೋಹಿಸು"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:12
-msgid "media-floppy"
-msgstr ""
 
 #: geyes/geyes.c:178
 msgid "About Eyes"
@@ -929,12 +901,6 @@ msgstr ""
 msgid "A set of eyeballs for your panel"
 msgstr "ನಿಮ್ಮ ಫಲಕಕ್ಕಾಗಿ ಒಂದು ಜೋಡಿ ಕಣ್ಣುಗಳು"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-eyes-applet"
-msgstr ""
-
 #: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:5
 #: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:6
 msgid "Directory in which the theme is located"
@@ -946,8 +912,7 @@ msgstr "ಕಣ್ಣುಗಳ ಆಪ್ಲೆಟ್ ಅನ್ನು ಆರಂಭ
 
 #: geyes/themes.c:130
 msgid "There was a fatal error while trying to load the theme."
-msgstr ""
-"ಪರಿಸರವಿನ್ಯಾಸವನ್ನು ಲೋಡ್‌ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿದಾಗ ಒಂದು ಅಪಾಯಕಾರಿ ದೋಷವು ಎದುರಾಗಿದೆ."
+msgstr "ಪರಿಸರವಿನ್ಯಾಸವನ್ನು ಲೋಡ್‌ ಮಾಡಲು ಪ್ರಯತ್ನಿಸಿದಾಗ ಒಂದು ಅಪಾಯಕಾರಿ ದೋಷವು ಎದುರಾಗಿದೆ."
 
 #: geyes/themes.c:282
 msgid "Eyes Preferences"
@@ -1131,8 +1096,8 @@ msgstr "URL ಅನ್ನು ನಮೂದಿಸು"
 msgid ""
 "Failed to load the Locations XML database.  Please report this as a bug."
 msgstr ""
-"ತಾಣಗಳ XML ದತ್ತಸಂಚಯವು ಲೋಡ್ ಆಗುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ.  ದಯವಿಟ್ಟು. ಇದನ್ನು ದೋಷ ಎಂದು "
-"ವರದಿ ಮಾಡಿ."
+"ತಾಣಗಳ XML ದತ್ತಸಂಚಯವು ಲೋಡ್ ಆಗುವಲ್ಲಿ ವಿಫಲಗೊಂಡಿದೆ.  ದಯವಿಟ್ಟು. ಇದನ್ನು ದೋಷ ಎಂದು ವರದಿ "
+"ಮಾಡಿ."
 
 #: cafeweather/cafeweather-pref.c:807
 msgid "Weather Preferences"
@@ -1286,12 +1251,6 @@ msgstr "ಹವಾಮಾನದ ಆಪ್ಲೆಟ್‌ ಅನ್ನು ನಿರ
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "ಪ್ರಸಕ್ತ ಹವಾಮಾನ ಸ್ಥಿತಿಗಳನ್ನು, ಹಾಗು ಮುನ್ಸೂಚನೆಗಳನ್ನು ನೋಡಿಕೊ"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
-msgid "weather-storm"
-msgstr ""
-
 #: multiload/main.c:60
 msgid "About System Monitor"
 msgstr ""
@@ -1410,7 +1369,7 @@ msgstr "ತೆಗೆ ಗಣಕ ಮೇಲ್ವಿಚಾರಕವನ್ನು ತ
 msgid "System Monitor"
 msgstr "ಗಣಕ ಮೇಲ್ವಿಚಾರಕ"
 
-#: multiload/netspeed.c:40
+#: multiload/netspeed.c:43
 #, c-format
 msgid "%s/s"
 msgstr "%s/s"
@@ -1426,12 +1385,6 @@ msgstr ""
 #: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A system load indicator"
 msgstr "ಒಂದು ಗಣಕದ ಲೋಡ್ ಸೂಚಕ"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:12
-msgid "utilities-system-monitor"
-msgstr ""
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:5
 msgid "Enable CPU load graph"
@@ -1470,8 +1423,8 @@ msgid ""
 "For horizontal panels, the width of the graphs in pixels. For vertical "
 "panels, this is the height of the graphs."
 msgstr ""
-"ಅಡ್ಡ ಫಲಕಗಳಿಗೆ, ನಕ್ಷೆಯ ಅಗಲವು ಪಿಕ್ಸೆಲ್‌ಗಳಲ್ಲಿ ಸೂಚಿಸಲಾಗುವುದು. ಲಂಬ ಫಲಕಗಳಿಗೆ, ಇದು"
-" ನಕ್ಷೆಯ ಎತ್ತರವಾಗಿರುತ್ತದೆ."
+"ಅಡ್ಡ ಫಲಕಗಳಿಗೆ, ನಕ್ಷೆಯ ಅಗಲವು ಪಿಕ್ಸೆಲ್‌ಗಳಲ್ಲಿ ಸೂಚಿಸಲಾಗುವುದು. ಲಂಬ ಫಲಕಗಳಿಗೆ, ಇದು ನಕ್ಷೆಯ "
+"ಎತ್ತರವಾಗಿರುತ್ತದೆ."
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:38
 msgid "Graph color for user-related CPU activity"
@@ -1867,12 +1820,6 @@ msgstr ""
 msgid "Network Monitor"
 msgstr ""
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-netspeed-applet"
-msgstr ""
-
 #: netspeed/src/netspeed.c:427
 msgid "b"
 msgstr "b"
@@ -2145,12 +2092,6 @@ msgstr "ಸ್ಟಿಕಿ ಟಿಪ್ಪಣಿಗಳು"
 msgid "Create, view, and manage sticky notes on the desktop"
 msgstr "ಸ್ಟಿಕಿ ಟಿಪ್ಪಣಿಗಳನ್ನು ಗಣಕತೆರೆಯಲ್ಲಿ ರಚಿಸು, ವೀಕ್ಷಿಸು ಹಾಗು ವ್ಯವಸ್ಥಾಪಿಸಿ"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-sticky-notes-applet"
-msgstr ""
-
 #: stickynotes/stickynotes.c:577
 msgid "This note is locked."
 msgstr "ಈ ಟಿಪ್ಪಣಿಯು ಲಾಕ್ ಆಗಿದೆ."
@@ -2253,8 +2194,7 @@ msgstr "ಪೂರ್ವನಿಯೋಜಿತ ಬಣ್ಣ ಹಾಗು ಅಕ್
 
 #: stickynotes/stickynotes.ui:398
 msgid "Choose if the default style is forced on all notes"
-msgstr ""
-"ಪೂರ್ವನಿಯೋಜಿತ ಶೈಲಿಯು ಎಲ್ಲಾ ಟಿಪ್ಪಣಿಗಳಲ್ಲಿ ಒತ್ತಾಯಿಸಲ್ಪಡಬೇಕೆ ಎಂಬುದನ್ನು ಆರಿಸಿ"
+msgstr "ಪೂರ್ವನಿಯೋಜಿತ ಶೈಲಿಯು ಎಲ್ಲಾ ಟಿಪ್ಪಣಿಗಳಲ್ಲಿ ಒತ್ತಾಯಿಸಲ್ಪಡಬೇಕೆ ಎಂಬುದನ್ನು ಆರಿಸಿ"
 
 #: stickynotes/stickynotes.ui:411
 msgid "_Put notes on all workspaces"
@@ -2393,8 +2333,8 @@ msgid ""
 "Default font for new sticky notes. This should be a Pango Font Name, for "
 "example \"Sans Italic 10\"."
 msgstr ""
-"ಹೊಸ ಸ್ಟಿಕಿ ಟಿಪ್ಪಣಿಗಳಿಗಾಗಿ ಪೂರ್ವನಿಯೋಜಿತ ಅಕ್ಷರಶೈಲಿ. ಇದು ಒಂದು ಪ್ಯಾಂಗೋ "
-"ಅಕ್ಷರಶೈಲಿಯ ಹೆಸರಾಗಿರಬೇಕು, ಉದಾಹರಣೆಗೆ \"Sans Italic 10\"."
+"ಹೊಸ ಸ್ಟಿಕಿ ಟಿಪ್ಪಣಿಗಳಿಗಾಗಿ ಪೂರ್ವನಿಯೋಜಿತ ಅಕ್ಷರಶೈಲಿ. ಇದು ಒಂದು ಪ್ಯಾಂಗೋ ಅಕ್ಷರಶೈಲಿಯ "
+"ಹೆಸರಾಗಿರಬೇಕು, ಉದಾಹರಣೆಗೆ \"Sans Italic 10\"."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:30
 msgid "Sticky notes' workspace stickyness"
@@ -2405,8 +2345,8 @@ msgid ""
 "Specifies whether the sticky notes are visible on ALL workspaces on the "
 "desktop, or not."
 msgstr ""
-"ಸ್ಟಿಕಿ ಟಿಪ್ಪಣಿಗಳು ಗಣಕತೆರೆಯಲ್ಲಿನ ಎಲ್ಲಾ ಕಾರ್ಯಕ್ಷೇತ್ರಗಳಲ್ಲೂ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆಯೆ"
-" ಇಲ್ಲವೆ ಎಂದು ಸೂಚಿಸುತ್ತದೆ."
+"ಸ್ಟಿಕಿ ಟಿಪ್ಪಣಿಗಳು ಗಣಕತೆರೆಯಲ್ಲಿನ ಎಲ್ಲಾ ಕಾರ್ಯಕ್ಷೇತ್ರಗಳಲ್ಲೂ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತವೆಯೆ ಇಲ್ಲವೆ "
+"ಎಂದು ಸೂಚಿಸುತ್ತದೆ."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:35
 msgid "Sticky notes' locked state"
@@ -2415,8 +2355,7 @@ msgstr "ಸ್ಟಿಕಿ ಟಿಪ್ಪಣಿಗಳ ಲಾಕ್ ಆದಂತ
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:36
 msgid "Specifies whether the sticky notes are locked (non-editable) or not."
 msgstr ""
-"ಸ್ಟಿಕಿ ಟಿಪ್ಪಣಿಗಳು ಲಾಕ್ ಆಗಿವೆಯೆ ಇಲ್ಲವೆ(ಸಂಪಾದಿಸಲಾಗಂತಹ ಸ್ಥಿತಿ) ಎಂದು "
-"ತೋರಿಸುತ್ತದೆ."
+"ಸ್ಟಿಕಿ ಟಿಪ್ಪಣಿಗಳು ಲಾಕ್ ಆಗಿವೆಯೆ ಇಲ್ಲವೆ(ಸಂಪಾದಿಸಲಾಗಂತಹ ಸ್ಥಿತಿ) ಎಂದು ತೋರಿಸುತ್ತದೆ."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:40
 msgid "Date format of note's title"
@@ -2428,9 +2367,9 @@ msgid ""
 "are created. This format is used; anything that can be parsed by strftime() "
 "is valid."
 msgstr ""
-"ಪೂರ್ವನಿಯೋಜಿತವಾಗಿ, ಸ್ಟಿಕಿ ಟಿಪ್ಪಣಿಗಳನ್ನು ರಚಿಸಿದಾಗ ಶೀರ್ಷಿಕೆಯಾಗಿ ಪ್ರಸಕ್ತ "
-"ದಿನಾಂಕವನ್ನು ನೀಡಲಾಗುವುದು. ಈ ವಿನ್ಯಾಸವನ್ನು ಬಳಸಿದಾಗ; strftime() ಇಂದ ಪಾರ್ಸ್ "
-"ಮಾಡಲಾಗುವ ಯಾವುದೆ ವಿನ್ಯಾಸವು ಮಾನ್ಯವಾಗಿರುತ್ತದೆ."
+"ಪೂರ್ವನಿಯೋಜಿತವಾಗಿ, ಸ್ಟಿಕಿ ಟಿಪ್ಪಣಿಗಳನ್ನು ರಚಿಸಿದಾಗ ಶೀರ್ಷಿಕೆಯಾಗಿ ಪ್ರಸಕ್ತ ದಿನಾಂಕವನ್ನು "
+"ನೀಡಲಾಗುವುದು. ಈ ವಿನ್ಯಾಸವನ್ನು ಬಳಸಿದಾಗ; strftime() ಇಂದ ಪಾರ್ಸ್ ಮಾಡಲಾಗುವ ಯಾವುದೆ "
+"ವಿನ್ಯಾಸವು ಮಾನ್ಯವಾಗಿರುತ್ತದೆ."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:45
 msgid "Whether to use the default system color"
@@ -2441,8 +2380,8 @@ msgid ""
 "If this option is disabled, a custom color can be used as the default color "
 "for all sticky notes."
 msgstr ""
-"ಈ ಆಯ್ಕೆಯು ಅಶಕ್ತಗೊಂಡದ್ದಲ್ಲಿ, ಒಂದು ಕಸ್ಟಮ್ ಬಣ್ಣವನ್ನು ಎಲ್ಲಾ ಸ್ಟಿಕಿ ಟಿಪ್ಪಣಿಗಳಿಗೆ "
-"ಪೂರ್ವನಿಯೋಜಿತ ಬಣ್ಣವಾಗಿ ಬಳಸಬಹುದು."
+"ಈ ಆಯ್ಕೆಯು ಅಶಕ್ತಗೊಂಡದ್ದಲ್ಲಿ, ಒಂದು ಕಸ್ಟಮ್ ಬಣ್ಣವನ್ನು ಎಲ್ಲಾ ಸ್ಟಿಕಿ ಟಿಪ್ಪಣಿಗಳಿಗೆ ಪೂರ್ವನಿಯೋಜಿತ "
+"ಬಣ್ಣವಾಗಿ ಬಳಸಬಹುದು."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:50
 msgid "Whether to use the default system font"
@@ -2453,22 +2392,21 @@ msgid ""
 "If this option is disabled, a custom font can be used as the default font "
 "for all sticky notes."
 msgstr ""
-"ಈ ಆಯ್ಕೆಯು ಅಶಕ್ತಗೊಂಡದ್ದಲ್ಲಿ, ಒಂದು ಕಸ್ಟಮ್ ಅಕ್ಷರಶೈಲಿಯನ್ನು ಎಲ್ಲಾ ಸ್ಟಿಕಿ "
-"ಟಿಪ್ಪಣಿಗಳಿಗೆ ಪೂರ್ವನಿಯೋಜಿತ ಅಕ್ಷರಶೈಲಿಯಾಗಿ ಬಳಸಬಹುದು."
+"ಈ ಆಯ್ಕೆಯು ಅಶಕ್ತಗೊಂಡದ್ದಲ್ಲಿ, ಒಂದು ಕಸ್ಟಮ್ ಅಕ್ಷರಶೈಲಿಯನ್ನು ಎಲ್ಲಾ ಸ್ಟಿಕಿ ಟಿಪ್ಪಣಿಗಳಿಗೆ "
+"ಪೂರ್ವನಿಯೋಜಿತ ಅಕ್ಷರಶೈಲಿಯಾಗಿ ಬಳಸಬಹುದು."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:55
 msgid "Whether to force the default color and font on all notes"
 msgstr ""
-"ಪೂರ್ವನಿಯೋಜಿತ ಬಣ್ಣ ಹಾಗು ಅಕ್ಷರಶೈಲಿಯನ್ನು ಎಲ್ಲಾ ಟಿಪ್ಪಣಿಗಳಲ್ಲೂ ಬಳಸುವಂತೆ "
-"ಒತ್ತಾಯಿಸಬೇಕೆ"
+"ಪೂರ್ವನಿಯೋಜಿತ ಬಣ್ಣ ಹಾಗು ಅಕ್ಷರಶೈಲಿಯನ್ನು ಎಲ್ಲಾ ಟಿಪ್ಪಣಿಗಳಲ್ಲೂ ಬಳಸುವಂತೆ ಒತ್ತಾಯಿಸಬೇಕೆ"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:56
 msgid ""
 "If this option is enabled, the custom colors and fonts that have been "
 "assigned to individual notes will be ignored."
 msgstr ""
-"ಈ ಆಯ್ಕೆಯು ಶಕ್ತಗೊಂಡಿದ್ದಲ್ಲಿ, ಪ್ರತ್ಯೇಕ ಟಿಪ್ಪಣಿಗಳಿಗೆ ನಿಯೋಜಿಸಲಾದ ಕಸ್ಟಮ್ ಬಣ್ಣಗಳು "
-"ಹಾಗು ಅಕ್ಷರಶೈಲಿಗಳು ನಿರ್ಲಕ್ಷಿಸಲ್ಪಡುತ್ತವೆ."
+"ಈ ಆಯ್ಕೆಯು ಶಕ್ತಗೊಂಡಿದ್ದಲ್ಲಿ, ಪ್ರತ್ಯೇಕ ಟಿಪ್ಪಣಿಗಳಿಗೆ ನಿಯೋಜಿಸಲಾದ ಕಸ್ಟಮ್ ಬಣ್ಣಗಳು ಹಾಗು "
+"ಅಕ್ಷರಶೈಲಿಗಳು ನಿರ್ಲಕ್ಷಿಸಲ್ಪಡುತ್ತವೆ."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:60
 msgid "Whether to hide all notes when the desktop is selected"
@@ -2538,12 +2476,6 @@ msgstr ""
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:10
 #: timerapplet/timerapplet.c:277
 msgid "Start a timer and receive a notification when it is finished"
-msgstr ""
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-panel-clock"
 msgstr ""
 
 #: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:5
@@ -2637,12 +2569,6 @@ msgstr "ಕಸದ ಬುಟ್ಟಿ"
 msgid "Go to Trash"
 msgstr "ಕಸಬುಟ್ಟಿಗೆ ತೆರಳು"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:12
-msgid "user-trash-full"
-msgstr ""
-
 #: trashapplet/src/trashapplet.c:68 trashapplet/src/trash-empty.c:352
 msgid "_Empty Trash"
 msgstr "ಕಸದಬುಟ್ಟಿಯನ್ನು ಖಾಲಿಮಾಡು(_E)"
@@ -2687,8 +2613,8 @@ msgid ""
 "A CAFE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
 msgstr ""
-"A CAFE ಕಸದಬುಟ್ಟಿಯು ನಿಮ್ಮ ಫಲಕದಲ್ಲಿಯೆ ಇರುತ್ತದೆ. ನೀವು ಅದರೊಳಗಿರುವ ಕಸಗಳನ್ನು ನೋಡಲು"
-" ಅಥವ ಅದಕ್ಕೆ ಅಂಶಗಳನ್ನು ಎಳೆದು ತಂದು ಹಾಕಲು ಬಳಸಬಹುದಾಗಿದೆ."
+"A CAFE ಕಸದಬುಟ್ಟಿಯು ನಿಮ್ಮ ಫಲಕದಲ್ಲಿಯೆ ಇರುತ್ತದೆ. ನೀವು ಅದರೊಳಗಿರುವ ಕಸಗಳನ್ನು ನೋಡಲು ಅಥವ "
+"ಅದಕ್ಕೆ ಅಂಶಗಳನ್ನು ಎಳೆದು ತಂದು ಹಾಕಲು ಬಳಸಬಹುದಾಗಿದೆ."
 
 #: trashapplet/src/trashapplet.c:462
 msgid "Delete Immediately?"
@@ -2697,15 +2623,14 @@ msgstr "ಈ ತಕ್ಷಣ ಅಳಿಸಿಹಾಕಬೇಕೆ?"
 #: trashapplet/src/trashapplet.c:492
 msgid "Cannot move items to trash, do you want to delete them immediately?"
 msgstr ""
-"ಅಂಶಗಳನ್ನು ಕಸದ ಬುಟ್ಟಿಗೆ ವರ್ಗಾಯಿಸಲಾಗಿಲ್ಲ, ನೀವು ಅವನ್ನು ಈ ತಕ್ಷಣವೆ ಅಳಿಸಲು "
-"ಬಯಸುತ್ತೀರೆ?"
+"ಅಂಶಗಳನ್ನು ಕಸದ ಬುಟ್ಟಿಗೆ ವರ್ಗಾಯಿಸಲಾಗಿಲ್ಲ, ನೀವು ಅವನ್ನು ಈ ತಕ್ಷಣವೆ ಅಳಿಸಲು ಬಯಸುತ್ತೀರೆ?"
 
 #: trashapplet/src/trashapplet.c:497
 msgid ""
 "Cannot move some items to trash, do you want to delete these immediately?"
 msgstr ""
-"ಕೆಲವೊಂದು ಅಂಶಗಳನ್ನು ಕಸದ ಬುಟ್ಟಿಗೆ ವರ್ಗಾಯಿಸಲಾಗಿಲ್ಲ, ನೀವು ಅವನ್ನು ಈ ತಕ್ಷಣವೆ "
-"ಅಳಿಸಲು ಬಯಸುತ್ತೀರೆ?"
+"ಕೆಲವೊಂದು ಅಂಶಗಳನ್ನು ಕಸದ ಬುಟ್ಟಿಗೆ ವರ್ಗಾಯಿಸಲಾಗಿಲ್ಲ, ನೀವು ಅವನ್ನು ಈ ತಕ್ಷಣವೆ ಅಳಿಸಲು "
+"ಬಯಸುತ್ತೀರೆ?"
 
 #: trashapplet/src/trashapplet.c:625
 msgid "Trash Applet"
@@ -2733,8 +2658,8 @@ msgid ""
 "Please note that you can also delete them separately."
 msgstr ""
 "ನೀವು ಕಸದಬುಟ್ಟಿಯ ಅಂಶಗಳನ್ನು ಖಾಲಿ ಮಾಡಲು ಆಯ್ಕೆ ಮಾಡಿದಲ್ಲಿ, ಅದರಲ್ಲಿ ಎಲ್ಲಾ ಅಂಶಗಳು "
-"ಶಾಶ್ವತವಾಗಿ ನಾಶಗೊಳ್ಳುತ್ತವೆ. ಅವನ್ನು ನೀವು ಪ್ರತ್ಯೇಕವಾಗಿಯೂ ಸಹ ಅಳಿಸಲು ಸಾಧ್ಯ "
-"ಎನ್ನುವದನ್ನು ದಯವಿಟ್ಟು ಗಮನಿಸಿ."
+"ಶಾಶ್ವತವಾಗಿ ನಾಶಗೊಳ್ಳುತ್ತವೆ. ಅವನ್ನು ನೀವು ಪ್ರತ್ಯೇಕವಾಗಿಯೂ ಸಹ ಅಳಿಸಲು ಸಾಧ್ಯ ಎನ್ನುವದನ್ನು "
+"ದಯವಿಟ್ಟು ಗಮನಿಸಿ."
 
 #: trashapplet/trashapplet-empty-progress.ui:7
 #: trashapplet/trashapplet-empty-progress.ui:21

@@ -2,34 +2,34 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Martin Wimpress <code@flexion.org>, 2020
 # samson <sambelet@yahoo.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: cafe-applets 1.23.0\n"
+"Project-Id-Version: cafe-applets 1.25.0\n"
 "Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
-"POT-Creation-Date: 2020-01-10 17:58+0100\n"
+"POT-Creation-Date: 2020-08-11 21:05+0200\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2020\n"
 "Language-Team: Amharic (https://www.transifex.com/cafe/teams/13566/am/)\n"
+"Language: am\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: am\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: accessx-status/applet.c:86 charpick/charpick.c:571 geyes/geyes.c:166
+#: accessx-status/applet.c:86 charpick/charpick.c:572 geyes/geyes.c:166
 #: cafeweather/cafeweather-about.c:41 multiload/main.c:48
 #: stickynotes/stickynotes_applet_callbacks.c:367
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
 
-#: accessx-status/applet.c:87 battstat/battstat_applet.c:819
-#: charpick/charpick.c:572 cpufreq/src/cpufreq-applet.c:466
+#: accessx-status/applet.c:87 battstat/battstat_applet.c:820
+#: charpick/charpick.c:573 cpufreq/src/cpufreq-applet.c:466
 #: drivemount/drivemount.c:109 geyes/geyes.c:167
 #: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
@@ -51,8 +51,8 @@ msgid ""
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: accessx-status/applet.c:105 battstat/battstat_applet.c:844
-#: charpick/charpick.c:592 command/command.c:128
+#: accessx-status/applet.c:105 battstat/battstat_applet.c:845
+#: charpick/charpick.c:593 command/command.c:128
 #: cpufreq/src/cpufreq-applet.c:490 drivemount/drivemount.c:127
 #: geyes/geyes.c:186 cafeweather/cafeweather-about.c:61 multiload/main.c:69
 #: netspeed/src/netspeed.c:829 stickynotes/stickynotes_applet_callbacks.c:388
@@ -79,7 +79,7 @@ msgid "_Keyboard Accessibility Preferences"
 msgstr "የ _ፊደል ገበታ ጋር መድረሻ ምርጫዎች"
 
 #: accessx-status/applet.c:183 battstat/battstat_applet.c:63
-#: charpick/charpick.c:673 cpufreq/src/cpufreq-applet.c:119
+#: charpick/charpick.c:674 cpufreq/src/cpufreq-applet.c:119
 #: drivemount/drivemount.c:165 geyes/geyes.c:359
 #: cafeweather/cafeweather-applet.c:117 multiload/main.c:488
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
@@ -87,7 +87,7 @@ msgid "_Help"
 msgstr "_እርዳታ"
 
 #: accessx-status/applet.c:184 battstat/battstat_applet.c:66
-#: charpick/charpick.c:676 command/command.c:84
+#: charpick/charpick.c:677 command/command.c:84
 #: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:168
 #: geyes/geyes.c:362 cafeweather/cafeweather-applet.c:120 multiload/main.c:491
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
@@ -142,13 +142,7 @@ msgstr "የ ፊደል ገበታ መድረሻ ሁኔታ አፕሌት ፋክቶሪ
 msgid "Shows the status of keyboard accessibility features"
 msgstr "የ ፊደል ገበታ መድረሻ ገጽታዎች ሁኔታ ማሳያ"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:12
-msgid "preferences-desktop-accessibility"
-msgstr ""
-
-#: battstat/battstat_applet.c:60 charpick/charpick.c:670 command/command.c:83
+#: battstat/battstat_applet.c:60 charpick/charpick.c:671 command/command.c:83
 #: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:356
 #: cafeweather/cafeweather-applet.c:114 multiload/main.c:482
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
@@ -292,8 +286,8 @@ msgstr "የ ባትሪው ሁኔታ አይታወቅም"
 msgid "N/A"
 msgstr "ዝ/አ"
 
-#: battstat/battstat_applet.c:783 drivemount/drivemount.c:153
-#: geyes/geyes.c:344 geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
+#: battstat/battstat_applet.c:784 drivemount/drivemount.c:153 geyes/geyes.c:344
+#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
 #: cafeweather/cafeweather-pref.c:747
 #: stickynotes/stickynotes_applet_callbacks.c:345
 #: stickynotes/stickynotes_applet_callbacks.c:540
@@ -302,35 +296,35 @@ msgstr "ዝ/አ"
 msgid "There was an error displaying help: %s"
 msgstr "እርዳታ በ ማሳየት ላይ እንዳለ ስህተት ተፈጥሯል: %s"
 
-#: battstat/battstat_applet.c:824
+#: battstat/battstat_applet.c:825
 msgid "This utility shows the status of your laptop battery."
 msgstr "ይህ አካል የሚያስየው የ እርስዎን ላፕቶፕ አካል ሁኔታ ነው"
 
-#: battstat/battstat_applet.c:826
+#: battstat/battstat_applet.c:827
 msgid "upower backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:827
+#: battstat/battstat_applet.c:828
 msgid "Legacy backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:836
+#: battstat/battstat_applet.c:837
 msgid "About Battery Charge Monitor"
 msgstr ""
 
-#: battstat/battstat_applet.c:838
+#: battstat/battstat_applet.c:839
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
+#: battstat/battstat_applet.c:1115 battstat/battstat_applet.c:1165
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Battery Charge Monitor"
 msgstr "የ ባትሪ መሙያ መቆጣጠሪያ "
 
-#: battstat/battstat_applet.c:1165
+#: battstat/battstat_applet.c:1166
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor a laptop's remaining power"
 msgstr "ላፕቶፕ የ ቀረውን ሀይል መቆጣጠሪያ"
@@ -359,8 +353,7 @@ msgstr "የቀረውን ጊዜ በ _ፐርሰንት ማሳያ "
 msgid "Notifications"
 msgstr "ማስታወቂያዎች "
 
-#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge
-#. drops to: [XX] percent/minutes remaining'
+#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge drops to: [XX] percent/minutes remaining'
 #: battstat/battstat_applet.ui:206
 msgid "_Warn when battery charge drops to:"
 msgstr "_ማስጠንቀቂያ የ ባትሪ ሐይል ሲጎድል ከ:"
@@ -372,12 +365,6 @@ msgstr "_አስታወቀኝ የ ባትሪ ሐይል ሲሞላ"
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:5
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Battstat Factory"
-msgstr ""
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:12
-msgid "battery"
 msgstr ""
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:5
@@ -444,6 +431,14 @@ msgstr "ደቂቆች የቀረው "
 msgid "Battery Status Utility"
 msgstr "የ ባትሪው የ ተለያየ ሁኔታ"
 
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:7
+msgid "Battery power low"
+msgstr ""
+
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:11
+msgid "Battery fully re-charged"
+msgstr ""
+
 #: charpick/charpick.c:404
 msgid "Available palettes"
 msgstr "ዝግጁ መደርደሪያ"
@@ -462,29 +457,29 @@ msgstr "የተለዩ ባህሪዎች ማስገቢያ "
 msgid "insert special character %s"
 msgstr "የተለዩ ባህሪዎች ማስገቢያ %s"
 
-#: charpick/charpick.c:583
+#: charpick/charpick.c:584
 msgid "About Character Palette"
 msgstr ""
 
-#: charpick/charpick.c:585
+#: charpick/charpick.c:586
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: charpick/charpick.c:587
+#: charpick/charpick.c:588
 msgid ""
 "Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
 
-#: charpick/charpick.c:699 charpick/charpick.c:713
+#: charpick/charpick.c:700 charpick/charpick.c:714
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:9
 #: charpick/properties.c:451
 msgid "Character Palette"
 msgstr "ባህሪዎች መደርደሪያ"
 
-#: charpick/charpick.c:699
+#: charpick/charpick.c:700
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Insert characters"
 msgstr "ባህሪዎች ማስገቢያ"
@@ -492,12 +487,6 @@ msgstr "ባህሪዎች ማስገቢያ"
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:5
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Charpicker Applet Factory"
-msgstr ""
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:12
-msgid "accessories-character-map"
 msgstr ""
 
 #: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:5
@@ -629,12 +618,6 @@ msgstr "የ ትእዛዝ ፋክቶሪ"
 msgid "Command"
 msgstr "ትእዛዝ"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:12
-msgid "utilities-terminal"
-msgstr ""
-
 #: command/org.cafe.panel.applet.command.gschema.xml.in:5
 msgid "Command to execute"
 msgstr "የሚፈጸመው ትእዛዝ "
@@ -706,12 +689,6 @@ msgstr "የ ሲፒዩ ድግግሞሽ መመጠኛ መቆጣጠሪያ"
 msgid "Monitor the CPU Frequency Scaling"
 msgstr "የ ሲፒዩ ድግግሞሽ መመጠኛ መቆጣጠሪያ "
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-cpu-frequency-applet"
-msgstr ""
-
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:6
 msgid "CPU to Monitor"
 msgstr "CPU ለ መቆጣጠር"
@@ -729,8 +706,8 @@ msgstr "የ ሲፒዩ አጠቃቀም ዘዴ ማሳያ"
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:12
 msgid ""
 "A 0 value means to show the applet in graphic mode (pixmap only), 1 to show "
-"the applet in text mode (not to show the pixmap) and 2 to show the applet in"
-" graphic and text mode."
+"the applet in text mode (not to show the pixmap) and 2 to show the applet in "
+"graphic and text mode."
 msgstr ""
 
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:16
@@ -799,6 +776,10 @@ msgstr "የ ሲፒዩ ድግግሞሽ መመጠኛ መቀየሪያ"
 msgid "Privileges are required to change the CPU Frequency scaling."
 msgstr ""
 
+#: drivemount/drive-button.c:307
+msgid "nothing to mount"
+msgstr ""
+
 #: drivemount/drive-button.c:340 drivemount/drive-button.c:354
 msgid "(mounted)"
 msgstr "(ተጭኗል)"
@@ -853,7 +834,7 @@ msgstr ""
 msgid "Applet for mounting and unmounting block volumes."
 msgstr ""
 
-#: drivemount/drivemount.c:185 drivemount/drivemount.c:225
+#: drivemount/drivemount.c:185 drivemount/drivemount.c:220
 #: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Disk Mounter"
 msgstr "ዲስክ መጫኛ"
@@ -868,12 +849,6 @@ msgstr ""
 
 #: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Mount local disks and devices"
-msgstr ""
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:12
-msgid "media-floppy"
 msgstr ""
 
 #: geyes/geyes.c:178
@@ -906,12 +881,6 @@ msgstr ""
 
 #: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A set of eyeballs for your panel"
-msgstr ""
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-eyes-applet"
 msgstr ""
 
 #: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:5
@@ -1262,12 +1231,6 @@ msgstr ""
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr ""
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
-msgid "weather-storm"
-msgstr ""
-
 #: multiload/main.c:60
 msgid "About System Monitor"
 msgstr ""
@@ -1384,7 +1347,7 @@ msgstr "ስርአት መቆጣጠሪያ _መክፈቻ"
 msgid "System Monitor"
 msgstr "ስርአት መቆጣጠሪያ "
 
-#: multiload/netspeed.c:40
+#: multiload/netspeed.c:43
 #, c-format
 msgid "%s/s"
 msgstr "%s/s"
@@ -1400,12 +1363,6 @@ msgstr ""
 #: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A system load indicator"
 msgstr "የ ስርአት ጭነት ጠቋሚ"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:12
-msgid "utilities-system-monitor"
-msgstr ""
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:5
 msgid "Enable CPU load graph"
@@ -1768,8 +1725,7 @@ msgstr "አጭር መለኪያ መግለጫ"
 msgid ""
 "If true, shorten unit legend to one letter: lowercase for bits / uppercase "
 "for Bytes."
-msgstr ""
-"እውነት ከሆነ የ መለኪያ ክፍል ማሳጠሪያ ወደ አንድ ፊደል: በ ዝቅተኛ ፊደል ለ ቢትስ/ አቢይ ፊደል ለ ባይቶች"
+msgstr "እውነት ከሆነ የ መለኪያ ክፍል ማሳጠሪያ ወደ አንድ ፊደል: በ ዝቅተኛ ፊደል ለ ቢትስ/ አቢይ ፊደል ለ ባይቶች"
 
 #: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:30
 msgid "Change icon"
@@ -1839,12 +1795,6 @@ msgstr ""
 #: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Network Monitor"
 msgstr "ኔትዎርክ መቆጣጠሪያ "
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-netspeed-applet"
-msgstr ""
 
 #: netspeed/src/netspeed.c:427
 msgid "b"
@@ -2129,12 +2079,6 @@ msgstr "ተጣባቂ ማስታወሻ"
 msgid "Create, view, and manage sticky notes on the desktop"
 msgstr "የ ተጣባቂ ማስታወሻ በ ዴስክቶፕ ላይ መፍጠሪያ እና ማስተዳደሪያ"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-sticky-notes-applet"
-msgstr ""
-
 #: stickynotes/stickynotes.c:577
 msgid "This note is locked."
 msgstr "ይህ አልተቆለፍም"
@@ -2371,7 +2315,8 @@ msgstr "ነባር ፊደል  ለ አዲስ ማስታወሻ"
 msgid ""
 "Default font for new sticky notes. This should be a Pango Font Name, for "
 "example \"Sans Italic 10\"."
-msgstr "ነባር ፊደል ለ ተጣባቂ ማስታወሻ: ይህ በ Pango ስም መሆን አለበት: ለምሳሌ: \"Sans Italic 10\"."
+msgstr ""
+"ነባር ፊደል ለ ተጣባቂ ማስታወሻ: ይህ በ Pango ስም መሆን አለበት: ለምሳሌ: \"Sans Italic 10\"."
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:30
 msgid "Sticky notes' workspace stickyness"
@@ -2401,8 +2346,8 @@ msgid ""
 "are created. This format is used; anything that can be parsed by strftime() "
 "is valid."
 msgstr ""
-"በ ነባር: ተጣባቂ ማስታወሻ የሚሰጣቸው የ አሁኑ ቀን ነው እንደ አርእስት በሚፈጠሩ ጊዜ: ይህ አቀራረብ ይጠቀሙ ማንኛውን"
-" የሚተነተን ነገር strftime() ዋጋ ያለው ነው"
+"በ ነባር: ተጣባቂ ማስታወሻ የሚሰጣቸው የ አሁኑ ቀን ነው እንደ አርእስት በሚፈጠሩ ጊዜ: ይህ አቀራረብ ይጠቀሙ ማንኛውን "
+"የሚተነተን ነገር strftime() ዋጋ ያለው ነው"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:45
 msgid "Whether to use the default system color"
@@ -2504,12 +2449,6 @@ msgstr "ጊዜ ቆጣሪ"
 msgid "Start a timer and receive a notification when it is finished"
 msgstr "ጊዜ ማስጀመሪያ እና መቀበያ ማስታወቂያዎች በሚጨረስ ጊዜ"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-panel-clock"
-msgstr ""
-
 #: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:5
 msgid "Name of timer"
 msgstr "የ ጊዜ ቆጣሪ ስም"
@@ -2600,12 +2539,6 @@ msgstr "ቆሻሻ "
 #: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Go to Trash"
 msgstr "ወደ ቆሻሽ መሄጃ"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:12
-msgid "user-trash-full"
-msgstr ""
 
 #: trashapplet/src/trashapplet.c:68 trashapplet/src/trash-empty.c:352
 msgid "_Empty Trash"

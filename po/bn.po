@@ -2,33 +2,33 @@
 # Copyright (C) YEAR CAFE Desktop Environment team
 # This file is distributed under the same license as the cafe-applets package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Martin Wimpress <code@flexion.org>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: cafe-applets 1.23.0\n"
+"Project-Id-Version: cafe-applets 1.25.0\n"
 "Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
-"POT-Creation-Date: 2020-01-10 17:58+0100\n"
+"POT-Creation-Date: 2020-08-11 21:05+0200\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2020\n"
 "Language-Team: Bengali (https://www.transifex.com/cafe/teams/13566/bn/)\n"
+"Language: bn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: bn\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: accessx-status/applet.c:86 charpick/charpick.c:571 geyes/geyes.c:166
+#: accessx-status/applet.c:86 charpick/charpick.c:572 geyes/geyes.c:166
 #: cafeweather/cafeweather-about.c:41 multiload/main.c:48
 #: stickynotes/stickynotes_applet_callbacks.c:367
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
 
-#: accessx-status/applet.c:87 battstat/battstat_applet.c:819
-#: charpick/charpick.c:572 cpufreq/src/cpufreq-applet.c:466
+#: accessx-status/applet.c:87 battstat/battstat_applet.c:820
+#: charpick/charpick.c:573 cpufreq/src/cpufreq-applet.c:466
 #: drivemount/drivemount.c:109 geyes/geyes.c:167
 #: cafeweather/cafeweather-about.c:43 multiload/main.c:49
 #: stickynotes/stickynotes_applet_callbacks.c:368
@@ -42,8 +42,7 @@ msgstr ""
 
 #: accessx-status/applet.c:100
 msgid "Shows the state of AccessX features such as latched modifiers"
-msgstr ""
-"AccessX'র বৈশিষ্ট্য যেমন ল্যাচড মডিফাইয়ারের অবস্থা প্রদর্শন করতে ব্যবহৃত হয়"
+msgstr "AccessX'র বৈশিষ্ট্য যেমন ল্যাচড মডিফাইয়ারের অবস্থা প্রদর্শন করতে ব্যবহৃত হয়"
 
 #: accessx-status/applet.c:101
 msgid ""
@@ -51,8 +50,8 @@ msgid ""
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: accessx-status/applet.c:105 battstat/battstat_applet.c:844
-#: charpick/charpick.c:592 command/command.c:128
+#: accessx-status/applet.c:105 battstat/battstat_applet.c:845
+#: charpick/charpick.c:593 command/command.c:128
 #: cpufreq/src/cpufreq-applet.c:490 drivemount/drivemount.c:127
 #: geyes/geyes.c:186 cafeweather/cafeweather-about.c:61 multiload/main.c:69
 #: netspeed/src/netspeed.c:829 stickynotes/stickynotes_applet_callbacks.c:388
@@ -84,7 +83,7 @@ msgid "_Keyboard Accessibility Preferences"
 msgstr "কীবোর্ড সহায়ক প্রযুক্তি সম্বন্ধীয় পছন্দসমূহ (_K)"
 
 #: accessx-status/applet.c:183 battstat/battstat_applet.c:63
-#: charpick/charpick.c:673 cpufreq/src/cpufreq-applet.c:119
+#: charpick/charpick.c:674 cpufreq/src/cpufreq-applet.c:119
 #: drivemount/drivemount.c:165 geyes/geyes.c:359
 #: cafeweather/cafeweather-applet.c:117 multiload/main.c:488
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
@@ -92,7 +91,7 @@ msgid "_Help"
 msgstr "সহায়িকা (_H)"
 
 #: accessx-status/applet.c:184 battstat/battstat_applet.c:66
-#: charpick/charpick.c:676 command/command.c:84
+#: charpick/charpick.c:677 command/command.c:84
 #: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:168
 #: geyes/geyes.c:362 cafeweather/cafeweather-applet.c:120 multiload/main.c:491
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
@@ -111,8 +110,7 @@ msgstr "AccessX অবস্থা"
 
 #: accessx-status/applet.c:1044 accessx-status/applet.c:1195
 msgid "Shows keyboard status when accessibility features are used."
-msgstr ""
-"সহায়ক প্রযুক্তি ব্যবহারকালে কীবোর্ডের অবস্থা প্রদর্শন করতে ব্যবহৃত হয়।"
+msgstr "সহায়ক প্রযুক্তি ব্যবহারকালে কীবোর্ডের অবস্থা প্রদর্শন করতে ব্যবহৃত হয়।"
 
 #: accessx-status/applet.c:1078
 msgid "XKB Extension is not enabled"
@@ -148,13 +146,7 @@ msgstr "কীবোর্ড সহায়ক প্রযুক্তির অ
 msgid "Shows the status of keyboard accessibility features"
 msgstr "কীবোর্ড সহায়ক প্রযুক্তির অবস্থা প্রদর্শন করে"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:12
-msgid "preferences-desktop-accessibility"
-msgstr ""
-
-#: battstat/battstat_applet.c:60 charpick/charpick.c:670 command/command.c:83
+#: battstat/battstat_applet.c:60 charpick/charpick.c:671 command/command.c:83
 #: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:356
 #: cafeweather/cafeweather-applet.c:114 multiload/main.c:482
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
@@ -298,8 +290,8 @@ msgstr "ব্যাটারির অবস্থা অজানা"
 msgid "N/A"
 msgstr "প্রযোজ্য নয়"
 
-#: battstat/battstat_applet.c:783 drivemount/drivemount.c:153
-#: geyes/geyes.c:344 geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
+#: battstat/battstat_applet.c:784 drivemount/drivemount.c:153 geyes/geyes.c:344
+#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
 #: cafeweather/cafeweather-pref.c:747
 #: stickynotes/stickynotes_applet_callbacks.c:345
 #: stickynotes/stickynotes_applet_callbacks.c:540
@@ -308,35 +300,35 @@ msgstr "প্রযোজ্য নয়"
 msgid "There was an error displaying help: %s"
 msgstr "সহায়িকা প্রদর্শনের সময় একটি সমস্যা হয়েছে: %s"
 
-#: battstat/battstat_applet.c:824
+#: battstat/battstat_applet.c:825
 msgid "This utility shows the status of your laptop battery."
 msgstr "ল্যাপটপ ব্যাটারির অবস্থা এই প্রোগ্রাম দ্বারা প্রদর্শিত হয়।"
 
-#: battstat/battstat_applet.c:826
+#: battstat/battstat_applet.c:827
 msgid "upower backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:827
+#: battstat/battstat_applet.c:828
 msgid "Legacy backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:836
+#: battstat/battstat_applet.c:837
 msgid "About Battery Charge Monitor"
 msgstr ""
 
-#: battstat/battstat_applet.c:838
+#: battstat/battstat_applet.c:839
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: battstat/battstat_applet.c:1114 battstat/battstat_applet.c:1164
+#: battstat/battstat_applet.c:1115 battstat/battstat_applet.c:1165
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Battery Charge Monitor"
 msgstr "ব্যাটারির চার্জ নিরীক্ষণ ব্যবস্থা"
 
-#: battstat/battstat_applet.c:1165
+#: battstat/battstat_applet.c:1166
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Monitor a laptop's remaining power"
 msgstr "ল্যাপটপের অবশিষ্ট  শক্তি নিরীক্ষণ"
@@ -365,12 +357,10 @@ msgstr "অবশিষ্ট শতাংশ প্রদর্শন করা
 msgid "Notifications"
 msgstr "ঘোষনা"
 
-#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge
-#. drops to: [XX] percent/minutes remaining'
+#. TRANSLATOR: This is the beginning of the sentence 'Warn when battery charge drops to: [XX] percent/minutes remaining'
 #: battstat/battstat_applet.ui:206
 msgid "_Warn when battery charge drops to:"
-msgstr ""
-"ব্যাটারি'র চার্জ চিহ্নিত মাত্রায় পৌছলে সতর্কবার্তা প্রদর্শিত হবে: (_W)"
+msgstr "ব্যাটারি'র চার্জ চিহ্নিত মাত্রায় পৌছলে সতর্কবার্তা প্রদর্শিত হবে: (_W)"
 
 #: battstat/battstat_applet.ui:262
 msgid "_Notify when battery is fully recharged"
@@ -381,12 +371,6 @@ msgstr "ব্যাটারি সম্পূর্ণ চার্জ হল
 msgid "Battstat Factory"
 msgstr "Battstat ফ্যাক্টরি"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:12
-msgid "battery"
-msgstr ""
-
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:5
 msgid "Red value level"
 msgstr "লাল রং দ্বারা চিহ্নিত মাত্রা"
@@ -396,8 +380,8 @@ msgid ""
 "The battery level below which the battery is displayed as red. Also the "
 "value at which the low battery warning is displayed."
 msgstr ""
-"চিহ্নিত মাত্রার নীচে ব্যাটারি'র ক্ষমতা হ্রাস করে লাল রং দ্বারা চিহ্নিত হবে। "
-"উপরন্তু ব্যাটারি'র মাত্রা কম হওয়ার সূচনা যে পরিমাপে প্রদর্শিত হবে।"
+"চিহ্নিত মাত্রার নীচে ব্যাটারি'র ক্ষমতা হ্রাস করে লাল রং দ্বারা চিহ্নিত হবে। উপরন্তু "
+"ব্যাটারি'র মাত্রা কম হওয়ার সূচনা যে পরিমাপে প্রদর্শিত হবে।"
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:10
 msgid "Warn on low time rather than low percentage"
@@ -408,8 +392,8 @@ msgid ""
 "Use the value defined in red_value as a time remaining to show the warning "
 "dialog rather than a percentage."
 msgstr ""
-"সঙ্কেত ডায়ালগ প্রদর্শনকালে অবশিষ্ট সময় নির্দেশ করতে শতাংশের পরিবর্তে লাল রঙে"
-" নির্ধারিত মান ব্যবহার করুন। (_v)"
+"সঙ্কেত ডায়ালগ প্রদর্শনকালে অবশিষ্ট সময় নির্দেশ করতে শতাংশের পরিবর্তে লাল রঙে "
+"নির্ধারিত মান ব্যবহার করুন। (_v)"
 
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:15
 msgid "Low Battery Notification"
@@ -442,8 +426,7 @@ msgstr "সময়/শতাংশের লেবেল প্রদর্শন
 #: battstat/org.cafe.panel.applet.battstat.gschema.xml.in:31
 msgid "0 for no label, 1 for percentage and 2 for time remaining."
 msgstr ""
-"0 (০) লেবেলবিহীন, 1 (১) শতাংশে মান প্রদর্শন ও 2 (২) অবশিষ্ট সময় প্রদর্শনের "
-"জন্য।"
+"0 (০) লেবেলবিহীন, 1 (১) শতাংশে মান প্রদর্শন ও 2 (২) অবশিষ্ট সময় প্রদর্শনের জন্য।"
 
 #: battstat/properties.c:237
 msgid "Percent"
@@ -456,6 +439,14 @@ msgstr "মিনিট অবশিষ্ট"
 #: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:3
 msgid "Battery Status Utility"
 msgstr "ব্যাটারি'র অবস্থা নিরীক্ষণের সরঞ্জাম"
+
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:7
+msgid "Battery power low"
+msgstr ""
+
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:11
+msgid "Battery fully re-charged"
+msgstr ""
 
 #: charpick/charpick.c:404
 msgid "Available palettes"
@@ -475,31 +466,31 @@ msgstr "বিশেষ অক্ষর সন্নিবেশ করুন"
 msgid "insert special character %s"
 msgstr "বিশেষ অক্ষর %s সন্নিবেশ করুন"
 
-#: charpick/charpick.c:583
+#: charpick/charpick.c:584
 msgid "About Character Palette"
 msgstr ""
 
-#: charpick/charpick.c:585
+#: charpick/charpick.c:586
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
 "Copyright © 2012-2020 CAFE developers"
 msgstr ""
 
-#: charpick/charpick.c:587
+#: charpick/charpick.c:588
 msgid ""
 "Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
 msgstr ""
-"কীবোর্ডে অনুপস্থিত বিশেষ অক্ষর নির্বাচনের জন্য ব্যবহৃত Cafe Panel অ্যাপ্লেট।"
-" GNU জোনারেল পাবলিক লাইসেন্সের অধীন বিতরণ করা হয়েছে।"
+"কীবোর্ডে অনুপস্থিত বিশেষ অক্ষর নির্বাচনের জন্য ব্যবহৃত Cafe Panel অ্যাপ্লেট। GNU "
+"জোনারেল পাবলিক লাইসেন্সের অধীন বিতরণ করা হয়েছে।"
 
-#: charpick/charpick.c:699 charpick/charpick.c:713
+#: charpick/charpick.c:700 charpick/charpick.c:714
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:9
 #: charpick/properties.c:451
 msgid "Character Palette"
 msgstr "অক্ষর প্যালেট"
 
-#: charpick/charpick.c:699
+#: charpick/charpick.c:700
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:10
 msgid "Insert characters"
 msgstr "অক্ষর সন্নিবেশ করুন"
@@ -508,12 +499,6 @@ msgstr "অক্ষর সন্নিবেশ করুন"
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Charpicker Applet Factory"
 msgstr "Charpicker অ্যাপ্লেট ফ্যাক্টরি"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:12
-msgid "accessories-character-map"
-msgstr ""
 
 #: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:5
 msgid "Characters shown on applet startup"
@@ -524,8 +509,8 @@ msgid ""
 "The string that the user had selected when the applet was last used. This "
 "string will be displayed when the user starts the applet."
 msgstr ""
-"অ্যাপ্লেট সর্বশেষ ব্যবহৃত হওয়ার সময়, ব্যবহারকারী দ্বারা নির্বাচিত পংক্তি। "
-"ব্যবহারকারী দ্বারা অ্যাপ্লেটটি আরম্ভ করার সময় এই পংক্তি প্রদর্শন করা হবে।"
+"অ্যাপ্লেট সর্বশেষ ব্যবহৃত হওয়ার সময়, ব্যবহারকারী দ্বারা নির্বাচিত পংক্তি। ব্যবহারকারী "
+"দ্বারা অ্যাপ্লেটটি আরম্ভ করার সময় এই পংক্তি প্রদর্শন করা হবে।"
 
 #: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:10
 #: charpick/properties.c:378
@@ -646,12 +631,6 @@ msgstr ""
 msgid "Command"
 msgstr "কমান্ড"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:12
-msgid "utilities-terminal"
-msgstr ""
-
 #: command/org.cafe.panel.applet.command.gschema.xml.in:5
 msgid "Command to execute"
 msgstr ""
@@ -723,12 +702,6 @@ msgstr "CPU ফ্রিকুয়েন্সি স্কেলিং মনি
 msgid "Monitor the CPU Frequency Scaling"
 msgstr "CPU'র ফ্রিকুয়েন্সি স্কেলিং নিরীক্ষণ করতে ব্যবহৃত"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-cpu-frequency-applet"
-msgstr ""
-
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:6
 msgid "CPU to Monitor"
 msgstr "নিরীক্ষণের উদ্দেশ্যে চিহ্নিত CPU"
@@ -738,8 +711,8 @@ msgid ""
 "Set the CPU to monitor. In a single processor system you don't have to "
 "change it."
 msgstr ""
-"নিরীক্ষণের জন্য চিহ্নিত CPU নির্ধারণ করুন। একটি প্রসেসর বিশিষ্ট সিস্টেমে এই "
-"মান পরিবর্তন করার প্রয়োজন নেই।"
+"নিরীক্ষণের জন্য চিহ্নিত CPU নির্ধারণ করুন। একটি প্রসেসর বিশিষ্ট সিস্টেমে এই মান "
+"পরিবর্তন করার প্রয়োজন নেই।"
 
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:11
 msgid "Mode to show CPU usage"
@@ -748,12 +721,12 @@ msgstr ""
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:12
 msgid ""
 "A 0 value means to show the applet in graphic mode (pixmap only), 1 to show "
-"the applet in text mode (not to show the pixmap) and 2 to show the applet in"
-" graphic and text mode."
+"the applet in text mode (not to show the pixmap) and 2 to show the applet in "
+"graphic and text mode."
 msgstr ""
-"মান 0(০) হলে অ্যাপ্লেট গ্রাফিক মোডে প্রদর্শিত হবে (শুধুমাত্র পিক্সম্যাপ), "
-"1(১) হলে অ্যাপ্লেট টেক্সট মোডে প্রদর্শিত হবে (পিক্সম্যাপ প্রদর্শিত হবে না) "
-"এবং 2(২) হলে গ্রাফিক ও টেক্সট মোডে অ্যাপ্লেট প্রদর্শিত হবে।"
+"মান 0(০) হলে অ্যাপ্লেট গ্রাফিক মোডে প্রদর্শিত হবে (শুধুমাত্র পিক্সম্যাপ), 1(১) হলে "
+"অ্যাপ্লেট টেক্সট মোডে প্রদর্শিত হবে (পিক্সম্যাপ প্রদর্শিত হবে না) এবং 2(২) হলে গ্রাফিক "
+"ও টেক্সট মোডে অ্যাপ্লেট প্রদর্শিত হবে।"
 
 #: cpufreq/org.cafe.panel.applet.cpufreq.gschema.xml.in:16
 msgid "The type of text to display (if the text is enabled)."
@@ -812,9 +785,8 @@ msgid ""
 "You will not be able to modify the frequency of your machine.  Your machine "
 "may be misconfigured or not have hardware support for CPU frequency scaling."
 msgstr ""
-"আপনার মেশিনের ফ্রিকোয়েন্সি পরিবর্তন করা সম্ভব নয়।  সম্ভবত আপনার সিস্টেম "
-"সঠিকরূপে কনফিগার করা হয়নি অথবা CPU ফ্রিকোয়েন্সি স্কেলিং'র জন্য হার্ডওয়্যার "
-"যথাযত নয়।"
+"আপনার মেশিনের ফ্রিকোয়েন্সি পরিবর্তন করা সম্ভব নয়।  সম্ভবত আপনার সিস্টেম সঠিকরূপে "
+"কনফিগার করা হয়নি অথবা CPU ফ্রিকোয়েন্সি স্কেলিং'র জন্য হার্ডওয়্যার যথাযত নয়।"
 
 #: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:14
 msgid "Change CPU Frequency scaling"
@@ -823,6 +795,10 @@ msgstr "সিপিইউ'র ফ্রিকুয়েন্সির আকা
 #: cpufreq/src/cpufreq-selector/org.cafe.cpufreqselector.policy.in:15
 msgid "Privileges are required to change the CPU Frequency scaling."
 msgstr "সিপিইউ'র ফ্রিকুয়েন্সির আকার পরিবর্তন করতে বিশেষ অধিকারের প্রয়োজন।"
+
+#: drivemount/drive-button.c:307
+msgid "nothing to mount"
+msgstr ""
 
 #: drivemount/drive-button.c:340 drivemount/drive-button.c:354
 msgid "(mounted)"
@@ -878,7 +854,7 @@ msgstr ""
 msgid "Applet for mounting and unmounting block volumes."
 msgstr "ব্লক ভলিউম মাউন্ট এবং আন-মাউন্ট করতে ব্যবহৃত অ্যাপ্লেট"
 
-#: drivemount/drivemount.c:185 drivemount/drivemount.c:225
+#: drivemount/drivemount.c:185 drivemount/drivemount.c:220
 #: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Disk Mounter"
 msgstr "ডিস্ক মাউন্ট ব্যবস্থা"
@@ -895,12 +871,6 @@ msgstr "ড্রাইভ মাউন্ট অ্যাপ্লেটের 
 msgid "Mount local disks and devices"
 msgstr "স্থানীয় ডিস্ক ও ডিভাইস মাউন্ট করুন"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:12
-msgid "media-floppy"
-msgstr ""
-
 #: geyes/geyes.c:178
 msgid "About Eyes"
 msgstr ""
@@ -908,8 +878,7 @@ msgstr ""
 #: geyes/geyes.c:180
 msgid "A goofy set of eyes for the CAFE panel. They follow your mouse."
 msgstr ""
-"জিনোম প্যানেলে ব্যবহারের জন্য এক জোড়া গুফি চোখ। এগুলো আপনার মাউসকে অনুসরণ "
-"করবে।"
+"জিনোম প্যানেলে ব্যবহারের জন্য এক জোড়া গুফি চোখ। এগুলো আপনার মাউসকে অনুসরণ করবে।"
 
 #: geyes/geyes.c:182
 msgid ""
@@ -934,12 +903,6 @@ msgstr ""
 #: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A set of eyeballs for your panel"
 msgstr "আপনার প্যানেলের জন্য কিছু চক্ষুগোলক"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-eyes-applet"
-msgstr ""
 
 #: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:5
 #: geyes/org.cafe.panel.applet.geyes.gschema.xml.in:6
@@ -1135,8 +1098,7 @@ msgstr "URL লিখুন"
 #: cafeweather/cafeweather-pref.c:283
 msgid ""
 "Failed to load the Locations XML database.  Please report this as a bug."
-msgstr ""
-"Locations XML ডাটাবেস লোড করতে ব্যর্থ।  অনুগ্রহ করে এটি বাগ রূপে সূচিত করুন।"
+msgstr "Locations XML ডাটাবেস লোড করতে ব্যর্থ।  অনুগ্রহ করে এটি বাগ রূপে সূচিত করুন।"
 
 #: cafeweather/cafeweather-pref.c:807
 msgid "Weather Preferences"
@@ -1290,12 +1252,6 @@ msgstr "আবহাওয়া অ্যাপ্লেট নির্মাণ�
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "আবহাওয়ার বর্তমান অবস্থা ও পূর্বাভাস নিরীক্ষণ করুন"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:12
-msgid "weather-storm"
-msgstr ""
-
 #: multiload/main.c:60
 msgid "About System Monitor"
 msgstr ""
@@ -1311,8 +1267,8 @@ msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
 msgstr ""
-"CPU, ram, swap-র ব্যবহার ও নেটওয়ার্ক ট্রাফিক প্রভৃতিসহ সিস্টেমের উপর চাপ "
-"নিরীক্ষণ ব্যবস্থা।"
+"CPU, ram, swap-র ব্যবহার ও নেটওয়ার্ক ট্রাফিক প্রভৃতিসহ সিস্টেমের উপর চাপ নিরীক্ষণ "
+"ব্যবস্থা।"
 
 #: multiload/main.c:129
 msgid "Start system-monitor"
@@ -1414,7 +1370,7 @@ msgstr "সিস্টেম পর্যবেক্ষণ আরম্ভ ক
 msgid "System Monitor"
 msgstr "সিস্টেম পর্যবেক্ষক"
 
-#: multiload/netspeed.c:40
+#: multiload/netspeed.c:43
 #, c-format
 msgid "%s/s"
 msgstr "%s/s"
@@ -1430,12 +1386,6 @@ msgstr ""
 #: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:10
 msgid "A system load indicator"
 msgstr "সিস্টেমের কর্মভার চিহ্নকারী"
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:12
-msgid "utilities-system-monitor"
-msgstr ""
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:5
 msgid "Enable CPU load graph"
@@ -1474,8 +1424,8 @@ msgid ""
 "For horizontal panels, the width of the graphs in pixels. For vertical "
 "panels, this is the height of the graphs."
 msgstr ""
-"অনুভূমিক প্যানেলের ক্ষেত্রে পিক্সেল অনুসারে গ্রাফের প্রস্থের মাপ। উলম্ব "
-"প্যানেলের ক্ষেত্রে গ্রাফের উচ্চতা এই মান দ্বারা চিহ্নিত হয়।"
+"অনুভূমিক প্যানেলের ক্ষেত্রে পিক্সেল অনুসারে গ্রাফের প্রস্থের মাপ। উলম্ব প্যানেলের ক্ষেত্রে "
+"গ্রাফের উচ্চতা এই মান দ্বারা চিহ্নিত হয়।"
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:38
 msgid "Graph color for user-related CPU activity"
@@ -1588,8 +1538,7 @@ msgstr ""
 
 #: multiload/org.cafe.panel.applet.multiload.gschema.xml.in:150
 msgid "The desktop description file to execute as the system monitor"
-msgstr ""
-"ডেক্সটপ বর্ণনাকারী ফাইলকে সিস্টেম পর্যবেক্ষক হিসেবে এক্সিকিউট করতে হবে"
+msgstr "ডেক্সটপ বর্ণনাকারী ফাইলকে সিস্টেম পর্যবেক্ষক হিসেবে এক্সিকিউট করতে হবে"
 
 #: multiload/properties.c:405
 msgid "Monitored Resources"
@@ -1872,12 +1821,6 @@ msgstr ""
 msgid "Network Monitor"
 msgstr ""
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-netspeed-applet"
-msgstr ""
-
 #: netspeed/src/netspeed.c:427
 msgid "b"
 msgstr ""
@@ -2150,12 +2093,6 @@ msgstr "স্টিকি নোট"
 msgid "Create, view, and manage sticky notes on the desktop"
 msgstr "ডেস্কটপের উপর স্টিকি-নোট নির্মাণ, প্রদর্শন ও পরিচালন ব্যবস্থা"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-sticky-notes-applet"
-msgstr ""
-
 #: stickynotes/stickynotes.c:577
 msgid "This note is locked."
 msgstr "নোট লক করা অবস্থায় আছে।"
@@ -2373,8 +2310,8 @@ msgid ""
 "Default color for new sticky notes. This should be in html hex "
 "specification, for example \"#30FF50\"."
 msgstr ""
-"নতুন স্টিকি-নোটে ব্যবহারের জন্য ডিফল্ট রং। Html hex অনুযায়ী নির্ধারিত হওয়া "
-"আবশ্যক, উদাহরণস্বরূপ \"#30FF50\"।"
+"নতুন স্টিকি-নোটে ব্যবহারের জন্য ডিফল্ট রং। Html hex অনুযায়ী নির্ধারিত হওয়া আবশ্যক, "
+"উদাহরণস্বরূপ \"#30FF50\"।"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:20
 msgid "Default color for font"
@@ -2385,8 +2322,8 @@ msgid ""
 "Default font color for new sticky notes. This should be in html hex "
 "specification, for example \"#000000\"."
 msgstr ""
-"নতুন স্টিকি-নোটে ব্যবহারের জন্য ডিফল্ট ফন্টের রং। Html hex অনুযায়ী নির্ধারিত"
-" হওয়া আবশ্যক, উদাহরণস্বরূপ \"#000000\"।"
+"নতুন স্টিকি-নোটে ব্যবহারের জন্য ডিফল্ট ফন্টের রং। Html hex অনুযায়ী নির্ধারিত হওয়া "
+"আবশ্যক, উদাহরণস্বরূপ \"#000000\"।"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:25
 msgid "Default font for new notes"
@@ -2397,8 +2334,8 @@ msgid ""
 "Default font for new sticky notes. This should be a Pango Font Name, for "
 "example \"Sans Italic 10\"."
 msgstr ""
-"নতুন স্টিকি নোটে ব্যবহারের জন্য পূর্বনির্ধারিত ফন্ট। এটি একটি প্যাঙ্গো "
-"ফন্টের নাম হওয়া উচিত, উদাহরণস্বরূপ, \"সানস ইটালিক ১০\"।"
+"নতুন স্টিকি নোটে ব্যবহারের জন্য পূর্বনির্ধারিত ফন্ট। এটি একটি প্যাঙ্গো ফন্টের নাম হওয়া "
+"উচিত, উদাহরণস্বরূপ, \"সানস ইটালিক ১০\"।"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:30
 msgid "Sticky notes' workspace stickyness"
@@ -2408,8 +2345,7 @@ msgstr "কর্মক্ষেত্রে স্টিকি-নোটের 
 msgid ""
 "Specifies whether the sticky notes are visible on ALL workspaces on the "
 "desktop, or not."
-msgstr ""
-"স্টিকি-নোটস ডেস্কটপে সমস্ত কর্মক্ষেত্রে প্রদর্শিত হবে কিনা তা নির্ধারণ করে।"
+msgstr "স্টিকি-নোটস ডেস্কটপে সমস্ত কর্মক্ষেত্রে প্রদর্শিত হবে কিনা তা নির্ধারণ করে।"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:35
 msgid "Sticky notes' locked state"
@@ -2417,8 +2353,7 @@ msgstr "স্টিকি-নোট লক অবস্থায় রয়েছ�
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:36
 msgid "Specifies whether the sticky notes are locked (non-editable) or not."
-msgstr ""
-"স্টিকি-নোট লক করা অবস্থায় (সম্পাদনযোগ্য নয়) রয়েছে কিনা তা নির্ধারণ করে।"
+msgstr "স্টিকি-নোট লক করা অবস্থায় (সম্পাদনযোগ্য নয়) রয়েছে কিনা তা নির্ধারণ করে।"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:40
 msgid "Date format of note's title"
@@ -2430,9 +2365,8 @@ msgid ""
 "are created. This format is used; anything that can be parsed by strftime() "
 "is valid."
 msgstr ""
-"ডিফল্ট রূপে, স্টিকি নোট নির্মাণকালে বর্তমান তারিখটি শিরোনাম রূপে স্থাপিত হয়।"
-" এই বিন্যাসটি ব্যবহৃত হয়; strftime() দ্বারা পার্স করার যোগ্য যে কোনো মান "
-"বৈধ।"
+"ডিফল্ট রূপে, স্টিকি নোট নির্মাণকালে বর্তমান তারিখটি শিরোনাম রূপে স্থাপিত হয়। এই "
+"বিন্যাসটি ব্যবহৃত হয়; strftime() দ্বারা পার্স করার যোগ্য যে কোনো মান বৈধ।"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:45
 msgid "Whether to use the default system color"
@@ -2467,8 +2401,8 @@ msgid ""
 "If this option is enabled, the custom colors and fonts that have been "
 "assigned to individual notes will be ignored."
 msgstr ""
-"এই অপশন সক্রিয় করা হলে, পৃথক নোটের ক্ষেত্রে নির্ধারিত স্বনির্বাচিত রং ও ফন্ট"
-" অগ্রাহ্য করা হবে।"
+"এই অপশন সক্রিয় করা হলে, পৃথক নোটের ক্ষেত্রে নির্ধারিত স্বনির্বাচিত রং ও ফন্ট অগ্রাহ্য "
+"করা হবে।"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:60
 msgid "Whether to hide all notes when the desktop is selected"
@@ -2538,12 +2472,6 @@ msgstr ""
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:10
 #: timerapplet/timerapplet.c:277
 msgid "Start a timer and receive a notification when it is finished"
-msgstr ""
-
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:12
-msgid "cafe-panel-clock"
 msgstr ""
 
 #: timerapplet/org.cafe.panel.applet.timer.gschema.xml.in:5
@@ -2637,12 +2565,6 @@ msgstr "ট্রাশ"
 msgid "Go to Trash"
 msgstr "আবর্জনার বাক্স প্রদর্শন"
 
-#. Translators: Do NOT translate or transliterate this text (this is an icon
-#. file name)!
-#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:12
-msgid "user-trash-full"
-msgstr ""
-
 #: trashapplet/src/trashapplet.c:68 trashapplet/src/trash-empty.c:352
 msgid "_Empty Trash"
 msgstr "আবর্জনার বাক্স ফাঁকা করুন (_E)"
@@ -2687,8 +2609,8 @@ msgid ""
 "A CAFE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
 msgstr ""
-"প্যানেলে উপস্তিত CAFE'র আবর্জনার বাক্স। এর সাহায্যে আবর্জনায় উপস্থিত বস্তু "
-"প্রদর্শন করা যাবে ও টেনে এনে ফেলা যাবে।"
+"প্যানেলে উপস্তিত CAFE'র আবর্জনার বাক্স। এর সাহায্যে আবর্জনায় উপস্থিত বস্তু প্রদর্শন করা "
+"যাবে ও টেনে এনে ফেলা যাবে।"
 
 #: trashapplet/src/trashapplet.c:462
 msgid "Delete Immediately?"
@@ -2696,15 +2618,12 @@ msgstr "এই মুহূর্তে মুছে ফেলা হবে ক�
 
 #: trashapplet/src/trashapplet.c:492
 msgid "Cannot move items to trash, do you want to delete them immediately?"
-msgstr ""
-"বস্তু আবর্জনার বাক্স স্থানান্তর করতে ব্যর্থ, এই মুহূর্তে মুছে ফেলা হবে কি?"
+msgstr "বস্তু আবর্জনার বাক্স স্থানান্তর করতে ব্যর্থ, এই মুহূর্তে মুছে ফেলা হবে কি?"
 
 #: trashapplet/src/trashapplet.c:497
 msgid ""
 "Cannot move some items to trash, do you want to delete these immediately?"
-msgstr ""
-"কয়েকটি বস্তু আবর্জনার বাক্স স্থানান্তর করতে ব্যর্থ, এই মুহূর্তে মুছে ফেলা "
-"হবে কি?"
+msgstr "কয়েকটি বস্তু আবর্জনার বাক্স স্থানান্তর করতে ব্যর্থ, এই মুহূর্তে মুছে ফেলা হবে কি?"
 
 #: trashapplet/src/trashapplet.c:625
 msgid "Trash Applet"
@@ -2731,8 +2650,8 @@ msgid ""
 "If you choose to empty the trash, all items in it will be permanently lost. "
 "Please note that you can also delete them separately."
 msgstr ""
-"আবর্জনার বাক্স ফাঁকা করা হলে সমস্ত বস্তু স্থায়ীরূপে মুছে ফেলা হবে। অনুগ্রহ "
-"করে প্রতিটি বস্তু পৃথকরূপে অপসারণ করুন।"
+"আবর্জনার বাক্স ফাঁকা করা হলে সমস্ত বস্তু স্থায়ীরূপে মুছে ফেলা হবে। অনুগ্রহ করে প্রতিটি "
+"বস্তু পৃথকরূপে অপসারণ করুন।"
 
 #: trashapplet/trashapplet-empty-progress.ui:7
 #: trashapplet/trashapplet-empty-progress.ui:21
