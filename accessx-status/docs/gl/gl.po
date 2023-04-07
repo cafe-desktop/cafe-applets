@@ -1,10 +1,10 @@
-# 
+#
 # Translators:
 # Miguel Anxo Bouzada <mbouzada@gmail.com>, 2020
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
 # Wolfgang Ulbrich <cafe@raveit.de>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -12,10 +12,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 11:23+0000\n"
 "Last-Translator: Wolfgang Ulbrich <cafe@raveit.de>, 2020\n"
 "Language-Team: Galician (https://www.transifex.com/cafe/teams/13566/gl/)\n"
+"Language: gl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: gl\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -76,17 +76,16 @@ msgstr "<firstname> Proxecto de documentación do CAFE </firstname> <surname/>"
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:59
 msgid "<firstname>Francisco Javier F.</firstname> <surname>Serrador</surname>"
-msgstr ""
-"<firstname>Francisco Javier F.</firstname> <surname>Serrador</surname>"
+msgstr "<firstname>Francisco Javier F.</firstname> <surname>Serrador</surname>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:63
 msgid ""
-"<firstname>Davyd</firstname> <surname>Madeley</surname> "
-"<email>davyd@madeley.id.au</email>"
+"<firstname>Davyd</firstname> <surname>Madeley</surname> <email>davyd@madeley."
+"id.au</email>"
 msgstr ""
-"<firstname>Davyd</firstname> <surname>Madeley</surname> "
-"<email>davyd@madeley.id.au</email>"
+"<firstname>Davyd</firstname> <surname>Madeley</surname> <email>davyd@madeley."
+"id.au</email>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:68
@@ -94,9 +93,8 @@ msgid ""
 "<firstname>Sun</firstname> <surname>GNOME Documentation Team</surname> "
 "<affiliation> <orgname>Sun Microsystems</orgname> </affiliation>"
 msgstr ""
-"<firstname>Sun</firstname> <surname>Equipo de documentación do "
-"CAFE</surname> <affiliation> <orgname>Sun Microsystems</orgname> "
-"</affiliation>"
+"<firstname>Sun</firstname> <surname>Equipo de documentación do CAFE</"
+"surname> <affiliation> <orgname>Sun Microsystems</orgname> </affiliation>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:96
@@ -109,8 +107,8 @@ msgid ""
 "<revnumber>Keyboard Accessibility Status Applet Manual V0.4</revnumber> "
 "<date>July 2015</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Manual da aplicación do estado da accesibilidade do teclado "
-"V0.4</revnumber> <date>xullo 2015</date> <_:revdescription-1/>"
+"<revnumber>Manual da aplicación do estado da accesibilidade do teclado V0.4</"
+"revnumber> <date>xullo 2015</date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:105
@@ -123,8 +121,8 @@ msgid ""
 "<revnumber>Keyboard Accessibility Status Applet Manual V0.3</revnumber> "
 "<date>August 2005</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Manual da aplicación do estado da accesibilidade do teclado "
-"V0.3</revnumber> <date>agosto 2005</date> <_:revdescription-1/>"
+"<revnumber>Manual da aplicación do estado da accesibilidade do teclado V0.3</"
+"revnumber> <date>agosto 2005</date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:114
@@ -137,8 +135,8 @@ msgid ""
 "<revnumber>Keyboard Accessibility Monitor Applet Manual V0.1</revnumber> "
 "<date>March 2003</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Manual da aplicación do estado da accesibilidade do teclado "
-"V0.1</revnumber> <date>marzo 2003</date> <_:revdescription-1/>"
+"<revnumber>Manual da aplicación do estado da accesibilidade do teclado V0.1</"
+"revnumber> <date>marzo 2003</date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:123
@@ -151,8 +149,8 @@ msgid ""
 "<revnumber>Keyboard Accessibility Status Applet Manual V0.2</revnumber> "
 "<date>May 2003</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Manual da aplicación do estado da accesibilidade do teclado "
-"V0.2</revnumber> <date>maio 2003</date> <_:revdescription-1/>"
+"<revnumber>Manual da aplicación do estado da accesibilidade do teclado V0.2</"
+"revnumber> <date>maio 2003</date> <_:revdescription-1/>"
 
 #. (itstool) path: articleinfo/releaseinfo
 #: C/index.docbook:129
@@ -172,8 +170,8 @@ msgstr "Comentarios"
 msgid ""
 "To report a bug or make a suggestion regarding the Keyboard Accessibility "
 "Monitor applet or this manual, follow the directions in the <ulink "
-"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback "
-"Page</ulink>."
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</"
+"ulink>."
 msgstr ""
 "Para informar dun fallo ou facer unha suxestión sobre a miniaplicación do "
 "monitor de accesibilidade do teclado ou este manual, siga as instrucións na "
@@ -214,8 +212,8 @@ msgstr ""
 msgid ""
 "<imageobject><imagedata fileref=\"figures/accessx-status-applet.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows Keyboard "
-"Accessibility Monitor. Contains row of icons representing keyboard "
-"state.</phrase> </textobject>"
+"Accessibility Monitor. Contains row of icons representing keyboard state.</"
+"phrase> </textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/accessx-status-applet.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Amosa o monitor de "
@@ -238,8 +236,8 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: C/index.docbook:163
 msgid ""
-"For more on using keyboard accessibility features, see the <ulink url=\"help"
-":cafe-access-guide\">Desktop Accessibility Guide</ulink>."
+"For more on using keyboard accessibility features, see the <ulink url=\"help:"
+"cafe-access-guide\">Desktop Accessibility Guide</ulink>."
 msgstr ""
 "Para obter máis información sobre o uso das características de "
 "accesibilidade do teclado, consulte a <ulink url=\"help:cafe-access-"
@@ -277,15 +275,13 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:189
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx-"
-"status-disabled.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Bounce Keys</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx-status-"
+"disabled.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Bounce "
+"Keys</phrase> </textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx-"
-"status-disabled.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Teclas de rebote</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx-status-"
+"disabled.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Teclas de "
+"rebote</phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:197
@@ -309,15 +305,13 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:204
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_bounce-keys.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Bounce Keys</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_bounce-"
+"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Bounce Keys</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_bounce-keys.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Teclas de rebote</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_bounce-"
+"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Teclas de "
+"rebote</phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:212
@@ -342,13 +336,12 @@ msgstr ""
 #: C/index.docbook:219
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_mouse-"
-"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Mouse "
-"Keys</phrase> </textobject></inlinemediaobject>"
+"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Mouse Keys</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx-"
-"status-disabled.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Teclas do rato</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx-status-"
+"disabled.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Teclas do "
+"rato</phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:227
@@ -373,8 +366,8 @@ msgstr ""
 #: C/index.docbook:234
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_slow-"
-"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Bounce "
-"Keys</phrase> </textobject></inlinemediaobject>"
+"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Bounce Keys</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_slow-"
 "keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Teclas de "
@@ -402,15 +395,13 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:249
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-keys.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Sticky Keys</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Sticky Keys</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-keys.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Teclas persistentes</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Teclas "
+"persistentes</phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:257
@@ -418,9 +409,8 @@ msgid ""
 "Sticky Keys are activated. Here it shows <keycap>Shift</keycap> key pushed "
 "once and <keycap>Ctrl</keycap> key pushed twice."
 msgstr ""
-"As teclas persistentes están activadas. Aquí amosa a tecla "
-"<keycap>Maiús</keycap> premida unha vez e a tecla <keycap>Ctrl</keycap> "
-"premida dúas veces."
+"As teclas persistentes están activadas. Aquí amosa a tecla <keycap>Maiús</"
+"keycap> premida unha vez e a tecla <keycap>Ctrl</keycap> premida dúas veces."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -439,15 +429,15 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:264
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-altGr-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase><keycap>AltGr</keycap> Key Symbol</phrase>"
-" </textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"altGr-key.png\" format=\"PNG\"/> </"
+"imageobject><textobject><phrase><keycap>AltGr</keycap> Key Symbol</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-altGr-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase><keycap>AltGr</keycap> Tecla do "
-"símbolo</phrase> </textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"altGr-key.png\" format=\"PNG\"/> </"
+"imageobject><textobject><phrase><keycap>AltGr</keycap> Tecla do símbolo</"
+"phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:272
@@ -471,15 +461,15 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:279
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-meta-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase><keycap>Meta</keycap> Key Symbol</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"meta-key.png\" format=\"PNG\"/> </"
+"imageobject><textobject><phrase><keycap>Meta</keycap> Key Symbol</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-altGr-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase><keycap>Meta</keycap> Tecla do "
-"símbolo</phrase> </textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"altGr-key.png\" format=\"PNG\"/> </"
+"imageobject><textobject><phrase><keycap>Meta</keycap> Tecla do símbolo</"
+"phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:287
@@ -503,15 +493,15 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:294
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-windows-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase><keycap>Windows</keycap> logo key</phrase>"
-" </textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"windows-key.png\" format=\"PNG\"/> </"
+"imageobject><textobject><phrase><keycap>Windows</keycap> logo key</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-windows-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Tecla do logotipo "
-"de<keycap>Windows</keycap></phrase></textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"windows-key.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Tecla "
+"do logotipo de<keycap>Windows</keycap></phrase></textobject></"
+"inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:302
@@ -535,15 +525,13 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:309
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-shift-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Shift Symbol</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"shift-key.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Shift "
+"Symbol</phrase> </textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-shift-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Símbolo de Maiús</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"shift-key.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Símbolo "
+"de Maiús</phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:317
@@ -561,14 +549,14 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Autorízase a copia, distribución e/ou modificación deste documento baixo os "
 "termos da Licenza de Documentación Libre de GNU (GFDL), versión 1.1 ou "
-"calquera outra versión posterior publicada pola Free Software Foundation sen"
-" seccións invariantes, sen textos de cuberta e sen textos de cuberta "
+"calquera outra versión posterior publicada pola Free Software Foundation sen "
+"seccións invariantes, sen textos de cuberta e sen textos de cuberta "
 "traseira. Pode atopar unha copia da GFDL en <_:ulink-1/> ou no ficheiro "
 "COPYING-DOCS distribuído con este manual."
 
@@ -577,8 +565,8 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Este manual forma parte da colección de manuais CAFE distribuídos baixo a "
 "licenza GFDL. Se quere distribuír este manual separadamente da colección, "
@@ -597,8 +585,8 @@ msgstr ""
 "Moitos dos nomes utilizados polas empresas para distinguir os seus produtos "
 "e servizos son reivindicados como marcas comerciais. Cando estes nomes "
 "aparecen en calquera documentación de CAFE e os membros do Proxecto de "
-"documentación de CAFE son conscientes das marcas rexistradas, os nomes están"
-" en letras maiúsculas ou maiúsculas iniciais."
+"documentación de CAFE son conscientes das marcas rexistradas, os nomes están "
+"en letras maiúsculas ou maiúsculas iniciais."
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:35
@@ -631,28 +619,28 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "BAIXO NINGUNHA CIRCUNSTANCIA NIN BAIXO NINGUNHA TEORÍA LEGAL, SEXA POR ERRO "
 "(INCLUÍNDO NEGLIXENCIA), CONTRATO OU DE ALGÚN OUTRO MODO, O AUTOR, O "
 "ESCRITOR INICIAL, CALQUERA COLABORADOR, OU CALQUERA DISTRIBUIDOR DO "
 "DOCUMENTO OU VERSIÓN MODIFICADA DO DOCUMENTO, OU CALQUERA PROVEDOR DE "
-"CALQUERA DESAS PARTES, SERÁ RESPONSÁBEL ANTE NINGUNHA PERSOA POR NINGÚN DANO"
-" DIRECTO, INDIRECTO, ESPECIAL, INCIDENTAL OU DERIVADO DE NINGÚN TIPO, "
-"INCLUÍNDO, SEN LIMITACIÓN DANOS POR PERDA DE MERCANCÍAS, PARO TÉCNICO, FALLO"
-" INFORMÁTICO OU MAL FUNCIONAMENTO OU CALQUERA OUTRO POSÍBEL DANO OU PERDAS "
+"CALQUERA DESAS PARTES, SERÁ RESPONSÁBEL ANTE NINGUNHA PERSOA POR NINGÚN DANO "
+"DIRECTO, INDIRECTO, ESPECIAL, INCIDENTAL OU DERIVADO DE NINGÚN TIPO, "
+"INCLUÍNDO, SEN LIMITACIÓN DANOS POR PERDA DE MERCANCÍAS, PARO TÉCNICO, FALLO "
+"INFORMÁTICO OU MAL FUNCIONAMENTO OU CALQUERA OUTRO POSÍBEL DANO OU PERDAS "
 "DERIVADAS OU RELACIONADAS CO USO DO DOCUMENTO OU AS SÚAS VERSIÓNS "
-"MODIFICADAS, AÍNDA QUE DITA PARTE TEÑA SIDO INFORMADA DA POSIBILIDADE DE QUE"
-" SE PRODUCISEN DITOS DANOS."
+"MODIFICADAS, AÍNDA QUE DITA PARTE TEÑA SIDO INFORMADA DA POSIBILIDADE DE QUE "
+"SE PRODUCISEN DITOS DANOS."
 
 #. (itstool) path: legalnotice/para
 #: C/legal.xml:28
@@ -662,5 +650,5 @@ msgid ""
 "<_:orderedlist-1/>"
 msgstr ""
 "O DOCUMENTO E AS VERSIÓNS MODIFICADAS DO DOCUMENTO FORNÉCENSE BAIXO OS "
-"TERMOS DA LICENZA LIBRE DE DOCUMENTACIÓN DE GNU CO ACORDO ADICIONAL "
-"DE:<_:orderedlist-1/>"
+"TERMOS DA LICENZA LIBRE DE DOCUMENTACIÓN DE GNU CO ACORDO ADICIONAL DE:<_:"
+"orderedlist-1/>"

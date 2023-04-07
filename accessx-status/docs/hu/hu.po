@@ -1,4 +1,4 @@
-# 
+#
 # Translators:
 # KAMI KAMI <kami911@gmail.com>, 2020
 # Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2020
@@ -9,7 +9,7 @@
 # fe1fadb789c3f633a29252552d8729f3, 2020
 # Csaba Székely <szekelycsaba76@gmail.com>, 2020
 # Szabó Máté <cafeszabo2001@gmail.com>, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -17,10 +17,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 11:23+0000\n"
 "Last-Translator: Szabó Máté <cafeszabo2001@gmail.com>, 2020\n"
 "Language-Team: Hungarian (https://www.transifex.com/cafe/teams/13566/hu/)\n"
+"Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: hu\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -84,17 +84,16 @@ msgstr "CAFE dokumentációs projekt"
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:59
 msgid "<firstname>Francisco Javier F.</firstname> <surname>Serrador</surname>"
-msgstr ""
-"<firstname>Francisco Javier F.</firstname> <surname>Serrador</surname>"
+msgstr "<firstname>Francisco Javier F.</firstname> <surname>Serrador</surname>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:63
 msgid ""
-"<firstname>Davyd</firstname> <surname>Madeley</surname> "
-"<email>davyd@madeley.id.au</email>"
+"<firstname>Davyd</firstname> <surname>Madeley</surname> <email>davyd@madeley."
+"id.au</email>"
 msgstr ""
-"<firstname>Davyd</firstname> <surname>Madeley</surname> "
-"<email>davyd@madeley.id.au</email>"
+"<firstname>Davyd</firstname> <surname>Madeley</surname> <email>davyd@madeley."
+"id.au</email>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:68
@@ -169,8 +168,8 @@ msgstr "Visszajelzés"
 msgid ""
 "To report a bug or make a suggestion regarding the Keyboard Accessibility "
 "Monitor applet or this manual, follow the directions in the <ulink "
-"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback "
-"Page</ulink>."
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</"
+"ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
@@ -205,8 +204,8 @@ msgstr ""
 msgid ""
 "<imageobject><imagedata fileref=\"figures/accessx-status-applet.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows Keyboard "
-"Accessibility Monitor. Contains row of icons representing keyboard "
-"state.</phrase> </textobject>"
+"Accessibility Monitor. Contains row of icons representing keyboard state.</"
+"phrase> </textobject>"
 msgstr ""
 
 #. (itstool) path: sect1/para
@@ -221,8 +220,8 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: C/index.docbook:163
 msgid ""
-"For more on using keyboard accessibility features, see the <ulink url=\"help"
-":cafe-access-guide\">Desktop Accessibility Guide</ulink>."
+"For more on using keyboard accessibility features, see the <ulink url=\"help:"
+"cafe-access-guide\">Desktop Accessibility Guide</ulink>."
 msgstr ""
 
 #. (itstool) path: sect2/title
@@ -255,10 +254,9 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:189
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx-"
-"status-disabled.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Bounce Keys</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx-status-"
+"disabled.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Bounce "
+"Keys</phrase> </textobject></inlinemediaobject>"
 msgstr ""
 
 #. (itstool) path: entry/para
@@ -281,10 +279,9 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:204
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_bounce-keys.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Bounce Keys</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_bounce-"
+"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Bounce Keys</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
 
 #. (itstool) path: entry/para
@@ -308,8 +305,8 @@ msgstr ""
 #: C/index.docbook:219
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_mouse-"
-"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Mouse "
-"Keys</phrase> </textobject></inlinemediaobject>"
+"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Mouse Keys</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
 
 #. (itstool) path: entry/para
@@ -333,8 +330,8 @@ msgstr ""
 #: C/index.docbook:234
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_slow-"
-"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Bounce "
-"Keys</phrase> </textobject></inlinemediaobject>"
+"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Bounce Keys</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
 
 #. (itstool) path: entry/para
@@ -357,10 +354,9 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:249
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-keys.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Sticky Keys</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Sticky Keys</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
 
 #. (itstool) path: entry/para
@@ -385,10 +381,10 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:264
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-altGr-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase><keycap>AltGr</keycap> Key Symbol</phrase>"
-" </textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"altGr-key.png\" format=\"PNG\"/> </"
+"imageobject><textobject><phrase><keycap>AltGr</keycap> Key Symbol</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 
 #. (itstool) path: entry/para
@@ -411,10 +407,10 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:279
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-meta-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase><keycap>Meta</keycap> Key Symbol</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"meta-key.png\" format=\"PNG\"/> </"
+"imageobject><textobject><phrase><keycap>Meta</keycap> Key Symbol</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 
 #. (itstool) path: entry/para
@@ -437,10 +433,10 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:294
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-windows-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase><keycap>Windows</keycap> logo key</phrase>"
-" </textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"windows-key.png\" format=\"PNG\"/> </"
+"imageobject><textobject><phrase><keycap>Windows</keycap> logo key</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
 
 #. (itstool) path: entry/para
@@ -463,10 +459,9 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:309
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-shift-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Shift Symbol</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"shift-key.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Shift "
+"Symbol</phrase> </textobject></inlinemediaobject>"
 msgstr ""
 
 #. (itstool) path: entry/para
@@ -485,8 +480,8 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Jelen dokumentum szabadon másolható, terjeszthető és/vagy módosítható a GNU "
@@ -501,8 +496,8 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Ez a kézikönyv része a GFDL alatt megjelenő CAFE dokumentációk "
 "gyűjteményének. A kézikönyv a gyűjteménytől függetlenül szabadon "
@@ -518,11 +513,11 @@ msgid ""
 "aware of those trademarks, then the names are in capital letters or initial "
 "capital letters."
 msgstr ""
-"A cégek különböző, védjegy alá tartozó elnevezéseket használnak termékeik és"
-" szolgáltatásuk megkülönböztetéséhez. Ahol ezek a nevek megjelennek "
-"bármelyik CAFE dokumentációban és a CAFE dokumentációs projekt tagjainak "
-"tudomásuk van a védjegyről, abban az esetben ezek az elnevezések teljes "
-"egészében vagy kezdőbetűik nagybetűsek."
+"A cégek különböző, védjegy alá tartozó elnevezéseket használnak termékeik és "
+"szolgáltatásuk megkülönböztetéséhez. Ahol ezek a nevek megjelennek bármelyik "
+"CAFE dokumentációban és a CAFE dokumentációs projekt tagjainak tudomásuk van "
+"a védjegyről, abban az esetben ezek az elnevezések teljes egészében vagy "
+"kezdőbetűik nagybetűsek."
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:35
@@ -554,16 +549,16 @@ msgstr ""
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "SEMMILYEN KÖRÜLMÉNYEK KÖZÖTT ÉS SEMMILYEN JOGI MEGFONTOLÁSBÓL, LEGYEN AZ "
 "MAGÁNJOGI VÉTKES CSELEKMÉNY (BELEÉRTVE A HANYAGSÁGOT), SZERZŐDÉS VAGY "
@@ -574,8 +569,8 @@ msgstr ""
 "SZÁMÍTÓGÉP MEGHIBÁSODÁSÁBÓL VAGY HELYTELEN MŰKÖDÉSÉBŐL SZÁRMAZÓ, VAGY "
 "BÁRMELY EGYÉB KERESKEDELMI KÁROKAT ÉS VESZTESÉGEKET, MÉG AKKOR IS, HA AZ "
 "ILYEN FÉL INFORMÁLVA LETT AZ ILYEN KÁROK ELŐFORDULÁSÁNAK LEHETŐSÉGÉRŐL. A "
-"FELELŐSSÉG EZEN KORLÁTOZÁSA NEM ALKALMAZHATÓ ABBAN AZ ESETBEN, HA HALÁL VAGY"
-" SZEMÉLYI SÉRÜLÉS TÖRTÉNT A FÉL HANYAGSÁGÁBÓL KIFOLYÓLAG, OLYAN MÉRTÉKBEN, "
+"FELELŐSSÉG EZEN KORLÁTOZÁSA NEM ALKALMAZHATÓ ABBAN AZ ESETBEN, HA HALÁL VAGY "
+"SZEMÉLYI SÉRÜLÉS TÖRTÉNT A FÉL HANYAGSÁGÁBÓL KIFOLYÓLAG, OLYAN MÉRTÉKBEN, "
 "AMENNYIRE AZ ALKALMAZHATÓ TÖRVÉNYEK MEGTILTJÁK AZ ILYEN KORLÁTOZÁSOKAT."
 
 #. (itstool) path: legalnotice/para
@@ -586,5 +581,5 @@ msgid ""
 "<_:orderedlist-1/>"
 msgstr ""
 "A DOKUMENTUM ÉS A DOKUMENTUM MÓDOSÍTOTT VERZIÓI A GNU FREE DOCUMENTATION "
-"LICENSE FELTÉTELEI SZERINT KERÜLNEK KÖZREADÁSRA, A TOVÁBBIAK ISMERETÉBEN: "
-"<_:orderedlist-1/>"
+"LICENSE FELTÉTELEI SZERINT KERÜLNEK KÖZREADÁSRA, A TOVÁBBIAK ISMERETÉBEN: <_:"
+"orderedlist-1/>"

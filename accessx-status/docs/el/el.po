@@ -1,4 +1,4 @@
-# 
+#
 # Translators:
 # anvo <fragos.george@hotmail.com>, 2020
 # Stefano Karapetsas <stefano@karapetsas.com>, 2020
@@ -6,7 +6,7 @@
 # Alexandros Kapetanios <alexandros@gnugr.org>, 2020
 # kosmmart <kosmmartak@gmail.com>, 2020
 # TheDimitris15, 2020
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
@@ -14,10 +14,10 @@ msgstr ""
 "PO-Revision-Date: 2020-02-15 11:23+0000\n"
 "Last-Translator: TheDimitris15, 2020\n"
 "Language-Team: Greek (https://www.transifex.com/cafe/teams/13566/el/)\n"
+"Language: el\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #. Put one translator per line, in the form NAME <EMAIL>, YEAR1, YEAR2
@@ -40,8 +40,8 @@ msgid ""
 "The <application>Keyboard Accessibility Monitor</application> shows the "
 "status of the keyboard accessibility features."
 msgstr ""
-"Η <application>Οθόνη Προσβασιμότητας Πληκτρολογίου</application> δείχνει την"
-" κατάσταση των χαρακτηριστικών προσβασιμότητας πληκτρολογίου."
+"Η <application>Οθόνη Προσβασιμότητας Πληκτρολογίου</application> δείχνει την "
+"κατάσταση των χαρακτηριστικών προσβασιμότητας πληκτρολογίου."
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:24
@@ -79,17 +79,16 @@ msgstr "<firstname>Έργο Τεκμηρίωσης CAFE</firstname> <surname/>"
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:59
 msgid "<firstname>Francisco Javier F.</firstname> <surname>Serrador</surname>"
-msgstr ""
-"<firstname>Francisco Javier F.</firstname> <surname>Serrador</surname>"
+msgstr "<firstname>Francisco Javier F.</firstname> <surname>Serrador</surname>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:63
 msgid ""
-"<firstname>Davyd</firstname> <surname>Madeley</surname> "
-"<email>davyd@madeley.id.au</email>"
+"<firstname>Davyd</firstname> <surname>Madeley</surname> <email>davyd@madeley."
+"id.au</email>"
 msgstr ""
-"<firstname>Davyd</firstname> <surname>Madeley</surname> "
-"<email>davyd@madeley.id.au</email>"
+"<firstname>Davyd</firstname> <surname>Madeley</surname> <email>davyd@madeley."
+"id.au</email>"
 
 #. (itstool) path: authorgroup/author
 #: C/index.docbook:68
@@ -111,8 +110,8 @@ msgid ""
 "<revnumber>Keyboard Accessibility Status Applet Manual V0.4</revnumber> "
 "<date>July 2015</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Μικροεφαρμογή κατάσταση προσβασιμότητας πληκτρολογίου "
-"V0.4</revnumber> <date>Ιούλιος 2015</date> <_:revdescription-1/>"
+"<revnumber>Μικροεφαρμογή κατάσταση προσβασιμότητας πληκτρολογίου V0.4</"
+"revnumber> <date>Ιούλιος 2015</date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:105
@@ -125,8 +124,8 @@ msgid ""
 "<revnumber>Keyboard Accessibility Status Applet Manual V0.3</revnumber> "
 "<date>August 2005</date> <_:revdescription-1/>"
 msgstr ""
-"<revnumber>Μικροεφαρμογή κατάσταση προσβασιμότητας πληκτρολογίου "
-"V0.3</revnumber> <date>Αύγουστος 2005</date> <_:revdescription-1/>"
+"<revnumber>Μικροεφαρμογή κατάσταση προσβασιμότητας πληκτρολογίου V0.3</"
+"revnumber> <date>Αύγουστος 2005</date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
 #: C/index.docbook:114
@@ -174,8 +173,8 @@ msgstr "Ανάδραση"
 msgid ""
 "To report a bug or make a suggestion regarding the Keyboard Accessibility "
 "Monitor applet or this manual, follow the directions in the <ulink "
-"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback "
-"Page</ulink>."
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</"
+"ulink>."
 msgstr ""
 "Για να αναφέρετε ένα σφάλμα ή να κάνετε μια πρόταση σχετικά με την "
 "μικροεφαρμογή Οθόνη προσβασιμότητας πληκτρολογίου ή αυτό το εγχειρίδιο, "
@@ -216,13 +215,13 @@ msgstr ""
 msgid ""
 "<imageobject><imagedata fileref=\"figures/accessx-status-applet.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows Keyboard "
-"Accessibility Monitor. Contains row of icons representing keyboard "
-"state.</phrase> </textobject>"
+"Accessibility Monitor. Contains row of icons representing keyboard state.</"
+"phrase> </textobject>"
 msgstr ""
 "<imageobject><imagedata fileref=\"figures/accessx-status-applet.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Εμφανίζει την οθόνη "
-"προσβασιμότητας πληκτρολογίου. Περιέχει σειρά εικονιδίων που αντιπροσωπεύουν"
-" την κατάσταση του πληκτρολογίου.</phrase> </textobject>"
+"προσβασιμότητας πληκτρολογίου. Περιέχει σειρά εικονιδίων που αντιπροσωπεύουν "
+"την κατάσταση του πληκτρολογίου.</phrase> </textobject>"
 
 #. (itstool) path: sect1/para
 #: C/index.docbook:161
@@ -232,8 +231,8 @@ msgid ""
 "example, you can see which modifier keys are currently active, and which "
 "mouse buttons are being pressed via the keyboard."
 msgstr ""
-"Η <application>Οθόνη προσβασιμότητας πληκτρολογίου</application> σας δείχνει"
-" την κατάσταση των χαρακτηριστικών προσβασιμότητας πληκτρολογίου όταν αυτά "
+"Η <application>Οθόνη προσβασιμότητας πληκτρολογίου</application> σας δείχνει "
+"την κατάσταση των χαρακτηριστικών προσβασιμότητας πληκτρολογίου όταν αυτά "
 "χρησιμοποιούνται. Για παράδειγμα, μπορείτε να δείτε ποια πλήκτρα "
 "τροποποίησης είναι ενεργά και ποια κουμπιά του ποντικιού πιέζονται μέσω του "
 "πληκτρολογίου."
@@ -241,8 +240,8 @@ msgstr ""
 #. (itstool) path: sect1/para
 #: C/index.docbook:163
 msgid ""
-"For more on using keyboard accessibility features, see the <ulink url=\"help"
-":cafe-access-guide\">Desktop Accessibility Guide</ulink>."
+"For more on using keyboard accessibility features, see the <ulink url=\"help:"
+"cafe-access-guide\">Desktop Accessibility Guide</ulink>."
 msgstr ""
 "Για περισσότερες πληροφορίες σχετικά με τη χρήση των δυνατοτήτων "
 "πληκτρολογίου, δείτε το <ulink url=\"help:cafe-access-guide\">Οδηγός "
@@ -280,15 +279,13 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:189
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx-"
-"status-disabled.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Bounce Keys</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx-status-"
+"disabled.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Bounce "
+"Keys</phrase> </textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx-"
-"status-disabled.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Κλειδιά αναπήδησης</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx-status-"
+"disabled.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Κλειδιά "
+"αναπήδησης</phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:197
@@ -313,15 +310,13 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:204
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_bounce-keys.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Bounce Keys</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_bounce-"
+"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Bounce Keys</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_bounce-keys.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Κλειδιά αναπήδησης</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_bounce-"
+"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Κλειδιά "
+"αναπήδησης</phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:212
@@ -346,8 +341,8 @@ msgstr ""
 #: C/index.docbook:219
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_mouse-"
-"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Mouse "
-"Keys</phrase> </textobject></inlinemediaobject>"
+"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Mouse Keys</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_mouse-"
 "keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Κλειδιά "
@@ -376,8 +371,8 @@ msgstr ""
 #: C/index.docbook:234
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_slow-"
-"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Bounce "
-"Keys</phrase> </textobject></inlinemediaobject>"
+"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Bounce Keys</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_slow-"
 "keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Κλειδιά "
@@ -405,15 +400,13 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:249
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-keys.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Sticky Keys</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Sticky Keys</"
+"phrase> </textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-keys.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Ασύγχρονα πλήκτρα</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Ασύγχρονα "
+"πλήκτρα</phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:257
@@ -421,9 +414,9 @@ msgid ""
 "Sticky Keys are activated. Here it shows <keycap>Shift</keycap> key pushed "
 "once and <keycap>Ctrl</keycap> key pushed twice."
 msgstr ""
-"Τα κολλητικά πλήκτρα είναι ενεργοποιημένα. Εδώ φαίνεται "
-"<keycap>Shift</keycap>το πλήκτρο πατήθηκε μία φορά και<keycap>Ctrl</keycap> "
-"το πλήκτρο πατήθηκε δύο φορές."
+"Τα κολλητικά πλήκτρα είναι ενεργοποιημένα. Εδώ φαίνεται <keycap>Shift</"
+"keycap>το πλήκτρο πατήθηκε μία φορά και<keycap>Ctrl</keycap> το πλήκτρο "
+"πατήθηκε δύο φορές."
 
 #. (itstool) path: imageobject/imagedata
 #. This is a reference to an external file such as an image or video. When
@@ -442,15 +435,15 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:264
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-altGr-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase><keycap>AltGr</keycap> Key Symbol</phrase>"
-" </textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"altGr-key.png\" format=\"PNG\"/> </"
+"imageobject><textobject><phrase><keycap>AltGr</keycap> Key Symbol</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-altGr-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase><keycap>AltGr</keycap> Σύμβολο "
-"πλήκτρου</phrase> </textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"altGr-key.png\" format=\"PNG\"/> </"
+"imageobject><textobject><phrase><keycap>AltGr</keycap> Σύμβολο πλήκτρου</"
+"phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:272
@@ -474,15 +467,15 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:279
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-meta-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase><keycap>Meta</keycap> Key Symbol</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"meta-key.png\" format=\"PNG\"/> </"
+"imageobject><textobject><phrase><keycap>Meta</keycap> Key Symbol</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-meta-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase><keycap>Meta</keycap> Σύμβολο "
-"Πλήκτρου</phrase> </textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"meta-key.png\" format=\"PNG\"/> </"
+"imageobject><textobject><phrase><keycap>Meta</keycap> Σύμβολο Πλήκτρου</"
+"phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:287
@@ -506,15 +499,15 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:294
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-windows-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase><keycap>Windows</keycap> logo key</phrase>"
-" </textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"windows-key.png\" format=\"PNG\"/> </"
+"imageobject><textobject><phrase><keycap>Windows</keycap> logo key</phrase> </"
+"textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-windows-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Πλήκτρο λογότυπου των "
-"<keycap>Windows</keycap></phrase> </textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"windows-key.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Πλήκτρο "
+"λογότυπου των <keycap>Windows</keycap></phrase> </textobject></"
+"inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:302
@@ -538,15 +531,13 @@ msgstr ""
 #. (itstool) path: entry/para
 #: C/index.docbook:309
 msgid ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-shift-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Shift Symbol</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"shift-key.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Shift "
+"Symbol</phrase> </textobject></inlinemediaobject>"
 msgstr ""
-"<inlinemediaobject><imageobject> <imagedata fileref=\"figures"
-"/accessx_sticky-shift-key.png\" format=\"PNG\"/> "
-"</imageobject><textobject><phrase>Σύμβολο Shift</phrase> "
-"</textobject></inlinemediaobject>"
+"<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
+"shift-key.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Σύμβολο "
+"Shift</phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
 #: C/index.docbook:317
@@ -564,8 +555,8 @@ msgid ""
 "Permission is granted to copy, distribute and/or modify this document under "
 "the terms of the GNU Free Documentation License (GFDL), Version 1.1 or any "
 "later version published by the Free Software Foundation with no Invariant "
-"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy"
-" of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
+"Sections, no Front-Cover Texts, and no Back-Cover Texts. You can find a copy "
+"of the GFDL at this <_:ulink-1/> or in the file COPYING-DOCS distributed "
 "with this manual."
 msgstr ""
 "Επιτρέπεται η αντιγραφή, η διανομή και / η τροποποίηση αυτού του εγγράφου "
@@ -581,13 +572,13 @@ msgstr ""
 msgid ""
 "This manual is part of a collection of CAFE manuals distributed under the "
 "GFDL. If you want to distribute this manual separately from the collection, "
-"you can do so by adding a copy of the license to the manual, as described in"
-" section 6 of the license."
+"you can do so by adding a copy of the license to the manual, as described in "
+"section 6 of the license."
 msgstr ""
 "Αυτή η τεκμηρίωση είναι μέρος της συλλογής τεκμηρίωσης του CAFE όπως "
 "διανέμεται υπό τους όρους του GFDL. Εάν επιθυμείτε να διανείμετε αυτή την "
-"τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση"
-" συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 "
+"τεκμηρίωση ξεχωριστά από την συλλογή, μπορείτε να το κάνετε εάν η τεκμηρίωση "
+"συνοδεύεται από αντίγραφο της άδειας (GFDL) όπως περιγράφεται στον τομέα 6 "
 "της άδειας."
 
 #. (itstool) path: legalnotice/para
@@ -626,28 +617,28 @@ msgstr ""
 "ΑΥΤΗΣ ΑΝΗΚΕΙ ΣΕ ΕΣΑΣ. ΕΑΝ Η ΤΕΚΜΗΡΙΩΣΗ ΑΥΤΗ Ή ΠΑΡΑΛΛΑΓΗ ΑΥΤΗΣ ΕΙΝΑΙ ΛΑΘΟΣ "
 "ΚΑΤΑ ΚΑΠΟΙΟ ΤΡΟΠΟ ΕΣΕΙΣ ΑΝΑΛΑΜΒΑΝΕΤΕ ΤΗΝ ΕΥΘΥΝΗ ΤΗΣ ΔΙΟΡΘΩΣΗΣ. Η ΑΠΑΛΛΑΓΗ "
 "ΕΥΘΥΝΗΣ ΠΟΥ ΣΥΝΟΔΕΥΕΙ ΑΥΤΗ ΤΗΝ ΤΕΚΜΗΡΙΩΣΗ ΕΙΝΑΙ ΑΝΑΠΟΣΠΑΣΤΟ ΚΟΜΜΑΤΙ ΑΥΤΗΣ. "
-"ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ"
-" ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ."
+"ΚΑΜΙΑ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ Ή ΠΑΡΑΛΛΑΓΩΝ ΑΥΤΗΣ ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ ΠΑΡΑ ΜΟΝΟ ΕΑΝ "
+"ΣΥΝΟΔΕΥΕΤΑΙ ΑΠΟ ΤΗΝ ΑΠΑΛΛΑΓΗ ΕΥΘΥΝΗΣ."
 
 #. (itstool) path: listitem/para
 #: C/legal.xml:55
 msgid ""
-"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING"
-" NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
+"UNDER NO CIRCUMSTANCES AND UNDER NO LEGAL THEORY, WHETHER IN TORT (INCLUDING "
+"NEGLIGENCE), CONTRACT, OR OTHERWISE, SHALL THE AUTHOR, INITIAL WRITER, ANY "
 "CONTRIBUTOR, OR ANY DISTRIBUTOR OF THE DOCUMENT OR MODIFIED VERSION OF THE "
 "DOCUMENT, OR ANY SUPPLIER OF ANY OF SUCH PARTIES, BE LIABLE TO ANY PERSON "
 "FOR ANY DIRECT, INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES OF "
 "ANY CHARACTER INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF GOODWILL, "
-"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES"
-" OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
-"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE"
-" POSSIBILITY OF SUCH DAMAGES."
+"WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR ANY AND ALL OTHER DAMAGES "
+"OR LOSSES ARISING OUT OF OR RELATING TO USE OF THE DOCUMENT AND MODIFIED "
+"VERSIONS OF THE DOCUMENT, EVEN IF SUCH PARTY SHALL HAVE BEEN INFORMED OF THE "
+"POSSIBILITY OF SUCH DAMAGES."
 msgstr ""
 "ΣΕ ΚΑΜΙΑ ΠΕΡΙΠΤΩΣΗ ΚΑΙ ΥΠΟ ΚΑΜΙΑ ΝΟΜΙΚΗ ΣΥΝΘΗΚΗ, ΕΙΤΕ ΜΕΣΩ ΣΥΜΒΟΛΑΙΩΝ Ή "
 "ΑΛΛΙΩΣ, ΔΕΝ ΕΥΘΥΝΟΝΤΑΙ Ο ΣΥΓΓΡΑΦΕΑΣ, Ο ΔΙΑΝΟΜΕΑΣ, Η ΑΛΛΟΣ ΣΥΝΥΠΕΥΘΥΝΟΣ ΓΙΑ "
 "ΤΗΝ ΣΥΓΓΡΑΦΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ, ΓΙΑ ΕΜΜΕΣΕΣ Η ΑΜΕΣΕΣ, ΤΥΧΑΙΕΣ Ή ΜΗ ΖΗΜΙΕΣ "
-"ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ"
-" ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ "
+"ΠΑΝΤΩΣ ΦΥΣΕΩΣ ΠΟΥ ΠΡΟΕΡΧΟΝΤΑΙ ΑΠΟ ΤΗΝ ΧΡΗΣΗ ΤΗΣ ΤΕΚΜΗΡΙΩΣΗΣ ΚΑΙ/Ή ΠΑΡΑΛΛΑΓΩΝ "
+"ΑΥΤΗΣ ΑΚΟΜΑ ΚΑΙ ΕΑΝ ΕΧΕΙ ΥΠΑΡΞΕΙ ΠΡΟΕΙΔΟΠΟΙΗΣΗ ΓΙΑ ΤΗΝ ΠΙΘΑΝΟΤΗΤΑ ΥΠΑΡΞΗΣ "
 "ΤΕΤΟΙΩΝ ΖΗΜΙΩΝ."
 
 #. (itstool) path: legalnotice/para
@@ -657,6 +648,6 @@ msgid ""
 "OF THE GNU FREE DOCUMENTATION LICENSE WITH THE FURTHER UNDERSTANDING THAT: "
 "<_:orderedlist-1/>"
 msgstr ""
-"ΤΟ ΕΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΤΟΥ ΕΓΓΡΑΦΟΥ ΠΑΡΕΧΟΝΤΑΙ ΜΕ ΤΟΥΣ ΟΡΟΥΣ"
-" ΤΗΣ ΑΔΕΙΑΣ ΤΕΚΜΗΡΙΩΣΗ ΕΛΕΥΘΕΡΟΥ ΛΟΓΙΣΜΙΚΟΥ GNU ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΚΑΤΑΝΟΜΗ "
+"ΤΟ ΕΓΓΡΑΦΟ ΚΑΙ ΤΡΟΠΟΠΟΙΗΜΕΝΕΣ ΕΚΔΟΣΕΙΣ ΤΟΥ ΕΓΓΡΑΦΟΥ ΠΑΡΕΧΟΝΤΑΙ ΜΕ ΤΟΥΣ ΟΡΟΥΣ "
+"ΤΗΣ ΑΔΕΙΑΣ ΤΕΚΜΗΡΙΩΣΗ ΕΛΕΥΘΕΡΟΥ ΛΟΓΙΣΜΙΚΟΥ GNU ΜΕ ΤΗΝ ΠΕΡΑΙΤΕΡΩ ΚΑΤΑΝΟΜΗ "
 "ΟΤΙ: <_:orderedlist-1/>"
