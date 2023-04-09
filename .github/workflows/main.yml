@@ -12,7 +12,7 @@ jobs:
   docker:
     uses: cafe-desktop/cafe-common/.github/workflows/main.yml@master
     with:
-      image_name: cafe-panel
+      image_name: cafe-applets
       tag: $GITHUB_RUN_NUMBER
     secrets:
       DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }}
