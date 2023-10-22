@@ -814,6 +814,9 @@ cpufreq_applet_setup (CPUFreqApplet *applet)
 
 	ctk_window_set_default_icon_name ("cafe-cpu-frequency-applet");
 
+	g_object_set (ctk_settings_get_default (), "ctk-menu-images", TRUE, NULL);
+	g_object_set (ctk_settings_get_default (), "ctk-button-images", TRUE, NULL);
+
         /* Preferences */
         if (applet->prefs)
                 g_object_unref (applet->prefs);
