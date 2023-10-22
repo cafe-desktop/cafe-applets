@@ -517,6 +517,10 @@ multiload_applet_new(CafePanelApplet *applet, const gchar *iid, gpointer data)
 	g_set_application_name (_("System Monitor"));
 
 	ctk_window_set_default_icon_name ("utilities-system-monitor");
+
+	g_object_set (ctk_settings_get_default (), "ctk-menu-images", TRUE, NULL);
+	g_object_set (ctk_settings_get_default (), "ctk-button-images", TRUE, NULL);
+
 	cafe_panel_applet_set_background_widget (applet, CTK_WIDGET(applet));
 
 	ma->settings = cafe_panel_applet_settings_new (applet, "org.cafe.panel.applet.multiload");
