@@ -1116,6 +1116,9 @@ battstat_applet_fill (CafePanelApplet *applet)
 
   ctk_window_set_default_icon_name ("battery");
 
+  g_object_set (ctk_settings_get_default (), "ctk-menu-images", TRUE, NULL);
+  g_object_set (ctk_settings_get_default (), "ctk-button-images", TRUE, NULL);
+
   cafe_panel_applet_set_flags (applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
 
   battstat = g_new0 (ProgressData, 1);
