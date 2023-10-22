@@ -1108,6 +1108,8 @@ static AccessxStatusApplet* create_applet(CafePanelApplet* applet)
 
 	g_set_application_name(_("AccessX Status"));
 
+	g_object_set (ctk_settings_get_default (), "ctk-menu-images", TRUE, NULL);
+
 	sapplet->xkb = NULL;
 	sapplet->xkb_display = NULL;
 	sapplet->box = NULL;
