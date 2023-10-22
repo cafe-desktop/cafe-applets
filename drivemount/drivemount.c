@@ -186,6 +186,8 @@ applet_factory (CafePanelApplet *applet,
 
 	ctk_window_set_default_icon_name ("media-floppy");
 
+	g_object_set (ctk_settings_get_default (), "ctk-menu-images", TRUE, NULL);
+
 	cafe_panel_applet_set_flags (applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
 	cafe_panel_applet_set_background_widget (applet, CTK_WIDGET (applet));
 
