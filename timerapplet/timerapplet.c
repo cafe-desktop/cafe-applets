@@ -403,6 +403,9 @@ timer_applet_fill (CafePanelApplet* applet_widget)
     g_set_application_name (_("Timer Applet"));
     ctk_window_set_default_icon_name (APPLET_ICON);
 
+    g_object_set (ctk_settings_get_default (), "ctk-menu-images", TRUE, NULL);
+    g_object_set (ctk_settings_get_default (), "ctk-button-images", TRUE, NULL);
+
     if (!notify_is_initted ())
         notify_init ("timer-applet");
 
