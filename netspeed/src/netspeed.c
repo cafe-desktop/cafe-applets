@@ -1583,6 +1583,9 @@ cafe_netspeed_applet_factory(CafePanelApplet *applet_widget, const gchar *iid, g
 	glibtop_init();
 	g_set_application_name (_("CAFE Netspeed"));
 
+	g_object_set (ctk_settings_get_default (), "ctk-menu-images", TRUE, NULL);
+	g_object_set (ctk_settings_get_default (), "ctk-button-images", TRUE, NULL);
+
 	icon_theme = ctk_icon_theme_get_default();
 
 	/* Alloc the applet. The "NULL-setting" is really redudant
