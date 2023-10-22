@@ -626,6 +626,8 @@ trash_applet_factory (CafePanelApplet *applet,
 
       ctk_window_set_default_icon_name ("user-trash");
 
+      g_object_set (ctk_settings_get_default (), "ctk-menu-images", TRUE, NULL);
+
       /* Set up the menu */
       action_group = ctk_action_group_new ("Trash Applet Actions");
       ctk_action_group_set_translation_domain (action_group, GETTEXT_PACKAGE);
