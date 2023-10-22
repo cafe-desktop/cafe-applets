@@ -443,6 +443,9 @@ command_applet_fill (CafePanelApplet* applet)
     g_set_application_name (_("Command Applet"));
     ctk_window_set_default_icon_name (APPLET_ICON);
 
+    g_object_set (ctk_settings_get_default (), "ctk-menu-images", TRUE, NULL);
+    g_object_set (ctk_settings_get_default (), "ctk-button-images", TRUE, NULL);
+
     cafe_panel_applet_set_flags (applet, CAFE_PANEL_APPLET_EXPAND_MINOR);
     cafe_panel_applet_set_background_widget (applet, CTK_WIDGET (applet));
 
