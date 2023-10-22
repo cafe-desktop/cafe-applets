@@ -346,6 +346,9 @@ void cafeweather_applet_create (CafeWeatherApplet *gw_applet)
 
     ctk_window_set_default_icon_name ("weather-storm");
 
+    g_object_set (ctk_settings_get_default (), "ctk-menu-images", TRUE, NULL);
+    g_object_set (ctk_settings_get_default (), "ctk-button-images", TRUE, NULL);
+
     g_signal_connect (G_OBJECT(gw_applet->applet), "change_orient",
                        G_CALLBACK(change_orient_cb), gw_applet);
     g_signal_connect (G_OBJECT(gw_applet->applet), "size_allocate",
@@ -390,7 +393,8 @@ void cafeweather_applet_create (CafeWeatherApplet *gw_applet)
 
     monitor = g_network_monitor_get_default();
     g_signal_connect (monitor, "network-changed",
-                      G_CALLBACK (network_changed), gw_applet);}
+                      G_CALLBACK (network_changed), gw_applet);
+}
 
 gint timeout_cb (gpointer data)
 {
