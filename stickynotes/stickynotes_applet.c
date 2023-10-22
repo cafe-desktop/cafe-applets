@@ -170,6 +170,9 @@ stickynotes_applet_init (CafePanelApplet *cafe_panel_applet)
 	g_set_application_name (_("Sticky Notes"));
 	ctk_window_set_default_icon_name ("cafe-sticky-notes-applet");
 
+	g_object_set (ctk_settings_get_default (), "ctk-menu-images", TRUE, NULL);
+	g_object_set (ctk_settings_get_default (), "ctk-button-images", TRUE, NULL);
+
 	stickynotes->icon_normal = ctk_icon_theme_load_surface (
 			ctk_icon_theme_get_default (),
 			"cafe-sticky-notes-applet",
