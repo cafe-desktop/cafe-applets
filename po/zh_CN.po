@@ -822,8 +822,8 @@ msgid "(not mounted)"
 msgstr "(未挂载)"
 
 #: drivemount/drive-button.c:619
-msgid "Cannot execute Caja"
-msgstr "无法执行 Caja"
+msgid "Cannot execute Baul"
+msgstr "无法执行 Baul"
 
 #: drivemount/drive-button.c:943
 msgid "_Play DVD"
@@ -2612,7 +2612,7 @@ msgid ""
 "Error while spawning baul:\n"
 "%s"
 msgstr ""
-"调用 Caja 出错：\n"
+"调用 Baul 出错：\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

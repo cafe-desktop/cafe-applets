@@ -823,8 +823,8 @@ msgid "(not mounted)"
 msgstr "(マウントしていません)"
 
 #: drivemount/drive-button.c:619
-msgid "Cannot execute Caja"
-msgstr "Cajaを実行できません"
+msgid "Cannot execute Baul"
+msgstr "Baulを実行できません"
 
 #: drivemount/drive-button.c:943
 msgid "_Play DVD"
@@ -2616,7 +2616,7 @@ msgid ""
 "Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Caja を起動する際にエラーが発生しました:\n"
+"Baul を起動する際にエラーが発生しました:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

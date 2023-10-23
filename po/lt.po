@@ -847,7 +847,7 @@ msgid "(not mounted)"
 msgstr "(neprijungtas)"
 
 #: drivemount/drive-button.c:619
-msgid "Cannot execute Caja"
+msgid "Cannot execute Baul"
 msgstr "Negali paleisti „Cajos“"
 
 #: drivemount/drive-button.c:943

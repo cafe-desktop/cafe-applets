@@ -310,12 +310,12 @@ msgstr "Apertura del Cestino"
 msgid ""
 "To open Trash, right-click on the applet, then choose <menuchoice> "
 "<guimenuitem>Open Trash</guimenuitem> </menuchoice>. The Trash window opens "
-"in <application>Caja</application> file manager."
+"in <application>Baul</application> file manager."
 msgstr ""
 "Per aprire il Cestino, clicca col tasto destro del mouse sull'applet, quindi "
 "scegli <menuchoice><guimenuitem>Apri Cestino</guimenuitem></menuchoice>. La "
 "finestra del Cestino si aprirà all'interno del file manager "
-"<application>Caja</application>."
+"<application>Baul</application>."
 
 #. (itstool) path: para/ulink
 #: C/legal.xml:9

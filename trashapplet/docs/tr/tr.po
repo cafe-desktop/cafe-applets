@@ -309,11 +309,11 @@ msgstr "Çöpün Açılması"
 msgid ""
 "To open Trash, right-click on the applet, then choose <menuchoice> "
 "<guimenuitem>Open Trash</guimenuitem> </menuchoice>. The Trash window opens "
-"in <application>Caja</application> file manager."
+"in <application>Baul</application> file manager."
 msgstr ""
 "Çöpü açmak için uygulamacığa sağ tıklaın, ardından <menuchoice> "
 "<guimenuitem>Çöpü Aç</guimenuitem> </menuchoice> unsurunu seçin. Çöp "
-"penceresi <application>Caja</application> dosya yöneticisinde açılacaktır."
+"penceresi <application>Baul</application> dosya yöneticisinde açılacaktır."
 
 #. (itstool) path: para/ulink
 #: C/legal.xml:9

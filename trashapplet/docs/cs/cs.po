@@ -308,11 +308,11 @@ msgstr "Otevření koše"
 msgid ""
 "To open Trash, right-click on the applet, then choose <menuchoice> "
 "<guimenuitem>Open Trash</guimenuitem> </menuchoice>. The Trash window opens "
-"in <application>Caja</application> file manager."
+"in <application>Baul</application> file manager."
 msgstr ""
 "Abyste otevřeli koš, klepněte pravýmm tlačítkem na applet a zvolte "
 "<menuchoice> <guimenuitem>Otevřít koš</guimenuitem> </menuchoice>. Okno koše "
-"se otevře ve správci souborů <application>Caja</application>."
+"se otevře ve správci souborů <application>Baul</application>."
 
 #. (itstool) path: para/ulink
 #: C/legal.xml:9

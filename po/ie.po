@@ -788,8 +788,8 @@ msgid "(not mounted)"
 msgstr "(ne montet)"
 
 #: drivemount/drive-button.c:619
-msgid "Cannot execute Caja"
-msgstr "Ne successat executer Caja"
+msgid "Cannot execute Baul"
+msgstr "Ne successat executer Baul"
 
 #: drivemount/drive-button.c:943
 msgid "_Play DVD"

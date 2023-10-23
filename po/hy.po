@@ -814,8 +814,8 @@ msgid "(not mounted)"
 msgstr "(միացված չէ) "
 
 #: drivemount/drive-button.c:619
-msgid "Cannot execute Caja"
-msgstr "Հնարավոր չէ կատարել Caja֊ն"
+msgid "Cannot execute Baul"
+msgstr "Հնարավոր չէ կատարել Baul֊ն"
 
 #: drivemount/drive-button.c:943
 msgid "_Play DVD"
@@ -2632,7 +2632,7 @@ msgid ""
 "Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Caja–ի գործարկման սխալ:\n"
+"Baul–ի գործարկման սխալ:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

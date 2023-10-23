@@ -789,7 +789,7 @@ msgid "(not mounted)"
 msgstr "(አልተጫነም)"
 
 #: drivemount/drive-button.c:619
-msgid "Cannot execute Caja"
+msgid "Cannot execute Baul"
 msgstr "ካጃ መፈጸም አልተቻለም"
 
 #: drivemount/drive-button.c:943

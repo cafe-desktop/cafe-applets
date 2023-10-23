@@ -317,11 +317,11 @@ msgstr "Открытие корзины"
 msgid ""
 "To open Trash, right-click on the applet, then choose <menuchoice> "
 "<guimenuitem>Open Trash</guimenuitem> </menuchoice>. The Trash window opens "
-"in <application>Caja</application> file manager."
+"in <application>Baul</application> file manager."
 msgstr ""
 "Чтобы открыть корзину, щёлкните правой кнопкой на апплете и выберите "
 "<menuchoice> <guimenuitem>Открыть корзину</guimenuitem> </menuchoice>. Окно "
-"корзины откроется в файловом менеджере <application>Caja</application>."
+"корзины откроется в файловом менеджере <application>Baul</application>."
 
 #. (itstool) path: para/ulink
 #: C/legal.xml:9

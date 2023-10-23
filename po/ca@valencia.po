@@ -825,8 +825,8 @@ msgid "(not mounted)"
 msgstr "(sense muntar)"
 
 #: drivemount/drive-button.c:619
-msgid "Cannot execute Caja"
-msgstr "No es pot executar el Caja"
+msgid "Cannot execute Baul"
+msgstr "No es pot executar el Baul"
 
 #: drivemount/drive-button.c:943
 msgid "_Play DVD"
@@ -2653,7 +2653,7 @@ msgid ""
 "Error while spawning baul:\n"
 "%s"
 msgstr ""
-"S'ha produït un error en executar el Caja:\n"
+"S'ha produït un error en executar el Baul:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432
