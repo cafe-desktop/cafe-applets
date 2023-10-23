@@ -288,7 +288,7 @@ trash_empty_require_confirmation (void)
 {
   gboolean confirm_trash;
   GSettings *settings;
-  settings = g_settings_new ("org.cafe.caja.preferences");
+  settings = g_settings_new ("org.cafe.baul.preferences");
   confirm_trash = g_settings_get_boolean (settings, "confirm-trash");
   g_object_unref (settings);
   return confirm_trash;
@@ -308,7 +308,7 @@ trash_empty_confirmation_response (CtkDialog *dialog,
 
 /*
  * The code in trash_empty_show_confirmation_dialog() was taken from
- * libcaja-private/caja-file-operations.c (confirm_empty_trash)
+ * libbaul-private/baul-file-operations.c (confirm_empty_trash)
  * by Michiel Sikkes <michiel@eyesopened.nl> and adapted for the applet.
  */
 static void

@@ -2640,10 +2640,10 @@ msgstr "Kosong"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Galat sewaktu memanggil caja:\n"
+"Galat sewaktu memanggil baul:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

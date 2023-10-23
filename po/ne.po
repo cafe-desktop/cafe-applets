@@ -2575,7 +2575,7 @@ msgstr "रद्दीटोकरीमा कुनै वस्तु छै
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
 "नटिलस पैदा गर्दा त्रुटि:\n"

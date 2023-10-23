@@ -2586,7 +2586,7 @@ msgstr "আবর্জনার বাক্সে কোনো বস্তু
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
 "Caja spawn করতে সমস্যা:\n"

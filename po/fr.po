@@ -2696,10 +2696,10 @@ msgstr "Aucun élément dans la corbeille"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Erreur lors du lancement de caja :\n"
+"Erreur lors du lancement de baul :\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

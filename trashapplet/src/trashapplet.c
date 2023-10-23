@@ -375,7 +375,7 @@ trash_applet_open_folder (CtkAction   *action,
 
   if (err)
     {
-      error_dialog (applet, _("Error while spawning caja:\n%s"),
+      error_dialog (applet, _("Error while spawning baul:\n%s"),
       err->message);
       g_error_free (err);
     }

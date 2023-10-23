@@ -2621,10 +2621,10 @@ msgstr "Inga objekt i papperskorgen"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Fel vid start av caja:\n"
+"Fel vid start av baul:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

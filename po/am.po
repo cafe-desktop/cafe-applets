@@ -2562,7 +2562,7 @@ msgstr "በቆሻሻ ውስጥ ምንም የለም"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
 "ስህተት በ ካጃ ውጠት ላይ:\n"

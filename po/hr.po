@@ -2637,10 +2637,10 @@ msgstr "Nema sadržaja u Smeću"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Greška prilikom podizanja caja-a:\n"
+"Greška prilikom podizanja baul-a:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

@@ -2603,7 +2603,7 @@ msgstr "No hay elementos en la papelera"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
 "Error al resucitar Caja:\n"

@@ -2592,7 +2592,7 @@ msgstr "குப்பையில் ஒன்றுமில்லை"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
 "நாடுலஸ் ஐ துவக்கையில் பிழை :\n"

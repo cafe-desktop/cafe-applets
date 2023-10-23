@@ -2610,10 +2610,10 @@ msgstr "Asnjë Element në Kosh"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Gabim në e qarkullimin e caja-it:\n"
+"Gabim në e qarkullimin e baul-it:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

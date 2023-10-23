@@ -2605,10 +2605,10 @@ msgstr "Không có gì trong Sọt Rác"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Gặp lỗi khi tạo tiến trình con caja:\n"
+"Gặp lỗi khi tạo tiến trình con baul:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

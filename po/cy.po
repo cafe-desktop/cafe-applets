@@ -2602,10 +2602,10 @@ msgstr "Dim eitemau yn y sbwriel"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Gwall wrth is-gychwyn caja: \n"
+"Gwall wrth is-gychwyn baul: \n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

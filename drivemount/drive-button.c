@@ -594,7 +594,7 @@ open_drive (DriveButton *self, CtkWidget *item)
 
     app_info = g_app_info_get_default_for_type("inode/directory", FALSE);
     if (!app_info)
-      app_info = G_APP_INFO (g_desktop_app_info_new ("caja.desktop"));
+      app_info = G_APP_INFO (g_desktop_app_info_new ("baul.desktop"));
 
     if (app_info) {
 	CdkDisplay *display = ctk_widget_get_display (item);

@@ -2559,10 +2559,10 @@ msgstr "ถังขยะว่างอยู่"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
-"เกิดข้อผิดพลาดขณะเรียก caja:\n"
+"เกิดข้อผิดพลาดขณะเรียก baul:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

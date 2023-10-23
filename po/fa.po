@@ -2580,7 +2580,7 @@ msgstr "هیچ موردی در زباله‌دان نیست"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
 "خطا در به وجود آوردن ناتیلوس:\n"

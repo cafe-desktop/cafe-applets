@@ -2595,10 +2595,10 @@ msgstr "Tsy misy na inona na inona anatin'ny daba"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Nisy olana teo am-pamoronana ny caja:\n"
+"Nisy olana teo am-pamoronana ny baul:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

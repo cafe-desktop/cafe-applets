@@ -2591,10 +2591,10 @@ msgstr "ಕಸಬುಟ್ಟಿಯಲ್ಲಿ ಯಾವುದೆ ಅಂಶಗ�
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
-"caja ಅನ್ನು ಹೆಚ್ಚಿಸುವಾಗ ದೋಷ ಉಂಟಾಗಿದೆ:\n"
+"baul ಅನ್ನು ಹೆಚ್ಚಿಸುವಾಗ ದೋಷ ಉಂಟಾಗಿದೆ:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

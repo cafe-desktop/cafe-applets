@@ -2655,10 +2655,10 @@ msgstr "Ingen oppføringer papirkurven"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Feil under oppstart av caja:\n"
+"Feil under oppstart av baul:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432
