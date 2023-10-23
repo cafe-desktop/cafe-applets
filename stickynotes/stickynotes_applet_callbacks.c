@@ -37,7 +37,7 @@ static gboolean get_desktop_window (Window *window)
 				cdk_screen_get_default ());
 
 	if (cdk_property_get (root_window,
-			      cdk_atom_intern ("CAJA_DESKTOP_WINDOW_ID", FALSE),
+			      cdk_atom_intern ("BAUL_DESKTOP_WINDOW_ID", FALSE),
 			      cdk_x11_xatom_to_atom (XA_WINDOW),
 			      0, 4, FALSE,
 			      &type_returned,
