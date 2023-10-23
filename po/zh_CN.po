@@ -2609,7 +2609,7 @@ msgstr "回收站中无项目"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
 "调用 Caja 出错：\n"

@@ -2653,7 +2653,7 @@ msgstr "Нема ставки у смећу"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
 "Грешка приликом позивања цаје:\n"

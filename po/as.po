@@ -2571,7 +2571,7 @@ msgstr "নহয়"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
 "Caja spawn কৰিবলৈ সমস্যা:\n"

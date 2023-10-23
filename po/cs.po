@@ -2678,7 +2678,7 @@ msgstr "Žádná položka v koši"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
 "Chyba při spouštění programu Caja:\n"

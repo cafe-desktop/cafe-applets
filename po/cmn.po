@@ -2566,10 +2566,10 @@ msgstr "回收筒中沒有任何項目"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
-"當執行 caja 時發生錯誤：\n"
+"當執行 baul 時發生錯誤：\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

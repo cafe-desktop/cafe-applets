@@ -2707,7 +2707,7 @@ msgstr "В корзине нет элементов"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
 "Ошибка запуска Caja:\n"

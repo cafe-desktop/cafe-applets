@@ -2588,7 +2588,7 @@ msgstr "कचऱ्यात काहीच नाही"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
 "नॉटीलसच्या संततीदरम्यान चूक:\n"

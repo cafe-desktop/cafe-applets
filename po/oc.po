@@ -2640,10 +2640,10 @@ msgstr "Res dins la banasta"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Error pendent l'aviada de caja:\n"
+"Error pendent l'aviada de baul:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

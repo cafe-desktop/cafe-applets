@@ -2650,7 +2650,7 @@ msgstr "No hi ha elements a la paperera"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
 "S'ha produït un error en executar el Caja:\n"

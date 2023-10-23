@@ -2658,10 +2658,10 @@ msgstr "Nenhum item no Lixo"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Erro ao expandir o caja:\n"
+"Erro ao expandir o baul:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

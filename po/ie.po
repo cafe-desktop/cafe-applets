@@ -2556,10 +2556,10 @@ msgstr "Null elementes in li Paper-corb"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Un errore evenit lansante caja:\n"
+"Un errore evenit lansante baul:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

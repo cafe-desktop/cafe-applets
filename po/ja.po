@@ -2613,7 +2613,7 @@ msgstr "ゴミ箱には何もありません"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
 "Caja を起動する際にエラーが発生しました:\n"

@@ -2591,7 +2591,7 @@ msgstr "Нема предмети во ѓубрето"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
 "Грешка при отворањето на наутилус:\n"

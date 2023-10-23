@@ -2664,7 +2664,7 @@ msgstr "Der Papierkorb ist leer"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
 "Fehler beim Aufrufen von Caja:\n"

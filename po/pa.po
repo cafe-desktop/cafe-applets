@@ -2581,7 +2581,7 @@ msgstr "ਰੱਦੀ ਵਿੱਚ ਕੁਝ ਨਹੀਂ ਹੈ"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
 "ਨਟੀਲਸ ਖੋਲ੍ਹਣ ਦੌਰਾਨ ਗਲਤੀ ਹੈ:\n"

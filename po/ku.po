@@ -2581,10 +2581,10 @@ msgstr "Di çopê de qet hêman tuneye"
 #: trashapplet/src/trashapplet.c:378
 #, c-format
 msgid ""
-"Error while spawning caja:\n"
+"Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Çewtiya destpêkirina caja:\n"
+"Çewtiya destpêkirina baul:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432
