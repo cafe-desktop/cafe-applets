@@ -313,11 +313,11 @@ msgstr "Abriendo Papelera"
 msgid ""
 "To open Trash, right-click on the applet, then choose <menuchoice> "
 "<guimenuitem>Open Trash</guimenuitem> </menuchoice>. The Trash window opens "
-"in <application>Caja</application> file manager."
+"in <application>Baul</application> file manager."
 msgstr ""
 "Para abrir la papelera, haga clic derecho en la miniaplicación y escoja "
 "<menuchoice> <guimenuitem>Abrir la papelera</guimenuitem> </menuchoice>. La "
-"ventana de la papelera se abrirá en el gestor de archivos <application>Caja</"
+"ventana de la papelera se abrirá en el gestor de archivos <application>Baul</"
 "application>."
 
 #. (itstool) path: para/ulink

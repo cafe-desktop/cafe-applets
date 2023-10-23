@@ -616,11 +616,11 @@ open_drive (DriveButton *self, CtkWidget *item)
 						     CTK_DIALOG_DESTROY_WITH_PARENT,
 						     CTK_MESSAGE_ERROR,
 						     CTK_BUTTONS_OK,
-						     _("Cannot execute Caja"));
+						     _("Cannot execute Baul"));
 	if (error)
 	    ctk_message_dialog_format_secondary_text (CTK_MESSAGE_DIALOG (dialog), "%s", error->message);
 	else
-	    ctk_message_dialog_format_secondary_text (CTK_MESSAGE_DIALOG (dialog), "Could not find Caja");
+	    ctk_message_dialog_format_secondary_text (CTK_MESSAGE_DIALOG (dialog), "Could not find Baul");
 	g_signal_connect (dialog, "response",
 			  G_CALLBACK (ctk_widget_destroy), NULL);
 	ctk_widget_show (dialog);

@@ -310,10 +310,10 @@ msgstr "打开废纸篓"
 msgid ""
 "To open Trash, right-click on the applet, then choose <menuchoice> "
 "<guimenuitem>Open Trash</guimenuitem> </menuchoice>. The Trash window opens "
-"in <application>Caja</application> file manager."
+"in <application>Baul</application> file manager."
 msgstr ""
 "要打开“废纸篓”，请右键单击小程序，然后选择<menuchoice><guimenuitem>打开废纸篓"
-"</guimenuitem></menuchoice>。“废纸篓”窗口将在<application>Caja</application>"
+"</guimenuitem></menuchoice>。“废纸篓”窗口将在<application>Baul</application>"
 "文件管理器中打开。"
 
 #. (itstool) path: para/ulink

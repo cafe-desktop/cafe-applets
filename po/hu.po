@@ -835,8 +835,8 @@ msgid "(not mounted)"
 msgstr "(leválasztva)"
 
 #: drivemount/drive-button.c:619
-msgid "Cannot execute Caja"
-msgstr "A Caja nem futtatható"
+msgid "Cannot execute Baul"
+msgstr "A Baul nem futtatható"
 
 #: drivemount/drive-button.c:943
 msgid "_Play DVD"
@@ -2640,7 +2640,7 @@ msgid ""
 "Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Hiba a Caja indítása közben:\n"
+"Hiba a Baul indítása közben:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

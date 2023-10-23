@@ -200,7 +200,7 @@ The <application>&applet;</application> applet lets you manage your Trash from t
 	<para>To open Trash, right-click on the applet, then choose
 		<menuchoice>
 		  <guimenuitem>Open Trash</guimenuitem>
-		</menuchoice>. The Trash window opens in <application>Caja</application> file manager.
+		</menuchoice>. The Trash window opens in <application>Baul</application> file manager.
 	</para>
 	</sect2>
 </sect1>

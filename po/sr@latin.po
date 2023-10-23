@@ -819,7 +819,7 @@ msgid "(not mounted)"
 msgstr "(nije priključen)"
 
 #: drivemount/drive-button.c:619
-msgid "Cannot execute Caja"
+msgid "Cannot execute Baul"
 msgstr ""
 
 #: drivemount/drive-button.c:943
@@ -2605,7 +2605,7 @@ msgid ""
 "Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Greška pri pozivanju Cajaa:\n"
+"Greška pri pozivanju Baula:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

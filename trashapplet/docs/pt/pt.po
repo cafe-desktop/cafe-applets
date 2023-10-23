@@ -307,11 +307,11 @@ msgstr "Abrir o Lixo"
 msgid ""
 "To open Trash, right-click on the applet, then choose <menuchoice> "
 "<guimenuitem>Open Trash</guimenuitem> </menuchoice>. The Trash window opens "
-"in <application>Caja</application> file manager."
+"in <application>Baul</application> file manager."
 msgstr ""
 "Para abrir o Lixo, clique com o botão direito do rato na mini-aplicação e "
 "depois escolha <menuchoice> <guimenuitem>Abrir Lixo</guimenuitem> </"
-"menuchoice>. A janela do Lixo abre no gestor de ficheiros <application>Caja</"
+"menuchoice>. A janela do Lixo abre no gestor de ficheiros <application>Baul</"
 "application>."
 
 #. (itstool) path: para/ulink

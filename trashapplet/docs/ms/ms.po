@@ -298,11 +298,11 @@ msgstr "Membuka Tong Sampah"
 msgid ""
 "To open Trash, right-click on the applet, then choose <menuchoice> "
 "<guimenuitem>Open Trash</guimenuitem> </menuchoice>. The Trash window opens "
-"in <application>Caja</application> file manager."
+"in <application>Baul</application> file manager."
 msgstr ""
 "Untuk membuka Tong Sampah, klik-kanan pada aplet, kemudian pilih "
 "<menuchoice> <guimenuitem>Buka Tong Sampah</guimenuitem> </menuchoice>. "
-"Tetingkap Tong Sampah akan dibuka dalam  pengurus fail <application>Caja</"
+"Tetingkap Tong Sampah akan dibuka dalam  pengurus fail <application>Baul</"
 "application>."
 
 #. (itstool) path: para/ulink

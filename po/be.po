@@ -825,8 +825,8 @@ msgid "(not mounted)"
 msgstr "(адмантаваны)"
 
 #: drivemount/drive-button.c:619
-msgid "Cannot execute Caja"
-msgstr "Не выйшла запусціць Caja"
+msgid "Cannot execute Baul"
+msgstr "Не выйшла запусціць Baul"
 
 #: drivemount/drive-button.c:943
 msgid "_Play DVD"

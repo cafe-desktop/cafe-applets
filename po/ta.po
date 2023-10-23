@@ -806,7 +806,7 @@ msgid "(not mounted)"
 msgstr "(ஏற்றப்படவில்லை)"
 
 #: drivemount/drive-button.c:619
-msgid "Cannot execute Caja"
+msgid "Cannot execute Baul"
 msgstr ""
 
 #: drivemount/drive-button.c:943

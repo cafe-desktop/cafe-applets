@@ -309,12 +309,12 @@ msgstr "Obrir la paperera"
 msgid ""
 "To open Trash, right-click on the applet, then choose <menuchoice> "
 "<guimenuitem>Open Trash</guimenuitem> </menuchoice>. The Trash window opens "
-"in <application>Caja</application> file manager."
+"in <application>Baul</application> file manager."
 msgstr ""
 "Per obrir la paperera, feu clic amb el botó dret a la miniaplicació i, a "
 "continuació, trieu <menuchoice> <guimenuitem>Obre la paperera</guimenuitem> "
 "</menuchoice>. S'obre la finestra de la paperera al gestor de fitxers "
-"<application>Caja</application>."
+"<application>Baul</application>."
 
 #. (itstool) path: para/ulink
 #: C/legal.xml:9

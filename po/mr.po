@@ -802,8 +802,8 @@ msgid "(not mounted)"
 msgstr "(आरोहित नाही)"
 
 #: drivemount/drive-button.c:619
-msgid "Cannot execute Caja"
-msgstr "Caja चालवू शकत नाही"
+msgid "Cannot execute Baul"
+msgstr "Baul चालवू शकत नाही"
 
 #: drivemount/drive-button.c:943
 msgid "_Play DVD"

@@ -853,7 +853,7 @@ msgid "(not mounted)"
 msgstr "(odpojen)"
 
 #: drivemount/drive-button.c:619
-msgid "Cannot execute Caja"
+msgid "Cannot execute Baul"
 msgstr "Nelze spustit Caju"
 
 #: drivemount/drive-button.c:943
@@ -2681,7 +2681,7 @@ msgid ""
 "Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Chyba při spouštění programu Caja:\n"
+"Chyba při spouštění programu Baul:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

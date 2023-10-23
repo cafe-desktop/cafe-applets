@@ -817,8 +817,8 @@ msgid "(not mounted)"
 msgstr "(ei liitetty)"
 
 #: drivemount/drive-button.c:619
-msgid "Cannot execute Caja"
-msgstr "Ei voida suorittaa Cajaa"
+msgid "Cannot execute Baul"
+msgstr "Ei voida suorittaa Baula"
 
 #: drivemount/drive-button.c:943
 msgid "_Play DVD"

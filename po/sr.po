@@ -831,7 +831,7 @@ msgid "(not mounted)"
 msgstr "(није прикључен)"
 
 #: drivemount/drive-button.c:619
-msgid "Cannot execute Caja"
+msgid "Cannot execute Baul"
 msgstr "Не могу да покренем Цају"
 
 #: drivemount/drive-button.c:943

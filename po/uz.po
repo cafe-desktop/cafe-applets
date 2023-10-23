@@ -774,8 +774,8 @@ msgid "(not mounted)"
 msgstr "(ulanmagan)"
 
 #: drivemount/drive-button.c:619
-msgid "Cannot execute Caja"
-msgstr "Cajani bajarib bo'lmadi"
+msgid "Cannot execute Baul"
+msgstr "Baulni bajarib bo'lmadi"
 
 #: drivemount/drive-button.c:943
 msgid "_Play DVD"

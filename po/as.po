@@ -801,7 +801,7 @@ msgid "(not mounted)"
 msgstr "(মাউন্ট কৰা নেই)"
 
 #: drivemount/drive-button.c:619
-msgid "Cannot execute Caja"
+msgid "Cannot execute Baul"
 msgstr ""
 
 #: drivemount/drive-button.c:943
@@ -2574,7 +2574,7 @@ msgid ""
 "Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Caja spawn কৰিবলৈ সমস্যা:\n"
+"Baul spawn কৰিবলৈ সমস্যা:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432

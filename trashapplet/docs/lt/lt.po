@@ -312,11 +312,11 @@ msgstr "Šiukšlinė atveriama"
 msgid ""
 "To open Trash, right-click on the applet, then choose <menuchoice> "
 "<guimenuitem>Open Trash</guimenuitem> </menuchoice>. The Trash window opens "
-"in <application>Caja</application> file manager."
+"in <application>Baul</application> file manager."
 msgstr ""
 "Kad atvertumėte šiukšlinę, dešiniuoju pelės klavišu paspauskite įtaisą, tada "
 "pasirinkite <menuchoice> <guimenuitem>Atverti šiukšlinę</guimenuitem> </"
-"menuchoice>.  Šiukšlinės langas atsidaro <application>Caja</application> "
+"menuchoice>.  Šiukšlinės langas atsidaro <application>Baul</application> "
 "failų tvarkytuvėje."
 
 #. (itstool) path: para/ulink

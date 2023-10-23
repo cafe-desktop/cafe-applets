@@ -807,7 +807,7 @@ msgid "(not mounted)"
 msgstr "(ikkje montert)"
 
 #: drivemount/drive-button.c:619
-msgid "Cannot execute Caja"
+msgid "Cannot execute Baul"
 msgstr ""
 
 #: drivemount/drive-button.c:943
@@ -2592,7 +2592,7 @@ msgid ""
 "Error while spawning baul:\n"
 "%s"
 msgstr ""
-"Feil under oppstart av Caja:\n"
+"Feil under oppstart av Baul:\n"
 "%s"
 
 #: trashapplet/src/trashapplet.c:432
