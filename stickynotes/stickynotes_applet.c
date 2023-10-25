@@ -213,7 +213,7 @@ void stickynotes_applet_init_prefs(void)
 
 	stickynotes->builder = ctk_builder_new ();
 
-        ctk_builder_add_from_file (stickynotes->builder, BUILDER_PATH, NULL);
+	ctk_builder_add_from_resource (stickynotes->builder, GRESOURCE "sticky-notes-preferences.ui", NULL);
 
 	stickynotes->w_prefs = CTK_WIDGET (ctk_builder_get_object (stickynotes->builder,
 			"preferences_dialog"));

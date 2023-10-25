@@ -290,7 +290,7 @@ void menu_destroy_all_cb(CtkAction *action, StickyNotesApplet *applet)
 	CtkBuilder *builder;
 
 	builder = ctk_builder_new ();
-  	ctk_builder_add_from_file (builder, BUILDER_PATH, NULL);
+	ctk_builder_add_from_resource (builder, GRESOURCE "sticky-notes-delete-all.ui", NULL);
 
 	if (applet->destroy_all_dialog != NULL) {
 		ctk_window_set_screen (CTK_WINDOW (applet->destroy_all_dialog),

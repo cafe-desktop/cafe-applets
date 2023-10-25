@@ -105,7 +105,8 @@ stickynote_new_aux (CdkScreen *screen, gint x, gint y, gint w, gint h)
 	note = g_new (StickyNote, 1);
 
 	builder = ctk_builder_new ();
-	ctk_builder_add_from_file (builder, BUILDER_PATH, NULL);
+	ctk_builder_add_from_resource (builder, GRESOURCE "sticky-notes-note.ui", NULL);
+	ctk_builder_add_from_resource (builder, GRESOURCE "sticky-notes-properties.ui", NULL);
 
 	note->w_window = CTK_WIDGET (ctk_builder_get_object (builder, "stickynote_window"));
 	ctk_window_set_screen(CTK_WINDOW(note->w_window),screen);
@@ -659,7 +660,7 @@ void stickynotes_remove(StickyNote *note)
 	CtkWidget *dialog;
 
 	builder = ctk_builder_new ();
-	ctk_builder_add_from_file (builder, BUILDER_PATH, NULL);
+	ctk_builder_add_from_resource (builder, GRESOURCE "sticky-notes-delete.ui", NULL);
 
 	dialog = CTK_WIDGET (ctk_builder_get_object (builder, "delete_dialog"));
 
