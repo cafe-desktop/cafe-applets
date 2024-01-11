@@ -39,6 +39,7 @@ about_cb (CtkAction       *action,
 		"Todd Kulesza <fflewddur@dropline.net>",
 		"Benoît Dejean <TazForEver@dlfp.org>",
 		"Davyd Madeley <davyd@madeley.id.au>",
+		"Pablo Barciela <scow@riseup.net>",
 		NULL
     };
 
@@ -46,6 +47,7 @@ about_cb (CtkAction       *action,
     {
 		"Chee Bin HOH <cbhoh@gnome.org>",
 		N_("Sun GNOME Documentation Team <gdocteam@sun.com>"),
+		N_("MATE Documentation Team"),
 		N_("CAFE Documentation Team"),
 		NULL
     };
@@ -60,7 +62,8 @@ about_cb (CtkAction       *action,
 	"title",        _("About System Monitor"),
 	"version",	VERSION,
 	"copyright",	_("Copyright \xc2\xa9 1999-2005 Free Software Foundation and others\n"
-	                  "Copyright \xc2\xa9 2012-2020 CAFE developers"),
+	                  "Copyright \xc2\xa9 2012-2020 MATE developers\n"
+	                  "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
 	"comments",	_("A system load monitor capable of displaying graphs "
 			"for CPU, ram, and swap space use, plus network "
 			"traffic."),

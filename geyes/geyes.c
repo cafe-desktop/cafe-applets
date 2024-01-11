@@ -157,6 +157,7 @@ about_cb (CtkAction   *action,
 {
     static const gchar *authors [] = {
                 "Dave Camp <campd@oit.edu>",
+                "Pablo Barciela <scow@riseup.net>",
                 NULL
 	};
 
@@ -164,6 +165,7 @@ about_cb (CtkAction   *action,
                 "Arjan Scherpenisse <acscherp@wins.uva.nl>",
                 "Telsa Gwynne <hobbit@aloss.ukuu.org.uk>",
                 N_("Sun GNOME Documentation Team <gdocteam@sun.com>"),
+                N_("MATE Documentation Team"),
                 N_("CAFE Documentation Team"),
 		NULL
 	};
@@ -180,7 +182,8 @@ about_cb (CtkAction   *action,
 		"comments",           _("A goofy set of eyes for the CAFE "
 		                      "panel. They follow your mouse."),
 		"copyright",          _("Copyright \xC2\xA9 1999 Dave Camp\n"
-		                        "Copyright \xc2\xa9 2012-2020 CAFE developers"),
+		                        "Copyright \xc2\xa9 2012-2020 MATE developers\n"
+		                        "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
 		"authors",            authors,
 		"documenters",        documenters,
 		"translator-credits", _("translator-credits"),

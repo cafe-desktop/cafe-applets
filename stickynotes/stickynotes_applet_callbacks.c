@@ -359,12 +359,14 @@ menu_about_cb (CtkAction *action,
 	static const gchar *authors[] = {
 		"Loban A Rahman <loban@earthling.net>",
 		"Davyd Madeley <davyd@madeley.id.au>",
+		"Pablo Barciela <scow@riseup.net>",
 		NULL
 	};
 
 	static const gchar *documenters[] = {
 		"Loban A Rahman <loban@earthling.net>",
 		N_("Sun GNOME Documentation Team <gdocteam@sun.com>"),
+		N_("MATE Documentation Team"),
 		N_("CAFE Documentation Team"),
 		NULL
 	};
@@ -380,7 +382,8 @@ menu_about_cb (CtkAction *action,
 		"version",	VERSION,
 		"copyright",	_("Copyright \xc2\xa9 2002-2003 Loban A Rahman\n"
 				  "Copyright \xc2\xa9 2005 Davyd Madeley\n"
-				  "Copyright \xc2\xa9 2012-2020 CAFE developers"),
+				  "Copyright \xc2\xa9 2012-2020 MATE developers\n"
+				  "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
 		"comments",	_("Sticky Notes for the "
 				  "CAFE Desktop Environment"),
 		"authors",	authors,

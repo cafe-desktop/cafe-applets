@@ -116,13 +116,16 @@ command_applet_destroy (CafePanelApplet *applet_widget, CommandApplet *command_a
 static void
 command_about_callback (CtkAction *action, CommandApplet *command_applet)
 {
-    const char* authors[] = { "Stefano Karapetsas <stefano@karapetsas.com>", NULL };
+    const char* authors[] = { "Stefano Karapetsas <stefano@karapetsas.com>",
+                              "Pablo Barciela <scow@riseup.net>",
+                              NULL };
 
     ctk_show_about_dialog(NULL,
                           "title", _("About Command Applet"),
                           "version", VERSION,
                           "copyright", _("Copyright \xc2\xa9 2013-2014 Stefano Karapetsas\n"
-                                         "Copyright \xc2\xa9 2015-2020 CAFE developers"),
+                                         "Copyright \xc2\xa9 2015-2020 CAFE developers\n"
+                                         "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
                           "authors", authors,
                           "comments", _("Shows the output of a command"),
                           "translator-credits", _("translator-credits"),

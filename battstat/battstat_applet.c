@@ -810,6 +810,7 @@ about_cb( CtkAction *action, ProgressData *battstat )
     "Davyd Madeley <davyd@madeley.id.au>",
     "Ryan Lortie <desrt@desrt.ca>",
     "Joe Marcus Clarke <marcus@FreeBSD.org> (FreeBSD ACPI support)",
+    "Pablo Barciela <scow@riseup.net>",
     NULL
    };
 
@@ -817,6 +818,7 @@ about_cb( CtkAction *action, ProgressData *battstat )
     "J\xC3\xB6rgen Pehrson <jp@spektr.eu.org>",
     "Trevor Curtis <tcurtis@somaradio.ca>",
     "Davyd Madeley <davyd@madeley.id.au>",
+    N_("MATE Documentation Team"),
     N_("CAFE Documentation Team"),
     NULL
   };
@@ -838,7 +840,8 @@ about_cb( CtkAction *action, ProgressData *battstat )
     "version",             VERSION,
     "copyright",           _("Copyright \xc2\xa9 2000 The Gnulix Society\n"
                              "Copyright \xc2\xa9 2002-2005 Free Software Foundation and others\n"
-                             "Copyright \xc2\xa9 2012-2020 CAFE developers"),
+                             "Copyright \xc2\xa9 2012-2020 MATE developers\n"
+                             "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
     "comments",            comments,
     "authors",             authors,
     "documenters",         documenters,

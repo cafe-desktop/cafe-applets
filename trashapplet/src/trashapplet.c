@@ -413,11 +413,13 @@ trash_applet_show_about (CtkAction   *action,
     "Sebastian Bacher <seb128@canonical.com>",
     "James Henstridge <james.henstridge@canonical.com>",
     "Ryan Lortie <desrt@desrt.ca>",
+    "Pablo Barciela <scow@riseup.net>",
     NULL
   };
 
   static const char *documenters[] = {
     "Michiel Sikkes <michiel@eyesopened.nl>",
+    N_("MATE Documentation Team"),
     N_("CAFE Documentation Team"),
     NULL
   };
@@ -433,7 +435,8 @@ trash_applet_show_about (CtkAction   *action,
                          "version", VERSION,
                          "copyright", _("Copyright \xc2\xa9 2004 Michiel Sikkes\n"
                                         "Copyright \xc2\xa9 2008 Ryan Lortie\n"
-                                        "Copyright \xc2\xa9 2012-2020 CAFE developers"),
+                                        "Copyright \xc2\xa9 2012-2020 MATE developers\n"
+                                        "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
                          "comments", _("A CAFE trash bin that lives in your panel. "
                                        "You can use it to view the trash or drag "
                                        "and drop items into the trash."),

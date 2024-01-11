@@ -22,8 +22,12 @@
 	   <para>The <application>&applet;</application> shows the status of the keyboard accessibility features.</para>
 	 </abstract>
     <copyright>
-      <year>2015-2020</year>
+      <year>2023-2024</year>
       <holder>CAFE Documentation Project</holder>
+    </copyright>
+    <copyright>
+      <year>2015-2020</year>
+      <holder>MATE Documentation Project</holder>
     </copyright>
 	 <copyright>
 	 	<year>2005</year>

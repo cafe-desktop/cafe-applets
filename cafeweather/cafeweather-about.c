@@ -32,6 +32,7 @@ void cafeweather_about_run(CafeWeatherApplet* gw_applet)
 		"Davyd Madeley <davyd@madeley.id.au>",
 		"Spiros Papadimitriou <spapadim+@cs.cmu.edu>",
 		"Kevin Vandersloot <kfv101@psu.edu>",
+		"Pablo Barciela <scow@riseup.net>",
 		NULL
 	};
 
@@ -40,6 +41,7 @@ void cafeweather_about_run(CafeWeatherApplet* gw_applet)
 		"Spiros Papadimitriou <spapadim+@cs.cmu.edu>",
 		N_("Sun GNOME Documentation Team <gdocteam@sun.com>"),
 		"Davyd Madeley <davyd@madeley.id.au>",
+		N_("MATE Documentation Team"),
 		N_("CAFE Documentation Team"),
 		NULL
 	};
@@ -54,7 +56,8 @@ void cafeweather_about_run(CafeWeatherApplet* gw_applet)
 		"title", _("About Weather Report"),
 		"version", VERSION,
 		"copyright", _("Copyright \xC2\xA9 1999-2005 by S. Papadimitriou and others\n"
-		               "Copyright \xc2\xa9 2012-2020 CAFE developers"),
+		               "Copyright \xc2\xa9 2012-2020 MATE developers\n"
+		               "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
 		"comments", _("A panel application for monitoring local weather conditions."),
 		"authors", authors,
 		"documenters", documenters,

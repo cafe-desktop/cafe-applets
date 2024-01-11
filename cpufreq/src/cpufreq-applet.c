@@ -458,11 +458,13 @@ cpufreq_applet_about_cb (CtkAction     *action,
 {
         static const gchar *const authors[] = {
                 "Carlos Garcia Campos <carlosgc@gnome.org>",
+                "Pablo Barciela <scow@riseup.net>",
                 NULL
         };
         static const gchar* documenters[] = {
                 "Carlos Garcia Campos <carlosgc@gnome.org>",
                 "Davyd Madeley <davyd@madeley.id.au>",
+                N_("MATE Documentation Team"),
                 N_("CAFE Documentation Team"),
                 NULL
         };
@@ -481,7 +483,8 @@ cpufreq_applet_about_cb (CtkAction     *action,
                                "title",         _("About CPU Frequency Scaling Monitor"),
                                "version",       VERSION,
                                "copyright",     _("Copyright \xC2\xA9 2004 Carlos Garcia Campos\n"
-                                                  "Copyright \xc2\xa9 2012-2020 CAFE developers"),
+                                                  "Copyright \xc2\xa9 2012-2020 MATE developers\n"
+                                                  "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
                                "comments",      _("This utility shows the current CPU "
                                                   "Frequency Scaling."),
                                "authors",       authors,

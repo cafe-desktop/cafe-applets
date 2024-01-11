@@ -564,12 +564,14 @@ about (CtkAction     *action,
   static const char * const authors[] = {
 	  "Alexandre Muñiz <munizao@xprt.net>",
 	  "Kevin Vandersloot",
+	  "Pablo Barciela <scow@riseup.net>",
 	  NULL
   };
 
   static const gchar* documenters[] = {
           "Dan Mueth <d-mueth@uchicago.edu>",
           N_("Sun GNOME Documentation Team <gdocteam@sun.com>"),
+          N_("MATE Documentation Team"),
           N_("CAFE Documentation Team"),
 	  NULL
   };
@@ -584,7 +586,8 @@ about (CtkAction     *action,
 	"title",        _("About Character Palette"),
 	"version",	VERSION,
 	"copyright",	_("Copyright \xc2\xa9 1998, 2004-2005 GNOME Applets Maintainers and others\n"
-	                  "Copyright \xc2\xa9 2012-2020 CAFE developers"),
+	                  "Copyright \xc2\xa9 2012-2020 MATE developers\n"
+	                  "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
 	"comments",	_("Cafe Panel applet for selecting strange "
 			  "characters that are not on my keyboard. "
 			  "Released under GNU General Public Licence."),
