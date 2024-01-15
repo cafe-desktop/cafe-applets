@@ -26,6 +26,13 @@
 
 #include <ctksourceview/ctksource.h>
 
+#ifndef G_DISABLE_CAST_CHECKS
+#  define _G_TYPE_CIC(ip, gt, ct) \
+    ((ct*) (void *) g_type_check_instance_cast ((GTypeInstance*) ip, gt))
+#  define _G_TYPE_CCC(cp, gt, ct) \
+    ((ct*) (void *) g_type_check_class_cast ((GTypeClass*) cp, gt))
+#endif
+
 typedef struct
 {
 	CtkWidget *w_window;		/* Sticky Note window */
