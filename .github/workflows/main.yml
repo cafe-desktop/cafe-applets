@@ -10,7 +10,7 @@ on:
 
 jobs:
   docker:
-    uses: cafe-desktop/cafe-common/.github/workflows/main.yml@deploytest
+    uses: cafe-desktop/cafe-common/.github/workflows/main.yml@master
     with:
       image_name: cafe-applets
       tag: $GITHUB_RUN_NUMBER
