@@ -51,7 +51,6 @@ requires:
     - autoconf-archive
     - intltool
     - gtk-doc-tools
-    - libsoup-gnome2.4-dev
     - libsoup2.4-dev
     - libtool
     - libxml2-utils
