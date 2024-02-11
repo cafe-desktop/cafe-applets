@@ -51,7 +51,7 @@ requires:
     - autoconf-archive
     - intltool
     - gtk-doc-tools
-    - libsoup2.4-dev
+    - libsoup-3.0-dev
     - libtool
     - libxml2-utils
     - tzdata
