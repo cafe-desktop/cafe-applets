@@ -1,0 +1,3 @@
+Revert "stickynotes: Use gresources for UI files"
+
+This reverts commit 78b59f39e164f6844036a1e54bfb1ab2bf772d88.

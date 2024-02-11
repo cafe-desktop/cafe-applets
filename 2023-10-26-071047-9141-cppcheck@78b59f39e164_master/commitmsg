@@ -1,0 +1,6 @@
+stickynotes: Use gresources for UI files
+
+based in mate-applets commit:
+https://github.com/mate-desktop/mate-applets/commit/37a85e35448f8beed2654a4df07a303283a86aac
+
+It fixes the buttons in dialogs
