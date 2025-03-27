@@ -1,0 +1,474 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cppcheck - HTML report - cafe-applets (cppcheck 2.17.1-1)</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+    </style>
+    <script>
+      function getStyle(el, styleProp) {
+        var y;
+
+        if (el.currentStyle) {
+          y = el.currentStyle[styleProp];
+        } else if (window.getComputedStyle) {
+          y = document.defaultView.getComputedStyle(el, null).getPropertyValue(styleProp);
+        }
+
+        return y;
+      }
+
+      function toggle() {
+        var el = this.expandable_content;
+        var mark = this.expandable_marker;
+
+        if (el.style.display === "block") {
+          el.style.display = "none";
+          mark.textContent = "[+]";
+        } else {
+          el.style.display = "block";
+          mark.textContent = "[-]";
+        }
+      }
+
+      function initExpandables() {
+        var elements = document.querySelectorAll(".expandable");
+
+        for (var i = 0, len = elements.length; i < len; i++) {
+          var el = elements[i];
+          var clickable = el.querySelector("span");
+          var marker = clickable.querySelector(".marker");
+          var content = el.querySelector(".content");
+          var width = clickable.clientWidth - parseInt(getStyle(content, "padding-left")) - parseInt(getStyle(content, "padding-right"));
+          content.style.width = width + "px";
+          clickable.expandable_content = content;
+          clickable.expandable_marker = marker;
+          clickable.addEventListener("click", toggle);
+        }
+      }
+
+      function toggleDisplay(cb) {
+        var elements = document.querySelectorAll("." + cb.id);
+
+        for (var i = 0, len = elements.length; i < len; i++) {
+          elements[i].classList.toggle("id-filtered", !cb.checked);
+        }
+
+        updateFileRows();
+      }
+
+      function toggleSeverity(cb) {
+        cb.parentElement.classList.toggle("unchecked", !cb.checked);
+        var elements = document.querySelectorAll(".sev_" + cb.id);
+
+        for (var i = 0, len = elements.length; i < len; i++) {
+          elements[i].classList.toggle("severity-filtered", !cb.checked);
+        }
+
+        updateFileRows();
+      }
+
+      function toggleTool(cb) {
+        cb.parentElement.classList.toggle("unchecked", !cb.checked);
+
+        var elements;
+        if (cb.id == "clang-tidy")
+            elements = document.querySelectorAll("[class^=clang-tidy-]");
+        else
+            elements = document.querySelectorAll(".issue:not([class^=clang-tidy-])");
+
+        for (var i = 0, len = elements.length; i < len; i++) {
+          elements[i].classList.toggle("tool-filtered", !cb.checked);
+        }
+
+        updateFileRows();
+      }
+
+      function toggleAll() {
+        var elements = document.querySelectorAll(".idToggle");
+
+        // starting from 1 since 0 is the "toggle all" input
+        for (var i = 1, len = elements.length; i < len; i++) {
+          var changed = elements[i].checked != elements[0].checked;
+          if (changed) {
+            elements[i].checked = elements[0].checked;
+            toggleDisplay(elements[i]);
+          }
+        }
+      }
+
+      function filterFile(filter) {
+        var elements = document.querySelectorAll(".fileEntry");
+
+        for (var i = 0, len = elements.length; i < len; i++) {
+          var visible = elements[i].querySelector("tr").querySelector("td").textContent.toLowerCase().includes(filter.toLowerCase());
+          elements[i].classList.toggle("text-filtered", !visible);
+        }
+      }
+
+      function filterText(text) {
+        filter = text.toLowerCase();
+        var elements = document.querySelectorAll(".issue");
+
+        for (var i = 0, len = elements.length; i < len; i++) {
+          var visible = false;
+          var fields = elements[i].querySelectorAll("td");
+          for (var n = 0, num = fields.length; n < num; n++) {
+            if (fields[n].textContent.toLowerCase().includes(filter)) {
+              visible = true;
+              break;
+            }
+          }
+          elements[i].classList.toggle("text-filtered", !visible);
+        }
+
+        updateFileRows();
+      }
+
+      function updateFileRows(element) {
+        var elements = document.querySelectorAll(".fileEntry");
+
+        for (var i = 0, len = elements.length; i < len; i++) {
+          var visible = elements[i].querySelector(".issue:not(.id-filtered):not(.severity-filtered):not(.tool-filtered):not(.text-filtered)");
+          elements[i].classList.toggle("file-filtered", !visible);
+        }
+      }
+
+      window.addEventListener("load", initExpandables);
+    </script>
+  </head>
+  <body>
+    <div id="wrapper">
+    <div id="header" class="header">
+      <h1>Cppcheck report - cafe-applets (cppcheck 2.17.1-1)</h1>
+      <div id="filters">
+
+        <label class="checkBtn"><input type="checkbox" onclick="toggleSeverity(this)" id="error"checked/>error</label>
+        <label class="checkBtn"><input type="checkbox" onclick="toggleSeverity(this)" id="warning"checked/>warning</label>
+        <label class="checkBtn disabled"><input type="checkbox" onclick="toggleSeverity(this)" id="portability"disabled/>portability</label>
+        <label class="checkBtn disabled"><input type="checkbox" onclick="toggleSeverity(this)" id="performance"disabled/>performance</label>
+        <label class="checkBtn"><input type="checkbox" onclick="toggleSeverity(this)" id="style"checked/>style</label>
+        <label class="checkBtn"><input type="checkbox" onclick="toggleSeverity(this)" id="information"checked/>information</label>
+        | 
+        <label class="checkBtn"><input type="checkbox" onclick="toggleTool(this)" id="cppcheck"checked/>cppcheck</label>
+        <label class="checkBtn disabled"><input type="checkbox" onclick="toggleTool(this)" id="clang-tidy"disabled/>clang-tidy</label>
+        | 
+        <label class="severityHeader">File: <input type="search" oninput="filterFile(this.value)"/></label>
+        <label class="severityHeader">Filter: <input type="search" oninput="filterText(this.value)"/></label>
+      </div>
+
+    </div>
+
+    <div id="menu_index">
+     <p><a href="index.html">Defect summary</a> </p>
+
+       <label><input type="checkbox" class="idToggle" onclick="toggleAll()" checked> Toggle all</label>
+       <table>
+           <tr><th>Show</th><th>#</th><th>Defect ID</th></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="variableScope" name="variableScope" checked></td><td>51</td><td>variableScope</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="unknownMacro" name="unknownMacro" checked></td><td>17</td><td>unknownMacro</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="constParameterPointer" name="constParameterPointer" checked></td><td>16</td><td>constParameterPointer</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="unusedVariable" name="unusedVariable" checked></td><td>15</td><td>unusedVariable</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="constParameterCallback" name="constParameterCallback" checked></td><td>14</td><td>constParameterCallback</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="constVariablePointer" name="constVariablePointer" checked></td><td>11</td><td>constVariablePointer</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="unreadVariable" name="unreadVariable" checked></td><td>11</td><td>unreadVariable</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="negativeIndex" name="negativeIndex" checked></td><td>8</td><td>negativeIndex</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="staticFunction" name="staticFunction" checked></td><td>7</td><td>staticFunction</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="invalidScanfArgType_int" name="invalidScanfArgType_int" checked></td><td>6</td><td>invalidScanfArgType_int</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="legacyUninitvar" name="legacyUninitvar" checked></td><td>3</td><td>legacyUninitvar</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="clarifyCalculation" name="clarifyCalculation" checked></td><td>2</td><td>clarifyCalculation</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="duplicateConditionalAssign" name="duplicateConditionalAssign" checked></td><td>2</td><td>duplicateConditionalAssign</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="redundantAssignment" name="redundantAssignment" checked></td><td>2</td><td>redundantAssignment</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="checkersReport" name="checkersReport" checked></td><td>1</td><td>checkersReport</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="invalidscanf" name="invalidscanf" checked></td><td>1</td><td>invalidscanf</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="knownConditionTrueFalse" name="knownConditionTrueFalse" checked></td><td>1</td><td>knownConditionTrueFalse</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="nullPointerRedundantCheck" name="nullPointerRedundantCheck" checked></td><td>1</td><td>nullPointerRedundantCheck</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="shadowVariable" name="shadowVariable" checked></td><td>1</td><td>shadowVariable</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="uninitvar" name="uninitvar" checked></td><td>1</td><td>uninitvar</td></tr>
+            <tr><td><input type="checkbox" class="idToggle" onclick="toggleDisplay(this)" id="unusedStructMember" name="unusedStructMember" checked></td><td>1</td><td>unusedStructMember</td></tr>
+           <tr><td></td><td>172</td><td>total</td></tr>
+       </table>
+       <p><a href="stats.html">Statistics</a></p>
+    </div>
+    <div id="content_index">
+
+       <table class="summaryTable">
+       <tr><th>Line</th><th>Id</th><th>CWE</th><th>Severity</th><th>Message</th></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="45.html"></a></td></tr>
+         <tr class="checkersReport sev_information issue"><td></td><td>checkersReport</td><td></td><td>information</td><td>Active checkers: There was critical errors (use --checkers-report=&lt;filename&gt; to see details)</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="0.html">accessx-status/applet.c</a></td></tr>
+         <tr class="unusedStructMember sev_style issue"><td><a href="0.html#line-49">49</a></td><td>unusedStructMember</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>struct member &apos;ModifierStruct::icon_name&apos; is never used.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="0.html#line-143">143</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;launch_context&apos; can be reduced.</td></tr>
+         <tr class="nullPointerRedundantCheck sev_warning issue"><td><a href="0.html#line-226">226</a></td><td>nullPointerRedundantCheck</td><td><a href="https://cwe.mitre.org/data/definitions/476.html">476</a></td><td>warning</td><td class="warning">Either the condition &apos;sapplet&apos; is redundant or there is possible null pointer dereference: sapplet.</td></tr>
+         <tr class="unusedVariable sev_style issue"><td><a href="0.html#line-409">409</a></td><td>unusedVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Unused variable: cr</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="0.html#line-469">469</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;window&apos; can be reduced.</td></tr>
+         <tr class="constParameterPointer sev_style issue"><td><a href="0.html#line-623">623</a></td><td>constParameterPointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;event&apos; can be declared as pointer to const</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="0.html#line-625">625</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;button_pixbuf&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="0.html#line-680">680</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;icon_theme&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="0.html#line-989">989</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;sapplet&apos; can be reduced.</td></tr>
+         <tr class="constParameterCallback sev_style issue"><td><a href="0.html#line-1271">1271</a></td><td>constParameterCallback</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;event&apos; can be declared as pointer to const. However it seems that &apos;button_press_cb&apos; is a callback function, if &apos;event&apos; is declared with const you might also need to cast function pointer(s).</td></tr>
+         <tr class="constParameterCallback sev_style issue"><td><a href="0.html#line-1281">1281</a></td><td>constParameterCallback</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;event&apos; can be declared as pointer to const. However it seems that &apos;key_press_cb&apos; is a callback function, if &apos;event&apos; is declared with const you might also need to cast function pointer(s).</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="1.html">battstat/acpi-freebsd.c</a></td></tr>
+         <tr class="unusedVariable sev_style issue"><td><a href="1.html#line-144">144</a></td><td>unusedVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Unused variable: acline</td></tr>
+         <tr class="legacyUninitvar sev_error issue"><td><a href="1.html#line-163">163</a></td><td>legacyUninitvar</td><td><a href="https://cwe.mitre.org/data/definitions/457.html">457</a></td><td>error</td><td class="error">Uninitialized variable: remain</td></tr>
+         <tr class="legacyUninitvar sev_error issue"><td><a href="1.html#line-164">164</a></td><td>legacyUninitvar</td><td><a href="https://cwe.mitre.org/data/definitions/457.html">457</a></td><td>error</td><td class="error">Uninitialized variable: rate</td></tr>
+         <tr class="knownConditionTrueFalse sev_style issue"><td><a href="1.html#line-200">200</a></td><td>knownConditionTrueFalse</td><td><a href="https://cwe.mitre.org/data/definitions/571.html">571</a></td><td>style</td><td>Condition &apos;charging&apos; is always true</td></tr>
+         <tr class="constParameterPointer sev_style issue"><td><a href="1.html#line-212">212</a></td><td>constParameterPointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;acpiinfo&apos; can be declared as pointer to const</td></tr>
+         <tr class="constParameterPointer sev_style issue"><td><a href="1.html#line-218">218</a></td><td>constParameterPointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;acpiinfo&apos; can be declared as pointer to const</td></tr>
+         <tr class="constParameterPointer sev_style issue"><td><a href="1.html#line-224">224</a></td><td>constParameterPointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;apminfo&apos; can be declared as pointer to const</td></tr>
+         <tr class="constParameterPointer sev_style issue"><td><a href="1.html#line-224">224</a></td><td>constParameterPointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;acpiinfo&apos; can be declared as pointer to const</td></tr>
+         <tr class="constParameterPointer sev_style issue"><td><a href="1.html#line-230">230</a></td><td>constParameterPointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;acpiinfo&apos; can be declared as pointer to const</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="2.html">battstat/acpi-linux.c</a></td></tr>
+         <tr class="constVariablePointer sev_style issue"><td><a href="2.html#line-125">125</a></td><td>constVariablePointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Variable &apos;s&apos; can be declared as pointer to const</td></tr>
+         <tr class="constVariablePointer sev_style issue"><td><a href="2.html#line-137">137</a></td><td>constVariablePointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Variable &apos;s&apos; can be declared as pointer to const</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="3.html">battstat/apmlib/apmlib.c</a></td></tr>
+         <tr class="invalidScanfArgType_int sev_warning issue"><td><a href="3.html#line-71">71</a></td><td>invalidScanfArgType_int</td><td><a href="https://cwe.mitre.org/data/definitions/686.html">686</a></td><td>warning</td><td class="warning">%x in format string (no. 4) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;.</td></tr>
+         <tr class="invalidScanfArgType_int sev_warning issue"><td><a href="3.html#line-71">71</a></td><td>invalidScanfArgType_int</td><td><a href="https://cwe.mitre.org/data/definitions/686.html">686</a></td><td>warning</td><td class="warning">%x in format string (no. 5) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;.</td></tr>
+         <tr class="invalidScanfArgType_int sev_warning issue"><td><a href="3.html#line-71">71</a></td><td>invalidScanfArgType_int</td><td><a href="https://cwe.mitre.org/data/definitions/686.html">686</a></td><td>warning</td><td class="warning">%x in format string (no. 6) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;.</td></tr>
+         <tr class="invalidScanfArgType_int sev_warning issue"><td><a href="3.html#line-71">71</a></td><td>invalidScanfArgType_int</td><td><a href="https://cwe.mitre.org/data/definitions/686.html">686</a></td><td>warning</td><td class="warning">%x in format string (no. 7) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;.</td></tr>
+         <tr class="invalidscanf sev_warning issue"><td><a href="3.html#line-71">71</a></td><td>invalidscanf</td><td><a href="https://cwe.mitre.org/data/definitions/119.html">119</a></td><td>warning</td><td class="warning">sscanf() without field width limits can crash with huge input data.</td></tr>
+         <tr class="invalidScanfArgType_int sev_warning issue"><td><a href="3.html#line-105">105</a></td><td>invalidScanfArgType_int</td><td><a href="https://cwe.mitre.org/data/definitions/686.html">686</a></td><td>warning</td><td class="warning">%x in format string (no. 1) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;.</td></tr>
+         <tr class="invalidScanfArgType_int sev_warning issue"><td><a href="3.html#line-145">145</a></td><td>invalidScanfArgType_int</td><td><a href="https://cwe.mitre.org/data/definitions/686.html">686</a></td><td>warning</td><td class="warning">%x in format string (no. 1) requires &apos;unsigned int *&apos; but the argument type is &apos;signed int *&apos;.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="3.html#line-218">218</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;fd&apos; can be reduced.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="4.html">battstat/battstat-upower.c</a></td></tr>
+         <tr class="constParameterCallback sev_style issue"><td><a href="4.html#line-66">66</a></td><td>constParameterCallback</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;client&apos; can be declared as pointer to const. However it seems that &apos;device_cb&apos; is a callback function, if &apos;client&apos; is declared with const you might also need to cast function pointer(s).</td></tr>
+         <tr class="constParameterCallback sev_style issue"><td><a href="4.html#line-66">66</a></td><td>constParameterCallback</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;device&apos; can be declared as pointer to const. However it seems that &apos;device_cb&apos; is a callback function, if &apos;device&apos; is declared with const you might also need to cast function pointer(s).</td></tr>
+         <tr class="unusedVariable sev_style issue"><td><a href="4.html#line-83">83</a></td><td>unusedVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Unused variable: i</td></tr>
+         <tr class="unusedVariable sev_style issue"><td><a href="4.html#line-83">83</a></td><td>unusedVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Unused variable: num</td></tr>
+         <tr class="legacyUninitvar sev_error issue"><td><a href="4.html#line-107">107</a></td><td>legacyUninitvar</td><td><a href="https://cwe.mitre.org/data/definitions/457.html">457</a></td><td>error</td><td class="error">Uninitialized variable: error_str</td></tr>
+         <tr class="unusedVariable sev_style issue"><td><a href="4.html#line-203">203</a></td><td>unusedVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Unused variable: item</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="5.html">battstat/battstat_applet.c</a></td></tr>
+         <tr class="constParameterPointer sev_style issue"><td><a href="5.html#line-222">222</a></td><td>constParameterPointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;applet&apos; can be declared as pointer to const</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="5.html#line-488">488</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;powerstring&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="5.html#line-489">489</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;remaining&apos; can be reduced.</td></tr>
+         <tr class="constParameterCallback sev_style issue"><td><a href="5.html#line-900">900</a></td><td>constParameterCallback</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;allocation&apos; can be declared as pointer to const. However it seems that &apos;size_allocate&apos; is a callback function, if &apos;allocation&apos; is declared with const you might also need to cast function pointer(s).</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="6.html">battstat/power-management.c</a></td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="6.html#line-190">190</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;fd&apos; can be reduced.</td></tr>
+         <tr class="unusedVariable sev_style issue"><td><a href="6.html#line-437">437</a></td><td>unusedVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Unused variable: err</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="7.html">cafeweather/cafeweather-applet.c</a></td></tr>
+         <tr class="constParameterCallback sev_style issue"><td><a href="7.html#line-210">210</a></td><td>constParameterCallback</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;allocation&apos; can be declared as pointer to const. However it seems that &apos;size_allocate_cb&apos; is a callback function, if &apos;allocation&apos; is declared with const you might also need to cast function pointer(s).</td></tr>
+         <tr class="constParameterCallback sev_style issue"><td><a href="7.html#line-228">228</a></td><td>constParameterCallback</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;ev&apos; can be declared as pointer to const. However it seems that &apos;clicked_cb&apos; is a callback function, if &apos;ev&apos; is declared with const you might also need to cast function pointer(s).</td></tr>
+         <tr class="constParameterCallback sev_style issue"><td><a href="7.html#line-248">248</a></td><td>constParameterCallback</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;event&apos; can be declared as pointer to const. However it seems that &apos;key_press_cb&apos; is a callback function, if &apos;event&apos; is declared with const you might also need to cast function pointer(s).</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="7.html#line-463">463</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;n&apos; can be reduced.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="8.html">cafeweather/cafeweather-dialog.c</a></td></tr>
+         <tr class="constVariablePointer sev_style issue"><td><a href="8.html#line-63">63</a></td><td>constVariablePointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Variable &apos;settings&apos; can be declared as pointer to const</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="8.html#line-66">66</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;settings&apos; is assigned a value that is never used.</td></tr>
+         <tr class="constVariablePointer sev_style issue"><td><a href="8.html#line-79">79</a></td><td>constVariablePointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Variable &apos;settings&apos; can be declared as pointer to const</td></tr>
+         <tr class="unusedVariable sev_style issue"><td><a href="8.html#line-80">80</a></td><td>unusedVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Unused variable: w</td></tr>
+         <tr class="unusedVariable sev_style issue"><td><a href="8.html#line-80">80</a></td><td>unusedVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Unused variable: h</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="8.html#line-82">82</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;settings&apos; is assigned a value that is never used.</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="8.html#line-118">118</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;count&apos; is assigned a value that is never used.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="8.html#line-167">167</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;forecast_note_lbl&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="8.html#line-168">168</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;radar_note_lbl&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="8.html#line-169">169</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;radar_vbox&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="8.html#line-170">170</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;radar_link_btn&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="8.html#line-171">171</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;radar_link_box&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="8.html#line-172">172</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;forecast_hbox&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="8.html#line-173">173</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;ebox&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="8.html#line-174">174</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;scrolled_window&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="8.html#line-175">175</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;imagescroll_window&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="8.html#line-557">557</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;buffer&apos; can be reduced.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="9.html">cafeweather/cafeweather-pref.c</a></td></tr>
+         <tr class="constVariablePointer sev_style issue"><td><a href="9.html#line-266">266</a></td><td>constVariablePointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Variable &apos;gw_applet&apos; can be declared as pointer to const</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="9.html#line-266">266</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;gw_applet&apos; is assigned a value that is never used.</td></tr>
+         <tr class="unusedVariable sev_style issue"><td><a href="9.html#line-270">270</a></td><td>unusedVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Unused variable: current_location</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="9.html#line-646">646</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;path&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="9.html#line-700">700</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;path&apos; can be reduced.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="10.html">charpick/charpick.c</a></td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="10.html#line-154">154</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;curr_data&apos; can be reduced.</td></tr>
+         <tr class="constParameterCallback sev_style issue"><td><a href="10.html#line-203">203</a></td><td>constParameterCallback</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;widget&apos; can be declared as pointer to const. However it seems that &apos;key_press_event&apos; is a callback function, if &apos;widget&apos; is declared with const you might also need to cast function pointer(s).</td></tr>
+         <tr class="constParameterCallback sev_style issue"><td><a href="10.html#line-203">203</a></td><td>constParameterCallback</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;event&apos; can be declared as pointer to const. However it seems that &apos;key_press_event&apos; is a callback function, if &apos;event&apos; is declared with const you might also need to cast function pointer(s).</td></tr>
+         <tr class="constVariablePointer sev_style issue"><td><a href="10.html#line-277">277</a></td><td>constVariablePointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Variable &apos;applet&apos; can be declared as pointer to const</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="10.html#line-277">277</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;applet&apos; is assigned a value that is never used.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="10.html#line-295">295</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;menuitem&apos; can be reduced.</td></tr>
+         <tr class="constParameterCallback sev_style issue"><td><a href="10.html#line-530">530</a></td><td>constParameterCallback</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;allocation&apos; can be declared as pointer to const. However it seems that &apos;applet_size_allocate&apos; is a callback function, if &apos;allocation&apos; is declared with const you might also need to cast function pointer(s).</td></tr>
+         <tr class="constVariablePointer sev_style issue"><td><a href="10.html#line-649">649</a></td><td>constVariablePointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Variable &apos;applet&apos; can be declared as pointer to const</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="10.html#line-649">649</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;applet&apos; is assigned a value that is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="11.html">charpick/properties.c</a></td></tr>
+         <tr class="staticFunction sev_style issue"><td><a href="11.html#line-86">86</a></td><td>staticFunction</td><td></td><td>style</td><td>The function &apos;add_edit_dialog_create&apos; should have static linkage since it is not used outside of its translation unit.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="11.html#line-263">263</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;selection&apos; can be reduced.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="12.html">command/command.c</a></td></tr>
+         <tr class="duplicateConditionalAssign sev_style issue"><td><a href="12.html#line-287">287</a></td><td>duplicateConditionalAssign</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The statement &apos;if (command_applet-&gt;width!=width) command_applet-&gt;width=width&apos; is logically equivalent to &apos;command_applet-&gt;width=width&apos;.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="13.html">command/ma-command.c</a></td></tr>
+         <tr class="unknownMacro sev_error issue"><td><a href="13.html#line-56">56</a></td><td>unknownMacro</td><td></td><td>error</td><td class="error">There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE_WITH_CODE is a macro then please configure it.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="14.html">cpufreq/src/cpufreq-applet.c</a></td></tr>
+         <tr class="unknownMacro sev_error issue"><td><a href="14.html#line-127">127</a></td><td>unknownMacro</td><td></td><td>error</td><td class="error">There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="15.html">cpufreq/src/cpufreq-monitor-cpuinfo.c</a></td></tr>
+         <tr class="unknownMacro sev_error issue"><td><a href="15.html#line-37">37</a></td><td>unknownMacro</td><td></td><td>error</td><td class="error">There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="16.html">cpufreq/src/cpufreq-monitor-libcpufreq.c</a></td></tr>
+         <tr class="unknownMacro sev_error issue"><td><a href="16.html#line-38">38</a></td><td>unknownMacro</td><td></td><td>error</td><td class="error">There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="17.html">cpufreq/src/cpufreq-monitor-procfs.c</a></td></tr>
+         <tr class="unknownMacro sev_error issue"><td><a href="17.html#line-35">35</a></td><td>unknownMacro</td><td></td><td>error</td><td class="error">There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="18.html">cpufreq/src/cpufreq-monitor-sysfs.c</a></td></tr>
+         <tr class="unknownMacro sev_error issue"><td><a href="18.html#line-67">67</a></td><td>unknownMacro</td><td></td><td>error</td><td class="error">There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="19.html">cpufreq/src/cpufreq-monitor.c</a></td></tr>
+         <tr class="unknownMacro sev_error issue"><td><a href="19.html#line-68">68</a></td><td>unknownMacro</td><td></td><td>error</td><td class="error">There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_ABSTRACT_TYPE_WITH_PRIVATE is a macro then please configure it.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="20.html">cpufreq/src/cpufreq-popup.c</a></td></tr>
+         <tr class="unknownMacro sev_error issue"><td><a href="20.html#line-53">53</a></td><td>unknownMacro</td><td></td><td>error</td><td class="error">There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE_WITH_PRIVATE is a macro then please configure it.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="21.html">cpufreq/src/cpufreq-prefs.c</a></td></tr>
+         <tr class="unknownMacro sev_error issue"><td><a href="21.html#line-71">71</a></td><td>unknownMacro</td><td></td><td>error</td><td class="error">There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE_WITH_PRIVATE is a macro then please configure it.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="22.html">cpufreq/src/cpufreq-selector.c</a></td></tr>
+         <tr class="unknownMacro sev_error issue"><td><a href="22.html#line-41">41</a></td><td>unknownMacro</td><td></td><td>error</td><td class="error">There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="23.html">cpufreq/src/cpufreq-selector/cpufreq-selector-libcpufreq.c</a></td></tr>
+         <tr class="unknownMacro sev_error issue"><td><a href="23.html#line-41">41</a></td><td>unknownMacro</td><td></td><td>error</td><td class="error">There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="24.html">cpufreq/src/cpufreq-selector/cpufreq-selector-procfs.c</a></td></tr>
+         <tr class="unknownMacro sev_error issue"><td><a href="24.html#line-37">37</a></td><td>unknownMacro</td><td></td><td>error</td><td class="error">There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="25.html">cpufreq/src/cpufreq-selector/cpufreq-selector-service.c</a></td></tr>
+         <tr class="unknownMacro sev_error issue"><td><a href="25.html#line-47">47</a></td><td>unknownMacro</td><td></td><td>error</td><td class="error">There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="26.html">cpufreq/src/cpufreq-selector/cpufreq-selector-sysfs.c</a></td></tr>
+         <tr class="unknownMacro sev_error issue"><td><a href="26.html#line-45">45</a></td><td>unknownMacro</td><td></td><td>error</td><td class="error">There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE_WITH_PRIVATE is a macro then please configure it.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="27.html">cpufreq/src/cpufreq-selector/cpufreq-selector.c</a></td></tr>
+         <tr class="unknownMacro sev_error issue"><td><a href="27.html#line-43">43</a></td><td>unknownMacro</td><td></td><td>error</td><td class="error">There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_ABSTRACT_TYPE_WITH_PRIVATE is a macro then please configure it.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="28.html">drivemount/drive-button.c</a></td></tr>
+         <tr class="unknownMacro sev_error issue"><td><a href="28.html#line-44">44</a></td><td>unknownMacro</td><td></td><td>error</td><td class="error">There is an unknown macro here somewhere. Configuration is required. If G_DEFINE_TYPE is a macro then please configure it.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="44.html">drivemount/drive-list.c</a></td></tr>
+         <tr class="staticFunction sev_style issue"><td><a href="44.html#line-497">497</a></td><td>staticFunction</td><td></td><td>style</td><td>The function &apos;drive_list_redraw&apos; should have static linkage since it is not used outside of its translation unit.</td></tr>
+         <tr class="staticFunction sev_style issue"><td><a href="44.html#line-504">504</a></td><td>staticFunction</td><td></td><td>style</td><td>The function &apos;settings_color_changed&apos; should have static linkage since it is not used outside of its translation unit.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="29.html">drivemount/drivemount.c</a></td></tr>
+         <tr class="constParameterCallback sev_style issue"><td><a href="29.html#line-59">59</a></td><td>constParameterCallback</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;allocation&apos; can be declared as pointer to const. However it seems that &apos;size_allocate&apos; is a callback function, if &apos;allocation&apos; is declared with const you might also need to cast function pointer(s).</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="29.html#line-182">182</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;drive_list&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="29.html#line-183">183</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;ao&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="29.html#line-184">184</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;action_group&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="29.html#line-185">185</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;ui_path&apos; can be reduced.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="30.html">geyes/geyes.c</a></td></tr>
+         <tr class="constParameterPointer sev_style issue"><td><a href="30.html#line-47">47</a></td><td>constParameterPointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;eyes_applet&apos; can be declared as pointer to const</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="31.html">geyes/themes.c</a></td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="31.html#line-58">58</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;token&apos; can be reduced.</td></tr>
+         <tr class="redundantAssignment sev_style issue"><td><a href="31.html#line-82">82</a></td><td>redundantAssignment</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;token&apos; is reassigned a value before the old one has been used.</td></tr>
+         <tr class="redundantAssignment sev_style issue"><td><a href="31.html#line-90">90</a></td><td>redundantAssignment</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;token&apos; is reassigned a value before the old one has been used.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="31.html#line-106">106</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;dialog&apos; can be reduced.</td></tr>
+         <tr class="constVariablePointer sev_style issue"><td><a href="31.html#line-265">265</a></td><td>constVariablePointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Variable &apos;dp&apos; can be declared as pointer to const</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="32.html">multiload/linux-proc.c</a></td></tr>
+         <tr class="unusedVariable sev_style issue"><td><a href="32.html#line-299">299</a></td><td>unusedVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Unused variable: used</td></tr>
+         <tr class="constParameterPointer sev_style issue"><td><a href="32.html#line-319">319</a></td><td>constParameterPointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;device&apos; can be declared as pointer to const</td></tr>
+         <tr class="unusedVariable sev_style issue"><td><a href="32.html#line-383">383</a></td><td>unusedVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Unused variable: index</td></tr>
+         <tr class="unusedVariable sev_style issue"><td><a href="32.html#line-422">422</a></td><td>unusedVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Unused variable: max</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="32.html#line-423">423</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;total&apos; is assigned a value that is never used.</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="32.html#line-432">432</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;total&apos; is assigned a value that is never used.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="33.html">multiload/load-graph.c</a></td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="33.html#line-53">53</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;load&apos; can be reduced.</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="33.html#line-96">96</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;combined&apos; is assigned a value that is never used.</td></tr>
+         <tr class="unusedVariable sev_style issue"><td><a href="33.html#line-109">109</a></td><td>unusedVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Unused variable: grid_color</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="33.html#line-158">158</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;spacing&apos; can be reduced.</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="33.html#line-158">158</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;spacing&apos; is assigned a value that is never used.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="33.html#line-213">213</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;spacing&apos; can be reduced.</td></tr>
+         <tr class="unreadVariable sev_style issue"><td><a href="33.html#line-213">213</a></td><td>unreadVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Variable &apos;spacing&apos; is assigned a value that is never used.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="33.html#line-382">382</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;name&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="33.html#line-382">382</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;temp&apos; can be reduced.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="34.html">multiload/main.c</a></td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="34.html#line-106">106</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;launch_context&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="34.html#line-108">108</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;app_info&apos; can be reduced.</td></tr>
+         <tr class="shadowVariable sev_style issue"><td><a href="34.html#line-120">120</a></td><td>shadowVariable</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Local variable &apos;screen&apos; shadows outer variable</td></tr>
+         <tr class="constParameterCallback sev_style issue"><td><a href="34.html#line-233">233</a></td><td>constParameterCallback</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;event&apos; can be declared as pointer to const. However it seems that &apos;multiload_button_press_event_cb&apos; is a callback function, if &apos;event&apos; is declared with const you might also need to cast function pointer(s).</td></tr>
+         <tr class="constParameterCallback sev_style issue"><td><a href="34.html#line-246">246</a></td><td>constParameterCallback</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;event&apos; can be declared as pointer to const. However it seems that &apos;multiload_key_press_event_cb&apos; is a callback function, if &apos;event&apos; is declared with const you might also need to cast function pointer(s).</td></tr>
+         <tr class="staticFunction sev_style issue"><td><a href="34.html#line-433">433</a></td><td>staticFunction</td><td></td><td>style</td><td>The function &apos;multiload_applet_refresh&apos; should have static linkage since it is not used outside of its translation unit.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="35.html">netspeed/src/backend.c</a></td></tr>
+         <tr class="constVariablePointer sev_style issue"><td><a href="35.html#line-100">100</a></td><td>constVariablePointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Variable &apos;rv&apos; can be declared as pointer to const</td></tr>
+         <tr class="clarifyCalculation sev_style issue"><td><a href="35.html#line-210">210</a></td><td>clarifyCalculation</td><td><a href="https://cwe.mitre.org/data/definitions/783.html">783</a></td><td>style</td><td>Clarify calculation precedence for &apos;&amp;&apos; and &apos;?&apos;.</td></tr>
+         <tr class="clarifyCalculation sev_style issue"><td><a href="35.html#line-211">211</a></td><td>clarifyCalculation</td><td><a href="https://cwe.mitre.org/data/definitions/783.html">783</a></td><td>style</td><td>Clarify calculation precedence for &apos;&amp;&apos; and &apos;?&apos;.</td></tr>
+         <tr class="staticFunction sev_style issue"><td><a href="35.html#line-284">284</a></td><td>staticFunction</td><td></td><td>style</td><td>The function &apos;get_wireless_info&apos; should have static linkage since it is not used outside of its translation unit.</td></tr>
+         <tr class="duplicateConditionalAssign sev_style issue"><td><a href="35.html#line-317">317</a></td><td>duplicateConditionalAssign</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The statement &apos;if (devinfo-&gt;qual!=newqual) devinfo-&gt;qual=newqual&apos; is logically equivalent to &apos;devinfo-&gt;qual=newqual&apos;.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="36.html">netspeed/src/netspeed.c</a></td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="36.html#line-147">147</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;down&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="36.html#line-361">361</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;surface&apos; can be reduced.</td></tr>
+         <tr class="constVariablePointer sev_style issue"><td><a href="36.html#line-396">396</a></td><td>constVariablePointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Variable &apos;applet&apos; can be declared as pointer to const</td></tr>
+         <tr class="unusedVariable sev_style issue"><td><a href="36.html#line-583">583</a></td><td>unusedVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Unused variable: info</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="36.html#line-607">607</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;inrate&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="36.html#line-607">607</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;outrate&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="36.html#line-608">608</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;inbytes&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="36.html#line-608">608</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;outbytes&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="36.html#line-845">845</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;i&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="36.html#line-1439">1439</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;dialog&apos; can be reduced.</td></tr>
+         <tr class="unusedVariable sev_style issue"><td><a href="36.html#line-1574">1574</a></td><td>unusedVariable</td><td><a href="https://cwe.mitre.org/data/definitions/563.html">563</a></td><td>style</td><td>Unused variable: menu_string</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="37.html">stickynotes/stickynotes.c</a></td></tr>
+         <tr class="staticFunction sev_style issue"><td><a href="37.html#line-308">308</a></td><td>staticFunction</td><td></td><td>style</td><td>The function &apos;stickynote_new&apos; should have static linkage since it is not used outside of its translation unit.</td></tr>
+         <tr class="staticFunction sev_style issue"><td><a href="37.html#line-392">392</a></td><td>staticFunction</td><td></td><td>style</td><td>The function &apos;stickynote_get_empty&apos; should have static linkage since it is not used outside of its translation unit.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="37.html#line-695">695</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;title&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="37.html#line-696">696</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;buffer&apos; can be reduced.</td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="37.html#line-698">698</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;body&apos; can be reduced.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="38.html">stickynotes/stickynotes_applet.c</a></td></tr>
+         <tr class="unknownMacro sev_error issue"><td><a href="38.html#line-83">83</a></td><td>unknownMacro</td><td></td><td>error</td><td class="error">There is an unknown macro here somewhere. Configuration is required. If CAFE_PANEL_APPLET_OUT_PROCESS_FACTORY is a macro then please configure it.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="39.html">stickynotes/stickynotes_applet_callbacks.c</a></td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="39.html#line-66">66</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;note&apos; can be reduced.</td></tr>
+         <tr class="constParameterPointer sev_style issue"><td><a href="39.html#line-88">88</a></td><td>constParameterPointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;event&apos; can be declared as pointer to const</td></tr>
+         <tr class="constParameterPointer sev_style issue"><td><a href="39.html#line-108">108</a></td><td>constParameterPointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;event&apos; can be declared as pointer to const</td></tr>
+         <tr class="constParameterPointer sev_style issue"><td><a href="39.html#line-124">124</a></td><td>constParameterPointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;event&apos; can be declared as pointer to const</td></tr>
+         <tr class="constParameterPointer sev_style issue"><td><a href="39.html#line-213">213</a></td><td>constParameterPointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;allocation&apos; can be declared as pointer to const</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="40.html">stickynotes/stickynotes_callbacks.c</a></td></tr>
+         <tr class="constParameterPointer sev_style issue"><td><a href="40.html#line-42">42</a></td><td>constParameterPointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;widget&apos; can be declared as pointer to const</td></tr>
+         <tr class="constParameterPointer sev_style issue"><td><a href="40.html#line-72">72</a></td><td>constParameterPointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;event&apos; can be declared as pointer to const</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="41.html">stickynotes/util.c</a></td></tr>
+         <tr class="constVariablePointer sev_style issue"><td><a href="41.html#line-36">36</a></td><td>constVariablePointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Variable &apos;current&apos; can be declared as pointer to const</td></tr>
+         <tr class="uninitvar sev_error issue"><td><a href="41.html#line-103">103</a></td><td>uninitvar</td><td><a href="https://cwe.mitre.org/data/definitions/457.html">457</a></td><td>error</td><td class="error">Uninitialized variable: num</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="42.html">trashapplet/src/trash-empty.c</a></td></tr>
+         <tr class="variableScope sev_style issue"><td><a href="42.html#line-163">163</a></td><td>variableScope</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>The scope of the variable &apos;info&apos; can be reduced.</td></tr>
+      <tbody class="fileEntry">
+       <tr><td colspan="5"><a href="43.html">trashapplet/src/xstuff.c</a></td></tr>
+         <tr class="negativeIndex sev_warning issue"><td><a href="43.html#line-106">106</a></td><td>negativeIndex</td><td><a href="https://cwe.mitre.org/data/definitions/786.html">786</a></td><td>warning</td><td class="warning">Either the condition &apos;j&lt;1-1&apos; is redundant or the array &apos;cx[1]&apos; is accessed at index -1, which is out of bounds.</td></tr>
+         <tr class="negativeIndex sev_warning issue"><td><a href="43.html#line-107">107</a></td><td>negativeIndex</td><td><a href="https://cwe.mitre.org/data/definitions/786.html">786</a></td><td>warning</td><td class="warning">Either the condition &apos;j&lt;1-1&apos; is redundant or the array &apos;cy[1]&apos; is accessed at index -1, which is out of bounds.</td></tr>
+         <tr class="negativeIndex sev_warning issue"><td><a href="43.html#line-108">108</a></td><td>negativeIndex</td><td><a href="https://cwe.mitre.org/data/definitions/786.html">786</a></td><td>warning</td><td class="warning">Either the condition &apos;j&lt;1-1&apos; is redundant or the array &apos;cw[1]&apos; is accessed at index -1, which is out of bounds.</td></tr>
+         <tr class="negativeIndex sev_warning issue"><td><a href="43.html#line-109">109</a></td><td>negativeIndex</td><td><a href="https://cwe.mitre.org/data/definitions/786.html">786</a></td><td>warning</td><td class="warning">Either the condition &apos;j&lt;1-1&apos; is redundant or the array &apos;ch[1]&apos; is accessed at index -1, which is out of bounds.</td></tr>
+         <tr class="negativeIndex sev_warning issue"><td><a href="43.html#line-111">111</a></td><td>negativeIndex</td><td><a href="https://cwe.mitre.org/data/definitions/786.html">786</a></td><td>warning</td><td class="warning">Either the condition &apos;j&lt;1-1&apos; is redundant or the array &apos;cxi[1]&apos; is accessed at index -1, which is out of bounds.</td></tr>
+         <tr class="negativeIndex sev_warning issue"><td><a href="43.html#line-112">112</a></td><td>negativeIndex</td><td><a href="https://cwe.mitre.org/data/definitions/786.html">786</a></td><td>warning</td><td class="warning">Either the condition &apos;j&lt;1-1&apos; is redundant or the array &apos;cyi[1]&apos; is accessed at index -1, which is out of bounds.</td></tr>
+         <tr class="negativeIndex sev_warning issue"><td><a href="43.html#line-113">113</a></td><td>negativeIndex</td><td><a href="https://cwe.mitre.org/data/definitions/786.html">786</a></td><td>warning</td><td class="warning">Either the condition &apos;j&lt;1-1&apos; is redundant or the array &apos;cwi[1]&apos; is accessed at index -1, which is out of bounds.</td></tr>
+         <tr class="negativeIndex sev_warning issue"><td><a href="43.html#line-114">114</a></td><td>negativeIndex</td><td><a href="https://cwe.mitre.org/data/definitions/786.html">786</a></td><td>warning</td><td class="warning">Either the condition &apos;j&lt;1-1&apos; is redundant or the array &apos;chi[1]&apos; is accessed at index -1, which is out of bounds.</td></tr>
+         <tr class="constParameterPointer sev_style issue"><td><a href="43.html#line-151">151</a></td><td>constParameterPointer</td><td><a href="https://cwe.mitre.org/data/definitions/398.html">398</a></td><td>style</td><td>Parameter &apos;opt_rect&apos; can be declared as pointer to const</td></tr>
+      </tbody>
+       </table>
+    </div>
+    <div id="footer" class="footer">
+      <p>
+        Created by Cppcheck 2.17.1 (<a href="https://cppcheck.sourceforge.io">Sourceforge</a>, <a href="irc://irc.freenode.net/cppcheck">IRC</a>)
+      </p>
+    </div>
+    </div>
+  </body>
+</html>
