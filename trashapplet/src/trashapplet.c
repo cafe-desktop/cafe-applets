@@ -258,7 +258,7 @@ trash_applet_button_release (CtkWidget      *widget,
   if (event->button == 1)
     {
       if (g_settings_get_boolean (settings, PANEL_ENABLE_ANIMATIONS))
-        xstuff_zoom_anicafe (widget, NULL);
+        xstuff_zoom_animate (widget, NULL);
 
       trash_applet_open_folder (NULL, applet);
 
