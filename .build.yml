@@ -94,6 +94,7 @@ build_scripts:
 #  - ./before-build
 #  - ./make-scanbuild '--enable-compile-warnings=maximum'
 #  - ./after-build
+  - aptitude -y install cafe-panel-common cafe-panel-dbgsym cafe-panel gir1.2-cafe-panel gir1.2-cafepanelapplet-4.0 libcafe-panel-applet-4-1-dbgsym libcafe-panel-applet-4-1 libcafe-panel-applet-dev libcafe-panel-applet-doc
   - ./build-debs https://github.com/cafe-desktop/debian-packages cdbs cafe-applets
 
 after_scripts:
