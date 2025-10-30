@@ -94,7 +94,7 @@ build_scripts:
 #  - ./before-build
 #  - ./make-scanbuild '--enable-compile-warnings=maximum'
 #  - ./after-build
-  - ./build-debs
+  - ./build-debs https://github.com/cafe-desktop/debian-packages cdbs cafe-applets
 
 after_scripts:
   - if [ -f "gen-index" ]; then ./gen-index -l 20 -i https://github.com/${OWNER_NAME}/cafe-applets/raw/master/cpufreq/pixmaps/cpufreq-100.png; fi
