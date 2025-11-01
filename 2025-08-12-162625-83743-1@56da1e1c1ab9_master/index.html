@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>cafe-applets (clang-tools 1:19.0-63) - scan-build results</title>
+<link type="text/css" rel="stylesheet" href="scanview.css"/>
+<script src="sorttable.js"></script>
+<script language='javascript' type="text/javascript">
+function SetDisplay(RowClass, DisplayVal)
+{
+  var Rows = document.getElementsByTagName("tr");
+  for ( var i = 0 ; i < Rows.length; ++i ) {
+    if (Rows[i].className == RowClass) {
+      Rows[i].style.display = DisplayVal;
+    }
+  }
+}
+
+function CopyCheckedStateToCheckButtons(SummaryCheckButton) {
+  var Inputs = document.getElementsByTagName("input");
+  for ( var i = 0 ; i < Inputs.length; ++i ) {
+    if (Inputs[i].type == "checkbox") {
+      if(Inputs[i] != SummaryCheckButton) {
+        Inputs[i].checked = SummaryCheckButton.checked;
+        Inputs[i].onclick();
+      }
+    }
+  }
+}
+
+function returnObjById( id ) {
+    if (document.getElementById)
+        var returnVar = document.getElementById(id);
+    else if (document.all)
+        var returnVar = document.all[id];
+    else if (document.layers)
+        var returnVar = document.layers[id];
+    return returnVar;
+}
+
+var NumUnchecked = 0;
+
+function ToggleDisplay(CheckButton, ClassName) {
+  if (CheckButton.checked) {
+    SetDisplay(ClassName, "");
+    if (--NumUnchecked == 0) {
+      returnObjById("AllBugsCheck").checked = true;
+    }
+  }
+  else {
+    SetDisplay(ClassName, "none");
+    NumUnchecked++;
+    returnObjById("AllBugsCheck").checked = false;
+  }
+}
+</script>
+<!-- SUMMARYENDHEAD -->
+</head>
+<body>
+<h1>cafe-applets (clang-tools 1:19.0-63) - scan-build results</h1>
+
+<table>
+<tr><th>User:</th><td>root@74b1423f3e7d</td></tr>
+<tr><th>Working Directory:</th><td>/rootdir</td></tr>
+<tr><th>Command Line:</th><td>make -j 5</td></tr>
+<tr><th>Clang Version:</th><td>Debian clang version 19.1.7 (3+b1)
+</td></tr>
+<tr><th>Date:</th><td>Tue Aug 12 16:26:25 2025</td></tr>
+</table>
+<h2>Bug Summary</h2><table>
+<thead><tr><td>Bug Type</td><td>Quantity</td><td class="sorttable_nosort">Display?</td></tr></thead>
+<tr style="font-weight:bold"><td class="SUMM_DESC">All Bugs</td><td class="Q">22</td><td><center><input type="checkbox" id="AllBugsCheck" onClick="CopyCheckedStateToCheckButtons(this);" checked/></center></td></tr>
+<tr><th>Logic error</th><th colspan=2></th></tr>
+<tr><td class="SUMM_DESC">Division by zero</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_division_by_zero');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Out-of-bound access</td><td class="Q">2</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_out-of-bound_access');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Result of operation is garbage or undefined</td><td class="Q">1</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_logic_error_result_of_operation_is_garbage_or_undefined');" checked/></center></td></tr>
+<tr><th>Stream handling error</th><th colspan=2></th></tr>
+<tr><td class="SUMM_DESC">Invalid stream state</td><td class="Q">5</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_stream_handling_error_invalid_stream_state');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Stream already in EOF</td><td class="Q">4</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_stream_handling_error_stream_already_in_eof');" checked/></center></td></tr>
+<tr><th>Unused code</th><th colspan=2></th></tr>
+<tr><td class="SUMM_DESC">Dead assignment</td><td class="Q">3</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_unused_code_dead_assignment');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Dead initialization</td><td class="Q">4</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_unused_code_dead_initialization');" checked/></center></td></tr>
+<tr><td class="SUMM_DESC">Unreachable code</td><td class="Q">2</td><td><center><input type="checkbox" onClick="ToggleDisplay(this,'bt_unused_code_unreachable_code');" checked/></center></td></tr>
+</table>
+
+<h2>Filter Results by File</h2>
+<input
+  type="text"
+  id="file_input"
+  onkeyup="searchFiles()"
+  placeholder="Enter a path or filename"
+  title="Enter a path or filename">
+
+<h2>Reports</h2>
+
+<table id="reports_table" class="sortable" style="table-layout:automatic">
+<thead><tr>
+  <td>Bug Group</td>
+  <td class="sorttable_sorted">Bug Type<span id="sorttable_sortfwdind">&nbsp;&#x25BE;</span></td>
+  <td>File</td>
+  <td>Function/Method</td>
+  <td class="Q">Line</td>
+  <td class="Q">Path Length</td>
+  <td class="sorttable_nosort"></td>
+  <!-- REPORTBUGCOL -->
+</tr></thead>
+<tbody>
+<tr class="bt_unused_code_dead_assignment"><td class="DESC">Unused code</td><td class="DESC">Dead assignment</td><td>cafeweather/cafeweather-dialog.c</td><td class="DESC">cafeweather_dialog_load_geometry</td><td class="Q">82</td><td class="Q">1</td><td><a href="report-228575.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-228575.html" -->
+</tr>
+<tr class="bt_unused_code_dead_assignment"><td class="DESC">Unused code</td><td class="DESC">Dead assignment</td><td>geyes/themes.c</td><td class="DESC">parse_theme_file</td><td class="Q">81</td><td class="Q">1</td><td><a href="report-93377a.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-93377a.html" -->
+</tr>
+<tr class="bt_unused_code_dead_assignment"><td class="DESC">Unused code</td><td class="DESC">Dead assignment</td><td>cafeweather/cafeweather-dialog.c</td><td class="DESC">cafeweather_dialog_save_geometry</td><td class="Q">66</td><td class="Q">1</td><td><a href="report-ca8bc6.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ca8bc6.html" -->
+</tr>
+<tr class="bt_unused_code_dead_initialization"><td class="DESC">Unused code</td><td class="DESC">Dead initialization</td><td>charpick/charpick.c</td><td class="DESC">menuitem_activated</td><td class="Q">277</td><td class="Q">1</td><td><a href="report-17e404.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-17e404.html" -->
+</tr>
+<tr class="bt_unused_code_dead_initialization"><td class="DESC">Unused code</td><td class="DESC">Dead initialization</td><td>battstat/battstat-upower.c</td><td class="DESC">battstat_upower_initialise</td><td class="Q">96</td><td class="Q">1</td><td><a href="report-4d3bf9.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-4d3bf9.html" -->
+</tr>
+<tr class="bt_unused_code_dead_initialization"><td class="DESC">Unused code</td><td class="DESC">Dead initialization</td><td>cafeweather/cafeweather-pref.c</td><td class="DESC">load_locations</td><td class="Q">266</td><td class="Q">1</td><td><a href="report-d7d96c.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d7d96c.html" -->
+</tr>
+<tr class="bt_unused_code_dead_initialization"><td class="DESC">Unused code</td><td class="DESC">Dead initialization</td><td>charpick/charpick.c</td><td class="DESC">get_chartable</td><td class="Q">649</td><td class="Q">1</td><td><a href="report-eabc79.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-eabc79.html" -->
+</tr>
+<tr class="bt_logic_error_division_by_zero"><td class="DESC">Logic error</td><td class="DESC">Division by zero</td><td>multiload/load-graph.c</td><td class="DESC">load_graph_draw</td><td class="Q">127</td><td class="Q">19</td><td><a href="report-b9fe67.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-b9fe67.html" -->
+</tr>
+<tr class="bt_stream_handling_error_invalid_stream_state"><td class="DESC">Stream handling error</td><td class="DESC">Invalid stream state</td><td>battstat/apmlib/apmlib.c</td><td class="DESC">apm_read</td><td class="Q">102</td><td class="Q">10</td><td><a href="report-448909.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-448909.html" -->
+</tr>
+<tr class="bt_stream_handling_error_invalid_stream_state"><td class="DESC">Stream handling error</td><td class="DESC">Invalid stream state</td><td>battstat/apmlib/apmlib.c</td><td class="DESC">apm_read</td><td class="Q">123</td><td class="Q">19</td><td><a href="report-a4744e.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a4744e.html" -->
+</tr>
+<tr class="bt_stream_handling_error_invalid_stream_state"><td class="DESC">Stream handling error</td><td class="DESC">Invalid stream state</td><td>geyes/themes.c</td><td class="DESC">parse_theme_file</td><td class="Q">98</td><td class="Q">25</td><td><a href="report-a89a86.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-a89a86.html" -->
+</tr>
+<tr class="bt_stream_handling_error_invalid_stream_state"><td class="DESC">Stream handling error</td><td class="DESC">Invalid stream state</td><td>battstat/apmlib/apmlib.c</td><td class="DESC">apm_read</td><td class="Q">142</td><td class="Q">27</td><td><a href="report-dec6cd.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-dec6cd.html" -->
+</tr>
+<tr class="bt_stream_handling_error_invalid_stream_state"><td class="DESC">Stream handling error</td><td class="DESC">Invalid stream state</td><td>battstat/apmlib/apmlib.c</td><td class="DESC">apm_read</td><td class="Q">108</td><td class="Q">13</td><td><a href="report-fec661.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-fec661.html" -->
+</tr>
+<tr class="bt_logic_error_out-of-bound_access"><td class="DESC">Logic error</td><td class="DESC">Out-of-bound access</td><td>accessx-status/applet.c</td><td class="DESC">accessx_status_applet_notify_xkb_device</td><td class="Q">937</td><td class="Q">10</td><td><a href="report-129411.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-129411.html" -->
+</tr>
+<tr class="bt_logic_error_out-of-bound_access"><td class="DESC">Logic error</td><td class="DESC">Out-of-bound access</td><td>accessx-status/applet.c</td><td class="DESC">accessx_status_applet_notify_xkb_device</td><td class="Q">932</td><td class="Q">10</td><td><a href="report-dd4024.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-dd4024.html" -->
+</tr>
+<tr class="bt_logic_error_result_of_operation_is_garbage_or_undefined"><td class="DESC">Logic error</td><td class="DESC">Result of operation is garbage or undefined</td><td>cpufreq/src/cpufreq-monitor-cpuinfo.c</td><td class="DESC">cpufreq_monitor_cpuinfo_run</td><td class="Q">120</td><td class="Q">5</td><td><a href="report-d72c92.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-d72c92.html" -->
+</tr>
+<tr class="bt_stream_handling_error_stream_already_in_eof"><td class="DESC">Stream handling error</td><td class="DESC">Stream already in EOF</td><td>battstat/apmlib/apmlib.c</td><td class="DESC">apm_read</td><td class="Q">142</td><td class="Q">27</td><td><a href="report-005664.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-005664.html" -->
+</tr>
+<tr class="bt_stream_handling_error_stream_already_in_eof"><td class="DESC">Stream handling error</td><td class="DESC">Stream already in EOF</td><td>battstat/apmlib/apmlib.c</td><td class="DESC">apm_read</td><td class="Q">102</td><td class="Q">10</td><td><a href="report-086863.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-086863.html" -->
+</tr>
+<tr class="bt_stream_handling_error_stream_already_in_eof"><td class="DESC">Stream handling error</td><td class="DESC">Stream already in EOF</td><td>battstat/apmlib/apmlib.c</td><td class="DESC">apm_read</td><td class="Q">108</td><td class="Q">13</td><td><a href="report-970fbb.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-970fbb.html" -->
+</tr>
+<tr class="bt_stream_handling_error_stream_already_in_eof"><td class="DESC">Stream handling error</td><td class="DESC">Stream already in EOF</td><td>battstat/apmlib/apmlib.c</td><td class="DESC">apm_read</td><td class="Q">123</td><td class="Q">19</td><td><a href="report-c33e79.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-c33e79.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>cpufreq/src/cpufreq-monitor-factory.c</td><td class="DESC">cpufreq_monitor_factory_create_monitor</td><td class="Q">49</td><td class="Q">1</td><td><a href="report-b49a36.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-b49a36.html" -->
+</tr>
+<tr class="bt_unused_code_unreachable_code"><td class="DESC">Unused code</td><td class="DESC">Unreachable code</td><td>multiload/load-graph.c</td><td class="DESC">load_graph_new</td><td class="Q">454</td><td class="Q">1</td><td><a href="report-ba8f8b.html#EndPath">View Report</a></td>
+<!-- REPORTBUG id="report-ba8f8b.html" -->
+</tr>
+</tbody>
+</table>
+
+</body></html>

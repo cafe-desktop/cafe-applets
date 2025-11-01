@@ -1,0 +1,32 @@
+Format: 1.8
+Date: Fri, 07 Apr 2023 16:55:44 +0200
+Source: cafe-applets
+Binary: cafe-applets cafe-applets-common cafe-applets-dbgsym
+Architecture: all amd64
+Version: 1.25.0-1
+Distribution: unstable
+Urgency: medium
+Maintainer: Pablo Barciela <scow@riseup.net>
+Changed-By: Pablo Barciela <scow@riseup.net>
+Description:
+ cafe-applets - Various applets for the CAFE panel
+ cafe-applets-common - Various applets for the CAFE panel (common files)
+Changes:
+ cafe-applets (1.25.0-1) unstable; urgency=medium
+ .
+   * Initial release
+Checksums-Sha1:
+ 10cf02a76d5c3fb654f2889589961de7d4ed2652 7292112 cafe-applets-common_1.25.0-1_all.deb
+ 719c0f133a55592df49465fe315d80dbb363d0fa 486040 cafe-applets-dbgsym_1.25.0-1_amd64.deb
+ c58abcacf577de1f95d1cbeb518e44c5c740034c 18292 cafe-applets_1.25.0-1_amd64.buildinfo
+ e727eda3cf822d88dcb19edef351a6e01a5a9351 171320 cafe-applets_1.25.0-1_amd64.deb
+Checksums-Sha256:
+ fa750e0daa3f536c2bc994e211c05bf6cbe149d55ad2d96239ab3b008960aa27 7292112 cafe-applets-common_1.25.0-1_all.deb
+ 7abb0b5d4e53f1a93875d2e97bcbf82b9f4fe2b070dcdeecb9cfacac6337d264 486040 cafe-applets-dbgsym_1.25.0-1_amd64.deb
+ f43f2932e470d69d60a599a97f2dcefe665c9909c23a05be4cf1c16a2b300eb1 18292 cafe-applets_1.25.0-1_amd64.buildinfo
+ 39b3b327bc812526152fbb98debdf9de968ea67f685e4b8555244f5fc3ada68c 171320 cafe-applets_1.25.0-1_amd64.deb
+Files:
+ ab82828bc41afe4ed17ae19c20c6b3d1 7292112 x11 optional cafe-applets-common_1.25.0-1_all.deb
+ 39db78b562658721db12bea479cc50ec 486040 debug optional cafe-applets-dbgsym_1.25.0-1_amd64.deb
+ 0b791e81a3c6f0c0d338693e4478fe02 18292 x11 optional cafe-applets_1.25.0-1_amd64.buildinfo
+ bd1955b22d87a5751fefba1be054b4e2 171320 x11 optional cafe-applets_1.25.0-1_amd64.deb
