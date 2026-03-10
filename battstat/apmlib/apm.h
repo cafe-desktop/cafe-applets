@@ -33,6 +33,9 @@
 #define APM_32_BIT_SUPPORT      0x0002
 #endif
 
+#define GNUC_UNUSED \
+  __attribute__ ((__unused__))
+
 typedef struct apm_info
 {
     const char driver_version[10];
