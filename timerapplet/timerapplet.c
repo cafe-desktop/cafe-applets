@@ -92,7 +92,8 @@ static char *ui = "<menuitem name='Item 1' action='Start' />"
                   "<menuitem name='Item 6' action='About' />";
 
 static void
-timer_applet_destroy (CafePanelApplet *applet_widget, TimerApplet *applet)
+timer_applet_destroy (CafePanelApplet *applet_widget G_GNUC_UNUSED,
+		      TimerApplet     *applet)
 {
     g_assert (applet);
 
@@ -216,7 +217,8 @@ timer_callback (TimerApplet *applet)
 
 /* start action */
 static void
-timer_start_callback (CtkAction *action, TimerApplet *applet)
+timer_start_callback (CtkAction   *action G_GNUC_UNUSED,
+		      TimerApplet *applet)
 {
     applet->active = TRUE;
     if (applet->pause)
@@ -228,7 +230,8 @@ timer_start_callback (CtkAction *action, TimerApplet *applet)
 
 /* pause action */
 static void
-timer_pause_callback (CtkAction *action, TimerApplet *applet)
+timer_pause_callback (CtkAction   *action G_GNUC_UNUSED,
+		      TimerApplet *applet)
 {
     applet->pause = TRUE;
     if (applet->timeout_id != 0)
@@ -241,7 +244,8 @@ timer_pause_callback (CtkAction *action, TimerApplet *applet)
 
 /* stop action */
 static void
-timer_stop_callback (CtkAction *action, TimerApplet *applet)
+timer_stop_callback (CtkAction   *action G_GNUC_UNUSED,
+		     TimerApplet *applet)
 {
     applet->active = FALSE;
     if (applet->timeout_id != 0)
@@ -254,7 +258,8 @@ timer_stop_callback (CtkAction *action, TimerApplet *applet)
 
 /* reset action */
 static void
-timer_reset_callback (CtkAction *action, TimerApplet *applet)
+timer_reset_callback (CtkAction   *action G_GNUC_UNUSED,
+		      TimerApplet *applet)
 {
     applet->active = FALSE;
     applet->pause = FALSE;
@@ -264,7 +269,8 @@ timer_reset_callback (CtkAction *action, TimerApplet *applet)
 
 /* Show the about dialog */
 static void
-timer_about_callback (CtkAction *action, TimerApplet *applet)
+timer_about_callback (CtkAction   *action G_GNUC_UNUSED,
+		      TimerApplet *applet G_GNUC_UNUSED)
 {
     const char* authors[] = { "Stefano Karapetsas <stefano@karapetsas.com>",
                               "Pablo Barciela <scow@riseup.net>",
@@ -285,7 +291,8 @@ timer_about_callback (CtkAction *action, TimerApplet *applet)
 
 /* calculate duration and save in GSettings */
 static void
-timer_spin_button_value_changed (CtkSpinButton *spinbutton, TimerApplet *applet)
+timer_spin_button_value_changed (CtkSpinButton *spinbutton G_GNUC_UNUSED,
+				 TimerApplet   *applet)
 {
     gint duration = 0;
 
@@ -298,7 +305,8 @@ timer_spin_button_value_changed (CtkSpinButton *spinbutton, TimerApplet *applet)
 
 /* Show the preferences dialog */
 static void
-timer_preferences_callback (CtkAction *action, TimerApplet *applet)
+timer_preferences_callback (CtkAction   *action G_GNUC_UNUSED,
+			    TimerApplet *applet)
 {
     CtkDialog *dialog;
     CtkGrid *grid;
@@ -393,7 +401,9 @@ timer_applet_click (TimerApplet *applet)
 }
 
 static void
-timer_settings_changed (GSettings *settings, gchar *key, TimerApplet *applet)
+timer_settings_changed (GSettings   *settings G_GNUC_UNUSED,
+			gchar       *key G_GNUC_UNUSED,
+			TimerApplet *applet)
 {
     timer_callback (applet);
 }
@@ -470,7 +480,9 @@ timer_applet_fill (CafePanelApplet* applet_widget)
 
 /* this function, called by cafe-panel, will create the applet */
 static gboolean
-timer_factory (CafePanelApplet* applet, const char* iid, gpointer data)
+timer_factory (CafePanelApplet *applet,
+	       const char      *iid,
+	       gpointer         data G_GNUC_UNUSED)
 {
     gboolean retval = FALSE;
 

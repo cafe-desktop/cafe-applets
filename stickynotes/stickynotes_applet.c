@@ -59,7 +59,9 @@ static const CtkToggleActionEntry stickynotes_applet_menu_toggle_actions[] =
 };
 
 /* Sticky Notes applet factory */
-static gboolean stickynotes_applet_factory(CafePanelApplet *cafe_panel_applet, const gchar *iid, gpointer data)
+static gboolean stickynotes_applet_factory (CafePanelApplet *cafe_panel_applet,
+					    const            gchar *iid,
+					    gpointer         data G_GNUC_UNUSED)
 {
 	if (!strcmp(iid, "StickyNotesApplet")) {
 		if (!stickynotes)
@@ -125,7 +127,7 @@ stickynotes_make_prelight_icon (cairo_surface_t *dest, cairo_surface_t *src, int
 
 static void
 icon_theme_changed (CtkIconTheme *icon_theme,
-                    gpointer      user_data)
+		    gpointer      user_data G_GNUC_UNUSED)
 {
 	ctk_icon_theme_append_search_path (icon_theme,
 	                                   PKG_DATA_DIR G_DIR_SEPARATOR_S "icons");
@@ -144,8 +146,8 @@ stickynotes_applet_init_icons (void)
 }
 
 static void
-stickynotes_destroy (CtkWidget *widget,
-                     gpointer   user_dta)
+stickynotes_destroy (CtkWidget *widget G_GNUC_UNUSED,
+		     gpointer   user_dta G_GNUC_UNUSED)
 {
 	g_signal_handlers_disconnect_by_func (ctk_icon_theme_get_default (),
 	                                      icon_theme_changed, NULL);

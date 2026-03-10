@@ -133,7 +133,7 @@ cpufreq_selector_service_get_instance (void)
 }
 
 static gboolean
-service_shutdown (gpointer user_data)
+service_shutdown (gpointer user_data G_GNUC_UNUSED)
 {
 	g_object_unref (SELECTOR_SERVICE);
 

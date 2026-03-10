@@ -317,7 +317,8 @@ cpufreq_prefs_dialog_show_perc_toggled (CtkWidget *show_perc, CPUFreqPrefs *pref
 }
 
 static void
-cpufreq_prefs_dialog_cpu_number_changed (CtkWidget *cpu_combo, CPUFreqPrefs *prefs)
+cpufreq_prefs_dialog_cpu_number_changed (CtkWidget    *cpu_combo G_GNUC_UNUSED,
+					 CPUFreqPrefs *prefs)
 {
         gint cpu;
 	
@@ -344,7 +345,7 @@ cpufreq_prefs_dialog_show_mode_changed (CtkWidget *show_mode_combo, CPUFreqPrefs
 static void
 cpufreq_prefs_dialog_response_cb (CPUFreqPrefs *prefs,
 				  gint          response,
-				  CtkDialog    *dialog)
+				  CtkDialog    *dialog G_GNUC_UNUSED)
 {
         GError *error = NULL;
 

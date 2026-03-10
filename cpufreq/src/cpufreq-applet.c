@@ -300,7 +300,7 @@ get_max_text_width (CtkWidget *widget,
 
 static void
 cpufreq_applet_menu_popup (CPUFreqApplet *applet,
-                           guint32        time)
+			   guint32        time G_GNUC_UNUSED)
 {
         CtkWidget *menu;
 
@@ -427,16 +427,16 @@ cpufreq_applet_style_updated (CtkWidget *widget)
 }
 
 static void
-cpufreq_applet_preferences_cb (CtkAction     *action,
-                               CPUFreqApplet *applet)
+cpufreq_applet_preferences_cb (CtkAction     *action G_GNUC_UNUSED,
+			       CPUFreqApplet *applet)
 {
         cpufreq_preferences_dialog_run (applet->prefs,
                                         ctk_widget_get_screen (CTK_WIDGET (applet)));
 }
 
 static void
-cpufreq_applet_help_cb (CtkAction     *action,
-                        CPUFreqApplet *applet)
+cpufreq_applet_help_cb (CtkAction     *action G_GNUC_UNUSED,
+			CPUFreqApplet *applet G_GNUC_UNUSED)
 {
         GError *error = NULL;
 
@@ -453,8 +453,8 @@ cpufreq_applet_help_cb (CtkAction     *action,
 }
 
 static void
-cpufreq_applet_about_cb (CtkAction     *action,
-                         CPUFreqApplet *applet)
+cpufreq_applet_about_cb (CtkAction     *action G_GNUC_UNUSED,
+			 CPUFreqApplet *applet G_GNUC_UNUSED)
 {
         static const gchar *const authors[] = {
                 "Carlos Garcia Campos <carlosgc@gnome.org>",
@@ -788,8 +788,8 @@ cpufreq_applet_refresh (CPUFreqApplet *applet)
 
 /* Preferences callbacks */
 static void
-cpufreq_applet_prefs_cpu_changed (CPUFreqPrefs  *prefs,
-				  GParamSpec    *arg1,
+cpufreq_applet_prefs_cpu_changed (CPUFreqPrefs  *prefs G_GNUC_UNUSED,
+				  GParamSpec    *arg1 G_GNUC_UNUSED,
 				  CPUFreqApplet *applet)
 {
 	cpufreq_monitor_set_cpu (applet->monitor,
@@ -797,9 +797,9 @@ cpufreq_applet_prefs_cpu_changed (CPUFreqPrefs  *prefs,
 }
 
 static void
-cpufreq_applet_prefs_show_mode_changed (CPUFreqPrefs  *prefs,
-                                        GParamSpec    *arg1,
-                                        CPUFreqApplet *applet)
+cpufreq_applet_prefs_show_mode_changed (CPUFreqPrefs  *prefs G_GNUC_UNUSED,
+					GParamSpec    *arg1 G_GNUC_UNUSED,
+					CPUFreqApplet *applet)
 {
         cpufreq_applet_update_visibility (applet);
 }
@@ -881,7 +881,9 @@ cpufreq_applet_setup (CPUFreqApplet *applet)
 }
 
 static gboolean
-cpufreq_applet_factory (CPUFreqApplet *applet, const gchar *iid, gpointer gdata)
+cpufreq_applet_factory (CPUFreqApplet *applet,
+			const gchar   *iid,
+			gpointer       gdata G_GNUC_UNUSED)
 {
         gboolean retval = FALSE;
 

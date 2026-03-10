@@ -88,7 +88,8 @@ static char *ui = "<menuitem name='Item 1' action='Preferences' />"
                   "<menuitem name='Item 2' action='About' />";
 
 static void
-command_applet_destroy (CafePanelApplet *applet_widget, CommandApplet *command_applet)
+command_applet_destroy (CafePanelApplet *applet_widget G_GNUC_UNUSED,
+			CommandApplet   *command_applet)
 {
     g_assert (command_applet);
 
@@ -114,7 +115,8 @@ command_applet_destroy (CafePanelApplet *applet_widget, CommandApplet *command_a
 
 /* Show the about dialog */
 static void
-command_about_callback (CtkAction *action, CommandApplet *command_applet)
+command_about_callback (CtkAction     *action G_GNUC_UNUSED,
+			CommandApplet *command_applet G_GNUC_UNUSED)
 {
     const char* authors[] = { "Stefano Karapetsas <stefano@karapetsas.com>",
                               "Pablo Barciela <scow@riseup.net>",
@@ -134,7 +136,9 @@ command_about_callback (CtkAction *action, CommandApplet *command_applet)
 }
 
 static gboolean
-command_text_changed (CtkWidget *widget, CdkEvent  *event, gpointer user_data)
+command_text_changed (CtkWidget *widget,
+		      CdkEvent  *event G_GNUC_UNUSED,
+		      gpointer   user_data)
 {
     const gchar *text;
     CommandApplet *command_applet;
@@ -184,7 +188,8 @@ static void width_value_changed (CtkSpinButton *spin_button, gpointer user_data)
 
 /* Show the preferences dialog */
 static void
-command_settings_callback (CtkAction *action, CommandApplet *command_applet)
+command_settings_callback (CtkAction     *action G_GNUC_UNUSED,
+			   CommandApplet *command_applet)
 {
     CtkDialog *dialog;
     CtkGrid *grid;
@@ -252,7 +257,9 @@ command_settings_callback (CtkAction *action, CommandApplet *command_applet)
 
 /* GSettings signal callbacks */
 static void
-settings_command_changed (GSettings *settings, gchar *key, CommandApplet *command_applet)
+settings_command_changed (GSettings     *settings G_GNUC_UNUSED,
+			  gchar         *key G_GNUC_UNUSED,
+			  CommandApplet *command_applet)
 {
     GError *error = NULL;
     gchar *cmdline;
@@ -278,7 +285,9 @@ settings_command_changed (GSettings *settings, gchar *key, CommandApplet *comman
 }
 
 static void
-settings_width_changed (GSettings *settings, gchar *key, CommandApplet *command_applet)
+settings_width_changed (GSettings     *settings G_GNUC_UNUSED,
+			gchar         *key G_GNUC_UNUSED,
+			CommandApplet *command_applet)
 {
     gint width;
 
@@ -290,7 +299,9 @@ settings_width_changed (GSettings *settings, gchar *key, CommandApplet *command_
 }
 
 static void
-settings_interval_changed (GSettings *settings, gchar *key, CommandApplet *command_applet)
+settings_interval_changed (GSettings     *settings G_GNUC_UNUSED,
+			   gchar         *key G_GNUC_UNUSED,
+			   CommandApplet *command_applet)
 {
     gint interval;
 
@@ -360,7 +371,9 @@ process_command_output (CommandApplet *command_applet, gchar *output)
     }
 }
 
-static void command_async_ready_callback (GObject *source_object, GAsyncResult *res, gpointer user_data)
+static void command_async_ready_callback (GObject      *source_object G_GNUC_UNUSED,
+					  GAsyncResult *res,
+					  gpointer      user_data)
 {
     gchar *output;
     GError *error = NULL;
@@ -517,7 +530,9 @@ command_applet_fill (CafePanelApplet* applet)
 
 /* this function, called by cafe-panel, will create the applet */
 static gboolean
-command_factory (CafePanelApplet* applet, const char* iid, gpointer data)
+command_factory (CafePanelApplet *applet,
+		 const char      *iid,
+		 gpointer         data G_GNUC_UNUSED)
 {
     gboolean retval = FALSE;
 

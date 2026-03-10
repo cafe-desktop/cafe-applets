@@ -246,7 +246,7 @@ presponse_cb (CtkDialog *dialog, gint id, gpointer data)
 }
 
 void
-properties_cb (CtkAction  *action,
+properties_cb (CtkAction  *action G_GNUC_UNUSED,
 	       EyesApplet *eyes_applet)
 {
 	CtkWidget *pbox, *hbox;

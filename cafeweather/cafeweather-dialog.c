@@ -93,7 +93,9 @@ static void cafeweather_dialog_load_geometry(CafeWeatherDialog* dialog)
 #endif
 }
 
-static void response_cb(CafeWeatherDialog* dialog, gint id, gpointer data)
+static void response_cb (CafeWeatherDialog *dialog,
+			 gint               id,
+			 gpointer           data G_GNUC_UNUSED)
 {
     if (id == CTK_RESPONSE_OK) {
 	cafeweather_update (dialog->priv->applet);
@@ -104,7 +106,8 @@ static void response_cb(CafeWeatherDialog* dialog, gint id, gpointer data)
     }
 }
 
-static void link_cb(CtkButton* button, gpointer data)
+static void link_cb (CtkButton *button G_GNUC_UNUSED,
+		     gpointer   data G_GNUC_UNUSED)
 {
     ctk_show_uri_on_window (NULL,
                             "http://www.weather.com/",
@@ -615,7 +618,10 @@ void cafeweather_dialog_update(CafeWeatherDialog* dialog)
     }
 }
 
-static void cafeweather_dialog_set_property(GObject* object, guint prop_id, const GValue* value, GParamSpec* pspec)
+static void cafeweather_dialog_set_property (GObject      *object,
+					     guint         prop_id,
+					     const GValue *value,
+					     GParamSpec   *pspec G_GNUC_UNUSED)
 {
     CafeWeatherDialog *dialog = CAFEWEATHER_DIALOG (object);
 
@@ -626,7 +632,10 @@ static void cafeweather_dialog_set_property(GObject* object, guint prop_id, cons
     }
 }
 
-static void cafeweather_dialog_get_property(GObject* object, guint prop_id, GValue* value, GParamSpec* pspec)
+static void cafeweather_dialog_get_property (GObject    *object,
+					     guint       prop_id,
+					     GValue     *value,
+					     GParamSpec *pspec G_GNUC_UNUSED)
 {
     CafeWeatherDialog *dialog = CAFEWEATHER_DIALOG (object);
 

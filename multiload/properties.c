@@ -833,7 +833,7 @@ fill_properties(CtkWidget *dialog, MultiloadApplet *ma)
 
 /* show properties dialog */
 void
-multiload_properties_cb (CtkAction       *action,
+multiload_properties_cb (CtkAction       *action G_GNUC_UNUSED,
 			 MultiloadApplet *ma)
 {
 	CtkWidget *dialog = NULL;

@@ -152,8 +152,8 @@ timer_cb (EyesApplet *eyes_applet)
 }
 
 static void
-about_cb (CtkAction   *action,
-	  EyesApplet  *eyes_applet)
+about_cb (CtkAction   *action G_GNUC_UNUSED,
+	  EyesApplet  *eyes_applet G_GNUC_UNUSED)
 {
     static const gchar *authors [] = {
                 "Dave Camp <campd@oit.edu>",
@@ -294,7 +294,8 @@ create_eyes (CafePanelApplet *applet)
 }
 
 static void
-dispose_cb (GObject *object, EyesApplet *eyes_applet)
+dispose_cb (GObject    *object G_GNUC_UNUSED,
+	    EyesApplet *eyes_applet)
 {
 	g_return_if_fail (eyes_applet);
 
@@ -332,7 +333,7 @@ dispose_cb (GObject *object, EyesApplet *eyes_applet)
 }
 
 static void
-help_cb (CtkAction  *action,
+help_cb (CtkAction  *action G_GNUC_UNUSED,
 	 EyesApplet *eyes_applet)
 {
 	GError *error = NULL;
@@ -449,7 +450,7 @@ geyes_applet_fill (CafePanelApplet *applet)
 static gboolean
 geyes_applet_factory (CafePanelApplet *applet,
 		      const gchar *iid,
-		      gpointer     data)
+		      gpointer     data G_GNUC_UNUSED)
 {
 	gboolean retval = FALSE;
 

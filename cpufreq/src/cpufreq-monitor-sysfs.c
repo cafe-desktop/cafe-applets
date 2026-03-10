@@ -67,7 +67,7 @@ const gchar *monitor_sysfs_files[] = {
 G_DEFINE_TYPE (CPUFreqMonitorSysfs, cpufreq_monitor_sysfs, CPUFREQ_TYPE_MONITOR)
 
 static void
-cpufreq_monitor_sysfs_init (CPUFreqMonitorSysfs *monitor)
+cpufreq_monitor_sysfs_init (CPUFreqMonitorSysfs *monitor G_GNUC_UNUSED)
 {
 }
 

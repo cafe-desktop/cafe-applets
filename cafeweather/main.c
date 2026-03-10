@@ -27,7 +27,9 @@
 #include "cafeweather-applet.h"
 
 
-static gboolean cafeweather_applet_new(CafePanelApplet* applet, const gchar* iid, gpointer data)
+static gboolean cafeweather_applet_new (CafePanelApplet *applet,
+					const gchar     *iid G_GNUC_UNUSED,
+					gpointer         data G_GNUC_UNUSED)
 {
 	CafeWeatherApplet* gw_applet;
 

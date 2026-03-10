@@ -476,7 +476,9 @@ static void use_radar_url_toggled(CtkToggleButton* button, CafeWeatherPref* pref
     soft_set_sensitive(pref->priv->basic_radar_url_hbox, toggled);
 }
 
-static gboolean radar_url_changed(CtkWidget* widget, CdkEventFocus* event, CafeWeatherPref* pref)
+static gboolean radar_url_changed (CtkWidget       *widget,
+				   CdkEventFocus   *event G_GNUC_UNUSED,
+				   CafeWeatherPref *pref)
 {
 	CafeWeatherApplet* gw_applet = pref->priv->applet;
 	gchar *text;
@@ -521,7 +523,10 @@ static void update_interval_changed(CtkSpinButton* button, CafeWeatherPref* pref
 	}
 }
 
-static gboolean free_data(CtkTreeModel* model, CtkTreePath* path, CtkTreeIter* iter, gpointer data)
+static gboolean free_data (CtkTreeModel *model,
+			   CtkTreePath  *path G_GNUC_UNUSED,
+			   CtkTreeIter  *iter,
+			   gpointer      data G_GNUC_UNUSED)
 {
 	WeatherLocation* location;
 
@@ -635,7 +640,8 @@ static gboolean find_location(CtkTreeModel* model, CtkTreeIter* iter, const gcha
 	return FALSE;
 }
 
-static void find_next_clicked(CtkButton* button, CafeWeatherPref* pref)
+static void find_next_clicked(CtkButton       *button G_GNUC_UNUSED,
+			      CafeWeatherPref *pref)
 {
 	CtkTreeView *tree;
 	CtkTreeModel *model;
@@ -1154,7 +1160,10 @@ static void cafeweather_pref_create(CafeWeatherPref* pref)
 }
 
 
-static void cafeweather_pref_set_property(GObject* object, guint prop_id, const GValue* value, GParamSpec *pspec)
+static void cafeweather_pref_set_property (GObject      *object,
+					   guint         prop_id,
+					   const GValue *value,
+					   GParamSpec   *pspec G_GNUC_UNUSED)
 {
     CafeWeatherPref* pref = CAFEWEATHER_PREF(object);
 
@@ -1167,7 +1176,10 @@ static void cafeweather_pref_set_property(GObject* object, guint prop_id, const 
 }
 
 
-static void cafeweather_pref_get_property(GObject* object, guint prop_id, GValue* value, GParamSpec* pspec)
+static void cafeweather_pref_get_property (GObject    *object,
+					   guint       prop_id,
+					   GValue     *value,
+					   GParamSpec *pspec G_GNUC_UNUSED)
 {
     CafeWeatherPref* pref = CAFEWEATHER_PREF(object);
 

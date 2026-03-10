@@ -55,7 +55,8 @@ static gboolean get_desktop_window (Window *window)
 }
 
 static void
-popup_add_note (StickyNotesApplet *applet, CtkWidget *item)
+popup_add_note (StickyNotesApplet *applet,
+		CtkWidget         *item G_GNUC_UNUSED)
 {
 	stickynotes_add (ctk_widget_get_screen (applet->w_applet));
 }
@@ -84,9 +85,9 @@ stickynote_toggle_notes_visible ()
 
 /* Applet Callback : Mouse button press on the applet. */
 gboolean
-applet_button_cb (CtkWidget         *widget,
-                  CdkEventButton    *event,
-                  StickyNotesApplet *applet)
+applet_button_cb (CtkWidget         *widget G_GNUC_UNUSED,
+		  CdkEventButton    *event,
+		  StickyNotesApplet *applet)
 {
 	if (event->type == CDK_2BUTTON_PRESS)
 	{
@@ -104,9 +105,9 @@ applet_button_cb (CtkWidget         *widget,
 
 /* Applet Callback : Keypress on the applet. */
 gboolean
-applet_key_cb (CtkWidget         *widget,
-               CdkEventKey       *event,
-               StickyNotesApplet *applet)
+applet_key_cb (CtkWidget         *widget G_GNUC_UNUSED,
+	       CdkEventKey       *event,
+	       StickyNotesApplet *applet G_GNUC_UNUSED)
 {
 	switch (event->keyval)
 	{
@@ -131,7 +132,9 @@ gboolean applet_cross_cb(CtkWidget *widget, CdkEventCrossing *event, StickyNotes
 }
 
 /* Applet Callback : On focus (in or out) of the applet. */
-gboolean applet_focus_cb(CtkWidget *widget, CdkEventFocus *event, StickyNotesApplet *applet)
+gboolean applet_focus_cb (CtkWidget         *widget G_GNUC_UNUSED,
+			  CdkEventFocus     *event G_GNUC_UNUSED,
+			  StickyNotesApplet *applet)
 {
 	stickynotes_applet_update_icon(applet);
 
@@ -139,8 +142,8 @@ gboolean applet_focus_cb(CtkWidget *widget, CdkEventFocus *event, StickyNotesApp
 }
 
 static CdkFilterReturn desktop_window_event_filter (CdkXEvent *xevent,
-						    CdkEvent  *event,
-						    gpointer   data)
+						    CdkEvent  *event G_GNUC_UNUSED,
+						    gpointer   data G_GNUC_UNUSED)
 {
 	gboolean desktop_hide = g_settings_get_boolean (stickynotes->settings, "desktop-hide");
 	if (desktop_hide  &&
@@ -204,13 +207,17 @@ void install_check_click_on_desktop (void)
 }
 
 /* Applet Callback : Change the panel orientation. */
-void applet_change_orient_cb(CafePanelApplet *cafe_panel_applet, CafePanelAppletOrient orient, StickyNotesApplet *applet)
+void applet_change_orient_cb (CafePanelApplet      *cafe_panel_applet G_GNUC_UNUSED,
+			      CafePanelAppletOrient orient,
+			      StickyNotesApplet    *applet)
 {
 	applet->panel_orient = orient;
 }
 
 /* Applet Callback : Resize the applet. */
-void applet_size_allocate_cb(CtkWidget *widget, CtkAllocation *allocation, StickyNotesApplet *applet)
+void applet_size_allocate_cb (CtkWidget         *widget G_GNUC_UNUSED,
+			      CtkAllocation     *allocation,
+			      StickyNotesApplet *applet)
 {
 	if ((applet->panel_orient == CAFE_PANEL_APPLET_ORIENT_UP) || (applet->panel_orient == CAFE_PANEL_APPLET_ORIENT_DOWN)) {
 	  if (applet->panel_size == allocation->height)
@@ -228,7 +235,8 @@ void applet_size_allocate_cb(CtkWidget *widget, CtkAllocation *allocation, Stick
 }
 
 /* Applet Callback : Deletes the applet. */
-void applet_destroy_cb (CafePanelApplet *cafe_panel_applet, StickyNotesApplet *applet)
+void applet_destroy_cb (CafePanelApplet   *cafe_panel_applet G_GNUC_UNUSED,
+			StickyNotesApplet *applet)
 {
 	GList *notes;
 
@@ -273,19 +281,22 @@ destroy_all_response_cb (CtkDialog *dialog, gint id, StickyNotesApplet *applet)
 }
 
 /* Menu Callback : New Note */
-void menu_new_note_cb(CtkAction *action, StickyNotesApplet *applet)
+void menu_new_note_cb (CtkAction         *action G_GNUC_UNUSED,
+		       StickyNotesApplet *applet)
 {
 	popup_add_note (applet, NULL);
 }
 
 /* Menu Callback : Hide Notes */
-void menu_hide_notes_cb(CtkAction *action, StickyNotesApplet *applet)
+void menu_hide_notes_cb (CtkAction         *action G_GNUC_UNUSED,
+			 StickyNotesApplet *applet G_GNUC_UNUSED)
 {
 	stickynote_show_notes (FALSE);
 }
 
 /* Menu Callback : Destroy all sticky notes */
-void menu_destroy_all_cb(CtkAction *action, StickyNotesApplet *applet)
+void menu_destroy_all_cb (CtkAction         *action G_GNUC_UNUSED,
+			  StickyNotesApplet *applet)
 {
 	CtkBuilder *builder;
 
@@ -315,7 +326,8 @@ void menu_destroy_all_cb(CtkAction *action, StickyNotesApplet *applet)
 }
 
 /* Menu Callback: Lock/Unlock sticky notes */
-void menu_toggle_lock_cb(CtkAction *action, StickyNotesApplet *applet)
+void menu_toggle_lock_cb (CtkAction         *action,
+			  StickyNotesApplet *applet G_GNUC_UNUSED)
 {
 	gboolean locked = ctk_toggle_action_get_active (CTK_TOGGLE_ACTION (action));
 
@@ -324,7 +336,8 @@ void menu_toggle_lock_cb(CtkAction *action, StickyNotesApplet *applet)
 }
 
 /* Menu Callback : Configure preferences */
-void menu_preferences_cb(CtkAction *action, StickyNotesApplet *applet)
+void menu_preferences_cb (CtkAction         *action G_GNUC_UNUSED,
+			  StickyNotesApplet *applet)
 {
 	stickynotes_applet_update_prefs();
 	ctk_window_set_screen(CTK_WINDOW(stickynotes->w_prefs), ctk_widget_get_screen(applet->w_applet));
@@ -332,7 +345,8 @@ void menu_preferences_cb(CtkAction *action, StickyNotesApplet *applet)
 }
 
 /* Menu Callback : Show help */
-void menu_help_cb(CtkAction *action, StickyNotesApplet *applet)
+void menu_help_cb (CtkAction         *action G_GNUC_UNUSED,
+		   StickyNotesApplet *applet)
 {
 	GError *error = NULL;
 
@@ -353,8 +367,8 @@ void menu_help_cb(CtkAction *action, StickyNotesApplet *applet)
 
 /* Menu Callback : Display About window */
 void
-menu_about_cb (CtkAction *action,
-	       StickyNotesApplet *applet)
+menu_about_cb (CtkAction         *action G_GNUC_UNUSED,
+	       StickyNotesApplet *applet G_GNUC_UNUSED)
 {
 	static const gchar *authors[] = {
 		"Loban A Rahman <loban@earthling.net>",
@@ -395,7 +409,7 @@ menu_about_cb (CtkAction *action,
 
 /* Preferences Callback : Save. */
 void
-preferences_save_cb (gpointer data)
+preferences_save_cb (gpointer data G_GNUC_UNUSED)
 {
 	gint width = ctk_adjustment_get_value (stickynotes->w_prefs_width);
 	gint height = ctk_adjustment_get_value (stickynotes->w_prefs_height);
@@ -428,7 +442,8 @@ preferences_save_cb (gpointer data)
 
 /* Preferences Callback : Change color. */
 void
-preferences_color_cb (CtkWidget *button, gpointer data)
+preferences_color_cb (CtkWidget *button G_GNUC_UNUSED,
+		      gpointer   data G_GNUC_UNUSED)
 {
 	char *color_str, *font_color_str;
 
@@ -448,7 +463,8 @@ preferences_color_cb (CtkWidget *button, gpointer data)
 }
 
 /* Preferences Callback : Change font. */
-void preferences_font_cb (CtkWidget *button, gpointer data)
+void preferences_font_cb (CtkWidget *button,
+			  gpointer   data G_GNUC_UNUSED)
 {
 	const char *font_str;
 
@@ -457,7 +473,9 @@ void preferences_font_cb (CtkWidget *button, gpointer data)
 }
 
 /* Preferences Callback : Apply to existing notes. */
-void preferences_apply_cb(GSettings *settings, gchar *key, gpointer data)
+void preferences_apply_cb (GSettings *settings,
+			   gchar     *key,
+			   gpointer   data G_GNUC_UNUSED)
 {
 	GList *l;
 	StickyNote *note;
@@ -529,7 +547,9 @@ void preferences_apply_cb(GSettings *settings, gchar *key, gpointer data)
 }
 
 /* Preferences Callback : Response. */
-void preferences_response_cb(CtkWidget *dialog, gint response, gpointer data)
+void preferences_response_cb (CtkWidget *dialog,
+			      gint       response,
+			      gpointer   data G_GNUC_UNUSED)
 {
 	if (response == CTK_RESPONSE_HELP) {
 		GError *error = NULL;
@@ -554,7 +574,9 @@ void preferences_response_cb(CtkWidget *dialog, gint response, gpointer data)
 }
 
 /* Preferences Callback : Delete */
-gboolean preferences_delete_cb(CtkWidget *widget, CdkEvent *event, gpointer data)
+gboolean preferences_delete_cb (CtkWidget *widget,
+				CdkEvent  *event G_GNUC_UNUSED,
+				gpointer   data G_GNUC_UNUSED)
 {
 	ctk_widget_hide(widget);
 

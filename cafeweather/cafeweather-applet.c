@@ -41,14 +41,14 @@
 
 #define MAX_CONSECUTIVE_FAULTS (3)
 
-static void about_cb (CtkAction      *action,
+static void about_cb (CtkAction         *action G_GNUC_UNUSED,
 		      CafeWeatherApplet *gw_applet)
 {
 
     cafeweather_about_run (gw_applet);
 }
 
-static void help_cb (CtkAction      *action,
+static void help_cb (CtkAction         *action G_GNUC_UNUSED,
 		     CafeWeatherApplet *gw_applet)
 {
     GError *error = NULL;
@@ -70,7 +70,7 @@ static void help_cb (CtkAction      *action,
     }
 }
 
-static void pref_cb (CtkAction      *action,
+static void pref_cb (CtkAction         *action G_GNUC_UNUSED,
 		     CafeWeatherApplet *gw_applet)
 {
    if (gw_applet->pref_dialog) {
@@ -83,7 +83,7 @@ static void pref_cb (CtkAction      *action,
    }
 }
 
-static void details_cb (CtkAction      *action,
+static void details_cb (CtkAction         *action G_GNUC_UNUSED,
 			CafeWeatherApplet *gw_applet)
 {
    if (gw_applet->details_dialog) {
@@ -97,7 +97,7 @@ static void details_cb (CtkAction      *action,
    }
 }
 
-static void update_cb (CtkAction      *action,
+static void update_cb (CtkAction         *action G_GNUC_UNUSED,
 		       CafeWeatherApplet *gw_applet)
 {
     cafeweather_update (gw_applet);
@@ -198,16 +198,20 @@ static void place_widgets (CafeWeatherApplet *gw_applet)
     ctk_widget_show_all (CTK_WIDGET (gw_applet->applet));
 }
 
-static void change_orient_cb (CafePanelApplet *w, CafePanelAppletOrient o, gpointer data)
+static void change_orient_cb (CafePanelApplet      *w G_GNUC_UNUSED,
+			      CafePanelAppletOrient o,
+			      gpointer              data)
 {
     CafeWeatherApplet *gw_applet = (CafeWeatherApplet *)data;
-	
+
     gw_applet->orient = o;
     place_widgets(gw_applet);
     return;
 }
 
-static void size_allocate_cb(CafePanelApplet *w, CtkAllocation *allocation, gpointer data)
+static void size_allocate_cb (CafePanelApplet *w G_GNUC_UNUSED,
+			      CtkAllocation   *allocation,
+			      gpointer         data)
 {
     CafeWeatherApplet *gw_applet = (CafeWeatherApplet *)data;
 	
@@ -225,7 +229,9 @@ static void size_allocate_cb(CafePanelApplet *w, CtkAllocation *allocation, gpoi
     return;
 }
 
-static gboolean clicked_cb (CtkWidget *widget, CdkEventButton *ev, gpointer data)
+static gboolean clicked_cb (CtkWidget      *widget G_GNUC_UNUSED,
+			    CdkEventButton *ev,
+			    gpointer        data)
 {
     CafeWeatherApplet *gw_applet = data;
 
@@ -245,7 +251,9 @@ static gboolean clicked_cb (CtkWidget *widget, CdkEventButton *ev, gpointer data
 }
 
 static gboolean 
-key_press_cb (CtkWidget *widget, CdkEventKey *event, CafeWeatherApplet *gw_applet)
+key_press_cb (CtkWidget         *widget G_GNUC_UNUSED,
+	      CdkEventKey       *event,
+	      CafeWeatherApplet *gw_applet)
 {
 	switch (event->keyval) {	
 	case CDK_KEY_u:
@@ -277,7 +285,9 @@ key_press_cb (CtkWidget *widget, CdkEventKey *event, CafeWeatherApplet *gw_apple
 }
 
 static void
-network_changed (GNetworkMonitor *monitor, gboolean available, CafeWeatherApplet *gw_applet)
+network_changed (GNetworkMonitor   *monitor G_GNUC_UNUSED,
+		 gboolean           available,
+		 CafeWeatherApplet *gw_applet)
 {
     if (available) {
         cafeweather_update (gw_applet);
@@ -286,7 +296,8 @@ network_changed (GNetworkMonitor *monitor, gboolean available, CafeWeatherApplet
 
 
 static void
-applet_destroy (CtkWidget *widget, CafeWeatherApplet *gw_applet)
+applet_destroy (CtkWidget         *widget G_GNUC_UNUSED,
+		CafeWeatherApplet *gw_applet)
 {
     GNetworkMonitor *monitor;
 

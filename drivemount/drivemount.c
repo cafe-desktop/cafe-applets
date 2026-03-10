@@ -36,7 +36,9 @@ static const char drivemount_iid[] = "DriveMountApplet";
 static const char factory_iid[] = "DriveMountAppletFactory";
 
 static void
-change_orient (CafePanelApplet *applet, CafePanelAppletOrient o, DriveList *drive_list)
+change_orient (CafePanelApplet      *applet G_GNUC_UNUSED,
+	       CafePanelAppletOrient o,
+	       DriveList            *drive_list)
 {
     CtkOrientation orientation;
 
@@ -76,11 +78,11 @@ size_allocate (CafePanelApplet  *applet,
 }
 
 static void
-change_background (CafePanelApplet               *applet,
+change_background (CafePanelApplet               *applet G_GNUC_UNUSED,
 		   CafePanelAppletBackgroundType  type,
-		   CdkColor                  *colour,
-		   cairo_pattern_t           *pattern,
-		   DriveList                 *drivelist)
+		   CdkColor                      *colour G_GNUC_UNUSED,
+		   cairo_pattern_t               *pattern G_GNUC_UNUSED,
+		   DriveList                     *drivelist)
 {
     switch (type) {
     case PANEL_NO_BACKGROUND:
@@ -95,8 +97,8 @@ change_background (CafePanelApplet               *applet,
 }
 
 static void
-display_about_dialog (CtkAction *action,
-		      DriveList *drive_list)
+display_about_dialog (CtkAction *action G_GNUC_UNUSED,
+		      DriveList *drive_list G_GNUC_UNUSED)
 {
     const gchar *authors[] = {
 	"James Henstridge <jamesh@canonical.com>",
@@ -133,7 +135,7 @@ display_about_dialog (CtkAction *action,
 }
 
 static void
-display_help (CtkAction *action,
+display_help (CtkAction *action G_GNUC_UNUSED,
 	      DriveList *drive_list)
 {
     CdkScreen *screen;
@@ -175,8 +177,8 @@ static const CtkActionEntry applet_menu_actions[] = {
 
 static gboolean
 applet_factory (CafePanelApplet *applet,
-		const char  *iid,
-		gpointer     user_data)
+		const char      *iid,
+		gpointer         user_data G_GNUC_UNUSED)
 {
     gboolean ret = FALSE;
     CtkWidget *drive_list;

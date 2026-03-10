@@ -73,7 +73,8 @@ static ButtonIconStruct button_icons[] = {
 static void popup_error_dialog(AccessxStatusApplet* sapplet);
 
 /* cribbed from geyes */
-static void about_cb(CtkAction* action, AccessxStatusApplet* sapplet)
+static void about_cb (CtkAction           *action G_GNUC_UNUSED,
+		      AccessxStatusApplet *sapplet G_GNUC_UNUSED)
 {
 	static const gchar* authors[] = {
 		"Calum Benson <calum.benson@sun.com>",
@@ -110,7 +111,8 @@ static void about_cb(CtkAction* action, AccessxStatusApplet* sapplet)
 		NULL);
 }
 
-static void help_cb(CtkAction* action, AccessxStatusApplet* sapplet)
+static void help_cb (CtkAction           *action G_GNUC_UNUSED,
+		     AccessxStatusApplet *sapplet)
 {
 	GError* error = NULL;
 	CdkScreen* screen = ctk_widget_get_screen(CTK_WIDGET(sapplet->applet));
@@ -136,7 +138,8 @@ static void help_cb(CtkAction* action, AccessxStatusApplet* sapplet)
 	}
 }
 
-static void dialog_cb(CtkAction* action, AccessxStatusApplet* sapplet)
+static void dialog_cb (CtkAction           *action G_GNUC_UNUSED,
+		       AccessxStatusApplet *sapplet)
 {
 	GError* error = NULL;
 	CdkScreen *screen;
@@ -984,7 +987,9 @@ static void accessx_status_applet_notify_xkb_event(AccessxStatusApplet* sapplet,
 	}
 }
 
-static CdkFilterReturn accessx_status_xkb_filter(CdkXEvent* cdk_xevent, CdkEvent* event, gpointer user_data)
+static CdkFilterReturn accessx_status_xkb_filter (CdkXEvent *cdk_xevent,
+						  CdkEvent  *event G_GNUC_UNUSED,
+						  gpointer   user_data)
 {
 	AccessxStatusApplet* sapplet = user_data;
 	XkbEvent* xevent = cdk_xevent;
@@ -1201,7 +1206,8 @@ static AccessxStatusApplet* create_applet(CafePanelApplet* applet)
 	return sapplet;
 }
 
-static void accessx_status_applet_destroy(CtkWidget* widget, gpointer user_data)
+static void accessx_status_applet_destroy (CtkWidget *widget G_GNUC_UNUSED,
+					   gpointer   user_data)
 {
 	AccessxStatusApplet* sapplet = user_data;
 	/* do we need to free the icon factory ? */
@@ -1219,7 +1225,9 @@ static void accessx_status_applet_destroy(CtkWidget* widget, gpointer user_data)
 	}
 }
 
-static void accessx_status_applet_reorient(CtkWidget* widget, CafePanelAppletOrient o, gpointer user_data)
+static void accessx_status_applet_reorient (CtkWidget            *widget G_GNUC_UNUSED,
+					    CafePanelAppletOrient o,
+					    gpointer              user_data)
 {
 	AccessxStatusApplet* sapplet = user_data;
 	CtkWidget* box;
@@ -1241,7 +1249,9 @@ static void accessx_status_applet_reorient(CtkWidget* widget, CafePanelAppletOri
 	accessx_status_applet_layout_box(sapplet, box, stickyfoo);
 }
 
-static void accessx_status_applet_resize(CtkWidget* widget, int size, gpointer user_data)
+static void accessx_status_applet_resize (CtkWidget *widget G_GNUC_UNUSED,
+					  int        size,
+					  gpointer   user_data)
 {
 	cairo_surface_t *surface;
 
@@ -1268,7 +1278,9 @@ static void accessx_status_applet_resize(CtkWidget* widget, int size, gpointer u
 	cairo_surface_destroy(surface);
 }
 
-static gboolean button_press_cb(CtkWidget* widget, CdkEventButton* event, AccessxStatusApplet* sapplet)
+static gboolean button_press_cb (CtkWidget           *widget G_GNUC_UNUSED,
+				 CdkEventButton      *event,
+				 AccessxStatusApplet *sapplet)
 {
 	if (event->button == 1 && event->type == CDK_BUTTON_PRESS)
 	{
@@ -1278,7 +1290,9 @@ static gboolean button_press_cb(CtkWidget* widget, CdkEventButton* event, Access
 	return FALSE;
 }
 
-static gboolean key_press_cb(CtkWidget* widget, CdkEventKey* event, AccessxStatusApplet* sapplet)
+static gboolean key_press_cb (CtkWidget           *widget G_GNUC_UNUSED,
+			      CdkEventKey         *event,
+			      AccessxStatusApplet *sapplet)
 {
 	switch (event->keyval)
 	{
@@ -1329,7 +1343,8 @@ static gboolean accessx_status_applet_initialize(AccessxStatusApplet* sapplet)
 	return TRUE;
 }
 
-static void accessx_status_applet_realize(CtkWidget* widget, gpointer user_data)
+static void accessx_status_applet_realize (CtkWidget *widget G_GNUC_UNUSED,
+					   gpointer   user_data)
 {
 	AccessxStatusApplet* sapplet = user_data;
 
@@ -1404,7 +1419,9 @@ static gboolean accessx_status_applet_fill(CafePanelApplet* applet)
 	return TRUE;
 }
 
-static gboolean accessx_status_applet_factory(CafePanelApplet* applet, const gchar* iid, gpointer data)
+static gboolean accessx_status_applet_factory (CafePanelApplet *applet,
+					       const gchar     *iid,
+					       gpointer         data G_GNUC_UNUSED)
 {
 	gboolean retval = FALSE;
 

@@ -294,8 +294,9 @@ load_graph_alloc (LoadGraph *g)
 }
 
 static gint
-load_graph_configure (CtkWidget *widget, CdkEventConfigure *event,
-                      gpointer data_ptr)
+load_graph_configure (CtkWidget         *widget,
+		      CdkEventConfigure *event G_GNUC_UNUSED,
+		      gpointer           data_ptr)
 {
     CtkAllocation allocation;
     LoadGraph *c = (LoadGraph *) data_ptr;
@@ -321,9 +322,9 @@ load_graph_configure (CtkWidget *widget, CdkEventConfigure *event,
 }
 
 static gint
-load_graph_expose (CtkWidget *widget,
-                   cairo_t *cr,
-                   gpointer data_ptr)
+load_graph_expose (CtkWidget *widget G_GNUC_UNUSED,
+		   cairo_t   *cr,
+		   gpointer   data_ptr)
 {
     LoadGraph *g = (LoadGraph *) data_ptr;
 
@@ -346,7 +347,9 @@ load_graph_destroy (CtkWidget *widget, gpointer data_ptr)
 }
 
 static gboolean
-load_graph_clicked (CtkWidget *widget, CdkEventButton *event, LoadGraph *load)
+load_graph_clicked (CtkWidget      *widget G_GNUC_UNUSED,
+		    CdkEventButton *event G_GNUC_UNUSED,
+		    LoadGraph      *load)
 {
     load->multiload->last_clicked = load->id;
 
@@ -354,7 +357,9 @@ load_graph_clicked (CtkWidget *widget, CdkEventButton *event, LoadGraph *load)
 }
 
 static gboolean
-load_graph_enter_cb(CtkWidget *widget, CdkEventCrossing *event, gpointer data)
+load_graph_enter_cb (CtkWidget        *widget G_GNUC_UNUSED,
+		     CdkEventCrossing *event G_GNUC_UNUSED,
+		     gpointer          data)
 {
     LoadGraph *graph;
     graph = (LoadGraph *)data;
@@ -366,7 +371,9 @@ load_graph_enter_cb(CtkWidget *widget, CdkEventCrossing *event, gpointer data)
 }
 
 static gboolean
-load_graph_leave_cb(CtkWidget *widget, CdkEventCrossing *event, gpointer data)
+load_graph_leave_cb (CtkWidget        *widget G_GNUC_UNUSED,
+		     CdkEventCrossing *event G_GNUC_UNUSED,
+		     gpointer          data)
 {
     LoadGraph *graph;
     graph = (LoadGraph *)data;
@@ -398,9 +405,15 @@ load_graph_load_config (LoadGraph *g)
 }
 
 LoadGraph *
-load_graph_new (MultiloadApplet *ma, guint n, const gchar *label,
-                guint id, guint speed, guint size, gboolean visible,
-                const gchar *name, LoadGraphDataFunc get_data)
+load_graph_new (MultiloadApplet  *ma,
+		guint             n,
+		const gchar      *label G_GNUC_UNUSED,
+		guint             id,
+		guint             speed,
+		guint             size,
+		gboolean          visible,
+		const gchar      *name,
+		LoadGraphDataFunc get_data)
 {
     LoadGraph *g;
     CafePanelAppletOrient orient;

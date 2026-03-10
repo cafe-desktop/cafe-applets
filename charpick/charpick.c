@@ -116,11 +116,11 @@ static const gunichar * const chartable[] = {
 
 /* sets the picked character as the selection when it gets a request */
 static void
-charpick_selection_handler(CtkWidget *widget,
+charpick_selection_handler(CtkWidget        *widget G_GNUC_UNUSED,
 			   CtkSelectionData *selection_data,
-			   guint info,
-			   guint time,
-		           gpointer data)
+			   guint             info G_GNUC_UNUSED,
+			   guint             time G_GNUC_UNUSED,
+		           gpointer          data)
 {
   charpick_data *p_curr_data = data;
   gint num;
@@ -135,8 +135,9 @@ charpick_selection_handler(CtkWidget *widget,
 
 /* untoggles the active toggle_button when we lose the selection */
 static gint
-selection_clear_cb (CtkWidget *widget, CdkEventSelection *event,
-                    gpointer data)
+selection_clear_cb (CtkWidget         *widget G_GNUC_UNUSED,
+		    CdkEventSelection *event G_GNUC_UNUSED,
+		    gpointer           data)
 {
   charpick_data *curr_data = data;
   
@@ -186,7 +187,7 @@ toggle_button_toggled_cb(CtkToggleButton *button, gpointer data)
  * propogate button presses on button2/3.
  */
 static gboolean
-button_press_hack (CtkWidget      *widget,
+button_press_hack (CtkWidget      *widget G_GNUC_UNUSED,
 		   CdkEventButton *event,
 		   CtkWidget      *applet)
 {
@@ -200,7 +201,9 @@ button_press_hack (CtkWidget      *widget,
 }
 
 static gint
-key_press_event(CtkWidget *widget, CdkEventKey *event, gpointer data)
+key_press_event (CtkWidget   *widget G_GNUC_UNUSED,
+		 CdkEventKey *event G_GNUC_UNUSED,
+		 gpointer     data G_GNUC_UNUSED)
 {
 #if 0
   charpick_data *p_curr_data = data;
@@ -527,7 +530,9 @@ build_table(charpick_data *p_curr_data)
   
 }
 
-static void applet_size_allocate(CafePanelApplet *applet, CtkAllocation *allocation, gpointer data)
+static void applet_size_allocate (CafePanelApplet *applet G_GNUC_UNUSED,
+				  CtkAllocation   *allocation,
+				  gpointer         data)
 {
   charpick_data *curr_data = data;
   if (curr_data->panel_vertical) {
@@ -544,7 +549,9 @@ static void applet_size_allocate(CafePanelApplet *applet, CtkAllocation *allocat
   return;
 }
 
-static void applet_change_orient(CafePanelApplet *applet, CafePanelAppletOrient o, gpointer data)
+static void applet_change_orient (CafePanelApplet      *applet G_GNUC_UNUSED,
+				  CafePanelAppletOrient o,
+				  gpointer              data)
 {
   charpick_data *curr_data = data;
   if (o == CAFE_PANEL_APPLET_ORIENT_UP ||
@@ -558,8 +565,8 @@ static void applet_change_orient(CafePanelApplet *applet, CafePanelAppletOrient 
 
 
 static void
-about (CtkAction     *action,
-       charpick_data *curr_data)
+about (CtkAction     *action G_GNUC_UNUSED,
+       charpick_data *curr_data G_GNUC_UNUSED)
 {
   static const char * const authors[] = {
 	  "Alexandre Muñiz <munizao@xprt.net>",
@@ -600,8 +607,8 @@ about (CtkAction     *action,
 
 
 static void
-help_cb (CtkAction     *action,
-	 charpick_data *curr_data)
+help_cb (CtkAction     *action G_GNUC_UNUSED,
+	 charpick_data *curr_data G_GNUC_UNUSED)
 {
   GError *error = NULL;
 
@@ -618,7 +625,8 @@ help_cb (CtkAction     *action,
 }
 
 static void
-applet_destroy (CtkWidget *widget, gpointer data)
+applet_destroy (CtkWidget *widget G_GNUC_UNUSED,
+		gpointer   data)
 {
   charpick_data *curr_data = data;
 
@@ -820,8 +828,8 @@ charpicker_applet_fill (CafePanelApplet *applet)
 
 static gboolean
 charpicker_applet_factory (CafePanelApplet *applet,
-			   const gchar          *iid,
-			   gpointer              data)
+			   const gchar     *iid,
+			   gpointer         data G_GNUC_UNUSED)
 {
 	gboolean retval = FALSE;
     

@@ -734,7 +734,8 @@ check_for_updates( gpointer data )
    decrease our applet count (and possibly perform global cleanup)
  */
 static void
-destroy_applet( CtkWidget *widget, ProgressData *battstat )
+destroy_applet (CtkWidget    *widget G_GNUC_UNUSED,
+		ProgressData *battstat )
 {
   if (DEBUG) g_print("destroy_applet()\n");
 
@@ -793,7 +794,8 @@ battstat_show_help( ProgressData *battstat, const char *section )
 /* Called when the user selects the 'help' menu item.
  */
 static void
-help_cb( CtkAction *action, ProgressData *battstat )
+help_cb (CtkAction    *action G_GNUC_UNUSED,
+	 ProgressData *battstat )
 {
   battstat_show_help( battstat, NULL );
 }
@@ -801,7 +803,8 @@ help_cb( CtkAction *action, ProgressData *battstat )
 /* Called when the user selects the 'about' menu item.
  */
 static void
-about_cb( CtkAction *action, ProgressData *battstat )
+about_cb (CtkAction    *action G_GNUC_UNUSED,
+	  ProgressData *battstat G_GNUC_UNUSED)
 {
   const gchar *authors[] = {
     "J\xC3\xB6rgen Pehrson <jp@spektr.eu.org>",
@@ -874,9 +877,9 @@ setup_text_orientation( ProgressData *battstat )
    has changed orientation.
 */
 static void
-change_orient (CafePanelApplet       *applet,
+change_orient (CafePanelApplet       *applet G_GNUC_UNUSED,
 	       CafePanelAppletOrient  orient,
-	       ProgressData      *battstat)
+	       ProgressData          *battstat)
 {
   if (DEBUG) g_print("change_orient()\n");
 
@@ -897,8 +900,9 @@ change_orient (CafePanelApplet       *applet,
    is just created or if the size of the panel has changed.
 */
 static void
-size_allocate( CafePanelApplet *applet, CtkAllocation *allocation,
-               ProgressData *battstat)
+size_allocate (CafePanelApplet *applet G_GNUC_UNUSED,
+	       CtkAllocation   *allocation,
+	       ProgressData    *battstat)
 {
   if (DEBUG) g_print("applet_change_pixel_size()\n");
 
@@ -1181,8 +1185,8 @@ battstat_applet_fill (CafePanelApplet *applet)
 /* Boilerplate... */
 static gboolean
 battstat_applet_factory (CafePanelApplet *applet,
-			 const gchar          *iid,
-			 gpointer              data)
+			 const gchar     *iid,
+			 gpointer         data G_GNUC_UNUSED)
 {
   gboolean retval = FALSE;
 

@@ -300,11 +300,11 @@ trash_applet_key_press (CtkWidget   *widget,
 }
 
 static gboolean
-trash_applet_drag_motion (CtkWidget      *widget,
-                          CdkDragContext *context,
-                          gint            x,
-                          gint            y,
-                          guint           time)
+trash_applet_drag_motion (CtkWidget      *widget G_GNUC_UNUSED,
+			  CdkDragContext *context,
+			  gint            x G_GNUC_UNUSED,
+			  gint            y G_GNUC_UNUSED,
+			  guint           time)
 {
   GList *target;
 
@@ -356,15 +356,15 @@ error_dialog (TrashApplet *applet, const gchar *error, ...)
 }
 
 static void
-trash_applet_do_empty (CtkAction   *action,
-                       TrashApplet *applet)
+trash_applet_do_empty (CtkAction   *action G_GNUC_UNUSED,
+		       TrashApplet *applet)
 {
   trash_empty (CTK_WIDGET (applet));
 }
 
 static void
-trash_applet_open_folder (CtkAction   *action,
-                          TrashApplet *applet)
+trash_applet_open_folder (CtkAction   *action G_GNUC_UNUSED,
+			  TrashApplet *applet)
 {
   GError *err = NULL;
 
@@ -382,8 +382,8 @@ trash_applet_open_folder (CtkAction   *action,
 }
 
 static void
-trash_applet_show_help (CtkAction   *action,
-                        TrashApplet *applet)
+trash_applet_show_help (CtkAction   *action G_GNUC_UNUSED,
+			TrashApplet *applet)
 {
   GError *err = NULL;
 
@@ -404,8 +404,8 @@ trash_applet_show_help (CtkAction   *action,
 
 
 static void
-trash_applet_show_about (CtkAction   *action,
-                         TrashApplet *applet)
+trash_applet_show_about (CtkAction   *action G_GNUC_UNUSED,
+			 TrashApplet *applet G_GNUC_UNUSED)
 {
   static const char *authors[] = {
     "Michiel Sikkes <michiel@eyesopened.nl>",
@@ -536,12 +536,12 @@ confirm_delete_immediately (CtkWidget *parent_view,
 
 static void
 trash_applet_drag_data_received (CtkWidget        *widget,
-                                 CdkDragContext   *context,
-                                 gint              x,
-                                 gint              y,
-                                 CtkSelectionData *selectiondata,
-                                 guint             info,
-                                 guint             time_)
+				 CdkDragContext   *context,
+				 gint              x G_GNUC_UNUSED,
+				 gint              y G_GNUC_UNUSED,
+				 CtkSelectionData *selectiondata,
+				 guint             info G_GNUC_UNUSED,
+				 guint             time_)
 {
   gchar **list;
   gint i;
@@ -615,8 +615,8 @@ trash_applet_class_init (TrashAppletClass *class)
 
 static gboolean
 trash_applet_factory (CafePanelApplet *applet,
-                      const gchar *iid,
-                      gpointer     data)
+		      const gchar     *iid,
+		      gpointer         data G_GNUC_UNUSED)
 {
   gboolean retval = FALSE;
 

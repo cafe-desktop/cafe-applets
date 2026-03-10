@@ -44,7 +44,7 @@ static void (*status_updated_callback) (void);
 static gboolean status_update_scheduled;
 
 static gboolean
-update_status_idle (gpointer junk)
+update_status_idle (gpointer junk G_GNUC_UNUSED)
 {
   if (status_updated_callback)
     status_updated_callback ();
@@ -63,13 +63,19 @@ schedule_status_callback (void)
 }
 
 static void
-device_cb (UpClient *client, UpDevice *device, gpointer user_data) {
+device_cb (UpClient *client G_GNUC_UNUSED,
+	   UpDevice *device G_GNUC_UNUSED,
+	   gpointer user_data G_GNUC_UNUSED)
+{
   schedule_status_callback();
 }
 
 #if UP_CHECK_VERSION (0, 99, 0)
 static void
-device_removed_cb (UpClient *client, const gchar *object_path, gpointer user_data) {
+device_removed_cb (UpClient    *client G_GNUC_UNUSED,
+		   const gchar *object_path G_GNUC_UNUSED,
+		   gpointer     user_data G_GNUC_UNUSED)
+{
   schedule_status_callback();
 }
 #endif

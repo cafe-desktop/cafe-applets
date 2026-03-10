@@ -229,7 +229,8 @@ drive_button_key_press (CtkWidget      *widget,
 }
 
 static void
-drive_button_theme_change (CtkIconTheme *icon_theme, gpointer data)
+drive_button_theme_change (CtkIconTheme *icon_theme G_GNUC_UNUSED,
+			   gpointer      data)
 {
     drive_button_queue_update (data);
 }
@@ -464,7 +465,9 @@ drive_button_set_size (DriveButton *self, int icon_size)
 }
 
 void
-drive_button_redraw (gpointer key, gpointer value, gpointer user_data)
+drive_button_redraw (gpointer key G_GNUC_UNUSED,
+		     gpointer value,
+		     gpointer user_data G_GNUC_UNUSED)
 {
     DriveButton *button = value;
     drive_button_queue_update (button);
@@ -695,7 +698,9 @@ gvm_run_command (const char *device, const char *command, const char *path)
  * gvm_check_dvd_only)
  */
 static gboolean
-gvm_check_dvd_only (const char *udi, const char *device, const char *mount_point)
+gvm_check_dvd_only (const char *udi G_GNUC_UNUSED,
+		    const char *device G_GNUC_UNUSED,
+		    const char *mount_point)
 {
 	char *path;
 	gboolean retval;
@@ -817,12 +822,16 @@ run_command (DriveButton *self, const char *command)
 	g_free (device_path);
 }
 
-static void dummy_async_ready_callback(GObject *source_object, GAsyncResult *res, gpointer user_data) {
+static void dummy_async_ready_callback (GObject      *source_object G_GNUC_UNUSED,
+					GAsyncResult *res G_GNUC_UNUSED,
+					gpointer      user_data G_GNUC_UNUSED)
+{
 	/* do nothing */
 }
 
 static void
-mount_drive (DriveButton *self, CtkWidget *item)
+mount_drive (DriveButton *self,
+	     CtkWidget   *item G_GNUC_UNUSED)
 {
     if (self->volume) {
         GMountOperation *mount_op = ctk_mount_operation_new (NULL);
@@ -835,7 +844,8 @@ mount_drive (DriveButton *self, CtkWidget *item)
 }
 
 static void
-unmount_drive (DriveButton *self, CtkWidget *item)
+unmount_drive (DriveButton *self,
+	       CtkWidget   *item G_GNUC_UNUSED)
 {
     if (self->volume) {
 	GMount *mount;
@@ -855,15 +865,17 @@ unmount_drive (DriveButton *self, CtkWidget *item)
     }
 }
 
-static void eject_finish (DriveButton *self, GAsyncResult *res,
-			  gpointer user_data)
+static void eject_finish (DriveButton  *self G_GNUC_UNUSED,
+			  GAsyncResult *res G_GNUC_UNUSED,
+			  gpointer      user_data G_GNUC_UNUSED)
 {
     /* Do nothing. We shouldn't need this according to the GIO
      * docs, but the applet crashes without it using glib 2.18.0 */
 }
 
 static void
-eject_drive (DriveButton *self, CtkWidget *item)
+eject_drive (DriveButton *self,
+	     CtkWidget   *item G_GNUC_UNUSED)
 {
     if (self->volume) {
 	g_volume_eject_with_operation (self->volume, G_MOUNT_UNMOUNT_NONE,
@@ -886,14 +898,16 @@ play_autoplay_media (DriveButton *self, const char *dflt)
 }
 
 static void
-play_dvd (DriveButton *self, CtkWidget *item)
+play_dvd (DriveButton *self,
+	  CtkWidget   *item G_GNUC_UNUSED)
 {
         /* FIXME add an option to set this */
         play_autoplay_media (self, "totem %d");
 }
 
 static void
-play_cda (DriveButton *self, CtkWidget *item)
+play_cda (DriveButton *self,
+	  CtkWidget   *item G_GNUC_UNUSED)
 {
         /* FIXME add an option to set this */
         play_autoplay_media (self, "sound-juicer -d %d");
