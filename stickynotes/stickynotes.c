@@ -80,7 +80,8 @@ timeout_happened (gpointer data)
 
 /* Called when a text buffer is changed.  */
 static void
-buffer_changed (CtkTextBuffer *buffer, StickyNote *note)
+buffer_changed (CtkTextBuffer *buffer G_GNUC_UNUSED,
+		StickyNote    *note)
 {
 	if ( (note->h + note->y) > stickynotes->max_height )
 		ctk_scrolled_window_set_policy ( CTK_SCROLLED_WINDOW(note->w_scroller),
@@ -377,7 +378,9 @@ void stickynote_change_properties (StickyNote *note)
 }
 
 static void
-response_cb (CtkWidget *dialog, gint id, gpointer data)
+response_cb (CtkWidget *dialog,
+	     gint       id,
+	     gpointer   data G_GNUC_UNUSED)
 {
         if (id == CTK_RESPONSE_HELP)
 		ctk_show_uri_on_window (CTK_WINDOW (dialog),

@@ -250,7 +250,9 @@ GetPage (int Maximum, int data [3], LoadGraph *g)
 #endif /* 0 */
 
 void
-GetMemory (int Maximum, int data [5], LoadGraph *g)
+GetMemory (int        Maximum,
+	   int        data [5],
+	   LoadGraph *g G_GNUC_UNUSED)
 {
     int user, shared, buffer, cached;
 
@@ -273,7 +275,9 @@ GetMemory (int Maximum, int data [5], LoadGraph *g)
 }
 
 void
-GetSwap (int Maximum, int data [2], LoadGraph *g)
+GetSwap (int        Maximum,
+	 int        data [2],
+	 LoadGraph *g G_GNUC_UNUSED)
 {
     int used;
 
@@ -352,7 +356,9 @@ is_net_device_virtual(char *device)
 }
 
 void
-GetNet (int Maximum, int data [4], LoadGraph *g)
+GetNet (int        Maximum G_GNUC_UNUSED,
+	int        data [4],
+	LoadGraph *g)
 {
     enum Types {
         IN_COUNT = 0,

@@ -61,7 +61,7 @@ cpufreq_selector_class_init (CPUFreqSelectorClass *klass)
 }
 
 static void
-cpufreq_selector_init (CPUFreqSelector *selector)
+cpufreq_selector_init (CPUFreqSelector *selector G_GNUC_UNUSED)
 {
 }
 

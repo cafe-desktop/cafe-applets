@@ -37,7 +37,7 @@ static gboolean cpufreq_selector_procfs_set_governor  (CPUFreqSelector          
 G_DEFINE_TYPE (CPUFreqSelectorProcfs, cpufreq_selector_procfs, CPUFREQ_TYPE_SELECTOR)
 
 static void
-cpufreq_selector_procfs_init (CPUFreqSelectorProcfs *selector)
+cpufreq_selector_procfs_init (CPUFreqSelectorProcfs *selector G_GNUC_UNUSED)
 {
 }
 

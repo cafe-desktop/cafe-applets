@@ -35,7 +35,7 @@ static GList   *cpufreq_monitor_procfs_get_available_frequencies (CPUFreqMonitor
 G_DEFINE_TYPE (CPUFreqMonitorProcfs, cpufreq_monitor_procfs, CPUFREQ_TYPE_MONITOR)
 
 static void
-cpufreq_monitor_procfs_init (CPUFreqMonitorProcfs *monitor)
+cpufreq_monitor_procfs_init (CPUFreqMonitorProcfs *monitor G_GNUC_UNUSED)
 {
 }
 

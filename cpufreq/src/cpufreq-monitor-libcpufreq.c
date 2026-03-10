@@ -49,7 +49,7 @@ typedef struct cpufreq_policy                CPUFreqPolicy;
 typedef struct cpufreq_available_governors   CPUFreqGovernorList;
 
 static void
-cpufreq_monitor_libcpufreq_init (CPUFreqMonitorLibcpufreq *monitor)
+cpufreq_monitor_libcpufreq_init (CPUFreqMonitorLibcpufreq *monitor G_GNUC_UNUSED)
 {
 }
 

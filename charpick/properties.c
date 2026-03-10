@@ -131,7 +131,9 @@ add_edit_dialog_create (charpick_data *curr_data, gchar *string, gchar *title)
 }
 
 static void
-add_palette_cb (CtkDialog *dialog, int response_id, charpick_data *curr_data)
+add_palette_cb (CtkDialog     *dialog G_GNUC_UNUSED,
+		int            response_id,
+		charpick_data *curr_data)
 {
 	GList *list = curr_data->chartable;
 	CtkTreeModel *model;
@@ -186,7 +188,9 @@ add_palette_cb (CtkDialog *dialog, int response_id, charpick_data *curr_data)
 }
 
 static void
-edit_palette_cb (CtkDialog *dialog, int response_id, charpick_data *curr_data)
+edit_palette_cb (CtkDialog     *dialog G_GNUC_UNUSED,
+		 int            response_id,
+		 charpick_data *curr_data)
 {
 	CtkTreeSelection *selection;
 	CtkTreeIter iter;
@@ -233,7 +237,8 @@ edit_palette_cb (CtkDialog *dialog, int response_id, charpick_data *curr_data)
 }
 
 static void
-add_palette (CtkButton *buttonk, charpick_data *curr_data)
+add_palette (CtkButton     *buttonk G_GNUC_UNUSED,
+	     charpick_data *curr_data)
 {
 	if (curr_data->add_edit_dialog == NULL) {
 		add_edit_dialog_create (curr_data, NULL, _("Add Palette"));
@@ -258,7 +263,8 @@ add_palette (CtkButton *buttonk, charpick_data *curr_data)
 }
 
 static void
-edit_palette (CtkButton *button, charpick_data *curr_data)
+edit_palette (CtkButton     *button G_GNUC_UNUSED,
+	      charpick_data *curr_data)
 {
 	CtkTreeSelection *selection;
 	CtkTreeIter iter;
@@ -295,7 +301,8 @@ edit_palette (CtkButton *button, charpick_data *curr_data)
 }
 
 static void
-delete_palette (CtkButton *button, charpick_data *curr_data)
+delete_palette (CtkButton     *button G_GNUC_UNUSED,
+		charpick_data *curr_data)
 {
 	CtkTreeSelection *selection;
 	CtkTreeIter iter, next;
@@ -511,7 +518,9 @@ static void default_chars_frame_create(charpick_data *curr_data)
 }
 
 static void
-phelp_cb (CtkDialog *dialog, gint tab, gpointer data)
+phelp_cb (CtkDialog *dialog,
+	  gint       tab G_GNUC_UNUSED,
+	  gpointer   data G_GNUC_UNUSED)
 {
   GError *error = NULL;
 
@@ -543,7 +552,7 @@ response_cb (CtkDialog *dialog, gint id, gpointer data)
 }
 
 void
-show_preferences_dialog (CtkAction     *action,
+show_preferences_dialog (CtkAction     *action G_GNUC_UNUSED,
 			 charpick_data *curr_data)
 {
   if (curr_data->propwindow) {

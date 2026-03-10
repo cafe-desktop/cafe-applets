@@ -292,7 +292,9 @@ static int acpi_count;
 static int acpiwatch;
 static struct apm_info apminfo;
 
-static gboolean acpi_callback (GIOChannel * chan, GIOCondition cond, gpointer data)
+static gboolean acpi_callback (GIOChannel  *chan G_GNUC_UNUSED,
+			       GIOCondition cond,
+			       gpointer     data G_GNUC_UNUSED)
 {
   if (cond & (G_IO_ERR | G_IO_HUP)) {
     acpi_linux_cleanup(&acpiinfo);

@@ -37,7 +37,7 @@ static gboolean cpufreq_monitor_cpuinfo_run        (CPUFreqMonitor *monitor);
 G_DEFINE_TYPE (CPUFreqMonitorCPUInfo, cpufreq_monitor_cpuinfo, CPUFREQ_TYPE_MONITOR)
 
 static void
-cpufreq_monitor_cpuinfo_init (CPUFreqMonitorCPUInfo *monitor)
+cpufreq_monitor_cpuinfo_init (CPUFreqMonitorCPUInfo *monitor G_GNUC_UNUSED)
 {
 }
 

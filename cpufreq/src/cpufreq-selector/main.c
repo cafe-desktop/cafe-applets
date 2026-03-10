@@ -48,7 +48,7 @@ static const GOptionEntry options[] = {
 #ifdef HAVE_POLKIT
 static void
 do_exit (GMainLoop *loop,
-	 GObject   *object)
+	 GObject   *object G_GNUC_UNUSED)
 {
 	if (g_main_loop_is_running (loop))
 		g_main_loop_quit (loop);

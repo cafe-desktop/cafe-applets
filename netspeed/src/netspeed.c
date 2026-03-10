@@ -231,7 +231,9 @@ change_icons(CafeNetspeedApplet *applet)
  * or just the sum
  */
 static void
-applet_change_size_or_orient(CafePanelApplet *applet_widget, int arg1, CafeNetspeedApplet *applet)
+applet_change_size_or_orient (CafePanelApplet    *applet_widget,
+			      int                 arg1 G_GNUC_UNUSED,
+			      CafeNetspeedApplet *applet)
 {
 	int size;
 	CafePanelAppletOrient orient;
@@ -391,7 +393,8 @@ init_quality_surfaces(CafeNetspeedApplet *applet)
 
 
 static void
-icon_theme_changed_cb(CtkIconTheme *icon_theme, gpointer user_data)
+icon_theme_changed_cb (CtkIconTheme *icon_theme G_GNUC_UNUSED,
+		       gpointer      user_data)
 {
     CafeNetspeedApplet *applet = (CafeNetspeedApplet*)user_data;
 
@@ -796,7 +799,8 @@ display_help (CtkWidget *dialog, const gchar *section)
 /* Opens gnome help application
  */
 static void
-help_cb (CtkAction *action, CafeNetspeedApplet *ap)
+help_cb (CtkAction          *action G_GNUC_UNUSED,
+	 CafeNetspeedApplet *ap)
 {
 	display_help (CTK_WIDGET (ap->applet), NULL);
 }
@@ -804,7 +808,8 @@ help_cb (CtkAction *action, CafeNetspeedApplet *ap)
 /* Just the about window... If it's already open, just fokus it
  */
 static void
-about_cb(CtkAction *action, gpointer data)
+about_cb (CtkAction *action G_GNUC_UNUSED,
+	  gpointer   data G_GNUC_UNUSED)
 {
 	const char *authors[] =
 	{
@@ -953,7 +958,8 @@ changeicon_change_cb(CtkToggleButton *togglebutton, CafeNetspeedApplet *applet)
  * them in the gsettings database
  */
 static void
-settings_cb(CtkAction *action, gpointer data)
+settings_cb (CtkAction *action G_GNUC_UNUSED,
+	     gpointer   data)
 {
 	CafeNetspeedApplet *applet = (CafeNetspeedApplet*)data;
 	CtkWidget *vbox;
@@ -1109,7 +1115,9 @@ settings_cb(CtkAction *action, gpointer data)
 }
 
 static gboolean
-da_draw(CtkWidget *widget, cairo_t *cr, gpointer data)
+da_draw (CtkWidget *widget G_GNUC_UNUSED,
+	 cairo_t   *cr,
+	 gpointer   data)
 {
 	CafeNetspeedApplet *applet = (CafeNetspeedApplet*)data;
 
@@ -1171,7 +1179,8 @@ info_response_cb (CtkDialog *dialog, gint id, CafeNetspeedApplet *applet)
 /* Creates the details dialog
  */
 static void
-showinfo_cb(CtkAction *action, gpointer data)
+showinfo_cb (CtkAction *action G_GNUC_UNUSED,
+	     gpointer   data)
 {
 	CafeNetspeedApplet *applet = (CafeNetspeedApplet*)data;
 	CtkWidget *box, *hbox;
@@ -1388,7 +1397,9 @@ static const CtkActionEntry cafe_netspeed_applet_menu_actions [] = {
  * "jumping around" in the cafe_panel which looks uggly
  */
 static void
-label_size_allocate_cb(CtkWidget *widget, CtkAllocation *allocation, CafeNetspeedApplet *applet)
+label_size_allocate_cb (CtkWidget          *widget G_GNUC_UNUSED,
+			CtkAllocation      *allocation,
+			CafeNetspeedApplet *applet)
 {
 	if (applet->labels_dont_shrink) {
 		if (allocation->width <= applet->width)
@@ -1399,7 +1410,9 @@ label_size_allocate_cb(CtkWidget *widget, CtkAllocation *allocation, CafeNetspee
 }
 
 static gboolean
-applet_button_press(CtkWidget *widget, CdkEventButton *event, CafeNetspeedApplet *applet)
+applet_button_press (CtkWidget          *widget G_GNUC_UNUSED,
+		     CdkEventButton     *event,
+		     CafeNetspeedApplet *applet)
 {
 	if (event->button == 1)
 	{
@@ -1468,7 +1481,8 @@ applet_button_press(CtkWidget *widget, CdkEventButton *event, CafeNetspeedApplet
  * Removes the timeout_cb
  */
 static void
-applet_destroy(CafePanelApplet *applet_widget, CafeNetspeedApplet *applet)
+applet_destroy (CafePanelApplet    *applet_widget G_GNUC_UNUSED,
+		CafeNetspeedApplet *applet)
 {
 	CtkIconTheme *icon_theme;
 
@@ -1545,7 +1559,9 @@ update_tooltip(CafeNetspeedApplet* applet)
 
 
 static gboolean
-cafe_netspeed_enter_cb(CtkWidget *widget, CdkEventCrossing *event, gpointer data)
+cafe_netspeed_enter_cb (CtkWidget        *widget G_GNUC_UNUSED,
+			CdkEventCrossing *event G_GNUC_UNUSED,
+			gpointer          data)
 {
 	CafeNetspeedApplet *applet = data;
 
@@ -1556,7 +1572,9 @@ cafe_netspeed_enter_cb(CtkWidget *widget, CdkEventCrossing *event, gpointer data
 }
 
 static gboolean
-cafe_netspeed_leave_cb(CtkWidget *widget, CdkEventCrossing *event, gpointer data)
+cafe_netspeed_leave_cb (CtkWidget        *widget G_GNUC_UNUSED,
+			CdkEventCrossing *event G_GNUC_UNUSED,
+			gpointer          data)
 {
 	CafeNetspeedApplet *applet = data;
 
@@ -1567,7 +1585,9 @@ cafe_netspeed_leave_cb(CtkWidget *widget, CdkEventCrossing *event, gpointer data
 /* The "main" function of the applet
  */
 static gboolean
-cafe_netspeed_applet_factory(CafePanelApplet *applet_widget, const gchar *iid, gpointer data)
+cafe_netspeed_applet_factory (CafePanelApplet *applet_widget,
+			      const gchar     *iid,
+			      gpointer         data G_GNUC_UNUSED)
 {
 	CafeNetspeedApplet *applet;
 	int i;

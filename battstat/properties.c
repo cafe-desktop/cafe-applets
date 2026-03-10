@@ -1,4 +1,3 @@
-/* -*- Mode: C; tab-width: 2; indent-tabs-mode: t; c-basic-offset: 2 -*- */
 /* battstat        A CAFE battery meter for laptops. 
  * Copyright (C) 2000 by Jörgen Pehrson <jp@spektr.eu.org>
  *
@@ -111,7 +110,8 @@ spin_ptr_cb (CtkWidget *spin_ptr, gpointer data)
 }
 
 static void
-show_text_toggled (CtkToggleButton *button, gpointer data)
+show_text_toggled (CtkToggleButton *button G_GNUC_UNUSED,
+		   gpointer         data)
 {
   ProgressData   *battstat = data;
   
@@ -161,7 +161,9 @@ full_toggled (CtkToggleButton *button, gpointer data)
 }
 
 static void
-response_cb (CtkDialog *dialog, gint id, gpointer data)
+response_cb (CtkDialog *dialog G_GNUC_UNUSED,
+	     gint       id,
+	     gpointer   data)
 {
   ProgressData *battstat = data;
   
@@ -172,8 +174,8 @@ response_cb (CtkDialog *dialog, gint id, gpointer data)
 }
 
 void
-prop_cb (CtkAction    *action,
-				 ProgressData *battstat)
+prop_cb (CtkAction    *action G_GNUC_UNUSED,
+	 ProgressData *battstat)
 {
   CtkBuilder *builder;
   CtkWidget *combo_ptr, *spin_ptr;

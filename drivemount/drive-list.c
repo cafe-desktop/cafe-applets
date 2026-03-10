@@ -233,7 +233,9 @@ drive_list_remove (CtkContainer *container, CtkWidget *child)
 }
 
 static void
-list_buttons (gpointer key, gpointer value, gpointer user_data)
+list_buttons (gpointer key G_GNUC_UNUSED,
+	      gpointer value,
+	      gpointer user_data)
 {
     CtkWidget *button = value;
     GList **sorted_buttons = user_data;
@@ -318,9 +320,9 @@ mount_added (GVolumeMonitor *monitor,
 }
 
 static void
-mount_changed (GVolumeMonitor *monitor,
-	       GMount *mount,
-	       DriveList *self)
+mount_changed (GVolumeMonitor *monitor G_GNUC_UNUSED,
+	       GMount         *mount,
+	       DriveList      *self)
 {
     GVolume *volume;
     DriveButton *button = NULL;;
@@ -351,9 +353,9 @@ mount_removed (GVolumeMonitor *monitor,
 }
 
 static void
-volume_added (GVolumeMonitor *monitor,
-	      GVolume *volume,
-	      DriveList *self)
+volume_added (GVolumeMonitor *monitor G_GNUC_UNUSED,
+	      GVolume        *volume,
+	      DriveList      *self)
 {
     add_volume (self, volume);
 		self->count++;
@@ -362,9 +364,9 @@ volume_added (GVolumeMonitor *monitor,
 }
 
 static void
-volume_changed (GVolumeMonitor *monitor,
-		GVolume *volume,
-		DriveList *self)
+volume_changed (GVolumeMonitor *monitor G_GNUC_UNUSED,
+		GVolume        *volume,
+		DriveList      *self)
 {
     DriveButton *button = NULL;;
 
@@ -374,9 +376,9 @@ volume_changed (GVolumeMonitor *monitor,
 }
 
 static void
-volume_removed (GVolumeMonitor *monitor,
-		GVolume *volume,
-		DriveList *self)
+volume_removed (GVolumeMonitor *monitor G_GNUC_UNUSED,
+		GVolume        *volume,
+		DriveList      *self)
 {
     remove_volume (self, volume);
 		self->count--;
@@ -472,7 +474,9 @@ drive_list_set_orientation (DriveList *self,
 }
 
 static void
-set_icon_size (gpointer key, gpointer value, gpointer user_data)
+set_icon_size (gpointer key G_GNUC_UNUSED,
+	       gpointer value,
+	       gpointer user_data)
 {
     DriveButton *button = value;
     DriveList *self = user_data;
@@ -501,14 +505,18 @@ drive_list_redraw (DriveList *self)
 }
 
 void
-settings_color_changed (GSettings *settings, gchar *key, DriveList *drive_list)
+settings_color_changed (GSettings *settings G_GNUC_UNUSED,
+			gchar     *key G_GNUC_UNUSED,
+			DriveList *drive_list)
 {
     g_return_if_fail (DRIVE_IS_LIST (drive_list));
     drive_list_redraw (drive_list);
 }
 
 static void
-set_button_relief (gpointer key, gpointer value, gpointer user_data)
+set_button_relief (gpointer key G_GNUC_UNUSED,
+		   gpointer value,
+		   gpointer user_data)
 {
     CtkButton *button = value;
     DriveList *self = user_data;

@@ -30,8 +30,8 @@
 #include "global.h"
 
 static void
-about_cb (CtkAction       *action,
-	  MultiloadApplet *ma)
+about_cb (CtkAction       *action G_GNUC_UNUSED,
+	  MultiloadApplet *ma G_GNUC_UNUSED)
 {
     const gchar * const authors[] =
     {
@@ -75,8 +75,8 @@ about_cb (CtkAction       *action,
 }
 
 static void
-help_cb (CtkAction       *action,
-	 MultiloadApplet *ma)
+help_cb (CtkAction       *action G_GNUC_UNUSED,
+	 MultiloadApplet *ma G_GNUC_UNUSED)
 {
 
  	GError *error = NULL;
@@ -170,14 +170,16 @@ start_procman (MultiloadApplet *ma)
 }
 
 static void
-start_procman_cb (CtkAction       *action,
+start_procman_cb (CtkAction       *action G_GNUC_UNUSED,
 		  MultiloadApplet *ma)
 {
 	start_procman (ma);
 }
 
 static void
-multiload_change_size_cb(CafePanelApplet *applet, gint size, gpointer data)
+multiload_change_size_cb (CafePanelApplet *applet G_GNUC_UNUSED,
+			  gint             size G_GNUC_UNUSED,
+			  gpointer         data)
 {
 	MultiloadApplet *ma = (MultiloadApplet *)data;
 
@@ -187,7 +189,9 @@ multiload_change_size_cb(CafePanelApplet *applet, gint size, gpointer data)
 }
 
 static void
-multiload_change_orient_cb(CafePanelApplet *applet, gint arg1, gpointer data)
+multiload_change_orient_cb (CafePanelApplet *applet G_GNUC_UNUSED,
+			    gint             arg1 G_GNUC_UNUSED,
+			    gpointer         data)
 {
 	MultiloadApplet *ma = data;
 	multiload_applet_refresh((MultiloadApplet *)data);
@@ -196,7 +200,8 @@ multiload_change_orient_cb(CafePanelApplet *applet, gint arg1, gpointer data)
 }
 
 static void
-multiload_destroy_cb(CtkWidget *widget, gpointer data)
+multiload_destroy_cb (CtkWidget *widget G_GNUC_UNUSED,
+		      gpointer   data)
 {
 	gint i;
 	MultiloadApplet *ma = data;
@@ -230,7 +235,9 @@ multiload_destroy_cb(CtkWidget *widget, gpointer data)
 
 
 static gboolean
-multiload_button_press_event_cb (CtkWidget *widget, CdkEventButton *event, MultiloadApplet *ma)
+multiload_button_press_event_cb (CtkWidget       *widget G_GNUC_UNUSED,
+				 CdkEventButton  *event,
+				 MultiloadApplet *ma)
 {
 	g_return_val_if_fail (event != NULL, FALSE);
 	g_return_val_if_fail (ma != NULL, FALSE);
@@ -243,7 +250,9 @@ multiload_button_press_event_cb (CtkWidget *widget, CdkEventButton *event, Multi
 }
 
 static gboolean
-multiload_key_press_event_cb (CtkWidget *widget, CdkEventKey *event, MultiloadApplet *ma)
+multiload_key_press_event_cb (CtkWidget       *widget G_GNUC_UNUSED,
+			      CdkEventKey     *event,
+			      MultiloadApplet *ma)
 {
 	g_return_val_if_fail (event != NULL, FALSE);
 	g_return_val_if_fail (ma != NULL, FALSE);
@@ -498,7 +507,9 @@ static const CtkActionEntry multiload_menu_actions [] = {
 
 /* create a box and stuff the load graphs inside of it */
 static gboolean
-multiload_applet_new(CafePanelApplet *applet, const gchar *iid, gpointer data)
+multiload_applet_new (CafePanelApplet *applet,
+		      const gchar     *iid G_GNUC_UNUSED,
+		      gpointer         data G_GNUC_UNUSED)
 {
 	CtkStyleContext *context;
 	MultiloadApplet *ma;

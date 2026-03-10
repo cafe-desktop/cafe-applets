@@ -46,7 +46,7 @@ static gsize       volatile trash_empty_total_files;
 static gboolean    volatile trash_empty_update_pending;
 
 static gboolean
-trash_empty_clear_pending (gpointer user_data)
+trash_empty_clear_pending (gpointer user_data G_GNUC_UNUSED)
 {
   trash_empty_update_pending = FALSE;
 
@@ -54,7 +54,7 @@ trash_empty_clear_pending (gpointer user_data)
 }
 
 static gboolean
-trash_empty_update_dialog (gpointer user_data)
+trash_empty_update_dialog (gpointer user_data G_GNUC_UNUSED)
 {
   gsize deleted, total;
   GFile *file;
@@ -123,7 +123,7 @@ trash_empty_update_dialog (gpointer user_data)
 }
 
 static gboolean
-trash_empty_done (gpointer user_data)
+trash_empty_done (gpointer user_data G_GNUC_UNUSED)
 {
   ctk_widget_destroy (CTK_WIDGET (trash_empty_dialog));
 
@@ -203,8 +203,8 @@ trash_empty_delete_contents (GIOSchedulerJob *job,
 
 static gboolean
 trash_empty_job (GIOSchedulerJob *job,
-                 GCancellable    *cancellable,
-                 gpointer         user_data)
+		 GCancellable    *cancellable,
+		 gpointer         user_data G_GNUC_UNUSED)
 {
   gsize deleted;
   GFile *trash;
@@ -296,8 +296,8 @@ trash_empty_require_confirmation (void)
 
 static void
 trash_empty_confirmation_response (CtkDialog *dialog,
-                                   gint       response_id,
-                                   gpointer   user_data)
+				   gint       response_id,
+				   gpointer   user_data G_GNUC_UNUSED)
 {
   if (response_id == CTK_RESPONSE_YES)
     trash_empty_start (CTK_WIDGET (dialog));

@@ -59,8 +59,8 @@ G_DEFINE_TYPE_WITH_CODE (MaCommand, ma_command, G_TYPE_OBJECT,
 
 static gboolean
 read_cb (GIOChannel   *source,
-         GIOCondition  condition,
-         gpointer      user_data)
+	 GIOCondition  condition G_GNUC_UNUSED,
+	 gpointer      user_data)
 {
   GTask *task;
   CommandData *data;
@@ -110,9 +110,9 @@ read_cb (GIOChannel   *source,
 }
 
 static void
-child_watch_cb (GPid     pid,
-                gint     status,
-                gpointer user_data)
+child_watch_cb (GPid     pid G_GNUC_UNUSED,
+		gint     status G_GNUC_UNUSED,
+		gpointer user_data)
 {
   GTask *task;
   CommandData *data;
@@ -125,8 +125,8 @@ child_watch_cb (GPid     pid,
 }
 
 static void
-cancelled_cb (GCancellable *cancellable,
-              gpointer      user_data)
+cancelled_cb (GCancellable *cancellable G_GNUC_UNUSED,
+	      gpointer      user_data)
 {
   GTask *task;
 
@@ -177,8 +177,8 @@ command_data_free (gpointer user_data)
 
 static gboolean
 ma_command_initable_init (GInitable     *initable,
-                          GCancellable  *cancellable,
-                          GError       **error)
+			  GCancellable  *cancellable G_GNUC_UNUSED,
+			  GError       **error)
 {
   MaCommand *command;
 
@@ -285,7 +285,7 @@ ma_command_class_init (MaCommandClass *command_class)
 }
 
 static void
-ma_command_init (MaCommand *command)
+ma_command_init (MaCommand *command G_GNUC_UNUSED)
 {
 }
 
