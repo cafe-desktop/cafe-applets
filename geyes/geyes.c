@@ -183,7 +183,7 @@ about_cb (CtkAction   *action G_GNUC_UNUSED,
 		                      "panel. They follow your mouse."),
 		"copyright",          _("Copyright \xC2\xA9 1999 Dave Camp\n"
 		                        "Copyright \xc2\xa9 2012-2020 MATE developers\n"
-		                        "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
+		                        "Copyright \xc2\xa9 2023-2026 Pablo Barciela"),
 		"authors",            authors,
 		"documenters",        documenters,
 		"translator-credits", _("translator-credits"),

@@ -57,7 +57,7 @@ void cafeweather_about_run (CafeWeatherApplet *gw_applet G_GNUC_UNUSED)
 		"version", VERSION,
 		"copyright", _("Copyright \xC2\xA9 1999-2005 by S. Papadimitriou and others\n"
 		               "Copyright \xc2\xa9 2012-2020 MATE developers\n"
-		               "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
+		               "Copyright \xc2\xa9 2023-2026 Pablo Barciela"),
 		"comments", _("A panel application for monitoring local weather conditions."),
 		"authors", authors,
 		"documenters", documenters,

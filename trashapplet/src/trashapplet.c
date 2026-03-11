@@ -436,7 +436,7 @@ trash_applet_show_about (CtkAction   *action G_GNUC_UNUSED,
                          "copyright", _("Copyright \xc2\xa9 2004 Michiel Sikkes\n"
                                         "Copyright \xc2\xa9 2008 Ryan Lortie\n"
                                         "Copyright \xc2\xa9 2012-2020 MATE developers\n"
-                                        "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
+                                        "Copyright \xc2\xa9 2023-2026 Pablo Barciela"),
                          "comments", _("A CAFE trash bin that lives in your panel. "
                                        "You can use it to view the trash or drag "
                                        "and drop items into the trash."),

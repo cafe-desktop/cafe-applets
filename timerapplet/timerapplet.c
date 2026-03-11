@@ -281,7 +281,7 @@ timer_about_callback (CtkAction   *action G_GNUC_UNUSED,
                           "version", VERSION,
                           "copyright", _("Copyright \xc2\xa9 2014 Stefano Karapetsas\n"
                                          "Copyright \xc2\xa9 2015-2020 MATE developers\n"
-                                         "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
+                                         "Copyright \xc2\xa9 2023-2026 Pablo Barciela"),
                           "authors", authors,
                           "comments", _("Start a timer and receive a notification when it is finished"),
                           "translator-credits", _("translator-credits"),

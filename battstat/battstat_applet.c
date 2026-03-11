@@ -844,7 +844,7 @@ about_cb (CtkAction    *action G_GNUC_UNUSED,
     "copyright",           _("Copyright \xc2\xa9 2000 The Gnulix Society\n"
                              "Copyright \xc2\xa9 2002-2005 Free Software Foundation and others\n"
                              "Copyright \xc2\xa9 2012-2020 MATE developers\n"
-                             "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
+                             "Copyright \xc2\xa9 2023-2026 Pablo Barciela"),
     "comments",            comments,
     "authors",             authors,
     "documenters",         documenters,

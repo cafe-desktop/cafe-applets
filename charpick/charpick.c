@@ -594,7 +594,7 @@ about (CtkAction     *action G_GNUC_UNUSED,
 	"version",	VERSION,
 	"copyright",	_("Copyright \xc2\xa9 1998, 2004-2005 GNOME Applets Maintainers and others\n"
 	                  "Copyright \xc2\xa9 2012-2020 MATE developers\n"
-	                  "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
+	                  "Copyright \xc2\xa9 2023-2026 Pablo Barciela"),
 	"comments",	_("Cafe Panel applet for selecting strange "
 			  "characters that are not on my keyboard. "
 			  "Released under GNU General Public Licence."),

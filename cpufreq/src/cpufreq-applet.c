@@ -484,7 +484,7 @@ cpufreq_applet_about_cb (CtkAction     *action G_GNUC_UNUSED,
                                "version",       VERSION,
                                "copyright",     _("Copyright \xC2\xA9 2004 Carlos Garcia Campos\n"
                                                   "Copyright \xc2\xa9 2012-2020 MATE developers\n"
-                                                  "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
+                                                  "Copyright \xc2\xa9 2023-2026 Pablo Barciela"),
                                "comments",      _("This utility shows the current CPU "
                                                   "Frequency Scaling."),
                                "authors",       authors,

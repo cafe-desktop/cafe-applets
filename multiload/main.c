@@ -63,7 +63,7 @@ about_cb (CtkAction       *action G_GNUC_UNUSED,
 	"version",	VERSION,
 	"copyright",	_("Copyright \xc2\xa9 1999-2005 Free Software Foundation and others\n"
 	                  "Copyright \xc2\xa9 2012-2020 MATE developers\n"
-	                  "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
+	                  "Copyright \xc2\xa9 2023-2026 Pablo Barciela"),
 	"comments",	_("A system load monitor capable of displaying graphs "
 			"for CPU, ram, and swap space use, plus network "
 			"traffic."),

@@ -397,7 +397,7 @@ menu_about_cb (CtkAction         *action G_GNUC_UNUSED,
 		"copyright",	_("Copyright \xc2\xa9 2002-2003 Loban A Rahman\n"
 				  "Copyright \xc2\xa9 2005 Davyd Madeley\n"
 				  "Copyright \xc2\xa9 2012-2020 MATE developers\n"
-				  "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
+				  "Copyright \xc2\xa9 2023-2026 Pablo Barciela"),
 		"comments",	_("Sticky Notes for the "
 				  "CAFE Desktop Environment"),
 		"authors",	authors,

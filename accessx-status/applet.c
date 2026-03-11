@@ -103,7 +103,7 @@ static void about_cb (CtkAction           *action G_GNUC_UNUSED,
 		"comments", _("Shows the state of AccessX features such as latched modifiers"),
 		"copyright", _("Copyright \xc2\xa9 2003 Sun Microsystems\n"
 		               "Copyright \xc2\xa9 2012-2020 MATE developers\n"
-		               "Copyright \xc2\xa9 2023-2024 Pablo Barciela"),
+		               "Copyright \xc2\xa9 2023-2026 Pablo Barciela"),
 		"authors", authors,
 		"documenters", documenters,
 		"translator-credits", _("translator-credits"),
