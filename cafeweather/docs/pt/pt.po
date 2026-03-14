@@ -14,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-01-10 17:58+0100\n"
+"POT-Creation-Date: 2026-03-14 19:05+0100\n"
 "PO-Revision-Date: 2020-02-15 12:16+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>, 2020\n"
 "Language-Team: Portuguese (https://www.transifex.com/cafe/teams/13566/pt/)\n"
@@ -52,22 +52,26 @@ msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:29
-msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
+msgid "<year>2023-2026</year> <holder>CAFE Documentation Project</holder>"
 msgstr ""
-"<year>2015-2020</year> <holder>Projecto de Documentação do CAFE</holder>"
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:33
+msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
+msgstr ""
+
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:37
 msgid "<year>2005</year> <holder>Davyd Madeley</holder>"
 msgstr "<year>2005</year> <holder>Davyd Madeley</holder>"
 
 #. (itstool) path: articleinfo/copyright
-#: C/index.docbook:37
+#: C/index.docbook:41
 msgid "<year>2004</year> <holder>Angela Boyle</holder>"
 msgstr "<year>2004</year> <holder>Angela Boyle</holder>"
 
 #. (itstool) path: articleinfo/copyright
-#: C/index.docbook:41
+#: C/index.docbook:45
 msgid ""
 "<year>2002</year> <year>2003</year> <year>2004</year> <holder>Sun "
 "Microsystems</holder>"
@@ -76,33 +80,33 @@ msgstr ""
 "Microsystems</holder>"
 
 #. (itstool) path: articleinfo/copyright
-#: C/index.docbook:47
+#: C/index.docbook:51
 msgid ""
 "<year>1999</year> <year>2000</year> <holder>Spiros Papadimitriou</holder>"
 msgstr ""
 "<year>1999</year> <year>2000</year> <holder>Spiros Papadimitriou</holder>"
 
 #. (itstool) path: articleinfo/copyright
-#: C/index.docbook:52
+#: C/index.docbook:56
 msgid "<year>1999</year> <year>2000</year> <holder>Dan Mueth</holder>"
 msgstr "<year>1999</year> <year>2000</year> <holder>Dan Mueth</holder>"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
-#: C/index.docbook:70 C/index.docbook:144
+#: C/index.docbook:74 C/index.docbook:148
 msgid "CAFE Documentation Project"
 msgstr "Projeto de Documentação do CAFE"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
-#: C/index.docbook:73 C/index.docbook:166 C/index.docbook:174
-#: C/index.docbook:182 C/index.docbook:190 C/index.docbook:198
-#: C/index.docbook:206 C/index.docbook:221
+#: C/index.docbook:77 C/index.docbook:170 C/index.docbook:178
+#: C/index.docbook:186 C/index.docbook:194 C/index.docbook:202
+#: C/index.docbook:210 C/index.docbook:225
 msgid "GNOME Documentation Project"
 msgstr "Projecto de Documentação do GNOME"
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:79
+#: C/index.docbook:83
 msgid ""
 "<firstname>CAFE Documentation Team</firstname> <surname/> <affiliation> "
 "<orgname>CAFE Desktop</orgname> </affiliation>"
@@ -111,7 +115,7 @@ msgstr ""
 "<orgname>CAFE Desktop</orgname> </affiliation>"
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:86
+#: C/index.docbook:90
 msgid ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
 "<orgname>GNOME Project</orgname> <address><email>davyd@madeley.id.au</"
@@ -122,12 +126,12 @@ msgstr ""
 "email></address> </affiliation>"
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:93
+#: C/index.docbook:97
 msgid "<firstname>Angela</firstname> <surname>Boyle</surname>"
 msgstr "<firstname>Angela</firstname> <surname>Boyle</surname>"
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:97
+#: C/index.docbook:101
 msgid ""
 "<firstname>Sun </firstname> <surname>GNOME Documentation Team</surname> "
 "<affiliation> <orgname>Sun Microsystems</orgname> </affiliation>"
@@ -136,18 +140,18 @@ msgstr ""
 "surname> <affiliation> <orgname>Sun Microsystems</orgname> </affiliation>"
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:104
+#: C/index.docbook:108
 msgid ""
 "<firstname>Spiros</firstname> <surname>Papadimitriou</surname> <affiliation> "
-"<orgname>GNOME Documentation Project</orgname> <address><email>spapadim+@cs."
-"cmu.edu</email> </address> </affiliation>"
+"<orgname>GNOME Documentation Project</orgname> "
+"<address><email>spapadim+@cs.cmu.edu</email> </address> </affiliation>"
 msgstr ""
 "<firstname>Spiros</firstname> <surname>Papadimitriou</surname> <affiliation> "
 "<orgname>Projeto de Documentação do GNOME</orgname> "
 "<address><email>spapadim+@cs.cmu.edu</email> </address> </affiliation>"
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:112
+#: C/index.docbook:116
 msgid ""
 "<firstname>Dan</firstname> <surname>Mueth</surname> <affiliation> "
 "<orgname>GNOME Documentation Project</orgname> <address><email>d-"
@@ -158,12 +162,12 @@ msgstr ""
 "mueth@uchicago.edu</email> </address> </affiliation>"
 
 #. (itstool) path: revdescription/para
-#: C/index.docbook:143
+#: C/index.docbook:147
 msgid "CAFE Documentation Team"
 msgstr "Equipa de Documentação do CAFE"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:139
+#: C/index.docbook:143
 msgid ""
 "<revnumber>Weather Report Applet Manual V2.8</revnumber> <date>July 2015</"
 "date> <_:revdescription-1/>"
@@ -172,12 +176,12 @@ msgstr ""
 "date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
-#: C/index.docbook:151 C/index.docbook:158
+#: C/index.docbook:155 C/index.docbook:162
 msgid "Davyd Madeley"
 msgstr "Davyd Madeley"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:147
+#: C/index.docbook:151
 msgid ""
 "<revnumber>Weather Report Applet Manual V2.7</revnumber> <date>March 2005</"
 "date> <_:revdescription-1/>"
@@ -186,7 +190,7 @@ msgstr ""
 "2005</date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:154
+#: C/index.docbook:158
 msgid ""
 "<revnumber>Weather Report Applet Manual V2.6</revnumber> <date>March 2005</"
 "date> <_:revdescription-1/>"
@@ -195,12 +199,12 @@ msgstr ""
 "2005</date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
-#: C/index.docbook:165
+#: C/index.docbook:169
 msgid "Angela Boyle"
 msgstr "Angela Boyle"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:161
+#: C/index.docbook:165
 msgid ""
 "<revnumber>Weather Report Applet Manual V2.5</revnumber> <date>September "
 "2004</date> <_:revdescription-1/>"
@@ -209,13 +213,13 @@ msgstr ""
 "2004</date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
-#: C/index.docbook:173 C/index.docbook:181 C/index.docbook:189
-#: C/index.docbook:197 C/index.docbook:205
+#: C/index.docbook:177 C/index.docbook:185 C/index.docbook:193
+#: C/index.docbook:201 C/index.docbook:209
 msgid "Sun GNOME Documentation Team"
 msgstr "Equipa de Documentação Sun GNOME"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:169
+#: C/index.docbook:173
 msgid ""
 "<revnumber>Weather Report Applet Manual V2.4</revnumber> <date>February "
 "2004</date> <_:revdescription-1/>"
@@ -224,7 +228,7 @@ msgstr ""
 "2004</date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:177
+#: C/index.docbook:181
 msgid ""
 "<revnumber>Weather Report Applet Manual V2.3</revnumber> <date>January 2003</"
 "date> <_:revdescription-1/>"
@@ -233,7 +237,7 @@ msgstr ""
 "2003</date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:185
+#: C/index.docbook:189
 msgid ""
 "<revnumber>Weather Report Applet Manual V2.2</revnumber> <date>August 2002</"
 "date> <_:revdescription-1/>"
@@ -242,7 +246,7 @@ msgstr ""
 "2002</date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:193
+#: C/index.docbook:197
 msgid ""
 "<revnumber>Weather Report Applet Manual V2.1</revnumber> <date>July 2002</"
 "date> <_:revdescription-1/>"
@@ -251,7 +255,7 @@ msgstr ""
 "2002</date> <_:revdescription-1/>"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:201
+#: C/index.docbook:205
 msgid ""
 "<revnumber>Weather Report Applet Manual V2.0</revnumber> <date>March 2002</"
 "date> <_:revdescription-1/>"
@@ -260,36 +264,36 @@ msgstr ""
 "2002</date> <_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
-#: C/index.docbook:213
+#: C/index.docbook:217
 msgid "Spiros Papadimitriou <email>spapadim+@cs.cmu.edu</email>"
 msgstr "Spiros Papadimitriou <email>spapadim+@cs.cmu.edu</email>"
 
 #. (itstool) path: revdescription/para
-#: C/index.docbook:217
+#: C/index.docbook:221
 msgid "Dan Mueth <email>d-mueth@uchicago.edu</email>"
 msgstr "Dan Mueth <email>d-mueth@uchicago.edu</email>"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:209
+#: C/index.docbook:213
 msgid ""
-"<revnumber>GNOME Weather Applet</revnumber> <date>2000</date> <_:"
-"revdescription-1/>"
+"<revnumber>GNOME Weather Applet</revnumber> <date>2000</date> "
+"<_:revdescription-1/>"
 msgstr ""
-"<revnumber>GNOME Weather Applet</revnumber> <date>2000</date> <_:"
-"revdescription-1/>"
+"<revnumber>GNOME Weather Applet</revnumber> <date>2000</date> "
+"<_:revdescription-1/>"
 
 #. (itstool) path: articleinfo/releaseinfo
-#: C/index.docbook:228
+#: C/index.docbook:232
 msgid "This manual describes version 1.10.2 of Weather Report."
 msgstr "Este manual descreve a versão 1.10.2 do Weather Report."
 
 #. (itstool) path: legalnotice/title
-#: C/index.docbook:233
+#: C/index.docbook:237
 msgid "Feedback"
 msgstr "Opinião"
 
 #. (itstool) path: legalnotice/para
-#: C/index.docbook:234
+#: C/index.docbook:238
 msgid ""
 "To report a bug or make a suggestion regarding the Weather Report applet or "
 "this manual, follow the directions in the <ulink url=\"help:cafe-user-guide/"
@@ -300,17 +304,17 @@ msgstr ""
 "feedback\" type=\"help\">Página de Opiniões do CAFE</ulink>."
 
 #. (itstool) path: article/indexterm
-#: C/index.docbook:241
+#: C/index.docbook:245
 msgid "<primary>Weather Report</primary>"
 msgstr "<primary>Weather Report</primary>"
 
 #. (itstool) path: sect1/title
-#: C/index.docbook:247
+#: C/index.docbook:251
 msgid "Introduction"
 msgstr "Introdução"
 
 #. (itstool) path: figure/title
-#: C/index.docbook:251
+#: C/index.docbook:255
 msgid "Weather Report"
 msgstr "Boletim Meteorológico"
 
@@ -319,7 +323,7 @@ msgstr "Boletim Meteorológico"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:255
+#: C/index.docbook:259
 msgctxt "_"
 msgid ""
 "external ref='figures/cafeweather_applet.png' "
@@ -329,7 +333,7 @@ msgstr ""
 "md5='59fae2cc46bf316cee2c1193bd99f7ac'"
 
 #. (itstool) path: screenshot/mediaobject
-#: C/index.docbook:253
+#: C/index.docbook:257
 msgid ""
 "<imageobject> <imagedata fileref=\"figures/cafeweather_applet.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows Weather Report. "
@@ -341,7 +345,7 @@ msgstr ""
 "</textobject>"
 
 #. (itstool) path: sect1/para
-#: C/index.docbook:265
+#: C/index.docbook:269
 msgid ""
 "The <application>Weather Report</application> downloads weather information "
 "from the U.S. National Weather Service (NWS) servers, including the "
@@ -357,7 +361,7 @@ msgstr ""
 "computador."
 
 #. (itstool) path: note/para
-#: C/index.docbook:269
+#: C/index.docbook:273
 msgid ""
 "If your computer is located behind a firewall, you must use a proxy server "
 "to access the weather servers. To configure the CAFE Desktop to use a proxy "
@@ -371,7 +375,7 @@ msgstr ""
 "Internet."
 
 #. (itstool) path: sect1/para
-#: C/index.docbook:273
+#: C/index.docbook:277
 msgid ""
 "<application>Weather Report</application> displays the following information "
 "for the default location, or a location that you specify:"
@@ -381,7 +385,7 @@ msgstr ""
 "especificar:"
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:278
+#: C/index.docbook:282
 msgid ""
 "A weather icon that represents the general weather conditions. See <xref "
 "linkend=\"cafeweather-introduction-icons\"/>."
@@ -390,22 +394,22 @@ msgstr ""
 "<xref linkend=\"cafeweather-introduction-icons\"/>."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:284
+#: C/index.docbook:288
 msgid "The current temperature."
 msgstr "A temperatura atual."
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:291
+#: C/index.docbook:295
 msgid "Weather Icons on Panel"
 msgstr "Ícones de Meteorologia no Painel"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:298
+#: C/index.docbook:302
 msgid "Icon"
 msgstr "Ícone"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:299
+#: C/index.docbook:303
 msgid "Description"
 msgstr "Descrição"
 
@@ -414,7 +418,7 @@ msgstr "Descrição"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:306
+#: C/index.docbook:310
 msgctxt "_"
 msgid ""
 "external ref='figures/stock_weather-sunny.png' "
@@ -428,7 +432,7 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:312
+#: C/index.docbook:316
 msgctxt "_"
 msgid ""
 "external ref='figures/stock_weather-night-clear.png' "
@@ -438,7 +442,7 @@ msgstr ""
 "md5='40a642de8d9aa927933521a3f7d1cd74'"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:304
+#: C/index.docbook:308
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
 "sunny.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock Sunny</"
@@ -455,7 +459,7 @@ msgstr ""
 "inlinemediaobject>"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:316
+#: C/index.docbook:320
 msgid "It is clear and fine."
 msgstr "Está limpo e bom."
 
@@ -464,7 +468,7 @@ msgstr "Está limpo e bom."
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:323
+#: C/index.docbook:327
 msgctxt "_"
 msgid ""
 "external ref='figures/stock_weather-few-clouds.png' "
@@ -478,7 +482,7 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:329
+#: C/index.docbook:333
 msgctxt "_"
 msgid ""
 "external ref='figures/stock_weather-night-few-clouds.png' "
@@ -488,7 +492,7 @@ msgstr ""
 "md5='76673b5c95905623b3b8a0dc25f657be'"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:321
+#: C/index.docbook:325
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
 "few-clouds.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock "
@@ -505,7 +509,7 @@ msgstr ""
 "<phrase>Algumas Nuves de Noite</phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:333
+#: C/index.docbook:337
 msgid "It is partly cloudy."
 msgstr "Está parcialmente nublado."
 
@@ -514,7 +518,7 @@ msgstr "Está parcialmente nublado."
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:340
+#: C/index.docbook:344
 msgctxt "_"
 msgid ""
 "external ref='figures/stock_weather-cloudy.png' "
@@ -524,7 +528,7 @@ msgstr ""
 "md5='9b30879834b34966fdbe57856702083f'"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:338
+#: C/index.docbook:342
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
 "cloudy.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock "
@@ -535,7 +539,7 @@ msgstr ""
 "phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:344
+#: C/index.docbook:348
 msgid "It is cloudy."
 msgstr "Está nublado."
 
@@ -544,7 +548,7 @@ msgstr "Está nublado."
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:351
+#: C/index.docbook:355
 msgctxt "_"
 msgid ""
 "external ref='figures/stock_weather-fog.png' "
@@ -554,7 +558,7 @@ msgstr ""
 "md5='ac60d2757f1c00dcfe3d38895b07f7e4'"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:349
+#: C/index.docbook:353
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
 "fog.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock Fog</"
@@ -565,7 +569,7 @@ msgstr ""
 "phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:355
+#: C/index.docbook:359
 msgid "It is foggy or overcast."
 msgstr "Está com nevoeiro ou encoberto."
 
@@ -574,7 +578,7 @@ msgstr "Está com nevoeiro ou encoberto."
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:362
+#: C/index.docbook:366
 msgctxt "_"
 msgid ""
 "external ref='figures/stock_weather-showers.png' "
@@ -584,7 +588,7 @@ msgstr ""
 "md5='de5b478ad21c8a88928c64f5ddd4c23c'"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:360
+#: C/index.docbook:364
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
 "showers.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock "
@@ -595,7 +599,7 @@ msgstr ""
 "phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:366
+#: C/index.docbook:370
 msgid "It is rainy or wet."
 msgstr "Está chuvoso ou húmido."
 
@@ -604,7 +608,7 @@ msgstr "Está chuvoso ou húmido."
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:373
+#: C/index.docbook:377
 msgctxt "_"
 msgid ""
 "external ref='figures/stock_weather-snow.png' "
@@ -614,7 +618,7 @@ msgstr ""
 "md5='7df96803c0e4e27d6f05e706fbb8e9f7'"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:371
+#: C/index.docbook:375
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
 "snow.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock Snow</"
@@ -625,7 +629,7 @@ msgstr ""
 "</textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:377
+#: C/index.docbook:381
 msgid "It is snowing."
 msgstr "Está a nevar."
 
@@ -634,7 +638,7 @@ msgstr "Está a nevar."
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:384
+#: C/index.docbook:388
 msgctxt "_"
 msgid ""
 "external ref='figures/stock_weather-storm.png' "
@@ -644,7 +648,7 @@ msgstr ""
 "md5='3638525235368de23231b9d5a3782a5d'"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:382
+#: C/index.docbook:386
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/stock_weather-"
 "storm.png\" format=\"PNG\"/> </imageobject><textobject> <phrase>Stock Storm</"
@@ -655,17 +659,17 @@ msgstr ""
 "phrase> </textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:388
+#: C/index.docbook:392
 msgid "It is stormy."
 msgstr "Está uma tempestade."
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:398
+#: C/index.docbook:402
 msgid "To Add Weather Report to a Panel"
 msgstr "Para Adicionar o Relatório de Meteorologia a um Painel"
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:399
+#: C/index.docbook:403
 msgid ""
 "To add <application>Weather Report</application> to a panel, perform the "
 "following steps:"
@@ -674,17 +678,17 @@ msgstr ""
 "painel, realize os seguintes passos:"
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:405
+#: C/index.docbook:409
 msgid "Right-click on the panel."
 msgstr "Clique com o botão direito do rato no painel."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:410
+#: C/index.docbook:414
 msgid "Choose <guimenuitem>Add to Panel</guimenuitem>."
 msgstr "Escolha <guimenuitem>Adicionar ao Painel</guimenuitem>."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:415
+#: C/index.docbook:419
 msgid ""
 "Scroll down the list of items in the <guilabel>Add to Panel</guilabel> "
 "dialog, then select <guilabel>Weather Report</guilabel>."
@@ -694,17 +698,17 @@ msgstr ""
 "guilabel>."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:421
+#: C/index.docbook:425
 msgid "Click <guibutton>Add</guibutton>."
 msgstr "Clique em <guibutton>Adicionar</guibutton>."
 
 #. (itstool) path: sect1/title
-#: C/index.docbook:432
+#: C/index.docbook:436
 msgid "Preferences"
 msgstr "Preferências"
 
 #. (itstool) path: figure/title
-#: C/index.docbook:437
+#: C/index.docbook:441
 msgid "Weather Report menu"
 msgstr "Menu de Relatório de Meteorologia"
 
@@ -713,7 +717,7 @@ msgstr "Menu de Relatório de Meteorologia"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:441
+#: C/index.docbook:445
 msgctxt "_"
 msgid ""
 "external ref='figures/cafeweather-menu-prefs.png' "
@@ -723,7 +727,7 @@ msgstr ""
 "md5='75ac1c1d5be37639cc01ce97b6a0bed2'"
 
 #. (itstool) path: screenshot/mediaobject
-#: C/index.docbook:439
+#: C/index.docbook:443
 msgid ""
 "<imageobject> <imagedata fileref=\"figures/cafeweather-menu-prefs.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Context menu</phrase> </"
@@ -734,7 +738,7 @@ msgstr ""
 "phrase> </textobject>"
 
 #. (itstool) path: sect1/para
-#: C/index.docbook:433
+#: C/index.docbook:437
 msgid ""
 "The preferences dialog is accessed by right-clicking on the Weather Report "
 "in the panel. <_:figure-1/>"
@@ -743,12 +747,12 @@ msgstr ""
 "rato no painel do Relatório de Meteorologia. <_:figure-1/>"
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:451
+#: C/index.docbook:455
 msgid "Changing to Particular Location"
 msgstr "Alterar para uma Localização Específica"
 
 #. (itstool) path: figure/title
-#: C/index.docbook:453
+#: C/index.docbook:457
 msgid "Location Preferences"
 msgstr "Preferências de Localização"
 
@@ -757,7 +761,7 @@ msgstr "Preferências de Localização"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:457
+#: C/index.docbook:461
 msgctxt "_"
 msgid ""
 "external ref='figures/cafeweather-prefs-locations.png' "
@@ -767,7 +771,7 @@ msgstr ""
 "md5='a6695f9173de4527284517280a15ad81'"
 
 #. (itstool) path: screenshot/mediaobject
-#: C/index.docbook:455
+#: C/index.docbook:459
 msgid ""
 "<imageobject> <imagedata fileref=\"figures/cafeweather-prefs-locations.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Location Preferences</"
@@ -778,7 +782,7 @@ msgstr ""
 "Localização</phrase> </textobject>"
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:465
+#: C/index.docbook:469
 msgid ""
 "When you add the <application>Weather Report</application> to a panel for "
 "the first time, the application displays the weather for Pittsburgh, "
@@ -791,12 +795,12 @@ msgstr ""
 "seguintes passos:"
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:471
+#: C/index.docbook:475
 msgid "Right-click on the application."
 msgstr "Clique com o botão direito do rato na aplicação."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:476
+#: C/index.docbook:480
 msgid ""
 "Choose <guimenuitem>Preferences</guimenuitem> from the application popup "
 "menu. The application displays the <guilabel>Weather Preferences</guilabel> "
@@ -807,7 +811,7 @@ msgstr ""
 "guilabel>."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:482
+#: C/index.docbook:486
 msgid ""
 "Select the <guilabel>Location</guilabel> tab. The <guilabel>Location</"
 "guilabel> tabbed section contains a list of geographical regions, "
@@ -818,14 +822,14 @@ msgstr ""
 "sub-regiões e localizações específicas."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:487
+#: C/index.docbook:491
 msgid ""
 "Click on the arrow next to a region to display the subregions in the region."
 msgstr ""
 "Clique na seta a seguir à região para mostrar as sub-regiões na região."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:492
+#: C/index.docbook:496
 msgid ""
 "Click on the arrow next to a subregion to display the locations in the "
 "subregion."
@@ -834,7 +838,7 @@ msgstr ""
 "região."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:497
+#: C/index.docbook:501
 msgid ""
 "Click on a location. While the application retrieves the weather information "
 "for the new location, the tooltip \"Updating\" is displayed when you point "
@@ -845,7 +849,7 @@ msgstr ""
 "quando aponta para o ícone."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:504 C/index.docbook:528
+#: C/index.docbook:508 C/index.docbook:532
 msgid ""
 "Click <guibutton>Close</guibutton> to close the <guilabel>Weather "
 "Preferences</guilabel> dialog."
@@ -854,7 +858,7 @@ msgstr ""
 "<guilabel>Preferências de Meteorologia</guilabel>."
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:509
+#: C/index.docbook:513
 msgid ""
 "You can already try searching by entering the name of your city into the "
 "<guilabel>Find</guilabel> field. Be aware that for cities close together, or "
@@ -866,12 +870,12 @@ msgstr ""
 "na região."
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:517
+#: C/index.docbook:521
 msgid "Updating Weather Information"
 msgstr "Atualizar a Informação Meteorológica"
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:518
+#: C/index.docbook:522
 msgid ""
 "To update the weather information that the Weather Report displays in the "
 "panel, right-click on the icon, then choose <guimenuitem>Update</"
@@ -882,7 +886,7 @@ msgstr ""
 "<guimenuitem>Atualizar</guimenuitem>."
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:522
+#: C/index.docbook:526
 msgid ""
 "To automatically update the weather information at regular intervals, "
 "perform the following steps:"
@@ -891,7 +895,7 @@ msgstr ""
 "regulares, realize os seguintes passos:"
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:524
+#: C/index.docbook:528
 msgid ""
 "Go to the right-click menu and select <guimenuitem>Preferences</guimenuitem>."
 msgstr ""
@@ -899,7 +903,7 @@ msgstr ""
 "<guimenuitem>Preferências</guimenuitem>."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:525
+#: C/index.docbook:529
 msgid ""
 "In the <guilabel>Weather Preferences</guilabel> dialog under the "
 "<guilabel>General</guilabel> tab, select the <guilabel>Automatically update "
@@ -910,7 +914,7 @@ msgstr ""
 "automaticamente a cada ... minutos</guilabel>."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:526
+#: C/index.docbook:530
 msgid ""
 "Use the spin box to specify the interval at which the Weather Report "
 "retrieves updated information from the weather server. The default is to "
@@ -921,12 +925,12 @@ msgstr ""
 "valor predefinido é de 30 minutos."
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:532
+#: C/index.docbook:536
 msgid "Changing Units"
 msgstr "Alterar Unidades"
 
 #. (itstool) path: figure/title
-#: C/index.docbook:534
+#: C/index.docbook:538
 msgid "General Preferences"
 msgstr "Preferências Gerais"
 
@@ -935,7 +939,7 @@ msgstr "Preferências Gerais"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:538
+#: C/index.docbook:542
 msgctxt "_"
 msgid ""
 "external ref='figures/cafeweather-prefs-general.png' "
@@ -945,7 +949,7 @@ msgstr ""
 "md5='3e876a5578f9c5d856b8f5dcc039ef99'"
 
 #. (itstool) path: screenshot/mediaobject
-#: C/index.docbook:536
+#: C/index.docbook:540
 msgid ""
 "<imageobject> <imagedata fileref=\"figures/cafeweather-prefs-general.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>General Preferences</"
@@ -956,7 +960,7 @@ msgstr ""
 "phrase> </textobject>"
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:546
+#: C/index.docbook:550
 msgid ""
 "Go to the right-click menu and select <guimenuitem>Preferences</"
 "guimenuitem>. In the <guilabel>Weather Preferences</guilabel> dialog under "
@@ -969,7 +973,7 @@ msgstr ""
 "<guilabel>Geral</guilabel>, selecione as unidades de medida que quer usar."
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:553
+#: C/index.docbook:557
 msgid ""
 "A number of different measurements are available, including metric, "
 "imperial, SI and others. The choice <guilabel>Default</guilabel> will use "
@@ -980,12 +984,12 @@ msgstr ""
 "sua região, baseado no locale que configurou."
 
 #. (itstool) path: sect1/title
-#: C/index.docbook:565
+#: C/index.docbook:569
 msgid "Details"
 msgstr "Detalhes"
 
 #. (itstool) path: sect1/para
-#: C/index.docbook:567
+#: C/index.docbook:571
 msgid ""
 "To view detailed weather information, right-click on the Weather Report, "
 "then choose <guimenuitem>Details</guimenuitem>. The Weather Report displays "
@@ -999,27 +1003,27 @@ msgstr ""
 "contém as seguintes secções separadas:"
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:573
+#: C/index.docbook:577
 msgid "<guilabel>Current Conditions</guilabel>"
 msgstr "<guilabel>Condições Atuais</guilabel>"
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:578
+#: C/index.docbook:582
 msgid "<guilabel>Forecast</guilabel>"
 msgstr "<guilabel>Previsão</guilabel>"
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:583
+#: C/index.docbook:587
 msgid "<guilabel>Radar Map (optional)</guilabel>"
 msgstr "<guilabel>Mapa de Radar (opcional)</guilabel>"
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:589
+#: C/index.docbook:593
 msgid "Current Conditions"
 msgstr "Condições Atuais"
 
 #. (itstool) path: figure/title
-#: C/index.docbook:591
+#: C/index.docbook:595
 msgid "Weather Report Details"
 msgstr "Detalhes do Relatório de Meteorologia"
 
@@ -1028,7 +1032,7 @@ msgstr "Detalhes do Relatório de Meteorologia"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:595
+#: C/index.docbook:599
 msgctxt "_"
 msgid ""
 "external ref='figures/cafeweather-details.png' "
@@ -1038,7 +1042,7 @@ msgstr ""
 "md5='3bd06dad1c17c8b46d358c784495afb7'"
 
 #. (itstool) path: screenshot/mediaobject
-#: C/index.docbook:593
+#: C/index.docbook:597
 msgid ""
 "<imageobject> <imagedata fileref=\"figures/cafeweather-details.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Weather Report details</"
@@ -1049,7 +1053,7 @@ msgstr ""
 "de Meteorologia</phrase> </textobject>"
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:603
+#: C/index.docbook:607
 msgid ""
 "The <guilabel>Current Conditions</guilabel> tabbed section displays the "
 "following information:"
@@ -1058,22 +1062,22 @@ msgstr ""
 "informação:"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:613
+#: C/index.docbook:617
 msgid "City"
 msgstr "Cidade"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:618
+#: C/index.docbook:622
 msgid "Location to which the current weather conditions apply."
 msgstr "Localização na qual as condições meteorológicas atuais se aplicam."
 
 #. (itstool) path: entry/para
-#: C/index.docbook:625
+#: C/index.docbook:629
 msgid "Last update"
 msgstr "Última atualização"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:630
+#: C/index.docbook:634
 msgid ""
 "Time at which the weather conditions were last updated on the weather server."
 msgstr ""
@@ -1081,108 +1085,108 @@ msgstr ""
 "do servidor de meteorologia."
 
 #. (itstool) path: entry/para
-#: C/index.docbook:637
+#: C/index.docbook:641
 msgid "Conditions"
 msgstr "Condições"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:642
+#: C/index.docbook:646
 msgid "General weather conditions."
 msgstr "Condições meteorológicas gerais."
 
 #. (itstool) path: entry/para
-#: C/index.docbook:649
+#: C/index.docbook:653
 msgid "Sky"
 msgstr "Céu"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:654
+#: C/index.docbook:658
 msgid "General sky conditions."
 msgstr "Condições gerais do céu."
 
 #. (itstool) path: entry/para
-#: C/index.docbook:661
+#: C/index.docbook:665
 msgid "Temperature"
 msgstr "Temperatura"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:666
+#: C/index.docbook:670
 msgid "Current temperature."
 msgstr "Temperatura atual."
 
 #. (itstool) path: entry/para
-#: C/index.docbook:673
+#: C/index.docbook:677
 msgid "Dew point"
 msgstr "Ponto de condensação"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:678
+#: C/index.docbook:682
 msgid "Temperature at which dew forms."
 msgstr "Temperatura na qual é formado o orvalho."
 
 #. (itstool) path: entry/para
-#: C/index.docbook:685
+#: C/index.docbook:689
 msgid "Humidity"
 msgstr "Humidade"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:690
+#: C/index.docbook:694
 msgid "Percentage of moisture in the atmosphere."
 msgstr "Percentagem de humidade na atmosfera."
 
 #. (itstool) path: entry/para
-#: C/index.docbook:697
+#: C/index.docbook:701
 msgid "Wind"
 msgstr "Vento"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:702
+#: C/index.docbook:706
 msgid "Direction and speed of the wind."
 msgstr "Direção e velocidade do vento."
 
 #. (itstool) path: entry/para
-#: C/index.docbook:709
+#: C/index.docbook:713
 msgid "Pressure"
 msgstr "Pressão"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:714
+#: C/index.docbook:718
 msgid "Atmospheric pressure."
 msgstr "Pressão atmosférica."
 
 #. (itstool) path: entry/para
-#: C/index.docbook:721
+#: C/index.docbook:725
 msgid "Visibility"
 msgstr "Visibilidade"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:726
+#: C/index.docbook:730
 msgid "Range of vision as determined by the light and atmosphere conditions."
 msgstr ""
 "Alcance da visão conforme determinado pelas condições de luz e atmosfera."
 
 #. (itstool) path: entry/para
-#: C/index.docbook:733
+#: C/index.docbook:737
 msgid "Sunrise"
 msgstr "Nascer do sol"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:736
+#: C/index.docbook:740
 msgid "The calculated sunrise time for your location"
 msgstr "A hora do nascer do sol calculada para a sua localização"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:741
+#: C/index.docbook:745
 msgid "Sunset"
 msgstr "Pôr do sol"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:744
+#: C/index.docbook:748
 msgid "The calculated sunset time for your location"
 msgstr "A hora do pôr do sol calculada para a sua localização"
 
 #. (itstool) path: note/para
-#: C/index.docbook:751
+#: C/index.docbook:755
 msgid ""
 "Sunrise and sunset times are calculated locally from latitude and longitude "
 "information stored on your computer. Some conditions, such as refraction of "
@@ -1196,12 +1200,12 @@ msgstr ""
 "podem podem ter uma diferença até 10 minutos."
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:760
+#: C/index.docbook:764
 msgid "Forecast"
 msgstr "Previsão"
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:761
+#: C/index.docbook:765
 msgid ""
 "The <guilabel>Forecast</guilabel> tabbed section displays a forecast for the "
 "location for the immediate future, usually the next five days."
@@ -1210,7 +1214,7 @@ msgstr ""
 "tempo na localização no futuro imediato, normalmente nos 5 dias seguintes."
 
 #. (itstool) path: note/para
-#: C/index.docbook:765
+#: C/index.docbook:769
 msgid ""
 "Forecasts are only available for some locations in the U.S., Australia and "
 "the United Kingdom."
@@ -1219,12 +1223,12 @@ msgstr ""
 "América, Austrália e no Reino Unido."
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:772
+#: C/index.docbook:776
 msgid "Radar Map"
 msgstr "Mapa de Radar"
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:773
+#: C/index.docbook:777
 msgid ""
 "By default, the <guilabel>Radar Map</guilabel> tabbed section is not "
 "displayed in the <guilabel>Forecast</guilabel> dialog. <application>Weather "
@@ -1236,13 +1240,13 @@ msgstr ""
 "Por predefinição, a secção separada de <guilabel>Mapa de Radar</guilabel> "
 "não é mostrada na janela de <guilabel>Previsão</guilabel>. O "
 "<application>Relatório de Meteorologia</application> descarrega os mapas de "
-"radar de www.weather.com. Se o mapa de radar não estiver disponível em www."
-"weather.com, O Relatório de Meteorologia mostra um ponto de interrogação. "
-"Para aceder ao site www.weather.com, clique no botão <guibutton>Visitar o "
-"Weather.com</guibutton>."
+"radar de www.weather.com. Se o mapa de radar não estiver disponível em "
+"www.weather.com, O Relatório de Meteorologia mostra um ponto de "
+"interrogação. Para aceder ao site www.weather.com, clique no botão "
+"<guibutton>Visitar o Weather.com</guibutton>."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:782
+#: C/index.docbook:786
 msgid ""
 "Go to the <guilabel>Weather Preferences</guilabel> dialog by selecting "
 "<guilabel>Preferences</guilabel> in the right-click menu."
@@ -1252,7 +1256,7 @@ msgstr ""
 "com o botão direito do rato)."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:783
+#: C/index.docbook:787
 msgid ""
 "In the <guilabel>General</guilabel> tab, select the <guilabel>Enable radar "
 "map</guilabel> option."
@@ -1261,7 +1265,7 @@ msgstr ""
 "mapa de radar</guilabel>."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:784
+#: C/index.docbook:788
 msgid ""
 "By default, <application>Weather Report</application> downloads the radar "
 "maps from www.weather.com. Select the <guilabel>Use custom address for radar "
@@ -1276,14 +1280,14 @@ msgstr ""
 "introduzir o endereço no campo de texto <guilabel>Endereço</guilabel>."
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:780
+#: C/index.docbook:784
 msgid ""
 "To enable the radar map, perform the following steps: <_:orderedlist-1/>"
 msgstr ""
 "Para ativar o mapa de radar, realize os seguintes passos: <_:orderedlist-1/>"
 
 #. (itstool) path: note/para
-#: C/index.docbook:787
+#: C/index.docbook:791
 msgid ""
 "Most locations do not define a default radar map, especially outside of the "
 "U.S. Many locations will require you to specify a custom URL, if you wish to "
@@ -1409,3 +1413,7 @@ msgstr ""
 "O DOCUMENTO E VERSÕES MODIFICADAS DO DOCUMENTO SÃO DISPONIBILIZADAS NOS "
 "TERMOS DA LICENÇA DE DOCUMENTAÇÃO LIVRE GNU (GNU FREE DOCUMENTATION LICENSE) "
 "COM O SUBSEQUENTE ENTENDIMENTO DE QUE: <_:orderedlist-1/>"
+
+#~ msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
+#~ msgstr ""
+#~ "<year>2015-2020</year> <holder>Projecto de Documentação do CAFE</holder>"
