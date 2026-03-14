@@ -12,7 +12,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-01-10 17:58+0100\n"
+"POT-Creation-Date: 2026-03-14 19:05+0100\n"
 "PO-Revision-Date: 2020-02-15 11:23+0000\n"
 "Last-Translator: Michael Hartmann, 2020\n"
 "Language-Team: German (https://www.transifex.com/cafe/teams/13566/de/)\n"
@@ -49,53 +49,58 @@ msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:24
-msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
-msgstr "<year>2015-2020</year> <holder>CAFE Dokumentations Projekt</holder>"
+msgid "<year>2023-2026</year> <holder>CAFE Documentation Project</holder>"
+msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:28
+msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
+msgstr ""
+
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:32
 msgid "<year>2005</year> <holder>Francisco Javier F. Serrador</holder>"
 msgstr "<year>2005</year> <holder>Francisco Javier F. Serrador</holder>"
 
 #. (itstool) path: articleinfo/copyright
-#: C/index.docbook:32
+#: C/index.docbook:36
 msgid "<year>2003</year> <holder>Sun Microsystems</holder>"
 msgstr "<year>2003</year> <holder>Sun Microsystems</holder>"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
-#: C/index.docbook:46 C/index.docbook:98
+#: C/index.docbook:50 C/index.docbook:102
 msgid "CAFE Documentation Project"
 msgstr "CAFE-Dokumentationsprojekt"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
-#: C/index.docbook:49 C/index.docbook:107 C/index.docbook:116
-#: C/index.docbook:125
+#: C/index.docbook:53 C/index.docbook:111 C/index.docbook:120
+#: C/index.docbook:129
 msgid "GNOME Documentation Project"
 msgstr "GNOME-Dokumentationsprojekt"
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:55
+#: C/index.docbook:59
 msgid "<firstname>CAFE Documentation Project</firstname> <surname/>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:59
+#: C/index.docbook:63
 msgid "<firstname>Francisco Javier F.</firstname> <surname>Serrador</surname>"
 msgstr "<firstname>Francisco Javier F.</firstname> <surname>Serrador</surname>"
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:63
+#: C/index.docbook:67
 msgid ""
-"<firstname>Davyd</firstname> <surname>Madeley</surname> <email>davyd@madeley."
-"id.au</email>"
+"<firstname>Davyd</firstname> <surname>Madeley</surname> "
+"<email>davyd@madeley.id.au</email>"
 msgstr ""
-"<firstname>Davyd</firstname> <surname>Madeley</surname> <email>davyd@madeley."
-"id.au</email>"
+"<firstname>Davyd</firstname> <surname>Madeley</surname> "
+"<email>davyd@madeley.id.au</email>"
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:68
+#: C/index.docbook:72
 msgid ""
 "<firstname>Sun</firstname> <surname>GNOME Documentation Team</surname> "
 "<affiliation> <orgname>Sun Microsystems</orgname> </affiliation>"
@@ -104,66 +109,66 @@ msgstr ""
 "<affiliation><orgname>Sun Microsystems</orgname></affiliation>"
 
 #. (itstool) path: revdescription/para
-#: C/index.docbook:96
+#: C/index.docbook:100
 msgid "CAFE Documentation Team"
 msgstr "CAFE-Dokumentationsteam"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:92
+#: C/index.docbook:96
 msgid ""
 "<revnumber>Keyboard Accessibility Status Applet Manual V0.4</revnumber> "
 "<date>July 2015</date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
-#: C/index.docbook:105
+#: C/index.docbook:109
 msgid "GNOME Documentation Team"
 msgstr "GNOME Dokumentationsteam"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:101
+#: C/index.docbook:105
 msgid ""
 "<revnumber>Keyboard Accessibility Status Applet Manual V0.3</revnumber> "
 "<date>August 2005</date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
-#: C/index.docbook:114
+#: C/index.docbook:118
 msgid "Sun GNOME Documentation Team"
 msgstr "Sun GNOME Dokumentationsteam"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:110
+#: C/index.docbook:114
 msgid ""
 "<revnumber>Keyboard Accessibility Monitor Applet Manual V0.1</revnumber> "
 "<date>March 2003</date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
-#: C/index.docbook:123
+#: C/index.docbook:127
 msgid "Bill Haneman"
 msgstr "Bill Haneman"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:119
+#: C/index.docbook:123
 msgid ""
 "<revnumber>Keyboard Accessibility Status Applet Manual V0.2</revnumber> "
 "<date>May 2003</date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: articleinfo/releaseinfo
-#: C/index.docbook:129
+#: C/index.docbook:133
 msgid ""
 "This manual describes version 1.10.2 of the Keyboard Accessibility Monitor."
 msgstr ""
 
 #. (itstool) path: legalnotice/title
-#: C/index.docbook:132
+#: C/index.docbook:136
 msgid "Feedback"
 msgstr "Rückmeldungen"
 
 #. (itstool) path: legalnotice/para
-#: C/index.docbook:133
+#: C/index.docbook:137
 msgid ""
 "To report a bug or make a suggestion regarding the Keyboard Accessibility "
 "Monitor applet or this manual, follow the directions in the <ulink "
@@ -172,17 +177,17 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: article/indexterm
-#: C/index.docbook:139
+#: C/index.docbook:143
 msgid "<primary>Keyboard Accessibility Status</primary>"
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: C/index.docbook:146
+#: C/index.docbook:150
 msgid "Usage"
 msgstr "Verwendung"
 
 #. (itstool) path: figure/title
-#: C/index.docbook:149
+#: C/index.docbook:153
 msgid "Keyboard Accessibility Monitor"
 msgstr ""
 
@@ -191,7 +196,7 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:152
+#: C/index.docbook:156
 msgctxt "_"
 msgid ""
 "external ref='figures/accessx-status-applet.png' "
@@ -199,7 +204,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: screenshot/mediaobject
-#: C/index.docbook:151
+#: C/index.docbook:155
 msgid ""
 "<imageobject><imagedata fileref=\"figures/accessx-status-applet.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Shows Keyboard "
@@ -208,7 +213,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: C/index.docbook:161
+#: C/index.docbook:165
 msgid ""
 "The <application>Keyboard Accessibility Monitor</application> shows you the "
 "status of the keyboard accessibility features when these are in use. For "
@@ -217,26 +222,26 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: C/index.docbook:163
+#: C/index.docbook:167
 msgid ""
-"For more on using keyboard accessibility features, see the <ulink url=\"help:"
-"cafe-access-guide\">Desktop Accessibility Guide</ulink>."
+"For more on using keyboard accessibility features, see the <ulink "
+"url=\"help:cafe-access-guide\">Desktop Accessibility Guide</ulink>."
 msgstr ""
 "Weitere Informationen und Funktionen des Tastaturzugriffs findest Du im "
 "<ulink url=\"help\\:cafe-access-guide\">Desktop Accessibility Guide</ulink>"
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:167
+#: C/index.docbook:171
 msgid "What the applet shows"
 msgstr "Was das Programm zeigt"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:175
+#: C/index.docbook:179
 msgid "Symbol"
 msgstr "Symbol"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:180
+#: C/index.docbook:184
 msgid "Meaning"
 msgstr "Bedeutung"
 
@@ -245,7 +250,7 @@ msgstr "Bedeutung"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:191
+#: C/index.docbook:195
 msgctxt "_"
 msgid ""
 "external ref='figures/accessx-status-disabled.png' "
@@ -253,7 +258,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: entry/para
-#: C/index.docbook:189
+#: C/index.docbook:193
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx-status-"
 "disabled.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Bounce "
@@ -261,7 +266,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: entry/para
-#: C/index.docbook:197
+#: C/index.docbook:201
 msgid "Accessibility Features are currently disabled."
 msgstr ""
 
@@ -270,7 +275,7 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:206
+#: C/index.docbook:210
 msgctxt "_"
 msgid ""
 "external ref='figures/accessx_bounce-keys.png' "
@@ -278,7 +283,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: entry/para
-#: C/index.docbook:204
+#: C/index.docbook:208
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_bounce-"
 "keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Bounce Keys</"
@@ -286,7 +291,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: entry/para
-#: C/index.docbook:212
+#: C/index.docbook:216
 msgid "Bounce Keys are activated."
 msgstr ""
 
@@ -295,7 +300,7 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:221
+#: C/index.docbook:225
 msgctxt "_"
 msgid ""
 "external ref='figures/accessx_mouse-keys.png' "
@@ -303,7 +308,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: entry/para
-#: C/index.docbook:219
+#: C/index.docbook:223
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_mouse-"
 "keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Mouse Keys</"
@@ -311,7 +316,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: entry/para
-#: C/index.docbook:227
+#: C/index.docbook:231
 msgid "Mouse Keys are activated."
 msgstr "Die Maustasten sind aktiviert."
 
@@ -320,7 +325,7 @@ msgstr "Die Maustasten sind aktiviert."
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:236
+#: C/index.docbook:240
 msgctxt "_"
 msgid ""
 "external ref='figures/accessx_slow-keys.png' "
@@ -328,7 +333,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: entry/para
-#: C/index.docbook:234
+#: C/index.docbook:238
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_slow-"
 "keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Bounce Keys</"
@@ -336,7 +341,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: entry/para
-#: C/index.docbook:242
+#: C/index.docbook:246
 msgid "Slow Keys are activated."
 msgstr "Die Tastenverzögerung ist aktiviert."
 
@@ -345,7 +350,7 @@ msgstr "Die Tastenverzögerung ist aktiviert."
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:251
+#: C/index.docbook:255
 msgctxt "_"
 msgid ""
 "external ref='figures/accessx_sticky-keys.png' "
@@ -353,7 +358,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: entry/para
-#: C/index.docbook:249
+#: C/index.docbook:253
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
 "keys.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Sticky Keys</"
@@ -361,7 +366,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: entry/para
-#: C/index.docbook:257
+#: C/index.docbook:261
 msgid ""
 "Sticky Keys are activated. Here it shows <keycap>Shift</keycap> key pushed "
 "once and <keycap>Ctrl</keycap> key pushed twice."
@@ -375,7 +380,7 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:266
+#: C/index.docbook:270
 msgctxt "_"
 msgid ""
 "external ref='figures/accessx_sticky-altGr-key.png' "
@@ -383,7 +388,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: entry/para
-#: C/index.docbook:264
+#: C/index.docbook:268
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
 "altGr-key.png\" format=\"PNG\"/> </"
@@ -392,7 +397,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: entry/para
-#: C/index.docbook:272
+#: C/index.docbook:276
 msgid "<keycap>AltGr</keycap> key pushed once."
 msgstr "Die <keycap>AltGr</keycap>-Taste wurde einmal gedrückt."
 
@@ -401,7 +406,7 @@ msgstr "Die <keycap>AltGr</keycap>-Taste wurde einmal gedrückt."
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:281
+#: C/index.docbook:285
 msgctxt "_"
 msgid ""
 "external ref='figures/accessx_sticky-meta-key.png' "
@@ -409,7 +414,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: entry/para
-#: C/index.docbook:279
+#: C/index.docbook:283
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
 "meta-key.png\" format=\"PNG\"/> </"
@@ -418,7 +423,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: entry/para
-#: C/index.docbook:287
+#: C/index.docbook:291
 msgid "<keycap>Meta</keycap> key pushed once."
 msgstr ""
 
@@ -427,7 +432,7 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:296
+#: C/index.docbook:300
 msgctxt "_"
 msgid ""
 "external ref='figures/accessx_sticky-windows-key.png' "
@@ -435,7 +440,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: entry/para
-#: C/index.docbook:294
+#: C/index.docbook:298
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
 "windows-key.png\" format=\"PNG\"/> </"
@@ -444,7 +449,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: entry/para
-#: C/index.docbook:302
+#: C/index.docbook:306
 msgid "<keycap>Windows</keycap> logo key pushed once."
 msgstr "Die Taste mit dem <keycap>Windows-Logo</keycap> wurde einmal gedrückt."
 
@@ -453,7 +458,7 @@ msgstr "Die Taste mit dem <keycap>Windows-Logo</keycap> wurde einmal gedrückt."
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:311
+#: C/index.docbook:315
 msgctxt "_"
 msgid ""
 "external ref='figures/accessx_sticky-shift-key.png' "
@@ -461,7 +466,7 @@ msgid ""
 msgstr ""
 
 #. (itstool) path: entry/para
-#: C/index.docbook:309
+#: C/index.docbook:313
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/accessx_sticky-"
 "shift-key.png\" format=\"PNG\"/> </imageobject><textobject><phrase>Shift "
@@ -472,7 +477,7 @@ msgstr ""
 "Symbol</phrase></textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:317
+#: C/index.docbook:321
 msgid "<keycap>Shift</keycap> key pushed once."
 msgstr "Die <keycap>Shift</keycap>-Taste wurde einmal gedrückt."
 
@@ -579,8 +584,8 @@ msgstr ""
 "DOKUMENTS ODER EIN LIEFERANT EINER DIESER PARTEIEN VON EINER PERSON FÜR "
 "DIREKTE, INDIREKTE, BESONDERE, ZUFÄLLIGE ODER ALS FOLGE AUFGETRETENE SCHÄDEN "
 "IRGENDEINER ART, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF, SCHÄDEN DURCH "
-"GESCHÄFTSWERTVERLUSTE, ARBEITSAUSFÄLLE, COMPUTERAUSFÄLLE ODER -"
-"FUNKTIONSSTÖRUNGEN ODER JEGLICHE ANDERE SCHÄDEN ODER VERLUSTE, DIE DURCH "
+"GESCHÄFTSWERTVERLUSTE, ARBEITSAUSFÄLLE, COMPUTERAUSFÄLLE ODER "
+"-FUNKTIONSSTÖRUNGEN ODER JEGLICHE ANDERE SCHÄDEN ODER VERLUSTE, DIE DURCH "
 "ODER IM ZUSAMMENHANG MIT DER VERWENDUNG DES DOKUMENTS ODER EINER "
 "MODIFIZIERTEN VERSION DES DOKUMENTS ENTSTANDEN SIND, SELBST WENN DIESE "
 "PARTEI ÜBER MÖGLICHE SCHÄDEN INFORMIERT WORDEN SEIN SOLLTE, HAFTBAR GEMACHT "
@@ -596,3 +601,6 @@ msgstr ""
 "DAS DOKUMENT SOWIE VERÄNDERTE VERSIONEN DAVON WERDEN UNTER DEN BEDINGUNGEN "
 "DER »GNU FREE DOCUMENTATION LICENSE« BEREITGESTELLT, MIT DEM WEITEREN "
 "VERSTÄNDNIS, DASS:  <_:orderedlist-1/>"
+
+#~ msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
+#~ msgstr "<year>2015-2020</year> <holder>CAFE Dokumentations Projekt</holder>"
