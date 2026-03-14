@@ -9,7 +9,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-01-10 17:58+0100\n"
+"POT-Creation-Date: 2026-03-14 19:05+0100\n"
 "PO-Revision-Date: 2020-02-15 12:19+0000\n"
 "Last-Translator: Džiugas Grėbliūnas <dziugas.grebliunas@gmail.com>, 2020\n"
 "Language-Team: Lithuanian (https://www.transifex.com/cafe/teams/13566/lt/)\n"
@@ -51,26 +51,31 @@ msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:27
-msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
-msgstr "<year>2015-2020</year> <holder>CAFE dokumentacijos projektas</holder>"
+msgid "<year>2023-2026</year> <holder>CAFE Documentation Project</holder>"
+msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:31
+msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
+msgstr ""
+
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:35
 msgid "<year>2002</year> <holder>Jörgen Scheibengruber</holder>"
 msgstr "<year>2002</year> <holder>Jörgen Scheibengruber</holder>"
 
 #. (itstool) path: publisher/publishername
-#: C/index.docbook:44
+#: C/index.docbook:48
 msgid "CAFE Documentation Project"
 msgstr "CAFE dokumentacijos projektas"
 
 #. (itstool) path: publisher/publishername
-#: C/index.docbook:47
+#: C/index.docbook:51
 msgid "GNOME Documentation Project"
 msgstr "GNOME dokumentacijos projektas"
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:53
+#: C/index.docbook:57
 msgid ""
 "<firstname>CAFE Documentation Project</firstname> <surname/> <affiliation> "
 "<orgname>CAFE Desktop</orgname> </affiliation>"
@@ -79,7 +84,7 @@ msgstr ""
 "<affiliation> <orgname>CAFE darbalaukis</orgname> </affiliation>"
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:60
+#: C/index.docbook:64
 msgid ""
 "<firstname>Jörgen</firstname> <surname>Scheibengruber</surname> "
 "<affiliation> <orgname>GNOME Project</orgname> </affiliation> "
@@ -90,7 +95,7 @@ msgstr ""
 "<email>mfcn@gmx.de</email>"
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:69
+#: C/index.docbook:73
 msgid ""
 "<firstname>Pedro</firstname> <surname>Villavicencio Garrido</surname> "
 "<affiliation> <orgname>GNOME Project</orgname> </affiliation> "
@@ -101,17 +106,17 @@ msgstr ""
 "<email>pvillavi@gnome.org</email>"
 
 #. (itstool) path: revision/author
-#: C/index.docbook:96
+#: C/index.docbook:100
 msgid "<firstname>CAFE Documentation Project</firstname> <surname/>"
 msgstr "<firstname>CAFE dokumentacijos projektas</firstname> <surname/>"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:93
+#: C/index.docbook:97
 msgid "<revnumber>1.3</revnumber> <date>July 2015</date> <_:author-1/>"
 msgstr "<revnumber>1.3</revnumber> <date>2015 liepa</date> <_:author-1/>"
 
 #. (itstool) path: revision/author
-#: C/index.docbook:105 C/index.docbook:125
+#: C/index.docbook:109 C/index.docbook:129
 msgid ""
 "<firstname>Jörgen</firstname> <surname>Scheibengruber</surname> "
 "<email>mfcn@gmx.de</email>"
@@ -120,12 +125,12 @@ msgstr ""
 "<email>mfcn@gmx.de</email>"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:102
+#: C/index.docbook:106
 msgid "<revnumber>1.2</revnumber> <date>2006</date> <_:author-1/>"
 msgstr "<revnumber>1.2</revnumber> <date>2006</date> <_:author-1/>"
 
 #. (itstool) path: revision/author
-#: C/index.docbook:115
+#: C/index.docbook:119
 msgid ""
 "<firstname>Pedro</firstname> <surname>Villavicencio Garrido</surname> "
 "<email>pvillavi@gnome.org</email>"
@@ -134,48 +139,49 @@ msgstr ""
 "<email>pvillavi@gnome.org</email>"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:112
+#: C/index.docbook:116
 msgid "<revnumber>1.1</revnumber> <date>2005</date> <_:author-1/>"
 msgstr "<revnumber>1.1</revnumber> <date>2005</date> <_:author-1/>"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:122
+#: C/index.docbook:126
 msgid "<revnumber>1.0</revnumber> <date>2002</date> <_:author-1/>"
 msgstr "<revnumber>1.0</revnumber> <date>2002</date> <_:author-1/>"
 
 #. (itstool) path: articleinfo/releaseinfo
-#: C/index.docbook:134
+#: C/index.docbook:138
 msgid "This manual describes version 1.10.1 of Netspeed Applet."
 msgstr "Šiame žinyne aprašoma CAFE tinklo greičio versija 1.10.1."
 
 #. (itstool) path: legalnotice/title
-#: C/index.docbook:137
+#: C/index.docbook:141
 msgid "Feedback"
 msgstr "Atsiliepimai"
 
 #. (itstool) path: legalnotice/para
-#: C/index.docbook:138
+#: C/index.docbook:142
 msgid ""
 "To report a bug or make a suggestion regarding the Netspeed Applet "
-"application or this manual, follow the directions in the <ulink url=\"help:"
-"cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
+"application or this manual, follow the directions in the <ulink "
+"url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</"
+"ulink>."
 msgstr ""
 "Pranešimui apie programos klaidą arba pasiūlymams dėl CAFE tinklo greičio "
 "programos ar šio žinyno, sekite nuorodas <ulink url=\"help:cafe-user-guide/"
 "feedback\" type=\"help\">CAFE atsako puslapyje</ulink>."
 
 #. (itstool) path: article/indexterm
-#: C/index.docbook:146
+#: C/index.docbook:150
 msgid "<primary>Netspeed Applet</primary>"
 msgstr "<primary>CAFE tinklo greitis</primary>"
 
 #. (itstool) path: sect1/title
-#: C/index.docbook:152
+#: C/index.docbook:156
 msgid "About Netspeed Applet"
 msgstr "Apie CAFE tinklo greitį"
 
 #. (itstool) path: figure/title
-#: C/index.docbook:154
+#: C/index.docbook:158
 msgid "Netspeed"
 msgstr "Tinklo greitis"
 
@@ -184,7 +190,7 @@ msgstr "Tinklo greitis"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:157
+#: C/index.docbook:161
 msgctxt "_"
 msgid ""
 "external ref='figures/netspeed_applet.png' "
@@ -194,7 +200,7 @@ msgstr ""
 "md5='11ef0533a2be1a5d1a9de77c4cec7f93'"
 
 #. (itstool) path: screenshot/mediaobject
-#: C/index.docbook:156
+#: C/index.docbook:160
 msgid ""
 "<imageobject><imagedata fileref=\"figures/netspeed_applet.png\" "
 "format=\"PNG\"/> </imageobject> <textobject> <phrase>Netspeed.</phrase> </"
@@ -205,7 +211,7 @@ msgstr ""
 "textobject>"
 
 #. (itstool) path: figure/title
-#: C/index.docbook:166
+#: C/index.docbook:170
 msgid "Netspeed showing the sum in a 48px panel."
 msgstr "Tinklo greičio rodoma suma 48 pikelių skydelyje."
 
@@ -214,7 +220,7 @@ msgstr "Tinklo greičio rodoma suma 48 pikelių skydelyje."
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:169
+#: C/index.docbook:173
 msgctxt "_"
 msgid ""
 "external ref='figures/eth_sum_48.png' md5='5113ce28da9b7712dafc52b3c13ccf32'"
@@ -222,7 +228,7 @@ msgstr ""
 "external ref='figures/eth_sum_48.png' md5='5113ce28da9b7712dafc52b3c13ccf32'"
 
 #. (itstool) path: screenshot/mediaobject
-#: C/index.docbook:168
+#: C/index.docbook:172
 msgid ""
 "<imageobject><imagedata fileref=\"figures/eth_sum_48.png\" format=\"PNG\"/> "
 "</imageobject> <textobject> <phrase>Netspeed showing the sum in a 48px panel."
@@ -233,7 +239,7 @@ msgstr ""
 "skydelyje.</phrase></textobject>"
 
 #. (itstool) path: sect1/para
-#: C/index.docbook:177
+#: C/index.docbook:181
 msgid ""
 "<application>Netspeed Applet</application> displays the network traffic on a "
 "specified device like eth0, ppp0, plip0, etc. More over it provides "
@@ -244,17 +250,17 @@ msgstr ""
 "informaciją apie tinklo įrenginio konfigūraciją."
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:183
+#: C/index.docbook:187
 msgid "Netspeed Icons on Panel"
 msgstr "Tinklo monitoriaus piktogramos skydelyje"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:190
+#: C/index.docbook:194
 msgid "Icon"
 msgstr "Piktograma"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:191
+#: C/index.docbook:195
 msgid "Description"
 msgstr "Aprašymas"
 
@@ -263,7 +269,7 @@ msgstr "Aprašymas"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:198
+#: C/index.docbook:202
 msgctxt "_"
 msgid ""
 "external ref='figures/loopback.png' md5='0636b7d65b0626ee5e92dc0d28be5871'"
@@ -271,7 +277,7 @@ msgstr ""
 "external ref='figures/loopback.png' md5='0636b7d65b0626ee5e92dc0d28be5871'"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:196
+#: C/index.docbook:200
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/loopback.png\" "
 "format=\"PNG\"/> </imageobject><textobject> <phrase>Loopback</phrase> </"
@@ -282,7 +288,7 @@ msgstr ""
 "phrase></textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:203
+#: C/index.docbook:207
 msgid "The Loopback interface."
 msgstr "Kilpinio sujungimo sąsaja."
 
@@ -291,7 +297,7 @@ msgstr "Kilpinio sujungimo sąsaja."
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:210
+#: C/index.docbook:214
 msgctxt "_"
 msgid ""
 "external ref='figures/ethernet.png' md5='48562a8b38e8eca91a3a8ee4ba4e3077'"
@@ -299,7 +305,7 @@ msgstr ""
 "external ref='figures/ethernet.png' md5='48562a8b38e8eca91a3a8ee4ba4e3077'"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:208
+#: C/index.docbook:212
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ethernet.png\" "
 "format=\"PNG\"/> </imageobject><textobject> <phrase>Ethernet</phrase> </"
@@ -310,7 +316,7 @@ msgstr ""
 "textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:215
+#: C/index.docbook:219
 msgid "Ethernet connection."
 msgstr "Eterneto ryšys."
 
@@ -319,13 +325,13 @@ msgstr "Eterneto ryšys."
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:222
+#: C/index.docbook:226
 msgctxt "_"
 msgid "external ref='figures/ppp.png' md5='b88d98a9ccdd489d91b45c8cf2dcbad1'"
 msgstr "external ref='figures/ppp.png' md5='b88d98a9ccdd489d91b45c8cf2dcbad1'"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:220
+#: C/index.docbook:224
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/ppp.png\" "
 "format=\"PNG\"/> </imageobject><textobject> <phrase>PPP</phrase> </"
@@ -336,7 +342,7 @@ msgstr ""
 "textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:227
+#: C/index.docbook:231
 msgid "Point to Point Protocol connection."
 msgstr "Tiesioginio ryšio protokolo jungtis."
 
@@ -345,7 +351,7 @@ msgstr "Tiesioginio ryšio protokolo jungtis."
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:234
+#: C/index.docbook:238
 msgctxt "_"
 msgid ""
 "external ref='figures/wavelan.png' md5='90f925a64abe393adc5834fceba515fe'"
@@ -353,7 +359,7 @@ msgstr ""
 "external ref='figures/wavelan.png' md5='90f925a64abe393adc5834fceba515fe'"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:232
+#: C/index.docbook:236
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/wavelan.png\" "
 "format=\"PNG\"/> </imageobject><textobject> <phrase>Wireless</phrase> </"
@@ -364,7 +370,7 @@ msgstr ""
 "textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:239
+#: C/index.docbook:243
 msgid "Wireless connection."
 msgstr "Belaidis ryšys."
 
@@ -373,13 +379,13 @@ msgstr "Belaidis ryšys."
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:246
+#: C/index.docbook:250
 msgctxt "_"
 msgid "external ref='figures/plip.png' md5='0761a22dfa7b0b56e41e020cd701db68'"
 msgstr "external ref='figures/plip.png' md5='0761a22dfa7b0b56e41e020cd701db68'"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:244
+#: C/index.docbook:248
 msgid ""
 "<inlinemediaobject><imageobject> <imagedata fileref=\"figures/plip.png\" "
 "format=\"PNG\"/> </imageobject><textobject> <phrase>PLIP</phrase> </"
@@ -390,17 +396,17 @@ msgstr ""
 "textobject></inlinemediaobject>"
 
 #. (itstool) path: entry/para
-#: C/index.docbook:251
+#: C/index.docbook:255
 msgid "Parallel Line Internet Protocol connection."
 msgstr "Lygiagrečios linijos interneto protokolo ryšys."
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:260
+#: C/index.docbook:264
 msgid "To Add Netspeed Applet to a Panel"
 msgstr "Tinklo monitoriaus įdėjimas į skydelį"
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:261
+#: C/index.docbook:265
 msgid ""
 "To add <application>Netspeed Applet</application> to a panel, perform the "
 "following steps:"
@@ -409,17 +415,17 @@ msgstr ""
 "atlikite šiuos žingsnius:"
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:267
+#: C/index.docbook:271
 msgid "Right-click on the panel."
 msgstr "Dešiniuoju klavišu paspauskite ant skydelio."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:272
+#: C/index.docbook:276
 msgid "Choose <guimenuitem>Add to Panel</guimenuitem>."
 msgstr "Pasirinkite <guimenuitem>Įdėti į skydelį</guimenuitem>."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:277
+#: C/index.docbook:281
 msgid ""
 "Scroll down the list of items in the <guilabel>Add to Panel</guilabel> "
 "dialog, then select <guilabel>Netspeed Applet</guilabel>."
@@ -428,17 +434,17 @@ msgstr ""
 "tada pasirinkite <guilabel>Tinklo monitorius</guilabel>."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:283
+#: C/index.docbook:287
 msgid "Click <guibutton>Add</guibutton>."
 msgstr "Spauskite <guibutton>pridėti</guibutton>."
 
 #. (itstool) path: sect1/title
-#: C/index.docbook:291
+#: C/index.docbook:295
 msgid "Settings"
 msgstr "Nustatymai"
 
 #. (itstool) path: figure/title
-#: C/index.docbook:293
+#: C/index.docbook:297
 msgid "Netspeed Applet Settings"
 msgstr "Tinklo monitoriaus nustatymai"
 
@@ -447,7 +453,7 @@ msgstr "Tinklo monitoriaus nustatymai"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:296
+#: C/index.docbook:300
 msgctxt "_"
 msgid ""
 "external ref='figures/settings.png' md5='219a6bc0e89cb9634d49025f9d3c6604'"
@@ -455,7 +461,7 @@ msgstr ""
 "external ref='figures/settings.png' md5='219a6bc0e89cb9634d49025f9d3c6604'"
 
 #. (itstool) path: screenshot/mediaobject
-#: C/index.docbook:295
+#: C/index.docbook:299
 msgid ""
 "<imageobject><imagedata fileref=\"figures/settings.png\" format=\"PNG\"/> </"
 "imageobject> <textobject> <phrase>Netspeed Applet Settings.</phrase> </"
@@ -466,12 +472,12 @@ msgstr ""
 "textobject>"
 
 #. (itstool) path: sect1/para
-#: C/index.docbook:304
+#: C/index.docbook:308
 msgid "In this dialog you can change the settings of Netspeed Applet:"
 msgstr "Šiame dialoge galite pakeisti Tinklo monitoriaus nuostatas:"
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:308
+#: C/index.docbook:312
 msgid ""
 "<guilabel>Network device:</guilabel> Choose the network device that the "
 "applet should monitor from the popdown list of the combobox. Usually all "
@@ -482,7 +488,7 @@ msgstr ""
 "įrenginiai, bet galite įvesti ir pats."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:312
+#: C/index.docbook:316
 msgid ""
 "<guilabel>Update interval:</guilabel> Enter the time between two updates of "
 "the applet."
@@ -491,7 +497,7 @@ msgstr ""
 "įtaiso informacijos atnaujinimo momentų."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:315
+#: C/index.docbook:319
 msgid ""
 "<guilabel>Label font size:</guilabel> Enter the size of the text displayed "
 "in the applet."
@@ -500,7 +506,7 @@ msgstr ""
 "dydį."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:318
+#: C/index.docbook:322
 msgid ""
 "<guilabel>Show sum instead of in and out:</guilabel> If you check this box "
 "then the applet will show the sum of the in and out rate. The applet will "
@@ -511,7 +517,7 @@ msgstr ""
 "Įtaisas užims perpus mažiau vietos skydelyje."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:322
+#: C/index.docbook:326
 msgid ""
 "<guilabel>Show bits/s (b/s) instead of bytes/s (B/s):</guilabel> Check this "
 "if you want the applet to display bits per second instead of bytes/s."
@@ -521,7 +527,7 @@ msgstr ""
 "sekundę."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:326
+#: C/index.docbook:330
 msgid ""
 "<guilabel>Change icon according to the selected device:</guilabel> Usually "
 "the applet will show an icon representing the type of network device you "
@@ -537,7 +543,7 @@ msgstr ""
 "rodys tinklo plokštės piktogramą nepriklausmai nuo naudojamo ryšio."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:332
+#: C/index.docbook:336
 msgid ""
 "<guilabel>Always monitor a connected device, if possible:</guilabel> When "
 "your connection is down, Netspeed Applet look for a running one for "
@@ -548,7 +554,7 @@ msgstr ""
 
 #. (itstool) path: sect1/title
 #. (itstool) path: figure/title
-#: C/index.docbook:338 C/index.docbook:340
+#: C/index.docbook:342 C/index.docbook:344
 msgid "The details dialog"
 msgstr "Išsamesnės įrenginio informacijos dialogas"
 
@@ -557,7 +563,7 @@ msgstr "Išsamesnės įrenginio informacijos dialogas"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:343
+#: C/index.docbook:347
 msgctxt "_"
 msgid ""
 "external ref='figures/details.png' md5='60fedda8f88b634f16ab31090b5bdd67'"
@@ -565,7 +571,7 @@ msgstr ""
 "external ref='figures/details.png' md5='60fedda8f88b634f16ab31090b5bdd67'"
 
 #. (itstool) path: screenshot/mediaobject
-#: C/index.docbook:342
+#: C/index.docbook:346
 msgid ""
 "<imageobject><imagedata fileref=\"figures/details.png\" format=\"PNG\"/> </"
 "imageobject> <textobject> <phrase>The details dialog</phrase> </textobject>"
@@ -575,7 +581,7 @@ msgstr ""
 "phrase></textobject>"
 
 #. (itstool) path: sect1/para
-#: C/index.docbook:351
+#: C/index.docbook:355
 msgid ""
 "This dialog shows you some useful information on the configuration of your "
 "network device."
@@ -584,7 +590,7 @@ msgstr ""
 "konfigūraciją."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:356
+#: C/index.docbook:360
 msgid ""
 "<guilabel>Internet Address:</guilabel> The IP (Internet Protocol) address of "
 "the network device."
@@ -593,7 +599,7 @@ msgstr ""
 "protokolo) adresas."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:359
+#: C/index.docbook:363
 msgid ""
 "<guilabel>Netmask:</guilabel> The netmask which depends on the size of your "
 "LAN (Local Area Network). A usual value is 255.255.255.0 (a class C network)."
@@ -602,7 +608,7 @@ msgstr ""
 "tinklo (LAN). Dažna (C klasės tinklo) vertė – 255.255.255.0."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:363
+#: C/index.docbook:367
 msgid ""
 "<guilabel>Hardware Address:</guilabel> Often also referred to as the "
 "physical or MAC (Media Access Control) address. A worldwide unique "
@@ -613,7 +619,7 @@ msgstr ""
 "identifikatorius."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:367
+#: C/index.docbook:371
 msgid ""
 "<guilabel>P-t-P Address:</guilabel> The internet address of the \"other "
 "side\" of your PPP (Point to Point Protocol) connection."
@@ -622,7 +628,7 @@ msgstr ""
 "adresas."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:371
+#: C/index.docbook:375
 msgid ""
 "<guilabel>Bytes in:</guilabel> The amount of bytes that the network device "
 "has received since it has been connected to the network."
@@ -631,7 +637,7 @@ msgstr ""
 "gautų baitų skaičius."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:375
+#: C/index.docbook:379
 msgid ""
 "<guilabel>Bytes out:</guilabel> The amount of bytes that the network device "
 "has sent since it has been connected to the network."
@@ -745,5 +751,9 @@ msgid ""
 "<_:orderedlist-1/>"
 msgstr ""
 "DOKUMENTAS IR MODIFIKUOTOS JO VERSIJOS PATEIKIAMOS GNU LAISVOSIOS "
-"DOKUMENTACIJOS LICENCIJOS SĄLYGOMIS SU TOLESNIU SUPRATIMU, KAD: <_:"
-"orderedlist-1/>"
+"DOKUMENTACIJOS LICENCIJOS SĄLYGOMIS SU TOLESNIU SUPRATIMU, KAD: "
+"<_:orderedlist-1/>"
+
+#~ msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
+#~ msgstr ""
+#~ "<year>2015-2020</year> <holder>CAFE dokumentacijos projektas</holder>"
