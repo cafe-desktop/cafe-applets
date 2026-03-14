@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-01-10 17:58+0100\n"
+"POT-Creation-Date: 2026-03-14 19:05+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,171 +26,176 @@ msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:25
-msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
+msgid "<year>2023-2026</year> <holder>CAFE Documentation Project</holder>"
 msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:29
-msgid "<year>2005</year> <holder>Davyd Madeley</holder>"
+msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
 msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:33
-msgid "<year>2004</year> <holder>Shaun McCance</holder>"
+msgid "<year>2005</year> <holder>Davyd Madeley</holder>"
 msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:37
-msgid "<year>2004</year> <holder>Angela Boyle</holder>"
+msgid "<year>2004</year> <holder>Shaun McCance</holder>"
 msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:41
+msgid "<year>2004</year> <holder>Angela Boyle</holder>"
+msgstr ""
+
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:45
 msgid "<year>2003</year> <year>2004</year> <holder>Sun Microsystems</holder>"
 msgstr ""
 
 #. (itstool) path: articleinfo/copyright
-#: C/index.docbook:46
+#: C/index.docbook:50
 msgid "<year>2003</year> <holder>Loban A Rahman</holder>"
 msgstr ""
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
-#: C/index.docbook:59
-#: C/index.docbook:126
+#: C/index.docbook:63
+#: C/index.docbook:130
 msgid "CAFE Documentation Project"
 msgstr ""
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
-#: C/index.docbook:62
-#: C/index.docbook:148
-#: C/index.docbook:156
-#: C/index.docbook:164
-#: C/index.docbook:172
+#: C/index.docbook:66
+#: C/index.docbook:152
+#: C/index.docbook:160
+#: C/index.docbook:168
+#: C/index.docbook:176
 msgid "GNOME Documentation Project"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:68
+#: C/index.docbook:72
 msgid "<firstname>CAFE Documentation Team</firstname> <surname/> <affiliation> <orgname>CAFE Desktop</orgname> </affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:75
+#: C/index.docbook:79
 msgid "<firstname>Shaun</firstname> <surname>McCance</surname> <affiliation> <orgname>GNOME Documentation Project</orgname> <address><email>shaunm@gnome.org</email></address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:83
+#: C/index.docbook:87
 msgid "<firstname>Angela</firstname> <surname>Boyle</surname> <affiliation> <address><email>aboyle@aboyle.com</email></address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:90
+#: C/index.docbook:94
 msgid "<firstname>Loban</firstname> <surname>Rahman</surname> <affiliation> <address><email>loban@earthling.net</email></address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:97
+#: C/index.docbook:101
 msgid "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> <orgname>GNOME Project</orgname> <address><email>davyd@madeley.id.au</email></address> </affiliation>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
-#: C/index.docbook:125
+#: C/index.docbook:129
 msgid "CAFE Documentation Team"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:121
+#: C/index.docbook:125
 msgid "<revnumber>Sticky Notes Applet Manual V2.7</revnumber> <date>July 2015</date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
-#: C/index.docbook:133
-#: C/index.docbook:140
+#: C/index.docbook:137
+#: C/index.docbook:144
 msgid "Davyd Madeley"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:129
+#: C/index.docbook:133
 msgid "<revnumber>Sticky Notes Applet Manual V2.6</revnumber> <date>September 2005</date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:136
+#: C/index.docbook:140
 msgid "<revnumber>Sticky Notes Applet Manual V2.5</revnumber> <date>March 2005</date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
-#: C/index.docbook:147
+#: C/index.docbook:151
 msgid "Angela Boyle"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:143
+#: C/index.docbook:147
 msgid "<revnumber>Sticky Notes Applet Manual V2.4</revnumber> <date>September 2004</date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
-#: C/index.docbook:155
-#: C/index.docbook:163
-#: C/index.docbook:171
+#: C/index.docbook:159
+#: C/index.docbook:167
+#: C/index.docbook:175
 msgid "Sun GNOME Documentation Team"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:151
+#: C/index.docbook:155
 msgid "<revnumber>Sticky Notes Applet Manual V2.3</revnumber> <date>February 2004</date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:159
+#: C/index.docbook:163
 msgid "<revnumber>Sticky Notes Applet Manual V2.2</revnumber> <date>November 2003</date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:167
+#: C/index.docbook:171
 msgid "<revnumber>Sticky Notes Applet Manual V2.1</revnumber> <date>August 2003</date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: revdescription/para
-#: C/index.docbook:179
+#: C/index.docbook:183
 msgid "Loban A Rahman <email>loban@earthling.net</email>"
 msgstr ""
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:175
+#: C/index.docbook:179
 msgid "<revnumber>Sticky Notes Applet Manual V2.0</revnumber> <date>May 2003</date> <_:revdescription-1/>"
 msgstr ""
 
 #. (itstool) path: articleinfo/releaseinfo
-#: C/index.docbook:186
+#: C/index.docbook:190
 msgid "This manual describes version 1.10.2 of Sticky Notes."
 msgstr ""
 
 #. (itstool) path: legalnotice/title
-#: C/index.docbook:189
+#: C/index.docbook:193
 msgid "Feedback"
 msgstr ""
 
 #. (itstool) path: legalnotice/para
-#: C/index.docbook:190
+#: C/index.docbook:194
 msgid "To report a bug or make a suggestion regarding the <application>Sticky Notes</application> application or this manual, follow the directions in the <ulink url=\"help:cafe-user-guide/feedback\" type=\"help\">CAFE Feedback Page</ulink>."
 msgstr ""
 
 #. (itstool) path: article/indexterm
-#: C/index.docbook:195
+#: C/index.docbook:199
 msgid "<primary>Sticky Notes</primary>"
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: C/index.docbook:200
+#: C/index.docbook:204
 msgid "Introduction"
 msgstr ""
 
 #. (itstool) path: figure/title
-#: C/index.docbook:202
+#: C/index.docbook:206
 msgid "Sticky Notes"
 msgstr ""
 
@@ -199,83 +204,83 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:206
+#: C/index.docbook:210
 msgctxt "_"
 msgid "external ref='figures/stickynotes_applet.png' md5='9c1c425752e613ff9e1523aac27a7282'"
 msgstr ""
 
 #. (itstool) path: screenshot/mediaobject
-#: C/index.docbook:204
+#: C/index.docbook:208
 msgid "<imageobject> <imagedata fileref=\"figures/stickynotes_applet.png\" format=\"PNG\"/> </imageobject> <textobject><phrase>Shows Sticky Notes</phrase></textobject>"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: C/index.docbook:213
+#: C/index.docbook:217
 msgid "The <application>Sticky Notes</application> panel application enables you to create, view, and manage sticky notes on your desktop. You can edit the title, contents, dimensions, and style of sticky notes. When the panel is restarted, for example when you log out and log in again, all sticky notes are saved and reopened in the same position with the same dimensions and style."
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:222
+#: C/index.docbook:226
 msgid "To Add Sticky Notes to a Panel"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:223
+#: C/index.docbook:227
 msgid "To add <application>Sticky Notes</application> to a panel, perform the following steps:"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:229
+#: C/index.docbook:233
 msgid "Right-click on the panel."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:234
+#: C/index.docbook:238
 msgid "Choose <guimenuitem>Add to Panel</guimenuitem>."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:239
+#: C/index.docbook:243
 msgid "Scroll down the list of items in the <guilabel>Add to Panel</guilabel> dialog, then select <guilabel>Sticky Notes</guilabel>."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:245
+#: C/index.docbook:249
 msgid "Click <guibutton>Add</guibutton>."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:250
+#: C/index.docbook:254
 msgid "The layout of the <application>Sticky Notes</application> applet varies depending on the size and type of panel in which the applet resides."
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: C/index.docbook:258
+#: C/index.docbook:262
 msgid "Using Sticky Notes"
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:261
+#: C/index.docbook:265
 msgid "Showing and Hiding Sticky Notes"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:262
+#: C/index.docbook:266
 msgid "To hide all your notes, either click on the desktop, or right-click the <application>Sticky Notes</application> applet and choose <guimenuitem>Hide Notes</guimenuitem>."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:264
+#: C/index.docbook:268
 msgid "To show all your notes, click the <application>Sticky Notes</application> applet."
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:268
+#: C/index.docbook:272
 msgid "Creating a Sticky Note"
 msgstr ""
 
 #. (itstool) path: figure/title
-#: C/index.docbook:270
+#: C/index.docbook:274
 msgid "creating a new sticky note"
 msgstr ""
 
@@ -284,43 +289,43 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:274
+#: C/index.docbook:278
 msgctxt "_"
 msgid "external ref='figures/stickynote-right-menu-new.png' md5='5b53056bfdc7a8ffa5dc8013116d2b9f'"
 msgstr ""
 
 #. (itstool) path: screenshot/mediaobject
-#: C/index.docbook:272
+#: C/index.docbook:276
 msgid "<imageobject> <imagedata fileref=\"figures/stickynote-right-menu-new.png\" format=\"PNG\"/> </imageobject> <textobject><phrase>creating a new sticky note</phrase></textobject>"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:280
+#: C/index.docbook:284
 msgid "You can create a sticky note by right-clicking on the sticky note icon and selecting <guilabel>New Note</guilabel>, or by double-clicking the applet."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:282
+#: C/index.docbook:286
 msgid "Creating a note causes all hidden notes to be shown."
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:286
+#: C/index.docbook:290
 msgid "Locking and Unlocking Sticky Notes"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:287
+#: C/index.docbook:291
 msgid "You can lock or unlock all sticky notes at the same time, or you can lock or unlock individual sticky notes. Locking a sticky note prevents you from accidentally changing the contents of the note."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: C/index.docbook:292
+#: C/index.docbook:296
 msgid "<phrase>To Lock or Unlock All Sticky Notes</phrase>"
 msgstr ""
 
 #. (itstool) path: figure/title
-#: C/index.docbook:295
+#: C/index.docbook:299
 msgid "Right Clicking on the Icon"
 msgstr ""
 
@@ -329,73 +334,73 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:299
+#: C/index.docbook:303
 msgctxt "_"
 msgid "external ref='figures/stickynote-right-menu-lock.png' md5='d304b4412e3ad7e2b9590e816a25f24e'"
 msgstr ""
 
 #. (itstool) path: screenshot/mediaobject
-#: C/index.docbook:297
+#: C/index.docbook:301
 msgid "<imageobject> <imagedata fileref=\"figures/stickynote-right-menu-lock.png\" format=\"PNG\"/> </imageobject> <textobject><phrase>Right Clicking on the Icon</phrase></textobject>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:305
+#: C/index.docbook:309
 msgid "To lock all sticky notes so that the notes cannot be edited, choose <guimenuitem>Lock Notes</guimenuitem> from the icon right-click menu so that there is a check mark next to it. To unlock all sticky notes, choose <guimenuitem>Lock Notes</guimenuitem> from the icon right-click menu again so that there is not a check mark next to it."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:311
+#: C/index.docbook:315
 msgid "Note that all panel applications have the <guimenuitem>Lock to Panel</guimenuitem> item in the right-click menu, which locks the position of the panel application on the panel. Do not confuse this with the <guimenuitem>Lock Notes</guimenuitem> item."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: C/index.docbook:320
+#: C/index.docbook:324
 msgid "<phrase>To Lock or Unlock Individual Sticky Notes</phrase>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:321
+#: C/index.docbook:325
 msgid "To lock an individual sticky note, right-click on the title of the note, then choose <guimenuitem>Lock Note</guimenuitem> from the popup menu. To unlock an individual note, right-click on the title of the note, then choose <guimenuitem>Unlock Note</guimenuitem> from the popup menu again. You can also toggle the lock/unlock state of a sticky note by clicking the lock button in the top left corner of the sticky note."
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:334
+#: C/index.docbook:338
 msgid "Deleting Sticky Notes"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:335
+#: C/index.docbook:339
 msgid "You can delete all sticky notes at the same time, or you can delete individual sticky notes."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: C/index.docbook:339
+#: C/index.docbook:343
 msgid "To Delete All Sticky Notes"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:340
+#: C/index.docbook:344
 msgid "To delete all sticky notes, choose <guimenuitem>Delete Notes</guimenuitem> from the icon right-click menu. A confirmation dialog will appear; click on the <guibutton>Delete All</guibutton> button to confirm the deletion."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: C/index.docbook:346
+#: C/index.docbook:350
 msgid "To Delete Individual Sticky Notes"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:347
+#: C/index.docbook:351
 msgid "To delete an individual sticky note, right-click on the title of the note, then choose <guimenuitem>Delete Note</guimenuitem> from the popup menu. You can also delete a sticky note by clicking the <guibutton>x</guibutton> in the top right corner."
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: C/index.docbook:359
+#: C/index.docbook:363
 msgid "Preferences"
 msgstr ""
 
 #. (itstool) path: figure/title
-#: C/index.docbook:362
+#: C/index.docbook:366
 msgid "Sticky Notes Preferences"
 msgstr ""
 
@@ -404,131 +409,131 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:366
+#: C/index.docbook:370
 msgctxt "_"
 msgid "external ref='figures/stickynotes-prefs.png' md5='0263f6ed6b0242d2d24a45b5d403e007'"
 msgstr ""
 
 #. (itstool) path: screenshot/mediaobject
-#: C/index.docbook:364
+#: C/index.docbook:368
 msgid "<imageobject> <imagedata fileref=\"figures/stickynotes-prefs.png\" format=\"PNG\"/> </imageobject> <textobject><phrase>Shows Sticky Notes preferences</phrase></textobject>"
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:374
+#: C/index.docbook:378
 msgid "Adjusting Size"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:375
+#: C/index.docbook:379
 msgid "To configure the default size for all sticky notes, right-click on the sticky notes icon, then choose <guimenu>Preferences</guimenu> from the popup menu. The <application>Sticky Notes Preferences</application> dialog is displayed."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: C/index.docbook:380
+#: C/index.docbook:384
 msgid "<guilabel>Width</guilabel>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:381
+#: C/index.docbook:385
 msgid "Use this spin box to specify the default width of new sticky notes, in pixels."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: C/index.docbook:385
+#: C/index.docbook:389
 msgid "<guilabel>Height</guilabel>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:386
+#: C/index.docbook:390
 msgid "Use this spin box to specify the default height of new sticky notes, in pixels."
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:393
+#: C/index.docbook:397
 msgid "Changing Color and Font"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:394
+#: C/index.docbook:398
 msgid "To configure the color and font for all sticky notes, right-click on the icon, then choose <guimenu>Preferences</guimenu> from the popup menu. The <application>Sticky Notes Preferences</application> dialog is displayed."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: C/index.docbook:400
-#: C/index.docbook:496
+#: C/index.docbook:404
+#: C/index.docbook:500
 msgid "<guilabel>Font Color</guilabel>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:402
+#: C/index.docbook:406
 msgid "Click on the color selector button to display the color selector dialog. On the color selector dialog, use the color wheel or spin boxes to choose the default font color for stickynotes."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:407
+#: C/index.docbook:411
 msgid "If you have selected, <guilabel>Use color from the system theme</guilabel>, then the current theme colors will be used and you will not be able to select new defaults."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: C/index.docbook:415
-#: C/index.docbook:504
+#: C/index.docbook:419
+#: C/index.docbook:508
 msgid "<guilabel>Note Color</guilabel>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:417
+#: C/index.docbook:421
 msgid "Click on the color selector button to display the color selector dialog. On the color selector dialog, use the color wheel or spin boxes to choose the default base color for sticky notes."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:420
+#: C/index.docbook:424
 msgid "If you have selected, <guilabel>Use color from the system theme</guilabel>, then the current theme colors will be used and you will not able to select new defaults."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: C/index.docbook:427
-#: C/index.docbook:517
+#: C/index.docbook:431
+#: C/index.docbook:521
 msgid "<guilabel>Font</guilabel>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:429
+#: C/index.docbook:433
 msgid "Click on the font selector button to display the font selector dialog. On the font selector dialog, use the list boxes to choose the default font for sticky notes."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:432
+#: C/index.docbook:436
 msgid "If you have selected, <guilabel>Use font from the system theme</guilabel>, then the current Application Font set in Font Preferences will be used and you will not be able to select new defaults."
 msgstr ""
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:443
+#: C/index.docbook:447
 msgid "Customizing Behavior"
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:444
+#: C/index.docbook:448
 msgid "To customize the behavior of <application>Sticky Notes</application>, right-click on the icon, then choose <guimenu>Preferences</guimenu> from the popup menu. The <application>Sticky Notes Preferences</application> dialog is displayed."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:448
+#: C/index.docbook:452
 msgid "To specify that sticky notes are visible on all workspaces on the desktop, select <guilabel>Put notes on all workspaces</guilabel> in the <guilabel>Sticky Notes Preferences</guilabel> dialog. If you are using multiple workspaces, this will cause all sticky notes to be visible on all workspaces."
 msgstr ""
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:454
+#: C/index.docbook:458
 msgid "The option, <guilabel>Force default color and font on notes</guilabel>, will force all sticky notes on your desktop to use the color and font settings specified in the <guilabel>Default Note Properties</guilabel> above (see <xref linkend=\"stickynotes-color\"/>)."
 msgstr ""
 
 #. (itstool) path: sect1/title
-#: C/index.docbook:465
+#: C/index.docbook:469
 msgid "Customizing Individual Notes"
 msgstr ""
 
 #. (itstool) path: figure/title
-#: C/index.docbook:467
+#: C/index.docbook:471
 msgid "Sticky Note Preferences"
 msgstr ""
 
@@ -537,63 +542,63 @@ msgstr ""
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:471
+#: C/index.docbook:475
 msgctxt "_"
 msgid "external ref='figures/stickynotes-note-prefs.png' md5='e2214cbb04d62d60ea0385a5dfa1630c'"
 msgstr ""
 
 #. (itstool) path: screenshot/mediaobject
-#: C/index.docbook:469
+#: C/index.docbook:473
 msgid "<imageobject> <imagedata fileref=\"figures/stickynotes-note-prefs.png\" format=\"PNG\"/> </imageobject> <textobject><phrase>a Sticky Note's preferences</phrase></textobject>"
 msgstr ""
 
 #. (itstool) path: sect1/para
-#: C/index.docbook:477
+#: C/index.docbook:481
 msgid "You can customize the look of each individual sticky note. This can be useful for visually distinguishing different types of notes quickly. To configure the settings for an individual sticky note, right-click on the note's title, then choose <guimenu>Properties</guimenu> from the popup menu. The <application>Sticky Note Properties</application> dialog is displayed."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: C/index.docbook:485
+#: C/index.docbook:489
 msgid "<guilabel>Title</guilabel>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:486
+#: C/index.docbook:490
 msgid "Use this text box to specify the title of the sticky note."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: C/index.docbook:490
+#: C/index.docbook:494
 msgid "<guilabel>Use default color</guilabel>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:491
+#: C/index.docbook:495
 msgid "Select this option to use the default base color for this sticky note. For information on setting the default base color, see <xref linkend=\"stickynotes-color\"/>."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:498
+#: C/index.docbook:502
 msgid "Click on the color selector button to display the color selector dialog. On the color selector dialog, use the color wheel or spin boxes to choose the font color for this sticky note."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:505
+#: C/index.docbook:509
 msgid "Click on the color selector button to display the color selector dialog. On the color selector dialog, use the color wheel or spin boxes to choose the base color for this sticky note."
 msgstr ""
 
 #. (itstool) path: varlistentry/term
-#: C/index.docbook:511
+#: C/index.docbook:515
 msgid "<guilabel>Use default font</guilabel>"
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:512
+#: C/index.docbook:516
 msgid "Select this option to use the default font for this sticky note. For information on setting the default font, see <xref linkend=\"stickynotes-color\"/>."
 msgstr ""
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:518
+#: C/index.docbook:522
 msgid "Click on the font selector button to display the font selector dialog. On the font selector dialog, use the list boxes to choose the font for this sticky note."
 msgstr ""
 
