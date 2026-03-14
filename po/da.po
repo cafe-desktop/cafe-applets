@@ -12,9 +12,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: cafe-applets 1.25.0\n"
+"Project-Id-Version: cafe-applets 2.0.0\n"
 "Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
-"POT-Creation-Date: 2020-08-11 21:05+0200\n"
+"POT-Creation-Date: 2026-03-14 19:05+0100\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Joe Hansen <joedalton2@yahoo.dk>, 2020\n"
 "Language-Team: Danish (https://www.transifex.com/cafe/teams/13566/da/)\n"
@@ -24,43 +24,51 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: accessx-status/applet.c:86 charpick/charpick.c:572 geyes/geyes.c:166
-#: cafeweather/cafeweather-about.c:41 multiload/main.c:48
-#: stickynotes/stickynotes_applet_callbacks.c:367
+#: accessx-status/applet.c:88 charpick/charpick.c:580 geyes/geyes.c:167
+#: cafeweather/cafeweather-about.c:42 multiload/main.c:49
+#: stickynotes/stickynotes_applet_callbacks.c:382
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr "Sun GNOME-dokumentationsholdet <gdocteam@sun.com>"
 
-#: accessx-status/applet.c:87 battstat/battstat_applet.c:820
-#: charpick/charpick.c:573 cpufreq/src/cpufreq-applet.c:466
-#: drivemount/drivemount.c:109 geyes/geyes.c:167
-#: cafeweather/cafeweather-about.c:43 multiload/main.c:49
-#: stickynotes/stickynotes_applet_callbacks.c:368
-#: trashapplet/src/trashapplet.c:421
+#: accessx-status/applet.c:89 battstat/battstat_applet.c:824
+#: charpick/charpick.c:581 cpufreq/src/cpufreq-applet.c:467
+#: drivemount/drivemount.c:112 geyes/geyes.c:168
+#: cafeweather/cafeweather-about.c:44 multiload/main.c:50
+#: stickynotes/stickynotes_applet_callbacks.c:383
+#: trashapplet/src/trashapplet.c:422
+msgid "MATE Documentation Team"
+msgstr ""
+
+#: accessx-status/applet.c:90 battstat/battstat_applet.c:825
+#: charpick/charpick.c:582 cpufreq/src/cpufreq-applet.c:468
+#: drivemount/drivemount.c:113 geyes/geyes.c:169
+#: cafeweather/cafeweather-about.c:45 multiload/main.c:51
+#: stickynotes/stickynotes_applet_callbacks.c:384
+#: trashapplet/src/trashapplet.c:423
 msgid "CAFE Documentation Team"
 msgstr "CAFE-dokumentationsholdet"
 
-#: accessx-status/applet.c:98
+#: accessx-status/applet.c:101
 msgid "About AccessX Status"
 msgstr "Om AccessX-status"
 
-#: accessx-status/applet.c:100
+#: accessx-status/applet.c:103
 msgid "Shows the state of AccessX features such as latched modifiers"
 msgstr "Viser tilstanden for AccessX-faciliteter såsom låste modifikationer"
 
-#: accessx-status/applet.c:101
+#: accessx-status/applet.c:104
 msgid ""
 "Copyright © 2003 Sun Microsystems\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
-"Ophavsret 2003 Sun Microsystems\n"
-"Ophavsret 2012-2020 CAFE-udviklerne"
 
-#: accessx-status/applet.c:105 battstat/battstat_applet.c:845
-#: charpick/charpick.c:593 command/command.c:128
-#: cpufreq/src/cpufreq-applet.c:490 drivemount/drivemount.c:127
-#: geyes/geyes.c:186 cafeweather/cafeweather-about.c:61 multiload/main.c:69
-#: netspeed/src/netspeed.c:829 stickynotes/stickynotes_applet_callbacks.c:388
-#: timerapplet/timerapplet.c:278 trashapplet/src/trashapplet.c:442
+#: accessx-status/applet.c:109 battstat/battstat_applet.c:851
+#: charpick/charpick.c:603 command/command.c:133
+#: cpufreq/src/cpufreq-applet.c:493 drivemount/drivemount.c:132
+#: geyes/geyes.c:189 cafeweather/cafeweather-about.c:64 multiload/main.c:72
+#: netspeed/src/netspeed.c:836 stickynotes/stickynotes_applet_callbacks.c:405
+#: timerapplet/timerapplet.c:287 trashapplet/src/trashapplet.c:445
 msgid "translator-credits"
 msgstr ""
 "\"Joe Hansen, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019.\\n\"\n"
@@ -68,91 +76,93 @@ msgstr ""
 "\"Dansk-gruppen <dansk@dansk-gruppen.dk>\\n\"\n"
 "\"Mere info: http://www.dansk-gruppen.dk\""
 
-#: accessx-status/applet.c:124
+#: accessx-status/applet.c:129
 #, c-format
 msgid "There was an error launching the help viewer: %s"
 msgstr "Der opstod en fejl ved kørsel af hjælpefremviseren: %s"
 
-#: accessx-status/applet.c:152
+#: accessx-status/applet.c:158
 msgid "Open the keyboard preferences dialog"
 msgstr "Åbn dialogen for tastaturindstillinger"
 
-#: accessx-status/applet.c:167
+#: accessx-status/applet.c:173
 #, c-format
 msgid "There was an error launching the keyboard preferences dialog: %s"
 msgstr "Der opstod en fejl ved kørsel af tastaturindstillinger: %s"
 
-#: accessx-status/applet.c:182
+#: accessx-status/applet.c:188
 msgid "_Keyboard Accessibility Preferences"
 msgstr "_Indstillinger for tastaturtilgængelighed"
 
-#: accessx-status/applet.c:183 battstat/battstat_applet.c:63
-#: charpick/charpick.c:674 cpufreq/src/cpufreq-applet.c:119
-#: drivemount/drivemount.c:165 geyes/geyes.c:359
-#: cafeweather/cafeweather-applet.c:117 multiload/main.c:488
+#: accessx-status/applet.c:189 battstat/battstat_applet.c:63
+#: charpick/charpick.c:685 cpufreq/src/cpufreq-applet.c:119
+#: drivemount/drivemount.c:170 geyes/geyes.c:363
+#: cafeweather/cafeweather-applet.c:117 multiload/main.c:500
+#: stickynotes/sticky-notes-preferences.ui:51
+#: stickynotes/sticky-notes-properties.ui:37
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
 msgid "_Help"
 msgstr "_Hjælp"
 
-#: accessx-status/applet.c:184 battstat/battstat_applet.c:66
-#: charpick/charpick.c:677 command/command.c:84
-#: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:168
-#: geyes/geyes.c:362 cafeweather/cafeweather-applet.c:120 multiload/main.c:491
+#: accessx-status/applet.c:190 battstat/battstat_applet.c:66
+#: charpick/charpick.c:688 command/command.c:84
+#: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:173
+#: geyes/geyes.c:366 cafeweather/cafeweather-applet.c:120 multiload/main.c:503
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
 #: trashapplet/src/trashapplet.c:77
 msgid "_About"
 msgstr "_Om"
 
-#: accessx-status/applet.c:504 accessx-status/applet.c:558
+#: accessx-status/applet.c:510 accessx-status/applet.c:564
 msgid "a"
 msgstr "a"
 
-#: accessx-status/applet.c:1043 accessx-status/applet.c:1109
-#: accessx-status/applet.c:1194 accessx-status/applet.c:1388
+#: accessx-status/applet.c:1051 accessx-status/applet.c:1117
+#: accessx-status/applet.c:1204 accessx-status/applet.c:1408
 msgid "AccessX Status"
 msgstr "AccessX-status"
 
-#: accessx-status/applet.c:1044 accessx-status/applet.c:1195
+#: accessx-status/applet.c:1052 accessx-status/applet.c:1205
 msgid "Shows keyboard status when accessibility features are used."
 msgstr "Viser tastaturstatus når tilgængelighedsfaciliteter benyttes."
 
-#: accessx-status/applet.c:1078
+#: accessx-status/applet.c:1086
 msgid "XKB Extension is not enabled"
 msgstr "XKB-udvidelsen er ikke aktiveret"
 
-#: accessx-status/applet.c:1083
+#: accessx-status/applet.c:1091
 msgid "Unknown error"
 msgstr "Ukendt fejl"
 
-#: accessx-status/applet.c:1087
+#: accessx-status/applet.c:1095
 #, c-format
 msgid "Error: %s"
 msgstr "Fejl: %s"
 
-#: accessx-status/applet.c:1385
-#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:9
+#: accessx-status/applet.c:1405
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Keyboard Accessibility Status"
 msgstr "Status for tastaturtilgængelighed"
 
-#: accessx-status/applet.c:1389
+#: accessx-status/applet.c:1409
 msgid "Displays current state of keyboard accessibility features"
 msgstr "Vis den aktuelle tilstand af tastaturtilgængelighedsfaciliteter"
 
-#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:5
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:4
 msgid "AccessX Status Applet Factory"
 msgstr "Fabrik for AccessXstatus-panelprogram"
 
-#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:6
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:5
 msgid "Keyboard Accessibility Status Applet Factory"
 msgstr "Fabrik for status for tastaturtilgængelighed"
 
-#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:10
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Shows the status of keyboard accessibility features"
 msgstr "Viser status for tastaturtilgængelighedsfaciliteter"
 
-#: battstat/battstat_applet.c:60 charpick/charpick.c:671 command/command.c:83
-#: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:356
-#: cafeweather/cafeweather-applet.c:114 multiload/main.c:482
+#: battstat/battstat_applet.c:60 charpick/charpick.c:682 command/command.c:83
+#: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:360
+#: cafeweather/cafeweather-applet.c:114 multiload/main.c:494
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
 msgid "_Preferences"
 msgstr "_Præferencer"
@@ -299,49 +309,47 @@ msgstr "Ukendt batteristatus"
 msgid "N/A"
 msgstr " - "
 
-#: battstat/battstat_applet.c:784 drivemount/drivemount.c:153 geyes/geyes.c:344
+#: battstat/battstat_applet.c:785 drivemount/drivemount.c:158 geyes/geyes.c:348
 #: geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
-#: cafeweather/cafeweather-pref.c:747
-#: stickynotes/stickynotes_applet_callbacks.c:345
-#: stickynotes/stickynotes_applet_callbacks.c:540
+#: cafeweather/cafeweather-pref.c:753
+#: stickynotes/stickynotes_applet_callbacks.c:359
+#: stickynotes/stickynotes_applet_callbacks.c:563
 #: trashapplet/src/trashapplet.c:399
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "Der opstod en fejl ved visning af hjælp: %s"
 
-#: battstat/battstat_applet.c:825
+#: battstat/battstat_applet.c:830
 msgid "This utility shows the status of your laptop battery."
 msgstr "Dette værktøj viser status for batteriet på din bærbare."
 
-#: battstat/battstat_applet.c:827
+#: battstat/battstat_applet.c:832
 msgid "upower backend enabled."
 msgstr "upower-motor aktiveret."
 
-#: battstat/battstat_applet.c:828
+#: battstat/battstat_applet.c:833
 msgid "Legacy backend enabled."
 msgstr "Forældet motor aktiveret."
 
-#: battstat/battstat_applet.c:837
+#: battstat/battstat_applet.c:842
 msgid "About Battery Charge Monitor"
 msgstr "Om Batteriovervåger"
 
-#: battstat/battstat_applet.c:839
+#: battstat/battstat_applet.c:844
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
-"Ophavsret 2000 The Gnulix Society\n"
-"Ophavsret 2002-2005 Free Software Foundation og andre\n"
-"Ophavsret 2012-2020 CAFE-udviklerne"
 
-#: battstat/battstat_applet.c:1115 battstat/battstat_applet.c:1165
-#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
+#: battstat/battstat_applet.c:1122 battstat/battstat_applet.c:1175
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Battery Charge Monitor"
 msgstr "Batteriovervåger"
 
-#: battstat/battstat_applet.c:1166
-#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:10
+#: battstat/battstat_applet.c:1176
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Monitor a laptop's remaining power"
 msgstr "Overvåg en bærbars tilbageværende strøm"
 
@@ -378,8 +386,8 @@ msgstr "Ad_var når batterikapaciteten falder til:"
 msgid "_Notify when battery is fully recharged"
 msgstr "_Påmind når batteriet er fuldt genopladet"
 
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:4
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:5
-#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Battstat Factory"
 msgstr "Battstatfabrik"
 
@@ -439,57 +447,56 @@ msgstr "Vis tid/procent-etiketten"
 msgid "0 for no label, 1 for percentage and 2 for time remaining."
 msgstr "0 for ingen etiket, 1 for procent og 2 for tilbageværende tid."
 
-#: battstat/properties.c:237
+#: battstat/properties.c:239
 msgid "Percent"
 msgstr "Procent"
 
-#: battstat/properties.c:243
+#: battstat/properties.c:245
 msgid "Minutes Remaining"
 msgstr "Minutter tilbage"
 
-#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:3
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:2
 msgid "Battery Status Utility"
 msgstr "Batteristatusværktøj"
 
-#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:7
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:6
 msgid "Battery power low"
 msgstr ""
 
-#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:11
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:10
 msgid "Battery fully re-charged"
 msgstr ""
 
-#: charpick/charpick.c:404
+#: charpick/charpick.c:407
 msgid "Available palettes"
 msgstr "Tilgængelige paletter"
 
-#: charpick/charpick.c:453
+#: charpick/charpick.c:456
 #, c-format
 msgid "Insert \"%s\""
 msgstr "Indsæt »%s«"
 
-#: charpick/charpick.c:456
+#: charpick/charpick.c:459
 msgid "Insert special character"
 msgstr "Indsæt specialtegn"
 
-#: charpick/charpick.c:460
+#: charpick/charpick.c:463
 #, c-format
 msgid "insert special character %s"
 msgstr "indsæt specialtegn %s"
 
-#: charpick/charpick.c:584
+#: charpick/charpick.c:593
 msgid "About Character Palette"
 msgstr "Om Tegnpalet"
 
-#: charpick/charpick.c:586
+#: charpick/charpick.c:595
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
-"Ophavsret 1998, 2004-2005 GNOME-panelprogrammers vedligeholdere og andre\n"
-"Ophavsret 2012-2020 CAFE-udviklerne"
 
-#: charpick/charpick.c:588
+#: charpick/charpick.c:598
 msgid ""
 "Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
@@ -497,19 +504,19 @@ msgstr ""
 "Panelprogram til at vælge specielle tegn der ikke findes på dit tastatur. "
 "Udgivet under GNU General Public Licence."
 
-#: charpick/charpick.c:700 charpick/charpick.c:714
-#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:9
-#: charpick/properties.c:451
+#: charpick/charpick.c:711 charpick/charpick.c:725
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:8
+#: charpick/properties.c:458
 msgid "Character Palette"
 msgstr "Tegnpalet"
 
-#: charpick/charpick.c:700
-#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:10
+#: charpick/charpick.c:711
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Insert characters"
 msgstr "Indsæt tegn"
 
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:4
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:5
-#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Charpicker Applet Factory"
 msgstr "Fabrik for tegnvælger-panelprogram"
 
@@ -526,7 +533,7 @@ msgstr ""
 "Denne streng vil blive vist når programmet starter."
 
 #: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:10
-#: charpick/properties.c:378
+#: charpick/properties.c:385
 msgid "List of available palettes"
 msgstr "Liste af tilgængelige paletter"
 
@@ -550,99 +557,98 @@ msgstr "Paletindtastning"
 msgid "Modify a palette by adding or removing characters"
 msgstr "Ændr en palet ved at tilføje eller fjerne tegn"
 
-#: charpick/properties.c:239
+#: charpick/properties.c:244
 msgid "Add Palette"
 msgstr "Tilføj palet"
 
-#: charpick/properties.c:276
+#: charpick/properties.c:282
 msgid "Edit Palette"
 msgstr "Rediger palet"
 
-#: charpick/properties.c:377
+#: charpick/properties.c:384
 msgid "Palettes list"
 msgstr "Paletliste"
 
-#: charpick/properties.c:456
+#: charpick/properties.c:463
 msgid "_Palettes:"
 msgstr "_Paletter:"
 
-#: charpick/properties.c:478
+#: charpick/properties.c:485
 msgid "Add button"
 msgstr "Tilføj-knap"
 
-#: charpick/properties.c:479
+#: charpick/properties.c:486
 msgid "Click to add a new palette"
 msgstr "Klik for at tilføje en ny palet"
 
-#: charpick/properties.c:491
+#: charpick/properties.c:498
 msgid "Edit button"
 msgstr "Rediger-knap"
 
-#: charpick/properties.c:492
+#: charpick/properties.c:499
 msgid "Click to edit the selected palette"
 msgstr "Klik for at ændre den valgte palet"
 
-#: charpick/properties.c:504
+#: charpick/properties.c:511
 msgid "Delete button"
 msgstr "Slet-knap"
 
-#: charpick/properties.c:505
+#: charpick/properties.c:512
 msgid "Click to delete the selected palette"
 msgstr "Klik for at slette den valgte palet"
 
-#: charpick/properties.c:556
+#: charpick/properties.c:565
 msgid "Character Palette Preferences"
 msgstr "Indstillinger for tegnpalet"
 
-#: command/command.c:122
+#: command/command.c:126
 msgid "About Command Applet"
 msgstr "Om Kommandopanelprogram"
 
-#: command/command.c:124
+#: command/command.c:128
 msgid ""
 "Copyright © 2013-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 CAFE developers"
+"Copyright © 2015-2020 CAFE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
-"Ophavsret 2013-2014 Stefano Karapetsas\n"
-"Ophavsret 2015-2020 CAFE-udviklerne"
 
-#: command/command.c:127
-#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:10
+#: command/command.c:132
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Shows the output of a command"
 msgstr "Vis resultatet af en kommando"
 
-#: command/command.c:194
+#: command/command.c:202
 msgid "Command Applet Preferences"
 msgstr "Indstillinger for kommandopanelprogram"
 
-#: command/command.c:207
+#: command/command.c:215
 msgid "Command:"
 msgstr "Kommando:"
 
-#: command/command.c:215
+#: command/command.c:223
 msgid "Interval (seconds):"
 msgstr "Interval (sekunder):"
 
-#: command/command.c:223
+#: command/command.c:231
 msgid "Maximum width (chars):"
 msgstr "Maksimal bredde (tegn):"
 
-#: command/command.c:231
+#: command/command.c:239
 #: command/org.cafe.panel.applet.command.gschema.xml.in:20
 #: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:20
 msgid "Show icon"
 msgstr "Vis ikon"
 
-#: command/command.c:443
+#: command/command.c:459
 msgid "Command Applet"
 msgstr "Kommandopanelprogram"
 
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:4
 #: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:5
-#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Command Factory"
 msgstr "Kommandofabrik"
 
-#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:9
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Command"
 msgstr "Kommando"
 
@@ -706,14 +712,14 @@ msgstr "Vis frekvens-_enheder"
 msgid "Show CPU frequency as _percentage"
 msgstr "Vis CPU-frekvens i _procent"
 
-#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:5
-#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:9
-#: cpufreq/src/cpufreq-applet.c:813 cpufreq/src/cpufreq-applet.c:868
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:4
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:8
+#: cpufreq/src/cpufreq-applet.c:816 cpufreq/src/cpufreq-applet.c:874
 msgid "CPU Frequency Scaling Monitor"
 msgstr "CPU-frekvensskalering"
 
-#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:6
-#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:10
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:5
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Monitor the CPU Frequency Scaling"
 msgstr "Overvåg CPU-frekvensskaleringen"
 
@@ -755,39 +761,38 @@ msgstr ""
 "En værdi på 0 betyder vis CPU-frekvens, 1 betyder vis frekvens og enheder og "
 "2 betyder vis procent i stedet for frekvens."
 
-#: cpufreq/src/cpufreq-applet.c:449 cpufreq/src/cpufreq-prefs.c:358
+#: cpufreq/src/cpufreq-applet.c:449 cpufreq/src/cpufreq-prefs.c:359
 msgid "Could not open help document"
 msgstr "Kunne ikke åbne hjælpedokumentet"
 
-#: cpufreq/src/cpufreq-applet.c:481
+#: cpufreq/src/cpufreq-applet.c:483
 msgid "About CPU Frequency Scaling Monitor"
 msgstr "Om CPU-frekvensskalering"
 
-#: cpufreq/src/cpufreq-applet.c:483
+#: cpufreq/src/cpufreq-applet.c:485
 msgid ""
 "Copyright © 2004 Carlos Garcia Campos\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
-"Ophavsret 2004 Carlos Garcia Campos\n"
-"Ophavsret 2012-2020 CAFE-udviklerne"
 
-#: cpufreq/src/cpufreq-applet.c:485
+#: cpufreq/src/cpufreq-applet.c:488
 msgid "This utility shows the current CPU Frequency Scaling."
 msgstr "Dette værktøj viser den nuværende CPU-frekvensskalering."
 
-#: cpufreq/src/cpufreq-applet.c:869
+#: cpufreq/src/cpufreq-applet.c:875
 msgid "This utility shows the current CPU Frequency"
 msgstr "Dette værktøj viser den nuværende CPU-frekvens"
 
-#: cpufreq/src/cpufreq-prefs.c:493
+#: cpufreq/src/cpufreq-prefs.c:494
 msgid "Graphic"
 msgstr "Grafik"
 
-#: cpufreq/src/cpufreq-prefs.c:498
+#: cpufreq/src/cpufreq-prefs.c:499
 msgid "Text"
 msgstr "Tekst"
 
-#: cpufreq/src/cpufreq-prefs.c:503
+#: cpufreq/src/cpufreq-prefs.c:504
 msgid "Graphic and Text"
 msgstr "Grafik og tekst"
 
@@ -815,114 +820,112 @@ msgstr "Ændr CPU-frekvensskalering"
 msgid "Privileges are required to change the CPU Frequency scaling."
 msgstr "Der kræves rettigheder til at ændre CPU-frekvensskaleringen."
 
-#: drivemount/drive-button.c:307
+#: drivemount/drive-button.c:308
 msgid "nothing to mount"
 msgstr ""
 
-#: drivemount/drive-button.c:340 drivemount/drive-button.c:354
+#: drivemount/drive-button.c:341 drivemount/drive-button.c:355
 msgid "(mounted)"
 msgstr "(monteret)"
 
-#: drivemount/drive-button.c:347
+#: drivemount/drive-button.c:348
 msgid "(not mounted)"
 msgstr "(ikke monteret)"
 
-#: drivemount/drive-button.c:619
+#: drivemount/drive-button.c:622
 msgid "Cannot execute Baul"
 msgstr "Kan ikke køre Baul"
 
-#: drivemount/drive-button.c:943
+#: drivemount/drive-button.c:957
 msgid "_Play DVD"
 msgstr "_Afspil dvd"
 
-#: drivemount/drive-button.c:947
+#: drivemount/drive-button.c:961
 msgid "_Play CD"
 msgstr "_Afspil cd"
 
-#: drivemount/drive-button.c:950
+#: drivemount/drive-button.c:964
 #, c-format
 msgid "_Open %s"
 msgstr "_Åbn %s"
 
-#: drivemount/drive-button.c:958
+#: drivemount/drive-button.c:972
 #, c-format
 msgid "Un_mount %s"
 msgstr "Af_monter %s"
 
-#: drivemount/drive-button.c:964
+#: drivemount/drive-button.c:978
 #, c-format
 msgid "_Mount %s"
 msgstr "_Monter %s"
 
-#: drivemount/drive-button.c:972
+#: drivemount/drive-button.c:986
 #, c-format
 msgid "_Eject %s"
 msgstr "_Skub %s ud"
 
-#: drivemount/drivemount.c:120
+#: drivemount/drivemount.c:124
 msgid "About Disk Mounter"
 msgstr "Om Diskmontering"
 
-#: drivemount/drivemount.c:122
+#: drivemount/drivemount.c:126
 msgid ""
 "Copyright © 2004 Canonical Ltd\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
-"Ophavsret 2004 Canonical Ltd\n"
-"Ophavsret 2012-2020 CAFE-udviklerne"
 
-#: drivemount/drivemount.c:124
+#: drivemount/drivemount.c:129
 msgid "Applet for mounting and unmounting block volumes."
 msgstr "Panelprogram til at montere og afmontere blokarkiver."
 
-#: drivemount/drivemount.c:185 drivemount/drivemount.c:220
-#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:9
+#: drivemount/drivemount.c:190 drivemount/drivemount.c:227
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Disk Mounter"
 msgstr "Diskmontering"
 
-#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:5
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:4
 msgid "Drive Mount Applet Factory"
 msgstr "Diskmonterings-panelprogram"
 
-#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:6
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:5
 msgid "Factory for drive mount applet"
 msgstr "Fabrik for diskmonterings-panelprogram"
 
-#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:10
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Mount local disks and devices"
 msgstr "Monter lokale diske og enheder"
 
-#: geyes/geyes.c:178
+#: geyes/geyes.c:180
 msgid "About Eyes"
 msgstr "Om Øjne"
 
-#: geyes/geyes.c:180
+#: geyes/geyes.c:182
 msgid "A goofy set of eyes for the CAFE panel. They follow your mouse."
 msgstr "En fjollet sæt øjne til CAFE-panelet. De følger din mus."
 
-#: geyes/geyes.c:182
+#: geyes/geyes.c:184
 msgid ""
 "Copyright © 1999 Dave Camp\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
-"Ophavsret 1999 Dave Camp\n"
-"Ophavsret 2012-2020 CAFE-udviklerne"
 
-#: geyes/geyes.c:389 geyes/geyes.c:419 geyes/geyes.c:421
-#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:9
+#: geyes/geyes.c:393 geyes/geyes.c:427 geyes/geyes.c:429
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Eyes"
 msgstr "Øjne"
 
-#: geyes/geyes.c:422
+#: geyes/geyes.c:430
 msgid "The eyes look in the direction of the mouse pointer"
 msgstr "Øjnene kigger i retning efter musemarkøren"
 
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:4
 #: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:5
-#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Eyes Applet Factory"
 msgstr "Fabrik for øjnepanelprogram"
 
-#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:10
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:9
 msgid "A set of eyeballs for your panel"
 msgstr "Et par øjeæbler til panelet"
 
@@ -951,19 +954,18 @@ msgstr "Temaer"
 msgid "_Select a theme:"
 msgstr "_Vælg et tema:"
 
-#: cafeweather/cafeweather-about.c:54
+#: cafeweather/cafeweather-about.c:56
 msgid "About Weather Report"
 msgstr "Om Vejrrapport"
 
-#: cafeweather/cafeweather-about.c:56
+#: cafeweather/cafeweather-about.c:58
 msgid ""
 "Copyright © 1999-2005 by S. Papadimitriou and others\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
-"Ophavsret 1999-2005 af S. Papadimitriou og andre\n"
-"Ophavsret 2012-2020 CAFE-udviklerne"
 
-#: cafeweather/cafeweather-about.c:58
+#: cafeweather/cafeweather-about.c:61
 msgid "A panel application for monitoring local weather conditions."
 msgstr "Et panelprogram til at overvåge lokale vejrforhold."
 
@@ -971,24 +973,24 @@ msgstr "Et panelprogram til at overvåge lokale vejrforhold."
 msgid "_Details"
 msgstr "_Detaljer"
 
-#: cafeweather/cafeweather-applet.c:111 cafeweather/cafeweather-dialog.c:183
+#: cafeweather/cafeweather-applet.c:111 cafeweather/cafeweather-dialog.c:186
 msgid "_Update"
 msgstr "O_pdater"
 
-#: cafeweather/cafeweather-applet.c:345
-#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:9
+#: cafeweather/cafeweather-applet.c:356
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Weather Report"
 msgstr "Vejrrapport"
 
-#: cafeweather/cafeweather-applet.c:360 cafeweather/cafeweather-applet.c:364
+#: cafeweather/cafeweather-applet.c:374 cafeweather/cafeweather-applet.c:378
 msgid "CAFE Weather"
 msgstr "Vejret"
 
-#: cafeweather/cafeweather-applet.c:463
+#: cafeweather/cafeweather-applet.c:478
 msgid "Weather Forecast"
 msgstr "Vejrudsigt"
 
-#: cafeweather/cafeweather-applet.c:475
+#: cafeweather/cafeweather-applet.c:490
 #, c-format
 msgid ""
 "City: %s\n"
@@ -999,99 +1001,99 @@ msgstr ""
 "Himmel: %s\n"
 "Temperatur: %s"
 
-#: cafeweather/cafeweather-applet.c:524
+#: cafeweather/cafeweather-applet.c:539
 msgid "Updating..."
 msgstr "Opdaterer …"
 
-#: cafeweather/cafeweather-dialog.c:181
+#: cafeweather/cafeweather-dialog.c:184
 msgid "Details"
 msgstr "Detaljer"
 
-#: cafeweather/cafeweather-dialog.c:223
+#: cafeweather/cafeweather-dialog.c:226
 msgid "City:"
 msgstr "By:"
 
-#: cafeweather/cafeweather-dialog.c:229
+#: cafeweather/cafeweather-dialog.c:232
 msgid "Last update:"
 msgstr "Sidste opdatering:"
 
-#: cafeweather/cafeweather-dialog.c:235
+#: cafeweather/cafeweather-dialog.c:238
 msgid "Conditions:"
 msgstr "Forhold:"
 
-#: cafeweather/cafeweather-dialog.c:241
+#: cafeweather/cafeweather-dialog.c:244
 msgid "Sky:"
 msgstr "Himmel:"
 
-#: cafeweather/cafeweather-dialog.c:247
+#: cafeweather/cafeweather-dialog.c:250
 msgid "Temperature:"
 msgstr "Temperatur:"
 
-#: cafeweather/cafeweather-dialog.c:253
+#: cafeweather/cafeweather-dialog.c:256
 msgid "Feels like:"
 msgstr "Føles ligesom:"
 
-#: cafeweather/cafeweather-dialog.c:259
+#: cafeweather/cafeweather-dialog.c:262
 msgid "Dew point:"
 msgstr "Dugpunkt:"
 
-#: cafeweather/cafeweather-dialog.c:265
+#: cafeweather/cafeweather-dialog.c:268
 msgid "Relative humidity:"
 msgstr "Relativ luftfugtighed:"
 
-#: cafeweather/cafeweather-dialog.c:271
+#: cafeweather/cafeweather-dialog.c:274
 msgid "Wind:"
 msgstr "Vind:"
 
-#: cafeweather/cafeweather-dialog.c:277
+#: cafeweather/cafeweather-dialog.c:280
 msgid "Pressure:"
 msgstr "Tryk:"
 
-#: cafeweather/cafeweather-dialog.c:283
+#: cafeweather/cafeweather-dialog.c:286
 msgid "Visibility:"
 msgstr "Sigtbarhed:"
 
-#: cafeweather/cafeweather-dialog.c:289
+#: cafeweather/cafeweather-dialog.c:292
 msgid "Sunrise:"
 msgstr "Solopgang:"
 
-#: cafeweather/cafeweather-dialog.c:295
+#: cafeweather/cafeweather-dialog.c:298
 msgid "Sunset:"
 msgstr "Solnedgang:"
 
-#: cafeweather/cafeweather-dialog.c:403
+#: cafeweather/cafeweather-dialog.c:406
 msgid "Current Conditions"
 msgstr "Aktuelle forhold"
 
-#: cafeweather/cafeweather-dialog.c:420
+#: cafeweather/cafeweather-dialog.c:423
 msgid "Forecast Report"
 msgstr "Vejrudsigtsrapport"
 
-#: cafeweather/cafeweather-dialog.c:420
+#: cafeweather/cafeweather-dialog.c:423
 msgid "See the ForeCast Details"
 msgstr "Se vejrudsigtsdetaljer"
 
-#: cafeweather/cafeweather-dialog.c:430
+#: cafeweather/cafeweather-dialog.c:433
 msgid "Forecast"
 msgstr "Prognose"
 
-#: cafeweather/cafeweather-dialog.c:438
+#: cafeweather/cafeweather-dialog.c:441
 msgid "Radar Map"
 msgstr "Radarkort"
 
-#: cafeweather/cafeweather-dialog.c:471
+#: cafeweather/cafeweather-dialog.c:474
 msgid "_Visit Weather.com"
 msgstr "_Besøg Weather.com"
 
-#: cafeweather/cafeweather-dialog.c:472
+#: cafeweather/cafeweather-dialog.c:475
 msgid "Visit Weather.com"
 msgstr "Besøg Weather.com"
 
-#: cafeweather/cafeweather-dialog.c:472
+#: cafeweather/cafeweather-dialog.c:475
 msgid "Click to Enter Weather.com"
 msgstr "Klik for at gå ind på Weather.com"
 
-#: cafeweather/cafeweather-dialog.c:603
+#: cafeweather/cafeweather-dialog.c:606
 msgid "Forecast not currently available for this location."
 msgstr "Vejrudsigt er ikke tilgængelig for denne lokalitet."
 
@@ -1126,171 +1128,170 @@ msgstr ""
 "Kunne ikke indlæse XML-databasen over lokationer. Rapporter venligst dette "
 "som en fejl."
 
-#: cafeweather/cafeweather-pref.c:807
+#: cafeweather/cafeweather-pref.c:813
 msgid "Weather Preferences"
 msgstr "Indstillinger for vejret"
 
-#: cafeweather/cafeweather-pref.c:831 cafeweather/cafeweather-pref.c:1034
+#: cafeweather/cafeweather-pref.c:837 cafeweather/cafeweather-pref.c:1040
 msgid "_Automatically update every:"
 msgstr "_Opdater automatisk hvert:"
 
-#: cafeweather/cafeweather-pref.c:847
+#: cafeweather/cafeweather-pref.c:853
 msgid "_Temperature unit:"
 msgstr "_Temperaturenhed:"
 
-#: cafeweather/cafeweather-pref.c:857
+#: cafeweather/cafeweather-pref.c:863
 msgid "Kelvin"
 msgstr "Kelvin"
 
-#: cafeweather/cafeweather-pref.c:859
+#: cafeweather/cafeweather-pref.c:865
 msgid "Celsius"
 msgstr "Celsius"
 
-#: cafeweather/cafeweather-pref.c:860
+#: cafeweather/cafeweather-pref.c:866
 msgid "Fahrenheit"
 msgstr "Fahrenheit"
 
-#: cafeweather/cafeweather-pref.c:869
+#: cafeweather/cafeweather-pref.c:875
 msgid "_Wind speed unit:"
 msgstr "_Vindstyrkeenhed:"
 
-#: cafeweather/cafeweather-pref.c:880
+#: cafeweather/cafeweather-pref.c:886
 msgid "m/s"
 msgstr "m/s"
 
-#: cafeweather/cafeweather-pref.c:882
+#: cafeweather/cafeweather-pref.c:888
 msgid "km/h"
 msgstr "km/t"
 
-#: cafeweather/cafeweather-pref.c:884
+#: cafeweather/cafeweather-pref.c:890
 msgid "mph"
 msgstr "mpt"
 
-#: cafeweather/cafeweather-pref.c:886
+#: cafeweather/cafeweather-pref.c:892
 msgid "knots"
 msgstr "knob"
 
-#: cafeweather/cafeweather-pref.c:887
+#: cafeweather/cafeweather-pref.c:893
 msgid "Beaufort scale"
 msgstr "Beaufort-skala"
 
-#: cafeweather/cafeweather-pref.c:896
+#: cafeweather/cafeweather-pref.c:902
 msgid "_Pressure unit:"
 msgstr "_Trykenhed:"
 
-#: cafeweather/cafeweather-pref.c:907
+#: cafeweather/cafeweather-pref.c:913
 msgid "kPa"
 msgstr "kPa"
 
-#: cafeweather/cafeweather-pref.c:909
+#: cafeweather/cafeweather-pref.c:915
 msgid "hPa"
 msgstr "hPa"
 
-#: cafeweather/cafeweather-pref.c:911
+#: cafeweather/cafeweather-pref.c:917
 msgid "mb"
 msgstr "mb"
 
-#: cafeweather/cafeweather-pref.c:913
+#: cafeweather/cafeweather-pref.c:919
 msgid "mmHg"
 msgstr "mmHg"
 
-#: cafeweather/cafeweather-pref.c:915
+#: cafeweather/cafeweather-pref.c:921
 msgid "inHg"
 msgstr "tmHG"
 
-#: cafeweather/cafeweather-pref.c:917
+#: cafeweather/cafeweather-pref.c:923
 msgid "atm"
 msgstr "atm"
 
-#: cafeweather/cafeweather-pref.c:926
+#: cafeweather/cafeweather-pref.c:932
 msgid "_Visibility unit:"
 msgstr "_Sigtbarhedsenhed:"
 
-#: cafeweather/cafeweather-pref.c:937
+#: cafeweather/cafeweather-pref.c:943
 msgid "meters"
 msgstr "meter"
 
-#: cafeweather/cafeweather-pref.c:939
+#: cafeweather/cafeweather-pref.c:945
 msgid "km"
 msgstr "km"
 
-#: cafeweather/cafeweather-pref.c:941
+#: cafeweather/cafeweather-pref.c:947
 msgid "miles"
 msgstr "mil"
 
-#: cafeweather/cafeweather-pref.c:971
+#: cafeweather/cafeweather-pref.c:977
 msgid "Enable _radar map"
 msgstr "Aktiver _radarkort"
 
-#: cafeweather/cafeweather-pref.c:987
+#: cafeweather/cafeweather-pref.c:993
 msgid "Use _custom address for radar map"
 msgstr "Benyt s_elvvalgt adresse til radarkortet"
 
-#: cafeweather/cafeweather-pref.c:1005
+#: cafeweather/cafeweather-pref.c:1011
 msgid "A_ddress:"
 msgstr "_Adresse:"
 
-#: cafeweather/cafeweather-pref.c:1020
+#: cafeweather/cafeweather-pref.c:1026
 msgid "Show _notifications"
 msgstr "Vis _påmindelser"
 
-#: cafeweather/cafeweather-pref.c:1030
+#: cafeweather/cafeweather-pref.c:1036
 msgid "Update"
 msgstr "Opdater"
 
-#: cafeweather/cafeweather-pref.c:1047
+#: cafeweather/cafeweather-pref.c:1053
 msgid "minutes"
 msgstr "minutter"
 
-#: cafeweather/cafeweather-pref.c:1065
+#: cafeweather/cafeweather-pref.c:1071
 msgid "Display"
 msgstr "Vis"
 
-#: cafeweather/cafeweather-pref.c:1084
+#: cafeweather/cafeweather-pref.c:1090
 msgid "General"
 msgstr "Generelt"
 
-#: cafeweather/cafeweather-pref.c:1095
+#: cafeweather/cafeweather-pref.c:1101
 msgid "_Select a location:"
 msgstr "_Vælg en placering:"
 
-#: cafeweather/cafeweather-pref.c:1117
+#: cafeweather/cafeweather-pref.c:1123
 msgid "_Find:"
 msgstr "_Find:"
 
-#: cafeweather/cafeweather-pref.c:1123
+#: cafeweather/cafeweather-pref.c:1129
 msgid "Find _Next"
 msgstr "Find _næste"
 
-#: cafeweather/cafeweather-pref.c:1144
+#: cafeweather/cafeweather-pref.c:1150
 msgid "Location"
 msgstr "Placering"
 
-#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:5
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:4
 msgid "Cafeweather Applet Factory"
 msgstr "Fabrik til Cafeweatherpanelprogram"
 
-#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:6
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:5
 msgid "Factory for creating the weather applet."
 msgstr "Fabrik til oprettelse af vejr-panelprogram."
 
-#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:10
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "Overvåg de aktuelle vejrforhold og -prognoser"
 
-#: multiload/main.c:60
+#: multiload/main.c:62
 msgid "About System Monitor"
 msgstr "Om Systemovervåger"
 
-#: multiload/main.c:62
+#: multiload/main.c:64
 msgid ""
 "Copyright © 1999-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
-"Ophavsret 1999-2005 Free Software Foundation og andre\n"
-"Ophavsret 2012-2020 CAFE-udviklerne"
 
-#: multiload/main.c:64
+#: multiload/main.c:67
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
@@ -1298,40 +1299,40 @@ msgstr ""
 "En systembelastningsovervåger der kan vise grafer for processor, hukommelse "
 "og swapfilsforbrug, plus netværkstraffik."
 
-#: multiload/main.c:129
+#: multiload/main.c:132
 msgid "Start system-monitor"
 msgstr "Start systemovervågning"
 
-#: multiload/main.c:151
+#: multiload/main.c:154
 #, c-format
 msgid "There was an error executing '%s': %s"
 msgstr "Der opstod en fejl ved kørsel af »%s«: %s"
 
-#: multiload/main.c:279 multiload/properties.c:643
+#: multiload/main.c:291 multiload/properties.c:643
 msgid "Processor"
 msgstr "Processor"
 
-#: multiload/main.c:281 multiload/properties.c:651
+#: multiload/main.c:293 multiload/properties.c:651
 msgid "Memory"
 msgstr "Hukommelse"
 
-#: multiload/main.c:283 multiload/properties.c:659
+#: multiload/main.c:295 multiload/properties.c:659
 msgid "Network"
 msgstr "Netværk"
 
-#: multiload/main.c:285 multiload/properties.c:668
+#: multiload/main.c:297 multiload/properties.c:668
 msgid "Swap Space"
 msgstr "Swapplads"
 
-#: multiload/main.c:287 multiload/main.c:366
+#: multiload/main.c:299 multiload/main.c:378
 msgid "Load Average"
 msgstr "Middelbelastning"
 
-#: multiload/main.c:289
+#: multiload/main.c:301
 msgid "Disk"
 msgstr "Disk"
 
-#: multiload/main.c:305
+#: multiload/main.c:317
 #, c-format
 msgid ""
 "%s:\n"
@@ -1342,12 +1343,12 @@ msgstr ""
 "%u%% i brug af programmel\n"
 "%u%% i brug som mellemlager"
 
-#: multiload/main.c:313
+#: multiload/main.c:325
 #, c-format
 msgid "The system load average is %0.02f"
 msgstr "Systemets middelbelastning er %0.02f"
 
-#: multiload/main.c:321
+#: multiload/main.c:333
 #, c-format
 msgid ""
 "%s:\n"
@@ -1358,7 +1359,7 @@ msgstr ""
 "Modtager %s\n"
 "Sender %s"
 
-#: multiload/main.c:337
+#: multiload/main.c:349
 #, c-format
 msgid ""
 "%s:\n"
@@ -1373,32 +1374,32 @@ msgstr[1] ""
 "%s:\n"
 "%u%% i brug"
 
-#: multiload/main.c:362
+#: multiload/main.c:374
 msgid "CPU Load"
 msgstr "Processorbelastning"
 
-#: multiload/main.c:363
+#: multiload/main.c:375
 msgid "Memory Load"
 msgstr "Hukommelsesbelastning"
 
-#: multiload/main.c:364
+#: multiload/main.c:376
 msgid "Net Load"
 msgstr "Netværksbelastning"
 
-#: multiload/main.c:365
+#: multiload/main.c:377
 msgid "Swap Load"
 msgstr "Swapbelastning"
 
-#: multiload/main.c:367
+#: multiload/main.c:379
 msgid "Disk Load"
 msgstr "Diskbelastning"
 
-#: multiload/main.c:485
+#: multiload/main.c:497
 msgid "_Open System Monitor"
 msgstr "_Åbn systemovervåger"
 
-#: multiload/main.c:517
-#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:9
+#: multiload/main.c:531
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:8
 msgid "System Monitor"
 msgstr "Systemovervågning"
 
@@ -1407,15 +1408,15 @@ msgstr "Systemovervågning"
 msgid "%s/s"
 msgstr "%s/s"
 
-#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:5
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:4
 msgid "MultiLoad Applet Factory"
 msgstr "Fabrik for MultiLoad-panelprogrammer"
 
-#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:6
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:5
 msgid "Factory for creating the load applet."
 msgstr "Fabrik til oprettelse af indlæsningspanelprogrammet."
 
-#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:10
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:9
 msgid "A system load indicator"
 msgstr "Systembelastningsovervåger"
 
@@ -1730,7 +1731,7 @@ msgid "Threshold 1: "
 msgstr "Tærskel 1:"
 
 #: multiload/properties.c:745 multiload/properties.c:780
-#: multiload/properties.c:815 netspeed/src/netspeed.c:432
+#: multiload/properties.c:815 netspeed/src/netspeed.c:435
 msgid "bytes"
 msgstr "byte"
 
@@ -1844,88 +1845,88 @@ msgstr "Vis ikon med signalkvalitet"
 msgid "If true, show signal quality icon for wireless devices."
 msgstr "Hvis sand (true), vis ikon med signalkvalitet for trådløse enheder."
 
-#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:5
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:4
 msgid "Netspeed Applet Factory"
 msgstr "Panelprogramfabrik for nethastighed"
 
-#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:6
-#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:10
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:5
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Netspeed Applet"
 msgstr "Panelprogram for nethastighed"
 
-#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:9
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Network Monitor"
 msgstr "Netværksovervågning"
 
-#: netspeed/src/netspeed.c:427
+#: netspeed/src/netspeed.c:430
 msgid "b"
 msgstr "b"
 
-#: netspeed/src/netspeed.c:427
+#: netspeed/src/netspeed.c:430
 msgid "B"
 msgstr "B"
 
-#: netspeed/src/netspeed.c:429
+#: netspeed/src/netspeed.c:432
 msgid "b/s"
 msgstr "b/s"
 
-#: netspeed/src/netspeed.c:429
+#: netspeed/src/netspeed.c:432
 msgid "B/s"
 msgstr "B/s"
 
-#: netspeed/src/netspeed.c:432
+#: netspeed/src/netspeed.c:435
 msgid "bits"
 msgstr "bit"
 
-#: netspeed/src/netspeed.c:440
+#: netspeed/src/netspeed.c:443
 msgid "k"
 msgstr "k"
 
-#: netspeed/src/netspeed.c:440
+#: netspeed/src/netspeed.c:443
 msgid "K"
 msgstr "K"
 
-#: netspeed/src/netspeed.c:442
+#: netspeed/src/netspeed.c:445
 msgid "kb/s"
 msgstr "kb/s"
 
-#: netspeed/src/netspeed.c:442
+#: netspeed/src/netspeed.c:445
 msgid "KiB/s"
 msgstr "KiB/s"
 
-#: netspeed/src/netspeed.c:445
+#: netspeed/src/netspeed.c:448
 msgid "kb"
 msgstr "kb"
 
-#: netspeed/src/netspeed.c:445
+#: netspeed/src/netspeed.c:448
 msgid "KiB"
 msgstr "KiB"
 
-#: netspeed/src/netspeed.c:455
+#: netspeed/src/netspeed.c:458
 msgid "m"
 msgstr "m"
 
-#: netspeed/src/netspeed.c:455
+#: netspeed/src/netspeed.c:458
 msgid "M"
 msgstr "M"
 
-#: netspeed/src/netspeed.c:457
+#: netspeed/src/netspeed.c:460
 msgid "Mb/s"
 msgstr "Mb/s"
 
-#: netspeed/src/netspeed.c:457
+#: netspeed/src/netspeed.c:460
 msgid "MiB/s"
 msgstr "MiB/s"
 
-#: netspeed/src/netspeed.c:460
+#: netspeed/src/netspeed.c:463
 msgid "Mb"
 msgstr "Mb"
 
-#: netspeed/src/netspeed.c:460
+#: netspeed/src/netspeed.c:463
 msgid "MiB"
 msgstr "MiB"
 
-#: netspeed/src/netspeed.c:784
+#: netspeed/src/netspeed.c:787
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
@@ -1934,21 +1935,19 @@ msgstr ""
 "Der opstod en fejl under visning af hjælp:\n"
 "%s"
 
-#: netspeed/src/netspeed.c:821
+#: netspeed/src/netspeed.c:827
 msgid "About CAFE Netspeed"
 msgstr "Om CAFE-nethastighed"
 
-#: netspeed/src/netspeed.c:823
+#: netspeed/src/netspeed.c:829
 msgid ""
 "Copyright © 2002-2003 Jörgen Scheibengruber\n"
 "Copyright © 2011-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 CAFE developers"
+"Copyright © 2015-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
-"Ophavsret 2002-2003 Jörgen Scheibengruber\n"
-"Ophavsret 2011-2014 Stefano Karapetsas\n"
-"Ophavsret 2015-2020 CAFE-udviklerne"
 
-#: netspeed/src/netspeed.c:826
+#: netspeed/src/netspeed.c:833
 msgid ""
 "A little applet that displays some information on the traffic on the "
 "specified network device"
@@ -1956,127 +1955,127 @@ msgstr ""
 "Et lille panelprogram der viser information om trafikken over den specifikke "
 "netværksenhed"
 
-#: netspeed/src/netspeed.c:987
+#: netspeed/src/netspeed.c:995
 msgid "CAFE Netspeed Preferences"
 msgstr "CAFE-netværkshastighedsindstillinger"
 
-#: netspeed/src/netspeed.c:1009
+#: netspeed/src/netspeed.c:1017
 msgid "General Settings"
 msgstr "Generelle indstillinger"
 
-#: netspeed/src/netspeed.c:1031
+#: netspeed/src/netspeed.c:1039
 msgid "Network _device:"
 msgstr "Netværks_enhed:"
 
-#: netspeed/src/netspeed.c:1043
+#: netspeed/src/netspeed.c:1051
 msgid "Default"
 msgstr "Standard"
 
-#: netspeed/src/netspeed.c:1056
+#: netspeed/src/netspeed.c:1064
 msgid "Show _sum instead of in & out"
 msgstr "Vis _sum i stedet for ind og ud"
 
-#: netspeed/src/netspeed.c:1060
+#: netspeed/src/netspeed.c:1068
 msgid "Show _bits instead of bytes"
 msgstr "Vis _bit i stedet for byte"
 
-#: netspeed/src/netspeed.c:1064
+#: netspeed/src/netspeed.c:1072
 msgid "Shorten _unit legend"
 msgstr "Forkort _enhedsbeskrivelse"
 
-#: netspeed/src/netspeed.c:1068
+#: netspeed/src/netspeed.c:1076
 msgid "_Change icon according to the selected device"
 msgstr "Ændr _ikon afhængigt af den valgte enhed"
 
-#: netspeed/src/netspeed.c:1072
+#: netspeed/src/netspeed.c:1080
 msgid "Show _icon"
 msgstr "Vis _ikon"
 
-#: netspeed/src/netspeed.c:1076
+#: netspeed/src/netspeed.c:1084
 msgid "Show signal _quality icon for wireless devices"
 msgstr "Vis ikon for signal_kvalitet for trådløse enheder"
 
-#: netspeed/src/netspeed.c:1194
+#: netspeed/src/netspeed.c:1205
 #, c-format
 msgid "Device Details for %s"
 msgstr "Enhedsdetaljer for %s"
 
-#: netspeed/src/netspeed.c:1219
+#: netspeed/src/netspeed.c:1230
 msgid "_In graph color"
 msgstr "_Indgående graf-farve"
 
-#: netspeed/src/netspeed.c:1220
+#: netspeed/src/netspeed.c:1231
 msgid "_Out graph color"
 msgstr "_Udgående graf-farve"
 
-#: netspeed/src/netspeed.c:1236
+#: netspeed/src/netspeed.c:1247
 msgid "Internet Address:"
 msgstr "Internetadresse:"
 
-#: netspeed/src/netspeed.c:1237
+#: netspeed/src/netspeed.c:1248
 msgid "Netmask:"
 msgstr "Netmaske:"
 
-#: netspeed/src/netspeed.c:1238
+#: netspeed/src/netspeed.c:1249
 msgid "Hardware Address:"
 msgstr "Udstyrsadresse:"
 
-#: netspeed/src/netspeed.c:1239
+#: netspeed/src/netspeed.c:1250
 msgid "P-t-P Address:"
 msgstr "P-t-P-adresse:"
 
-#: netspeed/src/netspeed.c:1240
+#: netspeed/src/netspeed.c:1251
 msgid "Bytes in:"
 msgstr "Byte ind:"
 
-#: netspeed/src/netspeed.c:1241
+#: netspeed/src/netspeed.c:1252
 msgid "Bytes out:"
 msgstr "Byte ud:"
 
-#: netspeed/src/netspeed.c:1243 netspeed/src/netspeed.c:1244
-#: netspeed/src/netspeed.c:1245 netspeed/src/netspeed.c:1246
+#: netspeed/src/netspeed.c:1254 netspeed/src/netspeed.c:1255
+#: netspeed/src/netspeed.c:1256 netspeed/src/netspeed.c:1257
 msgid "none"
 msgstr "intet"
 
-#: netspeed/src/netspeed.c:1297
+#: netspeed/src/netspeed.c:1308
 msgid "IPV6 Address:"
 msgstr "IPV6-adresse:"
 
-#: netspeed/src/netspeed.c:1330
+#: netspeed/src/netspeed.c:1341
 msgid "Signal Strength:"
 msgstr "Signalstyrke:"
 
-#: netspeed/src/netspeed.c:1331
+#: netspeed/src/netspeed.c:1342
 msgid "ESSID:"
 msgstr "ESSID:"
 
-#: netspeed/src/netspeed.c:1372
+#: netspeed/src/netspeed.c:1383
 msgid "Device _Details"
 msgstr "Enheds_detaljer"
 
-#: netspeed/src/netspeed.c:1374
+#: netspeed/src/netspeed.c:1385
 msgid "Preferences..."
 msgstr "Indstillinger …"
 
-#: netspeed/src/netspeed.c:1376
+#: netspeed/src/netspeed.c:1387
 msgid "Help"
 msgstr "Hjælp"
 
-#: netspeed/src/netspeed.c:1378
+#: netspeed/src/netspeed.c:1389
 msgid "About..."
 msgstr "Om …"
 
-#: netspeed/src/netspeed.c:1419
+#: netspeed/src/netspeed.c:1434
 #, c-format
 msgid "Do you want to disconnect %s now?"
 msgstr "Vil du afbryde %s nu?"
 
-#: netspeed/src/netspeed.c:1423
+#: netspeed/src/netspeed.c:1438
 #, c-format
 msgid "Do you want to connect %s now?"
 msgstr "Vil du forbinde %s nu?"
 
-#: netspeed/src/netspeed.c:1450
+#: netspeed/src/netspeed.c:1465
 #, c-format
 msgid ""
 "<b>Running command %s failed</b>\n"
@@ -2085,12 +2084,12 @@ msgstr ""
 "<b>Kørsel af kommando %s fejlede</b>\n"
 "%s"
 
-#: netspeed/src/netspeed.c:1509
+#: netspeed/src/netspeed.c:1525
 #, c-format
 msgid "%s is down"
 msgstr "%s er nede"
 
-#: netspeed/src/netspeed.c:1514
+#: netspeed/src/netspeed.c:1530
 #, c-format
 msgid ""
 "%s: %s\n"
@@ -2099,11 +2098,11 @@ msgstr ""
 "%s: %s\n"
 "ned: %s op: %s"
 
-#: netspeed/src/netspeed.c:1516 netspeed/src/netspeed.c:1525
+#: netspeed/src/netspeed.c:1532 netspeed/src/netspeed.c:1541
 msgid "has no ip"
 msgstr "har ingen ip"
 
-#: netspeed/src/netspeed.c:1523
+#: netspeed/src/netspeed.c:1539
 #, c-format
 msgid ""
 "%s: %s\n"
@@ -2112,7 +2111,7 @@ msgstr ""
 "%s: %s\n"
 "sum: %s"
 
-#: netspeed/src/netspeed.c:1532
+#: netspeed/src/netspeed.c:1548
 #, c-format
 msgid ""
 "\n"
@@ -2123,219 +2122,227 @@ msgstr ""
 "ESSID: %s\n"
 "Styrke: %d %%"
 
-#: netspeed/src/netspeed.c:1533
+#: netspeed/src/netspeed.c:1549
 msgid "unknown"
 msgstr "Ukendt"
 
-#: netspeed/src/netspeed.c:1584
+#: netspeed/src/netspeed.c:1606
 msgid "CAFE Netspeed"
 msgstr "CAFE-nethastighed"
 
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:4
 #: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:5
-#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Sticky Notes Applet Factory"
 msgstr "Fabrik til notesseddel-panelprogram"
 
-#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:9
-#: stickynotes/stickynotes_applet.c:170 stickynotes/stickynotes_applet.c:412
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:8
+#: stickynotes/stickynotes_applet.c:172 stickynotes/stickynotes_applet.c:417
 msgid "Sticky Notes"
 msgstr "Notessedler"
 
-#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:10
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Create, view, and manage sticky notes on the desktop"
 msgstr "Opret, vis og håndter notessedler på skrivebordet"
 
-#: stickynotes/stickynotes.c:577
+#: stickynotes/stickynotes.c:581
 msgid "This note is locked."
 msgstr "Denne notesseddel er låst."
 
-#: stickynotes/stickynotes.c:581
+#: stickynotes/stickynotes.c:585
 msgid "This note is unlocked."
 msgstr "Denne notesseddel er låst op."
 
-#: stickynotes/stickynotes.ui:26 stickynotes/stickynotes_applet.c:34
-msgid "_New Note"
-msgstr "_Ny note"
+#: stickynotes/sticky-notes-delete-all.ui:36
+#: stickynotes/sticky-notes-delete.ui:37
+msgid "_Cancel"
+msgstr ""
 
-#: stickynotes/stickynotes.ui:32
-msgid "_Delete Note..."
-msgstr "_Slet note …"
-
-#: stickynotes/stickynotes.ui:38
-msgid "_Lock Note"
-msgstr "_Lås note"
-
-#: stickynotes/stickynotes.ui:44
-msgid "_Properties"
-msgstr "_Egenskaber"
-
-#: stickynotes/stickynotes.ui:62
-msgid "Sticky Notes Preferences"
-msgstr "Indstillinger for notessedler"
-
-#: stickynotes/stickynotes.ui:82
-msgid "Default Note Properties"
-msgstr "Standardegenskaber for notesseddler"
-
-#: stickynotes/stickynotes.ui:119
-msgid "Choose a font to use for all sticky notes"
-msgstr "Vælg en skrifttype til alle notessedler"
-
-#: stickynotes/stickynotes.ui:120
-msgid "Pick a default sticky note font"
-msgstr "Vælg en standardskrifttype til notessedler"
-
-#: stickynotes/stickynotes.ui:139 stickynotes/stickynotes.ui:994
-msgid "_Font:"
-msgstr "Skrift_type:"
-
-#: stickynotes/stickynotes.ui:153
-msgid "Use fo_nt from the system theme"
-msgstr "Benyt temaets sk_rifttype"
-
-#: stickynotes/stickynotes.ui:176
-msgid "Note C_olor:"
-msgstr "Notefa_rve:"
-
-#: stickynotes/stickynotes.ui:197
-msgid "Font Co_lor:"
-msgstr "Skriftf_arve:"
-
-#: stickynotes/stickynotes.ui:230
-msgid "Choose a base color to use for all sticky notes"
-msgstr "Vælg en grundfarve til alle notessedler"
-
-#: stickynotes/stickynotes.ui:231
-msgid "Pick a default sticky note color"
-msgstr "Vælg en standardfarve til notessedler"
-
-#: stickynotes/stickynotes.ui:243
-msgid "Use co_lor from the system theme"
-msgstr "Benyt _temaets farver"
-
-#: stickynotes/stickynotes.ui:262
-msgid "Specify the default height (in pixels) of new notes"
-msgstr "Angiv en standardhøjde (i punkter) for nye noter"
-
-#: stickynotes/stickynotes.ui:279
-msgid "Specify the default width (in pixels) of new notes"
-msgstr "Angiv en standardbredde (i punkter) for nye noter"
-
-#: stickynotes/stickynotes.ui:294
-msgid "H_eight:"
-msgstr "_Højde:"
-
-#: stickynotes/stickynotes.ui:309
-msgid "_Width:"
-msgstr "_Bredde:"
-
-#: stickynotes/stickynotes.ui:343
-msgid "Behavior"
-msgstr "Opførsel"
-
-#: stickynotes/stickynotes.ui:377
-msgid "Hide notes when the des_ktop is clicked on"
-msgstr "Skjul noter når der klikkes på s_krivebordet"
-
-#: stickynotes/stickynotes.ui:381
-msgid "Choose whether to hide all notes when selecting on the desktop"
-msgstr "Vælg om alle noter skal skjules, når der vælges fra skrivebordet"
-
-#: stickynotes/stickynotes.ui:394
-msgid "Force _default color and font on notes"
-msgstr "Gennemtving _standard-farve og skrifttype for noter"
-
-#: stickynotes/stickynotes.ui:398
-msgid "Choose if the default style is forced on all notes"
-msgstr "Vælg om standardstilen er gennemtvunget for alle noter"
-
-#: stickynotes/stickynotes.ui:411
-msgid "_Put notes on all workspaces"
-msgstr "_Anbring noter på alle arbejdsområder"
-
-#: stickynotes/stickynotes.ui:415
-msgid "Choose if notes are visible on all workspaces"
-msgstr "Vælg om noter er synlige på alle arbejdsområder"
-
-#: stickynotes/stickynotes.ui:540
-msgid "Delete this sticky note?"
-msgstr "Slet denne note?"
-
-#: stickynotes/stickynotes.ui:555 stickynotes/stickynotes.ui:673
-msgid "This cannot be undone."
-msgstr "Dette kan ikke fortrydes."
-
-#: stickynotes/stickynotes.ui:658
-msgid "Delete all sticky notes?"
-msgstr "Slet alle noter?"
-
-#: stickynotes/stickynotes.ui:741
+#: stickynotes/sticky-notes-delete-all.ui:53
 msgid "_Delete All"
 msgstr "_Slet alle"
 
-#: stickynotes/stickynotes.ui:779
+#: stickynotes/sticky-notes-delete-all.ui:106
+msgid "Delete all sticky notes?"
+msgstr "Slet alle noter?"
+
+#: stickynotes/sticky-notes-delete-all.ui:123
+#: stickynotes/sticky-notes-delete.ui:124
+msgid "This cannot be undone."
+msgstr "Dette kan ikke fortrydes."
+
+#: stickynotes/sticky-notes-delete.ui:54
+msgid "_Delete"
+msgstr ""
+
+#: stickynotes/sticky-notes-delete.ui:107
+msgid "Delete this sticky note?"
+msgstr "Slet denne note?"
+
+#: stickynotes/sticky-notes-note.ui:11
 msgid "Sticky Note"
 msgstr "Notesseddel"
 
-#: stickynotes/stickynotes.ui:790
+#: stickynotes/sticky-notes-note.ui:28
 msgid "Lock/Unlock note"
 msgstr "Lås/lås op"
 
-#: stickynotes/stickynotes.ui:820
+#: stickynotes/sticky-notes-note.ui:66
 msgid "Delete note"
 msgstr "Slet note"
 
-#: stickynotes/stickynotes.ui:868 stickynotes/stickynotes.ui:887
+#: stickynotes/sticky-notes-note.ui:119 stickynotes/sticky-notes-note.ui:142
 msgid "Resize note"
 msgstr "Ændr størrelsen af noten"
 
-#: stickynotes/stickynotes.ui:917
+#: stickynotes/sticky-notes-preferences.ui:32
+msgid "Sticky Notes Preferences"
+msgstr "Indstillinger for notessedler"
+
+#: stickynotes/sticky-notes-preferences.ui:68
+#: stickynotes/sticky-notes-properties.ui:54
+msgid "_Close"
+msgstr ""
+
+#: stickynotes/sticky-notes-preferences.ui:108
+msgid "Default Note Properties"
+msgstr "Standardegenskaber for notesseddler"
+
+#: stickynotes/sticky-notes-preferences.ui:131
+msgid "_Width:"
+msgstr "_Bredde:"
+
+#: stickynotes/sticky-notes-preferences.ui:144
+msgid "H_eight:"
+msgstr "_Højde:"
+
+#: stickynotes/sticky-notes-preferences.ui:157
+msgid "Specify the default width (in pixels) of new notes"
+msgstr "Angiv en standardbredde (i punkter) for nye noter"
+
+#: stickynotes/sticky-notes-preferences.ui:158
+msgid "1"
+msgstr ""
+
+#: stickynotes/sticky-notes-preferences.ui:172
+msgid "Specify the default height (in pixels) of new notes"
+msgstr "Angiv en standardhøjde (i punkter) for nye noter"
+
+#: stickynotes/sticky-notes-preferences.ui:173
+msgid "0"
+msgstr ""
+
+#: stickynotes/sticky-notes-preferences.ui:185
+msgid "Use co_lor from the system theme"
+msgstr "Benyt _temaets farver"
+
+#: stickynotes/sticky-notes-preferences.ui:203
+msgid "Font Co_lor:"
+msgstr "Skriftf_arve:"
+
+#: stickynotes/sticky-notes-preferences.ui:216
+msgid "Note C_olor:"
+msgstr "Notefa_rve:"
+
+#: stickynotes/sticky-notes-preferences.ui:241
+msgid "Choose a base color to use for all sticky notes"
+msgstr "Vælg en grundfarve til alle notessedler"
+
+#: stickynotes/sticky-notes-preferences.ui:242
+msgid "Pick a default sticky note color"
+msgstr "Vælg en standardfarve til notessedler"
+
+#: stickynotes/sticky-notes-preferences.ui:251
+msgid "Use fo_nt from the system theme"
+msgstr "Benyt temaets sk_rifttype"
+
+#: stickynotes/sticky-notes-preferences.ui:269
+#: stickynotes/sticky-notes-properties.ui:226
+msgid "_Font:"
+msgstr "Skrift_type:"
+
+#: stickynotes/sticky-notes-preferences.ui:283
+msgid "Choose a font to use for all sticky notes"
+msgstr "Vælg en skrifttype til alle notessedler"
+
+#: stickynotes/sticky-notes-preferences.ui:285
+msgid "Pick a default sticky note font"
+msgstr "Vælg en standardskrifttype til notessedler"
+
+#: stickynotes/sticky-notes-preferences.ui:316
+msgid "Behavior"
+msgstr "Opførsel"
+
+#: stickynotes/sticky-notes-preferences.ui:337
+msgid "_Put notes on all workspaces"
+msgstr "_Anbring noter på alle arbejdsområder"
+
+#: stickynotes/sticky-notes-preferences.ui:341
+msgid "Choose if notes are visible on all workspaces"
+msgstr "Vælg om noter er synlige på alle arbejdsområder"
+
+#: stickynotes/sticky-notes-preferences.ui:354
+msgid "Force _default color and font on notes"
+msgstr "Gennemtving _standard-farve og skrifttype for noter"
+
+#: stickynotes/sticky-notes-preferences.ui:358
+msgid "Choose if the default style is forced on all notes"
+msgstr "Vælg om standardstilen er gennemtvunget for alle noter"
+
+#: stickynotes/sticky-notes-preferences.ui:371
+msgid "Hide notes when the des_ktop is clicked on"
+msgstr "Skjul noter når der klikkes på s_krivebordet"
+
+#: stickynotes/sticky-notes-preferences.ui:375
+msgid "Choose whether to hide all notes when selecting on the desktop"
+msgstr "Vælg om alle noter skal skjules, når der vælges fra skrivebordet"
+
+#: stickynotes/sticky-notes-properties.ui:18
 msgid "Sticky Note Properties"
 msgstr "Egenskaber for notesseddel"
 
-#: stickynotes/stickynotes.ui:937
+#: stickynotes/sticky-notes-properties.ui:94
 msgid "Properties"
 msgstr "Egenskaber"
 
-#: stickynotes/stickynotes.ui:974
-msgid "Choose a font for the note"
-msgstr "Vælg en skrifttype til noten"
+#: stickynotes/sticky-notes-properties.ui:117
+msgid "_Title:"
+msgstr "_Titel:"
 
-#: stickynotes/stickynotes.ui:975
-msgid "Pick a font for the sticky note"
-msgstr "Vælg en skrifttype til notessedlen"
-
-#: stickynotes/stickynotes.ui:1008
-msgid "Use default fo_nt"
-msgstr "Benyt standards_krifttype"
-
-#: stickynotes/stickynotes.ui:1028
-msgid "Choose a color for the note"
-msgstr "Vælg en farve til noten"
-
-#: stickynotes/stickynotes.ui:1029
-msgid "Pick a color for the sticky note"
-msgstr "Vælg en farve til notessedlen"
-
-#: stickynotes/stickynotes.ui:1048
-msgid "Note _Color:"
-msgstr "Notefar_ve:"
-
-#: stickynotes/stickynotes.ui:1083
-msgid "Font C_olor:"
-msgstr "Skrift_farve:"
-
-#: stickynotes/stickynotes.ui:1097
-msgid "Use default co_lor"
-msgstr "Benyt _standardfarve"
-
-#: stickynotes/stickynotes.ui:1115
+#: stickynotes/sticky-notes-properties.ui:130
 msgid "Specify a title for the note"
 msgstr "Angiv en titel til noten"
 
-#: stickynotes/stickynotes.ui:1127
-msgid "_Title:"
-msgstr "_Titel:"
+#: stickynotes/sticky-notes-properties.ui:139
+msgid "Use default co_lor"
+msgstr "Benyt _standardfarve"
+
+#: stickynotes/sticky-notes-properties.ui:158
+msgid "Font C_olor:"
+msgstr "Skrift_farve:"
+
+#: stickynotes/sticky-notes-properties.ui:172
+msgid "Note _Color:"
+msgstr "Notefar_ve:"
+
+#: stickynotes/sticky-notes-properties.ui:183
+msgid "Use default fo_nt"
+msgstr "Benyt standards_krifttype"
+
+#: stickynotes/sticky-notes-properties.ui:213
+msgid "Choose a color for the note"
+msgstr "Vælg en farve til noten"
+
+#: stickynotes/sticky-notes-properties.ui:214
+msgid "Pick a color for the sticky note"
+msgstr "Vælg en farve til notessedlen"
+
+#: stickynotes/sticky-notes-properties.ui:240
+msgid "Choose a font for the note"
+msgstr "Vælg en skrifttype til noten"
+
+#: stickynotes/sticky-notes-properties.ui:242
+msgid "Pick a font for the sticky note"
+msgstr "Vælg en skrifttype til notessedlen"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:5
 msgid "Default width for new notes"
@@ -2477,6 +2484,10 @@ msgstr "Om der skal spørges efter bekræftelse ved sletning af en note"
 msgid "Empty notes are always deleted without confirmation."
 msgstr "Tomme noter slettes altid uden bekræftelse."
 
+#: stickynotes/stickynotes_applet.c:34
+msgid "_New Note"
+msgstr "_Ny note"
+
 #: stickynotes/stickynotes_applet.c:37
 msgid "Hi_de Notes"
 msgstr "_Skjul noter"
@@ -2489,46 +2500,44 @@ msgstr "_Slet noter"
 msgid "_Lock Notes"
 msgstr "_Lås noter"
 
-#: stickynotes/stickynotes_applet.c:591
+#: stickynotes/stickynotes_applet.c:596
 #, c-format
 msgid "%d note"
 msgid_plural "%d notes"
 msgstr[0] "%d note"
 msgstr[1] "%d noter"
 
-#: stickynotes/stickynotes_applet.c:592
+#: stickynotes/stickynotes_applet.c:597
 msgid "Show sticky notes"
 msgstr "Vis notessedler"
 
-#: stickynotes/stickynotes_applet_callbacks.c:379
+#: stickynotes/stickynotes_applet_callbacks.c:395
 msgid "About Sticky Notes"
 msgstr "Om Notessedler"
 
-#: stickynotes/stickynotes_applet_callbacks.c:381
+#: stickynotes/stickynotes_applet_callbacks.c:397
 msgid ""
 "Copyright © 2002-2003 Loban A Rahman\n"
 "Copyright © 2005 Davyd Madeley\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
-"Ophavsret 2002-2003 Loban A Rahman\n"
-"Ophavsret 2005 Davyd Madeley\n"
-"Ophavsret 2012-2020 CAFE-udviklerne"
 
-#: stickynotes/stickynotes_applet_callbacks.c:384
+#: stickynotes/stickynotes_applet_callbacks.c:401
 msgid "Sticky Notes for the CAFE Desktop Environment"
 msgstr "Notessedler til Cafe"
 
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:4
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:5
-#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Timer Factory"
 msgstr "Stopurfabrik"
 
-#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:9
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Timer"
 msgstr "Stopur"
 
-#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:10
-#: timerapplet/timerapplet.c:277
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:9
+#: timerapplet/timerapplet.c:286
 msgid "Start a timer and receive a notification when it is finished"
 msgstr "Start et stopur og modtag en påmindelse når uret er færdig"
 
@@ -2564,64 +2573,63 @@ msgstr "S_top stopur"
 msgid "R_eset"
 msgstr "_Nulstil"
 
-#: timerapplet/timerapplet.c:156 timerapplet/timerapplet.c:168
+#: timerapplet/timerapplet.c:157 timerapplet/timerapplet.c:169
 msgid "Timer finished!"
 msgstr "Stopuret er standset!"
 
-#: timerapplet/timerapplet.c:272
+#: timerapplet/timerapplet.c:280
 msgid "About Timer Applet"
 msgstr "Om Tidtagerpanelprogrammet"
 
-#: timerapplet/timerapplet.c:274
+#: timerapplet/timerapplet.c:282
 msgid ""
 "Copyright © 2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 CAFE developers"
+"Copyright © 2015-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
-"Ophavsret 2014 Stefano Karapetsas\n"
-"Ophavsret 2015-2020 CAFE-udviklerne"
 
-#: timerapplet/timerapplet.c:310
+#: timerapplet/timerapplet.c:321
 msgid "Timer Applet Preferences"
 msgstr "Præferencer for stopur-panelprogrammet"
 
-#: timerapplet/timerapplet.c:323
+#: timerapplet/timerapplet.c:334
 msgid "Name:"
 msgstr "Navn:"
 
-#: timerapplet/timerapplet.c:332
+#: timerapplet/timerapplet.c:343
 msgid "Hours:"
 msgstr "Timer:"
 
-#: timerapplet/timerapplet.c:343
+#: timerapplet/timerapplet.c:354
 msgid "Minutes:"
 msgstr "Minutter:"
 
-#: timerapplet/timerapplet.c:354
+#: timerapplet/timerapplet.c:365
 msgid "Seconds:"
 msgstr "Sekunder:"
 
-#: timerapplet/timerapplet.c:365
+#: timerapplet/timerapplet.c:376
 msgid "Show notification popup"
 msgstr "Vis påmindelses-pop op"
 
-#: timerapplet/timerapplet.c:369
+#: timerapplet/timerapplet.c:380
 msgid "Show dialog"
 msgstr "Vis dialog"
 
-#: timerapplet/timerapplet.c:403
+#: timerapplet/timerapplet.c:416
 msgid "Timer Applet"
 msgstr "Tidtagerpanelprogram"
 
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:4
 #: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:5
-#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Trash Applet Factory"
 msgstr "Fabrik til papirkurvsprogrammer"
 
-#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:9
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Trash"
 msgstr "Papirkurv"
 
-#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:10
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Go to Trash"
 msgstr "Gå til papirkurven"
 
@@ -2653,21 +2661,19 @@ msgstr ""
 "Fejl ved start af Baul:\n"
 "%s"
 
-#: trashapplet/src/trashapplet.c:432
+#: trashapplet/src/trashapplet.c:434
 msgid "About Trash Applet"
 msgstr "Om Papirkurven"
 
-#: trashapplet/src/trashapplet.c:434
+#: trashapplet/src/trashapplet.c:436
 msgid ""
 "Copyright © 2004 Michiel Sikkes\n"
 "Copyright © 2008 Ryan Lortie\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
-"Ophavsret 2004 Michiel Sikkes\n"
-"Ophavsret 2008 Ryan Lortie\n"
-"Ophavsret 2012-2020 CAFE-udviklerne"
 
-#: trashapplet/src/trashapplet.c:437
+#: trashapplet/src/trashapplet.c:440
 msgid ""
 "A CAFE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
@@ -2675,23 +2681,23 @@ msgstr ""
 "En Cafe-papirkurv til panelet. Du kan bruge den til at vise kasserede filer "
 "eller trække filer til papirkurven."
 
-#: trashapplet/src/trashapplet.c:462
+#: trashapplet/src/trashapplet.c:465
 msgid "Delete Immediately?"
 msgstr "Slet med det samme?"
 
-#: trashapplet/src/trashapplet.c:492
+#: trashapplet/src/trashapplet.c:495
 msgid "Cannot move items to trash, do you want to delete them immediately?"
 msgstr ""
 "Kan ikke flytte filerne til papirkurven, vil du slette dem med det samme?"
 
-#: trashapplet/src/trashapplet.c:497
+#: trashapplet/src/trashapplet.c:500
 msgid ""
 "Cannot move some items to trash, do you want to delete these immediately?"
 msgstr ""
 "Kan ikke flytte nogle af filerne til papirkurven, vil du slette dem med det "
 "samme?"
 
-#: trashapplet/src/trashapplet.c:625
+#: trashapplet/src/trashapplet.c:628
 msgid "Trash Applet"
 msgstr "Papirkurv"
 
@@ -2727,3 +2733,111 @@ msgstr "Tømmer papirkurven"
 #: trashapplet/trashapplet-empty-progress.ui:36
 msgid "From:"
 msgstr "Fra:"
+
+#~ msgid ""
+#~ "Copyright © 2003 Sun Microsystems\n"
+#~ "Copyright © 2012-2020 CAFE developers"
+#~ msgstr ""
+#~ "Ophavsret 2003 Sun Microsystems\n"
+#~ "Ophavsret 2012-2020 CAFE-udviklerne"
+
+#~ msgid ""
+#~ "Copyright © 2000 The Gnulix Society\n"
+#~ "Copyright © 2002-2005 Free Software Foundation and others\n"
+#~ "Copyright © 2012-2020 CAFE developers"
+#~ msgstr ""
+#~ "Ophavsret 2000 The Gnulix Society\n"
+#~ "Ophavsret 2002-2005 Free Software Foundation og andre\n"
+#~ "Ophavsret 2012-2020 CAFE-udviklerne"
+
+#~ msgid ""
+#~ "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
+#~ "Copyright © 2012-2020 CAFE developers"
+#~ msgstr ""
+#~ "Ophavsret 1998, 2004-2005 GNOME-panelprogrammers vedligeholdere og andre\n"
+#~ "Ophavsret 2012-2020 CAFE-udviklerne"
+
+#~ msgid ""
+#~ "Copyright © 2013-2014 Stefano Karapetsas\n"
+#~ "Copyright © 2015-2020 CAFE developers"
+#~ msgstr ""
+#~ "Ophavsret 2013-2014 Stefano Karapetsas\n"
+#~ "Ophavsret 2015-2020 CAFE-udviklerne"
+
+#~ msgid ""
+#~ "Copyright © 2004 Carlos Garcia Campos\n"
+#~ "Copyright © 2012-2020 CAFE developers"
+#~ msgstr ""
+#~ "Ophavsret 2004 Carlos Garcia Campos\n"
+#~ "Ophavsret 2012-2020 CAFE-udviklerne"
+
+#~ msgid ""
+#~ "Copyright © 2004 Canonical Ltd\n"
+#~ "Copyright © 2012-2020 CAFE developers"
+#~ msgstr ""
+#~ "Ophavsret 2004 Canonical Ltd\n"
+#~ "Ophavsret 2012-2020 CAFE-udviklerne"
+
+#~ msgid ""
+#~ "Copyright © 1999 Dave Camp\n"
+#~ "Copyright © 2012-2020 CAFE developers"
+#~ msgstr ""
+#~ "Ophavsret 1999 Dave Camp\n"
+#~ "Ophavsret 2012-2020 CAFE-udviklerne"
+
+#~ msgid ""
+#~ "Copyright © 1999-2005 by S. Papadimitriou and others\n"
+#~ "Copyright © 2012-2020 CAFE developers"
+#~ msgstr ""
+#~ "Ophavsret 1999-2005 af S. Papadimitriou og andre\n"
+#~ "Ophavsret 2012-2020 CAFE-udviklerne"
+
+#~ msgid ""
+#~ "Copyright © 1999-2005 Free Software Foundation and others\n"
+#~ "Copyright © 2012-2020 CAFE developers"
+#~ msgstr ""
+#~ "Ophavsret 1999-2005 Free Software Foundation og andre\n"
+#~ "Ophavsret 2012-2020 CAFE-udviklerne"
+
+#~ msgid ""
+#~ "Copyright © 2002-2003 Jörgen Scheibengruber\n"
+#~ "Copyright © 2011-2014 Stefano Karapetsas\n"
+#~ "Copyright © 2015-2020 CAFE developers"
+#~ msgstr ""
+#~ "Ophavsret 2002-2003 Jörgen Scheibengruber\n"
+#~ "Ophavsret 2011-2014 Stefano Karapetsas\n"
+#~ "Ophavsret 2015-2020 CAFE-udviklerne"
+
+#~ msgid "_Delete Note..."
+#~ msgstr "_Slet note …"
+
+#~ msgid "_Lock Note"
+#~ msgstr "_Lås note"
+
+#~ msgid "_Properties"
+#~ msgstr "_Egenskaber"
+
+#~ msgid ""
+#~ "Copyright © 2002-2003 Loban A Rahman\n"
+#~ "Copyright © 2005 Davyd Madeley\n"
+#~ "Copyright © 2012-2020 CAFE developers"
+#~ msgstr ""
+#~ "Ophavsret 2002-2003 Loban A Rahman\n"
+#~ "Ophavsret 2005 Davyd Madeley\n"
+#~ "Ophavsret 2012-2020 CAFE-udviklerne"
+
+#~ msgid ""
+#~ "Copyright © 2014 Stefano Karapetsas\n"
+#~ "Copyright © 2015-2020 CAFE developers"
+#~ msgstr ""
+#~ "Ophavsret 2014 Stefano Karapetsas\n"
+#~ "Ophavsret 2015-2020 CAFE-udviklerne"
+
+#~ msgid ""
+#~ "Copyright © 2004 Michiel Sikkes\n"
+#~ "Copyright © 2008 Ryan Lortie\n"
+#~ "Copyright © 2012-2020 CAFE developers"
+#~ msgstr ""
+#~ "Ophavsret 2004 Michiel Sikkes\n"
+#~ "Ophavsret 2008 Ryan Lortie\n"
+#~ "Ophavsret 2012-2020 CAFE-udviklerne"

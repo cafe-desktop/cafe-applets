@@ -11,9 +11,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: cafe-applets 1.25.0\n"
+"Project-Id-Version: cafe-applets 2.0.0\n"
 "Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
-"POT-Creation-Date: 2020-08-11 21:05+0200\n"
+"POT-Creation-Date: 2026-03-14 19:05+0100\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Mooglie <mooglietech@gmail.com>, 2020\n"
 "Language-Team: Tamil (https://www.transifex.com/cafe/teams/13566/ta/)\n"
@@ -23,133 +23,145 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: accessx-status/applet.c:86 charpick/charpick.c:572 geyes/geyes.c:166
-#: cafeweather/cafeweather-about.c:41 multiload/main.c:48
-#: stickynotes/stickynotes_applet_callbacks.c:367
+#: accessx-status/applet.c:88 charpick/charpick.c:580 geyes/geyes.c:167
+#: cafeweather/cafeweather-about.c:42 multiload/main.c:49
+#: stickynotes/stickynotes_applet_callbacks.c:382
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
 
-#: accessx-status/applet.c:87 battstat/battstat_applet.c:820
-#: charpick/charpick.c:573 cpufreq/src/cpufreq-applet.c:466
-#: drivemount/drivemount.c:109 geyes/geyes.c:167
-#: cafeweather/cafeweather-about.c:43 multiload/main.c:49
-#: stickynotes/stickynotes_applet_callbacks.c:368
-#: trashapplet/src/trashapplet.c:421
+#: accessx-status/applet.c:89 battstat/battstat_applet.c:824
+#: charpick/charpick.c:581 cpufreq/src/cpufreq-applet.c:467
+#: drivemount/drivemount.c:112 geyes/geyes.c:168
+#: cafeweather/cafeweather-about.c:44 multiload/main.c:50
+#: stickynotes/stickynotes_applet_callbacks.c:383
+#: trashapplet/src/trashapplet.c:422
+msgid "MATE Documentation Team"
+msgstr ""
+
+#: accessx-status/applet.c:90 battstat/battstat_applet.c:825
+#: charpick/charpick.c:582 cpufreq/src/cpufreq-applet.c:468
+#: drivemount/drivemount.c:113 geyes/geyes.c:169
+#: cafeweather/cafeweather-about.c:45 multiload/main.c:51
+#: stickynotes/stickynotes_applet_callbacks.c:384
+#: trashapplet/src/trashapplet.c:423
 msgid "CAFE Documentation Team"
 msgstr ""
 
-#: accessx-status/applet.c:98
+#: accessx-status/applet.c:101
 msgid "About AccessX Status"
 msgstr ""
 
-#: accessx-status/applet.c:100
+#: accessx-status/applet.c:103
 msgid "Shows the state of AccessX features such as latched modifiers"
 msgstr "அணுகு முறையின்X நிலையின் பூட்டப் பட்ட மாற்றிகளை காட்டு"
 
-#: accessx-status/applet.c:101
+#: accessx-status/applet.c:104
 msgid ""
 "Copyright © 2003 Sun Microsystems\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: accessx-status/applet.c:105 battstat/battstat_applet.c:845
-#: charpick/charpick.c:593 command/command.c:128
-#: cpufreq/src/cpufreq-applet.c:490 drivemount/drivemount.c:127
-#: geyes/geyes.c:186 cafeweather/cafeweather-about.c:61 multiload/main.c:69
-#: netspeed/src/netspeed.c:829 stickynotes/stickynotes_applet_callbacks.c:388
-#: timerapplet/timerapplet.c:278 trashapplet/src/trashapplet.c:442
+#: accessx-status/applet.c:109 battstat/battstat_applet.c:851
+#: charpick/charpick.c:603 command/command.c:133
+#: cpufreq/src/cpufreq-applet.c:493 drivemount/drivemount.c:132
+#: geyes/geyes.c:189 cafeweather/cafeweather-about.c:64 multiload/main.c:72
+#: netspeed/src/netspeed.c:836 stickynotes/stickynotes_applet_callbacks.c:405
+#: timerapplet/timerapplet.c:287 trashapplet/src/trashapplet.c:445
 msgid "translator-credits"
 msgstr ""
 "Launchpad Contributions:\n"
 "  Valmantas Palikša https://launchpad.net/~walmis\n"
 "  bhuvi https://launchpad.net/~bhuvanesh"
 
-#: accessx-status/applet.c:124
+#: accessx-status/applet.c:129
 #, c-format
 msgid "There was an error launching the help viewer: %s"
 msgstr "உதவி காட்சியாளனை ஏவுவதில் தவறு ஏற்பட்டுள்ளது:%s"
 
-#: accessx-status/applet.c:152
+#: accessx-status/applet.c:158
 msgid "Open the keyboard preferences dialog"
 msgstr ""
 
-#: accessx-status/applet.c:167
+#: accessx-status/applet.c:173
 #, c-format
 msgid "There was an error launching the keyboard preferences dialog: %s"
 msgstr "விசைப்பலகை விருப்பங்கள் உரையாடலை ஏவுவதில் தவறு ஏற்பட்டுள்ளது:%s"
 
-#: accessx-status/applet.c:182
+#: accessx-status/applet.c:188
 msgid "_Keyboard Accessibility Preferences"
 msgstr "விசைப்பலகை செயல்திறனின் முன்னுரிமைகள் (_K)"
 
-#: accessx-status/applet.c:183 battstat/battstat_applet.c:63
-#: charpick/charpick.c:674 cpufreq/src/cpufreq-applet.c:119
-#: drivemount/drivemount.c:165 geyes/geyes.c:359
-#: cafeweather/cafeweather-applet.c:117 multiload/main.c:488
+#: accessx-status/applet.c:189 battstat/battstat_applet.c:63
+#: charpick/charpick.c:685 cpufreq/src/cpufreq-applet.c:119
+#: drivemount/drivemount.c:170 geyes/geyes.c:363
+#: cafeweather/cafeweather-applet.c:117 multiload/main.c:500
+#: stickynotes/sticky-notes-preferences.ui:51
+#: stickynotes/sticky-notes-properties.ui:37
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
 msgid "_Help"
 msgstr "_உதவி"
 
-#: accessx-status/applet.c:184 battstat/battstat_applet.c:66
-#: charpick/charpick.c:677 command/command.c:84
-#: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:168
-#: geyes/geyes.c:362 cafeweather/cafeweather-applet.c:120 multiload/main.c:491
+#: accessx-status/applet.c:190 battstat/battstat_applet.c:66
+#: charpick/charpick.c:688 command/command.c:84
+#: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:173
+#: geyes/geyes.c:366 cafeweather/cafeweather-applet.c:120 multiload/main.c:503
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
 #: trashapplet/src/trashapplet.c:77
 msgid "_About"
 msgstr "பற்றி "
 
-#: accessx-status/applet.c:504 accessx-status/applet.c:558
+#: accessx-status/applet.c:510 accessx-status/applet.c:564
 msgid "a"
 msgstr "a"
 
-#: accessx-status/applet.c:1043 accessx-status/applet.c:1109
-#: accessx-status/applet.c:1194 accessx-status/applet.c:1388
+#: accessx-status/applet.c:1051 accessx-status/applet.c:1117
+#: accessx-status/applet.c:1204 accessx-status/applet.c:1408
 msgid "AccessX Status"
 msgstr "X நிலையின் செயல்திறன்"
 
-#: accessx-status/applet.c:1044 accessx-status/applet.c:1195
+#: accessx-status/applet.c:1052 accessx-status/applet.c:1205
 msgid "Shows keyboard status when accessibility features are used."
 msgstr ""
 "அணுகுவதில் ஏற்ப்புத் தன்மை பயன்படுத்தப்பட்டுள்ள போது விசைப்பலகை நிலையை காட்டுகிறது ."
 
-#: accessx-status/applet.c:1078
+#: accessx-status/applet.c:1086
 msgid "XKB Extension is not enabled"
 msgstr "XKB விரிவாக்கம் செயல்படுத்தப்படவில்லை"
 
-#: accessx-status/applet.c:1083
+#: accessx-status/applet.c:1091
 msgid "Unknown error"
 msgstr "தெரியாத பிழை"
 
-#: accessx-status/applet.c:1087
+#: accessx-status/applet.c:1095
 #, c-format
 msgid "Error: %s"
 msgstr "பிழை: %s"
 
-#: accessx-status/applet.c:1385
-#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:9
+#: accessx-status/applet.c:1405
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Keyboard Accessibility Status"
 msgstr "விசைப்பலகை செயல்பாட்டின் நிலை"
 
-#: accessx-status/applet.c:1389
+#: accessx-status/applet.c:1409
 msgid "Displays current state of keyboard accessibility features"
 msgstr "தற்போதைய விசைப்பலகையின் அணுகு தன்மையை காண்பிக்கிறது"
 
-#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:5
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:4
 msgid "AccessX Status Applet Factory"
 msgstr "Xநிலைகளின் சிறுநிரலுக்கான செயல்திறனின் நிறுவனம்"
 
-#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:6
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:5
 msgid "Keyboard Accessibility Status Applet Factory"
 msgstr "விசைப்பலகை செயல்பாட்டு நிலைமையின் சிறுநிரலின் நிறுவனம்"
 
-#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:10
+#: accessx-status/org.cafe.applets.AccessxStatusApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Shows the status of keyboard accessibility features"
 msgstr "விசைபலகையின் அணுகுதல் பண்புக்கூற்றின் நிலையை காட்டு"
 
-#: battstat/battstat_applet.c:60 charpick/charpick.c:671 command/command.c:83
-#: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:356
-#: cafeweather/cafeweather-applet.c:114 multiload/main.c:482
+#: battstat/battstat_applet.c:60 charpick/charpick.c:682 command/command.c:83
+#: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:360
+#: cafeweather/cafeweather-applet.c:114 multiload/main.c:494
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
 msgid "_Preferences"
 msgstr "விருப்ப தேர்வுகள் "
@@ -291,46 +303,47 @@ msgstr "மின்கல நிலை தெரியவில்லை"
 msgid "N/A"
 msgstr "கிடைக்கவில்லை"
 
-#: battstat/battstat_applet.c:784 drivemount/drivemount.c:153 geyes/geyes.c:344
+#: battstat/battstat_applet.c:785 drivemount/drivemount.c:158 geyes/geyes.c:348
 #: geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
-#: cafeweather/cafeweather-pref.c:747
-#: stickynotes/stickynotes_applet_callbacks.c:345
-#: stickynotes/stickynotes_applet_callbacks.c:540
+#: cafeweather/cafeweather-pref.c:753
+#: stickynotes/stickynotes_applet_callbacks.c:359
+#: stickynotes/stickynotes_applet_callbacks.c:563
 #: trashapplet/src/trashapplet.c:399
 #, c-format
 msgid "There was an error displaying help: %s"
 msgstr "தொடங்கும் போது பிழை.%s"
 
-#: battstat/battstat_applet.c:825
+#: battstat/battstat_applet.c:830
 msgid "This utility shows the status of your laptop battery."
 msgstr "இதன் பயன்பாடு தங்களின் மடிக்கணினி மின்கல நிலையைக் காட்டும்"
 
-#: battstat/battstat_applet.c:827
+#: battstat/battstat_applet.c:832
 msgid "upower backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:828
+#: battstat/battstat_applet.c:833
 msgid "Legacy backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:837
+#: battstat/battstat_applet.c:842
 msgid "About Battery Charge Monitor"
 msgstr ""
 
-#: battstat/battstat_applet.c:839
+#: battstat/battstat_applet.c:844
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: battstat/battstat_applet.c:1115 battstat/battstat_applet.c:1165
-#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
+#: battstat/battstat_applet.c:1122 battstat/battstat_applet.c:1175
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Battery Charge Monitor"
 msgstr "மின்கல மின்னூட்ட கண்காணி"
 
-#: battstat/battstat_applet.c:1166
-#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:10
+#: battstat/battstat_applet.c:1176
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Monitor a laptop's remaining power"
 msgstr "மடிக்கணினியின் எஞ்சிய மின்திறனைக் கண்காணி"
 
@@ -367,8 +380,8 @@ msgstr "பாட்டரி சார்ஜ் இழக்கும் போ
 msgid "_Notify when battery is fully recharged"
 msgstr "மின்கலம் முழுமையாக ஏற்றப்பட்டதும் தெரி௺வி (_N)"
 
+#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:4
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:5
-#: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Battstat Factory"
 msgstr "பேட் ஸ்டாட் நிறுவனம்"
 
@@ -428,55 +441,56 @@ msgstr "நேரம்/சதவிகிதம் குறிப்பை க
 msgid "0 for no label, 1 for percentage and 2 for time remaining."
 msgstr "0 என்றால் லேபிள் இல்லை, 1 என்றால் சதவீதம் மற்றும் 2 என்றால் மீதமுள்ள நேரம்."
 
-#: battstat/properties.c:237
+#: battstat/properties.c:239
 msgid "Percent"
 msgstr "சதவீதம்"
 
-#: battstat/properties.c:243
+#: battstat/properties.c:245
 msgid "Minutes Remaining"
 msgstr "மீதமுள்ள நிமிடங்கள்"
 
-#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:3
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:2
 msgid "Battery Status Utility"
 msgstr "மின்கல நிலை பயன்பாடு"
 
-#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:7
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:6
 msgid "Battery power low"
 msgstr ""
 
-#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:11
+#: battstat/sounds/cafe-battstat_applet.soundlist.desktop.in:10
 msgid "Battery fully re-charged"
 msgstr ""
 
-#: charpick/charpick.c:404
+#: charpick/charpick.c:407
 msgid "Available palettes"
 msgstr "கிடைக்கின்ற வண்ணத்தட்டுக்கள்"
 
-#: charpick/charpick.c:453
+#: charpick/charpick.c:456
 #, c-format
 msgid "Insert \"%s\""
 msgstr "\"%s\"ஐ நுழை"
 
-#: charpick/charpick.c:456
+#: charpick/charpick.c:459
 msgid "Insert special character"
 msgstr "சிறப்பு எழுத்தை சொருகு"
 
-#: charpick/charpick.c:460
+#: charpick/charpick.c:463
 #, c-format
 msgid "insert special character %s"
 msgstr "சிறப்பு எழுத்தை சொருகு %s"
 
-#: charpick/charpick.c:584
+#: charpick/charpick.c:593
 msgid "About Character Palette"
 msgstr ""
 
-#: charpick/charpick.c:586
+#: charpick/charpick.c:595
 msgid ""
 "Copyright © 1998, 2004-2005 GNOME Applets Maintainers and others\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: charpick/charpick.c:588
+#: charpick/charpick.c:598
 msgid ""
 "Cafe Panel applet for selecting strange characters that are not on my "
 "keyboard. Released under GNU General Public Licence."
@@ -484,19 +498,19 @@ msgstr ""
 "எனது விசைப்பலகையில் காணாத விதவிதமான வரியுருகளை தெரிவு செய்வதற்கான நோம் "
 "பலகைக்கானகுறும்பயன். ஜி.என்.யு. ஜெனரல் பப்ளிக் லைசன்ஸ் மூலமாக வெளியிடப்பட்டது."
 
-#: charpick/charpick.c:700 charpick/charpick.c:714
-#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:9
-#: charpick/properties.c:451
+#: charpick/charpick.c:711 charpick/charpick.c:725
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:8
+#: charpick/properties.c:458
 msgid "Character Palette"
 msgstr "எழுத்துக்களின் வண்ணத்தட்டு"
 
-#: charpick/charpick.c:700
-#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:10
+#: charpick/charpick.c:711
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Insert characters"
 msgstr "எழுத்துக்களைச் சொருகு"
 
+#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:4
 #: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:5
-#: charpick/org.cafe.applets.CharpickerApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Charpicker Applet Factory"
 msgstr "வரியுருதெரிவியின் குறும்பயனகம்"
 
@@ -513,7 +527,7 @@ msgstr ""
 "காட்டப் படும்."
 
 #: charpick/org.cafe.panel.applet.charpick.gschema.xml.in:10
-#: charpick/properties.c:378
+#: charpick/properties.c:385
 msgid "List of available palettes"
 msgstr "இருக்கும் வண்ணத்தட்டின் பட்டியல்கள் "
 
@@ -537,97 +551,98 @@ msgstr "வண்ணத்தட்டு நுழைவு"
 msgid "Modify a palette by adding or removing characters"
 msgstr "எழுத்துருக்களை சேர்த்து அல்லது நீக்கி வண்ணதட்டை மாற்றுக"
 
-#: charpick/properties.c:239
+#: charpick/properties.c:244
 msgid "Add Palette"
 msgstr "வண்ணத்தட்டை சேர்த்திடுக"
 
-#: charpick/properties.c:276
+#: charpick/properties.c:282
 msgid "Edit Palette"
 msgstr "வண்ணத்தட்டுகளைத் திருத்தி அமை"
 
-#: charpick/properties.c:377
+#: charpick/properties.c:384
 msgid "Palettes list"
 msgstr "வண்ணப்படத்தின் பட்டியல்"
 
-#: charpick/properties.c:456
+#: charpick/properties.c:463
 msgid "_Palettes:"
 msgstr "_வண்ணத்தட்டு:"
 
-#: charpick/properties.c:478
+#: charpick/properties.c:485
 msgid "Add button"
 msgstr "பட்டனை சேர்"
 
-#: charpick/properties.c:479
+#: charpick/properties.c:486
 msgid "Click to add a new palette"
 msgstr "புதிய வண்ணத்தட்டை கூட்டுவதற்கு சொடுக்கவும்"
 
-#: charpick/properties.c:491
+#: charpick/properties.c:498
 msgid "Edit button"
 msgstr "பொத்தானைத் திருத்து"
 
-#: charpick/properties.c:492
+#: charpick/properties.c:499
 msgid "Click to edit the selected palette"
 msgstr "தேர்தெடுக்கப்பட்ட வண்ணத்தட்டை திருத்த சொடுக்கவும்"
 
-#: charpick/properties.c:504
+#: charpick/properties.c:511
 msgid "Delete button"
 msgstr "பொத்தானை அழிக்கவும்"
 
-#: charpick/properties.c:505
+#: charpick/properties.c:512
 msgid "Click to delete the selected palette"
 msgstr "தேர்தெடுக்கப்பட்ட வண்ணத்தட்டை நீக்குவதற்கு சொடுக்கவும்"
 
-#: charpick/properties.c:556
+#: charpick/properties.c:565
 msgid "Character Palette Preferences"
 msgstr "எழுத்துக்களின் வண்ணப்பட முன்னுரிமைகள்"
 
-#: command/command.c:122
+#: command/command.c:126
 msgid "About Command Applet"
 msgstr ""
 
-#: command/command.c:124
+#: command/command.c:128
 msgid ""
 "Copyright © 2013-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 CAFE developers"
+"Copyright © 2015-2020 CAFE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: command/command.c:127
-#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:10
+#: command/command.c:132
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Shows the output of a command"
 msgstr ""
 
-#: command/command.c:194
+#: command/command.c:202
 msgid "Command Applet Preferences"
 msgstr ""
 
-#: command/command.c:207
+#: command/command.c:215
 msgid "Command:"
 msgstr ""
 
-#: command/command.c:215
+#: command/command.c:223
 msgid "Interval (seconds):"
 msgstr ""
 
-#: command/command.c:223
+#: command/command.c:231
 msgid "Maximum width (chars):"
 msgstr ""
 
-#: command/command.c:231
+#: command/command.c:239
 #: command/org.cafe.panel.applet.command.gschema.xml.in:20
 #: netspeed/data/org.cafe.panel.applet.netspeed.gschema.xml.in:20
 msgid "Show icon"
 msgstr ""
 
-#: command/command.c:443
+#: command/command.c:459
 msgid "Command Applet"
 msgstr ""
 
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:4
 #: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:5
-#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Command Factory"
 msgstr ""
 
-#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:9
+#: command/org.cafe.applets.CommandApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Command"
 msgstr "கட்டளை"
 
@@ -691,14 +706,14 @@ msgstr "அலைவரிசை அலகுகளை காட்டு (_u)"
 msgid "Show CPU frequency as _percentage"
 msgstr "CPU அலைவரிசையை சதவீதமாக காட்டு (_p)"
 
-#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:5
-#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:9
-#: cpufreq/src/cpufreq-applet.c:813 cpufreq/src/cpufreq-applet.c:868
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:4
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:8
+#: cpufreq/src/cpufreq-applet.c:816 cpufreq/src/cpufreq-applet.c:874
 msgid "CPU Frequency Scaling Monitor"
 msgstr "ஸிபியு அலைவரிசை அளவிடும் கண்காணி"
 
-#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:6
-#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:10
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:5
+#: cpufreq/org.cafe.applets.CPUFreqApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Monitor the CPU Frequency Scaling"
 msgstr "ஸிபியு அலைவரிசை அளவிடுதலை கண்காணிக்கவும்"
 
@@ -735,37 +750,38 @@ msgid ""
 "to show percentage instead of frequency."
 msgstr ""
 
-#: cpufreq/src/cpufreq-applet.c:449 cpufreq/src/cpufreq-prefs.c:358
+#: cpufreq/src/cpufreq-applet.c:449 cpufreq/src/cpufreq-prefs.c:359
 msgid "Could not open help document"
 msgstr "உதவி ஆவணத்தை திறக்க இயலவில்லை"
 
-#: cpufreq/src/cpufreq-applet.c:481
+#: cpufreq/src/cpufreq-applet.c:483
 msgid "About CPU Frequency Scaling Monitor"
 msgstr ""
 
-#: cpufreq/src/cpufreq-applet.c:483
+#: cpufreq/src/cpufreq-applet.c:485
 msgid ""
 "Copyright © 2004 Carlos Garcia Campos\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: cpufreq/src/cpufreq-applet.c:485
+#: cpufreq/src/cpufreq-applet.c:488
 msgid "This utility shows the current CPU Frequency Scaling."
 msgstr "இந்த பயன்பாடு இப்போதைய ஸிபியு அதிர்வெண் அளவிடுதலை காட்டுகிறது."
 
-#: cpufreq/src/cpufreq-applet.c:869
+#: cpufreq/src/cpufreq-applet.c:875
 msgid "This utility shows the current CPU Frequency"
 msgstr "இந்த பயன்பாடு இப்போதைய ஸிபியு அதிர்வெண்ணை காட்டுகிறது."
 
-#: cpufreq/src/cpufreq-prefs.c:493
+#: cpufreq/src/cpufreq-prefs.c:494
 msgid "Graphic"
 msgstr "வரைகலை"
 
-#: cpufreq/src/cpufreq-prefs.c:498
+#: cpufreq/src/cpufreq-prefs.c:499
 msgid "Text"
 msgstr "உரை"
 
-#: cpufreq/src/cpufreq-prefs.c:503
+#: cpufreq/src/cpufreq-prefs.c:504
 msgid "Graphic and Text"
 msgstr "வரைகலை மற்றும் உரை"
 
@@ -793,110 +809,112 @@ msgstr "CPU அலைவரிசை அளவிடுதலை மாற்ற
 msgid "Privileges are required to change the CPU Frequency scaling."
 msgstr "CPU அலைவரிசை அளவிடுதலை மாற்ற முன்னுரிமைகள் தேவைப்படும்."
 
-#: drivemount/drive-button.c:307
+#: drivemount/drive-button.c:308
 msgid "nothing to mount"
 msgstr ""
 
-#: drivemount/drive-button.c:340 drivemount/drive-button.c:354
+#: drivemount/drive-button.c:341 drivemount/drive-button.c:355
 msgid "(mounted)"
 msgstr "( ஏற்றப்பட்டது)"
 
-#: drivemount/drive-button.c:347
+#: drivemount/drive-button.c:348
 msgid "(not mounted)"
 msgstr "(ஏற்றப்படவில்லை)"
 
-#: drivemount/drive-button.c:619
+#: drivemount/drive-button.c:622
 msgid "Cannot execute Baul"
 msgstr ""
 
-#: drivemount/drive-button.c:943
+#: drivemount/drive-button.c:957
 msgid "_Play DVD"
 msgstr "டிவிடி ஐ _இயக்கு"
 
-#: drivemount/drive-button.c:947
+#: drivemount/drive-button.c:961
 msgid "_Play CD"
 msgstr "ஸிடி ஐ _இயக்கு "
 
-#: drivemount/drive-button.c:950
+#: drivemount/drive-button.c:964
 #, c-format
 msgid "_Open %s"
 msgstr "%s ஐ _த திற"
 
-#: drivemount/drive-button.c:958
+#: drivemount/drive-button.c:972
 #, c-format
 msgid "Un_mount %s"
 msgstr "%s ஐ இ_றக்கு"
 
-#: drivemount/drive-button.c:964
+#: drivemount/drive-button.c:978
 #, c-format
 msgid "_Mount %s"
 msgstr "%s ஐ _ஏற்று"
 
-#: drivemount/drive-button.c:972
+#: drivemount/drive-button.c:986
 #, c-format
 msgid "_Eject %s"
 msgstr "%s ஐ _வ வெளியேற்று"
 
-#: drivemount/drivemount.c:120
+#: drivemount/drivemount.c:124
 msgid "About Disk Mounter"
 msgstr ""
 
-#: drivemount/drivemount.c:122
+#: drivemount/drivemount.c:126
 msgid ""
 "Copyright © 2004 Canonical Ltd\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: drivemount/drivemount.c:124
+#: drivemount/drivemount.c:129
 msgid "Applet for mounting and unmounting block volumes."
 msgstr "ப்லாக் வால்யூம்களை ஏற்ற, இறக்க உதவும் குறும்பயன்"
 
-#: drivemount/drivemount.c:185 drivemount/drivemount.c:220
-#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:9
+#: drivemount/drivemount.c:190 drivemount/drivemount.c:227
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Disk Mounter"
 msgstr "வட்டு ஏற்றி"
 
-#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:5
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:4
 msgid "Drive Mount Applet Factory"
 msgstr "இயக்கியை ஏற்ற உதவும் சிறுநிரல்களின் நிறுவனம்"
 
-#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:6
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:5
 msgid "Factory for drive mount applet"
 msgstr "இயக்கு மேலேற்று சிறுநிரல்களின் நிறுவனம்"
 
-#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:10
+#: drivemount/org.cafe.applets.DriveMountApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Mount local disks and devices"
 msgstr "உண்ணிலை தகடு, சாதனத்தில் ஆகியவற்றை ஏற்று"
 
-#: geyes/geyes.c:178
+#: geyes/geyes.c:180
 msgid "About Eyes"
 msgstr ""
 
-#: geyes/geyes.c:180
+#: geyes/geyes.c:182
 msgid "A goofy set of eyes for the CAFE panel. They follow your mouse."
 msgstr "goofy கண்கள் CAFE பலகத்திற்கு. அவை உங்கள் சுட்டியை பின்பற்றும்."
 
-#: geyes/geyes.c:182
+#: geyes/geyes.c:184
 msgid ""
 "Copyright © 1999 Dave Camp\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: geyes/geyes.c:389 geyes/geyes.c:419 geyes/geyes.c:421
-#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:9
+#: geyes/geyes.c:393 geyes/geyes.c:427 geyes/geyes.c:429
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Eyes"
 msgstr "கண்கள்"
 
-#: geyes/geyes.c:422
+#: geyes/geyes.c:430
 msgid "The eyes look in the direction of the mouse pointer"
 msgstr "கண்கள், சுட்டியின் திசையில் நோக்குமாறு அமைக்கப்பட்டுள்ளது"
 
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:4
 #: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:5
-#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Eyes Applet Factory"
 msgstr ""
 
-#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:10
+#: geyes/org.cafe.applets.GeyesApplet.cafe-panel-applet.desktop.in.in:9
 msgid "A set of eyeballs for your panel"
 msgstr "உங்கள் பலகத்திற்கு ஒரு ஜோடி கண்கள்"
 
@@ -925,17 +943,18 @@ msgstr "கருத்துகள்"
 msgid "_Select a theme:"
 msgstr "_கருத்தை தேர்ந்தெடு:"
 
-#: cafeweather/cafeweather-about.c:54
+#: cafeweather/cafeweather-about.c:56
 msgid "About Weather Report"
 msgstr ""
 
-#: cafeweather/cafeweather-about.c:56
+#: cafeweather/cafeweather-about.c:58
 msgid ""
 "Copyright © 1999-2005 by S. Papadimitriou and others\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: cafeweather/cafeweather-about.c:58
+#: cafeweather/cafeweather-about.c:61
 msgid "A panel application for monitoring local weather conditions."
 msgstr "உள்ளூர் தட்பவெப்பநிலைகளை கண்காணிக்கும் குறும்பயன்."
 
@@ -943,24 +962,24 @@ msgstr "உள்ளூர் தட்பவெப்பநிலைகளை �
 msgid "_Details"
 msgstr "(_D) விவரங்கள்"
 
-#: cafeweather/cafeweather-applet.c:111 cafeweather/cafeweather-dialog.c:183
+#: cafeweather/cafeweather-applet.c:111 cafeweather/cafeweather-dialog.c:186
 msgid "_Update"
 msgstr "மேம்படுத்தல் (_U)"
 
-#: cafeweather/cafeweather-applet.c:345
-#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:9
+#: cafeweather/cafeweather-applet.c:356
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Weather Report"
 msgstr "தட்பவெப்ப அறிக்கை"
 
-#: cafeweather/cafeweather-applet.c:360 cafeweather/cafeweather-applet.c:364
+#: cafeweather/cafeweather-applet.c:374 cafeweather/cafeweather-applet.c:378
 msgid "CAFE Weather"
 msgstr "நோம் தட்பவெப்பநிலை"
 
-#: cafeweather/cafeweather-applet.c:463
+#: cafeweather/cafeweather-applet.c:478
 msgid "Weather Forecast"
 msgstr "வானிலை முன்னறிக்கை"
 
-#: cafeweather/cafeweather-applet.c:475
+#: cafeweather/cafeweather-applet.c:490
 #, c-format
 msgid ""
 "City: %s\n"
@@ -971,99 +990,99 @@ msgstr ""
 "வானம்: %s\n"
 "வானிலை: %s"
 
-#: cafeweather/cafeweather-applet.c:524
+#: cafeweather/cafeweather-applet.c:539
 msgid "Updating..."
 msgstr "இற்றைபடுத்துகிறது..."
 
-#: cafeweather/cafeweather-dialog.c:181
+#: cafeweather/cafeweather-dialog.c:184
 msgid "Details"
 msgstr "விவரங்கள்"
 
-#: cafeweather/cafeweather-dialog.c:223
+#: cafeweather/cafeweather-dialog.c:226
 msgid "City:"
 msgstr "நகரம்:"
 
-#: cafeweather/cafeweather-dialog.c:229
+#: cafeweather/cafeweather-dialog.c:232
 msgid "Last update:"
 msgstr "கடைசி புதுப்பித்தல்:"
 
-#: cafeweather/cafeweather-dialog.c:235
+#: cafeweather/cafeweather-dialog.c:238
 msgid "Conditions:"
 msgstr "நிலவரங்கள்:"
 
-#: cafeweather/cafeweather-dialog.c:241
+#: cafeweather/cafeweather-dialog.c:244
 msgid "Sky:"
 msgstr "வானம்:"
 
-#: cafeweather/cafeweather-dialog.c:247
+#: cafeweather/cafeweather-dialog.c:250
 msgid "Temperature:"
 msgstr "வெப்பநிலை:"
 
-#: cafeweather/cafeweather-dialog.c:253
+#: cafeweather/cafeweather-dialog.c:256
 msgid "Feels like:"
 msgstr "இது போல:"
 
-#: cafeweather/cafeweather-dialog.c:259
+#: cafeweather/cafeweather-dialog.c:262
 msgid "Dew point:"
 msgstr "பனி நிலை:"
 
-#: cafeweather/cafeweather-dialog.c:265
+#: cafeweather/cafeweather-dialog.c:268
 msgid "Relative humidity:"
 msgstr "தட்பவெப்ப நிலை:"
 
-#: cafeweather/cafeweather-dialog.c:271
+#: cafeweather/cafeweather-dialog.c:274
 msgid "Wind:"
 msgstr "காற்று:"
 
-#: cafeweather/cafeweather-dialog.c:277
+#: cafeweather/cafeweather-dialog.c:280
 msgid "Pressure:"
 msgstr "அழுத்தம்:"
 
-#: cafeweather/cafeweather-dialog.c:283
+#: cafeweather/cafeweather-dialog.c:286
 msgid "Visibility:"
 msgstr "காட்சிமை:"
 
-#: cafeweather/cafeweather-dialog.c:289
+#: cafeweather/cafeweather-dialog.c:292
 msgid "Sunrise:"
 msgstr "சூரிய உதயம்:"
 
-#: cafeweather/cafeweather-dialog.c:295
+#: cafeweather/cafeweather-dialog.c:298
 msgid "Sunset:"
 msgstr "சூரிய அஸ்தமனம்"
 
-#: cafeweather/cafeweather-dialog.c:403
+#: cafeweather/cafeweather-dialog.c:406
 msgid "Current Conditions"
 msgstr "நடப்பு நிலவரங்கள்"
 
-#: cafeweather/cafeweather-dialog.c:420
+#: cafeweather/cafeweather-dialog.c:423
 msgid "Forecast Report"
 msgstr "அறிக்கையை முன்மதிப்பிடு"
 
-#: cafeweather/cafeweather-dialog.c:420
+#: cafeweather/cafeweather-dialog.c:423
 msgid "See the ForeCast Details"
 msgstr "முன்கணித்த விவரங்களைப் பார்"
 
-#: cafeweather/cafeweather-dialog.c:430
+#: cafeweather/cafeweather-dialog.c:433
 msgid "Forecast"
 msgstr "முன்கணி"
 
-#: cafeweather/cafeweather-dialog.c:438
+#: cafeweather/cafeweather-dialog.c:441
 msgid "Radar Map"
 msgstr "ராடார் வரைபடம்"
 
-#: cafeweather/cafeweather-dialog.c:471
+#: cafeweather/cafeweather-dialog.c:474
 msgid "_Visit Weather.com"
 msgstr "weather.com ஐ _அணுகு"
 
-#: cafeweather/cafeweather-dialog.c:472
+#: cafeweather/cafeweather-dialog.c:475
 msgid "Visit Weather.com"
 msgstr "weather.com ஐ அணுகு"
 
-#: cafeweather/cafeweather-dialog.c:472
+#: cafeweather/cafeweather-dialog.c:475
 msgid "Click to Enter Weather.com"
 msgstr "weather.com க்குச் செல்ல சொடுக்கவும்"
 
-#: cafeweather/cafeweather-dialog.c:603
+#: cafeweather/cafeweather-dialog.c:606
 msgid "Forecast not currently available for this location."
 msgstr "இந்த இடத்திற்கான தட்ப வெப்ப கணிப்பு இப்போது கிடைக்கவில்லை"
 
@@ -1096,169 +1115,170 @@ msgid ""
 "Failed to load the Locations XML database.  Please report this as a bug."
 msgstr "இடங்கள் எக்ஸ்எம்எல் ஐ ஏற்றுவதில் தோல்வி. இதை ஒரு பிழையாக தகவல் தரவும்."
 
-#: cafeweather/cafeweather-pref.c:807
+#: cafeweather/cafeweather-pref.c:813
 msgid "Weather Preferences"
 msgstr "வானிலை விருப்பங்கள்"
 
-#: cafeweather/cafeweather-pref.c:831 cafeweather/cafeweather-pref.c:1034
+#: cafeweather/cafeweather-pref.c:837 cafeweather/cafeweather-pref.c:1040
 msgid "_Automatically update every:"
 msgstr "_தானாக புதுப்பி ஒவ்வொரு:"
 
-#: cafeweather/cafeweather-pref.c:847
+#: cafeweather/cafeweather-pref.c:853
 msgid "_Temperature unit:"
 msgstr "_வ வெப்பநிலை அலகு:"
 
-#: cafeweather/cafeweather-pref.c:857
+#: cafeweather/cafeweather-pref.c:863
 msgid "Kelvin"
 msgstr "கெல்வின்"
 
-#: cafeweather/cafeweather-pref.c:859
+#: cafeweather/cafeweather-pref.c:865
 msgid "Celsius"
 msgstr "செல்சியஸ்"
 
-#: cafeweather/cafeweather-pref.c:860
+#: cafeweather/cafeweather-pref.c:866
 msgid "Fahrenheit"
 msgstr "ஃபாரன்ஹீட்"
 
-#: cafeweather/cafeweather-pref.c:869
+#: cafeweather/cafeweather-pref.c:875
 msgid "_Wind speed unit:"
 msgstr "_காற்றின் வேக அலகு:"
 
-#: cafeweather/cafeweather-pref.c:880
+#: cafeweather/cafeweather-pref.c:886
 msgid "m/s"
 msgstr "m/s"
 
-#: cafeweather/cafeweather-pref.c:882
+#: cafeweather/cafeweather-pref.c:888
 msgid "km/h"
 msgstr "km/h"
 
-#: cafeweather/cafeweather-pref.c:884
+#: cafeweather/cafeweather-pref.c:890
 msgid "mph"
 msgstr "mph"
 
-#: cafeweather/cafeweather-pref.c:886
+#: cafeweather/cafeweather-pref.c:892
 msgid "knots"
 msgstr "நாட்ஸ்"
 
-#: cafeweather/cafeweather-pref.c:887
+#: cafeweather/cafeweather-pref.c:893
 msgid "Beaufort scale"
 msgstr "Beaufort அளவு"
 
-#: cafeweather/cafeweather-pref.c:896
+#: cafeweather/cafeweather-pref.c:902
 msgid "_Pressure unit:"
 msgstr "அழுத்த அலகு: (_P)"
 
-#: cafeweather/cafeweather-pref.c:907
+#: cafeweather/cafeweather-pref.c:913
 msgid "kPa"
 msgstr "kPa"
 
-#: cafeweather/cafeweather-pref.c:909
+#: cafeweather/cafeweather-pref.c:915
 msgid "hPa"
 msgstr "hPa"
 
-#: cafeweather/cafeweather-pref.c:911
+#: cafeweather/cafeweather-pref.c:917
 msgid "mb"
 msgstr "mb"
 
-#: cafeweather/cafeweather-pref.c:913
+#: cafeweather/cafeweather-pref.c:919
 msgid "mmHg"
 msgstr "mmHg"
 
-#: cafeweather/cafeweather-pref.c:915
+#: cafeweather/cafeweather-pref.c:921
 msgid "inHg"
 msgstr "inHg"
 
-#: cafeweather/cafeweather-pref.c:917
+#: cafeweather/cafeweather-pref.c:923
 msgid "atm"
 msgstr "atm"
 
-#: cafeweather/cafeweather-pref.c:926
+#: cafeweather/cafeweather-pref.c:932
 msgid "_Visibility unit:"
 msgstr "_காட்சிமை அலகு:"
 
-#: cafeweather/cafeweather-pref.c:937
+#: cafeweather/cafeweather-pref.c:943
 msgid "meters"
 msgstr "மீட்டர்"
 
-#: cafeweather/cafeweather-pref.c:939
+#: cafeweather/cafeweather-pref.c:945
 msgid "km"
 msgstr "km"
 
-#: cafeweather/cafeweather-pref.c:941
+#: cafeweather/cafeweather-pref.c:947
 msgid "miles"
 msgstr "மைல்கள்"
 
-#: cafeweather/cafeweather-pref.c:971
+#: cafeweather/cafeweather-pref.c:977
 msgid "Enable _radar map"
 msgstr "ராடார் வரைபடத்தை முடுக்கு"
 
-#: cafeweather/cafeweather-pref.c:987
+#: cafeweather/cafeweather-pref.c:993
 msgid "Use _custom address for radar map"
 msgstr "ராடார் வரைபடத்திற்கு _தனிப்பயன் முகவரியை பயன்படுத்து"
 
-#: cafeweather/cafeweather-pref.c:1005
+#: cafeweather/cafeweather-pref.c:1011
 msgid "A_ddress:"
 msgstr "முகவரி: (_d)"
 
-#: cafeweather/cafeweather-pref.c:1020
+#: cafeweather/cafeweather-pref.c:1026
 msgid "Show _notifications"
 msgstr ""
 
-#: cafeweather/cafeweather-pref.c:1030
+#: cafeweather/cafeweather-pref.c:1036
 msgid "Update"
 msgstr "இற்றைபடுத்து"
 
-#: cafeweather/cafeweather-pref.c:1047
+#: cafeweather/cafeweather-pref.c:1053
 msgid "minutes"
 msgstr "நிமிடங்கள்"
 
-#: cafeweather/cafeweather-pref.c:1065
+#: cafeweather/cafeweather-pref.c:1071
 msgid "Display"
 msgstr "காண்பி"
 
-#: cafeweather/cafeweather-pref.c:1084
+#: cafeweather/cafeweather-pref.c:1090
 msgid "General"
 msgstr "பொது"
 
-#: cafeweather/cafeweather-pref.c:1095
+#: cafeweather/cafeweather-pref.c:1101
 msgid "_Select a location:"
 msgstr "_இடத்தை தேர்வுசெய்"
 
-#: cafeweather/cafeweather-pref.c:1117
+#: cafeweather/cafeweather-pref.c:1123
 msgid "_Find:"
 msgstr "தேடு (_F):"
 
-#: cafeweather/cafeweather-pref.c:1123
+#: cafeweather/cafeweather-pref.c:1129
 msgid "Find _Next"
 msgstr "(_N)அடுத்ததை கண்டுபிடி"
 
-#: cafeweather/cafeweather-pref.c:1144
+#: cafeweather/cafeweather-pref.c:1150
 msgid "Location"
 msgstr "இடம்"
 
-#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:5
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:4
 msgid "Cafeweather Applet Factory"
 msgstr ""
 
-#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:6
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:5
 msgid "Factory for creating the weather applet."
 msgstr "தட்பவெப்பக் குறும்பயனை உருவாக்கும் செயலகம்."
 
-#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:10
+#: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Monitor the current weather conditions, and forecasts"
 msgstr "நடப்பு தட்பவெப்ப நிலைகளைக் கண்காணித்து முன்மதிப்பிடுகிறது"
 
-#: multiload/main.c:60
+#: multiload/main.c:62
 msgid "About System Monitor"
 msgstr ""
 
-#: multiload/main.c:62
+#: multiload/main.c:64
 msgid ""
 "Copyright © 1999-2005 Free Software Foundation and others\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: multiload/main.c:64
+#: multiload/main.c:67
 msgid ""
 "A system load monitor capable of displaying graphs for CPU, ram, and swap "
 "space use, plus network traffic."
@@ -1266,40 +1286,40 @@ msgstr ""
 "ஒரு 'ஏற்றுதலைக் கண்காணித்தல்' அமைப்பு ஸிபியு, ரேம் மற்றும் ஸ்வாப் ஆகியவற்றின் "
 "வரைபடங்களையும் கோப்பை பயன்படுத்துதலையும், வலையமைப்பின் போக்குவரத்தையும் காட்ட வல்லது"
 
-#: multiload/main.c:129
+#: multiload/main.c:132
 msgid "Start system-monitor"
 msgstr ""
 
-#: multiload/main.c:151
+#: multiload/main.c:154
 #, c-format
 msgid "There was an error executing '%s': %s"
 msgstr " '%s': %sயை செயலாக்குவதில் தவறு ஏற்பட்டுள்ளது"
 
-#: multiload/main.c:279 multiload/properties.c:643
+#: multiload/main.c:291 multiload/properties.c:643
 msgid "Processor"
 msgstr "செயலகம்"
 
-#: multiload/main.c:281 multiload/properties.c:651
+#: multiload/main.c:293 multiload/properties.c:651
 msgid "Memory"
 msgstr "நினைவகம்"
 
-#: multiload/main.c:283 multiload/properties.c:659
+#: multiload/main.c:295 multiload/properties.c:659
 msgid "Network"
 msgstr "பிணையம்"
 
-#: multiload/main.c:285 multiload/properties.c:668
+#: multiload/main.c:297 multiload/properties.c:668
 msgid "Swap Space"
 msgstr "இட மாற்று நினைவக வெளி"
 
-#: multiload/main.c:287 multiload/main.c:366
+#: multiload/main.c:299 multiload/main.c:378
 msgid "Load Average"
 msgstr "சுமாரான பளு"
 
-#: multiload/main.c:289
+#: multiload/main.c:301
 msgid "Disk"
 msgstr "வட்டு"
 
-#: multiload/main.c:305
+#: multiload/main.c:317
 #, c-format
 msgid ""
 "%s:\n"
@@ -1310,12 +1330,12 @@ msgstr ""
 "%u%% நிரல்களால் பயன்படுத்தப்படுகிறது\n"
 "%u%% இடையக சேமிப்பாக பயன்படுகிறது"
 
-#: multiload/main.c:313
+#: multiload/main.c:325
 #, c-format
 msgid "The system load average is %0.02f"
 msgstr "கணிணியின் சராசரி பளு %0.02f"
 
-#: multiload/main.c:321
+#: multiload/main.c:333
 #, c-format
 msgid ""
 "%s:\n"
@@ -1326,7 +1346,7 @@ msgstr ""
 "%sஐ பெறுகிறது\n"
 "%sஐ அனுப்புகிறது"
 
-#: multiload/main.c:337
+#: multiload/main.c:349
 #, c-format
 msgid ""
 "%s:\n"
@@ -1337,32 +1357,32 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: multiload/main.c:362
+#: multiload/main.c:374
 msgid "CPU Load"
 msgstr "ஸிபியு பளு"
 
-#: multiload/main.c:363
+#: multiload/main.c:375
 msgid "Memory Load"
 msgstr "நினைவகம் பளு"
 
-#: multiload/main.c:364
+#: multiload/main.c:376
 msgid "Net Load"
 msgstr "வலை பளு"
 
-#: multiload/main.c:365
+#: multiload/main.c:377
 msgid "Swap Load"
 msgstr "இட மாற்று நினைவக பளு"
 
-#: multiload/main.c:367
+#: multiload/main.c:379
 msgid "Disk Load"
 msgstr "வட்டு பளு"
 
-#: multiload/main.c:485
+#: multiload/main.c:497
 msgid "_Open System Monitor"
 msgstr "_த அமைப்புக் கண்காணியை திற"
 
-#: multiload/main.c:517
-#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:9
+#: multiload/main.c:531
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:8
 msgid "System Monitor"
 msgstr "அமைப்புக் கண்காணி"
 
@@ -1371,15 +1391,15 @@ msgstr "அமைப்புக் கண்காணி"
 msgid "%s/s"
 msgstr "%s/s"
 
-#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:5
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:4
 msgid "MultiLoad Applet Factory"
 msgstr ""
 
-#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:6
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:5
 msgid "Factory for creating the load applet."
 msgstr ""
 
-#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:10
+#: multiload/org.cafe.applets.MultiLoadApplet.cafe-panel-applet.desktop.in.in:9
 msgid "A system load indicator"
 msgstr "ஒரு 'அமைப்பு ஏற்றுதல் காட்டி' "
 
@@ -1694,7 +1714,7 @@ msgid "Threshold 1: "
 msgstr ""
 
 #: multiload/properties.c:745 multiload/properties.c:780
-#: multiload/properties.c:815 netspeed/src/netspeed.c:432
+#: multiload/properties.c:815 netspeed/src/netspeed.c:435
 msgid "bytes"
 msgstr ""
 
@@ -1804,262 +1824,263 @@ msgstr ""
 msgid "If true, show signal quality icon for wireless devices."
 msgstr ""
 
-#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:5
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:4
 msgid "Netspeed Applet Factory"
 msgstr ""
 
-#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:6
-#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:10
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:5
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Netspeed Applet"
 msgstr ""
 
-#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:9
+#: netspeed/data/org.cafe.applets.NetspeedApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Network Monitor"
 msgstr ""
 
-#: netspeed/src/netspeed.c:427
+#: netspeed/src/netspeed.c:430
 msgid "b"
 msgstr ""
 
-#: netspeed/src/netspeed.c:427
+#: netspeed/src/netspeed.c:430
 msgid "B"
 msgstr ""
 
-#: netspeed/src/netspeed.c:429
+#: netspeed/src/netspeed.c:432
 msgid "b/s"
 msgstr ""
 
-#: netspeed/src/netspeed.c:429
+#: netspeed/src/netspeed.c:432
 msgid "B/s"
 msgstr ""
 
-#: netspeed/src/netspeed.c:432
+#: netspeed/src/netspeed.c:435
 msgid "bits"
 msgstr ""
 
-#: netspeed/src/netspeed.c:440
+#: netspeed/src/netspeed.c:443
 msgid "k"
 msgstr ""
 
-#: netspeed/src/netspeed.c:440
+#: netspeed/src/netspeed.c:443
 msgid "K"
 msgstr "K"
 
-#: netspeed/src/netspeed.c:442
+#: netspeed/src/netspeed.c:445
 msgid "kb/s"
 msgstr ""
 
-#: netspeed/src/netspeed.c:442
+#: netspeed/src/netspeed.c:445
 msgid "KiB/s"
 msgstr ""
 
-#: netspeed/src/netspeed.c:445
+#: netspeed/src/netspeed.c:448
 msgid "kb"
 msgstr ""
 
-#: netspeed/src/netspeed.c:445
+#: netspeed/src/netspeed.c:448
 msgid "KiB"
 msgstr ""
 
-#: netspeed/src/netspeed.c:455
+#: netspeed/src/netspeed.c:458
 msgid "m"
 msgstr "மீ"
 
-#: netspeed/src/netspeed.c:455
+#: netspeed/src/netspeed.c:458
 msgid "M"
 msgstr ""
 
-#: netspeed/src/netspeed.c:457
+#: netspeed/src/netspeed.c:460
 msgid "Mb/s"
 msgstr ""
 
-#: netspeed/src/netspeed.c:457
+#: netspeed/src/netspeed.c:460
 msgid "MiB/s"
 msgstr ""
 
-#: netspeed/src/netspeed.c:460
+#: netspeed/src/netspeed.c:463
 msgid "Mb"
 msgstr ""
 
-#: netspeed/src/netspeed.c:460
+#: netspeed/src/netspeed.c:463
 msgid "MiB"
 msgstr ""
 
-#: netspeed/src/netspeed.c:784
+#: netspeed/src/netspeed.c:787
 #, c-format
 msgid ""
 "There was an error displaying help:\n"
 "%s"
 msgstr ""
 
-#: netspeed/src/netspeed.c:821
+#: netspeed/src/netspeed.c:827
 msgid "About CAFE Netspeed"
 msgstr ""
 
-#: netspeed/src/netspeed.c:823
+#: netspeed/src/netspeed.c:829
 msgid ""
 "Copyright © 2002-2003 Jörgen Scheibengruber\n"
 "Copyright © 2011-2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 CAFE developers"
+"Copyright © 2015-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: netspeed/src/netspeed.c:826
+#: netspeed/src/netspeed.c:833
 msgid ""
 "A little applet that displays some information on the traffic on the "
 "specified network device"
 msgstr ""
 
-#: netspeed/src/netspeed.c:987
+#: netspeed/src/netspeed.c:995
 msgid "CAFE Netspeed Preferences"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1009
+#: netspeed/src/netspeed.c:1017
 msgid "General Settings"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1031
+#: netspeed/src/netspeed.c:1039
 msgid "Network _device:"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1043
+#: netspeed/src/netspeed.c:1051
 msgid "Default"
 msgstr "முன்னிருப்பு"
 
-#: netspeed/src/netspeed.c:1056
+#: netspeed/src/netspeed.c:1064
 msgid "Show _sum instead of in & out"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1060
+#: netspeed/src/netspeed.c:1068
 msgid "Show _bits instead of bytes"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1064
+#: netspeed/src/netspeed.c:1072
 msgid "Shorten _unit legend"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1068
+#: netspeed/src/netspeed.c:1076
 msgid "_Change icon according to the selected device"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1072
+#: netspeed/src/netspeed.c:1080
 msgid "Show _icon"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1076
+#: netspeed/src/netspeed.c:1084
 msgid "Show signal _quality icon for wireless devices"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1194
+#: netspeed/src/netspeed.c:1205
 #, c-format
 msgid "Device Details for %s"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1219
+#: netspeed/src/netspeed.c:1230
 msgid "_In graph color"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1220
+#: netspeed/src/netspeed.c:1231
 msgid "_Out graph color"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1236
+#: netspeed/src/netspeed.c:1247
 msgid "Internet Address:"
 msgstr "இணைய  முகவரி"
 
-#: netspeed/src/netspeed.c:1237
+#: netspeed/src/netspeed.c:1248
 msgid "Netmask:"
 msgstr "நெட் மாஸ்க் "
 
-#: netspeed/src/netspeed.c:1238
+#: netspeed/src/netspeed.c:1249
 msgid "Hardware Address:"
 msgstr "வன்பொருள் முகவரி "
 
-#: netspeed/src/netspeed.c:1239
+#: netspeed/src/netspeed.c:1250
 msgid "P-t-P Address:"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1240
+#: netspeed/src/netspeed.c:1251
 msgid "Bytes in:"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1241
+#: netspeed/src/netspeed.c:1252
 msgid "Bytes out:"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1243 netspeed/src/netspeed.c:1244
-#: netspeed/src/netspeed.c:1245 netspeed/src/netspeed.c:1246
+#: netspeed/src/netspeed.c:1254 netspeed/src/netspeed.c:1255
+#: netspeed/src/netspeed.c:1256 netspeed/src/netspeed.c:1257
 msgid "none"
 msgstr "ஒன்றும் இல்லை "
 
-#: netspeed/src/netspeed.c:1297
+#: netspeed/src/netspeed.c:1308
 msgid "IPV6 Address:"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1330
+#: netspeed/src/netspeed.c:1341
 msgid "Signal Strength:"
 msgstr "சிக்னலின்  தரம் "
 
-#: netspeed/src/netspeed.c:1331
+#: netspeed/src/netspeed.c:1342
 msgid "ESSID:"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1372
+#: netspeed/src/netspeed.c:1383
 msgid "Device _Details"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1374
+#: netspeed/src/netspeed.c:1385
 msgid "Preferences..."
 msgstr ""
 
-#: netspeed/src/netspeed.c:1376
+#: netspeed/src/netspeed.c:1387
 msgid "Help"
 msgstr "உதவி"
 
-#: netspeed/src/netspeed.c:1378
+#: netspeed/src/netspeed.c:1389
 msgid "About..."
 msgstr ""
 
-#: netspeed/src/netspeed.c:1419
+#: netspeed/src/netspeed.c:1434
 #, c-format
 msgid "Do you want to disconnect %s now?"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1423
+#: netspeed/src/netspeed.c:1438
 #, c-format
 msgid "Do you want to connect %s now?"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1450
+#: netspeed/src/netspeed.c:1465
 #, c-format
 msgid ""
 "<b>Running command %s failed</b>\n"
 "%s"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1509
+#: netspeed/src/netspeed.c:1525
 #, c-format
 msgid "%s is down"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1514
+#: netspeed/src/netspeed.c:1530
 #, c-format
 msgid ""
 "%s: %s\n"
 "in: %s out: %s"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1516 netspeed/src/netspeed.c:1525
+#: netspeed/src/netspeed.c:1532 netspeed/src/netspeed.c:1541
 msgid "has no ip"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1523
+#: netspeed/src/netspeed.c:1539
 #, c-format
 msgid ""
 "%s: %s\n"
 "sum: %s"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1532
+#: netspeed/src/netspeed.c:1548
 #, c-format
 msgid ""
 "\n"
@@ -2067,221 +2088,229 @@ msgid ""
 "Strength: %d %%"
 msgstr ""
 
-#: netspeed/src/netspeed.c:1533
+#: netspeed/src/netspeed.c:1549
 msgid "unknown"
 msgstr "தெரியாதது"
 
-#: netspeed/src/netspeed.c:1584
+#: netspeed/src/netspeed.c:1606
 msgid "CAFE Netspeed"
 msgstr ""
 
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:4
 #: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:5
-#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Sticky Notes Applet Factory"
 msgstr "கடினமான சிறுநிரல் தொழிற்சாலை"
 
-#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:9
-#: stickynotes/stickynotes_applet.c:170 stickynotes/stickynotes_applet.c:412
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:8
+#: stickynotes/stickynotes_applet.c:172 stickynotes/stickynotes_applet.c:417
 msgid "Sticky Notes"
 msgstr "ஒட்டுகின்ற குறிப்புகள்"
 
-#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:10
+#: stickynotes/org.cafe.applets.StickyNotesApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Create, view, and manage sticky notes on the desktop"
 msgstr "மேற்மேசையில் பிடிக் குறிப்புகளை உருவாக்க, காண, மற்றும் நிர்வாகிக்கவும்"
 
-#: stickynotes/stickynotes.c:577
+#: stickynotes/stickynotes.c:581
 msgid "This note is locked."
 msgstr "இந்த குறிப்பு பூட்டப்பட்டுள்ளது."
 
-#: stickynotes/stickynotes.c:581
+#: stickynotes/stickynotes.c:585
 msgid "This note is unlocked."
 msgstr "இந்த குறிப்பு பூட்டப்படவில்லை."
 
-#: stickynotes/stickynotes.ui:26 stickynotes/stickynotes_applet.c:34
-msgid "_New Note"
-msgstr "_புதிய குறிப்பு"
+#: stickynotes/sticky-notes-delete-all.ui:36
+#: stickynotes/sticky-notes-delete.ui:37
+msgid "_Cancel"
+msgstr ""
 
-#: stickynotes/stickynotes.ui:32
-msgid "_Delete Note..."
-msgstr "_D குறிப்பை நீக்கு..."
+#: stickynotes/sticky-notes-delete-all.ui:53
+msgid "_Delete All"
+msgstr "அனைத்தையும் அழி (_D)"
 
-#: stickynotes/stickynotes.ui:38
-msgid "_Lock Note"
-msgstr "_L குறிப்பை பூட்டு"
+#: stickynotes/sticky-notes-delete-all.ui:106
+msgid "Delete all sticky notes?"
+msgstr "அனைத்து ஒட்டு குறிப்புகளையும் நீக்கவா? "
 
-#: stickynotes/stickynotes.ui:44
-msgid "_Properties"
-msgstr "(_P)பண்புகள்"
+#: stickynotes/sticky-notes-delete-all.ui:123
+#: stickynotes/sticky-notes-delete.ui:124
+msgid "This cannot be undone."
+msgstr "இதை மீட்க முடியாது"
 
-#: stickynotes/stickynotes.ui:62
+#: stickynotes/sticky-notes-delete.ui:54
+msgid "_Delete"
+msgstr ""
+
+#: stickynotes/sticky-notes-delete.ui:107
+msgid "Delete this sticky note?"
+msgstr "இந்த ஒட்டு குறிப்பை நீக்கவா? "
+
+#: stickynotes/sticky-notes-note.ui:11
+msgid "Sticky Note"
+msgstr "ஒட்டுகின்ற குறிப்பு"
+
+#: stickynotes/sticky-notes-note.ui:28
+msgid "Lock/Unlock note"
+msgstr "குறிப்பை பூட்டு/பூட்டு நீக்கு"
+
+#: stickynotes/sticky-notes-note.ui:66
+msgid "Delete note"
+msgstr ""
+
+#: stickynotes/sticky-notes-note.ui:119 stickynotes/sticky-notes-note.ui:142
+msgid "Resize note"
+msgstr "மறுஅளவு குறிப்பு"
+
+#: stickynotes/sticky-notes-preferences.ui:32
 msgid "Sticky Notes Preferences"
 msgstr "ஒட்டும் குறிப்புகள் முன்னுரிமைகள்"
 
-#: stickynotes/stickynotes.ui:82
+#: stickynotes/sticky-notes-preferences.ui:68
+#: stickynotes/sticky-notes-properties.ui:54
+msgid "_Close"
+msgstr ""
+
+#: stickynotes/sticky-notes-preferences.ui:108
 msgid "Default Note Properties"
 msgstr "முன்னிருப்பு குறிப்பு பண்புகள்"
 
-#: stickynotes/stickynotes.ui:119
-msgid "Choose a font to use for all sticky notes"
-msgstr "அனைத்து ஒட்டும் குறிப்புக்களுக்கும் ஒரு எழுத்துருவை தேர்ந்தெடு"
-
-#: stickynotes/stickynotes.ui:120
-msgid "Pick a default sticky note font"
-msgstr "முன்னிருப்பு ஒட்டும் குறிப்பு எழுத்துருவை எடு"
-
-#: stickynotes/stickynotes.ui:139 stickynotes/stickynotes.ui:994
-msgid "_Font:"
-msgstr "எழுத்துரு (_F):"
-
-#: stickynotes/stickynotes.ui:153
-msgid "Use fo_nt from the system theme"
-msgstr "கணினி தீமிலிருந்து எழுத்துருவை பயன்படுத்து (_n)"
-
-#: stickynotes/stickynotes.ui:176
-msgid "Note C_olor:"
-msgstr "குறிப்பு நிறம் (_o):"
-
-#: stickynotes/stickynotes.ui:197
-msgid "Font Co_lor:"
-msgstr "எழுத்துரு நிறம் (_l):"
-
-#: stickynotes/stickynotes.ui:230
-msgid "Choose a base color to use for all sticky notes"
-msgstr "அனைத்து ஒட்டும் குறிப்புகளை பயன்படுத்த அடிப்படை நிறத்தைத் தேர்ந்தெடு"
-
-#: stickynotes/stickynotes.ui:231
-msgid "Pick a default sticky note color"
-msgstr "ஒரு முன்னிருப்பு ஒட்டும் குறிப்பு நிறத்தை எடு"
-
-#: stickynotes/stickynotes.ui:243
-msgid "Use co_lor from the system theme"
-msgstr "கணினி தீமிருந்து நிறத்தைப் பயன்படுத்து (_l)"
-
-#: stickynotes/stickynotes.ui:262
-msgid "Specify the default height (in pixels) of new notes"
-msgstr "புதியக் குறிப்புகளுக்கான முன்னிருப்பு உயரத்தை (பிக்ஸலில்) குறிப்பிடு"
-
-#: stickynotes/stickynotes.ui:279
-msgid "Specify the default width (in pixels) of new notes"
-msgstr "புதியக் குறிப்புகளுக்கான முன்னிருப்பு அகலத்தை (பிக்ஸலில்) குறிப்பிடு"
-
-#: stickynotes/stickynotes.ui:294
-msgid "H_eight:"
-msgstr "உயரம் (_e):"
-
-#: stickynotes/stickynotes.ui:309
+#: stickynotes/sticky-notes-preferences.ui:131
 msgid "_Width:"
 msgstr "அகலம்: (_W)"
 
-#: stickynotes/stickynotes.ui:343
+#: stickynotes/sticky-notes-preferences.ui:144
+msgid "H_eight:"
+msgstr "உயரம் (_e):"
+
+#: stickynotes/sticky-notes-preferences.ui:157
+msgid "Specify the default width (in pixels) of new notes"
+msgstr "புதியக் குறிப்புகளுக்கான முன்னிருப்பு அகலத்தை (பிக்ஸலில்) குறிப்பிடு"
+
+#: stickynotes/sticky-notes-preferences.ui:158
+msgid "1"
+msgstr ""
+
+#: stickynotes/sticky-notes-preferences.ui:172
+msgid "Specify the default height (in pixels) of new notes"
+msgstr "புதியக் குறிப்புகளுக்கான முன்னிருப்பு உயரத்தை (பிக்ஸலில்) குறிப்பிடு"
+
+#: stickynotes/sticky-notes-preferences.ui:173
+msgid "0"
+msgstr ""
+
+#: stickynotes/sticky-notes-preferences.ui:185
+msgid "Use co_lor from the system theme"
+msgstr "கணினி தீமிருந்து நிறத்தைப் பயன்படுத்து (_l)"
+
+#: stickynotes/sticky-notes-preferences.ui:203
+msgid "Font Co_lor:"
+msgstr "எழுத்துரு நிறம் (_l):"
+
+#: stickynotes/sticky-notes-preferences.ui:216
+msgid "Note C_olor:"
+msgstr "குறிப்பு நிறம் (_o):"
+
+#: stickynotes/sticky-notes-preferences.ui:241
+msgid "Choose a base color to use for all sticky notes"
+msgstr "அனைத்து ஒட்டும் குறிப்புகளை பயன்படுத்த அடிப்படை நிறத்தைத் தேர்ந்தெடு"
+
+#: stickynotes/sticky-notes-preferences.ui:242
+msgid "Pick a default sticky note color"
+msgstr "ஒரு முன்னிருப்பு ஒட்டும் குறிப்பு நிறத்தை எடு"
+
+#: stickynotes/sticky-notes-preferences.ui:251
+msgid "Use fo_nt from the system theme"
+msgstr "கணினி தீமிலிருந்து எழுத்துருவை பயன்படுத்து (_n)"
+
+#: stickynotes/sticky-notes-preferences.ui:269
+#: stickynotes/sticky-notes-properties.ui:226
+msgid "_Font:"
+msgstr "எழுத்துரு (_F):"
+
+#: stickynotes/sticky-notes-preferences.ui:283
+msgid "Choose a font to use for all sticky notes"
+msgstr "அனைத்து ஒட்டும் குறிப்புக்களுக்கும் ஒரு எழுத்துருவை தேர்ந்தெடு"
+
+#: stickynotes/sticky-notes-preferences.ui:285
+msgid "Pick a default sticky note font"
+msgstr "முன்னிருப்பு ஒட்டும் குறிப்பு எழுத்துருவை எடு"
+
+#: stickynotes/sticky-notes-preferences.ui:316
 msgid "Behavior"
 msgstr "ஒழுக்கம்"
 
-#: stickynotes/stickynotes.ui:377
+#: stickynotes/sticky-notes-preferences.ui:337
+msgid "_Put notes on all workspaces"
+msgstr "அனைத்து பணியிடங்களிலும் குறிப்புகளை போடவும் (_P)"
+
+#: stickynotes/sticky-notes-preferences.ui:341
+msgid "Choose if notes are visible on all workspaces"
+msgstr "குறிப்புகளை அனைத்து பணியிடங்களிலும் தெரிகிறதா என தேர்ந்தெடு"
+
+#: stickynotes/sticky-notes-preferences.ui:354
+msgid "Force _default color and font on notes"
+msgstr "குறிப்புகளில் முன்னிருப்பு நிறம் மற்றும் எழுத்துருவை வலியுறுத்து (_d)"
+
+#: stickynotes/sticky-notes-preferences.ui:358
+msgid "Choose if the default style is forced on all notes"
+msgstr "முன்னிருப்பு தோற்றம் அனைத்து குறிப்புகளை வலியுறுத்துகிறதா என தேர்ந்தெடு"
+
+#: stickynotes/sticky-notes-preferences.ui:371
 msgid "Hide notes when the des_ktop is clicked on"
 msgstr "_k மேல்மேசையை சொடுக்கினால் குறிப்புகளை மறை"
 
-#: stickynotes/stickynotes.ui:381
+#: stickynotes/sticky-notes-preferences.ui:375
 msgid "Choose whether to hide all notes when selecting on the desktop"
 msgstr ""
 "மேல்மேசையை தேர்ந்தெடுக்க சொடுக்கினால் எல்லா குறிப்புகளையும் மறைக்க வேண்டுமா என "
 "தேர்ந்தெடுக்கவும்"
 
-#: stickynotes/stickynotes.ui:394
-msgid "Force _default color and font on notes"
-msgstr "குறிப்புகளில் முன்னிருப்பு நிறம் மற்றும் எழுத்துருவை வலியுறுத்து (_d)"
-
-#: stickynotes/stickynotes.ui:398
-msgid "Choose if the default style is forced on all notes"
-msgstr "முன்னிருப்பு தோற்றம் அனைத்து குறிப்புகளை வலியுறுத்துகிறதா என தேர்ந்தெடு"
-
-#: stickynotes/stickynotes.ui:411
-msgid "_Put notes on all workspaces"
-msgstr "அனைத்து பணியிடங்களிலும் குறிப்புகளை போடவும் (_P)"
-
-#: stickynotes/stickynotes.ui:415
-msgid "Choose if notes are visible on all workspaces"
-msgstr "குறிப்புகளை அனைத்து பணியிடங்களிலும் தெரிகிறதா என தேர்ந்தெடு"
-
-#: stickynotes/stickynotes.ui:540
-msgid "Delete this sticky note?"
-msgstr "இந்த ஒட்டு குறிப்பை நீக்கவா? "
-
-#: stickynotes/stickynotes.ui:555 stickynotes/stickynotes.ui:673
-msgid "This cannot be undone."
-msgstr "இதை மீட்க முடியாது"
-
-#: stickynotes/stickynotes.ui:658
-msgid "Delete all sticky notes?"
-msgstr "அனைத்து ஒட்டு குறிப்புகளையும் நீக்கவா? "
-
-#: stickynotes/stickynotes.ui:741
-msgid "_Delete All"
-msgstr "அனைத்தையும் அழி (_D)"
-
-#: stickynotes/stickynotes.ui:779
-msgid "Sticky Note"
-msgstr "ஒட்டுகின்ற குறிப்பு"
-
-#: stickynotes/stickynotes.ui:790
-msgid "Lock/Unlock note"
-msgstr "குறிப்பை பூட்டு/பூட்டு நீக்கு"
-
-#: stickynotes/stickynotes.ui:820
-msgid "Delete note"
-msgstr ""
-
-#: stickynotes/stickynotes.ui:868 stickynotes/stickynotes.ui:887
-msgid "Resize note"
-msgstr "மறுஅளவு குறிப்பு"
-
-#: stickynotes/stickynotes.ui:917
+#: stickynotes/sticky-notes-properties.ui:18
 msgid "Sticky Note Properties"
 msgstr "ஒட்டும் குறிப்பு பண்புகள்"
 
-#: stickynotes/stickynotes.ui:937
+#: stickynotes/sticky-notes-properties.ui:94
 msgid "Properties"
 msgstr "பண்புகள்"
 
-#: stickynotes/stickynotes.ui:974
-msgid "Choose a font for the note"
-msgstr "எழுத்துருக்கான குறிப்பை தேர்ந்தெடு"
+#: stickynotes/sticky-notes-properties.ui:117
+msgid "_Title:"
+msgstr "தலைப்பு: (_T)"
 
-#: stickynotes/stickynotes.ui:975
-msgid "Pick a font for the sticky note"
-msgstr "ஒட்டும் குறிப்புக்கு ஒரு எழுத்துருவை எடு"
-
-#: stickynotes/stickynotes.ui:1008
-msgid "Use default fo_nt"
-msgstr "முன்னிருப்பு எழுத்துருவை பயன்படுத்து (_n)"
-
-#: stickynotes/stickynotes.ui:1028
-msgid "Choose a color for the note"
-msgstr "குறிப்புக்கான ஒரு நிறத்தை தேர்ந்தெடு"
-
-#: stickynotes/stickynotes.ui:1029
-msgid "Pick a color for the sticky note"
-msgstr "ஒட்டும் குறிப்புக்கு ஒரு நிறத்தை எடு"
-
-#: stickynotes/stickynotes.ui:1048
-msgid "Note _Color:"
-msgstr "குறிப்பு நிறம் (_C):"
-
-#: stickynotes/stickynotes.ui:1083
-msgid "Font C_olor:"
-msgstr "எழுத்துரு நிறம் (_o):"
-
-#: stickynotes/stickynotes.ui:1097
-msgid "Use default co_lor"
-msgstr "முன்னிருப்பு நிறத்தை பயன்படுத்து (_l)"
-
-#: stickynotes/stickynotes.ui:1115
+#: stickynotes/sticky-notes-properties.ui:130
 msgid "Specify a title for the note"
 msgstr "குறிப்புக்கான ஒரு தலைப்பை குறிப்பிடு"
 
-#: stickynotes/stickynotes.ui:1127
-msgid "_Title:"
-msgstr "தலைப்பு: (_T)"
+#: stickynotes/sticky-notes-properties.ui:139
+msgid "Use default co_lor"
+msgstr "முன்னிருப்பு நிறத்தை பயன்படுத்து (_l)"
+
+#: stickynotes/sticky-notes-properties.ui:158
+msgid "Font C_olor:"
+msgstr "எழுத்துரு நிறம் (_o):"
+
+#: stickynotes/sticky-notes-properties.ui:172
+msgid "Note _Color:"
+msgstr "குறிப்பு நிறம் (_C):"
+
+#: stickynotes/sticky-notes-properties.ui:183
+msgid "Use default fo_nt"
+msgstr "முன்னிருப்பு எழுத்துருவை பயன்படுத்து (_n)"
+
+#: stickynotes/sticky-notes-properties.ui:213
+msgid "Choose a color for the note"
+msgstr "குறிப்புக்கான ஒரு நிறத்தை தேர்ந்தெடு"
+
+#: stickynotes/sticky-notes-properties.ui:214
+msgid "Pick a color for the sticky note"
+msgstr "ஒட்டும் குறிப்புக்கு ஒரு நிறத்தை எடு"
+
+#: stickynotes/sticky-notes-properties.ui:240
+msgid "Choose a font for the note"
+msgstr "எழுத்துருக்கான குறிப்பை தேர்ந்தெடு"
+
+#: stickynotes/sticky-notes-properties.ui:242
+msgid "Pick a font for the sticky note"
+msgstr "ஒட்டும் குறிப்புக்கு ஒரு எழுத்துருவை எடு"
 
 #: stickynotes/org.cafe.stickynotes.gschema.xml.in:5
 msgid "Default width for new notes"
@@ -2427,6 +2456,10 @@ msgstr "ஒரு குறிப்பை அழிக்கும் பொழ
 msgid "Empty notes are always deleted without confirmation."
 msgstr "காலியானக் குறிப்புகள் உறுதிப்படுத்தலின்றி அழிக்கப்படும்."
 
+#: stickynotes/stickynotes_applet.c:34
+msgid "_New Note"
+msgstr "_புதிய குறிப்பு"
+
 #: stickynotes/stickynotes_applet.c:37
 msgid "Hi_de Notes"
 msgstr "குறிப்பினை _மறை"
@@ -2439,43 +2472,44 @@ msgstr "_D குறிப்புகளை நீக்கு"
 msgid "_Lock Notes"
 msgstr "_L குறிப்புகளை பூட்டு"
 
-#: stickynotes/stickynotes_applet.c:591
+#: stickynotes/stickynotes_applet.c:596
 #, c-format
 msgid "%d note"
 msgid_plural "%d notes"
 msgstr[0] ""
 msgstr[1] ""
 
-#: stickynotes/stickynotes_applet.c:592
+#: stickynotes/stickynotes_applet.c:597
 msgid "Show sticky notes"
 msgstr "ஒட்டுகின்ற குறிப்புகளை காட்டு"
 
-#: stickynotes/stickynotes_applet_callbacks.c:379
+#: stickynotes/stickynotes_applet_callbacks.c:395
 msgid "About Sticky Notes"
 msgstr ""
 
-#: stickynotes/stickynotes_applet_callbacks.c:381
+#: stickynotes/stickynotes_applet_callbacks.c:397
 msgid ""
 "Copyright © 2002-2003 Loban A Rahman\n"
 "Copyright © 2005 Davyd Madeley\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: stickynotes/stickynotes_applet_callbacks.c:384
+#: stickynotes/stickynotes_applet_callbacks.c:401
 msgid "Sticky Notes for the CAFE Desktop Environment"
 msgstr "ஜினோம் மேற்மேசை சூழலுக்கான ஒட்டு குறிப்புகள்"
 
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:4
 #: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:5
-#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Timer Factory"
 msgstr ""
 
-#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:9
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Timer"
 msgstr ""
 
-#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:10
-#: timerapplet/timerapplet.c:277
+#: timerapplet/org.cafe.applets.TimerApplet.cafe-panel-applet.desktop.in.in:9
+#: timerapplet/timerapplet.c:286
 msgid "Start a timer and receive a notification when it is finished"
 msgstr ""
 
@@ -2511,62 +2545,63 @@ msgstr ""
 msgid "R_eset"
 msgstr ""
 
-#: timerapplet/timerapplet.c:156 timerapplet/timerapplet.c:168
+#: timerapplet/timerapplet.c:157 timerapplet/timerapplet.c:169
 msgid "Timer finished!"
 msgstr ""
 
-#: timerapplet/timerapplet.c:272
+#: timerapplet/timerapplet.c:280
 msgid "About Timer Applet"
 msgstr ""
 
-#: timerapplet/timerapplet.c:274
+#: timerapplet/timerapplet.c:282
 msgid ""
 "Copyright © 2014 Stefano Karapetsas\n"
-"Copyright © 2015-2020 CAFE developers"
+"Copyright © 2015-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: timerapplet/timerapplet.c:310
+#: timerapplet/timerapplet.c:321
 msgid "Timer Applet Preferences"
 msgstr ""
 
-#: timerapplet/timerapplet.c:323
+#: timerapplet/timerapplet.c:334
 msgid "Name:"
 msgstr "பெயர்:"
 
-#: timerapplet/timerapplet.c:332
+#: timerapplet/timerapplet.c:343
 msgid "Hours:"
 msgstr ""
 
-#: timerapplet/timerapplet.c:343
+#: timerapplet/timerapplet.c:354
 msgid "Minutes:"
 msgstr ""
 
-#: timerapplet/timerapplet.c:354
+#: timerapplet/timerapplet.c:365
 msgid "Seconds:"
 msgstr ""
 
-#: timerapplet/timerapplet.c:365
+#: timerapplet/timerapplet.c:376
 msgid "Show notification popup"
 msgstr ""
 
-#: timerapplet/timerapplet.c:369
+#: timerapplet/timerapplet.c:380
 msgid "Show dialog"
 msgstr ""
 
-#: timerapplet/timerapplet.c:403
+#: timerapplet/timerapplet.c:416
 msgid "Timer Applet"
 msgstr ""
 
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:4
 #: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:5
-#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:6
 msgid "Trash Applet Factory"
 msgstr ""
 
-#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:9
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Trash"
 msgstr "அகற்றிடம்"
 
-#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:10
+#: trashapplet/org.cafe.applets.TrashApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Go to Trash"
 msgstr "குப்பைக்கு செல்"
 
@@ -2598,18 +2633,19 @@ msgstr ""
 "நாடுலஸ் ஐ துவக்கையில் பிழை :\n"
 "%s"
 
-#: trashapplet/src/trashapplet.c:432
+#: trashapplet/src/trashapplet.c:434
 msgid "About Trash Applet"
 msgstr ""
 
-#: trashapplet/src/trashapplet.c:434
+#: trashapplet/src/trashapplet.c:436
 msgid ""
 "Copyright © 2004 Michiel Sikkes\n"
 "Copyright © 2008 Ryan Lortie\n"
-"Copyright © 2012-2020 CAFE developers"
+"Copyright © 2012-2020 MATE developers\n"
+"Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: trashapplet/src/trashapplet.c:437
+#: trashapplet/src/trashapplet.c:440
 msgid ""
 "A CAFE trash bin that lives in your panel. You can use it to view the trash "
 "or drag and drop items into the trash."
@@ -2617,20 +2653,20 @@ msgstr ""
 "க்னோம் பலக குப்பை தொட்டி. நீங்கள் குப்பையை காண அல்லது உருப்படிகளை இழுத்து குப்பையில் போட "
 "உபயோகிக்கலாம்."
 
-#: trashapplet/src/trashapplet.c:462
+#: trashapplet/src/trashapplet.c:465
 msgid "Delete Immediately?"
 msgstr "உடனடியாக அழிக்க வேண்டுமா?"
 
-#: trashapplet/src/trashapplet.c:492
+#: trashapplet/src/trashapplet.c:495
 msgid "Cannot move items to trash, do you want to delete them immediately?"
 msgstr "உருப்படிகளை குப்பைக்கு நகர்த்த முடியவில்லை, அவற்றை உடனே நீக்க வேண்டுமா?"
 
-#: trashapplet/src/trashapplet.c:497
+#: trashapplet/src/trashapplet.c:500
 msgid ""
 "Cannot move some items to trash, do you want to delete these immediately?"
 msgstr "சில உருப்படிகளை குப்பைக்கு நகர்த்த முடியவில்லை, அவற்றை உடனே நீக்க வேண்டுமா? "
 
-#: trashapplet/src/trashapplet.c:625
+#: trashapplet/src/trashapplet.c:628
 msgid "Trash Applet"
 msgstr "குப்பைத்தொட்டி குறுநிரல்"
 
@@ -2666,3 +2702,12 @@ msgstr "குப்பையை வெறுமையாக்குகிற�
 #: trashapplet/trashapplet-empty-progress.ui:36
 msgid "From:"
 msgstr "ஆரம்பம்:"
+
+#~ msgid "_Delete Note..."
+#~ msgstr "_D குறிப்பை நீக்கு..."
+
+#~ msgid "_Lock Note"
+#~ msgstr "_L குறிப்பை பூட்டு"
+
+#~ msgid "_Properties"
+#~ msgstr "(_P)பண்புகள்"
