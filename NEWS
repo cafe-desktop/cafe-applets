@@ -1,3 +1,16 @@
+### cafe-applets 2.0.0
+
+  * ci: some improvements
+  * show icons in buttons and menus
+  * rename caja -> baul
+  * stickynotes:
+    - Use gresources for UI files
+    - Fix unexpected crashes building since glib 2.75.0
+  * update copyright
+  * add G_GNUC_UNUSED and GNUC_UNUSED in unused parameters
+  * update translations
+
+
 ### cafe-applets 1.25.0
 
   * mate-applets 1.24.1 fork
