@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2020-01-10 17:58+0100\n"
+"POT-Creation-Date: 2026-03-14 19:05+0100\n"
 "PO-Revision-Date: 2020-02-15 12:22+0000\n"
 "Last-Translator: Džiugas Grėbliūnas <dziugas.grebliunas@gmail.com>, 2020\n"
 "Language-Team: Lithuanian (https://www.transifex.com/cafe/teams/13566/lt/)\n"
@@ -47,38 +47,43 @@ msgstr "Skydelio Šiukšlinė leidžia valdyti šiukšlinę iš skydelio."
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:18
-msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
-msgstr "<year>2015-2020</year> <holder>CAFE dokumentacijos projektas</holder>"
+msgid "<year>2023-2026</year> <holder>CAFE Documentation Project</holder>"
+msgstr ""
 
 #. (itstool) path: articleinfo/copyright
 #: C/index.docbook:22
+msgid "<year>2015-2020</year> <holder>MATE Documentation Project</holder>"
+msgstr ""
+
+#. (itstool) path: articleinfo/copyright
+#: C/index.docbook:26
 msgid "<year>2006</year> <holder>GNOME Documentation Project</holder>"
 msgstr "<year>2006</year> <holder>GNOME dokumentacijos projektas</holder>"
 
 #. (itstool) path: articleinfo/copyright
-#: C/index.docbook:26
+#: C/index.docbook:30
 msgid "<year>2005</year> <holder>Davyd Madeley</holder>"
 msgstr "<year>2005</year> <holder>Davyd Madeley</holder>"
 
 #. (itstool) path: articleinfo/copyright
-#: C/index.docbook:30
+#: C/index.docbook:34
 msgid "<year>2004</year> <holder>Michiel Sikkes</holder>"
 msgstr "<year>2004</year> <holder>Michiel Sikkes</holder>"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
-#: C/index.docbook:46 C/index.docbook:99
+#: C/index.docbook:50 C/index.docbook:103
 msgid "CAFE Documentation Project"
 msgstr "CAFE dokumentacijos projektas"
 
 #. (itstool) path: publisher/publishername
 #. (itstool) path: revdescription/para
-#: C/index.docbook:49 C/index.docbook:107 C/index.docbook:115
+#: C/index.docbook:53 C/index.docbook:111 C/index.docbook:119
 msgid "GNOME Documentation Project"
 msgstr "GNOME dokumentacijos projektas"
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:55
+#: C/index.docbook:59
 msgid ""
 "<firstname>CAFE Documentation Team</firstname> <surname/> <affiliation> "
 "<orgname>CAFE Desktop</orgname> </affiliation>"
@@ -87,7 +92,7 @@ msgstr ""
 "<orgname>CAFE darbalaukis</orgname> </affiliation>"
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:62
+#: C/index.docbook:66
 msgid ""
 "<firstname>Michiel</firstname> <surname>Sikkes</surname> <affiliation> "
 "<orgname>GNOME Documentation Project</orgname> <address> "
@@ -98,7 +103,7 @@ msgstr ""
 "<email>michiel@eyesopened.nl</email> </address> </affiliation>"
 
 #. (itstool) path: authorgroup/author
-#: C/index.docbook:70
+#: C/index.docbook:74
 msgid ""
 "<firstname>Davyd</firstname><surname>Madeley</surname> <affiliation> "
 "<orgname>GNOME Project</orgname> <address><email>davyd@madeley.id.au</"
@@ -109,59 +114,59 @@ msgstr ""
 "email></address> </affiliation>"
 
 #. (itstool) path: revdescription/para
-#: C/index.docbook:98
+#: C/index.docbook:102
 msgid "CAFE Documentation Team"
 msgstr "CAFE dokumentacijos komanda"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:94
+#: C/index.docbook:98
 msgid ""
-"<revnumber>Panel Trash V2.12</revnumber> <date>July 2015</date> <_:"
-"revdescription-1/>"
+"<revnumber>Panel Trash V2.12</revnumber> <date>July 2015</date> "
+"<_:revdescription-1/>"
 msgstr ""
-"<revnumber>Skydelio šiukšlinė V2.12</revnumber> <date>2015 liepa</date> <_:"
-"revdescription-1/>"
+"<revnumber>Skydelio šiukšlinė V2.12</revnumber> <date>2015 liepa</date> "
+"<_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
-#: C/index.docbook:106
+#: C/index.docbook:110
 msgid "Davyd Madeley"
 msgstr "Davyd Madeley"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:102
+#: C/index.docbook:106
 msgid ""
-"<revnumber>Panel Trash 2.10</revnumber> <date>March 2005</date> <_:"
-"revdescription-1/>"
+"<revnumber>Panel Trash 2.10</revnumber> <date>March 2005</date> "
+"<_:revdescription-1/>"
 msgstr ""
-"<revnumber>Skydelio šiukšlinė 2.10</revnumber> <date>2005 kovas</date> <_:"
-"revdescription-1/>"
+"<revnumber>Skydelio šiukšlinė 2.10</revnumber> <date>2005 kovas</date> "
+"<_:revdescription-1/>"
 
 #. (itstool) path: revdescription/para
-#: C/index.docbook:114
+#: C/index.docbook:118
 msgid "Michiel Sikkes"
 msgstr "Michiel Sikkes"
 
 #. (itstool) path: revhistory/revision
-#: C/index.docbook:110
+#: C/index.docbook:114
 msgid ""
-"<revnumber>Panel Trash V2.8</revnumber> <date>July 2004</date> <_:"
-"revdescription-1/>"
+"<revnumber>Panel Trash V2.8</revnumber> <date>July 2004</date> "
+"<_:revdescription-1/>"
 msgstr ""
-"<revnumber>Skydelio šiukšlinė V2.8</revnumber> <date>2004 liepa</date> <_:"
-"revdescription-1/>"
+"<revnumber>Skydelio šiukšlinė V2.8</revnumber> <date>2004 liepa</date> "
+"<_:revdescription-1/>"
 
 #. (itstool) path: articleinfo/releaseinfo
-#: C/index.docbook:119
+#: C/index.docbook:123
 msgid "This manual describes version 1.10.2 of the Panel Trash applet."
 msgstr "Šis vadovas aprašo Žodyno versiją 1.10.2."
 
 #. (itstool) path: legalnotice/title
-#: C/index.docbook:122
+#: C/index.docbook:126
 msgid "Feedback"
 msgstr "Atsiliepimai"
 
 #. (itstool) path: legalnotice/para
-#: C/index.docbook:123
+#: C/index.docbook:127
 msgid ""
 "To report a bug or make a suggestion regarding the Panel Trash applet or "
 "this manual, follow the directions in the <ulink url=\"help:cafe-user-guide/"
@@ -172,17 +177,17 @@ msgstr ""
 "feedback\" type=\"help\">CAFE atsako puslapyje</ulink>."
 
 #. (itstool) path: article/indexterm
-#: C/index.docbook:127
+#: C/index.docbook:131
 msgid "<primary>Trash</primary>"
 msgstr "<primary>Šiukšlinė</primary>"
 
 #. (itstool) path: sect1/title
-#: C/index.docbook:132
+#: C/index.docbook:136
 msgid "Introduction"
 msgstr "Įžanga"
 
 #. (itstool) path: sect1/para
-#: C/index.docbook:133
+#: C/index.docbook:137
 msgid ""
 "The <application>Panel Trash</application> applet lets you manage your Trash "
 "from the panel."
@@ -191,7 +196,7 @@ msgstr ""
 "šiukšlinę iš skydelio. "
 
 #. (itstool) path: sect1/para
-#: C/index.docbook:136
+#: C/index.docbook:140
 msgid ""
 "The trash on your panel acts identically to the trash on your desktop, "
 "however it is useful because your panels are always visible."
@@ -200,12 +205,12 @@ msgstr ""
 "tačiau ji yra naudinga, kadangi skydeliai visada matomi."
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:141
+#: C/index.docbook:145
 msgid "Adding Panel Trash to a Panel"
 msgstr "Pridėti skydelio šiukšlinę į skydelį"
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:142
+#: C/index.docbook:146
 msgid ""
 "To add the <application>Panel Trash</application> applet to a panel, perform "
 "the following steps:"
@@ -214,19 +219,19 @@ msgstr ""
 "skydelį, atlikite šiuos žingsnius;"
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:145
+#: C/index.docbook:149
 msgid "Right-click on the panel at the place you want to add the applet."
 msgstr ""
 "Dešinioju pelės klavišu paspauskite ant skydelio toje vietoje, kur norite "
 "pridėti įtaisą."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:150
+#: C/index.docbook:154
 msgid "Choose <guimenuitem>Add to Panel</guimenuitem>."
 msgstr "Pasirinkite <guimenuitem>Įdėti į skydelį</guimenuitem>."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:155
+#: C/index.docbook:159
 msgid ""
 "Scroll down the list of items in the <guilabel>Add to Panel</guilabel> "
 "dialog, then select <guilabel>Trash</guilabel>."
@@ -235,12 +240,12 @@ msgstr ""
 "tada pasirinkite <guilabel>Šiušklinė</guilabel>."
 
 #. (itstool) path: listitem/para
-#: C/index.docbook:160
+#: C/index.docbook:164
 msgid "Click <guibutton>Add</guibutton>."
 msgstr "Spauskite <guibutton>pridėti</guibutton>."
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:165
+#: C/index.docbook:169
 msgid ""
 "For more information on working with the panel, see the <ulink type=\"help\" "
 "url=\"help:cafe-user-guide/panels\">Desktop User Guide</ulink>."
@@ -249,12 +254,12 @@ msgstr ""
 "url=\"help:cafe-user-guide/panels\">Darbalaukio naudotojo gide</ulink>."
 
 #. (itstool) path: sect1/title
-#: C/index.docbook:171
+#: C/index.docbook:175
 msgid "Usage"
 msgstr "Naudojimas"
 
 #. (itstool) path: figure/title
-#: C/index.docbook:173
+#: C/index.docbook:177
 msgid "Panel Trash"
 msgstr "Skydelio šiukšlinė"
 
@@ -263,7 +268,7 @@ msgstr "Skydelio šiukšlinė"
 #. the file changes, the md5 hash will change to let you know you need to
 #. update your localized copy. The msgstr is not used at all. Set it to
 #. whatever you like once you have updated your copy of the file.
-#: C/index.docbook:178
+#: C/index.docbook:182
 msgctxt "_"
 msgid ""
 "external ref='figures/trash-applet.png' "
@@ -273,12 +278,12 @@ msgstr ""
 "md5='f514805d0769a415b13e3d8894301774'"
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:185
+#: C/index.docbook:189
 msgid "Moving Items to Trash"
 msgstr "Elementai perkeliami į šiukšlinę"
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:186
+#: C/index.docbook:190
 msgid ""
 "To move items to the Trash, drag them from the file manager to the "
 "<application>Panel Trash</application> applet."
@@ -287,12 +292,12 @@ msgstr ""
 "<application>Skydelio šiukšlinės</application> įtaisą."
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:190
+#: C/index.docbook:194
 msgid "Emptying Trash"
 msgstr "Išvaloma šiukšlinė"
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:191
+#: C/index.docbook:195
 msgid ""
 "To permanently delete all the items in the Trash, right-click on the applet, "
 "then choose <menuchoice> <guimenuitem>Empty Trash</guimenuitem> </"
@@ -303,12 +308,12 @@ msgstr ""
 "<guimenuitem>Išvalyti šiuškšlinę</guimenuitem> </menuchoice>."
 
 #. (itstool) path: sect2/title
-#: C/index.docbook:199
+#: C/index.docbook:203
 msgid "Opening Trash"
 msgstr "Šiukšlinė atveriama"
 
 #. (itstool) path: sect2/para
-#: C/index.docbook:200
+#: C/index.docbook:204
 msgid ""
 "To open Trash, right-click on the applet, then choose <menuchoice> "
 "<guimenuitem>Open Trash</guimenuitem> </menuchoice>. The Trash window opens "
@@ -425,5 +430,9 @@ msgid ""
 "<_:orderedlist-1/>"
 msgstr ""
 "DOKUMENTAS IR MODIFIKUOTOS JO VERSIJOS PATEIKIAMOS GNU LAISVOSIOS "
-"DOKUMENTACIJOS LICENCIJOS SĄLYGOMIS SU TOLESNIU SUPRATIMU, KAD: <_:"
-"orderedlist-1/>"
+"DOKUMENTACIJOS LICENCIJOS SĄLYGOMIS SU TOLESNIU SUPRATIMU, KAD: "
+"<_:orderedlist-1/>"
+
+#~ msgid "<year>2015-2020</year> <holder>CAFE Documentation Project</holder>"
+#~ msgstr ""
+#~ "<year>2015-2020</year> <holder>CAFE dokumentacijos projektas</holder>"
