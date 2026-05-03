@@ -421,51 +421,45 @@ update_finish (WeatherInfo *info, gpointer data)
 #ifdef HAVE_LIBNOTIFY
     char *message, *detail;
 #endif
-    char *s;
     CafeWeatherApplet *gw_applet = (CafeWeatherApplet *)data;
-    gint nxtSunEvent;
-    const gchar *icon_name;
 
     /* Update timer */
     if (gw_applet->timeout_tag > 0)
         g_source_remove(gw_applet->timeout_tag);
     if (gw_applet->cafeweather_pref.update_enabled)
     {
-	gw_applet->timeout_tag =
-		g_timeout_add_seconds (
-                       gw_applet->cafeweather_pref.update_interval,
-                        timeout_cb, gw_applet);
+        gint nxtSunEvent;
 
-        nxtSunEvent = weather_info_next_sun_event(gw_applet->cafeweather_info);
-        if (nxtSunEvent >= 0)
-            gw_applet->suncalc_timeout_tag =
-                        g_timeout_add_seconds (nxtSunEvent,
-                                suncalc_timeout_cb, gw_applet);
+        gw_applet->timeout_tag
+            = g_timeout_add_seconds (gw_applet->cafeweather_pref.update_interval,
+                                     timeout_cb, gw_applet);
+
+        if ((info != NULL) && ((nxtSunEvent = weather_info_next_sun_event (info)) >= 0))
+        {
+            gw_applet->suncalc_timeout_tag
+                = g_timeout_add_seconds (nxtSunEvent,
+                                         suncalc_timeout_cb, gw_applet);
+        }
     }
 
-    if ((TRUE == weather_info_is_valid (info)) ||
-	     (gw_fault_counter >= MAX_CONSECUTIVE_FAULTS))
+    if ((info != NULL) && weather_info_is_valid (info))
     {
-	    gw_fault_counter = 0;
-            icon_name = weather_info_get_icon_name (gw_applet->cafeweather_info);
-            ctk_image_set_from_icon_name (CTK_IMAGE(gw_applet->image), 
-                                          icon_name, CTK_ICON_SIZE_BUTTON);
-	      
-	    ctk_label_set_text (CTK_LABEL (gw_applet->label), 
-	        		weather_info_get_temp_summary(
-					gw_applet->cafeweather_info));
-	    
-	    s = weather_info_get_weather_summary (gw_applet->cafeweather_info);
-	    ctk_widget_set_tooltip_text (CTK_WIDGET (gw_applet->applet), s);
-	    g_free (s);
+        char *s;
 
-	    /* Update dialog -- if one is present */
-	    if (gw_applet->details_dialog) {
-	    	cafeweather_dialog_update (CAFEWEATHER_DIALOG (gw_applet->details_dialog));
-	    }
+        gw_fault_counter = 0;
 
-	    /* update applet */
-	    place_widgets(gw_applet);
+        /* update tooltip */
+        s = weather_info_get_weather_summary (info);
+        ctk_widget_set_tooltip_text (CTK_WIDGET (gw_applet->applet), s);
+        g_free (s);
+
+
+        /* Update dialog -- if one is present */
+        if (gw_applet->details_dialog)
+            cafeweather_dialog_update (CAFEWEATHER_DIALOG (gw_applet->details_dialog));
+
+        /* update applet */
+        place_widgets (gw_applet);
 
 #ifdef HAVE_LIBNOTIFY
         if (gw_applet->cafeweather_pref.show_notifications)
@@ -509,13 +503,22 @@ update_finish (WeatherInfo *info, gpointer data)
 		    }
         }
 #endif
-    }
-    else
-    {
-	    /* there has been an error during retrival
-	     * just update the fault counter
-	     */
-	    gw_fault_counter++;
+    } else {
+        if (gw_fault_counter >= MAX_CONSECUTIVE_FAULTS) {
+            gw_fault_counter = 0;
+
+            /* Update dialog -- if one is present */
+            if (gw_applet->details_dialog)
+                cafeweather_dialog_update (CAFEWEATHER_DIALOG (gw_applet->details_dialog));
+
+            /* update applet */
+            place_widgets (gw_applet);
+        } else {
+            /* there has been an error during retrival
+             * just update the fault counter
+             */
+             gw_fault_counter++;
+        }
     }
 }
 
@@ -530,13 +533,7 @@ gint suncalc_timeout_cb (gpointer data)
 void cafeweather_update (CafeWeatherApplet *gw_applet)
 {
     WeatherPrefs prefs;
-    const gchar *icon_name = NULL;
 
-    if (gw_applet->cafeweather_info)
-        icon_name = weather_info_get_icon_name (gw_applet->cafeweather_info);
-
-    ctk_image_set_from_icon_name (CTK_IMAGE (gw_applet->image), 
-    			          icon_name, CTK_ICON_SIZE_BUTTON); 
     ctk_widget_set_tooltip_text (CTK_WIDGET(gw_applet->applet),  _("Updating..."));
 
     /* Set preferred forecast type */
