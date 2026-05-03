@@ -122,14 +122,15 @@ static const CtkActionEntry weather_applet_menu_actions [] = {
 	  G_CALLBACK (about_cb) }
 };
 
-static void place_widgets (CafeWeatherApplet *gw_applet)
+static void
+place_widgets (CafeWeatherApplet *gw_applet)
 {
     CtkRequisition req;
     int total_size = 0;
     gboolean horizontal = FALSE;
     int panel_size = gw_applet->size;
-    const gchar *temp;   
-    const gchar *icon_name;
+    const gchar *temp = NULL;
+    const gchar *icon_name = NULL;
 	
     switch (gw_applet->orient) {
 	case CAFE_PANEL_APPLET_ORIENT_LEFT:
@@ -143,25 +144,23 @@ static void place_widgets (CafeWeatherApplet *gw_applet)
     }
 
     /* Create the weather icon */
-    icon_name = weather_info_get_icon_name (gw_applet->cafeweather_info);
-    gw_applet->image = ctk_image_new_from_icon_name(icon_name, CTK_ICON_SIZE_BUTTON); 
-
-    if (icon_name != NULL) {
-        ctk_widget_show (gw_applet->image);
-        ctk_widget_get_preferred_size (gw_applet->image, &req, NULL);
-        if (horizontal)
-            total_size += req.height;
-        else
-            total_size += req.width;
+    if ((gw_applet->cafeweather_info) && ((icon_name = weather_info_get_icon_name (gw_applet->cafeweather_info)) != NULL)) {
+        gw_applet->image = ctk_image_new_from_icon_name (icon_name, CTK_ICON_SIZE_BUTTON);
+    } else {
+        gw_applet->image = ctk_image_new_from_icon_name ("weather-storm", CTK_ICON_SIZE_BUTTON);
     }
-
-    /* Create the temperature label */
-    gw_applet->label = ctk_label_new("0\302\260F");
+    ctk_widget_show (gw_applet->image);
+    ctk_widget_get_preferred_size (gw_applet->image, &req, NULL);
+    if (horizontal)
+        total_size += req.height;
+    else
+        total_size += req.width;
     
     /* Update temperature text */
-    temp = weather_info_get_temp_summary(gw_applet->cafeweather_info);
-    if (temp) 
-        ctk_label_set_text(CTK_LABEL(gw_applet->label), temp);
+    if ((gw_applet->cafeweather_info != NULL) && ((temp = weather_info_get_temp_summary (gw_applet->cafeweather_info)) != NULL))
+        gw_applet->label = ctk_label_new (temp);
+    else
+        gw_applet->label = ctk_label_new(_("?"));
 
     /* Check the label size to determine box layout */
     ctk_widget_show (gw_applet->label);
@@ -531,9 +530,11 @@ gint suncalc_timeout_cb (gpointer data)
 void cafeweather_update (CafeWeatherApplet *gw_applet)
 {
     WeatherPrefs prefs;
-    const gchar *icon_name;
+    const gchar *icon_name = NULL;
 
-    icon_name = weather_info_get_icon_name(gw_applet->cafeweather_info);
+    if (gw_applet->cafeweather_info)
+        icon_name = weather_info_get_icon_name (gw_applet->cafeweather_info);
+
     ctk_image_set_from_icon_name (CTK_IMAGE (gw_applet->image), 
     			          icon_name, CTK_ICON_SIZE_BUTTON); 
     ctk_widget_set_tooltip_text (CTK_WIDGET(gw_applet->applet),  _("Updating..."));
