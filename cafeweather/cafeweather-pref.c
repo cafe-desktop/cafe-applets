@@ -838,7 +838,6 @@ static void cafeweather_pref_create(CafeWeatherPref* pref)
 	ctk_widget_set_halign (pref->priv->basic_update_btn, CTK_ALIGN_START);
 	ctk_widget_set_vexpand (pref->priv->basic_update_btn, TRUE);
 	ctk_widget_show (pref->priv->basic_update_btn);
-	g_signal_connect (G_OBJECT (pref->priv->basic_update_btn), "toggled", G_CALLBACK (auto_update_toggled), pref);
 
 	if (!g_settings_is_writable (pref->priv->applet->settings, "auto-update"))
 	{
@@ -967,16 +966,9 @@ static void cafeweather_pref_create(CafeWeatherPref* pref)
 	ctk_grid_attach(CTK_GRID(unit_grid), dist_combo,  1, 3, 1, 1);
 	ctk_widget_show(unit_grid);
 
-	g_signal_connect (temp_combo, "changed", G_CALLBACK (temp_combo_changed_cb), pref);
-	g_signal_connect (speed_combo, "changed", G_CALLBACK (speed_combo_changed_cb), pref);
-	g_signal_connect (dist_combo, "changed", G_CALLBACK (dist_combo_changed_cb), pref);
-	g_signal_connect (pres_combo, "changed", G_CALLBACK (pres_combo_changed_cb), pref);
-
-
 	#ifdef RADARMAP
 		pref->priv->basic_radar_btn = ctk_check_button_new_with_mnemonic (_("Enable _radar map"));
 		ctk_widget_show (pref->priv->basic_radar_btn);
-		g_signal_connect (G_OBJECT (pref->priv->basic_radar_btn), "toggled", G_CALLBACK (radar_toggled), pref);
 
 		if (!g_settings_is_writable (pref->priv->applet->settings, "enable-radar-map"))
 		{
@@ -993,8 +985,6 @@ static void cafeweather_pref_create(CafeWeatherPref* pref)
 		pref->priv->basic_radar_url_btn = ctk_check_button_new_with_mnemonic (_("Use _custom address for radar map"));
 		ctk_widget_show (pref->priv->basic_radar_url_btn);
 		ctk_box_pack_start (CTK_BOX (radar_toggle_hbox), pref->priv->basic_radar_url_btn, FALSE, FALSE, 0);
-
-		g_signal_connect (G_OBJECT (pref->priv->basic_radar_url_btn), "toggled", G_CALLBACK (use_radar_url_toggled), pref);
 
 		if ( ! g_settings_is_writable (pref->priv->applet->settings, "use-custom-radar-url"))
 		{
@@ -1014,7 +1004,7 @@ static void cafeweather_pref_create(CafeWeatherPref* pref)
 		pref->priv->basic_radar_url_entry = ctk_entry_new ();
 		ctk_widget_show (pref->priv->basic_radar_url_entry);
 		ctk_box_pack_start (CTK_BOX (pref->priv->basic_radar_url_hbox), pref->priv->basic_radar_url_entry, TRUE, TRUE, 0);
-		g_signal_connect (G_OBJECT (pref->priv->basic_radar_url_entry), "focus_out_event", G_CALLBACK (radar_url_changed), pref);
+
 		if ( ! g_settings_is_writable (pref->priv->applet->settings, "radar"))
 		{
 			hard_set_sensitive (pref->priv->basic_radar_url_entry, FALSE);
@@ -1029,8 +1019,6 @@ static void cafeweather_pref_create(CafeWeatherPref* pref)
 		{
 			hard_set_sensitive (pref->priv->basic_show_notifications_btn, FALSE);
 		}
-
-		g_signal_connect (G_OBJECT (pref->priv->basic_show_notifications_btn), "toggled", G_CALLBACK (show_notifications_toggled), pref);
     #endif
 
 	frame = create_hig_category (pref_basic_vbox, _("Update"));
@@ -1048,7 +1036,6 @@ static void cafeweather_pref_create(CafeWeatherPref* pref)
 
 	ctk_spin_button_set_numeric (CTK_SPIN_BUTTON (pref->priv->basic_update_spin), TRUE);
 	ctk_spin_button_set_update_policy (CTK_SPIN_BUTTON (pref->priv->basic_update_spin), CTK_UPDATE_IF_VALID);
-	g_signal_connect (G_OBJECT (pref->priv->basic_update_spin), "value_changed", G_CALLBACK (update_interval_changed), pref);
 
 	pref_basic_update_sec_lbl = ctk_label_new (_("minutes"));
 	ctk_widget_show (pref_basic_update_sec_lbl);
@@ -1111,7 +1098,6 @@ static void cafeweather_pref_create(CafeWeatherPref* pref)
 	ctk_tree_view_set_headers_visible (CTK_TREE_VIEW (pref->priv->tree), FALSE);
 
 	selection = ctk_tree_view_get_selection (CTK_TREE_VIEW (pref->priv->tree));
-	g_signal_connect (G_OBJECT (selection), "changed", G_CALLBACK (row_selected_cb), pref);
 
 	ctk_container_add (CTK_CONTAINER (scrolled_window), pref->priv->tree);
 	ctk_widget_show (pref->priv->tree);
@@ -1132,9 +1118,6 @@ static void cafeweather_pref_create(CafeWeatherPref* pref)
 	image = ctk_image_new_from_icon_name ("edit-find", CTK_ICON_SIZE_BUTTON);
 	ctk_button_set_image (CTK_BUTTON (pref->priv->find_next_btn), image);
 
-	g_signal_connect (G_OBJECT (pref->priv->find_next_btn), "clicked", G_CALLBACK (find_next_clicked), pref);
-	g_signal_connect (G_OBJECT (pref->priv->find_entry), "changed", G_CALLBACK (find_entry_changed), pref);
-
 	ctk_container_set_border_width (CTK_CONTAINER (pref_find_hbox), 0);
 	ctk_box_pack_start (CTK_BOX (pref_find_hbox), pref_find_label, FALSE, FALSE, 0);
 	ctk_box_pack_start (CTK_BOX (pref_find_hbox), pref->priv->find_entry, TRUE, TRUE, 0);
@@ -1151,12 +1134,32 @@ static void cafeweather_pref_create(CafeWeatherPref* pref)
 	ctk_widget_show (pref_loc_note_lbl);
 	ctk_notebook_set_tab_label (CTK_NOTEBOOK (pref->priv->notebook), ctk_notebook_get_nth_page (CTK_NOTEBOOK (pref->priv->notebook), 1), pref_loc_note_lbl);
 
-
-	g_signal_connect (G_OBJECT (pref), "response", G_CALLBACK (response_cb), pref);
-
 	cafeweather_pref_set_accessibility (pref);
 	ctk_label_set_mnemonic_widget (CTK_LABEL (pref_basic_update_sec_lbl), pref->priv->basic_update_spin);
 	ctk_label_set_mnemonic_widget (CTK_LABEL (label), pref->priv->basic_radar_url_entry);
+
+	/* Set the initial values */
+	update_dialog (pref);
+
+	/* signals */
+	g_signal_connect (temp_combo,  "changed", G_CALLBACK (temp_combo_changed_cb), pref);
+	g_signal_connect (speed_combo, "changed", G_CALLBACK (speed_combo_changed_cb), pref);
+	g_signal_connect (dist_combo,  "changed", G_CALLBACK (dist_combo_changed_cb), pref);
+	g_signal_connect (pres_combo,  "changed", G_CALLBACK (pres_combo_changed_cb), pref);
+	g_signal_connect (pref->priv->basic_update_btn, "toggled", G_CALLBACK (auto_update_toggled), pref);
+#ifdef RADARMAP
+	g_signal_connect (pref->priv->basic_radar_btn, "toggled", G_CALLBACK (radar_toggled), pref);
+	g_signal_connect (pref->priv->basic_radar_url_btn, "toggled", G_CALLBACK (use_radar_url_toggled), pref);
+	g_signal_connect (pref->priv->basic_radar_url_entry, "focus_out_event", G_CALLBACK (radar_url_changed), pref);
+#endif /* RADARMAP */
+#ifdef HAVE_LIBNOTIFY
+	g_signal_connect (pref->priv->basic_show_notifications_btn, "toggled", G_CALLBACK (show_notifications_toggled), pref);
+#endif /* HAVE_LIBNOTIFY */
+	g_signal_connect (pref->priv->find_next_btn, "clicked", G_CALLBACK (find_next_clicked), pref);
+	g_signal_connect (pref->priv->find_entry, "changed", G_CALLBACK (find_entry_changed), pref);
+	g_signal_connect (selection, "changed", G_CALLBACK (row_selected_cb), pref);
+	g_signal_connect (pref->priv->basic_update_spin, "value-changed", G_CALLBACK (update_interval_changed), pref);
+	g_signal_connect (pref, "response", G_CALLBACK (response_cb), pref);
 }
 
 
@@ -1207,7 +1210,6 @@ static GObject* cafeweather_pref_constructor(GType type, guint n_construct_param
     self = CAFEWEATHER_PREF(object);
 
     cafeweather_pref_create(self);
-    update_dialog(self);
 
     return object;
 }
