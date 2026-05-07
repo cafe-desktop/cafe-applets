@@ -535,6 +535,15 @@ void cafeweather_update (CafeWeatherApplet *gw_applet)
 {
     WeatherPrefs prefs;
 
+    if (gw_applet->cafeweather_pref.location == NULL ||
+        g_strcmp0(gw_applet->cafeweather_pref.location->code, "DEFAULT_CODE") == 0 ||
+        g_strcmp0(gw_applet->cafeweather_pref.location->name, "DEFAULT_LOCATION") == 0) {
+
+        ctk_widget_set_tooltip_text (CTK_WIDGET(gw_applet->applet),
+                                     _("No location configured."));
+        return;
+    }
+
     ctk_widget_set_tooltip_text (CTK_WIDGET(gw_applet->applet),  _("Updating..."));
 
     /* Set preferred forecast type */
