@@ -497,9 +497,10 @@ update_finish (WeatherInfo *info, gpointer data)
 				 g_warning ("%s", error->message);
 				 g_error_free (error);
 			 }
-		   	     
-		   	 g_free (message);
-		   	 g_free (detail);
+
+			 g_object_unref (n);
+			 g_free (message);
+			 g_free (detail);
 		    }
         }
 #endif
