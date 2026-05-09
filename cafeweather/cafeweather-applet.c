@@ -147,7 +147,7 @@ place_widgets (CafeWeatherApplet *gw_applet)
     if ((gw_applet->cafeweather_info) && ((icon_name = weather_info_get_icon_name (gw_applet->cafeweather_info)) != NULL)) {
         gw_applet->image = ctk_image_new_from_icon_name (icon_name, CTK_ICON_SIZE_BUTTON);
     } else {
-        gw_applet->image = ctk_image_new_from_icon_name ("weather-storm", CTK_ICON_SIZE_BUTTON);
+        gw_applet->image = ctk_image_new_from_icon_name ("weather-severe-alert", CTK_ICON_SIZE_BUTTON);
     }
     ctk_widget_show (gw_applet->image);
     ctk_widget_get_preferred_size (gw_applet->image, &req, NULL);
