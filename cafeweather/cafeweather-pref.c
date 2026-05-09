@@ -200,6 +200,18 @@ static gboolean update_dialog(CafeWeatherPref* pref)
     return TRUE;
 }
 
+static gboolean
+location_change_timeout_cb (gpointer user_data)
+{
+    CafeWeatherApplet *gw_applet = user_data;
+
+    gw_applet->location_change_timeout = 0;
+
+    cafeweather_update (gw_applet);
+
+    return G_SOURCE_REMOVE;
+}
+
 static void row_selected_cb(CtkTreeSelection* selection, CafeWeatherPref* pref)
 {
 	CafeWeatherApplet* gw_applet = pref->priv->applet;
@@ -232,7 +244,11 @@ static void row_selected_cb(CtkTreeSelection* selection, CafeWeatherPref* pref)
 		weather_location_new (loc->name, loc->code, loc->zone, loc->radar, loc->coordinates,
 			NULL, NULL);
 
-	cafeweather_update(gw_applet);
+	if (gw_applet->location_change_timeout != 0) {
+		g_source_remove (gw_applet->location_change_timeout);
+	}
+
+	gw_applet->location_change_timeout = g_timeout_add_seconds (1, location_change_timeout_cb, gw_applet);
 }
 
 static gboolean compare_location(CtkTreeModel* model, CtkTreePath* path, CtkTreeIter* iter, gpointer user_data)

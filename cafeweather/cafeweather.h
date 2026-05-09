@@ -42,6 +42,7 @@ typedef struct _CafeWeatherApplet {
 
 	/* preferences  */
 	CafeWeatherPrefs cafeweather_pref;
+	guint location_change_timeout;
 
 	CtkWidget* pref_dialog;
 
