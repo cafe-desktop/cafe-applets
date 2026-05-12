@@ -337,6 +337,7 @@ void cafeweather_applet_create (CafeWeatherApplet *gw_applet)
     GNetworkMonitor*monitor;
 
     gw_applet->cafeweather_pref.location = NULL;
+    gw_applet->manual_location_update = FALSE;
     gw_applet->cafeweather_pref.show_notifications = FALSE;
     gw_applet->cafeweather_pref.update_interval = 1800;
     gw_applet->cafeweather_pref.update_enabled = TRUE;
@@ -515,12 +516,23 @@ update_finish (WeatherInfo *info, gpointer data)
             /* update applet */
             place_widgets (gw_applet);
         } else {
-            /* there has been an error during retrival
-             * just update the fault counter
-             */
-             gw_fault_counter++;
+            /* there has been an error during retrival */
+
+            /* update the fault counter */
+            gw_fault_counter++;
+
+            /* update applet changing location in preferences with error */
+            if (gw_applet->manual_location_update) {
+                gw_fault_counter = 0;
+
+                if (gw_applet->details_dialog)
+                    cafeweather_dialog_update (CAFEWEATHER_DIALOG (gw_applet->details_dialog));
+
+                place_widgets (gw_applet);
+            }
         }
     }
+    gw_applet->manual_location_update = FALSE;
 }
 
 gint suncalc_timeout_cb (gpointer data)

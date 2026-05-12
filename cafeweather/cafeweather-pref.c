@@ -207,6 +207,8 @@ location_change_timeout_cb (gpointer user_data)
 
     gw_applet->location_change_timeout = 0;
 
+    gw_applet->manual_location_update = TRUE;
+
     cafeweather_update (gw_applet);
 
     return G_SOURCE_REMOVE;
