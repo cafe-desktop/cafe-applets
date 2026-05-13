@@ -424,6 +424,9 @@ update_finish (WeatherInfo *info, gpointer data)
 #endif
     CafeWeatherApplet *gw_applet = (CafeWeatherApplet *)data;
 
+    if (info != gw_applet->cafeweather_info)
+        return;
+
     /* Update timer */
     if (gw_applet->timeout_tag > 0)
         g_source_remove(gw_applet->timeout_tag);
