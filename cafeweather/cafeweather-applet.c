@@ -41,6 +41,21 @@
 
 #define MAX_CONSECUTIVE_FAULTS (3)
 
+static gboolean
+location_is_configured (CafeWeatherApplet *gw_applet)
+{
+    if (gw_applet->cafeweather_pref.location == NULL ||
+        g_strcmp0 (gw_applet->cafeweather_pref.location->code, "DEFAULT_CODE") == 0 ||
+        g_strcmp0 (gw_applet->cafeweather_pref.location->name, "DEFAULT_LOCATION") == 0) {
+
+        ctk_widget_set_tooltip_text (CTK_WIDGET(gw_applet->applet),
+                                     _("No location configured."));
+        return FALSE;
+    }
+
+    return TRUE;
+}
+
 static void about_cb (CtkAction         *action G_GNUC_UNUSED,
 		      CafeWeatherApplet *gw_applet)
 {
@@ -86,6 +101,10 @@ static void pref_cb (CtkAction         *action G_GNUC_UNUSED,
 static void details_cb (CtkAction         *action G_GNUC_UNUSED,
 			CafeWeatherApplet *gw_applet)
 {
+   if (!location_is_configured (gw_applet)) {
+       return;
+   }
+
    if (gw_applet->details_dialog) {
 	ctk_window_present (CTK_WINDOW (gw_applet->details_dialog));
    } else {
@@ -331,10 +350,11 @@ applet_destroy (CtkWidget         *widget G_GNUC_UNUSED,
 
 void cafeweather_applet_create (CafeWeatherApplet *gw_applet)
 {
-    CtkActionGroup *action_group;
-    gchar          *ui_path;
-    AtkObject      *atk_obj;
-    GNetworkMonitor*monitor;
+    CtkActionGroup  *action_group;
+    CtkAction       *details_action;
+    gchar           *ui_path;
+    AtkObject       *atk_obj;
+    GNetworkMonitor *monitor;
 
     gw_applet->cafeweather_pref.location = NULL;
     gw_applet->manual_location_update = FALSE;
@@ -391,6 +411,11 @@ void cafeweather_applet_create (CafeWeatherApplet *gw_applet)
     cafe_panel_applet_setup_menu_from_file (gw_applet->applet,
 				       ui_path, action_group);
     g_free (ui_path);
+
+    /* disable 'Details' action when no location is configured */
+    details_action = ctk_action_group_get_action (action_group, "Details");
+    g_object_set_data (G_OBJECT (gw_applet->applet), "details-action", details_action);
+    ctk_action_set_sensitive (details_action, location_is_configured (gw_applet));
 
     if (cafe_panel_applet_get_locked_down (gw_applet->applet)) {
 	    CtkAction *action;
@@ -549,15 +574,15 @@ gint suncalc_timeout_cb (gpointer data)
 void cafeweather_update (CafeWeatherApplet *gw_applet)
 {
     WeatherPrefs prefs;
+    CtkAction   *details_action;
+    gboolean     configured;
 
-    if (gw_applet->cafeweather_pref.location == NULL ||
-        g_strcmp0(gw_applet->cafeweather_pref.location->code, "DEFAULT_CODE") == 0 ||
-        g_strcmp0(gw_applet->cafeweather_pref.location->name, "DEFAULT_LOCATION") == 0) {
+    details_action = g_object_get_data (G_OBJECT(gw_applet->applet), "details-action");
+    configured = location_is_configured (gw_applet);
+    ctk_action_set_sensitive (details_action, configured);
 
-        ctk_widget_set_tooltip_text (CTK_WIDGET(gw_applet->applet),
-                                     _("No location configured."));
+    if (!configured)
         return;
-    }
 
     ctk_widget_set_tooltip_text (CTK_WIDGET(gw_applet->applet),  _("Updating..."));
 
