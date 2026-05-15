@@ -124,7 +124,7 @@ static void update_cb (CtkAction         *action G_GNUC_UNUSED,
 
 
 static const CtkActionEntry weather_applet_menu_actions [] = {
-	{ "Details", NULL, N_("_Details"),
+	{ "Details", "text-x-generic", N_("_Details"),
 	  NULL, NULL,
 	  G_CALLBACK (details_cb) },
 	{ "Update", "view-refresh", N_("_Update"),
