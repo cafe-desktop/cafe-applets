@@ -352,9 +352,11 @@ void cafeweather_applet_create (CafeWeatherApplet *gw_applet)
 {
     CtkActionGroup  *action_group;
     CtkAction       *details_action;
+    CtkAction       *update_action;
     gchar           *ui_path;
     AtkObject       *atk_obj;
     GNetworkMonitor *monitor;
+    gboolean         configured;
 
     gw_applet->cafeweather_pref.location = NULL;
     gw_applet->manual_location_update = FALSE;
@@ -412,10 +414,17 @@ void cafeweather_applet_create (CafeWeatherApplet *gw_applet)
 				       ui_path, action_group);
     g_free (ui_path);
 
+    configured = location_is_configured (gw_applet);
+
     /* disable 'Details' action when no location is configured */
     details_action = ctk_action_group_get_action (action_group, "Details");
     g_object_set_data (G_OBJECT (gw_applet->applet), "details-action", details_action);
-    ctk_action_set_sensitive (details_action, location_is_configured (gw_applet));
+    ctk_action_set_sensitive (details_action, configured);
+
+    /* disable 'Update' action when no location is configured */
+    update_action = ctk_action_group_get_action (action_group, "Update");
+    g_object_set_data (G_OBJECT (gw_applet->applet), "update-action", update_action);
+    ctk_action_set_sensitive (update_action, configured);
 
     if (cafe_panel_applet_get_locked_down (gw_applet->applet)) {
 	    CtkAction *action;
@@ -575,11 +584,16 @@ void cafeweather_update (CafeWeatherApplet *gw_applet)
 {
     WeatherPrefs prefs;
     CtkAction   *details_action;
+    CtkAction   *update_action;
     gboolean     configured;
 
-    details_action = g_object_get_data (G_OBJECT(gw_applet->applet), "details-action");
     configured = location_is_configured (gw_applet);
+
+    details_action = g_object_get_data (G_OBJECT(gw_applet->applet), "details-action");
     ctk_action_set_sensitive (details_action, configured);
+
+    update_action = g_object_get_data (G_OBJECT(gw_applet->applet), "update-action");
+    ctk_action_set_sensitive (update_action, configured);
 
     if (!configured)
         return;
