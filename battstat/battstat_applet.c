@@ -224,6 +224,7 @@ battery_full_notify (CtkWidget *applet)
 #ifdef HAVE_LIBNOTIFY
 	GError *error = NULL;
 	CdkPixbuf *icon;
+	GdkPixbuf *gdk_icon;
 	gboolean result;
 
 	if (!notify_is_initted () && !notify_init (_("Battery Monitor")))
@@ -237,10 +238,52 @@ battery_full_notify (CtkWidget *applet)
 			CTK_ICON_LOOKUP_USE_BUILTIN,
 			NULL);
 
+	gdk_icon = NULL;
+
+	if (icon != NULL) {
+		int width, height, rowstride, n_channels, bits_per_sample;
+		gboolean has_alpha;
+		guchar *src_pixels;
+
+		g_object_get (icon,
+			      "width", &width,
+			      "height", &height,
+			      "rowstride", &rowstride,
+			      "n-channels", &n_channels,
+			      "has-alpha", &has_alpha,
+			      "bits-per-sample", &bits_per_sample,
+			      "pixels", &src_pixels,
+			      NULL);
+
+		gdk_icon = gdk_pixbuf_new (GDK_COLORSPACE_RGB,
+					   has_alpha,
+					   bits_per_sample,
+					   width, height);
+
+		if (gdk_icon != NULL) {
+			int dest_rowstride, bytes_per_row;
+			guchar *dest_pixels;
+
+			dest_rowstride = gdk_pixbuf_get_rowstride (gdk_icon);
+			bytes_per_row = width * n_channels;
+			dest_pixels = gdk_pixbuf_get_pixels (gdk_icon);
+
+			for (int y = 0; y < height; y++) {
+				memcpy (dest_pixels + y * dest_rowstride,
+				        src_pixels + y * rowstride,
+				        bytes_per_row);
+			}
+		}
+
+		g_object_unref (icon);
+	}
+
 	NotifyNotification *n = notify_notification_new (_("Your battery is now fully recharged"), "", /* "battery" */ NULL);
 
-	notify_notification_set_image_from_pixbuf (n, icon);
-	g_object_unref (icon);
+	if (gdk_icon != NULL) {
+		notify_notification_set_image_from_pixbuf (n, gdk_icon);
+		g_object_unref (gdk_icon);
+	}
 
 	result = notify_notification_show (n, &error);
 
