@@ -74,7 +74,7 @@ requires:
 
     # required for ctksourceview
     - libfribidi-dev
-    - libgdk-pixbuf2.0-doc
+    - libcdk-pixbuf2.0-doc
     - libpango1.0-doc
     - xauth
     - xvfb

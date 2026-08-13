@@ -372,8 +372,8 @@ static GdkPixbuf* accessx_status_applet_get_glyph_pixbuf(CtkWidget* widget, GdkP
 	PangoContext* pango_context;
 	PangoFontDescription* font_description;
 	static gint font_size = 0;
-	gint w = gdk_pixbuf_get_width(base);
-	gint h = gdk_pixbuf_get_height(base);
+	gint w = cdk_pixbuf_get_width(base);
+	gint h = cdk_pixbuf_get_height(base);
 	gint icon_scale = 2;
 	cairo_t *cr;
 
@@ -401,7 +401,7 @@ static GdkPixbuf* accessx_status_applet_get_glyph_pixbuf(CtkWidget* widget, GdkP
 	cairo_destroy (cr);
 
 	g_object_unref(layout);
-	glyph_pixbuf = gdk_pixbuf_get_from_surface (surface, 0, 0, w, h);
+	glyph_pixbuf = cdk_pixbuf_get_from_surface (surface, 0, 0, w, h);
 	cairo_surface_destroy (surface);
 	return glyph_pixbuf;
 }
@@ -444,7 +444,7 @@ static cairo_surface_t* accessx_status_applet_altgraph_image(AccessxStatusApplet
 	}
 
 	icon_base = ctk_icon_theme_load_icon_for_scale (icon_theme, icon_name, icon_size, icon_scale, 0, NULL);
-	pixbuf = gdk_pixbuf_copy(icon_base);
+	pixbuf = cdk_pixbuf_copy(icon_base);
 	g_object_unref(icon_base);
 	/*
 	 * should be N_("ae"));
@@ -456,7 +456,7 @@ static cairo_surface_t* accessx_status_applet_altgraph_image(AccessxStatusApplet
 	 * in your locale.
 	 */
 	glyph_pixbuf = accessx_status_applet_get_glyph_pixbuf(CTK_WIDGET(sapplet->applet), pixbuf, &fg, ("æ"));
-	gdk_pixbuf_composite(glyph_pixbuf, pixbuf, 0, 0, gdk_pixbuf_get_width(glyph_pixbuf), gdk_pixbuf_get_height(glyph_pixbuf), 0., 0., 1.0, 1.0, GDK_INTERP_NEAREST, alpha);
+	cdk_pixbuf_composite(glyph_pixbuf, pixbuf, 0, 0, cdk_pixbuf_get_width(glyph_pixbuf), cdk_pixbuf_get_height(glyph_pixbuf), 0., 0., 1.0, 1.0, GDK_INTERP_NEAREST, alpha);
 	g_object_unref(glyph_pixbuf);
 
 	surface = cdk_cairo_surface_create_from_pixbuf (pixbuf, icon_scale, NULL);
@@ -510,7 +510,7 @@ static cairo_surface_t* accessx_status_applet_slowkeys_image(AccessxStatusApplet
 		gchar* glyphstring = N_("a");
 		gint alpha;
 		tmp_pixbuf = ret_pixbuf;
-		ret_pixbuf = gdk_pixbuf_copy(tmp_pixbuf);
+		ret_pixbuf = cdk_pixbuf_copy(tmp_pixbuf);
 		g_object_unref(tmp_pixbuf);
 
 		window = ctk_widget_get_window(CTK_WIDGET(sapplet->applet));
@@ -544,7 +544,7 @@ static cairo_surface_t* accessx_status_applet_slowkeys_image(AccessxStatusApplet
 		}
 
 		glyph_pixbuf = accessx_status_applet_get_glyph_pixbuf(CTK_WIDGET(sapplet->applet), ret_pixbuf, &fg, glyphstring);
-		gdk_pixbuf_composite(glyph_pixbuf, ret_pixbuf, 0, 0, gdk_pixbuf_get_width(glyph_pixbuf), gdk_pixbuf_get_height(glyph_pixbuf), 0., 0., 1.0, 1.0, GDK_INTERP_NEAREST, alpha);
+		cdk_pixbuf_composite(glyph_pixbuf, ret_pixbuf, 0, 0, cdk_pixbuf_get_width(glyph_pixbuf), cdk_pixbuf_get_height(glyph_pixbuf), 0., 0., 1.0, 1.0, GDK_INTERP_NEAREST, alpha);
 		g_object_unref(glyph_pixbuf);
 	}
 
@@ -608,11 +608,11 @@ static cairo_surface_t* accessx_status_applet_bouncekeys_image(AccessxStatusAppl
 	if (tmp_pixbuf)
 	{
 		GdkPixbuf* glyph_pixbuf;
-		icon_base = gdk_pixbuf_copy(tmp_pixbuf);
+		icon_base = cdk_pixbuf_copy(tmp_pixbuf);
 		g_object_unref(tmp_pixbuf);
 		glyph_pixbuf = accessx_status_applet_get_glyph_pixbuf(CTK_WIDGET(sapplet->applet), icon_base, &fg, glyphstring);
-		gdk_pixbuf_composite(glyph_pixbuf, icon_base, 2, 2, gdk_pixbuf_get_width(glyph_pixbuf) - 2, gdk_pixbuf_get_height(glyph_pixbuf) - 2, -2., -2., 1.0, 1.0, GDK_INTERP_NEAREST, 96);
-		gdk_pixbuf_composite(glyph_pixbuf, icon_base, 1, 1, gdk_pixbuf_get_width(glyph_pixbuf) - 1, gdk_pixbuf_get_height(glyph_pixbuf) - 1, 1., 1., 1.0, 1.0, GDK_INTERP_NEAREST, alpha);
+		cdk_pixbuf_composite(glyph_pixbuf, icon_base, 2, 2, cdk_pixbuf_get_width(glyph_pixbuf) - 2, cdk_pixbuf_get_height(glyph_pixbuf) - 2, -2., -2., 1.0, 1.0, GDK_INTERP_NEAREST, 96);
+		cdk_pixbuf_composite(glyph_pixbuf, icon_base, 1, 1, cdk_pixbuf_get_width(glyph_pixbuf) - 1, cdk_pixbuf_get_height(glyph_pixbuf) - 1, 1., 1., 1.0, 1.0, GDK_INTERP_NEAREST, alpha);
 
 		g_object_unref(glyph_pixbuf);
 	}
@@ -632,7 +632,7 @@ static cairo_surface_t* accessx_status_applet_mousekeys_image(AccessxStatusApple
 	gint icon_size = cafe_panel_applet_get_size(sapplet->applet) - ICON_PADDING;
 	gint icon_scale = ctk_widget_get_scale_factor(CTK_WIDGET(sapplet->applet));
 	tmp_pixbuf = ctk_icon_theme_load_icon_for_scale (icon_theme, MOUSEKEYS_BASE_ICON, icon_size, icon_scale, 0, NULL);
-	mouse_pixbuf = gdk_pixbuf_copy(tmp_pixbuf);
+	mouse_pixbuf = cdk_pixbuf_copy(tmp_pixbuf);
 	g_object_unref(tmp_pixbuf);
 	/* composite in the buttons */
 	if (mouse_pixbuf && event && event->ptr_buttons)
@@ -644,7 +644,7 @@ static cairo_surface_t* accessx_status_applet_mousekeys_image(AccessxStatusApple
 			if (event->ptr_buttons & button_icons[i].mask)
 			{
 				button_pixbuf = ctk_icon_theme_load_icon_for_scale (icon_theme, button_icons[i].icon_name, icon_size, icon_scale, 0, NULL);
-				gdk_pixbuf_composite(button_pixbuf, mouse_pixbuf, 0, 0, gdk_pixbuf_get_width(button_pixbuf), gdk_pixbuf_get_height(button_pixbuf), 0.0, 0.0, 1.0, 1.0, GDK_INTERP_NEAREST, 255);
+				cdk_pixbuf_composite(button_pixbuf, mouse_pixbuf, 0, 0, cdk_pixbuf_get_width(button_pixbuf), cdk_pixbuf_get_height(button_pixbuf), 0.0, 0.0, 1.0, 1.0, GDK_INTERP_NEAREST, 255);
 				g_object_unref(button_pixbuf);
 			}
 		}
@@ -668,7 +668,7 @@ static cairo_surface_t* accessx_status_applet_mousekeys_image(AccessxStatusApple
 	}
 	dot_pixbuf = ctk_icon_theme_load_icon_for_scale (icon_theme, which_dot, icon_size, icon_scale, 0, NULL);
 
-	gdk_pixbuf_composite(dot_pixbuf, mouse_pixbuf, 0, 0, gdk_pixbuf_get_width(dot_pixbuf), gdk_pixbuf_get_height(dot_pixbuf), 0.0, 0.0, 1.0, 1.0, GDK_INTERP_NEAREST, 255);
+	cdk_pixbuf_composite(dot_pixbuf, mouse_pixbuf, 0, 0, cdk_pixbuf_get_width(dot_pixbuf), cdk_pixbuf_get_height(dot_pixbuf), 0.0, 0.0, 1.0, 1.0, GDK_INTERP_NEAREST, 255);
 
 	surface = cdk_cairo_surface_create_from_pixbuf (mouse_pixbuf, icon_scale, NULL);
 	g_object_unref(mouse_pixbuf);
