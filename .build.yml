@@ -74,14 +74,13 @@ requires:
 
     # required for ctksourceview
     - libfribidi-dev
-    - libcdk-pixbuf2.0-doc
     - libpango1.0-doc
     - xauth
     - xvfb
 
 before_scripts:
   - ./html-cppcheck
-  - ./debrepo-install 'libctk-3-dev gir1.2-ctk-3.0 libctk-3-common libctk-3-0 libctk-3-doc'
+  - ./debrepo-install 'libctk-3-dev gir1.2-ctk-3.0 libctk-3-common libctk-3-0 libctk-3-doc libcdk-pixbuf2.0-doc'
   - ./install-from-git https://github.com/cafe-desktop/ctksourceview master meson
   - ./install-from-git https://github.com/cafe-desktop/libvnck master meson
   - ./install-from-git https://github.com/cafe-desktop/cafe-common master
