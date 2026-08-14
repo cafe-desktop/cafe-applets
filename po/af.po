@@ -10,9 +10,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: cafe-applets 2.0.0\n"
+"Project-Id-Version: cafe-applets 2.1.0\n"
 "Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
-"POT-Creation-Date: 2026-03-14 19:05+0100\n"
+"POT-Creation-Date: 2026-08-14 09:39+0200\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: nato323 <nato323@gmail.com>, 2020\n"
 "Language-Team: Afrikaans (https://www.transifex.com/cafe/teams/13566/af/)\n"
@@ -28,7 +28,7 @@ msgstr ""
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
 
-#: accessx-status/applet.c:89 battstat/battstat_applet.c:824
+#: accessx-status/applet.c:89 battstat/battstat_applet.c:867
 #: charpick/charpick.c:581 cpufreq/src/cpufreq-applet.c:467
 #: drivemount/drivemount.c:112 geyes/geyes.c:168
 #: cafeweather/cafeweather-about.c:44 multiload/main.c:50
@@ -37,7 +37,7 @@ msgstr ""
 msgid "MATE Documentation Team"
 msgstr ""
 
-#: accessx-status/applet.c:90 battstat/battstat_applet.c:825
+#: accessx-status/applet.c:90 battstat/battstat_applet.c:868
 #: charpick/charpick.c:582 cpufreq/src/cpufreq-applet.c:468
 #: drivemount/drivemount.c:113 geyes/geyes.c:169
 #: cafeweather/cafeweather-about.c:45 multiload/main.c:51
@@ -61,7 +61,7 @@ msgid ""
 "Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: accessx-status/applet.c:109 battstat/battstat_applet.c:851
+#: accessx-status/applet.c:109 battstat/battstat_applet.c:894
 #: charpick/charpick.c:603 command/command.c:133
 #: cpufreq/src/cpufreq-applet.c:493 drivemount/drivemount.c:132
 #: geyes/geyes.c:189 cafeweather/cafeweather-about.c:64 multiload/main.c:72
@@ -96,7 +96,7 @@ msgstr "Voor_keure vir toeganklikheid"
 #: accessx-status/applet.c:189 battstat/battstat_applet.c:63
 #: charpick/charpick.c:685 cpufreq/src/cpufreq-applet.c:119
 #: drivemount/drivemount.c:170 geyes/geyes.c:363
-#: cafeweather/cafeweather-applet.c:117 multiload/main.c:500
+#: cafeweather/cafeweather-applet.c:136 multiload/main.c:500
 #: stickynotes/sticky-notes-preferences.ui:51
 #: stickynotes/sticky-notes-properties.ui:37
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
@@ -106,7 +106,7 @@ msgstr "_Hulp"
 #: accessx-status/applet.c:190 battstat/battstat_applet.c:66
 #: charpick/charpick.c:688 command/command.c:84
 #: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:173
-#: geyes/geyes.c:366 cafeweather/cafeweather-applet.c:120 multiload/main.c:503
+#: geyes/geyes.c:366 cafeweather/cafeweather-applet.c:139 multiload/main.c:503
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
 #: trashapplet/src/trashapplet.c:77
 msgid "_About"
@@ -162,7 +162,7 @@ msgstr "Vertoon die status van die sleutelbordtoeganklikheidsvoorkeure"
 
 #: battstat/battstat_applet.c:60 charpick/charpick.c:682 command/command.c:83
 #: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:360
-#: cafeweather/cafeweather-applet.c:114 multiload/main.c:494
+#: cafeweather/cafeweather-applet.c:133 multiload/main.c:494
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
 msgid "_Preferences"
 msgstr "_Voorkeure"
@@ -240,24 +240,24 @@ msgstr[1] ""
 msgid "%d %s %d %s until charged (%d%%)"
 msgstr "%d %s %d %s tot gelaai (%d%%)"
 
-#: battstat/battstat_applet.c:229
+#: battstat/battstat_applet.c:230
 msgid "Battery Monitor"
 msgstr "Batterymonitor"
 
-#: battstat/battstat_applet.c:240 battstat/battstat_applet.c:300
+#: battstat/battstat_applet.c:281 battstat/battstat_applet.c:343
 msgid "Your battery is now fully recharged"
 msgstr "U battery is nou ten volle gelaai"
 
-#: battstat/battstat_applet.c:275 battstat/battstat_applet.c:432
+#: battstat/battstat_applet.c:318 battstat/battstat_applet.c:475
 msgid "Battery Notice"
 msgstr "Batterykennisgewing"
 
-#: battstat/battstat_applet.c:377
+#: battstat/battstat_applet.c:420
 #, c-format
 msgid "You have %d%% of your total battery capacity remaining."
 msgstr "Daar is %d%% van die totale batterykapasiteit beskikbaar."
 
-#: battstat/battstat_applet.c:383
+#: battstat/battstat_applet.c:426
 #, c-format
 msgid ""
 "You have %d minute of battery power remaining (%d%% of the total capacity)."
@@ -266,7 +266,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: battstat/battstat_applet.c:395
+#: battstat/battstat_applet.c:438
 msgid ""
 "To avoid losing your work:\n"
 " • plug your laptop into external power, or\n"
@@ -276,7 +276,7 @@ msgstr ""
 " • prop u skootrekenaar by eksterne krag in, of\n"
 " • stoor oop dokumente en sluit u skootrekenaar af."
 
-#: battstat/battstat_applet.c:403
+#: battstat/battstat_applet.c:446
 msgid ""
 "To avoid losing your work:\n"
 " • suspend your laptop to save power,\n"
@@ -288,25 +288,25 @@ msgstr ""
 " • prop u skootrekenaar by eksterne krag in, of\n"
 " • stoor oop dokumente en sluit u skootrekenaar af."
 
-#: battstat/battstat_applet.c:411
+#: battstat/battstat_applet.c:454
 msgid "Your battery is running low"
 msgstr "Die battery is besig om pap te word"
 
-#: battstat/battstat_applet.c:508
+#: battstat/battstat_applet.c:551
 msgid "No battery present"
 msgstr "Geen battery teenwoordig nie"
 
-#: battstat/battstat_applet.c:511
+#: battstat/battstat_applet.c:554
 msgid "Battery status unknown"
 msgstr "Batterystatus onbekend"
 
-#: battstat/battstat_applet.c:540
+#: battstat/battstat_applet.c:583
 msgid "N/A"
 msgstr "NVT"
 
-#: battstat/battstat_applet.c:785 drivemount/drivemount.c:158 geyes/geyes.c:348
-#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
-#: cafeweather/cafeweather-pref.c:753
+#: battstat/battstat_applet.c:828 drivemount/drivemount.c:158 geyes/geyes.c:348
+#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:78
+#: cafeweather/cafeweather-pref.c:771
 #: stickynotes/stickynotes_applet_callbacks.c:359
 #: stickynotes/stickynotes_applet_callbacks.c:563
 #: trashapplet/src/trashapplet.c:399
@@ -314,24 +314,24 @@ msgstr "NVT"
 msgid "There was an error displaying help: %s"
 msgstr "Daar was 'n fout met die vertoon van die hulp: %s"
 
-#: battstat/battstat_applet.c:830
+#: battstat/battstat_applet.c:873
 msgid "This utility shows the status of your laptop battery."
 msgstr ""
 "Hierdie nutsprogram vertoon die status van die skootrekenaar se battery"
 
-#: battstat/battstat_applet.c:832
+#: battstat/battstat_applet.c:875
 msgid "upower backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:833
+#: battstat/battstat_applet.c:876
 msgid "Legacy backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:842
+#: battstat/battstat_applet.c:885
 msgid "About Battery Charge Monitor"
 msgstr ""
 
-#: battstat/battstat_applet.c:844
+#: battstat/battstat_applet.c:887
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
@@ -339,12 +339,12 @@ msgid ""
 "Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: battstat/battstat_applet.c:1122 battstat/battstat_applet.c:1175
+#: battstat/battstat_applet.c:1165 battstat/battstat_applet.c:1218
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Battery Charge Monitor"
 msgstr "Batterylaaimonitor"
 
-#: battstat/battstat_applet.c:1176
+#: battstat/battstat_applet.c:1219
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Monitor a laptop's remaining power"
 msgstr "Monitor 'n skootrekenaar se oorblywende krag"
@@ -967,28 +967,36 @@ msgstr ""
 msgid "A panel application for monitoring local weather conditions."
 msgstr "'n Paneeltoepassing om plaaslike weerstoestande te monitor."
 
-#: cafeweather/cafeweather-applet.c:108
+#: cafeweather/cafeweather-applet.c:52
+msgid "No location configured."
+msgstr ""
+
+#: cafeweather/cafeweather-applet.c:127
 msgid "_Details"
 msgstr "_Detail"
 
-#: cafeweather/cafeweather-applet.c:111 cafeweather/cafeweather-dialog.c:186
+#: cafeweather/cafeweather-applet.c:130 cafeweather/cafeweather-dialog.c:186
 msgid "_Update"
 msgstr "_Bywerk"
 
-#: cafeweather/cafeweather-applet.c:356
+#: cafeweather/cafeweather-applet.c:182
+msgid "?"
+msgstr ""
+
+#: cafeweather/cafeweather-applet.c:378
 #: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Weather Report"
 msgstr "Weerberig"
 
-#: cafeweather/cafeweather-applet.c:374 cafeweather/cafeweather-applet.c:378
+#: cafeweather/cafeweather-applet.c:396 cafeweather/cafeweather-applet.c:400
 msgid "CAFE Weather"
 msgstr "CAFE-weer"
 
-#: cafeweather/cafeweather-applet.c:478
+#: cafeweather/cafeweather-applet.c:509
 msgid "Weather Forecast"
 msgstr "Weervoorspelling"
 
-#: cafeweather/cafeweather-applet.c:490
+#: cafeweather/cafeweather-applet.c:521
 #, c-format
 msgid ""
 "City: %s\n"
@@ -999,7 +1007,7 @@ msgstr ""
 "Lug: %s\n"
 "Temperatuur: %s"
 
-#: cafeweather/cafeweather-applet.c:539
+#: cafeweather/cafeweather-applet.c:601
 msgid "Updating..."
 msgstr "Dateer tans op..."
 
@@ -1119,150 +1127,150 @@ msgstr "Adresinskrywing"
 msgid "Enter the URL"
 msgstr "Tik die URL in"
 
-#: cafeweather/cafeweather-pref.c:283
+#: cafeweather/cafeweather-pref.c:301
 msgid ""
 "Failed to load the Locations XML database.  Please report this as a bug."
 msgstr ""
 "Kon nie daarin slaag om die XML-databasis met liggings te laai nie.  "
 "Rapporteer dit asb as 'n fout."
 
-#: cafeweather/cafeweather-pref.c:813
+#: cafeweather/cafeweather-pref.c:831
 msgid "Weather Preferences"
 msgstr "Weervoorkeure"
 
-#: cafeweather/cafeweather-pref.c:837 cafeweather/cafeweather-pref.c:1040
+#: cafeweather/cafeweather-pref.c:855 cafeweather/cafeweather-pref.c:1046
 msgid "_Automatically update every:"
 msgstr "_Werk outomaties by elke:"
 
-#: cafeweather/cafeweather-pref.c:853
+#: cafeweather/cafeweather-pref.c:870
 msgid "_Temperature unit:"
 msgstr "_Temperatuureenheid:"
 
-#: cafeweather/cafeweather-pref.c:863
+#: cafeweather/cafeweather-pref.c:880
 msgid "Kelvin"
 msgstr "Kelvin"
 
-#: cafeweather/cafeweather-pref.c:865
+#: cafeweather/cafeweather-pref.c:882
 msgid "Celsius"
 msgstr "Celsius"
 
-#: cafeweather/cafeweather-pref.c:866
+#: cafeweather/cafeweather-pref.c:883
 msgid "Fahrenheit"
 msgstr "Fahrenheit"
 
-#: cafeweather/cafeweather-pref.c:875
+#: cafeweather/cafeweather-pref.c:892
 msgid "_Wind speed unit:"
 msgstr "Eenheid vir _windsnelheid:"
 
-#: cafeweather/cafeweather-pref.c:886
+#: cafeweather/cafeweather-pref.c:903
 msgid "m/s"
 msgstr "m/s"
 
-#: cafeweather/cafeweather-pref.c:888
+#: cafeweather/cafeweather-pref.c:905
 msgid "km/h"
 msgstr "km/h"
 
-#: cafeweather/cafeweather-pref.c:890
+#: cafeweather/cafeweather-pref.c:907
 msgid "mph"
 msgstr "myl/h"
 
-#: cafeweather/cafeweather-pref.c:892
+#: cafeweather/cafeweather-pref.c:909
 msgid "knots"
 msgstr "knope"
 
-#: cafeweather/cafeweather-pref.c:893
+#: cafeweather/cafeweather-pref.c:910
 msgid "Beaufort scale"
 msgstr "Beaufort-skaal"
 
-#: cafeweather/cafeweather-pref.c:902
+#: cafeweather/cafeweather-pref.c:919
 msgid "_Pressure unit:"
 msgstr "_Lugdrukeenheid:"
 
-#: cafeweather/cafeweather-pref.c:913
+#: cafeweather/cafeweather-pref.c:930
 msgid "kPa"
 msgstr "kPa"
 
-#: cafeweather/cafeweather-pref.c:915
+#: cafeweather/cafeweather-pref.c:932
 msgid "hPa"
 msgstr "hPa"
 
-#: cafeweather/cafeweather-pref.c:917
+#: cafeweather/cafeweather-pref.c:934
 msgid "mb"
 msgstr "mb"
 
-#: cafeweather/cafeweather-pref.c:919
+#: cafeweather/cafeweather-pref.c:936
 msgid "mmHg"
 msgstr "mmHg"
 
-#: cafeweather/cafeweather-pref.c:921
+#: cafeweather/cafeweather-pref.c:938
 msgid "inHg"
 msgstr "inHg"
 
-#: cafeweather/cafeweather-pref.c:923
+#: cafeweather/cafeweather-pref.c:940
 msgid "atm"
 msgstr "atm"
 
-#: cafeweather/cafeweather-pref.c:932
+#: cafeweather/cafeweather-pref.c:949
 msgid "_Visibility unit:"
 msgstr "_Sigbaarheideenheid:"
 
-#: cafeweather/cafeweather-pref.c:943
+#: cafeweather/cafeweather-pref.c:960
 msgid "meters"
 msgstr "meter"
 
-#: cafeweather/cafeweather-pref.c:945
+#: cafeweather/cafeweather-pref.c:962
 msgid "km"
 msgstr "km"
 
-#: cafeweather/cafeweather-pref.c:947
+#: cafeweather/cafeweather-pref.c:964
 msgid "miles"
 msgstr "myl"
 
-#: cafeweather/cafeweather-pref.c:977
+#: cafeweather/cafeweather-pref.c:988
 msgid "Enable _radar map"
 msgstr "Aktiveer _radarkaart"
 
-#: cafeweather/cafeweather-pref.c:993
+#: cafeweather/cafeweather-pref.c:1003
 msgid "Use _custom address for radar map"
 msgstr "Gebruik _doelgemaakte adres vir radarkaart"
 
-#: cafeweather/cafeweather-pref.c:1011
+#: cafeweather/cafeweather-pref.c:1019
 msgid "A_ddress:"
 msgstr "A_dres:"
 
-#: cafeweather/cafeweather-pref.c:1026
+#: cafeweather/cafeweather-pref.c:1034
 msgid "Show _notifications"
 msgstr ""
 
-#: cafeweather/cafeweather-pref.c:1036
+#: cafeweather/cafeweather-pref.c:1042
 msgid "Update"
 msgstr "Dateer op"
 
-#: cafeweather/cafeweather-pref.c:1053
+#: cafeweather/cafeweather-pref.c:1058
 msgid "minutes"
 msgstr "minute"
 
-#: cafeweather/cafeweather-pref.c:1071
+#: cafeweather/cafeweather-pref.c:1076
 msgid "Display"
 msgstr "Vertoon"
 
-#: cafeweather/cafeweather-pref.c:1090
+#: cafeweather/cafeweather-pref.c:1095
 msgid "General"
 msgstr "Algemeen"
 
-#: cafeweather/cafeweather-pref.c:1101
+#: cafeweather/cafeweather-pref.c:1106
 msgid "_Select a location:"
 msgstr "_Selekteer 'n ligging:"
 
-#: cafeweather/cafeweather-pref.c:1123
+#: cafeweather/cafeweather-pref.c:1127
 msgid "_Find:"
 msgstr "_Soek:"
 
-#: cafeweather/cafeweather-pref.c:1129
+#: cafeweather/cafeweather-pref.c:1133
 msgid "Find _Next"
 msgstr "Soek vo_lgende"
 
-#: cafeweather/cafeweather-pref.c:1150
+#: cafeweather/cafeweather-pref.c:1151
 msgid "Location"
 msgstr "Ligging"
 
@@ -2695,12 +2703,3 @@ msgstr "Besig om die asblik leeg te maak"
 #: trashapplet/trashapplet-empty-progress.ui:36
 msgid "From:"
 msgstr "Van:"
-
-#~ msgid "_Delete Note..."
-#~ msgstr "_Skrap Nota..."
-
-#~ msgid "_Lock Note"
-#~ msgstr "S_luit nota"
-
-#~ msgid "_Properties"
-#~ msgstr "_Eienskappe"

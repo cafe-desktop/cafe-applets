@@ -10,9 +10,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: cafe-applets 2.0.0\n"
+"Project-Id-Version: cafe-applets 2.1.0\n"
 "Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
-"POT-Creation-Date: 2026-03-14 19:05+0100\n"
+"POT-Creation-Date: 2026-08-14 09:39+0200\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Mihail Varantsou <meequz@gmail.com>, 2020\n"
 "Language-Team: Belarusian (https://www.transifex.com/cafe/teams/13566/be/)\n"
@@ -30,7 +30,7 @@ msgstr ""
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
 
-#: accessx-status/applet.c:89 battstat/battstat_applet.c:824
+#: accessx-status/applet.c:89 battstat/battstat_applet.c:867
 #: charpick/charpick.c:581 cpufreq/src/cpufreq-applet.c:467
 #: drivemount/drivemount.c:112 geyes/geyes.c:168
 #: cafeweather/cafeweather-about.c:44 multiload/main.c:50
@@ -39,7 +39,7 @@ msgstr ""
 msgid "MATE Documentation Team"
 msgstr ""
 
-#: accessx-status/applet.c:90 battstat/battstat_applet.c:825
+#: accessx-status/applet.c:90 battstat/battstat_applet.c:868
 #: charpick/charpick.c:582 cpufreq/src/cpufreq-applet.c:468
 #: drivemount/drivemount.c:113 geyes/geyes.c:169
 #: cafeweather/cafeweather-about.c:45 multiload/main.c:51
@@ -63,7 +63,7 @@ msgid ""
 "Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: accessx-status/applet.c:109 battstat/battstat_applet.c:851
+#: accessx-status/applet.c:109 battstat/battstat_applet.c:894
 #: charpick/charpick.c:603 command/command.c:133
 #: cpufreq/src/cpufreq-applet.c:493 drivemount/drivemount.c:132
 #: geyes/geyes.c:189 cafeweather/cafeweather-about.c:64 multiload/main.c:72
@@ -95,7 +95,7 @@ msgstr "Настáўленні даступнасці _клавіятуры"
 #: accessx-status/applet.c:189 battstat/battstat_applet.c:63
 #: charpick/charpick.c:685 cpufreq/src/cpufreq-applet.c:119
 #: drivemount/drivemount.c:170 geyes/geyes.c:363
-#: cafeweather/cafeweather-applet.c:117 multiload/main.c:500
+#: cafeweather/cafeweather-applet.c:136 multiload/main.c:500
 #: stickynotes/sticky-notes-preferences.ui:51
 #: stickynotes/sticky-notes-properties.ui:37
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
@@ -105,7 +105,7 @@ msgstr "_Даведка"
 #: accessx-status/applet.c:190 battstat/battstat_applet.c:66
 #: charpick/charpick.c:688 command/command.c:84
 #: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:173
-#: geyes/geyes.c:366 cafeweather/cafeweather-applet.c:120 multiload/main.c:503
+#: geyes/geyes.c:366 cafeweather/cafeweather-applet.c:139 multiload/main.c:503
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
 #: trashapplet/src/trashapplet.c:77
 msgid "_About"
@@ -161,7 +161,7 @@ msgstr "Паказвае стан здольнасцяў даступнасці 
 
 #: battstat/battstat_applet.c:60 charpick/charpick.c:682 command/command.c:83
 #: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:360
-#: cafeweather/cafeweather-applet.c:114 multiload/main.c:494
+#: cafeweather/cafeweather-applet.c:133 multiload/main.c:494
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
 msgid "_Preferences"
 msgstr "_Настáўленні"
@@ -251,24 +251,24 @@ msgstr[3] ""
 msgid "%d %s %d %s until charged (%d%%)"
 msgstr "Да поўнага насілкоўвання засталося %d %s %d %s (%d%%)"
 
-#: battstat/battstat_applet.c:229
+#: battstat/battstat_applet.c:230
 msgid "Battery Monitor"
 msgstr "Назіральнік насілкоўвання батарэі"
 
-#: battstat/battstat_applet.c:240 battstat/battstat_applet.c:300
+#: battstat/battstat_applet.c:281 battstat/battstat_applet.c:343
 msgid "Your battery is now fully recharged"
 msgstr "Батарэя цалкам насілкована"
 
-#: battstat/battstat_applet.c:275 battstat/battstat_applet.c:432
+#: battstat/battstat_applet.c:318 battstat/battstat_applet.c:475
 msgid "Battery Notice"
 msgstr "Нагадванне пра стан батарэі"
 
-#: battstat/battstat_applet.c:377
+#: battstat/battstat_applet.c:420
 #, c-format
 msgid "You have %d%% of your total battery capacity remaining."
 msgstr "Засталося %d%% ад агульнай ёмістасці батарэі."
 
-#: battstat/battstat_applet.c:383
+#: battstat/battstat_applet.c:426
 #, c-format
 msgid ""
 "You have %d minute of battery power remaining (%d%% of the total capacity)."
@@ -279,7 +279,7 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: battstat/battstat_applet.c:395
+#: battstat/battstat_applet.c:438
 msgid ""
 "To avoid losing your work:\n"
 " • plug your laptop into external power, or\n"
@@ -289,7 +289,7 @@ msgstr ""
 " • падлучыце ваш лаптоп да знешняй крыніцы сілкавання ці\n"
 " • захавайце адкрытыя дакументы і адключыце лаптоп."
 
-#: battstat/battstat_applet.c:403
+#: battstat/battstat_applet.c:446
 msgid ""
 "To avoid losing your work:\n"
 " • suspend your laptop to save power,\n"
@@ -301,25 +301,25 @@ msgstr ""
 " • падлучыце лаптоп да знешняй крыніцы сілкавання ці\n"
 " • захавайце адкрытыя дакументы і адключыце лаптоп."
 
-#: battstat/battstat_applet.c:411
+#: battstat/battstat_applet.c:454
 msgid "Your battery is running low"
 msgstr "Батарэя сканчваецца"
 
-#: battstat/battstat_applet.c:508
+#: battstat/battstat_applet.c:551
 msgid "No battery present"
 msgstr "Няма батарэі"
 
-#: battstat/battstat_applet.c:511
+#: battstat/battstat_applet.c:554
 msgid "Battery status unknown"
 msgstr "Стан батарэі невядомы"
 
-#: battstat/battstat_applet.c:540
+#: battstat/battstat_applet.c:583
 msgid "N/A"
 msgstr "Н/Д"
 
-#: battstat/battstat_applet.c:785 drivemount/drivemount.c:158 geyes/geyes.c:348
-#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
-#: cafeweather/cafeweather-pref.c:753
+#: battstat/battstat_applet.c:828 drivemount/drivemount.c:158 geyes/geyes.c:348
+#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:78
+#: cafeweather/cafeweather-pref.c:771
 #: stickynotes/stickynotes_applet_callbacks.c:359
 #: stickynotes/stickynotes_applet_callbacks.c:563
 #: trashapplet/src/trashapplet.c:399
@@ -327,23 +327,23 @@ msgstr "Н/Д"
 msgid "There was an error displaying help: %s"
 msgstr "Узнікла памылка падчас паказу даведкі: %s"
 
-#: battstat/battstat_applet.c:830
+#: battstat/battstat_applet.c:873
 msgid "This utility shows the status of your laptop battery."
 msgstr "Гэтая ўтыліта паказвае стан батарэі вашага лаптопа."
 
-#: battstat/battstat_applet.c:832
+#: battstat/battstat_applet.c:875
 msgid "upower backend enabled."
 msgstr "Бэкэнд upower уключаны"
 
-#: battstat/battstat_applet.c:833
+#: battstat/battstat_applet.c:876
 msgid "Legacy backend enabled."
 msgstr "Уключаны састарэлы драйвер."
 
-#: battstat/battstat_applet.c:842
+#: battstat/battstat_applet.c:885
 msgid "About Battery Charge Monitor"
 msgstr ""
 
-#: battstat/battstat_applet.c:844
+#: battstat/battstat_applet.c:887
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
@@ -351,12 +351,12 @@ msgid ""
 "Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: battstat/battstat_applet.c:1122 battstat/battstat_applet.c:1175
+#: battstat/battstat_applet.c:1165 battstat/battstat_applet.c:1218
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Battery Charge Monitor"
 msgstr "Назіральнік за батарэяй"
 
-#: battstat/battstat_applet.c:1176
+#: battstat/battstat_applet.c:1219
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Monitor a laptop's remaining power"
 msgstr "Назірае за станам батарэі лаптопа"
@@ -977,28 +977,36 @@ msgstr ""
 msgid "A panel application for monitoring local weather conditions."
 msgstr "Праграма для панэлі, якая назірае за станам мясцовага надвор'я."
 
-#: cafeweather/cafeweather-applet.c:108
+#: cafeweather/cafeweather-applet.c:52
+msgid "No location configured."
+msgstr ""
+
+#: cafeweather/cafeweather-applet.c:127
 msgid "_Details"
 msgstr "_Падрабязнасці"
 
-#: cafeweather/cafeweather-applet.c:111 cafeweather/cafeweather-dialog.c:186
+#: cafeweather/cafeweather-applet.c:130 cafeweather/cafeweather-dialog.c:186
 msgid "_Update"
 msgstr "_Абнавіць"
 
-#: cafeweather/cafeweather-applet.c:356
+#: cafeweather/cafeweather-applet.c:182
+msgid "?"
+msgstr ""
+
+#: cafeweather/cafeweather-applet.c:378
 #: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Weather Report"
 msgstr "Справаздача па надвор'і"
 
-#: cafeweather/cafeweather-applet.c:374 cafeweather/cafeweather-applet.c:378
+#: cafeweather/cafeweather-applet.c:396 cafeweather/cafeweather-applet.c:400
 msgid "CAFE Weather"
 msgstr "Надвор'е CAFE"
 
-#: cafeweather/cafeweather-applet.c:478
+#: cafeweather/cafeweather-applet.c:509
 msgid "Weather Forecast"
 msgstr "Прагноз надвор'я"
 
-#: cafeweather/cafeweather-applet.c:490
+#: cafeweather/cafeweather-applet.c:521
 #, c-format
 msgid ""
 "City: %s\n"
@@ -1009,7 +1017,7 @@ msgstr ""
 "Неба: %s\n"
 "Тэмпература: %s"
 
-#: cafeweather/cafeweather-applet.c:539
+#: cafeweather/cafeweather-applet.c:601
 msgid "Updating..."
 msgstr "Абнаўленне..."
 
@@ -1129,150 +1137,150 @@ msgstr "Поле адраса"
 msgid "Enter the URL"
 msgstr "Увядзіце URL"
 
-#: cafeweather/cafeweather-pref.c:283
+#: cafeweather/cafeweather-pref.c:301
 msgid ""
 "Failed to load the Locations XML database.  Please report this as a bug."
 msgstr ""
 "Немагчыма загрузіць базу звестак пра мясцовасці ў фармаце XML. Калі ласка, "
 "паведаміце распрацоўнікам пра памылку."
 
-#: cafeweather/cafeweather-pref.c:813
+#: cafeweather/cafeweather-pref.c:831
 msgid "Weather Preferences"
 msgstr "Настáўленні надвор'я"
 
-#: cafeweather/cafeweather-pref.c:837 cafeweather/cafeweather-pref.c:1040
+#: cafeweather/cafeweather-pref.c:855 cafeweather/cafeweather-pref.c:1046
 msgid "_Automatically update every:"
 msgstr "_Аўтаматычна абнаўляць кожныя:"
 
-#: cafeweather/cafeweather-pref.c:853
+#: cafeweather/cafeweather-pref.c:870
 msgid "_Temperature unit:"
 msgstr "Адзінка тэмпературы:"
 
-#: cafeweather/cafeweather-pref.c:863
+#: cafeweather/cafeweather-pref.c:880
 msgid "Kelvin"
 msgstr "Паводле Кельвіна"
 
-#: cafeweather/cafeweather-pref.c:865
+#: cafeweather/cafeweather-pref.c:882
 msgid "Celsius"
 msgstr "Паводле Цэльсія"
 
-#: cafeweather/cafeweather-pref.c:866
+#: cafeweather/cafeweather-pref.c:883
 msgid "Fahrenheit"
 msgstr "Паводле Фарэнгейта"
 
-#: cafeweather/cafeweather-pref.c:875
+#: cafeweather/cafeweather-pref.c:892
 msgid "_Wind speed unit:"
 msgstr "Адзінка хуткасці _ветру:"
 
-#: cafeweather/cafeweather-pref.c:886
+#: cafeweather/cafeweather-pref.c:903
 msgid "m/s"
 msgstr "метраў за секунду"
 
-#: cafeweather/cafeweather-pref.c:888
+#: cafeweather/cafeweather-pref.c:905
 msgid "km/h"
 msgstr "кіламетры за гадзіну"
 
-#: cafeweather/cafeweather-pref.c:890
+#: cafeweather/cafeweather-pref.c:907
 msgid "mph"
 msgstr "мілі за гадзіну"
 
-#: cafeweather/cafeweather-pref.c:892
+#: cafeweather/cafeweather-pref.c:909
 msgid "knots"
 msgstr "вузлы"
 
-#: cafeweather/cafeweather-pref.c:893
+#: cafeweather/cafeweather-pref.c:910
 msgid "Beaufort scale"
 msgstr "Шкала Бафорта"
 
-#: cafeweather/cafeweather-pref.c:902
+#: cafeweather/cafeweather-pref.c:919
 msgid "_Pressure unit:"
 msgstr "Адзінка _ціску:"
 
-#: cafeweather/cafeweather-pref.c:913
+#: cafeweather/cafeweather-pref.c:930
 msgid "kPa"
 msgstr "кілапаскалі"
 
-#: cafeweather/cafeweather-pref.c:915
+#: cafeweather/cafeweather-pref.c:932
 msgid "hPa"
 msgstr "гектапаскалі"
 
-#: cafeweather/cafeweather-pref.c:917
+#: cafeweather/cafeweather-pref.c:934
 msgid "mb"
 msgstr "мб"
 
-#: cafeweather/cafeweather-pref.c:919
+#: cafeweather/cafeweather-pref.c:936
 msgid "mmHg"
 msgstr "мілібары мэркура"
 
-#: cafeweather/cafeweather-pref.c:921
+#: cafeweather/cafeweather-pref.c:938
 msgid "inHg"
 msgstr "цалі мэркура"
 
-#: cafeweather/cafeweather-pref.c:923
+#: cafeweather/cafeweather-pref.c:940
 msgid "atm"
 msgstr "атмасферы"
 
-#: cafeweather/cafeweather-pref.c:932
+#: cafeweather/cafeweather-pref.c:949
 msgid "_Visibility unit:"
 msgstr "Адзінка _бачнасці:"
 
-#: cafeweather/cafeweather-pref.c:943
+#: cafeweather/cafeweather-pref.c:960
 msgid "meters"
 msgstr "метры"
 
-#: cafeweather/cafeweather-pref.c:945
+#: cafeweather/cafeweather-pref.c:962
 msgid "km"
 msgstr "кіламетры"
 
-#: cafeweather/cafeweather-pref.c:947
+#: cafeweather/cafeweather-pref.c:964
 msgid "miles"
 msgstr "мілі"
 
-#: cafeweather/cafeweather-pref.c:977
+#: cafeweather/cafeweather-pref.c:988
 msgid "Enable _radar map"
 msgstr "Уключыць радарную мапу"
 
-#: cafeweather/cafeweather-pref.c:993
+#: cafeweather/cafeweather-pref.c:1003
 msgid "Use _custom address for radar map"
 msgstr "Выкарыстоўваць адмысловы адрас для радарнай мапы"
 
-#: cafeweather/cafeweather-pref.c:1011
+#: cafeweather/cafeweather-pref.c:1019
 msgid "A_ddress:"
 msgstr "_Адрас:"
 
-#: cafeweather/cafeweather-pref.c:1026
+#: cafeweather/cafeweather-pref.c:1034
 msgid "Show _notifications"
 msgstr "Паказваць _абвяшчэнні"
 
-#: cafeweather/cafeweather-pref.c:1036
+#: cafeweather/cafeweather-pref.c:1042
 msgid "Update"
 msgstr "Абнаўленне"
 
-#: cafeweather/cafeweather-pref.c:1053
+#: cafeweather/cafeweather-pref.c:1058
 msgid "minutes"
 msgstr "хвілін"
 
-#: cafeweather/cafeweather-pref.c:1071
+#: cafeweather/cafeweather-pref.c:1076
 msgid "Display"
 msgstr "Выгляд"
 
-#: cafeweather/cafeweather-pref.c:1090
+#: cafeweather/cafeweather-pref.c:1095
 msgid "General"
 msgstr "Асноўнае"
 
-#: cafeweather/cafeweather-pref.c:1101
+#: cafeweather/cafeweather-pref.c:1106
 msgid "_Select a location:"
 msgstr "_Вылучыце мясцовасць:"
 
-#: cafeweather/cafeweather-pref.c:1123
+#: cafeweather/cafeweather-pref.c:1127
 msgid "_Find:"
 msgstr "_Шукаць:"
 
-#: cafeweather/cafeweather-pref.c:1129
+#: cafeweather/cafeweather-pref.c:1133
 msgid "Find _Next"
 msgstr "Знайсці _далей"
 
-#: cafeweather/cafeweather-pref.c:1150
+#: cafeweather/cafeweather-pref.c:1151
 msgid "Location"
 msgstr "Размяшчэнне"
 
@@ -2736,12 +2744,3 @@ msgstr "Спусташэнне сметніцы"
 #: trashapplet/trashapplet-empty-progress.ui:36
 msgid "From:"
 msgstr "З:"
-
-#~ msgid "_Delete Note..."
-#~ msgstr "_Выдаліць нататку..."
-
-#~ msgid "_Lock Note"
-#~ msgstr "_Замкнуць нататку"
-
-#~ msgid "_Properties"
-#~ msgstr "_Уласцівасці"

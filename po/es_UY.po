@@ -8,9 +8,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: cafe-applets 2.0.0\n"
+"Project-Id-Version: cafe-applets 2.1.0\n"
 "Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
-"POT-Creation-Date: 2026-03-14 19:05+0100\n"
+"POT-Creation-Date: 2026-08-14 09:39+0200\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2020\n"
 "Language-Team: Spanish (Uruguay) (https://www.transifex.com/cafe/teams/13566/"
@@ -27,7 +27,7 @@ msgstr ""
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
 
-#: accessx-status/applet.c:89 battstat/battstat_applet.c:824
+#: accessx-status/applet.c:89 battstat/battstat_applet.c:867
 #: charpick/charpick.c:581 cpufreq/src/cpufreq-applet.c:467
 #: drivemount/drivemount.c:112 geyes/geyes.c:168
 #: cafeweather/cafeweather-about.c:44 multiload/main.c:50
@@ -36,7 +36,7 @@ msgstr ""
 msgid "MATE Documentation Team"
 msgstr ""
 
-#: accessx-status/applet.c:90 battstat/battstat_applet.c:825
+#: accessx-status/applet.c:90 battstat/battstat_applet.c:868
 #: charpick/charpick.c:582 cpufreq/src/cpufreq-applet.c:468
 #: drivemount/drivemount.c:113 geyes/geyes.c:169
 #: cafeweather/cafeweather-about.c:45 multiload/main.c:51
@@ -62,7 +62,7 @@ msgid ""
 "Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: accessx-status/applet.c:109 battstat/battstat_applet.c:851
+#: accessx-status/applet.c:109 battstat/battstat_applet.c:894
 #: charpick/charpick.c:603 command/command.c:133
 #: cpufreq/src/cpufreq-applet.c:493 drivemount/drivemount.c:132
 #: geyes/geyes.c:189 cafeweather/cafeweather-about.c:64 multiload/main.c:72
@@ -95,7 +95,7 @@ msgstr "Preferencias de accesibilidad del _teclado"
 #: accessx-status/applet.c:189 battstat/battstat_applet.c:63
 #: charpick/charpick.c:685 cpufreq/src/cpufreq-applet.c:119
 #: drivemount/drivemount.c:170 geyes/geyes.c:363
-#: cafeweather/cafeweather-applet.c:117 multiload/main.c:500
+#: cafeweather/cafeweather-applet.c:136 multiload/main.c:500
 #: stickynotes/sticky-notes-preferences.ui:51
 #: stickynotes/sticky-notes-properties.ui:37
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
@@ -105,7 +105,7 @@ msgstr "Ay_uda"
 #: accessx-status/applet.c:190 battstat/battstat_applet.c:66
 #: charpick/charpick.c:688 command/command.c:84
 #: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:173
-#: geyes/geyes.c:366 cafeweather/cafeweather-applet.c:120 multiload/main.c:503
+#: geyes/geyes.c:366 cafeweather/cafeweather-applet.c:139 multiload/main.c:503
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
 #: trashapplet/src/trashapplet.c:77
 msgid "_About"
@@ -163,7 +163,7 @@ msgstr "Muestra el estado de las características de accesibilidad del teclado"
 
 #: battstat/battstat_applet.c:60 charpick/charpick.c:682 command/command.c:83
 #: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:360
-#: cafeweather/cafeweather-applet.c:114 multiload/main.c:494
+#: cafeweather/cafeweather-applet.c:133 multiload/main.c:494
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
 msgid "_Preferences"
 msgstr "_Preferencias"
@@ -241,24 +241,24 @@ msgstr[1] ""
 msgid "%d %s %d %s until charged (%d%%)"
 msgstr "%d %s %d %s para cargarse (%d%%)"
 
-#: battstat/battstat_applet.c:229
+#: battstat/battstat_applet.c:230
 msgid "Battery Monitor"
 msgstr "Monitor de la batería"
 
-#: battstat/battstat_applet.c:240 battstat/battstat_applet.c:300
+#: battstat/battstat_applet.c:281 battstat/battstat_applet.c:343
 msgid "Your battery is now fully recharged"
 msgstr "La batería está recargada completamente"
 
-#: battstat/battstat_applet.c:275 battstat/battstat_applet.c:432
+#: battstat/battstat_applet.c:318 battstat/battstat_applet.c:475
 msgid "Battery Notice"
 msgstr "Notificación de batería"
 
-#: battstat/battstat_applet.c:377
+#: battstat/battstat_applet.c:420
 #, c-format
 msgid "You have %d%% of your total battery capacity remaining."
 msgstr "Le queda un %d%% de la capacidad total de su batería."
 
-#: battstat/battstat_applet.c:383
+#: battstat/battstat_applet.c:426
 #, c-format
 msgid ""
 "You have %d minute of battery power remaining (%d%% of the total capacity)."
@@ -267,7 +267,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: battstat/battstat_applet.c:395
+#: battstat/battstat_applet.c:438
 msgid ""
 "To avoid losing your work:\n"
 " • plug your laptop into external power, or\n"
@@ -277,7 +277,7 @@ msgstr ""
 " • enchufe su portátil a una fuente de alimentación externa, o\n"
 " • guarde los documentos abiertos y apague el portátil."
 
-#: battstat/battstat_applet.c:403
+#: battstat/battstat_applet.c:446
 msgid ""
 "To avoid losing your work:\n"
 " • suspend your laptop to save power,\n"
@@ -289,25 +289,25 @@ msgstr ""
 " • enchufe su portátil a una fuente de alimentación externa, o\n"
 " • guarde los documentos abiertos y apague el portátil."
 
-#: battstat/battstat_applet.c:411
+#: battstat/battstat_applet.c:454
 msgid "Your battery is running low"
 msgstr "La batería se está agotando"
 
-#: battstat/battstat_applet.c:508
+#: battstat/battstat_applet.c:551
 msgid "No battery present"
 msgstr "No hay ninguna batería presente"
 
-#: battstat/battstat_applet.c:511
+#: battstat/battstat_applet.c:554
 msgid "Battery status unknown"
 msgstr "Estado de la batería desconocido"
 
-#: battstat/battstat_applet.c:540
+#: battstat/battstat_applet.c:583
 msgid "N/A"
 msgstr "N/D"
 
-#: battstat/battstat_applet.c:785 drivemount/drivemount.c:158 geyes/geyes.c:348
-#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
-#: cafeweather/cafeweather-pref.c:753
+#: battstat/battstat_applet.c:828 drivemount/drivemount.c:158 geyes/geyes.c:348
+#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:78
+#: cafeweather/cafeweather-pref.c:771
 #: stickynotes/stickynotes_applet_callbacks.c:359
 #: stickynotes/stickynotes_applet_callbacks.c:563
 #: trashapplet/src/trashapplet.c:399
@@ -315,23 +315,23 @@ msgstr "N/D"
 msgid "There was an error displaying help: %s"
 msgstr "Hubo un error al mostrar la ayuda: %s"
 
-#: battstat/battstat_applet.c:830
+#: battstat/battstat_applet.c:873
 msgid "This utility shows the status of your laptop battery."
 msgstr "Esta utilidad muestra el estado de la batería de su portátil."
 
-#: battstat/battstat_applet.c:832
+#: battstat/battstat_applet.c:875
 msgid "upower backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:833
+#: battstat/battstat_applet.c:876
 msgid "Legacy backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:842
+#: battstat/battstat_applet.c:885
 msgid "About Battery Charge Monitor"
 msgstr ""
 
-#: battstat/battstat_applet.c:844
+#: battstat/battstat_applet.c:887
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
@@ -339,12 +339,12 @@ msgid ""
 "Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: battstat/battstat_applet.c:1122 battstat/battstat_applet.c:1175
+#: battstat/battstat_applet.c:1165 battstat/battstat_applet.c:1218
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Battery Charge Monitor"
 msgstr "Monitor de carga batería"
 
-#: battstat/battstat_applet.c:1176
+#: battstat/battstat_applet.c:1219
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Monitor a laptop's remaining power"
 msgstr "Monitoriza la carga restante de un portátil"
@@ -964,28 +964,36 @@ msgstr ""
 msgid "A panel application for monitoring local weather conditions."
 msgstr "Una aplicación del panel para monitorizar la meteorología local."
 
-#: cafeweather/cafeweather-applet.c:108
+#: cafeweather/cafeweather-applet.c:52
+msgid "No location configured."
+msgstr ""
+
+#: cafeweather/cafeweather-applet.c:127
 msgid "_Details"
 msgstr "_Detalles"
 
-#: cafeweather/cafeweather-applet.c:111 cafeweather/cafeweather-dialog.c:186
+#: cafeweather/cafeweather-applet.c:130 cafeweather/cafeweather-dialog.c:186
 msgid "_Update"
 msgstr "_Actualizar"
 
-#: cafeweather/cafeweather-applet.c:356
+#: cafeweather/cafeweather-applet.c:182
+msgid "?"
+msgstr ""
+
+#: cafeweather/cafeweather-applet.c:378
 #: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Weather Report"
 msgstr "Informe meteorológico"
 
-#: cafeweather/cafeweather-applet.c:374 cafeweather/cafeweather-applet.c:378
+#: cafeweather/cafeweather-applet.c:396 cafeweather/cafeweather-applet.c:400
 msgid "CAFE Weather"
 msgstr "Meteorología de CAFE"
 
-#: cafeweather/cafeweather-applet.c:478
+#: cafeweather/cafeweather-applet.c:509
 msgid "Weather Forecast"
 msgstr "Previsión meteorológica"
 
-#: cafeweather/cafeweather-applet.c:490
+#: cafeweather/cafeweather-applet.c:521
 #, c-format
 msgid ""
 "City: %s\n"
@@ -996,7 +1004,7 @@ msgstr ""
 "Cielo: %s\n"
 "Temperatura: %s"
 
-#: cafeweather/cafeweather-applet.c:539
+#: cafeweather/cafeweather-applet.c:601
 msgid "Updating..."
 msgstr "Actualizando…"
 
@@ -1116,149 +1124,149 @@ msgstr "Dirección"
 msgid "Enter the URL"
 msgstr "Introduzca el URL"
 
-#: cafeweather/cafeweather-pref.c:283
+#: cafeweather/cafeweather-pref.c:301
 msgid ""
 "Failed to load the Locations XML database.  Please report this as a bug."
 msgstr ""
 "Falló al cargar la base de datos XML de zonas. Informe de esto como un fallo."
 
-#: cafeweather/cafeweather-pref.c:813
+#: cafeweather/cafeweather-pref.c:831
 msgid "Weather Preferences"
 msgstr "Preferencias de meteorología"
 
-#: cafeweather/cafeweather-pref.c:837 cafeweather/cafeweather-pref.c:1040
+#: cafeweather/cafeweather-pref.c:855 cafeweather/cafeweather-pref.c:1046
 msgid "_Automatically update every:"
 msgstr "_Actualizar automáticamente cada:"
 
-#: cafeweather/cafeweather-pref.c:853
+#: cafeweather/cafeweather-pref.c:870
 msgid "_Temperature unit:"
 msgstr "Unidad de _temperatura:"
 
-#: cafeweather/cafeweather-pref.c:863
+#: cafeweather/cafeweather-pref.c:880
 msgid "Kelvin"
 msgstr "Kelvin"
 
-#: cafeweather/cafeweather-pref.c:865
+#: cafeweather/cafeweather-pref.c:882
 msgid "Celsius"
 msgstr "Centígrados"
 
-#: cafeweather/cafeweather-pref.c:866
+#: cafeweather/cafeweather-pref.c:883
 msgid "Fahrenheit"
 msgstr "Fahrenheit"
 
-#: cafeweather/cafeweather-pref.c:875
+#: cafeweather/cafeweather-pref.c:892
 msgid "_Wind speed unit:"
 msgstr "Unidad de velocidad del _viento:"
 
-#: cafeweather/cafeweather-pref.c:886
+#: cafeweather/cafeweather-pref.c:903
 msgid "m/s"
 msgstr "m/s"
 
-#: cafeweather/cafeweather-pref.c:888
+#: cafeweather/cafeweather-pref.c:905
 msgid "km/h"
 msgstr "Km/h"
 
-#: cafeweather/cafeweather-pref.c:890
+#: cafeweather/cafeweather-pref.c:907
 msgid "mph"
 msgstr "mph"
 
-#: cafeweather/cafeweather-pref.c:892
+#: cafeweather/cafeweather-pref.c:909
 msgid "knots"
 msgstr "nudos"
 
-#: cafeweather/cafeweather-pref.c:893
+#: cafeweather/cafeweather-pref.c:910
 msgid "Beaufort scale"
 msgstr "Escala Beaufort"
 
-#: cafeweather/cafeweather-pref.c:902
+#: cafeweather/cafeweather-pref.c:919
 msgid "_Pressure unit:"
 msgstr "Unidad de _presión atmosférica:"
 
-#: cafeweather/cafeweather-pref.c:913
+#: cafeweather/cafeweather-pref.c:930
 msgid "kPa"
 msgstr "kPa"
 
-#: cafeweather/cafeweather-pref.c:915
+#: cafeweather/cafeweather-pref.c:932
 msgid "hPa"
 msgstr "hPa"
 
-#: cafeweather/cafeweather-pref.c:917
+#: cafeweather/cafeweather-pref.c:934
 msgid "mb"
 msgstr "mb"
 
-#: cafeweather/cafeweather-pref.c:919
+#: cafeweather/cafeweather-pref.c:936
 msgid "mmHg"
 msgstr "mmHg"
 
-#: cafeweather/cafeweather-pref.c:921
+#: cafeweather/cafeweather-pref.c:938
 msgid "inHg"
 msgstr "inHg"
 
-#: cafeweather/cafeweather-pref.c:923
+#: cafeweather/cafeweather-pref.c:940
 msgid "atm"
 msgstr "atm"
 
-#: cafeweather/cafeweather-pref.c:932
+#: cafeweather/cafeweather-pref.c:949
 msgid "_Visibility unit:"
 msgstr "Unidad de _visibilidad:"
 
-#: cafeweather/cafeweather-pref.c:943
+#: cafeweather/cafeweather-pref.c:960
 msgid "meters"
 msgstr "metros"
 
-#: cafeweather/cafeweather-pref.c:945
+#: cafeweather/cafeweather-pref.c:962
 msgid "km"
 msgstr "Km"
 
-#: cafeweather/cafeweather-pref.c:947
+#: cafeweather/cafeweather-pref.c:964
 msgid "miles"
 msgstr "millas"
 
-#: cafeweather/cafeweather-pref.c:977
+#: cafeweather/cafeweather-pref.c:988
 msgid "Enable _radar map"
 msgstr "Activar el mapa de _radar"
 
-#: cafeweather/cafeweather-pref.c:993
+#: cafeweather/cafeweather-pref.c:1003
 msgid "Use _custom address for radar map"
 msgstr "Usar dirección _personalizada para el mapa de radar"
 
-#: cafeweather/cafeweather-pref.c:1011
+#: cafeweather/cafeweather-pref.c:1019
 msgid "A_ddress:"
 msgstr "Di_recciones:"
 
-#: cafeweather/cafeweather-pref.c:1026
+#: cafeweather/cafeweather-pref.c:1034
 msgid "Show _notifications"
 msgstr ""
 
-#: cafeweather/cafeweather-pref.c:1036
+#: cafeweather/cafeweather-pref.c:1042
 msgid "Update"
 msgstr "Actualizar"
 
-#: cafeweather/cafeweather-pref.c:1053
+#: cafeweather/cafeweather-pref.c:1058
 msgid "minutes"
 msgstr "minutos"
 
-#: cafeweather/cafeweather-pref.c:1071
+#: cafeweather/cafeweather-pref.c:1076
 msgid "Display"
 msgstr "Visor"
 
-#: cafeweather/cafeweather-pref.c:1090
+#: cafeweather/cafeweather-pref.c:1095
 msgid "General"
 msgstr "General"
 
-#: cafeweather/cafeweather-pref.c:1101
+#: cafeweather/cafeweather-pref.c:1106
 msgid "_Select a location:"
 msgstr "_Seleccione una zona:"
 
-#: cafeweather/cafeweather-pref.c:1123
+#: cafeweather/cafeweather-pref.c:1127
 msgid "_Find:"
 msgstr "_Buscar:"
 
-#: cafeweather/cafeweather-pref.c:1129
+#: cafeweather/cafeweather-pref.c:1133
 msgid "Find _Next"
 msgstr "Buscar _siguiente"
 
-#: cafeweather/cafeweather-pref.c:1150
+#: cafeweather/cafeweather-pref.c:1151
 msgid "Location"
 msgstr "Zona"
 
@@ -2712,12 +2720,3 @@ msgstr "Vaciando la papelera"
 #: trashapplet/trashapplet-empty-progress.ui:36
 msgid "From:"
 msgstr ""
-
-#~ msgid "_Delete Note..."
-#~ msgstr "_Borrar la nota…"
-
-#~ msgid "_Lock Note"
-#~ msgstr "B_loquear la nota"
-
-#~ msgid "_Properties"
-#~ msgstr "_Propiedades"

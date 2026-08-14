@@ -18,9 +18,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: cafe-applets 2.0.0\n"
+"Project-Id-Version: cafe-applets 2.1.0\n"
 "Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
-"POT-Creation-Date: 2026-03-14 19:05+0100\n"
+"POT-Creation-Date: 2026-08-14 09:39+0200\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Oleksii Khalikov <oleksii.khalikov@gmail.com>, 2020\n"
 "Language-Team: Ukrainian (https://www.transifex.com/cafe/teams/13566/uk/)\n"
@@ -39,7 +39,7 @@ msgstr ""
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr "Sun GNOME Команда документування <gdocteam@sun.com>"
 
-#: accessx-status/applet.c:89 battstat/battstat_applet.c:824
+#: accessx-status/applet.c:89 battstat/battstat_applet.c:867
 #: charpick/charpick.c:581 cpufreq/src/cpufreq-applet.c:467
 #: drivemount/drivemount.c:112 geyes/geyes.c:168
 #: cafeweather/cafeweather-about.c:44 multiload/main.c:50
@@ -48,7 +48,7 @@ msgstr "Sun GNOME Команда документування <gdocteam@sun.com>
 msgid "MATE Documentation Team"
 msgstr ""
 
-#: accessx-status/applet.c:90 battstat/battstat_applet.c:825
+#: accessx-status/applet.c:90 battstat/battstat_applet.c:868
 #: charpick/charpick.c:582 cpufreq/src/cpufreq-applet.c:468
 #: drivemount/drivemount.c:113 geyes/geyes.c:169
 #: cafeweather/cafeweather-about.c:45 multiload/main.c:51
@@ -72,7 +72,7 @@ msgid ""
 "Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: accessx-status/applet.c:109 battstat/battstat_applet.c:851
+#: accessx-status/applet.c:109 battstat/battstat_applet.c:894
 #: charpick/charpick.c:603 command/command.c:133
 #: cpufreq/src/cpufreq-applet.c:493 drivemount/drivemount.c:132
 #: geyes/geyes.c:189 cafeweather/cafeweather-about.c:64 multiload/main.c:72
@@ -105,7 +105,7 @@ msgstr "Параметри спеціальних можливостей _наб
 #: accessx-status/applet.c:189 battstat/battstat_applet.c:63
 #: charpick/charpick.c:685 cpufreq/src/cpufreq-applet.c:119
 #: drivemount/drivemount.c:170 geyes/geyes.c:363
-#: cafeweather/cafeweather-applet.c:117 multiload/main.c:500
+#: cafeweather/cafeweather-applet.c:136 multiload/main.c:500
 #: stickynotes/sticky-notes-preferences.ui:51
 #: stickynotes/sticky-notes-properties.ui:37
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
@@ -115,7 +115,7 @@ msgstr "_Допомога"
 #: accessx-status/applet.c:190 battstat/battstat_applet.c:66
 #: charpick/charpick.c:688 command/command.c:84
 #: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:173
-#: geyes/geyes.c:366 cafeweather/cafeweather-applet.c:120 multiload/main.c:503
+#: geyes/geyes.c:366 cafeweather/cafeweather-applet.c:139 multiload/main.c:503
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
 #: trashapplet/src/trashapplet.c:77
 msgid "_About"
@@ -170,7 +170,7 @@ msgstr "Показує стан спеціальних можливостей н
 
 #: battstat/battstat_applet.c:60 charpick/charpick.c:682 command/command.c:83
 #: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:360
-#: cafeweather/cafeweather-applet.c:114 multiload/main.c:494
+#: cafeweather/cafeweather-applet.c:133 multiload/main.c:494
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
 msgid "_Preferences"
 msgstr "_Налаштування"
@@ -260,24 +260,24 @@ msgstr[3] ""
 msgid "%d %s %d %s until charged (%d%%)"
 msgstr "%d %s %d %s до повного зарядження (%d%%)"
 
-#: battstat/battstat_applet.c:229
+#: battstat/battstat_applet.c:230
 msgid "Battery Monitor"
 msgstr "Індикатор заряду акумулятора"
 
-#: battstat/battstat_applet.c:240 battstat/battstat_applet.c:300
+#: battstat/battstat_applet.c:281 battstat/battstat_applet.c:343
 msgid "Your battery is now fully recharged"
 msgstr "Акумулятор повністю заряджено"
 
-#: battstat/battstat_applet.c:275 battstat/battstat_applet.c:432
+#: battstat/battstat_applet.c:318 battstat/battstat_applet.c:475
 msgid "Battery Notice"
 msgstr "Інформація про акумулятор"
 
-#: battstat/battstat_applet.c:377
+#: battstat/battstat_applet.c:420
 #, c-format
 msgid "You have %d%% of your total battery capacity remaining."
 msgstr "Залишилося %d%% місткости акумулятора."
 
-#: battstat/battstat_applet.c:383
+#: battstat/battstat_applet.c:426
 #, c-format
 msgid ""
 "You have %d minute of battery power remaining (%d%% of the total capacity)."
@@ -288,7 +288,7 @@ msgstr[1] ""
 msgstr[2] ""
 msgstr[3] ""
 
-#: battstat/battstat_applet.c:395
+#: battstat/battstat_applet.c:438
 msgid ""
 "To avoid losing your work:\n"
 " • plug your laptop into external power, or\n"
@@ -298,7 +298,7 @@ msgstr ""
 " • під’єднайте ноутбук до зовнішнього джерела живлення, або\n"
 " • збережіть відкриті документи та завершіть роботу комп'ютера."
 
-#: battstat/battstat_applet.c:403
+#: battstat/battstat_applet.c:446
 msgid ""
 "To avoid losing your work:\n"
 " • suspend your laptop to save power,\n"
@@ -310,25 +310,25 @@ msgstr ""
 " • під’єднайте ноутбук до зовнішнього джерела живлення, або\n"
 " • збережіть відкриті документи та завершіть роботу комп'ютера."
 
-#: battstat/battstat_applet.c:411
+#: battstat/battstat_applet.c:454
 msgid "Your battery is running low"
 msgstr "Заряд акумулятора низький"
 
-#: battstat/battstat_applet.c:508
+#: battstat/battstat_applet.c:551
 msgid "No battery present"
 msgstr "Акумулятор відсутній"
 
-#: battstat/battstat_applet.c:511
+#: battstat/battstat_applet.c:554
 msgid "Battery status unknown"
 msgstr "Стан акумулятора невідомий"
 
-#: battstat/battstat_applet.c:540
+#: battstat/battstat_applet.c:583
 msgid "N/A"
 msgstr "Н/Д"
 
-#: battstat/battstat_applet.c:785 drivemount/drivemount.c:158 geyes/geyes.c:348
-#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
-#: cafeweather/cafeweather-pref.c:753
+#: battstat/battstat_applet.c:828 drivemount/drivemount.c:158 geyes/geyes.c:348
+#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:78
+#: cafeweather/cafeweather-pref.c:771
 #: stickynotes/stickynotes_applet_callbacks.c:359
 #: stickynotes/stickynotes_applet_callbacks.c:563
 #: trashapplet/src/trashapplet.c:399
@@ -336,23 +336,23 @@ msgstr "Н/Д"
 msgid "There was an error displaying help: %s"
 msgstr "Помилка показу довідки: %s"
 
-#: battstat/battstat_applet.c:830
+#: battstat/battstat_applet.c:873
 msgid "This utility shows the status of your laptop battery."
 msgstr "Цей засіб показує стан акумулятора Вашого комп'ютера."
 
-#: battstat/battstat_applet.c:832
+#: battstat/battstat_applet.c:875
 msgid "upower backend enabled."
 msgstr "Бекенд upower увімкнено."
 
-#: battstat/battstat_applet.c:833
+#: battstat/battstat_applet.c:876
 msgid "Legacy backend enabled."
 msgstr "Увімкнено застарілий бекенд."
 
-#: battstat/battstat_applet.c:842
+#: battstat/battstat_applet.c:885
 msgid "About Battery Charge Monitor"
 msgstr "Про індикатор зарядження акумулятора"
 
-#: battstat/battstat_applet.c:844
+#: battstat/battstat_applet.c:887
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
@@ -360,12 +360,12 @@ msgid ""
 "Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: battstat/battstat_applet.c:1122 battstat/battstat_applet.c:1175
+#: battstat/battstat_applet.c:1165 battstat/battstat_applet.c:1218
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Battery Charge Monitor"
 msgstr "Індикатор зарядження акумулятора"
 
-#: battstat/battstat_applet.c:1176
+#: battstat/battstat_applet.c:1219
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Monitor a laptop's remaining power"
 msgstr "Стежить за зарядом акумулятора портативного комп'ютера"
@@ -987,28 +987,36 @@ msgstr ""
 msgid "A panel application for monitoring local weather conditions."
 msgstr "Аплет показу погодних умов."
 
-#: cafeweather/cafeweather-applet.c:108
+#: cafeweather/cafeweather-applet.c:52
+msgid "No location configured."
+msgstr ""
+
+#: cafeweather/cafeweather-applet.c:127
 msgid "_Details"
 msgstr "До_кладно"
 
-#: cafeweather/cafeweather-applet.c:111 cafeweather/cafeweather-dialog.c:186
+#: cafeweather/cafeweather-applet.c:130 cafeweather/cafeweather-dialog.c:186
 msgid "_Update"
 msgstr "_Оновити"
 
-#: cafeweather/cafeweather-applet.c:356
+#: cafeweather/cafeweather-applet.c:182
+msgid "?"
+msgstr ""
+
+#: cafeweather/cafeweather-applet.c:378
 #: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Weather Report"
 msgstr "Зведення погоди"
 
-#: cafeweather/cafeweather-applet.c:374 cafeweather/cafeweather-applet.c:378
+#: cafeweather/cafeweather-applet.c:396 cafeweather/cafeweather-applet.c:400
 msgid "CAFE Weather"
 msgstr "Аплет \"Зведення погоди\""
 
-#: cafeweather/cafeweather-applet.c:478
+#: cafeweather/cafeweather-applet.c:509
 msgid "Weather Forecast"
 msgstr "Прогноз погоди"
 
-#: cafeweather/cafeweather-applet.c:490
+#: cafeweather/cafeweather-applet.c:521
 #, c-format
 msgid ""
 "City: %s\n"
@@ -1019,7 +1027,7 @@ msgstr ""
 "Небо: %s\n"
 "Температура: %s"
 
-#: cafeweather/cafeweather-applet.c:539
+#: cafeweather/cafeweather-applet.c:601
 msgid "Updating..."
 msgstr "Триває оновлення..."
 
@@ -1139,148 +1147,148 @@ msgstr "Поле адреси"
 msgid "Enter the URL"
 msgstr "Уведіть адресу (URL)"
 
-#: cafeweather/cafeweather-pref.c:283
+#: cafeweather/cafeweather-pref.c:301
 msgid ""
 "Failed to load the Locations XML database.  Please report this as a bug."
 msgstr "Не вдається завантажити XML базу даних місць. Сповістіть про помилку."
 
-#: cafeweather/cafeweather-pref.c:813
+#: cafeweather/cafeweather-pref.c:831
 msgid "Weather Preferences"
 msgstr "Параметри аплету \"Зведення погоди\""
 
-#: cafeweather/cafeweather-pref.c:837 cafeweather/cafeweather-pref.c:1040
+#: cafeweather/cafeweather-pref.c:855 cafeweather/cafeweather-pref.c:1046
 msgid "_Automatically update every:"
 msgstr "Автоматично оновлювати _кожні "
 
-#: cafeweather/cafeweather-pref.c:853
+#: cafeweather/cafeweather-pref.c:870
 msgid "_Temperature unit:"
 msgstr "_Температурні одиниці:"
 
-#: cafeweather/cafeweather-pref.c:863
+#: cafeweather/cafeweather-pref.c:880
 msgid "Kelvin"
 msgstr "Кельвін"
 
-#: cafeweather/cafeweather-pref.c:865
+#: cafeweather/cafeweather-pref.c:882
 msgid "Celsius"
 msgstr "Цельсій"
 
-#: cafeweather/cafeweather-pref.c:866
+#: cafeweather/cafeweather-pref.c:883
 msgid "Fahrenheit"
 msgstr "Фаренгейт"
 
-#: cafeweather/cafeweather-pref.c:875
+#: cafeweather/cafeweather-pref.c:892
 msgid "_Wind speed unit:"
 msgstr "Одиниці швидкости _вітру:"
 
-#: cafeweather/cafeweather-pref.c:886
+#: cafeweather/cafeweather-pref.c:903
 msgid "m/s"
 msgstr "м/с"
 
-#: cafeweather/cafeweather-pref.c:888
+#: cafeweather/cafeweather-pref.c:905
 msgid "km/h"
 msgstr "км/год"
 
-#: cafeweather/cafeweather-pref.c:890
+#: cafeweather/cafeweather-pref.c:907
 msgid "mph"
 msgstr "миль/год"
 
-#: cafeweather/cafeweather-pref.c:892
+#: cafeweather/cafeweather-pref.c:909
 msgid "knots"
 msgstr "вузлів"
 
-#: cafeweather/cafeweather-pref.c:893
+#: cafeweather/cafeweather-pref.c:910
 msgid "Beaufort scale"
 msgstr "Шкала Бофорта"
 
-#: cafeweather/cafeweather-pref.c:902
+#: cafeweather/cafeweather-pref.c:919
 msgid "_Pressure unit:"
 msgstr "Одиниці т_иску:"
 
-#: cafeweather/cafeweather-pref.c:913
+#: cafeweather/cafeweather-pref.c:930
 msgid "kPa"
 msgstr "кПа"
 
-#: cafeweather/cafeweather-pref.c:915
+#: cafeweather/cafeweather-pref.c:932
 msgid "hPa"
 msgstr "ГПа"
 
-#: cafeweather/cafeweather-pref.c:917
+#: cafeweather/cafeweather-pref.c:934
 msgid "mb"
 msgstr "мб"
 
-#: cafeweather/cafeweather-pref.c:919
+#: cafeweather/cafeweather-pref.c:936
 msgid "mmHg"
 msgstr "мм рт.ст."
 
-#: cafeweather/cafeweather-pref.c:921
+#: cafeweather/cafeweather-pref.c:938
 msgid "inHg"
 msgstr "дюймів рт.ст."
 
-#: cafeweather/cafeweather-pref.c:923
+#: cafeweather/cafeweather-pref.c:940
 msgid "atm"
 msgstr "атм"
 
-#: cafeweather/cafeweather-pref.c:932
+#: cafeweather/cafeweather-pref.c:949
 msgid "_Visibility unit:"
 msgstr "Одиниці види_мості:"
 
-#: cafeweather/cafeweather-pref.c:943
+#: cafeweather/cafeweather-pref.c:960
 msgid "meters"
 msgstr "метрів"
 
-#: cafeweather/cafeweather-pref.c:945
+#: cafeweather/cafeweather-pref.c:962
 msgid "km"
 msgstr "км"
 
-#: cafeweather/cafeweather-pref.c:947
+#: cafeweather/cafeweather-pref.c:964
 msgid "miles"
 msgstr "миль"
 
-#: cafeweather/cafeweather-pref.c:977
+#: cafeweather/cafeweather-pref.c:988
 msgid "Enable _radar map"
 msgstr "Увімкнути _радарну мапу"
 
-#: cafeweather/cafeweather-pref.c:993
+#: cafeweather/cafeweather-pref.c:1003
 msgid "Use _custom address for radar map"
 msgstr "В_ласна адреса радарної мапи"
 
-#: cafeweather/cafeweather-pref.c:1011
+#: cafeweather/cafeweather-pref.c:1019
 msgid "A_ddress:"
 msgstr "Ад_реса:"
 
-#: cafeweather/cafeweather-pref.c:1026
+#: cafeweather/cafeweather-pref.c:1034
 msgid "Show _notifications"
 msgstr "Показати _сповіщення"
 
-#: cafeweather/cafeweather-pref.c:1036
+#: cafeweather/cafeweather-pref.c:1042
 msgid "Update"
 msgstr "Замінити"
 
-#: cafeweather/cafeweather-pref.c:1053
+#: cafeweather/cafeweather-pref.c:1058
 msgid "minutes"
 msgstr "хвилин"
 
-#: cafeweather/cafeweather-pref.c:1071
+#: cafeweather/cafeweather-pref.c:1076
 msgid "Display"
 msgstr "Зовнішній вигляд"
 
-#: cafeweather/cafeweather-pref.c:1090
+#: cafeweather/cafeweather-pref.c:1095
 msgid "General"
 msgstr "Загальні"
 
-#: cafeweather/cafeweather-pref.c:1101
+#: cafeweather/cafeweather-pref.c:1106
 msgid "_Select a location:"
 msgstr "Вибрати _місцевість:"
 
-#: cafeweather/cafeweather-pref.c:1123
+#: cafeweather/cafeweather-pref.c:1127
 msgid "_Find:"
 msgstr "З_найти:"
 
-#: cafeweather/cafeweather-pref.c:1129
+#: cafeweather/cafeweather-pref.c:1133
 msgid "Find _Next"
 msgstr "Знайти _наступний"
 
-#: cafeweather/cafeweather-pref.c:1150
+#: cafeweather/cafeweather-pref.c:1151
 msgid "Location"
 msgstr "Розташування"
 
@@ -2754,85 +2762,3 @@ msgstr "Спорожнення смітника"
 #: trashapplet/trashapplet-empty-progress.ui:36
 msgid "From:"
 msgstr "З:"
-
-#~ msgid ""
-#~ "Copyright © 2000 The Gnulix Society\n"
-#~ "Copyright © 2002-2005 Free Software Foundation and others\n"
-#~ "Copyright © 2012-2020 CAFE developers"
-#~ msgstr ""
-#~ "Авторське право © 2000 Товариство Gnulix\n"
-#~ "Авторське право © 2002-2005 Фундація вільного програмного забезпечення та "
-#~ "інші\n"
-#~ "Авторське право © 2012-2020 Розробники CAFE"
-
-#~ msgid ""
-#~ "Copyright © 2013-2014 Stefano Karapetsas\n"
-#~ "Copyright © 2015-2020 CAFE developers"
-#~ msgstr ""
-#~ "Авторське право © 2013-2014 Стефано Карапецас\n"
-#~ "Авторське право © 2015-2020 Розробники CAFE"
-
-#~ msgid ""
-#~ "Copyright © 2004 Carlos Garcia Campos\n"
-#~ "Copyright © 2012-2020 CAFE developers"
-#~ msgstr ""
-#~ "Авторське право© 2004 Карлос Ґарсія Кампос\n"
-#~ "Авторське право © 2012-2020 Розробники CAFE"
-
-#~ msgid ""
-#~ "Copyright © 2004 Canonical Ltd\n"
-#~ "Copyright © 2012-2020 CAFE developers"
-#~ msgstr ""
-#~ "Авторське право © 2004 Canonical Ltd\n"
-#~ "Авторське право © 2012-2020 Розробники CAFE"
-
-#~ msgid ""
-#~ "Copyright © 1999-2005 Free Software Foundation and others\n"
-#~ "Copyright © 2012-2020 CAFE developers"
-#~ msgstr ""
-#~ "Авторське право © 1999-2005 Фундація вільного програмного забезпечення та "
-#~ "інші\n"
-#~ "Авторське право © 2012-2020 Розробники CAFE"
-
-#~ msgid ""
-#~ "Copyright © 2002-2003 Jörgen Scheibengruber\n"
-#~ "Copyright © 2011-2014 Stefano Karapetsas\n"
-#~ "Copyright © 2015-2020 CAFE developers"
-#~ msgstr ""
-#~ "Авторське право © 2002-2003 Йорґен Шейбенґрубер\n"
-#~ "Авторське право © 2011-2014 Стефано Карапецас\n"
-#~ "Авторське право © 2015-2020 Розробники CAFE"
-
-#~ msgid "_Delete Note..."
-#~ msgstr "_Вилучити нотатку..."
-
-#~ msgid "_Lock Note"
-#~ msgstr "_Зафіксувати нотатку"
-
-#~ msgid "_Properties"
-#~ msgstr "В_ластивості"
-
-#~ msgid ""
-#~ "Copyright © 2002-2003 Loban A Rahman\n"
-#~ "Copyright © 2005 Davyd Madeley\n"
-#~ "Copyright © 2012-2020 CAFE developers"
-#~ msgstr ""
-#~ "Авторське право © 2002-2003 Лобан А Рахман\n"
-#~ "Авторське право © 2005 Давид Мадлі\n"
-#~ "Авторське право © 2012-2020 Розробники CAFE"
-
-#~ msgid ""
-#~ "Copyright © 2014 Stefano Karapetsas\n"
-#~ "Copyright © 2015-2020 CAFE developers"
-#~ msgstr ""
-#~ "Авторське право © 2014 Стефано Карапецас\n"
-#~ "Авторське право © 2015-2020 Розробники CAFE"
-
-#~ msgid ""
-#~ "Copyright © 2004 Michiel Sikkes\n"
-#~ "Copyright © 2008 Ryan Lortie\n"
-#~ "Copyright © 2012-2020 CAFE developers"
-#~ msgstr ""
-#~ "Авторське право © 2004 Міхель Сіккес\n"
-#~ "Авторське право © 2008 Райан Лорті\n"
-#~ "Авторське право © 2012-2020 Розробники CAFE"

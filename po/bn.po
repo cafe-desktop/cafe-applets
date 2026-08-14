@@ -9,9 +9,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: cafe-applets 2.0.0\n"
+"Project-Id-Version: cafe-applets 2.1.0\n"
 "Report-Msgid-Bugs-To: https://www.transifex.com/cafe/CAFE/\n"
-"POT-Creation-Date: 2026-03-14 19:05+0100\n"
+"POT-Creation-Date: 2026-08-14 09:39+0200\n"
 "PO-Revision-Date: 2020-02-15 11:22+0000\n"
 "Last-Translator: Stefano Karapetsas <stefano@karapetsas.com>, 2020\n"
 "Language-Team: Bengali (https://www.transifex.com/cafe/teams/13566/bn/)\n"
@@ -27,7 +27,7 @@ msgstr ""
 msgid "Sun GNOME Documentation Team <gdocteam@sun.com>"
 msgstr ""
 
-#: accessx-status/applet.c:89 battstat/battstat_applet.c:824
+#: accessx-status/applet.c:89 battstat/battstat_applet.c:867
 #: charpick/charpick.c:581 cpufreq/src/cpufreq-applet.c:467
 #: drivemount/drivemount.c:112 geyes/geyes.c:168
 #: cafeweather/cafeweather-about.c:44 multiload/main.c:50
@@ -36,7 +36,7 @@ msgstr ""
 msgid "MATE Documentation Team"
 msgstr ""
 
-#: accessx-status/applet.c:90 battstat/battstat_applet.c:825
+#: accessx-status/applet.c:90 battstat/battstat_applet.c:868
 #: charpick/charpick.c:582 cpufreq/src/cpufreq-applet.c:468
 #: drivemount/drivemount.c:113 geyes/geyes.c:169
 #: cafeweather/cafeweather-about.c:45 multiload/main.c:51
@@ -60,7 +60,7 @@ msgid ""
 "Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: accessx-status/applet.c:109 battstat/battstat_applet.c:851
+#: accessx-status/applet.c:109 battstat/battstat_applet.c:894
 #: charpick/charpick.c:603 command/command.c:133
 #: cpufreq/src/cpufreq-applet.c:493 drivemount/drivemount.c:132
 #: geyes/geyes.c:189 cafeweather/cafeweather-about.c:64 multiload/main.c:72
@@ -95,7 +95,7 @@ msgstr "কীবোর্ড সহায়ক প্রযুক্তি সম
 #: accessx-status/applet.c:189 battstat/battstat_applet.c:63
 #: charpick/charpick.c:685 cpufreq/src/cpufreq-applet.c:119
 #: drivemount/drivemount.c:170 geyes/geyes.c:363
-#: cafeweather/cafeweather-applet.c:117 multiload/main.c:500
+#: cafeweather/cafeweather-applet.c:136 multiload/main.c:500
 #: stickynotes/sticky-notes-preferences.ui:51
 #: stickynotes/sticky-notes-properties.ui:37
 #: stickynotes/stickynotes_applet.c:46 trashapplet/src/trashapplet.c:74
@@ -105,7 +105,7 @@ msgstr "সহায়িকা (_H)"
 #: accessx-status/applet.c:190 battstat/battstat_applet.c:66
 #: charpick/charpick.c:688 command/command.c:84
 #: cpufreq/src/cpufreq-applet.c:122 drivemount/drivemount.c:173
-#: geyes/geyes.c:366 cafeweather/cafeweather-applet.c:120 multiload/main.c:503
+#: geyes/geyes.c:366 cafeweather/cafeweather-applet.c:139 multiload/main.c:503
 #: stickynotes/stickynotes_applet.c:49 timerapplet/timerapplet.c:84
 #: trashapplet/src/trashapplet.c:77
 msgid "_About"
@@ -160,7 +160,7 @@ msgstr "কীবোর্ড সহায়ক প্রযুক্তির অ
 
 #: battstat/battstat_applet.c:60 charpick/charpick.c:682 command/command.c:83
 #: cpufreq/src/cpufreq-applet.c:116 geyes/geyes.c:360
-#: cafeweather/cafeweather-applet.c:114 multiload/main.c:494
+#: cafeweather/cafeweather-applet.c:133 multiload/main.c:494
 #: stickynotes/stickynotes_applet.c:43 timerapplet/timerapplet.c:83
 msgid "_Preferences"
 msgstr "পছন্দ (_P)"
@@ -238,24 +238,24 @@ msgstr[1] ""
 msgid "%d %s %d %s until charged (%d%%)"
 msgstr "%d %s %d %s পূর্বে চার্জ করা হয়েছে (%d%%)"
 
-#: battstat/battstat_applet.c:229
+#: battstat/battstat_applet.c:230
 msgid "Battery Monitor"
 msgstr "ব্যাটারি নিরীক্ষণ ব্যবস্থা"
 
-#: battstat/battstat_applet.c:240 battstat/battstat_applet.c:300
+#: battstat/battstat_applet.c:281 battstat/battstat_applet.c:343
 msgid "Your battery is now fully recharged"
 msgstr "ব্যাটারি এখন সম্পূর্ণরূপে চার্জ করা হয়েছে"
 
-#: battstat/battstat_applet.c:275 battstat/battstat_applet.c:432
+#: battstat/battstat_applet.c:318 battstat/battstat_applet.c:475
 msgid "Battery Notice"
 msgstr "ব্যাটারি সংক্রান্ত ঘোষনা"
 
-#: battstat/battstat_applet.c:377
+#: battstat/battstat_applet.c:420
 #, c-format
 msgid "You have %d%% of your total battery capacity remaining."
 msgstr "ব্যাটারির %d%% শতাংশ ক্ষমতা অবশিষ্ট রয়েছে।"
 
-#: battstat/battstat_applet.c:383
+#: battstat/battstat_applet.c:426
 #, c-format
 msgid ""
 "You have %d minute of battery power remaining (%d%% of the total capacity)."
@@ -264,7 +264,7 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: battstat/battstat_applet.c:395
+#: battstat/battstat_applet.c:438
 msgid ""
 "To avoid losing your work:\n"
 " • plug your laptop into external power, or\n"
@@ -274,7 +274,7 @@ msgstr ""
 " • ল্যাপটপ সরাসরি বিদ্যুৎ সরবরাহের সাথে যুক্ত করুন\n"
 " • খোলা নথিপত্র সংরক্ষণ করে ল্যাপটপ বন্ধ করুন।"
 
-#: battstat/battstat_applet.c:403
+#: battstat/battstat_applet.c:446
 msgid ""
 "To avoid losing your work:\n"
 " • suspend your laptop to save power,\n"
@@ -286,25 +286,25 @@ msgstr ""
 " • ল্যাপটপ সরাসরি বিদ্যুৎ সরবরাহের সাথে যুক্ত করুন\n"
 " • খোলা নথিপত্র সংরক্ষণ করে ল্যাপটপ বন্ধ করুন।"
 
-#: battstat/battstat_applet.c:411
+#: battstat/battstat_applet.c:454
 msgid "Your battery is running low"
 msgstr "ব্যাটারি'র কর্মক্ষমতা অত্যন্ত কম"
 
-#: battstat/battstat_applet.c:508
+#: battstat/battstat_applet.c:551
 msgid "No battery present"
 msgstr "ব্যাটারি অনুপস্থিত"
 
-#: battstat/battstat_applet.c:511
+#: battstat/battstat_applet.c:554
 msgid "Battery status unknown"
 msgstr "ব্যাটারির অবস্থা অজানা"
 
-#: battstat/battstat_applet.c:540
+#: battstat/battstat_applet.c:583
 msgid "N/A"
 msgstr "প্রযোজ্য নয়"
 
-#: battstat/battstat_applet.c:785 drivemount/drivemount.c:158 geyes/geyes.c:348
-#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:63
-#: cafeweather/cafeweather-pref.c:753
+#: battstat/battstat_applet.c:828 drivemount/drivemount.c:158 geyes/geyes.c:348
+#: geyes/themes.c:223 cafeweather/cafeweather-applet.c:78
+#: cafeweather/cafeweather-pref.c:771
 #: stickynotes/stickynotes_applet_callbacks.c:359
 #: stickynotes/stickynotes_applet_callbacks.c:563
 #: trashapplet/src/trashapplet.c:399
@@ -312,23 +312,23 @@ msgstr "প্রযোজ্য নয়"
 msgid "There was an error displaying help: %s"
 msgstr "সহায়িকা প্রদর্শনের সময় একটি সমস্যা হয়েছে: %s"
 
-#: battstat/battstat_applet.c:830
+#: battstat/battstat_applet.c:873
 msgid "This utility shows the status of your laptop battery."
 msgstr "ল্যাপটপ ব্যাটারির অবস্থা এই প্রোগ্রাম দ্বারা প্রদর্শিত হয়।"
 
-#: battstat/battstat_applet.c:832
+#: battstat/battstat_applet.c:875
 msgid "upower backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:833
+#: battstat/battstat_applet.c:876
 msgid "Legacy backend enabled."
 msgstr ""
 
-#: battstat/battstat_applet.c:842
+#: battstat/battstat_applet.c:885
 msgid "About Battery Charge Monitor"
 msgstr ""
 
-#: battstat/battstat_applet.c:844
+#: battstat/battstat_applet.c:887
 msgid ""
 "Copyright © 2000 The Gnulix Society\n"
 "Copyright © 2002-2005 Free Software Foundation and others\n"
@@ -336,12 +336,12 @@ msgid ""
 "Copyright © 2023-2026 Pablo Barciela"
 msgstr ""
 
-#: battstat/battstat_applet.c:1122 battstat/battstat_applet.c:1175
+#: battstat/battstat_applet.c:1165 battstat/battstat_applet.c:1218
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Battery Charge Monitor"
 msgstr "ব্যাটারির চার্জ নিরীক্ষণ ব্যবস্থা"
 
-#: battstat/battstat_applet.c:1176
+#: battstat/battstat_applet.c:1219
 #: battstat/org.cafe.applets.BattstatApplet.cafe-panel-applet.desktop.in.in:9
 msgid "Monitor a laptop's remaining power"
 msgstr "ল্যাপটপের অবশিষ্ট  শক্তি নিরীক্ষণ"
@@ -962,28 +962,36 @@ msgstr ""
 msgid "A panel application for monitoring local weather conditions."
 msgstr "স্থানীয় আবহাওয়ার অবস্থা নিরীক্ষণের ব্যবহৃত অ্যাপ্লেট।"
 
-#: cafeweather/cafeweather-applet.c:108
+#: cafeweather/cafeweather-applet.c:52
+msgid "No location configured."
+msgstr ""
+
+#: cafeweather/cafeweather-applet.c:127
 msgid "_Details"
 msgstr "বিবরণ (_D)"
 
-#: cafeweather/cafeweather-applet.c:111 cafeweather/cafeweather-dialog.c:186
+#: cafeweather/cafeweather-applet.c:130 cafeweather/cafeweather-dialog.c:186
 msgid "_Update"
 msgstr "আপডেট (_U)"
 
-#: cafeweather/cafeweather-applet.c:356
+#: cafeweather/cafeweather-applet.c:182
+msgid "?"
+msgstr ""
+
+#: cafeweather/cafeweather-applet.c:378
 #: cafeweather/org.cafe.applets.CafeWeatherApplet.cafe-panel-applet.desktop.in.in:8
 msgid "Weather Report"
 msgstr "আবহাওয়ার সংবাদ"
 
-#: cafeweather/cafeweather-applet.c:374 cafeweather/cafeweather-applet.c:378
+#: cafeweather/cafeweather-applet.c:396 cafeweather/cafeweather-applet.c:400
 msgid "CAFE Weather"
 msgstr "CAFE আবহাওয়া"
 
-#: cafeweather/cafeweather-applet.c:478
+#: cafeweather/cafeweather-applet.c:509
 msgid "Weather Forecast"
 msgstr "আবহাওয়ার পূর্বাভাস"
 
-#: cafeweather/cafeweather-applet.c:490
+#: cafeweather/cafeweather-applet.c:521
 #, c-format
 msgid ""
 "City: %s\n"
@@ -994,7 +1002,7 @@ msgstr ""
 "আকাশ: %s\n"
 "তাপমাত্রা: %s"
 
-#: cafeweather/cafeweather-applet.c:539
+#: cafeweather/cafeweather-applet.c:601
 msgid "Updating..."
 msgstr "আপডেট করা হচ্ছে..."
 
@@ -1114,148 +1122,148 @@ msgstr "ঠিকানা লেখার স্থান"
 msgid "Enter the URL"
 msgstr "URL লিখুন"
 
-#: cafeweather/cafeweather-pref.c:283
+#: cafeweather/cafeweather-pref.c:301
 msgid ""
 "Failed to load the Locations XML database.  Please report this as a bug."
 msgstr "Locations XML ডাটাবেস লোড করতে ব্যর্থ।  অনুগ্রহ করে এটি বাগ রূপে সূচিত করুন।"
 
-#: cafeweather/cafeweather-pref.c:813
+#: cafeweather/cafeweather-pref.c:831
 msgid "Weather Preferences"
 msgstr "আবহাওয়া সম্বন্ধীয় পছন্দ"
 
-#: cafeweather/cafeweather-pref.c:837 cafeweather/cafeweather-pref.c:1040
+#: cafeweather/cafeweather-pref.c:855 cafeweather/cafeweather-pref.c:1046
 msgid "_Automatically update every:"
 msgstr "আপডেট করা হবে প্রতি: (_A)"
 
-#: cafeweather/cafeweather-pref.c:853
+#: cafeweather/cafeweather-pref.c:870
 msgid "_Temperature unit:"
 msgstr "তাপমাত্রার একক: (_T)"
 
-#: cafeweather/cafeweather-pref.c:863
+#: cafeweather/cafeweather-pref.c:880
 msgid "Kelvin"
 msgstr "কেলভিন"
 
-#: cafeweather/cafeweather-pref.c:865
+#: cafeweather/cafeweather-pref.c:882
 msgid "Celsius"
 msgstr "সেলসিয়াস"
 
-#: cafeweather/cafeweather-pref.c:866
+#: cafeweather/cafeweather-pref.c:883
 msgid "Fahrenheit"
 msgstr "ফারেনহাইট"
 
-#: cafeweather/cafeweather-pref.c:875
+#: cafeweather/cafeweather-pref.c:892
 msgid "_Wind speed unit:"
 msgstr "বায়ু গতির একক:(_W)"
 
-#: cafeweather/cafeweather-pref.c:886
+#: cafeweather/cafeweather-pref.c:903
 msgid "m/s"
 msgstr "মিটার/সেকেন্ড"
 
-#: cafeweather/cafeweather-pref.c:888
+#: cafeweather/cafeweather-pref.c:905
 msgid "km/h"
 msgstr "কিলোমিটার/ঘন্টা"
 
-#: cafeweather/cafeweather-pref.c:890
+#: cafeweather/cafeweather-pref.c:907
 msgid "mph"
 msgstr "mph"
 
-#: cafeweather/cafeweather-pref.c:892
+#: cafeweather/cafeweather-pref.c:909
 msgid "knots"
 msgstr "নট"
 
-#: cafeweather/cafeweather-pref.c:893
+#: cafeweather/cafeweather-pref.c:910
 msgid "Beaufort scale"
 msgstr "Beaufort scale"
 
-#: cafeweather/cafeweather-pref.c:902
+#: cafeweather/cafeweather-pref.c:919
 msgid "_Pressure unit:"
 msgstr "বায়ুচাপের একক:(_P)"
 
-#: cafeweather/cafeweather-pref.c:913
+#: cafeweather/cafeweather-pref.c:930
 msgid "kPa"
 msgstr "kPa"
 
-#: cafeweather/cafeweather-pref.c:915
+#: cafeweather/cafeweather-pref.c:932
 msgid "hPa"
 msgstr "hPa"
 
-#: cafeweather/cafeweather-pref.c:917
+#: cafeweather/cafeweather-pref.c:934
 msgid "mb"
 msgstr "mb"
 
-#: cafeweather/cafeweather-pref.c:919
+#: cafeweather/cafeweather-pref.c:936
 msgid "mmHg"
 msgstr "mmHg"
 
-#: cafeweather/cafeweather-pref.c:921
+#: cafeweather/cafeweather-pref.c:938
 msgid "inHg"
 msgstr "inHg"
 
-#: cafeweather/cafeweather-pref.c:923
+#: cafeweather/cafeweather-pref.c:940
 msgid "atm"
 msgstr "atm"
 
-#: cafeweather/cafeweather-pref.c:932
+#: cafeweather/cafeweather-pref.c:949
 msgid "_Visibility unit:"
 msgstr "দৃষ্টিসীমার একক:(_V)"
 
-#: cafeweather/cafeweather-pref.c:943
+#: cafeweather/cafeweather-pref.c:960
 msgid "meters"
 msgstr "মিটার"
 
-#: cafeweather/cafeweather-pref.c:945
+#: cafeweather/cafeweather-pref.c:962
 msgid "km"
 msgstr "কিলোমিটার"
 
-#: cafeweather/cafeweather-pref.c:947
+#: cafeweather/cafeweather-pref.c:964
 msgid "miles"
 msgstr "মাইল"
 
-#: cafeweather/cafeweather-pref.c:977
+#: cafeweather/cafeweather-pref.c:988
 msgid "Enable _radar map"
 msgstr "রেডার ম্যাপ সক্রিয় করা হবে(_r)"
 
-#: cafeweather/cafeweather-pref.c:993
+#: cafeweather/cafeweather-pref.c:1003
 msgid "Use _custom address for radar map"
 msgstr "রেডার ম্যাপের জন্য স্বনির্বাচিত ঠিকানা ব্যবহৃত হবে (_c)"
 
-#: cafeweather/cafeweather-pref.c:1011
+#: cafeweather/cafeweather-pref.c:1019
 msgid "A_ddress:"
 msgstr "ঠিকানা (_d):"
 
-#: cafeweather/cafeweather-pref.c:1026
+#: cafeweather/cafeweather-pref.c:1034
 msgid "Show _notifications"
 msgstr ""
 
-#: cafeweather/cafeweather-pref.c:1036
+#: cafeweather/cafeweather-pref.c:1042
 msgid "Update"
 msgstr "আপডেট"
 
-#: cafeweather/cafeweather-pref.c:1053
+#: cafeweather/cafeweather-pref.c:1058
 msgid "minutes"
 msgstr "মিনিট"
 
-#: cafeweather/cafeweather-pref.c:1071
+#: cafeweather/cafeweather-pref.c:1076
 msgid "Display"
 msgstr "প্রদর্শন"
 
-#: cafeweather/cafeweather-pref.c:1090
+#: cafeweather/cafeweather-pref.c:1095
 msgid "General"
 msgstr "সাধারণ"
 
-#: cafeweather/cafeweather-pref.c:1101
+#: cafeweather/cafeweather-pref.c:1106
 msgid "_Select a location:"
 msgstr "অবস্থান নির্বাচন করুন:(_S)"
 
-#: cafeweather/cafeweather-pref.c:1123
+#: cafeweather/cafeweather-pref.c:1127
 msgid "_Find:"
 msgstr "সন্ধান করুন (_F):"
 
-#: cafeweather/cafeweather-pref.c:1129
+#: cafeweather/cafeweather-pref.c:1133
 msgid "Find _Next"
 msgstr "পরেরটা খোঁজো (_N)"
 
-#: cafeweather/cafeweather-pref.c:1150
+#: cafeweather/cafeweather-pref.c:1151
 msgid "Location"
 msgstr "অবস্থান"
 
@@ -2697,6 +2705,3 @@ msgstr "আবর্জনা বাক্স ফাঁকা করা হচ�
 #: trashapplet/trashapplet-empty-progress.ui:36
 msgid "From:"
 msgstr "হতে:"
-
-#~ msgid "_Properties"
-#~ msgstr "বৈশিষ্ট্যাবলী (_P)"
