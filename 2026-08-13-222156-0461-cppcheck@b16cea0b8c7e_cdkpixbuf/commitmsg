@@ -1,0 +1,15 @@
+battstat_applet: convert CdkPixbuf to GdkPixbuf for libnotify
+
+Fixes the error:
+
+battstat_applet.c: In function 'battery_full_notify':
+battstat_applet.c:242:55: error: passing argument 2 of 'notify_notification_set_image_from_pixbuf' from incompatible pointer type [-Wincompatible-pointer-types]
+  242 |         notify_notification_set_image_from_pixbuf (n, icon);
+      |                                                       ^~~~
+      |                                                       |
+      |                                                       CdkPixbuf * {aka struct _CdkPixbuf *}
+In file included from /usr/include/libnotify/notify.h:27,
+                 from battstat_applet.c:44:
+/usr/include/libnotify/notification.h:160:84: note: expected 'GdkPixbuf *' but argument is of type 'CdkPixbuf *' {aka 'struct _CdkPixbuf *'}
+  160 |                                                                GdkPixbuf          *pixbuf);
+      |                                                                ~~~~~~~~~~~~~~~~~~~~^~~~~~~
