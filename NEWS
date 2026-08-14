@@ -1,3 +1,23 @@
+### cafe-applets 2.1.0
+
+  * cafeweather-pref:
+    - set values before connecting signals on preferences dialog
+    - update selected location after one second
+  * cafeweather-applet:
+    - Avoid NULL pointer dereferences if there is no weather info
+    - Do not update panel when upgrade process begins
+    - Fix memory leak with NotifyNotification
+    - icon 'weather-severe-alert' instead 'weather-storm' if applet has problems
+    - don't update if there is no location configured
+    - update applet changing location in preferences with error
+    - avoid updating invalid info
+    - disable 'Details' and 'Update' actions when no location is configured
+    - add 'text-x-generic' icon for 'Details'
+  * port from GdkPixbuf to CdkPixbuf
+  * battstat_applet: convert CdkPixbuf to GdkPixbuf for libnotify
+  * update translations
+
+
 ### cafe-applets 2.0.0
 
   * ci: some improvements
