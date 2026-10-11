@@ -56,6 +56,8 @@ struct _LoadGraph {
 
     gboolean visible;
     gboolean tooltip_update;
+    gboolean tooltip_visible;
+    guint tooltip_tick;
     const gchar *name;
 };
 
@@ -98,6 +100,11 @@ multiload_applet_refresh(MultiloadApplet *ma);
 /* update the tooltip to the graph's current "used" percentage */
 G_GNUC_INTERNAL void
 multiload_applet_tooltip_update(LoadGraph *g);
+
+/* build the tooltip text for the given graph;
+ * the result must be freed with g_free() */
+G_GNUC_INTERNAL gchar *
+multiload_applet_tooltip_get_text(LoadGraph *g);
 
 G_END_DECLS
 

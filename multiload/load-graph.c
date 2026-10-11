@@ -16,6 +16,10 @@
 
 #include "global.h"
 
+/* must be strictly greater than ctk's HOVER_TIMEOUT (500ms), see below */
+#define TOOLTIP_REFRESH_PERIOD 700
+
+
 /*
   Shifts data right
 
@@ -234,8 +238,18 @@ load_graph_update (LoadGraph *g)
 
     shift_right(g);
 
-    if (g->tooltip_update)
-	multiload_applet_tooltip_update(g);
+    if (g->tooltip_update && g->tooltip_visible)
+      {
+	/* each trigger re-arms the show timeout; if we triggered every
+	 * tick (== HOVER_TIMEOUT) the show timeout would never fire.
+	 * With a period > HOVER_TIMEOUT it always survives. */
+	g->tooltip_tick += g->speed;
+	if (g->tooltip_tick >= TOOLTIP_REFRESH_PERIOD)
+	  {
+	    g->tooltip_tick = 0;
+	    multiload_applet_tooltip_update (g);
+	  }
+      }
 
     g->get_data (g->draw_height, g->data [0], g);
 
@@ -357,6 +371,34 @@ load_graph_clicked (CtkWidget      *widget G_GNUC_UNUSED,
 }
 
 static gboolean
+load_graph_query_tooltip_cb (CtkWidget  *widget G_GNUC_UNUSED,
+			     gint        x G_GNUC_UNUSED,
+			     gint        y G_GNUC_UNUSED,
+			     gboolean    keyboard_mode G_GNUC_UNUSED,
+			     CtkTooltip *tooltip,
+			     gpointer    data)
+{
+    LoadGraph *graph;
+    gchar *text;
+
+    graph = (LoadGraph *)data;
+
+    if (!graph->tooltip_update || graph->data == NULL)
+        return FALSE;
+
+    text = multiload_applet_tooltip_get_text (graph);
+    if (text == NULL)
+        return FALSE;
+
+    ctk_tooltip_set_text (tooltip, text);
+    g_free (text);
+
+    graph->tooltip_visible = TRUE;
+
+    return TRUE;
+}
+
+static gboolean
 load_graph_enter_cb (CtkWidget        *widget G_GNUC_UNUSED,
 		     CdkEventCrossing *event G_GNUC_UNUSED,
 		     gpointer          data)
@@ -365,7 +407,10 @@ load_graph_enter_cb (CtkWidget        *widget G_GNUC_UNUSED,
     graph = (LoadGraph *)data;
 
     graph->tooltip_update = TRUE;
-    multiload_applet_tooltip_update(graph);
+
+    /* arm the tooltip query once; CTK will emit "query-tooltip" after
+     * the ctk-tooltip-timeout delay if the pointer stays over the graph */
+    ctk_tooltip_trigger_tooltip_query (ctk_widget_get_display (widget));
 
     return TRUE;
 }
@@ -379,6 +424,7 @@ load_graph_leave_cb (CtkWidget        *widget G_GNUC_UNUSED,
     graph = (LoadGraph *)data;
 
     graph->tooltip_update = FALSE;
+    graph->tooltip_visible = FALSE;
 
     return TRUE;
 }
@@ -483,7 +529,9 @@ load_graph_new (MultiloadApplet  *ma,
     ctk_widget_set_events (g->disp, CDK_EXPOSURE_MASK |
                                     CDK_ENTER_NOTIFY_MASK |
                                     CDK_LEAVE_NOTIFY_MASK |
+                                    CDK_POINTER_MOTION_MASK |
                                     CDK_BUTTON_PRESS_MASK);
+    ctk_widget_set_has_tooltip (g->disp, TRUE);
 
     g_signal_connect (G_OBJECT (g->disp), "draw",
                       G_CALLBACK (load_graph_expose), g);
@@ -497,6 +545,8 @@ load_graph_new (MultiloadApplet  *ma,
                       G_CALLBACK(load_graph_enter_cb), g);
     g_signal_connect (G_OBJECT(g->disp), "leave-notify-event",
                       G_CALLBACK(load_graph_leave_cb), g);
+    g_signal_connect (G_OBJECT (g->disp), "query-tooltip",
+                      G_CALLBACK (load_graph_query_tooltip_cb), g);
 
     ctk_box_pack_start (CTK_BOX (g->box), g->disp, TRUE, TRUE, 0);
     ctk_widget_show_all(g->box);

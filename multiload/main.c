@@ -277,28 +277,31 @@ multiload_key_press_event_cb (CtkWidget       *widget G_GNUC_UNUSED,
 	return FALSE;
 }
 
-/* update the tooltip to the graph's current "used" percentage */
-void
-multiload_applet_tooltip_update(LoadGraph *g)
+/* build the tooltip text for the given graph;
+ * the result must be freed with g_free() */
+gchar *
+multiload_applet_tooltip_get_text(LoadGraph *g)
 {
-	gchar *tooltip_text, *name;
+	gchar *tooltip_text;
+	const gchar *name;
 
-	g_assert(g);
-	g_assert(g->name);
+	g_return_val_if_fail (g != NULL, NULL);
+	g_return_val_if_fail (g->name != NULL, NULL);
+	g_return_val_if_fail (g->data != NULL, NULL);
 
 	/* label the tooltip intuitively */
 	if (!strncmp(g->name, "cpuload", strlen("cpuload")))
-		name = g_strdup(_("Processor"));
+		name = _("Processor");
 	else if (!strncmp(g->name, "memload", strlen("memload")))
-		name = g_strdup(_("Memory"));
+		name = _("Memory");
 	else if (!strncmp(g->name, "netload2", strlen("netload2")))
-		name = g_strdup(_("Network"));
+		name = _("Network");
 	else if (!strncmp(g->name, "swapload", strlen("swapload")))
-		name = g_strdup(_("Swap Space"));
+		name = _("Swap Space");
 	else if (!strncmp(g->name, "loadavg", strlen("loadavg")))
-		name = g_strdup(_("Load Average"));
+		name = _("Load Average");
 	else if (!strncmp (g->name, "diskload", strlen("diskload")))
-		name = g_strdup(_("Disk"));
+		name = _("Disk");
 	else
 		g_assert_not_reached();
 
@@ -357,10 +360,18 @@ multiload_applet_tooltip_update(LoadGraph *g)
 					       percent);
 	}
 
-	ctk_widget_set_tooltip_text(g->disp, tooltip_text);
+	return tooltip_text;
+}
 
-	g_free(tooltip_text);
-	g_free(name);
+/* refresh the tooltip shown over the graph, if any; the text itself
+ * is built by the "query-tooltip" handler installed in load-graph.c */
+void
+multiload_applet_tooltip_update(LoadGraph *g)
+{
+	g_return_if_fail (g != NULL);
+
+	if (g->disp)
+		ctk_tooltip_trigger_tooltip_query (ctk_widget_get_display (g->disp));
 }
 
 static void
