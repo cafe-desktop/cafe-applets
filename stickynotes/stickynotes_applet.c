@@ -622,7 +622,6 @@ stickynotes_applet_panel_icon_get_geometry (int *x, int *y, int *width, int *hei
 {
 	CtkWidget *widget;
         CtkAllocation allocation;
-	CtkRequisition requisition;
 	StickyNotesApplet *applet;
 
 	if (stickynotes->applets == NULL)
@@ -632,11 +631,9 @@ stickynotes_applet_panel_icon_get_geometry (int *x, int *y, int *width, int *hei
 
 	widget = CTK_WIDGET (applet->w_image);
 
-	ctk_widget_get_preferred_size (widget, NULL, &requisition);
-
 	cdk_window_get_origin (ctk_widget_get_window (widget), x, y);
 
 	ctk_widget_get_allocation (widget, &allocation);
-	*width = allocation.x;
-	*height = allocation.y;
+	*width = allocation.width;
+	*height = allocation.height;
 }

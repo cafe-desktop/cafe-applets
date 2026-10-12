@@ -260,13 +260,13 @@ destroy_all_response_cb (CtkDialog *dialog, gint id, StickyNotesApplet *applet)
 	if (id == CTK_RESPONSE_OK) {
 		while (g_list_length(stickynotes->notes) > 0) {
 			StickyNote *note = g_list_nth_data(stickynotes->notes, 0);
-			stickynote_free(note);
 			stickynotes->notes = g_list_remove(stickynotes->notes, note);
+			stickynote_free(note);
 		}
 	}
 
 	stickynotes_applet_update_tooltips();
-	stickynotes_save();
+	stickynotes_save_now();
 
 	ctk_widget_destroy (CTK_WIDGET (dialog));
 	applet->destroy_all_dialog = NULL;
