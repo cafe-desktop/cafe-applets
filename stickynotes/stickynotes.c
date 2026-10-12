@@ -53,6 +53,9 @@ set_icon_geometry (CdkWindow *window,
 	gulong data[4];
 	Display *dpy;
 
+	if (window == NULL || !CDK_IS_X11_WINDOW (window))
+		return;
+
 	dpy = cdk_x11_display_get_xdisplay (cdk_window_get_display (window));
 
 	data[0] = x;
@@ -102,14 +105,36 @@ stickynote_new_aux (CdkScreen *screen, gint x, gint y, gint w, gint h)
 {
 	StickyNote *note;
 	CtkBuilder *builder;
+	GError *error = NULL;
+
+	g_type_ensure (CTK_SOURCE_TYPE_BUFFER);
+	g_type_ensure (CTK_SOURCE_TYPE_VIEW);
 
 	note = g_new (StickyNote, 1);
 
 	builder = ctk_builder_new ();
-	ctk_builder_add_from_resource (builder, GRESOURCE "sticky-notes-note.ui", NULL);
-	ctk_builder_add_from_resource (builder, GRESOURCE "sticky-notes-properties.ui", NULL);
+	if (!ctk_builder_add_from_resource (builder,
+					    GRESOURCE "sticky-notes-note.ui",
+					    &error) ||
+	    !ctk_builder_add_from_resource (builder,
+					    GRESOURCE "sticky-notes-properties.ui",
+					    &error)) {
+		g_critical ("Failed to load sticky notes UI files: %s",
+			    error->message);
+		g_error_free (error);
+		g_object_unref (builder);
+		g_free (note);
+		return NULL;
+	}
 
 	note->w_window = CTK_WIDGET (ctk_builder_get_object (builder, "stickynote_window"));
+	if (note->w_window == NULL) {
+		g_critical ("stickynote_window not found in the UI file; "
+			    "refusing to create an unusable note");
+		g_object_unref (builder);
+		g_free (note);
+		return NULL;
+	}
 	ctk_window_set_screen(CTK_WINDOW(note->w_window),screen);
 	ctk_window_set_decorated (CTK_WINDOW (note->w_window), FALSE);
 	ctk_window_set_skip_taskbar_hint (CTK_WINDOW (note->w_window), TRUE);
@@ -175,6 +200,8 @@ stickynote_new_aux (CdkScreen *screen, gint x, gint y, gint w, gint h)
 	note->y = y;
 	note->w = w;
 	note->h = h;
+
+	note->workspace = 0;
 
 	/* Customize the window */
 	if (g_settings_get_boolean (stickynotes->settings, "sticky"))
@@ -598,6 +625,7 @@ stickynote_set_visible (StickyNote *note, gboolean visible)
 {
 	if (visible)
 	{
+		ctk_window_deiconify (CTK_WINDOW (note->w_window));
 		ctk_window_present (CTK_WINDOW (note->w_window));
 
 		if (note->x != -1 || note->y != -1)
@@ -636,9 +664,11 @@ stickynote_set_visible (StickyNote *note, gboolean visible)
 	else {
 		/* Hide sticky note */
 		int x, y, width, height;
-		stickynotes_applet_panel_icon_get_geometry (&x, &y, &width, &height);
-		set_icon_geometry (ctk_widget_get_window (CTK_WIDGET (note->w_window)),
-				   x, y, width, height);
+		if (stickynotes->applets != NULL) {
+			stickynotes_applet_panel_icon_get_geometry (&x, &y, &width, &height);
+			set_icon_geometry (ctk_widget_get_window (CTK_WIDGET (note->w_window)),
+					   x, y, width, height);
+		}
 		ctk_window_iconify(CTK_WINDOW (note->w_window));
 	}
 }
@@ -649,6 +679,8 @@ void stickynotes_add (CdkScreen *screen)
 	StickyNote *note;
 
 	note = stickynote_new (screen);
+	if (note == NULL)
+		return;
 
 	stickynotes->notes = g_list_append(stickynotes->notes, note);
 	stickynotes_applet_update_tooltips();
@@ -715,7 +747,6 @@ stickynotes_save_now (void)
 	/* For all sticky notes */
 	for (i = 0; i < g_list_length(stickynotes->notes); i++) {
 		VnckWindow *vnck_win;
-		gulong xid = 0;
 
 		/* Access the current note in the list */
 		StickyNote *note = g_list_nth_data(stickynotes->notes, i);
@@ -728,8 +759,10 @@ stickynotes_save_now (void)
 		gchar *x_str = g_strdup_printf("%d", note->x);
 		gchar *y_str = g_strdup_printf("%d", note->y);
 
-		xid = CDK_WINDOW_XID (ctk_widget_get_window (note->w_window));
-		vnck_win = vnck_window_get (xid);
+		CdkWindow *window = ctk_widget_get_window (note->w_window);
+		vnck_win = NULL;
+		if (window != NULL)
+			vnck_win = vnck_window_get (CDK_WINDOW_XID (window));
 
 		if (!g_settings_get_boolean (stickynotes->settings, "sticky") &&
 			vnck_win)
@@ -921,6 +954,11 @@ stickynotes_load (CdkScreen *screen)
 
 			/* Create a new note */
 			note = stickynote_new_aux (screen, x, y, w, h);
+			if (note == NULL)
+			{
+				node = node->next;
+				continue;
+			}
 			stickynotes->notes = g_list_append (stickynotes->notes,
 					note);
 			new_notes = g_list_append (new_notes, note);

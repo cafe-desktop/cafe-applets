@@ -64,6 +64,8 @@ static gboolean stickynotes_applet_factory (CafePanelApplet *cafe_panel_applet,
 					    gpointer         data G_GNUC_UNUSED)
 {
 	if (!strcmp(iid, "StickyNotesApplet")) {
+		GList *l;
+
 		if (!stickynotes)
 			stickynotes_applet_init (cafe_panel_applet);
 
@@ -71,6 +73,10 @@ static gboolean stickynotes_applet_factory (CafePanelApplet *cafe_panel_applet,
 
 		/* Add applet to linked list of all applets */
 		stickynotes->applets = g_list_append (stickynotes->applets, stickynotes_applet_new(cafe_panel_applet));
+
+		for (l = stickynotes->notes; l; l = l->next)
+			stickynote_set_visible (l->data,
+						stickynotes->visible);
 
 		stickynotes_applet_update_menus ();
 		stickynotes_applet_update_tooltips ();
@@ -618,6 +624,9 @@ stickynotes_applet_panel_icon_get_geometry (int *x, int *y, int *width, int *hei
         CtkAllocation allocation;
 	CtkRequisition requisition;
 	StickyNotesApplet *applet;
+
+	if (stickynotes->applets == NULL)
+		return;
 
 	applet = stickynotes->applets->data;
 

@@ -238,8 +238,6 @@ void applet_size_allocate_cb (CtkWidget         *widget G_GNUC_UNUSED,
 void applet_destroy_cb (CafePanelApplet   *cafe_panel_applet G_GNUC_UNUSED,
 			StickyNotesApplet *applet)
 {
-	GList *notes;
-
 	stickynotes_save_now ();
 
 	if (applet->destroy_all_dialog != NULL)
@@ -251,14 +249,8 @@ void applet_destroy_cb (CafePanelApplet   *cafe_panel_applet G_GNUC_UNUSED,
 	if (stickynotes->applets != NULL)
 		stickynotes->applets = g_list_remove (stickynotes->applets, applet);
 
-	if (stickynotes->applets == NULL) {
-		notes = stickynotes->notes;
-		while (notes) {
-			StickyNote *note = notes->data;
-			stickynote_free (note);
-			notes = g_list_next (notes);
-		}
-	}
+	if (stickynotes->applets == NULL)
+		stickynote_show_notes (FALSE);
 }
 
 /* Destroy all response Callback: Callback for the destroy all dialog */
