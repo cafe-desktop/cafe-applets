@@ -1,0 +1,5 @@
+stickynotes: alternative fix for crashes since glib 2.75.0
+
+- Reverts https://github.com/cafe-desktop/cafe-applets/commit/a0dd007879da3058a7ed5818d89c015c8633988e
+- Add some guards
+- g_type_ensure give us the real fix
